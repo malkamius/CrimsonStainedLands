@@ -1,0 +1,3984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Dylan's Area</Name>
+    <Info></Info>
+    <VnumStart>9100</VnumStart>
+    <VnumEnd>9199</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{15 25} Dylan   Dylan's Area</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>9101</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.
+A floating sign says:
+"Scubdu's Area--Tread carefully! Only high levels should attempt
+this place. Leave messages on the board if you have problems."</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9102</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud above you.  If you jump you might make it...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9102</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9103</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud east of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9101</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud below you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9103</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9128</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can barely make out a cloud to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9104</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud somewhere south of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9102</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud somewhere west of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9104</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9103</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can barely make out a cloud to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9105</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud east of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9105</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9106</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud east of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9104</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You spy a tiny cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9106</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9107</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can barely make out a cloud to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9105</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You spy a tiny cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9107</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9108</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud east of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9106</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud somewhere south of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9126</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud below you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9108</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9109</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>An ominous storm cloud looms to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9107</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You spy a tiny cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9109</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9108</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You spy a tiny cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9110</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>An ominous storm cloud looms below you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9110</VNum>
+      <Name>An ominous storm cloud.</Name>
+      <Description>You find yourself in a storm.  Lightning flashes and thunder
+crashes, making you wish you were dry and warm.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9111</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is a crag, high and rocky.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9125</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You spy a tiny cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9109</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud above you.  If you jump you might make it...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9111</VNum>
+      <Name>High and perilous cliff</Name>
+      <Description>You are on a high and rocky cliff.  To the west you see a huge
+ominous storm cloud moving this way.  You might want to take cover
+before the storm hits.  You think that there is a narrow trail
+leading to the south.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9112</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9110</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>An ominous storm cloud looms to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9112</VNum>
+      <Name>Narrow rocky trail.</Name>
+      <Description>A narrow trail leads down towards the mountain and north toward the
+cliff.  It seems to fade in and out as it winds up the hill.
+Obviously, it has not been maintained in years.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9111</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9113</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9113</VNum>
+      <Name>Small valley.</Name>
+      <Description>You are in a lush valley full of trees and other vegetation and the
+odd carcass or two.  The trail leads south and it leads up.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9114</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9112</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9114</VNum>
+      <Name>Small valley.</Name>
+      <Description>You are in a lush valley full of trees and other vegetation and the
+odd carcass or three.  The trail leads north and it leads down into
+a crevasse.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9113</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9115</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>The crevice looks a little slippery.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9115</VNum>
+      <Name>Deep, slippery crevice.</Name>
+      <Description>The crevice is deep and a little dim and it is hard to make your
+way around.  A mist makes everything a little damp and slippery.
+Better take your time climbing through here.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9117</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9116</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The mist looks thicker in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9114</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9116</VNum>
+      <Name>Incredibly slippery crevice.</Name>
+      <Description>The crevice is getting more and more slippery.  You are getting
+incredibly nervous and want to turn back.  To the east is the
+crevice and trail you were following.  Below, you can just see the
+edge of a cliff through the mist.  There is no trail leading there,
+just a smooth, flat, dew-covered rock that almost resembles a
+slide ...</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9115</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The way back to safety.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9199</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>Only fools would dare tread here!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9117</VNum>
+      <Name>Steep mountainside.</Name>
+      <Description>From here, you can see forever.  Clouds, birds, the forest.  Midgaard is far,
+far to the west.  What a postcard perfect view!</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9115</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9118</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9118</VNum>
+      <Name>Steep mountainside.</Name>
+      <Description>From here, you can see forever.  Clouds, birds, the forest.  Midgaard is far,
+far to the west.  What a postcard perfect view!</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9119</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9117</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9119</VNum>
+      <Name>Treacherous Cliff.</Name>
+      <Description>The cliff is rocky and difficult to negotiate.  One wrong slip and
+you could fall and break a leg or impale yourself or something else
+nasty.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9118</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9120</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>Above you is an almost vertical cliff.  It looks dangerous but
+ climbable.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9120</VNum>
+      <Name>Cliff Face.</Name>
+      <Description>You are more than a little nervous climbing on this almost vertical
+cliff face.  You miraculously find places to grab onto and little
+ledges to rest on.  You see a small cave here.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9121</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A dank, dark, smelly hole.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9122</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>A large ledge that looks pretty safe.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9119</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9121</VNum>
+      <Name>Dank, dark, smelly hole.</Name>
+      <Description>This hole must have been used as a lair or nest.  There are  feathers and bones
+everywhere and the floor is covered with  something disgusting.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9120</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9122</VNum>
+      <Name>Large, sturdy ledge.</Name>
+      <Description>You are on a ledge above a steep cliff face.  You can climb down
+if you want, but be careful!  After viewing the scenery, you notice
+two small caves here, one north and one west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9124</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9123</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9120</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9123</VNum>
+      <Name>Absolutely disgusting lair.</Name>
+      <Description>The stench in here is quite foul.  There are feathers, bones and
+rotting carcasses everywhere.  This place is absolutely gross and
+you have to strain yourself not to lose your lunch.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9122</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Your only hope to keep your lunch down is to head this way...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9124</VNum>
+      <Name>Absolutely disgusting lair.</Name>
+      <Description>The stench in here is quite foul.  There are feathers, bones and
+rotting carcasses everywhere.  This place is absolutely gross and
+you have to strain yourself not to lose your lunch.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9122</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Your only hope to keep your lunch down is to head this way...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9125</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9110</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>An ominous storm cloud looms to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9126</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud above you.  If you jump you might make it...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9126</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9131</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>A cirrus cloud hums peacefully to itself.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9127</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You spy a tiny cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9107</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud above you.  If you jump you might make it...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9125</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud below you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9127</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9130</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you see an angry cloud lashing out.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9126</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud east of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9128</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud above you.  If you jump you might make it...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9128</VNum>
+      <Name>A fluffy white cloud.</Name>
+      <Description>You find yourself standing on a small cloud.  The cloud feels kind
+of spongy beneath your feet.  You find it hard to see anything in
+the distance as wisps of cloud blow over your face.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9103</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud somewhere south of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9127</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>There is another cloud below you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9129</VNum>
+      <Name>Sleepy little cloud.</Name>
+      <Description>This cloud is peacefully snoozing away, enjoying himself.  There
+is grumpy cloud to the east and a rather shy cloud north of here.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9132</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The cloud to the north blushes and tries to hide when you look at
+ it.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9130</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The cloud to the east mutters and grumbles at you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9130</VNum>
+      <Name>Grumpy little cloud.</Name>
+      <Description>This cloud mutters and grumbles at you.  You have to jump quickly
+to avoid a lightning bolt that passes by your toe.  Your aren't
+sure but you think you hear the cloud snicker.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9131</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A happy little cloud is humming peacefully to itself.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9127</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud somewhere south of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9129</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A sleepy little cloud to the west yawns and rolls over.  You hear
+ snoring.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9131</VNum>
+      <Name>Happy little cloud.</Name>
+      <Description>You hear the cloud humming a little song to itself, but you can't
+figure out the song.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9136</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>There is a pure white cloud north of you.  It is snowing!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9126</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud somewhere south of you.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9130</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see an angry little cloud muttering and grumbling to itself.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9132</VNum>
+      <Name>Bashful little cloud.</Name>
+      <Description>This cloud blushes and tries to avoid your glance as you look at
+your surroundings.  You decide that overall it is a peaceful little
+cloud.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9133</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The cloud to the north sneezes!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9129</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A sleepy little cloud to the south yawns and rolls over.  You hear
+ snoring.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9142</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>An isolated little raincloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9133</VNum>
+      <Name>Sneezing little cloud.</Name>
+      <Description>The cloud is wracked with sneezes.  At first you thought you were
+in an earthquake before you realize where you are!</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9145</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9134</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>This cloud is, like, totally lost, you know?</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9132</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The cloud to the south blushes and tries to hide when you look at
+ it.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9143</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a cirrus maximus cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9134</VNum>
+      <Name>Dopey little cloud.</Name>
+      <Description>This cloud is too busy daydreaming to watch where its going.  It
+doesn't even notice you landing on it.  It looks like it couldn't
+figure its way out of an open box.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9135</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a very scientific cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9133</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The cloud sneezes!  Yuck.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9135</VNum>
+      <Name>Doc-like little cloud.</Name>
+      <Description>The cloud looks at you through its Lennon like specs and examines
+you quite scientifically.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9136</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>There is a pure white cloud south of you.  It is snowing!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9134</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>This cloud is, like, totally lost, you know?</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9136</VNum>
+      <Name>Snowy, white cloud.</Name>
+      <Description>You shiver as you stand here.  This beautiful, fluffy, pure white
+cloud is snowing.  The snow is pure and sweet as it melts in your
+mouth.  What a nifty cloud to be on.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9135</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a very scientific cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9131</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A happy, peaceful little cloud humming to itself.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9137</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9137</VNum>
+      <Name>Cold, damp cloud.</Name>
+      <Description>Your mood grows grumpy as you find yourself cold and wet from this
+dismal cloud.  You notice a rock outcropping above you.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9136</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is a pure white cloud east of you.  It is snowing!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9138</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9138</VNum>
+      <Name>Mysterious rock outcropping.</Name>
+      <Description>This rock outcropping just seems to hang in midair.  To the north
+you see a house and if you ease yourself down, you can land on a
+rather damp, dismal cloud.  The door to the house is closed.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9139</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Eerie looking house.</Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9137</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9139</VNum>
+      <Name>Foyer.</Name>
+      <Description>Shadows play tricks on your eyes.  Everytime you think you see
+something in a corner and turn to get a better look, nothing is
+there.  The place is very dark.  Even with a torch, you have
+trouble making out the room to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9140</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9138</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9140</VNum>
+      <Name>Tower.</Name>
+      <Description>You are in a musty old tower.  The smell of mold and mildew is
+almost overpowering.  You hear strange creaks and groans ... is it
+the wind or did someone (something?) make that noise.  To the west
+is the house and there is a stairway leading up into the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9139</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9141</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9141</VNum>
+      <Name>Witches Tower</Name>
+      <Description>Here you see strange things of arcane value.  There is a cauldron in the
+corner bubbling madly, belching a foul brew that must have come from hell.
+On shelves lie jars of strange creatures you have never seen before, or
+hope to again.  A picture of a familiar temple hangs on the east wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9140</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>picture</Keyword>
+          <Description>The picture is in on the east wall.  It is very complex in detail, and you
+almost see people walking around the temple in the picture.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>9142</VNum>
+      <Name>Suspicious little raincloud.</Name>
+      <Description>On second glance, this cloud doesn't seem much like a raincloud.
+A balloon sticks out of the top and you think you hear it humming
+something like, 'Tut, tut!  It looks like rain!'</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9143</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9132</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A bashful little cloud that tries to avoid your notice.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9143</VNum>
+      <Name>Cirrus maximus cloud.</Name>
+      <Description>This cloud looks like it is of the cirrus maximus genre of clouds.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9133</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The cloud to the east sneezes!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9142</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A suspicious little raincloud with a balloon.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9144</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9148</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9146</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9145</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9133</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a sneezy little cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9150</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9148</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9146</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9147</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9144</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9147</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9148</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9146</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9148</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9144</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9147</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9145</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9149</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9152</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9150</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9157</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see a cumulative nimbus cloud.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9150</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9151</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9145</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9149</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9151</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9150</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9152</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9152</VNum>
+      <Name>Raging hurricane.</Name>
+      <Description>You are buffeted and knocked about by the almost godlike strength
+of the raging hurricane.  It is hard to see and hear anything.
+Your only thought is to seek refuge from the storm.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9151</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9149</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9153</VNum>
+      <Name>Calm cloud.</Name>
+      <Description>This cloud is just outside the hurricane.  It looks like it might
+get sucked in, but you feel safe for the moment.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9154</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9152</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9154</VNum>
+      <Name>Mountainside.</Name>
+      <Description>You find yourself on the side of a huge granite mountain.  The air
+is quite thin so you know you are at a very high altitude.  There
+is no plant life beyond moss and lichen in this lonely, barren
+place.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9153</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9155</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9155</VNum>
+      <Name>Mountainside.</Name>
+      <Description>You find yourself on the side of a huge granite mountain.  The air
+is quite thin so you know you are at a very high altitude.  There
+is no plant life beyond moss and lichen in this lonely, barren
+place.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9154</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9156</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9156</VNum>
+      <Name>Roc's Nest.</Name>
+      <Description>You are standing in a nest.  It is huge, at least two spear-lengths
+wide.  You see three eggs in the center.  They are knee high, brown
+and look almost leathery.  Better hope mom isn't around!</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9155</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9157</VNum>
+      <Name>Cumulative nimbus cloud.</Name>
+      <Description>This cloud looks like it belongs to the phylum of cumulative nimbus clouds.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9159</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9158</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9149</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9158</VNum>
+      <Name>Dark hidden cloud.</Name>
+      <Description>This cloud looks like the perfect place to hide.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9157</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9159</VNum>
+      <Name>Yet another cloud</Name>
+      <Description>You find yourself in yet another cloud.  Will the madness never
+end?  There is a rope ladder leading up.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9157</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9160</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9160</VNum>
+      <Name>Front gate</Name>
+      <Description>There is a gate here.  It is huge, towering over you.  It creaks
+as it sways in the breeze.  To the south you see a huge lawn.
+There is a rope ladder leading down.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3256</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9161</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a huge lawn.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9159</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>There is a rope ladder leading down.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9161</VNum>
+      <Name>Lawn</Name>
+      <Description>The lawn seems to stretch and stretch to the south and to the west.
+North of you is a gate.  The grass is emerald green and luscious,
+obviously well cared for.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9160</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9163</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9162</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9162</VNum>
+      <Name>Croquet game</Name>
+      <Description>A croquet game has been set up and carelessly left out.  Who ever
+was playing blue was in the lead before they quit.  Benches have
+been set up for spectators and players to enjoy themselves.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9161</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9164</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9163</VNum>
+      <Name>Huge, gorgeous fountain.</Name>
+      <Description>An enormous golden fountain is here.  You see swans, angels,
+gryphons and a host of other creatures in the fountain.  The
+fountain empties into a huge pool that looks quite inviting.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9161</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9164</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9164</VNum>
+      <Name>Patio.</Name>
+      <Description>A huge patio overlooks the lawn area.  There are enough tables and
+chairs for a party of 100.  The tables and chairs are ornate and
+expensive, tasteful and elegant.  Stairs lead up to the main
+house.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9162</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9163</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9165</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9165</VNum>
+      <Name>Long stairway.</Name>
+      <Description>This stairway is suspended on clouds.  It leads from the house to
+the front lawn.  The banisters are made of ornate gold and silver
+inlays.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9166</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9164</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9166</VNum>
+      <Name>Front door</Name>
+      <Description>You stand at the front door of an immense, sprawling mansion made
+of granite and marble.  The door is at least 10 feet high and is
+made of oak.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9173</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9177</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see an ornate oak door.</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9167</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9165</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9167</VNum>
+      <Name>Lawn northwest of house.</Name>
+      <Description>You stand just outside the northwest corner of the house.  You try
+to peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9166</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9168</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9168</VNum>
+      <Name>Lawn west of house.</Name>
+      <Description>You stand just outside the west corner of the house.  You try to
+peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9167</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9169</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9169</VNum>
+      <Name>Lawn southwest of house.</Name>
+      <Description>You stand just outside the southwest corner of the house.  You try
+to peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9168</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9170</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9174</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9170</VNum>
+      <Name>Lawn south of house.</Name>
+      <Description>You stand just outside the south corner of the house.  You try to
+peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9171</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9169</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9171</VNum>
+      <Name>Lawn southeast of house.</Name>
+      <Description>You stand just outside the southeast corner of the house.  You try
+to peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9172</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9170</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9172</VNum>
+      <Name>Lawn east of house.</Name>
+      <Description>You stand just outside the east corner of the house.  You try to
+peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9173</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9171</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9173</VNum>
+      <Name>Lawn northeast of house.</Name>
+      <Description>You stand just outside the northeast corner of the house.  You try
+to peek in a window, but it is a little too high to see anything.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9172</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9166</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9174</VNum>
+      <Name>Dirty, dusty tunnel.</Name>
+      <Description>This dirty dusty tunnel must lead somewhere.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9175</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9169</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9175</VNum>
+      <Name>Basement.</Name>
+      <Description>This seems like your average basement.  Old Christmas decorations,
+suitcases, bicycles litter your way.  You hear the squeaking of
+rats in the corners.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9176</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9174</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9176</VNum>
+      <Name>Bottom of the stairs.</Name>
+      <Description>You stand at the bottom of a long staircase leading up to the main
+house.  To the south you can barely make out the accumulated
+clutter gathered throughout the years.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9175</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9177</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9177</VNum>
+      <Name>Foyer.</Name>
+      <Description>"Magnificent" does not even begin to describe the foyer.  Lavishly
+decorated, yet elegant, it gives an impression of indescribable
+wealth.  Paintings and tapestries line the walls depicting scenes
+from throughout history.  Antiques furnitures and oriental rugs are
+tastefully placed in ideal spots.  The door is at least 10 feet
+high and is made of oak.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9166</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see an ornate oak door.</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9183</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9178</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9176</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9178</VNum>
+      <Name>Elegant hallway.</Name>
+      <Description>You are in a long, sprawling hallway connecting the eastern and
+western wings of the house.  There are several chairs and sofas in
+the hallway and some gorgeous, handwoven drapes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9177</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9179</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9180</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9179</VNum>
+      <Name>Library</Name>
+      <Description>You are overwhelmed by the sheer volumes of books here.  The
+shelves stretch all the way to the ceiling and are on every wall,
+even above the doorway.  There are chairs for sitting and reading
+and a desk for more intense studies.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9178</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9180</VNum>
+      <Name>Arboretum.</Name>
+      <Description>A small indoor garden so that the residents don't have to go
+outside to enjoy plants and commune with nature.  There are several
+trees, a small pond and flowers of every kind.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9178</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9181</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9181</VNum>
+      <Name>Western tower.</Name>
+      <Description>You are in the bottom part of a tower.  A draft brings a chill to
+your spine and causes creaks and groans.  Curtains flutter in the
+wind, causing quite a distraction.  When you go to shut the window,
+you see that the window is closed.  An old, wooden staircase leads
+up into darkness.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9180</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9182</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9182</VNum>
+      <Name>Western tower.</Name>
+      <Description>The tower creaks and groans, almost as if it were muttering to
+itself.  There are windows displaying a full moon, reigning over
+the night sky.  The room is dark and there is almost a musty odor
+to it.  You are surprised that you can't detect any dust or dirt,
+although there are a couple of cobwebs in the corner.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9181</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9183</VNum>
+      <Name>Elegant hallway.</Name>
+      <Description>You are in a long, sprawling hallway connecting the eastern and
+western wings of the house.  There are several chairs and sofas in
+the hallway and some gorgeous, handwoven drapes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9185</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9184</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9177</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9184</VNum>
+      <Name>Conservatory</Name>
+      <Description>Here was the rehearsal and recital room for the residents of the
+estate.  There is a Steinway piano in the corner and various gilded
+instruments are on display in a glass cabinet.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9183</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9185</VNum>
+      <Name>Office</Name>
+      <Description>You find yourself in a lavish office.  The desk is absolutely huge,
+at least ten feet by five feet and made of ebony and inlaid with
+mother of pearl.  A grandfather clock towers over the room,
+mechanically ticking and tocking the hours away.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9186</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9183</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9186</VNum>
+      <Name>Eastern tower.</Name>
+      <Description>You are in the bottom part of a tower.  A draft brings a chill to
+your spine and causes creaks and groans.  Curtains flutter in the
+wind, causing quite a distraction.  When you go to shut the window,
+you see that the window is closed.  An old, wooden staircase leads
+up into darkness.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9185</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>9187</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9187</VNum>
+      <Name>Eastern tower.</Name>
+      <Description>The tower creaks and groans, almost as if it were muttering to
+itself.  There are windows displaying a full moon, reigning over
+the night sky.  The room is dark and there is almost a musty odor
+to it.  You are surprised that you can't detect any dust or dirt,
+although there are a couple of cobwebs in the corner.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>9186</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9199</VNum>
+      <Name>Mid-Air.</Name>
+      <Description>You slide down the moisture covered rock, gaining speed as you
+approach the cliff.  Realizing your foolish error, you madly claw
+at the rock, vainly trying to get a precious hold and save your
+worthless hide.  Next time, heed your conscience.
+You've fallen, and you can't get up!!!</Description>
+      <Sector>Field</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>9101</Vnum>
+      <name>harpy</name>
+      <description>The harpy looks at you with blood in her eyes.  Her entire body is
+caked in filth and grime and she stinks to high heaven.  Her razor-
+sharp talons flex as she considers you for her dinner.</description>
+      <longDescription>The screaming, filthy harpy claws madly at your face!</longDescription>
+      <shortDescription>the screaming, filthy harpy</shortDescription>
+      <Sex>Female</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1525</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9102</Vnum>
+      <name>harpy leader</name>
+      <description>The harpy leader looks at you and grins menacingly.  She stretches
+her wings and you see insects crawling around them.  Her hair is
+matted and greasy and you are sickened by the stench that pervades
+her presence.</description>
+      <longDescription>The screaming harpy leader tries to scratch your eyes out!</longDescription>
+      <shortDescription>the screaming harpy leader</shortDescription>
+      <Sex>Female</Sex>
+      <level>23</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>450</HitPointDiceBonus>
+      <ManaPointDiceSides>11</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>460</hitpoints>
+      <maxhitpoints>460</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-60</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-60</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>23</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2125</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9103</Vnum>
+      <name>air elemental</name>
+      <description>The air elemental is hard to see.  You know that it is there
+because objects behind it seem to waver and are slightly blurred.</description>
+      <longDescription>The ghostly air elemental.</longDescription>
+      <shortDescription>the ghostly air elemental</shortDescription>
+      <Sex>None</Sex>
+      <level>25</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>550</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>500</hitpoints>
+      <maxhitpoints>500</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>25</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9104</Vnum>
+      <name>mysterious efreeti</name>
+      <description>The efreeti towers menacingly over you.  It is dressed in the
+finest ghostly silks and a headdress with an elaborate brooch.</description>
+      <longDescription>The mysterious efreeti grins in delight at its new prey.</longDescription>
+      <shortDescription>the mysterious efreeti</shortDescription>
+      <Sex>None</Sex>
+      <level>27</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>650</HitPointDiceBonus>
+      <ManaPointDiceSides>13</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>540</hitpoints>
+      <maxhitpoints>540</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-80</ArmorBash>
+      <ArmorSlash>-80</ArmorSlash>
+      <ArmorPierce>-80</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>27</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sanctuary Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9105</Vnum>
+      <name>roc</name>
+      <description>This bird has a wingspan that stretches several spear-lengths.  It
+moves surprisingly fast for something of its size.</description>
+      <longDescription>The gigantic roc.</longDescription>
+      <shortDescription>the gigantic roc</shortDescription>
+      <Sex>Female</Sex>
+      <level>24</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>500</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>480</hitpoints>
+      <maxhitpoints>480</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-60</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-60</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>24</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9106</Vnum>
+      <name>roc</name>
+      <description>This bird has a wingspan that stretches several spear-lengths.  It
+moves surprisingly fast for something of its size.</description>
+      <longDescription>The gigantic roc stares menacingly at you.</longDescription>
+      <shortDescription>the gigantic roc</shortDescription>
+      <Sex>Male</Sex>
+      <level>28</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>703</HitPointDiceBonus>
+      <ManaPointDiceSides>14</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>560</hitpoints>
+      <maxhitpoints>560</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-80</ArmorBash>
+      <ArmorSlash>-80</ArmorSlash>
+      <ArmorPierce>-80</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>28</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9107</Vnum>
+      <name>wicked witch</name>
+      <description>The witch has jet black hair and sickly green skin.  She is covered
+with warts and boils.  Her nails are long and sharp and look like
+they would be quite painful.  Her eyes pierce your very soul.</description>
+      <longDescription>The ugly, wicked witch cackles maniacally.</longDescription>
+      <shortDescription>the ugly, wicked witch</shortDescription>
+      <Sex>Female</Sex>
+      <level>31</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>928</HitPointDiceBonus>
+      <ManaPointDiceSides>15</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>620</hitpoints>
+      <maxhitpoints>620</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>31</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>3000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>9</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>9101</VNum>
+      <Name>winged boots</Name>
+      <ShortDescription>a pair of winged boots</ShortDescription>
+      <LongDescription>A pair of winged boots flutters about</LongDescription>
+      <Description></Description>
+      <Level>13</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Feet</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Flying" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2800</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>3</ArmorBash>
+      <ArmorSlash>3</ArmorSlash>
+      <ArmorPierce>3</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>9102</VNum>
+      <Name>bronze bracer</Name>
+      <ShortDescription>A carved bronze bracer</ShortDescription>
+      <LongDescription>A carved bronze bracer lies here.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>820</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bronze</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>6</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>3</ArmorPierce>
+      <ArmorExotic>2</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>9103</VNum>
+      <Name>ornate brooch</Name>
+      <ShortDescription>an ornate brooch</ShortDescription>
+      <LongDescription>An ornate brooch was carelessly left here.</LongDescription>
+      <Description></Description>
+      <Level>7</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Invisibility</ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1140</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>9104</VNum>
+      <Name>magenta potion</Name>
+      <ShortDescription>magenta potion</ShortDescription>
+      <LongDescription>Bright magenta potion gathers dust.</LongDescription>
+      <Description></Description>
+      <Level>3</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>AntiGood</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="8" SpellName="armor" />
+        <Spell Level="8" SpellName="cure light" />
+        <Spell Level="8" SpellName="poison" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>320</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>9105</VNum>
+      <Name>ancient parchment</Name>
+      <ShortDescription>an ancient illustrated parchment</ShortDescription>
+      <LongDescription>An ancient illustrated parchment in the corner</LongDescription>
+      <Description></Description>
+      <Level>12</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Scroll</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="5" SpellName="blindness" />
+        <Spell Level="5" SpellName="curse" />
+        <Spell Level="5" SpellName="poison" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1330</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9102</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9102</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9105</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9105</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9108</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9108</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9108</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ghostly air elemental to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9109</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>9103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Narrow rocky trail.-->
+      <Type>NPC</Type>
+      <Destination>9112</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Narrow rocky trail.-->
+      <Type>NPC</Type>
+      <Destination>9112</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Steep mountainside.-->
+      <Type>NPC</Type>
+      <Destination>9117</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Treacherous Cliff.-->
+      <Type>NPC</Type>
+      <Destination>9119</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Treacherous Cliff.-->
+      <Type>NPC</Type>
+      <Destination>9119</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Treacherous Cliff.-->
+      <Type>NPC</Type>
+      <Destination>9119</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Dank, dark, smelly hole.-->
+      <Type>NPC</Type>
+      <Destination>9121</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Large, sturdy ledge.-->
+      <Type>NPC</Type>
+      <Destination>9122</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Large, sturdy ledge.-->
+      <Type>NPC</Type>
+      <Destination>9122</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming harpy leader to Absolutely disgusting lair.-->
+      <Type>NPC</Type>
+      <Destination>9123</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>9102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn magenta potion to the screaming harpy leader-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>9104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming harpy leader to Absolutely disgusting lair.-->
+      <Type>NPC</Type>
+      <Destination>9124</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>9102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ancient illustrated parchment to the screaming harpy leader-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>9105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9127</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9127</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
+      <Type>NPC</Type>
+      <Destination>9127</Destination>
+      <Count>3</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Sleepy little cloud.-->
+      <Type>NPC</Type>
+      <Destination>9129</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Happy little cloud.-->
+      <Type>NPC</Type>
+      <Destination>9131</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Sneezing little cloud.-->
+      <Type>NPC</Type>
+      <Destination>9133</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Doc-like little cloud.-->
+      <Type>NPC</Type>
+      <Destination>9135</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ghostly air elemental to Cold, damp cloud.-->
+      <Type>NPC</Type>
+      <Destination>9137</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>9103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ugly, wicked witch to Witches Tower-->
+      <Type>NPC</Type>
+      <Destination>9141</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>9107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9144</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9145</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9146</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9147</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ghostly air elemental to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9148</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>9103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9149</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9150</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9151</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
+      <Type>NPC</Type>
+      <Destination>9152</Destination>
+      <Count>1</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the gigantic roc to Calm cloud.-->
+      <Type>NPC</Type>
+      <Destination>9153</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>9106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the gigantic roc to Roc's Nest.-->
+      <Type>NPC</Type>
+      <Destination>9156</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>9105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Dark hidden cloud.-->
+      <Type>NPC</Type>
+      <Destination>9158</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Dark hidden cloud.-->
+      <Type>NPC</Type>
+      <Destination>9158</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Croquet game-->
+      <Type>NPC</Type>
+      <Destination>9162</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the screaming, filthy harpy to Croquet game-->
+      <Type>NPC</Type>
+      <Destination>9162</Destination>
+      <Count>2</Count>
+      <Max>35</Max>
+      <Vnum>9101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ghostly air elemental to Huge, gorgeous fountain.-->
+      <Type>NPC</Type>
+      <Destination>9163</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>9103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ghostly air elemental to Foyer.-->
+      <Type>NPC</Type>
+      <Destination>9177</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>9103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mysterious efreeti to Western tower.-->
+      <Type>NPC</Type>
+      <Destination>9182</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>9104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A carved bronze bracer to the mysterious efreeti-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>9102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mysterious efreeti to Eastern tower.-->
+      <Type>NPC</Type>
+      <Destination>9187</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>9104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ornate brooch to the mysterious efreeti-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>9103</Vnum>
+    </Reset>
+  </Resets>
+</Area>

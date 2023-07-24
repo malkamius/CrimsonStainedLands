@@ -1,0 +1,5068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Vestibule of the Kings</Name>
+    <Info></Info>
+    <VnumStart>30000</VnumStart>
+    <VnumEnd>30199</VnumEnd>
+    <Builders>Tholos Tholos Tholos</Builders>
+    <Security>0</Security>
+    <Credits>[ ALL ] Kylos          Vestibule</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>30000</VNum>
+      <Name>Before the Temple of the Ancients</Name>
+      <Description>A massive structure made of solid granite rises out of the mountains of the
+Crooked Teeth. Her jagged peaks loom high above you, deformed and twisted
+and covered in shimmering red snow, made thus by the strange darkened light
+of Orthos' two red-dwarf stars. No life breathes here and the cold stone is
+a reminder of the harsh environment and chilling embrace of this wilderness.
+The temple itself arches over one hundred feet into the air, its curved walls
+soaring up alongside the monumental cliffs surrounding it. Tattered banners
+hang from above a single massive open gateway leading into the sanctum. A
+strange, comforting warmth eminates from within its depths, promising shelter
+from the brutal wind and unforgiving hail and sleet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30001</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Massive steps ascend to a great gate, beckoning to you with its warmth.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>structure temple</Keyword>
+          <Description>A temple rises out of the mountains, set against the jagged peaks of the Crooked Teeth.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>banners</Keyword>
+          <Description>Dozens of worn, tattered banners blow wildly overhead. They seem to be in
+numerous colors and each bears a strange, ancient symbol of power.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>gate gateway</Keyword>
+          <Description>There is only one entrance into the Temple of the Ancients - a single,
+massive gateway which seems to have previously been sealed but now lay
+in ruins.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>30001</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. A small dais is raised against the
+western wall of this vast  cavern, with a large crate in front of it. Beneath
+you, a solid stone floor made of  perfectly smooth granite has been carved out
+of the mountain, clearly the work of  the dwarf-kin.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30002</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30000</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A massive gateway opens to descend down a long series of stone steps outside the temple.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30003</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>dais</Keyword>
+          <Description>This small platform sits just a foot or two above the ground, clearly made for speaking.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>30002</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin. A  makeshift forge has been set up against the
+northeastern corner, with a blasting fire  pit that roars monstrously. Above it,
+open vents collect the smoke and funnel them  through long metal tubes which
+lead straight precariously along the wall heading  to the south. Not too far
+from the forge, set against the northern wall is a small  crystal fountain with
+a jewel-encrusted basin brimming with water. Two dwarves dressed
+in the garb of warriors work the forge, toiling methodically together. In the
+very  center of the chamber, a massive yet headless statue stands erect.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30001</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30004</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>crystal fountain basin</Keyword>
+          <Description>Rising out of the center of the northern side of this luminous chamber,
+a beautifully-crafted fountain made of crystal protrudes perfectly from
+the glowing walls. There is no mouth from which water pours forth. Only
+a jewel-encrusted basin brimming with water from some unkown source
+beneath the mountains.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>hand</Keyword>
+          <Description>...The cloaked figure's hand points directly toward the fountain set against
+the wall of the chamber and as your eyes focus a little more clearly, you suddenly
+notice a perfectly hidden cube floating above the fountain...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>headless statue</Keyword>
+          <Description>...You stand directly underneath this massive statue carved from the single
+bone of a dragon. It bears the visage of a cloaked warrior, with the hilts
+of two blades portruding from his cloak. His head is missing, having been 
+sundered away long ago by some powerful force... You notice his left hand
+slipping out of his cloak... Something about the way his hand is pointing...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>forge fire pit</Keyword>
+          <Description>A makeshift forge has been established in this very unusual place on a
+seemingly permanent basis. Several dwarves gather around the forge,
+taking their turn at working with various precious metals.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>30003</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin. A  small crystal fountain with a jewel-encrusted basin
+brimming with water extends from  of the southern wall. A circle of small wooden
+tables are in the center of the chamber,  covered in ancient texts and various
+artifacts. Several wizards, along with a few  heavily armed men stand around
+them discussing various important matters amongst  themselves. Surrounded by the
+tables tables, standing erect in the middle of the  chamber for all to see is a
+monumental statue.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30001</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30008</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>crystal fountain basin</Keyword>
+          <Description>Rising out of the center of the southern side of this luminous chamber,
+a beautifully-crafted fountain made of crystal protrudes perfectly from
+the glowing walls. There is no mouth from which water pours forth. Only
+a jewel-encrusted basin brimming with water from some unkown source
+beneath the mountains.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>tables texts artifacts</Keyword>
+          <Description>A dozen square tables made of wood have been set into a circle in the wide open
+space of the luminous chamber. They're covered in a multitude of valuable texts
+and ancient artifacts, yet you cannot get close enough to them to have a decent
+look. The wizards and armed men who stand here hover too closely over their prized
+possessions...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>slender baton</Keyword>
+          <Description>...The weapon is carved perfectly from dragon bone. One can only surmise that the
+authentic one was quite blunt, indeed. Odd... You cannot approach the statue to look
+more closely but as you turn you notice that the baton points directly to the fountain
+set against the northern wall. As your eyes focus a little more clearly, you suddenly
+notice a perfectly hidden cube floating above the fountain...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>horn</Keyword>
+          <Description>...The tall man carved from bone holds one arm stretched out with a slender baton
+held in hand, the other is bent upwards with a long, slender horn pressed to his
+lips...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>statue</Keyword>
+          <Description>...You see a tall, slender man perfectly carved from the single giant bone of
+a dragon... One of the armed men cuts you off before you can approach the statue
+but you notice the man is holding a long, slender horn...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>30004</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin.  The sounds of music being played resonates from farther
+down the chamber, somewhere  to the west. To the east, you can hear the banging
+of hammers and the vigorous grunting  of a few dwarves. A group of men sit
+huddled against the southern, inner wall of the  antechamber, playing dice
+amongst themselves and bantering back and forth.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30002</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30005</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30005</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin.  Set against the northern wall is a small crystal
+fountain with a jewel-encrusted  basin brimming with water. The sounds of music
+being played resonates from farther  down the chamber, somewhere to the south.
+In the center of the chamber, a massive  replica carved from bone has been split
+in two. A slender, beautiful woman stands  beside a single oaken table near the
+statue, reading one of the many scrolls laying  upon it.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30004</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30006</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>guide</Keyword>
+          <Description>Manual Use Instructions:
+Typically, we Elfete have traveled among the stars with ease, from one world to
+another with just a thought. But as time wears on and our link to the Ancestors grows
+weaker, so do we. We have preserved some of our magic within our own descendants and
+even more so in the countless relics and artifacts, of which many of the Elfete have
+had to sacrifice their very lives to create or possess. Now, we use the Ancient Wells
+to travel great distances. Were the Drowiin to take control of one of these wells,
+all would be lost. They would hunt the Elfete and their descendants to extinction
+on every world. All of the relics and artifacts we have left behind can be used in
+some fashion to aid in our cause. One's understanding of an artifact could allow
+them to use it in one way, or to go to a particular place, while another's unique
+knowledge might allow them to access another power from it. On the other hand, some
+basic truths remain the same. You will have to discover these on your own, as it
+would take a whole lifetime to explain the full usage of a single relic.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>paper page images</Keyword>
+          <Description>... It is difficult to translate the runes but you can make a few out...
+The bloodscript describes a great war between the descendants of the Ancients
+and the dragons. It also describes a great holocaust of the Elfete by the hands
+of their cousins, the Drowiin and the treachery of the dragons against the Drowiin
+but only in brief detail... Whatever great mysteries are hidden in this bloodscript
+have been lost with time...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>letter delinah</Keyword>
+          <Description>...You flip the note to Delinah over and it reads,
+"Delinah,
+I know we have had our differences in the past
+but I would like for you to come home. Your
+family would like for you you to come home.
+We miss you. It has been six years since we
+have seen you and two since we have heard
+from you. Do not give your life for these...
+You know. When you have a life waiting for
+you here! Your son is nearly fifteen. He 
+speaks of you always. So do I. I still drink
+tea by the old cypress tree when the stars
+go down.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>pile notes letters</Keyword>
+          <Description>...One of the letters has a single word, 'Delinah' written on one side of it... Another piece of
+paper, the single page from what looks to be a series of images written in runic bloodscript lay
+near it as well as a small guide of significant interest...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>map</Keyword>
+          <Description>This roughly drawn map describes the temple which has been carved into the side of what are
+called the Mountains of the Crooked Teeth. It shows a large chamber being hollowed out and
+protected with magic, then a long shaft extending down from the center of that chamber into
+a great dwarven meeting hall of some kind. The area seems to me marked with tiny, festive
+dwarves in eternal celebration. To the east of that meeting hall, you see some sort of black
+circle with another black circle placed closer to the bottom of the map. This one leads down
+another dark shaft to a single large gate. Above it reads, 'The King's Labyrinth'</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>table</Keyword>
+          <Description>Ancient scrolls and vellum texts and even a few small books are scattered over this massive
+table made of oak. A map rests on the edge, folded open with tiny weights holding it at the
+corners. A small pile of notes and letters sits next to it.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>battleaxe king</Keyword>
+          <Description>...The King and his weapon alike are squared off toward the corner of the chamber.
+Toward the crystal fountain... As your eyes focus a little more clearly, you suddenly
+notice a perfectly hidden cube floating above the fountain...</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>bone replica statue</Keyword>
+          <Description>...You see a magnificent statue here, standing nearly seven feet tall and carved
+perfectly out of a single piece of dragon bone. It bears the liking of a great
+dwarven king, holding a massive two-handed battleaxe with both hands in a battle
+pose... Still standing, the statue has nonetheless been cut perfectly, from its
+left ear to the inside of its torso, as if by some magical razor-like force.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>crystal fountain basin</Keyword>
+          <Description>Rising out of the center of the northern side of this luminous chamber,
+a beautifully-crafted fountain made of crystal protrudes perfectly from
+the glowing walls. There is no mouth from which water pours forth. Only
+a jewel-encrusted basin brimming with water from some unkown source
+beneath the mountains.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>30006</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin.  The sounds of music being played resonates loudly from
+the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30005</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30010</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The chamber gives way to a spiral staircase.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30007</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30009</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30007</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>light fills this chamber, seemingly coming from the very walls themselves
+and it casts away every shadow therein. Somehow, the very stone itself seems
+to hum  with pulsating magic. Beneath you, a solid stone floor made of perfectly
+smooth   granite has been carved out of the mountain, clearly the work of the
+dwarf-kin. A  small crystal fountain with a jewel-encrusted basin brimming with
+water extends from  of the southern wall. The sounds of music being played
+resonates from farther down  the chamber, somewhere to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30006</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30008</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>crystal fountain basin</Keyword>
+          <Description>Rising out of the center of the southern side of this luminous chamber,
+a beautifully-crafted fountain made of crystal protrudes perfectly from
+the glowing walls. There is no mouth from which water pours forth. Only
+a jewel-encrusted basin brimming with water from some unkown source
+beneath the mountains.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>30008</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin.  The sounds of music being played resonates from farther
+down the chamber, somewhere  to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30003</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30007</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30009</VNum>
+      <Name>Within a Luminous Antechamber</Name>
+      <Description>Ambient light fills this chamber, seemingly coming from the very walls
+themselves  and it casts away every shadow therein. Somehow, the very stone
+itself seems to hum  with pulsating magic. Beneath you, a solid stone floor made
+of perfectly smooth   granite has been carved out of the mountain, clearly the
+work of the dwarf-kin.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30006</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The vast, luminous antechamber continues this way.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30010</VNum>
+      <Name>The Top of a Granite Cylinder</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30006</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30011</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30011</VNum>
+      <Name>Within a Spiral Passageway</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30010</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30012</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30012</VNum>
+      <Name>Within a Spiral Passageway</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30011</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30013</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30013</VNum>
+      <Name>Within a Spiral Passageway</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30012</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30014</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30014</VNum>
+      <Name>Within a Spiral Passageway</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30013</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30015</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30015</VNum>
+      <Name>At the Bottom of a Cylinder</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30032</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30016</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30014</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30016</VNum>
+      <Name>The Mouth of a Large Cavern</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30017</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30015</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30018</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30020</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30017</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30016</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30021</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30018</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30016</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30019</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30019</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30020</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30018</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30022</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30020</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30021</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30016</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30019</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30023</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30021</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30017</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30020</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30024</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30022</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30023</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30019</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30025</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30023</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30024</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30020</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30022</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30026</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30024</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30021</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30023</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30027</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30025</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30026</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30022</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30028</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30026</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30027</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30023</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30025</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30029</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30027</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30024</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30026</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30030</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30028</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30029</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30025</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30029</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30030</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30026</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30028</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30031</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30030</VNum>
+      <Name>The Hall of Kings</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30027</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30029</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30031</VNum>
+      <Name>Before a Shattered Throne</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30029</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30046</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30032</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30033</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30015</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30033</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30034</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30032</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30034</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30035</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30033</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30035</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30036</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30034</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30036</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30037</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30035</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30037</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30036</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30038</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30038</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30037</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30039</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30039</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30038</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30040</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30040</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30039</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30041</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30041</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30040</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30042</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30042</VNum>
+      <Name>A Dimly-lit, Scorched Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30043</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30041</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30043</VNum>
+      <Name>The End of a Dark Corridor</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30042</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30044</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30044</VNum>
+      <Name>Above the Well of the Ancients</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30043</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30045</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30045</VNum>
+      <Name>Before the Ancient Black Well</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30044</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30046</VNum>
+      <Name>A Narrow Shaft Beneath the Throne</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30031</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30047</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30047</VNum>
+      <Name>A Narrow Shaft Beneath the Throne</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30046</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30048</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30048</VNum>
+      <Name>A Damp Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30049</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30047</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30049</VNum>
+      <Name>A Damp Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30048</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30050</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30050</VNum>
+      <Name>A Damp Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30049</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30051</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30051</VNum>
+      <Name>A Damp Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30050</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30052</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30052</VNum>
+      <Name>A Damp Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30051</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30053</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30053</VNum>
+      <Name>A Slight Berth in the Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30054</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30052</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30054</VNum>
+      <Name>A Slight Berth in the Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30053</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30055</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30055</VNum>
+      <Name>A Slight Berth in the Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30054</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30056</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30056</VNum>
+      <Name>A Cramped Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30057</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30055</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30057</VNum>
+      <Name>A Cramped Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30056</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30058</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30058</VNum>
+      <Name>A Cramped Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30057</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30059</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30059</VNum>
+      <Name>A Cramped Underground Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30058</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30060</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30060</VNum>
+      <Name>Near a Collapsed Section in the Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30061</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30059</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30061</VNum>
+      <Name>Collapsed Part of the Tunnel</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30060</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30062</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30062</VNum>
+      <Name>Within a Large Cave</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30061</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30063</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30063</VNum>
+      <Name>Within a Large Cave</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30062</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30064</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30064</VNum>
+      <Name>Within a Large Cave</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30063</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30065</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30065</VNum>
+      <Name>The Mouth of a Large Cave</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30064</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30066</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30066</VNum>
+      <Name>Along the Edge of a Ravine</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30065</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30067</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30067</VNum>
+      <Name>A Narrow Trail Over the Rise</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30068</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30066</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30068</VNum>
+      <Name>Upon a Jagged Mountain Rise</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30069</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30067</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30069</VNum>
+      <Name>Atop the Small Plateau</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30068</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30070</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30070</VNum>
+      <Name>Upon a Jagged Mountain Rise</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30069</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30071</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30071</VNum>
+      <Name>A Narrow Trail Over the Rise</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30070</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30072</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30072</VNum>
+      <Name>A Narrow Trail Through the Mountains</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30073</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30071</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30073</VNum>
+      <Name>A Narrow Trail Through the Mountains</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30086</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30072</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30074</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30074</VNum>
+      <Name>A Narrow Trail Through the Mountains</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30073</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30075</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30075</VNum>
+      <Name>A Narrow Trail Through the Mountains</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30076</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30074</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30076</VNum>
+      <Name>Along the Edge of a Ravine</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30075</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30077</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30077</VNum>
+      <Name>Along the Edge of a Ravine</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30076</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30078</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30078</VNum>
+      <Name>Along the Edge of a Ravine</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30077</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30079</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30079</VNum>
+      <Name>Along the Edge of a Ravine</Name>
+      <Description></Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30080</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30078</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30080</VNum>
+      <Name>Rugged Trail through the Mountains</Name>
+      <Description>The jagged spikes of the Crooked Tooth mountains rise up thousands of
+feet into the air above you and plunges into a deep ravine to your south. 
+Their sharp ledges rise above you, covered in ice and snow.  You can make
+your way roughly along the trail, though this path is really just a series
+of connected, rugged footpaths used by the inhabitants of this range. 
+Bloodthirsty shrieks suddenly fill the air along the edge of the cliffs to
+the east of you, carried hauntingly by the wind which violently whips across
+the face of these mountains.  The way is treacherous, but you can see that
+the path continues up the mountain or south onto a sharp ledge over the
+cliffs.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30079</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30081</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30081</VNum>
+      <Name>Rugged Trail through the Mountains</Name>
+      <Description>The jagged spikes of the Crooked Tooth mountains rises up thousands of
+feet into the air above you and plunges into a deep ravine to your south. 
+Their sharp ledges rise above you, covered in ice and snow.  You can make
+your way roughly along the trail, though this path is really just a series
+of connected, rugged footpaths used by the inhabitants of this range.  The
+way is treacherous, but you can see that the path continues north or down
+into the ravine.  Bloodthirsty shrieks suddenly fill the air along the edge
+of the cliffs to the east of you, carried hauntingly by the wind which
+violently whips across the face of these mountains.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30082</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30080</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30082</VNum>
+      <Name>Rugged Trail through the Mountains</Name>
+      <Description>Bloodthirsty shrieks fill the air along the edge of the cliffs to the
+east of you, carried hauntingly by the wind which whips across the face of
+the Crooked Tooth Mountains.  Their jagged spikes rising thousands of feet
+into the air above you and plunging into a deep ravine to your south.  The
+way is treacherous, but you can see that the path continues up or south into
+the ravine.  Sharp ledges rise above you, covered in ice and snow.  You can
+make your way roughly along the trail, though this path is really just a
+series of connected, rugged footpaths used by the inhabitants of this range.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30081</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30083</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30083</VNum>
+      <Name>Rugged Trail through the Mountains</Name>
+      <Description>Sharp ledges rise above you, covered in ice and snow.  You can make your
+way roughly along the trail, which is really just a series of connected,
+rugged footpaths used by the inhabitants of this range.  Bloodthirsty
+shrieks fill the air along the edge of the cliffs to the east of you,
+carried hauntingly by the wind.  The winds howl and whip across the face of
+the mountains leering above you, twisted and jagged spikes rising thousands
+of feet into the air above you and plunging into a deep ravine to your
+south.  The way is treacherous, but you can see that the path continues west
+and down into the ravine.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>30084</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30082</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30084</VNum>
+      <Name>Rugged Trail through the Mountains</Name>
+      <Description>The winds howl and whip across the face of the mountains leering above
+you, twisted and jagged spikes rising thousands of feet into the air above
+you and plunging into a deep ravine to your south.  Sharp ledges rise above
+you, covered in ice and snow.  You can make your way roughly along the
+trail, which is really just a series of connected, rugged footpaths used by
+the inhabitants of this range.  Bloodthirsty shrieks fill the air along the
+edge of the cliffs to the east of you, carried hauntingly by the wind.  The
+way is treacherous, but you can see that the path begins to widen to the
+north of you and open up before a massive, stone stronghold.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30085</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>30083</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30085</VNum>
+      <Name>A Widening Path</Name>
+      <Description>The winds howl and whip across the face of the mountains leering above
+you, twisted and jagged spikes rising thousands of feet into the air above
+you and plunging into a deep ravine to your south.  A wide path has been
+carved out of the mountain itself to create more ease of travel, though the
+efforts have seemingly stopped here and the path grows wild as you peer
+southward.  Sharp ledges rise above you, covered in ice and snow.  The trail
+broadens to the north and the smell of burning wood and charred flesh
+emanates heavily from somewhere to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>31000</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30084</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30086</VNum>
+      <Name>A Sharply Rising Crevasse</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30073</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30087</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30087</VNum>
+      <Name>A Sharply Rising Crevasse</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>30088</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30086</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30088</VNum>
+      <Name>A Sharply Rising Crevasse</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>30089</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>30087</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30089</VNum>
+      <Name>Overlook Above the Crevasse</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>30088</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>30199</VNum>
+      <Name>A cluttered room</Name>
+      <Description>In the northern end of the room there are some chairs and a couch with pillows.
+There are a couple of spare blankets strewn about with more folded up next to
+the couch.  To the east is a green wall with a wooden door-frame which is offset
+to the right side.  The middle of the room has a long table going through it
+parallel to the north and south walls.  Light streams from two gloves which hang
+from chains that hang above the table, their source  of power unseen. There are
+nine wooden backed chairs placed about the table.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>30000</Vnum>
+      <name>stoic dwarf legionnaire guard</name>
+      <description>This well-armed dwarf stands at attention with his back straight, lance unmoving.
+His back toward the dais, he watches the Gateway with careful intent.
+His muscles thick and well-honed, he is clearly a veteran of warfare.</description>
+      <longDescription>A stoic dwarven legionnaire stands guard near the small dais.</longDescription>
+      <shortDescription>a dwarven legionnaire</shortDescription>
+      <Sex>Male</Sex>
+      <level>55</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>300</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-380</ArmorBash>
+      <ArmorSlash>-350</ArmorSlash>
+      <ArmorPierce>-390</ArmorPierce>
+      <ArmorExotic>-390</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>45</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea Practice</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>15</DamageDiceCount>
+      <DamageDiceBonus>30</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Programs>
+        <Program Name="SayHelloProg" />
+      </Programs>
+    </NPC>
+    <NPC>
+      <Vnum>30001</Vnum>
+      <name>aleneia woman elf elven sorceress</name>
+      <description></description>
+      <longDescription>A slender elven woman stands here, dressed in the garments of a sorceress.</longDescription>
+      <shortDescription>Aleneia, the elven sorceress</shortDescription>
+      <Sex>Female</Sex>
+      <level>54</level>
+      <HitPointDiceSides>9</HitPointDiceSides>
+      <HitPointDiceCount>160</HitPointDiceCount>
+      <HitPointDiceBonus>900</HitPointDiceBonus>
+      <ManaPointDiceSides>9</ManaPointDiceSides>
+      <ManaPointDiceCount>20</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-280</ArmorBash>
+      <ArmorSlash>-210</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-610</ArmorExotic>
+      <size>Medium</size>
+      <race>elf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>22</hitroll>
+      <damRoll>54</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared Sneak Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>9</DamageDiceSides>
+      <DamageDiceCount>17</DamageDiceCount>
+      <DamageDiceBonus>33</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>30002</Vnum>
+      <name>rotund dwarf dwarven Coragn</name>
+      <description></description>
+      <longDescription>A rotund dwarf stands here, hands on his hips.</longDescription>
+      <shortDescription>the dwarven healer named Coragn</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>9</HitPointDiceSides>
+      <HitPointDiceCount>160</HitPointDiceCount>
+      <HitPointDiceBonus>1300</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-390</ArmorBash>
+      <ArmorSlash>-340</ArmorSlash>
+      <ArmorPierce>-290</ArmorPierce>
+      <ArmorExotic>-220</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>22</hitroll>
+      <damRoll>54</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AreaAttack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>30003</Vnum>
+      <name>man mekantos master sorcerer</name>
+      <description></description>
+      <longDescription>A man is here, cloaked in numerous magical relics and clearly a master of his craft.</longDescription>
+      <shortDescription>Mekantos the Master of Sorcery</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>9</HitPointDiceSides>
+      <HitPointDiceCount>160</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-320</ArmorBash>
+      <ArmorSlash>-440</ArmorSlash>
+      <ArmorPierce>-410</ArmorPierce>
+      <ArmorExotic>-590</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>31</hitroll>
+      <damRoll>54</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>7</DamageDiceSides>
+      <DamageDiceCount>15</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>30004</Vnum>
+      <name>creature shadow lurker</name>
+      <description></description>
+      <longDescription>A creature lurks in the shadows, a menacing snarl on his lips.</longDescription>
+      <shortDescription>a thickly-furred shadow lurker</shortDescription>
+      <Sex>None</Sex>
+      <level>46</level>
+      <HitPointDiceSides>9</HitPointDiceSides>
+      <HitPointDiceCount>300</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>15</ManaPointDiceCount>
+      <ManaPointDiceBonus>25</ManaPointDiceBonus>
+      <hitpoints>920</hitpoints>
+      <maxhitpoints>920</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-330</ArmorBash>
+      <ArmorSlash>-330</ArmorSlash>
+      <ArmorPierce>-330</ArmorPierce>
+      <ArmorExotic>-330</ArmorExotic>
+      <size>Medium</size>
+      <race>wyvern</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>28</hitroll>
+      <damRoll>46</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>11</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="bash" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>30005</Vnum>
+      <name>scarred dwarf Yaofhil</name>
+      <description></description>
+      <longDescription>A scarred and badly-burned dwarf stands over the forge, a pair of tongs in his hands.</longDescription>
+      <shortDescription>Yaofhil BurntStones</shortDescription>
+      <Sex>None</Sex>
+      <level>55</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>230</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-510</ArmorBash>
+      <ArmorSlash>-480</ArmorSlash>
+      <ArmorPierce>-550</ArmorPierce>
+      <ArmorExotic>-440</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>51</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>18</DamageDiceCount>
+      <DamageDiceBonus>35</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>30006</Vnum>
+      <name>man mekantos master sorcerer</name>
+      <description></description>
+      <longDescription>A man is here, cloaked in numerous magical relics and clearly a master of his craft.</longDescription>
+      <shortDescription>Mekantos the Master of Sorcery</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>9</HitPointDiceSides>
+      <HitPointDiceCount>160</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-320</ArmorBash>
+      <ArmorSlash>-440</ArmorSlash>
+      <ArmorPierce>-410</ArmorPierce>
+      <ArmorExotic>-590</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>31</hitroll>
+      <damRoll>54</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>7</DamageDiceSides>
+      <DamageDiceCount>15</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>30007</Vnum>
+      <name>man mekantos master sorcerer</name>
+      <description></description>
+      <longDescription>A man is here, cloaked in numerous magical relics and clearly a master of his craft.</longDescription>
+      <shortDescription>Mekantos the Master of Sorcery</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>9</HitPointDiceSides>
+      <HitPointDiceCount>160</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-320</ArmorBash>
+      <ArmorSlash>-440</ArmorSlash>
+      <ArmorPierce>-410</ArmorPierce>
+      <ArmorExotic>-590</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>31</hitroll>
+      <damRoll>54</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>7</DamageDiceSides>
+      <DamageDiceCount>15</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>30008</Vnum>
+      <name>hook mawed brown wyvern</name>
+      <description></description>
+      <longDescription>A brown, hook-mawed wyvern shrieks fiercely from her perch on a jutting rock.</longDescription>
+      <shortDescription>a hook-mawed wyvern</shortDescription>
+      <Sex>Female</Sex>
+      <level>45</level>
+      <HitPointDiceSides>7</HitPointDiceSides>
+      <HitPointDiceCount>180</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>wyvern</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>33</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>11</DamageDiceSides>
+      <DamageDiceCount>18</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="bash" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>30009</Vnum>
+      <name>dirty wyvern</name>
+      <description>A shrieking, angry wyvern mother snarls viciously and bares her teeth
+to reveal great fangs, curved into forty razor-sharp blades.
+This tiny creature would be harmless on its own... But the sound of shrieking resonates
+here along the edge of the mountains of the Crooked Teeth. It will either run or it will
+have to be put down. Its vicious snarl leaves no mistake as to its intent.</description>
+      <longDescription>Hissing in confusion, a dirty wyvern grunts as he scurries along the trail.</longDescription>
+      <shortDescription>a dirty, young wyvern</shortDescription>
+      <Sex>None</Sex>
+      <level>44</level>
+      <HitPointDiceSides>7</HitPointDiceSides>
+      <HitPointDiceCount>180</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>880</hitpoints>
+      <maxhitpoints>880</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>190</ArmorBash>
+      <ArmorSlash>190</ArmorSlash>
+      <ArmorPierce>190</ArmorPierce>
+      <ArmorExotic>190</ArmorExotic>
+      <size>Medium</size>
+      <race>wyvern</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>33</hitroll>
+      <damRoll>44</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>7</DamageDiceSides>
+      <DamageDiceCount>21</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="bash" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>30010</Vnum>
+      <name>hulking massive Yeti</name>
+      <description>Taking up most of the space in this small cave, this hulking, hairy beast
+snarls menacing, its chin dripping with bile and spittle.  With claws the
+size of giant clubs, appears to mean harm to any who dare trespass.</description>
+      <longDescription>Gargantuan in size, this hulking yeti glares angrily as it struggles to move freely in the cave.</longDescription>
+      <shortDescription>a massive yeti</shortDescription>
+      <Sex>Male</Sex>
+      <level>48</level>
+      <HitPointDiceSides>7</HitPointDiceSides>
+      <HitPointDiceCount>180</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>960</hitpoints>
+      <maxhitpoints>960</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>230</ArmorBash>
+      <ArmorSlash>230</ArmorSlash>
+      <ArmorPierce>230</ArmorPierce>
+      <ArmorExotic>230</ArmorExotic>
+      <size>Medium</size>
+      <race>giant</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>33</hitroll>
+      <damRoll>48</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DarkVision Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>11</DamageDiceSides>
+      <DamageDiceCount>18</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>30000</VNum>
+      <Name>long titanium lance shaft</Name>
+      <ShortDescription>a long titanium lance tipped with hematite</ShortDescription>
+      <LongDescription>A long titanium shaft tipped with hematite lies here.</LongDescription>
+      <Description></Description>
+      <Level>53</Level>
+      <WeaponDamageType>thrust</WeaponDamageType>
+      <WeaponType>Polearm</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>8</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>2.7</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Unholy TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>titanium</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30001</VNum>
+      <Name>large wooden crate</Name>
+      <ShortDescription>an intricately-carved wooden crate</ShortDescription>
+      <LongDescription>An intricately-carved wooden crate sits in front of the small dais.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>NoSac</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>wooden crate</Keyword>
+          <Description>A large wooden crate rests in front of the small dais,
+holding several interesting trinkets of seemingly
+considerable value. The markings on its surface are
+intricate and seemingly fashioned by a master craftsman.
+Humming with power, one can only wonder what's inside...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>30002</VNum>
+      <Name>carved bone drake chipped</Name>
+      <ShortDescription>ornately-carved bone of a drake</ShortDescription>
+      <LongDescription>An ornately-carved, chipped bone of a drake is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="45" SpellName="sanctuary" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>4</Charges>
+      <MaxCharges>4</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30003</VNum>
+      <Name>ram figurine</Name>
+      <ShortDescription>the figurine of a ram</ShortDescription>
+      <LongDescription>A figurine of a ram sits here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="45" SpellName="sanctuary" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>4</Charges>
+      <MaxCharges>4</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30005</VNum>
+      <Name>animated quiet sign</Name>
+      <ShortDescription>an animated quiet sign</ShortDescription>
+      <LongDescription>A sign is here warning you to be quiet.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30007</VNum>
+      <Name>everfull skin</Name>
+      <ShortDescription>an everfull skin</ShortDescription>
+      <LongDescription>An everfull skin is here.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>48</Nutrition>
+      <Liquid>water</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>everfull skin</Keyword>
+          <Description>This skin seems to be quite full!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>30008</VNum>
+      <Name>hidden cube</Name>
+      <ShortDescription>a perfect cube, humming with magic</ShortDescription>
+      <LongDescription></LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>NoSac</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>magic</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>hidden cube</Keyword>
+          <Description>... Your eyes have trouble focusing on this magically vibrating cube as it comes
+in and out of focus above the fountain...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>30009</VNum>
+      <Name>ring slender titanium</Name>
+      <ShortDescription>a slender, titanium ring</ShortDescription>
+      <LongDescription>A perfectly-carved, slender ring made of titanium is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingRod" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>titanium</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>12</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30010</VNum>
+      <Name>mantle red stole</Name>
+      <ShortDescription>a cloth mantle with a blood-red stole</ShortDescription>
+      <LongDescription>A pile of cloth with a red stole is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-1</ArmorBash>
+      <ArmorSlash>-9</ArmorSlash>
+      <ArmorPierce>-6</ArmorPierce>
+      <ArmorExotic>-14</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30011</VNum>
+      <Name>plate breastplate black enamel</Name>
+      <ShortDescription>a breastplate made of black enamel</ShortDescription>
+      <LongDescription>A breastplate made entirely of black enamel is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1.8</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="33" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-14</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-19</ArmorPierce>
+      <ArmorExotic>-9</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30012</VNum>
+      <Name>silver helm visor</Name>
+      <ShortDescription>a silver helm with a single visor</ShortDescription>
+      <LongDescription>A shiny silver helm with a single visor is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.9</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-18</ArmorBash>
+      <ArmorSlash>-15</ArmorSlash>
+      <ArmorPierce>-14</ArmorPierce>
+      <ArmorExotic>-18</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30013</VNum>
+      <Name>silver plated leggings</Name>
+      <ShortDescription>a pair of silver-plated leggings</ShortDescription>
+      <LongDescription>A pristine pair of silver-plated leggings are here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.9</Weight>
+      <WearFlags>Take Legs</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-14</ArmorBash>
+      <ArmorSlash>-18</ArmorSlash>
+      <ArmorPierce>-17</ArmorPierce>
+      <ArmorExotic>-11</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30014</VNum>
+      <Name>silver plated sleeves</Name>
+      <ShortDescription>a pair of silver-plated sleeves</ShortDescription>
+      <LongDescription>A radiant pair of silver-plated sleeves is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.6</Weight>
+      <WearFlags>Take Arms</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-12</ArmorBash>
+      <ArmorSlash>-19</ArmorSlash>
+      <ArmorPierce>-21</ArmorPierce>
+      <ArmorExotic>-10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30015</VNum>
+      <Name>gauntlets woven steel fabric</Name>
+      <ShortDescription>gauntlets made of woven-steel fabric</ShortDescription>
+      <LongDescription>A pair of gauntlets made from woven-steel fabric are here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1.1</Weight>
+      <WearFlags>Take Hands</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-15</ArmorBash>
+      <ArmorSlash>-14</ArmorSlash>
+      <ArmorPierce>-11</ArmorPierce>
+      <ArmorExotic>-29</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30016</VNum>
+      <Name>black leather boots</Name>
+      <ShortDescription>black-plated, leather-hide boots</ShortDescription>
+      <LongDescription>Some black-plated, leather-hide boots are here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.7</Weight>
+      <WearFlags>Take Feet</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="78" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="41" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-9</ArmorBash>
+      <ArmorSlash>-13</ArmorSlash>
+      <ArmorPierce>-13</ArmorPierce>
+      <ArmorExotic>-15</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30017</VNum>
+      <Name>bracer onyx</Name>
+      <ShortDescription>a battle-worn bracer clasped in onyx</ShortDescription>
+      <LongDescription>A bracer bound in onyx is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>onyx</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-9</ArmorBash>
+      <ArmorSlash>-9</ArmorSlash>
+      <ArmorPierce>-8</ArmorPierce>
+      <ArmorExotic>-6</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30018</VNum>
+      <Name>girth woven steel fabric</Name>
+      <ShortDescription>girth made of woven-steel fabric</ShortDescription>
+      <LongDescription>A girth made of woven-steel is here, its fabric vibrating.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.7</Weight>
+      <WearFlags>Take Waist</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-14</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-16</ArmorPierce>
+      <ArmorExotic>-28</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30019</VNum>
+      <Name>blood red leather cloak</Name>
+      <ShortDescription>a flowing, blood-red leather cloak</ShortDescription>
+      <LongDescription>A long blood-red leather cloak is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-17" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-22</ArmorBash>
+      <ArmorSlash>-9</ArmorSlash>
+      <ArmorPierce>-6</ArmorPierce>
+      <ArmorExotic>-13</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30020</VNum>
+      <Name>cobbled stone black well</Name>
+      <ShortDescription>the Black Well</ShortDescription>
+      <LongDescription>A black well, made of cobbled stone and mortar is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>50</Weight>
+      <WearFlags>NoSac</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Portal</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>cobbled stone black well mortar</Keyword>
+          <Description>Cobbled stone and mortar has been formed three feet high,
+into a perfect, circular well with shimmering black waters...
+A small inscription has been carved into a base board near the
+front of the well's structure.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>inscription</Keyword>
+          <Description>'Do not fear that which you cannot understand. Use it.'</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>30021</VNum>
+      <Name>robes sentinel wizard</Name>
+      <ShortDescription>robes of the Sentinel Wizard</ShortDescription>
+      <LongDescription>A pair of long, flowing robes lay here, shimmering with divine radiance.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="800" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>300</ArmorBash>
+      <ArmorSlash>300</ArmorSlash>
+      <ArmorPierce>300</ArmorPierce>
+      <ArmorExotic>300</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>robes sentinel wizard</Keyword>
+          <Description>These robes, woven with a fabric not known to the world of Orthos, shine in magnificent splendor.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>30022</VNum>
+      <Name>huge glass bong</Name>
+      <ShortDescription>a huge glass bong, named 'Batman'</ShortDescription>
+      <LongDescription>A huge, intricately blown glass bong lies here on the ground.</LongDescription>
+      <Description></Description>
+      <Level>55</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.6</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30023</VNum>
+      <Name>no name</Name>
+      <ShortDescription>(no short description)</ShortDescription>
+      <LongDescription>(no description)</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30050</VNum>
+      <Name>breastplate runes</Name>
+      <ShortDescription>woven-steel breastplate etched with gilded runes</ShortDescription>
+      <LongDescription>A woven-steel breastplate lay discarded here.</LongDescription>
+      <Description></Description>
+      <Level>47</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1.1</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="4" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-22</ArmorBash>
+      <ArmorSlash>-29</ArmorSlash>
+      <ArmorPierce>-26</ArmorPierce>
+      <ArmorExotic>-22</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30051</VNum>
+      <Name>magical chest</Name>
+      <ShortDescription>a magical chest</ShortDescription>
+      <LongDescription>There is a magical chest in the corner.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Closeable</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>energy</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a dwarven legionnaire to Within a Luminous Antechamber-->
+      <Type>NPC</Type>
+      <Destination>30001</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a long titanium lance tipped with hematite to a dwarven legionnaire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>30000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an intricately-carved wooden crate to Within a Luminous Antechamber-->
+      <Type>Item</Type>
+      <Destination>30001</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn ornately-carved bone of a drake to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>30002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the figurine of a ram to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>30003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a perfect cube, humming with magic to Within a Luminous Antechamber-->
+      <Type>Item</Type>
+      <Destination>30002</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Yaofhil BurntStones to Within a Luminous Antechamber-->
+      <Type>NPC</Type>
+      <Destination>30002</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn woven-steel breastplate etched with gilded runes to Yaofhil BurntStones-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>30050</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Aleneia, the elven sorceress to Within a Luminous Antechamber-->
+      <Type>NPC</Type>
+      <Destination>30003</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven healer named Coragn to Within a Luminous Antechamber-->
+      <Type>NPC</Type>
+      <Destination>30003</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Mekantos the Master of Sorcery to Within a Luminous Antechamber-->
+      <Type>NPC</Type>
+      <Destination>30003</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a perfect cube, humming with magic to Within a Luminous Antechamber-->
+      <Type>Item</Type>
+      <Destination>30003</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a perfect cube, humming with magic to Within a Luminous Antechamber-->
+      <Type>Item</Type>
+      <Destination>30005</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a perfect cube, humming with magic to Within a Luminous Antechamber-->
+      <Type>Item</Type>
+      <Destination>30007</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to The Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>30021</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to The Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>30023</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to The Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>30027</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to The Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>30028</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to The Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>30029</Destination>
+      <Count>2</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to Before a Shattered Throne-->
+      <Type>NPC</Type>
+      <Destination>30031</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Black Well to Before the Ancient Black Well-->
+      <Type>Item</Type>
+      <Destination>30045</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30020</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Black Well to Before the Ancient Black Well-->
+      <Type>Item</Type>
+      <Destination>30045</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>30020</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a thickly-furred shadow lurker to A Narrow Shaft Beneath the Throne-->
+      <Type>NPC</Type>
+      <Destination>30047</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>30004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a massive yeti to Within a Large Cave-->
+      <Type>NPC</Type>
+      <Destination>30063</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30066</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to A Narrow Trail Over the Rise-->
+      <Type>NPC</Type>
+      <Destination>30067</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to A Narrow Trail Over the Rise-->
+      <Type>NPC</Type>
+      <Destination>30067</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to A Narrow Trail Over the Rise-->
+      <Type>NPC</Type>
+      <Destination>30067</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to Upon a Jagged Mountain Rise-->
+      <Type>NPC</Type>
+      <Destination>30068</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Atop the Small Plateau-->
+      <Type>NPC</Type>
+      <Destination>30069</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Atop the Small Plateau-->
+      <Type>NPC</Type>
+      <Destination>30069</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Atop the Small Plateau-->
+      <Type>NPC</Type>
+      <Destination>30069</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Atop the Small Plateau-->
+      <Type>NPC</Type>
+      <Destination>30069</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to Atop the Small Plateau-->
+      <Type>NPC</Type>
+      <Destination>30069</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to A Narrow Trail Through the Mountains-->
+      <Type>NPC</Type>
+      <Destination>30073</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to A Narrow Trail Through the Mountains-->
+      <Type>NPC</Type>
+      <Destination>30073</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to A Narrow Trail Through the Mountains-->
+      <Type>NPC</Type>
+      <Destination>30073</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to A Narrow Trail Through the Mountains-->
+      <Type>NPC</Type>
+      <Destination>30073</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to A Narrow Trail Through the Mountains-->
+      <Type>NPC</Type>
+      <Destination>30074</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30076</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30077</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30077</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30078</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30079</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dirty, young wyvern to Along the Edge of a Ravine-->
+      <Type>NPC</Type>
+      <Destination>30079</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>30009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hook-mawed wyvern to Rugged Trail through the Mountains-->
+      <Type>NPC</Type>
+      <Destination>30080</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>30008</Vnum>
+    </Reset>
+  </Resets>
+  <Quests>
+    <Quest Vnum="30000">
+      <Name>say_hello</Name>
+      <Display>Say Hello</Display>
+      <ShortDescription></ShortDescription>
+      <Description>Go to the dwarven legionnaire, respond with 'Hello'</Description>
+      <StartLevel>0</StartLevel>
+      <EndLevel>60</EndLevel>
+      <RewardXp>1000</RewardXp>
+      <RewardGold>0</RewardGold>
+      <ShowInQuests>true</ShowInQuests>
+    </Quest>
+  </Quests>
+</Area>

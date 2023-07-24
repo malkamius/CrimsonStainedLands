@@ -1,0 +1,1256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Troll Den</Name>
+    <Info></Info>
+    <VnumStart>2800</VnumStart>
+    <VnumEnd>2899</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{10 15} Merc    Troll Den</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>2801</VNum>
+      <Name>A Troll Wastedump</Name>
+      <Description>This room is filled with bone shards and fragments.  Something (or things)
+very big lives here.  A small plaque is on the wall.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2806</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2803</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You find the stench is stronger inside.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>plaque</Keyword>
+          <Description>This zone (trollden) is created by MERC for any MERC Mud.
+copyright 1992</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2802</VNum>
+      <Name>Troll's Larder</Name>
+      <Description>This room has blood and grime all over the walls.  You see maggots and other
+insects crawling up them.  The resident is definitely uncivilized.  Half-eaten
+and rotting body parts scatter the floor, each having its own colony of flies,
+worms, and maggots.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2803</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You welcome the fresh breeze coming from the east, but wrinkle your nose when
+ the stench bears down on you once more.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>18197</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>Half-eaten body rotting corpse</Keyword>
+          <Description>YUCK!  You find worms crawling in and out this poor unfortunate former human.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2803</VNum>
+      <Name>Troll's Living Room</Name>
+      <Description>This small cave opens to the north, south, east, and west.  You are
+overcome by the stench and consider turning around.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2801</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>There is a trail of bone shards and fragments leading north.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2804</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Good God!  You spy corpses all over the floor in there.  It looks like a
+ virtual graveyard in there.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2805</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Whoa!  You reel back from the stench.  You believe you have found the source
+ of this bad smell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2802</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You puke as you watch worms crawl between this room and the room west of here
+ as they bore new holes into a corpse laying on the far wall of the west room.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2804</VNum>
+      <Name>The Playpen</Name>
+      <Description>The walls are covered with blood (and body parts!?!?).  Plastered on the far
+wall you see what looks like a human arm.  A half-eaten body lies here with
+its chest ripped out.  The predator seems disinterested in it.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2803</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You welcome the fresh breeze coming from the west, but wrinkle your nose when
+ the stench bears down on you once more.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>arm rotting</Keyword>
+          <Description>This reminds you of what a baby would do to its formula during dinnertime,
+plastering it on the wall.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2805</VNum>
+      <Name>Troll's Bedroom</Name>
+      <Description>Obviously something REALLY big lives here.  The stench is quite unbearable.
+There are piles and piles of rotten and half-eaten body parts of animals,
+orcs, (and humans?) strewn across the floor.  There is a larger, more
+prominent pile of rotten parts over in a corner.  It seems to have been
+flattened by something.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2803</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You welcome the fresh breeze coming from the north, but wrinkle your nose when
+ the stench bears down on you once more.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2806</VNum>
+      <Name>A Troll Wastedump</Name>
+      <Description>The walls are slick with putrid slime, and the floor is littered with refuse and rotting carcasses. The air is thick with the heavy breathing of the trolls who dwell within, their musky scent mixing with the noxious odors of the den. As you move forward, the darkness envelops you, broken only by the occasional dim light of fungus growing on the walls. The narrow passageway twists and turns, the ceiling sometimes so low that you have to crouch to avoid hitting your head. The deeper you go, the more the smells and sounds intensify.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2807</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2801</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2807</VNum>
+      <Name>A Troll Wastedump</Name>
+      <Description>The walls are slick with putrid slime, and the floor is littered with refuse and rotting carcasses. The air is thick with the heavy breathing of the trolls who dwell within, their musky scent mixing with the noxious odors of the den. As you move forward, the darkness envelops you, broken only by the occasional dim light of fungus growing on the walls. The narrow passageway twists and turns, the ceiling sometimes so low that you have to crouch to avoid hitting your head. The deeper you go, the more the smells and sounds intensify.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2808</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2806</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2808</VNum>
+      <Name>A Troll Wastedump</Name>
+      <Description>The walls are slick with putrid slime, and the floor is littered with refuse and rotting carcasses. The air is thick with the heavy breathing of the trolls who dwell within, their musky scent mixing with the noxious odors of the den. As you move forward, the darkness envelops you, broken only by the occasional dim light of fungus growing on the walls. The narrow passageway twists and turns, the ceiling sometimes so low that you have to crouch to avoid hitting your head. The deeper you go, the more the smells and sounds intensify.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2809</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2807</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2809</VNum>
+      <Name>Entrance to a Stinking Troll Den</Name>
+      <Description>You step into the tunnel, and the first thing that hits you is the stench of decay and filth. The walls are slick with putrid slime, and the floor is littered with refuse and rotting carcasses. The air is thick with the heavy breathing of the trolls who dwell within, their musky scent mixing with the noxious odors of the den. As you move forward, the darkness envelops you, broken only by the occasional dim light of fungus growing on the walls. The narrow passageway twists and turns, the ceiling sometimes so low that you have to crouch to avoid hitting your head. The deeper you go, the more the smells and sounds intensify.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>40621</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2808</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>2800</Vnum>
+      <name>oldstyle guardian beast</name>
+      <description>Jet black fur covers this beast.  You stare at his two huge red eyes.  You can
+count at least 50 teeth on this monster.  You can't tell whether it is blood or
+saliva dripping from the beast's jaw.  The guardian beast snarls again.</description>
+      <longDescription>A guardian beast stares at you and snarls in rage.</longDescription>
+      <shortDescription>the guardian beast</shortDescription>
+      <Sex>Male</Sex>
+      <level>7</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>85</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>140</hitpoints>
+      <maxhitpoints>140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>7</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2801</Vnum>
+      <name>oldstyle young troll</name>
+      <description>He is a tall, wiry, furry humanoid.
+Your eyes lock with his.  He smiles, puts down his bone, and reaches for one
+of yours!!</description>
+      <longDescription>A young troll is sitting down, chewing on a bone.</longDescription>
+      <shortDescription>the young troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>25</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2802</Vnum>
+      <name>oldstyle medium troll</name>
+      <description>He is a tall, lean, furry humanoid.
+He is busy licking the ticks off of his beast.
+His eyes dart toward you, as he realizes you are one third his size.</description>
+      <longDescription>A troll is grooming his pet, a guardian beast.</longDescription>
+      <shortDescription>the medium troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>75</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2803</Vnum>
+      <name>oldstyle baby troll</name>
+      <description>He is a large, chubby, furry humanoid.
+He is trying to stuff an arm in a hole in the wall.
+He notices you and gargles "WANNA JOIN?".</description>
+      <longDescription>A baby troll is playing Doctor with a cadaver.</longDescription>
+      <shortDescription>a baby troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>5</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>60</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>100</hitpoints>
+      <maxhitpoints>100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>50</ArmorBash>
+      <ArmorSlash>50</ArmorSlash>
+      <ArmorPierce>50</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>12</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2804</Vnum>
+      <name>oldstyle giant troll</name>
+      <description>He is a gigantic, muscular, furry humanoid.
+He gasps as he notices your intrusion.
+You gasp as you realize you have intruded upon his acts of passion!</description>
+      <longDescription>A giant troll is lying on a pile of carnage, pleasing his mistress.</longDescription>
+      <shortDescription>the giant troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>13</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>170</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>260</hitpoints>
+      <maxhitpoints>260</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>13</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>150</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2805</Vnum>
+      <name>oldstyle large troll female</name>
+      <description>She is a huge, grotesque, furry humanoid.
+She moans in passion but gasps as she notices you.
+Her smiles turn into snarls as she screams at you!</description>
+      <longDescription>A large female troll is lying on the pile of carnage, blissfully writhing.</longDescription>
+      <shortDescription>the large female troll</shortDescription>
+      <Sex>Female</Sex>
+      <level>11</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>8</HitPointDiceCount>
+      <HitPointDiceBonus>134</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>220</hitpoints>
+      <maxhitpoints>220</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>11</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>125</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2806</Vnum>
+      <name>oldstyle fat worm</name>
+      <description>It is thick and long.  You can't find a head on this thing.
+It moves quickly, from corpse to corpse.</description>
+      <longDescription>A fat worm scurries around, looking for food.</longDescription>
+      <shortDescription>a fat worm</shortDescription>
+      <Sex>None</Sex>
+      <level>3</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>35</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>60</hitpoints>
+      <maxhitpoints>60</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>70</ArmorBash>
+      <ArmorSlash>70</ArmorSlash>
+      <ArmorPierce>70</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>3</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive Wimpy AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2807</Vnum>
+      <name>oldstyle roving beast</name>
+      <description>Jet black fur covers this beast.
+You stare at his two huge red eyes.  You can count at least 50 teeth on this
+beast.  You can't tell whether it is blood or saliva dripping from the beast's
+jaw.  The roving beast snarls at you.</description>
+      <longDescription>A roving beast is searching for prey.</longDescription>
+      <shortDescription>the roving beast</shortDescription>
+      <Sex>Male</Sex>
+      <level>7</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>85</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>140</hitpoints>
+      <maxhitpoints>140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>7</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2808</Vnum>
+      <name>oldstyle medium troll</name>
+      <description>He is a tall, lean, furry humanoid.
+He notices you, and is satisfied to find what he is looking for.
+He advances toward you.</description>
+      <longDescription>A troll is wandering around, attending to his duties.</longDescription>
+      <shortDescription>the medium troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>75</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>2800</VNum>
+      <Name>corpse cadaver</Name>
+      <ShortDescription>the cadaver-toy</ShortDescription>
+      <LongDescription>A half eaten corpse is laying here</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>50</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2801</VNum>
+      <Name>pile rotting heap bed</Name>
+      <ShortDescription>the heap of carnage</ShortDescription>
+      <LongDescription>There is a bed made of carnage here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2802</VNum>
+      <Name>trollskin troll skin</Name>
+      <ShortDescription>the troll skin</ShortDescription>
+      <LongDescription>The filthy hide of a beast is laying here.</LongDescription>
+      <Description></Description>
+      <Level>12</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1380</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>troll skin</Keyword>
+          <Description>This is the skin from a huge (and dead) beast.  It looks bad, smells bad,
+and feels bad.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>2803</VNum>
+      <Name>ring opal</Name>
+      <ShortDescription>an opal ring</ShortDescription>
+      <LongDescription>A ring of black opal lies here gathering dust.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1150</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>ring opal</Keyword>
+          <Description>It is a full circle of opal, smooth and simple.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>2804</VNum>
+      <Name>ring copper</Name>
+      <ShortDescription>a copper ring</ShortDescription>
+      <LongDescription>A ring of black opal lies here gathering dust.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1150</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2805</VNum>
+      <Name>ring silver</Name>
+      <ShortDescription>a silver ring</ShortDescription>
+      <LongDescription>A ring of black opal lies here gathering dust.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1150</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2806</VNum>
+      <Name>ring gold</Name>
+      <ShortDescription>a gold ring</ShortDescription>
+      <LongDescription>A ring of black opal lies here gathering dust.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="16" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1150</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the guardian beast to A Troll Wastedump-->
+      <Type>NPC</Type>
+      <Destination>2801</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>2800</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silver ring to A Troll Wastedump-->
+      <Type>Item</Type>
+      <Destination>2801</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>2805</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the young troll to Troll's Larder-->
+      <Type>NPC</Type>
+      <Destination>2802</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>2801</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the young troll to Troll's Larder-->
+      <Type>NPC</Type>
+      <Destination>2802</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>2801</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fat worm to Troll's Larder-->
+      <Type>NPC</Type>
+      <Destination>2802</Destination>
+      <Count>4</Count>
+      <Max>10</Max>
+      <Vnum>2806</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fat worm to Troll's Larder-->
+      <Type>NPC</Type>
+      <Destination>2802</Destination>
+      <Count>4</Count>
+      <Max>10</Max>
+      <Vnum>2806</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the roving beast to Troll's Larder-->
+      <Type>NPC</Type>
+      <Destination>2802</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2807</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the medium troll to Troll's Living Room-->
+      <Type>NPC</Type>
+      <Destination>2803</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2802</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the guardian beast to Troll's Living Room-->
+      <Type>NPC</Type>
+      <Destination>2803</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>2800</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fat worm to Troll's Living Room-->
+      <Type>NPC</Type>
+      <Destination>2803</Destination>
+      <Count>4</Count>
+      <Max>10</Max>
+      <Vnum>2806</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fat worm to Troll's Living Room-->
+      <Type>NPC</Type>
+      <Destination>2803</Destination>
+      <Count>4</Count>
+      <Max>10</Max>
+      <Vnum>2806</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the medium troll to Troll's Living Room-->
+      <Type>NPC</Type>
+      <Destination>2803</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2808</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the cadaver-toy to The Playpen-->
+      <Type>Item</Type>
+      <Destination>2804</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>2800</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a copper ring to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2804</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a baby troll to The Playpen-->
+      <Type>NPC</Type>
+      <Destination>2804</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>2803</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a baby troll to The Playpen-->
+      <Type>NPC</Type>
+      <Destination>2804</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>2803</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a baby troll to The Playpen-->
+      <Type>NPC</Type>
+      <Destination>2804</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>2803</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a baby troll to The Playpen-->
+      <Type>NPC</Type>
+      <Destination>2804</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>2803</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fat worm to The Playpen-->
+      <Type>NPC</Type>
+      <Destination>2804</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>2806</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the giant troll to Troll's Bedroom-->
+      <Type>NPC</Type>
+      <Destination>2805</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2804</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the troll skin to the giant troll-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2802</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the large female troll to Troll's Bedroom-->
+      <Type>NPC</Type>
+      <Destination>2805</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2805</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the heap of carnage to Troll's Bedroom-->
+      <Type>Item</Type>
+      <Destination>2805</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>2801</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an opal ring to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2803</Vnum>
+    </Reset>
+  </Resets>
+</Area>

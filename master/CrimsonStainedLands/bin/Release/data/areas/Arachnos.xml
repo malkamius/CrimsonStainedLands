@@ -1,0 +1,3243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Arachnos</Name>
+    <Info></Info>
+    <VnumStart>6200</VnumStart>
+    <VnumEnd>6399</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{ 5 20} Mahatma Arachnos</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>6200</VNum>
+      <Name>On the spider web</Name>
+      <Description>You are balancing carefully on the giant sticky threads that holds the giant
+web in place.  To the south leads a strand to a cave-like structure made from
+many layers of a spider web.  Another silky strand continues to the north.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6203</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>51533</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>web</Keyword>
+          <Description>The immense spider web moves softly.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6201</VNum>
+      <Name>On the spider web</Name>
+      <Description>You are balancing carefully on the giant sticky threads that holds the giant
+web in place.  To the north leads a strand to a cave-like structure made from
+many layers of a spider web.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6134</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>web</Keyword>
+          <Description>The immense spider web moves softly.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6202</VNum>
+      <Name>On the spider web</Name>
+      <Description>You are balancing carefully on the giant sticky threads that holds the giant
+web in place.  To the east leads a strand to a cave-like structure made from
+many layers of a spider web.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6134</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>web</Keyword>
+          <Description>The immense spider web moves softly.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6203</VNum>
+      <Name>On the spider web</Name>
+      <Description>You are balancing carefully on the giant sticky threads that holds the giant
+web in place. A single silky strand lead to the south, while another leads
+off into the northern direction.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6301</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6200</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>web</Keyword>
+          <Description>The immense spider web moves softly.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6301</VNum>
+      <Name>Webbed Entrance</Name>
+      <Description>Sticky, sticky, sticky!  The ground is cluttered with leaves, decayed
+remains of webbed crickets, beetle, rats, dogs (?), and even humans.
+You begin to wonder about what lies ahead.  The air is damp here,
+and even the little light that shines through the canopy seems
+absorbed into the webbing.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6302</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6203</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6302</VNum>
+      <Name>Webby Passage</Name>
+      <Description>You find that footing here is very good, almost too good.  The
+limbs are coated with cobwebs and seem unusually strong for tree
+branches.  Paths lead in four directions.  The eastward path goes
+down a bit.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6304</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6305</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6301</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6303</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6303</VNum>
+      <Name>Wasp Hive</Name>
+      <Description>Drones scuttle about in this room.  The cells on the walls
+are honeycomb in shape and many of the maggots and wasps you see
+have fang-marks on there bodies.  You sense some order in their markings.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6302</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6304</VNum>
+      <Name>Webby Passage</Name>
+      <Description>Another webby passage, all sticky and wet.  Tiny ballooning
+spiders fill the air.  It seems that these young ones are newborns.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6302</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6305</VNum>
+      <Name>Beneath the Busy Path</Name>
+      <Description>You hear the sounds of crawling arachnids above.  The rhythms of
+the footsteps suggest a primitive order in their movement.  The light
+seems brighter upwards.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6302</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6306</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6306</VNum>
+      <Name>On the Busy Path</Name>
+      <Description>Spiders, spiders, everywhere!  It is almost ant-like in efficiency
+with one big difference.  The spiders here are carrying ant-corpses,
+as well as rats, wolves, and humans.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6307</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6305</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6307</VNum>
+      <Name>On the Busy Path</Name>
+      <Description>Spiders, spiders, everywhere!  It is almost ant-like in efficiency
+with one big difference.  The spiders here are carrying ant-corpses,
+as well as cats, wolves, and humans.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6306</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6308</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6308</VNum>
+      <Name>On the Busy Path</Name>
+      <Description>Spiders, spiders, everywhere!  It is almost ant-like in efficiency
+with one big difference.  The spiders here are carrying ant-corpses,
+as well as cats, dogs, and humans.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6309</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6307</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6309</VNum>
+      <Name>A Split in the Path</Name>
+      <Description>As always, there is a split in the road.  One road is strewn
+with cricket feelers.  The other is well-kept and suitable for smooth
+travelling.  The webbing that was prevalent in earlier rooms is almost
+non-existent now.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6310</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6320</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6308</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6310</VNum>
+      <Name>Fuzzy Tree Limb</Name>
+      <Description>You are on a "fuzzy" tree limb.  Interesting, since the branches
+seem to have "hairs" sprouting from its bark.  As you look
+closer you see millions of aphids covering each limb.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6309</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6311</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6311</VNum>
+      <Name>Tree Trunk</Name>
+      <Description>You feel that you can rest here safely.  There is evidence of
+webbing here, but it is of a finer quality.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6310</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6312</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6312</VNum>
+      <Name>Tree Lair Entrance</Name>
+      <Description>It seems the inhabitant of this place does not web her
+victims, as evidenced by the remains before you.  The area
+is cluttered with desiccated corpses, apparently bitten
+but unwebbed, and drained of their life juices.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6311</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6313</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6313</VNum>
+      <Name>Wolf Spider Lair</Name>
+      <Description>Very dark, as all lairs of spiders are.  Not much of furnishings
+save an exit.  The wolf spider keeps no corpses here, but rather
+throws them out at her leisure.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6312</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6320</VNum>
+      <Name>The Webless Path</Name>
+      <Description>Strange.  No webbing here.  In fact, no sounds whatsoever.
+The path continues northward, where you find that you may have to
+tightrope your way across a ravine.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6309</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6321</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6321</VNum>
+      <Name>Above the Ravine</Name>
+      <Description>Stranger still.  Your feet get a real firm grip on the spiderline.
+You are above a deep ravine.  This line connects you between two trees.
+Below you can see a prismatic web with lots of animal bones caught in it:
+some bear and small deer bones in fact.  No human skeletons are visible
+(yet).</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6320</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6323</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6322</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6322</VNum>
+      <Name>The Rainbow Web</Name>
+      <Description>This is the rainbow web--each strand, each link, a hue of violently
+sharp colors and contrasts.  The resident here seems to have a command
+of light as well.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6321</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6323</VNum>
+      <Name>The Web Forest</Name>
+      <Description>The trees here take on a different appearance--they are not trees
+anymore, but disjointed make-shift silken made shafts, sticky to the touch,
+and webby in texture.  This is another world it would appear.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6321</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6324</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6324</VNum>
+      <Name>The Slave Pit</Name>
+      <Description>You have entered the slave pit.  A voice blares in the distance,
+"Get back to work, maggots!"  Rails upon rails of mined gold and silver
+clutter the trail beneath you.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6325</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6323</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6325</VNum>
+      <Name>The Tether Path</Name>
+      <Description>Another tether path just like the rest of them.  Surprisingly well
+-lit by the golden orbs that hang from the sides, you can see the paths
+become finer and finer in quality.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6326</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6324</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6326</VNum>
+      <Name>A Road Crossing</Name>
+      <Description>Another shifty little strand of webs, almost ethereal in nature.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6325</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6327</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6327</VNum>
+      <Name>A Leader Strand</Name>
+      <Description>This strand is weightier, more sturdy.  It shimmers as you step on
+it.  You are definitely not in the Midgaardian realms anymore.  Just
+where you are you can't tell.  It feels like you're moving through
+ether.  You can still get back down to more surer lands.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6328</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6326</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6328</VNum>
+      <Name>The Entrance of the Ethereal Web</Name>
+      <Description>You are at the entrance to ethereal web.  Flickering in and out,
+in and out, each strand reveals a different hue from black to green
+to blue.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6327</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6331</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6330</VNum>
+      <Name>A Narrow Series of Caves</Name>
+      <Description>Here is a filthy section of narrow and stinking caves.
+Maggots of wasps and other baby vermin lie scattered about.
+The walls are coated with a layer of larvae husks and other scum.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6331</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6331</VNum>
+      <Name>The Base of the Web</Name>
+      <Description>Large strands connect at this point.  The node shimmers and
+flickers within the ether.  You see many flying creatures--
+insects, pegasi, and dragon wormkins--navigate the dangerous
+passages of the web.  Exits go in many directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6330</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6332</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6333</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6332</VNum>
+      <Name>Through the Trees</Name>
+      <Description>This part of the web intersects through the branches of some
+trees.  Various leaves and other debris that the many drones
+have not picked up yet lie here.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6331</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6333</VNum>
+      <Name>Above the Clouds</Name>
+      <Description>You can see all of Midgaard in this ethereal web.  Many
+of the larger dragons that do wish to fly seem to fly
+away from the sticky strands of the web.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6331</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6334</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6335</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6334</VNum>
+      <Name>On A Cloud</Name>
+      <Description>Rather thick in consistency.  You realize this is not
+a typical cloud, but it might be the nest of an aerial creature.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6333</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6335</VNum>
+      <Name>A Link in the Ethereal Web</Name>
+      <Description>This is another link in the ethereal web.  Various creatures
+seem to get caught (or hypnotized) by its sticky strands.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6333</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6336</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6336</VNum>
+      <Name>The Tenuous Strand</Name>
+      <Description>Very windy here since it goes up into the sky somewhat.
+Still, it's safe enough to move around.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6335</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6340</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6341</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6340</VNum>
+      <Name>The Elder Wormkin's Room</Name>
+      <Description>A more mature wormkin it seems resides here.  Various tomes of
+arcane lore clutter the area, along with shards of armor and weaponry.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6336</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6341</VNum>
+      <Name>Another Tree Limb</Name>
+      <Description>Once again the web crosses another tree limb.  To the side you
+see the possible entrance to another creatures lair.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6336</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6342</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6345</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6342</VNum>
+      <Name>The Bird Spider's Lair</Name>
+      <Description>This is a big game hunter among most spiders.  Crush jewels
+and other weapons suggest the inhabitant must have powerful jaws.
+Beware!</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6341</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6345</VNum>
+      <Name>A Link in the Ethereal Web</Name>
+      <Description>This is another link in the ethereal web.  Various creatures
+seem to get caught (or hypnotized) by its sticky strands.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6341</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6350</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6346</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6346</VNum>
+      <Name>The Quiet Tree Top</Name>
+      <Description>Here is a quiet tree top.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6345</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6347</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6347</VNum>
+      <Name>On The Web</Name>
+      <Description>RRRRRRRRRRROOOOOOOOOOOOOAAAAAAAAAAAAAARR!  You hear the roar
+of a powerful beast.  Dragon, you think.  You shiver in your boots
+as you tiptoe on this section of the web.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6346</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6355</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6350</VNum>
+      <Name>The Ki-Rin Chamber</Name>
+      <Description>A wise ki-rin was entrapped here many years ago.  It is from her
+that the ruler of this realm steals his magical strength.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6345</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6355</VNum>
+      <Name>A Link in the Ethereal Web</Name>
+      <Description>This is another link in the ethereal web.  Various creatures
+seem to get caught (or hypnotized) by its sticky strands.  To
+the north you sense the heavy breathing of a fiery animal.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6347</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6360</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6365</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6360</VNum>
+      <Name>Yevaud's Lair</Name>
+      <Description>Yevaud, the Usurper of Midgaard, resides here.  A voice cries
+out, "BEWARE, the Usurper of Midgaard lives here!  FLEE while you can!"
+But even Yevaud has his master...or so you deduce.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6355</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6365</VNum>
+      <Name>A Link in the Ethereal Web</Name>
+      <Description>This is another link in the ethereal web.  Various creatures
+seem to get caught (or hypnotized) by its sticky strands.  A single
+spider line lies to the north, while ghastly seemings are due
+southward.  The grim entrance of Arachnos' Lair is downward.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6371</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6366</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6390</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6355</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6366</VNum>
+      <Name>Entrance to the Donjonkeep</Name>
+      <Description>A dark path at the end of the web strand, you see ahead
+a torch lit chamber where the souls of unavenged adventurers
+come and gnash their teeth.  The howls and screams of many echo
+through the hall ways.  You see one definite path ahead.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6367</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6367</VNum>
+      <Name>The Guardian's Room</Name>
+      <Description>A chair sits here for a tireless guardian who ensures that no
+soul escapes.  The room is undecorated.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6368</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6366</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>chair</Keyword>
+          <Description>An ordinary chair, well used, glued to the ground by spiderweb.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6368</VNum>
+      <Name>Realm of the Hopeless</Name>
+      <Description>Here you see many misguided souls who think they still live.
+They search for those who killed them without warrant, and seek the
+free souls of living beings to inhabit and perhaps adventure once
+more.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6369</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6367</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6369</VNum>
+      <Name>Realm of the Hopeless</Name>
+      <Description>Here you see many misguided souls who think they still live.
+They search for those who killed them without warrant, and seek the
+free souls of living beings to inhabit and perhaps adventure once
+more.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6370</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6368</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6370</VNum>
+      <Name>The Donjonkeep</Name>
+      <Description>No souls have ever lived in this place.  The wails of slaves
+and the howls of wolves are the only way you can describe the sounds
+you hear.  The walls are thin and wispy.  The only light you receive
+is the shimmering from the strand of the ethereal web you used to get
+here.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6371</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6369</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6371</VNum>
+      <Name>The Single Spider Line</Name>
+      <Description>A single spider line supports you once more.  As you look
+across the ether you seen a single shack up ahead with a light in
+the window.  You sense a great evil coming from the east and feel
+inclined to go back on the ethereal web and take your chances there.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6372</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6370</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6372</VNum>
+      <Name>The Single Spider Line</Name>
+      <Description>A single spider line supports you once more.  The shack comes
+closer into view and you are even more inclined to go back now.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6373</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6371</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6373</VNum>
+      <Name>The Hermit's Corner</Name>
+      <Description>Here you see evidence of a vagrant's abode.  The shack is to the
+east, if you dare enter it.  You get the sneaking feeling you should
+go back now.  The skies above you darken and roar with the laughter
+of thunder.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6380</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6372</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6380</VNum>
+      <Name>Mahatma's Inescapable Trap</Name>
+      <Description>Mahatma, that silly thief, is here, and he steals everything you
+have.  He says, 'Here, have a quick trip to the Temple of Midgaard.'
+He plunges a black dagger into your back ...</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6390</VNum>
+      <Name>The Entrance to the Arachnos' Lair</Name>
+      <Description>All strands inevitably lead here, the center of the web, the
+entrance to Arachnos' Lair.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6391</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6365</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6391</VNum>
+      <Name>The Sticky Chamber</Name>
+      <Description>You can still bail out since your knees are shaking from the
+anticipation (or is it fear?).  The sky is clear on this strand of
+web, surprisingly unsticky.  The strand does not vibrate like the
+others.  A few ballooning spiders pass by, cackling "You're gonna
+die, you're gonna fry.  Good bye!"</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6392</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6390</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6392</VNum>
+      <Name>The Great Door</Name>
+      <Description>Before you you see a large, web-like door.  Various designs
+of ancient runes and names of Midgaard heroes are etched into
+the webwork.  Perhaps lists of victims?  You can't tell.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6399</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6391</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6399</VNum>
+      <Name>The Lair of Arachnos</Name>
+      <Description>This is the lair of the Empress Spider, Arachnos.  A lavishly
+adorned rainbow web, her lair allows her to move to any universe
+she wishes by using her magical strands to the Prime Material Plane.
+Coffers upon coffers of gold, magical jewels and gems await.  Unfor-
+tunately Arachnos is a baggy spider too, and webs all her treasures
+to her beautiful silken body.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6392</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>6301</Vnum>
+      <name>spider young</name>
+      <description>He looks freshly hatched and sprightly.  His young fangs are just
+growing in as of late.</description>
+      <longDescription>The young spider is ballooning by you.</longDescription>
+      <shortDescription>the young spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>5</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>60</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>100</hitpoints>
+      <maxhitpoints>100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>50</ArmorBash>
+      <ArmorSlash>50</ArmorSlash>
+      <ArmorPierce>50</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6302</Vnum>
+      <name>dragon Yevaud</name>
+      <description>Old, scaly, but still with a lot of bite in him left.</description>
+      <longDescription>Yevaud the Usurper of Midgaard is here, grinning evilly at you.</longDescription>
+      <shortDescription>Yevaud</shortDescription>
+      <Sex>Male</Sex>
+      <level>24</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>500</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>480</hitpoints>
+      <maxhitpoints>480</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-60</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-60</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>dragon</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>24</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6303</Vnum>
+      <name>spider wolf</name>
+      <description>The Wolf Spider is hairy, very hairy.</description>
+      <longDescription>The Wolf Spider is here, licking its bloody fangs.</longDescription>
+      <shortDescription>the Wolf Spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>62</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6304</Vnum>
+      <name>orc</name>
+      <description>You notice an evil look in his eyes.</description>
+      <longDescription>The orc is stuck in the web and he can't get out.</longDescription>
+      <shortDescription>the orc</shortDescription>
+      <Sex>Male</Sex>
+      <level>5</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>60</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>100</hitpoints>
+      <maxhitpoints>100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>50</ArmorBash>
+      <ArmorSlash>50</ArmorSlash>
+      <ArmorPierce>50</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>orc</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy></affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>6305</Vnum>
+      <name>wasp queen</name>
+      <description>You notice a glazed look in her eyes.</description>
+      <longDescription>The Queen Wasp is here, thinking that you would make a tasty offering
+ to her master.</longDescription>
+      <shortDescription>the Queen Wasp</shortDescription>
+      <Sex>Female</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>75</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6306</Vnum>
+      <name>spider drone</name>
+      <description>An ordinary drone spider.</description>
+      <longDescription>The drone spider walks around doing her master's bidding.</longDescription>
+      <shortDescription>the drone spider</shortDescription>
+      <Sex>Male</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6307</Vnum>
+      <name>spider ethereal</name>
+      <description>She winks in and out.</description>
+      <longDescription>The ethereal spider strides here, traveling to different worlds.</longDescription>
+      <shortDescription>the ethereal spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>62</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6308</Vnum>
+      <name>slave human</name>
+      <description>The slave does not mind you, but will fight like a warrior if attacked.</description>
+      <longDescription>The slave works here relentlessly.</longDescription>
+      <shortDescription>the slave of Arachnos</shortDescription>
+      <Sex>Male</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>25</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6309</Vnum>
+      <name>quasit</name>
+      <description>Demoniac in nature, but more mischievous.  He twiddles his thumbs
+and creates a magical treasure!</description>
+      <longDescription>The quasit blinks in and out, grinning at you.</longDescription>
+      <shortDescription>the quasit</shortDescription>
+      <Sex>Male</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6310</Vnum>
+      <name>spider bird</name>
+      <description>The Bird Spider has very powerful jaws.</description>
+      <longDescription>The Bird Spider snaps its powerful jaws.</longDescription>
+      <shortDescription>the Bird Spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>14</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>190</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>280</hitpoints>
+      <maxhitpoints>280</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>14</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>87</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>12</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6311</Vnum>
+      <name>hermit</name>
+      <description>A dishevelled veteran warrior in disguise is what he is, but he
+means well.</description>
+      <longDescription>The Hermit sits here and warns, "Go back before it's too late!"</longDescription>
+      <shortDescription>the Hermit</shortDescription>
+      <Sex>Male</Sex>
+      <level>7</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>85</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>140</hitpoints>
+      <maxhitpoints>140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>7</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>37</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6312</Vnum>
+      <name>donjonkeeper</name>
+      <description>He delves deeper into you as you stare at him.</description>
+      <longDescription>The Donjonkeeper eyes you and wonders how pure your soul is.</longDescription>
+      <shortDescription>the Donjonkeeper</shortDescription>
+      <Sex>Male</Sex>
+      <level>25</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>550</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>500</hitpoints>
+      <maxhitpoints>500</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>25</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>300</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6313</Vnum>
+      <name>guardian</name>
+      <description>He looks like a lazy bum who sleeps half the time.</description>
+      <longDescription>The guardian is obviously not doing his job.</longDescription>
+      <shortDescription>The guardian</shortDescription>
+      <Sex>Male</Sex>
+      <level>17</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>258</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>340</hitpoints>
+      <maxhitpoints>340</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-30</ArmorBash>
+      <ArmorSlash>-30</ArmorSlash>
+      <ArmorPierce>-30</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>17</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>80</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6314</Vnum>
+      <name>spider empress arachnos</name>
+      <description>She is a very attractive spider with an ornate gown.  She tempts you
+into being one of her many slaves.  She does not possess the venomous
+fangs of normal spiders, but then, as you realize, she does not need
+them.</description>
+      <longDescription>Arachnos the Empress of Spiders welcomes you with an evil smile.</longDescription>
+      <shortDescription>Arachnos</shortDescription>
+      <Sex>Female</Sex>
+      <level>26</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>600</HitPointDiceBonus>
+      <ManaPointDiceSides>13</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>520</hitpoints>
+      <maxhitpoints>520</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>26</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6315</Vnum>
+      <name>ki-rin</name>
+      <description>She is the last bastion of good in this realm.  Her mission is to
+someday free the slaves of the Empress.</description>
+      <longDescription>The Ki-Rin smiles good-naturedly to you.</longDescription>
+      <shortDescription>the Ki-Rin</shortDescription>
+      <Sex>Female</Sex>
+      <level>26</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>600</HitPointDiceBonus>
+      <ManaPointDiceSides>13</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>520</hitpoints>
+      <maxhitpoints>520</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>26</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>750</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6316</Vnum>
+      <name>dragon wormkin young</name>
+      <description>Rather small, you almost feel sad in killing it.</description>
+      <longDescription>A wormkin with no teeth plays here.</longDescription>
+      <shortDescription>the young dragon wormkin</shortDescription>
+      <Sex>Male</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dragon</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6317</Vnum>
+      <name>dragon wormkin medium</name>
+      <description>A medium-sized dragon--seems it hasn't killed anything yet by itself.</description>
+      <longDescription>A wormkin that has grown a bit stares at you inquisitively.</longDescription>
+      <shortDescription>the medium dragon wormkin</shortDescription>
+      <Sex>Male</Sex>
+      <level>13</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>170</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>260</hitpoints>
+      <maxhitpoints>260</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dragon</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>13</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>250</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6318</Vnum>
+      <name>spider poisonous</name>
+      <description>This disgusting creature is at the size of a human crawling on all four.  It
+has eight hairy legs that gives it a tremendous speed on almost any surface and
+sharp poisonous fangs to paralyze or kill its prey.</description>
+      <longDescription>A huge, poisonous spider is here.</longDescription>
+      <shortDescription>the huge, poisonous spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6319</Vnum>
+      <name>queen spider</name>
+      <description>This disgusting creature is at the size of a small elephant.  It has eight
+huge, hairy legs that would give it a tremendous speed on almost any surface
+if it wasn't so immensely fat.  Its large, bulbous eyes stare back at you.</description>
+      <longDescription>The huge, bulky Queen Spider is here.</longDescription>
+      <shortDescription>the Queen Spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>6303</VNum>
+      <Name>headdress pontiff's</Name>
+      <ShortDescription>a pontiff's headdress</ShortDescription>
+      <LongDescription>A white cone-shaped head ornament with religious symbols lies here.</LongDescription>
+      <Description></Description>
+      <Level>18</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4600</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>6</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>6</ArmorPierce>
+      <ArmorExotic>3</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6304</VNum>
+      <Name>visor black knight's</Name>
+      <ShortDescription>a black knight's visor</ShortDescription>
+      <LongDescription>A black visor sits here.</LongDescription>
+      <Description></Description>
+      <Level>17</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4600</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>6</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>6</ArmorPierce>
+      <ArmorExotic>2</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6308</VNum>
+      <Name>coins silver gold</Name>
+      <ShortDescription>a big pile of coins</ShortDescription>
+      <LongDescription>A big pile of coins is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6309</VNum>
+      <Name>potion blue</Name>
+      <ShortDescription>a blue potion</ShortDescription>
+      <LongDescription>A blue potion has been left here.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>700</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>potion blue</Keyword>
+          <Description>It has a nice sky blue colour and a smell like peppermint.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>6310</VNum>
+      <Name>silky spun bracer</Name>
+      <ShortDescription></ShortDescription>
+      <LongDescription></LongDescription>
+      <Description>A silky-spun bracer</Description>
+      <Level>15</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silk</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the young spider to Webbed Entrance-->
+      <Type>NPC</Type>
+      <Destination>6301</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Queen Wasp to Wasp Hive-->
+      <Type>NPC</Type>
+      <Destination>6303</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6305</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the young spider to Webby Passage-->
+      <Type>NPC</Type>
+      <Destination>6304</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the young spider to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6306</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the young spider to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6306</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the slave of Arachnos to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6308</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>6308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the slave of Arachnos to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6308</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>6308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the slave of Arachnos to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6308</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>6308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the slave of Arachnos to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6308</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>6308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the slave of Arachnos to On the Busy Path-->
+      <Type>NPC</Type>
+      <Destination>6308</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>6308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Wolf Spider to Wolf Spider Lair-->
+      <Type>NPC</Type>
+      <Destination>6313</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6303</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the drone spider to Above the Ravine-->
+      <Type>NPC</Type>
+      <Destination>6321</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6306</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quasit to A Leader Strand-->
+      <Type>NPC</Type>
+      <Destination>6327</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6309</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the drone spider to A Narrow Series of Caves-->
+      <Type>NPC</Type>
+      <Destination>6330</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6306</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the young dragon wormkin to A Narrow Series of Caves-->
+      <Type>NPC</Type>
+      <Destination>6330</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6316</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the drone spider to The Base of the Web-->
+      <Type>NPC</Type>
+      <Destination>6331</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6306</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the orc to Through the Trees-->
+      <Type>NPC</Type>
+      <Destination>6332</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6304</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ethereal spider to Above the Clouds-->
+      <Type>NPC</Type>
+      <Destination>6333</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ethereal spider to A Link in the Ethereal Web-->
+      <Type>NPC</Type>
+      <Destination>6335</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the medium dragon wormkin to The Elder Wormkin's Room-->
+      <Type>NPC</Type>
+      <Destination>6340</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6317</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Bird Spider to The Bird Spider's Lair-->
+      <Type>NPC</Type>
+      <Destination>6342</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6310</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Ki-Rin to The Ki-Rin Chamber-->
+      <Type>NPC</Type>
+      <Destination>6350</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6315</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blue potion to the Ki-Rin-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6309</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blue potion to the Ki-Rin-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6309</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Yevaud to Yevaud's Lair-->
+      <Type>NPC</Type>
+      <Destination>6360</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6302</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black knight's visor to Yevaud-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6304</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The guardian to The Guardian's Room-->
+      <Type>NPC</Type>
+      <Destination>6367</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6313</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Donjonkeeper to The Donjonkeep-->
+      <Type>NPC</Type>
+      <Destination>6370</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6312</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blue potion to the Donjonkeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6309</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Hermit to The Hermit's Corner-->
+      <Type>NPC</Type>
+      <Destination>6373</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6311</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Arachnos to The Lair of Arachnos-->
+      <Type>NPC</Type>
+      <Destination>6399</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pontiff's headdress to Arachnos-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6303</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black knight's visor to Arachnos-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6304</Vnum>
+    </Reset>
+  </Resets>
+</Area>

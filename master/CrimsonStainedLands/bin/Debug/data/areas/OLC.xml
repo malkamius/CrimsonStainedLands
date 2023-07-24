@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>OLC Help</Name>
+    <Info></Info>
+    <VnumStart>1000000</VnumStart>
+    <VnumEnd>1000099</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits></Credits>
+  </AreaData>
+  <Rooms />
+  <NPCs />
+  <Items />
+  <Resets />
+  <Helps>
+    <Help>
+      <Level>52</Level>
+      <Keyword>OLC create edit dig saveworld worldsave</Keyword>
+      <Text>Commands are:
+Create
+create area [name] [vnumstart] [vnumend]
+		create room [vnum]
+		create npc [vnum]
+		create item [vnum]
+			Or: create reset [vnum] [desintation] [count] [maxcount]
+
+Edit
+edit area [name]
+
+edit room [vnum]
+edit room [name|description|sector|exits] {value}
+
+sectors are inside, city, forest, field, hills, mountain, swamp, 
+desert, cave, underground, waterswim, waternoswim, river, ocean, air, road, underwater
+
+Edit room exits {direction} [keywords, description, destination, flags, size, keys, delete] {arguments}
+
+edit npc [vnum]
+edit npc [name|description|level|gold|longdescription|shortdescription|flags|
+damagedice|guild|protects|hitpointdice|manapointdice|affectedby] {value}
+
+flags are Practice NoAlign ColorOn SkipAutoDeletePrompt AutoAssist AutoExit AutoLoot AutoSac 
+	AutoGold AutoSplit Evaluation Betrayer HeroImm HolyLight CanLoot NoSummon NoFollow NoTransfer 
+	PlayerDenied Frozen AssistPlayer AssistAll AssistVnum AssistAlign AssistRace Sentinel Scavenger 
+	CabalMob Aggressive Stay_Area Stay_Area Wimpy Pet Trainer Trainer Trainer NoTrack Undead 
+	Cleric Mage Thief Warrior NoPurge Outdoors Indoors IsHealer Banker Brief NPC Changer Healer 
+	Shopkeeper Area_Attack
+
+affectflags are Blind, Invisible, DetectEvil, DetectEvil, DetectInvis, DetectInvis, DetectMagic, 
+DetectMagic, Detect_Hidden, Detect_Hidden, Detect_Good, Detect_Good, DetectIllusion, DetectIllusion, 
+Sanctuary, Faerie_Fire, Infrared, Curse, Poison, Protect_Evil, ProtectionGood, Sneak, Hide, Sleep, 
+Charm, Flying, PassDoor, Haste, Calm, Plague, Weaken, DarkVision, Berserk, Swim, Regeneration, Slow, 
+Camouflage
+
+edit item [vnum]
+Edit Item [vnum] [name|description|level|extraflags|wearflags|itemtypes|value|
+nutrition|maxcharges|liquid|material|affects] {value}
+
+extra flags are Glow Hum Dark Lock Locked Evil Invisibility Invisibility Magic NoDrop 
+Bless AntiGood AntiNeutral AntiEvil NoRemove NoPurge RotDeath VisDeath Fixed NoDisarm 
+NoLocate MeltDrop Closable Closeable PickProof Closed WeaponFlaming Poison Heart 
+PouchNourishment EverfullSkin BurnProof Flaming Frost Vorpal Shocking Unholy Sharp 
+TwoHands NoUncurse SellExtract PutIn PutOn PutAt StandAt StandOn SitAt SitIn SitOn 
+RestIn RestOn RestAt SleepAt SleepOn SleepIn Inventory Outfit
+
+wear flags are Take Finger About Neck Head Legs Feet Hands Wield Hold WearFloat WearFloat 
+Tattoo Body Waist Wrist Arms Shield NoSac
+*** Take is required to pick up an item
+
+itemtypes are Silver Gold Light Scroll Wand Staff Weapon Treasure Armor Potion Clothing 
+Furniture Trash Container DrinkContainer Key Food Money Boat NPCCorpse Corpse 
+Fountain Pill Map Portal RoomKey Gem Jewelry Cabal Instrument Skeleton
+
+Dig
+dig [direction] [vnum] {flags}
+flags are: door closed locked window pickproof nopass nobash hidden
+
+NextVnum
+displays the next vnum to use for rooms, npcs or items in an area
+
+Worldsave or Saveworld will save modified areas</Text>
+    </Help>
+    <Help>
+      <Level>1</Level>
+      <Keyword>prompt</Keyword>
+      <Text>Syntax: prompt
+Syntax: prompt all
+Syntax: prompt &lt;%*&gt;
+ 
+PROMPT with out an argument will turn your prompt on or off.
+ 
+PROMPT ALL will give you the standard "&lt;hits mana moves&gt;" prompt.
+ 
+PROMPT &lt;%*&gt; where the %* are the various variables you may set yourself.
+		%1 : display % of hitpoints
+		%2 : display % of mana
+		%3 : display % of movement
+        %h :  Display your current hits
+        %H :  Display your maximum hits
+        %m :  Display your current mana
+        %M :  Display your maximum mana
+        %v :  Display your current moves
+        %V :  Display your maximum moves
+        %x :  Display your current experience
+	%X :  Display experience to level
+        %g :  Display your gold held
+	%s :  Display silver carried
+        %a :  Display your alignment
+        %r :  Display the room name you are in
+	%e :  Display the exits from the room in NESWDU style
+	%c :  Display a carriage return (useful for multi-line prompts)
+        %R :  Display the vnum you are in (IMMORTAL ONLY)
+        %z :  Display the area name you are in (IMMORTAL ONLY)
+ 
+Example:  PROMPT &lt;%hhp %mm %vmv&gt;
+        Will set your prompt to "&lt;10hp 100m 100mv&gt;"</Text>
+    </Help>
+  </Helps>
+</Area>

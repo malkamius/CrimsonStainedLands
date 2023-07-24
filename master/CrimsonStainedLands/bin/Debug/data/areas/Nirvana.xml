@@ -1,0 +1,3061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Nirvana</Name>
+    <Info></Info>
+    <VnumStart>9000</VnumStart>
+    <VnumEnd>9099</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{30 35} Fstall  Nirvana</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>9000</VNum>
+      <Name>Entrance to the Plane of Nirvana</Name>
+      <Description>You stand before the entrance to a plane of absolute balance and order.  It is
+equally hot and cold, equally light and dark, and made of equal parts of solid
+and liquid.
+The plane extends to the west and east, while an exit lies downward.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9001</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, the plane extends for what seems to be forever.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9060</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9002</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west, the plane extends for what seems to be forever.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9001</VNum>
+      <Name>The Plane of Nirvana</Name>
+      <Description>You are traveling the Plane of Nirvana.  It has endless boundaries to the east
+and west</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9003</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, there seems to be a bend in direction of travel.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9000</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west, the plane seems to extend forever.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9002</VNum>
+      <Name>The Plane of Nirvana</Name>
+      <Description>You are on a western strech of the plane.  Boundaries to the east and west seem 
+nonexistent.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9000</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The plane seems to strech forever to the east</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9004</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues to the west where is appears to change direction</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9003</VNum>
+      <Name>A Change in Direction</Name>
+      <Description>Here, the plane seems to direct you to the north.  Also, the plane continues 
+to the west.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9005</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues to the north with no end in sight</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9001</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The plane contiues to the west with no end in sight</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9004</VNum>
+      <Name>A Change in Direction</Name>
+      <Description>Here, the plane goes to the north and bends to the east</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9006</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The vast plane seems to have no end to the north</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9002</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, the plane has no visible end</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9005</VNum>
+      <Name>A North-South direction of the plane</Name>
+      <Description>The plane continues to the north and south</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9012</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north, the plane stretches as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9003</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, the plane stretches as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9006</VNum>
+      <Name>A North-South stretch of the plane</Name>
+      <Description>The plane continues to the north and the south</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9013</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north, the plane stretches as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9004</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, the plane stretches as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9007</VNum>
+      <Name>In the Tower of Nirvana</Name>
+      <Description>Entering the tower, there seems to be enough light to see by, but no source is 
+visible.  The hall continues to the east, while a door lies to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9010</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The hall continues east into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9013</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A great door lies to the west</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9008</VNum>
+      <Name>A hallway in the Tower of Nirvana</Name>
+      <Description>You are in a east-west hallway in the tower.  to the west, the hall continues 
+and a door lies to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9012</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A great door lies to the east</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9009</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>the hallway continues west into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9009</VNum>
+      <Name>An east-west hallway in the Tower of Nirvana</Name>
+      <Description>The hallway continues to the east, and stretches to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9008</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The hallway continues east into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9011</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The Hallway continues west into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9010</VNum>
+      <Name>An east-west passage in the Tower of Nirvana</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9011</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The Hallway contiues east into oblivion</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9007</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The Hallway contiues west into oblivion</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9011</VNum>
+      <Name>An intersection in the Tower of Nirvana</Name>
+      <Description>You are at an intersection where the east-west passage continues, but a large 
+passage leads to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9023</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The passage continues to the north where it seems to get wider.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9009</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The passage ontinues eastward into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9010</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The passage continues westward into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9012</VNum>
+      <Name>At the door to the Tower of Nirvana</Name>
+      <Description>You stand on the plane where a mighty door lies to the west.
+The plane also continues north and southward.  There is a large sign on the 
+door.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9014</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues northward as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9005</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues southward as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9008</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A mighty door lies to the west</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sign</Keyword>
+          <Description>The sign reads:
+WARNING
+Only those brave of heart and high of level should
+enter the Tower of Nirvana.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>9013</VNum>
+      <Name>At the door to the Tower of Nirvana</Name>
+      <Description>The plane continue to the north and south, while a mighty door lies to the 
+east.  There is a sign on the door.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9015</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The plane stretches to the north as far as the eye can see.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9007</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A mighty door sits to the east</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9006</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues to the south as far as the eye can see</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sign</Keyword>
+          <Description>The sign reads:
+WARNING!
+Only those brave of heart and high of level
+should attempt to enter the Tower of Nirvana.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>9014</VNum>
+      <Name>A north-south area of the Plane of Nirvana</Name>
+      <Description>The plane continues to the north and southward.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9027</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues endlessly to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9012</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues endlessly to the south.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9015</VNum>
+      <Name>A north-south area on the Plane of Nirvana</Name>
+      <Description>the plane continues to the north and south</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9028</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues endlessly to the north</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9013</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The plane continues endlessly to the south</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9016</VNum>
+      <Name>Dead End</Name>
+      <Description>You stand at a dead end where the only exit appears to be west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9018</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The passage continue to the west.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9017</VNum>
+      <Name>Dead End</Name>
+      <Description>You are at what appears to be a dead end.  The only exit is back east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9019</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The passage continues to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9018</VNum>
+      <Name>A Tertain's lair</Name>
+      <Description>You quite possibly have made a terrible mistake coming in here.
+Exits lead east and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9016</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The passage continues to the east</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9020</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The passage leads west where you can see a bright light ahead.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9019</VNum>
+      <Name>A Tertian's lair</Name>
+      <Description>You might have made a terrible mistake coming into here.  Exits lead east and
+west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9020</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The passage continues eastward where you can see a bright light.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9017</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The passage continues westward into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9020</VNum>
+      <Name>The Lair of Primus</Name>
+      <Description>You are in a large hall, with a massive pool of what appears to be pure energy 
+in the center of the room.  Exits lead in all the cardinal directions.  From 
+the pool rises the master of the Plane of Nirvana....</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9024</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>A passage leads north into the unknown.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9018</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A passage leads east into the unknown.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9021</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A passage leads south into the unknown.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9019</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A passage leads west into the unknown.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9021</VNum>
+      <Name>A Tertian's lair</Name>
+      <Description>Maybe coming here wasn't such a hot idea.  You feel very unwelcome here.  
+Exits lead north and south</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9020</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The passage leads north where you can see a bright light.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9022</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The passage leads south into the unknown.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9022</VNum>
+      <Name>The office of a Quinton</Name>
+      <Description>You have stumbled upon the office of a page to Primus.  Scrolls lie about the
+room along with many strange objects...you can't imagine   what kind of creature
+would use them.  Exits lead in all the cardinal   directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9021</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The passage heads northward where you can see nothing.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9046</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The passage goes east where you feel it might be bad to go.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9023</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The passage goes south into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9053</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The passage heads westward into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9023</VNum>
+      <Name>A wide north-south passageway</Name>
+      <Description>you find yourself in a passage where the exits are north and south</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9022</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north, you spy an intersection of tunnels.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9011</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can barely make out a junction of passageways.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9024</VNum>
+      <Name>A Tertian's lair</Name>
+      <Description>You find yourself in a lair of a Tertian.  Exits lead north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9025</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north, you can make out a intersection of tunnels.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9020</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, you can see a bright light.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9025</VNum>
+      <Name>A north south tunnel</Name>
+      <Description>You are in a passage where the only exits are north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9026</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Far to the north you can see a door.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9024</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you stare into darkness.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9026</VNum>
+      <Name>An intersection of passages</Name>
+      <Description>You stand at an intersection.  Exits lead off to the east and south. 
+A door lies to the north</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9031</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>you see a massive door</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9032</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, you spy a dark passage</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9025</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you stare into oblivion.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9027</VNum>
+      <Name>A change of direction</Name>
+      <Description>The plane curves from the south to west</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9014</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>looking south, you see the plane extending beyond view.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9030</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>looking west, you can't fathom how far the plane extends.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9028</VNum>
+      <Name>A change of direction</Name>
+      <Description>Here, the plane takes a turm from the south to heading east.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9029</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The plane heads east from here. You can't see the end of it.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9015</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Looking south, you view the plane extending for miles.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9029</VNum>
+      <Name>An east-west route on the Plane of Nirvana</Name>
+      <Description>Exits lead east and west.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9031</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>looking east, you spy a door far off in the distance.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9028</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>looking west, in the distance you can spy a curve south.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9030</VNum>
+      <Name>An east-west route on The Plane of Nirvana</Name>
+      <Description>Exits lead east and west</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9027</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>looking east, you can see a bend in the distance.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9031</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>glancing west, you can spy a door far off in the distance.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9031</VNum>
+      <Name>A large door in the passage</Name>
+      <Description>The passages goes east and west, with a large door to the south.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9030</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>looking east, you see more of the passage.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9026</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A large door blocks the way to the south.</Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9029</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>looking west, you see more of the passage.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9032</VNum>
+      <Name>A Junction in the passage</Name>
+      <Description>Here, passages lead off in all cardinal directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9033</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Looking north, you spy a small room in the distance</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9035</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Eastward, the passage continues in the darkness.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9034</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>South of here is a small room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9026</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>West, you spy an intersection.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9033</VNum>
+      <Name>The office of the Octon</Name>
+      <Description>you are in a small room, the only exit is south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9032</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>looking south, you see an intersection.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9034</VNum>
+      <Name>A small room</Name>
+      <Description>The only exit is north</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9032</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Looking north, you spy an intersection.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9035</VNum>
+      <Name>A passageway</Name>
+      <Description>Exits lead in all cardinal directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9036</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Looking north you spy a average sized room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9038</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Looking east, you can make out a large room</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9037</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Looking south, you can see an average room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9032</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Looking west, you can see an intersection ahead.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9036</VNum>
+      <Name>Lair of a Hexton</Name>
+      <Description>You are in a room that is in complete disrepair.  Items are thrown throughout 
+the room making them worthless piles of junk.  The only exit is back south</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9035</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Looking south, you can make out a passage.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9037</VNum>
+      <Name>Office of a Hexton</Name>
+      <Description>A makeshift desk forms the center of this room.  The only exit is north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9035</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Looking north, you can make out a hallway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9038</VNum>
+      <Name>Office of a Secundus</Name>
+      <Description>You are standing in a office of one of the Viceroys of the Plane of Nirvana.  
+The occupant doesn't look real thrilled with your presence.  The only exits is
+west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9035</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Looking west you can see a long hallway</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9039</VNum>
+      <Name>A Junction in the hallway</Name>
+      <Description>Your are standing in a junction, exits lead in all the cardinal directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9040</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north, you spy a small room</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9025</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, you see a quadruple junction</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9041</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you see a small room</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9042</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west, the passageway continues</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9040</VNum>
+      <Name>Office of an Octon</Name>
+      <Description>You see a messy room with papers scattered everywhere.  The only exit leads back
+to the south</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9039</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can make out a junction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9041</VNum>
+      <Name>Office of a Septon</Name>
+      <Description>A neat and tidy room, it appear to be inhabited my a neatenss freak.  The only 
+exit lies to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9039</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you see a junction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9042</VNum>
+      <Name>An east-west passage</Name>
+      <Description>In east west passage is here with exits in all of the cardinal directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9043</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can see a room to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9039</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east you can see a junction</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9044</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can make out a averaged sized room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9045</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west you can see what appears to be a cavernous room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9043</VNum>
+      <Name>The Barracks</Name>
+      <Description>A dusty room, with a almost untolerable odor, the barracks are being inspected 
+by a Hexton and his personal enterage.  The only exit lies to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9042</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can see junction</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9044</VNum>
+      <Name>The Commander's Post</Name>
+      <Description>You have stumbled on to the office of the Commander of the forces in the Plane 
+Of Nirvana.  The room is well furnished and a sense of courage and bravery 
+overtakes you as you enter the room.  The only exit lies to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9042</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you can visualize a junction of passages.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9045</VNum>
+      <Name>The chamber of the second Secundus</Name>
+      <Description>This huge room is furnished with the finest, and a personal legion guards the 
+Secundus. the only exit is to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9042</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east you can see a junction</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9046</VNum>
+      <Name>A Passageway</Name>
+      <Description>You are in a well lit passage.  A sense of forboding danger envelopes you.  
+Exits lead in all cardinal directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9047</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you can see a small chamber</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9049</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, the passage continues,.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9048</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, a chamber can be seen</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9022</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west, a large tunnel can be found.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9047</VNum>
+      <Name>Chamber of the Octon</Name>
+      <Description>A small room, sparsely furnished, it leaves you with a sense of fear.  The 
+only exit is to the south</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9046</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can see a passage.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9048</VNum>
+      <Name>Chamber of the Nonaton</Name>
+      <Description>You have entered the chamber of the principal law and order overseers.  The 
+only exit lies to the north</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9046</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you can see a passageway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9049</VNum>
+      <Name>End of the passageway</Name>
+      <Description>You have reached the end of a long east-west passage.  The passage contiues to 
+the west, and rooms lie to the north, south, and east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9050</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you can see a room</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9052</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east you can make out a large chamber</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9051</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, a room can be seen.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9046</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>to the west, the passageway continues</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9050</VNum>
+      <Name>Chamber of a Hexton</Name>
+      <Description>You have entered the chamber of a Hexton.  Trophies adorn the walls, some of 
+which are human. the only exit is to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9049</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can see a passageway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9051</VNum>
+      <Name>Chamber of a Hexton</Name>
+      <Description>You have entered a room where you are not very popular. The only exit lies 
+northbound.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9049</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you can see a passage.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9052</VNum>
+      <Name>Chamber of the Secudus</Name>
+      <Description>A large canvernous room, this chamber serves as the sleeping quarters for the 
+third Secudus, Viceroy to Primus. The only exit lies to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9049</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west you can see a passageway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9053</VNum>
+      <Name>A passageway</Name>
+      <Description>You are in a passagway where you may go in any cardinal direction.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9054</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north lies a small chamber</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9022</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east, a main passage forms a junction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9055</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, you can spot a small room</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9059</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west, the passageway continues</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9054</VNum>
+      <Name>A small chamber</Name>
+      <Description>You are in a small cramped chamber.  The only exit lies to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9053</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can see a passage</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9055</VNum>
+      <Name>A cramped room</Name>
+      <Description>You are in a small, crowded room.  The only exit appears to lie to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9053</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north, you can see a passageway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9056</VNum>
+      <Name>A large room</Name>
+      <Description>You have entered a room where you are not wanted.  The only exit lies to the 
+south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9059</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south you can visualize a east-west passage.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9057</VNum>
+      <Name>A room</Name>
+      <Description>You have entered a room where there was obviously a hurried move going on.  
+The only exit lies to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9059</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north you can make out a passageway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9058</VNum>
+      <Name>Chamber of The First Secundus</Name>
+      <Description>You have disturbed the rest of the First Viceroy to Primus the Prime, The 
+Secundus.  He does not look like a happy camper. The only exit lies to the 
+east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9059</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east you can spot a hallway</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9059</VNum>
+      <Name>Junction in the hallway</Name>
+      <Description>Exits lead off in all of the cardinal directions</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9056</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north lies a large chamber</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9053</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east , the passage continues.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9057</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south, a small chamber can be found.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>9058</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west, lies a monstrous room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9060</VNum>
+      <Name>An Ethereal Pathway</Name>
+      <Description>The pathway leading to the ethereal plane is a surreal experience that defies the laws of nature. The ground beneath your feet appears to be made of translucent crystals that glow in a subtle rainbow hue, emitting a soft, pulsing light that seems to come from within. The air is thick with the scent of exotic flowers and the distant sound of a humming chorus. As you continue, the landscape begins to shift and warp, and strange shapes appear before your eyes that seem to move independently of their surroundings. You feel yourself being drawn closer to the veil between worlds, a place where the boundary between the physical and the mystical blurs and fades.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9000</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>9061</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>9061</VNum>
+      <Name>An Ethereal Pathway</Name>
+      <Description>The pathway leading to the ethereal plane is a surreal experience that defies the laws of nature. The ground beneath your feet appears to be made of translucent crystals that glow in a subtle rainbow hue, emitting a soft, pulsing light that seems to come from within. The air is thick with the scent of exotic flowers and the distant sound of a humming chorus. As you continue, the landscape begins to shift and warp, and strange shapes appear before your eyes that seem to move independently of their surroundings. You feel yourself being drawn closer to the veil between worlds, a place where the boundary between the physical and the mystical blurs and fades.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>9060</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>40922</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>9000</Vnum>
+      <name>tridrone</name>
+      <description>You see what appears to be a 3 sided pyramid with spidery arms and legs.</description>
+      <longDescription>A tridrone is here doing a menial task.</longDescription>
+      <shortDescription>the tridrone</shortDescription>
+      <Sex>None</Sex>
+      <level>8</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>20</HitPointDiceCount>
+      <HitPointDiceBonus>80</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger StayArea AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9001</Vnum>
+      <name>quadrone</name>
+      <description>A cubic creature, with spiny arms and legs.</description>
+      <longDescription>A quadrone is here watching for trespassers.</longDescription>
+      <shortDescription>the quadrone</shortDescription>
+      <Sex>None</Sex>
+      <level>11</level>
+      <HitPointDiceSides>14</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>70</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <hitpoints>220</hitpoints>
+      <maxhitpoints>220</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Medium</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>11</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Aggressive StayArea Warrior AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9002</Vnum>
+      <name>pentadrone</name>
+      <description>A five-armed creature which resembles a starfish on thin stilt-like legs.</description>
+      <longDescription>The pentadrone is here policing the area.</longDescription>
+      <shortDescription>the pentadrone</shortDescription>
+      <Sex>None</Sex>
+      <level>14</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>110</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <hitpoints>280</hitpoints>
+      <maxhitpoints>280</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>-10</ArmorExotic>
+      <size>Medium</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>14</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior Rescue AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9003</Vnum>
+      <name>decaton</name>
+      <description>The decaton is a large, ten-tentacled sphere on stumpy legs.</description>
+      <longDescription>A decaton is here overseeing the other modrons.</longDescription>
+      <shortDescription>the decaton</shortDescription>
+      <Sex>None</Sex>
+      <level>17</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>70</HitPointDiceBonus>
+      <ManaPointDiceSides>17</ManaPointDiceSides>
+      <ManaPointDiceCount>8</ManaPointDiceCount>
+      <ManaPointDiceBonus>50</ManaPointDiceBonus>
+      <hitpoints>340</hitpoints>
+      <maxhitpoints>340</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>-20</ArmorExotic>
+      <size>Medium</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>4</hitroll>
+      <damRoll>17</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric Warrior AreaAttack AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9004</Vnum>
+      <name>nonaton</name>
+      <description>A cylidrical modron with 9 tentacles and stubby legs.</description>
+      <longDescription>A nonaton is here preserving law and order.</longDescription>
+      <shortDescription>the nonaton</shortDescription>
+      <Sex>None</Sex>
+      <level>20</level>
+      <HitPointDiceSides>11</HitPointDiceSides>
+      <HitPointDiceCount>8</HitPointDiceCount>
+      <HitPointDiceBonus>250</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>8</ManaPointDiceCount>
+      <ManaPointDiceBonus>75</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>-30</ArmorExotic>
+      <size>Large</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric Warrior AreaAttack AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sanctuary Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9005</Vnum>
+      <name>octon</name>
+      <description>The octon has a collar at shoulder level with 8 tentacled arms growing out of
+it.</description>
+      <longDescription>An octon is here governing his ward of responsilbility.</longDescription>
+      <shortDescription>the octon</shortDescription>
+      <Sex>None</Sex>
+      <level>22</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>300</HitPointDiceBonus>
+      <ManaPointDiceSides>18</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>75</ManaPointDiceBonus>
+      <hitpoints>440</hitpoints>
+      <maxhitpoints>440</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-50</ArmorBash>
+      <ArmorSlash>-30</ArmorSlash>
+      <ArmorPierce>-50</ArmorPierce>
+      <ArmorExotic>-40</ArmorExotic>
+      <size>Large</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>22</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric AreaAttack AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9006</Vnum>
+      <name>septon</name>
+      <description>The septon appears as a human with a large bald head. It has a shoulder collar
+with 7 tentacles coming from it.</description>
+      <longDescription>A septon is here preserving order.</longDescription>
+      <shortDescription>the septon</shortDescription>
+      <Sex>None</Sex>
+      <level>24</level>
+      <HitPointDiceSides>30</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>350</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>480</hitpoints>
+      <maxhitpoints>480</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-60</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-60</ArmorPierce>
+      <ArmorExotic>-40</ArmorExotic>
+      <size>Medium</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>24</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric Mage AreaAttack AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9007</Vnum>
+      <name>hexton</name>
+      <description>A hexton appears as a humanoid with 6 arms: 2 large human arms with 6 fingers,
+and 4 tentacles below tipped with sharp claws.</description>
+      <longDescription>A hexton is here watching over his armies.</longDescription>
+      <shortDescription>the hexton</shortDescription>
+      <Sex>None</Sex>
+      <level>26</level>
+      <HitPointDiceSides>35</HitPointDiceSides>
+      <HitPointDiceCount>20</HitPointDiceCount>
+      <HitPointDiceBonus>300</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>75</ManaPointDiceBonus>
+      <hitpoints>520</hitpoints>
+      <maxhitpoints>520</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-80</ArmorBash>
+      <ArmorSlash>-80</ArmorSlash>
+      <ArmorPierce>-80</ArmorPierce>
+      <ArmorExotic>-40</ArmorExotic>
+      <size>Large</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>7</hitroll>
+      <damRoll>26</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric Warrior AreaAttack Rescue AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9008</Vnum>
+      <name>quinton</name>
+      <description>Quintons look like tall, stocky humanoids with 4 flexible arms jutting from the
+shoulders.  A prehensile tail serves as the creature's 5th arm, and they have
+fan-like wings attached to their shoulders.</description>
+      <longDescription>A quinton is here keeping records.</longDescription>
+      <shortDescription>the quinton</shortDescription>
+      <Sex>None</Sex>
+      <level>28</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>12</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>560</hitpoints>
+      <maxhitpoints>560</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-80</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>-80</ArmorExotic>
+      <size>Large</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>6</hitroll>
+      <damRoll>28</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric AreaAttack AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9009</Vnum>
+      <name>tertian</name>
+      <description>Tertians look very human, save for their 12 foot size, the horns jutting from
+the sides of their bald heads, and the long prehensile tail ending in a mace-
+like ball.</description>
+      <longDescription>A tertian is here administering the law.</longDescription>
+      <shortDescription>the tertian</shortDescription>
+      <Sex>None</Sex>
+      <level>33</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>999</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>20</ManaPointDiceCount>
+      <ManaPointDiceBonus>50</ManaPointDiceBonus>
+      <hitpoints>660</hitpoints>
+      <maxhitpoints>660</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>-90</ArmorExotic>
+      <size>Huge</size>
+      <race>modron</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>12</hitroll>
+      <damRoll>33</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric Mage Warrior AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>12</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9010</Vnum>
+      <name>secundus</name>
+      <description>The secundi is an incredibly thin, tall humanoids with long, narrow faces
+and deepset eyes. It radiates intense power.</description>
+      <longDescription>A Secundus, one of the Viceroys of Nirvana, is here.</longDescription>
+      <shortDescription>secundus</shortDescription>
+      <Sex>None</Sex>
+      <level>36</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1599</HitPointDiceBonus>
+      <ManaPointDiceSides>40</ManaPointDiceSides>
+      <ManaPointDiceCount>20</ManaPointDiceCount>
+      <ManaPointDiceBonus>50</ManaPointDiceBonus>
+      <hitpoints>720</hitpoints>
+      <maxhitpoints>720</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-140</ArmorBash>
+      <ArmorSlash>-110</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>-120</ArmorExotic>
+      <size>Huge</size>
+      <race>modron</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>15</hitroll>
+      <damRoll>36</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric Mage Warrior AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>7</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>15</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>9011</Vnum>
+      <name>Primus</name>
+      <description>Primus is a huge being who rises out of the energy pool and glares at you with
+violet eyes. His right hand is wreathed in darkness, his left in light, and
+he looks very displeased to see you.</description>
+      <longDescription>Primus, ruler of the Plane of Nirvana, forms out of an energy pool.</longDescription>
+      <shortDescription>Primus</shortDescription>
+      <Sex>None</Sex>
+      <level>40</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>3999</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>3999</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Giant</size>
+      <race>modron</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>20</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Mage AreaAttack AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>9000</VNum>
+      <Name>sword long the</Name>
+      <ShortDescription>THE long sword</ShortDescription>
+      <LongDescription>THE long sword of Primus is here.</LongDescription>
+      <Description></Description>
+      <Level>39</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>40</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Magic AntiGood AntiEvil</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>8800</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>adamantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sword long the</Keyword>
+          <Description>This is an extremely long and heavy sword, with many magical runes inscribed
+on it.  It glows with the power of Primus, Lord of the Plane of Nirvana.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>9001</VNum>
+      <Name>moonstone moon stone white</Name>
+      <ShortDescription>a luminescent moonstone</ShortDescription>
+      <LongDescription>A softly glowing white stone rests on the floor.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>WarpStone</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gem</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>moonstone moon stone white</Keyword>
+          <Description>Looking into the smooth surface of this moonstone, you feel strangely at 
+peace and balance with the world around you.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the quadrone to The Plane of Nirvana-->
+      <Type>NPC</Type>
+      <Destination>9001</Destination>
+      <Count>3</Count>
+      <Max>9</Max>
+      <Vnum>9001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tridrone to The Plane of Nirvana-->
+      <Type>NPC</Type>
+      <Destination>9002</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>9000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tridrone to A Change in Direction-->
+      <Type>NPC</Type>
+      <Destination>9003</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>9000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pentadrone to An intersection in the Tower of Nirvana-->
+      <Type>NPC</Type>
+      <Destination>9011</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>9002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quadrone to At the door to the Tower of Nirvana-->
+      <Type>NPC</Type>
+      <Destination>9012</Destination>
+      <Count>3</Count>
+      <Max>9</Max>
+      <Vnum>9001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tridrone to At the door to the Tower of Nirvana-->
+      <Type>NPC</Type>
+      <Destination>9013</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>9000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quinton to Dead End-->
+      <Type>NPC</Type>
+      <Destination>9016</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quinton to Dead End-->
+      <Type>NPC</Type>
+      <Destination>9017</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tertian to A Tertain's lair-->
+      <Type>NPC</Type>
+      <Destination>9018</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tertian to A Tertian's lair-->
+      <Type>NPC</Type>
+      <Destination>9019</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Primus to The Lair of Primus-->
+      <Type>NPC</Type>
+      <Destination>9020</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>9011</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn THE long sword to Primus-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>9000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tertian to A Tertian's lair-->
+      <Type>NPC</Type>
+      <Destination>9021</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quinton to The office of a Quinton-->
+      <Type>NPC</Type>
+      <Destination>9022</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tertian to A Tertian's lair-->
+      <Type>NPC</Type>
+      <Destination>9024</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quinton to A north south tunnel-->
+      <Type>NPC</Type>
+      <Destination>9025</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tridrone to A change of direction-->
+      <Type>NPC</Type>
+      <Destination>9027</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>9000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the quadrone to A change of direction-->
+      <Type>NPC</Type>
+      <Destination>9028</Destination>
+      <Count>3</Count>
+      <Max>9</Max>
+      <Vnum>9001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the tridrone to An east-west route on the Plane of Nirvana-->
+      <Type>NPC</Type>
+      <Destination>9029</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>9000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pentadrone to A large door in the passage-->
+      <Type>NPC</Type>
+      <Destination>9031</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>9002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the octon to The office of the Octon-->
+      <Type>NPC</Type>
+      <Destination>9033</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the septon to A small room-->
+      <Type>NPC</Type>
+      <Destination>9034</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>9006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to Lair of a Hexton-->
+      <Type>NPC</Type>
+      <Destination>9036</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to Office of a Hexton-->
+      <Type>NPC</Type>
+      <Destination>9037</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pentadrone to Office of a Secundus-->
+      <Type>NPC</Type>
+      <Destination>9038</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>9002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn secundus to Office of a Secundus-->
+      <Type>NPC</Type>
+      <Destination>9038</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the octon to Office of an Octon-->
+      <Type>NPC</Type>
+      <Destination>9040</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the septon to Office of a Septon-->
+      <Type>NPC</Type>
+      <Destination>9041</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>9006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to The Barracks-->
+      <Type>NPC</Type>
+      <Destination>9043</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to The Commander's Post-->
+      <Type>NPC</Type>
+      <Destination>9044</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pentadrone to The chamber of the second Secundus-->
+      <Type>NPC</Type>
+      <Destination>9045</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>9002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn secundus to The chamber of the second Secundus-->
+      <Type>NPC</Type>
+      <Destination>9045</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the octon to Chamber of the Octon-->
+      <Type>NPC</Type>
+      <Destination>9047</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the nonaton to Chamber of the Nonaton-->
+      <Type>NPC</Type>
+      <Destination>9048</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>9004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a luminescent moonstone to the nonaton-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>9001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to Chamber of a Hexton-->
+      <Type>NPC</Type>
+      <Destination>9050</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to Chamber of a Hexton-->
+      <Type>NPC</Type>
+      <Destination>9051</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pentadrone to Chamber of the Secudus-->
+      <Type>NPC</Type>
+      <Destination>9052</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>9002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn secundus to Chamber of the Secudus-->
+      <Type>NPC</Type>
+      <Destination>9052</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the octon to A small chamber-->
+      <Type>NPC</Type>
+      <Destination>9054</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the decaton to A cramped room-->
+      <Type>NPC</Type>
+      <Destination>9055</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>9003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to A large room-->
+      <Type>NPC</Type>
+      <Destination>9056</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hexton to A room-->
+      <Type>NPC</Type>
+      <Destination>9057</Destination>
+      <Count>1</Count>
+      <Max>8</Max>
+      <Vnum>9007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pentadrone to Chamber of The First Secundus-->
+      <Type>NPC</Type>
+      <Destination>9058</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>9002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn secundus to Chamber of The First Secundus-->
+      <Type>NPC</Type>
+      <Destination>9058</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>9010</Vnum>
+    </Reset>
+  </Resets>
+</Area>

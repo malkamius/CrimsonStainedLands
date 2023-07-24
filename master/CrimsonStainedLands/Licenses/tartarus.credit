@@ -1,0 +1,101 @@
+### CREDITS ###
+
+This is a list of credits for work towards the code release. This is in
+addition to the normal Diku, Merc and ROM credits and pertains to people
+who have contributed to this code release.
+
+Because this code was developed at a MUD I no longer associate with many
+ideas and contributions stemmed from there. Although I no long associate
+with these people, and this release itself is work done by me, I have
+acknowledged ideas and contributions where applicable. (actually only one
+other person contributed code in "joint" authorship and all that code is
+gone or rewritten now). 
+
+This was necessary because I wanted to release this code back into the
+MUDing community so everyone could use it, and I could only do this if the
+release was my own work and not a joint project (unless the co-author
+agreed to release it, which he probably wouldn't have since I no longer
+associate with him.). So here it is, the release in which I hope people
+will at least find some useful snippets or ideas in.
+
+
+The following are ackowledgements for ideas and contributions:
+
+Coding --
+	-Thrym started the code with some initial basic setup stuff such
+as an improved nanny() sequence which has since been rewritten but who's
+ideas and methods were of value. 
+	-Help with the object limit code which was previously packaged
+with the preexisting code base, but which he wanted to implement. I
+handled the coding and implementation of object loading but he had started
+it off by going over the pre-existing limits code.
+	-Lots of little modifications to tweak things into a form we
+prefered. I have since changed most of this but credit for the original
+ideas and pointers on what would be good to change are his. (eg, changing
+hide so you can't do it in forests - an idea which in turn was sourced
+from other muds but implemented by Thrym on the former code base and then
+removed by me and reworked into this release cos I liked the idea).
+	-Clan coding. Thrym set up the basics of clan induction by mortal
+leaders and the idea of clans members gaining powers came from discussions
+with him and other people (although the idea behind this was also sourced
+from many other places previously).
+	-Thrym who put in MOBProgs from the patch. I was going to
+remove these because I was told to release the code I had to remove any
+previous code by others  and either rewrite it myself or ask for their
+permission to use it (as I no longer work with them), but was then told
+that "patched" code such as MOBProgs was not included in such copyright as
+it was sourced from already licensed authors.
+	-Race and class creation. Thrym did some nice work on the nanny()
+function. I have since rewritten it but his original work was nice and
+gave good ideas.
+
+Ideas and playtesting --	
+	Lots and lots of players at the mud this code release was
+	developed on. Clan ideas were contributed by Xyza, Styx, Thrym,
+	Adorno, and others, with many of their ideas pre-sourced from 
+	another mud. Ideas behind the coding go to them and the other
+	muds that ideas were derived from.
+
+Beta Testing --
+	Special thanks go to Barsak and Myles who worked with me 
+	when nobody else wanted to put in the time to develop a new code
+	base. Lots of hours were spent coding piles of new things and
+	trying to debug and balance them alone, and these two helped a lot
+	when it seemed nobody else wanted to work on it.
+
+	Also thanks to Shylok, Mackle and Ohmo for giving lots of support
+	in developing the code ("It's a good mud, don't waste it by just 
+	quiting!".."You work we'll play".."You've got too much time on your
+	hands").
+
+
+Finally an afterword:
+
+	Tartarus code was developed while I was an immortal named Ceran at
+Darkmists mud but due to their lack of help in building I eventual left
+with my original coding (some might claim they 'kicked me out', but I
+actually left and took MY code with me. It was my taking of the code which
+I had written which made them angry as they claimed it was not mine but
+'theirs' - a claim made by immortals who hadn't even been on the mud when
+I'd coded most of it!). Strangely their claims that I couldn't 'take'
+my own code was reflected by their continual use of my code and all of my
+areas (which were written soley by me and one other person I knew in RL
+who also wanted the areas removed), -despite- the fact I emailed them and
+their provider informing them I did not want my areas used there anymore.
+
+	This release is the code that I implemented and contains many
+ideas formed there, but implemented by me without coding help other than
+the small code modifications Thrym made (he reworked pre-existing base
+merc/diku/rom code while I implemented new features such as morphing and 
+dual wields).
+
+	Thanks go out to Styx and Thrym who first decided to build a new
+mud and who invited me to code on the mud. They now run the mud with new
+additions made by later immortals, and this code release doesn't contain
+any of that code so please don't ask for that code, this is merely the
+base work that -I- developed over the ROM2.4b source.
+
+	The twenty odd areas and all the code I had written are a
+testament to the effort and time I put into this project and I hope others
+can gain some use and enjoyment from it. 
+

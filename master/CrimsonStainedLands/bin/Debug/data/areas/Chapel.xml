@@ -1,0 +1,4850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Chapel</Name>
+    <Info></Info>
+    <VnumStart>3400</VnumStart>
+    <VnumEnd>3499</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{15 25} Copper  Chapel Catacombs</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>3405</VNum>
+      <Name>Inside the Chapel</Name>
+      <Description>You are in a small, dark chapel.  The dark brown glass in the tiny windows
+do not let much light through.  A few rows of worn wooden benches stand here.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3604</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The chapel door is made of dark wood.</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3421</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>3430</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>glass windows</Keyword>
+          <Description>The windows must be meant to be dark.  At least they are completely clean.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>benches rows</Keyword>
+          <Description>The benches are not of the comfortable kind.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3408</VNum>
+      <Name>Stairwell into Darkness</Name>
+      <Description>You sense even more danger coming from below but are urged onward ...</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3449</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked</Flags>
+          <Keys>3411</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3450</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3409</VNum>
+      <Name>The Acolyte's Bedroom</Name>
+      <Description>This is why you were not welcomed at the entrance by the tomb's faithful
+servants ... blood and gore is ankle deep in here.  Oh NO! the door shut
+behind you!  It's a trap!  A bloodied corpse of an acolyte is lying here ...
+A bloodied corpse of an acolyte is lying here ...  A bloodied corpse of an
+acolyte is lying here ...</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3437</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>corpse corpses</Keyword>
+          <Description>Mauled and torn apart ... throats were ripped out and guts spilled on the
+floor ... you slip and land, planting yourself firmly in the slick wetness
+and splattering yourself with offal.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3410</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3415</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3411</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3411</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3410</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3412</VNum>
+      <Name>The Grand Hall of Kings</Name>
+      <Description>You are at the west end of the Grand Hall of Kings.  There is a doorway to the
+south with something strange written above it.  Also on the floor are dried
+blood stains, but their color seems a little wrong.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3417</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3413</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A door to the south</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>stain stains</Keyword>
+          <Description>That's odd ... they seem a little GREEN.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>door writing</Keyword>
+          <Description>Above the door is some strange writing!  It is worn with age, but it refers
+to an ancient ruler named 'Shohan'.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3413</VNum>
+      <Name>The Shrine of Shohan</Name>
+      <Description>BLOOD EVERYWHERE!  The walls are coated with blood, bits of bloody flesh lie at
+your feet,  and torn clothing is scattered about.  It wouldn't disturb you in
+the least  except that it is all FRESH!  What ever used to pass as an altar
+here,  lies overturned and smashed.  Doors lead to the south and to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3412</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3414</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3414</VNum>
+      <Name>The Tomb of Shohan</Name>
+      <Description>Once beautiful, this place has been turned into a slaughterhouse by the hands
+of evil beings ... even more blood and dead, rotting flesh.  This place looks
+like the feeding grounds of beasts and monsters.  The overturned sarcophagus
+of the once powerful King Shohan lies here.  A door leads to the north and a
+doorway has been hewn to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3413</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3419</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>coffin sarcophagus</Keyword>
+          <Description>Now destroyed ... there is writing on it: 'All hail the new king; we serve
+the Roch'tar, the Undying One!  Those who decline his worship shall be
+slaughtered!'</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3415</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3420</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3416</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3410</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3416</VNum>
+      <Name>Entrance to the Lower Chambers</Name>
+      <Description>You can tell that this area wasn't a part of the original construction.
+The walls have been hewn by a mighty force look as though they were CLAWED.
+The passage slopes upward here and also continues to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3415</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3418</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>walls</Keyword>
+          <Description>Something BIG must have done this job!  There are traces of BLOOD in the
+claw marks.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3417</VNum>
+      <Name>The Grand Hall of Kings</Name>
+      <Description>This is the western wing of the Grand Hall of Kings.  Your only exits are to
+the east and west in this gloomy hallway.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3422</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3412</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3418</VNum>
+      <Name>The Shrine of Cristis</Name>
+      <Description>Different than the rest, this place has not been desecrated.  An altar still
+stands here and the walls show scenes from the life of Cristis the Kind,
+a ruler of the outlying regions west of Midgaard.  There is a stone staircase
+leading down.  The Ghost of Cristis the Kind stands here.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3419</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3416</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>altar</Keyword>
+          <Description>It stands 2 feet high with the remnants of candle-wax on top.  There is
+an inscription on the side:  'Praise the almighty Cristis the bringer of
+good and justice to the world.  He who fought the evilest finally is at
+peace.  May the Gods remember him forever ...'</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>ghost cristis</Keyword>
+          <Description>His rest has been disturbed by evil creatures who have invaded his domain
+and grave.  He holds up a parchment for you to read:
+Hello stranger and last hope for Midgaard and this tomb!
+This is a plea for aid by a man long since dead from this Earth.
+The forces of evil have taken control of this tomb and the
+Kings of old need your aid to free us and deliver us to peace
+once again.  I think that I alone have been able to appear and
+communicate with the mortal world.
+Roch'tar, the reincarnate Vampire, now rules these tombs.
+You must find and defeat him and his minions!
+May God bless you on your Quest!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3419</VNum>
+      <Name>The Tomb of Cristis</Name>
+      <Description>Everything here has simply been destroyed.   Exits lead north and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3418</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3414</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3420</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3425</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3415</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3421</VNum>
+      <Name>Entrance Chamber to the Grand Hall of Kings</Name>
+      <Description>Whoever built this place must have been very rich indeed!  Though you did
+enter through a rather small door this place has enough room to hold several
+score of people.  The floor has a beautifully woven carpet, and the walls are
+covered in finely crafted tapestries. You can tell that these things must have
+been worth much but they have not lasted well throughout the ages.  Massive
+doors lead off to the south and a large stone staircase leads up.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3422</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Finely polished oak doors stand to the south.</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3405</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see a large set of stone stairs leading upwards to a small stone door at
+ the top.</Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>3410</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>stone door trapdoor</Keyword>
+          <Description>It's rather small and looks quite heavy but maybe with some kind of leverage
+you could move it.  It has a queerly shaped hole that looks big enough
+for an equally queerly shaped pole to fit inside.  If only you had it!</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>tapestry tapestries</Keyword>
+          <Description>The tapestries were woven into beautiful and exciting scenes of battles
+long ago.  One on the left your shows the historic battle between Jubal the
+Benevolent and Hroth Kragen's forces that eventually Jubal's army won (of
+course).</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>staircase stairs</Keyword>
+          <Description>Though quite cracked they do look very stable.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>oak</Keyword>
+          <Description>They're HUGE!  They are at least 12 feet tall and about 10 feet wide.
+If not for one thing they would be perfectly preserved.  There appears
+to be some letters crudely scratched into the wood.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>letters graffiti</Keyword>
+          <Description>'Beware here all of man, because past here lies only death.'
+Insho'rkthon brsskra-lehsn Roch'tar
+Beneath, there are two criss-crossing scratchmarks in an X formation that
+look like someone (or something) raked their claws across the wood.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3422</VNum>
+      <Name>The Grand Hall of Kings</Name>
+      <Description>A long hallway stretches east and west.  On the southern side of the hall
+there are many doors, each with the name of a king who has died and is
+entombed here.  The hallway is beautiful yet chilling.  Even though the area
+has been kept well by acolytes, there remains a stench of the undead.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3421</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3427</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3423</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The door has written above it: 'May all the lands thank Crotus the Victor.
+ Without his guidance this kingdom would not have stood.'</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3417</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3423</VNum>
+      <Name>The Shrine of Crotus</Name>
+      <Description>Mostly rubble, this place used to be the shrine of the famous king Crotus,
+who saved the northern regions from being overrun by the goblin hordes of
+100 years ago.  If not for him, Midgaard of course would have eventually been
+conquered as well.  Though Crotus was a goodly king, it was rumored that he
+turned to the dark ways in his dying years ... and died an evil man.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3422</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3424</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3424</VNum>
+      <Name>The Tomb of Crotus</Name>
+      <Description>A sarcophagus lies in the middle of the room and seems undisturbed.
+A hole has been knocked into the east wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3423</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3429</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3425</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3426</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3420</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3426</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3425</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3430</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3427</VNum>
+      <Name>The Grand Hall of Kings</Name>
+      <Description>You are in the western part of the Grand Hall of Kings.  To the south is a
+door and to the east and west the hall continues.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3432</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3428</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3422</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3428</VNum>
+      <Name>The Shrine of Mitnar</Name>
+      <Description>Mitnar was a gruesome beast of a man ... he loved battle ... and nothing
+else.  Warriors did love Mitnar, and all fighting men honored him.
+On the wall is depicted battle after battle after battle.  A small opening has
+been shaped carefully to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3427</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3433</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3429</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3429</VNum>
+      <Name>The Tomb of Mitnar</Name>
+      <Description>The wall paintings show men and women warriors alike bowing down to Mitnar,
+prisoners of war being put to the sword by Mitnar, and great heaps of gold
+and weapons under the feet of Mitnar.  Where his coffin was, there is now
+only a rectangular blemish on the floor of the dusty room.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3428</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3424</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3430</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3435</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3431</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3426</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3431</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3430</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3436</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3432</VNum>
+      <Name>The Grand Hall of Kings</Name>
+      <Description>You are still walking through the gloomy hallway.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3437</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3427</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3433</VNum>
+      <Name>The Shrine of Frath</Name>
+      <Description>Little chunks of dried meat are spattered throughout this room.  The walls
+are covered in gore.  Almost as if they were painted ... ICK!  You can
+almost make out the design!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3438</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3428</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3434</VNum>
+      <Name>The Tomb of Frath</Name>
+      <Description>UGH!  The sarcophagus is opened up and the mummified body lies out in the
+open, ripped to pieces.  Gnawed pieces of flesh and bone are strewn here.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3439</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3435</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3440</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3436</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3430</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3436</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3435</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3441</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3431</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3437</VNum>
+      <Name>The Grand Hall of Kings</Name>
+      <Description>You are at the western end of the Grand Hall of Kings.  There is a
+door leading north and the hallway continues west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3409</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3432</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3438</VNum>
+      <Name>The Shrine of Jubal</Name>
+      <Description>This was once beautiful.  Now the huge tapestries have been torn down and the
+carpeting pulled up ... the paintings on the ceiling are unreadable and the
+altar is crumbled.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3439</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3433</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3439</VNum>
+      <Name>The Tomb of Jubal</Name>
+      <Description>The smell coming off of the opened sarcophagus is nauseating.  The floor is
+slightly crumpled and walls are raked ... but the worst part is the mummy ...
+Jubal the Benevolent is missing his head!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3438</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3434</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3440</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3445</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3441</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3435</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3441</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3440</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3446</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3436</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3442</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3447</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3443</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3443</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3442</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3444</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3444</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3443</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3449</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3445</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3446</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3440</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3446</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3445</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3447</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3441</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3447</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3446</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3448</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3442</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3448</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>This room has been totally hollowed out and smoothed, and a pit has been
+drilled in the center of the floor.  There are extensive gruesome paintings
+of beasts and monsters terrorizing the countryside; vampires sucking the
+blood of beasts and humans alike.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3447</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>painting paintings mural</Keyword>
+          <Description>There is a tiny painting of a vault in this mural ... and it seems to be a
+reflected picture of the vault ... the word in tiny print is 'rathcor'.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3449</VNum>
+      <Name>The Lower Chambers and Tombs of the Undead</Name>
+      <Description>The stench of death is heavy in these caverns.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3408</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>3411</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3444</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3450</VNum>
+      <Name>Entrance to the Forbidden Catacombs</Name>
+      <Description>You have entered the forbidden catacombs.  This cave system must have been
+built long ago.  The air is dank and smells of something dead ...  or maybe
+undead.  Enter here at your own risk ... something evil abides.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3451</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3452</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3453</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3454</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3408</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3451</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3455</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3450</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3452</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3461</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3450</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3453</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3450</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3454</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3450</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3455</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3456</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3451</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3456</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3455</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3457</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3457</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3458</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3456</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3458</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3457</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3472</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see unfathomable blackness to the south ...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3459</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3459</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3458</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3460</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see something's den.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3460</VNum>
+      <Name>Den of the Vampire</Name>
+      <Description>Your mind whirls in the hideous madness of this place.  The stench
+is horrendous and dead bodies, sucked of life, lay all over.  One coffin
+lies in the center of the room ... waiting for YOU!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3459</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3475</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>A jet black coffin ... who knows what lurks beneath.</Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>3419</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3461</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3462</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3452</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3462</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3463</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3461</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark too tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3463</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3462</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3464</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3464</VNum>
+      <Name>The Catacombs</Name>
+      <Description>Stone walls, musty air ... the earth seems to moan softly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3470</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>There is a secret door here.</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3465</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3463</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3465</VNum>
+      <Name>The Gilded Hallway</Name>
+      <Description>Wow!  Although this hallway is quite filthy and dusty, it is noticeably
+different than the rest of the catacombs ... but you don't feel safe yet.
+The walls faintly show ancient detailed etchings in gold and silver of
+ancient rituals ... not all of which seem pleasant.  The hallway continues
+north into the catacombs and further south as long as you can see.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3464</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The glow of your light reflects off the walls and you see the catacombs.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3466</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The glow of your light reflects off the walls ... the gilded hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>etchings</Keyword>
+          <Description>Beautiful yet disturbing, they urge you to move onward.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3466</VNum>
+      <Name>The Gilded Hallway</Name>
+      <Description>Ancient etchings and writing in intricate gold and silver designs fill these
+walls.  You are tempted to linger and examine them closely.  Your light source
+flickers off the walls showing you exits north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3465</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3467</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>etchings</Keyword>
+          <Description>Beautiful yet disturbing, they urge you to move onward.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3467</VNum>
+      <Name>The Gilded Hallway</Name>
+      <Description>Ancient etchings and writing in intricate gold and silver designs fill these
+walls.  You are tempted to linger and examine them closely.  Your light source
+flickers off the walls showing you exits north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3466</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3468</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>etchings</Keyword>
+          <Description>Beautiful yet disturbing, they urge you to move onward.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3468</VNum>
+      <Name>The Gilded Hallway</Name>
+      <Description>Ancient etchings and writing in intricate gold and silver designs fill these
+walls.  You are tempted to linger and examine them closely.  Your light source
+flickers off the walls showing you exits north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3467</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3469</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>etchings</Keyword>
+          <Description>Beautiful yet disturbing, they urge you to move onward.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3469</VNum>
+      <Name>The Gilded Hallway</Name>
+      <Description>Ancient etchings and writing in intricate gold and silver designs fill these
+walls.  You are tempted to linger and examine them closely.  Your light source
+flickers off the walls showing you exits north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3468</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Your light reveals more of the hallway.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>etchings</Keyword>
+          <Description>Beautiful yet disturbing, they urge you to move onward.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3470</VNum>
+      <Name>A Secret Passageway</Name>
+      <Description>A secret passage!  You wonder where it may lead!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3471</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>east secret door</Keyword>
+          <Description>The door closed on you so softly that you didn't even notice!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3471</VNum>
+      <Name>A Secret Passageway</Name>
+      <Description>A secret passage!  You wonder where it may lead!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3470</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Too dark to tell.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3472</VNum>
+      <Name>The Short Way to Hell ...</Name>
+      <Description>You fall ...
+hmm .... it's getting really HOT!  You fall ...
+you fall ...
+Slowly you are cooking as you fall further ... your skin is burning and
+your hair evaporates ...
+you fall ...
+and fall ...
+and STOP...!!
+Welcome to HELL!
+But even in Hell we give you another chance.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>0</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The fires of hell grow hotter to the north...</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3475</VNum>
+      <Name>Inside the coffin</Name>
+      <Description>You are inside a coffin.  It seems rather cramped in here.  You can climb
+up out of the coffin, or you can wait for here the real occupant to join you.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3460</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked</Flags>
+          <Keys>3419</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>3400</Vnum>
+      <name>skeleton bony</name>
+      <description>Brown bones with tufts of clothing still hanging from them.  This
+skeleton looks very mindless but still dangerous ...</description>
+      <longDescription>A bony skeleton is here.</longDescription>
+      <shortDescription>the bony skeleton</shortDescription>
+      <Sex>Male</Sex>
+      <level>1</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>10</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>90</ArmorBash>
+      <ArmorSlash>90</ArmorSlash>
+      <ArmorPierce>90</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>skeleton</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3401</Vnum>
+      <name>undead zombie</name>
+      <description>His body is totally white and slowly rotting away.  Each Zombie looks
+quite different from the next because they were, of course, once alive and
+human.</description>
+      <longDescription>An undead zombie sits here munching on something ...</longDescription>
+      <shortDescription>the undead zombie</shortDescription>
+      <Sex>Male</Sex>
+      <level>4</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>46</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>80</hitpoints>
+      <maxhitpoints>80</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>60</ArmorBash>
+      <ArmorSlash>60</ArmorSlash>
+      <ArmorPierce>60</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>4</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3402</Vnum>
+      <name>undead ghoul</name>
+      <description>The ghoul no longer resembles the adventurer he once was.  Nonetheless
+he looks like he hasn't forgot his fighting skills.</description>
+      <longDescription>A ghoul is here staring at you hungrily.</longDescription>
+      <shortDescription>The ghoul</shortDescription>
+      <Sex>Male</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>ghoul</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>7</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3403</Vnum>
+      <name>undead wraith</name>
+      <description>The wraith no longer has a material form.  He is wearing a tattered
+black robe which hides all but the darkness of his face and the glimmer
+in his eyes.</description>
+      <longDescription>You spot a wraith advancing towards you from the shadows.</longDescription>
+      <shortDescription>The wraith</shortDescription>
+      <Sex>Male</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3404</Vnum>
+      <name>undead guardian vampire</name>
+      <description>The guardian vampire looks quite EVIL.  Just by looking at him the hair on your
+arms raises. He looks mighty tough to be just a minor minion.</description>
+      <longDescription>A vampire is here hiding his face from your light source.</longDescription>
+      <shortDescription>The guardian vampire</shortDescription>
+      <Sex>Male</Sex>
+      <level>28</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>703</HitPointDiceBonus>
+      <ManaPointDiceSides>14</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>560</hitpoints>
+      <maxhitpoints>560</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-80</ArmorBash>
+      <ArmorSlash>-80</ArmorSlash>
+      <ArmorPierce>-80</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>28</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>750</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3405</Vnum>
+      <name>priest</name>
+      <description>Obviously a goodly man, you feel closer to God just by gazing upon this man.
+Dressed in white, fine white hair, and a soft slightly wrinkled face ...
+this man has a sacred beauty.  You see a halo around his head.</description>
+      <longDescription>A priest of God stands here solemnly speaking words of praise.</longDescription>
+      <shortDescription>the priest</shortDescription>
+      <Sex>Male</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>15</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>20</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel NoTrack Cleric AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3406</Vnum>
+      <name>Mi-Go Fungi</name>
+      <description>Mi-Go, the Fungi from Yuggoth ... it is a pinkish being about five feet long;
+with a crustaceous body bearing a vast pair of membranous wings and several
+sets of articulate limbs, body a sort of convoluted ellipsoid, covered with
+multitudes of very small antennae, where a head would ordinarily be.  These
+beings sometimes walk on all their legs and sometimes on the hind pair only.</description>
+      <longDescription>A Mi-Go is crawling here.</longDescription>
+      <shortDescription>the Mi-Go</shortDescription>
+      <Sex>None</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>32</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3407</Vnum>
+      <name>nightgaunt</name>
+      <description>... shocking and uncouth black thing with smooth, oily, skin, unpleasant horns
+that curve inward toward each other, bat wings whose beating make no sound,
+ugly prehensile paws, and a barbed tail that lashes disquietingly.  And worst
+of all, it makes absolutely no sound or speech and smiles not at all because
+it has no face, only a suggestive blackness where a face ought to be ...</description>
+      <longDescription>A nightgaunt is standing here</longDescription>
+      <shortDescription>The nightgaunt</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>7</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3408</Vnum>
+      <name>hunting horror</name>
+      <description>Serving Nyarlathotep and Roch'tar, these beings are hunting for victims.
+They resemble enormous ropy black serpents or worms possessing bat-like or
+umbrella-like wings.  Their forms continually shift and change, twitching
+and writhing, so it is hard to look at them.  They speak in great harsh
+voices.  A hunting horror is HUGE, normally around 40 feet long.</description>
+      <longDescription>The hunting horror is here in wait of an unwary traveler.</longDescription>
+      <shortDescription>The hunting horror</shortDescription>
+      <Sex>None</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3409</Vnum>
+      <name>weeds</name>
+      <description>Just some unpleasant looking vine-like growths ...</description>
+      <longDescription>Some weeds are creeping across the floor.</longDescription>
+      <shortDescription>some cave weeds</shortDescription>
+      <Sex>None</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>4</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3410</Vnum>
+      <name>snapper joe</name>
+      <description>What an ugly fiend! He is about 6'6'' and has mostly greenish skin with
+bright red hair. Half his face is burnt off and he has a perpetual smile.
+He is called up from his service in hell in order to aid the Undying One.</description>
+      <longDescription>Snapper Joe is standing here leering at you chillingly.</longDescription>
+      <shortDescription>Snapper Joe</shortDescription>
+      <Sex>Male</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>111</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3411</Vnum>
+      <name>X-ist eater</name>
+      <description>A large hairy monstrous beast, the only LIVE thing you have seen down here.
+It stands approximately 8 feet tall and hunches over to fit in this
+small room.  It has a pair of tremendous claws that it uses to rip and tear.
+It has dog-like face except ... different.  Bright glowing eyes and a grimace
+lead you to believe that he knew that you were coming.</description>
+      <longDescription>An X-ist flesh eater is sitting here munching on some coffin remains</longDescription>
+      <shortDescription>The X-ist flesh eater</shortDescription>
+      <Sex>Male</Sex>
+      <level>17</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>258</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>340</hitpoints>
+      <maxhitpoints>340</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-30</ArmorBash>
+      <ArmorSlash>-30</ArmorSlash>
+      <ArmorPierce>-30</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>17</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>78</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3412</Vnum>
+      <name>spirit ghost king crotus</name>
+      <description>Floating above the ground here and looking a bit dead, he whispers
+softly into the air:
+The forces of evil have unlocked my spirit as
+well as one other.  Free me from this misery,
+anyone that can hear. The peace of the grave
+calls me but I am blocked from its quiet.</description>
+      <longDescription>The spirit of King Crotus is floating lazily above the floor.</longDescription>
+      <shortDescription>the spirit of King Crotus</shortDescription>
+      <Sex>Male</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>308</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>30</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel Mage AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3413</Vnum>
+      <name>rock slug</name>
+      <description>It is a large brownish slug.  Got any salt?  Didn't think so ...</description>
+      <longDescription>A rock slug is slowly creeping along, leaving a slime trail behind it.</longDescription>
+      <shortDescription>the rock slug</shortDescription>
+      <Sex>None</Sex>
+      <level>3</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>35</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>60</hitpoints>
+      <maxhitpoints>60</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>70</ArmorBash>
+      <ArmorSlash>70</ArmorSlash>
+      <ArmorPierce>70</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>3</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3414</Vnum>
+      <name>etcher</name>
+      <description>Quite insane, the mad etcher has been here for es.  His hair is
+white; he babbles nonsense to himself; a layer of dust covers his out-of-date
+clothing; and he seems to be working on the same portion of the wall near
+the base ... oh and he seems quite blind.
+He leers insanely at you and says 'heh heh what can I do for you children?
+Please don't mind my wife, she is always like that ... hello dear can you
+make some tea for our company?  Oh good!  Now sit right down will you?
+Would you like hot or cold tea?  Yes the weather is ...'
+And on he babbles ...</description>
+      <longDescription>The mad etcher is sitting here babbling to himself and working on the wall.</longDescription>
+      <shortDescription>The mad etcher</shortDescription>
+      <Sex>Male</Sex>
+      <level>5</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>46</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>100</hitpoints>
+      <maxhitpoints>100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>60</ArmorBash>
+      <ArmorSlash>60</ArmorSlash>
+      <ArmorPierce>60</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC StayArea Mage AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Blind DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3415</Vnum>
+      <name>wife ghost specter</name>
+      <description>You can barely make her out ... though it almost makes you vomit.
+She is missing half her head.  The remaining half is smashed in horribly like
+she took a nasty fall.  Her one damaged eye hangs on its own.  She smiles
+insanely at you thru a broken jaw and missing teeth.  One hand of hers is
+resting on the shoulder of the etcher ... her husband.</description>
+      <longDescription>The spectral wife of the etcher is very faintly floating here.</longDescription>
+      <shortDescription>The spectral etcher's wife</shortDescription>
+      <Sex>Female</Sex>
+      <level>7</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>85</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>140</hitpoints>
+      <maxhitpoints>140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>7</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>6</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3416</Vnum>
+      <name>body</name>
+      <description>YUK! It's ugly, disgusting ... it smells ... it also moves a bit!</description>
+      <longDescription>A half-decomposed body is lying in the corner here.</longDescription>
+      <shortDescription>The half-decomposed body</shortDescription>
+      <Sex>Male</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>4</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>3400</VNum>
+      <Name>candlestick</Name>
+      <ShortDescription>a candlestick</ShortDescription>
+      <LongDescription>A pewter candlestick is standing here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Light</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>50</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wax</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>candlestick</Keyword>
+          <Description>It is a rather old-looking three-armed candlestick made from pewter.  Its
+candles are a yellowish white colour.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3402</VNum>
+      <Name>tickler</Name>
+      <ShortDescription>a nightgaunt's tickler</ShortDescription>
+      <LongDescription>A nightgaunt's tickler has been left here.</LongDescription>
+      <Description></Description>
+      <Level>7</Level>
+      <WeaponDamageType>slime</WeaponDamageType>
+      <WeaponType>Whip</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>4</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>NoDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>540</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tickler</Keyword>
+          <Description>A horrid black mass of gooey tentacles obviously ripped from the corpse
+of a nightgaunt ... disgusting.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3403</VNum>
+      <Name>plasma webbing</Name>
+      <ShortDescription>disgusting pinkish plasma webbing</ShortDescription>
+      <LongDescription>A pile of pink material is lying here</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>AntiGood AntiNeutral</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1800</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>plasma</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>4</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>plasma webbing</Keyword>
+          <Description>Yuck, mossy and wet.  It looks like some sort of webbing.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3410</VNum>
+      <Name>rod key</Name>
+      <ShortDescription>a queerly shaped rod</ShortDescription>
+      <LongDescription>A queerly shaped rod is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>crystal</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>rod key</Keyword>
+          <Description>This rod looks sort of octagonal, and sort of like a key and crowbar.  You
+recognize that it will probably fit the lock at the entrance of the tombs.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3411</VNum>
+      <Name>large black dirty key</Name>
+      <ShortDescription>a large black dirty key</ShortDescription>
+      <LongDescription>A large black dirty key is lying here</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>crystal</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>large black dirty key</Keyword>
+          <Description>One of those traditional old lock type keys ... except huge, black and
+filthy ... hmm ... like it has been buried for some time ...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3412</VNum>
+      <Name>head jubal mummy</Name>
+      <ShortDescription>the mummified head of Jubal the Benevolent</ShortDescription>
+      <LongDescription>The mummified head of Jubal the Benevolent is lolling back and forth.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>AntiEvil PickProof</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>head jubal mummy</Keyword>
+          <Description>ACK! It's half eaten away ... yet it is whole ... in fact I think it can be
+opened and closed ... is there something in its teeth!?!?!? ACK you do it!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3413</VNum>
+      <Name>ring black marble</Name>
+      <ShortDescription>a black marble ring</ShortDescription>
+      <LongDescription>A black marble ring is lying here on the ground.</LongDescription>
+      <Description></Description>
+      <Level>3</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Magic AntiEvil</ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>26</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>marble</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>black marble ring</Keyword>
+          <Description>It is pitch black and has beautiful swirls characteristic of marble all
+through it.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3414</VNum>
+      <Name>rapier thin</Name>
+      <ShortDescription>a whisper thin rapier</ShortDescription>
+      <LongDescription>A rapier is lying here.</LongDescription>
+      <Description></Description>
+      <Level>16</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>2</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>thin rapier</Keyword>
+          <Description>It seems so thin that it would be useless but at the same time it looks deadly.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3415</VNum>
+      <Name>sarcophagus coffin</Name>
+      <ShortDescription>a stone sarcophagus</ShortDescription>
+      <LongDescription>A stone sarcophagus is sitting here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sarcophagus coffin</Keyword>
+          <Description>A well crafted, if dusty and ancient, home for the afterworld, it seems
+to be able to be opened but needs a key.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3416</VNum>
+      <Name>iron heavy key</Name>
+      <ShortDescription>a heavy iron key</ShortDescription>
+      <LongDescription>A heavy iron key is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>key iron heavy</Keyword>
+          <Description>It looks to be a very heavy old iron key.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3417</VNum>
+      <Name>flask wineflask</Name>
+      <ShortDescription>a wineflask</ShortDescription>
+      <LongDescription>A wineflask has been been left here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>400</Cost>
+      <Nutrition>15</Nutrition>
+      <Liquid>red wine</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>skin</Material>
+      <Charges>2</Charges>
+      <MaxCharges>2</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>wineflask flask</Keyword>
+          <Description>A nice leather wineflask that has somehow survived the ages in a coffin.
+The wine should be nicely aged.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3418</VNum>
+      <Name>coins</Name>
+      <ShortDescription>a mound of coins fit for a dead king</ShortDescription>
+      <LongDescription>You see a mound of coins fit for a dead king here</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>50</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>8</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>3419</VNum>
+      <Name>key</Name>
+      <ShortDescription>key to the coffin</ShortDescription>
+      <LongDescription>The key to the coffin is lying here</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>key</Keyword>
+          <Description>Neat you have the key to the coffin...is is a soft orange color
+and burns in your hand a bit.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3420</VNum>
+      <Name>rathcor</Name>
+      <ShortDescription>a hidden compartment in the room</ShortDescription>
+      <LongDescription></LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Dark PickProof</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>rathcor</Keyword>
+          <Description>Ah HA!  A hidden compartment!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3421</VNum>
+      <Name>rusty sword curved scimitar</Name>
+      <ShortDescription>a rusty curved scimitar</ShortDescription>
+      <LongDescription>A sword has been left lying here</LongDescription>
+      <Description></Description>
+      <Level>3</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>3</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>6</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>370</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>rusty sword scimitar</Keyword>
+          <Description>Very rusty and old...it has a wide blade and chunks missing from
+its cutting edge.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3422</VNum>
+      <Name>piece slime</Name>
+      <ShortDescription>a piece of slime</ShortDescription>
+      <LongDescription>You step on a piece of slime...your foot squishes a bit</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>45</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>slime</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>slime piece</Keyword>
+          <Description>ICK! This is a piece of slug-like brownish green slime...
+Blech!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3423</VNum>
+      <Name>smock</Name>
+      <ShortDescription>an artist's smock</ShortDescription>
+      <LongDescription>An artist's smock is lying here on the floor.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Clothing</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>smock</Keyword>
+          <Description>It has paint and little shavings of different materials all over it.
+It is very old an smells of paint, mildew, and rot.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3424</VNum>
+      <Name>scroll tightly rolled</Name>
+      <ShortDescription>a tightly rolled scroll</ShortDescription>
+      <LongDescription>A yellowing tightly rolled scroll is here</LongDescription>
+      <Description></Description>
+      <Level>8</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Scroll</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="15" SpellName="colour spray" />
+        <Spell Level="15" SpellName="create food" />
+        <Spell Level="15" SpellName="magic missile" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1070</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>scroll tightly rolled</Keyword>
+          <Description>It is tightly wound. The writing on the inside when opened up is very
+unreadable but the scroll has a seal on it with a grey :
+88
+88
+8888  8888
+88
+88</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3425</VNum>
+      <Name>auburn orb</Name>
+      <ShortDescription>an auburn-colored orb</ShortDescription>
+      <LongDescription>An orb is here</LongDescription>
+      <Description></Description>
+      <Level>15</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Hum Magic</ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="10" SpellName="charm person" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4700</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>2</Charges>
+      <MaxCharges>2</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>auburn orb</Keyword>
+          <Description>You gaze into the orb and are almost lost in the swirling mists of color
+inside of this rare and beautiful object.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3426</VNum>
+      <Name>bar gold</Name>
+      <ShortDescription>a bar of gold</ShortDescription>
+      <LongDescription>A bar of gold is lying here</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>bar gold</Keyword>
+          <Description>A nice little brick of gold...very dusty and old... it has some emblem
+on it...The emblem is a large 'J'</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3427</VNum>
+      <Name>cape dark black</Name>
+      <ShortDescription>a dark black cape</ShortDescription>
+      <LongDescription>A dark black cape is lying here</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>dark black cape</Keyword>
+          <Description>The cape is gently flows and pulls in the light so evenly and perfectly
+that the cape seems to be simply a void of blackness. It is quite beautiful</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3428</VNum>
+      <Name>flaming black sword long longsword</Name>
+      <ShortDescription>the pitch-black flaming longsword</ShortDescription>
+      <LongDescription>A pitch-black long sword here</LongDescription>
+      <Description></Description>
+      <Level>28</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>12</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Magic Frost Sharp Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2200</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>flaming sword long longsword</Keyword>
+          <Description>This sword is amazing! It almost wields itself! As you test it out, the
+flames seems to roar brighter as you go thru basic swordsman routines.
+it is obviously a great find!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3429</VNum>
+      <Name>breast plate dented worn</Name>
+      <ShortDescription>a worn and dented breast plate</ShortDescription>
+      <LongDescription>A piece of armour is here.</LongDescription>
+      <Description></Description>
+      <Level>15</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>50</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>6</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>6</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>breast dented plate worn</Keyword>
+          <Description>Though this piece of armour is worn and dented it looks very usable.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3430</VNum>
+      <Name>key silver</Name>
+      <ShortDescription>a silver key</ShortDescription>
+      <LongDescription>You see a silver key here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>key silver</Keyword>
+          <Description>for the altar...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the priest to Inside the Chapel-->
+      <Type>NPC</Type>
+      <Destination>3405</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3405</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silver key to the priest-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3430</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a candlestick to Inside the Chapel-->
+      <Type>Item</Type>
+      <Destination>3405</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Acolyte's Bedroom-->
+      <Type>NPC</Type>
+      <Destination>3409</Destination>
+      <Count>3</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Acolyte's Bedroom-->
+      <Type>NPC</Type>
+      <Destination>3409</Destination>
+      <Count>3</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Acolyte's Bedroom-->
+      <Type>NPC</Type>
+      <Destination>3409</Destination>
+      <Count>3</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The ghoul to The Acolyte's Bedroom-->
+      <Type>NPC</Type>
+      <Destination>3409</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the bony skeleton to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3410</Destination>
+      <Count>2</Count>
+      <Max>8</Max>
+      <Vnum>3400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rusty curved scimitar to the bony skeleton-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3421</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The wraith to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3411</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an auburn-colored orb to The wraith-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3425</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The half-decomposed body to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3411</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Tomb of Shohan-->
+      <Type>NPC</Type>
+      <Destination>3414</Destination>
+      <Count>4</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Tomb of Shohan-->
+      <Type>NPC</Type>
+      <Destination>3414</Destination>
+      <Count>4</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Tomb of Shohan-->
+      <Type>NPC</Type>
+      <Destination>3414</Destination>
+      <Count>4</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead zombie to The Tomb of Shohan-->
+      <Type>NPC</Type>
+      <Destination>3414</Destination>
+      <Count>4</Count>
+      <Max>7</Max>
+      <Vnum>3401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rock slug to The Grand Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>3417</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a piece of slime to the rock slug-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3422</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rock slug to The Shrine of Cristis-->
+      <Type>NPC</Type>
+      <Destination>3418</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a piece of slime to the rock slug-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3422</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the bony skeleton to The Tomb of Cristis-->
+      <Type>NPC</Type>
+      <Destination>3419</Destination>
+      <Count>2</Count>
+      <Max>8</Max>
+      <Vnum>3400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rusty curved scimitar to the bony skeleton-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3421</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the spirit of King Crotus to The Tomb of Crotus-->
+      <Type>NPC</Type>
+      <Destination>3424</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3412</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy iron key to the spirit of King Crotus-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a stone sarcophagus to The Tomb of Crotus-->
+      <Type>Item</Type>
+      <Destination>3424</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3415</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wineflask to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3417</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mound of coins fit for a dead king to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3418</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some cave weeds to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3426</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>3409</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some cave weeds to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3426</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>3409</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The half-decomposed body to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3426</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the bony skeleton to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3430</Destination>
+      <Count>2</Count>
+      <Max>8</Max>
+      <Vnum>3400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rusty curved scimitar to the bony skeleton-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3421</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rock slug to The Grand Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>3432</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a piece of slime to the rock slug-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3422</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The X-ist flesh eater to The Tomb of Frath-->
+      <Type>NPC</Type>
+      <Destination>3434</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3411</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a whisper thin rapier to The X-ist flesh eater-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3414</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mummified head of Jubal the Benevolent to The X-ist flesh eater-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3412</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black marble ring to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The ghoul to The Grand Hall of Kings-->
+      <Type>NPC</Type>
+      <Destination>3437</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the bony skeleton to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3441</Destination>
+      <Count>2</Count>
+      <Max>8</Max>
+      <Vnum>3400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rusty curved scimitar to the bony skeleton-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3421</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rock slug to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3441</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a piece of slime to the rock slug-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3422</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The half-decomposed body to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3442</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some cave weeds to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3444</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>3409</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some cave weeds to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3444</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>3409</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The ghoul to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3447</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The half-decomposed body to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3448</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hidden compartment in the room to The Lower Chambers and Tombs of the Undead-->
+      <Type>Item</Type>
+      <Destination>3448</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3420</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a queerly shaped rod to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3410</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Snapper Joe to The Lower Chambers and Tombs of the Undead-->
+      <Type>NPC</Type>
+      <Destination>3449</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3410</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a whisper thin rapier to Snapper Joe-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3414</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a worn and dented breast plate to Snapper Joe-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3429</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large black dirty key to Snapper Joe-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3411</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rock slug to Entrance to the Forbidden Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3450</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a piece of slime to the rock slug-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3422</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The nightgaunt to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3452</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The nightgaunt to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3453</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The ghoul to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3454</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Mi-Go to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3455</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>3406</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn disgusting pinkish plasma webbing to the Mi-Go-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The nightgaunt to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3457</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The guardian vampire to Den of the Vampire-->
+      <Type>NPC</Type>
+      <Destination>3460</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3404</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pitch-black flaming longsword to The guardian vampire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3428</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dark black cape to The guardian vampire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3427</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn key to the coffin to The guardian vampire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3419</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a tightly rolled scroll to The guardian vampire-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3424</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The ghoul to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3462</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Mi-Go to The Catacombs-->
+      <Type>NPC</Type>
+      <Destination>3463</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>3406</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn disgusting pinkish plasma webbing to the Mi-Go-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The nightgaunt to The Gilded Hallway-->
+      <Type>NPC</Type>
+      <Destination>3465</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The nightgaunt to The Gilded Hallway-->
+      <Type>NPC</Type>
+      <Destination>3465</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>3407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Mi-Go to The Gilded Hallway-->
+      <Type>NPC</Type>
+      <Destination>3466</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>3406</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn disgusting pinkish plasma webbing to the Mi-Go-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The mad etcher to The Gilded Hallway-->
+      <Type>NPC</Type>
+      <Destination>3468</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3414</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an artist's smock to The mad etcher-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3423</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The spectral etcher's wife to The Gilded Hallway-->
+      <Type>NPC</Type>
+      <Destination>3468</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3415</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The hunting horror to A Secret Passageway-->
+      <Type>NPC</Type>
+      <Destination>3471</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3408</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an auburn-colored orb to The hunting horror-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3425</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bar of gold to The hunting horror-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3426</Vnum>
+    </Reset>
+  </Resets>
+</Area>

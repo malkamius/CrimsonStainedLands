@@ -1,0 +1,4112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Skills</Name>
+    <Info></Info>
+    <VnumStart>2900</VnumStart>
+    <VnumEnd>2999</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>(Imm) Odd Stuff</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>2900</VNum>
+      <Name>Inside a darkened plane</Name>
+      <Description>You find yourself within a plane of darkness, penetrated only by small
+points of light where strange shimmering gates can be found. Through the
+floating gates you can make out the strange flickering shapes of the real
+world beyond.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2901</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Inside a darkened plane.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>873</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The Dark Road.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>4632</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A hole in the southern wall.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>1462</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>A very dark room.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>27000</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>The entrance to Purgatory.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2901</VNum>
+      <Name>Inside a darkened plane</Name>
+      <Description>You find yourself within a plane of darkness, penetrated only by small
+points of light where strange shimmering gates can be found. Through the
+floating gates you can make out the strange flickering shapes of the real
+world beyond.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>17004</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Among the Seven Towers.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2900</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>In a darkened plane.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2920</VNum>
+      <Name>Death!</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>2901</Vnum>
+      <name>zombie</name>
+      <description>White bones peek out from beneath tattered rags as he grins at you with
+a malevolent aura.</description>
+      <longDescription>A zombie stands rotting here, awaiting his masters command.</longDescription>
+      <shortDescription>the zombie</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Undead Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2902</Vnum>
+      <name>fire elemental</name>
+      <description>Like a huge bonfire he stands there burning, the heat he emits is overwhelming
+to you.</description>
+      <longDescription>A burning column of flames stands here.</longDescription>
+      <shortDescription>a fire elemental</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2903</Vnum>
+      <name>water elemental</name>
+      <description>Shaped from salt water it stands here, gurgling and swirling. Awaiting his
+masters command.</description>
+      <longDescription>A mass of surging water is here.</longDescription>
+      <shortDescription>a water elemental</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2904</Vnum>
+      <name>air elemental</name>
+      <description>Seemingly made of pure air, it twirls about here awaiting for its masters
+mere word to do his bidding.</description>
+      <longDescription>A violent vortex of swirling air is here.</longDescription>
+      <shortDescription>an air elemental</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2905</Vnum>
+      <name>earth elemental</name>
+      <description>A tall mass of earth moves slowly here, with roots and small branches
+mixxed in with the dirt it makes quiet an impressive sight.</description>
+      <longDescription>A huge mass of solid earth stands here.</longDescription>
+      <shortDescription>an earth elemental</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2906</Vnum>
+      <name>falcon</name>
+      <description>With fine feathers he looks young, his eyes dart quickly to and fro looking
+for danger..or for dinner.</description>
+      <longDescription>A majestic looking falcon circles overhead.</longDescription>
+      <shortDescription>a falcon</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Small</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2907</Vnum>
+      <name>wolf</name>
+      <description>A thick heavy coat covers this beast and long sharp teeth protrude from his
+mouth. Making him look like something that is best seen, and not touched.</description>
+      <longDescription>A grey wolf stands here, snarling softly.</longDescription>
+      <shortDescription>a wolf</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Small</size>
+      <race>dog</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2908</Vnum>
+      <name>bear</name>
+      <description>Larger then most men he towers above almost anything. Sharp claws, sharp
+teeth. One word sums it all up...sharp.</description>
+      <longDescription>A large bear is here, sharpening is claws on the ground.</longDescription>
+      <shortDescription>a bear</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-1000</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-1000</ArmorExotic>
+      <size>Large</size>
+      <race>bear</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2909</Vnum>
+      <name>lion</name>
+      <description>It looks very mean, with sharp claws and intelligent eyes you'd better think
+twice before tangling with it.</description>
+      <longDescription>A large mountain lion stands here, eyeing you suspiciously.</longDescription>
+      <shortDescription>a lion</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-1000</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-1000</ArmorExotic>
+      <size>Medium</size>
+      <race>cat</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DarkVision</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2910</Vnum>
+      <name>guard special</name>
+      <description>Selected from the strongest guard corp, these guards will stop at nothing
+to protect and uphold the law.</description>
+      <longDescription>A special guard is standing here.</longDescription>
+      <shortDescription>a special guard</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>15</HitPointDiceCount>
+      <HitPointDiceBonus>350</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>200</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>30</hitroll>
+      <damRoll>51</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>1</DamageDiceCount>
+      <DamageDiceBonus>35</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2911</Vnum>
+      <name>flesh golem</name>
+      <description>The product of some twisted mage who has been tampering with the powers 
+of necromancy. This horrible being is not quite alive, yet also not dead.</description>
+      <longDescription>A disgusting mass of stitched flesh stands here.</longDescription>
+      <shortDescription>a flesh golem</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2912</Vnum>
+      <name>spirit unicorn</name>
+      <description>This unicorn is the spirit familiar of it's mortal form, summoned by a 
+master of the arcane arts to serve as a familiar on the mortal planes.</description>
+      <longDescription>A powerful white unicorn is here.</longDescription>
+      <shortDescription>a spirit unicorn</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>25</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>3000</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Mage</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2913</Vnum>
+      <name>spirit dragon</name>
+      <description>This familiar is the spirit familiar of it's mortal form, summoned by a 
+master of the arcane arts to serve as a familiar on the mortal planes.</description>
+      <longDescription>A strange dragon is here.</longDescription>
+      <shortDescription>a spirit dragon</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>25</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>3000</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Giant</size>
+      <race>undead</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Mage</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2914</Vnum>
+      <name>shadow</name>
+      <description>A strange moving shadow is standing here restlessly, every few moments you 
+think you can make out a face below it's veil of darkness but as quickly 
+as it appears it is gone again.</description>
+      <longDescription>The shadow of %s has been severed and given substance.</longDescription>
+      <shortDescription>a shadow</shortDescription>
+      <Sex>Male</Sex>
+      <level>0</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>0</hitpoints>
+      <maxhitpoints>0</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>100</ArmorBash>
+      <ArmorSlash>100</ArmorSlash>
+      <ArmorPierce>100</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>1</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2915</Vnum>
+      <name>iron golem</name>
+      <description>The product of some twisted mage who has been tampering with the powers 
+of necromancy. This horrible being is not quite alive, yet also not dead.</description>
+      <longDescription>A large iron golem is here.</longDescription>
+      <shortDescription>an iron golem</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2916</Vnum>
+      <name>decoy</name>
+      <description>This life sized, scaled dummy looks exactly like someone...yet it also is
+strangely silent and unmoving.</description>
+      <longDescription>The shadow of %s has been severed and given substance.</longDescription>
+      <shortDescription>a decoy</shortDescription>
+      <Sex>Male</Sex>
+      <level>0</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>0</hitpoints>
+      <maxhitpoints>0</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>100</ArmorBash>
+      <ArmorSlash>100</ArmorSlash>
+      <ArmorPierce>100</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>1</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2917</Vnum>
+      <name>armor</name>
+      <description>This piece of armor seems to be impossibly alive. It floats in the air with
+a life of it's own, awaiting it's creator's command.</description>
+      <longDescription>A large piece of armor is here.</longDescription>
+      <shortDescription>a piece of armor</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-170</ArmorBash>
+      <ArmorSlash>-170</ArmorSlash>
+      <ArmorPierce>-180</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>-5</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2918</Vnum>
+      <name>weapon</name>
+      <description>This weapon seems to be impossibly alive. It floats in the air with a life of
+it's own, awaiting it's creator's command.</description>
+      <longDescription>A living weapon floats here.</longDescription>
+      <shortDescription>an animated weapon</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>-50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2919</Vnum>
+      <name>key</name>
+      <description>This key seems to be impossibly alive. It floats in the air with a life of
+it's own, awaiting it's creator's command.</description>
+      <longDescription>A key is floating here.</longDescription>
+      <shortDescription>an animated key</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Tiny</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>-6</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2920</Vnum>
+      <name>fire giant slave</name>
+      <description>A dark fire-giant stands here.  His entire body caked with dirt.  He
+peers around himself trying to be useful to his master.</description>
+      <longDescription>A boughten fire-giant slave stands here.</longDescription>
+      <shortDescription>a fire-giant slave</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-50</ArmorExotic>
+      <size>Giant</size>
+      <race>null</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Aggressive StayArea Warrior Fade</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>16</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2921</Vnum>
+      <name>skeleton</name>
+      <description>The bones of this undead are pristine clean and move with an impossible
+life of their own. Small burning points of red reside within the eye
+sockets, gleaming with dark magic.</description>
+      <longDescription>A zombie stands rotting here, awaiting his masters command.</longDescription>
+      <shortDescription>the skeleton</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>skeleton</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Undead Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2922</Vnum>
+      <name>mummie mummy</name>
+      <description>The tatttered and bloody remains of a corpse is here bound together by
+ragger bits of cloth. A dark set of hollow eyes stare back at you
+menacingly.</description>
+      <longDescription>A disgusting bloody mummy is here.</longDescription>
+      <shortDescription>the mummy</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Undead Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2923</Vnum>
+      <name>shadow</name>
+      <description>A strange moving shadow is standing here restlessly, every few moments you 
+think you can make out a face below it's veil of darkness but as quickly 
+as it appears it is gone again.</description>
+      <longDescription>The shadow of %s has been severed and given substance.</longDescription>
+      <shortDescription>a shadow</shortDescription>
+      <Sex>None</Sex>
+      <level>0</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>0</hitpoints>
+      <maxhitpoints>0</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>1000</ArmorBash>
+      <ArmorSlash>1000</ArmorSlash>
+      <ArmorPierce>1000</ArmorPierce>
+      <ArmorExotic>1000</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2924</Vnum>
+      <name>slave purgatory</name>
+      <description>*growl*</description>
+      <longDescription>A dark figure floats here, lurking amongst the shadows.</longDescription>
+      <shortDescription>a slave of purgatory</shortDescription>
+      <Sex>None</Sex>
+      <level>55</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>200</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-220</ArmorBash>
+      <ArmorSlash>-220</ArmorSlash>
+      <ArmorPierce>-220</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Giant</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>35</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Wimpy Pet Warrior AreaAttack Fade</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Infrared Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>45</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2925</Vnum>
+      <name>stalker guard</name>
+      <description>Angry, very angry.</description>
+      <longDescription>A stalker stands here, red with anger!</longDescription>
+      <shortDescription>the stalker</shortDescription>
+      <Sex>Male</Sex>
+      <level>1</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC UpdateAlways</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Sneak Flying PassDoor Haste Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>1</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2926</Vnum>
+      <name>beast</name>
+      <description>A snarling ball of claws, teeth, and fur stand before you, you should
+think twice before making it mad.</description>
+      <longDescription>A great beast stands here, impatiently clawing at the ground.</longDescription>
+      <shortDescription>a beast</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Small</size>
+      <race>dog</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2927</Vnum>
+      <name>storm</name>
+      <description>This is a mighty storm made by magic.</description>
+      <longDescription>A storm rages on here.</longDescription>
+      <shortDescription>an electric storm</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>9</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>9</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2928</Vnum>
+      <name>blizzard</name>
+      <description>This is a blizzard.</description>
+      <longDescription>A blizzard rages on.</longDescription>
+      <shortDescription>a raging blizzard</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>1</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>1</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2929</Vnum>
+      <name>phantom</name>
+      <description>Ethereal Translucense</description>
+      <longDescription>A phantom flickers brightly here!</longDescription>
+      <shortDescription>the phantom</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC UpdateAlways</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>1</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2930</Vnum>
+      <name>RATTLESNAKE</name>
+      <description>A large snake coils tightly shaking it's tail with a errie rattle sending shivers down your spine</description>
+      <longDescription>A large Rattlesnake is coiled here.</longDescription>
+      <shortDescription>A large Rattlesnake</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>50</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>snake</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>51</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DarkVision Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2931</Vnum>
+      <name>SPRITE</name>
+      <description>A small sprite weaves back and forth between the trees as it conjures magics to play with your head.</description>
+      <longDescription>A small radiant Sprite stands here.</longDescription>
+      <shortDescription>A radiant Sprite</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>10</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>nymph</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared ProtectionEvil Sneak PassDoor Swim Camouflage</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2932</Vnum>
+      <name>Lynx</name>
+      <description>A short tailed cat like creature bounds all over, agile as any cat could
+be.  It's paws are massive looking able to swat you with a pwerfull blow or
+disembowl you with its razor sharp claws and teeth.</description>
+      <longDescription>A agile Lynx bounces all around.</longDescription>
+      <shortDescription>A agile Lynx</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>10</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>wolf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectHidden Sneak Haste DarkVision Berserk Camouflage</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2933</Vnum>
+      <name>LEECH</name>
+      <description>Squirming all over this creature tries to bite you with its mouth opening
+it widely you see more teeth than you could count.  It flatens it's body and
+contorts around your boots as you try to kick it away.</description>
+      <longDescription>A very large Leech tries to attach to your leg.</longDescription>
+      <shortDescription>A large Leech</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2934</Vnum>
+      <name>MOUND</name>
+      <description>A large mound of leaves and twigs and rotting material seems to be given
+life and lunges towards you trying to smother you within its massive body</description>
+      <longDescription>A huge Mound of leaves sways in the wind.</longDescription>
+      <shortDescription>A Mound</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Berserk Camouflage DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2935</Vnum>
+      <name>VINE</name>
+      <description>A large vine wriggles about behind it's master.  With but a moments
+notice it is wraped about your feet and neck trying to strangle the life out
+of you.</description>
+      <longDescription>A Vine tries to wrap around your neck.</longDescription>
+      <shortDescription>A Vine</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DarkVision Camouflage DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2936</Vnum>
+      <name>ALLIGATOR</name>
+      <description>Laying so still that you can not even see breath from it's gaping mouth. 
+It looks as though it has aged more then a milenium</description>
+      <longDescription>An Alligator lies here looking like a log.</longDescription>
+      <shortDescription>An Alligator lies here looking like a log</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Berserk Regeneration Camouflage DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2937</Vnum>
+      <name>BAT</name>
+      <description>Flying way overhead a large Bat divebombs you trying to suck the very
+lifeblood from your viens.</description>
+      <longDescription>A large Bat flys high above.</longDescription>
+      <shortDescription>A large Bat</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>song bird</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Flying Haste</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2938</Vnum>
+      <name>GRIFFIN</name>
+      <description>Standing over ten feet this half falcon half lion creature sends shivers
+down the base of your spine.  With claws of a lion that could disembowl you
+with but a quick swipe and the beak of a giant falcon to tear your eyes from
+your sockets, this beasts looks like it would eat you and pick your bones
+without a second thought.</description>
+      <longDescription>A Griffin stands firm sending a shiver down your spine.</longDescription>
+      <shortDescription>A Griffin</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Flying Haste Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2939</Vnum>
+      <name>BEAR</name>
+      <description>A very large brown bear paws the ground.  Its feet are almost the size of
+your torso and it's claws could rip you in two with ease.</description>
+      <longDescription>A big brown Bear bounds towards you.</longDescription>
+      <shortDescription>A brown Bear</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Camouflage DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2940</Vnum>
+      <name>WOLF</name>
+      <description>Standing at least six feet in height this wolf looks as though it is big
+enough to swollow you whole.  It drools so much you think it might be rabid,
+and the sent of your blood throws it into a frenzy.</description>
+      <longDescription>A large wolf foams at the mouth ready to strike.</longDescription>
+      <shortDescription>A large Wolf</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>wolf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DarkVision</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2941</Vnum>
+      <name>WOLVERINE</name>
+      <description>The size of a large dog, this beast is all muscle.  It ripples as it
+moves with gracelike fluidity.  Showings it's claws they are nearly as long
+as it's entire body, and as sharp as the blade at it's master's side.</description>
+      <longDescription>A large Wolverine brandishes its claws at you.</longDescription>
+      <shortDescription>A large Wolverine</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Haste DarkVision DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2942</Vnum>
+      <name>WITCH</name>
+      <description>With a manacle laughter this woman sends shivers down your spine.  Frail
+and gaunt this woman looks like she could not fight a cat for a scrap of
+food and win.  Yet there seems to be power radiating from her.</description>
+      <longDescription>A Witch cackles gleefully at you.</longDescription>
+      <shortDescription>A cackling Witch</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible Sanctuary ProtectionEvil ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2943</Vnum>
+      <name>JAGUAR</name>
+      <description>A golden of the sun this beast does not hide from it's foes it meats them
+with speed and agility ready to pounce with a moments notice.</description>
+      <longDescription>A golden Jaguar stands ready to pounce on you.</longDescription>
+      <shortDescription>A golden Jaguar</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2944</Vnum>
+      <name>WSNAKE WaterSnake Water Snake</name>
+      <description>A Snake gildes gracefully over land as well as water.  Not detered from
+anything except to bask in the sun and digest it's prey.</description>
+      <longDescription>A WaterSnake glides around looking for something.</longDescription>
+      <shortDescription>A WaterSnake</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>snake</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Swim Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2945</Vnum>
+      <name>FISH Winged</name>
+      <description>Able to leap from the water this fish can soar about the land for a time.
+Using its wings it is able to flap them with such force it blows you almost
+over</description>
+      <longDescription>A winged Fish flys about looking in mid jump.</longDescription>
+      <shortDescription>A Winged Fish</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>fish</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Haste Swim</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2946</Vnum>
+      <name>Naga</name>
+      <description>This half snake half something stares at you with cold eyes.  Seemingly
+statuesk yet able to strike with a swiftness unfathomable.</description>
+      <longDescription>A greater Naga gazes at you silently.</longDescription>
+      <shortDescription>A greater Naga</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible ProtectionGood Sneak Hide DarkVision Berserk Swim Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2947</Vnum>
+      <name>LION</name>
+      <description>Ready for the hunt this lion body ripples with every movement.  Muscles
+taunt and strained from the wait for the prey to come within reach.</description>
+      <longDescription>A lion sets itself ready for the hunt.</longDescription>
+      <shortDescription>A lion</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet AreaAttack Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Haste Berserk DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2948</Vnum>
+      <name>FALCON</name>
+      <description>Soaring in the sky at times you are not even able to see it.  All you
+hear is the rush of wind as it passes by your face for another try to
+debiliate you.</description>
+      <longDescription>A large Falcon soar though the air magesticly.</longDescription>
+      <shortDescription>A large Falcon</shortDescription>
+      <Sex>None</Sex>
+      <level>51</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Pet Rescue</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sneak Flying Haste Berserk Camouflage DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>100</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2949</Vnum>
+      <name>rat</name>
+      <description>Its eyes glow with a crimson red.  It is obvious it is enslaved by some
+form of evil.  It mouth opens slightly to show a set of dagger like teeth.</description>
+      <longDescription>A rabid rat loams here staggering slightly.</longDescription>
+      <shortDescription>a rabid rat</shortDescription>
+      <Sex>Male</Sex>
+      <level>51</level>
+      <HitPointDiceSides>0</HitPointDiceSides>
+      <HitPointDiceCount>0</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Small</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>51</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>2901</VNum>
+      <Name>ranger sack</Name>
+      <ShortDescription>a rangers sack</ShortDescription>
+      <LongDescription>a sack lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>9</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2902</VNum>
+      <Name>steak</Name>
+      <ShortDescription>a steak</ShortDescription>
+      <LongDescription>a steak lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5</Cost>
+      <Nutrition>60</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2903</VNum>
+      <Name>potion silver</Name>
+      <ShortDescription>a silver potion</ShortDescription>
+      <LongDescription>a potion of silver liquid lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="1" SpellName="cure serious" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2904</VNum>
+      <Name>shield battleshield battle crusader</Name>
+      <ShortDescription>a Crusader Battleshield</ShortDescription>
+      <LongDescription>a shield of the fineste make lies here waiting to be used.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1.2</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2905</VNum>
+      <Name>staff</Name>
+      <ShortDescription>a ranger staff</ShortDescription>
+      <LongDescription>a staff of purest wood lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>smash</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Magic Flaming Frost Sharp Vorpal TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2906</VNum>
+      <Name>longsword sword avenger</Name>
+      <ShortDescription>a holy avenger</ShortDescription>
+      <LongDescription>a beautiful sword of divine make lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>divine</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Magic NoDrop Bless AntiEvil AntiNeutral RotDeath</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2907</VNum>
+      <Name>poncho carcass</Name>
+      <ShortDescription>a poncho from the carcass of someone</ShortDescription>
+      <LongDescription>A blood stained carcass lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.8</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>9</ArmorBash>
+      <ArmorSlash>7</ArmorSlash>
+      <ArmorPierce>8</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2910</VNum>
+      <Name>sword enforcer</Name>
+      <ShortDescription>the sword of Enforcers</ShortDescription>
+      <LongDescription>A steel sword engraved with a clenched fist is here.</LongDescription>
+      <Description></Description>
+      <Level>52</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow NoRemove NoPurge BurnProof</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>200000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2911</VNum>
+      <Name>map north Orthos</Name>
+      <ShortDescription>a map of nother Orthos</ShortDescription>
+      <LongDescription>A map of north Orthos lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Map</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>20</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>map north Orthos</Keyword>
+          <Description>A map of Northern Orthos
+Icywastes       Elven Valley    Olympus         Ofcol--New Ofcol
+|            |             |            |
+|             \            |            |
+Magic Forest           |           |            |
+\               --------Plains----------+       
+\                         |            |
+--------------------Gallow Hills      Stone of G'Harne
+|                    |
+|                  Nightfall
+[Midgaard]              
+This map shows the major areas north of midgaard. It is NOT to scale, and
+some of the directions are general only, indicating the basic location
+of each area relative to others.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>2912</VNum>
+      <Name>protectorate plate</Name>
+      <ShortDescription>a suit of protectorate platemail</ShortDescription>
+      <LongDescription>Some platemail with the symbol of a clenched fist is here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Bless RotDeath</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2913</VNum>
+      <Name>black blood badge</Name>
+      <ShortDescription>a black and bloody sherrif's badge</ShortDescription>
+      <LongDescription>A charred and blood smeared badge lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2914</VNum>
+      <Name>quest sword</Name>
+      <ShortDescription>A quest sword</ShortDescription>
+      <LongDescription>A sword for a quest is here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>Exotic</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum NoDrop Bless NoRemove NoUncurse</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2920</VNum>
+      <Name>potion ARCPOTION</Name>
+      <ShortDescription>a silver potion</ShortDescription>
+      <LongDescription>A small glass flask containing a silvery liquid is here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2921</VNum>
+      <Name>scroll ARCSCROLL</Name>
+      <ShortDescription>a scroll</ShortDescription>
+      <LongDescription>A rolled up parchment is here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Scroll</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>parchment</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2922</VNum>
+      <Name>wand ARCWAND</Name>
+      <ShortDescription>a glowing wand</ShortDescription>
+      <LongDescription>A long silvery rod with a blue-green glow lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Wand</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>1</Charges>
+      <MaxCharges>1</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2923</VNum>
+      <Name>staff ARCSTAFF</Name>
+      <ShortDescription>a glowing staff</ShortDescription>
+      <LongDescription>A long smooth stick is here, pulsing with magical power.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>1</Charges>
+      <MaxCharges>1</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2924</VNum>
+      <Name>berry</Name>
+      <ShortDescription>a good berry</ShortDescription>
+      <LongDescription>A nice juicy berry is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>30</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>vegetable</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2925</VNum>
+      <Name>skeleton npcskeleton npc_skeleton</Name>
+      <ShortDescription>a skeleton</ShortDescription>
+      <LongDescription>A rotting skeleton lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>24</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Skeleton</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2951</VNum>
+      <Name>sword unholy</Name>
+      <ShortDescription>an unholy sword</ShortDescription>
+      <LongDescription>An unholy sword lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2952</VNum>
+      <Name>dagger unholy</Name>
+      <ShortDescription>an unholy dagger</ShortDescription>
+      <LongDescription>An unholy dagger lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2953</VNum>
+      <Name>spear unholy</Name>
+      <ShortDescription>an unholy spear</ShortDescription>
+      <LongDescription>An unholy spear lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Spear</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2954</VNum>
+      <Name>mace unholy</Name>
+      <ShortDescription>an unholy mace</ShortDescription>
+      <LongDescription>An unholy mace lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2955</VNum>
+      <Name>axe unholy</Name>
+      <ShortDescription>an unholy axe</ShortDescription>
+      <LongDescription>An unholy axe lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2956</VNum>
+      <Name>flail unholy</Name>
+      <ShortDescription>an unholy flail</ShortDescription>
+      <LongDescription>An unholy flail lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Flail</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2957</VNum>
+      <Name>whip unholy</Name>
+      <ShortDescription>an unholy whip</ShortDescription>
+      <LongDescription>An unholy whip lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Whip</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2958</VNum>
+      <Name>polearm unholy</Name>
+      <ShortDescription>an unholy polearm</ShortDescription>
+      <LongDescription>An unholy polearm lies here, pulsing with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Polearm</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2959</VNum>
+      <Name>clown mallet huge oversized hammer</Name>
+      <ShortDescription>a huge oversized hammer</ShortDescription>
+      <LongDescription>A grossly oversized hammer is here, begging to be touched.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2960</VNum>
+      <Name>chunk maple wood</Name>
+      <ShortDescription>a large chunk of maple wood</ShortDescription>
+      <LongDescription>A large chunk of maple wood lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>maple</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2961</VNum>
+      <Name>large chunk magic</Name>
+      <ShortDescription>a large chunk of magic wood</ShortDescription>
+      <LongDescription>A large chunk of magic wood lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2962</VNum>
+      <Name>large chunk oak</Name>
+      <ShortDescription>a large chunk of oak</ShortDescription>
+      <LongDescription>A large chunk of oak lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2963</VNum>
+      <Name>maple wood staff</Name>
+      <ShortDescription>a longstaff made of maple</ShortDescription>
+      <LongDescription>A large longstaff of maple lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>smash</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>0</DiceSides>
+      <DiceCount>0</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>maple</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2964</VNum>
+      <Name>magic staff</Name>
+      <ShortDescription>a shortstaff made of magic wood</ShortDescription>
+      <LongDescription>A shortstaff made of magic wood lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>magic</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>0</DiceSides>
+      <DiceCount>0</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Magic Bless TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2965</VNum>
+      <Name>oak staff</Name>
+      <ShortDescription>a shortstaff made of oak</ShortDescription>
+      <LongDescription>A shortstaff made of oak lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>smash</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>0</DiceSides>
+      <DiceCount>0</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oak</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2966</VNum>
+      <Name>poison dagger poisonous</Name>
+      <ShortDescription>a poisoned dagger</ShortDescription>
+      <LongDescription>A poisoned dagger lies here.</LongDescription>
+      <Description>This dagger looks extremely sharp and drips with a coating of poison.</Description>
+      <Level>0</Level>
+      <WeaponDamageType>poisonbite</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2967</VNum>
+      <Name>ranger staff</Name>
+      <ShortDescription>a ranger staff</ShortDescription>
+      <LongDescription>A ranger staff lies here.</LongDescription>
+      <Description>A simple ranger staff is a gnarled and twisted piece of wood, sturdy and hard,
+yet light and easy to hold.</Description>
+      <Level>30</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>10</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>-10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2968</VNum>
+      <Name>ranger staff</Name>
+      <ShortDescription>a ranger staff</ShortDescription>
+      <LongDescription>A ranger staff lies here.</LongDescription>
+      <Description>A simple ranger staff is a gnarled and twisted piece of wood, sturdy and hard,
+yet light and easy to hold. Upon closer inspection, the ranger staff revealed
+intricate carvings and etchings along its length, telling the story of the
+wielders life and experiences in the forest. The carvings depicted animals,
+trees, and other natural elements, each one crafted with great care and
+precision. The staff is adorned with feathers, fur, and other natural
+materials, collected by the woodsman on his travels through the forest. These
+decorations are not merely for show, but serves to enhance the staff's
+connection to the wild creatures around it.</Description>
+      <Level>32</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>15</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>-10</ArmorExotic>
+      <Programs>
+        <Program Name="OneHitHitRangerWeapon" />
+      </Programs>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2969</VNum>
+      <Name>ranger spear</Name>
+      <ShortDescription>a ranger spear</ShortDescription>
+      <LongDescription>A ranger spear lies here.</LongDescription>
+      <Description>A simple ranger spear is a gnarled and twisted piece of wood, sturdy and hard,
+yet light and easy to hold.</Description>
+      <Level>30</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Spear</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>10</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>-10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2970</VNum>
+      <Name>ranger spear</Name>
+      <ShortDescription>a ranger spear</ShortDescription>
+      <LongDescription>A ranger spear lies here.</LongDescription>
+      <Description>A simple ranger spear is a gnarled and twisted piece of wood, sturdy and hard,
+yet light and easy to hold. Upon closer inspection, the ranger spear revealed
+intricate carvings and etchings along its length, telling the story of the
+wielders life and experiences in the forest. The carvings depicted animals,
+trees, and other natural elements, each one crafted with great care and
+precision. The spear is adorned with feathers, fur, and other natural
+materials, collected by the woodsman on his travels through the forest. These
+decorations are not merely for show, but serves to enhance the spear's
+connection to the wild creatures around it.</Description>
+      <Level>32</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Spear</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>15</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>-10</ArmorExotic>
+      <Programs>
+        <Program Name="OneHitHitRangerWeapon" />
+      </Programs>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2971</VNum>
+      <Name>steak</Name>
+      <ShortDescription>a steak of {0}</ShortDescription>
+      <LongDescription>A juicy steak carved from {0} is lying here.</LongDescription>
+      <Description>A juicy steak carved from {0} smells delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>30</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets />
+</Area>

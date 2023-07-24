@@ -1,0 +1,2424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>The Coliseum</Name>
+    <Info></Info>
+    <VnumStart>26000</VnumStart>
+    <VnumEnd>26099</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{ All } Dioxide  The Coliseum</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>26000</VNum>
+      <Name>Below the Coliseum</Name>
+      <Description>You are in a small, dusty room.  Crude mechanical objects and
+tools lay about, and a thick red liquid drips through the  floorboards above
+you. However, you feel strangely safe.
+Bright light comes from above, accompanied by loud sounds,
+almost like yelling and screaming.
+A rusty plaque stands here, and a map is nailed to the wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26001</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26003</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26005</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26007</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>plaque</Keyword>
+          <Description>================== WELCOME TO THE COLISEUM ==================
+You have entered the elite fighting ground of the realms.  Do
+NOT attack anybody until an Immortal explains things. This is
+considered an irritating annoyance, and you will be slain.
+Here, Immortals will watch your killing prowess.  Fight well,
+for you may be considered for tattoos, quest items, or more.
+You are to stay in this arena until an Immortal transfers you
+out.  If you must quit, get the attention of an Immortal.
+You may find pills of health.  Use them, for you will need
+them. Do not hoard them, or take all of them at once. Slaying
+violators is always fun.
+Good luck.
+--Dioxide
+=============================================================</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>map</Keyword>
+          <Description>=============================================================
+Map of the Coliseum, mapped by Dioxide
+=============================================================
+To South
+*
+|
+*  -  *  -  *  -  *  -  *  -  *  -  *
+|  \                             /  |
+*     *  -  *  -  *  -  *  -  *     *
+|     |           |           |     |
+*     *     *  -  *  -  *     *     *
+|     |     |  \  |  /  |     |     |
+To *  -  *     * &lt;-  *     +     *  -&gt; *     *  -  * To
+East    |     |     |  /  |  \  |     |     |    West
+*     *     *  -  *  -  *     *     *
+|     |           |           |     |
+*     *  -  *  -  *  -  *  -  *     *
+|  /                             \  |
+*  -  *  -  *  -  *  -  *  -  *  -  *
+|
+*
+To North
+=============================================================</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>26001</VNum>
+      <Name>Northern Wing of the Arena Floor</Name>
+      <Description>You are standing in the Northern Wing of the First Level of  the Coliseum.  The
+Northern Wing extends west and east.  A  passage south leads to under the
+Coliseum floor.  An iron  stairwell leads up to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26002</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26000</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26008</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26009</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26002</VNum>
+      <Name>Northeast Corner of the Arena Floor</Name>
+      <Description>You are standing in the Northeast Corner of the First Level  of the Coliseum. 
+The Northern Wing extends west, and the   Eastern Wing begins to the south.  A
+passage down leads to   under the Coliseum floor.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26003</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26001</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26000</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26003</VNum>
+      <Name>Eastern Wing of the Arena Floor</Name>
+      <Description>You are standing in the Eastern Wing of the First Level of   the Coliseum.  The
+Eastern Wing extends north and south.  A   passage west leads to under the
+Coliseum floor.  An iron   stairwell leads up to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26002</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26004</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26000</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26013</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26004</VNum>
+      <Name>Southeast Corner of the Arena Floor</Name>
+      <Description>You are standing in the Southeast Corner of the First Level  of the Coliseum. 
+The Southern Wing extends west, and the   Eastern Wing begins to the north.  A
+passage down leads to   under the Coliseum floor.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26003</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26005</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26000</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26005</VNum>
+      <Name>Southern Wing of the Arena Floor</Name>
+      <Description>You are standing in the Southern Wing of the First Level   of the Coliseum.  The
+Southern Wing extends west and  east.  A passage north leads to under the
+Coliseum floor.   An iron stairwell leads up to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26000</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26004</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26006</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26017</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26006</VNum>
+      <Name>Southwest Corner of the Arena Floor</Name>
+      <Description>You are standing in the Southwest Corner of the First  Level of the Coliseum. 
+The Southern Wing extends east,   and the Western Wing begins to the north.  A
+passage   down leads to under the Coliseum floor.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26007</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26005</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26000</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26007</VNum>
+      <Name>Western Wing of the Arena Floor</Name>
+      <Description>You are standing in the Western Wing of the First Level of   the Coliseum.  The
+Western Wing extends north and south.  A   passage east leads to under the
+Coliseum floor.  An iron   stairwell leads up to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26008</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26000</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26006</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26021</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26008</VNum>
+      <Name>Northwest Corner of the Arena Floor</Name>
+      <Description>You are standing in the Northwest Corner of the First Level 
+of the Coliseum.  The Northern Wing extends east, and the 
+Western Wing begins to the south.  A passage down leads to 
+under the Coliseum floor.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26001</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26007</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26000</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see a room below the Coliseum.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26009</VNum>
+      <Name>Northern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Northern Wing of the Second Level of 
+the Coliseum.  The Northern Wing extends west and east.  An 
+iron stairwell leads down to the First Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26010</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26024</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26001</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26010</VNum>
+      <Name>Northern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Northern Wing of the Second Level of 
+the Coliseum.  The Northern Wing extends west, and the   Northeast Corner of
+the Second Level is to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26011</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26009</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26011</VNum>
+      <Name>Northeast Corner of the 2nd Level</Name>
+      <Description>You are standing in the Northeast Corner of the Second Level 
+of the Coliseum.  The Northern Wing extends west, and the 
+Eastern Wing begins to the south.  A stairwell up leads to 
+the Third Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26012</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26010</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26028</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26012</VNum>
+      <Name>Eastern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Second Level of 
+the Coliseum.  The Eastern Wing extends south, and the   Northeast Corner of
+the Second Level is to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26011</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26013</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26013</VNum>
+      <Name>Eastern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Second Level of 
+the Coliseum.  The Eastern Wing extends north and south.  An 
+iron stairwell leads down to the First Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26012</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26014</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26003</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26014</VNum>
+      <Name>Eastern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Second Level of 
+the Coliseum.  The Eastern Wing extends north, and the   Southeast Corner of
+the Second Level is to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26013</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26015</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26015</VNum>
+      <Name>Southeast Corner of the 2nd Level</Name>
+      <Description>You are standing in the Southeast Corner of the Second Level 
+of the Coliseum.  The Eastern Wing extends north, and the 
+Southern Wing begins to the west.  A stairwell up leads to 
+the Third Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26014</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26016</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26034</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26016</VNum>
+      <Name>Southern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Southern Wing of the Second Level of 
+the Coliseum.  The Southern Wing extends west, and the   Southeast Corner of
+the Second Level is to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26015</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26017</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26017</VNum>
+      <Name>Southern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Southern Wing of the Second Level of 
+the Coliseum.  The Southern Wing extends west and east.  An 
+iron stairwell leads down to the First Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26016</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26018</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26005</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26018</VNum>
+      <Name>Southern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Southern Wing of the Second Level of 
+the Coliseum.  The Southern Wing extends east, and the   Southwest Corner of
+the Second Level is to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26017</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26019</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26019</VNum>
+      <Name>Southwest Corner of the 2nd Level</Name>
+      <Description>You are standing in the Southwest Corner of the Second Level 
+of the Coliseum.  The Southern Wing extends east, and the 
+Western Wing begins to the north.  A stairwell up leads to 
+the Third Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26020</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26018</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26040</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26020</VNum>
+      <Name>Western Wing of the 2nd Level</Name>
+      <Description>You are standing in the Western Wing of the Second Level of 
+the Coliseum.  The Western Wing extends north, and the   Southwest Corner of
+the Second Level is to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26021</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26019</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26021</VNum>
+      <Name>Western Wing of the 2nd Level</Name>
+      <Description>You are standing in the Western Wing of the Second Level of 
+the Coliseum.  The Western Wing extends north and south.  
+An iron stairwell leads down to the First Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26022</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26020</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26007</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the first level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26022</VNum>
+      <Name>Western Wing of the 2nd Level</Name>
+      <Description>You are standing in the Western Wing of the Second Level of 
+the Coliseum.  The Western Wing extends south, and the   Northwest Corner of
+the Second Level is to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26023</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26021</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26023</VNum>
+      <Name>Northwest Corner of the 2nd Level</Name>
+      <Description>You are standing in the Northwest Corner of the Second Level 
+of the Coliseum.  The Northern Wing extends east, and the 
+Western Wing begins to the south.  A stairwell up leads to 
+the Third Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26024</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26022</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>26046</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26024</VNum>
+      <Name>Northern Wing of the 2nd Level</Name>
+      <Description>You are standing in the Northern Wing of the Second Level of 
+the Coliseum.  The Northern Wing extends east, and the   Northwest Corner of
+the Second Level is to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26009</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26023</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26025</VNum>
+      <Name>Northern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Northern Wing of the Third Level of 
+the Coliseum.  The Northern Wing extends west and east.    A small passage
+leads north, to a bright portal.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26049</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern portal.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26026</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26048</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26026</VNum>
+      <Name>Northern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Northern Wing of the Third Level of 
+the Coliseum.  The Northern Wing extends west and east, and the 
+Northeast Corner of the Third Level can be seen far to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26027</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26025</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26027</VNum>
+      <Name>Northern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Northern Wing of the Third Level of 
+the Coliseum.  The Northern Wing extends west, and the   Northeast Corner of
+the Third Level is to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26028</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26026</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26028</VNum>
+      <Name>Northeast Corner of the 3rd Level</Name>
+      <Description>You are standing in the Northeast Corner of the Third Level 
+of the Coliseum.  The Northern Wing extends west, and the 
+Eastern Wing begins to the south.  An iron stairwell leads 
+down to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26029</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26027</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26011</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26029</VNum>
+      <Name>Eastern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Third Level of   the Coliseum.  The
+Eastern Wing extends south, and the   Northeast Corner of the Third Level is to
+the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26028</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northeast corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26030</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26030</VNum>
+      <Name>Eastern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Third Level of   the Coliseum.  The
+Eastern Wing extends north and south, and the  Northeast Corner of the Third
+Level can be seen far to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26029</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26031</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26031</VNum>
+      <Name>Eastern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Third Level of   the Coliseum.  The
+Eastern Wing extends north and south.    A small passage leads east, to a bright
+portal.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26030</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26050</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern portal.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26032</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26032</VNum>
+      <Name>Eastern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Third Level of   the Coliseum.  The
+Eastern Wing extends north and south,   and the Southeast Corner of the Third
+Level can be seen far   to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26031</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26033</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26033</VNum>
+      <Name>Eastern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Eastern Wing of the Third Level of   the Coliseum.  The
+Eastern Wing extends north, and the   Southeast Corner of the Third Level is to
+the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26032</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26034</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26034</VNum>
+      <Name>Southeast Corner of the 3rd Level</Name>
+      <Description>You are standing in the Southeast Corner of the Third Level 
+of the Coliseum.  The Southern Wing extends west, and the 
+Eastern Wing begins to the north.  An iron stairwell leads 
+down to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26033</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26035</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26015</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26035</VNum>
+      <Name>Southern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Southern Wing of the Third Level of 
+the Coliseum.  The Southern Wing extends west, and the   Southeast Corner of
+the Third Level is to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26034</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southeast corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26036</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26036</VNum>
+      <Name>Southern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Southern Wing of the Third Level of 
+the Coliseum.  The Southern Wing extends west and east, and the 
+Southeast Corner of the Third Level can be seen far to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26035</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26037</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26037</VNum>
+      <Name>Southern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Southern Wing of the Third Level of 
+the Coliseum.  The Southern Wing extends west and east.  A 
+small passage leads south, to a bright portal.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26036</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26051</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern portal.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26038</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26038</VNum>
+      <Name>Southern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Southern Wing of the Third Level of 
+the Coliseum.  The Southern Wing extends west and east, and the 
+Southeast Corner of the Third Level can be seen far to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26037</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26039</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26039</VNum>
+      <Name>Southern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Southern Wing of the Third Level of 
+the Coliseum.  The Southern Wing extends east, and the   Southeast Corner of
+the Third Level is to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26038</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26040</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26040</VNum>
+      <Name>Southwest Corner of the 3rd Level</Name>
+      <Description>You are standing in the Southwest Corner of the Third Level 
+of the Coliseum.  The Southern Wing extends east, and the 
+Western Wing begins to the north.  An iron stairwell leads 
+down to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26041</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26039</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26019</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26041</VNum>
+      <Name>Western Wing of the 3rd Level</Name>
+      <Description>You are standing in the Western Wing of the Third Level of   the Coliseum.  The
+Western Wing extends north, and the   Southwest Corner of the Third Level is to
+the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26042</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26040</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the southwest corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26042</VNum>
+      <Name>Western Wing of the 3rd Level</Name>
+      <Description>You are standing in the Western Wing of the Third Level of   the Coliseum.  The
+Western Wing extends north and south,   and the Southwest Corner of the Third
+Level can be seen far   to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26043</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26041</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26043</VNum>
+      <Name>Western Wing of the 3rd Level</Name>
+      <Description>You are standing in the Western Wing of the Third Level of   the Coliseum.  The
+Western Wing extends north and south.    A small passage leads west, to a bright
+portal.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26044</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26042</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26052</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the western portal.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26044</VNum>
+      <Name>Western Wing of the 3rd Level</Name>
+      <Description>You are standing in the Western Wing of the Third Level of   the Coliseum.  The
+Western Wing extends north and south, and the   Northwest Corner of the Third
+Level can be seen far to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26045</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26043</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26045</VNum>
+      <Name>Western Wing of the 3rd Level</Name>
+      <Description>You are standing in the Western Wing of the Third Level of   the Coliseum.  The
+Western Wing extends south, and the   Northwest Corner of the Third Level is to
+the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26046</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26044</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26046</VNum>
+      <Name>Northwest Corner of the 3rd Level</Name>
+      <Description>You are standing in the Northwest Corner of the Third Level 
+of the Coliseum.  The Northern Wing extends east, and the 
+Western Wing begins to the south.  An iron stairwell leads 
+down to the Second Level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26047</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26045</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>26023</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the second level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26047</VNum>
+      <Name>Northern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Northern Wing of the Third Level of 
+the Coliseum.  The Northern Wing extends east, and the   Northwest Corner of
+the Third Level can be seen to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26048</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26046</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northwest corner of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26048</VNum>
+      <Name>Northern Wing of the 3rd Level</Name>
+      <Description>You are standing in the Northern Wing of the Third Level of 
+the Coliseum.  The Northern Wing extends west and east, and the 
+Northwest Corner of the Third Level can be seen far to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26025</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26047</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26049</VNum>
+      <Name>The Northern Portal</Name>
+      <Description>You are standing in a bright room, empty besides a glowing   mirror mounted on
+the northern wall.  The mirror seems to   ripple and flow, while distorting all
+light around it in a   strange vortex.  A small plaque is on top of the mirror.
+The   words 'TO SOUTH' are etched on it.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26051</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a teleporting mirror with the words 'TO SOUTH'.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26025</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see the northern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26050</VNum>
+      <Name>The Eastern Portal</Name>
+      <Description>You are standing in a bright room, empty besides a glowing   mirror mounted on
+the eastern wall.  The mirror seems to   ripple and flow, while distorting all
+light around it in a   strange vortex.  A small plaque is on top of the mirror.
+The   words 'TO WEST' are etched on it.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26052</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a teleporting mirror with the words 'TO WEST'.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26031</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the eastern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26051</VNum>
+      <Name>The Southern Portal</Name>
+      <Description>You are standing in a bright room, empty besides a glowing   mirror mounted on
+the southern wall.  The mirror seems to   ripple and flow, while distorting all
+light around it in a   strange vortex.  A small plaque is on top of the mirror.
+The   words 'TO NORTH' are etched on it.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>26037</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see the southern wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26049</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a teleporting mirror with the words 'TO NORTH'.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26052</VNum>
+      <Name>The Western Portal</Name>
+      <Description>You are standing in a bright room, empty besides a glowing   mirror mounted on
+the western wall.  The mirror seems to   ripple and flow, while distorting all
+light around it in a   strange vortex.  A small plaque is on top of the mirror.
+The   words 'TO EAST' are etched on it.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>26043</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the western wing of the third level.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>26050</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a teleporting mirror with the words 'TO EAST'.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26060</VNum>
+      <Name>The Executive Box</Name>
+      <Description>Lavishly decorated, this executive box is high above the   Coliseum.  The walls
+and floor are of glass, so you can see  what is going on below you.  Comfortable
+sofas are here for  you to sit on, and a plate of snacks is on the counter.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>26061</VNum>
+      <Name>The Penalty Box</Name>
+      <Description>The walls of this bare room are made of solid cement. There  is no escape.  The
+room is completely empty, besides a small  sign.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sign</Keyword>
+          <Description>============================
+|   BAD DUCK! BAD! BAD!    |
+============================</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>26000</Vnum>
+      <name>healer gladiator retired</name>
+      <description>This man is old and wrinkled.  He wears a tattered gladiator
+uniform, but seems to be healing the wounded.</description>
+      <longDescription>An old, retired gladiator rests here, tending wounds.</longDescription>
+      <shortDescription>an old healer</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>15000</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>15000</ManaPointDiceSides>
+      <ManaPointDiceCount>2</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-500</ArmorBash>
+      <ArmorSlash>-500</ArmorSlash>
+      <ArmorPierce>-500</ArmorPierce>
+      <ArmorExotic>-500</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>50</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel StayArea Gain Practice Healer</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>50</DamageDiceSides>
+      <DamageDiceCount>2</DamageDiceCount>
+      <DamageDiceBonus>10</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>26001</Vnum>
+      <name>lion arenalion</name>
+      <description>This huge lion is awe-inspiring and bold.  Its teeth are
+razor-sharp and covered in red blood.  It is very, very angry.</description>
+      <longDescription>A huge lion roars at you.</longDescription>
+      <shortDescription>the huge lion</shortDescription>
+      <Sex>None</Sex>
+      <level>55</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-250</ArmorBash>
+      <ArmorSlash>-250</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-250</ArmorExotic>
+      <size>Huge</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>50</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive StayArea AreaAttack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Infrared Berserk DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>20</DamageDiceSides>
+      <DamageDiceCount>2</DamageDiceCount>
+      <DamageDiceBonus>40</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>26000</VNum>
+      <Name>pill health</Name>
+      <ShortDescription>a pill of health</ShortDescription>
+      <LongDescription>A small pill with 'HEALTH' written on it lies here.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Hum RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Pill</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="60" SpellName="heal" />
+        <Spell Level="60" SpellName="heal" />
+        <Spell Level="60" SpellName="cure poison" />
+        <Spell Level="60" SpellName="cure poison" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>plastic</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>26002</VNum>
+      <Name>shotgun sawed coliseum victory</Name>
+      <ShortDescription>a sawed-off shotgun named 'Coliseum Victory'</ShortDescription>
+      <LongDescription>A huge, stocky shotgun lies here.</LongDescription>
+      <Description></Description>
+      <Level>55</Level>
+      <WeaponDamageType>blast</WeaponDamageType>
+      <WeaponType>Exotic</WeaponType>
+      <DiceSides>30</DiceSides>
+      <DiceCount>2</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>2.6</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum NoDrop NoRemove RotDeath MeltDrop BurnProof Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>26010</VNum>
+      <Name>trophy %s arenatrophy</Name>
+      <ShortDescription>a trophy of the kill of %s</ShortDescription>
+      <LongDescription>The trophy of the kill of %s is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>NoDrop</ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn an old healer to Below the Coliseum-->
+      <Type>NPC</Type>
+      <Destination>26000</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Northeast Corner of the Arena Floor-->
+      <Type>Item</Type>
+      <Destination>26002</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Southeast Corner of the Arena Floor-->
+      <Type>Item</Type>
+      <Destination>26004</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Southwest Corner of the Arena Floor-->
+      <Type>Item</Type>
+      <Destination>26006</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Northwest Corner of the Arena Floor-->
+      <Type>Item</Type>
+      <Destination>26008</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Northern Wing of the 2nd Level-->
+      <Type>Item</Type>
+      <Destination>26009</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Eastern Wing of the 2nd Level-->
+      <Type>Item</Type>
+      <Destination>26013</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Southern Wing of the 2nd Level-->
+      <Type>Item</Type>
+      <Destination>26017</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Western Wing of the 2nd Level-->
+      <Type>Item</Type>
+      <Destination>26021</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Northeast Corner of the 3rd Level-->
+      <Type>Item</Type>
+      <Destination>26028</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Southeast Corner of the 3rd Level-->
+      <Type>Item</Type>
+      <Destination>26034</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Southwest Corner of the 3rd Level-->
+      <Type>Item</Type>
+      <Destination>26040</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pill of health to Northwest Corner of the 3rd Level-->
+      <Type>Item</Type>
+      <Destination>26046</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>26000</Vnum>
+    </Reset>
+  </Resets>
+</Area>

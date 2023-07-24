@@ -1,0 +1,4880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SkillLevels>
+  <SkillSpell
+    Name="kick"
+    MinimumPosition="Fighting"
+    NounDamage="kick"
+	AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="8"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="6"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="3"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="14"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dual wield"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="16"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="16"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="second attack"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="5"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="6"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="7"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="third attack"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="25"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="13"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="20"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="fourth attack"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="25"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="36"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="35"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="enhanced damage"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="25"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="8"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="20"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="hand to hand"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="8"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="spellcraft"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="heal"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellHeal"
+	AutoCastScript="ch =&gt; ch.HitPoints &lt; ch.MaxHitPoints"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="29"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="27"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cure critical"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCureCritical"
+	AutoCastScript="ch =&gt; ch.HitPoints &lt; ch.MaxHitPoints"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="22"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cure serious"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCureSerious"
+	AutoCastScript="ch =&gt; ch.HitPoints &lt; ch.MaxHitPoints"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="15"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cure light"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCureLight"
+	AutoCastScript="ch =&gt; ch.HitPoints &lt; ch.MaxHitPoints"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="4"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="word of recall"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellWordOfRecall"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="25"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="20"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="remove curse"
+    TargetType="targetItemCharDef"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellRemoveCurse"
+	AutoCastScript="c =&gt; c.IsAffected(CrimsonStainedLands.AffectFlags.Curse)"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="13"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sword"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="axe"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dagger"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="mace"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="staff"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="16"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="spear"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="whip"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="flail"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="polearm"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="9"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="parry"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="13"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="13"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dodge"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="9"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="3"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="shield block"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="16"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="8"
+      Rating="1" />	  
+  </SkillSpell>
+  <SkillSpell
+    Name="fast healing"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="4"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="6"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="meditation"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="15"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="16"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="trance"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="recall"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="parting blow"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="find water"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="" />
+  <SkillSpell
+    Name="barkskin"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="track"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill" />
+  <SkillSpell
+    Name="sanctuary"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSanctuary"
+	AutoCastScript="c =&gt; c.IsAffected(CrimsonStainedLands.AffectFlags.Sanctuary)"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="protection evil"
+    TargetType="targetCharSelf"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellProtectionEvil"
+	AutoCastScript="c =&gt; !c.IsAffected(CrimsonStainedLands.AffectFlags.ProtectEvil)"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="11"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="protection good"
+    TargetType="targetCharSelf"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellProtectionGood"
+	AutoCastScript="c =&gt; !c.IsAffected(CrimsonStainedLands.AffectFlags.ProtectGood)"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cure blindness"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCureBlindness"
+	AutoCastScript="c =&gt; c.IsAffected(CrimsonStainedLands.AffectFlags.Blind)"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="8"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="7"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="summon"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSummon"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="teleport"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellTeleport"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="17"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="fireball"
+    MinimumPosition="Fighting"
+    NounDamage="fireball"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFireball"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="magic missile"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="magic missile"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellMagicMissile"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="detect magic"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellDetectMagic"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dispel magic"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellDispelMagic"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="27"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cure disease"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCureDisease"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="27"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="22"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cure poison"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCurePoison"
+	AutoCastScript="c =&gt; c.IsAffected(CrimsonStainedLands.AffectFlags.Poison)"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="19"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="13"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="stone skin"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellStoneskin"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="imbue weapon"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellImbueWeapon"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="ranger"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="stab"
+    MinimumPosition="Fighting"
+    NounDamage="stab"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="knife"
+    MinimumPosition="Standing"
+    NounDamage="knifing"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="14"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="backstab"
+    MinimumPosition="Standing"
+    NounDamage="backstab"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="2"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cheap shot"
+    MinimumPosition="Fighting"
+    NounDamage="cheap shot"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bind wounds"
+    MinimumPosition="Fighting"
+	AutoCastScript="ch =&gt; ch.HitPoints &lt; ch.MaxHitPoints"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="9"
+      Rating="1" />
+    <SkillLevel
+      Guild="warrior"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="herbs"
+    MinimumPosition="Standing"
+	AutoCastScript="ch =&gt; ch.HitPoints &lt; ch.MaxHitPoints"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="circle stab"
+    MinimumPosition="Fighting"
+    NounDamage="circle stab"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dual backstab"
+    MinimumPosition="Fighting"
+    NounDamage="dual backstab"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="19"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="fly"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFly"
+	AutoCastScript="c =&gt; !c.IsAffected(CrimsonStainedLands.AffectFlags.Flying)"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="15"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="21"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="giant strength"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellGiantStrength"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="plague"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellPlague"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="drum"
+    MinimumPosition="Fighting"
+    NounDamage="drumming maces"
+    Prerequisites="'mace specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="33"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="flurry"
+    MinimumPosition="Fighting"
+    NounDamage="flurry"
+    Prerequisites="'sword specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="31"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="arcane nuke"
+    MinimumPosition="Fighting"
+    NounDamage="arcane nuke"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellArcaneNuke"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="identify"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellIdentify"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="19"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="lore"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="warrior"
+      Level="25"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="9"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="locate object"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellLocateObject"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="24"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="enchant armor"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellEnchantArmor"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="enchant weapon"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellEnchantWeapon"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="40"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bless weapon"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellBlessWeapon"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="12"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="curse"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCurse"
+	AutoCastScript="c =&gt; !c.IsAffected(CrimsonStainedLands.AffectFlags.Curse)"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="32"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="weaken"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellWeaken"
+	AutoCastScript="c =&gt; !c.IsAffected(CrimsonStainedLands.AffectFlags.Weaken)"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="28"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="create food"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCreateFood"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="create spring"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCreateSpring"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="9"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="create water"
+    TargetType="targetItemInventory"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCreateWater"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="9"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="faerie fog"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFaerieFog"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="29"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="faerie fire"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFaerieFire"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="31"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="16"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="harm"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="harm spell"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellHarm"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="lightning bolt"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="lightning bolt"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellLightningBolt"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="acid blast"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="acid blast"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellAcidBlast"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="colour spray"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="colour spray"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellColourSpray"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="28"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="chill touch"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="chilling touch"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellChillTouch"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="mage"
+      Level="16"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="detect evil"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellDetectEvil"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="detect good"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellDetectGood"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="refresh"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellRefresh"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="5"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sleep"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSleep"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="35"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cause light"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="cause light"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCauseLight"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cause serious"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="cause serious"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCauseSerious"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cause critical"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="cause critical"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCauseCritical"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cancellation"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCancellation"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="slow"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSlow"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="haste"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellHaste"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="19"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="protective shield"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellProtectiveShield"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="20"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="frenzy"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFrenzy"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="32"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="change sex"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellChangeSex"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="energy drain"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="energy drain"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellEnergyDrain"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="healer"
+      Level="40"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="gas breath"
+    MinimumPosition="Fighting"
+    NounDamage="gas breath"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFireBreath"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="fire breath"
+    MinimumPosition="Fighting"
+    NounDamage="fire breath"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFireBreath"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="acid breath"
+    MinimumPosition="Fighting"
+    NounDamage="acid breath"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellAcidBreath"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="lightning breath"
+    MinimumPosition="Fighting"
+    NounDamage="lightning breath"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellLightningBreath"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="earthquake"
+    MinimumPosition="Fighting"
+    NounDamage="earthquake"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellEarthquake"
+    SkillTypes="Spell Commune" />
+  <SkillSpell
+    Name="detect poison"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellDetectPoison"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="35"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="spiderhands"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSpiderhands"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="rising kick"
+    MinimumPosition="Fighting"
+    NounDamage="rising kick"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="berserkers strike"
+    MinimumPosition="Fighting"
+    NounDamage="berserker's strike"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="feint"
+    MinimumPosition="Fighting"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="crusader strike"
+    MinimumPosition="Fighting"
+    NounDamage="crusader strike"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="seal of righteousness"
+    MinimumPosition="Fighting"
+    NounDamage="seal of righteousness"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSealOfRighteousness"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="16"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="seal of light"
+    MinimumPosition="Fighting"
+    NounDamage="seal of light"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSealOfLight"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="8"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="seal of wisdom"
+    MinimumPosition="Fighting"
+    NounDamage="seal of wisdom"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellSealOfWisdom"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="23"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="damage reduction"
+    MinimumPosition="Standing"
+    SkillTypes="" />
+  <SkillSpell
+    Name="fifth attack"
+    MinimumPosition="Fighting"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="claw"
+    MinimumPosition="Fighting"
+    NounDamage="claw"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="bite"
+    MinimumPosition="Fighting"
+    NounDamage="bite"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="trample"
+    MinimumPosition="Fighting"
+    NounDamage="trampling"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="furor"
+    MinimumPosition="Fighting"
+    NounDamage="furious strike"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="pinch"
+    MinimumPosition="Fighting"
+    NounDamage="pinch"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="jump"
+    MinimumPosition="Fighting"
+    NounDamage="body"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="strike"
+    MinimumPosition="Fighting"
+    NounDamage="strike"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="mule kick"
+    MinimumPosition="Fighting"
+    NounDamage="mule kick"
+    Prerequisites="'scissors kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="21"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="antler swipe"
+    MinimumPosition="Fighting"
+    NounDamage="antler swipe"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="tailswipe"
+    MinimumPosition="Fighting"
+    NounDamage="tail swipe"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="swipe"
+    MinimumPosition="Fighting"
+    NounDamage="swiping attack"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="devour"
+    MinimumPosition="Fighting"
+    NounDamage="devouring"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="rip"
+    MinimumPosition="Fighting"
+    NounDamage="rip"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="strangle"
+    MinimumPosition="Fighting"
+    NounDamage="strangulation"
+    EndFuncType="CrimsonStainedLands.Combat, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    EndFuncName="StrangleEnds"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="acid excrete"
+    MinimumPosition="Fighting"
+    NounDamage="acid excrete"
+    TickFuncType="CrimsonStainedLands.Combat, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    TickFuncName="AcidExcreteTick"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="berserk"
+    MinimumPosition="Standing"
+    NounDamage="berserk"
+    AutoCast="false"
+	AutoCastScript="c =&gt; !c.IsAffected(CrimsonStainedLands.AffectFlags.Berserk)"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="armor"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellArmor"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="5"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="6"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="6"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="8"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dirt kick"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="dirt kick"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="3"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="3"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="5"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="6"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="2"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="trip"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="trip"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="4"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="4"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bash"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="bash"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="8"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bless"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellBless"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="create bread"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellCreateBread"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="5"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="starvation"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    NounDamage="starvation"
+    AutoCast="false"
+    SkillTypes="Skill" />
+  <SkillSpell
+    Name="dehydration"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    NounDamage="dehydration"
+    AutoCast="false"
+    SkillTypes="Skill" />
+  <SkillSpell
+    Name="poison"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Standing"
+    NounDamage="poison"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellPoison"
+    TickFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    TickFuncName="AffectPoisonTick"
+    SkillTypes="Spell" />
+  <SkillSpell
+    Name="alcohol poisoning"
+    MinimumPosition="Standing"
+    NounDamage="alcohol poisoning"
+    AutoCast="false"
+    TickFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    TickFuncName="AffectAlcoholPoisonTick"
+    SkillTypes="" />
+  <SkillSpell
+    Name="bleeding"
+    MinimumPosition="Standing"
+    NounDamage="bleeding"
+    AutoCast="false"
+    TickFuncType="CrimsonStainedLands.Combat, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    TickFuncName="AffectBleedingTick"
+    SkillTypes="" />
+   <SkillSpell
+    Name="shiv"
+    MinimumPosition="Fighting"
+    NounDamage="shiv"
+    AutoCast="false"
+    TickFuncType="CrimsonStainedLands.Combat, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    TickFuncName="AffectBleedingTick"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="44"
+      Rating="1" />
+  </SkillSpell> 
+  <SkillSpell
+    Name="kidney shot"
+    MinimumPosition="Fighting"
+    NounDamage="kidney shot"
+    AutoCast="false"
+    TickFuncType="CrimsonStainedLands.Combat, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    TickFuncName="AffectBleedingTick"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="17"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="detect invisibility"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellDetectInvis"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="invisibility"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellInvis"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="blindness"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellBlindness"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="remove taint"
+    TargetType="targetItemCharDef"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellRemoveTaint"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="29"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="disarm"
+    MinimumPosition="Fighting"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="12"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="13"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="11"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="12"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="crush"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill" />
+  <SkillSpell
+    Name="tail"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill" />
+  <SkillSpell
+    Name="hide"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sneak"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="4"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="wrath"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="wrath"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellWrath"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="21"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="holy wrath"
+    MinimumPosition="Fighting"
+    NounDamage="holy wrath"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellHolyWrath"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="flamestrike"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="pillar of fire"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellFlamestrike"
+    SkillTypes="Commune">
+    <SkillLevel
+      Guild="paladin"
+      Level="24"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="detect hidden"
+    MinimumPosition="Resting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pass door"
+    TargetType="targetCharDefensive"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    SpellFuncName="SpellPassDoor"
+    SkillTypes="Spell Commune">
+    <SkillLevel
+      Guild="mage"
+      Level="15"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="26"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="form lion"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form armadillo"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form tortoise"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form clouded leopard"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form warthog"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="head smash"
+    MinimumPosition="Fighting"
+    NounDamage="head smash"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="37"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="enhanced damage II"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="45"
+      Prerequisites="'enhanced damage'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="spellcraft II"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="mage"
+      Level="40"
+      Prerequisites="spellcraft"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="shield bash"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="bash"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="4"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="shield jab"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="shield jab"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="palm smash"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="palm smash"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="31"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="hand flurry"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="hand flurry"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="34"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="mace flurry"
+    TargetType="targetCharOffensive"
+    MinimumPosition="Fighting"
+    NounDamage="mace flurry"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="44"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="scrolls"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="talismans"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="14"
+      Rating="1" />	  
+  </SkillSpell>
+  <SkillSpell
+    Name="wands"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="mage"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="findwater"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="12"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="owl kinship"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="wolf kinship"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="serpent kinship"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="35"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bear kinship"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="45"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sing"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="bard"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="a cappella"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="bard"
+      Level="30"
+      Prerequisites="'sing'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="rogues awareness"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="19"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="gentle walk"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="13"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pick lock"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="7"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="relock"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="weapon trip"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="26"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sap"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="blindfold"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="precision strike"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="23"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="drag"
+    MinimumPosition="standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="31"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pepper dust"
+    MinimumPosition="fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="42"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="blister agent"
+    MinimumPosition="fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="33"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="ear clap"
+    MinimumPosition="fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="32"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="prey on the weak"
+    MinimumPosition="fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="34"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="infiltrate"
+    MinimumPosition="standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="38"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="arcane vision"
+    MinimumPosition="standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="40"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="stench cloud"
+    MinimumPosition="standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="35"
+      Rating="1" />
+  </SkillSpell>    
+  <SkillSpell
+    Name="sucker hit"
+    MinimumPosition="fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="acrobatics"
+    MinimumPosition="standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="36"
+      Rating="1" />
+  </SkillSpell>    
+  <SkillSpell
+    Name="disengage"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="21"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="envenom weapon"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="6"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="gag"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="27"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bind hands"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="28"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bind legs"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="29"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sleeping disarm"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="31"
+      Rating="1" />
+  </SkillSpell>
+ <SkillSpell
+    Name="grease item"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="peek"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="steal"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="6"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="combat steal"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="thief"
+      Level="24"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="angels wing"
+    MinimumPosition="Fighting"
+    NounDamage="angels wing"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="paladin"
+      Level="2"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="serpent strike"
+    NounDamage="serpent strike"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="roundhouse"
+    NounDamage="roundhouse"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="bard"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="wheel kick"
+    MinimumPosition="Fighting"
+    NounDamage="wheel kick"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sweep kick"
+    MinimumPosition="Fighting"
+    NounDamage="sweep kick"
+    AutoCast="true"
+    Prerequisites="'wheel kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="6"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="side kick"
+    MinimumPosition="Fighting"
+    NounDamage="side kick"
+    AutoCast="true"
+    Prerequisites="'sweep kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="11"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="scissors kick"
+    MinimumPosition="Fighting"
+    NounDamage="scissors kick"
+    AutoCast="true"
+    Prerequisites="'side kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="16"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="crescent kick"
+    MinimumPosition="Fighting"
+    NounDamage="crescent kick"
+    AutoCast="true"
+    Prerequisites="'mule kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="26"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="axe kick"
+    MinimumPosition="Fighting"
+    NounDamage="axe kick"
+    AutoCast="true"
+    Prerequisites="'crescent kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="31"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="mountain storm kick"
+    MinimumPosition="Fighting"
+    NounDamage="mountain storm kick"
+    AutoCast="true"
+    Prerequisites="'axe kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="36"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="double spin kick"
+    MinimumPosition="Fighting"
+    NounDamage="double spin kick"
+    AutoCast="true"
+    Prerequisites="'mountain storm kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="41"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="rising phoenix kick"
+    MinimumPosition="Fighting"
+    NounDamage="rising phoenix kick"
+    AutoCast="true"
+    Prerequisites="'double spin kick'"
+    PrerequisitePercentage="91"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="46"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="caltraps"
+    MinimumPosition="Fighting"
+    NounDamage="caltraps"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="13"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="blindness dust"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="18"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="poison dust"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="throw"
+    MinimumPosition="Fighting"
+    NounDamage="throw"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="17"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="kotegaeshi"
+    MinimumPosition="Fighting"
+    NounDamage="kotegaeshi"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="22"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="kansetsuwaza"
+    MinimumPosition="Fighting"
+    NounDamage="kansetsuwaza"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="28"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="ground control"
+    MinimumPosition="Fighting"
+    NounDamage="ground control"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="24"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="poison dagger"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="25"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="unarmed defense"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="15"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="vanish"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="16"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="heightened awareness"
+    MinimumPosition="Fighting"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="7"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="owaza"
+    MinimumPosition="Fighting"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="40"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pugil"
+    MinimumPosition="Fighting"
+    NounDamage="pugil"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="25"
+      Rating="1" />
+    <SkillLevel
+      Guild="bard"
+      Level="19"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="17"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="20"
+      Rating="1" />
+    <SkillLevel
+      Guild="mage"
+      Level="20"
+      Rating="1" />
+    <SkillLevel
+      Guild="warrior"
+      Level="15"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="lash"
+    MinimumPosition="Fighting"
+    NounDamage="lash"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="bard"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="healer"
+      Level="19"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="16"
+      Rating="1" />
+    <SkillLevel
+      Guild="warrior"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sword specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="hand to hand specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="spear/staff specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dagger specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="mace specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="axe specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="whip/flail specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="polearm specialization"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="WarriorSpecialization">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sting"
+    MinimumPosition="Fighting"
+    NounDamage="stinging lash"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="bludgeon"
+    MinimumPosition="Fighting"
+    NounDamage="bludgeoning"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="ironfists"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    Prerequisites="'hand to hand specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="flourintine"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    Prerequisites="'sword specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="distance"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    Prerequisites="'polearm specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="defensive spin"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    Prerequisites="'spear/staff specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="riposte"
+    MinimumPosition="Fighting"
+    NounDamage="riposte"
+    AutoCast="false"
+    Prerequisites="'sword specialization'"
+    PrerequisitePercentage="100"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="22"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="legsweep"
+    MinimumPosition="Fighting"
+    NounDamage="legsweep"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="24"
+      Prerequisites="'spear/staff specialization'|'polearm specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="impale"
+    MinimumPosition="Fighting"
+    NounDamage="impaling"
+    AutoCast="true"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="warrior"
+      Level="32"
+      Prerequisites="'spear/staff specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="whirl"
+    MinimumPosition="Fighting"
+    NounDamage="whirling axe"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Prerequisites="'axe specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="boneshatter"
+    MinimumPosition="Fighting"
+    NounDamage="boneshattering blow"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="28"
+      Prerequisites="'mace specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="backhand"
+    MinimumPosition="Fighting"
+    NounDamage="backhanded blow"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="20"
+      Prerequisites="'mace specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cross down parry"
+    MinimumPosition="Fighting"
+    NounDamage="cross down parry"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="22"
+      Prerequisites="'sword specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pummel"
+    MinimumPosition="Fighting"
+    NounDamage="pummel"
+    AutoCast="true"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="23"
+      Prerequisites="'hand to hand specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="underhand stab"
+    MinimumPosition="Fighting"
+    NounDamage="underhanded stab"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="23"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="vital area"
+    MinimumPosition="Fighting"
+    NounDamage="vital area strike"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="23"
+      Prerequisites="'hand to hand specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="deflect shield"
+    MinimumPosition="Fighting"
+    NounDamage="deflect shield"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="23"
+      Prerequisites="'mace specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="leverage kick"
+    MinimumPosition="Fighting"
+    NounDamage="leveraged kick"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="23"
+      Prerequisites="'spear/staff specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="entrap weapon"
+    MinimumPosition="Fighting"
+    NounDamage="weapon entrapment"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="23"
+      Prerequisites="'polearm specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="weapon breaker"
+    MinimumPosition="Fighting"
+    NounDamage="weapon breaker"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="24"
+      Prerequisites="'axe specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="double thrust"
+    MinimumPosition="Fighting"
+    NounDamage="doublethrust"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="24"
+      Prerequisites="'sword specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="chop"
+    MinimumPosition="Fighting"
+    NounDamage="chop"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="24"
+      Prerequisites="'polearm specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="strip weapon"
+    MinimumPosition="Fighting"
+    NounDamage="strip weapon"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="24"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="hamstring"
+    MinimumPosition="Fighting"
+    NounDamage="hamstring"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="25"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="crescent strike"
+    MinimumPosition="Fighting"
+    NounDamage="crescent strike"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="25"
+      Prerequisites="'spear/staff specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cranial"
+    MinimumPosition="Fighting"
+    NounDamage="cranial strike"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="26"
+      Prerequisites="'mace specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="jab"
+    MinimumPosition="Fighting"
+    NounDamage="quick jab"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="26"
+      Prerequisites="'sword specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="misdirect"
+    MinimumPosition="Fighting"
+    NounDamage="misdirect"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="26"
+      Prerequisites="'spear/staff specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="eye jab"
+    MinimumPosition="Fighting"
+    NounDamage="eye jab"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="26"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="hook weapon"
+    MinimumPosition="Fighting"
+    NounDamage="hook"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="27"
+      Prerequisites="'axe specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="artery"
+    MinimumPosition="Fighting"
+    NounDamage="artery"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="27"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="choke"
+    MinimumPosition="Fighting"
+    NounDamage="choke"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="27"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pincer"
+    MinimumPosition="Fighting"
+    NounDamage="pincer"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="29"
+      Prerequisites="'axe specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="overhead"
+    MinimumPosition="Fighting"
+    NounDamage="overhead strike"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="30"
+      Prerequisites="'axe specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="twist"
+    MinimumPosition="Fighting"
+    NounDamage="twist"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="30"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="stun"
+    MinimumPosition="Fighting"
+    NounDamage="stunning blow"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="30"
+      Prerequisites="'hand to hand specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="dent"
+    MinimumPosition="Fighting"
+    NounDamage="dent"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="30"
+      Prerequisites="'mace specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="charge set"
+    MinimumPosition="Fighting"
+    NounDamage="charge set"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="30"
+      Prerequisites="'polearm specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="concealed"
+    MinimumPosition="Fighting"
+    NounDamage="concealed strike"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="32"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="cutoff"
+    MinimumPosition="Fighting"
+    NounDamage="cutoff"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="32"
+      Prerequisites="'polearm specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="entwine"
+    MinimumPosition="Fighting"
+    NounDamage="entwine"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="32"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="disembowel"
+    MinimumPosition="Fighting"
+    NounDamage="disembowel"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="33"
+      Prerequisites="'axe specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="hurl"
+    MinimumPosition="Fighting"
+    NounDamage="hurl"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="33"
+      Prerequisites="'dagger specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="crushing blow"
+    MinimumPosition="Fighting"
+    NounDamage="crushing blow"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="33"
+      Prerequisites="'hand to hand specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pull"
+    MinimumPosition="Fighting"
+    NounDamage="pull"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="34"
+      Prerequisites="'whip/flail specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="pierce"
+    MinimumPosition="Fighting"
+    NounDamage="pierce"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="assassin"
+      Level="14"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="9"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="warcry"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="20"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="thrust"
+    MinimumPosition="Fighting"
+    NounDamage="thrust"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="17"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="13"
+      Rating="1" />
+    <SkillLevel
+      Guild="thief"
+      Level="15"
+      Rating="1" />	  
+  </SkillSpell>
+  <SkillSpell
+    Name="slice"
+    MinimumPosition="Fighting"
+    NounDamage="slice"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="19"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="9"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="minor regeneration"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="major regeneration"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="greater regeneration"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="super regeneration"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="evasion"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="22"
+      Prerequisites="'hand to hand specialization'"
+      PrerequisitePercentage="100"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="forage"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="sprint"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="rescue"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="warrior"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="1"
+      Rating="1" />
+    <SkillLevel
+      Guild="hunter"
+      Level="1"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="fashion staff"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="30"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="fashion spear"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="32"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="butcher"
+    TargetType="targetItemInventory"
+    AutoCast="false"
+    SkillTypes="Spell">
+    <SkillLevel
+      Guild="ranger"
+      Level="9"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="intercept"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="burrow"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="slow metabolism"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="acute vision"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="7"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="survivalist"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="ranger"
+      Level="28"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="camouflage"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="4"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="quiet movement"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="5"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="path finding"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="7"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="camp"
+    MinimumPosition="Resting"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="22"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="endure"
+    NounDamage="endure"
+    AutoCast="false"
+    SkillTypes="Skill">
+    <SkillLevel
+      Guild="assassin"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="scavenge"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="charge"
+    NounDamage="charge"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="warrior"
+      Level="18"
+      Rating="1" />
+    <SkillLevel
+      Guild="ranger"
+      Level="23"
+      Rating="1" />
+    <SkillLevel
+      Guild="paladin"
+      Level="10"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="crushing charge"
+    NounDamage="charge"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="paladin"
+      Level="41"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="sabre charge"
+    NounDamage="charge"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="paladin"
+      Level="42"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="lance charge"
+    NounDamage="charge"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="paladin"
+      Level="43"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="ambush"
+    NounDamage="ambush"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="12"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="creep"
+    NounDamage="creep"
+    AutoCast="false"
+    SkillTypes="Skill InForm">
+    <SkillLevel
+      Guild="ranger"
+      Level="19"
+      Rating="1" />
+  </SkillSpell>
+  <SkillSpell
+    Name="flank"
+    MinimumPosition="Fighting"
+    NounDamage="flank attack"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="headbutt"
+    MinimumPosition="Fighting"
+    NounDamage="headbutt"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="lick self"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="retract"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="quill defense"
+    MinimumPosition="Standing"
+    NounDamage="quills"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="tusk jab"
+    MinimumPosition="Fighting"
+    NounDamage="tusk jab"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="hoof stomp"
+    MinimumPosition="Fighting"
+    NounDamage="hoof stomp"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="hoof strike"
+    MinimumPosition="Fighting"
+    NounDamage="hoof strike"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="snarl"
+    MinimumPosition="Fighting"
+    NounDamage="snarl"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="dive"
+    NounDamage="dive attack"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="pounce attack"
+    MinimumPosition="Fighting"
+    NounDamage="pounce attack"
+    MessageOff="You feel ready to pounce on your foe again."
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="mucous defense"
+    MinimumPosition="Standing"
+    NounDamage="mucous defense"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="howl"
+    MinimumPosition="Fighting"
+    NounDamage="deafening howl"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="quill spray"
+    MinimumPosition="Fighting"
+    NounDamage="quill spray"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="chest pound"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="laugh"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="noxious spray"
+    MinimumPosition="Fighting"
+    NounDamage="noxious spray"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="venom spit"
+    MinimumPosition="Fighting"
+    NounDamage="corrosive venom spit"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="spit"
+    MinimumPosition="Fighting"
+    NounDamage="saliva and partially digested food"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="shoot blood"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="play dead"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="grip"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="zigzag"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="flight"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="gland spray"
+    MinimumPosition="Fighting"
+    NounDamage="gland spray"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="venom strike"
+    MinimumPosition="Fighting"
+    NounDamage="venomous strike"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="secreted filament"
+    MinimumPosition="Fighting"
+    NounDamage="secreted filament"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="carrion feeding"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="autotomy"
+    MinimumPosition="Fighting"
+    NounDamage="autotomy"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="tree climb"
+    MinimumPosition="Fighting"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="awareness"
+    MinimumPosition="Sleeping"
+    AutoCast="false"
+    SkillTypes="InForm" />
+  <SkillSpell
+    Name="form hedgehog"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form weasel"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form swamp rat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form marmot"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form horned lizard"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form tuara lizard"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form sand lizard"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form diamondback rattlesnake"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form ferret"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form mountain goat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form feral pig"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form majestic elk"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form ornery mule"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form soldier ant"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form anteater"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form red wolf"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant squirrel"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form chimpanzee"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form mastiff"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form deer"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form coyote"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form peacock"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form wild turkey"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form flying squirrel"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form tree cricket"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form penguin"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form beaver"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form long necked swan"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form bullfrog"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form platypus"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form red-bellied newt"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form wombat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form opossum"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form stag beetle"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form brown bear"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form polar bear"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form hare"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form muscular bobcat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form snow leopard"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form mongoose"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form komodo dragon"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form angry crocodile"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form porcupine"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form lemur"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form pachyderm"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form black panther"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form jackal"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form black bear"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form great moose"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form bull"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form whip scorpion"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form zebra"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form boar"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form striped badger"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form wolf"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form arctic fox"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form copperhead"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form lynx"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form snow badger"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form wary ocelot"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form tiger"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form grizzled ram"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form massive alligator"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form black rhinoceros"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form golden jaguar"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form silverback gorilla"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form grizzly bear"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form wolverine"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form dire wolf"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form honey badger"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant leech"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form scorpion"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form two-humped camel"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form skunk"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant toad"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form mustang"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form gibbon"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form bombardier beetle"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form ostrich"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form cat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form racoon"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant mantis"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form long legged spider"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form swift gazelle"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form spider monkey"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form baboon"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form stink badger"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form trapdoor spider"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form cavefisher"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form fox"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form wildcat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form howler monkey"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form cheetah"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form striped hyena"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form cobra"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form orangutan"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form emu"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form goshawk"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form nightengale"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form parrot"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form yellowjacket"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form firefly"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form burrowing owl"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form osprey"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form skyflash"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form shikra"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form crag soarer"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form boulder hawk"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form golden eagle"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form falcon"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form vulture"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form great horned owl"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form hummingbird"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form vampire bat"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant wasp"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form archerfish"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form crab"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form electric catfish"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form piranha"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant gar"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form otter"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form sea snake"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form snapping turtle"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form barracuda"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form hippopotamus"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form seal"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form mako shark"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form shark"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form electric eel"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form manta ray"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form tusked walrus"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form squid"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form orca"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form blue dolphin"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+  <SkillSpell
+    Name="form giant lobster"
+    MinimumPosition="Standing"
+    AutoCast="false"
+    SkillTypes="Form" />
+</SkillLevels>

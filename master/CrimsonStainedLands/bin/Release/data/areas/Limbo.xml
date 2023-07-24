@@ -1,0 +1,2048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Limbo</Name>
+    <Info></Info>
+    <VnumStart>1</VnumStart>
+    <VnumEnd>110</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{None } Diku    Limbo</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>1</VNum>
+      <Name>The Void</Name>
+      <Description>You are floating in nothing.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2</VNum>
+      <Name>Limbo</Name>
+      <Description>You are floating in a formless void, detached from all sensation of physical
+matter, surrounded by swirling glowing light, which fades into the relative
+darkness around you without any trace of edges or shadow.
+There is a "No Tipping" notice pinned to the darkness.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3001</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3</VNum>
+      <Name>Graelik's Lair</Name>
+      <Description>As you look around, you can't make out much of anything.  The air is
+completely dark.  However, a rich smell of acid overcomes you as a small
+drop hits your arm causing your skin to burn slightly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>110</VNum>
+      <Name>(null)</Name>
+      <Description></Description>
+      <Sector>Field</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>3</Vnum>
+      <name>massive lich</name>
+      <description></description>
+      <longDescription>A massive lich stands here holding a potion, offering to sell you a way out.</longDescription>
+      <shortDescription>a massive lich</shortDescription>
+      <Sex>Male</Sex>
+      <level>100</level>
+      <HitPointDiceSides>100</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>100</ManaPointDiceSides>
+      <ManaPointDiceCount>100</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>2000</hitpoints>
+      <maxhitpoints>2000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-1000</ArmorBash>
+      <ArmorSlash>-1000</ArmorSlash>
+      <ArmorPierce>-1000</ArmorPierce>
+      <ArmorExotic>-1000</ArmorExotic>
+      <size>Giant</size>
+      <race>lich</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>60</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC AreaAttack Shopkeeper</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Flying PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>100</DamageDiceSides>
+      <DamageDiceCount>100</DamageDiceCount>
+      <DamageDiceBonus>50</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="" />
+    </NPC>
+    <NPC>
+      <Vnum>4</Vnum>
+      <name>trogdor burninator dragon</name>
+      <description></description>
+      <longDescription>Trogdor the Burninator is here burninating everything!</longDescription>
+      <shortDescription>Trogdor the Burninator</shortDescription>
+      <Sex>None</Sex>
+      <level>100</level>
+      <HitPointDiceSides>100</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>1000</HitPointDiceBonus>
+      <ManaPointDiceSides>100</ManaPointDiceSides>
+      <ManaPointDiceCount>100</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>2000</hitpoints>
+      <maxhitpoints>2000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>1000</ArmorBash>
+      <ArmorSlash>1000</ArmorSlash>
+      <ArmorPierce>1000</ArmorPierce>
+      <ArmorExotic>1000</ArmorExotic>
+      <size>Giant</size>
+      <race>dragon</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>77</hitroll>
+      <damRoll>100</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC NoPurge AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>77</DamageDiceSides>
+      <DamageDiceCount>77</DamageDiceCount>
+      <DamageDiceBonus>77</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>1</VNum>
+      <Name>coin silver gcash</Name>
+      <ShortDescription>a silver coin</ShortDescription>
+      <LongDescription>One miserable silver coin.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2</VNum>
+      <Name>coin gold gcash</Name>
+      <ShortDescription>a gold coin</ShortDescription>
+      <LongDescription>One valuable gold coin.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>3</VNum>
+      <Name>coins gold gcash</Name>
+      <ShortDescription>%d gold coins</ShortDescription>
+      <LongDescription>A pile of gold coins.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>4</VNum>
+      <Name>coins silver gcash</Name>
+      <ShortDescription>%d silver coins</ShortDescription>
+      <LongDescription>A pile of silver coins.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>5</VNum>
+      <Name>coins silver gold gcash</Name>
+      <ShortDescription>%d silver coins and %d gold coins</ShortDescription>
+      <LongDescription>A pile of coins.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6</VNum>
+      <Name>korinth sword</Name>
+      <ShortDescription>the Korinth d'Verin</ShortDescription>
+      <LongDescription>The Korinth d'Verin lies here, pulsing with incredible power.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>acidicbite</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>30</DiceSides>
+      <DiceCount>60</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Dark Evil Magic NoDrop Bless AntiGood AntiNeutral NoRemove BurnProof NoUncurse Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="500" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="500" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>energy</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>7</VNum>
+      <Name>potion return</Name>
+      <ShortDescription>a potion of return</ShortDescription>
+      <LongDescription>A potion of return lies here upon the ground.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>BurnProof</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>return</Keyword>
+          <Description>The label on the pill reads "GUARANTEED TO SEND YOU TO YOUR TEMPLE"</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>potion</Keyword>
+          <Description>The label on the pill reads "GUARANTEED TO SEND YOU TO YOUR TEMPLE"</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>8</VNum>
+      <Name>belbol sword</Name>
+      <ShortDescription>the Belbol d`Elghinn</ShortDescription>
+      <LongDescription>The Belbol d`Elghinn lies here, pulsing with incredible power.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>darkwrath</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>30</DiceSides>
+      <DiceCount>60</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Dark Evil Magic NoDrop Bless AntiGood AntiNeutral NoRemove BurnProof NoUncurse Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="500" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="500" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>energy</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>9</VNum>
+      <Name>dragonweapon</Name>
+      <ShortDescription>a dragonweapon</ShortDescription>
+      <LongDescription>a dragonweapon lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>wrath</WeaponDamageType>
+      <WeaponType>Exotic</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Magic Bless AntiEvil AntiNeutral RotDeath</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>energy</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10</VNum>
+      <Name>corpse</Name>
+      <ShortDescription>the corpse of %s</ShortDescription>
+      <LongDescription>The corpse of %s is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>100</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>NPCCorpse</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>11</VNum>
+      <Name>corpse pccorpse</Name>
+      <ShortDescription>the corpse of %s</ShortDescription>
+      <LongDescription>The corpse of %s is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1000</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>NoPurge</ExtraFlags>
+      <ItemTypes>PC_Corpse</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12</VNum>
+      <Name>head</Name>
+      <ShortDescription>the head of %s</ShortDescription>
+      <LongDescription>The severed head of %s is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13</VNum>
+      <Name>heart</Name>
+      <ShortDescription>the heart of %s</ShortDescription>
+      <LongDescription>The bloodied, torn-out heart of %s is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>48</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>14</VNum>
+      <Name>arm</Name>
+      <ShortDescription>the arm of %s</ShortDescription>
+      <LongDescription>The disembodied arm of %s is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>60</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>15</VNum>
+      <Name>leg</Name>
+      <ShortDescription>the leg of %s</ShortDescription>
+      <LongDescription>The chopped-off leg of %s is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>60</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>16</VNum>
+      <Name>guts entrails intestines</Name>
+      <ShortDescription>the guts of %s</ShortDescription>
+      <LongDescription>A steaming pile of %s's intestines are lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>15</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>17</VNum>
+      <Name>brains brain</Name>
+      <ShortDescription>the brains of %s</ShortDescription>
+      <LongDescription>The splattered brains of %s are lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>30</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>18</VNum>
+      <Name>pill return</Name>
+      <ShortDescription>a pill of return</ShortDescription>
+      <LongDescription>A potion of return lies here upon the ground.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>BurnProof</ExtraFlags>
+      <ItemTypes>Pill</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>return</Keyword>
+          <Description>The label on the pill reads "GUARANTEED TO SEND YOU TO YOUR TEMPLE"</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>20</VNum>
+      <Name>mushroom</Name>
+      <ShortDescription>a Magic Mushroom</ShortDescription>
+      <LongDescription>A delicious magic mushroom is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>24</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>food</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>21</VNum>
+      <Name>ball light</Name>
+      <ShortDescription>a bright ball of light</ShortDescription>
+      <LongDescription>A bright ball of light shimmers in the air.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Light</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>energy</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>22</VNum>
+      <Name>spring</Name>
+      <ShortDescription>a magical spring</ShortDescription>
+      <LongDescription>A magical spring flows from the ground here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Fountain</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>48</Nutrition>
+      <Liquid>water</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>water</Material>
+      <Charges>2083</Charges>
+      <MaxCharges>2083</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23</VNum>
+      <Name>disc disk floating black</Name>
+      <ShortDescription>a floating disc</ShortDescription>
+      <LongDescription>A floating black disc hangs in the air.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take WearFloat</WearFlags>
+      <ExtraFlags>Magic NoRemove RotDeath MeltDrop BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>energy</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>24</VNum>
+      <Name>guitar fender jazzmaster</Name>
+      <ShortDescription>a Fender Jazzmaster with Marijuana inlays</ShortDescription>
+      <LongDescription>A beautifully crafted guitar lies here catching your eye.</LongDescription>
+      <Description></Description>
+      <Level>14</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Instrument</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>140</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>25</VNum>
+      <Name>portal acidic shimmering</Name>
+      <ShortDescription>a shimmering acidic portal</ShortDescription>
+      <LongDescription>A shimmering portal composed of acidic secretion is erected here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Magic NoPurge</ExtraFlags>
+      <ItemTypes>Portal</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>shadow</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>26</VNum>
+      <Name>death chair electric</Name>
+      <ShortDescription>the electric chair</ShortDescription>
+      <LongDescription>A menacing, crackling electric chair sits in the center of the room.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>27</VNum>
+      <Name>graelik throne</Name>
+      <ShortDescription>Graelik's throne</ShortDescription>
+      <LongDescription>Here is Graelik's throne, you would be well advised not to sit in it.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>90</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Dark Evil Magic NoPurge BurnProof</ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>30</VNum>
+      <Name>dummy object</Name>
+      <ShortDescription>a dummy object</ShortDescription>
+      <LongDescription>Dummy object is used for loading non-existent objects</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>45</VNum>
+      <Name>scalp</Name>
+      <ShortDescription>the bloody scalp of %s</ShortDescription>
+      <LongDescription>The blood scalp of %s lays here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>49</VNum>
+      <Name>tattoo crimson jackass</Name>
+      <ShortDescription>tattoo of the crimson jackass</ShortDescription>
+      <LongDescription>You are looking at the tattoo of nobody.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-500" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-500" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-50</ArmorBash>
+      <ArmorSlash>-50</ArmorSlash>
+      <ArmorPierce>-50</ArmorPierce>
+      <ArmorExotic>-50</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>50</VNum>
+      <Name>instrument recorder</Name>
+      <ShortDescription>a newbie recorder</ShortDescription>
+      <LongDescription>A newbie recorder lies here.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Instrument</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>57</VNum>
+      <Name>tattoo damned blunt</Name>
+      <ShortDescription>tattoo of the damned blunt</ShortDescription>
+      <LongDescription>You are looking at the tattoo of Detlef.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="25" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>15</ArmorBash>
+      <ArmorSlash>15</ArmorSlash>
+      <ArmorPierce>15</ArmorPierce>
+      <ArmorExotic>15</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>58</VNum>
+      <Name>tattoo tome infinite</Name>
+      <ShortDescription>mark of the infinite tome</ShortDescription>
+      <LongDescription>You are looking at the tattoo of Deomanix.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="500" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>15</ArmorBash>
+      <ArmorSlash>15</ArmorSlash>
+      <ArmorPierce>15</ArmorPierce>
+      <ArmorExotic>15</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>59</VNum>
+      <Name>tattoo kraenesk</Name>
+      <ShortDescription>mark of the dark dragon</ShortDescription>
+      <LongDescription>You are looking at the tattoo of Kraenesk</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>60</VNum>
+      <Name>tattoo rhiannon</Name>
+      <ShortDescription>a hoofprint of stardust</ShortDescription>
+      <LongDescription>You are looking at the tattoo of Rhiannon</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>64</VNum>
+      <Name>tattoo vasilis</Name>
+      <ShortDescription>the reticulated python</ShortDescription>
+      <LongDescription>You are looking at the tattoo of Vasilis.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Regeneration" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>65</VNum>
+      <Name>tattoo grikthoran golden gauntlet</Name>
+      <ShortDescription>a golden gauntlet with five gems</ShortDescription>
+      <LongDescription>The tattoo is golden in color with five gemstones gleaming across the top.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop NoRemove BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>66</VNum>
+      <Name>tattoo kelset</Name>
+      <ShortDescription>An Anvil Wreathed in Flames</ShortDescription>
+      <LongDescription>You are looking at kelset's brand.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>67</VNum>
+      <Name>tattoo dhayton</Name>
+      <ShortDescription>the virulent dagger</ShortDescription>
+      <LongDescription>You are looking at the tattoo of dhayton.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>70</VNum>
+      <Name>tattoo liriel</Name>
+      <ShortDescription>golden leaf</ShortDescription>
+      <LongDescription>This is Liriel's tattoo.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop Bless</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>71</VNum>
+      <Name>tattoo merthairu</Name>
+      <ShortDescription>the onyx seedling</ShortDescription>
+      <LongDescription>You are looking at the tattoo of merthairu.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>72</VNum>
+      <Name>ceial tattoo</Name>
+      <ShortDescription>a Crimson Shroud</ShortDescription>
+      <LongDescription>You looking at Ceial's tattoo.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take Tattoo</WearFlags>
+      <ExtraFlags>Glow Hum Dark Evil NoRemove BurnProof</ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>77</VNum>
+      <Name>tattoo graelik rotting skull</Name>
+      <ShortDescription>tattoo of a rotting skull</ShortDescription>
+      <LongDescription>A small, thin layer of flesh with ink on it lies here.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow NoDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>78</VNum>
+      <Name>Tattoo Oak Tree</Name>
+      <ShortDescription>a Oak Tree seeming to Burn with a Green Light</ShortDescription>
+      <LongDescription>You are Stareing At The Tattoo Of A Great Ent</LongDescription>
+      <Description></Description>
+      <Level>58</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take NoSac Tattoo</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Chr" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="-2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>Leaves</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>100</VNum>
+      <Name>sword</Name>
+      <ShortDescription>newbie sword</ShortDescription>
+      <LongDescription>A newbie sword is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>101</VNum>
+      <Name>dagger</Name>
+      <ShortDescription>newbie dagger</ShortDescription>
+      <LongDescription>A newbie dagger is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>102</VNum>
+      <Name>mace</Name>
+      <ShortDescription>newbie mace</ShortDescription>
+      <LongDescription>A newbie mace is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>103</VNum>
+      <Name>spear</Name>
+      <ShortDescription>newbie spear</ShortDescription>
+      <LongDescription>A newbie spear is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>thrust</WeaponDamageType>
+      <WeaponType>Spear</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>104</VNum>
+      <Name>staff</Name>
+      <ShortDescription>newbie staff</ShortDescription>
+      <LongDescription>A newbie staff is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>105</VNum>
+      <Name>axe</Name>
+      <ShortDescription>newbie axe</ShortDescription>
+      <LongDescription>A newbie axe is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>chop</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bronze</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>106</VNum>
+      <Name>flail</Name>
+      <ShortDescription>newbie flail</ShortDescription>
+      <LongDescription>A newbie flail is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>crush</WeaponDamageType>
+      <WeaponType>Flail</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bronze</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>107</VNum>
+      <Name>whip</Name>
+      <ShortDescription>newbie whip</ShortDescription>
+      <LongDescription>A newbie whip is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>whip</WeaponDamageType>
+      <WeaponType>Whip</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>108</VNum>
+      <Name>polearm</Name>
+      <ShortDescription>newbie polearm</ShortDescription>
+      <LongDescription>A newbie polearm is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Polearm</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>RotDeath MeltDrop TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>109</VNum>
+      <Name>banner</Name>
+      <ShortDescription>newbie banner</ShortDescription>
+      <LongDescription>A newbie banner is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Light</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>110</VNum>
+      <Name>armor</Name>
+      <ShortDescription>newbie armor</ShortDescription>
+      <LongDescription>A newbie armor is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>MeltDrop</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn Graelik's throne to Graelik's Lair-->
+      <Type>Item</Type>
+      <Destination>3</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>27</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Trogdor the Burninator to Graelik's Lair-->
+      <Type>NPC</Type>
+      <Destination>3</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>4</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a massive lich to Graelik's Lair-->
+      <Type>NPC</Type>
+      <Destination>3</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the head of {0} to a massive lich-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>7</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the head of {0} to a massive lich-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>7</Vnum>
+    </Reset>
+  </Resets>
+</Area>

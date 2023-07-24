@@ -1,0 +1,3974 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Dwarven Kingdom</Name>
+    <Info></Info>
+    <VnumStart>6500</VnumStart>
+    <VnumEnd>6599</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{10 25} Anon    Dwarven Kingdom</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>6500</VNum>
+      <Name>Path to Dwarven Village</Name>
+      <Description>All around you are the mountains of the southern range, home of dwarves and 
+giants.  You can climb back down the mountains to the west and leave these 
+realms, or seek riches in the northern mineshafts.  A dirt road leads south, 
+towards a small building.  You can hear crying and shrieking coming from it.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6501</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The path continues.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6562</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A rocky road leads back to Midgaard and the mines of Moria.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6501</VNum>
+      <Name>Path, base of mountain</Name>
+      <Description>Now you are at the bottom of a rugged mountain.  The forest around you is
+very dense, and it seems very dark to the north.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6502</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The path continues up the mountain.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6500</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The path heads toward the main city.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6502</VNum>
+      <Name>Path, middle of mountain</Name>
+      <Description>Standing on the middle of the mountain, you can easily see the turning
+point to the south, and the top of the mountain is very near to the north.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6503</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The top of the mountain is easily seen from here.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6501</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The base of the mountain is near.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6503</VNum>
+      <Name>Top of mountain</Name>
+      <Description>You are now on the top of the mountain.  To the south you see a path
+leading down the mountain.  To the east and west you see entrances to
+what seems like mines.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6540</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>An entrance to the mountain which seems to lead underground.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6502</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The path leads down the mountain to the main city.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6505</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>There is an entrance to the mountain.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6504</VNum>
+      <Name>Narrow Path</Name>
+      <Description>This is a narrow path leading to the Dwarven Kingdom.  It looks less
+travelled than the others, and it is very creepy.  The path opens up
+to the south, and continues to the north.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6506</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6540</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6505</VNum>
+      <Name>Entrance to Mountain</Name>
+      <Description>Here is an entrance to the mountain.  The door looks very well built,
+and you can hear noise coming from within.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6503</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6513</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6506</VNum>
+      <Name>Bend in Narrow Path</Name>
+      <Description>This is a narrow path that bends to the east here.  The trees hang over
+the path, and it is very overgrown.  The narrow path continues to the
+south and to the east.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6507</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6504</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tree trees</Keyword>
+          <Description>They hang over the road in the most ominous of ways.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6507</VNum>
+      <Name>Narrow path</Name>
+      <Description>This path is very narrow, and it continues to the north and west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6508</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6506</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6508</VNum>
+      <Name>Narrow north-south path</Name>
+      <Description>This path leads to the north and south.  To the north you can see a
+door, and to the south the path continues.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6507</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>2001</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6509</VNum>
+      <Name>Door to Kingdom</Name>
+      <Description>Here the path turns to the west.  You can see a door in front of you,
+and the path continues to the west and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6510</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6508</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6522</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6510</VNum>
+      <Name>Path to the Castle</Name>
+      <Description>You are on a path that will eventually lead to the castle.  It
+continues north to the castle, and there is a door on the western wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6511</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6509</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6511</VNum>
+      <Name>Still on the path to the Castle</Name>
+      <Description>You are still on the path to the castle, or back to the  Dwarven village,
+whichever way you wish to go.  The path  continues to the north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6512</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6510</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6512</VNum>
+      <Name>Door to Castle</Name>
+      <Description>Here there is a door to the castle to the east.  The castle  is elegantly
+designed, and looks much like a roll of toilet paper  standing on end.  A sign
+says:
+******************************************
+*  WELCOME TO THE CASTLE OF STRANGELOVE  *
+*      Here, celibacy is uninvited       *
+******************************************</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6525</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6514</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6511</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6513</VNum>
+      <Name>Inside the entrance</Name>
+      <Description>Everything here is covered in soot and very grimy.  The path continues
+to the east and north, and there is a door to the west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6514</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The little underground path continues to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6505</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The path leads outside the entrance.</Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6526</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>This looks like an entrance to some type of store room.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6514</VNum>
+      <Name>Path</Name>
+      <Description>You are on a path in the dwarven village which leads north to the shops
+and south to the corner of the area.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6515</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6513</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6515</VNum>
+      <Name>Turn in road</Name>
+      <Description>You are on a path that leads to a Hide &amp; Tooth shop to the west, and the
+path continues to the south.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6514</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6516</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The Hide &amp; Tooth shop is seen to the west.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6516</VNum>
+      <Name>Hide &amp; Tooth Shop</Name>
+      <Description>You are in the Hide &amp; Tooth shop.  Here you may buy the finest in Dwarven
+weapons and armors. The path continues to the north and east.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6517</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6515</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6517</VNum>
+      <Name>Path to the north of shop</Name>
+      <Description>You are on a path to the north of the Hide &amp; Tooth shop.  The path continues
+to the north, and there is Granite Head's bakery to the west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6518</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6516</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6535</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6518</VNum>
+      <Name>North of Shops</Name>
+      <Description>Here the path bends to the east towards the barracks. To the
+south you can see the shops.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6519</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6517</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6519</VNum>
+      <Name>Path by Hospital</Name>
+      <Description>Here the path passes by the Hospital to the north.  It continues
+to the east to the barracks, and to the west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6534</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6520</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6518</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6520</VNum>
+      <Name>Path next to barracks</Name>
+      <Description>Here the path continues west, and east to the barracks.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6521</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6519</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6521</VNum>
+      <Name>Entrance to barracks</Name>
+      <Description>Here there is an entrance to the barracks to the south, and  the path continues
+to the west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6523</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6520</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6522</VNum>
+      <Name>Guard House</Name>
+      <Description>You are in the guard house to the west of the entrance  to the castle.  There
+are nude posters covering the walls.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6509</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>poster</Keyword>
+          <Description>There is a wall poster of a nude Minne Pearl.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6523</VNum>
+      <Name>First Barrack room</Name>
+      <Description>Here is the first of two main rooms of barracks.  The  barracks continue to the
+south, and you can leave the room  to the north.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6521</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6524</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6524</VNum>
+      <Name>Back of Barracks</Name>
+      <Description>Here is the back of the dwarven barracks.  There are rows  of beds here, and
+there is a stench that is unbearable.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6523</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6525</VNum>
+      <Name>Inside of Castle Strangelove</Name>
+      <Description>You are just inside the castle.  It is very tubular in shape,
+and it is very featureless.  There is a set of stairs that lead
+up, and the door leads out of the castle to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6512</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6514</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6528</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6526</VNum>
+      <Name>A store room</Name>
+      <Description>There is a layer of dust on the floor at least 3 inches thick!  It is
+probable that not many people have been in here for many months.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6513</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A lighted area that looks like a well worn path.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6527</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>floor dust</Keyword>
+          <Description>After blowing all the dust off the floor, you notice a trapdoor!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>6527</VNum>
+      <Name>Wine cellar</Name>
+      <Description>This room smells like wine, and you can only assume it used to be
+a wine cellar at one time.</Description>
+      <Sector>Underground</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6526</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6528</VNum>
+      <Name>Stairs in castle</Name>
+      <Description>The stairs continue to circle up and down here.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6529</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6525</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6529</VNum>
+      <Name>Stairs</Name>
+      <Description>You are still circling around on the stairs.  You are starting to
+get dizzy from going around and around and around and around and
+around.  The stairs continue up and down.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6530</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6528</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6530</VNum>
+      <Name>Top of stairs</Name>
+      <Description>You are at the top of the stairs in the castle.  There is an exit
+to the east, and the stairs lead down.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6531</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6529</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6531</VNum>
+      <Name>Queen's waiting room</Name>
+      <Description>This is the Queen's waiting room.  Here the men literally  'wait' for the queen.
+You've heard that the queen really likes  to get to 'know' her people, in the
+biblical sense.  The queen's  bedroom is to the north, and you can see stairs to
+the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6532</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6530</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6532</VNum>
+      <Name>Bedroom</Name>
+      <Description>This is the Queen's bedroom.  The bed is all ruffled, and there
+is a stack of dirty sheets piled in the corner.
+A note has been scrawled in lipstick on the mirror:
+I'm out looking for my birth control pills.
+Why don't you slip into something comfortable while you're waiting?</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6531</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6534</VNum>
+      <Name>Hospital</Name>
+      <Description>You are inside the Dwarven Hospital.  It smells like rubbing
+alcohol, and there is blood all over the walls.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6519</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6535</VNum>
+      <Name>Granite Head's Bakery</Name>
+      <Description>The aroma coming from this room is sensuous.  You can almost taste
+the pastries dissolving in your mouth.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6517</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6540</VNum>
+      <Name>Dark path</Name>
+      <Description>This path is very well worn, and there is an entrance to the mines to the
+east, while the path continues to the north and west.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6504</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6541</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6503</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6541</VNum>
+      <Name>Mine entrance</Name>
+      <Description>The little path here leads down toward the mines, while the worn path
+continues to the west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6540</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6542</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6542</VNum>
+      <Name>Inside the mine</Name>
+      <Description>There are holes everywhere from the places that the workers blew
+away the rock to get to whatever they were looking for.  A path leads
+down and up.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6541</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>6554</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6543</VNum>
+      <Name>Path in the mine</Name>
+      <Description>You are deep inside the mine, and you feel very uncomfortable.  The
+path continues to the east, and leads to the mineshaft to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6544</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6554</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6544</VNum>
+      <Name>Mine crossroad</Name>
+      <Description>You are at a crossroad in the mine.  There is a door to the north,
+and the path continues to the south, east, and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6546</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6545</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6551</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6543</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6545</VNum>
+      <Name>Coal Room</Name>
+      <Description>You are inside the storage area for the raw materials  that are found down here.
+The room is very unsturdy as the  supports are very rickety.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6544</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6546</VNum>
+      <Name>Mine Maze</Name>
+      <Description>You have entered the maze of the mines.  To the east you  can see some
+inscriptions, and you can exit to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6547</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6544</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>6502</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6547</VNum>
+      <Name>Maze inscription</Name>
+      <Description>You are inside the maze, but not far enough in that you could get lost.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6548</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6546</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6548</VNum>
+      <Name>Maze</Name>
+      <Description>You are in a maze.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6549</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6547</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6549</VNum>
+      <Name>Maze</Name>
+      <Description>You are in a maze.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6550</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6548</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6550</VNum>
+      <Name>Maze</Name>
+      <Description>You are in a maze.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>6549</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6552</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6551</VNum>
+      <Name>Mining equipment room</Name>
+      <Description>This is the storage room for equipment used by the  Dwarven miners.  It is very
+small, and you can tell that  not many miners actually use any equipment.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>6544</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>2065</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6552</VNum>
+      <Name>Solved the Maze.</Name>
+      <Description>You have solved the maze.  You can tell by the last few moves
+that there is no way that a dumb worker could have figured that
+out.  It seems pretty desolate here.  To the south is a bleak room.
+To the north, you see the maze.  There is a sign above the south exit:
+Those who enter, plan on a timely death.
+Especially if you're loyal to the queen.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6550</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>6553</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6553</VNum>
+      <Name>The Mazekeeper's Room</Name>
+      <Description>You have entered the Mazekeeper's room.  There are pictures of
+the Queen with darts thrown in it.  Spray-painted on the wall are
+things like 'the queen shall suffer' and 'Catholics Rule'.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6552</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6554</VNum>
+      <Name>Bottom of mineshaft</Name>
+      <Description>You are at the bottom of the mineshaft.  The air here is very sooty, and
+it is very hard to breath.  The mineshaft leads up and east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6543</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6542</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>6562</VNum>
+      <Name>The mountains of the dwarven kingdom</Name>
+      <Description>You are standing at the foot of the mountains of the dwarven kingdom, where
+dwarves and giants toil endlessly to pry gems and mithril from the mother 
+earth.  Here lies the palace of the dwarven queen, and untold riches.
+But beware, for the mines are said to be haunted by demon and spirit alike.
+The dwarven kingdom lies to the east.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>6500</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The dwarven kingdom awaits!</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>28724</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>6500</Vnum>
+      <name>dwarf guard</name>
+      <description>The guard looks very tough and mean.</description>
+      <longDescription>A dwarven guard is here.</longDescription>
+      <shortDescription>the dwarven guard</shortDescription>
+      <Sex>Male</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6501</Vnum>
+      <name>dwarf worker miner</name>
+      <description>He is very dirty, and looks extremely over-worked.</description>
+      <longDescription>A dwarven mining worker is here.</longDescription>
+      <shortDescription>the dwarven worker</shortDescription>
+      <Sex>Male</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>175</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6502</Vnum>
+      <name>wraith</name>
+      <description>A black, almost transparent wraith.</description>
+      <longDescription>A wraith is awaiting your first move here.</longDescription>
+      <shortDescription>the wraith</shortDescription>
+      <Sex>Male</Sex>
+      <level>29</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>778</HitPointDiceBonus>
+      <ManaPointDiceSides>14</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>580</hitpoints>
+      <maxhitpoints>580</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>29</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>12</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6503</Vnum>
+      <name>storekeeper</name>
+      <description>The storekeeper is very rotund, but looks like a sharp guy.</description>
+      <longDescription>There is the Hide &amp; Tooth storekeeper standing here, waiting patiently.</longDescription>
+      <shortDescription>the storekeeper</shortDescription>
+      <Sex>Male</Sex>
+      <level>35</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1300</HitPointDiceBonus>
+      <ManaPointDiceSides>17</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>700</hitpoints>
+      <maxhitpoints>700</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-110</ArmorBash>
+      <ArmorSlash>-110</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>35</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistVnum Shopkeeper</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>11</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Shop ProfitBuy="150" ProfitSell="50" OpenHour="0" CloseHour="23" BuyTypes="" />
+    </NPC>
+    <NPC>
+      <Vnum>6504</Vnum>
+      <name>baker</name>
+      <description>Granite Head is covered with flour and grains.</description>
+      <longDescription>Granite Head, the baker, is waiting for a customer here.</longDescription>
+      <shortDescription>the baker</shortDescription>
+      <Sex>Male</Sex>
+      <level>35</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1300</HitPointDiceBonus>
+      <ManaPointDiceSides>17</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>700</hitpoints>
+      <maxhitpoints>700</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-110</ArmorBash>
+      <ArmorSlash>-110</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>35</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistVnum Shopkeeper</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>11</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Shop ProfitBuy="150" ProfitSell="50" OpenHour="0" CloseHour="23" BuyTypes="" />
+    </NPC>
+    <NPC>
+      <Vnum>6505</Vnum>
+      <name>lizard</name>
+      <description>This scaly creature looks like it is well adapted to it's underground
+habitat.  He looks very powerful.</description>
+      <longDescription>A giant lizard is here.</longDescription>
+      <shortDescription>the giant lizard</shortDescription>
+      <Sex>Male</Sex>
+      <level>18</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>283</HitPointDiceBonus>
+      <ManaPointDiceSides>9</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>360</hitpoints>
+      <maxhitpoints>360</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-30</ArmorBash>
+      <ArmorSlash>-30</ArmorSlash>
+      <ArmorPierce>-30</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>lizard</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>18</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>60</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6506</Vnum>
+      <name>giant</name>
+      <description>The giant is about 8 feet tall, with arms of steel, and looks very strong.</description>
+      <longDescription>A giant is here.</longDescription>
+      <shortDescription>the giant</shortDescription>
+      <Sex>Male</Sex>
+      <level>16</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>233</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>320</hitpoints>
+      <maxhitpoints>320</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>16</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6507</Vnum>
+      <name>dwarf miner</name>
+      <description>The mineworker is very tired, and very dirty, and he has bulging muscles.</description>
+      <longDescription>A dwarven miner is here.</longDescription>
+      <shortDescription>the dwarven miner</shortDescription>
+      <Sex>Male</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6508</Vnum>
+      <name>dwarf leader</name>
+      <description>The mine leader is very big and very strong.</description>
+      <longDescription>A dwarven mine leader is here.</longDescription>
+      <shortDescription>the dwarven mine leader</shortDescription>
+      <Sex>Male</Sex>
+      <level>21</level>
+      <HitPointDiceSides>4</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>360</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>420</hitpoints>
+      <maxhitpoints>420</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-50</ArmorBash>
+      <ArmorSlash>-50</ArmorSlash>
+      <ArmorPierce>-50</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>21</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6509</Vnum>
+      <name>dwarf doctor</name>
+      <description>He is a very skilled surgeon, with hands of steel.</description>
+      <longDescription>The dwarven doctor is here.</longDescription>
+      <shortDescription>the dwarven doctor</shortDescription>
+      <Sex>Male</Sex>
+      <level>9</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>110</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>180</hitpoints>
+      <maxhitpoints>180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>9</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>75</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sanctuary Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6510</Vnum>
+      <name>dwarf peon</name>
+      <description></description>
+      <longDescription>A dwarven peon is awaiting help here.</longDescription>
+      <shortDescription>the dwarven peon</shortDescription>
+      <Sex>Male</Sex>
+      <level>3</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>35</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>60</hitpoints>
+      <maxhitpoints>60</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>70</ArmorBash>
+      <ArmorSlash>70</ArmorSlash>
+      <ArmorPierce>70</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>3</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>3</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6511</Vnum>
+      <name>dwarf</name>
+      <description></description>
+      <longDescription>A grinning dwarf is here.</longDescription>
+      <shortDescription>the dwarf</shortDescription>
+      <Sex>Male</Sex>
+      <level>9</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>110</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>180</hitpoints>
+      <maxhitpoints>180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>9</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>62</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6512</Vnum>
+      <name>dwarf son</name>
+      <description></description>
+      <longDescription>An unwanted son is here.  You feel sorry for the guy.</longDescription>
+      <shortDescription>the unwanted son</shortDescription>
+      <Sex>Male</Sex>
+      <level>9</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>110</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>180</hitpoints>
+      <maxhitpoints>180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>9</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6513</Vnum>
+      <name>dwarf daughter</name>
+      <description></description>
+      <longDescription>An unwanted daughter is here.  You feel sorry for her.</longDescription>
+      <shortDescription>the unwanted daughter</shortDescription>
+      <Sex>Female</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6514</Vnum>
+      <name>dwarf guard</name>
+      <description></description>
+      <longDescription>A barrack guard is here.</longDescription>
+      <shortDescription>the barracks guard</shortDescription>
+      <Sex>Male</Sex>
+      <level>16</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>233</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>320</hitpoints>
+      <maxhitpoints>320</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>16</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>150</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6515</Vnum>
+      <name>man</name>
+      <description></description>
+      <longDescription>A man in waiting is here.  He looks nervous and unsure of himself.</longDescription>
+      <shortDescription>the man in waiting</shortDescription>
+      <Sex>Male</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>348</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6516</Vnum>
+      <name>mazekeeper</name>
+      <description>He looks VERY tough.</description>
+      <longDescription>A mazekeeper is here.</longDescription>
+      <shortDescription>the mazekeeper</shortDescription>
+      <Sex>Male</Sex>
+      <level>29</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>778</HitPointDiceBonus>
+      <ManaPointDiceSides>14</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>580</hitpoints>
+      <maxhitpoints>580</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>29</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>4000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive NoTrack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>12</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>6517</Vnum>
+      <name>snake</name>
+      <description></description>
+      <longDescription>There is a giant snake here.</longDescription>
+      <shortDescription>the giant snake</shortDescription>
+      <Sex>Male</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>snake</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>150</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>6502</VNum>
+      <Name>key green</Name>
+      <ShortDescription>a deep green key</ShortDescription>
+      <LongDescription>A deep green key is on the floor.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6504</VNum>
+      <Name>dwarven hammer</Name>
+      <ShortDescription>a hammer</ShortDescription>
+      <LongDescription>There is a dwarven hammer laying here.</LongDescription>
+      <Description></Description>
+      <Level>17</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>4</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>880</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>mithril</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6505</VNum>
+      <Name>dwarven plate</Name>
+      <ShortDescription>dwarven plate mail</ShortDescription>
+      <LongDescription>There is dwarven plate mail laying here.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2900</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>mithril</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>7</ArmorBash>
+      <ArmorSlash>7</ArmorSlash>
+      <ArmorPierce>7</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6506</VNum>
+      <Name>stick</Name>
+      <ShortDescription>long, black stick</ShortDescription>
+      <LongDescription>There is a long, black stick lying here.</LongDescription>
+      <Description></Description>
+      <Level>11</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="4" SpellName="cure critical" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4800</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>10</Charges>
+      <MaxCharges>10</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6507</VNum>
+      <Name>stick</Name>
+      <ShortDescription>long, black stick</ShortDescription>
+      <LongDescription>There is a long, black stick here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Light</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6508</VNum>
+      <Name>club</Name>
+      <ShortDescription>dwarven club</ShortDescription>
+      <LongDescription>There is a dwarven club laying here.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>510</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6509</VNum>
+      <Name>two-handed dwarven axe</Name>
+      <ShortDescription>a two-handed dwarven axe</ShortDescription>
+      <LongDescription>A two-handed Dwarven axe is here.</LongDescription>
+      <Description></Description>
+      <Level>17</Level>
+      <WeaponDamageType>cleave</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>7</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>mithril</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6510</VNum>
+      <Name>helmet</Name>
+      <ShortDescription>a dwarven helmet</ShortDescription>
+      <LongDescription>A dwarven helmet is here.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1450</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>mithril</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>7</ArmorBash>
+      <ArmorSlash>7</ArmorSlash>
+      <ArmorPierce>7</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6511</VNum>
+      <Name>ring golden dwarven</Name>
+      <ShortDescription>a dwarven golden ring</ShortDescription>
+      <LongDescription>A pretty golden ring is here.</LongDescription>
+      <Description></Description>
+      <Level>7</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Gem</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>460</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6512</VNum>
+      <Name>gloves</Name>
+      <ShortDescription>dwarven gloves</ShortDescription>
+      <LongDescription>Thick dwarven gloves lay here.</LongDescription>
+      <Description></Description>
+      <Level>13</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Hands</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>mithril</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6513</VNum>
+      <Name>note</Name>
+      <ShortDescription>a note</ShortDescription>
+      <LongDescription>A crumpled note is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>note letter letters</Keyword>
+          <Description>It seems to be a hot love letter from the Queen.  Unfortunately,
+it's not suitable for transmission across a public data network.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>6514</VNum>
+      <Name>castle key</Name>
+      <ShortDescription>a castle key</ShortDescription>
+      <LongDescription>There is a key to Strangelove Castle here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6516</VNum>
+      <Name>key mine</Name>
+      <ShortDescription>a mine key</ShortDescription>
+      <LongDescription>There is a key to the mines here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6517</VNum>
+      <Name>coal</Name>
+      <ShortDescription>a chunk of coal</ShortDescription>
+      <LongDescription>There is a chunk of coal here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>coal</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6518</VNum>
+      <Name>pick</Name>
+      <ShortDescription>a mining pick</ShortDescription>
+      <LongDescription>There is a mining pick here.</LongDescription>
+      <Description></Description>
+      <Level>3</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>3</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Bless</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>240</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6519</VNum>
+      <Name>pills</Name>
+      <ShortDescription>a box of birth control pills</ShortDescription>
+      <LongDescription>There is a box of birth control pills here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Pill</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="20" SpellName="change sex" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>300</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>pill</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>birth control pills pill</Keyword>
+          <Description>They are in a circular container, and there are numbers corresponding
+to the day that they are to be taken.  You can tell they haven't been
+used for a while.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>6520</VNum>
+      <Name>map castle strangelove</Name>
+      <ShortDescription>a map of Castle Strangelove</ShortDescription>
+      <LongDescription>A rolled up map is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Map</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>map castle strangelove</Keyword>
+          <Description>.
+* * * Castle Strangelove * * *       __________
+= = ==================== = =        \ Queen's \
+\ Bedroom \
+\_________\
+*
+__________    ____\_____
+North  Up                 \  Top of \    \ Waiting \
+\   |                   \ Stairs  \----\  Room   \
+\ |                    \_________\    \_________\
+West ---- + ---- East             |
+| \                _____|____
+|   \              \         \
+Down  South           \ Stairs  \    [] - You need the Castle Key
+\_________\        to get beyond this point.
+|               The Castle Key can be
+_____|____           found on the Grinning
+\         \          Dwarves in the Barracks.
+\ Stairs  \
+\_________\    * - You need the Deep Green
+|               Key to get beyond this
+__________     _____|____           point.  This key can be
+\ Door to \    \ Inside  \          found on the Wraith in
+\ Castle  \-[]-\ Castle  \         the wine cellar or on one
+\_________\    \_________\        of the Dwarven Guards on
+\                        the Dark path.
+____\_____
+\ Path to \
+\ Castle  \
+\_________\
+\
+__________     ____\_____
+\ Door to \    \ Path to \
+\ Kingdom \----\ Castle  \
+\_________\    \_________\
+\
+To Dwarven
+Kingdom</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the dwarven worker to Path, base of mountain-->
+      <Type>NPC</Type>
+      <Destination>6501</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>6501</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven worker to Path, middle of mountain-->
+      <Type>NPC</Type>
+      <Destination>6502</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>6501</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn long, black stick to Top of mountain-->
+      <Type>Item</Type>
+      <Destination>6503</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven worker to Top of mountain-->
+      <Type>NPC</Type>
+      <Destination>6503</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>6501</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Entrance to Mountain-->
+      <Type>NPC</Type>
+      <Destination>6505</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven plate mail to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a deep green key to the dwarven guard-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6502</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Entrance to Mountain-->
+      <Type>NPC</Type>
+      <Destination>6505</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven plate mail to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn long, black stick to Entrance to Mountain-->
+      <Type>Item</Type>
+      <Destination>6505</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the giant to Narrow north-south path-->
+      <Type>NPC</Type>
+      <Destination>6508</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6506</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Door to Kingdom-->
+      <Type>NPC</Type>
+      <Destination>6509</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a two-handed dwarven axe to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6509</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dwarven helmet to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6510</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dwarven golden ring to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Door to Kingdom-->
+      <Type>NPC</Type>
+      <Destination>6509</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven gloves to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6512</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a two-handed dwarven axe to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6509</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven plate mail to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Door to Castle-->
+      <Type>NPC</Type>
+      <Destination>6512</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Door to Castle-->
+      <Type>NPC</Type>
+      <Destination>6512</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn long, black stick to Inside the entrance-->
+      <Type>Item</Type>
+      <Destination>6513</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the giant lizard to Turn in road-->
+      <Type>NPC</Type>
+      <Destination>6515</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the storekeeper to Hide & Tooth Shop-->
+      <Type>NPC</Type>
+      <Destination>6516</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6503</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the storekeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven plate mail to the storekeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dwarven helmet to the storekeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6510</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dwarven golden ring to the storekeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven gloves to the storekeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6512</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the storekeeper-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the giant lizard to Path next to barracks-->
+      <Type>NPC</Type>
+      <Destination>6520</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the barracks guard to Entrance to barracks-->
+      <Type>NPC</Type>
+      <Destination>6521</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>6514</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a two-handed dwarven axe to the barracks guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6509</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the barracks guard to Entrance to barracks-->
+      <Type>NPC</Type>
+      <Destination>6521</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>6514</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a two-handed dwarven axe to the barracks guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6509</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Entrance to barracks-->
+      <Type>NPC</Type>
+      <Destination>6521</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Entrance to barracks-->
+      <Type>NPC</Type>
+      <Destination>6521</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarf to First Barrack room-->
+      <Type>NPC</Type>
+      <Destination>6523</Destination>
+      <Count>6</Count>
+      <Max>8</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarf to First Barrack room-->
+      <Type>NPC</Type>
+      <Destination>6523</Destination>
+      <Count>6</Count>
+      <Max>8</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven club to the dwarf-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6508</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a castle key to the dwarf-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6514</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarf to First Barrack room-->
+      <Type>NPC</Type>
+      <Destination>6523</Destination>
+      <Count>6</Count>
+      <Max>8</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarf to First Barrack room-->
+      <Type>NPC</Type>
+      <Destination>6523</Destination>
+      <Count>6</Count>
+      <Max>8</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarf to Back of Barracks-->
+      <Type>NPC</Type>
+      <Destination>6524</Destination>
+      <Count>6</Count>
+      <Max>8</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a note to Back of Barracks-->
+      <Type>Item</Type>
+      <Destination>6524</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6513</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the wraith to Back of Barracks-->
+      <Type>NPC</Type>
+      <Destination>6524</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>6502</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarf to Back of Barracks-->
+      <Type>NPC</Type>
+      <Destination>6524</Destination>
+      <Count>6</Count>
+      <Max>8</Max>
+      <Vnum>6511</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a map of Castle Strangelove to the dwarf-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6520</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the wraith to Wine cellar-->
+      <Type>NPC</Type>
+      <Destination>6527</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>6502</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a deep green key to the wraith-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6502</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the unwanted son to Stairs in castle-->
+      <Type>NPC</Type>
+      <Destination>6528</Destination>
+      <Count>2</Count>
+      <Max>3</Max>
+      <Vnum>6512</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the unwanted son to Stairs-->
+      <Type>NPC</Type>
+      <Destination>6529</Destination>
+      <Count>2</Count>
+      <Max>3</Max>
+      <Vnum>6512</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the unwanted daughter to Stairs-->
+      <Type>NPC</Type>
+      <Destination>6529</Destination>
+      <Count>2</Count>
+      <Max>3</Max>
+      <Vnum>6513</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the unwanted daughter to Top of stairs-->
+      <Type>NPC</Type>
+      <Destination>6530</Destination>
+      <Count>2</Count>
+      <Max>3</Max>
+      <Vnum>6513</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the man in waiting to Queen's waiting room-->
+      <Type>NPC</Type>
+      <Destination>6531</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>6515</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the man in waiting to Queen's waiting room-->
+      <Type>NPC</Type>
+      <Destination>6531</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>6515</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mine key to Bedroom-->
+      <Type>Item</Type>
+      <Destination>6532</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6516</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn long, black stick to Hospital-->
+      <Type>Item</Type>
+      <Destination>6534</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6506</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven peon to Hospital-->
+      <Type>NPC</Type>
+      <Destination>6534</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>6510</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven peon to Hospital-->
+      <Type>NPC</Type>
+      <Destination>6534</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>6510</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven doctor to Hospital-->
+      <Type>NPC</Type>
+      <Destination>6534</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6509</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn long, black stick to the dwarven doctor-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6506</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a box of birth control pills to the dwarven doctor-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6519</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the baker to Granite Head's Bakery-->
+      <Type>NPC</Type>
+      <Destination>6535</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a barrel of beer to the baker-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bottle of firebreather to the baker-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a big pot pie to the baker-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hooded brass lantern to the baker-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3031</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the baker-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Dark path-->
+      <Type>NPC</Type>
+      <Destination>6540</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven plate mail to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a deep green key to the dwarven guard-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6502</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven guard to Dark path-->
+      <Type>NPC</Type>
+      <Destination>6540</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>6500</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven plate mail to the dwarven guard-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6505</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn long, black stick to Dark path-->
+      <Type>Item</Type>
+      <Destination>6540</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven miner to Inside the mine-->
+      <Type>NPC</Type>
+      <Destination>6542</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven club to the dwarven miner-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6508</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven miner to Path in the mine-->
+      <Type>NPC</Type>
+      <Destination>6543</Destination>
+      <Count>3</Count>
+      <Max>4</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven club to the dwarven miner-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6508</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven miner to Path in the mine-->
+      <Type>NPC</Type>
+      <Destination>6543</Destination>
+      <Count>3</Count>
+      <Max>4</Max>
+      <Vnum>6507</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven club to the dwarven miner-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6508</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the dwarven mine leader to Path in the mine-->
+      <Type>NPC</Type>
+      <Destination>6543</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>6508</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn dwarven gloves to the dwarven mine leader-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6512</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer to the dwarven mine leader-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6504</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a chunk of coal to Coal Room-->
+      <Type>Item</Type>
+      <Destination>6545</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6517</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the giant snake to Maze-->
+      <Type>NPC</Type>
+      <Destination>6548</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>6517</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the giant snake to Maze-->
+      <Type>NPC</Type>
+      <Destination>6549</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>6517</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mining pick to Mining equipment room-->
+      <Type>Item</Type>
+      <Destination>6551</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>6518</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mazekeeper to The Mazekeeper's Room-->
+      <Type>NPC</Type>
+      <Destination>6553</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>6516</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a box of birth control pills to the mazekeeper-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>6519</Vnum>
+    </Reset>
+  </Resets>
+</Area>

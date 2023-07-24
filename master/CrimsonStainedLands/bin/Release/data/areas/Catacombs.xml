@@ -1,0 +1,4821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Catacombs</Name>
+    <Info></Info>
+    <VnumStart>2000</VnumStart>
+    <VnumEnd>2099</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{10 20} Raff    Dwarven Catacombs</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>2001</VNum>
+      <Name>North entrance to the catacombs</Name>
+      <Description>You are almost surprised to see a tunnel leading off to the south
+into utter darkness.  The floorboards above you haven't been moved
+in a long time, yet there is life down here.  A beam of light from
+the opening above you falls upon a message scrawled on the wall here.
+The message reads:
+Adventure for the strong yet calculating
+Death for the weak and shallow
+Treasure for the smart and lucky
+Death for the stupid and accursed
+An ancient Glyph above the entrance keeps monsters from wandering up
+from the catacombs.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2002</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6508</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2002</VNum>
+      <Name>North/south tunnel</Name>
+      <Description>This part of the catacombs looked roughly hewn and man-made. There is
+a large cross painted on the floor of the tunnel.To the south it seems
+maybe a bit lighter for some odd reason.  To the north a ray of light
+comes in from a hole in the ceiling.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2001</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2007</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>cross paint floor</Keyword>
+          <Description>The cross is a Templar's cross. It seems to have had a fresh coat of
+paint recently.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2003</VNum>
+      <Name>Weapon training area</Name>
+      <Description>This is a place to keep up on there weapon skills.  Much of the
+equipment looks old and worn but upon further inspection seems quite
+sturdy in fact.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2004</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2008</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2004</VNum>
+      <Name>Prayer training area</Name>
+      <Description>The templar's curious mix of religion and fighting is evident here.
+A central painting depicts a cross composed of swords.  The elders
+teach the ancient art of prayer to the young pages.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2005</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2003</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2005</VNum>
+      <Name>Junction of hallways</Name>
+      <Description>Training facilities are evident to the west. To the south lies a hallway
+which has doors every couple of feet, looks like living quarters of some
+sort.  To the east the tunnel leads back into the natural catacombs.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2006</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2010</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2004</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2006</VNum>
+      <Name>Hallway</Name>
+      <Description>The hallway takes on a more indoor look to the west.  To the east it
+looks awfully dark.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2007</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2005</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2007</VNum>
+      <Name>Intersection</Name>
+      <Description>The tunnel continues to the north and the south, becoming less hewn and
+more natural to the south.  A passageway lined with paneling leads west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2002</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2012</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2006</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2008</VNum>
+      <Name>Pages' sleeping quarters</Name>
+      <Description>Several bunk beds are lined up across the room.  It looks rather spartan
+and there is little evidence of toys or games.  Most of the desks are
+filled with books and papers of little interest.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2003</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2009</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2009</VNum>
+      <Name>Templar Knights sleeping quarters</Name>
+      <Description>This is a huge room which is filled wall to wall with beds. Apparently
+all the low level knights all sleep in this one room.  A door on the
+south wall is labelled "Elders only!".</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2013</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2008</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2010</VNum>
+      <Name>N/S hallway</Name>
+      <Description>The hallway leads north an south.  A door leads to a templar's room to
+the east.  The decoration looks rather sparse here.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2005</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2011</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2014</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2011</VNum>
+      <Name>A Middle-aged templar's room</Name>
+      <Description>This is a room furnished in a room becoming a low level templar scribe.
+No real amenities but better than a communal sleeping quarters. As far
+as you can tell he would be a rank equivalent to a Sargeant.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2010</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2012</VNum>
+      <Name>Humid, damp tunnel</Name>
+      <Description>As the tunnel leads south it gets more humid and damp.  Moss covers the
+walls and ferns even grow in the cracks here and there.  To the north it
+seems much more sterile.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2007</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2019</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2013</VNum>
+      <Name>Administration room</Name>
+      <Description>The elders gather here to discuss training strategies and count their
+loot.  You notice papers which look like important secret documents
+lying around. An escape passage leads west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2009</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2016</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>papers documents secrets</Keyword>
+          <Description>It seems that the loot comes from raids on the towns in the surrounding
+areas above ground.  From the documents it seems that the pages and
+trainees are kidnapped from the villages too!</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2014</VNum>
+      <Name>N/S hallway</Name>
+      <Description>The hallway continues to become more important-looking as you wander
+south.  A room to the east looks rather more pleasant that some of the
+others.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2010</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2015</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2017</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2015</VNum>
+      <Name>Mid-level leader's room</Name>
+      <Description>A rather nice looking room considering the drab conditions down here.
+Through all the signs of decoration you can still see evidence of water
+leaks.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2014</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2016</VNum>
+      <Name>Mess hall</Name>
+      <Description>The a huge table with an immaculate white table cloth stretches way off
+to the south.  The room is kept immaculately clean by the nights
+themselves.  They truly belive that cleanliness is next to godliness.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2013</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2023</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2017</VNum>
+      <Name>N/S hallway</Name>
+      <Description>The hallway continues north and south.  A peculiar kind of glow seems
+to come from somewhere further along the hallway to the south. The room
+to the east looks like the lap of luxury.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2014</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2018</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2024</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2018</VNum>
+      <Name>High officer's room</Name>
+      <Description>First thing you notice in this room is the pleasant aroma of cedar.  All
+the paneling in the room is made of fine cedar.  A painting of an
+elegant knight hangs on the wall.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2017</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>painting elegant knight</Keyword>
+          <Description>Something oddly familiar about the knight.  He carries a glowing sword
+with a silvery blade.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2019</VNum>
+      <Name>Mossy intersection</Name>
+      <Description>There is a turn off to the passage here.  The main passage leads north
+and south. To the south it seems to get impossibly darker.  To the east
+you hear... birds?  A small rivulet of water seeps in from the passage
+east.  The air is very humid and damp here.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2012</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2020</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2026</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2020</VNum>
+      <Name>The holy grove</Name>
+      <Description>A small grove of birches grow seem to grow from solid rock.  You hear
+birds singing but try as you might you cant see any.  A strange glow
+emanates from a place somewhere to the southeast in the grove.</Description>
+      <Sector>Forest</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2021</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2019</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2021</VNum>
+      <Name>The holy grove</Name>
+      <Description>The trees seem real enough even though they take root in solid rock.
+You hear other small animals scampering through the light undergrowth
+yet you see nothing. The grove continues south, east and west. An out of
+place passage way for some reason heads north.</Description>
+      <Sector>Forest</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2022</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2027</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2020</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2022</VNum>
+      <Name>The holy grove</Name>
+      <Description>The grove continues west and south.  The glow is roughly to the south
+somewhere.</Description>
+      <Sector>Forest</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2028</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2021</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2023</VNum>
+      <Name>Mess hall</Name>
+      <Description>"mess" isn't exactly the best word to describe this room.  On the
+contrary, it is immaculately clean.  A very long table stretches way off
+to the north. A hallway is to the east.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2016</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2024</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2024</VNum>
+      <Name>End of a hallway</Name>
+      <Description>You hear voices coming from a room to the west.  the hallway goes north.
+To the east lies a room which seems to glow with power and piety.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2017</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2025</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2023</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2025</VNum>
+      <Name>Grand Templar's room</Name>
+      <Description>All the items in this room look ancient yet strangely very powerful and
+rich.  There is an aura of great holiness about the room.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2024</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2026</VNum>
+      <Name>Very dark passage</Name>
+      <Description>This room is so dark that even powerful magic lights seems to barely
+illuminate the ground in front of you.  If its possible it seems even
+darker to the south.  The passage also leads back north.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2019</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2030</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2027</VNum>
+      <Name>The holy grove</Name>
+      <Description>The grove continues north and east.  To the east a strange humming can
+barely be heard.</Description>
+      <Sector>Forest</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2021</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2028</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2028</VNum>
+      <Name>The holy grove</Name>
+      <Description>All of a sudden all the mysterious sounds of the grove stop. Or perhaps
+its just the strange humming and glowing from a clearing to the south
+drowning out everything else. There is a sort of magical forcefield door
+to the south.</Description>
+      <Sector>Forest</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2022</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2032</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>a glowing forcefield with a small circular hole in it.</Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>2001</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2027</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2029</VNum>
+      <Name>Very dark caveway</Name>
+      <Description>This room is so very dark that no one is quite sure whats in it, so
+there's nothing really to describe except maybe the powerful sense of
+evil coming from the east and the almost overcoming urge to run to the
+west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2030</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2030</VNum>
+      <Name>Deep within the catacombs</Name>
+      <Description>It stinks like a lair in here.  A rotten smell of humanoid flesh
+lingers.  You stumble over what you think are corpses in the utter
+darkness. You sense a evil growl from somewhere in the room. maybe
+everywhere in the room. . ..</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2026</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2031</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2029</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2031</VNum>
+      <Name>Very dark cavern</Name>
+      <Description>The cavern is hard to describe due to the extreme magical darkness.
+Probing with a light source seems to reveal nothing but more darkness.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2034</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2030</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2032</VNum>
+      <Name>The holy place</Name>
+      <Description>A glowing stone lies in the center of the clearing.  You recognize it as
+the stone of the Excalibur.  The strange humming glowing makes it
+difficult to see if the Excalibur is there or not. Might want to take a
+closer look if possible.</Description>
+      <Sector>Forest</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2028</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>a glowing forcefield with a small circular hole in it.</Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>2001</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2033</VNum>
+      <Name>Misty passageway</Name>
+      <Description>Warm mist swirl about you making you feel threatened as well as
+protected at the same time.  The swirling mist makes it tough to tell
+directions quite clearly, but you seem to be able to go north or south.
+The mist gets denser to the south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2042</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2034</VNum>
+      <Name>Intersection of caverns</Name>
+      <Description>Caverns head north, south and east from this peculiar spot. Medium
+sized caverns from the east and the north join to form a huge cavern
+heading south.  The walls of the cavern are made of a bizarre mixture
+of many shiny crystals.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2031</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2035</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2044</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2035</VNum>
+      <Name>Entrance to the burial grounds</Name>
+      <Description>You have entered what appears to be a burial ground of sorts. The
+templars buried their dead here.  Chills go down your spine as you feel
+something watching you.  You hear the random groan of a ghost, the howl
+of a wraith, and the dry clanking of bones.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2036</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2034</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2036</VNum>
+      <Name>The burial grounds</Name>
+      <Description>Random tombs to unknown warriors were lain in rows as far as the eye
+can see.  To your horror many of the graves are empty and desecrated.
+A gap in the rows of tombs leads south and there are more graves to the
+east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2037</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2045</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2035</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2037</VNum>
+      <Name>The burial grounds</Name>
+      <Description>It seems as if many of the warriors could not stop fighting even in
+death.  They fight amongst each other and flail at any living being
+that would wander near.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2038</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2036</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2038</VNum>
+      <Name>The burial grounds</Name>
+      <Description>Legions of skeletal warriors wander by and battle the enemy even in
+death.  Old battlelines have been forgotten and new ones made. Its a
+gruesome scene.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2039</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2037</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2039</VNum>
+      <Name>New graves</Name>
+      <Description>The tombs in this section seem somewhat more recent.  Rotting zombie
+warriors groan and wail with blank stares.  You hear sounds of digging
+off a bit to the south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2047</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2038</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2040</VNum>
+      <Name>Misty cavern</Name>
+      <Description>A chilling icy mist swirl about you.  The dampness and warmth has become
+bitter cold.  The walls of the cavern are several feet thick with ice
+here.  An icy wind blows from the south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2041</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2048</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2041</VNum>
+      <Name>Misty cavern</Name>
+      <Description>The temperature is a pleasant and mild here.  This is due to a warm wind
+blowing in from the east and a chilly breeze blowing in from the west.
+The updrafts create bizarre icy-steamy mists which dance along the
+walls.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2042</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2040</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2042</VNum>
+      <Name>Mist cavern</Name>
+      <Description>A warm wind blows in from the east.  The air is still stifling hot in
+here despite the breeze.  The mist seems thick enough to be alive. . .</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2033</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2043</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2041</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2043</VNum>
+      <Name>Waterfall of mist</Name>
+      <Description>River of hot mist pour down in a cascade from a hole in the cavern.  It
+falls like water down from the heights like a waterfall and creates
+beautiful swirls.  It causes a hot wind to flow west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2042</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>hole height waterfall cascade</Keyword>
+          <Description>The hole is much too high up for you to reach.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2044</VNum>
+      <Name>Huge multicolored tunnel</Name>
+      <Description>The tunnel leads north and south.  To the south there is an odd
+twinkling phenomenon.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2034</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2050</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2045</VNum>
+      <Name>Desolate ruins</Name>
+      <Description>Several mausoleums used to grace the way here but these have been
+defiled. And most have been torn down and burned by looters. Some still
+seem to be intact to the south.  To the northwest is a seeming field of
+tombs of soldiers, now a battleground for the undead.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2051</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2046</VNum>
+      <Name>Curators place</Name>
+      <Description>The undertaker, the historian and the curator used to be here. Now they
+too have joined the legions of the undead.  From the looks of the place
+they seem to have starved to death.  Rickety stairs head down into a
+sort of basement.</Description>
+      <Sector>Hills</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2047</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>2052</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>stairs basement</Keyword>
+          <Description>Surprisingly the stairs look sturdy enough.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>2047</VNum>
+      <Name>Fresh graves</Name>
+      <Description>Graves of recent casualties lie here.  Even the most recent don't seem to
+have been left undisturbed.  You hear sounds of digging in progress
+further to the south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2039</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2053</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2046</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2048</VNum>
+      <Name>Twisty cavern</Name>
+      <Description>The way twist this way and that and its all you can do to keep your head
+from spinning.  The air is very cold here and layers of ice on the wall.
+The sounds of metal on ice echo through the cavern. A side passage leads
+east and the main passage goes north and south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2040</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2049</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2056</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2049</VNum>
+      <Name>Striped tunnel</Name>
+      <Description>The walls of the tunnels have many brilliant colors in them from the
+various veins of crystals running in them.  An odd twinkling comes from
+the east.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2050</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2048</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2050</VNum>
+      <Name>Prism cave</Name>
+      <Description>The roof of this cave peaks over a hundred feet high making it one of
+the biggest in the catacombs.  Crystals of every color cast prismatic
+sprays of light everywhere.  The light from your lamp causes almost a
+blinding flare of brilliance as more light is added to the multi-colored
+twinkling phenomenon that exists here.  This is also the lair of the
+fabled and feared Prism Dragon.</Description>
+      <Sector>Cave</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2044</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2058</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2057</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2049</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2051</VNum>
+      <Name>Ruined monument</Name>
+      <Description>A monument to a famous king once stood here. Not much is left to even
+signify that is was here at all.  A building of some sort can be entered
+through a basement to the east.  The southern gate of the grounds is to
+the south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2045</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2052</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2054</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2052</VNum>
+      <Name>Basement</Name>
+      <Description>Its dark and it smells like. ...BATS down here!  All you see is a swirl
+of the darkness and lots of scratching bats madly flailing around. A set
+of stairs go up into the building and a broken window leads west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2051</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>2046</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2053</VNum>
+      <Name>Fresh graves</Name>
+      <Description>The graves here seem very recent.  You notice many signs of digging and
+defilement.  There are piles of fresh bodies here awaiting burial.  A
+strange sense of evil magic from the south makes the hairs on the back
+of your neck to stand on end!</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2047</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2055</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2054</VNum>
+      <Name>Southern gate</Name>
+      <Description>A rusty gate here no longer keeps anyone out or in.  You see a lonely
+E/W passage to the south.  A little used trail winds east through a
+crack in the wall.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2051</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2066</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2059</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2055</VNum>
+      <Name>Scene of ghastly horror</Name>
+      <Description>An army of undead creatures of all types are lined up patiently. Their
+leader is an evil demonoid necromancer.  His plans to use his army of
+undead to take over the world seem about ready to get underway.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2053</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2062</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2056</VNum>
+      <Name>Twisty passage</Name>
+      <Description>The passage bends north and east here.  To the east your not certain
+what lies ahead due to all the twists and turns you've made.  To the
+north is seems cold.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2048</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2057</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2057</VNum>
+      <Name>Cross of caverns</Name>
+      <Description>A little-used cavern enters from the south. A passage twists away to
+the west.  An odd twinkling comes from the cave to the north.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2050</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2066</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2056</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2058</VNum>
+      <Name>Lonely tunnel</Name>
+      <Description>Something indescribable makes you feel lonesome and sad here. Its just
+a feeling you get from this tunnel.  The tunnel east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2059</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2050</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2059</VNum>
+      <Name>Lonely tunnel</Name>
+      <Description>Something indescribable makes you feel lonesome and sad here. You see a
+gate to a burial ground to the north.  This lonesome tunnel sighs along
+west and east.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2054</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2060</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2058</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2060</VNum>
+      <Name>Bend in the lonely tunnel</Name>
+      <Description>Something indescribable makes you feel lonesome and sad here. The
+tunnel bends west and south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2061</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2059</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2061</VNum>
+      <Name>Lonely tunnel</Name>
+      <Description>Something indescribable makes you feel lonesome and sad here. The very
+walls of the tunnel seems to groan.  to the north the tunnel bends and
+east is an intersection.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2060</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2062</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2062</VNum>
+      <Name>Intersection</Name>
+      <Description>To the north you enter the burial grounds.  a trail of blood leads that
+direction.  Also you feel an ominous sense of evil magic from there.
+The tunnel to the west creaks and sighs as if alive.  To the south you
+smell a hint of fresh air.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2055</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2063</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2061</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2063</VNum>
+      <Name>Tunnel</Name>
+      <Description>The tunnel heads north and south.  North you see an intersection and
+far to the south you sense light and smell a fresh breeze.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2062</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2064</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2064</VNum>
+      <Name>Tunnel</Name>
+      <Description>The tunnel slopes noticeably down to the north and you sense the surface
+could be reached to the south.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2063</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2065</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2065</VNum>
+      <Name>Southern entrance to the catacombs</Name>
+      <Description>Through a trapdoor above you streams light.  Through a doorway to
+the south streams darkness.  A message has been scrawled upon the wall
+here.  The message reads:
+Adventure for the strong yet calculating
+Death for the weak and shallow
+Treasure for the smart and lucky
+Death for the stupid and accursed  An ancient Glyph above the entrance
+keeps monsters from wandering up  from the catacombs.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2064</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>6551</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2066</VNum>
+      <Name>Unknown passage</Name>
+      <Description>Oh dear you seem to have lost your way.  You look back from whence you
+came but there's no exit there anymore.  There are exits in other
+directions but you have a feeling that you are hopelessly lost.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2057</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2067</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2068</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2067</VNum>
+      <Name>Unknown passage</Name>
+      <Description>Oh dear you seem to have lost your way.  You look back from whence you
+came but there's no exit there anymore.  There are exits in other
+directions but you have a feeling that you are hopelessly lost.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>2069</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2066</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2068</VNum>
+      <Name>Unknown passage</Name>
+      <Description>Oh dear you seem to have lost your way.  You look back from whence you
+came but there's no exit there anymore.  There are exits in other
+directions but you have a feeling that you are hopelessly lost.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2066</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>2069</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>2069</VNum>
+      <Name>Unknown passage</Name>
+      <Description>Oh dear you seem to have lost your way.  You look back from whence you
+came but there's no exit there anymore.  There are exits in other
+directions but you have a feeling that you are hopelessly lost.</Description>
+      <Sector>Cave</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>2067</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>2068</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>2001</Vnum>
+      <name>bat</name>
+      <description>Your typical smelly, blind flying mammal.</description>
+      <longDescription>A bat flaps wildly at you!</longDescription>
+      <shortDescription>a bat</shortDescription>
+      <Sex>None</Sex>
+      <level>5</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>60</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>100</hitpoints>
+      <maxhitpoints>100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>50</ArmorBash>
+      <ArmorSlash>50</ArmorSlash>
+      <ArmorPierce>50</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>bat</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectHidden Flying DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2002</Vnum>
+      <name>page templar</name>
+      <description>He has lost his family and everything of his former life.</description>
+      <longDescription>A templar page in training is here looking mildly confused.</longDescription>
+      <shortDescription>a templar page</shortDescription>
+      <Sex>Male</Sex>
+      <level>7</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>85</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>140</hitpoints>
+      <maxhitpoints>140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>7</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>30</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Wimpy AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2003</Vnum>
+      <name>spelunker explorer</name>
+      <description>He recently discovered these catacombs and wants to see where they lead.
+He just hopes he doesn't get killed in the process.  He carries only
+essential exploration gear; if there IS anything down here, he
+probably won't last long.</description>
+      <longDescription>A spelunker knows his way around these tunnels.</longDescription>
+      <shortDescription>a spelunker</shortDescription>
+      <Sex>Male</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>40</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Wimpy AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2004</Vnum>
+      <name>gravedigger digger robber graverobber</name>
+      <description>Working for an evil necromancer isn't the greatest thing in the world.
+They seem like little more than zombie servants themselves.</description>
+      <longDescription>A graverobber uncovers dead bodies.</longDescription>
+      <shortDescription>a graverobber</shortDescription>
+      <Sex>Male</Sex>
+      <level>9</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>110</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>180</hitpoints>
+      <maxhitpoints>180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>9</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2005</Vnum>
+      <name>mist swirling</name>
+      <description>In fact it IS alive in a magical sort of sense.</description>
+      <longDescription>Some mist swirls about you here ... it seems ALIVE!</longDescription>
+      <shortDescription>some mist</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Sneak PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2006</Vnum>
+      <name>skeleton</name>
+      <description></description>
+      <longDescription></longDescription>
+      <shortDescription>It</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>skeleton</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2007</Vnum>
+      <name>skeleton skeletal soldier</name>
+      <description>Even though he has died in the physical sense of the word, the battle
+continues for him in his charmed state.</description>
+      <longDescription>A skeletal soldier fights in the battle of the underworld.</longDescription>
+      <shortDescription>a skeleton</shortDescription>
+      <Sex>Male</Sex>
+      <level>11</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>8</HitPointDiceCount>
+      <HitPointDiceBonus>134</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>220</hitpoints>
+      <maxhitpoints>220</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>skeleton</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>11</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>55</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2008</Vnum>
+      <name>templar</name>
+      <description>As you peer closely he peers back at you
+A templar peers closely at you.
+A templar tells you, "You are an evil force trying to spread your ways!".
+A templar tells you, "You must die for your sin!".</description>
+      <longDescription>A templar shouts "AKK! SLAY THE INFIDEL!"</longDescription>
+      <shortDescription>a templar</shortDescription>
+      <Sex>Male</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>25</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2009</Vnum>
+      <name>wraith</name>
+      <description>Hard to tell much about the mysterious form even upon further inspection.</description>
+      <longDescription>A mysterious ghostly wraith forms before your eyes.</longDescription>
+      <shortDescription>a mysterious wraith</shortDescription>
+      <Sex>Male</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>30</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectHidden PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2010</Vnum>
+      <name>officer templar</name>
+      <description>A templar officer tells you "Better move along evil one!"</description>
+      <longDescription>A templar officer keeps an eye on things here.</longDescription>
+      <shortDescription>the templar officer</shortDescription>
+      <Sex>Male</Sex>
+      <level>13</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>170</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>260</hitpoints>
+      <maxhitpoints>260</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>13</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>30</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2011</Vnum>
+      <name>zombie mage</name>
+      <description>He seems to lack real interest in what he is doing.</description>
+      <longDescription>A blank-faced zombie mage joins the battle.</longDescription>
+      <shortDescription>zombie</shortDescription>
+      <Sex>Male</Sex>
+      <level>13</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>13</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>260</hitpoints>
+      <maxhitpoints>260</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>13</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>27</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Scavenger Aggressive Mage AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2012</Vnum>
+      <name>shadow shadows</name>
+      <description>Looks vaguely you-shaped.</description>
+      <longDescription>Eerie shadows fill the room.</longDescription>
+      <shortDescription>the shadow</shortDescription>
+      <Sex>None</Sex>
+      <level>14</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>190</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>280</hitpoints>
+      <maxhitpoints>280</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>14</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>40</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectHidden Sneak PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>12</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2013</Vnum>
+      <name>bat vampire</name>
+      <description>A rather LARGE "bat" ...</description>
+      <longDescription>A bat flaps wildly at you!</longDescription>
+      <shortDescription>The vampire</shortDescription>
+      <Sex>Male</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>bat</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectHidden Flying DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>2014</Vnum>
+      <name>necromancer necro cleric</name>
+      <description>Though he seems absorbed in his work, you'd bet he'd take the time out
+to kill you to get a fresh corpse!</description>
+      <longDescription>The evil necromancer makes undead soldiers from corpses.</longDescription>
+      <shortDescription>the evil necromancer</shortDescription>
+      <Sex>Male</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>55</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2015</Vnum>
+      <name>grand templar leader</name>
+      <description>A slight, tolerant smile comes briefly across his face.  In the blink
+of an eye he seems stern again.</description>
+      <longDescription>The grand templar stands here quietly observing your actions</longDescription>
+      <shortDescription>the grand templar</shortDescription>
+      <Sex>Male</Sex>
+      <level>16</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>233</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>320</hitpoints>
+      <maxhitpoints>320</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>16</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>75</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2016</Vnum>
+      <name>prism dragon prismdragon</name>
+      <description>The spray of colored light bouncing off his scales is almost blinding.</description>
+      <longDescription>The light shines off a beautiful but dangerous dragon lurking here.</longDescription>
+      <shortDescription>the prism dragon</shortDescription>
+      <Sex>Male</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>dragon</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion Infrared Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>2017</Vnum>
+      <name>darken dark beast darkenbeast</name>
+      <description>You see nothing more than the sense of darkness and evil.</description>
+      <longDescription>You hear and smell the presence of the darkenbeast.</longDescription>
+      <shortDescription>The DarkenBeast</shortDescription>
+      <Sex>None</Sex>
+      <level>24</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>500</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>480</hitpoints>
+      <maxhitpoints>480</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-60</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-60</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>24</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>2001</VNum>
+      <Name>glowing key</Name>
+      <ShortDescription>a glowing key</ShortDescription>
+      <LongDescription>A circular, glowing key radiates a bright aura around it.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Glow Hum Magic</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2002</VNum>
+      <Name>granite plate mail platemail</Name>
+      <ShortDescription>a suit of granite platemail</ShortDescription>
+      <LongDescription>A suit of platemail hewn from granite stands by itself in the corner.</LongDescription>
+      <Description></Description>
+      <Level>23</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>55</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Hum AntiGood</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3600</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>granite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>8</ArmorBash>
+      <ArmorSlash>8</ArmorSlash>
+      <ArmorPierce>8</ArmorPierce>
+      <ArmorExotic>2</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2003</VNum>
+      <Name>onyx ring</Name>
+      <ShortDescription>an onyx ring</ShortDescription>
+      <LongDescription>A ring with a very dark onyx stone in it has been left in the dirt.</LongDescription>
+      <Description></Description>
+      <Level>7</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>AntiGood</ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>800</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>onyx</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2004</VNum>
+      <Name>neutralizer sword</Name>
+      <ShortDescription>the neutralizer</ShortDescription>
+      <LongDescription>A long thin sword with a wide blade makes you wonder.</LongDescription>
+      <Description></Description>
+      <Level>16</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>3</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum AntiGood AntiEvil</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1280</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2005</VNum>
+      <Name>sword excalibur</Name>
+      <ShortDescription>the sword Excalibur</ShortDescription>
+      <LongDescription>A sword gleams by the light of its magical silvery blade.</LongDescription>
+      <Description></Description>
+      <Level>24</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>5</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Magic AntiEvil AntiNeutral</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3400</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2006</VNum>
+      <Name>crown</Name>
+      <ShortDescription>a kingly crown</ShortDescription>
+      <LongDescription>The crown of a long lost King lies forgotten here.</LongDescription>
+      <Description></Description>
+      <Level>24</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags>Bless</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-6" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1850</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2007</VNum>
+      <Name>stone</Name>
+      <ShortDescription>stone</ShortDescription>
+      <LongDescription>The stone is surrounded by a bright glow, better look closer.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Glow Closeable PickProof</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2008</VNum>
+      <Name>holy water flask</Name>
+      <ShortDescription>a flask of holy water</ShortDescription>
+      <LongDescription>A flask of holy water is here.</LongDescription>
+      <Description></Description>
+      <Level>11</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="25" SpellName="bless" />
+        <Spell Level="25" SpellName="sanctuary" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>880</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2009</VNum>
+      <Name>chainmail chain mail suit</Name>
+      <ShortDescription>a suit of chainmail</ShortDescription>
+      <LongDescription>A nice suit of chainmail has been left behind.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Bless</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1450</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2010</VNum>
+      <Name>white cape</Name>
+      <ShortDescription>a white cape</ShortDescription>
+      <LongDescription>A blazing cape of white lies in a careful pile.</LongDescription>
+      <Description></Description>
+      <Level>12</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2011</VNum>
+      <Name>shield defense</Name>
+      <ShortDescription>the shield of defense</ShortDescription>
+      <LongDescription>A large shield lies protecting the ground.</LongDescription>
+      <Description></Description>
+      <Level>13</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1920</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>6</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>6</ArmorPierce>
+      <ArmorExotic>4</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2012</VNum>
+      <Name>scale shield dragonscale</Name>
+      <ShortDescription>a dragonscale shield</ShortDescription>
+      <LongDescription>A shield from from the scales of a large dragon lies here.</LongDescription>
+      <Description></Description>
+      <Level>22</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>18</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>dragonscale</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>7</ArmorBash>
+      <ArmorSlash>7</ArmorSlash>
+      <ArmorPierce>7</ArmorPierce>
+      <ArmorExotic>4</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2013</VNum>
+      <Name>prism wand</Name>
+      <ShortDescription>a prism wand</ShortDescription>
+      <LongDescription>A wand made of a triangular prism twinkles in the dust.</LongDescription>
+      <Description></Description>
+      <Level>12</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Wand</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="11" SpellName="colour spray" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2200</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>crystal</Material>
+      <Charges>4</Charges>
+      <MaxCharges>4</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2014</VNum>
+      <Name>shadow cloak</Name>
+      <ShortDescription>a shadow cloak</ShortDescription>
+      <LongDescription>The shadows in the corner of the room seems strange ...</LongDescription>
+      <Description></Description>
+      <Level>14</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-30" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>210</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>7</ArmorBash>
+      <ArmorSlash>7</ArmorSlash>
+      <ArmorPierce>7</ArmorPierce>
+      <ArmorExotic>2</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2015</VNum>
+      <Name>misty potion</Name>
+      <ShortDescription>a misty potion</ShortDescription>
+      <LongDescription>A potion of swirling mist-like substance is here.</LongDescription>
+      <Description></Description>
+      <Level>12</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="10" SpellName="pass door" />
+        <Spell Level="10" SpellName="faerie fire" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>920</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2016</VNum>
+      <Name>templar templars sword wooden</Name>
+      <ShortDescription>a templar's sword</ShortDescription>
+      <LongDescription>A sword made of wood has been left here.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>6</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Bless</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>830</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn It to Striped tunnel-->
+      <Type>NPC</Type>
+      <Destination>2049</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the prism dragon to Prism cave-->
+      <Type>NPC</Type>
+      <Destination>2050</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragonscale shield to the prism dragon-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2012</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a prism wand to the prism dragon-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2013</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bat to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>3</Count>
+      <Max>6</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bat to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>3</Count>
+      <Max>6</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bat to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>3</Count>
+      <Max>6</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The vampire to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2013</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the neutralizer to The vampire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bat to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>3</Count>
+      <Max>6</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bat to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>3</Count>
+      <Max>6</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bat to Basement-->
+      <Type>NPC</Type>
+      <Destination>2052</Destination>
+      <Count>3</Count>
+      <Max>6</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a graverobber to Fresh graves-->
+      <Type>NPC</Type>
+      <Destination>2053</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>2004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a graverobber to Fresh graves-->
+      <Type>NPC</Type>
+      <Destination>2053</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>2004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn zombie to Fresh graves-->
+      <Type>NPC</Type>
+      <Destination>2053</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2011</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a graverobber to Scene of ghastly horror-->
+      <Type>NPC</Type>
+      <Destination>2055</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>2004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a graverobber to Scene of ghastly horror-->
+      <Type>NPC</Type>
+      <Destination>2055</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>2004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the evil necromancer to Scene of ghastly horror-->
+      <Type>NPC</Type>
+      <Destination>2055</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2014</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the shield of defense to the evil necromancer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2011</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a spelunker to Tunnel-->
+      <Type>NPC</Type>
+      <Destination>2064</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>2003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a spelunker to North/south tunnel-->
+      <Type>NPC</Type>
+      <Destination>2002</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>2003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Weapon training area-->
+      <Type>NPC</Type>
+      <Destination>2003</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Prayer training area-->
+      <Type>NPC</Type>
+      <Destination>2004</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Junction of hallways-->
+      <Type>NPC</Type>
+      <Destination>2005</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Hallway-->
+      <Type>NPC</Type>
+      <Destination>2006</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Pages' sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2008</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Pages' sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2008</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Pages' sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2008</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Pages' sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2008</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Pages' sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2008</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Templar Knights sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2009</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to Templar Knights sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2009</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Templar Knights sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2009</Destination>
+      <Count>3</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Templar Knights sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2009</Destination>
+      <Count>3</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Templar Knights sleeping quarters-->
+      <Type>NPC</Type>
+      <Destination>2009</Destination>
+      <Count>3</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar page to N/S hallway-->
+      <Type>NPC</Type>
+      <Destination>2010</Destination>
+      <Count>8</Count>
+      <Max>8</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the templar officer to Mid-level leader's room-->
+      <Type>NPC</Type>
+      <Destination>2015</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2016</Destination>
+      <Count>3</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2016</Destination>
+      <Count>3</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2016</Destination>
+      <Count>3</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the templar officer to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2016</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the templar officer to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2016</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the templar officer to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2016</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the templar officer to High officer's room-->
+      <Type>NPC</Type>
+      <Destination>2018</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn It to Mossy intersection-->
+      <Type>NPC</Type>
+      <Destination>2019</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2023</Destination>
+      <Count>2</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to a templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2023</Destination>
+      <Count>2</Count>
+      <Max>12</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the templar officer to Mess hall-->
+      <Type>NPC</Type>
+      <Destination>2023</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a templar's sword to the templar officer-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2016</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the grand templar to Grand Templar's room-->
+      <Type>NPC</Type>
+      <Destination>2025</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a white cape to the grand templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2010</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a glowing key to the grand templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a flask of holy water to the grand templar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2008</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the shadow to Very dark passage-->
+      <Type>NPC</Type>
+      <Destination>2026</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>2012</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a shadow cloak to the shadow-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2014</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn It to The holy grove-->
+      <Type>NPC</Type>
+      <Destination>2028</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The DarkenBeast to Deep within the catacombs-->
+      <Type>NPC</Type>
+      <Destination>2030</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>2017</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an onyx ring to The DarkenBeast-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of granite platemail to The DarkenBeast-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a kingly crown to The DarkenBeast-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn stone to The holy place-->
+      <Type>Item</Type>
+      <Destination>2032</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>2007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the sword Excalibur to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn It to Misty passageway-->
+      <Type>NPC</Type>
+      <Destination>2033</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Misty passageway-->
+      <Type>NPC</Type>
+      <Destination>2033</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a skeleton to Entrance to the burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2035</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a skeleton-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn It to The burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2036</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a skeleton to The burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2036</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn zombie to The burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2036</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2011</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a skeleton to The burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2037</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a skeleton-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn zombie to The burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2037</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2011</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a skeleton to The burial grounds-->
+      <Type>NPC</Type>
+      <Destination>2038</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>2007</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn It to New graves-->
+      <Type>NPC</Type>
+      <Destination>2039</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mysterious wraith to New graves-->
+      <Type>NPC</Type>
+      <Destination>2039</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn It to Misty cavern-->
+      <Type>NPC</Type>
+      <Destination>2040</Destination>
+      <Count>1</Count>
+      <Max>7</Max>
+      <Vnum>2006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Misty cavern-->
+      <Type>NPC</Type>
+      <Destination>2040</Destination>
+      <Count>2</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Misty cavern-->
+      <Type>NPC</Type>
+      <Destination>2040</Destination>
+      <Count>2</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Misty cavern-->
+      <Type>NPC</Type>
+      <Destination>2041</Destination>
+      <Count>2</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Misty cavern-->
+      <Type>NPC</Type>
+      <Destination>2041</Destination>
+      <Count>2</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Mist cavern-->
+      <Type>NPC</Type>
+      <Destination>2042</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Waterfall of mist-->
+      <Type>NPC</Type>
+      <Destination>2043</Destination>
+      <Count>3</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Waterfall of mist-->
+      <Type>NPC</Type>
+      <Destination>2043</Destination>
+      <Count>3</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn some mist to Waterfall of mist-->
+      <Type>NPC</Type>
+      <Destination>2043</Destination>
+      <Count>3</Count>
+      <Max>9</Max>
+      <Vnum>2005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a misty potion to some mist-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>2015</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mysterious wraith to Fresh graves-->
+      <Type>NPC</Type>
+      <Destination>2047</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>2009</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn zombie to Fresh graves-->
+      <Type>NPC</Type>
+      <Destination>2047</Destination>
+      <Count>4</Count>
+      <Max>4</Max>
+      <Vnum>2011</Vnum>
+    </Reset>
+  </Resets>
+</Area>

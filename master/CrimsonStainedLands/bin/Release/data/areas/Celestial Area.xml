@@ -1,0 +1,4864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Celestial Area</Name>
+    <Info></Info>
+    <VnumStart>10100</VnumStart>
+    <VnumEnd>10199</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{31 51} Deomanix Celestial Area</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>10100</VNum>
+      <Name>Jacob's Ladder</Name>
+      <Description>You are at the bottom of what seems to be an endless ladder. This large golden
+ladder reaches up into the clouds as far as the eye can see.</Description>
+      <Sector>Air</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10179</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>623</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>10101</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10101</VNum>
+      <Name>Jabob's Ladder</Name>
+      <Description>As you climb the ladder a cloud floats by lazily. You try not to look down for
+fear of falling, but do anyways. As you look down you can only see clouds and as
+you look upward only the ladder continuing.</Description>
+      <Sector>Air</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>10102</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>10100</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10102</VNum>
+      <Name>Jacob's Ladder</Name>
+      <Description>As you continue to climb the ladder you notice something very large comming into
+view. You cannot quite make out what it is because the clouds cover it for the
+most part.</Description>
+      <Sector>Air</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>10103</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>10101</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10103</VNum>
+      <Name>Before the pearly gates</Name>
+      <Description>Before you stands a massive pearly gate. Light reflects in every direction
+making a beautify display. You can detect the sweet smell of incense as it wafts
+through the air.</Description>
+      <Sector>Air</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10104</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>10102</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10104</VNum>
+      <Name>The courtyard</Name>
+      <Description>No man has beheld such a beautiful sight as this. As you enter the courtyard you
+notice you are standing on pure crystal. Lush greens surround you on all sides.
+Six golden stands burn incense constantly makeing you feel very calm. To the
+North a spectacular temple rises above the other buildings. To the east is a
+library. To the west is an academy, and behind you lies the gates.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10107</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10106</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10103</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10105</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10105</VNum>
+      <Name>The Academy</Name>
+      <Description>You are in a large war room with practice dummies and sparing weapons dispersed
+throughout the room. No doubt this is where the celestial beings prepare
+themselves to combat evil, and protect the righteous.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10104</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10106</VNum>
+      <Name>The Library</Name>
+      <Description>It is quite a bit darker in here because of the lack of windows. Torches lining
+the walls between the bookcases cause shadows to dance across the room. There
+are several tables piled high with papers and books that seem to be in no
+particular order.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10104</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10107</VNum>
+      <Name>Road to the Temple</Name>
+      <Description>You are walking down a road composed of solid gold bricks. As you head closer to
+the temple you can hear beautiful voices singing. There seems to be a aura of
+radiant light surrounding the whole temple. To the east there is a small shop.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10108</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10178</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10104</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10108</VNum>
+      <Name>Steps before the Temple gates</Name>
+      <Description>You are standing at the bottom of a large flight of stairs leading up to the
+temple gates.The gate is made completely of jasper that refracts light in every
+direction. There is a large key hole in the middle of the gate.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10109</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>10107</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10107</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10109</VNum>
+      <Name>The Temple's Foyer</Name>
+      <Description>You are standing in a spacious room adorned with colorful tapestrys and rugs.
+The walls are made of gold, and the arches that lead in all directions are lined
+with emerald. You feel the floor undulate with waves seeming to come from the
+north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10156</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10148</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10108</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10110</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10110</VNum>
+      <Name>A hallway lined with torches</Name>
+      <Description>The torches in this hall flicker, causing golden light to reflect off of the
+walls giving it a breathtaking appearence.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10109</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10111</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10111</VNum>
+      <Name>A hallway lined with torches</Name>
+      <Description>The torches in this hall flicker, causing golden light to reflect off of the
+walls giving it a breathtaking appearence.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10110</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10112</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10112</VNum>
+      <Name>A hallway lined with torches</Name>
+      <Description>The torches in this hall flicker, causing golden light to reflect off of the
+walls giving it a breathtaking appearence.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10111</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10113</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10113</VNum>
+      <Name>A bend in the hallway</Name>
+      <Description>The torches in this hall flicker causing golden light to reflect off of the
+walls giving it a breathtaking appearence.The hall makes a turn to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10114</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10112</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10114</VNum>
+      <Name>A hallway lined with torches</Name>
+      <Description>The torches in this hall flicker causing golden light to reflect off of the
+walls giving it a breathtaking appearence.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10115</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10113</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10119</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10115</VNum>
+      <Name>A hallway lined with torches</Name>
+      <Description>The torches in this hall flicker causing golden light to reflect off of the
+walls giving it a breathtaking appearence.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10116</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10114</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10116</VNum>
+      <Name>A hallway lined with torches</Name>
+      <Description>The torches in this hall flicker causing golden light to reflect off of the
+walls giving it a breathtaking appearence. There a small rooms to the east and
+west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10118</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10115</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10117</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10117</VNum>
+      <Name>A prayer room.</Name>
+      <Description>You have entered a very plain room with only a kneeling bench and a small window
+looking outdoors.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10116</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10118</VNum>
+      <Name>A prayer room</Name>
+      <Description>You have entered a very plain room with only a kneeling bench and a small window
+looking outdoors.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10116</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10119</VNum>
+      <Name>A storage room</Name>
+      <Description>A small cramped storage room filled with odds and ends. There are some shelfs
+against the back wall stacked with cleaning supplies. There is also a grating on
+the floor large enough to fit through.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10114</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>10120</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10120</VNum>
+      <Name>A musty shaft</Name>
+      <Description>You are climbing down a rusty ladder toward an strange purple light below.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>10119</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>10121</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10121</VNum>
+      <Name>Entrance to the Amethyst cavern</Name>
+      <Description>You now stand at the bottom of the shaft. Before you is a purple crystaline arch
+radiating light and and emitting a faint humming noise.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10122</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>10120</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10122</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10140</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10132</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10121</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10123</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10123</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10122</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10124</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10124</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10123</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10125</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10125</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10124</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10126</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10126</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10125</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10127</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10127</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10126</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10128</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10128</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10127</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10129</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10129</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10128</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10130</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10130</VNum>
+      <Name>Before an obsidian door</Name>
+      <Description>A large obsidian door with glowing runes inscribed upon it blocks the way south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10129</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10131</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10131</VNum>
+      <Name>The Keeper's room</Name>
+      <Description>You are in a large room that seems to have been carved out of the amethyst.
+There is a bookshelf against the back wall, and a cot to the the left. In the
+middle of the room the Keeper of the cavern sits at his desk.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10130</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10132</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10133</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10122</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10133</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10134</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10132</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10134</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10135</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10133</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10135</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10136</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10134</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10136</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10137</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10135</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10137</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10138</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10136</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10138</VNum>
+      <Name>In front of a cage</Name>
+      <Description>You stand before a large iron cage. You cannot quite see into the cage but you
+hear a soft hissing. Perhaps you should go back the way you came.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10139</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10137</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10139</VNum>
+      <Name>The Serpent's cage</Name>
+      <Description>There are bones scatered about in the cage. You feel very uneasy. Just as you
+are about to leave. HSssssss!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10138</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10140</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10141</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10122</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10141</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10142</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10140</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10142</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10141</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10143</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10143</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10142</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10144</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10144</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10145</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10143</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10145</VNum>
+      <Name>The Amethyst cavern</Name>
+      <Description>The walls of this cavern are encrusted with gorgeous purple gems. All around you
+the cavern glows and hums softly. The cavern winds off in several directions.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10146</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10144</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10146</VNum>
+      <Name>Before the Great Portal</Name>
+      <Description>You have come to a dead end in the cavern. Before you lies a great amethyst
+portal. The humming is much stronger here, and the walls are quite a bit
+brighter.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10147</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10145</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10147</VNum>
+      <Name>A dragon's lair</Name>
+      <Description>You have entered the lair of the Amethyst Dragon. You cannot even see the floor
+through the mounds of human bones lying everywhere. The humming in this room
+seems ro resonate in your skull, and the light is so bright you have to shield
+your eyes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10146</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10148</VNum>
+      <Name>A slender hallway</Name>
+      <Description>This hallway is quite a bit smaller than the others, its floors are a beautiful
+black marble, and all along the hallway there are beautiful stained glass
+windows depicting different scenes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10149</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10109</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10149</VNum>
+      <Name>A slender hallway</Name>
+      <Description>This hallway is quite a bit smaller than the others, its floors are a beautiful
+black marble, and all along the hallway there are beautiful stained glass
+windows depicting different scenes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10150</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10148</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10150</VNum>
+      <Name>A slender hallway</Name>
+      <Description>This hallway is quite a bit smaller than the others, its floors are a beautiful
+black marble, and all along the hallway there are beautiful stained glass
+windows depicting different scenes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10151</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10149</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10151</VNum>
+      <Name>A slender hallway</Name>
+      <Description>This hallway is quite a bit smaller than the others, its floors are a beautiful
+black marble, and all along the hallway there are beautiful stained glass
+windows depicting different scenes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10152</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10150</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10152</VNum>
+      <Name>A slender hallway</Name>
+      <Description>This hallway is quite a bit smaller than the others, its floors are a beautiful
+black marble, and all along the hallway there are beautiful stained glass
+windows depicting different scenes.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10153</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10151</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10153</VNum>
+      <Name>Before the chapel doors</Name>
+      <Description>You have reached the end of the hallway and a large oaken door stands before
+you. It seems to have a strange language carved upon it. Two potted plants sit
+ornamently on either side of the door.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10154</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10152</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10154</VNum>
+      <Name>An extremely large chapel</Name>
+      <Description>The chapel's ceiling towers at least 30 feet above you. There are beautiful
+white marble pillars, golden pews, and gorgeous stained glass windows here. To
+the front of the chapel there is an ornate pulpit inlaid with precious stones.
+The door to the priests vestibule is behind the pulpit.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10155</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10153</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10155</VNum>
+      <Name>The priest's vestibule</Name>
+      <Description>This is a small quiet room with nothing but a small chair, and a desk. This is
+where the priest prepares himself before he enters the chapel.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10154</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10156</VNum>
+      <Name>A grand stairwell</Name>
+      <Description>A beautiful spiral staircase made of gold leads to the temples second level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10109</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>10157</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10157</VNum>
+      <Name>The second floor of the temple</Name>
+      <Description>Halls head in every direction from this point. This seems to be a floor totally
+dedicated to the higher powers of goodness. You can see each hallway is heavely
+guarded, especially to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10173</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10163</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10168</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10158</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>10156</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10158</VNum>
+      <Name>The western hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10157</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10159</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10159</VNum>
+      <Name>The western hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10158</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10160</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10160</VNum>
+      <Name>The western hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10159</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10161</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10161</VNum>
+      <Name>The end of the hall</Name>
+      <Description>A large golden door dominates the western wall, and radiant light pours out from
+under the door. You suddenly develop a righteous fear and doubt your purity.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10160</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10162</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>10116</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10162</VNum>
+      <Name>Michael's chamber</Name>
+      <Description>As you step into this room you realize there are no walls, no floor, and no
+ceiling. You are suspended in a pure white light that seems to radiate from a
+being with the apearing to be comprized of energy crckleing about the air.</Description>
+      <Sector>Air</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10161</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10163</VNum>
+      <Name>The eastern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10164</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10157</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10164</VNum>
+      <Name>The eastern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10165</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10163</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10165</VNum>
+      <Name>The eastern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10166</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10164</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10166</VNum>
+      <Name>The end of the hall</Name>
+      <Description>A large emerald door dominates the eastern wall, and radiant light pours out
+from under the door.You suddenly develop a righteous fear and doubt your purity.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>10167</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>10117</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10165</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10167</VNum>
+      <Name>Gabriel's chammber</Name>
+      <Description>As you step into this room you realize there are no walls, no floor, and no
+ceiling. You are suspended in a pure white light that seems to radiat from a
+being with the appearance of lightning.</Description>
+      <Sector>Air</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10166</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10168</VNum>
+      <Name>The southern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10157</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10169</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10169</VNum>
+      <Name>The southern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10168</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10170</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10170</VNum>
+      <Name>The southern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10169</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10171</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10171</VNum>
+      <Name>The end of the hall</Name>
+      <Description>A large ruby door dominates the southern wall, and radiant light pours out from
+under the door.You suddenly develop a righteous fear and doubt your purity.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10170</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10172</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>10118</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10172</VNum>
+      <Name>A holy spirit's chamber</Name>
+      <Description>This room seems to be formed like a square. The air shimmers, and seems to wave
+back and forth. In the exact center of the room there is a strange white vapor.</Description>
+      <Sector>Air</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10171</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10173</VNum>
+      <Name>The northern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Air</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10174</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10157</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10174</VNum>
+      <Name>The northern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10175</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10173</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10175</VNum>
+      <Name>The northern hall</Name>
+      <Description>This hall is lined on both sides with golden statues of angels with thier wings
+arched over forming a kind of canopy. The floor is covered by a long rug
+embroidered with cherubs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10176</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10174</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10176</VNum>
+      <Name>A door of pure energy</Name>
+      <Description>Here stands a barrier of pure light. It shines a pure white light that seems to
+pass right through you. A feeling of eminant judgement permiates you. A plaque
+on the door says "Only those of the purest heart can escape the wrath".</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10177</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>10119</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10175</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>1206</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10177</VNum>
+      <Name>The Judgement seat</Name>
+      <Description>A giant throne is seated directly in front of you. You seem to be on some sort
+of endless plane. As far as the eye can see there is a crystal sea. On the
+throne is seated the incarnate of good. He has the appearance of jasper and
+shines brighter than the sun. Peals of thunder roll out from the throne and you
+are frozen in terror.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>10176</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10178</VNum>
+      <Name>The Herbary</Name>
+      <Description>You are in a small shack type building with a ceiling made of glass. There are a
+few cross beams over head that have many different kinds of herbs hung upside
+down. Your skin seems to tingle from all the smells in this shop.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>10107</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>10179</VNum>
+      <Name>Within a blood soaked boat house</Name>
+      <Description>This destroyed boat house is still covered in wet, warm blood. It is almost as
+if the annihilation of the elven people in the city had onlyjust occurred in the
+last few hours, rather than centuries ago. The scent of warm salty blood still
+hangs in the air, and the waters outside lap up into the shack carrying more
+bloody red waters. The only exit is back to the south onto the ruined docks of
+the harbour.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>10100</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>10100</Vnum>
+      <name>angel</name>
+      <description>An angel in flowing robes as white as snow glares at you sternly.</description>
+      <longDescription>An angel bathed in a holy aura stands here.</longDescription>
+      <shortDescription>an angel</shortDescription>
+      <Sex>Male</Sex>
+      <level>30</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>853</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>600</hitpoints>
+      <maxhitpoints>600</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>-90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>30</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistAlign</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10101</Vnum>
+      <name>man warmaster</name>
+      <description>The WarMaster glares at you with an air of superiority.</description>
+      <longDescription>Clad in shining armor, the warmaster grits his teeth and flares his nostrils.</longDescription>
+      <shortDescription>the WarMaster</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AreaAttack AssistAlign</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>15</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10102</Vnum>
+      <name>student warrior</name>
+      <description>This young warrior snarls and tries to look mean.</description>
+      <longDescription>A somewhat clumsy being practices here.</longDescription>
+      <shortDescription>a warrior student</shortDescription>
+      <Sex>Male</Sex>
+      <level>25</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>550</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>500</hitpoints>
+      <maxhitpoints>500</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>-40</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>25</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior AssistAlign</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10103</Vnum>
+      <name>librarian woman</name>
+      <description>The old ladies eyes seem to make your blood freeze.</description>
+      <longDescription>An old shriveled librarian sits here, looking around suspisiously.</longDescription>
+      <shortDescription>the old librarian</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>5500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10104</Vnum>
+      <name>wisp</name>
+      <description>The wisp seems to crackle softly.</description>
+      <longDescription>A glowing ball of light hovers here.</longDescription>
+      <shortDescription>a wisp</shortDescription>
+      <Sex>None</Sex>
+      <level>30</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>853</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>600</hitpoints>
+      <maxhitpoints>600</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>-90</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>30</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC StayArea Mage</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>12</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10105</Vnum>
+      <name>keeper man</name>
+      <description>He glares at you and screams challenges.</description>
+      <longDescription>The guardian of the great amethyst cavern is here.</longDescription>
+      <shortDescription>the Keeper</shortDescription>
+      <Sex>Male</Sex>
+      <level>51</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>5000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1020</hitpoints>
+      <maxhitpoints>1020</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-210</ArmorBash>
+      <ArmorSlash>-210</ArmorSlash>
+      <ArmorPierce>-210</ArmorPierce>
+      <ArmorExotic>-210</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>51</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>20</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10106</Vnum>
+      <name>serpent ancient</name>
+      <description>He flicks his tounge disdainfully.</description>
+      <longDescription>A giant snake with purpe scales is coiled here.</longDescription>
+      <shortDescription>the Ancient Serpent</shortDescription>
+      <Sex>None</Sex>
+      <level>58</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>5500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1160</hitpoints>
+      <maxhitpoints>1160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-220</ArmorBash>
+      <ArmorSlash>-220</ArmorSlash>
+      <ArmorPierce>-220</ArmorPierce>
+      <ArmorExotic>-220</ArmorExotic>
+      <size>Huge</size>
+      <race>snake</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>58</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>thief</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Thief AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>20</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10107</Vnum>
+      <name>dragon amethyst</name>
+      <description>The dragons eyes flare a brilliant red.</description>
+      <longDescription>The mightiest of the dragons crouches here, with smoke flowing from his nostrils.</longDescription>
+      <shortDescription>the Amethyst Dragon</shortDescription>
+      <Sex>Male</Sex>
+      <level>55</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-250</ArmorBash>
+      <ArmorSlash>-250</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-250</ArmorExotic>
+      <size>Giant</size>
+      <race>dragon</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil Hide DetectIllusion Infrared Flying</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>23</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10108</Vnum>
+      <name>priest man</name>
+      <description>The priest smiles at you warmly.</description>
+      <longDescription>A priest clothed in the traditional garb of the priesthood.</longDescription>
+      <shortDescription>the priest</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>16</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10109</Vnum>
+      <name>woman mourning</name>
+      <description>She looks at you with despair in her eyes.</description>
+      <longDescription>A hunched over woman kneels here, sobbing quietly to herself.</longDescription>
+      <shortDescription>a mourning woman</shortDescription>
+      <Sex>Female</Sex>
+      <level>25</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>550</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>500</hitpoints>
+      <maxhitpoints>500</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>-70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>25</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10110</Vnum>
+      <name>archangel michael</name>
+      <description>Michael stares right through you.</description>
+      <longDescription>The great archangel Michael hovers here bathed in light.</longDescription>
+      <shortDescription>the archangel Michael</shortDescription>
+      <Sex>Male</Sex>
+      <level>57</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>8000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1140</hitpoints>
+      <maxhitpoints>1140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-270</ArmorBash>
+      <ArmorSlash>-270</ArmorSlash>
+      <ArmorPierce>-270</ArmorPierce>
+      <ArmorExotic>-270</ArmorExotic>
+      <size>Giant</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>57</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>24</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10111</Vnum>
+      <name>archangel gabriel</name>
+      <description>Gabriel stares right through you.</description>
+      <longDescription>The might Gabriel hovers here borne in a bright light.</longDescription>
+      <shortDescription>the archangel Gabriel</shortDescription>
+      <Sex>Male</Sex>
+      <level>57</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>8000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1140</hitpoints>
+      <maxhitpoints>1140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-270</ArmorBash>
+      <ArmorSlash>-270</ArmorSlash>
+      <ArmorPierce>-270</ArmorPierce>
+      <ArmorExotic>-270</ArmorExotic>
+      <size>Giant</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>57</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>24</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10112</Vnum>
+      <name>spirit holy vapor</name>
+      <description>The vapor flares angrily.</description>
+      <longDescription>A bright vaport floats in the center of the room.</longDescription>
+      <shortDescription>a holy spirit</shortDescription>
+      <Sex>None</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood Flying Swim DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10113</Vnum>
+      <name>holiness holy incarnate</name>
+      <description>The entity seems to pass through you.</description>
+      <longDescription>An overwhelming sence of holiness seems to be concentrated in this room.</longDescription>
+      <shortDescription>the Holiness Incarnate</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Giant</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Warrior AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>10114</Vnum>
+      <name>man herbalist</name>
+      <description>He stares at you blankly.</description>
+      <longDescription>A man in a muddy apron wanders around the shop doing different things.</longDescription>
+      <shortDescription>the Herbalist</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Aggressive StayArea Cleric AreaAttack Shopkeeper</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="23" CloseHour="23" BuyTypes="" />
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>10100</VNum>
+      <Name>broadsword gleaming</Name>
+      <ShortDescription>a gleaming broadsword</ShortDescription>
+      <LongDescription>A beautiful sword of polished titanium rests here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>slice</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil AntiEvil</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10101</VNum>
+      <Name>halo</Name>
+      <ShortDescription>a halo</ShortDescription>
+      <LongDescription>A circlet of pure energy hovers above the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Head Wield</WearFlags>
+      <ExtraFlags>Glow Hum Magic AntiEvil</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>9</ArmorSlash>
+      <ArmorPierce>12</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10102</VNum>
+      <Name>maul mace warmaster</Name>
+      <ShortDescription>the WarMaster's maul</ShortDescription>
+      <LongDescription>A maul covered with runes and shines brightly.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>smash</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Magic NoDrop AntiEvil NoRemove BurnProof Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-40" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10103</VNum>
+      <Name>plate warmaster</Name>
+      <ShortDescription>the WarMaster's plate</ShortDescription>
+      <LongDescription>A beautiful black plate that reflects a metallic purple when held up to the light.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Body Wield</WearFlags>
+      <ExtraFlags>Glow Hum Magic AntiEvil BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10104</VNum>
+      <Name>ruler sharp librarian</Name>
+      <ShortDescription>the Librarian's ruler</ShortDescription>
+      <LongDescription>A sharp metal ruler with serrated edges.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Evil Magic Flaming Frost Vorpal TwoHands Shocking Poison</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10105</VNum>
+      <Name>shawl wool</Name>
+      <ShortDescription>a wool shawl</ShortDescription>
+      <LongDescription>A woven shawl of grey wool.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck Wield</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-40" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>12</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10106</VNum>
+      <Name>shield light</Name>
+      <ShortDescription>a shield of light</ShortDescription>
+      <LongDescription>A shield rests here that seems to be made purely of light.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Glow Hum Magic AntiEvil AntiNeutral</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>9</ArmorBash>
+      <ArmorSlash>9</ArmorSlash>
+      <ArmorPierce>9</ArmorPierce>
+      <ArmorExotic>9</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10107</VNum>
+      <Name>key large</Name>
+      <ShortDescription>a Large key</ShortDescription>
+      <LongDescription>A large golden key with a red ribbon on the end, rests here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10108</VNum>
+      <Name>sofa</Name>
+      <ShortDescription>a lush velvet sofa.</ShortDescription>
+      <LongDescription>An ornate purple velvet couch with golden tassels is in the middle of the room.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10109</VNum>
+      <Name>gloves keeper</Name>
+      <ShortDescription>the Keeper's gloves</ShortDescription>
+      <LongDescription>Some amethyst encrusted gloves rest here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hands</WearFlags>
+      <ExtraFlags>Glow Hum Magic BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>19</ArmorBash>
+      <ArmorSlash>18</ArmorSlash>
+      <ArmorPierce>16</ArmorPierce>
+      <ArmorExotic>17</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10110</VNum>
+      <Name>whip keeper</Name>
+      <ShortDescription>the Keeper's whip</ShortDescription>
+      <LongDescription>A whip glowing with power lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>thwack</WeaponDamageType>
+      <WeaponType>Whip</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Magic BurnProof Flaming Frost Vorpal TwoHands Shocking Poison</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10111</VNum>
+      <Name>fang ancient</Name>
+      <ShortDescription>an ancient fang</ShortDescription>
+      <LongDescription>A large and very sharp fang is sticking out of the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Magic AntiGood BurnProof Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10112</VNum>
+      <Name>hide amethyst dragon</Name>
+      <ShortDescription>the hide of the Amethyst Dragon</ShortDescription>
+      <LongDescription>A shimmering hide of amethyst rests here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Glow Hum Invisibility Magic NoDrop NoRemove BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>22</ArmorBash>
+      <ArmorSlash>21</ArmorSlash>
+      <ArmorPierce>21</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10113</VNum>
+      <Name>crusifix cross</Name>
+      <ShortDescription>a wooden crusifix</ShortDescription>
+      <LongDescription>A stout wooden crusifix hums here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Wand</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Spells>
+        <Spell Level="51" SpellName="sanctuary" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>2</Charges>
+      <MaxCharges>2</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10114</VNum>
+      <Name>beads rosary</Name>
+      <ShortDescription>a pile of wooden beads</ShortDescription>
+      <LongDescription>Some wooden rosary beads you believe belong to the mourning woman lie here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>13</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>15</ArmorPierce>
+      <ArmorExotic>3</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10115</VNum>
+      <Name>belt white leather</Name>
+      <ShortDescription>a white leather belt</ShortDescription>
+      <LongDescription>A strong belt made of white leather hums with power.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Waist</WearFlags>
+      <ExtraFlags>Glow Hum Magic AntiEvil BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>15</ArmorBash>
+      <ArmorSlash>13</ArmorSlash>
+      <ArmorPierce>17</ArmorPierce>
+      <ArmorExotic>11</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10116</VNum>
+      <Name>key</Name>
+      <ShortDescription>A shiny key</ShortDescription>
+      <LongDescription>A key fashoned with gold is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10117</VNum>
+      <Name>key</Name>
+      <ShortDescription>an emerald key</ShortDescription>
+      <LongDescription>A key carved from emerald is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10118</VNum>
+      <Name>key</Name>
+      <ShortDescription>a ruby key</ShortDescription>
+      <LongDescription>A key carved from ruby rests here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10119</VNum>
+      <Name>key</Name>
+      <ShortDescription>a diamond key</ShortDescription>
+      <LongDescription>A key carved from diamond hums here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10120</VNum>
+      <Name>pure wrath sword</Name>
+      <ShortDescription>pure wrath</ShortDescription>
+      <LongDescription>Holy wrath has been forged into a weapon!</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>divine</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Invisibility Magic NoDrop AntiEvil NoRemove BurnProof Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10121</VNum>
+      <Name>bracelet band light</Name>
+      <ShortDescription>a band of light</ShortDescription>
+      <LongDescription>A sheild rests here that seems to be made purely of light.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags>Glow Hum Magic AntiEvil BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>19</ArmorBash>
+      <ArmorSlash>17</ArmorSlash>
+      <ArmorPierce>18</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10122</VNum>
+      <Name>dummy</Name>
+      <ShortDescription>a practice dummy</ShortDescription>
+      <LongDescription>This dummy made from wood, hase been carved to look like some kind of a demon.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10123</VNum>
+      <Name>fountain drink fount</Name>
+      <ShortDescription>the Golden Fount</ShortDescription>
+      <LongDescription>This beautiful fountain brings forth crystal clear water.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Fountain</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>48</Nutrition>
+      <Liquid>water</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10124</VNum>
+      <Name>ancient scales</Name>
+      <ShortDescription>the ancient scales</ShortDescription>
+      <LongDescription>A pile of purple serpent scales lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Waist</WearFlags>
+      <ExtraFlags>Glow Hum AntiGood BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToResist" level="0" duration="-1" location="None" flags="Poison" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Hide" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>8</ArmorBash>
+      <ArmorSlash>9</ArmorSlash>
+      <ArmorPierce>9</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10125</VNum>
+      <Name>bracer ancient scale</Name>
+      <ShortDescription>an ancient scale bracer</ShortDescription>
+      <LongDescription>An ancient bracer from the serpent lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags>Glow Hum AntiGood BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Berserk" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>3</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>8</ArmorPierce>
+      <ArmorExotic>9</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn an angel to Before the pearly gates-->
+      <Type>NPC</Type>
+      <Destination>10103</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Golden Fount to The courtyard-->
+      <Type>Item</Type>
+      <Destination>10104</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>10123</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the WarMaster to The Academy-->
+      <Type>NPC</Type>
+      <Destination>10105</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the WarMaster's plate to the WarMaster-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the WarMaster's maul to the WarMaster-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a warrior student to The Academy-->
+      <Type>NPC</Type>
+      <Destination>10105</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>10102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to a warrior student-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a practice dummy to The Academy-->
+      <Type>Item</Type>
+      <Destination>10105</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>10122</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the old librarian to The Library-->
+      <Type>NPC</Type>
+      <Destination>10106</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wool shawl to the old librarian-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Librarian's ruler to the old librarian-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an angel to Steps before the Temple gates-->
+      <Type>NPC</Type>
+      <Destination>10108</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a Large key to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lush velvet sofa. to The Temple's Foyer-->
+      <Type>Item</Type>
+      <Destination>10109</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>10108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mourning woman to A prayer room.-->
+      <Type>NPC</Type>
+      <Destination>10117</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mourning woman to A prayer room-->
+      <Type>NPC</Type>
+      <Destination>10118</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10123</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10125</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10127</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10129</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Keeper to The Keeper's room-->
+      <Type>NPC</Type>
+      <Destination>10131</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Keeper's gloves to the Keeper-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Keeper's whip to the Keeper-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10132</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10135</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10137</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Ancient Serpent to The Serpent's cage-->
+      <Type>NPC</Type>
+      <Destination>10139</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ancient fang to the Ancient Serpent-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ancient scales to the Ancient Serpent-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10124</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ancient scale bracer to the Ancient Serpent-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10125</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ancient scale bracer to the Ancient Serpent-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10125</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10141</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10143</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wisp to The Amethyst cavern-->
+      <Type>NPC</Type>
+      <Destination>10145</Destination>
+      <Count>1</Count>
+      <Max>9</Max>
+      <Vnum>10104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Amethyst Dragon to A dragon's lair-->
+      <Type>NPC</Type>
+      <Destination>10147</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the hide of the Amethyst Dragon to the Amethyst Dragon-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10112</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an angel to Before the chapel doors-->
+      <Type>NPC</Type>
+      <Destination>10153</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mourning woman to An extremely large chapel-->
+      <Type>NPC</Type>
+      <Destination>10154</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pile of wooden beads to An extremely large chapel-->
+      <Type>Item</Type>
+      <Destination>10154</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>10114</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the priest to The priest's vestibule-->
+      <Type>NPC</Type>
+      <Destination>10155</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to the priest-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wooden crusifix to the priest-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10113</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a white leather belt to the priest-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10115</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an angel to The end of the hall-->
+      <Type>NPC</Type>
+      <Destination>10161</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A shiny key to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10116</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the archangel Michael to Michael's chamber-->
+      <Type>NPC</Type>
+      <Destination>10162</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to the archangel Michael-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an emerald key to the archangel Michael-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10117</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an angel to The end of the hall-->
+      <Type>NPC</Type>
+      <Destination>10166</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the archangel Gabriel to Gabriel's chammber-->
+      <Type>NPC</Type>
+      <Destination>10167</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to the archangel Gabriel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a ruby key to the archangel Gabriel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10118</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an angel to The end of the hall-->
+      <Type>NPC</Type>
+      <Destination>10171</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a holy spirit to A holy spirit's chamber-->
+      <Type>NPC</Type>
+      <Destination>10172</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10112</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a diamond key to a holy spirit-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10119</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an angel to A door of pure energy-->
+      <Type>NPC</Type>
+      <Destination>10176</Destination>
+      <Count>2</Count>
+      <Max>14</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gleaming broadsword to an angel-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Holiness Incarnate to The Judgement seat-->
+      <Type>NPC</Type>
+      <Destination>10177</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>10113</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a halo to the Holiness Incarnate-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a shield of light to the Holiness Incarnate-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a band of light to the Holiness Incarnate-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a band of light to the Holiness Incarnate-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn pure wrath to the Holiness Incarnate-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>10120</Vnum>
+    </Reset>
+  </Resets>
+</Area>

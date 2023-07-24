@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Valhalla</Name>
+    <Info></Info>
+    <VnumStart>1</VnumStart>
+    <VnumEnd>99</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits></Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>1</VNum>
+      <Name>The Void</Name>
+      <Description>You are in the void.\nEmptiness surrounds you.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>1</Vnum>
+      <name>monk</name>
+      <description>A monk dressed in Sunwuko's looks very intimidating</description>
+      <longDescription>A monk dressed in Sunwuko's is here.</longDescription>
+      <shortDescription>A monk</shortDescription>
+      <Sex>None</Sex>
+      <level>60</level>
+      <HitPointDiceSides>0</HitPointDiceSides>
+      <HitPointDiceCount>0</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>180</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags></flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>1</VNum>
+      <Name>silver coin</Name>
+      <ShortDescription>a silver coin</ShortDescription>
+      <LongDescription>A silver coin is here.</LongDescription>
+      <Description>A silver coin</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material></Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>2</VNum>
+      <Name>silver coins</Name>
+      <ShortDescription>a pile of silver coins</ShortDescription>
+      <LongDescription>A pile of silver coins is here.</LongDescription>
+      <Description>A pile of silver coins</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>1</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material></Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>3</VNum>
+      <Name>gold coin</Name>
+      <ShortDescription>a gold coin</ShortDescription>
+      <LongDescription>A gold coin is here.</LongDescription>
+      <Description>A gold coin</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material></Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>4</VNum>
+      <Name>gold coins</Name>
+      <ShortDescription>a pile of {0} gold coins</ShortDescription>
+      <LongDescription>A pile of gold coins is here.</LongDescription>
+      <Description>A pile of gold coins</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material></Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>5</VNum>
+      <Name>silver gold coins</Name>
+      <ShortDescription>a pile of {0} silver and {1} gold coins</ShortDescription>
+      <LongDescription>A pile of coins is here.</LongDescription>
+      <Description>A pile of gold coins</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material></Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>6</VNum>
+      <Name>corpse {0}</Name>
+      <ShortDescription>the corpse of {0}</ShortDescription>
+      <LongDescription>The corpse of {0} is lying here.</LongDescription>
+      <Description>The corpse of {0} is lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>100</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>PC_Corpse</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material></Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>7</VNum>
+      <Name>head</Name>
+      <ShortDescription>the head of {0}</ShortDescription>
+      <LongDescription>The severed head of {0} is lying here.</LongDescription>
+      <Description>The head of {0} is lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="100" SpellName="power word kill" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>8</VNum>
+      <Name>heart</Name>
+      <ShortDescription>the heart of {0}</ShortDescription>
+      <LongDescription>The bloodied, torn-out heart of {0} is lying here.</LongDescription>
+      <Description>The bloodied, torn-out heart of {0} is lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Heart</ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>9</VNum>
+      <Name>arm</Name>
+      <ShortDescription>the arm of {0}</ShortDescription>
+      <LongDescription>The disembodied arm of {0} is lying here.</LongDescription>
+      <Description>The disembodied arm of {0} is lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>10</VNum>
+      <Name>leg</Name>
+      <ShortDescription>the leg of {0}</ShortDescription>
+      <LongDescription>The chopped-off leg of {0} is lying here.</LongDescription>
+      <Description>The chopped-off leg of {0} is lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>11</VNum>
+      <Name>guts</Name>
+      <ShortDescription>the guts of {0}</ShortDescription>
+      <LongDescription>A steaming pile of {0}'s intestines are lying here.</LongDescription>
+      <Description>A steaming pile of {0}'s intestines are lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Poison</ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12</VNum>
+      <Name>brain brains</Name>
+      <ShortDescription>the brains of {0}</ShortDescription>
+      <LongDescription>The splattered brains of {0} are lying here.</LongDescription>
+      <Description>The splattered brains of {0} are lying here.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13</VNum>
+      <Name>loaf bread</Name>
+      <ShortDescription>a loaf of bread</ShortDescription>
+      <LongDescription>A loaf of bread is lying here.</LongDescription>
+      <Description>A freshl loaf of fluffy bread smells delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>25</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bread</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>14</VNum>
+      <Name>rack spare ribs</Name>
+      <ShortDescription>a rack of spare ribs</ShortDescription>
+      <LongDescription>A rack of spare ribs is lying here.</LongDescription>
+      <Description>A piping hot rack of spare ribs smells delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>15</VNum>
+      <Name>honey apple</Name>
+      <ShortDescription>a honey covered apple</ShortDescription>
+      <LongDescription>An apple covered in honey is lying here.</LongDescription>
+      <Description>An apple covered in honey looks delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>5</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>fruit</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>16</VNum>
+      <Name>juicy pear</Name>
+      <ShortDescription>a juicy pear</ShortDescription>
+      <LongDescription>A juicy pear is lying here.</LongDescription>
+      <Description>A juicy pear smells delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>5</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>fruit</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>17</VNum>
+      <Name>roasted chicken</Name>
+      <ShortDescription>a roasted chicken</ShortDescription>
+      <LongDescription>A roasted chicken is lying here.</LongDescription>
+      <Description>A plump, whole roasted chicken smells delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>30</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>18</VNum>
+      <Name>leg lamb</Name>
+      <ShortDescription>a leg of lamb</ShortDescription>
+      <LongDescription>A leg of lamb is lying here.</LongDescription>
+      <Description>A leg of lamb looks filling.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="100" SpellName="power word kill" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>20</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>19</VNum>
+      <Name>fish pufferfish</Name>
+      <ShortDescription>a pufferfish</ShortDescription>
+      <LongDescription>A cooked pufferfish is lying here.</LongDescription>
+      <Description>A cooked pufferfish might be safe to eat.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>15</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>meat</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>20</VNum>
+      <Name>slice chocolate cake</Name>
+      <ShortDescription>a chocolate cake</ShortDescription>
+      <LongDescription>A slice of chocolate cake is lying here.</LongDescription>
+      <Description>A sweet slice of chocolate cake looks delicious.</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Food</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>5</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bread</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>22</VNum>
+      <Name>spring</Name>
+      <ShortDescription>a magical spring</ShortDescription>
+      <LongDescription>A magical spring flows from the ground here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Fountain</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>48</Nutrition>
+      <Liquid>water</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>water</Material>
+      <Charges>2083</Charges>
+      <MaxCharges>2083</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23</VNum>
+      <Name>spring</Name>
+      <ShortDescription>a natural spring</ShortDescription>
+      <LongDescription>A natural spring has emerged from the earth.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Fountain</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>48</Nutrition>
+      <Liquid>water</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>water</Material>
+      <Charges>2083</Charges>
+      <MaxCharges>2083</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets />
+  <Helps>
+    <Help>
+      <Level>-1</Level>
+      <Keyword>GREETING</Keyword>
+      <Text>.     ######## ##     ## ########       ######  ########  #### ##     ##  ######   #######  ##    ## 
+        ##    ##     ## ##            ##    ## ##     ##  ##  ###   ### ##    ## ##     ## ###   ## 
+        ##    ##     ## ##            ##       ##     ##  ##  #### #### ##       ##     ## ####  ## 
+        ##    ######### ######        ##       ########   ##  ## ### ##  ######  ##     ## ## ## ## 
+        ##    ##     ## ##            ##       ##   ##    ##  ##     ##       ## ##     ## ##  #### 
+        ##    ##     ## ##            ##    ## ##    ##   ##  ##     ## ##    ## ##     ## ##   ### 
+        ##    ##     ## ########       ######  ##     ## #### ##     ##  ######   #######  ##    ## 
+ 
+ ######  ########    ###    #### ##    ## ######## ########     ##          ###    ##    ## ########   ######  
+##    ##    ##      ## ##    ##  ###   ## ##       ##     ##    ##         ## ##   ###   ## ##     ## ##    ## 
+##          ##     ##   ##   ##  ####  ## ##       ##     ##    ##        ##   ##  ####  ## ##     ## ##       
+ ######     ##    ##     ##  ##  ## ## ## ######   ##     ##    ##       ##     ## ## ## ## ##     ##  ######  
+      ##    ##    #########  ##  ##  #### ##       ##     ##    ##       ######### ##  #### ##     ##       ## 
+##    ##    ##    ##     ##  ##  ##   ### ##       ##     ##    ##       ##     ## ##   ### ##     ## ##    ## 
+ ######     ##    ##     ## #### ##    ## ######## ########     ######## ##     ## ##    ## ########   ######  
+ 
+A shimmering myriad of blazing white lines flashes across your plane of vision.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\x
+Your body stretches and warps violently beneath your spirit as it struggles to become alive once again. 
+\g@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @\x
+Somewhere in the depths of your memories, faded and blurred, a quiet voice pleads with you, 'Do not forget...'
+
+As quickly as the voice entered your mind, it drifts away.
+
+All you know is that you are now within the King's Labyrinth...</Text>
+    </Help>
+    <Help>
+      <Level>-1</Level>
+      <Keyword>DIKU</Keyword>
+      <Text>.                    Original game idea, concept, and design:
+
+          Katja Nyboe               [Superwoman] (katz@freja.diku.dk)
+          Tom Madsen              [Stormbringer] (noop@freja.diku.dk)
+          Hans Henrik Staerfeldt           [God] (bombman@freja.diku.dk)
+          Michael Seifert                 [Papi] (seifert@freja.diku.dk)
+          Sebastian Hammer               [Quinn] (quinn@freja.diku.dk)
+
+
+Developed at: DIKU -- The Department of Computer Science
+                      at the University of Copenhagen.
+
+This mud is also based on Merc 2.1, created by Furey, Hatchet, and Kahn.
+See help 'MERC' for more information.
+
+ROM 2.4 beta, copyright 1993 - 1996 Russ Taylor
+ROM was started in early February 1993, using Merc 1.0 code.
+See help 'ROM' for more information
+
+The Tartarus Code enhancedments and additions 
+are copyright (C) 1997, 1998 by Daniel Graham
+See help 'TARTARUS' for more information</Text>
+    </Help>
+    <Help>
+      <Level>-1</Level>
+      <Keyword>ROM</Keyword>
+      <Text>ROM started in early February 1993, using Merc 1.0 code. In July of 1993,  
+ROM II was started, eventually replacing the original ROM.  ROM was up for
+a little over a year, after which the code (version 2.3) was released,
+and various other ROM muds were started, including Rivers of Mud under
+a new management (Zump's ROM), at rom.org 9000.
+
+Alander's current project is Athen, the sequel to the ROM code.
+It will be found at hypercube.org 6666, when it is opened.
+
+The following people contributed to the ROM flavor of the merc base code:
+
+Socials --
+    Kelsey and Liralen
+
+New, Improved Valhalla --
+    Liralen
+
+Puff's new special proc and improved poofin/poofout code --
+    Seth
+
+Maps and map shop --
+    Ezra, Regnan (Olympus)
+
+Nirvana zone --
+    Forstall (mobiles rewritten by Alander)
+
+Mob Factory --
+    Pinkfloyd (originally written for ROM, mobiles rewritten by Alander)
+
+Geographically correct Midgaard (tm) --
+    Alander
+
+Ideas and playtesting --
+    Thousands of dedicated mudders around the world
+
+Beta testing --
+    Ken Blosser, Doug Araya, and Sherene Neil all helped with bug reports
+    and suggestions, saving a lot of headaches
+
+New Thalos area was donated by Onivel of Jedi, who was also the originator
+of the ASCII flags used in the zone files
+ROM 2.4 was developed during my time with Moosehead mud, and the
+release
+shares many of the features I wrote while I was there.  Additional code
+was written by Seth Scott (enchant armor, the new poofin/poofout), and many
+contributions and ideas from the Merc list were used.  Portions of Rusty's
+code from Moosehead also remain.
+
+The new features of 2.4 were largely produced in bull sessions with
+Gabrielle Taylor and Brian Moore, without whom this release wouldn't
+have happened.  In particular, the new privacy code, furniture, and
+wiznet are largely the results of Gabrielle's ideas.
+
+Changes to the standard diku mob and object format, as well as the changes
+to Merc 2.1 source code, were done by Alander over many a late night of
+hair-pulling. Hope you enjoy it.
+
+(my apologies if anyone was forgotten in this list)</Text>
+    </Help>
+    <Help>
+      <Level>-1</Level>
+      <Keyword>MERC</Keyword>
+      <Text>This mud is based on Merc 2.1, created by Furey, Hatchet, and Kahn.  
+Merc 2.1 is available as Merc_21.tar.gz from ftp.tcp.com and 
+ftp.math.okstate.edu.
+E-mail to 'majordomo@webnexus.com' to join the merc mailing list.
+
+Thanks to ...
+  ... Diku Mud for starting it all.
+  ... The Free Software Foundation and DJ Delorie for kick-ass tools.
+  ... Copper Mud and Alfa Mud for releasing their code and worlds.
+  ... Aod of Generic for ... well, everything.  You're a hoopy frood, Aod.
+  ... Alander for many ideas and contributions.
+  ... John Brothers of Silly for permission to use Silly code and worlds.
+  ... Zrin for administering the mailing list.
+  ... Abaddon for proofreading our comm.c.
+  ... Hind, Quin, Vic, Diavolo, Oleg, Trienne, and others for porting help.
+  ... Diavolo, Grodyn, Morgenes, and others for code and bug fixes.
+  ... Raff, Doctor, VampLestat, Nirrad, Tyrst, PinkF, Chris, Glop for worlds.
+  ... the players and imps of Mud Dome, Final Mud, Mud Lite, Vego Mud, Rivers
+      of Mud, Ruhr Mud, and Mystic Realms for bug reports, ideas, new code,
+      and hours of enjoyment.
+
+Also see "help ROM" for information about the Rivers of Mud code base.</Text>
+    </Help>
+    <Help>
+      <Level>-1</Level>
+      <Keyword>TARTARUS</Keyword>
+      <Text>Tartarus code was started in late 1996 and completed around mid 1997. It
+was developed at darkmists.mudservices.com for use on the mud Dark Mists
+and used Rom2.4b3 code. The original coder on the mud was Thrym who
+began the mud with Styx, who contributed ideas and help. Ceran joined
+the team and contributed most of the core code, including all the class
+and clan skills/spells as well as the majority of fully new code, before
+leaving in 1997 because of conflicts with the other immortals.
+
+This code release is named Tartarus and contains Ceran's original coding
+plus rewritten code. This code is for use on Rom2.4b muds, although it can
+be easily hacked for parts to use on other code bases. It is provided
+solely for the MUDing community as a way of giving back to it what has
+been freely given many times before.
+The following people contributed to the Tartarus release:
+
+Code --
+	Thrym who installed the MOBProgs patch into the base ROM code.
+
+Areas --
+	-Lilith (Arkham) (Unable to contact this person. See 
+         README.tararus file which comes with this derivative code)
+	-Kay, who wrote a lot of Nightfall and Thorbardin.
+	-Zenan, who did Rakshasa Domain when I got bogged down with code
+         and other areas.</Text>
+    </Help>
+  </Helps>
+</Area>

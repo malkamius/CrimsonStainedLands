@@ -1,0 +1,3243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Dead Forest</Name>
+    <Info></Info>
+    <VnumStart>24200</VnumStart>
+    <VnumEnd>24299</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{10 40} Ceran   The Dead Forest</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>24200</VNum>
+      <Name>Entrance to the Dead Forest</Name>
+      <Description>The land around you becomes more ravaged and decimated. Trees that were
+lush and green to the north seem more twisted and dried here. To the south
+the forest appears darker and more foreboding, as if something has corrupted
+the very essence of it.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>40916</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24201</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24201</VNum>
+      <Name>Near the Entrance to the Dead Forest</Name>
+      <Description>Here inside the beginings of the forest there are signs of wildlife, but they
+are few and far between. The normal forest sounds of birds and small animals
+in the underbrush seem absent and the darkness around you is most unnatural.
+The trees around you seem to be twisted and dead, like something had drained
+the life from them.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24200</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24202</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24202</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24201</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24203</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24203</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24204</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24202</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24204</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24203</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24210</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24205</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24206</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24206</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24205</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24207</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24207</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24206</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24208</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24208</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24209</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24207</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24209</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24210</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24208</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24210</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24204</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24211</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24209</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24211</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24212</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24210</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24212</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24211</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24213</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24213</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24214</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24212</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24214</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24215</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24213</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24215</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24216</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24218</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24214</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24216</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24215</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24217</VNum>
+      <Name>Before a collapsed tree</Name>
+      <Description>The forest stops short at a huge tree that has fallen down here. Devestated
+and twisted foliage surround it but nothing seems to be regrowing.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24218</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24218</VNum>
+      <Name>Within the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24219</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24217</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24215</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24219</VNum>
+      <Name>Before a dark clearing</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. To the east you can see a clearing in the forest, and large ominous
+shapes move slowly through the shadows and mist.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24222</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24218</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24220</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24221</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24222</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24221</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24276</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24223</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24220</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24222</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24220</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24223</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24225</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24219</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24223</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24221</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24224</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24226</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24222</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24224</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24276</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24227</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24223</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24225</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24222</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24226</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24226</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24223</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24227</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24225</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24227</VNum>
+      <Name>Within the Dead Woodlands</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. Around you large ominous shapes move slowly through the shadows.
+To the south you can see the forest gets even darker...</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24224</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24228</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24226</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24228</VNum>
+      <Name>At a Darkened Clearing</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. To the east the sound of large, ungainly creatures can be heard,
+along with a lot of glutteral growling and hissing.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24227</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24229</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24247</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24229</VNum>
+      <Name>On a path in the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. To the east the sound of large, ungainly creatures can be heard,
+along with a lot of glutteral growling and hissing.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24230</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24228</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24230</VNum>
+      <Name>On a path in the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest. To the north the sound of large, ungainly creatures can be heard,
+along with a lot of glutteral growling and hissing.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24231</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24229</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24231</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24232</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24235</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24230</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24232</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24233</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24231</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24233</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24234</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24235</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24232</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24234</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24236</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24233</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24235</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24233</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24236</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24237</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24231</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24236</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24234</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24241</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24238</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24235</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24237</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24235</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24238</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24238</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24236</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24243</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24237</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24239</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24240</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24241</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24240</VNum>
+      <Name>A Bloody corner of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24239</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24241</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24239</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24242</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24243</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24236</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24242</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24244</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24241</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24243</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24241</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24245</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24238</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24244</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24242</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24246</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24245</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24243</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24246</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24246</VNum>
+      <Name>A bloody part of the Dead Forest</Name>
+      <Description>The ground here is covered in sticky green ichor and scaly bits of flesh.
+The smell of putrid waste and wafts in the air, mixing in with the stench
+of dead foliage and carrion matter.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24244</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24245</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24247</VNum>
+      <Name>On a path in the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24228</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24248</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24248</VNum>
+      <Name>On a path in the Dead Forest</Name>
+      <Description>Around you the trees appear dead and lifeless. Even the small vegetation
+that has grown on the forest floor has a taint of evil to it. Faint mist
+swirls around you and sends beams of light scattering into the darkened
+forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24247</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24249</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24249</VNum>
+      <Name>Before a Black River</Name>
+      <Description>The forest ends here before a dark river. Small malformed shapes squirm and
+thrash about in the liquid but it is hard to see exactly what they are over
+the mist that hangs loosely across the water.  A makeshift bridge has been
+partially erected over the river.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24248</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24250</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24250</VNum>
+      <Name>On a decayed bridge</Name>
+      <Description>You stand upon a decaying and decrepit bridge made from some kind of dead
+tree trunk. Below you a hideous black river flows past, tiny shapes splashing
+and hissing within. The bridge heads north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24249</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24251</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24251</VNum>
+      <Name>On a decayed bridge</Name>
+      <Description>You stand upon a decaying and decrepit bridge made from some kind of dead
+tree trunk. Below you a hideous black river flows past, tiny shapes splashing
+and hissing within. The bridge heads north and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24250</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24252</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24252</VNum>
+      <Name>On the South side of the Bridge</Name>
+      <Description>You stand at the south side of a decaying old bridge made from the trunk of
+a dead tree. Around you mist lies softly upon the forest floor, partially
+hiding the decay and death. Only twisted and crumpled trees lie all around
+you.  To the north the bridge crosses over a black river, while south there
+appears  to be a large dark clearing.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24251</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24253</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24253</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24252</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24254</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24257</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24254</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24255</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24258</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24253</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24255</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24256</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24259</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24254</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24256</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24260</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24255</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24257</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the east and south you hear the
+faint  sounds of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24253</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24258</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24258</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the east and south you hear the
+faint  sounds of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24254</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24259</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24262</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24257</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24259</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24255</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24260</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24263</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24258</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24260</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24256</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24264</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24259</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24262</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. For off to the south you hear the faint sounds
+of real forest animals.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24258</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24263</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24263</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. To the south the forest seems to become more
+lush and green...</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24259</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>24264</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24265</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24262</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24264</VNum>
+      <Name>Within a Dark Clearing</Name>
+      <Description>The dead forest seems not quite so bad here. Trees are still twisted but not
+quite so badly, and some greenery still exists in sparse spots. All around
+you the dark clearing extends. Something seems a bit different about this part
+of the clearing...</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24260</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>24263</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>24265</VNum>
+      <Name>On a sparsely vegetated path</Name>
+      <Description>You stand upon a path with sparse but green foliage. To the north the forest
+becomes dead and dark, with a large clearing all you can see. South of here
+the region seems to get greener and more like a REAL forest.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24263</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>24300</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>24202</Vnum>
+      <name>lesser troll</name>
+      <description>This troll is big and disgusting. It's green hide partially hides it in
+the surrounding wastes, but not enough for your liking.</description>
+      <longDescription>A horrible troll is here scavenging through the wasted forest.</longDescription>
+      <shortDescription>a lesser troll</shortDescription>
+      <Sex>None</Sex>
+      <level>18</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>300</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>360</hitpoints>
+      <maxhitpoints>360</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-30</ArmorBash>
+      <ArmorSlash>-30</ArmorSlash>
+      <ArmorPierce>-30</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Large</size>
+      <race>troll</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>18</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>200</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Scavenger StayArea Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>24203</Vnum>
+      <name>greater troll</name>
+      <description>This troll is big and disgusting. It's green hide partially hides it in
+the surrounding wastes, but not enough for your liking.</description>
+      <longDescription>A greater troll is here scavenging through the wasted forest.</longDescription>
+      <shortDescription>a greater troll</shortDescription>
+      <Sex>None</Sex>
+      <level>25</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>600</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>500</hitpoints>
+      <maxhitpoints>500</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-70</ArmorBash>
+      <ArmorSlash>-70</ArmorSlash>
+      <ArmorPierce>-70</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Large</size>
+      <race>troll</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>25</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>400</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Scavenger StayArea Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>9</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>24204</Vnum>
+      <name>lesser naga</name>
+      <description>A demon naga, mean and cruel. Born of dark magic and wanting nothing
+but pain and suffering.</description>
+      <longDescription>A huge serpent with a man's face hisses and slithers by.</longDescription>
+      <shortDescription>a lesser forest naga</shortDescription>
+      <Sex>None</Sex>
+      <level>35</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1450</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>700</hitpoints>
+      <maxhitpoints>700</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-120</ArmorBash>
+      <ArmorSlash>-120</ArmorSlash>
+      <ArmorPierce>-120</ArmorPierce>
+      <ArmorExotic>-60</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>35</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>400</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Scavenger StayArea Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>15</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>24205</Vnum>
+      <name>anti anti-ranger scout</name>
+      <description>This scout has been sent to check and make sure the devestation of the
+forest is still prevailing and that nobody has come to prevent the decay.</description>
+      <longDescription>An evil looking anti-ranger scout is here watching the forest.</longDescription>
+      <shortDescription>an anti-ranger scout</shortDescription>
+      <Sex>Male</Sex>
+      <level>41</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>2250</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>200</ManaPointDiceBonus>
+      <hitpoints>820</hitpoints>
+      <maxhitpoints>820</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-140</ArmorBash>
+      <ArmorSlash>-140</ArmorSlash>
+      <ArmorPierce>-140</ArmorPierce>
+      <ArmorExotic>-60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>41</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>18</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>24200</VNum>
+      <Name>trollsword troll sword</Name>
+      <ShortDescription>a Troll-sword</ShortDescription>
+      <LongDescription>A large double-bladed troll sword is here.</LongDescription>
+      <Description></Description>
+      <Level>33</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>18</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>6000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>24201</VNum>
+      <Name>troll skin robe</Name>
+      <ShortDescription>a robe of toughened troll-skin</ShortDescription>
+      <LongDescription>A piece of disgusting green troll skin lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>35</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Dark Evil NoDrop AntiGood</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>12000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>flesh</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>7</ArmorBash>
+      <ArmorSlash>6</ArmorSlash>
+      <ArmorPierce>7</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>24202</VNum>
+      <Name>slayer sword troll-slayer</Name>
+      <ShortDescription>a sword named 'Troll-slayer'</ShortDescription>
+      <LongDescription>A large sword named 'Troll-slayer' is here.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>acbite</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>7</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>18</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>8000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>slayer sword troll-slayer</Keyword>
+          <Description>This sword seems to have been designed specifically for the slaying of trolls.
+Like someone wanted to have something special in case they needed to suddenly
+control a large number of trolls or something.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>24203</VNum>
+      <Name>dagger naga-slayer</Name>
+      <ShortDescription>a dagger named 'naga-slayer'</ShortDescription>
+      <LongDescription>A wickedly sharp dagger is sticking into the ground here.</LongDescription>
+      <Description></Description>
+      <Level>42</Level>
+      <WeaponDamageType>slice</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>9100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24205</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24205</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24206</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24207</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24207</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24208</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24209</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24210</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24212</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24212</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24213</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24214</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24215</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24216</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Before a collapsed tree-->
+      <Type>NPC</Type>
+      <Destination>24217</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24218</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24220</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24222</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24223</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24225</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24225</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24226</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser troll to Within the Dead Woodlands-->
+      <Type>NPC</Type>
+      <Destination>24227</Destination>
+      <Count>3</Count>
+      <Max>22</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24231</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24232</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24234</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24235</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24235</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a Troll-sword to a greater troll-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24200</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24235</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24236</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24237</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24238</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a robe of toughened troll-skin to a greater troll-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24201</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24239</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A Bloody corner of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24240</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24241</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a robe of toughened troll-skin to a greater troll-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24201</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24242</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24243</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24244</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a greater troll to A bloody part of the Dead Forest-->
+      <Type>NPC</Type>
+      <Destination>24244</Destination>
+      <Count>4</Count>
+      <Max>16</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24253</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24255</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24256</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24257</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24258</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an anti-ranger scout to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24258</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>24205</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a sword named 'Troll-slayer' to an anti-ranger scout-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dagger named 'naga-slayer' to an anti-ranger scout-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24259</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24262</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lesser forest naga to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24263</Destination>
+      <Count>3</Count>
+      <Max>8</Max>
+      <Vnum>24204</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an anti-ranger scout to Within a Dark Clearing-->
+      <Type>NPC</Type>
+      <Destination>24264</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>24205</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a sword named 'Troll-slayer' to an anti-ranger scout-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24202</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dagger named 'naga-slayer' to an anti-ranger scout-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>24203</Vnum>
+    </Reset>
+  </Resets>
+</Area>

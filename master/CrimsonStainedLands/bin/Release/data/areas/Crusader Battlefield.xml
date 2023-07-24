@@ -1,0 +1,5523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Crusader Battlefield</Name>
+    <Info></Info>
+    <VnumStart>23100</VnumStart>
+    <VnumEnd>23199</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{DEATH} Dioxide Battlefield</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>23100</VNum>
+      <Name>Eastern Trail</Name>
+      <Description>This dusty trail extends to the west towards great fields and hills. The
+trodden dirt beneath you looks used by thousands of soldiers, carts, and
+horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>7802</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23101</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23101</VNum>
+      <Name>Eastern Trail</Name>
+      <Description>This dusty trail extends to the west towards great fields and hills. The
+trodden dirt beneath you looks used by thousands of soldiers, carts, and
+horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23100</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23102</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23102</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. Fields
+extend in all directions, except a trail leads off in the eastern direction.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23114</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23101</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23103</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23115</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23103</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23102</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23104</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23116</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23104</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23103</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23105</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23105</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23116</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23104</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23117</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23106</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23106</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23108</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23105</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23119</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23126</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23107</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23112</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23114</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23115</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23110</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23108</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23109</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23116</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23106</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23128</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23109</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23110</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23115</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23108</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23130</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23110</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23111</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23107</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23109</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23132</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23111</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23136</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23112</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23110</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23139</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23112</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23113</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23107</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23111</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23113</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23114</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23112</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23114</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23113</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23102</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23107</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23115</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23107</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23102</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23116</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23109</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23116</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23115</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23103</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23105</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23108</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23117</VNum>
+      <Name>Southern Trail</Name>
+      <Description>This dusty trail is south of the great March Hill. The trodden dirt beneath
+you looks used by thousands of soldiers, carts, and horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23105</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23118</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23119</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23118</VNum>
+      <Name>Southern Trail</Name>
+      <Description>This dusty trail is south of the great March Hill. The trodden dirt beneath
+you looks used by thousands of soldiers, carts, and horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23117</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23120</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23119</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23106</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23117</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23120</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23123</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23120</VNum>
+      <Name>Southern Trail</Name>
+      <Description>This dusty trail is south of the great March Hill. The trodden dirt beneath
+you looks used by thousands of soldiers, carts, and horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23119</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23118</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23121</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23122</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23121</VNum>
+      <Name>Southern Trail</Name>
+      <Description>This dusty trail is south of the great March Hill. The trodden dirt beneath
+you looks used by thousands of soldiers, carts, and horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23120</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23122</VNum>
+      <Name>Southern Trail</Name>
+      <Description>This dusty trail is south of the great March Hill. The trodden dirt beneath
+you looks used by thousands of soldiers, carts, and horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23123</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23120</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23123</VNum>
+      <Name>Southern Trail</Name>
+      <Description>This dusty trail is south of the great March Hill. The trodden dirt beneath
+you looks used by thousands of soldiers, carts, and horses.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23124</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23119</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23122</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23124</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23133</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23123</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23146</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23125</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23125</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23127</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23126</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23124</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23126</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23128</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23125</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23106</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23127</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23129</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23128</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23125</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23133</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23128</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23130</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23126</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23127</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23108</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23129</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23131</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23130</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23127</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23134</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23130</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23132</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23128</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23129</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Exit description</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23109</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23131</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23132</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23129</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23135</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23132</VNum>
+      <Name>March Hill</Name>
+      <Description>You are standing atop March Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see Storm Hill in the north west direction of
+you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23130</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23131</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23110</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23133</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23134</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23124</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23147</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23127</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23134</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23135</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23133</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23148</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23127</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23135</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23139</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23134</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23149</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23131</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23136</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23137</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23111</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23138</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23137</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23136</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23138</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23166</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23136</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23139</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23169</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23139</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23138</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23111</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23135</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23140</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23140</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23139</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23149</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23141</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23175</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23141</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23140</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23142</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23150</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23174</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23142</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23141</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23149</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23143</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23151</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23143</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23142</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23148</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23144</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23152</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23144</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23143</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23147</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23145</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23153</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23145</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23144</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23146</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23155</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23154</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23146</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23147</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23124</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23156</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23145</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23147</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23148</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23133</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23146</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23144</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23148</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23149</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23134</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23147</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23143</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23149</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23140</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23135</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23148</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23142</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23150</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23141</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23151</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23173</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23151</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23150</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23142</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23152</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23157</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23152</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23151</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23143</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23153</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23158</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23153</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23152</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23144</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23154</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23159</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23154</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23153</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23145</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23155</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23145</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23156</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23156</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23146</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23155</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23157</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23160</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23151</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23158</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23158</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23157</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23152</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23159</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23159</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23158</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23153</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23160</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23161</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23157</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23161</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23162</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23167</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23160</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23162</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23163</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23161</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23163</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23164</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23167</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23162</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23164</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23165</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23168</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23163</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23165</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23166</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23169</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23164</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23166</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23138</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23165</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23167</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23163</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23168</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23161</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23172</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23168</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23164</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23169</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23167</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23171</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23169</VNum>
+      <Name>Bloody fields</Name>
+      <Description>Shouts and screams pierce the air from near and afar. Metal clangs can be
+heard from all around. The filthy soil is wet, soaked with blood. The
+fields extend in all directions.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23165</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23138</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23168</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23170</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23170</VNum>
+      <Name>Storm Hill</Name>
+      <Description>You are standing atop Storm Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see March Hill south of you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23175</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23171</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23169</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23171</VNum>
+      <Name>Storm Hill</Name>
+      <Description>You are standing atop Storm Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see March Hill south of you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23170</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23174</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23172</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23168</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23172</VNum>
+      <Name>Storm Hill</Name>
+      <Description>You are standing atop Storm Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see March Hill south of you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23171</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23173</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23167</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23173</VNum>
+      <Name>Storm Hill</Name>
+      <Description>You are standing atop Storm Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see March Hill south of you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23172</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23174</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23150</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23174</VNum>
+      <Name>Storm Hill</Name>
+      <Description>You are standing atop Storm Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see March Hill south of you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23171</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23175</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23173</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23141</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23175</VNum>
+      <Name>Storm Hill</Name>
+      <Description>You are standing atop Storm Hill.  Fields strewn with blood surround you and
+piles of corpses cover the ground.  More metal clanging can be heard from
+around and beneath you.  You can see March Hill south of you.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23170</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23174</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23140</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>23100</Vnum>
+      <name>swordsman soldier human</name>
+      <description>This soldier is covered with grime and blood.  He looks weary from the
+battles, but continues to fight.</description>
+      <longDescription>A human soldier is here, advancing against the hoard.</longDescription>
+      <shortDescription>a human swordsman</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>5675</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>15</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea Fade AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>15</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>30</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23101</Vnum>
+      <name>swordsman paladin human</name>
+      <description>This holy paladin is covered with grime and blood. He looks weary from the
+battles, but continues to fight.</description>
+      <longDescription>A holy paladin is here, advancing against the hoard.</longDescription>
+      <shortDescription>a human paladin</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>9675</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>45</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea Fade AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>25</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>40</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23102</Vnum>
+      <name>captain troll evil</name>
+      <description>This captain grins evilly as he orders his minions.</description>
+      <longDescription>A troll captain is here, ordering goblins.</longDescription>
+      <shortDescription>a troll captain</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>12675</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Large</size>
+      <race>troll</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>40</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea Fade AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>30</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>40</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23103</Vnum>
+      <name>goblin soldier evil</name>
+      <description>This soldier grins evilly and cackles with delight as blood is spilled.</description>
+      <longDescription>A goblin soldier is here, swarming the humans in numbers.</longDescription>
+      <shortDescription>a goblin soldier</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>5675</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Small</size>
+      <race>goblin</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>70</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea Fade AssistAlign AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>20</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>20</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23104</Vnum>
+      <name>body corpse</name>
+      <description>This corpse was once a soldier on this field. Now it lays here, mutilated
+and dead.</description>
+      <longDescription>An unrecognizable body is here, dying.</longDescription>
+      <shortDescription>someone</shortDescription>
+      <Sex>Male</Sex>
+      <level>10</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>0</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Poison Plague DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23105</Vnum>
+      <name>sir lothar warrior</name>
+      <description>This tall, broad man stands tall and strong. His face is covered with
+dirt and sweat as he continues to command his troops to press forward.</description>
+      <longDescription>A tall human warrior stands here, slaying goblins with every blow.</longDescription>
+      <shortDescription>Sir Lothar</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>3</HitPointDiceCount>
+      <HitPointDiceBonus>25000</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>5</ManaPointDiceCount>
+      <ManaPointDiceBonus>6000</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-500</ArmorBash>
+      <ArmorSlash>-500</ArmorSlash>
+      <ArmorPierce>-500</ArmorPierce>
+      <ArmorExotic>-500</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>70</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Cleric Warrior Healer Rescue AssistAlign</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>40</DamageDiceSides>
+      <DamageDiceCount>3</DamageDiceCount>
+      <DamageDiceBonus>60</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23106</Vnum>
+      <name>youatt warrior</name>
+      <description>This huge, ugly woman towers over her troops and screams vulgarities
+as she strangles and whips the enemy.  She looks like a hairy French
+whore.</description>
+      <longDescription>A huge, hairy woman stands here, cackling insanely as she slays humans.</longDescription>
+      <shortDescription>Youatt</shortDescription>
+      <Sex>Female</Sex>
+      <level>54</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>3</HitPointDiceCount>
+      <HitPointDiceBonus>25000</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>50</ManaPointDiceCount>
+      <ManaPointDiceBonus>8000</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-500</ArmorBash>
+      <ArmorSlash>-500</ArmorSlash>
+      <ArmorPierce>-500</ArmorPierce>
+      <ArmorExotic>-500</ArmorExotic>
+      <size>Giant</size>
+      <race>null</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>70</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive StayArea AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Flying Berserk DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>40</DamageDiceSides>
+      <DamageDiceCount>3</DamageDiceCount>
+      <DamageDiceBonus>60</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23108</Vnum>
+      <name>raag anti paladin anti-paladin</name>
+      <description>This huge fire giant flames with anger as he lashes out at anything
+moving. With every corpse he creates, he seems to get stronger.</description>
+      <longDescription>A huge fire giant stands here, massacring troops with his axe.</longDescription>
+      <shortDescription>Raag</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>3</HitPointDiceCount>
+      <HitPointDiceBonus>27000</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>50</ManaPointDiceCount>
+      <ManaPointDiceBonus>8000</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-500</ArmorBash>
+      <ArmorSlash>-500</ArmorSlash>
+      <ArmorPierce>-500</ArmorPierce>
+      <ArmorExotic>-500</ArmorExotic>
+      <size>Giant</size>
+      <race>null</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>80</hitroll>
+      <damRoll>75</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive StayArea AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Berserk DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>40</DamageDiceSides>
+      <DamageDiceCount>3</DamageDiceCount>
+      <DamageDiceBonus>75</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23109</Vnum>
+      <name>sir cire paladin</name>
+      <description>This tall, broad man stands tall and strong. His face is covered with
+dirt and sweat as he continues to command his troops to press forward.
+He communes blessings and calls wrath apon his enemies.</description>
+      <longDescription>A strong human Paladin stands here, calling apon the wrath of God.</longDescription>
+      <shortDescription>Sir Cire</shortDescription>
+      <Sex>Male</Sex>
+      <level>54</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>3</HitPointDiceCount>
+      <HitPointDiceBonus>27000</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>5</ManaPointDiceCount>
+      <ManaPointDiceBonus>6000</ManaPointDiceBonus>
+      <hitpoints>1080</hitpoints>
+      <maxhitpoints>1080</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-500</ArmorBash>
+      <ArmorSlash>-500</ArmorSlash>
+      <ArmorPierce>-500</ArmorPierce>
+      <ArmorExotic>-500</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>80</hitroll>
+      <damRoll>75</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Cleric Warrior Healer Rescue AssistAlign</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>40</DamageDiceSides>
+      <DamageDiceCount>3</DamageDiceCount>
+      <DamageDiceBonus>75</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>23100</VNum>
+      <Name>silver longsword lothar</Name>
+      <ShortDescription>the silver longsword of Lothar</ShortDescription>
+      <LongDescription>A flawless silver longsword lies here.</LongDescription>
+      <Description></Description>
+      <Level>53</Level>
+      <WeaponDamageType>divine</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23101</VNum>
+      <Name>spear youatt bloody</Name>
+      <ShortDescription>the bloody spear of Youatt</ShortDescription>
+      <LongDescription>A huge, bloody spear lies here.</LongDescription>
+      <Description></Description>
+      <Level>53</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Spear</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>1.8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum AntiGood AntiNeutral NoRemove BurnProof NoUncurse Unholy TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23102</VNum>
+      <Name>raag huge double axe flames</Name>
+      <ShortDescription>the double-bladed axe of Raag</ShortDescription>
+      <LongDescription>A giant double-bladed axe lies here in flames.</LongDescription>
+      <Description></Description>
+      <Level>53</Level>
+      <WeaponDamageType>chop</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum NoDrop AntiGood AntiNeutral NoRemove BurnProof NoUncurse Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23103</VNum>
+      <Name>cire mace glowing purity</Name>
+      <ShortDescription>the holy mace of Cire</ShortDescription>
+      <LongDescription>A glowing mace hovers here, pulsing with purity.</LongDescription>
+      <Description></Description>
+      <Level>53</Level>
+      <WeaponDamageType>divine</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23104</VNum>
+      <Name>helmet salvation</Name>
+      <ShortDescription>the helmet of salvation</ShortDescription>
+      <LongDescription>The helmet of salvation hovers here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Mental" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23105</VNum>
+      <Name>breastplate righteousness</Name>
+      <ShortDescription>the breastplate of righteousness</ShortDescription>
+      <LongDescription>The breastplate of righteousness hovers here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectionEvil" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Disease" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>adamantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>25</ArmorBash>
+      <ArmorSlash>25</ArmorSlash>
+      <ArmorPierce>25</ArmorPierce>
+      <ArmorExotic>25</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23106</VNum>
+      <Name>robe malignancy</Name>
+      <ShortDescription>robe of malignancy</ShortDescription>
+      <LongDescription>The robe of malignancy hovers here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Glow Hum Evil AntiGood AntiNeutral NoRemove NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectionGood" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Holy" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>25</ArmorBash>
+      <ArmorSlash>25</ArmorSlash>
+      <ArmorPierce>25</ArmorPierce>
+      <ArmorExotic>25</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23107</VNum>
+      <Name>belt malice</Name>
+      <ShortDescription>belt of malice</ShortDescription>
+      <LongDescription>The belt of malice hover here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>Take Waist</WearFlags>
+      <ExtraFlags>Glow Hum Evil AntiGood AntiNeutral NoRemove NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="75" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23108</VNum>
+      <Name>shield faith</Name>
+      <ShortDescription>the shield of faith</ShortDescription>
+      <LongDescription>The shield of faith hovers here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>25</ArmorBash>
+      <ArmorSlash>25</ArmorSlash>
+      <ArmorPierce>25</ArmorPierce>
+      <ArmorExotic>25</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23109</VNum>
+      <Name>boots readiness</Name>
+      <ShortDescription>the boots of readiness</ShortDescription>
+      <LongDescription>The boots of readiness hover here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Feet</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23110</VNum>
+      <Name>belt truth</Name>
+      <ShortDescription>the belt of truth</ShortDescription>
+      <LongDescription>The belt of truth hovers here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>6</Weight>
+      <WearFlags>Take Waist</WearFlags>
+      <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="4" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23102</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23102</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23102</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23102</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23102</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23104</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23104</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23106</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23106</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23106</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23106</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23106</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23108</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23108</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Sir Lothar to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23109</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>23105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the silver longsword of Lothar to Sir Lothar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the helmet of salvation to Sir Lothar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the belt of truth to Sir Lothar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the shield of faith to Sir Lothar-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23110</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23110</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23110</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23110</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23110</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23112</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23112</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Raag to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23112</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>23108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the double-bladed axe of Raag to Raag-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn robe of malignancy to Raag-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23114</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23114</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23114</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23114</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23114</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23116</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23116</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23118</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23118</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23118</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23118</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23118</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23120</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23120</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23122</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23122</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23122</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23122</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Southern Trail-->
+      <Type>NPC</Type>
+      <Destination>23122</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23124</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23124</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23126</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23126</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23126</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23126</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23126</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23128</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23128</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23130</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23130</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23130</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23130</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23130</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23132</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to March Hill-->
+      <Type>NPC</Type>
+      <Destination>23132</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23134</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23134</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23134</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23134</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23134</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23136</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23136</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23138</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23138</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23138</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23138</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23138</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23140</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23140</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23142</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23142</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23142</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23142</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23142</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Youatt to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23143</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>23106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the bloody spear of Youatt to Youatt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn belt of malice to Youatt-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23144</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23144</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23146</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23146</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23146</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23146</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23146</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23148</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23148</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23150</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23150</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23150</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23150</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23150</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23152</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23152</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Sir Cire to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23152</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>23109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the holy mace of Cire to Sir Cire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the breastplate of righteousness to Sir Cire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the shield of faith to Sir Cire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the boots of readiness to Sir Cire-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23154</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23154</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23154</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23154</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23154</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23156</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23156</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23158</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23158</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23158</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23158</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23158</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23160</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23160</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23162</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23162</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23162</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23162</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23162</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23164</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23164</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23166</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23166</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23166</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23166</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23166</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23168</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Bloody fields-->
+      <Type>NPC</Type>
+      <Destination>23168</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23170</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23170</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23170</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23170</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23170</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23172</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23172</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human swordsman to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23174</Destination>
+      <Count>4</Count>
+      <Max>250</Max>
+      <Vnum>23100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human paladin to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23174</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a troll captain to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23174</Destination>
+      <Count>2</Count>
+      <Max>125</Max>
+      <Vnum>23102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a goblin soldier to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23174</Destination>
+      <Count>5</Count>
+      <Max>300</Max>
+      <Vnum>23103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn someone to Storm Hill-->
+      <Type>NPC</Type>
+      <Destination>23174</Destination>
+      <Count>2</Count>
+      <Max>100</Max>
+      <Vnum>23104</Vnum>
+    </Reset>
+  </Resets>
+</Area>

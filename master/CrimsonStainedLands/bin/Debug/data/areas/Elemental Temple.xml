@@ -1,0 +1,5147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Elemental Temple</Name>
+    <Info></Info>
+    <VnumStart>13100</VnumStart>
+    <VnumEnd>13199</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{35 51} Amlaruil Elemental Temple</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>13100</VNum>
+      <Name>The Holy of Holy's</Name>
+      <Description>You have stepped into a place feeling unlike any other.  Your very being seems
+questioned.  In every direction you glance, there seems to be endless stars. 
+The floor that had been present suddenly begins wavering in an eerie fashion.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13101</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13101</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The
+floor is decorated in the same checkered layout that is found in other
+sections  of the temple.  To the north is a door that reads 'All Power to Pope
+Medius.'</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13100</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13108</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13120</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13102</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13102</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The floor
+is decorated in the same checkered layout that is found in other sections of
+the  temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13101</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13121</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13103</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13103</VNum>
+      <Name>The Holy Chamber of Frost</Name>
+      <Description>This room is very plain and unfurnished.  The floor seems to have concentric
+circles drawn upon it.  In the center of these circles there stands a small
+pyramid shaped structure that flashes with energy.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13102</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13122</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13104</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13104</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The floor
+is decorated in the same checkered layout that is found in other sections of
+the  temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13103</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13123</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13105</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13105</VNum>
+      <Name>The Holy Chamber of Water</Name>
+      <Description>This room is very plain and unfurnished.  The floor seems to have concentric
+circles drawn upon it.  In the center of these circles there stands a small
+pyramid shaped structure that flashes with energy.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13104</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13124</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13106</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13106</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The floor
+is decorated in the same checkered layout that is found in other sections of
+the  temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13105</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13125</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13107</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13107</VNum>
+      <Name>The Holy Chamber of Earth</Name>
+      <Description>This room is very plain and unfurnished.  The floor seems to have concentric
+circles drawn upon it.  In the center of these circles there stands a small
+pyramid shaped structure that flashes with energy.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13106</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13126</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13108</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The floor
+is decorated in the same checkered layout that is found in other sections of
+the  temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13109</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13119</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13101</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13109</VNum>
+      <Name>The Holy Chamber of Air</Name>
+      <Description>This room is very plain and unfurnished.  The floor seems to have concentric
+circles drawn upon it.  In the center of these circles there stands a small
+pyramid shaped structure that flashes with energy.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13110</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13118</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13108</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13110</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The floor
+is decorated in the same checkered layout that is found in other sections of
+the  temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13111</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13117</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13109</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13111</VNum>
+      <Name>The Holy Chamber of Fire</Name>
+      <Description>This room is very plain and unfurnished.  The floor seems to have concentric
+circles drawn upon it.  In the center of these circles there stands a small
+pyramid shaped structure that flashes with energy.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13112</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13116</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13110</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13112</VNum>
+      <Name>A waiting room</Name>
+      <Description>This room is lined with many luxurious furnishings and wall hangings.  The floor
+is decorated in the same checkered layout that is found in other sections of
+the  temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13113</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13115</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13111</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13113</VNum>
+      <Name>The Holy Chamber of Electricity</Name>
+      <Description>This room is very plain and unfurnished.  The floor seems to have concentric
+circles drawn upon it.  In the center of these circles there stands a small
+pyramid shaped structure that flashes with energy.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13114</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13112</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13114</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13113</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13115</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13115</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13112</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13114</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13116</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13116</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13111</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13115</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13117</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13117</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13110</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13116</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13118</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13118</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13109</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13117</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13119</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13119</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13108</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13118</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13127</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13120</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13120</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13101</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13119</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13121</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13121</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13102</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13120</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13122</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13122</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13103</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13121</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13123</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13123</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13104</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13122</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13124</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13124</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13105</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13123</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13125</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13125</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13106</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13124</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13126</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13126</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13107</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13125</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13127</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo. Barely
+discernable to the  north is a heavy oaken door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13119</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13128</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13128</VNum>
+      <Name>A candlelit hallway</Name>
+      <Description>Candles line the walls here.  The artwork is exquisite depicting many scenes of
+dragons and mages.  The hallway is silent, lacking even the most basic of
+sound.   Every step you take fails to emit any resounding echo.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13127</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13129</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13129</VNum>
+      <Name>The Temple Alter</Name>
+      <Description>This section of the sanctuary seems much like all the rest.  It holds the same
+beautifully laid checkerboard pattern upon the floor.  Here in the center of
+this area, you find a large golden altar.  Barely discernible here you can
+make  out the shape of a door behind the altar.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13128</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13144</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13152</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13130</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13130</VNum>
+      <Name>Northern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To the east there stands a large altar, while to the
+south there can been seen a statue standing. Standing before you is a large
+statue of a cloaked figure with the name 'Arch-Bishop Lirthyn' inscribed at
+its  base.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13129</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13153</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13131</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13131</VNum>
+      <Name>Northern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To the east there stands a large altar, while to the
+south there can been seen a statue standing.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13130</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13154</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13132</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13132</VNum>
+      <Name>Northwest Corner of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13131</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13155</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13133</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13133</VNum>
+      <Name>A small hallway</Name>
+      <Description>The passageway here is simple and humble.  Unlike other areas of the Temple
+there are no signs of expense or extravagance.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13132</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13134</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13134</VNum>
+      <Name>A small hallway</Name>
+      <Description>The passageway here is simple and humble.  Unlike other areas of the Temple
+there are no signs of expense or extravagance.  There are doors here leading
+elsewhere.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13136</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13133</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13143</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13135</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13135</VNum>
+      <Name>An Acolyte's Chambers</Name>
+      <Description>The lighting in this room is considerably dimmer than the rest of the temple.
+There is a small cot sitting on one corner of this room.  In the other there
+is  a small area with a pillow.  The walls are plain and simple with nothing
+adorning them.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13134</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13136</VNum>
+      <Name>An Acolyte's Chambers</Name>
+      <Description>The lighting in this room is considerably dimmer than the rest of the temple.
+There is a small cot sitting on one corner of this room.  In the other there
+is  a small area with a pillow.  The walls are plain and simple with nothing
+adorning them.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13134</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13143</VNum>
+      <Name>An Acolyte's Chambers</Name>
+      <Description>The lighting in this room is considerably dimmer than the rest of the temple.
+There is a small cot sitting on one corner of this room.  In the other there
+is  a small area with a pillow.  The walls are plain and simple with nothing
+adorning them.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13134</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13144</VNum>
+      <Name>Northern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To the west there stands a large altar, while to the
+south there can been seen a statue standing. Standing before you is a large
+statue of a cloaked figure with the name 'Arch-Bishop Wyndstrom' inscribed at
+its base.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13145</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13129</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13145</VNum>
+      <Name>Northern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To the west there stands a large altar, while to the
+south there can been seen a statue standing.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13146</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13156</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13144</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13146</VNum>
+      <Name>Northeast Corner of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13147</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13157</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13145</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13147</VNum>
+      <Name>A small hallway</Name>
+      <Description>The passageway here is simple and humble.  Unlike other areas of the Temple
+there are no signs of expense or extravagance.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13148</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13158</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13146</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13148</VNum>
+      <Name>A small hallway</Name>
+      <Description>The passageway here is simple and humble.  Unlike other areas of the Temple
+there are no signs of expense or extravagance.  There are doors here leading
+elsewhere.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13150</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13149</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13151</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13147</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13149</VNum>
+      <Name>An Acolyte's Chambers</Name>
+      <Description>The lighting in this room is considerably dimmer than the rest of the temple.
+There is a small cot sitting on one corner of this room.  In the other there
+is  a small area with a pillow.  The walls are plain and simple with nothing
+adorning them.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13148</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13150</VNum>
+      <Name>An Acolyte's Chambers</Name>
+      <Description>The lighting in this room is considerably dimmer than the rest of the temple.
+There is a small cot sitting on one corner of this room.  In the other there
+is  a small area with a pillow.  The walls are plain and simple with nothing
+adorning them.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13148</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13151</VNum>
+      <Name>An Acolyte's Chambers</Name>
+      <Description>The lighting in this room is considerably dimmer than the rest of the temple.
+There is a small cot sitting on one corner of this room.  In the other there
+is  a small area with a pillow.  The walls are plain and simple with nothing
+adorning them.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13148</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13152</VNum>
+      <Name>Center Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place. Standing before you is a large statue. This statue
+stands taller than all the others in the sanctuary.  Upon the base of this
+structure lies the name 'Pope Medius' at its base.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13129</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13156</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13159</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13153</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13153</VNum>
+      <Name>Center Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13130</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13152</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13160</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13154</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13154</VNum>
+      <Name>Western Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place. Standing before you is a large statue of a cloaked
+figure with the name 'Arch-Bishop Kraken' inscribed at its base.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13131</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13153</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13161</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13155</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13155</VNum>
+      <Name>Western Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13132</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13154</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13162</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13156</VNum>
+      <Name>Center Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13145</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13157</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13163</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13152</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13157</VNum>
+      <Name>Eastern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place. To the west and south there can been seen statues
+standing.  Standing before you is a large statue of a cloaked figure with the
+name 'Arch-Bishop Shiamoor' inscribed at its base.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13146</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13158</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13164</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13156</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13158</VNum>
+      <Name>Eastern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To the west and south there can been seen statues
+standing.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13147</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13165</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13157</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13159</VNum>
+      <Name>Southern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13152</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13163</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13160</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13160</VNum>
+      <Name>Southern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  Standing before you is a large statue of a cloaked
+figure with the name 'Arch-Bishop Shiamoor' inscribed at its base.  To the
+south  is the largest iron door inside the temple.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13153</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13159</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13166</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13161</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13161</VNum>
+      <Name>Southwest Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To your west stands a simple wooden door while to your
+north and east stand large statues.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13154</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13160</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13162</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13162</VNum>
+      <Name>Southwest Corner of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  In the southern side, the wall is somewhat broken down
+to where you might be able to squeeze through.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13155</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13161</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13167</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13163</VNum>
+      <Name>Southern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  Standing before you is a large statue of a cloaked
+figure with the name 'Arch-Bishop Shiamoor' inscribed at its base.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13156</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13164</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13159</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13164</VNum>
+      <Name>Southern Section of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.  To the south is the exit of the Elemental Temple,
+while  to the west stands a large statue.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13157</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13165</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13171</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13163</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13165</VNum>
+      <Name>Southeastern Corner of the Sanctuary</Name>
+      <Description>This room is spacious and heavily adorned.  The ceilings are incredibly high,
+seemingly able to house even the largest of dragons.  The floor is tiled in a
+checkerboard fashion of silver and gold.  There resounds the echoes of lightly
+uttered sounds all about.  The air carries a light scent of burned incense that
+is impossible to place.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13158</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13164</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13166</VNum>
+      <Name>A Blood Stained Hall</Name>
+      <Description>You find yourself caught in a moment of morbid fascination as you behold a vast
+hall of Polished marble. Bas-reliefs and corded stone sequences dance and
+frolic  in splendid array around the base of both the floor and ceiling. The
+decorative  trim is set in pictograms depicting jolly cherubs and harp wielding
+angels,  seemingly calm and serene. As you gaze to the floor however, your
+stomach  wretches. A thick sticky trail of old blood streaks the once proud
+marble floor.  Splatters of blood line the once chaste pillars as pools of dried
+caked blood  pool about their base. This room has been desecrated in ways only
+read about in  faerie tale. Streaks of blood paint the cold marble wall, you
+think you see a  hand print, forever caught upon it.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13160</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13167</VNum>
+      <Name>A Dark Hallway</Name>
+      <Description>Dark marble covers this room, on either side of you there are pillars that hold
+up this hallway. It too dark to make much of anything out, but as you walk,
+you  hear a crunching sound, like the sound of stepped on pests.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13162</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13168</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13168</VNum>
+      <Name>A Dark Hallway</Name>
+      <Description>Dark marble covers this room, on either side of you there are pillars that hold
+up this hallway. It too dark to make much of anything out, but as you walk,
+you  hear a crunching sound, like the sound of stepped on pests.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13167</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13169</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13169</VNum>
+      <Name>A Dark Hallway</Name>
+      <Description>Dark marble covers this room, on either side of you there are pillars that hold
+up this hallway. It too dark to make much of anything out, but as you walk,
+you  hear a crunching sound, like the sound of stepped on pests. Through the
+cracks  of a large wooden door, you see a faint shimmer of light.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13168</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13170</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13170</VNum>
+      <Name>A Shadowy Room</Name>
+      <Description>A stout wooden perimeter encircles this room. The center area has been dropped
+down about a foot and a half with a single step leading down. The lowered
+floor  seems oddly warm to the touch. Upon close inspection you notice the wood
+has  been worn to a fine grain, save for the occasional knick and gouge caused
+by  weapons. A tattered war banner of a forgotten general flaps in a gentle
+breeze,  mounted on a sturdy iron bar in the northern part of the room. While
+standing on  the raised perimeter you get the impression that you're in an
+audience, the view  of the center seems prominent, and functional.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13169</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13171</VNum>
+      <Name>Hallway leading to the Sanctuary</Name>
+      <Description>This room is considerably smaller than the foyer entrance next to it. The walls
+are plain and unadorned, drastically contrasting with the exquisite murals
+found  elsewhere.  To the north there is a large door leading to a dimly lit
+sanctuary.   Light murmers and gutteral tones can be heard coming from beyond
+the door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13164</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13172</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13172</VNum>
+      <Name>The Foyer of the Temple</Name>
+      <Description>You are in a large room leading to a large golden door to the north. As you
+look around you notice that barely discernible in the dankly lit foyer there
+is a  mural etched into the ceiling with great care.  The floor beneath your
+feet is  also of the highest quality being tiled in the finest of mithril.  In
+the center  of the foyer there stands a small plaque.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13171</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13173</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>plaque </Keyword>
+          <Description>This Temple was Erected by Amlaruil and Deomanix</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>13173</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13174</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13172</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13174</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13175</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13173</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13175</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13176</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13174</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13176</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13177</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13175</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13177</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13178</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13176</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13178</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13179</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13177</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13179</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13180</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13178</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13180</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13181</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13179</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13181</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13182</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13180</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13182</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13183</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13181</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13183</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13184</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13182</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13184</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13185</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13183</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13185</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13186</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13184</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13186</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13187</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13185</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13187</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13188</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13186</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13188</VNum>
+      <Name>Path to the Elemental Temple</Name>
+      <Description>The path winds its way through dense underbrush, the lush foliage casting dappled light upon the stones beneath your feet. Towering trees rise up on either side of the trail, and the occasional chirping of exotic birds can be heard from the branches above. As you continue down the path, a sense of unease begins to settle in the pit of your stomach. The further you go, the more the forest seems to close in around you, until at last the trees give way to a clearing. In the center of the clearing stands a towering temple, its walls covered in strange, arcane symbols.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>1300</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13187</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>13100</Vnum>
+      <name>elite draconian soldier</name>
+      <description>He looks as though he has been through many years of training and servitude to
+the temple. His long face seems to give way to his dark eyes and hair, making his
+somewhat pale complexion distort the contours of his face.</description>
+      <longDescription>An elite draconian soldier is standing ready.</longDescription>
+      <shortDescription>an elite draconian soldier</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13101</Vnum>
+      <name>draconian elder</name>
+      <description>Standing before you appears to be the first draconian whom is bathed, the stench
+of blood and decay is not upon this Elder. He seems rather aged with his heavily
+fatigued face. Long heavy robes flow from his shoulder down to his feet.</description>
+      <longDescription>A draconian elder is standing here with a look of fatigue.</longDescription>
+      <shortDescription>a draconian elder</shortDescription>
+      <Sex>Male</Sex>
+      <level>55</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-250</ArmorBash>
+      <ArmorSlash>-250</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-250</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC StayArea Mage</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>23</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13102</Vnum>
+      <name>arch-bishop kraken</name>
+      <description>Muttering something incoherent, this massive draconian looks up at your
+approach.  With a Derisive sneer he quickly turns with his robes flowing and
+starts towards you.  Every fluidic motion brings him closer to you and you to
+believe that entering here might not have been in your best interest.</description>
+      <longDescription>(Covered in Dew) An Arch-Bishop is here muttering something to himself.</longDescription>
+      <shortDescription>the Arch-Bishop Kraken</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13103</Vnum>
+      <name>arch-bishop lirthyn</name>
+      <description>With an intelligent gleam in his eye, this draconian regards your with disdain. 
+He stands the same height as any other of his race but carries himself as if he
+were king.  With your intrusion, the gleam in his eyes quickly turns to rage as
+he charges towards you.</description>
+      <longDescription>(Crackling with Electricity) An Arch-Bishop is here with a look of disdain upon
+ his face.</longDescription>
+      <shortDescription>the Arch-Bishop Lirthyn</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13104</Vnum>
+      <name>arch-bishop wyndstrom</name>
+      <description>An unusually lithe draconian stands here with his face hooded in darkness. His
+robes seem to flow as if touched by a light breeze, yet none can be felt. 
+Hearing your intrusion the figure jumps to his feet and snarls in your
+direction.</description>
+      <longDescription>(Surrounded by Winds) An Arch-Bishop is standing here.</longDescription>
+      <shortDescription>the Arch-Bishop Wyndstrom</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13105</Vnum>
+      <name>arch-bishop</name>
+      <description>A haggard looking draconian stands before you, obviously a bit perturbed with
+your interruption.  As you scrutinize upon him you notice that his eyes
+immediatly began to glow a cold blue. 'You should not have come here fool,' the
+man states flatly.</description>
+      <longDescription>(Solid) An Arch-Bishop is here red with anger.</longDescription>
+      <shortDescription>the Arch-Bishop Shiamoor</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13106</Vnum>
+      <name>arch-bishop magmus</name>
+      <description>Before you stands a stout looking Draconian, standing of average height for his
+race.  Upon your entrance he looks up from his gaze with a cold stare and begins
+mumbling about his need to
+reprimand the servant outside.  All at once you realize that walking in here
+might not have been a good idea.</description>
+      <longDescription>(Surrounded by Flames) A stout Arch-Bishop is pacing here.</longDescription>
+      <shortDescription>the Arch-Bishop Magmus</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13107</Vnum>
+      <name>arch-bishop amiboshi</name>
+      <description>Before you stands a regal Looking Draconian, a bit larger than any that have
+been spoken of in the Dragon Tower. She immediately grimaces upon your intrusion
+and glares towards you in fury. All Her features seemingly Darken at once as she
+begins to chant in deep tones.</description>
+      <longDescription>(Covered in Frost) An Arch-Bishop is here chanting softly.</longDescription>
+      <shortDescription>the Arch-Bishop Amiboshi</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13108</Vnum>
+      <name>pope medius</name>
+      <description>Before you stands an awe-inspiring figure.  He is obviously a draconian by
+heritage, but has a similar build to that of a tree trunk.  At first glance you
+conceive that his battle prowess must be unparalleled.  As you continue to study
+the Pope you come upon his aged eyes.  These eyes seem to contain a depth and
+understanding that almost seem impossible, however somewhere in that depth you
+sense a dark foreboding chaos present that sends shivers down your spine.  What
+is it you see in his eyes?</description>
+      <longDescription>An awe-inspiring figure is floating here.</longDescription>
+      <shortDescription>Pope Medius</shortDescription>
+      <Sex>Male</Sex>
+      <level>65</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>20000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1300</hitpoints>
+      <maxhitpoints>1300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-400</ArmorBash>
+      <ArmorSlash>-400</ArmorSlash>
+      <ArmorPierce>-400</ArmorPierce>
+      <ArmorExotic>-400</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>2</hitroll>
+      <damRoll>65</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel StayArea Mage AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Flying PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>9</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>30</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13109</Vnum>
+      <name>draconian spy</name>
+      <description>Before you stands a draconian dressed in the same garb as the other acolytes in
+the temple.  This draconian's robe hangs unusually loose and seems to be badly
+mid-sized.  He seems completely aware of his surroundings and everything in it.
+He nervously turns towards you and acknowledges your entrance.  Could he be
+hiding something?</description>
+      <longDescription>A mid-sized draconian is standing here in the shadows.</longDescription>
+      <shortDescription>the Draconian Spy</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>15500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>thief</Guild>
+      <flags>NPC StayArea Thief AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13110</Vnum>
+      <name>draconian warrior</name>
+      <description>Before you stands a healthy looking form in heavy robes standing about. You
+cannot discern whether it is male or female but you can see that it is of the
+Draconian heritage.  The form mumbles something incoherent in a guttural tone as
+you continue to study it in scrutiny.  The being seems oblivious to your
+presence.</description>
+      <longDescription>A well-built draconian is standing here mumbling.</longDescription>
+      <shortDescription>a well-built draconian warrior</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>15500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13111</Vnum>
+      <name>draconian acolyte</name>
+      <description>Standing before you is a young draconian chanting a prayer to himself. He is
+dressed in dark clothing, though is cloaked from head to toe, so his features,
+except his large fangs are undetected.</description>
+      <longDescription>A draconian acolyte is standing here.</longDescription>
+      <shortDescription>a draconian acolyte</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1850</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-130</ArmorSlash>
+      <ArmorPierce>-130</ArmorPierce>
+      <ArmorExotic>-130</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel StayArea Cleric</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>PassDoor DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>13</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>13100</VNum>
+      <Name>heavy robe</Name>
+      <ShortDescription>a heavy hooded robe</ShortDescription>
+      <LongDescription>A heavy leather robe with an attached hood lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13101</VNum>
+      <Name>pike adamantite</Name>
+      <ShortDescription>a adamantite pike inscribed with a dragon</ShortDescription>
+      <LongDescription>An adamantite polearm with dragon inscriptions lies here, collecting dust.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>chop</WeaponDamageType>
+      <WeaponType>Polearm</WeaponType>
+      <DiceSides>8</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>2.8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13102</VNum>
+      <Name>arcane robe</Name>
+      <ShortDescription>a heavy hooded robe with Arcane symbols</ShortDescription>
+      <LongDescription>An ancient robe with Arcane symbols about it is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>15</ArmorBash>
+      <ArmorSlash>15</ArmorSlash>
+      <ArmorPierce>15</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13103</VNum>
+      <Name>mantle water</Name>
+      <ShortDescription>the mantle of water</ShortDescription>
+      <LongDescription>Covered with sprinkles of water, a mantle piece lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13104</VNum>
+      <Name>mace water</Name>
+      <ShortDescription>a mace made of shimmering water</ShortDescription>
+      <LongDescription>A shimmering mound of water formed into a mace lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>frbite</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13105</VNum>
+      <Name>mantle electricity</Name>
+      <ShortDescription>the mantle of electricity</ShortDescription>
+      <LongDescription>Crackling and sparkling with electricity, a mantle piece lies.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13106</VNum>
+      <Name>hammer electricity</Name>
+      <ShortDescription>a hammer crackling with electricity</ShortDescription>
+      <LongDescription>Loud cracks and pops come from a halo of electricity formed into a mace.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>shbite</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13107</VNum>
+      <Name>mantle air</Name>
+      <ShortDescription>the mantle of air</ShortDescription>
+      <LongDescription>A gust of air swirls a mantle that lies here on the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13108</VNum>
+      <Name>mace air</Name>
+      <ShortDescription>a mace surrounded by a swirling vortex</ShortDescription>
+      <LongDescription>A cloud of gases and swirling vortexes hum over a mace figure.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>suction</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13109</VNum>
+      <Name>mantle earth</Name>
+      <ShortDescription>the mantle of earth</ShortDescription>
+      <LongDescription>A mound of earth is collected here to form a mantle.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="60" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13110</VNum>
+      <Name>hammer earth</Name>
+      <ShortDescription>a large hammer made of solid earth</ShortDescription>
+      <LongDescription>Solid earth and rock in the form of a hammer lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>smash</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13111</VNum>
+      <Name>mantle fire</Name>
+      <ShortDescription>the mantle of fire</ShortDescription>
+      <LongDescription>Ablazing hot mantle lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13112</VNum>
+      <Name>mace flame</Name>
+      <ShortDescription>a mace pulsating with flames</ShortDescription>
+      <LongDescription>A fiery mace lies here pulsating with pure energy.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>flbite</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13113</VNum>
+      <Name>mantle ice</Name>
+      <ShortDescription>the mantle of ice</ShortDescription>
+      <LongDescription>An ice-cold mantle lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13114</VNum>
+      <Name>mace freezing</Name>
+      <ShortDescription>a freezing cold mace</ShortDescription>
+      <LongDescription>A freezing cold mace lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>frbite</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum Flaming Frost Vorpal TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13115</VNum>
+      <Name>ring draco draconian</Name>
+      <ShortDescription>the ring of Draconian Kind</ShortDescription>
+      <LongDescription>An evil looking ring lies here radiating with darkness.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="40" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13116</VNum>
+      <Name>mantle pope medius</Name>
+      <ShortDescription>the mantle of Pope Medius</ShortDescription>
+      <LongDescription>A large mantle with the inscriptions 'Pope Medius' is resting here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13117</VNum>
+      <Name>staff pope medius</Name>
+      <ShortDescription>the staff of pope medius</ShortDescription>
+      <LongDescription>An exotic looking staff with the inscriptions 'Pope Medius' is sitting here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>smash</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13118</VNum>
+      <Name>wristguard crimson spiked</Name>
+      <ShortDescription>a spiked crimson wristguard</ShortDescription>
+      <LongDescription>A hoop of deep crimson color with large spikes lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags>Glow Evil Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13119</VNum>
+      <Name>katana crimson</Name>
+      <ShortDescription>a razor sharp crimson katana</ShortDescription>
+      <LongDescription>A crimson katana awaits to be held.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>slice</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>10</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13120</VNum>
+      <Name>incinerator large axe</Name>
+      <ShortDescription>a blazing axe named 'Incinerator'</ShortDescription>
+      <LongDescription>A deadly looking axe surrounded by heat sits here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>chop</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>11</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13121</VNum>
+      <Name>dragon tooth</Name>
+      <ShortDescription>a dragon's tooth</ShortDescription>
+      <LongDescription>a large tooth is here on the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Evil AntiGood Vorpal TwoHands Shocking Poison</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn Pope Medius to The Holy of Holy's-->
+      <Type>NPC</Type>
+      <Destination>13100</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ring of Draconian Kind to Pope Medius-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13115</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of Pope Medius to Pope Medius-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13116</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the staff of pope medius to Pope Medius-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13117</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Arch-Bishop Amiboshi to The Holy Chamber of Frost-->
+      <Type>NPC</Type>
+      <Destination>13103</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a freezing cold mace to the Arch-Bishop Amiboshi-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13114</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of ice to the Arch-Bishop Amiboshi-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13113</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Arch-Bishop Kraken to The Holy Chamber of Water-->
+      <Type>NPC</Type>
+      <Destination>13105</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of water to the Arch-Bishop Kraken-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mace made of shimmering water to the Arch-Bishop Kraken-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Arch-Bishop Shiamoor to The Holy Chamber of Earth-->
+      <Type>NPC</Type>
+      <Destination>13107</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large hammer made of solid earth to the Arch-Bishop Shiamoor-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of earth to the Arch-Bishop Shiamoor-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Arch-Bishop Wyndstrom to The Holy Chamber of Air-->
+      <Type>NPC</Type>
+      <Destination>13109</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mace surrounded by a swirling vortex to the Arch-Bishop Wyndstrom-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of air to the Arch-Bishop Wyndstrom-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Arch-Bishop Magmus to The Holy Chamber of Fire-->
+      <Type>NPC</Type>
+      <Destination>13111</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of fire to the Arch-Bishop Magmus-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mace pulsating with flames to the Arch-Bishop Magmus-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13112</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Arch-Bishop Lirthyn to The Holy Chamber of Electricity-->
+      <Type>NPC</Type>
+      <Destination>13113</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a hammer crackling with electricity to the Arch-Bishop Lirthyn-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the mantle of electricity to the Arch-Bishop Lirthyn-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian acolyte to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13135</Destination>
+      <Count>6</Count>
+      <Max>6</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian acolyte to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13136</Destination>
+      <Count>6</Count>
+      <Max>6</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian acolyte to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13143</Destination>
+      <Count>6</Count>
+      <Max>6</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian acolyte to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13149</Destination>
+      <Count>6</Count>
+      <Max>6</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian elder to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13149</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe with Arcane symbols to a draconian elder-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian elder-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian acolyte to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13150</Destination>
+      <Count>6</Count>
+      <Max>6</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a draconian acolyte to An Acolyte's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13151</Destination>
+      <Count>6</Count>
+      <Max>6</Max>
+      <Vnum>13111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dragon's tooth to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13121</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a draconian acolyte-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elite draconian soldier to Western Section of the Sanctuary-->
+      <Type>NPC</Type>
+      <Destination>13155</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a adamantite pike inscribed with a dragon to an elite draconian soldier-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elite draconian soldier to Eastern Section of the Sanctuary-->
+      <Type>NPC</Type>
+      <Destination>13158</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a adamantite pike inscribed with a dragon to an elite draconian soldier-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elite draconian soldier to Southern Section of the Sanctuary-->
+      <Type>NPC</Type>
+      <Destination>13160</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a adamantite pike inscribed with a dragon to an elite draconian soldier-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elite draconian soldier to Southern Section of the Sanctuary-->
+      <Type>NPC</Type>
+      <Destination>13163</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a adamantite pike inscribed with a dragon to an elite draconian soldier-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elite draconian soldier to Southeastern Corner of the Sanctuary-->
+      <Type>NPC</Type>
+      <Destination>13165</Destination>
+      <Count>5</Count>
+      <Max>5</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a adamantite pike inscribed with a dragon to an elite draconian soldier-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Draconian Spy to A Blood Stained Hall-->
+      <Type>NPC</Type>
+      <Destination>13166</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to the Draconian Spy-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a spiked crimson wristguard to the Draconian Spy-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13118</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a razor sharp crimson katana to the Draconian Spy-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13119</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a well-built draconian warrior to A Shadowy Room-->
+      <Type>NPC</Type>
+      <Destination>13170</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a heavy hooded robe to a well-built draconian warrior-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blazing axe named 'Incinerator' to a well-built draconian warrior-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13120</Vnum>
+    </Reset>
+  </Resets>
+</Area>

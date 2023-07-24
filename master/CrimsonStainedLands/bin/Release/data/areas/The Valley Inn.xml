@@ -1,0 +1,3106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>The Valley Inn</Name>
+    <Info></Info>
+    <VnumStart>12100</VnumStart>
+    <VnumEnd>12135</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>ABAL} Merthairu The Valley Inn</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>12100</VNum>
+      <Name>A Dusty Trail to the Inn</Name>
+      <Description>This small dirt path leads from the forest to a clearing, in that
+clearing is the Valley Inn. The trees seem to arch over the path, giving it
+a soft aura of light and a yet a cool, refreshing shade. The path leads
+through the forest to the Valley Inn.</Description>
+      <Sector>Hills</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12101</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The dusty trail continues.</Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>19610</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12101</VNum>
+      <Name>A Dusty Trail to the Inn</Name>
+      <Description>This small dirt path leads from the forest to a clearing, in that
+clearing is the Valley Inn. The trees seem to arch over the path, giving it
+a soft aura of light and a yet a cool, refreshing shade. The path leads
+through the forest to the Valley Inn.</Description>
+      <Sector>Hills</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12102</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12100</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12102</VNum>
+      <Name>A Dusty Trail to the Inn</Name>
+      <Description>The small dusty trail bends to the north; from here you can see the
+Valley Inn. The trail continues just a few more feets then stops at the
+clearing.</Description>
+      <Sector>Hills</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12103</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12101</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12103</VNum>
+      <Name>A Dusty Trail to the Inn</Name>
+      <Description>The small trail ends here as, to the north is the Valley Inn. The forest
+around you is light and well kept to attract visitors and travelers to the
+inn. The inn lies north, the trail exits south.</Description>
+      <Sector>Hills</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12104</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12130</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12102</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12104</VNum>
+      <Name>Entrance to the Inn</Name>
+      <Description>You stand before a set of double-doors leading into the Valley Inn. The
+porch leads around the inn; the doors allow you to enter north. The entire
+building is made of wood. The inn is quite large, its second level allowing
+guests private rooms and the lower level for the bar and entertainment. A
+small sign is posted on the left door.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12105</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12119</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12103</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12114</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sign</Keyword>
+          <Description>Welcome to the Valley Inn, please enjoy yourself and follow the rules: *
+Please keep peaceful in the inn, violence will not be tolerated so please
+restrain from criminal acts. * You are expected to pay for anything to eat,
+or drink. And remember, friends don't let friends drive drunk. * We do serve
+criminals but we reserve the right to ask you to leave if you attracted
+fights with Enforcers. * Please stay visible in the inn unless are you
+hiding from attack or a thief. * This is a place to enjoy yourself, have
+fun! -- Thank you, Celeborn, Muse of the Valley</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>12105</VNum>
+      <Name>A crowded room</Name>
+      <Description>This large area is full of tables and chairs and happy people. All of the
+furnishings are made of polished oak. All around people sit and enjoy their
+drinks. The inn has many bouncers who roam the inn looking for bums wishing
+to start fights. To the east is the fireplace and west a small library. The
+tables continues north nearing the bar.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12106</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12108</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12104</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12110</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12106</VNum>
+      <Name>A crowded room</Name>
+      <Description>This area is even more crowded than before. Tables and chairs are packed
+end to end. To the north is the large bar, serving all kinds of drinks. To
+the east is the stage; to the west is the dance floor. The bar lies to the
+north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12107</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12109</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12105</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12111</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12107</VNum>
+      <Name>The Bar</Name>
+      <Description>The Valley Inns bar is like nothing else. Behind the bar stands a rugged
+dwarf serving drinks from all across Orthos. The bar is made of solid oak
+with a gold railing. Maple stools line the bar, topped with velvet seats.
+All around you hear jolly music and the sounds of good times and fond
+memories. To the west is the dance floor; east lies a door leading to the
+backstage area.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12113</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12106</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12112</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12108</VNum>
+      <Name>The Fireplace</Name>
+      <Description>This small corner of the inn is probably the only place you'll find a bit
+of tranquility. The sounds from the back round are blocked out by the soft
+crackle of the fire. Two large velvet lines couches are set in a V shape in
+front of the fireplace. This is the perfect place to rest without taking a
+room. To the north is stage; the tables are to the west. There is a small
+stairway leading upstairs.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12109</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12105</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>12124</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12109</VNum>
+      <Name>The Stage</Name>
+      <Description>This large stage is set a few feet above the floor level. Ahead of you
+are the royal blue curtains, drooping down from above. The stage is well lit
+and always clean, ready for the Inns entertainment or any traveler who has a
+song to sing or tale to well. To the west are more crowded tables, south the
+fireplace. The back stage area is north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12113</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12108</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12106</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12110</VNum>
+      <Name>A Small Library</Name>
+      <Description>.This quaint and cozy little corner of the Inn contains a small library,
+dedicated to many short stories, legends and histories of the heroes of
+Othos. A large bookcase is set against the western wall. Several
+comfortable chairs and small tables have been strategically placed around
+the room, offering a comfortable place to read.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12111</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12105</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12111</VNum>
+      <Name>The Dance Floor</Name>
+      <Description>The dance floor is often crowded with people looking to have a good time.
+The first thing you notice is that the different people dance in different
+styles. Elves and Dwarves dancing together, even a drow and giant of the
+storms. Table crowded with people are east; to the south lies the small
+library. The dance floor contines to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12112</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12106</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12110</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12112</VNum>
+      <Name>The Dance Floor</Name>
+      <Description>This half of the dance floor is less crowded, here a few more drunks
+gather to keep keen eyes of the woman at the bar. The floor is made of solid
+oak, shining like it was just cleaned. Near the corner on the western wall
+is a small window. To the south the dance floor continues; east is the bar.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12107</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12111</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12113</VNum>
+      <Name>Back Stage</Name>
+      <Description>This small are is cluttered with robes and pullies, which control the
+stages trap doors and curtains. Many props are scattered around, along with
+costumes and masks. The stage lies to the south; the bar is west.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12109</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12107</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12114</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12104</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12115</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12115</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12116</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12114</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12116</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12117</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12115</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12117</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12118</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12116</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12118</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12117</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12119</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12120</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12104</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12120</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12121</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12119</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12121</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12122</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12120</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12122</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12123</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12121</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12123</VNum>
+      <Name>The Porch</Name>
+      <Description>This narrow wooden porch is a place to get away from the festivities or
+just a place to rest. The porch bends around the inn and ends at each side
+of the back. A long oak raiding keeps people safe. Above you can see the
+overhang of the second level of the Valley Inn. The porch continues around
+the Inn.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12122</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12124</VNum>
+      <Name>A Hallway</Name>
+      <Description>This narrow hallway leads through the upper level of the Valley Inn. The
+light of the windows on the eastern wall lights the hallway. A small sign is
+posted for all to read. The hallway continues north; the stairs lead to the
+lower level.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12125</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>12108</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>sign</Keyword>
+          <Description>This narrow hallway leads through the upper level of the Valley Inn. The
+light of the windows on the eastern wall lights the hallway. A small sign is
+posted for all to read. The hallway continues north; the stairs lead to the
+lower level.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>12125</VNum>
+      <Name>A Hallway</Name>
+      <Description>The Hallway continues, leading north and south. Portraits and paintings
+of Orthoss greatest musicians and jesters line the western wall. The light
+from the windows shines upon the western wall. To the north the hallway
+bends west; the hallway continues south as well.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12126</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12124</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12126</VNum>
+      <Name>The Hallway</Name>
+      <Description>Here the hallway bends to the west. From here on to the west a long
+velvet carpet lines the floor. The hallway continues west, towards a large
+open room.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12125</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12127</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12127</VNum>
+      <Name>The hallway</Name>
+      <Description>The long hallway continues to extend east and west. The windows on the
+northern wall seem to brighten everything up. The walls are lined with
+portraits and paintings. The Hallway continues east and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12126</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12128</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12128</VNum>
+      <Name>Before the Hall of Music</Name>
+      <Description>The hallway widens here, as it becomes more of an entry hall. To the
+north and south are four chairs on each side. West is a massive door leading
+to the hall of music. The hall of music is here for only the practice and
+admission of the Muses of the valley. The hallway continues east; to the
+west lies the hall of Music.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12127</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12129</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12129</VNum>
+      <Name>The Hall of Music</Name>
+      <Description>This massive hall is decorated with the finish of materials. The walls
+are papered with fine prints and covered in great tapestries. One massive
+chandelier lights the entire room. On the northern wall is a small stage,
+before it are two rows of benches. On the western wall is a rack of
+instruments, being sold by a jolly elf. The walls are lined with massive
+stain-glass windows letting in light of different colors. This room is truly
+magical and inspiring.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12128</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12130</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12131</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12103</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12131</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>12132</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12130</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12132</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12133</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>12131</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12133</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12134</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12132</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12134</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12135</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12133</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12135</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12136</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12134</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12136</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12137</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12135</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12137</VNum>
+      <Name>A Dusty Trail Around the Inn</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>12138</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12136</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>12138</VNum>
+      <Name>Trail Behind the Hut</Name>
+      <Description>The small, dusty trail leads around the Inn and breaks north, heading into what appears to be a tiny woodland village. On the hills beyond that, a foreboding and darkened forest lies to the north. To the south and west, you can see a major highway bustling with wagon caravans.</Description>
+      <Sector>Trail</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>24360</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>12137</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>12100</Vnum>
+      <name>human bouncer</name>
+      <description>This strong man is dressed in simple cloths making him look like a normal
+citizen.</description>
+      <longDescription>A large man stands here keeping a keen eye out for trouble.</longDescription>
+      <shortDescription>a human bouncer</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Huge</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>19</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistAll</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12101</Vnum>
+      <name>giant bouncer</name>
+      <description>This brute fellow stands perfectly still, his yes following everyone who
+enters the area.</description>
+      <longDescription>A massive giant stands here eyeing the bar for drunks and trouble makers.</longDescription>
+      <shortDescription>a giant bouncer</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Giant</size>
+      <race>unique</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>30</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistAll</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Flying Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>12</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12102</Vnum>
+      <name>baldur bar bartender</name>
+      <description>Baldur is a stubby man, short and fat. The only thing this old dwarf
+knows is drinks, and good ones!</description>
+      <longDescription>Baldur the bartender stands behind the bar ready to serve you.</longDescription>
+      <shortDescription>baldur the bartender</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>30</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>12</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior UpdateAlways Shopkeeper</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="Food" />
+    </NPC>
+    <NPC>
+      <Vnum>12103</Vnum>
+      <name>old man</name>
+      <description>This old man is dressed in rags, obviously poor as fuck.. Thats why he is
+out here, alone.</description>
+      <longDescription>An old man huddles over the porch railing, looking at the sky.</longDescription>
+      <shortDescription>an old man</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1850</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-130</ArmorSlash>
+      <ArmorPierce>-130</ArmorPierce>
+      <ArmorExotic>-130</ArmorExotic>
+      <size>Small</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Weaken DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>13</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12104</Vnum>
+      <name>elf storyteller</name>
+      <description>This small elf is dressed in fine cloths, those of a jester. A shiney
+silver pocketwatch hangs out of his pocket, attracting the eyes of theives.</description>
+      <longDescription>A small elf stands here telling his tales to anyone who will listen.</longDescription>
+      <shortDescription>an elven storyteller</shortDescription>
+      <Sex>Male</Sex>
+      <level>55</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-250</ArmorBash>
+      <ArmorSlash>-250</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-250</ArmorExotic>
+      <size>Small</size>
+      <race>elf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistAlign</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis Sanctuary Infrared Sneak Haste</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>23</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12105</Vnum>
+      <name>small fox</name>
+      <description>This small fox has dark, fuzzy grey hair striped with black. His dark
+blue eyes show little care for you or anyone else, just tiredness.</description>
+      <longDescription>A small fox is curled in on the floor.</longDescription>
+      <shortDescription>a small fox</shortDescription>
+      <Sex>Female</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Tiny</size>
+      <race>fox</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Haste DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>16</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>12106</Vnum>
+      <name>human man sam</name>
+      <description>This tall man is dressed in red suspenders and wears dark black glasses.
+His namtag says "Sam the Silly"</description>
+      <longDescription>A tall man stands here looking over the bookshelf.</longDescription>
+      <shortDescription>sam the silly</shortDescription>
+      <Sex>Male</Sex>
+      <level>30</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>853</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>600</hitpoints>
+      <maxhitpoints>600</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>-90</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>30</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>400</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12107</Vnum>
+      <name>elf elven singer</name>
+      <description>This small elf is dressed in fine royal cloths, singing his heart out.</description>
+      <longDescription>A beautiful elf stands here singing proudly.</longDescription>
+      <shortDescription>an elven singer</shortDescription>
+      <Sex>Male</Sex>
+      <level>52</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>5500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1040</hitpoints>
+      <maxhitpoints>1040</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-220</ArmorBash>
+      <ArmorSlash>-220</ArmorSlash>
+      <ArmorPierce>-220</ArmorPierce>
+      <ArmorExotic>-220</ArmorExotic>
+      <size>Small</size>
+      <race>elf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>10</hitroll>
+      <damRoll>52</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1230</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectEvil Sanctuary Infrared Sneak</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>20</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12108</Vnum>
+      <name>short woman</name>
+      <description>This lovely woman is dressed in a fine ball gown. Her long blond hair
+falls to her shoulders, swaying as she twirls around.</description>
+      <longDescription>A short woman stands here dancing with a friend.</longDescription>
+      <shortDescription>a short woman</shortDescription>
+      <Sex>Female</Sex>
+      <level>40</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1850</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-130</ArmorSlash>
+      <ArmorPierce>-130</ArmorPierce>
+      <ArmorExotic>-130</ArmorExotic>
+      <size>Small</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>13</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12109</Vnum>
+      <name>fat man</name>
+      <description>This man is quite fat and dressed in a black tux. His dark brown hair is
+cut jagged and unwashed.</description>
+      <longDescription>A rather fat man stands here dancing with a lovely girl.</longDescription>
+      <shortDescription>a fat man</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1850</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-130</ArmorSlash>
+      <ArmorPierce>-130</ArmorPierce>
+      <ArmorExotic>-130</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>17</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Slow DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>13</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12110</Vnum>
+      <name>strange man</name>
+      <description>This man is dressed in a suit of gems and gold, looking foolish!</description>
+      <longDescription>An oddly dressed man is here doing a strange dance.</longDescription>
+      <shortDescription>an oddly dressed man</shortDescription>
+      <Sex>Male</Sex>
+      <level>58</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>8500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1160</hitpoints>
+      <maxhitpoints>1160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-280</ArmorBash>
+      <ArmorSlash>-280</ArmorSlash>
+      <ArmorPierce>-280</ArmorPierce>
+      <ArmorExotic>-280</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>30</hitroll>
+      <damRoll>58</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>4059</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Flying Haste DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12111</Vnum>
+      <name>dwarv dwarven worker</name>
+      <description>He is dressed in ragged cloths, he seems tired and annoyed.</description>
+      <longDescription>A dwarven stage worker is here preparing the stage for the band.</longDescription>
+      <shortDescription>a stage worker</shortDescription>
+      <Sex>Male</Sex>
+      <level>55</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-250</ArmorBash>
+      <ArmorSlash>-250</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-250</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Regeneration</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>23</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12112</Vnum>
+      <name>asmira instrumentalist</name>
+      <description>This file elven maiden is dressed in a perfect white dress. She hace a
+great figure and bright sky-blue eyes.</description>
+      <longDescription>Asmira, Instrumentalist of the Inn stands here selling her items.</longDescription>
+      <shortDescription>asmira the instrumentalist</shortDescription>
+      <Sex>Female</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Tiny</size>
+      <race>elf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>10</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel StayArea Shopkeeper</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Infrared Sneak</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="" />
+    </NPC>
+    <NPC>
+      <Vnum>12113</Vnum>
+      <name>small human muse chanter</name>
+      <description></description>
+      <longDescription>A tall human man known as the Valley Chanter stands here.</longDescription>
+      <shortDescription>the valley chanter</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>25</HitPointDiceCount>
+      <HitPointDiceBonus>9500</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-300</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>40</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood PassDoor Haste DarkVision DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>12</DamageDiceSides>
+      <DamageDiceCount>9</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>12114</Vnum>
+      <name>cat cat-like man</name>
+      <description>This odd man is covered in golden brown fur, striped with white. His dark
+blue eyes are set softly into his skull. He purrs softly at you and smiles.</description>
+      <longDescription>A furry cat-like man</longDescription>
+      <shortDescription>a cat-like man</shortDescription>
+      <Sex>Male</Sex>
+      <level>57</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>8000</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <hitpoints>1140</hitpoints>
+      <maxhitpoints>1140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-270</ArmorBash>
+      <ArmorSlash>-270</ArmorSlash>
+      <ArmorPierce>-270</ArmorPierce>
+      <ArmorExotic>-270</ArmorExotic>
+      <size>Small</size>
+      <race>cat</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>57</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1489</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistAll</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Sneak Haste DarkVision</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>24</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>12100</VNum>
+      <Name>mug dwarven ale</Name>
+      <ShortDescription>a mug of dwarven ale</ShortDescription>
+      <LongDescription>A large mug filled with dark ale lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>50</Cost>
+      <Nutrition>36</Nutrition>
+      <Liquid>ale</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12101</VNum>
+      <Name>glass tea elven ample</Name>
+      <ShortDescription>a glass of elven maple tea</ShortDescription>
+      <LongDescription>A small glass of tea lies here, steaming hot.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>80</Cost>
+      <Nutrition>18</Nutrition>
+      <Liquid>tea</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12102</VNum>
+      <Name>apple cider</Name>
+      <ShortDescription>a jigger of apple cider</ShortDescription>
+      <LongDescription>A jigger filled with apple cider lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>70</Cost>
+      <Nutrition>36</Nutrition>
+      <Liquid>beer</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12103</VNum>
+      <Name>bottle old beer</Name>
+      <ShortDescription>a bottle of old beer</ShortDescription>
+      <LongDescription>A crude bottle of old beer lies here.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>90</Cost>
+      <Nutrition>36</Nutrition>
+      <Liquid>beer</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12104</VNum>
+      <Name>firebreather</Name>
+      <ShortDescription>a jug of jack loukos firebreather</ShortDescription>
+      <LongDescription>A bottle of Jack Louko's Firebreather</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>60</Cost>
+      <Nutrition>6</Nutrition>
+      <Liquid>firebreather</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12105</VNum>
+      <Name>a couch</Name>
+      <ShortDescription>an oak couch</ShortDescription>
+      <LongDescription>Two oak couches are set near the fireplace.</LongDescription>
+      <Description></Description>
+      <Level>5</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12106</VNum>
+      <Name>silver pocketwatch</Name>
+      <ShortDescription>a silver pocketwatch</ShortDescription>
+      <LongDescription>A glinting silver pocketwatch.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow AntiEvil RotDeath</ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="500" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5890</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12107</VNum>
+      <Name>red suspenders</Name>
+      <ShortDescription>a pair of red suspenders</ShortDescription>
+      <LongDescription>A pair of crude red suspenders lay here.</LongDescription>
+      <Description></Description>
+      <Level>35</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Legs</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cottom</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>5</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12108</VNum>
+      <Name>ivory harp</Name>
+      <ShortDescription>an ivory harp</ShortDescription>
+      <LongDescription>A fine ivory harp lies here, glinting with beauty.</LongDescription>
+      <Description></Description>
+      <Level>52</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.8</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Instrument</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="22" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>6000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>ivory</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12109</VNum>
+      <Name>black tux</Name>
+      <ShortDescription>a black tux</ShortDescription>
+      <LongDescription>A black tux lays here covered in food stains.</LongDescription>
+      <Description></Description>
+      <Level>35</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cottom</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>12</ArmorBash>
+      <ArmorSlash>12</ArmorSlash>
+      <ArmorPierce>12</ArmorPierce>
+      <ArmorExotic>12</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12110</VNum>
+      <Name>white ball gown</Name>
+      <ShortDescription>a white ball gown</ShortDescription>
+      <LongDescription>A wonderful white ball gown lies here.</LongDescription>
+      <Description></Description>
+      <Level>35</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silk</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>15</ArmorBash>
+      <ArmorSlash>15</ArmorSlash>
+      <ArmorPierce>15</ArmorPierce>
+      <ArmorExotic>15</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12111</VNum>
+      <Name>silver flute</Name>
+      <ShortDescription>a silver flute</ShortDescription>
+      <LongDescription>A small silver flute lies here.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow AntiEvil</ExtraFlags>
+      <ItemTypes>Instrument</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12112</VNum>
+      <Name>coral harp</Name>
+      <ShortDescription>a coral harp</ShortDescription>
+      <LongDescription>A large coral harp lies here.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow AntiEvil</ExtraFlags>
+      <ItemTypes>Instrument</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12113</VNum>
+      <Name>brass horn</Name>
+      <ShortDescription>a brass horn</ShortDescription>
+      <LongDescription>A crude brass horn lies here.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1.2</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow AntiEvil</ExtraFlags>
+      <ItemTypes>Instrument</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>brass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12114</VNum>
+      <Name>large bookcase case bookshelf shelf</Name>
+      <ShortDescription>a large mahogany bookshelf</ShortDescription>
+      <LongDescription>A large mahogany bookshelf stands against the western wall.</LongDescription>
+      <Description>Set against the western wall of the library is a bookcase fashioned of beautifully finished mahogany. Each shelf is filled with a row of neatly arranged, leather-bound books on every conceivable subject. Adjacent to the bookcase, there is a lectern with a single sheet of paper that reads 'index'.</Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1000</Weight>
+      <WearFlags>NoSac</WearFlags>
+      <ExtraFlags>Fixed</ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12115</VNum>
+      <Name>lectern index card</Name>
+      <ShortDescription>a lectern holding a single index card</ShortDescription>
+      <LongDescription>A lectern holding a single index card sits next to the shelf.</LongDescription>
+      <Description>.List of available works:
+
+A Fabrication of Creation - by Authenes Intimaedus III</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>12116</VNum>
+      <Name>fabrication creation authenes</Name>
+      <ShortDescription></ShortDescription>
+      <LongDescription></LongDescription>
+      <Description>.A Fabrication of Creation - by Authenes Intimaedus III
+
+PREFACE:
+
+Inasmuch as any mortal has taken in hand the accounting of the most
+ancient among us and lived long enough to decipher the intricacies of
+such stories as are older than the tongues of men, I believe I have
+plucked the common thread. Of the elves, dwarves, giants and faeries,
+there is not a single fable which is favored above any others...
+but there is a name. In every language, it is the same name spoken.
+
+It is a name which is only ever whispered. For some, in reverence. For others,
+in hushed fear. This writ, therefore, shall be my attempt to preserve the spirit
+and candor of this story which I have heard in so many verses, on the condition
+that you, my virtuous scholars, will continue this research into our world's most
+mysterious origins and with great due diligence.
+
+CHAPTER ONE: The Dwarven Song of Orsi-tholos
+
+For entertainment purposes, let us begin with the dwarves. They are not known
+for their scribes but their memory and their songs are as ancient as the  mountains
+they call home.
+
+'In the final beginning, there was only the Creator.
+His dawning aurora was scattered across the planes of existence.
+
+He was the cold flame and the stone sea.
+A word unspoken.
+A light unseen.
+
+Out of His thoughts, He created all things.
+And from His dreams, He created all beings.
+Some which would sing, while others could sting.
+All these things and beings, He gave unto them meaning.
+
+So came the first day and night upon Orthos.
+So came the gods who were not gods.
+So came the spirit and the ghost,
+And the sun, moon and starry host.
+
+So it was, when the Creator set all these things beneath the planes,
+that He cast the die and let them roll.
+The universe itself, His to control and the fates of mortals,
+cleft from His soul.'</Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>NoSac</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a cat-like man to Entrance to the Inn-->
+      <Type>NPC</Type>
+      <Destination>12104</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12114</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human bouncer to A crowded room-->
+      <Type>NPC</Type>
+      <Destination>12105</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a human bouncer to A crowded room-->
+      <Type>NPC</Type>
+      <Destination>12106</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a giant bouncer to The Bar-->
+      <Type>NPC</Type>
+      <Destination>12107</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn baldur the bartender to The Bar-->
+      <Type>NPC</Type>
+      <Destination>12107</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a bottle of old beer to baldur the bartender-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a glass of elven maple tea to baldur the bartender-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12101</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a jigger of apple cider to baldur the bartender-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12102</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a jug of jack loukos firebreather to baldur the bartender-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a mug of dwarven ale to baldur the bartender-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12100</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an oak couch to The Fireplace-->
+      <Type>Item</Type>
+      <Destination>12108</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>12105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elven storyteller to The Fireplace-->
+      <Type>NPC</Type>
+      <Destination>12108</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12104</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silver pocketwatch to an elven storyteller-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an elven singer to The Stage-->
+      <Type>NPC</Type>
+      <Destination>12109</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ivory harp to an elven singer-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a small fox to A Small Library-->
+      <Type>NPC</Type>
+      <Destination>12110</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12105</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn sam the silly to A Small Library-->
+      <Type>NPC</Type>
+      <Destination>12110</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12106</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of red suspenders to sam the silly-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12107</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fat man to The Dance Floor-->
+      <Type>NPC</Type>
+      <Destination>12111</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black tux to a fat man-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12109</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a short woman to The Dance Floor-->
+      <Type>NPC</Type>
+      <Destination>12111</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12108</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a white ball gown to a short woman-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an oddly dressed man to The Dance Floor-->
+      <Type>NPC</Type>
+      <Destination>12112</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a stage worker to Back Stage-->
+      <Type>NPC</Type>
+      <Destination>12113</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>12111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a stage worker to Back Stage-->
+      <Type>NPC</Type>
+      <Destination>12113</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>12111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an old man to The Porch-->
+      <Type>NPC</Type>
+      <Destination>12122</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12103</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the valley chanter to A Hallway-->
+      <Type>NPC</Type>
+      <Destination>12124</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12113</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn asmira the instrumentalist to The Hall of Music-->
+      <Type>NPC</Type>
+      <Destination>12129</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12112</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a coral harp to asmira the instrumentalist-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12112</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silver flute to asmira the instrumentalist-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12111</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brass horn to asmira the instrumentalist-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>12113</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large mahogany bookshelf to A Small Library-->
+      <Type>Item</Type>
+      <Destination>12110</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12114</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an oddly dressed man to The Void-->
+      <Type>NPC</Type>
+      <Destination>1</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a lectern holding a single index card to A Small Library-->
+      <Type>Item</Type>
+      <Destination>12110</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12115</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an oddly dressed man to The Void-->
+      <Type>NPC</Type>
+      <Destination>1</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12110</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn fabrication creation authenes to A Small Library-->
+      <Type>Item</Type>
+      <Destination>12110</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>12116</Vnum>
+    </Reset>
+  </Resets>
+</Area>

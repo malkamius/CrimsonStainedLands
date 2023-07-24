@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Sylvan Cabal</Name>
+    <Info></Info>
+    <VnumStart>8800</VnumStart>
+    <VnumEnd>8899</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>ABAL} Deomanix  The Sylvan Grove</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>8800</VNum>
+      <Name>On top of the Ancient Oak</Name>
+      <Description>You are standing on top of a large wooden platform formed of branches. 
+The tree itself has formed a platform of tangled branches. You can see 
+miles and miles in the distance from here. You can see mountains rising up 
+in the distance, as well as lakes sparkling afar.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>8801</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8801</VNum>
+      <Name>Nearing the top of the Ancient Oak</Name>
+      <Description>You are now nearing the top branches of the large oak. You have a 
+spectacular view now over the tops of the normal sized trees. You
+can also look down to the forest floor from here and see different 
+creatures moving about. You can go higher into the tree or back down.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>8800</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>8802</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8802</VNum>
+      <Name>In the Branches of the Ancient Oak</Name>
+      <Description>You are standing on some of the lower levels of the oaks branches. You 
+can look down to the forest floor from here and see different creatures 
+moving about. You can go higher into the tree or back down.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>8801</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>8803</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8803</VNum>
+      <Name>Inside the Oak</Name>
+      <Description>You are standing in the midst of the largest tree you have ever laid 
+eyes on. All about you the walls of the natural temple rise up far above 
+your head. In the center of this cavern a yound sapling has begun to shoot 
+up through the ground. You can climb up into the tree above you.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8804</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>8802</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8804</VNum>
+      <Name>Entrance to the Ancient Oak</Name>
+      <Description>You are standing inside of an enormous oak tree. It has grown in such a 
+way to provide a something of a natural cathedral. Roots cover the floor 
+snaking in every direction, and you can head into the tree to the north.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8803</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8805</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8805</VNum>
+      <Name>Through the deep forest</Name>
+      <Description>Towering above you on every side, trees form a canopy above your head. 
+Shafts of light strugle to make thier way down to the forest floor. The 
+fresh smell of moist dirt wafts through the air, coupled with the scent 
+of wild herbs. Further down the path to the north you can see the forest 
+opening up.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8804</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>26128</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>8800</Vnum>
+      <name>ancient sylvan ranger guardian</name>
+      <description>A barely noticable figure is here watching you with eyes like a hawk.</description>
+      <longDescription>The Ancient Ranger is here.</longDescription>
+      <shortDescription>the Ancient Ranger</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>500</HitPointDiceCount>
+      <HitPointDiceBonus>8000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>3999</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Medium</size>
+      <race>elf</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>30</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel Mage NoPurge Changer</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil Sneak Haste Swim</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>19</DamageDiceSides>
+      <DamageDiceCount>13</DamageDiceCount>
+      <DamageDiceBonus>10</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8801</Vnum>
+      <name>healer herbalist</name>
+      <description>He is an old man carrying around various dried plants in his arms.</description>
+      <longDescription>An herbalist is here lending aid to the creatures of the wild.</longDescription>
+      <shortDescription>an herbalist</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>1</HitPointDiceCount>
+      <HitPointDiceBonus>1999</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Cleric NoPurge Healer AreaAttack</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>30</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>8800</VNum>
+      <Name>young sapling</Name>
+      <ShortDescription>the Young Sapling</ShortDescription>
+      <LongDescription>the Young Sapling is here.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Glow NoPurge</ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>8801</VNum>
+      <Name>Leader Blade</Name>
+      <ShortDescription>blade named "Guardian of the Forests"</ShortDescription>
+      <LongDescription>If this Blade is found on anyone but The true owner then they will be slain on sight.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>nature</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield NoSac</WearFlags>
+      <ExtraFlags>Glow NoDrop Bless Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>Metal forged in the Depths of a Volcano</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn an herbalist to On top of the Ancient Oak-->
+      <Type>NPC</Type>
+      <Destination>8800</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>8801</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Ancient Ranger to Through the deep forest-->
+      <Type>NPC</Type>
+      <Destination>8805</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>8800</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Young Sapling to the Ancient Ranger-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8800</Vnum>
+    </Reset>
+  </Resets>
+</Area>

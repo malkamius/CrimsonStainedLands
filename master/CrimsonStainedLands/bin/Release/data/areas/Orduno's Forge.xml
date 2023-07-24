@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Orduno's Forge</Name>
+    <Info></Info>
+    <VnumStart>25500</VnumStart>
+    <VnumEnd>25599</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{SHRINE} Orduno    The Forge of Orduno</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>25500</VNum>
+      <Name>a dirt path</Name>
+      <Description>You stand in the middle of a faint dirt path.  This path is well kept but 
+appears as if it is very seldom used.  To the north you can make out a 
+small stone building behind a great tree, the thundering sounds of a 
+hammer striking an anvil can be heard coming from the building.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25501</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25501</VNum>
+      <Name>a dirt path</Name>
+      <Description>You stand in the middle of a faint dirt path.  This path is well kept but 
+appears as if it is very seldom used.  To the north you can make out a 
+small stone building behind a great tree, the thundering sounds of a 
+hammer striking an anvil can be heard coming from the building.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25502</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25500</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25502</VNum>
+      <Name>a dirt path</Name>
+      <Description>You are still on the path and the building and tree are now closer and 
+still to the north.  Ahead of you the path seems to bend around the tree 
+on its way towards the small building.  The air around you seems to be 
+getting hotter as you near the building and the sound of the hammer has 
+grown to a near deafening volume. To the South you can make out the 
+begining of the trail.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25503</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25501</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25503</VNum>
+      <Name>a bend in the dirt path</Name>
+      <Description>Right before the path reaches the giant tree it begins to bend around it. 
+The tree now obscures your view of the small building but the din of the 
+hammer has reached unbearable levels and the air here is considerable 
+warmer then that at the begining of the path.  the path veers to the east 
+to go around the giant tree.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25504</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25502</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25504</VNum>
+      <Name>a path around a giant tree</Name>
+      <Description>You can again make out the building to the north and you are close enough 
+to make out the individual stone blocks which make it up.  To the west is 
+the massive tree and looking up you cannot make out the top as it reaches 
+into the heavens.  at the base of the tree a dwarf sits with a mug of ale 
+in his hand and greets you as you pass. the path continues to the north 
+towards the house and to the west around the tree.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25505</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25503</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tree giant</Keyword>
+          <Description>This tree seems to be as ancient as the ground upon which it stands.  The 
+tree itself is a redish brown in color and its base must be at least 40 
+feet thick.  Its top reaches towards the heavens and some mos grows upon 
+its base.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>25505</VNum>
+      <Name>a path around a giant tree</Name>
+      <Description>You are now much closer to the building and nearly past the tree.  The 
+heat emmitted from the building is intense and the ringing of the hammer 
+is even more prevalent.  Smoke pours from a small chimny above the 
+building into the sky creating a small pillar of smoke until it disperses 
+into the air.  The Tree is still to your West and the trail goes on to the 
+north towards the building and back to the south where it disapears behind 
+the tree.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25506</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25504</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>giant tree</Keyword>
+          <Description>This tree seems to be as ancient as the ground upon which it stands.  The 
+tree itself is a redish brown in color and its base must be at least 40 
+feet thick. Its top reaches towards the heavens and some mos grows upon 
+its base.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>25506</VNum>
+      <Name>before the building</Name>
+      <Description>You stand before the building in a small dusty courtyard.  You can now 
+here the sounds of many hammers striking anvils and here the shouts of men 
+from within the building.  The building itself appears to be made of a 
+pale grey stone and its door is made of a reddish wood.  In all the 
+building appears to be a very plain forge. On the door of the forge an 
+image depicting a large two headed hammer has been engraved in gold, 
+silver, steel, iron, and wood.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25507</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door PickProof</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25505</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>door</Keyword>
+          <Description>This door is about 5 feet wide and is bordered by grey stone walls.  The 
+door itself is made out of a redish wood and there is an image on it of a 
+large two-headed hammer.  You suddenly notice that there is no door knob 
+on the door.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>image hammer two-headed</Keyword>
+          <Description>Embalazoned on the door is a depiction of a large two-headed hammer.  The
+hammer is large and most of it has been created from iron set into the 
+wood of the door.  On one jead of the hammer a sunburst is depicted while 
+on the other a moon has been made.  The hammer looks almost real as if it 
+was going to jump out of the door into your hands.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>25507</VNum>
+      <Name>inside the forge</Name>
+      <Description>You stand just within the red door. Before you sprawls a massive forge 
+filled with all sorts of creatures all of them working on one thing or 
+another. The size of this forge sees immpossible given the size of the 
+building but none of the other people notice.  Standing by the door is an 
+old dwarf who is leaning on a long staff.  To the north a drowish engraver 
+is working, to the West you can make out a human blacksmith and to the East is
+a small empty  workbench for new aprentices.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25508</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25515</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25506</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25510</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25508</VNum>
+      <Name>inside the forge</Name>
+      <Description>A drowish engraver sits on a wooden bench with a hammer and chisle in 
+hand. He is currently putting the finishing touches on a engraving on a 
+piece of armor.  On the bench is an assortment of hammers and chisles and 
+other tools which are used by an engraver. To the west a large storm giant 
+is making weapons, to the east a dwarf is making iron and steel, and to 
+the south is the door to the forge. To the east an elvish armorer is 
+making an ornate breastplate.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25512</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25514</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25507</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25509</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25509</VNum>
+      <Name>inside the forge</Name>
+      <Description>A storm giant stands here beating a massive piece of metal with a giant
+hammer.  The metal seems to resemble the blade of an axe but it is too
+difficult to tell because he has just started. To the east is a drowish 
+engraver and towards the north a small gnome seems to be working on some 
+sort of contraption.  To the south you see a human blacksmith working on a 
+horseshoe.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25511</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25508</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25510</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25510</VNum>
+      <Name>inside the forge</Name>
+      <Description>A tall human male stands beside an anvil shaping a horseshoe from an iron
+rod.  His workspace is not filled with weapons and armor but rather with 
+ladles and pots and horseshoes. To the north is a storm giant and to the 
+east is the door to the forge.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25509</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25507</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25511</VNum>
+      <Name>inside the forge</Name>
+      <Description>This is by far the most unorganized of all the workbenches.  This is where 
+the gnomish tinker has his workspace.  Cracked pots, bent swords, and 
+dented armor all lay around waiting to be mended, while other objects seem 
+to have strange gears and rods hanging out of them.  The gnome is 
+currently trying to attach a spring to a pot for some reason.To the south 
+a large storm giant is making weapons and to the east is the workspace of 
+the Creator.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25512</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25509</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25512</VNum>
+      <Name>The Workbench of The Creator</Name>
+      <Description>You stand within the workspace of the great Creator.  A massive anvil 
+stands in the center of this area and along the northern wall is a massive 
+fire. All sorts of tools line the walls and benches and a large pile of 
+coal is by the fire. To the west is the workbench of a gnomish tinker and 
+to the east is a deserted workbench. To the south a drowish engraver is 
+practicing his trade.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25513</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25508</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25511</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25513</VNum>
+      <Name>inside the forge</Name>
+      <Description>This workspace is empty and the dwaren master stonecutter is  absent.  All
+about this workspace are statues of marble, granite, and other various
+minereals.  Among the statues and figurines an occasional weapon or piece 
+of armor cut from stone can be seen. To the west is the workbench of the
+creator. to the south is an elvish armorer.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25514</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25512</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25514</VNum>
+      <Name>inside the forge</Name>
+      <Description>A short elf uses a hammer to gild an ornate breastplate from gold and 
+silver. Other pieces of armor line this workspace, all of excellent 
+quality and elegance.  To the north and south are empty workspaces and to 
+the west is a drowish engraver. Along the east wall is a door to the 
+storage space where raw materials are kept for use.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25513</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>25516</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>25515</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25508</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25515</VNum>
+      <Name>inside the forge</Name>
+      <Description>Here is a small workspace designed for new aprentices.  It is stocked with 
+lots of raw materials and tools.  A large anvil sits in the middle of it 
+waiting to be used and a small fire burns in the fire along the east wall. 
+To the north an elf is making armor, to the west is the entrance to the 
+forge.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>25514</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25507</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25516</VNum>
+      <Name>a storage closet</Name>
+      <Description>You stand inside the storage closet.  Piles of raw materials neatly line 
+the walls and shelves of this room waiting to be used.  The door back to 
+the forge is to the west. along the opposite wall is hung a pleOrthos of 
+spare tools in the case that anyone breaks their own.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>25514</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>25517</VNum>
+      <Name>standing inside the flame</Name>
+      <Description>You stand within a fire but it does not singe your flesh, instead your 
+soul feels uplifted and cleansed by this experience.  You slowly feel 
+yourself become one with the flame.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs />
+  <Items />
+  <Resets />
+</Area>

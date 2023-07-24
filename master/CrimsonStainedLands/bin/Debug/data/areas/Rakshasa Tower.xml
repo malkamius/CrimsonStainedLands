@@ -1,0 +1,3899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Rakshasa Tower</Name>
+    <Info></Info>
+    <VnumStart>13900</VnumStart>
+    <VnumEnd>13998</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{30 up} Ceran   Drannor, Rakshasa Domain</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>13901</VNum>
+      <Name>Before the Rakshasa Tower</Name>
+      <Description>You are standing before a massive tower seemingly carved from a single piece
+of solid granite.  Black as night, the stone appears to absorb all light that
+comes near, and the closer you get, the less light your lanterns seem to
+radiate.  At the base of the tower is a pair of huge doors, apparently leading
+inside.  Up ahead you see a guard post, manned by some large tigers which seem
+to be standing on two feet. To the south there is an open door way leading
+out to the ruins.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13903</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a guard post up ahead.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13807</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13902</VNum>
+      <Name>Guard Post Outside the Tower</Name>
+      <Description>This area teems with activity, many rakshasa and drow coming and going from
+the tower up ahead.  There are guards stationed here, observing those coming
+and going, and questioning those who they deem not to belong.  As you watch,
+one of the guards stops a young drow man, asks him a few questions, and
+seeming dissatisfied, proceeds to beat the young man, sending him fleeing
+back the way he came.  You may enter the tower to the north, or return to the
+west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13906</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may enter the tower in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13903</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The guard post continues in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13903</VNum>
+      <Name>Guard Post Outside the Tower</Name>
+      <Description>This area teems with activity, many rakshasa and drow coming and going from
+the tower up ahead.  There are guards stationed here, observing those coming
+and going, and questioning those who they deem not to belong.  As you watch,
+one of the guards stops a young drow man, asks him a few questions, and
+seeming dissatisfied, proceeds to beat the young man, sending him fleeing
+back the way he came.  You may continue east or west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13904</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The guard post continues in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13901</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can leave the guard post in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13902</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The guard post continues in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13904</VNum>
+      <Name>Guard Post Outside the Tower</Name>
+      <Description>This area teems with activity, many rakshasa and drow coming and going from
+the tower up ahead.  There are guards stationed here, observing those coming
+and going, and questioning those who they deem not to belong.  As you watch,
+one of the guards stops a young drow man, asks him a few questions, and
+seeming dissatisfied, proceeds to beat the young man, sending him fleeing
+back the way he came.  You may continue east or west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13908</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may enter the tower in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13903</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The guard post continues in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13905</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13913</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13906</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a faint light in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13906</VNum>
+      <Name>Inside the Tower</Name>
+      <Description>You are standing inside the left gate of the tower.  Light spills in through
+the cracks around the gate, but is obscured by light wisps of steam seeming
+coming from nowhere.  There is a sort of opressive darkness here, boding of
+great evil somewhere within these walls.  Perhaps you should turn back now?
+You may continue into the tower to the east and west, or leave to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13907</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may head farther into the tower this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13902</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a guard post this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13905</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may head farther into the tower this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13907</VNum>
+      <Name>Entrance to the Dark Temple</Name>
+      <Description>Before you lies a sight like nothing you have ever seen.  Tall guards stand
+inside the entrance to what appears to be a temple.  The doorway is in the
+shape of a gigantic skull, with torches lit in the eye sockets for
+illumination.  From inside you can hear a deep, resonant chanting, and 
+occasionally a scream.  You may head back into the the darkness to the east
+and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13915</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a dark temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13908</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may head farther into the tower this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13906</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may head farther into the tower this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13908</VNum>
+      <Name>Inside the Tower</Name>
+      <Description>You are standing inside the left gate of the tower.  Light spills in through
+the cracks around the gate, but is obscured by light wisps of steam seeming
+coming from nowhere.  There is a sort of opressive darkness here, boding of
+great evil somewhere within these walls.  Perhaps you should turn back now?
+You may continue into the tower to the east and west, or leave to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13909</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may head farther into the tower this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13904</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a guard post this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13907</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may head farther into the tower this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13909</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13917</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13908</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a faint light in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13910</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13922</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13911</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13923</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13912</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13924</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13913</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13913</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the west
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13905</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13912</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13914</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing in the southwestern corner of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  The temple continues north and east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13926</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The temple continues this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13915</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see the temple entrance this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13915</VNum>
+      <Name>Entrance to the Lich Temple</Name>
+      <Description>As you enter this temple, you are filled with a feeling of dread and fear.
+Evil fills the air, the chants of rakshasa sing tales of doom and dread, and
+rising up before you is one of the most hideous things you have ever seen.  A
+massive pile of bones and carrion forms an altar of worship to the Lich, a
+revered and respected religious head in rakshasa lore.  It is a testament to
+the sincerity of the rakshasa's hold on this land that one such as this would
+be here.  The temple continues east and west, or you can leave to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13916</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The temple continues this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13907</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may leave the temple in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13914</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The temple continues this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13916</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing in the southeastern corner of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  The temple continues north and east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13928</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The temple continues this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13915</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see the temple entrance this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13917</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the east
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13918</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13909</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13918</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13930</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13917</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13919</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13931</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13920</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13932</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13921</VNum>
+      <Name>Officer's Quarters</Name>
+      <Description>This room is different to the normal barracks.  The beds are single, not bunks,
+and next to each is a small writing desk, obviously for filling out forms and
+such.  The trappings on the bunks are more plush than those in the regular
+barracks, and the footlockers are larger, but equally as uninteresting.  You
+may return to the barracks to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13922</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13922</VNum>
+      <Name>Corridor in the Barracks</Name>
+      <Description>You are standing in a spartan corridor in what appears to be a soldier's
+barracks.  There are schedules for guard changes on the walls, and lists of
+names indicating merit or lack thereof.  You notice three different lists,
+each  of which being a different color, black, red or brown, indicating status
+in the  King's guard.  You see small alcoves to the north and south, a door to
+the  west, or you can return to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13934</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13923</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13910</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13921</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a small room this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13923</VNum>
+      <Name>Corridor in the Barracks</Name>
+      <Description>You are standing in a spartan corridor in what appears to be a soldier's
+barracks.  There are schedules for guard changes on the walls, and lists of
+names indicating merit or lack thereof.  You notice three different lists,
+each  of which being a different color, black, red or brown, indicating status
+in the  King's guard.  You see small alcoves to the north and south,  or you can
+return  to the east.  The barracks continue to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13935</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13924</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may head back into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13911</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13922</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13924</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the south.  You see light coming from a corridor to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13936</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13912</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13923</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13925</VNum>
+      <Name>Alcove in the Temple</Name>
+      <Description>You are standing in a small alcove off the main temple.  Squat wooden benches
+lined with furs sit here in rows.  Worshippers wait here before paying their
+respects to the Lich, although it appears to be rather quiet at the moment. 
+In  the north wall you see the faint outline of a door.  You can enter the
+temple  to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13937</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13926</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You can return to the temple in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13926</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing on the western side of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  The temple continues north and south.  You
+see  a small alcove to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13938</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13914</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13925</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13927</VNum>
+      <Name>Atop the Tower of Carrion</Name>
+      <Description>You are currently standing atop the tower of carrion, before the Altar of the
+Lich.  The floor here is made up of femurs of humans and elves, slick with
+thick blood of recent sacrifices.  There is an altar of human skulls standing
+in the centre of the tower where the sacrifices to the Dark Lord are made.
+Behind this altar is the throne of the Lich himself.  The only way out of here
+is back down the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>13939</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You can head back down the bone steps in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13928</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing on the eastern side of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  The temple continues north and south.  You
+see  a small alcove to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13940</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13929</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13916</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13929</VNum>
+      <Name>Alcove in the Temple</Name>
+      <Description>You are standing in a small alcove off the main temple.  Squat wooden benches
+lined with furs sit here in rows.  Worshippers wait here before paying their
+respects to the Lich, although it appears to be rather quiet at the moment. 
+In  the north wall you see the faint outline of a door.  You can enter the
+temple  to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13941</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13928</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You can return to the temple in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13930</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the south.  You see light coming from a corridor to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13942</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13931</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13918</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13931</VNum>
+      <Name>Corridor in the Barracks</Name>
+      <Description>You are standing in a spartan corridor in what appears to be a soldier's
+barracks.  There are schedules for guard changes on the walls, and lists of
+names indicating merit or lack thereof.  You notice three different lists,
+each  of which being a different color, black, red or brown, indicating status
+in the  King's guard.  You see small alcoves to the north and south,  or you can
+return  to the west.  The barracks continue to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13943</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13932</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13919</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13930</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13932</VNum>
+      <Name>Corridor in the Barracks</Name>
+      <Description>You are standing in a spartan corridor in what appears to be a soldier's
+barracks.  There are schedules for guard changes on the walls, and lists of
+names indicating merit or lack thereof.  You notice three different lists,
+each  of which being a different color, black, red or brown, indicating status
+in the  King's guard.  You see small alcoves to the north and south, a door to
+the  east, or you can return to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13944</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13933</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a small room this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13920</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13931</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13933</VNum>
+      <Name>Officer's Quarters</Name>
+      <Description>This room is different to the normal barracks.  The beds are single, not bunks,
+and next to each is a small writing desk, obviously for filling out forms and
+such.  The trappings on the bunks are more plush than those in the regular
+barracks, and the footlockers are larger, but equally as uninteresting.  You
+may return to the barracks to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13932</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13934</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13922</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13935</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13923</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13936</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the east
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13937</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13924</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13937</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the west.  You see the faint outline of a door to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13945</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13925</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13936</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13938</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing on the northwestern corner of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  The temple continues east and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13939</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13926</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13939</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing on the northern side of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  From here you can see a staircase of
+bones,  slick with blood, leading up to the top of the tower of carrion.  The
+temple  continues east and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13940</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13938</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>13927</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>You can head up the bony stairs this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13940</VNum>
+      <Name>Inside the Lich Temple</Name>
+      <Description>You are standing on the northwestern corner of a Temple of the Lich.  Rakshasa
+come here to worship the lich priest and pay their respects to their God.
+Towering above you is a pile of bones, many of them human and elven, which
+form  the Lich's altar of sacrifice.  The temple continues east and south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13928</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13939</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the temple this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13941</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the east.  You see the faint outline of a door to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13949</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13942</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13929</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13942</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the west
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13930</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13941</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13943</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13931</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13944</VNum>
+      <Name>Barracks</Name>
+      <Description>Rows of bunks line the walls in this small alcove.  Plush furs adorn the bunks,
+obviously used by the rakshasa guards at night.  At the base of each bunk is a
+small footlocker, which upon examination contains little of value.  The room
+is lit by a single lantern suspended from the ceiling.  You may exit this part
+of the barracks to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13932</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a long torchlit corridor this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13945</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the east
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13946</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13937</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13946</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13950</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13945</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13947</VNum>
+      <Name>Antechamber</Name>
+      <Description>This small room is furnished with some of the finest furs and wall hangings
+that you have seen yet.  Along the walls are several plush chairs and small
+tables containing various refreshments.  Guests wait here before going in to
+see the King, but this doesn't mean they shouldn't be comfortable.  You can
+exit the antechamber to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13951</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You see a well lit room in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13948</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the north
+or return to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13952</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13949</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13949</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can continue into the darkness to the west
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13941</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13948</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13950</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can see a brightly lit room to the east,
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13951</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a well lit room in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13946</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13951</VNum>
+      <Name>Before the Throne room</Name>
+      <Description>Standing here you know majesty.  This room is lit by large sconces on the walls
+adorned with precious stones of all descriptions.  The floor is of polished
+granite overlaid with fine rugs and pelts.  In the centre of the room is a
+large crystal chandelier lit by over 50 candles which throws sparkling light
+over everything in the room.  Tall golden doors fill the north wall, and you
+can see a smaller alcove to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13953</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You may enter the throne room this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13952</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13947</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see an antechamber in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13950</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13952</VNum>
+      <Name>A Corridor in the Tower</Name>
+      <Description>Dark, steamy, and quiet.  Too quiet.  Long shadows creep up and down the walls
+in the flickering torchlight, occasionally obscured by the steam whisping
+along  the floor.  The flagstones here are slick with moisture, and the roof is
+slightly too low for comfort.  You can see a brightly lit room to the west,
+or return to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13948</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13951</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You may continue into the darkness this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13953</VNum>
+      <Name>Entrance of the Throne Room</Name>
+      <Description>You are standing in the entrance area of the King's throne room.  Valuable furs
+and gold leaf are everywhere, opulence seeming to be a part of life for the
+King and his family.  The vaulted ceilings are so high that you can't see all
+of them, and the walls are made of black granite with gold flecks.  This huge
+room extends far to the north, or you can exit through the double doors to the
+south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13958</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The throne room extends as far as the eye can see this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13951</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a well lit room in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13954</VNum>
+      <Name>King's Chambers</Name>
+      <Description>You are standing in a small side-room of the King's chambers, which appears to
+be used for nothing more than closet space.  There are racks of clothing here
+covering three out of four walls, and dozens of pairs of furry slippers on the
+floor.  You can return to the main chambers to the north.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13960</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can return to the King's chambers this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13955</VNum>
+      <Name>Prince's Chambers</Name>
+      <Description>You are standing in the bedchamber of the rakshasa Prince.  There is a large
+fur covered bed sitting in the centre of the room, and a tall changing screen
+in one corner, obviously for the benefit of his mistresses.  There are lurid
+tapestries on the wall showing all types of erotic scenes, the centrepiece
+being one showing the Prince himself.  You may exit to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13956</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You can head back into the main chamber this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13956</VNum>
+      <Name>Prince's Chambers</Name>
+      <Description>This is the main chamber in the Prince's quarters.  It has 3 plush couches
+along the walls for guests to relax on, and a pair of smaller tables
+containing  refreshments.  There is a large, decorative rug on the granite floor
+and a  chandelier hung from the ceiling.  You can continue into the Prince's
+chambers  to the west, or leave through the door in the east wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13957</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13955</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You can continue into the Prince's chambers this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13957</VNum>
+      <Name>West Alcove of the Throne Room</Name>
+      <Description>This is a small alcove off the west side of the throne room.  It is lit by a
+pair of flaming torches, one on each wall.  On the west wall is a pair of
+curtains covering a heavy wooden door.  There is also a pair of curtains on
+the eastern entrance to hide this alcove from the throne room proper.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13958</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The throne room extends as far as the eye can see this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13956</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You can head into the Prince's quarters this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13958</VNum>
+      <Name>The Throne Room</Name>
+      <Description>Stupendous, opulent beyond belief, you stand in the throne room of the rakshasa
+King.  Polished granite highlighted with carved gold inlays are features of
+this enormous room, but the massive crystal chandelier lit by magical globes
+is possibly the single most marvellous thing you have ever seen.  Furs, rugs,
+tapestries, fine metals, gemstones all are in abundance here, fixed into the
+furnishings here.  There are piles of soft cushions for dignitaries to rest
+upon whilst talking to the king, and tables filled with every delicacy
+imaginable lining the edges of the room.  Just to the north is the King's
+throne, and you can see curtains east and west covering small alcoves.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13962</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>You can see the King's throne in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13959</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13953</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can head back out of the throne room this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13957</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13959</VNum>
+      <Name>West Alcove of the Throne Room</Name>
+      <Description>This is a small alcove off the west side of the throne room.  It is lit by a
+pair of flaming torches, one on each wall.  On the east wall is a pair of
+curtains covering a heavy wooden door.  There is also a pair of curtains on
+the western entrance to hide this alcove from the throne room proper.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13960</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You can head into the King's quarters this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13958</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The throne room extends as far as the eye can see this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13960</VNum>
+      <Name>King's Chambers</Name>
+      <Description>You are standing in the centre of the King's private chambers.  There is a
+small desk and chair here, and a small but comfortable sofa.  On the walls
+there are several ceremonial swords and shields, made of various precious
+metals, and as such unsuitable for battle.  The room is very much different
+from the throne room outside, having almost no luxuries, but instead being
+quite spartan and neat.  The throne room continues north and south.  On the
+east wall you see a very large reinforced door.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13963</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The King's chambers continue in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13961</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>You see a small room in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13954</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The King's chambers continue in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13959</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a small alcove in this direction.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13961</VNum>
+      <Name>King's Treasure Chamber</Name>
+      <Description>This is a small, fortified room with a steel-lined door, and a large chest
+bolted to the floor.  The walls aren't finished smoothly like the rest of the
+tower, but instead have been left rough, you don't know why.  You can,
+however,  see various stains on the walls which appear to be the blood of former
+pilferers...</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13960</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You can return to the King's chambers this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13962</VNum>
+      <Name>Before the King's Throne</Name>
+      <Description>You are standing before the King's throne.  Finely crafted from rare woods,
+gold and cut rubies, you are duly impressed by this throne.  It stands on
+a pedestal of polished black granite and is upholstered in fine velvet.
+Behind the throne is a rack for the King to store his sword and shield
+handy for any emergency.  You can return to the throne room to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13958</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The throne room extends as far as the eye can see this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13963</VNum>
+      <Name>King's Chambers</Name>
+      <Description>You are now in the King's private bedchamber.  Along one wall is a large
+but relatively plain single bed.  On the walls are two tapestries, both
+depicting scenes of war and bloodshed.  The floor is polished granite,
+but there are no rugs to warm the floor, only cold hard stone.  It seems
+the King doesn't wish to become soft in his reign.  You can return to the
+main part of the chambers to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13960</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You can return to the King's chambers this way.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>13900</Vnum>
+      <name>black rakshasa</name>
+      <description>The sleek black fur on this creature strongly suggests a night hunting
+predator, and the cold hard eyes that stare at you chill you to the bone. 
+Unlike other rakshasa that live to hoard treasure, the black one lives to
+kill, and it surrenders the noble part of it's mind to the tiger in it.</description>
+      <longDescription>A tiger headed creature with pure black fur is here.</longDescription>
+      <shortDescription>a black rakshasa</shortDescription>
+      <Sex>None</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>50</HitPointDiceCount>
+      <HitPointDiceBonus>5000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Mage Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>20</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13901</Vnum>
+      <name>red rakshasa</name>
+      <description>The red blood coloured fur on the rakshasa indicates it's royal lineage,
+althugh it has been a long time since any rakshasa dynasty ruled on the
+mortal planes. Now this proud beast is reduced to the life of a scavanger
+in the ruins of the ancient cities.</description>
+      <longDescription>A tiger headed creature with blood red fur is here.</longDescription>
+      <shortDescription>a red rakshasa</shortDescription>
+      <Sex>None</Sex>
+      <level>42</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>50</HitPointDiceCount>
+      <HitPointDiceBonus>4000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>840</hitpoints>
+      <maxhitpoints>840</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>42</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Mage Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>17</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13902</Vnum>
+      <name>brown rakshasa</name>
+      <description>One of the most common rakshasa, the brown caste represent the majority of
+the deadly race. Thie ones within the ruins are some of the last remaining
+ones on the mortal planes, and they are weary of this life, no longer as
+powerful as they once were.</description>
+      <longDescription>A tiger headed creature dark brown fur is here.</longDescription>
+      <shortDescription>a brown rakshasa</shortDescription>
+      <Sex>None</Sex>
+      <level>38</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>50</HitPointDiceCount>
+      <HitPointDiceBonus>3500</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>760</hitpoints>
+      <maxhitpoints>760</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>38</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC StayArea Mage Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>16</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13903</Vnum>
+      <name>rakshasa lich</name>
+      <description>This undead creature is the remains of the ancient rakshasa priest who served
+among the great rakshasa dynasty. Now, with the rakshasa kingdom gone, it lives
+here in the last of the dying domains of the rakshasa race. Eventually it will
+abandon even these last rakshasa and seek it's immortal destiny among the outer
+planes.</description>
+      <longDescription>A horribly disfigured rakshasa with burning red eyes is here.</longDescription>
+      <shortDescription>the lich rakshasa</shortDescription>
+      <Sex>Male</Sex>
+      <level>57</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>5500</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>1140</hitpoints>
+      <maxhitpoints>1140</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-270</ArmorBash>
+      <ArmorSlash>-270</ArmorSlash>
+      <ArmorPierce>-270</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Medium</size>
+      <race>lich</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>57</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Undead Cleric Warrior AreaAttack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion Flying PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>23</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13904</Vnum>
+      <name>rakshasa prince</name>
+      <description>Although nominally just the next in line to rule the rakshasa's remaining
+domain here in the ruins, Daedalus actually exerts the true control. His father
+the king has already succumbed to despair and rules only by tradition.</description>
+      <longDescription>A regal looking rakshasa stands here dictating over his domain.</longDescription>
+      <shortDescription>Daedalus, the rakshasa prince</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7500</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-260</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-180</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>1</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>9000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AreaAttack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13905</Vnum>
+      <name>twoheaded twohead two-headed two rakshasa</name>
+      <description>This abomination is the semi-successful experiment of the rakshasa high priest
+in his attempts to make a more powerful solider for the rakshasa's. In the war
+against the drow and beholder they are no longer able to hold their own, and
+have fallen back to the despicable magics of necromancy and transformation.</description>
+      <longDescription>A two-headed rakshasa is here dripping blood from it's kills.</longDescription>
+      <shortDescription>a two-headed rakshasa</shortDescription>
+      <Sex>None</Sex>
+      <level>55</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-250</ArmorBash>
+      <ArmorSlash>-250</ArmorSlash>
+      <ArmorPierce>-250</ArmorPierce>
+      <ArmorExotic>-150</ArmorExotic>
+      <size>Large</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>10</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>25</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13906</Vnum>
+      <name>zombie drow</name>
+      <description>This is one of the uses of drows killed in the current war between the rakshasa
+and the drows and beholders of Myth Drannor. Rather than waste the corpses the
+high priest has used them as personal slaves.</description>
+      <longDescription>The zombie of a dark-elf is standing here.</longDescription>
+      <shortDescription>the zombie of a dark-elven warrior</shortDescription>
+      <Sex>None</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-100</ArmorBash>
+      <ArmorSlash>-100</ArmorSlash>
+      <ArmorPierce>-100</ArmorPierce>
+      <ArmorExotic>-50</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13907</Vnum>
+      <name>rakshasa king</name>
+      <description>Majestic-looking rakshasa growling at your presence. His golden mitre flash
+brightly and crown of pure gold on his head looks like symbol of might. It's
+a rakshasa king who rule his fallen kingdom and prepare self for the raid
+against his enemies.</description>
+      <longDescription>The royal rakshasa king stands here pacing and growling.</longDescription>
+      <shortDescription>the rakshasa king</shortDescription>
+      <Sex>Male</Sex>
+      <level>59</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>1180</hitpoints>
+      <maxhitpoints>1180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-260</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-180</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>59</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>9000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AreaAttack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>26</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13908</Vnum>
+      <name>tiger</name>
+      <description>It is one of the largest creatures you have ever seen, almost the size of
+a small dragon, and certainly the largest tiger you have ever heard of.</description>
+      <longDescription>The royal rakshasa tiger pet is here prowling in agitation.</longDescription>
+      <shortDescription>a massive tiger</shortDescription>
+      <Sex>Male</Sex>
+      <level>59</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>7000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <hitpoints>1180</hitpoints>
+      <maxhitpoints>1180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-260</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-180</ArmorExotic>
+      <size>Giant</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>59</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel StayArea Warrior AreaAttack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>26</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>13900</VNum>
+      <Name>parchment red seal</Name>
+      <ShortDescription>a red tinted seal</ShortDescription>
+      <LongDescription>A piece of parchment with red tinted writing is here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13902</VNum>
+      <Name>claw black rakshasa</Name>
+      <ShortDescription>claws of a black rakshasa</ShortDescription>
+      <LongDescription>A large set of black claws is here.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>claw</WeaponDamageType>
+      <WeaponType>Exotic</WeaponType>
+      <DiceSides>12</DiceSides>
+      <DiceCount>3</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>12</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>12000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13903</VNum>
+      <Name>claws red rakshasa</Name>
+      <ShortDescription>the claws of a red rakshasa</ShortDescription>
+      <LongDescription>A set of red rakshasa claws are on the ground.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Hands</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>16000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>14</ArmorBash>
+      <ArmorSlash>16</ArmorSlash>
+      <ArmorPierce>15</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13904</VNum>
+      <Name>claws brown rakshasa</Name>
+      <ShortDescription>a pair of brown rakshasa claws</ShortDescription>
+      <LongDescription>A pair of brown claws are lying on the floor.</LongDescription>
+      <Description></Description>
+      <Level>36</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Feet</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>14000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>15</ArmorBash>
+      <ArmorSlash>15</ArmorSlash>
+      <ArmorPierce>17</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13905</VNum>
+      <Name>sceptre gold</Name>
+      <ShortDescription>a sceptre of gold</ShortDescription>
+      <LongDescription>A sceptre made of pure gold lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Dark Evil Invisibility AntiGood</ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>25400</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13906</VNum>
+      <Name>serpent twined ring</Name>
+      <ShortDescription>a serpent twined ring</ShortDescription>
+      <LongDescription>A ring in the form of an entwined serpent is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Dark Evil Invisibility Magic AntiGood</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>21000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>3</ArmorBash>
+      <ArmorSlash>4</ArmorSlash>
+      <ArmorPierce>4</ArmorPierce>
+      <ArmorExotic>12</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13907</VNum>
+      <Name>black coat fur rakshasa</Name>
+      <ShortDescription>a coat of black rakshasa fur</ShortDescription>
+      <LongDescription>A large pile of black fur is on the ground.</LongDescription>
+      <Description></Description>
+      <Level>47</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Dark Evil Magic AntiGood</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>23500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>cloth</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>19</ArmorSlash>
+      <ArmorPierce>18</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13908</VNum>
+      <Name>dual dual-bladed axe beholderkin slayer</Name>
+      <ShortDescription>a dual-bladed axe named 'Beholderkin Slayer</ShortDescription>
+      <LongDescription>A huge axe with two sharp sides is lying on the ground.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>slice</WeaponDamageType>
+      <WeaponType>Axe</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>7</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Magic NoDrop</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>23400</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13912</VNum>
+      <Name>blood collar</Name>
+      <ShortDescription>a blood-soaked collar</ShortDescription>
+      <LongDescription>A collar covered in sticky blood is on the ground.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>AntiGood AntiNeutral</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>13000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>3</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>4</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13913</VNum>
+      <Name>red ioun stone</Name>
+      <ShortDescription>a red ioun stone</ShortDescription>
+      <LongDescription>A deep red stone hums softly as it hovers in the air.</LongDescription>
+      <Description></Description>
+      <Level>35</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Hum Magic</ExtraFlags>
+      <ItemTypes>Trash</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>9999</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>red ioun stone</Keyword>
+          <Description>It seems to be humming and just floating, doing nothing...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>13914</VNum>
+      <Name>signet ring royal rakshasa</Name>
+      <ShortDescription>a royal rakshasa signet ring</ShortDescription>
+      <LongDescription>A large distinct ring with royal markings is on the ground.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Glow Magic Bless</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>19000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>4</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>6</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13916</VNum>
+      <Name>golden crown gold</Name>
+      <ShortDescription>a crown of gold</ShortDescription>
+      <LongDescription>A golden crown has been left sitting on the floor.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>7</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags>Glow Magic Bless</ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>11999</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13917</VNum>
+      <Name>necklace diamond</Name>
+      <ShortDescription>a diamond studded necklace</ShortDescription>
+      <LongDescription>A string of sparkling diamonds is here.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>12099</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>diamond</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13920</VNum>
+      <Name>steel shield emblem rakshasa pride</Name>
+      <ShortDescription>an emblem of rakshasa pride</ShortDescription>
+      <LongDescription>A large plate of steel bearing the mark of the rakshasa is here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Hum Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>26099</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>3</ArmorBash>
+      <ArmorSlash>4</ArmorSlash>
+      <ArmorPierce>4</ArmorPierce>
+      <ArmorExotic>15</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13921</VNum>
+      <Name>claw tiger</Name>
+      <ShortDescription>the claw of a massive tiger</ShortDescription>
+      <LongDescription>A huge, deadly looking tiger claw is lying here.</LongDescription>
+      <Description></Description>
+      <Level>48</Level>
+      <WeaponDamageType>claw</WeaponDamageType>
+      <WeaponType>Exotic</WeaponType>
+      <DiceSides>9</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>28</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum Magic Bless</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-4" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>28600</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
+      <Type>NPC</Type>
+      <Destination>13902</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
+      <Type>NPC</Type>
+      <Destination>13902</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
+      <Type>NPC</Type>
+      <Destination>13904</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
+      <Type>NPC</Type>
+      <Destination>13904</Destination>
+      <Count>2</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13905</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to Inside the Tower-->
+      <Type>NPC</Type>
+      <Destination>13906</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to Inside the Tower-->
+      <Type>NPC</Type>
+      <Destination>13908</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Barracks-->
+      <Type>NPC</Type>
+      <Destination>13910</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Barracks-->
+      <Type>NPC</Type>
+      <Destination>13911</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13912</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13912</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13917</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Barracks-->
+      <Type>NPC</Type>
+      <Destination>13920</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a two-headed rakshasa to Officer's Quarters-->
+      <Type>NPC</Type>
+      <Destination>13921</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13905</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blood-soaked collar to a two-headed rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13912</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Corridor in the Barracks-->
+      <Type>NPC</Type>
+      <Destination>13923</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the lich rakshasa to Atop the Tower of Carrion-->
+      <Type>NPC</Type>
+      <Destination>13927</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a coat of black rakshasa fur to the lich rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13907</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a sceptre of gold to the lich rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13905</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the zombie of a dark-elven warrior to Atop the Tower of Carrion-->
+      <Type>NPC</Type>
+      <Destination>13927</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>13906</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the zombie of a dark-elven warrior to Atop the Tower of Carrion-->
+      <Type>NPC</Type>
+      <Destination>13927</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>13906</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brown rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13930</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Corridor in the Barracks-->
+      <Type>NPC</Type>
+      <Destination>13931</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Officer's Quarters-->
+      <Type>NPC</Type>
+      <Destination>13933</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13937</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Inside the Lich Temple-->
+      <Type>NPC</Type>
+      <Destination>13939</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13942</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to Barracks-->
+      <Type>NPC</Type>
+      <Destination>13944</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13948</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13900</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn claws of a black rakshasa to a black rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red rakshasa to A Corridor in the Tower-->
+      <Type>NPC</Type>
+      <Destination>13949</Destination>
+      <Count>1</Count>
+      <Max>12</Max>
+      <Vnum>13901</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claws of a red rakshasa to a red rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13903</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black rakshasa to Before the Throne room-->
+      <Type>NPC</Type>
+      <Destination>13951</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13900</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn claws of a black rakshasa to a black rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black rakshasa to Entrance of the Throne Room-->
+      <Type>NPC</Type>
+      <Destination>13953</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13900</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn claws of a black rakshasa to a black rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Daedalus, the rakshasa prince to Prince's Chambers-->
+      <Type>NPC</Type>
+      <Destination>13956</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13904</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dual-bladed axe named 'Beholderkin Slayer to Daedalus, the rakshasa prince-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13908</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red tinted seal to Daedalus, the rakshasa prince-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13900</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an emblem of rakshasa pride to Daedalus, the rakshasa prince-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13920</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a royal rakshasa signet ring to Daedalus, the rakshasa prince-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13914</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black rakshasa to West Alcove of the Throne Room-->
+      <Type>NPC</Type>
+      <Destination>13957</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13900</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn claws of a black rakshasa to a black rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black rakshasa to West Alcove of the Throne Room-->
+      <Type>NPC</Type>
+      <Destination>13959</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13900</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn claws of a black rakshasa to a black rakshasa-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13902</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a massive tiger to King's Treasure Chamber-->
+      <Type>NPC</Type>
+      <Destination>13961</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13908</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the claw of a massive tiger to a massive tiger-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13921</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rakshasa king to Before the King's Throne-->
+      <Type>NPC</Type>
+      <Destination>13962</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13907</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a red ioun stone to the rakshasa king-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13913</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a crown of gold to the rakshasa king-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13916</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a royal rakshasa signet ring to the rakshasa king-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13914</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a diamond studded necklace to the rakshasa king-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13917</Vnum>
+    </Reset>
+  </Resets>
+</Area>

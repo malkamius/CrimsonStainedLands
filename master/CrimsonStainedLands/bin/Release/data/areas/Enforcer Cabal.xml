@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Enforcer Cabal</Name>
+    <Info></Info>
+    <VnumStart>23600</VnumStart>
+    <VnumEnd>23609</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>ABAL} GGolem  Legions of Justice</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>23600</VNum>
+      <Name>The Entrance</Name>
+      <Description>You are in a large hallway.  The floor is compleately marble, and on
+several locations, there are beautiful carvings.  The walls and windows
+are decorated with red curtains, swords, and ceramonial shields.
+Bright armors decorates all exits from the room.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23601</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The doorway looks leading to another same looking hall.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>5551</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>This way leads outside to the large square in front of the building.</Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23601</VNum>
+      <Name>Inside the HQ</Name>
+      <Description>This hall connects to two rooms at north and west.  There is a large
+stairway leading up.  There is a big map of Orthos drawn on the east wall.
+There is also a big symbol on the floor, it looks like the symbol of
+Justice, but you can't see if briefly.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>23602</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>That room is the chamber of laws.  Honorable warriors walk out the door
+ and many others enter.  The room presents the matters of law.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23600</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Entrance hall can be seen.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23603</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Through the oak doors, you can see the chapel.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>23604</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description>The stairs lead to the upper floor.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23602</VNum>
+      <Name>Room of Laws</Name>
+      <Description>This place is the room where all Justices' study the laws, and learn how
+to use them.  There is a big big plaque on the north wall, the code of
+Justice.  There is also another big notice, a red curtain with silvery letters,
+the laws.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>23601</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>Through the doorway, the main all can be seen.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23603</VNum>
+      <Name>The chapel</Name>
+      <Description>You are in the Chapel of Head Quarters.  This place is for those defenders
+of laws, not to heal, and rest but also to pray to their gods, and listen
+their cleric to learn the manners of praying.  The western and eastern
+walls of chapel have shelves enlarging from up to down, and hunderets of
+candles emiting their soft light in to the room.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23601</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The oak doors lead to the main hall.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23604</VNum>
+      <Name>Upstairs</Name>
+      <Description>You are at the upstairs next to the stairway.  Only a single door can be
+seen to the west.  The symbol on the floor at downstairs is much visible
+from here.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>23605</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>23601</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>You look at the symbol on the first floor, from the place you are standing.
+ That is the sybol of Justice,  circled with swords of guards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>23605</VNum>
+      <Name>Mayor's Room</Name>
+      <Description>You are in the mayor's room.  The mayor is too busy with the city
+problems and he visits his room at the HeadQuarters so rare.  There is a
+big sign with a headline saying: 'Tips for new Justices' on the wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>23604</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>23600</Vnum>
+      <name>enforcer guard enforcerguard</name>
+      <description>He is a strong looking guard with a sharp look in his eyes.  He seizes 
+everybody in the vicinity.  He will never let intruders inside, before he 
+dies.</description>
+      <longDescription>The enforcer is waiting here protecting the entrance.</longDescription>
+      <shortDescription>the enforcer</shortDescription>
+      <Sex>Male</Sex>
+      <level>60</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>500</HitPointDiceCount>
+      <HitPointDiceBonus>4000</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>200</ManaPointDiceCount>
+      <ManaPointDiceBonus>1600</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-200</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>60</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel NoTrack Outdoors Changer AreaAttack AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Haste DarkVision Swim DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>35</DamageDiceCount>
+      <DamageDiceBonus>60</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>23601</Vnum>
+      <name>cleric enforcercleric</name>
+      <description>He is an old, wise cleric serving his cabal, the Justice, and praying his
+gods for the balance on Orthos.</description>
+      <longDescription>The cleric with grey robes of neutrality heals and protects his cabal mates.</longDescription>
+      <shortDescription>the lawful cleric</shortDescription>
+      <Sex>Male</Sex>
+      <level>55</level>
+      <HitPointDiceSides>1</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>800</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>300</ManaPointDiceCount>
+      <ManaPointDiceBonus>900</ManaPointDiceBonus>
+      <hitpoints>1100</hitpoints>
+      <maxhitpoints>1100</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>-90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>20</hitroll>
+      <damRoll>55</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel NoTrack Cleric NoPurge Outdoors Healer AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Haste DarkVision DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>15</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>23600</VNum>
+      <Name>stand bookstand</Name>
+      <ShortDescription>the bookstand</ShortDescription>
+      <LongDescription>The bookstand is standing at the center of room.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>NoSac</WearFlags>
+      <ExtraFlags>NoPurge BurnProof Closeable PickProof</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>20</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>ivory</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23601</VNum>
+      <Name>book laws law</Name>
+      <ShortDescription>the book of laws</ShortDescription>
+      <LongDescription>The book of laws is here.</LongDescription>
+      <Description></Description>
+      <Level>60</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>NoPurge</ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23602</VNum>
+      <Name>key small</Name>
+      <ShortDescription>a small key</ShortDescription>
+      <LongDescription>A small key is on the ground.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>NoPurge BurnProof</ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23603</VNum>
+      <Name>badge</Name>
+      <ShortDescription>silver justice badge</ShortDescription>
+      <LongDescription>A silver bagde shines on the ground.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>NoRemove NoPurge SellExtract NoUncurse</ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectHidden" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23604</VNum>
+      <Name>buckler justice shield</Name>
+      <ShortDescription>Justices' Buckler</ShortDescription>
+      <LongDescription>A buckler of a Justice is on the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Magic Bless BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>10000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>8</ArmorBash>
+      <ArmorSlash>8</ArmorSlash>
+      <ArmorPierce>8</ArmorPierce>
+      <ArmorExotic>3</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23605</VNum>
+      <Name>great justice shield</Name>
+      <ShortDescription>Justices' Great Shield</ShortDescription>
+      <LongDescription>There is a Great Justice Shield on the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>30</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Magic Bless BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-7" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>15000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>9</ArmorBash>
+      <ArmorSlash>9</ArmorSlash>
+      <ArmorPierce>9</ArmorPierce>
+      <ArmorExotic>4</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23606</VNum>
+      <Name>kite justice shield</Name>
+      <ShortDescription>Justices' Kite Shield</ShortDescription>
+      <LongDescription>You see a large Kite Shield of Justice on the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>31</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Magic Bless BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="9" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>20000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>21</ArmorBash>
+      <ArmorSlash>21</ArmorSlash>
+      <ArmorPierce>21</ArmorPierce>
+      <ArmorExotic>26</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>23607</VNum>
+      <Name>tower justice shield</Name>
+      <ShortDescription>Justices' Tower Shield</ShortDescription>
+      <LongDescription>A very big shield with a sybol of Justice covers the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>34</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags>Magic Bless BurnProof NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="11" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-13" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>20000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>steel</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>25</ArmorBash>
+      <ArmorSlash>25</ArmorSlash>
+      <ArmorPierce>25</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the enforcer to The Entrance-->
+      <Type>NPC</Type>
+      <Destination>23600</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>23600</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the book of laws to the enforcer-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>23601</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the bookstand to Room of Laws-->
+      <Type>Item</Type>
+      <Destination>23602</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>23600</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the lawful cleric to The chapel-->
+      <Type>NPC</Type>
+      <Destination>23603</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>23601</Vnum>
+    </Reset>
+  </Resets>
+</Area>

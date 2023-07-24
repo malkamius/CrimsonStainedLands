@@ -1,0 +1,2257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>The Docks</Name>
+    <Info></Info>
+    <VnumStart>60000</VnumStart>
+    <VnumEnd>60299</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits></Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>60000</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>19099</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60002</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60004</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60003</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60001</VNum>
+      <Name>The Docks</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60000</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60002</VNum>
+      <Name>Boat Shop</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60000</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60003</VNum>
+      <Name>Homeless Shelter</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60000</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60004</VNum>
+      <Name>Tigris River</Name>
+      <Description>The river widens here, to accomodate embarking and disembarking boat passengers
+on both sides of the docks. A pleasent musty smell rises from the river water,
+no doubt from whatever chemical is used to clean and sanitize it this close to
+the city.</Description>
+      <Sector>River</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60000</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60005</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60013</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60008</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60005</VNum>
+      <Name>Tigris River</Name>
+      <Description>The river widens here, to accomodate embarking and disembarking boat passengers
+on both sides of the docks. A pleasent musty smell rises from the river water,
+no doubt from whatever chemical is used to clean and sanitize it this close to
+the city.</Description>
+      <Sector>River</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60006</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60014</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60004</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60006</VNum>
+      <Name>Tigris River</Name>
+      <Description>The river widens here, to accomodate embarking and disembarking boat passengers
+on both sides of the docks. A pleasent musty smell rises from the river water,
+no doubt from whatever chemical is used to clean and sanitize it this close to
+the city.</Description>
+      <Sector>River</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60007</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60015</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60005</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60007</VNum>
+      <Name>Tigris River</Name>
+      <Description>The river widens here, to accomodate embarking and disembarking boat passengers
+on both sides of the docks. A pleasent musty smell rises from the river water,
+no doubt from whatever chemical is used to clean and sanitize it this close to
+the city.</Description>
+      <Sector>River</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>19578</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60006</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60008</VNum>
+      <Name>Tigris River</Name>
+      <Description>The river widens here, to accomodate embarking and disembarking boat passengers
+on both sides of the docks. A pleasent musty smell rises from the river water,
+no doubt from whatever chemical is used to clean and sanitize it this close to
+the city.</Description>
+      <Sector>River</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60004</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60012</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60009</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60009</VNum>
+      <Name>Tigris River</Name>
+      <Description>The river widens here, to accomodate embarking and disembarking boat passengers
+on both sides of the docks. A pleasent musty smell rises from the river water,
+no doubt from whatever chemical is used to clean and sanitize it this close to
+the city.</Description>
+      <Sector>River</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60008</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60011</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>19116</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60010</VNum>
+      <Name>River</Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits />
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60011</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60009</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60012</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60020</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60012</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60008</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60013</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60011</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60013</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60004</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60014</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60012</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60014</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60005</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60015</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60013</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60015</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60006</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60016</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60014</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60016</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60015</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60021</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60017</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60017</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60016</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60041</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60018</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60018</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60017</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60019</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60019</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60018</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60042</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60020</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60020</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60011</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60019</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60021</VNum>
+      <Name>The Docks</Name>
+      <Description>Despite its dusty appearance and infestations, the docks are an important part
+of the city. Many visitors arrive by boat, and need to have a safe place to
+land. You decide to watch your step, since the sweepers have not cleaned this
+area up yet.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60016</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>60022</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60022</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60023</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>60021</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60023</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60039</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60022</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60024</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60024</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60023</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60025</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60025</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60038</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60024</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60026</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60026</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60025</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60027</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60027</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60028</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60026</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60028</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60029</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60027</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60029</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60030</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60028</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60030</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60031</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60029</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60031</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60032</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60030</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60032</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60033</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60031</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60033</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60034</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60036</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60032</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60034</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>60035</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60033</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60035</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>60034</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60036</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60033</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60037</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60037</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60036</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60038</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60038</VNum>
+      <Name>The Catwalk</Name>
+      <Description>The catwalk above the docks is basically roughed in, wood beams supporting the
+upstairs office, along with various lanterns hanging down to light up the docks
+below. Ventilation openings allow birds to enter, making nests for their young.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60037</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60025</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60039</VNum>
+      <Name>Foreman's Ofice</Name>
+      <Description>Dispite the disarray of the docks, this office is clean and well cared for. The
+foreman must care about appearance, even his desk is fresly waxed and sealed.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60040</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60023</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door</Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60040</VNum>
+      <Name>Back Office</Name>
+      <Description>Well-kept and clean, the back office has a big comfortable chair in the corner
+where someone having a bad day could take a relaxing break. A bottle of some
+sort can be seen through the glass of a cabinet against the wall.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>60039</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60041</VNum>
+      <Name>Storage Room</Name>
+      <Description>This storage closet is full of brooms, mops, and other cleaning equipment,
+along with a wide variety of solvents. Despite being full of tools for
+cleaning, it is anything but. Rats and critters have made this home.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60017</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>60042</VNum>
+      <Name>Storage Room</Name>
+      <Description>This storage closet is full of brooms, mops, and other cleaning equipment,
+along with a wide variety of solvents. Despite being full of tools for
+cleaning, it is anything but. Rats and critters have made this home.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>60019</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>60000</Vnum>
+      <name>Theodore foreman</name>
+      <description>A short and stocky dwarf is here, concentrationg on the desk full of papers in
+front of him.</description>
+      <longDescription>The foreman of the docks is here.</longDescription>
+      <shortDescription>the foreman</shortDescription>
+      <Sex>Male</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>300</HitPointDiceCount>
+      <HitPointDiceBonus>400</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>2200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-5</ArmorBash>
+      <ArmorSlash>-5</ArmorSlash>
+      <ArmorPierce>-5</ArmorPierce>
+      <ArmorExotic>-5</ArmorExotic>
+      <size>Medium</size>
+      <race>dwarf</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>8</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NoWander StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Swim</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>7</DamageDiceSides>
+      <DamageDiceCount>3</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>60001</Vnum>
+      <name>rat</name>
+      <description>A rat is not happy with you disturbing its adventure to find food.</description>
+      <longDescription>A rat is here.</longDescription>
+      <shortDescription>the rat</shortDescription>
+      <Sex>Male</Sex>
+      <level>6</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>50</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>150</hitpoints>
+      <maxhitpoints>150</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <size>Small</size>
+      <race>rat</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>8</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>StayArea Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>bite</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>2</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>60002</Vnum>
+      <name>centipede</name>
+      <description>A centipede tries to inch away from the center of the room.</description>
+      <longDescription>A centipede is here.</longDescription>
+      <shortDescription>the centipede</shortDescription>
+      <Sex>Female</Sex>
+      <level>5</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>20</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>150</hitpoints>
+      <maxhitpoints>150</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Small</size>
+      <race>centipede</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DarkVision</affectedBy>
+      <WeaponDamageMessage>suction</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>2</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>60003</Vnum>
+      <name>spider</name>
+      <description>A spider tries to scurry from your footsteps.</description>
+      <longDescription>A spider is here.</longDescription>
+      <shortDescription>the spider</shortDescription>
+      <Sex>Female</Sex>
+      <level>5</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>20</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>150</hitpoints>
+      <maxhitpoints>150</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Small</size>
+      <race>centipede</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>5</hitroll>
+      <damRoll>5</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DarkVision</affectedBy>
+      <WeaponDamageMessage>bite</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>2</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>60004</Vnum>
+      <name>pigeon</name>
+      <description>A pigeon is looking for nesting materials.</description>
+      <longDescription>A pigeon is here.</longDescription>
+      <shortDescription>the pigeon</shortDescription>
+      <Sex>Female</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>200</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Small</size>
+      <race>bird</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>10</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Flying</affectedBy>
+      <WeaponDamageMessage>peck</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>60005</Vnum>
+      <name>starling</name>
+      <description>A beautiful starling is looking for nesting materials.</description>
+      <longDescription>A starling is here.</longDescription>
+      <shortDescription>the starling</shortDescription>
+      <Sex>Female</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>100</HitPointDiceCount>
+      <HitPointDiceBonus>200</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Small</size>
+      <race>bird</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>10</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Flying</affectedBy>
+      <WeaponDamageMessage>peck</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>60006</Vnum>
+      <name>sparrow</name>
+      <description>A small sparrow is trapped and looking for a way to escape.</description>
+      <longDescription>A sparrow is here.</longDescription>
+      <shortDescription>the sparrow</shortDescription>
+      <Sex>Female</Sex>
+      <level>12</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>200</HitPointDiceCount>
+      <HitPointDiceBonus>100</HitPointDiceBonus>
+      <ManaPointDiceSides>20</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>700</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Small</size>
+      <race>bird</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>12</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>StayArea</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Flying</affectedBy>
+      <WeaponDamageMessage>peck</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>60000</VNum>
+      <Name>bracer charred</Name>
+      <ShortDescription>a charred bracer</ShortDescription>
+      <LongDescription>You see a charred bracer here.</LongDescription>
+      <Description>A charred leather bracer looks very comfortable wear.</Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>390</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-1</ArmorBash>
+      <ArmorSlash>-1</ArmorSlash>
+      <ArmorPierce>-1</ArmorPierce>
+      <ArmorExotic>-1</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>60001</VNum>
+      <Name>black sleeves</Name>
+      <ShortDescription>a pair of black sleeves</ShortDescription>
+      <LongDescription>You see a pair of black sleeves here.</LongDescription>
+      <Description>A pair of black sleeves look comfortable to wear.</Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Arms</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>390</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>-1</ArmorBash>
+      <ArmorSlash>-1</ArmorSlash>
+      <ArmorPierce>-1</ArmorPierce>
+      <ArmorExotic>-1</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>60002</VNum>
+      <Name>cabinet</Name>
+      <ShortDescription>the cabinet</ShortDescription>
+      <LongDescription>A cabinet is against the wall here.</LongDescription>
+      <Description>A cabinet against the wall is covered with cobwebs.</Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Closed Closeable Locked</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Keys>
+        <Key vnum="60003" />
+      </Keys>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>60003</VNum>
+      <Name>key</Name>
+      <ShortDescription>a key</ShortDescription>
+      <LongDescription>A small key lies here.</LongDescription>
+      <Description>It is a small key with no inscriptions or marks of any kind.</Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn the foreman to Foreman's Ofice-->
+      <Type>NPC</Type>
+      <Destination>60039</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a charred bracer to the foreman-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>60000</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pair of black sleeves to the foreman-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a key to the foreman-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>60003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the cabinet to Back Office-->
+      <Type>Item</Type>
+      <Destination>60040</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the silver coins to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>19097</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to The Docks-->
+      <Type>NPC</Type>
+      <Destination>60015</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to The Docks-->
+      <Type>NPC</Type>
+      <Destination>60013</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to The Docks-->
+      <Type>NPC</Type>
+      <Destination>60011</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to The Docks-->
+      <Type>NPC</Type>
+      <Destination>60019</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>60042</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>60041</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rat to The Docks-->
+      <Type>NPC</Type>
+      <Destination>60021</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60001</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the cityguard to The Docks-->
+      <Type>NPC</Type>
+      <Destination>60000</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>19019</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the centipede to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>60041</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the centipede to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>60042</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60002</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the spider to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>60042</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the spider to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>60041</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60003</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pigeon to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60024</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the starling to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60025</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the sparrow to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60026</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pigeon to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60028</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the starling to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60029</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the sparrow to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60030</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pigeon to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60032</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the starling to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60033</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60005</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the sparrow to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60035</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60006</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pigeon to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60036</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the pigeon to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60037</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60004</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the starling to The Catwalk-->
+      <Type>NPC</Type>
+      <Destination>60038</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60005</Vnum>
+    </Reset>
+  </Resets>
+</Area>

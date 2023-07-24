@@ -1,0 +1,2094 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Graveyard</Name>
+    <Info></Info>
+    <VnumStart>3600</VnumStart>
+    <VnumEnd>3699</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{ 5 10} Alfa    Graveyard</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>3600</VNum>
+      <Name>A Gravel Road in the Graveyard</Name>
+      <Description>You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.  An iron
+grate is to the north and narrow gravel paths lead east and west.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3124</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Through the solid iron bars you see Elm Street.</Description>
+          <Flags>Door Closed Locked</Flags>
+          <Keys>3121</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3650</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path leads eastwards between the dark evergreen trees.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3601</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3606</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path leads westwards between the dark evergreen trees.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3601</VNum>
+      <Name>A Gravel Road in the Graveyard</Name>
+      <Description>You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3600</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3602</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3602</VNum>
+      <Name>A Gravel Road in the Graveyard</Name>
+      <Description>You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3601</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3603</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3603</VNum>
+      <Name>A Gravel Road in the Graveyard</Name>
+      <Description>You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3602</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3604</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues southwards to an open space before a small
+ building.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3604</VNum>
+      <Name>In front of the Chapel</Name>
+      <Description>You are on an open space before a small chapel.  A gravel road leads north
+through the graveyard and the chapel entrance is to the south.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3603</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel road continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3638</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path leads eastwards between the dark evergreen trees.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3405</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The chapel door is made of dark wood.</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3618</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path leads westwards between the dark evergreen trees.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3606</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3600</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues eastwards towards a gravel road.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3608</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3607</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3607</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3606</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3608</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and west.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3606</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3610</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues westwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3609</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3609</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3608</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3610</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads east and south.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3608</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues eastwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3612</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3611</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3611</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3610</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3612</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and east.  A small shed is to the west.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3610</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3614</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues eastwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3613</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>It is a small black-painted shed with a wooden door.</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3613</VNum>
+      <Name>In a shed on the Graveyard</Name>
+      <Description>You are in a small shed that looks as if it is used to store all sorts of
+gardening equipment.  The only exit appears to be through a door to the east.</Description>
+      <Sector>City</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3612</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3614</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads south and west.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3616</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3612</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues westwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3615</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3615</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3614</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3616</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and south.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3614</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3618</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3617</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3617</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3616</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3618</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and east.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3616</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3604</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues eastwards towards a building of some sort.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3619</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3619</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3618</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3638</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and west.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3640</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3604</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues westwards towards a building of some sort.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3639</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3639</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3638</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3640</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and south.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3642</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3638</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3641</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3641</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3640</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3642</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads east and south.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3644</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues eastwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3640</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3643</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3643</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3642</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3644</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and west.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3646</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3642</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues westwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3645</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3645</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3644</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3646</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads south and west.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3644</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3648</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues westwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3647</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3647</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3646</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3648</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and east.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>3650</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues northwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>3646</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues eastwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3649</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3649</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3648</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>3650</VNum>
+      <Name>A Gravel Path on the Graveyard</Name>
+      <Description>You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads south and west.  An old tomb is here.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>3648</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues southwards.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>3600</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The gravel path continues westwards towards a gravel road.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>3651</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>tomb stone</Keyword>
+          <Description>It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>3651</VNum>
+      <Name>In a dusty Tomb</Name>
+      <Description>You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.</Description>
+      <Sector>City</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>3650</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>3600</Vnum>
+      <name>henry gardener</name>
+      <description>He is a tall but bulky man in his late fifties.  His features are worn with
+decades of hard work and his somewhat crouched expression is one of deep
+sorrow and depression.  He is haunted by a memory of a lost paradise.</description>
+      <longDescription>Henry the Gardener is sitting here, looking drunk.</longDescription>
+      <shortDescription>Henry the Gardener</shortDescription>
+      <Sex>Male</Sex>
+      <level>4</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>46</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>80</hitpoints>
+      <maxhitpoints>80</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>60</ArmorBash>
+      <ArmorSlash>60</ArmorSlash>
+      <ArmorPierce>60</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>4</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3601</Vnum>
+      <name>zombie</name>
+      <description>Maggots crawl all over its decaying body.</description>
+      <longDescription>A rotting zombie is staggering towards you with outstretched hands.</longDescription>
+      <shortDescription>the rotting zombie</shortDescription>
+      <Sex>Male</Sex>
+      <level>4</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>46</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>80</hitpoints>
+      <maxhitpoints>80</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>60</ArmorBash>
+      <ArmorSlash>60</ArmorSlash>
+      <ArmorPierce>60</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>4</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>2</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3602</Vnum>
+      <name>ghoul</name>
+      <description>It is a walking corpse with long fangs and long, sharp nails that most of
+resemble claws.  Its eyes are a dark yellow colour and glare hungrily at you.</description>
+      <longDescription>A ghastly ghoul is here.</longDescription>
+      <shortDescription>the ghastly ghoul</shortDescription>
+      <Sex>Male</Sex>
+      <level>6</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>71</HitPointDiceBonus>
+      <ManaPointDiceSides>3</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>120</hitpoints>
+      <maxhitpoints>120</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>40</ArmorBash>
+      <ArmorSlash>40</ArmorSlash>
+      <ArmorPierce>40</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>ghoul</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>6</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3603</Vnum>
+      <name>skeleton</name>
+      <description>The dusty bones are almost brown.  It must have been buried for a very long
+time.</description>
+      <longDescription>A dusty skeleton lies here.</longDescription>
+      <shortDescription>a dusty skeleton</shortDescription>
+      <Sex>Male</Sex>
+      <level>3</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>35</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>60</hitpoints>
+      <maxhitpoints>60</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>70</ArmorBash>
+      <ArmorSlash>70</ArmorSlash>
+      <ArmorPierce>70</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>skeleton</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>3</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3604</Vnum>
+      <name>skeleton</name>
+      <description>The dusty bones are almost brown.  It must have been buried for a very long
+time.</description>
+      <longDescription>A dusty skeleton lies here.</longDescription>
+      <shortDescription>a dusty skeleton</shortDescription>
+      <Sex>Male</Sex>
+      <level>3</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>35</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>60</hitpoints>
+      <maxhitpoints>60</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>70</ArmorBash>
+      <ArmorSlash>70</ArmorSlash>
+      <ArmorPierce>70</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>skeleton</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>3</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>3605</Vnum>
+      <name>zombie</name>
+      <description>Maggots crawl all over its decaying body.</description>
+      <longDescription>A rotting zombie is staggering towards you with outstretched hands.</longDescription>
+      <shortDescription>the rotting zombie</shortDescription>
+      <Sex>Male</Sex>
+      <level>4</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>46</HitPointDiceBonus>
+      <ManaPointDiceSides>2</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>80</hitpoints>
+      <maxhitpoints>80</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>60</ArmorBash>
+      <ArmorSlash>60</ArmorSlash>
+      <ArmorPierce>60</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>4</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>3600</VNum>
+      <Name>candlestick</Name>
+      <ShortDescription>a candlestick</ShortDescription>
+      <LongDescription>A pewter candlestick is standing here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Light</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>10</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>candlestick</Keyword>
+          <Description>It is a rather old-looking three-armed candlestick made from pewter.  Its
+candles are a yellowish white colour.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3601</VNum>
+      <Name>brandy bottle</Name>
+      <ShortDescription>a brandy bottle</ShortDescription>
+      <LongDescription>A brandy bottle is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>6</Nutrition>
+      <Liquid>whisky</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>5</Charges>
+      <MaxCharges>5</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>brandy bottle</Keyword>
+          <Description>The bottle is a special 'Dragon Blood' brandy bottle.  Its neck is shaped
+like a small dragon's head.  Bottles like these are often worth a small
+amount money, even when empty.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3602</VNum>
+      <Name>brandy bottle</Name>
+      <ShortDescription>a brandy bottle</ShortDescription>
+      <LongDescription>A brandy bottle is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>DrinkContainer</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>100</Cost>
+      <Nutrition>6</Nutrition>
+      <Liquid>whisky</Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>brandy bottle</Keyword>
+          <Description>The bottle is a special 'Dragon Blood' brandy bottle.  Its neck is shaped
+like a small dragon's head.  Bottles like these are often worth some money,
+even when empty.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3603</VNum>
+      <Name>wheelbarrow</Name>
+      <ShortDescription>a wheelbarrow</ShortDescription>
+      <LongDescription>A green-painted wheelbarrow is standing here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>100</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Boat</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>50</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>wheelbarrow</Keyword>
+          <Description>It is a heavy wheelbarrow made from solid oaken planks that have been painted
+a dark, green colour.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3604</VNum>
+      <Name>shovel</Name>
+      <ShortDescription>a shovel</ShortDescription>
+      <LongDescription>A shovel is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>5</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>169</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>shovel</Keyword>
+          <Description>It is a large metal shovel with a solid wooden handle.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3605</VNum>
+      <Name>rake</Name>
+      <ShortDescription>a rake</ShortDescription>
+      <LongDescription>A rake is lying here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>claw</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>4</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>140</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>rake</Keyword>
+          <Description>It is a large metal rake with a solid wooden handle.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3610</VNum>
+      <Name>skeleton</Name>
+      <ShortDescription>a dusty skeleton</ShortDescription>
+      <LongDescription>A dusty skeleton lies here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>bones</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>skeleton</Keyword>
+          <Description>The dusty bones are almost brown.  It must have been buried for a very long
+time.
+A dusty skeleton is in an excellent condition.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3611</VNum>
+      <Name>amethyst gem</Name>
+      <ShortDescription>a amethyst</ShortDescription>
+      <LongDescription>A large, beautifully polished amethyst has been left here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>WarpStone</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>amethyst</Keyword>
+          <Description>It has a very deep purple colour.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3612</VNum>
+      <Name>pendant silver</Name>
+      <ShortDescription>a silver pendant</ShortDescription>
+      <LongDescription>A silver pendant has been left here.</LongDescription>
+      <Description></Description>
+      <Level>7</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Jewelry</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>800</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>pendant silver</Keyword>
+          <Description>It resembles Thor's hammer and appears to be made of solid silver.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>3613</VNum>
+      <Name>dagger silver</Name>
+      <ShortDescription>a silver dagger</ShortDescription>
+      <LongDescription>A long silver dagger is lying here.</LongDescription>
+      <Description></Description>
+      <Level>6</Level>
+      <WeaponDamageType>pierce</WeaponDamageType>
+      <WeaponType>Dagger</WeaponType>
+      <DiceSides>2</DiceSides>
+      <DiceCount>4</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>430</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>dagger silver</Keyword>
+          <Description>It has a long, sharp blade that is made entirely from silver.  A small rune
+has been engraved on the blade next to the hilt.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a dusty skeleton to In front of the Chapel-->
+      <Type>NPC</Type>
+      <Destination>3604</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3604</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to A Gravel Path on the Graveyard-->
+      <Type>NPC</Type>
+      <Destination>3606</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3604</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3607</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3610</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3609</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3603</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3611</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3603</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silver dagger to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3611</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3613</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to A Gravel Path on the Graveyard-->
+      <Type>NPC</Type>
+      <Destination>3612</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3604</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Henry the Gardener to In a shed on the Graveyard-->
+      <Type>NPC</Type>
+      <Destination>3613</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3600</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brandy bottle to Henry the Gardener-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3601</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a brandy bottle to In a shed on the Graveyard-->
+      <Type>Item</Type>
+      <Destination>3613</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3602</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wheelbarrow to In a shed on the Graveyard-->
+      <Type>Item</Type>
+      <Destination>3613</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3603</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a shovel to In a shed on the Graveyard-->
+      <Type>Item</Type>
+      <Destination>3613</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3604</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rake to In a shed on the Graveyard-->
+      <Type>Item</Type>
+      <Destination>3613</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3605</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3615</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3610</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the ghastly ghoul to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3617</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3602</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silver pendant to the ghastly ghoul-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3612</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3619</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3610</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rotting zombie to A Gravel Path on the Graveyard-->
+      <Type>NPC</Type>
+      <Destination>3638</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>3605</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3639</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3603</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to A Gravel Path on the Graveyard-->
+      <Type>NPC</Type>
+      <Destination>3640</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3604</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3641</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3610</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a wheelbarrow to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3643</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3603</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rotting zombie to A Gravel Path on the Graveyard-->
+      <Type>NPC</Type>
+      <Destination>3644</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>3605</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rotting zombie to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3645</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>3601</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a amethyst to the rotting zombie-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>3611</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>Item</Type>
+      <Destination>3647</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>3610</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dusty skeleton to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3649</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>3603</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the rotting zombie to In a dusty Tomb-->
+      <Type>NPC</Type>
+      <Destination>3651</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>3605</Vnum>
+    </Reset>
+  </Resets>
+</Area>

@@ -1,0 +1,2543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Lich Tower</Name>
+    <Info></Info>
+    <VnumStart>29300</VnumStart>
+    <VnumEnd>29399</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{DEATH} Someone   Lich Tower</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>29350</VNum>
+      <Name>Before the Tower</Name>
+      <Description>You stand before a grand, black tower.  The terror rising up inside of
+your soul is nearly overwhelming as you stare at its obsidian form.  The
+tower walls project an aura of death and evil making you feel quite
+insignificant.  To the north a large mountain has sprouted from the ground
+to block all hopes of passage.  You may go back east to the path, or
+continue west under an archway.  (LOOK CROSS!!!)</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29374</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29351</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29351</VNum>
+      <Name>Beneath the Archway</Name>
+      <Description>The walls of this room disappear above you, completing an arch somewhere
+in the darkness over your head.  Thorn covered vines hang from the walls in
+thick entanglements; you find yourself getting scratched in the most
+annoying of places.  From the west comes the faint light of torches, and
+from the north you hear what can only be described as an unholy growl.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29352</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29350</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29353</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29352</VNum>
+      <Name>The Dracolich's Lair</Name>
+      <Description>You find yourself in awe of the treasure and artifacts amassed in this
+room.  One object of truly unusual looks catches your eye.  It appears to be
+a set of gigantic riding equipment, including a large saddle.  Just as you
+are wondering what could possibly fill that saddle, you notice the tremendous
+form of a dracolich towering above you.  The only exit is south, under the
+archway.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29351</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29353</VNum>
+      <Name>The Entrance Hall</Name>
+      <Description>A large carpet covers the floor in this room.  The carpet depicts armies
+of humans and demi-humans being slaughtered by horrible undead hoards. 
+Torches hang on the walls surrounded by old shields and weapons, artifacts
+from battles long past.  Two exits lead from the room, one south and one
+west.  From where you stand it is impossible to see what type of rooms lie
+beyond.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29351</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29354</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29356</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29354</VNum>
+      <Name>The Dining Hall</Name>
+      <Description>This room looks like what used to be a dining hall.  A thick layer of
+dust lines the table settings, stating that the hall is never used anymore. 
+To the west is the entrance to the kitchen and to your north is the entrance
+hall.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29353</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29355</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29355</VNum>
+      <Name>The Kitchen</Name>
+      <Description>You reflexively reach for your nose as the stench of rotting food
+assaults your senses.  You break into a run towards the nearest exit, hoping
+for fresh air.  To the north are the stairs, east is the dining hall, and a
+large storage room lies open to the south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29356</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29354</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29369</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29356</VNum>
+      <Name>The Bottom of the Stairs</Name>
+      <Description>A flight of stairs winds away into the darkness above you.  A stronger
+sense of evil comes from up the steps.  You can go south to the kitchen,
+east to the entrance hall, or up into the unknown.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29353</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29355</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>29357</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29357</VNum>
+      <Name>On the Stairs</Name>
+      <Description>The steps continue into blackness up or down and there is a small flicker
+of light entering the room from a doorway east.  This whole area seems
+unnaturally quiet scaring you more than any screams of death you have ever
+heard.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29362</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>29358</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>29356</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29358</VNum>
+      <Name>On the Stairs</Name>
+      <Description>You continue your way on the stairs.  Listening intently, you think you
+hear what sounds like the screams of damned and tortured souls to the south
+and east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29365</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29363</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>29359</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>29357</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29359</VNum>
+      <Name>The Top of the Stairs</Name>
+      <Description>You have reached the top of the stairs.  To the south and east are long
+hallways and the stairs lead back down into darkness.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29368</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29366</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>29358</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29360</VNum>
+      <Name>Lich's Study</Name>
+      <Description>This small room is virtually covered in books and scrolls, each marked in
+various places with notes.  A few oil lamps burn here and there, providing
+light for the owner of the tower.  A large desk sits near the western wall,
+while a closet has been carved into the wall to the south.  The only exit
+appears to be back into the library to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29361</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29361</VNum>
+      <Name>The Library</Name>
+      <Description>Even after seeing the first room of the library, you are still in
+astonishment of the racks of scrolls that are scattered about this room. 
+Various tables line the walls, providing study space for anyone doing
+research here.  The library continues to the north and a small archway leads
+west into a study.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29362</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29360</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29362</VNum>
+      <Name>The Library</Name>
+      <Description>The size of the shelves in this library is astounding.  They span the
+entire length of both the north and east walls.  The collection of books
+accumulated here is amazing.  To the south the library continues, while the
+stairs are back to the west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29361</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29357</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29363</VNum>
+      <Name>A Summoning Room</Name>
+      <Description>Various runes and pentagrams have been scrawled into the stone at your
+feet.  A large golden brazier blasts flames in the middle of the room.  The
+only exits are north, to the stairs, and east, to the torture chamber.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29358</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29364</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29364</VNum>
+      <Name>The Torture Chamber</Name>
+      <Description>Assorted torture devices clutter this room.  Against the eastern wall,
+three rotting bodies hang, each with its guts strewn across the floor.  You
+feel a tinge of remorse for the poor men before your heart rises in anger,
+now the only thing that matters to you is to avenge their deaths.  The
+summoning rooms provide exit to the north and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29365</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29363</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29365</VNum>
+      <Name>A Summoning Room</Name>
+      <Description>Various runes and pentagrams have been scrawled into the stone at your
+feet.  Towards the middle of the room, a large silver brazier spouts fire. 
+The only exits are west, back to the stairs, and south, to the torture
+chamber.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29364</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29358</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29366</VNum>
+      <Name>A Large Hall</Name>
+      <Description>You stand in a large, elaborately decorated hallway.  The stairs are back
+to the north and a large set of double doors are to the east.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29359</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29367</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29367</VNum>
+      <Name>The Lich's Throne Room</Name>
+      <Description>Entering this room, your eyes lock on a large bone throne and its
+occupent sitting against the eastern wall.  The room is handsomely decorated.
+Ancient grimoires and scrolls catch your eye for a brief second, just long
+enough for Myzelak the Lich Lord to attack.  The only exits are through the
+doors to your north or west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29368</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29366</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29368</VNum>
+      <Name>A Large Hall</Name>
+      <Description>You stand in a large, elaborately decorated hallway.  The stairs are back
+to the west and a large set of doors block your way south.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29367</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29359</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29369</VNum>
+      <Name>A Storage Room</Name>
+      <Description>This room appears to be what is left of the kitchen's storage room.  An
+old door has been knocked off of its hinges to the south, revealing an
+ancient tunnel sloping down into the ground.  You can go back north to the
+kitchen or south into the dark tunnel.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29355</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29370</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29370</VNum>
+      <Name>Above a Pit</Name>
+      <Description>A large torch hangs against the wall glowing brightly.  In front of you
+the floor disappears, leaving a large hole in the ground.  You can go north
+into the storage room, or down an old rope ladder into the blackness of the
+pit.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29369</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>29371</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29371</VNum>
+      <Name>Under a Pit</Name>
+      <Description>You stand underneath the pit.  In this pitch black room the only thing
+that you can make out is a tunnel running in a south direction.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29372</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>29370</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29372</VNum>
+      <Name>A Darkened Tunnel</Name>
+      <Description>You stand in an ancient and dark tunnel.  From the south light shines
+into the room.  You may go back north to the pit, or, south towards
+the light.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29371</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>29373</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29373</VNum>
+      <Name>Before the Caverns</Name>
+      <Description>You have found it and it's just as the legends say.  This is the entrance
+to the Caverns of the Damned.  A large pit lies hollowed into the ground,
+magical glyphs and wards surround it, keeping this realm safe from any
+wandering spirits.  It is said that the only way for a mortal to enter the
+realms of hell is for them to make it through the maze of caverns below you.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>29372</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>0</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29374</VNum>
+      <Name>Approaching a Dark Tower</Name>
+      <Description>The mountain trail winds precariously up the rugged terrain, with loose stones and steep inclines. The air grows colder and heavier as you approach the black tower, a tall and ominous structure that looms in the distance. The closer you get, the stronger the stench of death becomes, making it difficult to breathe. The black walls of the tower are stained with the residue of countless battles, giving it a grim and foreboding appearance. The silence of the mountain is only broken by the sound of the wind whistling through the cracks and crevices of the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29375</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29350</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29375</VNum>
+      <Name>Approaching a Dark Tower</Name>
+      <Description>The mountain trail winds precariously up the rugged terrain, with loose stones and steep inclines. The air grows colder and heavier as you approach the black tower, a tall and ominous structure that looms in the distance. The closer you get, the stronger the stench of death becomes, making it difficult to breathe. The black walls of the tower are stained with the residue of countless battles, giving it a grim and foreboding appearance. The silence of the mountain is only broken by the sound of the wind whistling through the cracks and crevices of the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29376</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29374</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29376</VNum>
+      <Name>Approaching a Dark Tower</Name>
+      <Description>The mountain trail winds precariously up the rugged terrain, with loose stones and steep inclines. The air grows colder and heavier as you approach the black tower, a tall and ominous structure that looms in the distance. The closer you get, the stronger the stench of death becomes, making it difficult to breathe. The black walls of the tower are stained with the residue of countless battles, giving it a grim and foreboding appearance. The silence of the mountain is only broken by the sound of the wind whistling through the cracks and crevices of the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29377</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29375</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29377</VNum>
+      <Name>Approaching a Dark Tower</Name>
+      <Description>The mountain trail winds precariously up the rugged terrain, with loose stones and steep inclines. The air grows colder and heavier as you approach the black tower, a tall and ominous structure that looms in the distance. The closer you get, the stronger the stench of death becomes, making it difficult to breathe. The black walls of the tower are stained with the residue of countless battles, giving it a grim and foreboding appearance. The silence of the mountain is only broken by the sound of the wind whistling through the cracks and crevices of the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>29378</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29376</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>29378</VNum>
+      <Name>Approaching a Dark Tower</Name>
+      <Description>The mountain trail winds precariously up the rugged terrain, with loose stones and steep inclines. The air grows colder and heavier as you approach the black tower, a tall and ominous structure that looms in the distance. The closer you get, the stronger the stench of death becomes, making it difficult to breathe. The black walls of the tower are stained with the residue of countless battles, giving it a grim and foreboding appearance. The silence of the mountain is only broken by the sound of the wind whistling through the cracks and crevices of the tower.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>9845</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>29377</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>29350</Vnum>
+      <name>Death Knight</name>
+      <description>Death Knights are a powerful enemy.  Turned undead by powerful
+necromancy, they were the most renown knights of their day.</description>
+      <longDescription>An undead, skeletal knight guards this room.</longDescription>
+      <shortDescription>A Death Knight</shortDescription>
+      <Sex>None</Sex>
+      <level>40</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1850</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-120</ArmorBash>
+      <ArmorSlash>-120</ArmorSlash>
+      <ArmorPierce>-120</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive StayArea Undead AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>15</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>29351</Vnum>
+      <name>torturer inquisitor</name>
+      <description>This evil creature looks like a zombie but acts much more sinister.  It
+uses its magical abilities to keep its victims alive while it's torturing
+them.</description>
+      <longDescription>The Inquisitor is here preparing various torture devices.</longDescription>
+      <shortDescription>The Inquisitor</shortDescription>
+      <Sex>None</Sex>
+      <level>50</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4250</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-20</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Undead Cleric</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Regeneration DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>29352</Vnum>
+      <name>demon minor</name>
+      <description>An aggresive looking demon stands here in the brazier's flames.  It
+appears to have been summoned and is quite angry about it.  The long claws
+and fangs it uses as weapons make you consider running as fast as posible.</description>
+      <longDescription>A minor demon stands here surrounded in flames.</longDescription>
+      <shortDescription>A Minor Demon</shortDescription>
+      <Sex>None</Sex>
+      <level>50</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4250</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>-20</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>29353</Vnum>
+      <name>demon major</name>
+      <description>A large wicked looking demon floats here in the fire.  He has wings, a
+tail, claws, fangs, he is everything you have pictured a demon would be. 
+His black scaled skin gleams in the firelight The burning flames in his eyes
+corrupt your soul.  Fear him mortal for you are about to die.</description>
+      <longDescription>A Major Demon floats here in the flames.</longDescription>
+      <shortDescription>A Major Demon</shortDescription>
+      <Sex>None</Sex>
+      <level>65</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>8250</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <hitpoints>1300</hitpoints>
+      <maxhitpoints>1300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-350</ArmorBash>
+      <ArmorSlash>-350</ArmorSlash>
+      <ArmorPierce>-350</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Large</size>
+      <race>dragon</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>65</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Undead Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>11</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>35</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>29354</Vnum>
+      <name>lich lord myzelak</name>
+      <description>Evil incarnate, Myzelak spent years of his life perfecting his magical
+abilities to grant him life after death.  The result of his work stands
+before you, a rotting representation of what the wizard used to be.  Myzelak
+now spends his time searching for new magics and works, offering what little
+he has found to any seeking necromancy on some level.</description>
+      <longDescription>Myzelak the Lich Lord stands here by his throne.</longDescription>
+      <shortDescription>Myzelak the Lich Lord</shortDescription>
+      <Sex>None</Sex>
+      <level>75</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>11000</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>1950</ManaPointDiceBonus>
+      <hitpoints>1500</hitpoints>
+      <maxhitpoints>1500</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-450</ArmorBash>
+      <ArmorSlash>-450</ArmorSlash>
+      <ArmorPierce>-450</ArmorPierce>
+      <ArmorExotic>-140</ArmorExotic>
+      <size>Medium</size>
+      <race>lich</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>75</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>mage</Guild>
+      <flags>NPC Sentinel Cleric Mage</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Infrared DetectIllusion DetectInvis Flying PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>9</DamageDiceSides>
+      <DamageDiceCount>11</DamageDiceCount>
+      <DamageDiceBonus>45</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>29355</Vnum>
+      <name>dracolich mount dragon</name>
+      <description>Myzelak's Dracolich mount towers above you.  Fiery red lights gleam in
+its hollow eye sockets as it growls at you.  The undead dragon is monstrous,
+perhaps you should run now, before you're dead.  ;&gt;</description>
+      <longDescription>Myzelak's ancient dracolich mount.</longDescription>
+      <shortDescription>The Dracolich</shortDescription>
+      <Sex>None</Sex>
+      <level>60</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>6750</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>1950</ManaPointDiceBonus>
+      <hitpoints>1200</hitpoints>
+      <maxhitpoints>1200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-300</ArmorBash>
+      <ArmorSlash>-300</ArmorSlash>
+      <ArmorPierce>-300</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Giant</size>
+      <race>dragon</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>60</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Undead Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>28</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>29356</Vnum>
+      <name>elite death knight</name>
+      <description>A huge skeletal figure confronts you.  He wields an old longsword covered
+in runes and carries a large black shield that can only be a dragon's scale.
+He looks very much like the Death Knights you encountered earlier except he
+is much larger and appears to be more powerful as well.</description>
+      <longDescription>An Elite Death Knight laughs an unholy cackle and attacks.</longDescription>
+      <shortDescription>An Elite Death Knight</shortDescription>
+      <Sex>None</Sex>
+      <level>70</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>9750</HitPointDiceBonus>
+      <ManaPointDiceSides>45</ManaPointDiceSides>
+      <ManaPointDiceCount>10</ManaPointDiceCount>
+      <ManaPointDiceBonus>2950</ManaPointDiceBonus>
+      <hitpoints>1400</hitpoints>
+      <maxhitpoints>1400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-400</ArmorBash>
+      <ArmorSlash>-400</ArmorSlash>
+      <ArmorPierce>-400</ArmorPierce>
+      <ArmorExotic>-100</ArmorExotic>
+      <size>Large</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>70</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>warrior</Guild>
+      <flags>NPC Sentinel Undead Warrior</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>40</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>29350</VNum>
+      <Name>black mace</Name>
+      <ShortDescription>an old black mace</ShortDescription>
+      <LongDescription>An old, black iron mace lies here undisturbed</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>pound</WeaponDamageType>
+      <WeaponType>Mace</WeaponType>
+      <DiceSides>7</DiceSides>
+      <DiceCount>6</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>2.5</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29351</VNum>
+      <Name>glowing skull</Name>
+      <ShortDescription>a Flaming Skull</ShortDescription>
+      <LongDescription>A human skull floats here, outlined in blue flames.</LongDescription>
+      <Description></Description>
+      <Level>48</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Light</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29352</VNum>
+      <Name>wand onyx</Name>
+      <ShortDescription>an onyx encrusted wand</ShortDescription>
+      <LongDescription>A wand carved from onyx is laying here.</LongDescription>
+      <Description></Description>
+      <Level>50</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.3</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Hum Evil VisDeath</ExtraFlags>
+      <ItemTypes>Wand</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="50" SpellName="shield" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>Onyx</Material>
+      <Charges>10</Charges>
+      <MaxCharges>10</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29353</VNum>
+      <Name>rod iron crystals blackwhite black white</Name>
+      <ShortDescription>a rod of iron, covered with black and white crystals</ShortDescription>
+      <LongDescription>A rod of iron sits here, radiating an aura of darkness.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Dark Evil Magic RotDeath MeltDrop</ExtraFlags>
+      <ItemTypes>Wand</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="55" SpellName="earthbind" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>50000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>Iron</Material>
+      <Charges>3</Charges>
+      <MaxCharges>3</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29354</VNum>
+      <Name>garnet ring</Name>
+      <ShortDescription>a Garnet Ring</ShortDescription>
+      <LongDescription>A small garnet ring lies here amongst the treasure.</LongDescription>
+      <Description></Description>
+      <Level>58</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Finger</WearFlags>
+      <ExtraFlags>Glow Magic NoDrop</ExtraFlags>
+      <ItemTypes>Treasure</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>900</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29355</VNum>
+      <Name>bracer night</Name>
+      <ShortDescription>the Bracer of the Night</ShortDescription>
+      <LongDescription>A black bracer covered in ancient runes lies here.</LongDescription>
+      <Description></Description>
+      <Level>54</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Wrist</WearFlags>
+      <ExtraFlags>Hum Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>admantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>18</ArmorBash>
+      <ArmorSlash>17</ArmorSlash>
+      <ArmorPierce>18</ArmorPierce>
+      <ArmorExotic>8</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29356</VNum>
+      <Name>amulet night</Name>
+      <ShortDescription>the Amulet of the Night</ShortDescription>
+      <LongDescription>An old amulet lies here glowing in unnatural blue light.</LongDescription>
+      <Description></Description>
+      <Level>64</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.3</Weight>
+      <WearFlags>Take Neck</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>21</ArmorBash>
+      <ArmorSlash>21</ArmorSlash>
+      <ArmorPierce>21</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29357</VNum>
+      <Name>ancient longsword sword</Name>
+      <ShortDescription>an Ancient Longsword</ShortDescription>
+      <LongDescription>An old longsword floats here, glowing slightly.</LongDescription>
+      <Description></Description>
+      <Level>70</Level>
+      <WeaponDamageType>slash</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>12</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Magic Unholy</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>admantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29358</VNum>
+      <Name>black scale dragon</Name>
+      <ShortDescription>a black dragon scale</ShortDescription>
+      <LongDescription>A black dragon scale that's been torn from one of the beasts.</LongDescription>
+      <Description></Description>
+      <Level>65</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>3</Weight>
+      <WearFlags>Take Shield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-2" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1200</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>admantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>22</ArmorBash>
+      <ArmorSlash>21</ArmorSlash>
+      <ArmorPierce>21</ArmorPierce>
+      <ArmorExotic>10</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29359</VNum>
+      <Name>hell sword wraith</Name>
+      <ShortDescription>the Hell's Wraith</ShortDescription>
+      <LongDescription>This sword was supposedly forged in the depths of Hell. It's wavy blade makes it appear much like a large kris. It is a bit unwieldly at first but the damage it inflicts is unbelievable.</LongDescription>
+      <Description></Description>
+      <Level>73</Level>
+      <WeaponDamageType>bite</WeaponDamageType>
+      <WeaponType>Exotic</WeaponType>
+      <DiceSides>6</DiceSides>
+      <DiceCount>10</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>4</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Evil Magic NoRemove Vorpal TwoHands Shocking Poison</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>admantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29360</VNum>
+      <Name>robes sorceror</Name>
+      <ShortDescription>sorceror's robes</ShortDescription>
+      <LongDescription>Illven</LongDescription>
+      <Description></Description>
+      <Level>72</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Magic NoUncurse</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="150" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sanctuary" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Summon" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>unknown</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>24</ArmorBash>
+      <ArmorSlash>24</ArmorSlash>
+      <ArmorPierce>24</ArmorPierce>
+      <ArmorExotic>11</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29361</VNum>
+      <Name>infinity scroll</Name>
+      <ShortDescription>the Infinity Scroll</ShortDescription>
+      <LongDescription>The old scroll rumored to have answers to all questions. (Unfortunately you just killed the last thing in existance that could read it.)</LongDescription>
+      <Description></Description>
+      <Level>74</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.4</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Hum Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>7500</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>silver</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>23</ArmorBash>
+      <ArmorSlash>24</ArmorSlash>
+      <ArmorPierce>23</ArmorPierce>
+      <ArmorExotic>11</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29362</VNum>
+      <Name>silvery potion</Name>
+      <ShortDescription>a silvery potion</ShortDescription>
+      <LongDescription>A silvery potion has been left in the desk</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.2</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="40" SpellName="invisibility" />
+        <Spell Level="40" SpellName="detect invis" />
+        <Spell Level="40" SpellName="detect magic" />
+        <Spell Level="40" SpellName="detect magic" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29363</VNum>
+      <Name>key golden</Name>
+      <ShortDescription>a golden key</ShortDescription>
+      <LongDescription>A golden key lies here in the book.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29364</VNum>
+      <Name>boots water walking waterwalking</Name>
+      <ShortDescription>boots of waterwalking</ShortDescription>
+      <LongDescription>Some old leather boots with fish painted on them rest here in the closet.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.5</Weight>
+      <WearFlags>Take Feet</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Boat</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Regeneration" modifier="0" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>mithril</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29365</VNum>
+      <Name>thieve's tunic</Name>
+      <ShortDescription>a Thieve's Tunic</ShortDescription>
+      <LongDescription>A black shirt with many pockets.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1.5</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>Magic</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>900</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>admantite</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>13</ArmorBash>
+      <ArmorSlash>12</ArmorSlash>
+      <ArmorPierce>13</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29366</VNum>
+      <Name>paper blank</Name>
+      <ShortDescription>a blank piece of paper</ShortDescription>
+      <LongDescription>A deteriorating piece of blank paper rests here on a shelf.</LongDescription>
+      <Description></Description>
+      <Level>35</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0.1</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Gem</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>paper</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29367</VNum>
+      <Name>chair wooden</Name>
+      <ShortDescription>a large wooden chair</ShortDescription>
+      <LongDescription>A large wooden chair sits here at the head of the table</LongDescription>
+      <Description></Description>
+      <Level>30</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29368</VNum>
+      <Name>table dining</Name>
+      <ShortDescription>a huge dining table</ShortDescription>
+      <LongDescription>A huge dining table</LongDescription>
+      <Description></Description>
+      <Level>30</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29369</VNum>
+      <Name>old wooden bookshelf shelf</Name>
+      <ShortDescription>an old wooden bookshelf</ShortDescription>
+      <LongDescription>An old wooden bookshelf stands against the eastern wall.</LongDescription>
+      <Description>Set against the western wall of the library is a bookcase fashioned of beautifully finished mahogany. Each shelf is filled with a row of neatly arranged, leather-bound books on every conceivable subject. Adjacent to the bookcase, there is a lectern with a single sheet of paper that reads 'index'.</Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29370</VNum>
+      <Name>desk mahogany</Name>
+      <ShortDescription>a large mahogany desk</ShortDescription>
+      <LongDescription>A large mahogany desk rests against the western wall</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>15</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29371</VNum>
+      <Name>closet</Name>
+      <ShortDescription>a closet carved into the wall</ShortDescription>
+      <LongDescription>A large closet, carved into the wall.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>99.9</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29372</VNum>
+      <Name>grimoire</Name>
+      <ShortDescription>a powerful grimoire</ShortDescription>
+      <LongDescription>An ancient and powerful grimoire beckons for you to open it</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags>Glow Magic</ExtraFlags>
+      <ItemTypes>Container</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>29373</VNum>
+      <Name>cross obsidian</Name>
+      <ShortDescription>a large obsidian cross</ShortDescription>
+      <LongDescription>A large obsidian cross</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags></WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>stone</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a large obsidian cross to Before the Tower-->
+      <Type>Item</Type>
+      <Destination>29350</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29373</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The Dracolich to The Dracolich's Lair-->
+      <Type>NPC</Type>
+      <Destination>29352</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>29355</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an onyx encrusted wand to The Dracolich-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29352</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A Death Knight to The Entrance Hall-->
+      <Type>NPC</Type>
+      <Destination>29353</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an old black mace to A Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large wooden chair to The Dining Hall-->
+      <Type>Item</Type>
+      <Destination>29354</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29367</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a huge dining table to The Dining Hall-->
+      <Type>Item</Type>
+      <Destination>29354</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29368</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A Death Knight to Lich's Study-->
+      <Type>NPC</Type>
+      <Destination>29360</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an old black mace to A Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large mahogany desk to Lich's Study-->
+      <Type>Item</Type>
+      <Destination>29360</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29370</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a closet carved into the wall to Lich's Study-->
+      <Type>Item</Type>
+      <Destination>29360</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29371</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Infinity Scroll to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29361</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a silvery potion to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29362</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a golden key to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29363</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn boots of waterwalking to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29364</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a Thieve's Tunic to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29365</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blank piece of paper to previous item-->
+      <Type>Put</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29366</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a powerful grimoire to The Library-->
+      <Type>Item</Type>
+      <Destination>29361</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29372</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A Death Knight to The Library-->
+      <Type>NPC</Type>
+      <Destination>29362</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an old black mace to A Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an old wooden bookshelf to The Library-->
+      <Type>Item</Type>
+      <Destination>29362</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>29369</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A Major Demon to A Summoning Room-->
+      <Type>NPC</Type>
+      <Destination>29363</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>29353</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Amulet of the Night to A Major Demon-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29356</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn The Inquisitor to The Torture Chamber-->
+      <Type>NPC</Type>
+      <Destination>29364</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>29351</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a Flaming Skull to The Inquisitor-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29351</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A Minor Demon to A Summoning Room-->
+      <Type>NPC</Type>
+      <Destination>29365</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>29352</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Bracer of the Night to A Minor Demon-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29355</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn An Elite Death Knight to A Large Hall-->
+      <Type>NPC</Type>
+      <Destination>29366</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>29356</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an Ancient Longsword to An Elite Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29357</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black dragon scale to An Elite Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29358</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Myzelak the Lich Lord to The Lich's Throne Room-->
+      <Type>NPC</Type>
+      <Destination>29367</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>29354</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Hell's Wraith to Myzelak the Lich Lord-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29359</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn sorceror's robes to Myzelak the Lich Lord-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29360</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn An Elite Death Knight to A Large Hall-->
+      <Type>NPC</Type>
+      <Destination>29368</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>29356</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an Ancient Longsword to An Elite Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29357</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black dragon scale to An Elite Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29358</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn A Death Knight to A Storage Room-->
+      <Type>NPC</Type>
+      <Destination>29369</Destination>
+      <Count>1</Count>
+      <Max>4</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an old black mace to A Death Knight-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>29350</Vnum>
+    </Reset>
+  </Resets>
+</Area>

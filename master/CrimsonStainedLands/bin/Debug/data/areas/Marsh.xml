@@ -1,0 +1,2264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Marsh</Name>
+    <Info></Info>
+    <VnumStart>8300</VnumStart>
+    <VnumEnd>8399</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{15 25} Generic Old Marsh</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>8301</VNum>
+      <Name>Muddy Path</Name>
+      <Description>This section of the path is slowly being drowned by the nearby swamp to the
+south, which is creeping slowly inland.  Several caved-in buildings sprawl
+here, torn apart both by battle and the elements.</Description>
+      <Sector>Field</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50110</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8302</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A broken road leading southward into the marsh.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>swamp</Keyword>
+          <Description>The swamp to the south even reaches as far as this point ... it makes the
+ground and air about you moist and fetid.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8302</VNum>
+      <Name>Swamp's Edge</Name>
+      <Description>Briars and marsh plants stick to your boots and clothes, and clouds cover the
+skies above the murky marsh, leaving the path before you dark and sinister.
+You see some disturbances in the marsh, but after a few strangled screams,
+the sounds stop.</Description>
+      <Sector>Mountain</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8301</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8303</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east lies a series of bogs and shallows that look rather threatening.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8304</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You notice a large hill rising out of the marsh to the south.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8303</VNum>
+      <Name>Marshy Forest</Name>
+      <Description>This area is by no means a forest, but for those who dwell in these sparse
+trees it is one.  Occasionally you see a whole humanoid form floating face
+down  in the water, but mostly you only find pieces.  You hear a loud bellow in
+the  distance.  And feel fear creep into your heart.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8305</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Eastward is the thick bog of ooze...</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8302</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Westward lies the remanents of a broken and shattered roadway being swallowed
+ by the marsh.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>humanoid corpse</Keyword>
+          <Description>He looks mangled and shredded.  You see one large gash mark that looks
+like it came from the claw of some huge beast.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>pieces</Keyword>
+          <Description>You see severed limbs and spongy intestines.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8304</VNum>
+      <Name>On a hill.</Name>
+      <Description>You stand atop a hill on the northwestern side of the evil swamp. Dark
+clouds whip around you and the wind raises its voice and assails you.</Description>
+      <Sector>Hills</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8302</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north lies a damp broken roadway.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8309</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A dark pool congeals to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8310</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A gloomy path leads down the hill into the swamp.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8305</VNum>
+      <Name>An Oozing Bog</Name>
+      <Description>You stand in an oozing quagmire.  A creaking beat fills the air, 
+accompanied by groans and soughing of the air.  Several large winged
+beasts flap over you and send chilling glares your way.  You feel out
+of place, and feel that the occupants of this realm will soon 
+have you for a feast.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8306</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Eastward lies a horde of disgusting looking monsters.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8303</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Westward lies a marshy area.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>beasts</Keyword>
+          <Description>You see a large creature, possibly a demon, flapping heavily above you.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8306</VNum>
+      <Name>An Oozing Bog</Name>
+      <Description>The ground here is soft and oozing.  You feel slimy water seeping into your
+boots.  Better stop and check for leeches when you get out of here.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8305</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>You see a large tree limb that looks easily moved.</Description>
+          <Flags>Door</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>limb</Keyword>
+          <Description>The limb looks like it is attached to a trap door in the ground.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8307</VNum>
+      <Name>Swamp Thing's Lair</Name>
+      <Description>A horrible swamp thing resides here.  Mutilated corpses suffuse the air with
+the overwhelming stench of putrid flesh.</Description>
+      <Sector>Swim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8308</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A pool of quick sand lies to the west.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>corpses</Keyword>
+          <Description>You notice a note on one of the corpses reading:  'Best ye forget the temple,
+it is not for the likes of you...'</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8308</VNum>
+      <Name>Pool of Quick Sand</Name>
+      <Description>You stand by a large oozing pool of quick sand.  Luckily only a complete
+klutz could not avoid it.  Dancing lights fly about you and one seems to
+be taunting you towards the pool.</Description>
+      <Sector>Swim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8307</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>The swamp thing's lair.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8314</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>A murky bog.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8309</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A dark pool lies to the west.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>lights </Keyword>
+          <Description>From the stories you have heard, you recognize them as will-o-wisps.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>quicksand</Keyword>
+          <Description>It looks deadly to the foolish.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8309</VNum>
+      <Name>A Dark Pool.</Name>
+      <Description>You stand beside a large dark pond.  The water boils not with heat, but with
+motion, as if it is alive.  A creaking beat pulses through the air, leaving
+you with a cold sweat and fear in your heart.</Description>
+      <Sector>Swim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8308</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>A large pool of quicksand lies to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8311</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>You see a cloud of darkness to the south.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8304</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>A hill rises out of the swamp to the east.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>pond</Keyword>
+          <Description>It looks ALIVE ...</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8310</VNum>
+      <Name>Gloomy Path Through the Marsh.</Name>
+      <Description>To the north lies a hill, shrouded in dark clouds, and to the south lies
+a huge patch of vegetation.  You sense an evil presence and notice 
+a beast flying overhead to the south east, towards what looks to be a 
+huge fortress, half buried in the marsh.</Description>
+      <Sector>Swim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8304</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north a hill protrudes from the marshes.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8312</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>To the south a huge mass of vegetation seems to quiver with life.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>clouds</Keyword>
+          <Description>The clouds look dark and foreboding.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>beast</Keyword>
+          <Description>It looks to be a demon of some foul breed.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>fortress</Keyword>
+          <Description>It is surrounded by walls nearly 20 meters high.  In a tall tower on the
+northeast side, a window glows blue with magical energy.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>vegetation</Keyword>
+          <Description>It looks sentient.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8311</VNum>
+      <Name>Cloud of Darkness.</Name>
+      <Description>As you travel through this cloud of darkness, a fear such as you have never
+known before assails you.</Description>
+      <Sector>Swim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8309</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>A dark pool lies to the north.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8313</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>An obelisk lies to the south.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8312</VNum>
+      <Name>Near Vegetation from Hell.</Name>
+      <Description>You stand near some of the strangest plant life you have ever seen, a mixture
+of tumescent vegetables, evil-smelling fruit trees, and malignant ferns.</Description>
+      <Sector>Swim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8310</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north is a gloomy path through the marsh.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8313</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Eastward is a large, black stone monolith.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>plant plants</Keyword>
+          <Description>They look rather violent, and snap at you when you come near.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8313</VNum>
+      <Name>By the Monolith.</Name>
+      <Description>You are standing near a monolith which protrudes some 20 feet from the
+marsh into the air.  Its black obsidian surface shines darkly in the 
+strange, almost unearthly light that enters through the clouds above.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8311</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north is a cloud of darkest evil.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8314</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>Eastward lies a murky bog.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8312</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Near Vegetation from Hell.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>monolith</Keyword>
+          <Description>This huge monolith resembles nothing you have ever seen before.
+You have a strong feeling not to go within.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8314</VNum>
+      <Name>Murky Bog.</Name>
+      <Description>A murky bog surrounds you.  To the east a black monolith juts forth from the
+ground.  Far to the north lies a huge pool of quicksand.  Snarls can be heard
+echoing as if from a great distance.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8308</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>To the north lies a huge pool of quicksand.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8315</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east the marsh turns into a small lake.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8313</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>Westward a large monolith awaits adventurers.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>monolith</Keyword>
+          <Description>This is a huge obsidian stone block stuck in the marsh.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8315</VNum>
+      <Name>Northern Lake Side.</Name>
+      <Description>Floating on this boiling lake is not what you would consider an enjoyable 
+experience.  Many a creature bumps the bottom of your boat, and glares 
+at you through unblinking eyes from the waters below.  The southern 
+portion of the lake looks calm and serene compared to this wild place.</Description>
+      <Sector>WaterNoSwim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>8316</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description>The southern portion of the lake lies to the south.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8314</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west lies a murky bog.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>8316</VNum>
+      <Name>Southern Lake Side.</Name>
+      <Description>You are floating on a calm section of blue crystal water.  You feel much more
+at ease then you were before in this area.  Then a wave of fear passes over
+you.  You are not alone.</Description>
+      <Sector>WaterNoSwim</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>8315</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description>Northern lake side.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8317</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>To the west is a beach where your boat can land.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>north</Keyword>
+          <Description>The way to the north seems to be impassable, due to the rough water and
+strange wild life.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8317</VNum>
+      <Name>Beach</Name>
+      <Description>You are on a sandy shore.  Marsh life creeps across the surface.  To the west
+lies an evil fortress.  You see figures walking along the battlements.</Description>
+      <Sector>Mountain</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8316</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east lies the southern portion of a small lake.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>8318</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description>The great gates.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>fortress</Keyword>
+          <Description>It is hewn of black stone and heavily fortified.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>8318</VNum>
+      <Name>Before the Great Gates.</Name>
+      <Description>You stand before the gates of a huge fortress.  The drawbridge is up, the
+gates closed, and the portcullis down.  This place looks very dangerous,
+and you decide not to continue onward.</Description>
+      <Sector>Forest</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>8317</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description>To the east is a marshy beach.</Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>8301</Vnum>
+      <name>oldstyle troll</name>
+      <description>This huge behemoth towers to a height of 15 feet.  He sneers at you 
+as he approaches and raises two black taloned claws to strike you.</description>
+      <longDescription>A swamp troll charges towards you.</longDescription>
+      <shortDescription>a swamp troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>16</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>233</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>320</hitpoints>
+      <maxhitpoints>320</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>troll</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>16</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8302</Vnum>
+      <name>oldstyle troll</name>
+      <description>This big troll towers several feet over you.  He has a large spear
+which he seems to ply with utmost prowess.  He jabs his spear at you
+and cackles with glee.</description>
+      <longDescription>A green troll attempts to get a hold on you.</longDescription>
+      <shortDescription>a green troll</shortDescription>
+      <Sex>Male</Sex>
+      <level>14</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>190</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>280</hitpoints>
+      <maxhitpoints>280</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>troll</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>14</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>400</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>12</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8303</Vnum>
+      <name>oldstyle ogre</name>
+      <description>This mean bastard looks like he could tear you limb from limb.</description>
+      <longDescription>An ogre stands here getting ready to beat in your face.</longDescription>
+      <shortDescription>an ogre</shortDescription>
+      <Sex>Male</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8304</Vnum>
+      <name>oldstyle thing</name>
+      <description>The Swamp Thing has huge fists, which look like they could pound you flat.</description>
+      <longDescription>The Swamp Thing shambles about here.  It seems hungry.</longDescription>
+      <shortDescription>the Swamp Thing</shortDescription>
+      <Sex>None</Sex>
+      <level>24</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>500</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>480</hitpoints>
+      <maxhitpoints>480</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-60</ArmorBash>
+      <ArmorSlash>-60</ArmorSlash>
+      <ArmorPierce>-60</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>24</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1250</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8305</Vnum>
+      <name>oldstyle gnoll</name>
+      <description>The Gnoll seems annoyed at your presence.</description>
+      <longDescription>There is a mean looking gnoll here.</longDescription>
+      <shortDescription>a gnoll</shortDescription>
+      <Sex>Male</Sex>
+      <level>30</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>853</HitPointDiceBonus>
+      <ManaPointDiceSides>15</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>600</hitpoints>
+      <maxhitpoints>600</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>30</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1250</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8306</Vnum>
+      <name>oldstyle beast</name>
+      <description>This huge beast stands about 20 feet in height and has huge green clawed
+appendages.</description>
+      <longDescription>A huge hairy beast shambles towards you with death in his eyes.</longDescription>
+      <shortDescription>a huge hairy beast</shortDescription>
+      <Sex>Male</Sex>
+      <level>21</level>
+      <HitPointDiceSides>4</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>360</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>420</hitpoints>
+      <maxhitpoints>420</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-50</ArmorBash>
+      <ArmorSlash>-50</ArmorSlash>
+      <ArmorPierce>-50</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>21</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8307</Vnum>
+      <name>oldstyle beast</name>
+      <description>This rather small beast looks like you could take it out with a single
+sword blow.</description>
+      <longDescription>A rather small beast cringes in terror as it notices you.</longDescription>
+      <shortDescription>a rather small beast</shortDescription>
+      <Sex>Male</Sex>
+      <level>3</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>6</HitPointDiceCount>
+      <HitPointDiceBonus>35</HitPointDiceBonus>
+      <ManaPointDiceSides>1</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>60</hitpoints>
+      <maxhitpoints>60</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>70</ArmorBash>
+      <ArmorSlash>70</ArmorSlash>
+      <ArmorPierce>70</ArmorPierce>
+      <ArmorExotic>100</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>3</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>25</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger StayArea Wimpy AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8308</Vnum>
+      <name>oldstyle will will-o-wisp</name>
+      <description>This strange little creature seems very hard to keep your eyes on.
+You stare as hard as you can at the glowing ball of floating light and
+are just able to notice a small pair of glowing eyes.</description>
+      <longDescription>A Will-O-Wisp darts hear and there, making fun of you.</longDescription>
+      <shortDescription>the Will-O-Wisp</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>121</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>200</hitpoints>
+      <maxhitpoints>200</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>150</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger StayArea Wimpy AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8309</Vnum>
+      <name>oldstyle snake anaconda</name>
+      <description>This 10 meter anaconda looks rather hungry.</description>
+      <longDescription>A monstrous snake slithers towards you, thinking 'breakfast'.</longDescription>
+      <shortDescription>the monstrous snake</shortDescription>
+      <Sex>Male</Sex>
+      <level>16</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>233</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>320</hitpoints>
+      <maxhitpoints>320</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>snake</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>16</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea Wimpy AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>4</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8310</Vnum>
+      <name>oldstyle snake python</name>
+      <description>It's the largest Amazon python you have ever seen.</description>
+      <longDescription>A rather large python rests in a coil here.</longDescription>
+      <shortDescription>a large snake</shortDescription>
+      <Sex>Female</Sex>
+      <level>11</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>8</HitPointDiceCount>
+      <HitPointDiceBonus>134</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>220</hitpoints>
+      <maxhitpoints>220</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>10</ArmorBash>
+      <ArmorSlash>10</ArmorSlash>
+      <ArmorPierce>10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>snake</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>11</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea Wimpy AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8312</Vnum>
+      <name>oldstyle hag</name>
+      <description>Yech!  She manages to make even Smurfette look attractive.  That's ok,
+because she thinks you stink too, and she's about to do something about it.</description>
+      <longDescription>A Marsh Hag is here.</longDescription>
+      <shortDescription>the Marsh Hag</shortDescription>
+      <Sex>Female</Sex>
+      <level>9</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>180</hitpoints>
+      <maxhitpoints>180</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>9</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>50</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>thief</Guild>
+      <flags>NPC Scavenger StayArea Thief AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8313</Vnum>
+      <name>oldstyle slaad</name>
+      <description>This dark apparition stands a meager 13 feet in height.  Even in the dim
+swamp light, the blade of his scythe gleams.</description>
+      <longDescription>A Death Slaad is standing here distraught.  He seems lost.</longDescription>
+      <shortDescription>a Death Slaad</shortDescription>
+      <Sex>Male</Sex>
+      <level>20</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>333</HitPointDiceBonus>
+      <ManaPointDiceSides>10</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>400</hitpoints>
+      <maxhitpoints>400</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-40</ArmorBash>
+      <ArmorSlash>-40</ArmorSlash>
+      <ArmorPierce>-40</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>20</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>700</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>5</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8314</Vnum>
+      <name>oldstyle wolf</name>
+      <description>This wolf looks plump.  She probably ate a friend or two of yours who came
+into the marsh.</description>
+      <longDescription>A marsh wolf sniffs the ground has followed your scent.</longDescription>
+      <shortDescription>a marsh wolf</shortDescription>
+      <Sex>Female</Sex>
+      <level>8</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>7</HitPointDiceCount>
+      <HitPointDiceBonus>96</HitPointDiceBonus>
+      <ManaPointDiceSides>4</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>160</hitpoints>
+      <maxhitpoints>160</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>30</ArmorBash>
+      <ArmorSlash>30</ArmorSlash>
+      <ArmorPierce>30</ArmorPierce>
+      <ArmorExotic>90</ArmorExotic>
+      <size>Medium</size>
+      <race>wolf</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>8</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DarkVision</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+      <Learned>
+        <SkillSpell Name="dodge" Value="80" Level="1" />
+        <SkillSpell Name="second attack" Value="80" Level="1" />
+      </Learned>
+    </NPC>
+    <NPC>
+      <Vnum>8318</Vnum>
+      <name>oldstyle mound shambling</name>
+      <description>This grotesque pile of plant matter fills you with utmost horror.</description>
+      <longDescription>A heap of garbage shambles towards you.</longDescription>
+      <shortDescription>a shambling mound</shortDescription>
+      <Sex>None</Sex>
+      <level>13</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>170</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>260</hitpoints>
+      <maxhitpoints>260</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-10</ArmorBash>
+      <ArmorSlash>-10</ArmorSlash>
+      <ArmorPierce>-10</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>13</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Scavenger StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Hide DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>5</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8319</Vnum>
+      <name>oldstyle shaman orc</name>
+      <description>This old orc has an array of bones stuck in his hair and strange symbols
+painted on his face and hands.</description>
+      <longDescription>An orc shaman stands before you holding a staff and wearing robes.</longDescription>
+      <shortDescription>the orc shaman</shortDescription>
+      <Sex>Male</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>12</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>17</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild>healer</Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea Cleric AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8320</Vnum>
+      <name>oldstyle giant</name>
+      <description>This huge monster of a man has green gnarly teeth and a BIG stick.</description>
+      <longDescription>A marsh giant stomps towards you.</longDescription>
+      <shortDescription>a marsh giant</shortDescription>
+      <Sex>Male</Sex>
+      <level>15</level>
+      <HitPointDiceSides>3</HitPointDiceSides>
+      <HitPointDiceCount>9</HitPointDiceCount>
+      <HitPointDiceBonus>208</HitPointDiceBonus>
+      <ManaPointDiceSides>7</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>300</hitpoints>
+      <maxhitpoints>300</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-20</ArmorBash>
+      <ArmorSlash>-20</ArmorSlash>
+      <ArmorPierce>-20</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>unique</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>15</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>600</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistRace</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>2</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>8321</Vnum>
+      <name>oldstyle gargoyle</name>
+      <description>This creepy fellow looks like he could use you as a meal.</description>
+      <longDescription>A large gargoyle lands next to you, baring his fangs at you.</longDescription>
+      <shortDescription>a gargoyle</shortDescription>
+      <Sex>None</Sex>
+      <level>12</level>
+      <HitPointDiceSides>2</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>150</HitPointDiceBonus>
+      <ManaPointDiceSides>6</ManaPointDiceSides>
+      <ManaPointDiceCount>9</ManaPointDiceCount>
+      <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <hitpoints>240</hitpoints>
+      <maxhitpoints>240</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>80</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>12</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>100</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive StayArea AssistVnum</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>8301</VNum>
+      <Name>spear long two-handed</Name>
+      <ShortDescription>a long spear</ShortDescription>
+      <LongDescription>A strange spear lies here.</LongDescription>
+      <Description></Description>
+      <Level>11</Level>
+      <WeaponDamageType>stab</WeaponDamageType>
+      <WeaponType>Staff</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>12</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>AntiGood TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1330</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>8302</VNum>
+      <Name>horned helmet</Name>
+      <ShortDescription>a dark horned helmet</ShortDescription>
+      <LongDescription>A wicked looking horned helmet lies here.</LongDescription>
+      <Description></Description>
+      <Level>10</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take Head</WearFlags>
+      <ExtraFlags>AntiGood</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>6</ArmorBash>
+      <ArmorSlash>5</ArmorSlash>
+      <ArmorPierce>6</ArmorPierce>
+      <ArmorExotic>2</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>horns horn</Keyword>
+          <Description>These horns appear to be made of adamantite.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>8303</VNum>
+      <Name>chain mail chainmail</Name>
+      <ShortDescription>a suit of chainmail</ShortDescription>
+      <LongDescription>An old suit of chainmail lies here, corroded by the marsh.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>20</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags>AntiGood</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2700</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>8</ArmorBash>
+      <ArmorSlash>7</ArmorSlash>
+      <ArmorPierce>5</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>8306</VNum>
+      <Name>scythe</Name>
+      <ShortDescription>a huge, wicked-looking scythe</ShortDescription>
+      <LongDescription>An evil, wicked-looking scythe lies in the shadows.</LongDescription>
+      <Description></Description>
+      <Level>19</Level>
+      <WeaponDamageType>slice</WeaponDamageType>
+      <WeaponType>Polearm</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>4</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>16</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>NoDrop AntiGood TwoHands</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1770</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>8307</VNum>
+      <Name>green potion</Name>
+      <ShortDescription>a murky green potion</ShortDescription>
+      <LongDescription>A murky green potion lies here in the mud.</LongDescription>
+      <Description></Description>
+      <Level>5</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>1</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Glow Hum</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="43" SpellName="cure critical" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>690</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>oldstyle</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>potion</Keyword>
+          <Description>It looks really disgusting and doesn't smell very nice either.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Item>
+    <Item>
+      <VNum>8308</VNum>
+      <Name>claymore rusty sword</Name>
+      <ShortDescription>a rusty claymore</ShortDescription>
+      <LongDescription>A huge rusted sword lies in a pool of water.</LongDescription>
+      <Description></Description>
+      <Level>28</Level>
+      <WeaponDamageType>cleave</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>4</DiceSides>
+      <DiceCount>7</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>10</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn a swamp troll to Marshy Forest-->
+      <Type>NPC</Type>
+      <Destination>8303</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a green troll to Marshy Forest-->
+      <Type>NPC</Type>
+      <Destination>8303</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>8302</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a murky green potion to a green troll-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ogre to Marshy Forest-->
+      <Type>NPC</Type>
+      <Destination>8303</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>8303</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a green troll to On a hill.-->
+      <Type>NPC</Type>
+      <Destination>8304</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>8302</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a murky green potion to a green troll-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a huge hairy beast to On a hill.-->
+      <Type>NPC</Type>
+      <Destination>8304</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8306</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large snake to On a hill.-->
+      <Type>NPC</Type>
+      <Destination>8304</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8310</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh wolf to On a hill.-->
+      <Type>NPC</Type>
+      <Destination>8304</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>8314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rather small beast to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8305</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the monstrous snake to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8305</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8309</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large snake to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8305</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8310</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh wolf to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8305</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>8314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a green troll to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8306</Destination>
+      <Count>2</Count>
+      <Max>6</Max>
+      <Vnum>8302</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gnoll to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8306</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>8305</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a suit of chainmail to a gnoll-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8303</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rusty claymore to a gnoll-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh wolf to An Oozing Bog-->
+      <Type>NPC</Type>
+      <Destination>8306</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>8314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ogre to Swamp Thing's Lair-->
+      <Type>NPC</Type>
+      <Destination>8307</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>8303</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Swamp Thing to Swamp Thing's Lair-->
+      <Type>NPC</Type>
+      <Destination>8307</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>8304</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh wolf to Swamp Thing's Lair-->
+      <Type>NPC</Type>
+      <Destination>8307</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>8314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh giant to Swamp Thing's Lair-->
+      <Type>NPC</Type>
+      <Destination>8307</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>8320</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a long spear to a marsh giant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a swamp troll to Pool of Quick Sand-->
+      <Type>NPC</Type>
+      <Destination>8308</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Will-O-Wisp to Pool of Quick Sand-->
+      <Type>NPC</Type>
+      <Destination>8308</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>8308</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh wolf to Pool of Quick Sand-->
+      <Type>NPC</Type>
+      <Destination>8308</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>8314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Marsh Hag to A Dark Pool.-->
+      <Type>NPC</Type>
+      <Destination>8309</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8312</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh wolf to A Dark Pool.-->
+      <Type>NPC</Type>
+      <Destination>8309</Destination>
+      <Count>1</Count>
+      <Max>6</Max>
+      <Vnum>8314</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh giant to A Dark Pool.-->
+      <Type>NPC</Type>
+      <Destination>8309</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>8320</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a long spear to a marsh giant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a huge hairy beast to Gloomy Path Through the Marsh.-->
+      <Type>NPC</Type>
+      <Destination>8310</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8306</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the Marsh Hag to Gloomy Path Through the Marsh.-->
+      <Type>NPC</Type>
+      <Destination>8310</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8312</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a Death Slaad to Gloomy Path Through the Marsh.-->
+      <Type>NPC</Type>
+      <Destination>8310</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>8313</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a huge, wicked-looking scythe to a Death Slaad-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8306</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dark horned helmet to a Death Slaad-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8302</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the monstrous snake to Cloud of Darkness.-->
+      <Type>NPC</Type>
+      <Destination>8311</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8309</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh giant to Cloud of Darkness.-->
+      <Type>NPC</Type>
+      <Destination>8311</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>8320</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a long spear to a marsh giant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a shambling mound to Near Vegetation from Hell.-->
+      <Type>NPC</Type>
+      <Destination>8312</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>8318</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a murky green potion to a shambling mound-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a shambling mound to Near Vegetation from Hell.-->
+      <Type>NPC</Type>
+      <Destination>8312</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>8318</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a murky green potion to a shambling mound-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an ogre to By the Monolith.-->
+      <Type>NPC</Type>
+      <Destination>8313</Destination>
+      <Count>1</Count>
+      <Max>3</Max>
+      <Vnum>8303</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a rather small beast to By the Monolith.-->
+      <Type>NPC</Type>
+      <Destination>8313</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh giant to By the Monolith.-->
+      <Type>NPC</Type>
+      <Destination>8313</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>8320</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a long spear to a marsh giant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a murky green potion to a marsh giant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8307</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a marsh giant to Northern Lake Side.-->
+      <Type>NPC</Type>
+      <Destination>8315</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>8320</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a long spear to a marsh giant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8301</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a dark horned helmet to a marsh giant-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>8302</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gargoyle to Before the Great Gates.-->
+      <Type>NPC</Type>
+      <Destination>8318</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>8321</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gargoyle to Before the Great Gates.-->
+      <Type>NPC</Type>
+      <Destination>8318</Destination>
+      <Count>2</Count>
+      <Max>2</Max>
+      <Vnum>8321</Vnum>
+    </Reset>
+  </Resets>
+</Area>

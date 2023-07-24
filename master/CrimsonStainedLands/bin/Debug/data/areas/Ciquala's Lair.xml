@@ -1,0 +1,3075 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Ciquala's Lair</Name>
+    <Info></Info>
+    <VnumStart>13400</VnumStart>
+    <VnumEnd>13499</VnumEnd>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits>{40 52} Binky   Ciquala's Lair</Credits>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>13400</VNum>
+      <Name>Large Knothole in the Abyss</Name>
+      <Description>The huge chasm stretches endlessly into the depths of the earth, its rugged sides jagged and rough. A narrow walkway has been carved into the rocky walls, winding along the chasm's edge like a perilous ribbon. The walls are steep, the drop into the dark abyss below dizzying. The air is thick and heavy, echoing with the sound of rushing water and the distant rumble of rocks tumbling down into the depths. The chasm seems to go on forever, disappearing into the darkness, and the only way forward is along the narrow walkway clinging to the sides.</Description>
+      <Sector>City</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>5156</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>13401</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>small tablet</Keyword>
+          <Description>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                                  +
++            This area has been converted and adapted by           +
++                             Kajko                                +
++                                                                  +
++                               &amp;                                  +
++                                                                  +
++                      revised, debugged (?:)                      +
++               slightly enchanced and balanced by                 +
++                             Andeus                               +
++                                                                  +
++    PS. prepare to die - it is {40 50} area with aggro mobs       +
++                   only armed personel allowed                    +
++                                                       October'96 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>13401</VNum>
+      <Name>Large Knothole in the Abyss</Name>
+      <Description>The huge chasm stretches endlessly into the depths of the earth, its rugged sides jagged and rough. A narrow walkway has been carved into the rocky walls, winding along the chasm's edge like a perilous ribbon. The walls are steep, the drop into the dark abyss below dizzying. The air is thick and heavy, echoing with the sound of rushing water and the distant rumble of rocks tumbling down into the depths. The chasm seems to go on forever, disappearing into the darkness, and the only way forward is along the narrow walkway clinging to the sides.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>13400</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>13402</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13402</VNum>
+      <Name>Large Knothole in the Abyss</Name>
+      <Description>The huge chasm stretches endlessly into the depths of the earth, its rugged sides jagged and rough. A narrow walkway has been carved into the rocky walls, winding along the chasm's edge like a perilous ribbon. The walls are steep, the drop into the dark abyss below dizzying. The air is thick and heavy, echoing with the sound of rushing water and the distant rumble of rocks tumbling down into the depths. The chasm seems to go on forever, disappearing into the darkness, and the only way forward is along the narrow walkway clinging to the sides.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>13401</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>13403</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13403</VNum>
+      <Name>A dusty tunnel deep under the ground</Name>
+      <Description>You stand in a tunnel that appears to have been dug out of the dirt.
+You do not understand what is keeping the tunnel walls from caving in.  This
+would probably be a very bad place to use a dispel magic spell!  You do see
+some footprints in the dust, and looking up, you see who they belong to!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13404</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13409</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>13402</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13404</VNum>
+      <Name>A room with a large pool of water in the center</Name>
+      <Description>This room has a large pool of black water in the center.  You see
+many runes and glyphs surrounding it.  The room is lit by torches held in
+sconces.  Each of these items in the room merits more investigation.</Description>
+      <Sector>Inside</Sector>
+      <Flags>NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13405</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13403</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>pool</Keyword>
+          <Description>As you lean forward and look in the pool, you see nothing but the dark
+murky water.  Gradually though, an image forms before you.  You recognize the
+person the image shows.  It is the Avatar!  Apparently this is a pool that
+Ciquala uses to scry upon her enemies. The image is so clear, you almost
+believe you could step into the pool, and appear in Lord British's castle.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>torches</Keyword>
+          <Description>The torches are made of a black wood, and as you draw nearer, you find
+that they do not emit any heat.  Indeed, they seem to be radiating cold.  The
+flames are an icy blue, that makes you think twice about getting too close to
+them.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>sconces</Keyword>
+          <Description>The sconces are black and shaped liked two hands, cradling the torches
+between their pointed nails.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>glyphs</Keyword>
+          <Description>The glyphs are drawn upon the stone with what appears to be blood.
+You do not recognize any of them, and it would probably be a good idea not to
+touch any of them.</Description>
+        </ExtraDescription>
+        <ExtraDescription>
+          <Keyword>runes</Keyword>
+          <Description>These runes are carved into the rock about the pool.  You think you
+recognize the rune of vision, and another that has something to do with
+projecting power at a distance.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>13405</VNum>
+      <Name>Ciquala's Laboratory</Name>
+      <Description>This room is lined with shelves that contain a multitude of jars,
+boxes, vials, chests, tubes, glasses, beakers, and other assorted containers.
+You think that drinking the contents of any might have undesireable effects.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13408</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13404</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13407</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13404</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13406</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13404</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13406</VNum>
+      <Name>Supply room</Name>
+      <Description>This supply room keeps many of the items that are too large to fit in
+the laboratory itself.  You see several corpses that are preserved by the
+ever-present cold that you have encountered in every room in this tunnel
+system.  Also several crates hold contents, whose scent is enought to make
+you wish to shut the door immediately.  You believe that you hear a noise
+from behind one of the crates.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13405</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13407</VNum>
+      <Name>Holding Cell</Name>
+      <Description>This is nothing more than a small room with a very heavy iron door
+closing it off from the laboratory.  This is where Ciquala's assistants keep
+the experiments they are working on.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13405</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13404</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13408</VNum>
+      <Name>Holding Cell</Name>
+      <Description>This is nothing more than a small room with a very heavy iron door
+closing it off from the laboratory.  This is where Ciquala's minions keep
+the experiments they are working on.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13405</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13404</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13409</VNum>
+      <Name>Guard room</Name>
+      <Description>The occupants of this room were obviously left here by the Lich to
+keep intruders like you from bothering her, or learning her plans.  There
+are doors to both the east and west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13403</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13410</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13410</VNum>
+      <Name>A seemingly empty tunnel</Name>
+      <Description>This empty tunnel has doors leading in all directions.  The roof of
+the tunnel seems abnormally low and shiny, almost as if it is not dirt.  This
+room is also as cold as all the others were.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13411</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13405</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13409</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13412</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>13413</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13411</VNum>
+      <Name>The Map Room</Name>
+      <Description>This room is filled with maps, apparently containing some of Ciquala's
+plans.  You notice many maps of Lord British's castle.  You might be able to
+gain some information on Ciquala's plans, as well as learn your way through
+British's castle if you examine the map more closely.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13410</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13405</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>map</Keyword>
+          <Description>As you reach for a map to examine it closer, it bursts into ice cold flames and
+disintegrates before your eyes.  Apparently Ciquala has taken precautions
+against people snooping in her Lair.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>13412</VNum>
+      <Name>Storage Room</Name>
+      <Description>You see many boxes before you, apparently this is a storage room of
+some sort.  You can bet that whatever a lich is storing, that it can't be good
+for the world in general.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13410</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13413</VNum>
+      <Name>A tunnel with a grate in the floor</Name>
+      <Description>You see a grate on the floor.  When you look down it, you see several
+creatures below, humanoid, but you can't make out exactly what they are.
+There are also doors leading all directions but west.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13415</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>13410</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13416</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>13414</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13414</VNum>
+      <Name>The Room of the Automatons</Name>
+      <Description>You gasp as you realize that these pasty faced people do not seem to
+have a will of their own.  No doubt the work of the Lich.  If these
+monstrosities are allowed to escape into the world, they will cause no end
+of problems for Midgaard.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>13413</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13415</VNum>
+      <Name>Torture Chamber</Name>
+      <Description>This room is fitted with many instruments and tools designed to cause
+pain and fear in anyone who enters.  However, you don't pay as much attention
+to the racks and iron maidens as you would if were not for the lich in the
+room.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13413</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13416</VNum>
+      <Name>Entrance to Ciquala's Throne Room</Name>
+      <Description>This does not look like any of the other rooms you have been in up till
+now.  The ceiling rises a full 40 feet in the air above you.  The walls are
+covered with murals proclaiming the might and majesty of Ciquala.  She does
+not look old and decayed as you would have pictured her.  Instead, she looks
+rather regal and stately, but undoubtedly evil.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13413</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13417</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13417</VNum>
+      <Name>Ciquala's Throne Room</Name>
+      <Description>This room is clothed in darkness, and a chill eminates from the foul
+monarch of the undead.  A large tapestry hangs behind her throne.  The
+ceiling rises above you, hidden in the darkness beyond the range your
+light can penetrate.  A feeling of hopelessness and insignificance overwhelms
+you as you face the Lich, Ciquala!</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13416</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>13418</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13406</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>13418</VNum>
+      <Name>Treasure Chamber of Ciquala</Name>
+      <Description>This room contains enough wealth to fund an army, perhaps a small
+kingdom.  Racks or weapons, and spellbooks, and potions, not to mention large
+piles of coins that cover the floor.  A large paving stone in this room seems
+slightly disturbed.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>13417</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed Locked PickProof</Flags>
+          <Keys>13406</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>13419</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description>The stone appears to hide a secret passage going down.</Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions>
+        <ExtraDescription>
+          <Keyword>paving</Keyword>
+          <Description>The paving stone seems to be masking a passage down into a pit below this room.</Description>
+        </ExtraDescription>
+      </ExtraDescriptions>
+    </Room>
+    <Room>
+      <VNum>13419</VNum>
+      <Name>The hidden crypt of Ciquala</Name>
+      <Description>This room contains several crypts where the lichs and vampires rest.
+Unfortunately, they all seem to be out of their crypts right now.</Description>
+      <Sector>Inside</Sector>
+      <Flags>Dark NoMob</Flags>
+      <Exits>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>13418</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags>Door Closed</Flags>
+          <Keys>-1</Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>13400</Vnum>
+      <name>lich guardian</name>
+      <description>The Guardian lich looks like a decaying corpse, with small glowing points of
+light for eyes.</description>
+      <longDescription>The Guardian Lich steps out of the shadows and attacks!</longDescription>
+      <shortDescription>Guardian Lich</shortDescription>
+      <Sex>Male</Sex>
+      <level>33</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1100</HitPointDiceBonus>
+      <ManaPointDiceSides>329</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>660</hitpoints>
+      <maxhitpoints>660</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-110</ArmorBash>
+      <ArmorSlash>-110</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>lich</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>33</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>4200</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible Infrared Hide Flying DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>10</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13401</Vnum>
+      <name>vampire assistant</name>
+      <description>This lab assistant was chosen from amongst the undead for both his knowledge
+of magic, and his rather nasty disposition.  He revels in creating loathesome,
+twisted, warped creatures to serve Ciquala.</description>
+      <longDescription>A lab assistant turns toward you and bares his fangs!</longDescription>
+      <shortDescription>the vampire lab assistant</shortDescription>
+      <Sex>Male</Sex>
+      <level>22</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>400</HitPointDiceBonus>
+      <ManaPointDiceSides>219</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>440</hitpoints>
+      <maxhitpoints>440</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-50</ArmorBash>
+      <ArmorSlash>-50</ArmorSlash>
+      <ArmorPierce>-50</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>22</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1200</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive Wimpy</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13402</Vnum>
+      <name>creature nightmare</name>
+      <description>This creature may resemble some kind of serpent, but some parts of it are
+covered with scales, and others with hair.  It's head has 1 large bulbous eye,
+much like that of an insect.  Long talons reach out for you to shred you alive.</description>
+      <longDescription>A warped creature as if from a nightmare is here.</longDescription>
+      <shortDescription>a warped creature from a nightmare</shortDescription>
+      <Sex>Male</Sex>
+      <level>40</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1850</HitPointDiceBonus>
+      <ManaPointDiceSides>399</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>800</hitpoints>
+      <maxhitpoints>800</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-130</ArmorSlash>
+      <ArmorPierce>-130</ArmorPierce>
+      <ArmorExotic>40</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>40</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Aggressive StayArea Wimpy</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>13</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13403</Vnum>
+      <name>creature docile</name>
+      <description>The creature would probably not hurt a fly.  Actually, it is unaware of its own
+existence.</description>
+      <longDescription>A docile creature stands here, probably from an experiment that failed.</longDescription>
+      <shortDescription>a docile creature</shortDescription>
+      <Sex>None</Sex>
+      <level>35</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1300</HitPointDiceBonus>
+      <ManaPointDiceSides>349</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>700</hitpoints>
+      <maxhitpoints>700</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-110</ArmorBash>
+      <ArmorSlash>-110</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>35</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5199</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>11</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13404</Vnum>
+      <name>black pudding crate</name>
+      <description>As you examine this crate, a black tarlike substance seeps between the boards
+slowly eating the wood away.  It is a black pudding!</description>
+      <longDescription>A crate stands here.</longDescription>
+      <shortDescription>the black pudding</shortDescription>
+      <Sex>None</Sex>
+      <level>37</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1500</HitPointDiceBonus>
+      <ManaPointDiceSides>369</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>740</hitpoints>
+      <maxhitpoints>740</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-120</ArmorBash>
+      <ArmorSlash>-120</ArmorSlash>
+      <ArmorPierce>-120</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>37</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>12</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13405</Vnum>
+      <name>gigantic automaton</name>
+      <description>This gigantic construct is made of a metallic substance that you do not
+recognize.  He stands about 8' tall, brushing the ceiling.</description>
+      <longDescription>A gigantic automaton blocks your way.</longDescription>
+      <shortDescription>a gigantic automaton</shortDescription>
+      <Sex>Male</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>499</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>30</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13406</Vnum>
+      <name>undead guardian</name>
+      <description>This creature is a hovering dark shape.  It does not seem to have a body so
+to speak.  As it approaches you, a harsh chill makes you shiver.</description>
+      <longDescription>An undead guardian screams at you and attacks!</longDescription>
+      <shortDescription>the undead guardian</shortDescription>
+      <Sex>Male</Sex>
+      <level>45</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>449</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>900</hitpoints>
+      <maxhitpoints>900</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-150</ArmorBash>
+      <ArmorSlash>-150</ArmorSlash>
+      <ArmorPierce>-150</ArmorPierce>
+      <ArmorExotic>40</ArmorExotic>
+      <size>Medium</size>
+      <race>undead</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>45</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>7500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible DetectInvis Flying DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>8</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>16</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13407</Vnum>
+      <name>roof ceiling lurker above</name>
+      <description>The ceiling appears rather shiny.  Not like dirt at all.  You suddenly realize
+that it isn't a ceiling, but a LURKER ABOVE!  You had better attack before
+it drops on you!</description>
+      <longDescription></longDescription>
+      <shortDescription>the lurker above</shortDescription>
+      <Sex>Male</Sex>
+      <level>27</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>650</HitPointDiceBonus>
+      <ManaPointDiceSides>269</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>540</hitpoints>
+      <maxhitpoints>540</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-80</ArmorBash>
+      <ArmorSlash>-80</ArmorSlash>
+      <ArmorPierce>-80</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>27</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive Wimpy</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>7</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13408</Vnum>
+      <name>vampire servant</name>
+      <description>This vampire looks very pale and thin.  Ciquala has not been allowing him
+enough time at night to feed properly.  He is VERY happy that you walked in
+on him.</description>
+      <longDescription>A vampire servant to Ciquala is here, hungering for your blood.</longDescription>
+      <shortDescription>a vampire servant</shortDescription>
+      <Sex>Male</Sex>
+      <level>37</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1500</HitPointDiceBonus>
+      <ManaPointDiceSides>369</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>740</hitpoints>
+      <maxhitpoints>740</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-120</ArmorBash>
+      <ArmorSlash>-120</ArmorSlash>
+      <ArmorPierce>-120</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>37</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>5300</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>12</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13409</Vnum>
+      <name>human automaton</name>
+      <description>This mindless lump of flesh used to be human.  It's flesh has been converted
+to a dull grey substance.  The automaton is very strong, and will be a fierce
+opponent.</description>
+      <longDescription>A mindless automaton that used to be human is standing here.</longDescription>
+      <shortDescription>the human automaton</shortDescription>
+      <Sex>Male</Sex>
+      <level>30</level>
+      <HitPointDiceSides>6</HitPointDiceSides>
+      <HitPointDiceCount>12</HitPointDiceCount>
+      <HitPointDiceBonus>853</HitPointDiceBonus>
+      <ManaPointDiceSides>299</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>600</hitpoints>
+      <maxhitpoints>600</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-90</ArmorBash>
+      <ArmorSlash>-90</ArmorSlash>
+      <ArmorPierce>-90</ArmorPierce>
+      <ArmorExotic>60</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>30</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>3400</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>8</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13410</Vnum>
+      <name>human automaton</name>
+      <description>This mindless lump of flesh used to be human.  It's flesh has been converted
+to a dull grey substance.  The automaton is very strong, and will be a fierce
+opponent.</description>
+      <longDescription>A mindless automaton that used to be human is standing here.</longDescription>
+      <shortDescription>the human automaton</shortDescription>
+      <Sex>Male</Sex>
+      <level>33</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1100</HitPointDiceBonus>
+      <ManaPointDiceSides>329</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>660</hitpoints>
+      <maxhitpoints>660</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-110</ArmorBash>
+      <ArmorSlash>-110</ArmorSlash>
+      <ArmorPierce>-110</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>33</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>10</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13411</Vnum>
+      <name>human automaton</name>
+      <description>This mindless lump of flesh used to be human.  It's flesh has been converted
+to a dull grey substance.  The automaton is very strong, and will be a fierce
+opponent.</description>
+      <longDescription>A mindless automaton that used to be human is standing here.</longDescription>
+      <shortDescription>the human automaton</shortDescription>
+      <Sex>Male</Sex>
+      <level>36</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1400</HitPointDiceBonus>
+      <ManaPointDiceSides>359</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>720</hitpoints>
+      <maxhitpoints>720</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-120</ArmorBash>
+      <ArmorSlash>-120</ArmorSlash>
+      <ArmorPierce>-120</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>36</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>11</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13412</Vnum>
+      <name>human automaton</name>
+      <description>This mindless lump of flesh used to be human.  It's flesh has been converted
+to a dull grey substance.  The automaton is very strong, and will be a fierce
+opponent.</description>
+      <longDescription>A mindless automaton that used to be human is standing here.</longDescription>
+      <shortDescription>the human automaton</shortDescription>
+      <Sex>Male</Sex>
+      <level>39</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1700</HitPointDiceBonus>
+      <ManaPointDiceSides>389</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>780</hitpoints>
+      <maxhitpoints>780</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-130</ArmorBash>
+      <ArmorSlash>-130</ArmorSlash>
+      <ArmorPierce>-130</ArmorPierce>
+      <ArmorExotic>40</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Good</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>39</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>13</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13413</Vnum>
+      <name>torturer lich</name>
+      <description>You'd better not look to close, he may charm you.</description>
+      <longDescription>A blackened creature stands here, ready to cause you excruciating pain.</longDescription>
+      <shortDescription>the torturer lich</shortDescription>
+      <Sex>Male</Sex>
+      <level>41</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3000</HitPointDiceBonus>
+      <ManaPointDiceSides>409</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>820</hitpoints>
+      <maxhitpoints>820</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-140</ArmorBash>
+      <ArmorSlash>-140</ArmorSlash>
+      <ArmorPierce>-140</ArmorPierce>
+      <ArmorExotic>40</ArmorExotic>
+      <size>Medium</size>
+      <race>lich</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>41</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>7500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Sanctuary Infrared DetectIllusion DetectInvis Flying PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>14</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13414</Vnum>
+      <name>undead dragon</name>
+      <description>This skeletal dragon is an ancient red dragon preserved through arcane magic.</description>
+      <longDescription>Ciquala's undead pet dragon is here, snacking on a fresh corpse.</longDescription>
+      <shortDescription>Ciquala's Undead Dragon</shortDescription>
+      <Sex>Female</Sex>
+      <level>50</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>4500</HitPointDiceBonus>
+      <ManaPointDiceSides>499</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>1000</hitpoints>
+      <maxhitpoints>1000</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-200</ArmorBash>
+      <ArmorSlash>-200</ArmorSlash>
+      <ArmorPierce>-200</ArmorPierce>
+      <ArmorExotic>30</ArmorExotic>
+      <size>Medium</size>
+      <race>dragon</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>50</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>9500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Flying</affectedBy>
+      <WeaponDamageMessage>claw</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>8</DamageDiceCount>
+      <DamageDiceBonus>19</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13415</Vnum>
+      <name>Ciquala lich</name>
+      <description>Ciquala still looks majestic after all these thousands of years.  But you can
+see the menace in her eye as she looks at you, and prepares her first spell.</description>
+      <longDescription>A powerful, evil looking lich stands here, Ciquala, 
+ the oldest of all the undead.</longDescription>
+      <shortDescription>the lich Ciquala</shortDescription>
+      <Sex>Female</Sex>
+      <level>52</level>
+      <HitPointDiceSides>50</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>5500</HitPointDiceBonus>
+      <ManaPointDiceSides>519</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>1040</hitpoints>
+      <maxhitpoints>1040</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-220</ArmorBash>
+      <ArmorSlash>-220</ArmorSlash>
+      <ArmorPierce>-220</ArmorPierce>
+      <ArmorExotic>20</ArmorExotic>
+      <size>Medium</size>
+      <race>lich</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>52</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>10000</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Flying DetectIllusion PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>20</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13416</Vnum>
+      <name>lich</name>
+      <description>The Lich looks like a decaying corpse, with small glowing points of
+light for eyes.</description>
+      <longDescription>The Lich wonders what you are doing in its crypt.</longDescription>
+      <shortDescription>Lich</shortDescription>
+      <Sex>Male</Sex>
+      <level>37</level>
+      <HitPointDiceSides>10</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>1500</HitPointDiceBonus>
+      <ManaPointDiceSides>369</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>740</hitpoints>
+      <maxhitpoints>740</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-120</ArmorBash>
+      <ArmorSlash>-120</ArmorSlash>
+      <ArmorPierce>-120</ArmorPierce>
+      <ArmorExotic>50</ArmorExotic>
+      <size>Medium</size>
+      <race>lich</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>37</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>6500</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible DetectInvis DetectIllusion Flying PassDoor DarkVision</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>3</DamageDiceSides>
+      <DamageDiceCount>10</DamageDiceCount>
+      <DamageDiceBonus>12</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13417</Vnum>
+      <name>vampire</name>
+      <description>The vampire looks incredibly strong.  He is wearing musty clothes, and has
+large fangs that seem to grow longer as he looks back at you.</description>
+      <longDescription>The vampire is very hungry.  
+ With you here, he won't even have to go out hunting for fresh blood tonight.</longDescription>
+      <shortDescription>vampire</shortDescription>
+      <Sex>Male</Sex>
+      <level>47</level>
+      <HitPointDiceSides>25</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>3500</HitPointDiceBonus>
+      <ManaPointDiceSides>469</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>940</hitpoints>
+      <maxhitpoints>940</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-170</ArmorBash>
+      <ArmorSlash>-170</ArmorSlash>
+      <ArmorPierce>-170</ArmorPierce>
+      <ArmorExotic>30</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>47</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>7800</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>Invisible DetectInvis Flying DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>6</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>17</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>13418</Vnum>
+      <name>vampire assistant</name>
+      <description>This lab assistant was chosen from amongst the undead for both his knowledge
+of magic, and his rather nasty disposition.  She revels in creating loathesome,
+twisted, warped creatures to serve Ciquala.</description>
+      <longDescription>A lab assistant turns toward you and bares her fangs!</longDescription>
+      <shortDescription>the vampire lab assistant</shortDescription>
+      <Sex>Female</Sex>
+      <level>22</level>
+      <HitPointDiceSides>5</HitPointDiceSides>
+      <HitPointDiceCount>10</HitPointDiceCount>
+      <HitPointDiceBonus>400</HitPointDiceBonus>
+      <ManaPointDiceSides>219</ManaPointDiceSides>
+      <ManaPointDiceCount>1</ManaPointDiceCount>
+      <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <hitpoints>440</hitpoints>
+      <maxhitpoints>440</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>-50</ArmorBash>
+      <ArmorSlash>-50</ArmorSlash>
+      <ArmorPierce>-50</ArmorPierce>
+      <ArmorExotic>70</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Evil</alignment>
+      <ethos>0</ethos>
+      <hitroll>0</hitroll>
+      <damRoll>22</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>1200</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NPC Sentinel Scavenger Aggressive Wimpy</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>4</DamageDiceSides>
+      <DamageDiceCount>4</DamageDiceCount>
+      <DamageDiceBonus>6</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items>
+    <Item>
+      <VNum>13400</VNum>
+      <Name>ciquala's sword</Name>
+      <ShortDescription>Ciquala's sword</ShortDescription>
+      <LongDescription>A large, black sword lies here.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>slice</WeaponDamageType>
+      <WeaponType>Sword</WeaponType>
+      <DiceSides>5</DiceSides>
+      <DiceCount>11</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>8</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Hum Dark NoDrop AntiGood NoRemove Vorpal TwoHands Shocking Poison</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>34799</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13401</VNum>
+      <Name>ciquala's robe</Name>
+      <ShortDescription>Ciquala's robe</ShortDescription>
+      <LongDescription>A heavy pile of black cloth lies in the dust.</LongDescription>
+      <Description></Description>
+      <Level>51</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>5</Weight>
+      <WearFlags>Take About</WearFlags>
+      <ExtraFlags>Magic NoDrop AntiGood NoRemove</ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-4" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>29470</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>leather</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>14</ArmorBash>
+      <ArmorSlash>14</ArmorSlash>
+      <ArmorPierce>14</ArmorPierce>
+      <ArmorExotic>2</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13402</VNum>
+      <Name>Ciquala's staff</Name>
+      <ShortDescription>ciquala's staff</ShortDescription>
+      <LongDescription>A black staff lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>45</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take Hold</WearFlags>
+      <ExtraFlags>Magic NoDrop AntiGood NoRemove</ExtraFlags>
+      <ItemTypes>Talisman</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
+      </Affects>
+      <Spells>
+        <Spell Level="40" SpellName="cure critical" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>22100</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>wood</Material>
+      <Charges>20</Charges>
+      <MaxCharges>20</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13403</VNum>
+      <Name>crate</Name>
+      <ShortDescription>crate</ShortDescription>
+      <LongDescription>A crate stands here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13404</VNum>
+      <Name>key</Name>
+      <ShortDescription>a key</ShortDescription>
+      <LongDescription>A key lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13405</VNum>
+      <Name>key</Name>
+      <ShortDescription>a iron key</ShortDescription>
+      <LongDescription>A iron key lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13406</VNum>
+      <Name>key large</Name>
+      <ShortDescription>a large key</ShortDescription>
+      <LongDescription>A large key lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>1</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Key</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13407</VNum>
+      <Name>blue potion</Name>
+      <ShortDescription>a blue potion</ShortDescription>
+      <LongDescription>A blue bottle of liquid lies here.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>NoDrop</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="38" SpellName="acid blast" />
+        <Spell Level="38" SpellName="change sex" />
+        <Spell Level="38" SpellName="(null)" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3200</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13408</VNum>
+      <Name>emerald vial</Name>
+      <ShortDescription>an emerald vial</ShortDescription>
+      <LongDescription>An emerald vial lies here</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="25" SpellName="heal" />
+        <Spell Level="25" SpellName="heal" />
+        <Spell Level="25" SpellName="blindness" />
+        <Spell Level="25" SpellName="blindness" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3350</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13409</VNum>
+      <Name>purple potion</Name>
+      <ShortDescription>purple potion</ShortDescription>
+      <LongDescription>A purple potion lies forgotten on the ground.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Invisibility NoDrop</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="25" SpellName="stone skin" />
+        <Spell Level="25" SpellName="sanctuary" />
+        <Spell Level="25" SpellName="blindness" />
+        <Spell Level="25" SpellName="blindness" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>5600</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13410</VNum>
+      <Name>testube clear</Name>
+      <ShortDescription>a clear testube</ShortDescription>
+      <LongDescription>A clear testube contains an unknown liquid.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>NoDrop</ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="38" SpellName="burning hands" />
+        <Spell Level="38" SpellName="colour spray" />
+        <Spell Level="38" SpellName="protection evil" />
+        <Spell Level="38" SpellName="protection evil" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3300</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13411</VNum>
+      <Name>vial green</Name>
+      <ShortDescription>a green vial</ShortDescription>
+      <LongDescription>A green vial sits on  a shelf.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="28" SpellName="create spring" />
+        <Spell Level="28" SpellName="energy drain" />
+        <Spell Level="28" SpellName="poison" />
+        <Spell Level="28" SpellName="poison" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>2300</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13412</VNum>
+      <Name>gold liquid vial</Name>
+      <ShortDescription>a vial with gold liquid</ShortDescription>
+      <LongDescription>A vial with a gold colored liquid sits on the floor.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="30" SpellName="weaken" />
+        <Spell Level="30" SpellName="poison" />
+        <Spell Level="30" SpellName="curse" />
+        <Spell Level="30" SpellName="curse" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4300</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glas</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13413</VNum>
+      <Name>milky liquid vial</Name>
+      <ShortDescription>a vial with milky liquid</ShortDescription>
+      <LongDescription>A vial with milky liquid sits on the shelf.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="30" SpellName="heal" />
+        <Spell Level="30" SpellName="pass door" />
+        <Spell Level="30" SpellName="sanctuary" />
+        <Spell Level="30" SpellName="sanctuary" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4400</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glas</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13414</VNum>
+      <Name>black potion</Name>
+      <ShortDescription>a black potion</ShortDescription>
+      <LongDescription>A black potion is waiting to be picked up.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="30" SpellName="shield" />
+        <Spell Level="30" SpellName="infravision" />
+        <Spell Level="30" SpellName="cause critical" />
+        <Spell Level="30" SpellName="cause critical" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>4900</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13415</VNum>
+      <Name>beaker yellow</Name>
+      <ShortDescription>a beaker with yellow liquid</ShortDescription>
+      <LongDescription>A beaker filled with yellow bubbling liquid sits on the counter.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="30" SpellName="harm" />
+        <Spell Level="30" SpellName="poison" />
+        <Spell Level="30" SpellName="weaken" />
+        <Spell Level="30" SpellName="weaken" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>3400</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13416</VNum>
+      <Name>iron maiden</Name>
+      <ShortDescription>an iron maiden</ShortDescription>
+      <LongDescription>An iron maiden sits here, looking rather unused.  Why not try it on?</LongDescription>
+      <Description></Description>
+      <Level>33</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>100</Weight>
+      <WearFlags>Take Body</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Armor</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-400" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>20</ArmorBash>
+      <ArmorSlash>20</ArmorSlash>
+      <ArmorPierce>20</ArmorPierce>
+      <ArmorExotic>5</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13417</VNum>
+      <Name>torturer's whip</Name>
+      <ShortDescription>the torturer's whip</ShortDescription>
+      <LongDescription>An enormous whip lies here.</LongDescription>
+      <Description></Description>
+      <Level>40</Level>
+      <WeaponDamageType>chop</WeaponDamageType>
+      <WeaponType>Whip</WeaponType>
+      <DiceSides>7</DiceSides>
+      <DiceCount>9</DiceCount>
+      <DiceBonus>0</DiceBonus>
+      <Weight>9</Weight>
+      <WearFlags>Take Wield</WearFlags>
+      <ExtraFlags>Glow Hum Invisibility Magic Vorpal TwoHands Shocking Poison</ExtraFlags>
+      <ItemTypes>Weapon</ItemTypes>
+      <Affects>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-6" hidden="False" affectType="Spell" />
+      </Affects>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>14700</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13418</VNum>
+      <Name>treasure coins gold</Name>
+      <ShortDescription>a humongous pile of gold</ShortDescription>
+      <LongDescription>A humongous pile of gold is waiting to be picked up.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>gold</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13419</VNum>
+      <Name>gems pile</Name>
+      <ShortDescription>a pile of gems</ShortDescription>
+      <LongDescription>A pile of gems lies on the ground.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags>Glow</ExtraFlags>
+      <ItemTypes>Money</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13420</VNum>
+      <Name>crate</Name>
+      <ShortDescription>crate</ShortDescription>
+      <LongDescription>A crate stands here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13421</VNum>
+      <Name>crate</Name>
+      <ShortDescription>crate</ShortDescription>
+      <LongDescription>A crate stands here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13422</VNum>
+      <Name>crate</Name>
+      <ShortDescription>crate</ShortDescription>
+      <LongDescription>A crate stands here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13423</VNum>
+      <Name>crate</Name>
+      <ShortDescription>crate</ShortDescription>
+      <LongDescription>A crate stands here.</LongDescription>
+      <Description></Description>
+      <Level>0</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>0</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Furniture</ItemTypes>
+      <Affects />
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>0</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>iron</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13424</VNum>
+      <Name>fizzing bottle</Name>
+      <ShortDescription>a fizzing bottle</ShortDescription>
+      <LongDescription>A bottle of fizzing liquid lies here.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="28" SpellName="word of recall" />
+        <Spell Level="28" SpellName="sleep" />
+        <Spell Level="28" SpellName="poison" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+    <Item>
+      <VNum>13425</VNum>
+      <Name>grey potion</Name>
+      <ShortDescription>a grey potion</ShortDescription>
+      <LongDescription>A grey potion sits on the counter.</LongDescription>
+      <Description></Description>
+      <Level>20</Level>
+      <WeaponDamageType>none</WeaponDamageType>
+      <WeaponType>None</WeaponType>
+      <DiceSides>1</DiceSides>
+      <DiceCount>1</DiceCount>
+      <DiceBonus>1</DiceBonus>
+      <Weight>2</Weight>
+      <WearFlags>Take</WearFlags>
+      <ExtraFlags></ExtraFlags>
+      <ItemTypes>Potion</ItemTypes>
+      <Affects />
+      <Spells>
+        <Spell Level="30" SpellName="energy drain" />
+        <Spell Level="30" SpellName="energy drain" />
+        <Spell Level="30" SpellName="create food" />
+        <Spell Level="30" SpellName="create food" />
+      </Spells>
+      <Silver>0</Silver>
+      <Gold>0</Gold>
+      <Cost>1000</Cost>
+      <Nutrition>0</Nutrition>
+      <Liquid></Liquid>
+      <MaxWeight>0</MaxWeight>
+      <Material>glass</Material>
+      <Charges>0</Charges>
+      <MaxCharges>0</MaxCharges>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <ExtraDescriptions />
+    </Item>
+  </Items>
+  <Resets>
+    <Reset>
+      <!--Spawn Guardian Lich to A dusty tunnel deep under the ground-->
+      <Type>NPC</Type>
+      <Destination>13403</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the vampire lab assistant to Ciquala's Laboratory-->
+      <Type>NPC</Type>
+      <Destination>13405</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>13401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a key to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13404</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a vial with milky liquid to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a black potion to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13414</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a beaker with yellow liquid to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13415</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a fizzing bottle to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13424</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a grey potion to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13425</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the vampire lab assistant to Ciquala's Laboratory-->
+      <Type>NPC</Type>
+      <Destination>13405</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>13418</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a blue potion to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an emerald vial to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13408</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn purple potion to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13409</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a clear testube to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13410</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a green vial to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13411</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a vial with gold liquid to the vampire lab assistant-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13412</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the black pudding to Supply room-->
+      <Type>NPC</Type>
+      <Destination>13406</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>13404</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn crate to Supply room-->
+      <Type>Item</Type>
+      <Destination>13406</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn crate to Supply room-->
+      <Type>Item</Type>
+      <Destination>13406</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13420</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn crate to Supply room-->
+      <Type>Item</Type>
+      <Destination>13406</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13421</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a warped creature from a nightmare to Holding Cell-->
+      <Type>NPC</Type>
+      <Destination>13407</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a docile creature to Holding Cell-->
+      <Type>NPC</Type>
+      <Destination>13407</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a warped creature from a nightmare to Holding Cell-->
+      <Type>NPC</Type>
+      <Destination>13408</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a docile creature to Holding Cell-->
+      <Type>NPC</Type>
+      <Destination>13408</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13403</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a gigantic automaton to Guard room-->
+      <Type>NPC</Type>
+      <Destination>13409</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13405</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a iron key to a gigantic automaton-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13405</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the undead guardian to Guard room-->
+      <Type>NPC</Type>
+      <Destination>13409</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13406</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the lurker above to A seemingly empty tunnel-->
+      <Type>NPC</Type>
+      <Destination>13410</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13407</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a vampire servant to The Map Room-->
+      <Type>NPC</Type>
+      <Destination>13411</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13408</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the black pudding to Storage Room-->
+      <Type>NPC</Type>
+      <Destination>13412</Destination>
+      <Count>1</Count>
+      <Max>2</Max>
+      <Vnum>13404</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn crate to Storage Room-->
+      <Type>Item</Type>
+      <Destination>13412</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13422</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn crate to Storage Room-->
+      <Type>Item</Type>
+      <Destination>13412</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13423</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the human automaton to The Room of the Automatons-->
+      <Type>NPC</Type>
+      <Destination>13414</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13409</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the human automaton to The Room of the Automatons-->
+      <Type>NPC</Type>
+      <Destination>13414</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13410</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the human automaton to The Room of the Automatons-->
+      <Type>NPC</Type>
+      <Destination>13414</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13411</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the human automaton to The Room of the Automatons-->
+      <Type>NPC</Type>
+      <Destination>13414</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13412</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the torturer lich to Torture Chamber-->
+      <Type>NPC</Type>
+      <Destination>13415</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13413</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the torturer's whip to the torturer lich-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13417</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn an iron maiden to Torture Chamber-->
+      <Type>Item</Type>
+      <Destination>13415</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Ciquala's Undead Dragon to Entrance to Ciquala's Throne Room-->
+      <Type>NPC</Type>
+      <Destination>13416</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13414</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn the lich Ciquala to Ciquala's Throne Room-->
+      <Type>NPC</Type>
+      <Destination>13417</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13415</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Ciquala's sword to the lich Ciquala-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13400</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Ciquala's robe to the lich Ciquala-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13401</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn ciquala's staff to the lich Ciquala-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13402</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a large key to the lich Ciquala-->
+      <Type>Give</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13406</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a humongous pile of gold to Treasure Chamber of Ciquala-->
+      <Type>Item</Type>
+      <Destination>13418</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13418</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn a pile of gems to Treasure Chamber of Ciquala-->
+      <Type>Item</Type>
+      <Destination>13418</Destination>
+      <Count>0</Count>
+      <Max>1</Max>
+      <Vnum>13419</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Lich to The hidden crypt of Ciquala-->
+      <Type>NPC</Type>
+      <Destination>13419</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn Lich to The hidden crypt of Ciquala-->
+      <Type>NPC</Type>
+      <Destination>13419</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13416</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn vampire to The hidden crypt of Ciquala-->
+      <Type>NPC</Type>
+      <Destination>13419</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13417</Vnum>
+    </Reset>
+    <Reset>
+      <!--Spawn vampire to The hidden crypt of Ciquala-->
+      <Type>NPC</Type>
+      <Destination>13419</Destination>
+      <Count>2</Count>
+      <Max>4</Max>
+      <Vnum>13417</Vnum>
+    </Reset>
+  </Resets>
+</Area>
