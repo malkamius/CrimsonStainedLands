@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
+using System.Numerics;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -142,7 +144,8 @@ namespace CrimsonStainedLands
                 var text = output.ToString();
                 if (state == ConnectionStates.Playing && (Position == Positions.Fighting || SittingAtPrompt) && !text.StartsWith("\n\r"))
                     text = "\n\r" + text;
-                socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes(text.colorString(this)));
+                
+                sendRaw(text);
                 output.Clear();
                 SittingAtPrompt = true;
             }
@@ -205,6 +208,21 @@ namespace CrimsonStainedLands
                     return true;
                 }
                 Name = line[0].ToString().ToUpper() + line.Substring(1).ToLower();
+
+                if (game.CheckIsBanned(Name, string.Empty))
+                {
+                    try
+                    {
+                        sendRaw("You are banned.\n\r");
+                        socket.Close();
+                        socket = null;
+                    }
+                    catch
+                    {
+
+                    }
+                }
+
                 send("What is your password? ");
                 if (System.IO.File.Exists("data\\players\\" + Name + ".xml"))
                 {

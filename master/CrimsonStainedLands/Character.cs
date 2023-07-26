@@ -1167,6 +1167,9 @@ namespace CrimsonStainedLands
 
         public void sendRaw(string data)
         {
+            if (!data.ISEMPTY())
+                if (data.Contains("\n"))
+                    data = data.Replace("\r", "").Replace("\n", "\n\r");
             if (this is Player player && ((Player)this).socket != null)
             {
                 player.socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes(data.colorString(this)));
@@ -5624,7 +5627,7 @@ namespace CrimsonStainedLands
 
 
 
-        public static Character GetCharacterWorld(Character ch, string argument, bool onlyPlayers = true)
+        public static Character GetCharacterWorld(Character ch, string argument, bool onlyPlayers = true, bool checkCanSee = true)
         {
             string arg = "";
             Character wch;
@@ -5642,7 +5645,7 @@ namespace CrimsonStainedLands
 
             foreach (var other in Character.Characters.ToArray())
             {
-                if (other.Room == null || !ch.CanSee(other)
+                if (other.Room == null || (checkCanSee && !ch.CanSee(other))
                     || (!other.GetName.IsName(arg) && ((!ch.IsImmortal && (!ch.IsNPC || !onlyPlayers)) || !other.Name.IsName(arg))))
                     //&&  ( !IS_IMMORTAL(ch) && wch->original_name && !is_name(arg,wch->original_name))) )
                     continue;

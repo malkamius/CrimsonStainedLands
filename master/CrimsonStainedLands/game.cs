@@ -39,6 +39,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
@@ -46,6 +47,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Xml.Schema;
 using static CrimsonStainedLands.WeatherData;
 using static System.Net.WebRequestMethods;
 using static System.Windows.Forms.AxHost;
@@ -313,8 +315,22 @@ namespace CrimsonStainedLands
                         // Accept the new connections
                         while (listeningSocket.Poll(1, SelectMode.SelectRead))
                         {
+                            var player = new Player(this, listeningSocket.Accept());
+                            state.connections.Add(player);
 
-                            state.connections.Add(new Player(this, listeningSocket.Accept()));
+                            if (game.CheckIsBanned(string.Empty, ((IPEndPoint)player.socket.RemoteEndPoint).Address.MapToIPv4().ToString()))
+                            {
+                                try
+                                {
+                                    player.sendRaw("You are banned.\n\r");
+                                    player.socket.Close();
+                                    player.socket = null;
+                                }
+                                catch
+                                {
+
+                                }
+                            }
                         }
 
 
@@ -1022,7 +1038,7 @@ namespace CrimsonStainedLands
                             ch.Starving++;
                         if (ch.Thirst > 0 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
                             ch.Thirst--;
-                        else if(ch.Thirst <= 0 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
+                        else if (ch.Thirst <= 0 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
                             ch.Dehydrated++;
 
                         if (ch.Level > 10 && ch.Level <= game.LEVEL_HERO)
@@ -1070,7 +1086,7 @@ namespace CrimsonStainedLands
 
 
                         }
-                        if (ch.Thirst < 4  && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
+                        if (ch.Thirst < 4 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
                         {
                             if (ch.Dehydrated < 2)
                                 ch.send("You are thirsty.\n\r");
@@ -1131,7 +1147,7 @@ namespace CrimsonStainedLands
                         if (affect.skillSpell != null && affect.skillSpell.TickFunction != null)
                             affect.skillSpell.TickFunction(ch, affect);
 
-                        if(affect.flags.ISSET(AffectFlags.Ghost) && affect.duration < 5) 
+                        if (affect.flags.ISSET(AffectFlags.Ghost) && affect.duration < 5)
                         {
                             ch.send("You feel your body start to transition back to a physical form.\n\r");
                         }
@@ -1599,7 +1615,7 @@ namespace CrimsonStainedLands
             room.exits[(int)Direction.Up] = new ExitData() { destinationVnum = 0, description = "You don't see anything in this direction.", ExitSize = CharacterSize.Giant, direction = Direction.Up };
             room.exits[(int)Direction.Up].originalFlags.AddRange(from exitflag in Utility.GetEnumValues<ExitFlags>() select exitflag);
             room.exits[(int)Direction.Up].flags.AddRange(room.exits[(int)Direction.Up].originalFlags);
-            for(int i = 0; i < room.exits.Length; i++)
+            for (int i = 0; i < room.exits.Length; i++)
                 room.OriginalExits[i] = new ExitData(room.exits[i]);
 
             sampleArea.rooms.Add(room.Vnum, room);
@@ -1756,6 +1772,156 @@ namespace CrimsonStainedLands
             sampleArea.save();
         }
 
+        public static void DoConnections(Character ch, string arguments)
+        {
+
+            ch.send("Current players:\n\r");
+            if (!Character.Characters.Any(c => c is Player))
+            {
+                ch.send("None.\n\r");
+            }
+            else
+            {
+                ch.send("{0,20} {1,20} {2, 10}\n\r", "Name", "Address", "State");
+                foreach (var player in Character.Characters.OfType<Player>())
+                {
+                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, (((IPEndPoint)(player.socket.RemoteEndPoint)).Address.MapToIPv4().ToString()), player.state.ToString());
+                }
+
+                ch.send(Character.Characters.OfType<Player>().Count() + " players online.\n\r");
+            }
+
+
+        }
+
+
+        public static void DoBanByName(Character ch, string arguments)
+        {
+            string name = string.Empty;
+            string duration = string.Empty;
+
+            duration = arguments.OneArgument(ref name);
+
+            if (name.ISEMPTY())
+            {
+                ch.send("Syntax: BanByName $playername\n\r");
+                return;
+            }
+            if (duration.ISEMPTY())
+                duration = (DateTime.MaxValue - DateTime.Now - TimeSpan.FromMinutes(1)).ToString();
+
+            string banspath = @"data\bans.xml";
+            XElement bans = new XElement("bans");
+
+            if (System.IO.File.Exists(banspath))
+            {
+                bans = XElement.Load(banspath);
+            }
+
+            bans.Add(new XElement("ban", new XAttribute("EndDate", DateTime.Now + TimeSpan.Parse(duration)), new XAttribute("name", name), new XAttribute("address", "")));
+            bans.Save(banspath);
+            Character bancharacter;
+            if ((bancharacter = Character.GetCharacterWorld(ch, name, true, false)) != null && bancharacter is Player)
+            {
+                ((Player)bancharacter).sendRaw("You have been banned.\n\r");
+                ((Player)bancharacter).socket.Close();
+                ((Player)bancharacter).socket = null;
+                ch.send("Character banned.\n\r");
+            }
+
+            ch.send($"Ban entry added. In effect for {duration}.\n\r");
+        }
+
+        public static void DoBanByAddress(Character ch, string arguments)
+        {
+            string nameOrAddress = string.Empty;
+            string duration = string.Empty;
+            string address;
+            duration = arguments.OneArgument(ref nameOrAddress);
+
+            if (duration.ISEMPTY())
+                duration = (DateTime.MaxValue - DateTime.Now - TimeSpan.FromMinutes(1)).ToString();
+
+            if (nameOrAddress.ISEMPTY())
+            {
+                ch.send("Syntax: BanByAddress [$playername|$address]\n\r");
+                return;
+            }
+
+            Character bancharacter;
+            if (nameOrAddress.All(c => (c >= '0' && c <= '9') || c == '.'))
+            {
+                address = nameOrAddress;
+            }
+            else if ((bancharacter = Character.GetCharacterWorld(ch, nameOrAddress, true, false)) != null && bancharacter is Player)
+            {
+                address = ((IPEndPoint)((Player)bancharacter).socket.RemoteEndPoint).Address.MapToIPv4().ToString();
+                ((Player)bancharacter).sendRaw("You have been banned.\n\r");
+                ((Player)bancharacter).socket.Close();
+                ((Player)bancharacter).socket = null;
+                ch.send("Character banned.\n\r");
+            }
+            else
+            {
+                ch.send("Player not found or ip address not in proper format.\n\r");
+                return;
+            }
+
+            foreach(var player in Character.Characters.OfType<Player>())
+            {
+                try // player may already be kicked
+                {
+                    if (((IPEndPoint)player.socket.RemoteEndPoint).Address.MapToIPv4().ToString().StartsWith(address))
+                    {
+                        player.sendRaw("You have been banned.\n\r");
+                        player.socket.Close();
+                        player.socket = null;
+                    }
+                }
+                catch
+                {
+
+                }
+            }
+
+            string banspath = @"data\bans.xml";
+            XElement bans = new XElement("bans");
+
+            if (System.IO.File.Exists(banspath))
+            {
+                bans = XElement.Load(banspath);
+            }
+
+            bans.Add(new XElement("ban", new XAttribute("EndDate", DateTime.Now + TimeSpan.Parse(duration)), new XAttribute("address", address)));
+            bans.Save(banspath);
+
+
+            ch.send($"Ban entry added. In effect for {duration}.\n\r");
+        }
+
+        public static bool CheckIsBanned(string name, string ipAddress)
+        {
+            string banspath = @"data\bans.xml";
+            if (System.IO.File.Exists(banspath))
+            {
+                DateTime BanEndDate;
+                var bans = XElement.Load(banspath);
+
+                // name is not empty and an element name matches case insensitive or element address is not empty and ipaddress starts with it
+                return bans.Elements().Any(element =>
+                    DateTime.TryParse(element.GetAttributeValue("EndDate", DateTime.MaxValue.ToString()), out BanEndDate) &&
+                    BanEndDate > DateTime.Now &&
+                    (
+                        (!name.ISEMPTY() || !element.GetAttributeValue("name").StringCmp(name)) ||
+
+                                (!element.GetAttributeValue("address").ISEMPTY() ||
+                                !ipAddress.StartsWith(element.GetAttributeValue("address"))
+                        )
+                    ));
+            }
+
+            return false;
+        }
     }
 
     public enum Alignment
@@ -1776,9 +1942,5 @@ namespace CrimsonStainedLands
         Unknown = Neutral,
         None = Neutral
     }
-
-
-
-
 
 }
