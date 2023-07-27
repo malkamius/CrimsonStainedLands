@@ -16,24 +16,10 @@ namespace CrimsonStainedLands
         public static Quest GetQuest(int vnum) => Quests.TryGetValue(vnum, out var result) ? result : null;
         public static Quest GetQuest(string name) => (from quest in Quests.Values where quest.Name.StringCmp(name) select quest).FirstOrDefault();
 
-        public static QuestProgressData GetQuestProgress(Character ch, int vnum)
-        {
-            if(ch is Player)
-            {
-                var player = (Player)ch;
+        public static QuestProgressData GetQuestProgress(Character ch, int vnum) => ch is Player? ((Player)ch).Quests.FirstOrDefault(q => q.Quest.Vnum == vnum) : null;   
 
-                foreach(var questprogress in player.Quests)
-                {
-                    if(questprogress.Quest != null && questprogress.Quest.Vnum == vnum)
-                    {
-                        return questprogress;
-                    }
-                }
-            }
-
-            return null;
-        }
-
+        public static QuestProgressData GetQuestProgress(Character ch, Quest quest) => GetQuestProgress(ch, quest.Vnum);
+        
         public static void LoadQuests(AreaData area, XElement QuestsElement)
         {
             foreach (var questElement in QuestsElement.Elements("Quest"))
@@ -144,17 +130,19 @@ namespace CrimsonStainedLands
             this.Quest = Quest.GetQuest(questVnum) ?? Quest.GetQuest(questName);
             QuestGiver = progress.GetAttributeValue("QuestGiver");
             Quest.QuestStatus status = Quest.QuestStatus.None;
-            if(Utility.GetEnumValue<Quest.QuestStatus>(progress.GetAttributeValue("Status"), ref status))
+            if (Utility.GetEnumValue<Quest.QuestStatus>(progress.GetAttributeValue("Status"), ref status))
                 Status = status;
             LevelStarted = progress.GetAttributeValueInt("LevelStarted");
             LevelCompleted = progress.GetAttributeValueInt("LevelCompleted");
             Progress = progress.GetAttributeValueInt("Progress");
+            ExtraState = progress.GetElement("ExtraState") ?? new XElement("ExtraState");
         }
 
         private QuestProgressData(Quest quest, string giver)
         {
             this.Quest = quest;
             this.QuestGiver = giver;
+            this.ExtraState = new XElement("ExtraState");
         }
 
         public static bool StartQuest(Character ch, string giver, Quest quest)
@@ -168,7 +156,7 @@ namespace CrimsonStainedLands
                     var questProgress = new QuestProgressData(quest, giver);
                     questProgress.LevelStarted = player.Level;
                     questProgress.Status = Quest.QuestStatus.InProgress;
-                    
+
                     player.Quests.Add(questProgress);
 
                     return true;
@@ -329,34 +317,6 @@ namespace CrimsonStainedLands
         public static bool HasQuestPrerequisites(Character ch, Quest quest) => (ch is Player) ?
             quest.QuestPrerequisites.All(vnum => IsQuestComplete(ch, Quest.GetQuest(vnum))) : false;
 
-        //public static bool IsQuestComplete(Character ch, Quest quest)
-        //{
-        //    if (ch is Player && quest != null)
-        //    {
-        //        var player = (Player)ch;
-        //        QuestProgressData questProgress = null;
-        //        if ((questProgress = player.Quests.FirstOrDefault(q => q.Quest == quest)) != null)
-        //        {
-        //            return questProgress.Status == Quest.QuestStatus.Complete;
-        //        }
-        //    }
-        //    return false;
-        //}
-
-        //public static bool IsQuestFailed(Character ch, Quest quest)
-        //{
-        //    if (ch is Player && quest != null)
-        //    {
-        //        var player = (Player)ch;
-        //        QuestProgressData questProgress = null;
-        //        if ((questProgress = player.Quests.FirstOrDefault(q => q.Quest == quest)) != null)
-        //        {
-        //            return questProgress.Status == Quest.QuestStatus.Failed;
-        //        }
-        //    }
-        //    return false;
-        //}
-
         public static void ResetQuest(Character ch, Quest quest)
         {
             if (ch is Player && quest != null)
@@ -374,6 +334,8 @@ namespace CrimsonStainedLands
                 {
                     questProgress.Status = Quest.QuestStatus.InProgress;
                     questProgress.Progress = 0;
+                    questProgress.ExtraState = new XElement("ExtraState");
+
                     if (questProgress.Quest.ShowInQuests)
                     {
                         ch.send("Your progress for the quest '{0}' has been reset.\n\r", questProgress.Quest.Display);
@@ -394,6 +356,9 @@ namespace CrimsonStainedLands
         public int LevelCompleted { get; set; } = 0;
 
         public int Progress { get; set; } = 0;
+
+        public XElement ExtraState { get; set; } = new XElement("ExtraState");
+
         public XElement Element => new XElement("QuestProgress",
             new XAttribute("QuestVnum", Quest.Vnum),
             new XAttribute("QuestName", Quest.Name),
@@ -401,6 +366,7 @@ namespace CrimsonStainedLands
             new XAttribute("Status", Status.ToString()),
             new XAttribute("LevelStarted", LevelStarted),
             new XAttribute("LevelCompleted", LevelCompleted),
-            new XAttribute("Progress", Progress));
+            new XAttribute("Progress", Progress),
+            ExtraState);
     }
 }

@@ -179,6 +179,7 @@ namespace CrimsonStainedLands
         public string tickProgram = "";
         public string endProgram = "";
 
+        public XElement ExtraState = new XElement("ExtraState");
 
         public AffectData()
         {
@@ -208,6 +209,7 @@ namespace CrimsonStainedLands
             DamageTypes.AddRange(toCopy.DamageTypes);
             tickProgram = toCopy.tickProgram;
             endProgram = toCopy.endProgram;
+            ExtraState = new XElement("ExtraState", toCopy.ExtraState.Elements());
         }
 
         public AffectData(XElement affectElement)
@@ -234,6 +236,7 @@ namespace CrimsonStainedLands
             skillSpell = SkillSpell.SkillLookup(affectElement.GetAttributeValue("skillSpell"));
             tickProgram = affectElement.GetAttributeValue("TickProgram");
             endProgram = affectElement.GetAttributeValue("EndProgram");
+            ExtraState = new XElement("ExtraState", (affectElement.GetElement("ExtraState") ?? new XElement("ExtraState")).Elements());
         }
 
         public XElement Element
@@ -261,7 +264,8 @@ namespace CrimsonStainedLands
                     !beginMessageToRoom.ISEMPTY() ? new XAttribute("beginMessageToRoom", beginMessageToRoom.TOSTRINGTRIM()) : null,
                     skillSpell != null ? new XAttribute("skillSpell", skillSpell != null ? skillSpell.internalName : "") : null,
                     !tickProgram.ISEMPTY() ? new XAttribute("TickProgram", tickProgram.TOSTRINGTRIM()) : null,
-                    !endProgram.ISEMPTY() ? new XAttribute("EndProgram", endProgram.TOSTRINGTRIM()) : null
+                    !endProgram.ISEMPTY() ? new XAttribute("EndProgram", endProgram.TOSTRINGTRIM()) : null,
+                    ExtraState
                     );
             }
         }
