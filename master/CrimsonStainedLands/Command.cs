@@ -451,6 +451,14 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "banbyname", Action = game.DoBanByName, Info = "Ban a player name, connected or not.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
             Commands.Add(new Command { Name = "banbyaddress", Action = game.DoBanByAddress, Info = "Ban a player by specifying their name if they are online or their ipaddress.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
 
+            Commands.Add(new Command { Name = "gecho", Action = Character.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "globalecho", Action = Character.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "aecho", Action = Character.DoAreaEcho, Info = "Echo a message to the area.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "areaecho", Action = Character.DoAreaEcho, Info = "Echo a message to the area.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "echo", Action = Character.DoEcho, Info = "Echo a message to the room.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+
+
+
             // END IMM COMMANDS
 
             Commands.Add(new Command { Name = "suicide", Action = Character.DoSuicide, Info = "End your life.", MinimumPosition = Positions.Fighting });

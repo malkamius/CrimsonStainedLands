@@ -7336,6 +7336,77 @@ namespace CrimsonStainedLands
             }
         }
 
+        public static void DoGlobalEcho(Character ch, string arguments)
+        {
+            if(arguments.ISEMPTY())
+            {
+                ch.send("GlobalEcho what?\n\r");
+            }
+            else
+            {
+                foreach(var player in game.Instance.Info.connections)
+                {
+                    if(player.state == Player.ConnectionStates.Playing)
+                    {
+                        if (player.Level >= ch.Level)
+                        {
+                            player.send("({0}) {1}\n\r", ch.Display(player), arguments);
+                        }
+                        else
+                            player.send("{0}\n\r", arguments);
+                    }
+                }
+            }
+        }
+
+        public static void DoAreaEcho(Character ch, string arguments)
+        {
+            if (arguments.ISEMPTY())
+            {
+                ch.send("AreaEcho what?\n\r");
+            }
+            else
+            {
+                foreach (var player in game.Instance.Info.connections)
+                {
+                    if (player.state == Player.ConnectionStates.Playing && 
+                        player.Room != null && ch.Room != null && player.Room.Area == ch.Room.Area)
+                    {
+                        if (player.Level >= ch.Level)
+                        {
+                            player.send("({0}) {1}\n\r", ch.Display(player), arguments);
+                        }
+                        else
+                            player.send("{0}\n\r", arguments);
+                    }
+                }
+            }
+        }
+
+        public static void DoEcho(Character ch, string arguments)
+        {
+            if (arguments.ISEMPTY())
+            {
+                ch.send("Echo what?\n\r");
+            }
+            else
+            {
+                foreach (var player in game.Instance.Info.connections)
+                {
+                    if (player.state == Player.ConnectionStates.Playing &&
+                        player.Room != null && ch.Room != null && player.Room == ch.Room)
+                    {
+                        if (player.Level >= ch.Level)
+                        {
+                            player.send("({0}) {1}\n\r", ch.Display(player), arguments);
+                        }
+                        else
+                            player.send("{0}\n\r", arguments);
+                    }
+                }
+            }
+        }
+
         public bool HasBuilderPermission(AreaData area) => area != null && (area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC));
         public bool HasBuilderPermission(RoomData room) => room.Area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
         public bool HasBuilderPermission(ItemTemplateData item) => item.Area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
