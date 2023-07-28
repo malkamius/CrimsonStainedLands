@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Xml.Schema;
 
 namespace CrimsonStainedLands
 {
@@ -44,13 +45,15 @@ namespace CrimsonStainedLands
 
                 if (!System.IO.File.Exists("Settings.xml"))
                 {
-                    var settings = new XElement("Settings", new XAttribute("Port", 4000));
+                    var settings = new XElement("Settings", new XAttribute("Port", 4000), new XAttribute("MaxPlayersOnlineEver", 0));
                     settings.Save("Settings.xml");
                 }
                 else
                 {
                     var settings = XElement.Load("Settings.xml");
+                    game.MaxPlayersOnlineEver = settings.GetAttributeValueInt("MaxPlayersOnlineEver", 0);
                     port = settings.GetAttributeValueInt("Port", 4000);
+                    
                 }
                 game.Launch(port, this);
                 syncTimer.Enabled = true;

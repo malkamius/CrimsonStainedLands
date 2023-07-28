@@ -314,17 +314,22 @@ namespace CrimsonStainedLands
 
                 if (help.keyword.IsName(arguments))
                 {
-                    output.AppendLine("Keywords: " + help.keyword);
                     if (!plain)
+                    {
+                        output.AppendLine("Keywords: " + help.keyword);
                         output.Append("\n\r" + new string('-', 80) + "\n\r");
+                    }
+
                     if (help.text.StartsWith("."))
                         output.Append(help.text.Substring(1));
                     else
                         output.Append(help.text);
+
                     if (!plain)
+                    {
                         output.Append("\n\r" + new string('-', 80) + "\n\r");
-                    if (!plain)
                         output.AppendLine();
+                    }
                 }
                 
                 
@@ -1268,10 +1273,6 @@ namespace CrimsonStainedLands
 
         public static void DoTime(Character ch, string argument)
         {
-            //extern char str_boot_time[];
-            //char buf[MAX_STRING_LENGTH];
-            //char* suf;
-            string buf;
             string suf;
             var day = TimeInfo.Day + 1;
 
@@ -1281,19 +1282,18 @@ namespace CrimsonStainedLands
             else if (day % 10 == 3) suf = "rd";
             else suf = "th";
 
-            buf = string.Format(
-                "It is {0} o'clock {1}, Day of {2}, {3}{4} of the Month of {5}.\n\r",
+            ch.send("It is {0} o'clock {1}, Day of {2}, {3}{4} of the Month of {5}.\n\r",
                 (TimeInfo.Hour % 12 == 0) ? 12 : TimeInfo.Hour % 12,
                 TimeInfo.Hour >= 12 ? "pm" : "am",
                 TimeInfo.DayName,
                 day, suf,
                 TimeInfo.MonthName);
-            ch.send(buf);
-            //sprintf(buf, "Server started up at %s\n\rThe system time is %s\n\r",
-            //    str_boot_time,
-            //    (char*)ctime(&current_time)
-            //    );
-            //send_to_char(buf, ch);
+
+            var runningtime = DateTime.Now - game.Instance.GameStarted;
+
+            ch.send("Server started at {0}.\n\rThe system time is {1}.\n\rGame has been running for {2} days, {3} hours and {4} minutes.\n\r", 
+                game.Instance.GameStarted, DateTime.Now, runningtime.Days, runningtime.Hours, runningtime.Minutes);
+
             return;
         }
 

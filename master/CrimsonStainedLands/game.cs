@@ -188,9 +188,16 @@ namespace CrimsonStainedLands
         }
         public static game Instance;
 
+        public static int MaxPlayersOnlineEver = 0;
+
         public gameInfo Info;
 
         public Random random = new Random();
+
+        public DateTime GameStarted = DateTime.Now;
+
+        public int MaxPlayersOnline = 0;
+        
 
         public static void Launch(int port, MainForm form)
         {

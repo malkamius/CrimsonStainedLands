@@ -523,6 +523,24 @@ namespace CrimsonStainedLands
         private void ConnectExistingPlayer(bool reconnect = false)
         {
             state = ConnectionStates.Playing;
+
+            int playersonline = 0;
+
+            if ((playersonline = game.Info.connections.Count(p => p.state == ConnectionStates.Playing)) > game.Instance.MaxPlayersOnline)
+            {
+                game.Instance.MaxPlayersOnline = playersonline;
+                if (playersonline > game.MaxPlayersOnlineEver)
+                {
+                    game.MaxPlayersOnlineEver = playersonline;
+                    if (System.IO.File.Exists("Settings.xml"))
+                    {
+                        var settings = XElement.Load("Settings.xml");
+                        settings.SetAttributeValue("MaxPlayersOnlineEver", playersonline);
+                        settings.Save("Settings.xml");
+                    }
+                }
+            }
+
             Character.ReadHelp(this, "greeting", true);
             if (Room == null)
             {
@@ -689,6 +707,23 @@ namespace CrimsonStainedLands
                 }
 
                 this.state = ConnectionStates.Playing;
+
+                int playersonline = 0;
+                if ((playersonline = game.Info.connections.Count(p => p.state == ConnectionStates.Playing)) > game.Instance.MaxPlayersOnline)
+                {
+                    game.Instance.MaxPlayersOnline = playersonline;
+                    if (playersonline > game.MaxPlayersOnlineEver)
+                    {
+                        game.MaxPlayersOnlineEver = playersonline;
+                        if (System.IO.File.Exists("Settings.xml"))
+                        {
+                            var settings = XElement.Load("Settings.xml");
+                            settings.SetAttributeValue("MaxPlayersOnlineEver", playersonline);
+                            settings.Save("Settings.xml");
+                        }
+                    }
+                }
+
                 Character.ReadHelp(this, "greeting", true);
                 AddCharacterToRoom(RoomData.Rooms[3760]);
                 //AddCharacterToRoom(GetRecallRoom());

@@ -3192,6 +3192,9 @@ namespace CrimsonStainedLands
                 }
             }
             whoList.Append("Visible players: " + playersOnline + "\n\r");
+            whoList.Append("Max players online at once since last reboot: " + game.Instance.MaxPlayersOnline + "\n\r");
+            whoList.Append("Max players online at once ever: " + game.MaxPlayersOnlineEver + "\n\r");
+
             using (new Page(ch))
                 ch.SendToChar(whoList.ToString());
         }
