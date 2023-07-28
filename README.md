@@ -1,7 +1,7 @@
 # CrimsonStainedLands
 A MUD Server in C# Based on ROM
 
-If it is running, you can connect to host Games.mywire.org on port 4000
+If it is running, you can connect to host Games.mywire.org or kbs-cloud.com on port 4000
 
 
 To get started with this project locally:
