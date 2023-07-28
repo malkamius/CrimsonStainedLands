@@ -1149,7 +1149,7 @@ namespace CrimsonStainedLands
             victim.AddCharacterToRoom(recallroom);
 
             victim.Act("$n appears in the room.", null, null, null, ActType.ToRoom);
-            Character.DoLook(victim, "auto");
+            //Character.DoLook(victim, "auto");
         }
         public static void SpellRemoveCurse(CastType castType, SkillSpell spell, int ch_level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -1826,10 +1826,11 @@ namespace CrimsonStainedLands
 
             victim.Act("$n disappears suddenly.", type: ActType.ToRoom);
             victim.RemoveCharacterFromRoom();
+            ch.Act("$n has summoned you!", victim, type: ActType.ToVictim);
             victim.AddCharacterToRoom(ch.Room);
             victim.Act("$n arrives suddenly.", type: ActType.ToRoom);
-            ch.Act("$n has summoned you!", victim, type: ActType.ToVictim);
-            Character.DoLook(victim, "auto");
+            
+            //Character.DoLook(victim, "auto");
             return;
         }
         public static void SpellTeleport(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -1854,7 +1855,7 @@ namespace CrimsonStainedLands
             ch.RemoveCharacterFromRoom();
             ch.AddCharacterToRoom(room);
             ch.Act("$n slowly fades into existence.", type: ActType.ToRoom);
-            Character.DoLook(ch, "auto");
+            //Character.DoLook(ch, "auto");
             return;
         }
         public static void SpellFireball(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -4628,7 +4629,7 @@ namespace CrimsonStainedLands
                 victim.RemoveCharacterFromRoom();
                 victim.AddCharacterToRoom(exit.destination);
                 victim.Act("$n arrives on a wave of elemental earth.\n\r", type: ActType.ToRoom);
-                Character.DoLook(victim, "auto");
+                //Character.DoLook(victim, "auto");
 
                 ch.Act("$n hurls $N {0} with $s earth ripple.", victim, type: ActType.ToRoomNotVictim, args: direction.ToString().ToLower());
             }
@@ -4921,11 +4922,11 @@ namespace CrimsonStainedLands
             {
                 ch.Act("$n creates a gate, then steps in, then $n and the gate disappears.\n\r", type: ActType.ToRoom);
                 ch.RemoveCharacterFromRoom();
-
-                ch.AddCharacterToRoom(other.Room);
                 ch.Act("You gate to $N.", other);
+                ch.AddCharacterToRoom(other.Room);
+                
                 ch.Act("A gate suddenly appears, then $n steps out.", type: ActType.ToRoom);
-                Character.DoLook(ch, "auto");
+                //Character.DoLook(ch, "auto");
             }
             else
             {
@@ -5032,10 +5033,10 @@ namespace CrimsonStainedLands
             {
                 victim.Act("$n disappears suddenly.", type: ActType.ToRoom);
                 victim.RemoveCharacterFromRoom();
+                ch.Act("$n has guided you through the ether to your corpse!", victim, type: ActType.ToVictim);
                 victim.AddCharacterToRoom(ch.Room);
                 victim.Act("$n is guided through the ether to $s corpse.", type: ActType.ToRoom);
-                ch.Act("$n has guided you through the ether to your corpse!", victim, type: ActType.ToVictim);
-                Character.DoLook(victim, "auto");
+                
             }
         } // end spirit shepherd
         public static void SpellTurnUndead(CastType castType, SkillSpell spell, int level, Character ch, Character na, ItemData item, string arguments, TargetIsType target)
@@ -5139,7 +5140,7 @@ namespace CrimsonStainedLands
                 GroupMember.RemoveCharacterFromRoom();
                 GroupMember.AddCharacterToRoom(newroom);
                 GroupMember.Act("$n slowly fades into existence.", type: ActType.ToRoom);
-                Character.DoLook(GroupMember, "auto");
+                //Character.DoLook(GroupMember, "auto");
             }
         } // end group teleport
         public static void SpellMassHealing(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)

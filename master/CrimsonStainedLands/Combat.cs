@@ -9387,7 +9387,7 @@ namespace CrimsonStainedLands
                     {
                         ch.RemoveCharacterFromRoom();
                         ch.AddCharacterToRoom(newroom);
-                        Character.DoLook(ch, "auto");
+                        //Character.DoLook(ch, "auto");
                     }
                 }
 

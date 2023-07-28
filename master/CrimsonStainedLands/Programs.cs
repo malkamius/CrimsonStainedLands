@@ -54,6 +54,9 @@ namespace CrimsonStainedLands
 
             NPCPrograms.Add(new QuestSayHelloProgram());
             NPCPrograms.Add(new AstoriaGuardBeforeUnlock());
+
+            NPCPrograms.Add(new ForemanRespondProgram());
+            NPCPrograms.Add(new DocksBountyQuestProgram());
         }
 
         public static Program<AffectData> AffectProgramLookup(string name)
@@ -243,7 +246,7 @@ namespace CrimsonStainedLands
                     player.Act("\\W$p glows white.\\x\n\r", null, sender, null, ActType.ToRoom);
                     var heal = Utility.dice(2, item.Level / 2, item.Level / 2);
                     player.HitPoints = Math.Min(player.HitPoints + heal, player.MaxHitPoints);
-                    
+
                     return true;
                 }
                 return false;
@@ -261,15 +264,15 @@ namespace CrimsonStainedLands
                 if (type == ProgramTypes.EnterRoom)
                 {
                     var quest = Quest.GetQuest(30000);
-                    if(QuestProgressData.IsQuestAvailable(player, quest))
+                    if (QuestProgressData.IsQuestAvailable(player, quest))
                     {
                         Character.DoSay(sender, "Alas, another hero come to give their life in the Labyrinth...");
                         QuestProgressData.StartQuest(player, sender.ShortDescription, quest);
                         return true;
                     }
-                    
+
                 }
-                else if(type == ProgramTypes.Say)
+                else if (type == ProgramTypes.Say)
                 {
                     var quest = Quest.GetQuest(30000);
                     if (QuestProgressData.IsQuestInProgress(player, quest) && (arguments.StringCmp("Hello") || arguments.StringCmp("Hi")))
@@ -277,11 +280,11 @@ namespace CrimsonStainedLands
                         QuestProgressData.CompleteQuest(player, quest);
                         return true;
                     }
-                    else if(QuestProgressData.IsQuestInProgress(player, quest))
+                    else if (QuestProgressData.IsQuestInProgress(player, quest))
                     {
                         QuestProgressData.FailQuest(player, quest);
                     }
-                    else if(QuestProgressData.IsQuestFailed(player, quest) && (new string[] {"i'm sorry", "im sorry", "sorry"}.Any(s => s.StringCmp(arguments))))
+                    else if (QuestProgressData.IsQuestFailed(player, quest) && (new string[] { "i'm sorry", "im sorry", "sorry" }.Any(s => s.StringCmp(arguments))))
                     {
                         Character.DoSay(sender, "Ugh, alright, why don't you say hello then.");
                         QuestProgressData.ResetQuest(player, quest);
@@ -374,5 +377,106 @@ namespace CrimsonStainedLands
                 return false;
             } // end execute
         } // end wear newbie gear
+
+        public class ForemanRespondProgram : Program<NPCData>
+        {
+            public string Name => "ForemanRespondProgram";
+            public string Description => "Quest for player to say yes or no to the foreman";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.EnterRoom, ProgramTypes.Say };
+
+            public bool Execute(Character player, NPCData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                if (type == ProgramTypes.EnterRoom)
+                {
+                    var quest = Quest.GetQuest(60000);
+
+                    if (QuestProgressData.IsQuestAvailable(player, quest))
+                    {
+                        Character.DoSay(sender, "Hey there, are you up for a job?");
+                        QuestProgressData.StartQuest(player, sender.ShortDescription, quest);
+                        return true;
+                    }
+
+
+                }
+                else if (type == ProgramTypes.Say)
+                {
+                    var quest = Quest.GetQuest(60000);
+                    if (QuestProgressData.IsQuestInProgress(player, quest) && (
+                        "yes".StringPrefix(arguments) || "yeah".StringPrefix(arguments) ||
+                        "okay".StringPrefix(arguments)))
+                    {
+                        QuestProgressData.CompleteQuest(player, quest);
+                        QuestProgressData.StartQuest(player, sender.Name, Quest.GetQuest(60001));
+
+                        return true;
+                    }
+                    else if (QuestProgressData.IsQuestInProgress(player, quest) &&
+                        ("nope".StringPrefix(arguments) || "nah".StringPrefix(arguments)))
+                    {
+                        QuestProgressData.FailQuest(player, quest);
+                    }
+                }
+                return false;
+            } // end execute
+        } // end ForemanRespondProgram
+
+        public class DocksBountyQuestProgram : Program<NPCData>
+        {
+            public string Name => "DocksBountyQuestProgram";
+            public string Description => "Quest for player to kill critters for the foreman";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.EnterRoom, ProgramTypes.SenderDeath };
+
+            public bool Execute(Character player, NPCData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                if (type == ProgramTypes.EnterRoom)
+                {
+                    var quest = Quest.GetQuest(60001);
+                    if (sender.vnum == 60000 && QuestProgressData.IsQuestInProgress(player, quest) && sender.CanSee(player))
+                    {
+
+                        var progress = Quest.GetQuestProgress(player, quest);
+                        var bountyKills = progress.ExtraState.GetAttributeValueInt("BountyKills");
+                        var paidBountyKills = progress.ExtraState.GetAttributeValueInt("PaidBountyKills");
+
+                        if (paidBountyKills < bountyKills)
+                        {
+                            var topay = bountyKills - paidBountyKills;
+                            Character.DoSay(sender, string.Format("I see you've slain {0} critters. Here's your coin.", topay));
+                            sender.Silver += topay;
+                            Character.DoGive(sender, string.Format("{0} silver {1}", topay, player.Name));
+                            progress.ExtraState.SetAttributeValue("PaidBountyKills", bountyKills);
+                        }
+
+                        if (bountyKills == 50)
+                        {
+                            QuestProgressData.CompleteQuest(player, quest);
+                        }
+
+                        return true;
+                    }
+                }
+                else if (type == ProgramTypes.SenderDeath)
+                {
+                    var quest = Quest.GetQuest(60001);
+
+                    // Dying NPC is rat, centipede or spider
+                    if (QuestProgressData.IsQuestInProgress(player, quest) && new int[] { 60001, 60002, 60003 }.Contains(sender.vnum))
+                    {
+                        var progress = Quest.GetQuestProgress(player, quest);
+                        var bountyKills = progress.ExtraState.GetAttributeValueInt("BountyKills");
+
+                        if (bountyKills < 50)
+                            progress.ExtraState.SetAttributeValue("BountyKills", bountyKills + 1);
+
+                        return true;
+                    }
+
+                }
+                return false;
+            } // end execute
+        } // end ForemanRespondProgram
     } // end programs
 } // end crimsonstainedlands

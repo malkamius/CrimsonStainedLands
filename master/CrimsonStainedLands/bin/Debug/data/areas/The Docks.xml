@@ -1549,6 +1549,10 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
+	  <Programs>
+        <Program Name="ForemanRespondProgram" />
+		<Program Name="DocksBountyQuestProgram" />
+      </Programs>
     </NPC>
     <NPC>
       <Vnum>60001</Vnum>
@@ -1606,6 +1610,9 @@ front of him.</description>
         <SkillSpell Name="dodge" Value="80" Level="1" />
         <SkillSpell Name="second attack" Value="80" Level="1" />
       </Learned>
+	  <Programs>
+        <Program Name="DocksBountyQuestProgram" />
+      </Programs>
     </NPC>
     <NPC>
       <Vnum>60002</Vnum>
@@ -1659,6 +1666,9 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
+	  <Programs>
+        <Program Name="DocksBountyQuestProgram" />
+      </Programs>
     </NPC>
     <NPC>
       <Vnum>60003</Vnum>
@@ -1712,6 +1722,9 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
+	  <Programs>
+        <Program Name="DocksBountyQuestProgram" />
+      </Programs>
     </NPC>
     <NPC>
       <Vnum>60004</Vnum>
@@ -1871,6 +1884,75 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
+    </NPC>
+	    <NPC>
+      <Vnum>60007</Vnum>
+      <name>Margaret Maggie Whitman</name>
+      <description>Maggie Whitman is a hardy woman in her late sixties, running the renowned
+"Whitman's Watercraft Wares" on the waterfront of Astoria. Her silver hair,
+always neatly tied in a low bun, accentuates her twinkling azure eyes that
+seem to hold stories as deep and fascinating as the Pacific itself.
+Although age has bestowed her a few wrinkles, they add to the charm of her
+character rather than detract from her beauty. Her attire consists of
+practical, marine-styled clothing: a worn navy blue peacoat, a white
+fisherman's sweater underneath, and sturdy brown boots. Around her neck,
+she wears a brass pendant in the shape of an anchor, a memento from her own
+days at sea. Her hands are strong and calloused from years of repairing,
+restoring, and selling boats. She is straightforward, patient, and
+possesses a warm humor that has made her a beloved figure in the community.
+She has been a constant in Astoria, helping the city's residents and
+visitors navigate their boating needs. Her extensive knowledge, gained from
+decades of experience, makes her not only an excellent shopkeeper but also
+an indispensable resource for all things maritime in Astoria.</description>
+      <longDescription>Margaret "Maggie" Whitman is here tending to her shop and its patrons.</longDescription>
+      <shortDescription>Margaret "Maggie" Whitman</shortDescription>
+      <Sex>None</Sex>
+      <level>55</level>
+      <HitPointDiceSides>8</HitPointDiceSides>
+      <HitPointDiceCount>20</HitPointDiceCount>
+      <HitPointDiceBonus>2000</HitPointDiceBonus>
+      <ManaPointDiceSides>8</ManaPointDiceSides>
+      <ManaPointDiceCount>20</ManaPointDiceCount>
+      <ManaPointDiceBonus>2000</ManaPointDiceBonus>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>60</hitroll>
+      <damRoll>30</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy></affectedBy>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>5</DamageDiceSides>
+      <DamageDiceCount>7</DamageDiceCount>
+      <DamageDiceBonus>10</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+	  <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="Boat" />
     </NPC>
   </NPCs>
   <Items>
@@ -2253,5 +2335,43 @@ front of him.</description>
       <Max>1</Max>
       <Vnum>60005</Vnum>
     </Reset>
+	<Reset>
+      <Type>NPC</Type>
+      <Destination>60002</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>60007</Vnum>
+    </Reset>
+	<Reset>
+		<Type>Give</Type>
+		<Destination>0</Destination>
+		<Count>1</Count>
+		<Max>1</Max>
+		<Vnum>3051</Vnum>
+	</Reset>
   </Resets>
+  <Quests>
+    <Quest Vnum="60000">
+      <Name>foreman_respond</Name>
+      <Display>Respond to the Foreman</Display>
+      <ShortDescription></ShortDescription>
+      <Description>Respond to the Foreman's request for you to kill little critters on the docks.</Description>
+      <StartLevel>0</StartLevel>
+      <EndLevel>60</EndLevel>
+      <RewardXp>100</RewardXp>
+      <RewardGold>0</RewardGold>
+      <ShowInQuests>true</ShowInQuests>
+    </Quest>
+	<Quest Vnum="60001">
+      <Name>docks_critters_quest</Name>
+      <Display>Docks Bounty</Display>
+      <ShortDescription></ShortDescription>
+      <Description>Kill little critters on the docks of Astoria.</Description>
+      <StartLevel>0</StartLevel>
+      <EndLevel>60</EndLevel>
+      <RewardXp>1000</RewardXp>
+      <RewardGold>50</RewardGold>
+      <ShowInQuests>true</ShowInQuests>
+    </Quest>
+  </Quests>
 </Area>

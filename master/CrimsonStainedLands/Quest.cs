@@ -203,8 +203,10 @@ namespace CrimsonStainedLands
                     player.GainExperience(questProgress.Quest.RewardXp);
 
                     if (questProgress.Quest.RewardGold > 0)
-                        player.Gold += questProgress.Quest.RewardGold;
-
+                    {
+                        player.Silver += questProgress.Quest.RewardGold % 1000;
+                        player.Gold += questProgress.Quest.RewardGold / 1000;
+                    }
                     if (questProgress.Quest.ShowInQuests)
                     {
                         ch.send("You have completed the quest '{0}'.\n\r", questProgress.Quest.Display);
@@ -212,8 +214,11 @@ namespace CrimsonStainedLands
 
                     if (questProgress.Quest.RewardXp > 0)
                         ch.send("You receive {0} experience points.\n\r", questProgress.Quest.RewardXp);
+
                     if (questProgress.Quest.RewardGold > 0)
-                        ch.send("You receive {0} gold.\n\r", questProgress.Quest.RewardGold);
+                    {
+                        ch.send("You receive {0} silver and {1} gold.\n\r", questProgress.Quest.RewardGold % 1000, questProgress.Quest.RewardGold / 1000);
+                    }
 
                     foreach (var itemvnum in questProgress.Quest.RewardItems)
                     {

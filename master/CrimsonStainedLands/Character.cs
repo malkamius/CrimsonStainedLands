@@ -1265,6 +1265,7 @@ namespace CrimsonStainedLands
             {
                 room.Area.People.Insert(0, this);
 
+                Character.DoLook(this, "auto");
 
                 foreach (var item in Room.items.Concat(Inventory).Concat(Equipment.Values).ToArray())
                 {
@@ -1282,6 +1283,7 @@ namespace CrimsonStainedLands
                 }
             }
             if (executeNPCProgs)
+            {
                 foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
                 {
                     var programs = from program in npc.Programs
@@ -1293,6 +1295,7 @@ namespace CrimsonStainedLands
                             break;
                     }
                 }
+            }
         }
 
         public WearSlot GetEquipmentWearSlot(ItemData item)
@@ -2064,7 +2067,7 @@ namespace CrimsonStainedLands
                 ch.Act("$n appears before the altar.\n\r", type: ActType.ToRoom);
 
                 // Update the character's view with the newly arrived room
-                DoLook(ch, "auto");
+                //DoLook(ch, "auto");
             }
             else
             {
@@ -2485,7 +2488,7 @@ namespace CrimsonStainedLands
                 }
 
 
-                DoLook(this, "auto");
+                //DoLook(this, "auto");
 
                 // Remove track affect upon entering a new room
                 if (!IsNPC)
@@ -3748,7 +3751,7 @@ namespace CrimsonStainedLands
                 ch.RemoveCharacterFromRoom();
                 ch.AddCharacterToRoom(overroom);
                 ch.Act("$n flies in from below.", type: ActType.ToRoom);
-                Character.DoLook(ch, "auto");
+               // Character.DoLook(ch, "auto");
             }
         }
         public static void DoPractice(Character ch, string arguments)
@@ -7133,7 +7136,7 @@ namespace CrimsonStainedLands
                 {
                     victim.RemoveCharacterFromRoom();
                     victim.AddCharacterToRoom(exit.destination);
-                    DoLook(victim, "auto");
+                    //DoLook(victim, "auto");
                     ch.CheckImprove(skill, true, 1);
 
                     ch.Act("$n drags in $N.", victim, type: ActType.ToRoomNotVictim);
@@ -7346,7 +7349,7 @@ namespace CrimsonStainedLands
                 ch.AddCharacterToRoom(other.Room);
                 ch.Act("You fly to $N.", other);
                 ch.Act("$n suddenly lands beside you with a brisk flap of $s wings.", type: ActType.ToRoom);
-                Character.DoLook(ch, "auto");
+                //Character.DoLook(ch, "auto");
             }
         }
 

@@ -542,6 +542,14 @@ namespace CrimsonStainedLands
             }
 
             Character.ReadHelp(this, "greeting", true);
+            send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
+            var notecount = (from note in NoteData.Notes where note.Sent > LastReadNote && (note.To.IsName("all", true) || note.To.IsName(Name, true)) select note).Count();
+
+            if (notecount > 0)
+                send("{0} unread notes.\n\r", notecount);
+            BonusInfo.DoBonus(this, "");
+            if (!reconnect)
+                Position = Positions.Standing;
             if (Room == null)
             {
                 RoomData room;
@@ -554,16 +562,11 @@ namespace CrimsonStainedLands
                 if (!reconnect)
                     Act("$n appears in the room.", type: ActType.ToRoom);
             }
-            if (!reconnect)
-                Position = Positions.Standing;
-            send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
 
-            var notecount = (from note in NoteData.Notes where note.Sent > LastReadNote && (note.To.IsName("all", true) || note.To.IsName(Name, true)) select note).Count();
+            
 
-            if (notecount > 0)
-                send("{0} unread notes.\n\r", notecount);
-            BonusInfo.DoBonus(this, "");
-            DoLook(this, "auto");
+            
+            //DoLook(this, "auto");
             if (!reconnect)
                 LoadPet();
             if (reconnect)

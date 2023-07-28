@@ -21,12 +21,12 @@ namespace CrimsonStainedLands
                 {
                     ch.Act("$n disappears in a puff of smoke.\n\r", type: ActType.ToRoom);
                     ch.RemoveCharacterFromRoom();
-
-                    ch.AddCharacterToRoom(room);
                     ch.SendToChar("You goto " + room.Vnum + ".\n\r");
+                    ch.AddCharacterToRoom(room);
+                    
                     ch.Act("$n appears out of a puff of smoke.\n\r", type: ActType.ToRoom);
 
-                    Character.DoLook(ch, "auto");
+                    //Character.DoLook(ch, "auto");
                 }
                 else
                     ch.SendToChar("Room not found.\n\r");
@@ -35,12 +35,12 @@ namespace CrimsonStainedLands
             {
                 ch.Act("$n disappears in a puff of smoke.\n\r", type: ActType.ToRoom);
                 ch.RemoveCharacterFromRoom();
-
-                ch.AddCharacterToRoom(other.Room);
                 ch.SendToChar("You goto " + other.Room.Vnum + ".\n\r");
+                ch.AddCharacterToRoom(other.Room);
+                
                 ch.Act("$n appears out of a puff of smoke.\n\r", type: ActType.ToRoom);
 
-                Character.DoLook(ch, "auto");
+                //Character.DoLook(ch, "auto");
             }
             else
                 ch.SendToChar("Enter a valid vnum.\n\r");
@@ -887,11 +887,12 @@ namespace CrimsonStainedLands
 
             victim.Act("$n disappears in a mushroom cloud.", type: ActType.ToRoom);
             victim.RemoveCharacterFromRoom();
-            victim.AddCharacterToRoom(location);
-            victim.Act("$n arrives from a puff of smoke.", type: ActType.ToRoom);
             if (ch != victim)
                 ch.Act("$n has transferred you.", victim, null, null, ActType.ToVictim);
-            Character.DoLook(victim, "auto");
+            victim.AddCharacterToRoom(location);
+            victim.Act("$n arrives from a puff of smoke.", type: ActType.ToRoom);
+            
+            //Character.DoLook(victim, "auto");
             ch.send("Ok.\n\r");
         }
 
