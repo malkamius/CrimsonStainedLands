@@ -156,9 +156,12 @@ namespace CrimsonStainedLands
                     var questProgress = new QuestProgressData(quest, giver);
                     questProgress.LevelStarted = player.Level;
                     questProgress.Status = Quest.QuestStatus.InProgress;
-
+                    if (questProgress.Quest.ShowInQuests)
+                    {
+                        ch.send("You have started the quest '{0}'.\n\r", questProgress.Quest.Display);
+                    }
                     player.Quests.Add(questProgress);
-
+                    
                     return true;
                 }
                 else
@@ -168,6 +171,10 @@ namespace CrimsonStainedLands
                     {
                         questProgress.LevelStarted = player.Level;
                         questProgress.Status = Quest.QuestStatus.InProgress;
+                        if (questProgress.Quest.ShowInQuests)
+                        {
+                            ch.send("You have started the quest '{0}'.\n\r", questProgress.Quest.Display);
+                        }
                     }
 
                 }

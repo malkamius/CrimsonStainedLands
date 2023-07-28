@@ -881,6 +881,17 @@ namespace CrimsonStainedLands
                 }
                 ((Player)this).SaveCharacterFile();
             }
+
+            if (this is Player)
+            {
+                foreach (var questprogress in ((Player)this).Quests)
+                { 
+                    if(questprogress.Status == Quest.QuestStatus.InProgress && Level > questprogress.Quest.EndLevel)
+                    {
+                        QuestProgressData.FailQuest(this, questprogress.Quest);
+                    }
+                }
+            }
         }
 
         void GiveAdvanceLevelGains(bool show)
@@ -2438,7 +2449,7 @@ namespace CrimsonStainedLands
                 {
                     CheckImprove("gentle walk", false, 1);
                 }
-                
+
                 if (!IsAffected(AffectFlags.Sneak))
                     Act("$n arrives from " + reverseDirections[(int)direction] + ".\n\r", type: ActType.ToRoom);
 
@@ -2472,7 +2483,7 @@ namespace CrimsonStainedLands
                         }
                     }
                 }
-                
+
 
                 DoLook(this, "auto");
 
@@ -3207,8 +3218,8 @@ namespace CrimsonStainedLands
                         if (item.extraFlags.ISSET(ExtraFlags.VisDeath) && !toch.IsImmortal)
                             continue;
                         items = true;
-                        
-                        wearing.AppendLine(slot.slot + item.DisplayFlags(toch) +  (toch.CanSee(item) ? ( (item.Display(toch))) : "something"));
+
+                        wearing.AppendLine(slot.slot + item.DisplayFlags(toch) + (toch.CanSee(item) ? ((item.Display(toch))) : "something"));
                     }
                 }
             }
@@ -6915,7 +6926,7 @@ namespace CrimsonStainedLands
                     if (!ch.CanSee(item)) continue;
 
                     var itemshow = item.DisplayFlags(ch) + item.Display(ch);
-                    
+
                     if (tempItemList.ContainsKey(itemshow))
                         tempItemList[itemshow] = tempItemList[itemshow] + 1;
                     else
@@ -7338,15 +7349,15 @@ namespace CrimsonStainedLands
 
         public static void DoGlobalEcho(Character ch, string arguments)
         {
-            if(arguments.ISEMPTY())
+            if (arguments.ISEMPTY())
             {
                 ch.send("GlobalEcho what?\n\r");
             }
             else
             {
-                foreach(var player in game.Instance.Info.connections)
+                foreach (var player in game.Instance.Info.connections)
                 {
-                    if(player.state == Player.ConnectionStates.Playing)
+                    if (player.state == Player.ConnectionStates.Playing)
                     {
                         if (player.Level >= ch.Level)
                         {
@@ -7369,7 +7380,7 @@ namespace CrimsonStainedLands
             {
                 foreach (var player in game.Instance.Info.connections)
                 {
-                    if (player.state == Player.ConnectionStates.Playing && 
+                    if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch.Room != null && player.Room.Area == ch.Room.Area)
                     {
                         if (player.Level >= ch.Level)
