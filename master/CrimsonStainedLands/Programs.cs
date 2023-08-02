@@ -13,7 +13,7 @@ namespace CrimsonStainedLands
         public static List<Program<ItemData>> ItemPrograms = new List<Program<ItemData>>();
         public static List<Program<NPCData>> NPCPrograms = new List<Program<NPCData>>();
         public static List<Program<AffectData>> AffectPrograms = new List<Program<AffectData>>();
-        //public static List<Program<RoomData>> RoomPrograms = new List<Program<RoomData>>();
+        public static List<Program<RoomData>> RoomPrograms = new List<Program<RoomData>>();
 
         public enum ProgramTypes
         {
@@ -92,6 +92,18 @@ namespace CrimsonStainedLands
                     return program;
             }
             game.log("NpcProgram {0} not found.", name);
+            return null;
+        }
+
+        public static Program<RoomData> RoomProgramLookup(string name)
+        {
+            if (name.ISEMPTY()) return null;
+            foreach (var program in RoomPrograms)
+            {
+                if (program.Name.StringCmp(name))
+                    return program;
+            }
+            game.log("RoomProgram {0} not found.", name);
             return null;
         }
 

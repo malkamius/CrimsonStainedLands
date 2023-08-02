@@ -150,6 +150,7 @@ namespace CrimsonStainedLands
         public List<RoomFlags> flags = new List<RoomFlags>();
         public SectorTypes sector;
         public GuildData Guild = null;
+        public List<Programs.Program<RoomData>> Programs = new List<Programs.Program<RoomData>>();
         //private int light;
 
         public string Description
@@ -271,6 +272,16 @@ namespace CrimsonStainedLands
                     foreach (var EDElement in room.Element("ExtraDescriptions").Elements())
                     {
                         ExtraDescriptions.Add(new ExtraDescription(EDElement.GetElementValue("keyword"), EDElement.GetElementValue("description")));
+                    }
+                }
+
+                if (room.HasElement("Programs"))
+                {
+                    var programsElement = room.GetElement("Programs");
+                    foreach (var programElement in programsElement.Elements())
+                    {
+                        var program = CrimsonStainedLands.Programs.RoomProgramLookup(programElement.GetAttributeValue("Name"));
+                        if (program != null) { Programs.Add(program); }
                     }
                 }
 
@@ -396,7 +407,8 @@ namespace CrimsonStainedLands
                             new XElement("Keyword", ED.Keywords),
                             new XElement("Description", ED.Description)
                             )
-                        )
+                        ),
+                    (Programs.Any() ? new XElement("Programs", from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))) : null)
                     );
             }
         }

@@ -885,8 +885,8 @@ namespace CrimsonStainedLands
             if (this is Player)
             {
                 foreach (var questprogress in ((Player)this).Quests)
-                { 
-                    if(questprogress.Status == Quest.QuestStatus.InProgress && Level > questprogress.Quest.EndLevel)
+                {
+                    if (questprogress.Status == Quest.QuestStatus.InProgress && Level > questprogress.Quest.EndLevel)
                     {
                         QuestProgressData.FailQuest(this, questprogress.Quest);
                     }
@@ -1193,6 +1193,17 @@ namespace CrimsonStainedLands
         {
             if (Room != null)
             {
+                {
+                    var programs = from program in Room.Programs
+                                   where program.Types.ISSET(Programs.ProgramTypes.ExitRoom)
+                                   select program;
+                    foreach (var program in programs)
+                    {
+                        if (program.Execute(this, Room, null, null, null, Programs.ProgramTypes.ExitRoom, ""))
+                            break;
+                    }
+                }
+
                 foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
                 {
                     var programs = from program in npc.Programs
@@ -1254,7 +1265,7 @@ namespace CrimsonStainedLands
             }
         }
 
-        public void AddCharacterToRoom(RoomData room, bool executeNPCProgs = true)
+        public void AddCharacterToRoom(RoomData room, bool executeRoomAndNPCProgs = true)
         {
             if (Room != null)
                 RemoveCharacterFromRoom();
@@ -1282,8 +1293,20 @@ namespace CrimsonStainedLands
                     if (success) break;
                 }
             }
-            if (executeNPCProgs)
+            if (executeRoomAndNPCProgs)
             {
+
+                {
+                    var programs = from program in Room.Programs
+                                   where program.Types.ISSET(Programs.ProgramTypes.EnterRoom)
+                                   select program;
+                    foreach (var program in programs)
+                    {
+                        if (program.Execute(this, Room, null, null, null, Programs.ProgramTypes.EnterRoom, ""))
+                            break;
+                    }
+                }
+
                 foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
                 {
                     var programs = from program in npc.Programs
@@ -1295,7 +1318,11 @@ namespace CrimsonStainedLands
                             break;
                     }
                 }
+
+
             }
+
+
         }
 
         public WearSlot GetEquipmentWearSlot(ItemData item)
@@ -1791,6 +1818,17 @@ namespace CrimsonStainedLands
                 }
             }
             if (ch.Room != null)
+            {
+                {
+                    var programs = from program in ch.Room.Programs
+                                   where program.Types.ISSET(Programs.ProgramTypes.Say)
+                                   select program;
+                    foreach (var program in programs)
+                    {
+                        if (program.Execute(ch, ch.Room, null, null, null, Programs.ProgramTypes.Say, arguments))
+                            break;
+                    }
+                }
                 foreach (var npc in ch.Room.Characters.OfType<NPCData>())
                 {
                     var programs = from program in npc.Programs where program.Types.ISSET(Programs.ProgramTypes.Say) select program;
@@ -1800,6 +1838,7 @@ namespace CrimsonStainedLands
                             break;
                     }
                 }
+            }
         }
 
         public static void DoSay(Character ch, string arguments)
@@ -2456,18 +2495,19 @@ namespace CrimsonStainedLands
                 if (!IsAffected(AffectFlags.Sneak))
                     Act("$n arrives from " + reverseDirections[(int)direction] + ".\n\r", type: ActType.ToRoom);
 
+                /// Executed under AddCharacterToRoom
                 // Execute actions upon entering the new room
-                foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
-                {
-                    var programs = from program in npc.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.EnterRoom)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(this, npc, null, null, null, Programs.ProgramTypes.EnterRoom, ""))
-                            break;
-                    }
-                }
+                //foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
+                //{
+                //    var programs = from program in npc.Programs
+                //                   where program.Types.ISSET(Programs.ProgramTypes.EnterRoom)
+                //                   select program;
+                //    foreach (var program in programs)
+                //    {
+                //        if (program.Execute(this, npc, null, null, null, Programs.ProgramTypes.EnterRoom, ""))
+                //            break;
+                //    }
+                //}
 
                 if (wasInRoom != Room) // Avoid circular follows
                 {
@@ -3751,7 +3791,7 @@ namespace CrimsonStainedLands
                 ch.RemoveCharacterFromRoom();
                 ch.AddCharacterToRoom(overroom);
                 ch.Act("$n flies in from below.", type: ActType.ToRoom);
-               // Character.DoLook(ch, "auto");
+                // Character.DoLook(ch, "auto");
             }
         }
         public static void DoPractice(Character ch, string arguments)
@@ -7365,7 +7405,7 @@ namespace CrimsonStainedLands
                 {
                     if (player.state == Player.ConnectionStates.Playing)
                     {
-                        if (player.Level >= ch.Level)
+                        if (ch != null && player.Level >= ch.Level)
                         {
                             player.send("({0}) {1}\n\r", ch.Display(player), arguments);
                         }
@@ -7389,7 +7429,7 @@ namespace CrimsonStainedLands
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch.Room != null && player.Room.Area == ch.Room.Area)
                     {
-                        if (player.Level >= ch.Level)
+                        if (ch != null && player.Level >= ch.Level)
                         {
                             player.send("({0}) {1}\n\r", ch.Display(player), arguments);
                         }
@@ -7411,9 +7451,9 @@ namespace CrimsonStainedLands
                 foreach (var player in game.Instance.Info.connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
-                        player.Room != null && ch.Room != null && player.Room == ch.Room)
+                        player.Room != null && ch != null && ch.Room != null && player.Room == ch.Room)
                     {
-                        if (player.Level >= ch.Level)
+                        if (ch != null && player.Level >= ch.Level)
                         {
                             player.send("({0}) {1}\n\r", ch.Display(player), arguments);
                         }
