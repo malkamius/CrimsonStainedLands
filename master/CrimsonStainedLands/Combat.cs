@@ -497,7 +497,17 @@ namespace CrimsonStainedLands
                     foreach (var prog in npcData.Programs)
                     {
                         if (prog.Types.ISSET(Programs.ProgramTypes.SenderDeath))
-                            _ = prog.Execute(ch, npcData, npcData, null, null, Programs.ProgramTypes.SenderDeath, "");
+                        {
+                            if (victim.Room != null)
+                            {
+                                foreach (var other in victim.Room.Characters.OfType<Player>())
+                                {
+                                    // ch == issamegroup if in same room
+                                    if(other.IsSameGroup(ch))
+                                    _ = prog.Execute(other, npcData, npcData, null, null, Programs.ProgramTypes.SenderDeath, "");
+                                }
+                            }
+                        }
                     }
                 }
 
