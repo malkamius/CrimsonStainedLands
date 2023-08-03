@@ -170,7 +170,10 @@ namespace CrimsonStainedLands
                     var newText = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " :: " + text;
                     log.AppendLine(newText);
                     if (logWriter != null)
+                    {
                         logWriter.WriteLine(newText);
+                        logWriter.Flush();
+                    }
                 }
             }
 
