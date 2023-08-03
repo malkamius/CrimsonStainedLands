@@ -189,14 +189,14 @@ namespace CrimsonStainedLands
 
         public static void DoColor(Character ch, string arguments)
         {
-            if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.ColorOn)))
+            if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.Color)))
             {
-                ch.Flags.ADDFLAG(ActFlags.ColorOn);
+                ch.Flags.ADDFLAG(ActFlags.Color);
                 ch.send("\\GColor\\x is \\gON\\x.\n\r");
             }
-            else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.ColorOn)))
+            else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.Color)))
             {
-                ch.Flags.REMOVEFLAG(ActFlags.ColorOn);
+                ch.Flags.REMOVEFLAG(ActFlags.Color);
                 ch.send("Color is OFF.\n\r");
             }
             else
@@ -1407,6 +1407,53 @@ namespace CrimsonStainedLands
             }
             else
                 ch.send("Wimpy must be a number between 0 and {0}.\n\r", ch.MaxHitPoints / 2);
+        }
+
+        public static void DoToggle(Character ch, string arguments)
+        {
+            var flags = new ActFlags[] { 
+                ActFlags.AutoAssist, 
+                ActFlags.AutoSac, 
+                ActFlags.AutoLoot, 
+                ActFlags.AutoExit, 
+                ActFlags.AutoGold,
+                ActFlags.AutoSplit,
+                ActFlags.Color,
+                ActFlags.Brief,
+                ActFlags.NoSummon,
+                ActFlags.NoFollow,
+                ActFlags.WizInvis,
+                ActFlags.HolyLight
+            };
+            if(arguments.ISEMPTY())
+            {
+                foreach(var flag in flags)
+                {
+                    if ((flag == ActFlags.HolyLight || flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
+                    ch.send("{0,-20}: \\g{1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "ON" : "OFF");
+                }
+            }
+            else
+            {
+                foreach (var flag in flags)
+                {
+                    if ((flag == ActFlags.HolyLight || flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
+
+                    if (flag.ToString().StringPrefix(arguments))
+                    {
+                        if (ch.Flags.ISSET(flag))
+                        {
+                            ch.Flags.REMOVEFLAG(flag);
+                        }
+                        else
+                            ch.Flags.SETBIT(flag);
+
+                        ch.send("{0,-20}: \\g{1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "ON" : "OFF");
+                        return;
+                    }
+                }
+                ch.send("Flag not found.\n\r");
+            }
         }
     } // end class
 } // end namespace

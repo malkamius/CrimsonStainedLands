@@ -80,7 +80,7 @@ namespace CrimsonStainedLands
     {
         GuildMaster = 1,
         NoAlign = 2,
-        ColorOn = 3,
+        Color = 3,
         SkipAutoDeletePrompt,
         AutoAssist,
         AutoExit,
@@ -157,6 +157,7 @@ namespace CrimsonStainedLands
         Train = Trainer,
         Gain = Trainer,
         Practice = GuildMaster,
+        ColorOn = Color
 
     }
 
@@ -466,7 +467,7 @@ namespace CrimsonStainedLands
             {
                 Level = 1;
                 Xp = 0;
-                Flags.ADDFLAG(ActFlags.ColorOn);
+                Flags.ADDFLAG(ActFlags.Color);
                 Flags.ADDFLAG(ActFlags.AutoAssist);
                 Flags.ADDFLAG(ActFlags.AutoExit);
                 Flags.ADDFLAG(ActFlags.AutoGold);

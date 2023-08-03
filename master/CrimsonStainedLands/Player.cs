@@ -267,11 +267,11 @@ namespace CrimsonStainedLands
             {
                 if ("yes".StringPrefix(line))
                 {
-                    Flags.ADDFLAG(ActFlags.ColorOn);
+                    Flags.ADDFLAG(ActFlags.Color);
                 }
                 else if ("no".StringPrefix(line))
                 {
-                    Flags.REMOVEFLAG(ActFlags.ColorOn);
+                    Flags.REMOVEFLAG(ActFlags.Color);
                 }
                 else
                 {

@@ -31,7 +31,7 @@ namespace CrimsonStainedLands.Extensions
         {
             string newString = "";
             bool colorOn = true;
-            if (ch != null && !ch.Flags.Contains(ActFlags.ColorOn))
+            if (ch != null && !ch.Flags.Contains(ActFlags.Color))
                 colorOn = false;
 
             var @base = 30;

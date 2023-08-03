@@ -387,6 +387,8 @@ namespace CrimsonStainedLands
 
             Commands.Add(new Command { Name = "request", Action = Character.DoRequest, Info = "Request an item from an NPC with a good alignment.", MinimumPosition = Positions.Resting });
 
+            Commands.Add(new Command { Name = "toggle", Action = Character.DoToggle, Info = "List or Toggle an act flag on yourself.", MinimumPosition = Positions.Dead });
+
             // IMM COMMANDS
             Commands.Add(new Command { Name = "immortal", Action = DoActWiz.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
             Commands.Add(new Command { Name = "holylight", Action = DoActWiz.DoHolyLight, Info = "View immortal stuff", MinimumPosition = Positions.Dead });
