@@ -66,18 +66,19 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "west", Action = Character.DoWest, Info = "Walk west.", MinimumPosition = Positions.Standing, NPCCommand = false });
             Commands.Add(new Command { Name = "up", Action = Character.DoUp, Info = "Walk up.", MinimumPosition = Positions.Standing, NPCCommand = false });
             Commands.Add(new Command { Name = "down", Action = Character.DoDown, Info = "Walk down.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "say", Action = Character.DoSay, Info = "Say something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "sayto", Action = Character.DoSayTo, Info = "Say something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "say", Action = DoActCommunication.DoSay, Info = "Say something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "sayto", Action = DoActCommunication.DoSayTo, Info = "Say something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "save", Action = Character.DoSave, Info = "Save character information.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "sing", Action = Songs.DoSing, Info = "Sing a song.", MinimumPosition = Positions.Resting, NPCCommand = false });
             
-            Commands.Add(new Command { Name = "reply", Action = Character.DoReply, Info = "Reply to a tell.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "reply", Action = DoActCommunication.DoReply, Info = "Reply to a tell.", MinimumPosition = Positions.Resting });
 
-            Commands.Add(new Command { Name = "whisper", Action = Character.DoWhisper, Info = "Whisper something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "whisperto", Action = Character.DoWhisperTo, Info = "Whisper something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "tell", Action = Character.DoTell, Info = "Tell something to a person.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "yell", Action = Character.DoYell, Info = "Yell loudly in the area.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "pray", Action = Character.DoPray, Info = "Yell loudly in the area.", MinimumPosition = Positions.Dead, NPCCommand = false });
+            Commands.Add(new Command { Name = "whisper", Action = DoActCommunication.DoWhisper, Info = "Whisper something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "whisperto", Action = DoActCommunication.DoWhisperTo, Info = "Whisper something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "tell", Action = DoActCommunication.DoTell, Info = "Tell something to a person.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "yell", Action = DoActCommunication.DoYell, Info = "Yell loudly in the area.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "pray", Action = DoActCommunication.DoPray, Info = "Pray something to the gods.", MinimumPosition = Positions.Dead, NPCCommand = false });
+            Commands.Add(new Command { Name = "newbie", Action = DoActCommunication.DoNewbie, Info = "Ask something on the newbie channel.", MinimumPosition = Positions.Dead, NPCCommand = false });
 
             Commands.Add(new Command { Name = "quit", Action = Character.DoQuit, Info = "Exit the game.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "where", Action = Character.DoWhere, Info = "Display list of nearby players.", MinimumPosition = Positions.Resting });
@@ -94,7 +95,7 @@ namespace CrimsonStainedLands
 
 
             Commands.Add(new Command { Name = "group", Action = Character.DoGroup, Info = "Group with a follower.", MinimumPosition = Positions.Sleeping, NPCCommand = false });
-            Commands.Add(new Command { Name = "gtell", Action = Character.DoGTell, Info = "Tell the group something.", MinimumPosition = Positions.Sleeping, NPCCommand = false });
+            Commands.Add(new Command { Name = "gtell", Action = DoActCommunication.DoGTell, Info = "Tell the group something.", MinimumPosition = Positions.Sleeping, NPCCommand = false });
 
             Commands.Add(new Command { Name = "hide", Action = Character.DoHide, Info = "Hide in the shadows.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "sneak", Action = Character.DoSneak, Info = "Sneak around without stepping out of the shadows.", MinimumPosition = Positions.Standing });
@@ -388,6 +389,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "request", Action = Character.DoRequest, Info = "Request an item from an NPC with a good alignment.", MinimumPosition = Positions.Resting });
 
             Commands.Add(new Command { Name = "toggle", Action = Character.DoToggle, Info = "List or Toggle an act flag on yourself.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "bug", Action = game.DoBug, Info = "Report a bug or typo.", MinimumPosition = Positions.Dead });
 
             // IMM COMMANDS
             Commands.Add(new Command { Name = "immortal", Action = DoActWiz.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });

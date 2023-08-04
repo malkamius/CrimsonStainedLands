@@ -154,7 +154,7 @@ namespace CrimsonStainedLands
                         }
                     }
                     else
-                        Character.DoYell(victim, "Help! " + ch.Display(victim) + " is attacking me!");
+                        DoActCommunication.DoYell(victim, "Help! " + ch.Display(victim) + " is attacking me!");
 
                     SetFighting(victim, ch); // Set victim's fighting target to the attacker
                 }
@@ -1348,7 +1348,7 @@ namespace CrimsonStainedLands
                     }
                 }
                 else
-                    Character.DoYell(victim, "Help! " + ch.Display(victim) + " is attacking me!");
+                    DoActCommunication.DoYell(victim, "Help! " + ch.Display(victim) + " is attacking me!");
             }
 
             // Remove any stealth-related effects from the character

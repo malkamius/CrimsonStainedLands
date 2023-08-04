@@ -1782,6 +1782,13 @@ namespace CrimsonStainedLands
             sampleArea.save();
         }
 
+        public static void DoBug(Character ch, string arguments)
+        {
+            System.IO.File.AppendAllText("bugs.txt", string.Format("Player {0} reported the following bug on {1}: {2}{3}", ch.Name, DateTime.Now.ToString(), arguments, Environment.NewLine));
+            log(string.Format("Player {0} reported the following bug on {1}: {2}", ch.Name, DateTime.Now.ToString(), arguments));
+            ch.send("Your bug report has been logged.\n\r");
+        }
+
         public static void DoConnections(Character ch, string arguments)
         {
 

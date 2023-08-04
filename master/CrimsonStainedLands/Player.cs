@@ -729,20 +729,27 @@ namespace CrimsonStainedLands
 
                 Character.ReadHelp(this, "greeting", true);
                 AddCharacterToRoom(RoomData.Rooms[3760]);
-                //AddCharacterToRoom(GetRecallRoom());
-                SaveCharacterFile();
+
                 Position = Positions.Standing;
+
                 Act("$n appears in the room suddenly.\n\r", type: ActType.ToRoom);
                 send("\n\rWelcome to the Crimson Stained Lands\n\r\n\r");
+
                 Character.DoOutfit(this, "");
+
                 HitPoints = MaxHitPoints;
                 MovementPoints = MaxMovementPoints;
+
                 Flags.ADDFLAG(ActFlags.AutoAssist);
                 Flags.ADDFLAG(ActFlags.AutoExit);
                 Flags.ADDFLAG(ActFlags.AutoGold);
                 Flags.ADDFLAG(ActFlags.AutoSplit);
                 Flags.ADDFLAG(ActFlags.AutoLoot);
                 Flags.ADDFLAG(ActFlags.AutoSac);
+                Flags.ADDFLAG(ActFlags.NewbieChannel);
+
+                SaveCharacterFile();
+
                 BonusInfo.DoBonus(this, "");
                 DoLook(this, "auto");
             }

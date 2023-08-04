@@ -2177,17 +2177,17 @@ namespace CrimsonStainedLands
             }
             else if (npc.Flags.ISSET(ActFlags.Shopkeeper))
             {
-                DoSay(npc, "Come on, you'll have to buy that!");
+                DoActCommunication.DoSay(npc, "Come on, you'll have to buy that!");
                 return;
             }
             else if (ch.Level < npc.Level - 10)
             {
-                DoSay(npc, "Come back when you're older.");
+                DoActCommunication.DoSay(npc, "Come back when you're older.");
                 return;
             }
             else if ((item = npc.GetItemInventoryOrEquipment(itemname, out slot)) == null)
             {
-                DoSay(npc, "I don't have that.");
+                DoActCommunication.DoSay(npc, "I don't have that.");
                 return;
             }
 
@@ -2195,7 +2195,7 @@ namespace CrimsonStainedLands
             {
                 if (item.extraFlags.ISSET(ExtraFlags.NoRemove))
                 {
-                    DoSay(npc, "I can't seem to remove it.");
+                    DoActCommunication.DoSay(npc, "I can't seem to remove it.");
                     return;
                 }
                 npc.RemoveEquipment(slot);
@@ -2203,7 +2203,7 @@ namespace CrimsonStainedLands
 
             if (item.extraFlags.Contains(ExtraFlags.NoDrop))
             {
-                DoSay(npc, "I can't seem to let go of it.");
+                DoActCommunication.DoSay(npc, "I can't seem to let go of it.");
                 return;
             }
 

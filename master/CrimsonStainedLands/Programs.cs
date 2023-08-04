@@ -278,7 +278,7 @@ namespace CrimsonStainedLands
                     var quest = Quest.GetQuest(30000);
                     if (QuestProgressData.IsQuestAvailable(player, quest))
                     {
-                        Character.DoSay(sender, "Alas, another hero come to give their life in the Labyrinth...");
+                        DoActCommunication.DoSay(sender, "Alas, another hero come to give their life in the Labyrinth...");
                         QuestProgressData.StartQuest(player, sender.ShortDescription, quest);
                         return true;
                     }
@@ -298,7 +298,7 @@ namespace CrimsonStainedLands
                     }
                     else if (QuestProgressData.IsQuestFailed(player, quest) && (new string[] { "i'm sorry", "im sorry", "sorry" }.Any(s => s.StringCmp(arguments))))
                     {
-                        Character.DoSay(sender, "Ugh, alright, why don't you say hello then.");
+                        DoActCommunication.DoSay(sender, "Ugh, alright, why don't you say hello then.");
                         QuestProgressData.ResetQuest(player, quest);
                     }
 
@@ -405,7 +405,7 @@ namespace CrimsonStainedLands
 
                     if (QuestProgressData.IsQuestAvailable(player, quest))
                     {
-                        Character.DoSay(sender, "Hey there, are you up for a job?");
+                        DoActCommunication.DoSay(sender, "Hey there, are you up for a job?");
                         QuestProgressData.StartQuest(player, sender.ShortDescription, quest);
                         return true;
                     }
@@ -456,7 +456,7 @@ namespace CrimsonStainedLands
                         if (paidBountyKills < bountyKills)
                         {
                             var topay = bountyKills - paidBountyKills;
-                            Character.DoSay(sender, string.Format("I see you've slain {0} critters. Here's your coin.", topay));
+                            DoActCommunication.DoSay(sender, string.Format("I see you've slain {0} critters. Here's your coin.", topay));
                             sender.Silver += topay;
                             Character.DoGive(sender, string.Format("{0} silver {1}", topay, player.Name));
                             progress.ExtraState.SetAttributeValue("PaidBountyKills", bountyKills);

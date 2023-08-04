@@ -1422,6 +1422,7 @@ namespace CrimsonStainedLands
                 ActFlags.Brief,
                 ActFlags.NoSummon,
                 ActFlags.NoFollow,
+                ActFlags.NewbieChannel,
                 ActFlags.WizInvis,
                 ActFlags.HolyLight
             };
