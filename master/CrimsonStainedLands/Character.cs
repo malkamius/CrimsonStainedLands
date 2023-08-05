@@ -2058,7 +2058,7 @@ namespace CrimsonStainedLands
             // Check if there is a valid exit in the specified direction
             if (Room != null && exit != null && exit.destination != null)
             {
-                var reverseDirections = new string[] { "the south", "the west", "the West", "the east", "below", "above" };
+                var reverseDirections = new string[] { "the south", "the west", "the north", "the east", "below", "above" };
                 // Check if the exit is closed or locked, or if character is unable to pass through it
                 if ((exit.flags.Contains(ExitFlags.Closed) && (exit.flags.Contains(ExitFlags.NoPass) || !IsAffected(AffectFlags.PassDoor))) ||
                     (exit.flags.Contains(ExitFlags.Locked) && (exit.flags.Contains(ExitFlags.NoPass) || !IsAffected(AffectFlags.PassDoor))) ||
