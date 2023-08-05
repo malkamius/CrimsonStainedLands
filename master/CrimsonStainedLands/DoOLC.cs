@@ -729,6 +729,20 @@ namespace CrimsonStainedLands
                 ch.send("OK.\n\r");
                 return;
             }
+            else if ("display".StringPrefix(command))
+            {
+                exit.display = args;
+                for (int i = 0; i < ch.Room.exits.Length; i++)
+                {
+                    if (ch.EditingRoom.OriginalExits[i] != null)
+                        ch.EditingRoom.exits[i] = new ExitData(ch.EditingRoom.OriginalExits[i]);
+                    else
+                        ch.EditingRoom.exits[i] = null;
+                }
+                ch.EditingRoom.Area.saved = false;
+                ch.send("OK.\n\r");
+                return;
+            }
             else if ("description".StringPrefix(command))
             {
                 exit.description = args;
