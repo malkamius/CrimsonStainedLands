@@ -304,10 +304,11 @@ namespace CrimsonStainedLands
         public Dictionary<SkillSpell, LearnedSkillSpell> Learned = new Dictionary<SkillSpell, LearnedSkillSpell>();
         public List<AffectFlags> AffectedBy = new List<AffectFlags>();
 
-        public AreaData EditingArea;
-        public RoomData EditingRoom;
-        public NPCTemplateData EditingNPCTemplate;
-        public ItemTemplateData EditingItemTemplate;
+        public AreaData EditingArea { get; internal set; }
+        public RoomData EditingRoom { get; internal set; }
+        public NPCTemplateData EditingNPCTemplate { get; internal set; }
+        public ItemTemplateData EditingItemTemplate { get; internal set; }
+        public HelpData EditingHelp { get; internal set; }
         public Dice DamageDice;
 
         public int HitPoints;

@@ -55,6 +55,7 @@ namespace CrimsonStainedLands
                     port = settings.GetAttributeValueInt("Port", 4000);
                     
                 }
+                Text = string.Format("CrimsonStainedLands - {0}", port);
                 game.Launch(port, this);
                 syncTimer.Enabled = true;
             }
