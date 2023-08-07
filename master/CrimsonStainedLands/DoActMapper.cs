@@ -51,7 +51,7 @@ namespace CrimsonStainedLands
 
             int X = Width / 2, Y = Height / 2;
 
-            MapRoom(map, room, X, Y, Width, Height);
+            MapRoom(map, new HashSet<RoomData>(), room, X, Y, Width, Height);
 
             for (var y = 0; y < Height * 3; y++)
             {
@@ -68,18 +68,19 @@ namespace CrimsonStainedLands
             ch.send(buffer.ToString());
         }
 
-        static void MapRoom(Dictionary<Point, string> map, RoomData room, int x, int y, int width, int height)
+        static void MapRoom(Dictionary<Point, string> map, HashSet<RoomData> rooms, RoomData room, int x, int y, int width, int height)
         {
             var reversedirectionoffsets = new int[,] { { 0, -1 }, { 1, 0 }, { 0, 1 }, { -1, 0 } };
             map[new Point(x, y)] = " ";
+            rooms.Add(room);
             for (int exit = 0; exit < 4; exit++)
             {
                 if (room.exits[exit] != null && room.exits[exit].destination != null)
                 {
                     var subx = x + reversedirectionoffsets[exit, 0];
                     var suby = y + reversedirectionoffsets[exit, 1];
-                    if (subx >= 0 && subx < width && suby >= 0 && suby < height && !map.ContainsKey(new Point(subx, suby)))
-                        MapRoom(map, room.exits[exit].destination, subx, suby, width, height);
+                    if (subx >= 0 && subx < width && suby >= 0 && suby < height && !rooms.Contains(room.exits[exit].destination) && (!map.ContainsKey(new Point(subx * 3, suby * 3)) || map[new Point(subx * 3, suby * 3)] == " "))
+                        MapRoom(map, rooms, room.exits[exit].destination, subx, suby, width, height);
 
                 }
 
@@ -468,6 +469,7 @@ namespace CrimsonStainedLands
                     case SectorTypes.Inside: return "\\W+";
                     case SectorTypes.Field: return "\\g\"";
                     case SectorTypes.Forest: return "\\G+";
+                    case SectorTypes.River:
                     case SectorTypes.Swim:
                         if (Utility.Random(1, 3) < 2)
                             return "\\C~";
@@ -493,6 +495,7 @@ namespace CrimsonStainedLands
                     case SectorTypes.Hills:
                     case SectorTypes.Field: return "\\G\"";
                     case SectorTypes.Forest: return "\\g@";
+                    case SectorTypes.River:
                     case SectorTypes.Swim:
                         if (Utility.Random(1, 3) < 2)
                             return "\\C~";
