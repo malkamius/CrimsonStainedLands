@@ -466,6 +466,8 @@ namespace CrimsonStainedLands
                     case SectorTypes.City: return "\\W+";
                     case SectorTypes.Underground: return "\\D+";
                     case SectorTypes.Mountain: return "\\y^";
+                    case SectorTypes.Trail:
+                    case SectorTypes.Road:
                     case SectorTypes.Inside: return "\\W+";
                     case SectorTypes.Field: return "\\g\"";
                     case SectorTypes.Forest: return "\\G+";
@@ -488,6 +490,8 @@ namespace CrimsonStainedLands
                 switch (room.sector)
                 {
                     case SectorTypes.Desert:
+                    case SectorTypes.Road:
+                    case SectorTypes.Trail:
                     case SectorTypes.City:
                     case SectorTypes.Mountain:
                     case SectorTypes.Underground:
