@@ -316,12 +316,17 @@ namespace CrimsonStainedLands
             {
                 DoEditItem(ch, args);
             }
+            else if("help".StringPrefix(type))
+            {
+                DoEditHelp(ch, args);
+            }
             else if ("done".StringPrefix(type))
             {
                 ch.EditingRoom = null;
                 ch.EditingNPCTemplate = null;
                 ch.EditingItemTemplate = null;
                 ch.EditingArea = null;
+                ch.EditingHelp = null;
                 ch.send("OK.\n\r");
             }
             else
@@ -2947,6 +2952,11 @@ namespace CrimsonStainedLands
                     ch.send("OK.\n\r");
                 }
 
+            }
+            else if ("done".StringPrefix(arg1))
+            {
+                ch.EditingHelp = null;
+                ch.send("OK.\n\r");
             }
             else
             {
