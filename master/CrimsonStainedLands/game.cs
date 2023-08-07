@@ -1161,8 +1161,8 @@ namespace CrimsonStainedLands
                         {
                             ch.send("You feel your body start to transition back to a physical form.\n\r");
                         }
-                        Programs.Program<AffectData> prog;
-                        if ((prog = Programs.AffectProgramLookup(affect.tickProgram)) != null)
+                        
+                        if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
                         {
                             prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
                         }
@@ -1174,8 +1174,7 @@ namespace CrimsonStainedLands
                         if (affect.skillSpell != null && affect.skillSpell.EndFunction != null)
                             affect.skillSpell.EndFunction(ch, affect);
 
-                        Programs.Program<AffectData> prog;
-                        if ((prog = Programs.AffectProgramLookup(affect.endProgram)) != null)
+                        if (Programs.AffectProgramLookup(affect.endProgram, out var prog))
                         {
                             prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectEnd, "");
                         }
@@ -1254,8 +1253,7 @@ namespace CrimsonStainedLands
                         if (affect.skillSpell != null && affect.skillSpell.TickFunction != null)
                             affect.skillSpell.TickFunction(ch, affect);
 
-                        Programs.Program<AffectData> prog;
-                        if ((prog = Programs.AffectProgramLookup(affect.tickProgram)) != null)
+                        if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
                         {
                             prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
                         }
@@ -1267,8 +1265,7 @@ namespace CrimsonStainedLands
                         if (affect.skillSpell != null && affect.skillSpell.EndFunction != null)
                             affect.skillSpell.EndFunction(ch, affect);
 
-                        Programs.Program<AffectData> prog;
-                        if ((prog = Programs.AffectProgramLookup(affect.endProgram)) != null)
+                        if (Programs.AffectProgramLookup(affect.endProgram, out var prog))
                         {
                             prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectEnd, "");
                         }

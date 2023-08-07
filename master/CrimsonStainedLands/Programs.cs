@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static CrimsonStainedLands.Programs;
 
 namespace CrimsonStainedLands
 {
@@ -55,56 +57,371 @@ namespace CrimsonStainedLands
             NPCPrograms.Add(new QuestSayHelloProgram());
             NPCPrograms.Add(new AstoriaGuardBeforeUnlock());
 
-            NPCPrograms.Add(new ForemanRespondProgram());
-            NPCPrograms.Add(new DocksBountyQuestProgram());
+            //NPCPrograms.Add(new ForemanRespondProgram());
+            //NPCPrograms.Add(new DocksBountyQuestProgram());
         }
 
-        public static Program<AffectData> AffectProgramLookup(string name)
+        public static bool AffectProgramLookup(string name, out Program<AffectData> program)
         {
-            if (name.ISEMPTY()) return null;
-            foreach (var program in AffectPrograms)
+            program = null;
+            if (name.ISEMPTY()) return false;
+            foreach (var programlookup in AffectPrograms)
             {
-                if (program.Name.StringCmp(name))
-                    return program;
+                if (programlookup.Name.StringCmp(name))
+                {
+                    program = programlookup;
+                    return true;
+                }
             }
             game.log("AffectProgram {0} not found.", name);
-            return null;
+            return false;
         }
 
-        public static Program<ItemData> ItemProgramLookup(string name)
+        public static bool ItemProgramLookup(string name, out Program<ItemData> program)
         {
-            if (name.ISEMPTY()) return null;
-            foreach (var program in ItemPrograms)
+            program = null;
+            if (name.ISEMPTY()) return false;
+            foreach (var programlookup in ItemPrograms)
             {
-                if (program.Name.StringCmp(name))
-                    return program;
+                if (programlookup.Name.StringCmp(name))
+                {
+                    program = programlookup;
+                    return true;
+                }
             }
             game.log("ItemProgram {0} not found.", name);
-            return null;
+            return false;
         }
 
-        public static Program<NPCData> NPCProgramLookup(string name)
+        public static bool NPCProgramLookup(string name, out Program<NPCData> program)
         {
-            if (name.ISEMPTY()) return null;
-            foreach (var program in NPCPrograms)
+            program = null;
+            if (name.ISEMPTY()) return false;
+            foreach (var programlookup in NPCPrograms)
             {
-                if (program.Name.StringCmp(name))
-                    return program;
+                if (programlookup.Name.StringCmp(name))
+                {
+                    program = programlookup;
+                    return true;
+                }
             }
             game.log("NpcProgram {0} not found.", name);
-            return null;
+            return false;
         }
 
-        public static Program<RoomData> RoomProgramLookup(string name)
+        public static bool RoomProgramLookup(string name, out Program<RoomData> program)
         {
-            if (name.ISEMPTY()) return null;
-            foreach (var program in RoomPrograms)
+            program = null;
+            if (name.ISEMPTY()) return false;
+            foreach (var programlookup in RoomPrograms)
             {
-                if (program.Name.StringCmp(name))
-                    return program;
+                if (programlookup.Name.StringCmp(name))
+                {
+                    program = programlookup;
+                    return true;
+                }
             }
             game.log("RoomProgram {0} not found.", name);
-            return null;
+            return false;
+        }
+
+        public static bool ExecutePrograms(ProgramTypes type, Character player, ItemData item, string arguments)
+        {
+            bool success = false;
+            foreach (var prog in item.Programs)
+            {
+                if (prog.Types.ISSET(type))
+                {
+                    success = prog.Execute(player, item, null, item, null, type, "");
+                    if (success) break;
+                }
+            }
+
+            foreach (var program in item.LuaPrograms)
+            {
+                if (program.ProgramTypes.ISSET(type))
+                {
+                    success = program.Execute(player, null, null, item, null, null, type, arguments);
+                    if (success) break;
+                }
+            }
+            return success;
+        }
+
+        public static bool ExecutePrograms(ProgramTypes type, Character player, Character npc, ItemData item, RoomData room, string arguments)
+        {
+            bool success = false;
+            if (item != null)
+            {
+                foreach (var prog in item.Programs)
+                {
+                    if (prog.Types.ISSET(type))
+                    {
+                        success = prog.Execute(player, item, null, item, null, type, "");
+                        if (success) break;
+                    }
+                }
+
+                foreach (var program in item.LuaPrograms)
+                {
+                    if (program.ProgramTypes.ISSET(type))
+                    {
+                        success = program.Execute(player, null, null, item, null, null, type, arguments);
+                        if (success) break;
+                    }
+                }
+
+                if (npc is NPCData)
+                {
+                    foreach (var program in ((NPCData)npc).Programs)
+                    {
+                        if (program.Types.ISSET(type))
+                        {
+                            success = program.Execute(player, (NPCData)npc, npc, item, null, type, arguments);
+                        }
+                        if (success) break;
+                    }
+                    if (!success)
+                        foreach (var program in ((NPCData)npc).LuaPrograms)
+                        {
+                            if (program.ProgramTypes.ISSET(type))
+                            {
+                                success = program.Execute(player, npc, null, item, null, null, type, arguments);
+                            }
+                            if (success) break;
+                        }
+                }
+            }
+            return success;
+        }
+
+        public static bool ExecutePrograms(ProgramTypes type, Character player, Character other, RoomData room, string arguments)
+        {
+            var npc = other as NPCData;
+            bool success = false;
+            if (type == ProgramTypes.EnterRoom || type == ProgramTypes.ExitRoom)
+            {
+                {
+                    var programs = from program in room.Programs
+                                   where program.Types.ISSET(type)
+                                   select program;
+
+                    foreach (var program in programs)
+                    {
+                        if (program.Execute(player, room, null, null, null, type, ""))
+                        { success = true; break; }
+                    }
+                    if (success) return success;
+
+                    var luaPrograms = from program in room.LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if (program.Execute(player, null, room, null, null, null, type, ""))
+                        { success = true; break; }
+                    }
+                    if (success) return success;
+                }
+
+                foreach (var triggernpc in room.Characters.OfType<NPCData>().ToArray())
+                {
+                    var programs = from program in triggernpc.Programs
+                                   where program.Types.ISSET(type)
+                                   select program;
+                    foreach (var program in programs)
+                    {
+                        if ((success = program.Execute(player, triggernpc, null, null, null, type, "")))
+                            break;
+                    }
+
+                    if (success) return success;
+
+                    var luaPrograms = from program in triggernpc.LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if ((success = program.Execute(player, triggernpc, room, null, null, null, type, "")))
+                            break;
+                    }
+
+                    if (success) return success;
+                }
+
+                if (player.Form == null)
+                {
+
+                    foreach (var item in room.items.Concat(player.Inventory).Concat(player.Equipment.Values).ToArray())
+                    {
+                        var programs = from program in item.Programs
+                                       where program.Types.ISSET(type)
+                                       select program;
+
+                        foreach (var program in programs)
+                        {
+                            if ((success = program.Execute(player, item, null, item, null, type, "")))
+                                break;
+                        }
+                        if (success) break;
+
+                        if (npc != null)
+                        {
+                            var luaPrograms = from program in npc.LuaPrograms
+                                              where program.ProgramTypes.ISSET(type)
+                                              select program;
+                            foreach (var program in luaPrograms)
+                            {
+                                if ((success = program.Execute(player, null, room, item, null, null, type, "")))
+                                    break;
+                            }
+                            if (success) break;
+                        }
+                    }
+                    return success;
+                }
+            } // end enter / exit room
+            else if(type == ProgramTypes.Say)
+            {
+
+                {
+                    var programs = from program in room.Programs
+                                   where program.Types.ISSET(type)
+                                   select program;
+
+                    foreach (var program in programs)
+                    {
+                        if (program.Execute(player, room, null, null, null, type, arguments))
+                        { success = true; break; }
+                    }
+                    if (success) return success;
+
+                    var luaPrograms = from program in room.LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if (program.Execute(player, null, room, null, null, null, type, arguments))
+                        { success = true; break; }
+                    }
+                    if (success) return success;
+                }
+
+                foreach (var triggernpc in room.Characters.OfType<NPCData>().ToArray())
+                {
+                    var programs = from program in triggernpc.Programs
+                                   where program.Types.ISSET(type)
+                                   select program;
+                    foreach (var program in programs)
+                    {
+                        if ((success = program.Execute(player, triggernpc, null, null, null, type, arguments)))
+                            break;
+                    }
+
+                    if (success) return success;
+
+                    var luaPrograms = from program in triggernpc.LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if ((success = program.Execute(player, triggernpc, room, null, null, null, type, arguments)))
+                            break;
+                    }
+
+                    if (success) return success;
+                }
+
+                if (player.Form == null)
+                {
+
+                    foreach (var item in room.items.Concat(player.Inventory).Concat(player.Equipment.Values).ToArray())
+                    {
+                        var programs = from program in item.Programs
+                                       where program.Types.ISSET(type)
+                                       select program;
+
+                        foreach (var program in programs)
+                        {
+                            if ((success = program.Execute(player, item, null, item, null, type, arguments)))
+                                break;
+                        }
+                        if (success) break;
+
+                        if (npc != null)
+                        {
+                            var luaPrograms = from program in npc.LuaPrograms
+                                              where program.ProgramTypes.ISSET(type)
+                                              select program;
+                            foreach (var program in luaPrograms)
+                            {
+                                if ((success = program.Execute(player, null, room, item, null, null, type, arguments)))
+                                    break;
+                            }
+                            if (success) break;
+                        }
+                    }
+                    return success;
+                }
+            }
+            else if (type == ProgramTypes.RoundCombat || type == ProgramTypes.OneHitMiss ||
+                type == ProgramTypes.OneHitHit || type == ProgramTypes.OneHitAny)
+            {
+                if (player.Form == null)
+                {
+                    foreach (var item in player.Equipment.Values)
+                    {
+                        if (item == null)
+                            continue;
+
+                        // Find programs associated with round combat for the item
+                        var programs = from program in item.Programs where program.Types.ISSET(type) select program;
+
+                        foreach (var program in programs)
+                        {
+                            if ((success = program.Execute(player, item, npc, item, null, type, "")))
+                                break;
+                        }
+                        if (success)
+                            break;
+
+                        var luaprograms = from program in item.LuaPrograms where program.ProgramTypes.ISSET(type) select program;
+
+                        foreach (var program in luaprograms)
+                        {
+                            if ((success = program.Execute(player, npc, null, item, null, null, type, "")))
+                                break;
+                        }
+                        if (success)
+                            break;
+                    }
+                }
+
+                if (npc != null && npc is NPCData)
+                {
+                    var luaPrograms = from program in npc.LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if (success = program.Execute(player, npc, room, null, null, null, type, ""))
+                            break;
+                    }
+                }
+
+                if (player != null && player is NPCData)
+                {
+                    var luaPrograms = from program in ((NPCData)player).LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if (success = program.Execute(player, npc, room, null, null, null, type, ""))
+                            break;
+                    }
+                }
+            }
+            return success;
         }
 
         public interface Program<T>

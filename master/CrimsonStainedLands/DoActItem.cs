@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -679,6 +680,7 @@ namespace CrimsonStainedLands
                     ch.Act("You give $N {0} gold.", other, null, null, ActType.ToChar, amount);
                     ch.Act("$n gives you {0} gold.", other, null, null, ActType.ToVictim, amount);
                     ch.Act("$n gives $N some gold.", other, null, null, ActType.ToRoomNotVictim);
+                    Programs.ExecutePrograms(Programs.ProgramTypes.Give, ch, other, null, null, amount + " gold");
                     return;
                 }
                 else if (itemname.StringCmp("silver"))
@@ -699,6 +701,7 @@ namespace CrimsonStainedLands
                     ch.Act("You give $N {0} silver.", other, null, null, ActType.ToChar, amount);
                     ch.Act("$n gives you {0} silver.", other, null, null, ActType.ToVictim, amount);
                     ch.Act("$n gives $N some silver.", other, null, null, ActType.ToRoomNotVictim);
+                    Programs.ExecutePrograms(Programs.ProgramTypes.Give, ch, other, null, null, amount + " silver");
                     return;
                 }
                 else
@@ -716,11 +719,11 @@ namespace CrimsonStainedLands
             {
                 ch.send("You can't give yourself anything.\n\r");
             }
-            else if(other == null)
+            else if (other == null)
             {
                 ch.send("You don't see them here.\n\r");
             }
-            else if(other != null && !other.CanSee(item))
+            else if (other != null && !other.CanSee(item))
             {
                 ch.Act("You wave your hands at $N but they can't see $p.", other, item);
             }
@@ -747,19 +750,13 @@ namespace CrimsonStainedLands
                 ch.send("You give " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + " to " + other.Display(ch) + ".\n\r");
                 other.Act("$N gives you $p.\n\r", ch, item, null, ActType.ToChar);
                 ch.Act("$n gives $p to $N.\n\r", other, item, type: ActType.ToRoomNotVictim);
-
+                Programs.ExecutePrograms(Programs.ProgramTypes.Give, ch, other, item, null, "");
 
                 if (other.IsNPC)
                 {
                     if (other is NPCData)
                     {
-                        var npc = (NPCData)other;
-
-                        foreach (var prog in npc.Programs)
-                            if (prog.Types.ISSET(Programs.ProgramTypes.Receive))
-                            {
-                                prog.Execute(ch, npc, null, item, null, Programs.ProgramTypes.Receive, "");
-                            }
+                        Programs.ExecutePrograms(Programs.ProgramTypes.Receive, ch, other, item, null, "");
                     }
 
                     if (other.IsAwake)
@@ -777,7 +774,18 @@ namespace CrimsonStainedLands
                             ch.Act("$N gives you $p.\n\r", other, item, null, ActType.ToChar);
                             other.Act("$n gives $p to $N.\n\r", ch, item, type: ActType.ToRoomNotVictim);
 
+
+                        }
+                        else if (other.Inventory.Contains(item))
+                        {
+                            other.Inventory.Remove(item);
+                            item.CarriedBy = null;
+                            other.Room.items.Insert(0, item);
+                            item.Room = other.Room;
                             
+                            other.Act("You drop $p.\n\r", ch, item, type: ActType.ToChar);
+                            ch.Act("$N drops $p.\n\r", other, item, null, ActType.ToChar);
+                            other.Act("$n drops $p.\n\r", ch, item, type: ActType.ToRoomNotVictim);
                         }
                         return;
                     }
@@ -2086,14 +2094,8 @@ namespace CrimsonStainedLands
             }
 
             bool found = false;
-            foreach (var prog in item.Programs)
-            {
-                if (prog.Types.ISSET(Programs.ProgramTypes.Use))
-                {
-                    if (prog.Execute(ch, item, null, item, null, Programs.ProgramTypes.Use, arguments))
-                        found = true;
-                }
-            }
+
+            Programs.ExecutePrograms(Programs.ProgramTypes.Use, ch, item, "");
 
             if (!found)
                 ch.send("You can't seem to figure out how to do that.\n\r");
@@ -2111,14 +2113,7 @@ namespace CrimsonStainedLands
             {
                 bool result = false;
                 foreach (var item in ch.Equipment.Values.Concat(ch.Inventory).Concat(ch.Room.items).ToArray())
-                    foreach (var prog in item.Programs)
-                    {
-                        if (prog.Types.ISSET(Programs.ProgramTypes.Invoke))
-                        {
-                            if (prog.Execute(ch, item, null, item, null, Programs.ProgramTypes.Invoke, arguments))
-                                result = true;
-                        }
-                    }
+                    Programs.ExecutePrograms(Programs.ProgramTypes.Invoke, ch, item, "");
                 if (!result) ch.send("Nothing seems to happen.\n\r");
             }
         }

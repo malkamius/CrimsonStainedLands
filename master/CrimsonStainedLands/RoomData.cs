@@ -151,6 +151,7 @@ namespace CrimsonStainedLands
         public SectorTypes sector;
         public GuildData Guild = null;
         public List<Programs.Program<RoomData>> Programs = new List<Programs.Program<RoomData>>();
+        public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();
         //private int light;
 
         public string Description
@@ -280,8 +281,14 @@ namespace CrimsonStainedLands
                     var programsElement = room.GetElement("Programs");
                     foreach (var programElement in programsElement.Elements())
                     {
-                        var program = CrimsonStainedLands.Programs.RoomProgramLookup(programElement.GetAttributeValue("Name"));
-                        if (program != null) { Programs.Add(program); }
+                        if (CrimsonStainedLands.Programs.RoomProgramLookup(programElement.GetAttributeValue("Name"), out var program)) 
+                        {
+                            Programs.Add(program);
+                        }
+                        else if (NLuaPrograms.ProgramLookup(programElement.GetAttributeValue("Name"), out var luaprogram))
+                        {
+                            LuaPrograms.Add(luaprogram);
+                        }
                     }
                 }
 
@@ -308,7 +315,7 @@ namespace CrimsonStainedLands
 
         static RoomData()
         {
-            
+
         } // End Static Constructor
 
         public ExitData GetExit(Direction direction)
@@ -358,7 +365,7 @@ namespace CrimsonStainedLands
                         else
                             inRoom = false;
                     }
-                    else if(reset.resetType != ResetTypes.NPC && reset.resetType != ResetTypes.Item && inRoom)
+                    else if (reset.resetType != ResetTypes.NPC && reset.resetType != ResetTypes.Item && inRoom)
                     {
                         result.Add(reset);
                     }
@@ -408,7 +415,10 @@ namespace CrimsonStainedLands
                             new XElement("Description", ED.Description)
                             )
                         ),
-                    (Programs.Any() ? new XElement("Programs", from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))) : null)
+                    (Programs.Any() || LuaPrograms.Any() ? 
+                        new XElement("Programs", 
+                            (from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))).
+                            Concat(from luaprogram in LuaPrograms select new XElement("Program", new XAttribute("Name", luaprogram.Name)))) : null)
                     );
             }
         }

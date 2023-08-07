@@ -55,6 +55,7 @@ namespace CrimsonStainedLands
         public int MaxDurability = 100;
         
         public List<Programs.Program<ItemData>> Programs = new List<Programs.Program<ItemData>>();
+        public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();
 
         public List<ExtraDescription> ExtraDescriptions = new List<ExtraDescription>();
 
@@ -165,8 +166,14 @@ namespace CrimsonStainedLands
                 var programsElement = element.GetElement("Programs");
                 foreach (var programElement in programsElement.Elements())
                 {
-                    var program = CrimsonStainedLands.Programs.ItemProgramLookup(programElement.GetAttributeValue("Name"));
-                    if (program != null) { Programs.Add(program); }
+                    if (CrimsonStainedLands.Programs.ItemProgramLookup(programElement.GetAttributeValue("Name"), out var program)) 
+                    { 
+                        Programs.Add(program); 
+                    }
+                    else if (CrimsonStainedLands.NLuaPrograms.ProgramLookup(programElement.GetAttributeValue("Name"), out var luaprogram))
+                    {
+                        LuaPrograms.Add(luaprogram);
+                    }
                 }
             }
 
@@ -243,7 +250,10 @@ namespace CrimsonStainedLands
                             new XElement("ArmorSlash", ArmorSlash),
                             new XElement("ArmorPierce", ArmorPierce),
                             new XElement("ArmorExotic", ArmorExotic),
-                            Programs.Any() ? new XElement("Programs", from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))) : null,
+                            (Programs.Any() || LuaPrograms.Any() ?
+                        new XElement("Programs",
+                            (from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))).
+                            Concat(from luaprogram in LuaPrograms select new XElement("Program", new XAttribute("Name", luaprogram.Name)))) : null),
                 new XElement("ExtraDescriptions",
                                 from ED in ExtraDescriptions
                                 select new XElement("ExtraDescription",

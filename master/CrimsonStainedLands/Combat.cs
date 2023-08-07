@@ -2,6 +2,7 @@
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Drawing;
@@ -509,6 +510,20 @@ namespace CrimsonStainedLands
                             }
                         }
                     }
+
+                    foreach (var prog in npcData.LuaPrograms)
+                        if(prog.ProgramTypes.ISSET(Programs.ProgramTypes.SenderDeath))
+                        {
+                            if (victim.Room != null)
+                            {
+                                foreach (var other in victim.Room.Characters.OfType<Player>())
+                                {
+                                    // ch == issamegroup if in same room
+                                    if (other.IsSameGroup(ch))
+                                        _ = prog.Execute(other, npcData, null, null, null, null, Programs.ProgramTypes.SenderDeath, "");
+                                }
+                            }
+                        }
                 }
 
                 // Execute death-related programs for other characters in the room
@@ -516,11 +531,7 @@ namespace CrimsonStainedLands
                 {
                     foreach (var other in victim.Room.Characters.OfType<NPCData>().ToArray())
                     {
-                        foreach (var prog in other.Programs)
-                        {
-                            if (prog.Types.ISSET(Programs.ProgramTypes.PlayerDeath))
-                                _ = prog.Execute(ch, other, victim, null, null, Programs.ProgramTypes.PlayerDeath, "");
-                        }
+                        Programs.ExecutePrograms(Programs.ProgramTypes.PlayerDeath, other, victim, null, "");
                     }
 
                     // Execute death-related programs for items in the character's inventory
@@ -529,22 +540,14 @@ namespace CrimsonStainedLands
                         foreach (var item in ch.Equipment.Values.Concat(ch.Inventory).ToArray())
                         {
                             if (item == null) continue;
-                            foreach (var prog in item.Programs)
-                            {
-                                if (prog.Types.ISSET(Programs.ProgramTypes.PlayerDeath))
-                                    _ = prog.Execute(ch, item, victim, item, null, Programs.ProgramTypes.PlayerDeath, "");
-                            }
+                            Programs.ExecutePrograms(Programs.ProgramTypes.PlayerDeath, ch, item, "");
                         }
                     }
 
                     // Execute death-related programs for items in the victim's inventory
                     foreach (var item in victim.Equipment.Values.Concat(victim.Inventory).ToArray())
                     {
-                        foreach (var prog in item.Programs)
-                        {
-                            if (prog.Types.ISSET(Programs.ProgramTypes.PlayerDeath))
-                                _ = prog.Execute(victim, item, victim, item, null, Programs.ProgramTypes.PlayerDeath, "");
-                        }
+                        Programs.ExecutePrograms(Programs.ProgramTypes.PlayerDeath, victim, item, "");
                     }
                 }
 
@@ -1208,39 +1211,8 @@ namespace CrimsonStainedLands
             if (ch.Fighting == null)
                 SetFighting(ch, victim);
 
-            // Check if the attacker has a form and execute associated programs
-            if (ch.Form == null)
-            {
-                foreach (var item in ch.Equipment.Values)
-                {
-                    bool success = false;
-                    if (item == null)
-                        continue;
-
-                    // Find programs associated with round combat for the item
-                    var programs = from program in item.Programs where program.Types.ISSET(Programs.ProgramTypes.RoundCombat) select program;
-
-                    foreach (var program in programs)
-                    {
-                        if ((success = program.Execute(ch, item, victim, item, null, Programs.ProgramTypes.RoundCombat, "")))
-                            break;
-                    }
-                    if (success)
-                        break;
-                }
-            }
-
-            // Check if the attacker is an NPC and has associated programs for round combat
-            if (ch is NPCData && ch.Form == null)
-            {
-                var programs = from program in ((NPCData)ch).Programs where program.Types.ISSET(Programs.ProgramTypes.RoundCombat) select program;
-                foreach (var program in programs)
-                {
-                    if (program.Execute(ch, ((NPCData)ch), victim, null, null, Programs.ProgramTypes.RoundCombat, ""))
-                        break;
-                }
-            }
-
+            Programs.ExecutePrograms(Programs.ProgramTypes.RoundCombat, ch, victim, null, "");
+            
             var haste = ch.IsAffected(AffectFlags.Haste);
             var slow = ch.IsAffected(AffectFlags.Slow);
 
@@ -1592,33 +1564,15 @@ namespace CrimsonStainedLands
                 // Check for special programs attached to the character's equipment
                 foreach (var item in ch.Equipment.Values)
                 {
-                    bool success = false;
                     if (item == null) continue;
-                    var programs = from program in item.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.OneHitMiss) ||
-                                   program.Types.ISSET(Programs.ProgramTypes.OneHitAny)
-                                   select program;
 
-                    foreach (var program in programs)
-                    {
-                        if ((success = program.Execute(ch, item, victim, item, null, Programs.ProgramTypes.OneHitMiss, "")))
-                            break;
-                    }
-                    if (success) break;
+                    Programs.ExecutePrograms(Programs.ProgramTypes.OneHitMiss, ch, item, "");
                 }
 
                 // Check for special programs attached to the character (NPCs only)
                 if (ch is NPCData)
                 {
-                    var programs = from program in ((NPCData)ch).Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.OneHitMiss) ||
-                                   program.Types.ISSET(Programs.ProgramTypes.OneHitAny)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(ch, ((NPCData)ch), victim, null, null, Programs.ProgramTypes.OneHitMiss, ""))
-                            break;
-                    }
+                    Programs.ExecutePrograms(Programs.ProgramTypes.OneHitMiss, ch, victim, null, "");
                 }
 
                 damage = 0;
@@ -1749,37 +1703,15 @@ namespace CrimsonStainedLands
                     ac = 0;
                 }
 
+                Programs.ExecutePrograms(Programs.ProgramTypes.OneHitHit, ch, victim, null, "");
                 // Check for special programs attached to the character's equipment
                 foreach (var item in ch.Equipment.Values)
                 {
-                    bool success = false;
                     if (item == null) continue;
-                    var programs = from program in item.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.OneHitHit) ||
-                                   program.Types.ISSET(Programs.ProgramTypes.OneHitAny)
-                                   select program;
 
-                    foreach (var program in programs)
-                    {
-                        if ((success = program.Execute(ch, item, victim, item, null, Programs.ProgramTypes.OneHitHit, "")))
-                            break;
-                    }
-                    if (success) break;
+                    Programs.ExecutePrograms(Programs.ProgramTypes.OneHitHit, ch, item, "");
                 }
-            }
 
-            // Check for special programs attached to the character (NPCs only)
-            if (ch.Form == null && ch is NPCData)
-            {
-                var programs = from program in ((NPCData)ch).Programs
-                               where program.Types.ISSET(Programs.ProgramTypes.OneHitHit) ||
-                               program.Types.ISSET(Programs.ProgramTypes.OneHitAny)
-                               select program;
-                foreach (var program in programs)
-                {
-                    if (program.Execute(ch, ((NPCData)ch), victim, null, null, Programs.ProgramTypes.OneHitHit, ""))
-                        break;
-                }
             }
 
             var damreduc = victim.GetSkillPercentage("damage reduction");

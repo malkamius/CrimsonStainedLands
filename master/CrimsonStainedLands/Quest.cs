@@ -303,7 +303,7 @@ namespace CrimsonStainedLands
                 if (questProgress != null)
                 {
                     questProgress.Status = Quest.QuestStatus.None;
-
+                    questProgress.ExtraState = new XElement("ExtraState");
                     if (questProgress.Quest.ShowInQuests)
                     {
 

@@ -58,6 +58,7 @@ namespace CrimsonStainedLands
         public int Count;
         public int MaxCount;
         public List<Programs.Program<NPCData>> Programs = new List<Programs.Program<NPCData>>();
+        public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();
 
         public NPCTemplateData()
         {
@@ -275,8 +276,16 @@ namespace CrimsonStainedLands
                 var programsElement = element.GetElement("Programs");
                 foreach (var programElement in programsElement.Elements())
                 {
-                    var program = CrimsonStainedLands.Programs.NPCProgramLookup(programElement.GetAttributeValue("Name"));
-                    if (program != null) { Programs.Add(program); }
+                    
+                    if (CrimsonStainedLands.Programs.NPCProgramLookup(programElement.GetAttributeValue("Name"), out var program)) 
+                    { 
+                        Programs.Add(program); 
+                    }
+                    else if (CrimsonStainedLands.NLuaPrograms.ProgramLookup(programElement.GetAttributeValue("Name"), out var luaprogram))
+                    {
+                        LuaPrograms.Add(luaprogram);
+                    }
+
                 }
             }
 
@@ -323,7 +332,12 @@ namespace CrimsonStainedLands
                 //element.Add(new XElement("DamageDiceSides", DamageDice.DiceSides));
                 //element.Add(new XElement("DamageDiceCount", DamageDice.DiceCount));
                 //element.Add(new XElement("DamageDiceBonus", DamageDice.DiceBonus));
-                element.Add(Programs.Any() ? new XElement("Programs", from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))) : null);
+
+                element.Add((Programs.Any() || LuaPrograms.Any() ?
+                        new XElement("Programs",
+                            (from program in Programs select new XElement("Program", new XAttribute("Name", program.Name))).
+                            Concat(from luaprogram in LuaPrograms select new XElement("Program", new XAttribute("Name", luaprogram.Name)))) : null));
+
                 if (Protects.Count > 0)
                 {
                     element.Add(new XElement("Protects", from vnum in Protects select new XElement("Room", new XAttribute("Vnum", vnum))));

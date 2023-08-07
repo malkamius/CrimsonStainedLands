@@ -70,7 +70,9 @@ namespace CrimsonStainedLands
             ch.Act("\\Y$n says '{0}'\\x\n\r", null, null, null, ActType.ToRoom, arguments);
             ch.SendToChar("\\YYou say '" + arguments + "'\\x\n\r");
 
-            Character.ExecuteSayProgs(ch, arguments);
+            //Character.ExecuteSayProgs(ch, arguments);
+            if(ch is Player)
+            Programs.ExecutePrograms(Programs.ProgramTypes.Say, ch, null, ch.Room, arguments);
 
         }
 

@@ -229,8 +229,9 @@ namespace CrimsonStainedLands
         public int MaxDurability = 100;
         private int DurabilityValue = 100;
 
-        public int Durability {
-            get 
+        public int Durability
+        {
+            get
             {
                 return DurabilityValue;
             }
@@ -251,11 +252,11 @@ namespace CrimsonStainedLands
 
                     // set new durability
                     DurabilityValue = value;
-                    
+
                     // remove affects if item damaged to 0 and item is being worn
                     if (value == 0 && CarriedBy != null && (slot = CarriedBy.GetEquipmentWearSlot(this)) != null)
                     {
-                        foreach(var affect in this.affects)
+                        foreach (var affect in this.affects)
                         {
                             CarriedBy.AffectApply(affect, true, false);
                         }
@@ -301,6 +302,8 @@ namespace CrimsonStainedLands
         public List<ItemSpellData> Spells = new List<ItemSpellData>();
 
         public List<Programs.Program<ItemData>> Programs = new List<Programs.Program<ItemData>>();
+        public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();
+
         internal CharacterSize Size;
 
         /// <summary>
@@ -327,7 +330,7 @@ namespace CrimsonStainedLands
                 flags += "(Damaged)";
 
             if (flags.Length > 0) flags += " ";
-            return !flags.ISEMPTY() ? flags: "";
+            return !flags.ISEMPTY() ? flags : "";
         }
 
         /// <summary>
@@ -337,7 +340,7 @@ namespace CrimsonStainedLands
         {
             if (!to.CanSee(this))
                 return "something";
-            return ((TimeInfo.IS_NIGHT && !this.NightShortDescription.ISEMPTY())? this.NightShortDescription : !ShortDescription.ISEMPTY() ? ShortDescription : Name);
+            return ((TimeInfo.IS_NIGHT && !this.NightShortDescription.ISEMPTY()) ? this.NightShortDescription : !ShortDescription.ISEMPTY() ? ShortDescription : Name);
         }
 
         public string DisplayToRoom(Character to)
@@ -428,6 +431,7 @@ namespace CrimsonStainedLands
             Durability = MaxDurability;
             ExtraDescriptions = template.ExtraDescriptions;
             Programs.AddRange(template.Programs);
+            LuaPrograms.AddRange(template.LuaPrograms);
             Keys.AddRange(template.Keys);
             Spells.AddRange(from spell in template.spells select new ItemSpellData(spell.Level, spell.SpellName));
             ItemData.Items.Add(this);
@@ -504,8 +508,8 @@ namespace CrimsonStainedLands
             ArmorPierce = element.GetElementValueInt("ArmorPierce", template != null ? template.ArmorPierce : 0);
             ArmorExotic = element.GetElementValueInt("ArmorExotic", template != null ? template.ArmorExotic : 0);
 
-            MaxDurability = element.GetElementValueInt("MaxDurability", template != null ? template.MaxDurability: 0);
-            Durability = element.GetElementValueInt("Durability", template != null ? template.MaxDurability: 100);
+            MaxDurability = element.GetElementValueInt("MaxDurability", template != null ? template.MaxDurability : 0);
+            Durability = element.GetElementValueInt("Durability", template != null ? template.MaxDurability : 100);
 
             timer = element.GetElementValueInt("timer");
 
@@ -577,8 +581,15 @@ namespace CrimsonStainedLands
                 var programsElement = element.GetElement("Programs");
                 foreach (var programElement in programsElement.Elements())
                 {
-                    var program = CrimsonStainedLands.Programs.ItemProgramLookup(programElement.GetAttributeValue("Name"));
-                    if (program != null) { Programs.Add(program); }
+
+                    if (CrimsonStainedLands.Programs.ItemProgramLookup(programElement.GetAttributeValue("Name"), out var program))
+                    {
+                        Programs.Add(program);
+                    }
+                    else if (CrimsonStainedLands.NLuaPrograms.ProgramLookup(programElement.GetAttributeValue("Name"), out var luaprogram))
+                    {
+                        LuaPrograms.Add(luaprogram);
+                    }
                 }
             }
 
@@ -587,7 +598,20 @@ namespace CrimsonStainedLands
                 foreach (var program in template.Programs)
                 {
                     if (!Programs.Any(p => p.Name == program.Name))
-                    { Programs.Add(program); }
+                    { 
+                        Programs.Add(program); 
+                    }
+                }
+            }
+
+            if (template != null && template.LuaPrograms.Any())
+            {
+                foreach (var program in template.LuaPrograms)
+                {
+                    if (!LuaPrograms.Any(p => p.Name == program.Name))
+                    { 
+                        LuaPrograms.Add(program); 
+                    }
                 }
             }
 
@@ -709,7 +733,7 @@ namespace CrimsonStainedLands
                 if (template == null || Value != template.Value)
                     elements.Add(new XElement("Cost", Value));
 
-                if(template == null || MaxDurability != template.MaxDurability)
+                if (template == null || MaxDurability != template.MaxDurability)
                     elements.Add(new XElement("MaxDurability", MaxDurability));
 
                 elements.Add(new XElement("Durability", Durability));

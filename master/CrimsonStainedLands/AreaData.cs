@@ -39,9 +39,16 @@ namespace CrimsonStainedLands
 
         public static void LoadAreas(bool headersOnly = false)
         {
-            foreach (var file in Directory.GetFiles("data\\areas", "*.xml"))
+            /// Now load area programs before area npcs and rooms, things referencing programs
+            foreach (var file in Directory.GetFiles("data\\areas", "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
             {
-                var area = new AreaData(file, headersOnly);
+                var area = new AreaData(file, true);
+                NLuaPrograms.LoadPrograms(area);
+            }
+
+            foreach(var area in Areas.ToArray())
+            {
+                area.load(area.fileName);
             }
 
             if (!headersOnly)
@@ -293,7 +300,8 @@ namespace CrimsonStainedLands
 
 
                 loadHelps(root);
-                AreaData.Areas.Add(this);
+                if(!AreaData.Areas.Contains(this))
+                    AreaData.Areas.Add(this);
 
                 resets.Clear();
                 //if (System.IO.File.Exists("data\\updates\\" + System.IO.Path.GetFileNameWithoutExtension(fileName) + "-updates.xml"))

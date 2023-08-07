@@ -1194,47 +1194,7 @@ namespace CrimsonStainedLands
         {
             if (Room != null)
             {
-                {
-                    var programs = from program in Room.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.ExitRoom)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(this, Room, null, null, null, Programs.ProgramTypes.ExitRoom, ""))
-                            break;
-                    }
-                }
-
-                foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
-                {
-                    var programs = from program in npc.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.ExitRoom)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(this, npc, null, null, null, Programs.ProgramTypes.ExitRoom, ""))
-                            break;
-                    }
-                }
-
-                if (this is Player && Form == null)
-                {
-
-                    foreach (var item in Room.items.Concat(Inventory).Concat(Equipment.Values).ToArray())
-                    {
-                        bool success = false;
-                        var programs = from program in item.Programs
-                                       where program.Types.ISSET(Programs.ProgramTypes.ExitRoom)
-                                       select program;
-
-                        foreach (var program in programs)
-                        {
-                            if ((success = program.Execute(this, item, null, item, null, Programs.ProgramTypes.ExitRoom, "")))
-                                break;
-                        }
-                        if (success) break;
-                    }
-                }
+                Programs.ExecutePrograms(Programs.ProgramTypes.ExitRoom, this, null, Room, "");
 
 
                 if (IsAffected(AffectFlags.PlayDead))
@@ -1279,48 +1239,11 @@ namespace CrimsonStainedLands
 
                 Character.DoLook(this, "auto");
 
-                foreach (var item in Room.items.Concat(Inventory).Concat(Equipment.Values).ToArray())
-                {
-                    bool success = false;
-                    var programs = from program in item.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.EnterRoom)
-                                   select program;
-
-                    foreach (var program in programs)
-                    {
-                        if ((success = program.Execute(this, item, null, item, null, Programs.ProgramTypes.EnterRoom, "")))
-                            break;
-                    }
-                    if (success) break;
-                }
+                
             }
             if (executeRoomAndNPCProgs)
             {
-
-                {
-                    var programs = from program in Room.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.EnterRoom)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(this, Room, null, null, null, Programs.ProgramTypes.EnterRoom, ""))
-                            break;
-                    }
-                }
-
-                foreach (var npc in Room.Characters.OfType<NPCData>().ToArray())
-                {
-                    var programs = from program in npc.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.EnterRoom)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(this, npc, null, null, null, Programs.ProgramTypes.EnterRoom, ""))
-                            break;
-                    }
-                }
-
-
+                Programs.ExecutePrograms(Programs.ProgramTypes.EnterRoom, this, null, Room, "");
             }
 
 
@@ -1539,13 +1462,7 @@ namespace CrimsonStainedLands
                 }
 
                 // Execute any wear programs associated with the item
-                foreach (var prog in itemData.Programs)
-                {
-                    if (prog.Types.ISSET(Programs.ProgramTypes.Wear))
-                    {
-                        prog.Execute(this, itemData, null, itemData, null, Programs.ProgramTypes.Wear, "");
-                    }
-                }
+                Programs.ExecutePrograms(Programs.ProgramTypes.Wear, this, itemData, "");
 
                 return true;
             }
@@ -1770,43 +1687,24 @@ namespace CrimsonStainedLands
             return false;
         }
 
-        public static void ExecuteSayProgs(Character ch, string arguments)
-        {
-            foreach (var item in ch.Inventory.Concat(ch.Equipment.Values))
-            {
-                var programs = from program in item.Programs where program.Types.ISSET(Programs.ProgramTypes.Say) select program;
+        //public static void ExecuteSayProgs(Character ch, string arguments)
+        //{
+        //    foreach (var item in ch.Inventory.Concat(ch.Equipment.Values))
+        //    {
+        //        Programs.ExecutePrograms(Programs.ProgramTypes.Say, ch, item, arguments);
+        //    }
+        //    if (ch.Room != null)
+        //    {
+        //        Programs.ExecutePrograms(Programs.ProgramTypes.Say, ch, null, ch.Room, arguments);
+                
+        //        foreach (var npc in ch.Room.Characters.OfType<NPCData>())
+        //        {
+        //            Programs.ExecutePrograms(Programs.ProgramTypes.Say, ch, npc, null, arguments);
+        //        }
+        //    }
+        //}
 
-                foreach (var program in programs)
-                {
-                    if (program.Execute(ch, item, null, item, null, Programs.ProgramTypes.Say, arguments))
-                        break;
-                }
-            }
-            if (ch.Room != null)
-            {
-                {
-                    var programs = from program in ch.Room.Programs
-                                   where program.Types.ISSET(Programs.ProgramTypes.Say)
-                                   select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(ch, ch.Room, null, null, null, Programs.ProgramTypes.Say, arguments))
-                            break;
-                    }
-                }
-                foreach (var npc in ch.Room.Characters.OfType<NPCData>())
-                {
-                    var programs = from program in npc.Programs where program.Types.ISSET(Programs.ProgramTypes.Say) select program;
-                    foreach (var program in programs)
-                    {
-                        if (program.Execute(ch, npc, null, null, null, Programs.ProgramTypes.Say, arguments))
-                            break;
-                    }
-                }
-            }
-        }
 
-        
 
         public static void PerformTell(Character ch, Character victim, string arguments)
         {
@@ -1830,7 +1728,7 @@ namespace CrimsonStainedLands
                 victim.ReplyTo = ch;
         }
 
-        
+
 
 
         /// <summary>
@@ -2230,7 +2128,7 @@ namespace CrimsonStainedLands
 
                 // Move the character to the destination room
                 RemoveCharacterFromRoom();
-                AddCharacterToRoom(wasInRoom.exits[(int)direction].destination, false);
+                AddCharacterToRoom(wasInRoom.exits[(int)direction].destination, true);
 
                 // Apply gentle walk affect if applicable
                 int gentlewalk = 0;
@@ -2455,10 +2353,8 @@ namespace CrimsonStainedLands
                     ch.send("You open {0}.\n\r", container.Display(ch));
                     ch.Act("$n opens $p.\n\r", null, container, null, ActType.ToRoom);
 
-                    var programs = from program in container.Programs where program.Types.ISSET(Programs.ProgramTypes.Open) select program;
-                    foreach (var program in programs)
-                        program.Execute(ch, container, null, null, null, Programs.ProgramTypes.Open, arguments);
-
+                    Programs.ExecutePrograms(Programs.ProgramTypes.Open, ch, container, "");
+                    
                     return;
                 }
                 else
@@ -2526,9 +2422,7 @@ namespace CrimsonStainedLands
                     ch.send("You close {0}.\n\r", container.Display(ch));
                     ch.Act("$n closes $p.\n\r", null, container, null, ActType.ToRoom);
 
-                    var programs = from program in container.Programs where program.Types.ISSET(Programs.ProgramTypes.Close) select program;
-                    foreach (var program in programs)
-                        program.Execute(ch, container, null, container, null, Programs.ProgramTypes.Open, arguments);
+                    Programs.ExecutePrograms(Programs.ProgramTypes.Close, ch, container, "");
 
                     return;
                 }

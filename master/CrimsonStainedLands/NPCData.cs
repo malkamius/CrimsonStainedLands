@@ -23,6 +23,7 @@ public class NPCData : Character, IDisposable
         public List<int> Protects = new List<int>();
         public List<int> PetVNums = new List<int>();
         public List<Programs.Program<NPCData>> Programs = new List<Programs.Program<NPCData>>();
+        public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();
 
         public NPCData(NPCTemplateData template, RoomData room)
         {
@@ -73,6 +74,8 @@ public class NPCData : Character, IDisposable
             PetVNums = new List<int>(template.PetVNums);
             DefaultPosition = template.DefaultPosition;
             Programs.AddRange(template.Programs);
+            LuaPrograms.AddRange(template.LuaPrograms);
+
             WeaponDamageMessage = template.WeaponDamageMessage;
 
             ManaPoints = 100;
@@ -226,8 +229,15 @@ public class NPCData : Character, IDisposable
                 var programsElement = element.GetElement("Programs");
                 foreach(var programElement in programsElement.Elements())
                 {
-                    var program = CrimsonStainedLands.Programs.NPCProgramLookup(programElement.GetAttributeValue("Name"));
-                    if (program != null) { Programs.Add(program); }
+                    
+                    if (CrimsonStainedLands.Programs.NPCProgramLookup(programElement.GetAttributeValue("Name"), out var program)) 
+                    { 
+                        Programs.Add(program); 
+                    }
+                    else if (CrimsonStainedLands.NLuaPrograms.ProgramLookup(programElement.GetAttributeValue("Name"), out var luaprogram))
+                    {
+                        LuaPrograms.Add(luaprogram);
+                    }
                 }
             }
 
