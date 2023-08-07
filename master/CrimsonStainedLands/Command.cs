@@ -390,6 +390,7 @@ namespace CrimsonStainedLands
 
             Commands.Add(new Command { Name = "toggle", Action = Character.DoToggle, Info = "List or Toggle an act flag on yourself.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "bug", Action = game.DoBug, Info = "Report a bug or typo.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "map", Action = DoActMapper.DoMap, Info = "Display an ascii map of your current surroundings.", MinimumPosition = Positions.Dead });
 
             // IMM COMMANDS
             Commands.Add(new Command { Name = "immortal", Action = DoActWiz.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
