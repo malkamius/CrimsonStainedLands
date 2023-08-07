@@ -97,7 +97,7 @@ namespace CrimsonStainedLands
             state = ConnectionStates.GetName;
 
             ReadHelp(this, "DIKU", true);
-            send("\n\r\n\rEnter your name: ");
+            send("\n\rEnter your name: ");
         }
 
         internal void ProcessOutput()
@@ -169,7 +169,10 @@ namespace CrimsonStainedLands
             {
                 send("\nEditing item {0} - {1}", EditingItemTemplate.Vnum, EditingItemTemplate.Name.ISEMPTY() ? "no name" : EditingItemTemplate.Name);
             }
-
+            if (EditingHelp != null)
+            {
+                send("\nEditing help {0} - {1}", EditingHelp.vnum, EditingHelp.keyword);
+            }
             if (Prompt.ISEMPTY())
                 send("\n" + FormatPrompt("<%1%%h %2%%m %3%%mv %W> "));
             else
@@ -543,6 +546,7 @@ namespace CrimsonStainedLands
 
             Character.ReadHelp(this, "greeting", true);
             send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
+            Character.ReadHelp(this, "MOTD", true);
             var notecount = (from note in NoteData.Notes where note.Sent > LastReadNote && (note.To.IsName("all", true) || note.To.IsName(Name, true)) select note).Count();
 
             if (notecount > 0)
@@ -728,6 +732,7 @@ namespace CrimsonStainedLands
                 }
 
                 Character.ReadHelp(this, "greeting", true);
+                Character.ReadHelp(this, "MOTD", true);
                 AddCharacterToRoom(RoomData.Rooms[3760]);
 
                 Position = Positions.Standing;

@@ -8,174 +8,94 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms />
   <NPCs />
   <Items />
   <Resets />
   <Helps>
-    <Help>
-      <Level>1</Level>
-      <Keyword>peek</Keyword>
-      <Text>When looking at someone, a thief attempts to peek at their inventory.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'enhanced damage'</Keyword>
-      <Text>Chance per hit to increase damage.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'enhanced damage ii'</Keyword>
-      <Text>When enhanced damage chance succeeds, gain another chance per hit to increase damage further.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>spellcraft</Keyword>
-      <Text>Chance per spell cast to increase damage.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'spellcraft ii'</Keyword>
-      <Text>Increases spellcrafts chance to be successful.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'fast healing'</Keyword>
-      <Text>Chance to increase rate of healing in all positions.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>meditation</Keyword>
-      <Text>Chance to increase rate of mana gained in all positions.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>trance</Keyword>
-      <Text>Chance to increase rate of mana gained in all positions.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'rogues awareness'</Keyword>
-      <Text>Chance to know which direction you flee in.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'gentle walk'</Keyword>
-      <Text>Chance that an aggressive npc will ignore your entrance.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>flourintine</Keyword>
-      <Text>Increases chance to parry while dual wielding swords.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>distance</Keyword>
-      <Text>Chance to keep your enemy from hitting you while using a polearm.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'defensive spin'</Keyword>
-      <Text>Increases chance to avoid damage while wielding a staff or spear.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>riposte</Keyword>
-      <Text>You gain a chance to return some damage for eacy parry while wielding a sword.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>survivalist</Keyword>
-      <Text>Reduces the need for food and water.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'quiet movement'</Keyword>
-      <Text>Prevents others from seeing which direction you left in or came from.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'path finding'</Keyword>
-      <Text>Chance to reduce movement points spent while moving within wilderness,
-this effect is spread to the entire party when leader has this skill.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'minor regeneration'</Keyword>
-      <Text>Chance to heal a small amount between each pulse (250ms).</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'major regeration'</Keyword>
-      <Text>Chance to heal a medium amount between each pulse (250ms).</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'greater regeration'</Keyword>
-      <Text>Chance to heal a moderate amount between each pulse (250ms).</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'super regeration'</Keyword>
-      <Text>Chance to heal a generous amount between each pulse (250ms).</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'combat steal'</Keyword>
-      <Text>Stealing can now be successful while in combat with the victim.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'prey on the weak'</Keyword>
-      <Text>Thieves have learned to take advantage of weak opponents.  As their victim gets 
-closer to death, they push their advantage striking harder blows.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'acrobatics'</Keyword>
-      <Text>Thieves that have become agile and fast because of their pickpocket habits 
+    <Help VNum="1100000" Level="1" Keyword="peek" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">When looking at someone, a thief attempts to peek at their inventory.</Help>
+    <Help VNum="1100005" Level="1" Keyword="'enhanced damage'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance per hit to increase damage.</Help>
+    <Help VNum="1100010" Level="1" Keyword="'enhanced damage ii'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">When enhanced damage chance succeeds, gain another chance per hit to increase damage further.</Help>
+    <Help VNum="1100015" Level="1" Keyword="spellcraft" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance per spell cast to increase damage.</Help>
+    <Help VNum="1100020" Level="1" Keyword="'spellcraft ii'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Increases spellcrafts chance to be successful.</Help>
+    <Help VNum="1100025" Level="1" Keyword="'fast healing'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to increase rate of healing in all positions.</Help>
+    <Help VNum="1100030" Level="1" Keyword="meditation" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to increase rate of mana gained in all positions.</Help>
+    <Help VNum="1100035" Level="1" Keyword="trance" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to increase rate of mana gained in all positions.</Help>
+    <Help VNum="1100040" Level="1" Keyword="'rogues awareness'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to know which direction you flee in.</Help>
+    <Help VNum="1100045" Level="1" Keyword="'gentle walk'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance that an aggressive npc will ignore your entrance.</Help>
+    <Help VNum="1100050" Level="1" Keyword="flourintine" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Increases chance to parry while dual wielding swords.</Help>
+    <Help VNum="1100055" Level="1" Keyword="distance" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to keep your enemy from hitting you while using a polearm.</Help>
+    <Help VNum="1100060" Level="1" Keyword="'defensive spin'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Increases chance to avoid damage while wielding a staff or spear.</Help>
+    <Help VNum="1100065" Level="1" Keyword="riposte" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">You gain a chance to return some damage for eacy parry while wielding a sword.</Help>
+    <Help VNum="1100070" Level="1" Keyword="survivalist" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Reduces the need for food and water.</Help>
+    <Help VNum="1100075" Level="1" Keyword="'quiet movement'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Prevents others from seeing which direction you left in or came from.</Help>
+    <Help VNum="1100080" Level="1" Keyword="'path finding'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to reduce movement points spent while moving within wilderness,
+this effect is spread to the entire party when leader has this skill.</Help>
+    <Help VNum="1100085" Level="1" Keyword="'minor regeneration'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to heal a small amount between each pulse (250ms).</Help>
+    <Help VNum="1100090" Level="1" Keyword="'major regeration'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to heal a medium amount between each pulse (250ms).</Help>
+    <Help VNum="1100095" Level="1" Keyword="'greater regeration'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to heal a moderate amount between each pulse (250ms).</Help>
+    <Help VNum="1100100" Level="1" Keyword="'super regeration'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Chance to heal a generous amount between each pulse (250ms).</Help>
+    <Help VNum="1100105" Level="1" Keyword="'combat steal'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Stealing can now be successful while in combat with the victim.</Help>
+    <Help VNum="1100110" Level="1" Keyword="'prey on the weak'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Thieves have learned to take advantage of weak opponents.  As their victim gets 
+closer to death, they push their advantage striking harder blows.</Help>
+    <Help VNum="1100115" Level="1" Keyword="'acrobatics'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Thieves that have become agile and fast because of their pickpocket habits 
 learn to avoid certain blows from other, more warrior-like opponents.  Thieves 
 with this skill have been known to avoid bashes, trips, throws, and 
-surprising attacks such as ambush, charge, etc.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'enliven'</Keyword>
-      <Text>Shapeshifters can enliven certain spells while in form without costing mana. For example,
+surprising attacks such as ambush, charge, etc.</Help>
+    <Help VNum="1100120" Level="1" Keyword="'enliven'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Shapeshifters can enliven certain spells while in form without costing mana. For example,
 if the spell "fly" expires while in form, when out of combat a shapeshifter can
-"enliven fly" to "recast" the spell while in form.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'recover of the snake'</Keyword>
-      <Text>A greater enliven for focus major utility, increases health regeneration while
-in form, equivalent major regeneration.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'tiger frenzy'</Keyword>
-      <Text>A greater enliven for focus major offensive, increases strength and dexterity
-while in form.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'bestial fury'</Keyword>
-      <Text>A greater enliven for focus major offensive, increases all damage while in form
-by 25%.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'primal tenacity'</Keyword>
-      <Text>A greater enliven for focus major defensive, increases SavingBreath,
+"enliven fly" to "recast" the spell while in form.</Help>
+    <Help VNum="1100125" Level="1" Keyword="'recover of the snake'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">A greater enliven for focus major utility, increases health regeneration while
+in form, equivalent major regeneration.</Help>
+    <Help VNum="1100130" Level="1" Keyword="'tiger frenzy'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">A greater enliven for focus major offensive, increases strength and dexterity
+while in form.</Help>
+    <Help VNum="1100135" Level="1" Keyword="'bestial fury'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">A greater enliven for focus major offensive, increases all damage while in form
+by 25%.</Help>
+    <Help VNum="1100140" Level="1" Keyword="'primal tenacity'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">A greater enliven for focus major defensive, increases SavingBreath,
 SavingPetrification, SavingRod, and SavingSpells. Additional resistance
-to mental and negative attacks.</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>'skin of the displacer'</Keyword>
-      <Text>A greater enliven for focus major defensive, which gives a small chance to
-evade any type of damage, magical or physical.</Text>
-    </Help>
+to mental and negative attacks.</Help>
+    <Help VNum="1100145" Level="1" Keyword="'skin of the displacer'" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">A greater enliven for focus major defensive, which gives a small chance to
+evade any type of damage, magical or physical.</Help>
+    <Help VNum="1100155" Level="0" Keyword="help" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:30:40.4362348-05:00">Type 'help [keyword]' to get help on a specific keyword.
+Some topics you could get help on is communication, combat, skills, training.</Help>
+    <Help VNum="1100165" Level="0" Keyword="communication" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:31:10.5775226-05:00">Type 'newbie [text]' to ask or answer questions on the newbie channel.
+Type 'say [text]' to speak to the current room.
+Type 'whisper [text]' to speak to the current room without unhiding.
+Type 'tell [playername] [text]' to talk to an individual player.
+Type 'yell [text]' to yell a message to the current area.
+Type 'pray [text]' to send a message to the gods.</Help>
+    <Help VNum="1100175" Level="0" Keyword="combat" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:33:08.3737458-05:00">Type 'consider [name]' to see how an NPC's level compares to your own.
+Type 'kill [name]' to initiate combat with a creature.
+Some NPCs are aggressive and will attack you when you walk in.
+Type the name of a skill to perform it in combat if applicable, for example
+'kick' while already fighting to perform your kick move.
+Mages can 'cast [spellname] [target]' to use their spells.
+Bards can 'sing [song name]' to sing their songs during combat.</Help>
+    <Help VNum="1100185" Level="0" Keyword="MOTD" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:36:11.314389-05:00">New 'bug' command to report bugs to the gods.
+New 'map' command to draw an ascii map of the surrounding area.
+Typing 'help' now has a default help entry.</Help>
+    <Help VNum="1100195" Level="0" Keyword="skills spells songs supplications" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:44:03.1718596-05:00">You can type 'practice' to see a list of all skills, spells and songs you
+can currently use. Type 'practice [skill/spell/song]' at a guildmaster to
+learn an ability better.
+You can type 'skills', 'spells', 'songs' or 'supplications' to see a list
+of all the abilities you will ever learn.
+Mages use 'cast [ability]' to cast spells. Priestly guilds
+use 'commune [ability]' to use their prayers. Bards use 'sing [ability]' to
+sing their repertoire of songs.
+</Help>
+    <Help VNum="1100205" Level="0" Keyword="train gain training stats" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:47:53.3265624-05:00">You can train at a trainer or in some cases, at your guildmaster.
+You start with base stats for your race. These are strength,
+intelligence, wisdom, dexterity, constitution and charisma.
+These stats affect multiple aspects such as how much(weight/count) you
+can carry, how much you learn when practicing and how many hitpoints
+you will gain when you level.
+Type 'train' at a trainer to get a list of what is available to you to train.
+Each race has maximum values a stat can be raised to.
+You can type 'gain convert' to convert 10 practices into a train.
+You can type 'gain revert' to revert a train into 10 practices.
+You start with 3 trains and gain 1 train every 5 levels.
+</Help>
   </Helps>
 </Area>

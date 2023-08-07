@@ -5152,10 +5152,10 @@ namespace CrimsonStainedLands
             using (new Page(ch))
             {
                 if (ch.IsImmortal)
-                    foreach (var area in AreaData.Areas.OrderBy(a => a.vnumStart))
+                    foreach (var area in from a in AreaData.Areas orderby a.vnumStart select a)
                         ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.name.TOSTRINGTRIM(), area.credits.TOSTRINGTRIM(), area.vnumStart, area.vnumEnd);
                 else
-                    foreach (var area in AreaData.Areas.OrderBy(a => a.credits))
+                    foreach (var area in from a in AreaData.Areas where a.rooms.Any() orderby a.credits select a)
                         ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.name.TOSTRINGTRIM(), area.credits.TOSTRINGTRIM(), area.vnumStart, area.vnumEnd);
             }
         }

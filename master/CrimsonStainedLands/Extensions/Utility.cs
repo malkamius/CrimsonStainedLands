@@ -186,6 +186,12 @@ namespace CrimsonStainedLands.Extensions
             return returnvalue;
         }
 
+        public static string OneArgument(this string ListOfArguments)
+        {
+            string onearg = "";
+            return ListOfArguments.OneArgument(ref onearg);
+        }
+
         /// <summary>
         /// Return the first word or if quoted, multiple words
         /// Trims whitespace at the start of the string before returning an argument unless the whitespace is quoted

@@ -432,6 +432,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "redit", Action = OLC.DoREdit, Info = "Edit a room", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "medit", Action = OLC.DoMEdit, Info = "Edit an npc", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "oedit", Action = OLC.DoOEdit, Info = "Edit an item", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "hedit", Action = OLC.DoHEdit, Info = "Edit an item", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "create", Action = OLC.DoCreate, Info = "Create an area, item or npc", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "renumber", Action = OLC.DoRenumber, Info = "Renumber area, rooms, items and NPCs in the given range of vnums", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
             Commands.Add(new Command { Name = "nextvnum", Action = OLC.DoNextVnum, Info = "Show the next vnum for rooms, npcs and items.", MinimumPosition = Positions.Dead });

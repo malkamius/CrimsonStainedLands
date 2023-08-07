@@ -463,7 +463,7 @@ namespace CrimsonStainedLands
             ch.send("Syntax: Edit Item [vnum] [name|description|level|extraflags|wearflags|itemtypes|value|nutrition|maxcharges|liquid|material|affects|damagedice|damagemessage|weapontype|weight|maxweight]\n\r");
         }
 
-        
+
 
         public static void DoEditRoom(Character ch, string args)
         {
@@ -555,9 +555,9 @@ namespace CrimsonStainedLands
                 ch.EditingRoom.Description += (!string.IsNullOrEmpty(ch.EditingRoom.Description) && !ch.EditingRoom.Description.EndsWith("\n") && !ch.EditingRoom.Description.EndsWith("\n\r") ? "\n" : "") + newargs + "\n";
                 ch.send("OK.\n\r");
             }
-            else if("extradescriptions".StringPrefix(plusminus))
+            else if ("extradescriptions".StringPrefix(plusminus))
             {
-                if("clear".StringPrefix(newargs))
+                if ("clear".StringPrefix(newargs))
                 {
                     ch.EditingRoom.ExtraDescriptions.Clear();
                     ch.send("OK.\n\r");
@@ -607,7 +607,7 @@ namespace CrimsonStainedLands
             }
             else
                 ch.send("Valid Sector Types are " + string.Join(", ", sectorNames) + "\n\r");
-            
+
         }
 
         public static void DoEditRoomFlags(Character ch, string args)
@@ -617,7 +617,7 @@ namespace CrimsonStainedLands
                 ch.send("Edit room not found\n\r");
                 return;
             }
-            else if(!ch.HasBuilderPermission(ch.EditingRoom))
+            else if (!ch.HasBuilderPermission(ch.EditingRoom))
             {
                 ch.send("You don't have permission to edit that room.\n\r");
             }
@@ -629,7 +629,7 @@ namespace CrimsonStainedLands
             }
             else
                 ch.send("Valid Flags are " + string.Join(", ", Utility.GetEnumValues<RoomFlags>()) + "\n\r");
-            
+
         }
 
         public static void DoEditRoomExits(Character ch, string args)
@@ -751,7 +751,7 @@ namespace CrimsonStainedLands
                     if (ch.EditingRoom.OriginalExits[i] != null)
                         ch.EditingRoom.exits[i] = new ExitData(ch.EditingRoom.OriginalExits[i]);
                     else
-                        ch.EditingRoom.exits[i] = null;    
+                        ch.EditingRoom.exits[i] = null;
                 }
                 ch.EditingRoom.Area.saved = false;
                 ch.send("OK.\n\r");
@@ -835,13 +835,13 @@ namespace CrimsonStainedLands
         {
             arguments = arguments.OneArgumentOut(out var command);
             var room = ch.EditingRoom;
-            
-            if(room == null)
+
+            if (room == null)
             {
                 ch.send("You aren't editing a room.\n\r");
                 return;
             }
-            else if(!ch.HasBuilderPermission(room))
+            else if (!ch.HasBuilderPermission(room))
             {
                 ch.send("Builder permissions not set.\n\r");
                 return;
@@ -850,7 +850,7 @@ namespace CrimsonStainedLands
             {
                 var resets = room.GetResets();
                 ch.send("Resets for room {0} - {1}\n\r", room.Vnum, room.Name);
-                for(int i = 0; i < resets.Count; i++)
+                for (int i = 0; i < resets.Count; i++)
                 {
                     var reset = resets[i];
                     string SpawnName = string.Empty;
@@ -861,8 +861,8 @@ namespace CrimsonStainedLands
                     }
                     else if (reset.resetType == ResetTypes.NPC && NPCTemplateData.Templates.TryGetValue(reset.spawnVnum, out var npctemplate))
                         SpawnName = npctemplate.Name;
-                    
-                    if(SpawnName.ISEMPTY())
+
+                    if (SpawnName.ISEMPTY())
                         SpawnName = "unknown name";
 
                     ch.send("[{0,5:D5}]    {1}Type {2}, SpawnVnum {3} - {4}, MaxRoomCount {5}, MaxCount {6}\n\r",
@@ -888,7 +888,7 @@ namespace CrimsonStainedLands
             else if ("move".StringPrefix(command))
             {
                 var resets = room.GetResets();
-                
+
                 arguments = arguments.OneArgumentOut(out var argStartIndex);
 
                 if (int.TryParse(argStartIndex, out var index) && index >= 1 && index <= resets.Count && int.TryParse(arguments, out var endIndex) && endIndex >= 1 && endIndex <= resets.Count)
@@ -896,7 +896,7 @@ namespace CrimsonStainedLands
                     var reset = resets[index - 1];
 
                     room.Area.resets.Remove(reset);
-                    
+
                     if (endIndex < resets.Count) // insert before the destination index
                     {
                         var destinationReset = resets[endIndex - 1];
@@ -908,7 +908,7 @@ namespace CrimsonStainedLands
 
                         room.Area.resets.Insert(resets.IndexOf(destinationReset) + 1, reset);
                     }
-                    
+
                     room.Area.saved = false;
                     ch.send("Reset moved.\n\r");
                 }
@@ -937,7 +937,7 @@ namespace CrimsonStainedLands
                     arg4 = arguments;
                 }
                 index = index - 1;
-                if(index <= 0 && resets.Count > 0)
+                if (index <= 0 && resets.Count > 0)
                 {
                     index = room.Area.resets.IndexOf(resets[resets.Count - 1]) + 1;
                 }
@@ -945,11 +945,11 @@ namespace CrimsonStainedLands
                 {
                     index = room.Area.resets.Count;
                 }
-                else if(index == resets.Count)
+                else if (index == resets.Count)
                 {
                     index = room.Area.resets.IndexOf(resets[index - 1]) + 1;
                 }
-                else if(index >= resets.Count)
+                else if (index >= resets.Count)
                 {
                     ch.send("Index must be less than or equal to the count of resets in the room.\n\r");
                     return;
@@ -957,22 +957,22 @@ namespace CrimsonStainedLands
                 else
                     index = room.Area.resets.IndexOf(resets[index]);
                 if (index < 0) index = 0;
-                
 
-                if(arg1.ISEMPTY() || !Utility.GetEnumValueStrPrefixOut<ResetTypes>(arg1, out var type))
+
+                if (arg1.ISEMPTY() || !Utility.GetEnumValueStrPrefixOut<ResetTypes>(arg1, out var type))
                 {
                     ch.send("You must supply a valid reset type.\n\r");
-                    ch.send("Valid reset types are {0}.\n\r", string.Join(", ",  from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
+                    ch.send("Valid reset types are {0}.\n\r", string.Join(", ", from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
                     ch.send("redit reset create [{0}] @spawnvnum @roomcount @maxcount\n\r", string.Join("|", from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
                     return;
                 }
-                else if(arg2.ISEMPTY() || !int.TryParse(arg2, out spawnvnum))
+                else if (arg2.ISEMPTY() || !int.TryParse(arg2, out spawnvnum))
                 {
                     ch.send("You must supply a valid spawn vnum.\n\r");
                     return;
                 }
 
-                if(!arg3.ISEMPTY() && !int.TryParse(arg3, out maxroomcount))
+                if (!arg3.ISEMPTY() && !int.TryParse(arg3, out maxroomcount))
                 {
                     ch.send("Max room count must be numeric if supplied.\n\r");
                     return;
@@ -1876,7 +1876,7 @@ namespace CrimsonStainedLands
             int applyvalue = 0;
             args = args.OneArgument(ref applytypestring);
             args = args.OneArgument(ref applyvaluestring);
-            if(!applytypestring.ISEMPTY() && applytypestring == "-")
+            if (!applytypestring.ISEMPTY() && applytypestring == "-")
             {
                 if (ch.EditingItemTemplate.affects.Count > 0)
                 {
@@ -2125,7 +2125,7 @@ namespace CrimsonStainedLands
 
                 foreach (var otherroom in RoomData.Rooms)
                 {
-                    for(int i = 0; i < otherroom.Value.exits.Length;i++)
+                    for (int i = 0; i < otherroom.Value.exits.Length; i++)
                     {
                         var exit = otherroom.Value.exits[i];
                         if (exit != null && exit.destination != null && exit.destination.Vnum >= vnumTo && exit.destination.Vnum <= vnumMaxTo)
@@ -2203,7 +2203,7 @@ namespace CrimsonStainedLands
                         while (!builders.ISEMPTY())
                         {
                             builders = builders.OneArgument(ref builder);
-                            if (!builder.ISEMPTY() && !builder.IsName(character.Name,true))
+                            if (!builder.ISEMPTY() && !builder.IsName(character.Name, true))
                                 newbuilders.Append((newbuilders.Length > 0 ? " " : "") + builder);
                         }
                         area.builders = newbuilders.ToString();
@@ -2358,11 +2358,11 @@ namespace CrimsonStainedLands
                 arguments.OneArgumentOut(out var strindex);
                 string modifier = "";
                 ExtraDescription ed = null;
-                if (!int.TryParse(strindex, out var index) && (ed = room.ExtraDescriptions.FirstOrDefault(e=>e.Keywords.IsName(strindex))) == null)
+                if (!int.TryParse(strindex, out var index) && (ed = room.ExtraDescriptions.FirstOrDefault(e => e.Keywords.IsName(strindex))) == null)
                 {
                     index = eds.Count;
                 }
-                else if(ed == null)
+                else if (ed == null)
                 {
                     arguments = arguments.OneArgument(ref strindex);
                     arguments.OneArgument(ref modifier);
@@ -2639,9 +2639,9 @@ namespace CrimsonStainedLands
                     return;
                 }
                 else
-                ch.EditingArea = area;
+                    ch.EditingArea = area;
             }
-            else if ( !vnumString.ISEMPTY() && (area = (from a in AreaData.Areas where a.name.IsName(vnumString) select a).FirstOrDefault()) == null)
+            else if (!vnumString.ISEMPTY() && (area = (from a in AreaData.Areas where a.name.IsName(vnumString) select a).FirstOrDefault()) == null)
             {
                 ch.send("Area not found.\n\r");
             }
@@ -2744,7 +2744,7 @@ namespace CrimsonStainedLands
             {
                 ch.send("You don't have permission to edit that area.\n\r");
             }
-            else if(!int.TryParse(args, out int Vnum) || !RoomData.Rooms.TryGetValue(Vnum, out var room))
+            else if (!int.TryParse(args, out int Vnum) || !RoomData.Rooms.TryGetValue(Vnum, out var room))
             {
                 ch.send("Room with specified vnum not found.\n\r");
             }
@@ -2756,5 +2756,209 @@ namespace CrimsonStainedLands
                 ch.send("Done.\n\r");
             }
         }
+
+        public static void DoHEdit(Character ch, string args)
+        {
+            DoEditHelp(ch, args);
+        }
+
+        public static void DoEditHelp(Character ch, string args)
+        {
+            string arg1 = "";
+            args = args.OneArgument(ref arg1);
+            if ("list".StringPrefix(arg1))
+            {
+                IEnumerable<HelpData> helps = null;
+
+                if (ch.EditingArea != null)
+                {
+                    helps = ch.EditingArea.Helps;
+                }
+                else if (!args.ISEMPTY())
+                    helps = from help in HelpData.Helps where help.vnum.ToString().StringPrefix(args) || help.keyword.IsName(args) select help;
+                else
+                    helps = HelpData.Helps;
+
+                foreach(var help in helps)
+                {
+                    ch.send("{0} :: {1} - {2}\n\r", help.area.name, help.vnum, help.keyword);
+                }
+            }
+            else if ("create".StringPrefix(arg1))
+            {
+
+                if (int.TryParse(args, out var vnum))
+                {
+                    var area = AreaData.Areas.FirstOrDefault(a => vnum >= a.vnumStart && vnum <= a.vnumEnd);
+                    if (area != null)
+                    {
+                        area.Helps.Add(ch.EditingHelp = new HelpData());
+                        HelpData.Helps.Add(ch.EditingHelp);
+                        ch.EditingHelp.area = area;
+                        ch.EditingHelp.vnum = vnum;
+                        ch.EditingHelp.keyword = "";
+                        ch.EditingHelp.text = "";
+                        ch.EditingHelp.lastEditedOn = DateTime.Now;
+                        ch.EditingHelp.lastEditedBy = ch.Name;
+                        ch.EditingHelp.area.saved = false;
+                    }
+                    else
+                        ch.send("Area with a vnum range containing that vnum not found.\n\r");
+                }
+                else if (ch.EditingArea != null)
+                {
+                    if (HelpData.Helps.Any(h => h.keyword.IsName(args)))
+                    {
+                        ch.send("A help with that keyword already exists.\n\r");
+                    }
+                    else
+                    {
+                        var area = ch.EditingArea;
+                        area.Helps.Add(ch.EditingHelp = new HelpData());
+                        HelpData.Helps.Add(ch.EditingHelp);
+                        ch.EditingHelp.area = area;
+                        ch.EditingHelp.vnum = Math.Max(area.vnumStart, area.Helps.Any() ? area.Helps.Max(h => h.vnum) + 10 : 1); ;
+                        ch.EditingHelp.keyword = "";
+                        ch.EditingHelp.text = "";
+                        ch.EditingHelp.lastEditedOn = DateTime.Now;
+                        ch.EditingHelp.lastEditedBy = ch.Name;
+                        ch.EditingHelp.area.saved = false;
+                    }
+                }
+                else
+                {
+                    var area = AreaData.Areas.FirstOrDefault(a => a.name == "Help");
+                    area.Helps.Add(ch.EditingHelp = new HelpData());
+                    HelpData.Helps.Add(ch.EditingHelp);
+                    ch.EditingHelp.area = area;
+                    ch.EditingHelp.vnum = Math.Max(area.vnumStart, area.Helps.Any() ? area.Helps.Max(h => h.vnum) + 10 : 1); ;
+                    ch.EditingHelp.keyword = args;
+                    ch.EditingHelp.text = "";
+                    ch.EditingHelp.lastEditedOn = DateTime.Now;
+                    ch.EditingHelp.lastEditedBy = ch.Name;
+                    ch.EditingHelp.area.saved = false;
+                    ch.send("OK.\n\r");
+                }
+            }
+            else if ("edit".StringPrefix(arg1))
+            {
+
+                if (int.TryParse(args, out var vnum))
+                {
+                    ch.EditingHelp = HelpData.Helps.FirstOrDefault(h => h.vnum == vnum);
+                    if (ch.EditingHelp != null)
+                        ch.send("Editing help {0} - {1}.\n\r", ch.EditingHelp.vnum, ch.EditingHelp.keyword);
+                    else
+                        ch.send("Help {0} not found.\n\r", vnum);
+                }
+                else
+                {
+                    ch.EditingHelp = HelpData.Helps.FirstOrDefault(h => h.keyword.IsName(args));
+
+                    if (ch.EditingHelp != null)
+                        ch.send("Editing help {0} - {1}.\n\r", ch.EditingHelp.vnum, ch.EditingHelp.keyword);
+                    else
+                        ch.send("Help {0} not found.\n\r", vnum);
+                }
+            }
+            else if ("vnum".StringPrefix(arg1))
+            {
+                if (ch.EditingHelp == null)
+                    ch.send("You aren't editing a help entry.\n\r");
+                else if (int.TryParse(args, out var vnum))
+                {
+                    if (HelpData.Helps.Any(h => h.vnum == vnum && h != ch.EditingHelp))
+                    {
+                        ch.send("A help with that vnum already exists.\n\r");
+                    }
+                    else
+                    {
+                        ch.EditingHelp.vnum = vnum;
+                        ch.send("OK.\n\r");
+                    }
+                }
+                else
+                    ch.send("Enter a numeric vnum.\n\r");
+            }
+            else if ("level".StringPrefix(arg1))
+            {
+                if (ch.EditingHelp == null)
+                    ch.send("You aren't editing a help entry.\n\r");
+                else if (int.TryParse(args, out var level))
+                {
+                    ch.EditingHelp.level = level;
+                    ch.EditingHelp.area.saved = false;
+                    ch.send("OK.\n\r");
+                }
+                else
+                    ch.send("Enter a numeric level.\n\r");
+            }
+            else if ("keywords".StringPrefix(arg1))
+            {
+                if (ch.EditingHelp == null)
+                    ch.send("You aren't editing a help entry.\n\r");
+                else if (args.ISEMPTY())
+                    ch.send("Set keywords to what?\n\r");
+                else if (HelpData.Helps.Any(h => h.keyword.IsName(args) && h != ch.EditingHelp))
+                {
+                    ch.send("A help with that keyword already exists.\n\r");
+                }
+                else
+                {
+                    ch.EditingHelp.keyword = args;
+                    ch.EditingHelp.area.saved = false;
+                    ch.send("OK.\n\r");
+                }
+            }
+            else if ("text".StringPrefix(arg1))
+            {
+                string mod = "";
+                args.OneArgument(ref mod);
+                if (ch.EditingHelp == null)
+                    ch.send("You aren't editing a help entry.\n\r");
+                else if (mod == "-")
+                {
+                    args = args.OneArgument();
+                    if (ch.EditingHelp.text.IndexOf("\n\r") >= 0)
+                    {
+                        ch.EditingHelp.text = ch.EditingHelp.text.Substring(0, ch.EditingHelp.text.LastIndexOf('\n') - 1);
+                        if (ch.EditingHelp.text.IndexOf("\n\r") >= 0)
+                            ch.EditingHelp.text = ch.EditingHelp.text.Substring(0, ch.EditingHelp.text.LastIndexOf('\n'));
+                        else
+                            ch.EditingHelp.text = "";
+                    }
+                    else
+                        ch.EditingItemTemplate.Description = "";
+
+                    ch.EditingHelp.area.saved = false;
+                    ch.send("OK.\n\r");
+                }
+                else if (mod == "+")
+                {
+                    args = args.OneArgument();
+                    ch.EditingHelp.text += (!string.IsNullOrEmpty(ch.EditingHelp.text) && !ch.EditingHelp.text.Contains('\n') ? "\n" : "") + args + "\n";
+                    ch.EditingHelp.area.saved = false;
+                    ch.send("OK.\n\r");
+                }
+                else
+                {
+                    ch.EditingHelp.text = args;
+                    ch.EditingHelp.area.saved = false;
+                    ch.send("OK.\n\r");
+                }
+
+            }
+            else
+            {
+                if (ch.EditingHelp == null)
+                {
+                    ch.send("HEdit [create|list|edit] [vnum|keywords]\n\r");
+                }
+                else
+                {
+                    ch.send("HEdit [vnum|keywords|level|text]\n\r");
+                }
+            }
+        } // end DoEditHelp
     } // end DoOLC
 } // End namespace

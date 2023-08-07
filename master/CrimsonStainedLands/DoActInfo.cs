@@ -303,6 +303,8 @@ namespace CrimsonStainedLands
         public static void ReadHelp(Character ch, string arguments, bool plain = false)
         {
             StringBuilder output = new StringBuilder();
+            if (arguments.ISEMPTY())
+                arguments = "help";
             int lvl;
             foreach (var help in HelpData.Helps)
             {
@@ -312,11 +314,11 @@ namespace CrimsonStainedLands
                 if (lvl > ch.Level)
                     continue;
 
-                if (help.keyword.IsName(arguments))
+                if (help.keyword.IsName(arguments) || help.vnum.ToString() == arguments)
                 {
                     if (!plain)
                     {
-                        output.AppendLine("Keywords: " + help.keyword);
+                        output.AppendLine("Keywords: " + help.keyword + " :: Help Entry " + help.vnum);
                         output.Append("\n\r" + new string('-', 80) + "\n\r");
                     }
 
@@ -328,6 +330,7 @@ namespace CrimsonStainedLands
                     if (!plain)
                     {
                         output.Append("\n\r" + new string('-', 80) + "\n\r");
+                        output.Append(string.Format("Last edited on {0} by {1}.\n\r", help.lastEditedOn, help.lastEditedBy));
                         output.AppendLine();
                     }
                 }
@@ -341,10 +344,19 @@ namespace CrimsonStainedLands
                 output.AppendLine(command.Name + " - " + command.Info); 
             }
             if (output.Length == 0)
-                ch.send("No help on that word.");
+                ch.send("No help on that word.\n\r");
             else
-                ch.send(output.ToString());
-            if (!plain) ch.send("\n\r");
+            {
+                using (var page = new Page(ch))
+                {
+                    var outputstring = output.ToString();
+                    ch.send(outputstring);
+                    if(!outputstring.EndsWith("\n") && !outputstring.EndsWith("\r"))
+                    ch.send("\n\r");
+                }
+                
+            }
+            
         }
         public static void DoHelp(Character ch, string arguments)
         {

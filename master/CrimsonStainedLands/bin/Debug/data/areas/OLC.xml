@@ -8,16 +8,14 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms />
   <NPCs />
   <Items />
   <Resets />
   <Helps>
-    <Help>
-      <Level>52</Level>
-      <Keyword>OLC create edit dig saveworld worldsave</Keyword>
-      <Text>Commands are:
+    <Help VNum="1000000" Level="52" Keyword="OLC create edit dig saveworld worldsave" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Commands are:
 Create
 create area [name] [vnumstart] [vnumend]
 		create room [vnum]
@@ -79,12 +77,8 @@ flags are: door closed locked window pickproof nopass nobash hidden
 NextVnum
 displays the next vnum to use for rooms, npcs or items in an area
 
-Worldsave or Saveworld will save modified areas</Text>
-    </Help>
-    <Help>
-      <Level>1</Level>
-      <Keyword>prompt</Keyword>
-      <Text>Syntax: prompt
+Worldsave or Saveworld will save modified areas</Help>
+    <Help VNum="1000005" Level="1" Keyword="prompt" LastEditedBy="" LastEditedOn="2023-08-07T14:19:44">Syntax: prompt
 Syntax: prompt all
 Syntax: prompt &lt;%*&gt;
  
@@ -114,7 +108,6 @@ PROMPT &lt;%*&gt; where the %* are the various variables you may set yourself.
         %z :  Display the area name you are in (IMMORTAL ONLY)
  
 Example:  PROMPT &lt;%hhp %mm %vmv&gt;
-        Will set your prompt to "&lt;10hp 100m 100mv&gt;"</Text>
-    </Help>
+        Will set your prompt to "&lt;10hp 100m 100mv&gt;"</Help>
   </Helps>
 </Area>
