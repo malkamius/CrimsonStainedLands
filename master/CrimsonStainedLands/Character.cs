@@ -2840,7 +2840,7 @@ namespace CrimsonStainedLands
 
                 if (!arguments.ISEMPTY())
                 {
-                    foreach (var other in (from room in ch.Room.Area.rooms.Values from c in room.Characters select c))
+                    foreach (var other in (from room in ch.Room.Area.Rooms.Values from c in room.Characters select c))
                     {
                         if (other.Name.IsName(arguments))
                         {
@@ -5151,7 +5151,7 @@ namespace CrimsonStainedLands
             if (ch.Room == null || ch.Room.Area == null)
                 ch.send("You aren't anywhere.");
             else
-                ch.send(ch.Room.Area.name.TOSTRINGTRIM().PadRight(20) + " - " + (ch.Room.Area.credits.TOSTRINGTRIM()).PadLeft(20));
+                ch.send(ch.Room.Area.Name.TOSTRINGTRIM().PadRight(20) + " - " + (ch.Room.Area.Credits.TOSTRINGTRIM()).PadLeft(20));
 
         }
 
@@ -5160,11 +5160,11 @@ namespace CrimsonStainedLands
             using (new Page(ch))
             {
                 if (ch.IsImmortal)
-                    foreach (var area in from a in AreaData.Areas orderby a.vnumStart select a)
-                        ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.name.TOSTRINGTRIM(), area.credits.TOSTRINGTRIM(), area.vnumStart, area.vnumEnd);
+                    foreach (var area in from a in AreaData.Areas orderby a.VNumStart select a)
+                        ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.Name.TOSTRINGTRIM(), area.Credits.TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
                 else
-                    foreach (var area in from a in AreaData.Areas where a.rooms.Any() orderby a.credits select a)
-                        ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.name.TOSTRINGTRIM(), area.credits.TOSTRINGTRIM(), area.vnumStart, area.vnumEnd);
+                    foreach (var area in from a in AreaData.Areas where a.Rooms.Any() orderby a.Credits select a)
+                        ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.Name.TOSTRINGTRIM(), area.Credits.TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
             }
         }
 
@@ -7123,10 +7123,10 @@ namespace CrimsonStainedLands
             }
         }
 
-        public bool HasBuilderPermission(AreaData area) => area != null && (area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC));
-        public bool HasBuilderPermission(RoomData room) => room.Area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
-        public bool HasBuilderPermission(ItemTemplateData item) => item.Area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
-        public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(AreaData area) => area != null && (area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC));
+        public bool HasBuilderPermission(RoomData room) => room.Area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(ItemTemplateData item) => item.Area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
 
     } // end of character
 } // end namespace

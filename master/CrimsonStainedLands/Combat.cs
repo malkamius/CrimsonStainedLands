@@ -9316,13 +9316,13 @@ namespace CrimsonStainedLands
                 ch.CheckImprove(skill, true, 1);
                 StopFighting(ch, true);
 
-                if (ch.Room.Area.rooms.Count > 1)
+                if (ch.Room.Area.Rooms.Count > 1)
                 {
                     int attempts = 0;
-                    var newroom = ch.Room.Area.rooms.Values.SelectRandom();
+                    var newroom = ch.Room.Area.Rooms.Values.SelectRandom();
                     while ((newroom == null || newroom == ch.Room || newroom.flags.ISSET(RoomFlags.Indoors) || newroom.sector == SectorTypes.Inside) && attempts <= 10)
                     {
-                        newroom = ch.Room.Area.rooms.Values.SelectRandom();
+                        newroom = ch.Room.Area.Rooms.Values.SelectRandom();
                         attempts++;
                     }
                     if (attempts < 10)

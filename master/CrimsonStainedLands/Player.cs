@@ -158,7 +158,7 @@ namespace CrimsonStainedLands
         {
             if (EditingArea != null)
             {
-                send("\nEditing Area {0} - {1} - {2}", EditingArea.name, EditingArea.vnumStart, EditingArea.vnumEnd);
+                send("\nEditing Area {0} - {1} - {2}", EditingArea.Name, EditingArea.VNumStart, EditingArea.VNumEnd);
             }
             if (EditingRoom != null)
             {
@@ -1127,7 +1127,7 @@ namespace CrimsonStainedLands
                         break;
                     case 'z':
                         if (IsImmortal && Room != null)
-                            buf.Append(Room.Area.name);
+                            buf.Append(Room.Area.Name);
                         else
                             buf.Append(' ');
                         break;

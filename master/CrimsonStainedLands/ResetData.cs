@@ -67,7 +67,7 @@ namespace CrimsonStainedLands
             else if (resetType == ResetTypes.Put)
                 lastItemVnum = _lastItemVnum;
 
-            area.resets.Add(this);
+            area.Resets.Add(this);
         }
         public ResetData(AreaData area, XElement reset)
         {
@@ -103,7 +103,7 @@ namespace CrimsonStainedLands
                 lastItemVnum = _lastItemVnum;
 
 
-            area.resets.Add(this);
+            area.Resets.Add(this);
         }
 
         internal void execute(ref NPCData lastNPC, ref ItemData lastItem)
@@ -133,7 +133,7 @@ namespace CrimsonStainedLands
                     {
                         if (maxCount < template.MaxCount)
                         {
-                            game.log("NPC " + spawnVnum + " has a maxcount of " + maxCount + " but template shows " + template.MaxCount + " resets" + (area != null ? " in area " + area.name + "." : ""));
+                            game.log("NPC " + spawnVnum + " has a maxcount of " + maxCount + " but template shows " + template.MaxCount + " resets" + (area != null ? " in area " + area.Name + "." : ""));
                             // This will affect save world
                             //maxCount = template.MaxCount;
                         }
@@ -144,9 +144,9 @@ namespace CrimsonStainedLands
                         lastNPC = null;
                 }
                 else if (room == null)
-                    game.log("Room " + roomVnum + " not found for reset of NPC " + spawnVnum + (area != null ? " in area " + area.name + "." : ""));
+                    game.log("Room " + roomVnum + " not found for reset of NPC " + spawnVnum + (area != null ? " in area " + area.Name + "." : ""));
                 else if (template == null)
-                    game.log("NPC " + spawnVnum + " not found for reset to room " + roomVnum + (area != null ? " in area " + area.name + "." : ""));
+                    game.log("NPC " + spawnVnum + " not found for reset to room " + roomVnum + (area != null ? " in area " + area.Name + "." : ""));
             }
             else if (resetType == ResetTypes.Item)
             {

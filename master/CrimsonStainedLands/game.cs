@@ -61,7 +61,7 @@ namespace CrimsonStainedLands
          * 
          * Help files
          * 
-         * Look into using Lua or Javascript for mob/obj progs
+         * ---- Look into using Lua or Javascript for mob/obj progs
          * 
          * Consider using loot tables (race/body part/lvl based, visible on mob spawn?)
          *
@@ -70,7 +70,7 @@ namespace CrimsonStainedLands
          * 
          * impassable exits, impassable night exits, night/day hidden exits
          * 
-         * MOTD
+         * ---- MOTD
          * 
          * Cabals
          * 
@@ -247,7 +247,6 @@ namespace CrimsonStainedLands
         {
             listeningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
-            //var s = string.Join(", ", (from flag in utility.GetEnumValues<AffectFlags>() select flag.ToString()));
             // listen on all adapters at port specified for new connections
             listeningSocket.Bind(new System.Net.IPEndPoint(0, state.port));
             listeningSocket.Listen(50);
@@ -256,11 +255,8 @@ namespace CrimsonStainedLands
 
         private void LoadData()
         {
-
-
             Liquid.loadLiquids();
             game.log("{0} liquids loaded.", Liquid.Liquids.Count);
-
 
             Race.LoadRaces();
             game.log("{0} races loaded.", Race.Races.Count);
@@ -294,7 +290,7 @@ namespace CrimsonStainedLands
 
             LoadData();
 
-            AreaData.resetAreas(); // areas aren't reset till they're all loaded just in case there are cross area references for resets
+            AreaData.ResetAreas(); // areas aren't reset till they're all loaded just in case there are cross area references for resets
 
             WeatherData.Initialize();
 
@@ -322,6 +318,7 @@ namespace CrimsonStainedLands
             IAC = 255,
         }
 
+        
 
         private void mainLoop(gameInfo state)
         {
@@ -334,288 +331,23 @@ namespace CrimsonStainedLands
                         var time = DateTime.Now;
 
                         // Accept the new connections
-                        while (listeningSocket.Poll(1, SelectMode.SelectRead))
-                        {
-                            var player = new Player(this, listeningSocket.Accept());
-                            state.connections.Add(player);
-                            if (game.CheckIsBanned(string.Empty, player.Address))
-                            {
-                                try
-                                {
-                                    WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
-
-                                    player.sendRaw("You are banned.\n\r");
-                                    game.CloseSocket(player, true, true);
-                                }
-                                catch
-                                {
-
-                                }
-                            }
-                            else
-                            {
-                                WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
-                                player.socket.Send(new byte[] { (byte)TelnetOptions.IAC, (byte)TelnetOptions.DO, (byte)TelnetOptions.TTYPE });
-                            }
-
-                        }
-
+                        AcceptNewSockets();
 
                         // Check for input
-                        foreach (var connection in new List<Player>(state.connections))
-                        {
-                            if (connection.LastSaveTime != DateTime.MinValue && (DateTime.Now - connection.LastSaveTime).Minutes >= 5)
-                            {
-                                connection.SaveCharacterFile();
-                                connection.send("\n\rAuto-saved.\n\r");
-                            }
-
-                            if (connection.Daze > 0)
-                                --connection.Daze;
-
-                            if (connection.Level == MAX_LEVEL && connection.Wait > 0)
-                                connection.Wait = 0;
-
-                            if (connection.Wait > 0)
-                            {
-                                --connection.Wait;
-                                continue;
-                            }
-
-                            try
-                            {
-                                if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                                {
-                                    byte[] buffer = new byte[255];
-                                    int received = connection.socket.Receive(buffer);
-
-                                    if (received == 0)
-                                    {
-                                        connection.socket.Dispose();
-                                        connection.socket = null;
-                                        connection.inanimate = DateTime.Now;
-                                        //state.connections.Remove(connection);
-                                        //throw new Exception("Socket Exception");
-                                    }
-                                    else
-                                    {
-                                        var position = connection.input.Length;
-
-                                        if (received > 0 && buffer[0] == 255)
-                                        {
-                                            var Byte = buffer[0];
-                                            var byteindex = 0;
-                                            if (Byte == (byte)TelnetOptions.IAC && received > byteindex + 2)
-                                            {
-                                                if (buffer[byteindex + 1] == (byte)TelnetOptions.WILL
-                                                    && buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE)
-                                                {
-                                                    connection.socket.Send(
-                                                        new byte[] { (byte) TelnetOptions.IAC,
-                                                                (byte)TelnetOptions.SB,
-                                                                (byte)TelnetOptions.TTYPE,
-                                                                1,
-                                                                (byte) TelnetOptions.IAC,
-                                                                (byte) TelnetOptions.SE});
-
-
-                                                }
-                                                else if (received > byteindex + 4 &&
-                                                    buffer[byteindex + 1] == (byte)TelnetOptions.SB &&
-                                                    buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE &&
-                                                    buffer[byteindex + 3] == 0)
-                                                {
-                                                    // supposed to send back different result, cmud sends the same
-
-                                                    //connection.socket.Send(
-                                                    //    new byte[] { (byte) TelnetOptions.IAC,
-                                                    //            (byte)TelnetOptions.SB,
-                                                    //            (byte)TelnetOptions.TTYPE,
-                                                    //            1,
-                                                    //            (byte) TelnetOptions.IAC,
-                                                    //            (byte) TelnetOptions.SE});
-                                                    var TerminalTypeResponse = new MemoryStream();
-                                                    for (int responseindex = 4; responseindex < received; responseindex++)
-                                                    {
-                                                        if (buffer[responseindex] == (byte)TelnetOptions.IAC)
-                                                            break;
-                                                        TerminalTypeResponse.WriteByte(buffer[responseindex]);
-                                                    }
-                                                    var ClientString = ASCIIEncoding.ASCII.GetString(TerminalTypeResponse.ToArray());
-                                                    var ClientColorOptions = new Dictionary<string, ActFlags[]>
-                                                    {
-                                                        { "CMUD", new ActFlags[] { ActFlags.Color, ActFlags.Color256 } },
-                                                        { "ANSI", new ActFlags[] { ActFlags.Color} },
-                                                        { "Mudlet", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
-                                                        { "Mushclient", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
-                                                    };
-
-                                                    var Options = (from option in ClientColorOptions where option.Key.StringPrefix(ClientString) select option.Value).FirstOrDefault();
-
-                                                    if (Options != null)
-                                                        foreach (var option in Options)
-                                                            connection.Flags.SETBIT(option);
-
-                                                    game.log(ClientString + " client detected.");
-                                                }
-                                            }
-                                        }
-                                        else
-                                        {
-                                            for (int byteindex = 0; byteindex < received; byteindex++)// (var Byte in buffer)
-                                            {
-                                                var Byte = buffer[byteindex];
-                                                if (Byte == 8 && position > 0)
-                                                {
-                                                    connection.input.Remove(connection.input.Length - 1, 1);
-                                                    position -= 1;
-                                                }
-                                                else if (Byte == 13 || Byte == 10 || (Byte >= 32 && Byte <= 126))
-                                                {
-                                                    connection.input.Append((char)Byte);
-                                                    position++;
-                                                    if (connection.input.Length > 4200) // not writing a novel yet?
-                                                    {
-
-                                                        connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
-                                                        game.CloseSocket(connection, false, true);
-                                                        connection.inanimate = DateTime.Now;
-                                                    }
-                                                }
-                                                else
-                                                {
-
-                                                }
-                                            }
-                                        }
-                                        // Above method of adding input makes sure only characters space through 126 are allowed into the game and also supports backspace for telnet
-                                        //connection.input.Append(System.Text.ASCIIEncoding.ASCII.GetChars(buffer, 0, received));
-                                    }
-
-
-                                }
-
-                                if (connection.socket != null)
-                                {
-
-                                    if (connection.state == Player.ConnectionStates.Playing && connection.Level == game.MAX_LEVEL)
-                                    {
-                                        while (connection.ProcessInput())
-                                            if (!connection.HasPageText)
-                                                connection.SittingAtPrompt = false;
-                                    }
-                                    else
-                                    {
-                                        if (connection.ProcessInput())
-                                            if (!connection.HasPageText)
-                                                connection.SittingAtPrompt = false;
-                                    }
-                                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
-                                        throw new Exception("Socket Exception");
-                                }
-
-                                if ((connection.state != Player.ConnectionStates.Playing && connection.socket == null) || (connection.inanimate.HasValue && connection.inanimate.Value.AddMinutes(5) < DateTime.Now))
-                                {
-
-
-                                    WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection {0} removed from list of active connections.", connection, null, connection.Address);
-
-                                    connection.Act("$n disappears into the void.", null, null, null, ActType.ToRoom);
-                                    if (connection.state == Player.ConnectionStates.Playing)
-                                        connection.SaveCharacterFile();
-                                    if (connection.Room != null)
-                                    {
-                                        connection.RemoveCharacterFromRoom();
-                                    }
-                                    connection.Dispose();
-
-
-                                    state.connections.Remove(connection);
-                                }
-
-                                if (connection.socket == null && !connection.inanimate.HasValue)
-                                    connection.inanimate = DateTime.Now;
-                                //if(connection.inanimate)
-                            }
-                            catch (Exception ex)
-                            {
-                                Info.LogLine(ex.ToString());
-                                //if (connection.state == Player.ConnectionStates.Playing)
-                                //    connection.SaveCharacterFile();
-                                //if (connection.Room != null)
-                                //{
-                                //    connection.RemoveCharacterFromRoom();
-                                //}
-                                //connection.Dispose();
-                                //if (state.connections.Contains(connection))
-                                //    state.connections.Remove(connection);
-                                try
-                                {
-                                    if (connection.socket != null)
-                                    {
-                                        game.CloseSocket(connection, false, false);
-                                        connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-                                    }
-                                    connection.socket = null;
-                                    connection.inanimate = DateTime.Now;
-
-                                }
-                                catch (Exception disposeEx)
-                                {
-                                    Info.LogLine(disposeEx.ToString());
-                                }
-
-
-                            }
-                        }
+                        CheckConnectionsForAndProcessInput();
 
                         // Update everything, combat happens here too
-                        updateHandler();
+                        UpdateHandler();
 
                         // Check for pending output
-                        foreach (var connection in new List<Player>(state.connections))
-                        {
-                            try
-                            {
-                                if (connection.socket != null)
-                                    connection.ProcessOutput();
-                            }
-                            catch (Exception ex)
-                            {
-                                Info.LogLine(ex.ToString());
-                                //if (connection.state == Player.ConnectionStates.Playing)
-                                //    connection.SaveCharacterFile();
-                                //if (connection.Room != null)
-                                //{
-                                //    if (connection.Room.characters.Contains(connection))
-                                //        connection.Room.characters.Remove(connection);
-                                //    connection.Room = null;
-                                //}
-                                //connection.Dispose();
-                                //state.connections.Remove(connection);
+                        ProcessConnectionsOutput();
 
-                                try
-                                {
-                                    if (connection.socket != null)
-                                    {
-                                        try { connection.socket.Dispose(); } catch { }
-                                        connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-                                    }
-                                    connection.socket = null;
-                                    connection.inanimate = DateTime.Now;
+                        var timeToSleep = (int)Math.Max(1f, game.MILLISECONDS_PER_PULSE - (DateTime.Now - time).TotalMilliseconds);
 
-                                }
-                                catch (Exception disposeEx)
-                                {
-                                    Info.LogLine(disposeEx.ToString());
-                                }
-
-                            }
-                        }
-                        var timeToSleep = (int)Math.Max(1f, 250f - (DateTime.Now - time).TotalMilliseconds);
-
-                        if ((DateTime.Now - time).TotalMilliseconds > 250)
+                        if ((DateTime.Now - time).TotalMilliseconds > game.MILLISECONDS_PER_PULSE)
                             log((DateTime.Now - time).TotalMilliseconds + "ms to loop once");
+
+                        /// Had issues with listening socket poll on windows, using Sleep instead
                         // wait until next pulse or connection attempt
                         //var poll = listeningSocket.Poll(timeToSleep, SelectMode.SelectRead);
                         System.Threading.Thread.Sleep(timeToSleep);
@@ -626,57 +358,372 @@ namespace CrimsonStainedLands
                     }
                 } // end while ! exiting
 
-                //exiting, one last attempt at sending any remaining output
-                foreach (var connection in new List<Player>(state.connections))
-                {
-                    try
-                    {
-                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                        {
-                            byte[] buffer = new byte[255];
-                            int received = connection.socket.Receive(buffer);
-
-                            if (received == 0)
-                                throw new Exception("Socket Read Exception");
-                        }
-
-                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
-                            throw new Exception("Socket Exception");
-
-                        connection.ProcessOutput();
-                        if (connection.state == Player.ConnectionStates.Playing)
-                            connection.SaveCharacterFile();
-                    }
-                    catch (Exception ex)
-                    {
-                        Info.LogLine(ex.ToString());
-                        try
-                        {
-                            if (connection.socket != null)
-                            {
-                                try
-                                {
-                                    connection.socket.Dispose();
-                                }
-                                catch { }
-                                connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-                            }
-                            connection.socket = null;
-                            connection.inanimate = DateTime.Now;
-
-                        }
-                        catch (Exception disposeEx)
-                        {
-                            Info.LogLine(disposeEx.ToString());
-                        }
-                    }
-                }
+                LastDitchAttemptToSendOutput();
             }
             catch (Exception gameEx)
             {
                 Info.LogLine(gameEx.ToString());
             }
         }
+
+        /// <summary>
+        /// Poll for pending connections and accept them
+        /// </summary>
+        private void AcceptNewSockets()
+        {
+            while (listeningSocket.Poll(1, SelectMode.SelectRead))
+            {
+                var player = new Player(this, listeningSocket.Accept());
+                Info.connections.Add(player);
+                if (game.CheckIsBanned(string.Empty, player.Address))
+                {
+                    try
+                    {
+                        WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
+
+                        player.sendRaw("You are banned.\n\r");
+                        game.CloseSocket(player, true, true);
+                    }
+                    catch
+                    {
+
+                    }
+                }
+                else
+                {
+                    WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
+
+                    /// IAC TType Negotiation
+                    /// https://tintin.mudhalla.net/protocols/mtts/
+                    /// https://tintin.mudhalla.net/rfc/rfc854/
+                    /// https://www.rfc-editor.org/rfc/rfc1091
+                    /// https://tintin.mudhalla.net/info/ansicolor/
+                    player.socket.Send(new byte[] { (byte)TelnetOptions.IAC, (byte)TelnetOptions.DO, (byte)TelnetOptions.TTYPE });
+                }
+
+            }
+        }
+
+        /// <summary>
+        /// Poll for pending data to be received and receive it, handles IAC TType Negotiation
+        /// </summary>
+        /// <param name="connection">Player Connection containing the socket to be handled</param>
+        private void ReceiveSocketBytes(Player connection)
+        {
+            if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+            {
+                byte[] buffer = new byte[255];
+                int received = connection.socket.Receive(buffer);
+
+                if (received == 0)
+                {
+                    connection.socket.Dispose();
+                    connection.socket = null;
+                    connection.inanimate = DateTime.Now;
+                }
+                else
+                {
+                    var position = connection.input.Length;
+
+                    /// IAC TType Negotiation
+                    /// https://tintin.mudhalla.net/protocols/mtts/
+                    /// https://tintin.mudhalla.net/rfc/rfc854/
+                    /// https://www.rfc-editor.org/rfc/rfc1091
+                    /// https://tintin.mudhalla.net/info/ansicolor/
+                    if (received > 0 && buffer[0] == (byte)TelnetOptions.IAC)
+                    {
+                        var byteindex = 0;
+                        if (received > byteindex + 2)
+                        {
+                            /// DO TTYPE sent on connection acceptance, Client responds with WILL TTYPE
+                            if (buffer[byteindex + 1] == (byte)TelnetOptions.WILL
+                                && buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE)
+                            {
+                                /// READY TO RECEIVE TTYPE
+                                connection.socket.Send(
+                                    new byte[] { (byte) TelnetOptions.IAC,
+                                                                (byte)TelnetOptions.SB,
+                                                                (byte)TelnetOptions.TTYPE,
+                                                                1,
+                                                                (byte) TelnetOptions.IAC,
+                                                                (byte) TelnetOptions.SE});
+
+
+                            }
+                            /// TTYPE Received from Client
+                            else if (received > byteindex + 4 &&
+                                buffer[byteindex + 1] == (byte)TelnetOptions.SB &&
+                                buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE &&
+                                buffer[byteindex + 3] == 0)
+                            {
+                                // supposed to send back different result, cmud sends the same
+
+                                //connection.socket.Send(
+                                //    new byte[] { (byte) TelnetOptions.IAC,
+                                //            (byte)TelnetOptions.SB,
+                                //            (byte)TelnetOptions.TTYPE,
+                                //            1,
+                                //            (byte) TelnetOptions.IAC,
+                                //            (byte) TelnetOptions.SE});
+                                var TerminalTypeResponse = new MemoryStream();
+                                for (int responseindex = 4; responseindex < received; responseindex++)
+                                {
+                                    if (buffer[responseindex] == (byte)TelnetOptions.IAC)
+                                        break;
+                                    TerminalTypeResponse.WriteByte(buffer[responseindex]);
+                                }
+                                var ClientString = ASCIIEncoding.ASCII.GetString(TerminalTypeResponse.ToArray());
+                                var ClientColorOptions = new Dictionary<string, ActFlags[]>
+                                                    {
+                                                        { "CMUD", new ActFlags[] { ActFlags.Color, ActFlags.Color256 } },
+                                                        { "ANSI", new ActFlags[] { ActFlags.Color} },
+                                                        { "Mudlet", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
+                                                        { "Mushclient", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
+                                                    };
+
+                                var Options = (from option in ClientColorOptions where option.Key.StringPrefix(ClientString) select option.Value).FirstOrDefault();
+
+                                if (Options != null)
+                                    foreach (var option in Options)
+                                        connection.Flags.SETBIT(option);
+
+                                game.log(ClientString + " client detected.");
+                            }
+                        }
+                    }
+                    else // normal data, filter it for valid characters
+                    {
+                        for (int byteindex = 0; byteindex < received; byteindex++)// (var Byte in buffer)
+                        {
+                            var singlecharacter = buffer[byteindex];
+                            if (singlecharacter == 8 && position > 0) // backspace
+                            {
+                                connection.input.Remove(connection.input.Length - 1, 1);
+                                position -= 1;
+                            }
+                            else if (singlecharacter == 13 || singlecharacter == 10 || (singlecharacter >= 32 && singlecharacter <= 126)) // new lines and standard characters
+                            {
+                                connection.input.Append((char)singlecharacter);
+                                position++;
+                                if (connection.input.Length > 4200) // not writing a novel yet?
+                                {
+
+                                    connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
+                                    game.CloseSocket(connection, false, true);
+                                    connection.inanimate = DateTime.Now;
+                                }
+                            }
+                            // else skip the character
+                        }
+                    }
+                    // Above method of adding input makes sure only characters space through 126 are allowed into the game and also supports backspace for telnet
+                    //connection.input.Append(System.Text.ASCIIEncoding.ASCII.GetChars(buffer, 0, received));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Decrement the Wait Lag counter
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <returns>False if needs to wait, true if good to go ahead</returns>
+        private bool DecrementDazeAndWait(Player connection)
+        {
+            if (connection.Daze > 0)
+                --connection.Daze;
+
+            if (connection.Level == MAX_LEVEL && connection.Wait > 0)
+                connection.Wait = 0;
+
+            if (connection.Wait > 0)
+            {
+                --connection.Wait;
+                return false;
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Call a player's process input method
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <exception cref="Exception"></exception>
+        private void ProcessPlayerInput(Player connection)
+        {
+            if (connection.socket != null)
+            {
+
+                if (connection.state == Player.ConnectionStates.Playing && connection.Level == game.MAX_LEVEL)
+                {
+                    // immortals process all received input immediately
+                    while (connection.ProcessInput())
+                        if (!connection.HasPageText)
+                            connection.SittingAtPrompt = false;
+                }
+                else
+                {
+                    if (connection.ProcessInput())
+                        if (!connection.HasPageText)
+                            connection.SittingAtPrompt = false;
+                }
+                if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
+                    throw new Exception("Socket Exception");
+            }
+        }
+
+        private void KickInanimatePlayer(Player connection)
+        {
+            if ((connection.state != Player.ConnectionStates.Playing && connection.socket == null) || (connection.inanimate.HasValue && connection.inanimate.Value.AddMinutes(5) < DateTime.Now))
+            {
+
+
+                WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection {0} removed from list of active connections.", connection, null, connection.Address);
+
+                connection.Act("$n disappears into the void.", null, null, null, ActType.ToRoom);
+                if (connection.state == Player.ConnectionStates.Playing)
+                    connection.SaveCharacterFile();
+                if (connection.Room != null)
+                {
+                    connection.RemoveCharacterFromRoom();
+                }
+                connection.Dispose();
+
+
+                Info.connections.Remove(connection);
+            }
+
+            if (connection.socket == null && !connection.inanimate.HasValue)
+                connection.inanimate = DateTime.Now;
+        }
+
+        private void ProcessConnectionsOutput()
+        {
+            foreach (var connection in new List<Player>(Info.connections))
+            {
+                try
+                {
+                    if (connection.socket != null)
+                        connection.ProcessOutput();
+                }
+                catch (Exception ex)
+                {
+                    Info.LogLine(ex.ToString());
+
+                    try
+                    {
+                        if (connection.socket != null)
+                        {
+                            try { connection.socket.Dispose(); } catch { }
+                            connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
+                        }
+                        connection.socket = null;
+                        connection.inanimate = DateTime.Now;
+
+                    }
+                    catch (Exception disposeEx)
+                    {
+                        Info.LogLine(disposeEx.ToString());
+                    }
+
+                }
+            }
+        }
+
+        private void CheckConnectionsForAndProcessInput()
+        {
+            foreach (var connection in Info.connections.ToArray())
+            {
+                if (connection.LastSaveTime != DateTime.MinValue && (DateTime.Now - connection.LastSaveTime).Minutes >= 5)
+                {
+                    connection.SaveCharacterFile();
+                    connection.send("\n\rAuto-saved.\n\r");
+                }
+
+                if (!DecrementDazeAndWait(connection))
+                    continue;
+
+                try
+                {
+                    ReceiveSocketBytes(connection);
+
+                    ProcessPlayerInput(connection);
+
+                    KickInanimatePlayer(connection);
+                }
+                catch (Exception ex)
+                {
+                    Info.LogLine(ex.ToString());
+
+                    try
+                    {
+                        if (connection.socket != null)
+                        {
+                            game.CloseSocket(connection, false, false);
+                            connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
+                        }
+                        connection.socket = null;
+                        connection.inanimate = DateTime.Now;
+
+                    }
+                    catch (Exception disposeEx)
+                    {
+                        Info.LogLine(disposeEx.ToString());
+                    }
+
+
+                }
+            }
+        }
+
+        private void LastDitchAttemptToSendOutput()
+        {
+            //exiting, one last attempt at sending any remaining output
+            foreach (var connection in Info.connections.ToArray())
+            {
+                try
+                {
+                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                    {
+                        byte[] buffer = new byte[255];
+                        int received = connection.socket.Receive(buffer);
+
+                        if (received == 0)
+                            throw new Exception("Socket Read Exception");
+                    }
+
+                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
+                        throw new Exception("Socket Exception");
+
+                    connection.ProcessOutput();
+                    if (connection.state == Player.ConnectionStates.Playing)
+                        connection.SaveCharacterFile();
+                }
+                catch (Exception ex)
+                {
+                    Info.LogLine(ex.ToString());
+                    try
+                    {
+                        if (connection.socket != null)
+                        {
+                            try
+                            {
+                                connection.socket.Dispose();
+                            }
+                            catch { }
+                            connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
+                        }
+                        connection.socket = null;
+                        connection.inanimate = DateTime.Now;
+
+                    }
+                    catch (Exception disposeEx)
+                    {
+                        Info.LogLine(disposeEx.ToString());
+                    }
+                }
+            }
+        }
+
         public static void shutdown()
         {
 
@@ -793,10 +840,10 @@ namespace CrimsonStainedLands
             UpdateWeather();
             UpdateCharacters();
             UpdateObjects();
-            AreaData.resetAreas();
+            AreaData.ResetAreas();
         }
 
-        private void updateHandler()
+        private void UpdateHandler()
         {
             //game.log("PULSE :: " + pulseCount);
 
@@ -1687,11 +1734,11 @@ namespace CrimsonStainedLands
         {
             var sampleArea = new AreaData();
 
-            sampleArea.vnumStart = 0;
-            sampleArea.vnumEnd = 1;
-            sampleArea.credits = "{ALL} Seen on areas command";
+            sampleArea.VNumStart = 0;
+            sampleArea.VNumEnd = 1;
+            sampleArea.Credits = "{ALL} Seen on areas command";
             sampleArea.info = "Not used at the moment";
-            sampleArea.name = "Sample Area";
+            sampleArea.Name = "Sample Area";
 
             var room = new RoomData();
 
@@ -1712,7 +1759,7 @@ namespace CrimsonStainedLands
             for (int i = 0; i < room.exits.Length; i++)
                 room.OriginalExits[i] = new ExitData(room.exits[i]);
 
-            sampleArea.rooms.Add(room.Vnum, room);
+            sampleArea.Rooms.Add(room.Vnum, room);
 
             var item = new ItemTemplateData();
 
@@ -1827,7 +1874,7 @@ namespace CrimsonStainedLands
             reset.maxCount = 4;
             reset.count = 4;
             reset.resetType = ResetTypes.NPC;
-            sampleArea.resets.Add(reset);
+            sampleArea.Resets.Add(reset);
 
             reset = new ResetData();
             reset.spawnVnum = 0;
@@ -1835,7 +1882,7 @@ namespace CrimsonStainedLands
             reset.maxCount = 4;
             reset.count = 4;
             reset.resetType = ResetTypes.Equip;
-            sampleArea.resets.Add(reset);
+            sampleArea.Resets.Add(reset);
 
             reset = new ResetData();
             reset.spawnVnum = 0;
@@ -1843,7 +1890,7 @@ namespace CrimsonStainedLands
             reset.maxCount = 4;
             reset.count = 4;
             reset.resetType = ResetTypes.Give;
-            sampleArea.resets.Add(reset);
+            sampleArea.Resets.Add(reset);
 
             reset = new ResetData();
             reset.spawnVnum = 0;
@@ -1851,7 +1898,7 @@ namespace CrimsonStainedLands
             reset.maxCount = 4;
             reset.count = 4;
             reset.resetType = ResetTypes.Item;
-            sampleArea.resets.Add(reset);
+            sampleArea.Resets.Add(reset);
 
             reset = new ResetData();
             reset.spawnVnum = 0;
@@ -1859,11 +1906,11 @@ namespace CrimsonStainedLands
             reset.maxCount = 4;
             reset.count = 4;
             reset.resetType = ResetTypes.Put;
-            sampleArea.resets.Add(reset);
+            sampleArea.Resets.Add(reset);
 
             sampleArea.NPCTemplates.Add(npc.Vnum, npc);
-            sampleArea.fileName = "SampleArea.xml";
-            sampleArea.save();
+            sampleArea.FileName = "SampleArea.xml";
+            sampleArea.Save();
         }
 
         public static void DoBug(Character ch, string arguments)

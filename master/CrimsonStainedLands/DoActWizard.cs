@@ -175,9 +175,9 @@ namespace CrimsonStainedLands
                     {
                         foreach (var area in AreaData.Areas)
                         {
-                            if (arguments.ISEMPTY() || area.name.IsName(arguments))
+                            if (arguments.ISEMPTY() || area.Name.IsName(arguments))
                             {
-                                ch.send("Vnums (" + area.vnumStart + " - " + area.vnumEnd + ") - " + area.name + "\n\r");
+                                ch.send("Vnums (" + area.VNumStart + " - " + area.VNumEnd + ") - " + area.Name + "\n\r");
                             }
                         }
                     }
@@ -185,7 +185,7 @@ namespace CrimsonStainedLands
                     {
                         NPCTemplateData lastNPC = null;
                         ItemTemplateData lastItem = null;
-                        foreach (var reset in ch.Room.Area.resets)
+                        foreach (var reset in ch.Room.Area.Resets)
                         {
                             if (!arguments.StringPrefix("area") && reset.roomVnum != ch.Room.Vnum && !((reset.resetType == ResetTypes.Give || reset.resetType == ResetTypes.Equip) && lastNPC != null) && !(reset.resetType == ResetTypes.Put && lastItem != null))
                             {
@@ -250,7 +250,7 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            foreach (var room in ch.Room.Area.rooms.Values)
+            foreach (var room in ch.Room.Area.Rooms.Values)
             {
                 foreach (var exit in room.OriginalExits)
                 {
@@ -259,7 +259,7 @@ namespace CrimsonStainedLands
                         if (exit.destination.Area != room.Area && exit.destination.Area != null)
                         {
                             ch.send("Connection from {0} to {1} in room {2} [{3}] {4} to room {5} [{6}]\n\r",
-                                room.Area.name, exit.destination.Area.name, room.Name, room.Vnum,
+                                room.Area.Name, exit.destination.Area.Name, room.Name, room.Vnum,
                                 exit.direction.ToString(), exit.destination.Name, exit.destination.Vnum);
                         }
                         else if (exit.destination.Area != room.Area)
@@ -309,7 +309,7 @@ namespace CrimsonStainedLands
         {
             if (ch.Room != null && ch.Room.Area != null)
             {
-                ch.Room.Area.resetArea(true);
+                ch.Room.Area.ResetArea(true);
                 ch.send("Area Reset.\n\r");
             }
             else
@@ -347,7 +347,7 @@ namespace CrimsonStainedLands
                 if (arguments.ISEMPTY())
                     area = ch.Room.Area;
                 else
-                    area = AreaData.Areas.FirstOrDefault(a => a.name.IsName(arguments, true));
+                    area = AreaData.Areas.FirstOrDefault(a => a.Name.IsName(arguments, true));
 
                 if (area == null)
                 {
@@ -355,7 +355,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    foreach (var room in ch.Room.Area.rooms.Values)
+                    foreach (var room in ch.Room.Area.Rooms.Values)
                     {
                         PurgeRoom(room);
                     }
@@ -928,7 +928,7 @@ namespace CrimsonStainedLands
                         NPCData mob = new NPCData(mobt, ch.Room);
                         ch.Act("$N magically appears.\n\r", mob);
                         ch.Act("$N magically appears.\n\r", mob, null, null, ActType.ToRoomNotVictim);
-                        var resets = mobt.Area.resets;
+                        var resets = mobt.Area.Resets;
 
                         if (resets.Any())
                         {

@@ -20,7 +20,7 @@ namespace CrimsonStainedLands
 
         public static void LoadPrograms(AreaData area)
         {
-            string AreaProgramsPath = System.IO.Path.GetDirectoryName(area.fileName) + "\\" + System.IO.Path.GetFileNameWithoutExtension(area.fileName) + "_Programs.xml";
+            string AreaProgramsPath = System.IO.Path.GetDirectoryName(area.FileName) + "\\" + System.IO.Path.GetFileNameWithoutExtension(area.FileName) + "_Programs.xml";
             if (System.IO.File.Exists(AreaProgramsPath))
             {
                 var elements = XElement.Load(AreaProgramsPath);
@@ -37,7 +37,7 @@ namespace CrimsonStainedLands
 
                     if (!newProgram.Name.ISEMPTY())
                     {
-                        Programs[area.name + "_" + newProgram.Name] = newProgram;
+                        Programs[area.Name + "_" + newProgram.Name] = newProgram;
                     }
                 }
             }

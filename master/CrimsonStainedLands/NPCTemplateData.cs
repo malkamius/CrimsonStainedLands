@@ -75,7 +75,7 @@ namespace CrimsonStainedLands
             }
             catch
             {
-                game.log("Bad Area.NPCTemplates.Add - vnum " + Vnum + " in area " + area != null ? area.name : "null");
+                game.log("Bad Area.NPCTemplates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
             }
 
             if (element.HasElement("Flags"))
@@ -295,7 +295,7 @@ namespace CrimsonStainedLands
             }
             catch
             {
-                game.log("Bad NPCTemplateData.Templates.Add - vnum " + Vnum + " in area " + area != null ? area.name : "null");
+                game.log("Bad NPCTemplateData.Templates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
             }
 
         }

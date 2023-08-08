@@ -111,9 +111,9 @@ namespace CrimsonStainedLands
                 args = args.OneArgument(ref vnumStartString);
                 args = args.OneArgument(ref vnumEndString);
 
-                area.name = nameString;
-                area.fileName = "data\\areas\\" + nameString + ".xml";
-                if (!int.TryParse(vnumStartString, out area.vnumStart) || !int.TryParse(vnumEndString, out area.vnumEnd))
+                area.Name = nameString;
+                area.FileName = "data\\areas\\" + nameString + ".xml";
+                if (!int.TryParse(vnumStartString, out area.VNumStart) || !int.TryParse(vnumEndString, out area.VNumEnd))
                 {
                     ch.send("Create Area \"name\" vnumstart vnumend");
                     return;
@@ -184,7 +184,7 @@ namespace CrimsonStainedLands
                 else
                 {
                     var room = new RoomData() { Area = ch.EditingArea, Vnum = vnum };
-                    ch.EditingArea.rooms.Add(vnum, room);
+                    ch.EditingArea.Rooms.Add(vnum, room);
                     ch.EditingRoom = room;
                     RoomData.Rooms.Add(vnum, room);
                     ch.send("OK.\n\r");
@@ -883,7 +883,7 @@ namespace CrimsonStainedLands
                 if (int.TryParse(arguments, out var index) && index >= 1 && index <= resets.Count)
                 {
                     var reset = resets[index - 1];
-                    room.Area.resets.Remove(reset);
+                    room.Area.Resets.Remove(reset);
                     room.Area.saved = false;
                     ch.send("Reset removed.\n\r");
                 }
@@ -900,18 +900,18 @@ namespace CrimsonStainedLands
                 {
                     var reset = resets[index - 1];
 
-                    room.Area.resets.Remove(reset);
+                    room.Area.Resets.Remove(reset);
 
                     if (endIndex < resets.Count) // insert before the destination index
                     {
                         var destinationReset = resets[endIndex - 1];
-                        room.Area.resets.Insert(resets.IndexOf(destinationReset), reset);
+                        room.Area.Resets.Insert(resets.IndexOf(destinationReset), reset);
                     }
                     else // insert after the destination index
                     {
                         var destinationReset = resets[endIndex - 1];
 
-                        room.Area.resets.Insert(resets.IndexOf(destinationReset) + 1, reset);
+                        room.Area.Resets.Insert(resets.IndexOf(destinationReset) + 1, reset);
                     }
 
                     room.Area.saved = false;
@@ -944,15 +944,15 @@ namespace CrimsonStainedLands
                 index = index - 1;
                 if (index <= 0 && resets.Count > 0)
                 {
-                    index = room.Area.resets.IndexOf(resets[resets.Count - 1]) + 1;
+                    index = room.Area.Resets.IndexOf(resets[resets.Count - 1]) + 1;
                 }
                 else if (index < 0 || resets.Count == 0)
                 {
-                    index = room.Area.resets.Count;
+                    index = room.Area.Resets.Count;
                 }
                 else if (index == resets.Count)
                 {
-                    index = room.Area.resets.IndexOf(resets[index - 1]) + 1;
+                    index = room.Area.Resets.IndexOf(resets[index - 1]) + 1;
                 }
                 else if (index >= resets.Count)
                 {
@@ -960,7 +960,7 @@ namespace CrimsonStainedLands
                     return;
                 }
                 else
-                    index = room.Area.resets.IndexOf(resets[index]);
+                    index = room.Area.Resets.IndexOf(resets[index]);
                 if (index < 0) index = 0;
 
 
@@ -996,7 +996,7 @@ namespace CrimsonStainedLands
 
                 if (maxcount == 0)
                 {
-                    maxcount = room.Area.resets.Count(r => r.resetType == type && r.spawnVnum == spawnvnum);
+                    maxcount = room.Area.Resets.Count(r => r.resetType == type && r.spawnVnum == spawnvnum);
                 }
 
                 var reset = new ResetData()
@@ -1009,7 +1009,7 @@ namespace CrimsonStainedLands
                     area = room.Area
                 };
 
-                room.Area.resets.Insert(index, reset);
+                room.Area.Resets.Insert(index, reset);
                 room.Area.saved = false;
             }
             else
@@ -1964,7 +1964,7 @@ namespace CrimsonStainedLands
             }
             else if ((vnumArg.ISEMPTY() || vnum == 0) && area != null)
             {
-                vnum = area.rooms.Count > 0 ? area.rooms.Max(r => r.Key) + 1 : area.vnumStart;
+                vnum = area.Rooms.Count > 0 ? area.Rooms.Max(r => r.Key) + 1 : area.VNumStart;
             }
             else
             {
@@ -1992,7 +1992,7 @@ namespace CrimsonStainedLands
                     room.sector = ch.Room.sector;
                 }
                 room.Area = area;
-                room.Area.rooms.Add(vnum, room);
+                room.Area.Rooms.Add(vnum, room);
                 RoomData.Rooms.Add(vnum, room);
             }
             if (!ch.HasBuilderPermission(room))
@@ -2051,11 +2051,11 @@ namespace CrimsonStainedLands
             {
                 foreach (var area in AreaData.Areas)
                 {
-                    if (area.vnumStart == minVnumFrom && area.vnumEnd == maxVnumFrom)
+                    if (area.VNumStart == minVnumFrom && area.VNumEnd == maxVnumFrom)
                     {
-                        area.vnumStart = vnumTo;
-                        area.vnumEnd = vnumMaxTo;// (maxVnumFrom - minVnumFrom) + vnumTo;
-                        foreach (var reset in area.resets)
+                        area.VNumStart = vnumTo;
+                        area.VNumEnd = vnumMaxTo;// (maxVnumFrom - minVnumFrom) + vnumTo;
+                        foreach (var reset in area.Resets)
                         {
                             if (reset.roomVnum >= minVnumFrom && reset.roomVnum <= maxVnumFrom)
                                 reset.roomVnum = reset.roomVnum - minVnumFrom + vnumTo;
@@ -2164,19 +2164,19 @@ namespace CrimsonStainedLands
             var area = ch.EditingArea ?? ch.Room.Area;
 
             ch.send("Next Vnums: Room {0}, NPC {1}, Item {2}\n\r",
-                area.rooms.Count > 0 ? area.rooms.Max(r => r.Key) + 1 : area.vnumStart,
-                area.NPCTemplates.Count > 0 ? area.NPCTemplates.Max(n => n.Key) + 1 : area.vnumStart,
-                area.ItemTemplates.Count > 0 ? area.ItemTemplates.Max(i => i.Key) + 1 : area.vnumStart);
+                area.Rooms.Count > 0 ? area.Rooms.Max(r => r.Key) + 1 : area.VNumStart,
+                area.NPCTemplates.Count > 0 ? area.NPCTemplates.Max(n => n.Key) + 1 : area.VNumStart,
+                area.ItemTemplates.Count > 0 ? area.ItemTemplates.Max(i => i.Key) + 1 : area.VNumStart);
         }
 
         public static void DoFreeVnumRanges(Character ch, string arguments)
         {
             AreaData last = null;
             using (new Character.Page(ch))
-                foreach (var area in AreaData.Areas.OrderBy(a => a.vnumStart))
+                foreach (var area in AreaData.Areas.OrderBy(a => a.VNumStart))
                 {
                     if (last != null)
-                        ch.send("Vnum range {0} - {1}  between {2} and {3}\n\r", last.vnumEnd + 1, area.vnumStart - 1, last.name, area.name);
+                        ch.send("Vnum range {0} - {1}  between {2} and {3}\n\r", last.VNumEnd + 1, area.VNumStart - 1, last.Name, area.Name);
 
                     last = area;
 
@@ -2192,18 +2192,18 @@ namespace CrimsonStainedLands
             if (!areaname.ISEMPTY() && !arguments.ISEMPTY() && !op.ISEMPTY())
             {
 
-                var area = AreaData.Areas.FirstOrDefault(a => a.name.IsName(areaname));
+                var area = AreaData.Areas.FirstOrDefault(a => a.Name.IsName(areaname));
                 var character = game.Instance.Info.connections.FirstOrDefault(p => p.Name.IsName(arguments, true));
 
 
                 if (character != null && area != null)
                 {
                     if (op == "+")
-                        area.builders += (area.builders.Length > 0 ? " " : "") + character.Name;
+                        area.Builders += (area.Builders.Length > 0 ? " " : "") + character.Name;
                     else if (op == "-")
                     {
                         var newbuilders = new StringBuilder();
-                        var builders = area.builders;
+                        var builders = area.Builders;
                         string builder = "";
                         while (!builders.ISEMPTY())
                         {
@@ -2211,8 +2211,8 @@ namespace CrimsonStainedLands
                             if (!builder.ISEMPTY() && !builder.IsName(character.Name, true))
                                 newbuilders.Append((newbuilders.Length > 0 ? " " : "") + builder);
                         }
-                        area.builders = newbuilders.ToString();
-                        ch.send("OK - Builders now " + area.builders + "\n\r");
+                        area.Builders = newbuilders.ToString();
+                        ch.send("OK - Builders now " + area.Builders + "\n\r");
                     }
                     else
                         ch.send("+ or -\n\r");
@@ -2633,7 +2633,7 @@ namespace CrimsonStainedLands
             if (int.TryParse(vnumString, out vnum))
             {
                 args = args.OneArgument(ref vnumString);
-                if ((area = (from a in AreaData.Areas where a.vnumStart >= vnum && a.vnumEnd <= vnum select a).FirstOrDefault()) == null)
+                if ((area = (from a in AreaData.Areas where a.VNumStart >= vnum && a.VNumEnd <= vnum select a).FirstOrDefault()) == null)
                 {
                     ch.send("area vnum not found.\n\r");
                     return;
@@ -2646,7 +2646,7 @@ namespace CrimsonStainedLands
                 else
                     ch.EditingArea = area;
             }
-            else if (!vnumString.ISEMPTY() && (area = (from a in AreaData.Areas where a.name.IsName(vnumString) select a).FirstOrDefault()) == null)
+            else if (!vnumString.ISEMPTY() && (area = (from a in AreaData.Areas where a.Name.IsName(vnumString) select a).FirstOrDefault()) == null)
             {
                 ch.send("Area not found.\n\r");
             }
@@ -2711,7 +2711,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.EditingArea.name = args;
+                ch.EditingArea.Name = args;
 
                 ch.EditingArea.saved = false;
                 ch.send("Done.\n\r");
@@ -2731,7 +2731,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.EditingArea.credits = args;
+                ch.EditingArea.Credits = args;
 
                 ch.EditingArea.saved = false;
                 ch.send("Done.\n\r");
@@ -2786,7 +2786,7 @@ namespace CrimsonStainedLands
 
                 foreach(var help in helps)
                 {
-                    ch.send("{0} :: {1} - {2}\n\r", help.area.name, help.vnum, help.keyword);
+                    ch.send("{0} :: {1} - {2}\n\r", help.area.Name, help.vnum, help.keyword);
                 }
             }
             else if ("create".StringPrefix(arg1))
@@ -2794,7 +2794,7 @@ namespace CrimsonStainedLands
 
                 if (int.TryParse(args, out var vnum))
                 {
-                    var area = AreaData.Areas.FirstOrDefault(a => vnum >= a.vnumStart && vnum <= a.vnumEnd);
+                    var area = AreaData.Areas.FirstOrDefault(a => vnum >= a.VNumStart && vnum <= a.VNumEnd);
                     if (area != null)
                     {
                         area.Helps.Add(ch.EditingHelp = new HelpData());
@@ -2822,7 +2822,7 @@ namespace CrimsonStainedLands
                         area.Helps.Add(ch.EditingHelp = new HelpData());
                         HelpData.Helps.Add(ch.EditingHelp);
                         ch.EditingHelp.area = area;
-                        ch.EditingHelp.vnum = Math.Max(area.vnumStart, area.Helps.Any() ? area.Helps.Max(h => h.vnum) + 10 : 1); ;
+                        ch.EditingHelp.vnum = Math.Max(area.VNumStart, area.Helps.Any() ? area.Helps.Max(h => h.vnum) + 10 : 1); ;
                         ch.EditingHelp.keyword = "";
                         ch.EditingHelp.text = "";
                         ch.EditingHelp.lastEditedOn = DateTime.Now;
@@ -2832,11 +2832,11 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    var area = AreaData.Areas.FirstOrDefault(a => a.name == "Help");
+                    var area = AreaData.Areas.FirstOrDefault(a => a.Name == "Help");
                     area.Helps.Add(ch.EditingHelp = new HelpData());
                     HelpData.Helps.Add(ch.EditingHelp);
                     ch.EditingHelp.area = area;
-                    ch.EditingHelp.vnum = Math.Max(area.vnumStart, area.Helps.Any() ? area.Helps.Max(h => h.vnum) + 10 : 1); ;
+                    ch.EditingHelp.vnum = Math.Max(area.VNumStart, area.Helps.Any() ? area.Helps.Max(h => h.vnum) + 10 : 1); ;
                     ch.EditingHelp.keyword = args;
                     ch.EditingHelp.text = "";
                     ch.EditingHelp.lastEditedOn = DateTime.Now;

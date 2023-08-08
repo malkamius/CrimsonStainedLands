@@ -10,28 +10,29 @@ namespace CrimsonStainedLands
     public class AreaData
     {
         public static List<AreaData> Areas = new List<AreaData>();
-        public string name;
+        public string Name;
         public bool saved = true;
-        public string fileName;
+        public string FileName { get; set; } = string.Empty;
+
         /// <summary>
         /// level summary
         /// </summary>
         public string info;
 
-        public int vnumStart;
-        public int vnumEnd;
-        public string builders;
-        public int security;
-        public string credits;
-        public short age;
+        public int VNumStart;
+        public int VNumEnd;
+        public string Builders;
+        public int Security;
+        public string Credits;
+        public short Age;
         public int OverRoomVnum;
         int LastPeopleCount = 0;
         public Dictionary<int, NPCTemplateData> NPCTemplates = new Dictionary<int, NPCTemplateData>();
         public Dictionary<int, ItemTemplateData> ItemTemplates = new Dictionary<int, ItemTemplateData>();
         public List<HelpData> Helps = new List<HelpData>();
 
-        public Dictionary<int, RoomData> rooms = new Dictionary<int, RoomData>();
-        public List<ResetData> resets = new List<ResetData>();
+        public Dictionary<int, RoomData> Rooms = new Dictionary<int, RoomData>();
+        public List<ResetData> Resets = new List<ResetData>();
 
         public List<Character> People = new List<Character>();
         public int Timer;
@@ -39,6 +40,7 @@ namespace CrimsonStainedLands
 
         public static void LoadAreas(bool headersOnly = false)
         {
+            DateTime loadstart = DateTime.Now;
             /// Now load area programs before area npcs and rooms, things referencing programs
             foreach (var file in Directory.GetFiles("data\\areas", "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
             {
@@ -48,8 +50,10 @@ namespace CrimsonStainedLands
 
             foreach(var area in Areas.ToArray())
             {
-                area.load(area.fileName);
+                area.Load(area.FileName);
             }
+
+            game.log("Loaded areas in {0}", DateTime.Now - loadstart);
 
             if (!headersOnly)
                 FixExits();
@@ -117,7 +121,7 @@ namespace CrimsonStainedLands
         {
             foreach (var area in Areas)
             {
-                foreach (var room in area.rooms.Values)
+                foreach (var room in area.Rooms.Values)
                 {
                     for(var index = 0; index < room.exits.Length; index++)
                     {
@@ -147,18 +151,17 @@ namespace CrimsonStainedLands
             }
         }
 
-        public static void resetAreas()
+        public static void ResetAreas()
         {
             foreach (var area in Areas)
             {
-                area.resetArea();
-                
+                area.ResetArea();
             }
         }
 
         private void RandomizeExits()
         {
-            foreach(var room in rooms.Values)
+            foreach(var room in Rooms.Values)
             {
                 if(room.flags.ISSET(RoomFlags.RandomExits))
                 {
@@ -188,9 +191,9 @@ namespace CrimsonStainedLands
         public AreaData(string file, bool headerOnly = false)
         {
             if (!headerOnly)
-                load(file);
+                Load(file);
             else
-                loadHeader(file);
+                LoadHeader(file);
         }
 
         public AreaData()
@@ -198,18 +201,12 @@ namespace CrimsonStainedLands
 
         }
 
-        public void loadHeader(string file)
+        public void LoadHeader(string file)
         {
             if (!string.IsNullOrEmpty(file))
             {
-                fileName = file;
+                FileName = file;
 
-                //var text = System.IO.File.ReadAllText(file);
-                //if (text.Contains("& ") || text.Contains(">>"))
-                //{
-                //    text = text.Replace("&", "&amp;");
-                //    System.IO.File.WriteAllText(file, text);
-                //}
                 XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
 
                 if (root.HasElement("AreaData"))
@@ -217,98 +214,97 @@ namespace CrimsonStainedLands
 
                     var areaData = root.Elements("AreaData").FirstOrDefault();
 
-                    name = areaData.GetElementValue("Name");
+                    Name = areaData.GetElementValue("Name");
 
-                    this.vnumStart = areaData.GetElementValueInt("vnumStart");
-                    this.vnumEnd = areaData.GetElementValueInt("vnumEnd");
+                    this.VNumStart = areaData.GetElementValueInt("vnumStart");
+                    this.VNumEnd = areaData.GetElementValueInt("vnumEnd");
 
                     info = areaData.GetElementValue("Info");
-                    builders = areaData.GetElementValue("Builders");
-                    security = areaData.GetElementValueInt("Security");
-                    credits = areaData.GetElementValue("Credits");
+                    Builders = areaData.GetElementValue("Builders");
+                    Security = areaData.GetElementValueInt("Security");
+                    Credits = areaData.GetElementValue("Credits");
                     OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
-                    if (name.ISEMPTY())
-                        game.log("Area " + fileName + "has no name");
-                    if (this.vnumStart == 0)
-                        game.log("Area " + name + " has no start vnum");
-                    if (this.vnumEnd == 0)
-                        game.log("Area " + name + " has no end vnum");
+                    if (Name.ISEMPTY())
+                        game.log("Area " + FileName + "has no name");
+                    if (this.VNumStart == 0)
+                        game.log("Area " + Name + " has no start vnum");
+                    if (this.VNumEnd == 0)
+                        game.log("Area " + Name + " has no end vnum");
 
                 }
             }
             AreaData.Areas.Add(this);
         }
+
         /// <summary>
         /// Load/reload an area file
         /// </summary>
         /// <param name="file"></param>
-        public void load(string file)
+        public void Load(string file)
         {
             if (!string.IsNullOrEmpty(file))
             {
-                fileName = file;
-
-                //var text = System.IO.File.ReadAllText(file);
-                //if (text.Contains("& ") || text.Contains(">>"))
-                //{
-                //    text = text.Replace("&", "&amp;");
-                //    System.IO.File.WriteAllText(file, text);
-                //}
+                FileName = file;
+                  
                 XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
-
+                
                 if (root.HasElement("AreaData"))
                 {
 
                     var areaData = root.Elements("AreaData").FirstOrDefault();
 
-                    name = areaData.GetElementValue("Name");
+                    Name = areaData.GetElementValue("Name");
 
-                    this.vnumStart = areaData.GetElementValueInt("vnumStart");
-                    this.vnumEnd = areaData.GetElementValueInt("vnumEnd");
+                    this.VNumStart = areaData.GetElementValueInt("vnumStart");
+                    this.VNumEnd = areaData.GetElementValueInt("vnumEnd");
 
                     info = areaData.GetElementValue("Info");
-                    builders = areaData.GetElementValue("Builders");
-                    security = areaData.GetElementValueInt("Security");
-                    credits = areaData.GetElementValue("Credits");
+                    Builders = areaData.GetElementValue("Builders");
+                    Security = areaData.GetElementValueInt("Security");
+                    Credits = areaData.GetElementValue("Credits");
                     OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
-                    if (name.ISEMPTY())
-                        game.log("Area " + fileName + "has no name");
-                    if (this.vnumStart == 0)
-                        game.log("Area " + name + " has no start vnum");
-                    if (this.vnumEnd == 0)
-                        game.log("Area " + name + " has no end vnum");
+                    if (Name.ISEMPTY())
+                        game.log("Area " + FileName + "has no name");
+                    if (this.VNumStart == 0)
+                        game.log("Area " + Name + " has no start vnum");
+                    if (this.VNumEnd == 0)
+                        game.log("Area " + Name + " has no end vnum");
 
                 }
 
                 // Clear rooms for a reload
-                foreach (var room in rooms.ToArray())
+                foreach (var room in Rooms.ToArray())
                     RoomData.Rooms.Remove(room.Key);
-                rooms.Clear();
+                Rooms.Clear();
 
-                loadRooms(root);
+                LoadRooms(root);
 
                 // Clear and reload item templates
                 foreach (var itemtemplate in ItemTemplates)
                     ItemTemplateData.Templates.Remove(itemtemplate.Key);
                 ItemTemplates.Clear();
-                loadItemTemplates(root);
+                LoadItemTemplates(root);
 
                 foreach (var npctemplate in NPCTemplates)
                     NPCTemplateData.Templates.Remove(npctemplate.Key);
                 NPCTemplates.Clear();
-                loadNPCTemplates(root);
+                LoadNPCTemplates(root);
+
+                foreach (var help in Helps)
+                    HelpData.Helps.Remove(help);
+                Helps.Clear();
+                LoadHelps(root);
 
 
-                loadHelps(root);
                 if(!AreaData.Areas.Contains(this))
                     AreaData.Areas.Add(this);
 
-                resets.Clear();
-                //if (System.IO.File.Exists("data\\updates\\" + System.IO.Path.GetFileNameWithoutExtension(fileName) + "-updates.xml"))
-                //    root = XElement.Load("data\\updates\\" + System.IO.Path.GetFileNameWithoutExtension(fileName)  + "-updates.xml", LoadOptions.PreserveWhitespace);
-                loadResets(root);
+                Resets.Clear();
+                
+                LoadResets(root);
 
-                loadQuests(root);
+                LoadQuests(root);
+                
                 // Prepare area for reset
                 Timer = 0;
 
@@ -317,7 +313,7 @@ namespace CrimsonStainedLands
             }
         }
 
-        public void loadQuests(XElement root)
+        public void LoadQuests(XElement root)
         {
             var quests = root.GetElement("Quests");
 
@@ -331,7 +327,7 @@ namespace CrimsonStainedLands
         /// Load help entries from an area element
         /// </summary>
         /// <param name="root"></param>
-        public void loadHelps(XElement root)
+        public void LoadHelps(XElement root)
         {
             var items = root.GetElement("Helps");
 
@@ -356,7 +352,7 @@ namespace CrimsonStainedLands
         /// Load rooms from an area element
         /// </summary>
         /// <param name="root"></param>
-        public void loadRooms(XElement root)
+        public void LoadRooms(XElement root)
         {
             var rooms = root.Elements("Rooms");
 
@@ -381,7 +377,7 @@ namespace CrimsonStainedLands
         /// Load NPC Templates from an area element
         /// </summary>
         /// <param name="root"></param>
-        public void loadNPCTemplates(XElement root)
+        public void LoadNPCTemplates(XElement root)
         {
             var npcs = root.Elements("NPCs");
 
@@ -404,7 +400,7 @@ namespace CrimsonStainedLands
         /// Load item templates from an area element
         /// </summary>
         /// <param name="root"></param>
-        public void loadItemTemplates(XElement root)
+        public void LoadItemTemplates(XElement root)
         {
             var items = root.GetElement("Items");
 
@@ -429,7 +425,7 @@ namespace CrimsonStainedLands
         /// Load resets from an area element
         /// </summary>
         /// <param name="root"></param>
-        public void loadResets(XElement root)
+        public void LoadResets(XElement root)
         {
             var resets = root.GetElement("Resets");
             if (resets != null || (root.Name == "Resets" && (resets = root) != null))
@@ -451,7 +447,7 @@ namespace CrimsonStainedLands
         /// Decrement reset timer. Execute resets for an area if timer has expired. 
         /// Reset door flags in an area.
         /// </summary>
-        public void resetArea(bool force = false)
+        public void ResetArea(bool force = false)
         {
             if (force) Timer = 1;
 
@@ -485,12 +481,12 @@ namespace CrimsonStainedLands
                 NPCData lastNPC = null;
                 ItemData lastItem = null;
 
-                foreach (var reset in resets)
+                foreach (var reset in Resets)
                 {
                     reset.execute(ref lastNPC, ref lastItem);
                 }
 
-                foreach (var room in rooms.Values)
+                foreach (var room in Rooms.Values)
                 {
                     foreach (var exit in room.exits)
                     {
@@ -521,28 +517,28 @@ namespace CrimsonStainedLands
             get
             {
                 return new XElement("AreaData",
-                    new XElement("Name", name),
+                    new XElement("Name", Name),
                     new XElement("Info", info),
-                    new XElement("VnumStart", vnumStart),
-                    new XElement("VnumEnd", vnumEnd),
-                    new XElement("Builders", builders),
-                    new XElement("Security", security),
-                    new XElement("Credits", credits),
+                    new XElement("VnumStart", VNumStart),
+                    new XElement("VnumEnd", VNumEnd),
+                    new XElement("Builders", Builders),
+                    new XElement("Security", Security),
+                    new XElement("Credits", Credits),
                     new XElement("OverRoomVnum", OverRoomVnum)
                     );
             }
         } // end Element
 
-        public void save()
+        public void Save()
         {
-            if (!fileName.ISEMPTY())
+            if (!FileName.ISEMPTY())
             {
                 var element = new XElement("Area");
                 element.Add(Element);
-                element.Add(new XElement("Rooms", from room in rooms select room.Value.Element));
+                element.Add(new XElement("Rooms", from room in Rooms select room.Value.Element));
                 element.Add(new XElement("NPCs", from npc in NPCTemplates select npc.Value.NPCTemplateElement));
                 element.Add(new XElement("Items", from item in ItemTemplates select item.Value.Element));
-                element.Add(new XElement("Resets", from reset in resets select reset.Element));
+                element.Add(new XElement("Resets", from reset in Resets select reset.Element));
                 if (Helps.Count > 0)
                 {
                     element.Add(new XElement("Helps", from help in Helps select help.Element));
@@ -551,7 +547,7 @@ namespace CrimsonStainedLands
                 {
                     element.Add(new XElement("Quests", from quest in Quests.Values select quest.Element));
                 }
-                element.Save(fileName);
+                element.Save(FileName);
                 saved = true;
             }
         }
@@ -563,7 +559,7 @@ namespace CrimsonStainedLands
             {
                 if (!area.saved || arguments.StringCmp("world"))
                 {
-                    area.save();
+                    area.Save();
                     areaCount++;
                 }
             }

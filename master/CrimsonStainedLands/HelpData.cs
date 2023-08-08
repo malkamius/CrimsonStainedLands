@@ -27,11 +27,11 @@ namespace CrimsonStainedLands
         public HelpData(AreaData area, XElement element)
         {
             this.area = area;
-            this.file = area.fileName;
+            this.file = area.FileName;
             vnum = element.GetElementValueInt("vnum", element.GetAttributeValueInt("vnum"));
             if(vnum == 0)
             {
-                vnum = Math.Max(this.area.vnumStart, this.area.Helps.Any()? this.area.Helps.Max(h => h.vnum) + 5 : 1);
+                vnum = Math.Max(this.area.VNumStart, this.area.Helps.Any()? this.area.Helps.Max(h => h.vnum) + 5 : 1);
                 area.saved = false;
             }
             level = element.GetElementValueInt("level", element.GetAttributeValueInt("level"));

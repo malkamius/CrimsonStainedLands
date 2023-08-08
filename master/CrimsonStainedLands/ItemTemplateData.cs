@@ -74,7 +74,7 @@ namespace CrimsonStainedLands
             }
             catch
             {
-                game.log("Bad Area.ItemTemplates.Add - vnum " + Vnum + " in area " + area != null ? area.name : "null");
+                game.log("Bad Area.ItemTemplates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
             }
             Level = element.GetElementValueInt("level");
 
@@ -190,11 +190,11 @@ namespace CrimsonStainedLands
                 if (!ItemTemplateData.Templates.ContainsKey(Vnum))
                     ItemTemplateData.Templates.Add(Vnum, this);
                 else
-                    game.log("Bad ItemTemplateData.Templates.Add - duplicate vnum " + Vnum + " in area " + (area != null ? area.name : "null"));
+                    game.log("Bad ItemTemplateData.Templates.Add - duplicate vnum " + Vnum + " in area " + (area != null ? area.Name : "null"));
             }
             catch
             {
-                game.log("Bad ItemTemplateData.Templates.Add - vnum " + Vnum + " in area " + (area != null ? area.name : "null"));
+                game.log("Bad ItemTemplateData.Templates.Add - vnum " + Vnum + " in area " + (area != null ? area.Name : "null"));
             }
 
             //if (!area.name.ToLower().Contains("astoria"))

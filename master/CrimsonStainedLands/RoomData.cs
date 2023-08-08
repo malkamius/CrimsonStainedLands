@@ -294,13 +294,13 @@ namespace CrimsonStainedLands
 
                 this.Area = area;
 
-                if (!area.rooms.ContainsKey(Vnum))
+                if (!area.Rooms.ContainsKey(Vnum))
                 {
-                    area.rooms.Add(Vnum, this);
+                    area.Rooms.Add(Vnum, this);
                 }
                 else
                 {
-                    game.log("Duplicate room vnum: {0} in {1}", Vnum, area.fileName);
+                    game.log("Duplicate room vnum: {0} in {1}", Vnum, area.FileName);
                 }
                 if (!Rooms.ContainsKey(Vnum))
                 {
@@ -308,7 +308,7 @@ namespace CrimsonStainedLands
                     Rooms.Add(Vnum, this);
                 }
                 else
-                    game.log("Duplicate room vnum: {0} in {1} conflicts with {2}", Vnum, area.fileName, Rooms[Vnum].Area.fileName);
+                    game.log("Duplicate room vnum: {0} in {1} conflicts with {2}", Vnum, area.FileName, Rooms[Vnum].Area.FileName);
 
             }
         } // End Constructor(AreaData, XElement)
@@ -353,7 +353,7 @@ namespace CrimsonStainedLands
             var result = new List<ResetData>();
             bool inRoom = false;
             if (Area != null)
-                foreach (var reset in Area.resets)
+                foreach (var reset in Area.Resets)
                 {
                     if ((reset.resetType == ResetTypes.NPC || reset.resetType == ResetTypes.Item))
                     {
