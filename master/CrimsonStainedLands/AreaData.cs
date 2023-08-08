@@ -39,14 +39,15 @@ namespace CrimsonStainedLands
         public int Timer;
         public Dictionary<int, Quest> Quests = new Dictionary<int, Quest>();
 
-        public static void LoadAreas(bool headersOnly = false)
+        public static void LoadAreas(bool headersOnly = false, bool loadPrograms = true)
         {
             DateTime loadstart = DateTime.Now;
             /// Now load area programs before area npcs and rooms, things referencing programs
             foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
             {
                 var area = new AreaData(file, true);
-                NLuaPrograms.LoadPrograms(area);
+                if(loadPrograms)
+                    NLuaPrograms.LoadPrograms(area);
             }
 
             foreach(var area in Areas.ToArray())

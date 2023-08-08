@@ -10,12 +10,12 @@ namespace CrimsonStainedLands
 {
     public class Settings
     {
-        public static int Port { get; private set; } = 4000;
-        public static string DataPath { get; private set; } = "..\\..\\data";
-        public static string AreasPath { get; private set; } = "..\\..\\data\\areas";
-        public static string PlayersPath { get; private set; } = "..\\..\\data\\players";
-        public static string GuildsPath{ get; private set; } = "..\\..\\data\\guilds";
-        public static string RacesPath { get; private set; } = "..\\..\\data\\races";
+        public static int Port { get; set; } = 4000;
+        public static string DataPath { get; set; } = "..\\..\\data";
+        public static string AreasPath { get; set; } = "..\\..\\data\\areas";
+        public static string PlayersPath { get; set; } = "..\\..\\data\\players";
+        public static string GuildsPath{ get; set; } = "..\\..\\data\\guilds";
+        public static string RacesPath { get; set; } = "..\\..\\data\\races";
 
         static Settings()
         {
