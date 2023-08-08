@@ -19,17 +19,17 @@ namespace CrimsonStainedLands
             player.send("The following bonus information is available:\n\r");
             if(ExperienceBonus > 1)
             {
-                player.send("Experience bonus: \\G{0}% - Ends {1}\\x\n\r", (ExperienceBonus - 1) * 100, ExperienceBonusEnds.ToString());
+                player.send("\\&FF8000Experience bonus: \\G{0}% - Ends {1}\\x\n\r", (ExperienceBonus - 1) * 100, ExperienceBonusEnds.ToString());
             }
             else
-                player.send("Experience bonus: \\Gnone\\x\n\r");
+                player.send("\\&FF8000Experience bonus: \\Gnone\\x\n\r");
 
             if (LearningBonus > 1)
             {
-                player.send("Learning bonus: \\G{0}% - Ends {1}\\x\n\r", (LearningBonus - 1) * 100, LearningBonusEnds.ToString());
+                player.send("\\&FF8000Learning bonus: \\G{0}% - Ends {1}\\x\n\r", (LearningBonus - 1) * 100, LearningBonusEnds.ToString());
             }
             else
-                player.send("Learning bonus: \\Gnone\\x\n\r");
+                player.send("\\&FF8000Learning bonus: \\Gnone\\x\n\r");
             player.send("\n\r");
         }
     }

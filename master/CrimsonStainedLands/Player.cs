@@ -318,6 +318,7 @@ namespace CrimsonStainedLands
                         try
                         {
                             connection.sendRaw("This character is being logged in elsewhere.\n\r");
+                            if(connection.socket != null)
                             connection.socket.Close();
                             connection.socket = null;
                         }
@@ -550,6 +551,7 @@ namespace CrimsonStainedLands
 
             if (notecount > 0)
                 send("{0} unread notes.\n\r", notecount);
+            send("\n");
             BonusInfo.DoBonus(this, "");
             if (!reconnect)
                 Position = Positions.Standing;
