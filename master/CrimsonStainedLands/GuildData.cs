@@ -34,7 +34,7 @@ namespace CrimsonStainedLands
         public Dictionary<int, GuildTitle> Titles = new Dictionary<int, GuildTitle>();
         public static void LoadGuilds()
         {
-            var element = XElement.Load("data\\guilds.xml", LoadOptions.PreserveWhitespace);
+            var element = XElement.Load(Settings.DataPath + "\\guilds.xml", LoadOptions.PreserveWhitespace);
 
             foreach (var guildElement in element.Elements())
             {
@@ -60,9 +60,9 @@ namespace CrimsonStainedLands
                         if ((race = PcRace.GetRace(raceName)) != null)
                             guild.races.Add(race);
 
-                    if (System.IO.File.Exists("data\\guilds\\" + guild.name + "-titles.xml"))
+                    if (System.IO.File.Exists(Settings.GuildsPath + "\\" + guild.name + "-titles.xml"))
                     {
-                        var titleselement = XElement.Load("data\\guilds\\" + guild.name + "-titles.xml");
+                        var titleselement = XElement.Load(Settings.GuildsPath + "\\" + guild.name + "-titles.xml");
 
                         foreach(var title in titleselement.Elements("Title"))
                         {
@@ -71,7 +71,7 @@ namespace CrimsonStainedLands
                         }
                     }
                     Guilds.Add(guild);
-                    game.log("Loaded {0} with {1} races", guild.name, guild.races.Count);
+                    Game.log("Loaded {0} with {1} races", guild.name, guild.races.Count);
                 }
             }
         }

@@ -71,7 +71,7 @@ namespace CrimsonStainedLands
             {
                 ch.send("Syntax: SetPlayerPassword {Player Name} {New Password} {Confirm New Password}\n\r");
             }
-            else if ((player = (from connection in game.Instance.Info.connections where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
+            else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
             {
                 ch.send("Could not find player.\n\r");
             }
@@ -97,13 +97,13 @@ namespace CrimsonStainedLands
             {
                 ch.send("Syntax: Advance {character} {level}");
             }
-            else if ((player = (from connection in game.Instance.Info.connections where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
+            else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
             {
                 ch.send("No player with that exact name found.\n\r");
             }
-            else if (level < 1 || level > game.MAX_LEVEL)
+            else if (level < 1 || level > Game.MAX_LEVEL)
             {
-                ch.send("Level must be between 1 and " + game.MAX_LEVEL);
+                ch.send("Level must be between 1 and " + Game.MAX_LEVEL);
             }
             else
             {
@@ -368,7 +368,7 @@ namespace CrimsonStainedLands
 
         public static void DoShutdown(Character ch, string arguments)
         {
-            game.shutdown();
+            Game.shutdown();
         }
 
         public static void DoStat(Character ch, string arguments)
@@ -831,7 +831,7 @@ namespace CrimsonStainedLands
 
             if (arg1.StringCmp("all"))
             {
-                foreach (var player in game.Instance.Info.connections)
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing && player != ch && player.Room != null && ch.CanSee(player))
                     {
@@ -1213,7 +1213,7 @@ namespace CrimsonStainedLands
 
         public static void DoReboot(Character ch, string arguments)
         {
-            game.reboot();
+            Game.reboot();
         }
 
         public static void DoImmortal(Character ch, string arguments)
@@ -1235,7 +1235,7 @@ namespace CrimsonStainedLands
                 if (other != ch && other.IsImmortal)
                     ch.Act("\\WImmortal - $n: {0}\\x\n\r", other, null, null, ActType.ToVictim, arguments);
             }
-            game.log("{0}: '{1}'", ch.Name, arguments);
+            Game.log("{0}: '{1}'", ch.Name, arguments);
             ch.Act("\\WImmortal - You: {0}\\x\n\r", null, null, null, ActType.ToChar, arguments);
         }
 
@@ -1407,7 +1407,7 @@ namespace CrimsonStainedLands
         //[Command.Command("forcetick", "Force a tick update to happen.", Positions.Dead, 0)]
         public static void DoForceTick(Character ch, string arguments)
         {
-            game.Instance.PerformTick();
+            Game.Instance.PerformTick();
             ch.send("OK.\n\r");
         }
 
@@ -1524,7 +1524,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY())
             {
-                foreach(var player in game.Instance.Info.connections)
+                foreach(var player in Game.Instance.Info.Connections)
                 {
                     if (player.SnoopedBy == ch) player.SnoopedBy = null;
                 }

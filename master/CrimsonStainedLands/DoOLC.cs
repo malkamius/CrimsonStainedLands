@@ -112,7 +112,7 @@ namespace CrimsonStainedLands
                 args = args.OneArgument(ref vnumEndString);
 
                 area.Name = nameString;
-                area.FileName = "data\\areas\\" + nameString + ".xml";
+                area.FileName = Settings.AreasPath + "\\" + nameString + ".xml";
                 if (!int.TryParse(vnumStartString, out area.VNumStart) || !int.TryParse(vnumEndString, out area.VNumEnd))
                 {
                     ch.send("Create Area \"name\" vnumstart vnumend");
@@ -2193,7 +2193,7 @@ namespace CrimsonStainedLands
             {
 
                 var area = AreaData.Areas.FirstOrDefault(a => a.Name.IsName(areaname));
-                var character = game.Instance.Info.connections.FirstOrDefault(p => p.Name.IsName(arguments, true));
+                var character = Game.Instance.Info.Connections.FirstOrDefault(p => p.Name.IsName(arguments, true));
 
 
                 if (character != null && area != null)

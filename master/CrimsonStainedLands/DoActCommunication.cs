@@ -255,7 +255,7 @@ namespace CrimsonStainedLands
                 if (other != ch && other.IsImmortal)
                     ch.Act("\\r$n prays '{0}'\\x\n\r", other, null, null, ActType.ToVictim, arguments);
             }
-            game.log("{0} prays '{1}'", ch.Name, arguments);
+            Game.log("{0} prays '{1}'", ch.Name, arguments);
             ch.Act("\\rYou pray to the gods for help!\\x\n\r", null, null, null, ActType.ToChar, arguments);
         }
 
@@ -285,7 +285,7 @@ namespace CrimsonStainedLands
                     if (other != ch && other.Flags.ISSET(ActFlags.NewbieChannel))
                         ch.Act("\\cNEWBIE ($n): {0}\\x\n\r", other, null, null, ActType.ToVictim, arguments);
                 }
-                game.log("{0} newbies '{1}'", ch.Name, arguments);
+                Game.log("{0} newbies '{1}'", ch.Name, arguments);
                 ch.send("\\cNEWBIE (You): {0}\\x\n\r", arguments);
             }
         }

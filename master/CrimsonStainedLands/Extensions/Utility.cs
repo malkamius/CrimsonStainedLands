@@ -474,7 +474,7 @@ namespace CrimsonStainedLands.Extensions
                 }
 
             if (!string.IsNullOrEmpty(search) && search.ToLower() != "none")
-                game.bug("EnumValue not found: {0} {1}", typeof(T).Name, search);
+                Game.bug("EnumValue not found: {0} {1}", typeof(T).Name, search);
             value = defaultValue;
             return false;
         }
@@ -508,7 +508,7 @@ namespace CrimsonStainedLands.Extensions
                     }
 
                 if (!found && !string.IsNullOrEmpty(flag))
-                    game.log("Flag " + flag + " not found. " + typeof(T).Name.ToString());
+                    Game.log("Flag " + flag + " not found. " + typeof(T).Name.ToString());
             }
             return found;
         }
@@ -542,7 +542,7 @@ namespace CrimsonStainedLands.Extensions
                     }
 
                 if (!found && !string.IsNullOrEmpty(flag))
-                    game.log("Flag " + flag + " not found. " + typeof(T).Name.ToString());
+                    Game.log("Flag " + flag + " not found. " + typeof(T).Name.ToString());
             }
             return found;
         }
@@ -746,7 +746,7 @@ namespace CrimsonStainedLands.Extensions
                 if (Utility.GetEnumValue<T>(flag, ref flagValue))
                     yield return flagValue;
                 else if(flag != "none")
-                    game.log("LoadFlagList - Flag " + typeof(T).Name + " " + flag + " not found.");
+                    Game.log("LoadFlagList - Flag " + typeof(T).Name + " " + flag + " not found.");
         }
 
         /// <summary>

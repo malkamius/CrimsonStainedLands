@@ -43,7 +43,7 @@ namespace CrimsonStainedLands
             {
                 character.Act("$n quaffs $p.", null, potion, null, ActType.ToRoom);
                 character.Act("You quaff $p.", null, potion, null, ActType.ToChar);
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
 
                 foreach (var spell in potion.Spells)
                 {
@@ -92,7 +92,7 @@ namespace CrimsonStainedLands
             {
                 character.Act("$n recites $p at $P.", null, scroll, targetItem, ActType.ToRoom);
                 character.Act("You recite $p at $P.", null, scroll, targetItem, ActType.ToChar);
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
 
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("scrolls") * 4 / 5)
                 {
@@ -116,7 +116,7 @@ namespace CrimsonStainedLands
             {
                 character.Act("$n recites $p at $N.", victim, scroll, null, ActType.ToRoom);
                 character.Act("You recite $p at $N.", victim, scroll, null, ActType.ToChar);
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
 
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("scrolls") * 4 / 5)
                 {
@@ -143,7 +143,7 @@ namespace CrimsonStainedLands
             {
                 character.Act("$n recites $p at $mself.", null, scroll, null, ActType.ToRoom);
                 character.Act("You recite $p at yourself.", null, scroll, null, ActType.ToChar);
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("scrolls") * 4 / 5)
                 {
                     character.send("You mispronounce a syllable.\n\r");
@@ -209,7 +209,7 @@ namespace CrimsonStainedLands
                     character.Act("$n zaps $mself with $p.", victim, wand, null, ActType.ToRoomNotVictim);
                     character.Act("You zap yourself with $p.", victim, wand, null, ActType.ToChar);
                 }
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
 
                 if (character.Level < wand.Level || Utility.NumberPercent() >= 20 + character.GetSkillPercentage("wands") * 4 / 5)
                 {
@@ -233,7 +233,7 @@ namespace CrimsonStainedLands
 
                 character.Act("$n zaps $P with $p.", victim, wand, zapTarget, ActType.ToRoom);
                 character.Act("You zap $P with $p.", victim, wand, zapTarget, ActType.ToChar);
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
                 if (character.Level < wand.Level || Utility.NumberPercent() >= 20 + character.GetSkillPercentage("wands") * 4 / 5)
                 {
                     character.Act("Your efforts with $p produce only smoke and sparks.", null, wand);
@@ -284,7 +284,7 @@ namespace CrimsonStainedLands
             {
                 character.Act("$n brandishes $p.", null, staff, null, ActType.ToRoom);
                 character.Act("You brandish $p.", null, staff, null, ActType.ToChar);
-                character.WaitState(game.PULSE_VIOLENCE);
+                character.WaitState(Game.PULSE_VIOLENCE);
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("talismans") * 4 / 5)
                 {
                     character.Act("You fail to invoke $p.\n\r", null, staff);

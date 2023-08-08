@@ -389,7 +389,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "request", Action = Character.DoRequest, Info = "Request an item from an NPC with a good alignment.", MinimumPosition = Positions.Resting });
 
             Commands.Add(new Command { Name = "toggle", Action = Character.DoToggle, Info = "List or Toggle an act flag on yourself.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "bug", Action = game.DoBug, Info = "Report a bug or typo.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "bug", Action = Game.DoBug, Info = "Report a bug or typo.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "map", Action = DoActMapper.DoMap, Info = "Display an ascii map of your current surroundings.", MinimumPosition = Positions.Dead });
 
             // IMM COMMANDS
@@ -454,9 +454,9 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "forcetick", Action = DoActWizard.DoForceTick, Info = "Force a tick update to happen.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "setplayerpassword", Action = DoActWizard.DoSetPlayerPassword, Info = "Set another player's password.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
 
-            Commands.Add(new Command { Name = "connections", Action = game.DoConnections, Info = "See connections to the mud.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
-            Commands.Add(new Command { Name = "banbyname", Action = game.DoBanByName, Info = "Ban a player name, connected or not.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
-            Commands.Add(new Command { Name = "banbyaddress", Action = game.DoBanByAddress, Info = "Ban a player by specifying their name if they are online or their ipaddress.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
+            Commands.Add(new Command { Name = "connections", Action = Game.DoConnections, Info = "See connections to the mud.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
+            Commands.Add(new Command { Name = "banbyname", Action = Game.DoBanByName, Info = "Ban a player name, connected or not.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
+            Commands.Add(new Command { Name = "banbyaddress", Action = Game.DoBanByAddress, Info = "Ban a player by specifying their name if they are online or their ipaddress.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
 
             Commands.Add(new Command { Name = "gecho", Action = Character.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
             Commands.Add(new Command { Name = "globalecho", Action = Character.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });

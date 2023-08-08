@@ -1105,7 +1105,7 @@ namespace CrimsonStainedLands
                     var percent = ch.GetSkillPercentage(skill);
                     var lvl = ch.GetLevelSkillLearnedAt(skill);
 
-                    if ((lvl < game.LEVEL_HERO || ch.IsImmortal) || percent > 1)  //if (lvl > 0 || percent > 1 || (ch.Level > lvl && lvl > 0))
+                    if ((lvl < Game.LEVEL_HERO || ch.IsImmortal) || percent > 1)  //if (lvl > 0 || percent > 1 || (ch.Level > lvl && lvl > 0))
                     {
                         if (lvl != lastLevel)
                         {
@@ -1187,7 +1187,7 @@ namespace CrimsonStainedLands
                     var percent = ch.GetSkillPercentage(skill);
                     var lvl = ch.GetLevelSkillLearnedAt(skill);
 
-                    if ((lvl <= game.LEVEL_HERO || ch.IsImmortal) || percent > 1) // || (ch.Level > lvl && lvl > 0))
+                    if ((lvl <= Game.LEVEL_HERO || ch.IsImmortal) || percent > 1) // || (ch.Level > lvl && lvl > 0))
                     {
                         if (lvl != lastLevel)
                         {
@@ -1301,10 +1301,10 @@ namespace CrimsonStainedLands
                 day, suf,
                 TimeInfo.MonthName);
 
-            var runningtime = DateTime.Now - game.Instance.GameStarted;
+            var runningtime = DateTime.Now - Game.Instance.GameStarted;
 
             ch.send("Server started at {0}.\n\rThe system time is {1}.\n\rGame has been running for {2} days, {3} hours and {4} minutes.\n\r", 
-                game.Instance.GameStarted, DateTime.Now, runningtime.Days, runningtime.Hours, runningtime.Minutes);
+                Game.Instance.GameStarted, DateTime.Now, runningtime.Days, runningtime.Hours, runningtime.Minutes);
 
             if (ch is Player)
             {

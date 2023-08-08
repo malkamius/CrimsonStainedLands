@@ -843,7 +843,7 @@ namespace CrimsonStainedLands
                     Affect.where = AffectWhere.ToAffects;
                     Affect.location = ApplyTypes.None;
                     Affect.modifier = 0;
-                    Affect.duration = game.PULSE_TICK *2;
+                    Affect.duration = Game.PULSE_TICK *2;
                     Affect.frequency= Frequency.Violence;
 
                     Affect.endMessage = "You stop burning.";

@@ -25,39 +25,42 @@ namespace CrimsonStainedLands
 
         public static void LoadSocials()
         {
-            var file = new FileInfo("data\\social.are");
-
-            if (file.Exists)
+            if (System.IO.File.Exists(Settings.DataPath + "\\social.area"))
             {
-                var stream = file.OpenText();
-                while (!stream.EndOfStream)
+                var file = new FileInfo(Settings.DataPath + "\\social.are");
+
+                if (file.Exists)
                 {
-                    var line = stream.ReadLine().Trim();
-                    if (!string.IsNullOrEmpty(line) && !line.StartsWith("#"))
+                    var stream = file.OpenText();
+                    while (!stream.EndOfStream)
                     {
-                        var social = new Social();
-                        var length = line.IndexOf(" ");
-                        if (length >= 0)
+                        var line = stream.ReadLine().Trim();
+                        if (!string.IsNullOrEmpty(line) && !line.StartsWith("#"))
                         {
-                            social.Name = line.Substring(0, length);
-                        }
-                        else
-                            social.Name = line;
+                            var social = new Social();
+                            var length = line.IndexOf(" ");
+                            if (length >= 0)
+                            {
+                                social.Name = line.Substring(0, length);
+                            }
+                            else
+                                social.Name = line;
 
-                        if(string.IsNullOrEmpty(social.Name))
-                        {
-                            continue;
-                        }
-                        if (readSocialField(stream, out social.CharNoArg))
-                            if (readSocialField(stream, out social.OthersNoArg))
-                                if (readSocialField(stream, out social.CharFound))
-                                    if (readSocialField(stream, out social.OthersFound))
-                                        if (readSocialField(stream, out social.VictimFound))
-                                            if (readSocialField(stream, out social.CharNotFound))
-                                                if (readSocialField(stream, out social.CharAuto))
-                                                    readSocialField(stream, out social.OthersAuto);
+                            if (string.IsNullOrEmpty(social.Name))
+                            {
+                                continue;
+                            }
+                            if (readSocialField(stream, out social.CharNoArg))
+                                if (readSocialField(stream, out social.OthersNoArg))
+                                    if (readSocialField(stream, out social.CharFound))
+                                        if (readSocialField(stream, out social.OthersFound))
+                                            if (readSocialField(stream, out social.VictimFound))
+                                                if (readSocialField(stream, out social.CharNotFound))
+                                                    if (readSocialField(stream, out social.CharAuto))
+                                                        readSocialField(stream, out social.OthersAuto);
 
-                        Socials.Add(social);
+                            Socials.Add(social);
+                        }
                     }
                 }
             }

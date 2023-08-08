@@ -220,7 +220,7 @@ public class NPCData : Character, IDisposable
                         LearnSkill(skill, skillElement.GetAttributeValueInt("Value"));
                     }
                     else
-                        game.bug("Skill for npc not found: {1}", skillElement.GetAttributeValue("Name"));
+                        Game.bug("Skill for npc not found: {1}", skillElement.GetAttributeValue("Name"));
                 }
             }
 

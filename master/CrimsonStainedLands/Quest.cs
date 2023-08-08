@@ -30,7 +30,7 @@ namespace CrimsonStainedLands
                     Quests.Add(Quest.Vnum, Quest);
                 }
                 else
-                    game.bug("Duplicate Quest Vnum {0} in area {1}", Quest.Vnum, area != null ? area.Name : "unknown");
+                    Game.bug("Duplicate Quest Vnum {0} in area {1}", Quest.Vnum, area != null ? area.Name : "unknown");
 
             }
         }

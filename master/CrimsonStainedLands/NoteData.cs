@@ -21,9 +21,9 @@ namespace CrimsonStainedLands
 
         public static void LoadNotes()
         {
-            var path = "data\\notes.xml";
-            if (!Directory.Exists("data"))
-                Directory.CreateDirectory("data");
+            var path =Settings.DataPath + "\\notes.xml";
+            if (!Directory.Exists(Settings.DataPath))
+                Directory.CreateDirectory(Settings.DataPath);
 
             if (File.Exists(path))
             {
@@ -48,9 +48,9 @@ namespace CrimsonStainedLands
 
         public static void SaveNotes()
         {
-            var path = "data\\notes.xml";
-            if (!Directory.Exists("data"))
-                Directory.CreateDirectory("data");
+            var path = Settings.DataPath + "\\notes.xml";
+            if (!Directory.Exists(Settings.DataPath))
+                Directory.CreateDirectory(Settings.DataPath);
             var element = new XElement("Notes");
             foreach (var note in Notes) 
             {

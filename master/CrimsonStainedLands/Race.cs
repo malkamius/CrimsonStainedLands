@@ -37,7 +37,7 @@ namespace CrimsonStainedLands
                 if (race.name.ToLower() == raceName.ToLower())
                     return race;
             }
-            game.log("Failed to find race " + raceName);
+            Game.log("Failed to find race " + raceName);
             return null;
         }
 
@@ -62,9 +62,9 @@ namespace CrimsonStainedLands
                 raceElement.Add(new XElement("Size", race.Size.ToString()));
                 raceElement.Add(new XAttribute("CanSpeak", race.CanSpeak));
                 raceElement.Add(new XAttribute("HasCoins", race.HasCoins));
-                if (!Directory.Exists("data\\races"))
-                    Directory.CreateDirectory("data\\races");
-                raceElement.Save("data\\races\\" + race.name + ".xml");
+                if (!Directory.Exists(Settings.RacesPath))
+                    Directory.CreateDirectory(Settings.RacesPath);
+                raceElement.Save(Settings.RacesPath + "\\" + race.name + ".xml");
             }
         }
 
@@ -112,7 +112,7 @@ namespace CrimsonStainedLands
             Races.Clear();
 
             var loadedRaces = new List<Race>();
-            foreach (var file in Directory.GetFiles("data\\races", "*.xml"))
+            foreach (var file in Directory.GetFiles(Settings.RacesPath, "*.xml"))
             {
                 var race = new Race(file);
 

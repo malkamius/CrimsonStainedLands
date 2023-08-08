@@ -12,7 +12,7 @@ namespace CrimsonStainedLands
 {
     public class NLuaPrograms
     {
-        private static string NLuaProgramsPath = @"data\areas";
+        private static string NLuaProgramsPath = Settings.AreasPath;
 
         public static Dictionary<string, NLuaProgram> Programs = new Dictionary<string, NLuaProgram>();
 
@@ -55,7 +55,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            game.log("LuaProgram {0} not found.", name);
+            Game.log("LuaProgram {0} not found.", name);
             return false;
         }
 
@@ -138,7 +138,7 @@ namespace CrimsonStainedLands
                         }
                         catch (Exception ex)
                         {
-                            game.log("Error executing lua script: {0}", ex.ToString());
+                            Game.log("Error executing lua script: {0}", ex.ToString());
                         }
                     }
 
@@ -291,7 +291,7 @@ namespace CrimsonStainedLands
 
             public void Log(string text)
             {
-                game.log(text);
+                Game.log(text);
             }
         }
 

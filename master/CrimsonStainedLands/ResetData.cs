@@ -133,7 +133,7 @@ namespace CrimsonStainedLands
                     {
                         if (maxCount < template.MaxCount)
                         {
-                            game.log("NPC " + spawnVnum + " has a maxcount of " + maxCount + " but template shows " + template.MaxCount + " resets" + (area != null ? " in area " + area.Name + "." : ""));
+                            Game.log("NPC " + spawnVnum + " has a maxcount of " + maxCount + " but template shows " + template.MaxCount + " resets" + (area != null ? " in area " + area.Name + "." : ""));
                             // This will affect save world
                             //maxCount = template.MaxCount;
                         }
@@ -144,9 +144,9 @@ namespace CrimsonStainedLands
                         lastNPC = null;
                 }
                 else if (room == null)
-                    game.log("Room " + roomVnum + " not found for reset of NPC " + spawnVnum + (area != null ? " in area " + area.Name + "." : ""));
+                    Game.log("Room " + roomVnum + " not found for reset of NPC " + spawnVnum + (area != null ? " in area " + area.Name + "." : ""));
                 else if (template == null)
-                    game.log("NPC " + spawnVnum + " not found for reset to room " + roomVnum + (area != null ? " in area " + area.Name + "." : ""));
+                    Game.log("NPC " + spawnVnum + " not found for reset to room " + roomVnum + (area != null ? " in area " + area.Name + "." : ""));
             }
             else if (resetType == ResetTypes.Item)
             {
@@ -175,7 +175,7 @@ namespace CrimsonStainedLands
                     //lastItem = null;
                 }
                 else
-                    game.log("Room " + roomVnum + " or Item " + spawnVnum + " not found for reset");
+                    Game.log("Room " + roomVnum + " or Item " + spawnVnum + " not found for reset");
             }
             else if (resetType == ResetTypes.Put)
             {
@@ -200,7 +200,7 @@ namespace CrimsonStainedLands
                     }
                 }
                 else if (lastItem != null)
-                    game.log("Item " + spawnVnum + " not found for put reset");
+                    Game.log("Item " + spawnVnum + " not found for put reset");
             }
             else if (resetType == ResetTypes.Give)
             {
@@ -219,7 +219,7 @@ namespace CrimsonStainedLands
                     }
                 }
                 else if (lastNPC != null)
-                    game.log("Item " + spawnVnum + " not found for give reset");
+                    Game.log("Item " + spawnVnum + " not found for give reset");
             }
             else if (resetType == ResetTypes.Equip)
             {
@@ -239,7 +239,7 @@ namespace CrimsonStainedLands
                     }
                 }
                 else if (lastNPC != null)
-                    game.log("Item " + spawnVnum + " not found for give reset");
+                    Game.log("Item " + spawnVnum + " not found for give reset");
             }
             else if (resetType == ResetTypes.EquipRandom)
             {
@@ -263,7 +263,7 @@ namespace CrimsonStainedLands
                     }
                 }
                 else if (lastNPC != null)
-                    game.log("Item " + spawnVnum + " not found for give reset");
+                    Game.log("Item " + spawnVnum + " not found for give reset");
             }
 
         } // end execute

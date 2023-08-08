@@ -825,15 +825,15 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                System.IO.File.WriteAllText("data\\corpses_and_pits.xml", itemData.ToStringFormatted());
+                System.IO.File.WriteAllText(Settings.DataPath + "\\corpses_and_pits.xml", itemData.ToStringFormatted());
             }
         }
 
         public static void LoadCorpsesAndPits()
         {
-            if (System.IO.File.Exists("data\\corpses_and_pits.xml"))
+            if (System.IO.File.Exists(Settings.DataPath + "\\corpses_and_pits.xml"))
             {
-                XElement itemsData = XElement.Load("data\\corpses_and_pits.xml");
+                XElement itemsData = XElement.Load(Settings.DataPath + "\\corpses_and_pits.xml");
 
                 foreach (var itemElement in itemsData.Elements())
                 {

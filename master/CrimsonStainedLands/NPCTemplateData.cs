@@ -75,7 +75,7 @@ namespace CrimsonStainedLands
             }
             catch
             {
-                game.log("Bad Area.NPCTemplates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
+                Game.log("Bad Area.NPCTemplates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
             }
 
             if (element.HasElement("Flags"))
@@ -154,7 +154,7 @@ namespace CrimsonStainedLands
                         Learned[skill] = new LearnedSkillSpell() { Percentage = skillElement.GetAttributeValueInt("Value"), Level = 1, Skill = skill, SkillName = skill.name };
                     }
                     else
-                        game.bug("Skill for npc {0} not found: {1}", Vnum, skillElement.GetAttributeValue("Name"));
+                        Game.bug("Skill for npc {0} not found: {1}", Vnum, skillElement.GetAttributeValue("Name"));
                 }
             }
             Position = Positions.Standing;
@@ -295,7 +295,7 @@ namespace CrimsonStainedLands
             }
             catch
             {
-                game.log("Bad NPCTemplateData.Templates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
+                Game.log("Bad NPCTemplateData.Templates.Add - vnum " + Vnum + " in area " + area != null ? area.Name : "null");
             }
 
         }

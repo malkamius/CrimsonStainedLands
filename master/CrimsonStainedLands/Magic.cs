@@ -383,7 +383,7 @@ namespace CrimsonStainedLands
 
             if (spell.spellFun is null)
             {
-                game.bug("ObjectCastSpell: bad spell {0}.", spell.name);
+                Game.bug("ObjectCastSpell: bad spell {0}.", spell.name);
                 return;
             }
 
@@ -398,7 +398,7 @@ namespace CrimsonStainedLands
             switch (spell.targetType)
             {
                 default:
-                    game.bug("ItemCastSpell: bad target for spell {0}.", spell.name);
+                    Game.bug("ItemCastSpell: bad target for spell {0}.", spell.name);
                     return;
 
                 case TargetTypes.targetIgnore:
@@ -1811,7 +1811,7 @@ namespace CrimsonStainedLands
                 || ch.Room.flags.ISSET(RoomFlags.NoRecall)
                 || (victim.IsNPC && victim.Flags.ISSET(ActFlags.Aggressive))
                 || victim.Level >= (level + 10)
-                || (!victim.IsNPC && victim.Level >= game.LEVEL_IMMORTAL)
+                || (!victim.IsNPC && victim.Level >= Game.LEVEL_IMMORTAL)
                 //|| (ch->in_room->vnum == 23610)  /* Enforcer entrance */
                 || victim.Fighting != null
                 //|| (victim.IsNPC && ISSET(victim->imm_flags, IMM_SUMMON))
@@ -2442,7 +2442,7 @@ namespace CrimsonStainedLands
                         }
                         catch (Exception ex)
                         {
-                            game.bug(ex.ToString());
+                            Game.bug(ex.ToString());
                         }
 
                     }
@@ -3817,7 +3817,7 @@ namespace CrimsonStainedLands
                     healer);
                 return;
             }
-            ch.WaitState(game.PULSE_VIOLENCE);
+            ch.WaitState(Game.PULSE_VIOLENCE);
 
             if (ch.Silver > cost)
                 ch.Silver -= cost;
@@ -4342,7 +4342,7 @@ namespace CrimsonStainedLands
                     Affect.location = ApplyTypes.None;
                     Affect.flags.SETBIT(AffectFlags.Immolation);
                     Affect.modifier = 0;
-                    Affect.duration = game.PULSE_TICK * 2;
+                    Affect.duration = Game.PULSE_TICK * 2;
                     Affect.frequency = Frequency.Violence;
 
                     Affect.endMessage = "You stop burning.";
@@ -4558,10 +4558,10 @@ namespace CrimsonStainedLands
                     dam /= 2;
                 if (checkSector)
                 {
-                    victim.WaitState(game.PULSE_VIOLENCE * 2);
+                    victim.WaitState(Game.PULSE_VIOLENCE * 2);
                     dam *= 2;
                 }
-                else victim.WaitState(game.PULSE_VIOLENCE);
+                else victim.WaitState(Game.PULSE_VIOLENCE);
 
                 Combat.Damage(ch, victim, dam, spell, WeaponDamageTypes.Bash);
             }

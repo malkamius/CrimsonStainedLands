@@ -66,13 +66,13 @@ namespace CrimsonStainedLands
         {
             text = string.Format(text, arguments);
 
-            game.log("WIZNET ({0}) :: {1} :: {2}", ch != null && !ch.Name.ISEMPTY() ? ch.Name : item != null ? "item " + item.Vnum : "nobody", flag, text);
+            Game.log("WIZNET ({0}) :: {1} :: {2}", ch != null && !ch.Name.ISEMPTY() ? ch.Name : item != null ? "item " + item.Vnum : "nobody", flag, text);
             
             var monitorentry = MonitorEntries.FirstOrDefault(me => me.Flag == flag);
 
             if (monitorentry != null)
             {
-                foreach (var imm in game.Instance.Info.connections)
+                foreach (var imm in Game.Instance.Info.Connections)
                 {
                     if (imm.state == Player.ConnectionStates.Playing && imm.socket != null && imm.Level >= monitorentry.Level && imm.WiznetFlags.ISSET(flag))
                     {

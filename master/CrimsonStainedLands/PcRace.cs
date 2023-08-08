@@ -93,7 +93,7 @@ namespace CrimsonStainedLands
                 if (race.name.ToLower() == raceName.ToLower() || (StringPrefix && race.name.StringPrefix(raceName)))
                     return race;
             }
-            game.log("Failed to find race " + raceName);
+            Game.log("Failed to find race " + raceName);
             return null;
         }
 
@@ -116,16 +116,16 @@ namespace CrimsonStainedLands
                     racedata.Add(race.Stats.Element("MaxStats"));
                 element.Add(racedata);
             }
-            if (!Directory.Exists("data"))
-                Directory.CreateDirectory("data");
-            element.Save("data\\PC_Races.xml");
+            if (!Directory.Exists(Settings.DataPath))
+                Directory.CreateDirectory(Settings.DataPath);
+            element.Save(Settings.DataPath + "\\PC_Races.xml");
         }
 
         public static void LoadRaces()
         {
-            if (File.Exists("data\\PC_Races.xml"))
+            if (File.Exists(Settings.DataPath + "\\PC_Races.xml"))
             {
-                XElement Races = XElement.Load("data\\PC_Races.xml");
+                XElement Races = XElement.Load(Settings.DataPath + "\\PC_Races.xml");
                 var loadedRaces = new List<PcRace>();
 
                 try
@@ -190,15 +190,15 @@ namespace CrimsonStainedLands
                         loadedRaces.Add(race);
                         race.BaseRace = Race.GetRace(race.name);
 
-                        if (race.BaseRace == null) { game.bug("*** Race not found for PC Race"); }
+                        if (race.BaseRace == null) { Game.bug("*** Race not found for PC Race"); }
                     }
                     PcRace.PcRaces.Clear();
                     PcRace.PcRaces.AddRange(loadedRaces);
-                    game.log("Loaded " + loadedRaces.Count + " races.");
+                    Game.log("Loaded " + loadedRaces.Count + " races.");
                 }
                 catch (Exception ex)
                 {
-                    game.log("Exception in Load Races - " + ex.ToString());
+                    Game.log("Exception in Load Races - " + ex.ToString());
                 }
             }
         }

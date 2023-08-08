@@ -287,13 +287,13 @@ namespace CrimsonStainedLands
             if ((spell = SkillLookup(name)) != null)
                 spell.AutoCast = func;
             else
-                game.log("Skill {0} not found to set autocast on.", name);
+                Game.log("Skill {0} not found to set autocast on.", name);
         }
 
         private static void LoadSkills()
         {
             SkillSpell skill;
-            var element = XElement.Load("data\\skilllevels.xml");
+            var element = XElement.Load(Settings.DataPath + "\\skilllevels.xml");
 
             foreach (var skElement in element.Elements("SkillSpell"))
             {
@@ -336,10 +336,10 @@ namespace CrimsonStainedLands
                                 skill.spellFun = (SpellFunc)method.CreateDelegate(typeof(SpellFunc));
                             }
                             else
-                                game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                         }
                         else
-                            game.log("Type {0} not found", SpellFuncType);
+                            Game.log("Type {0} not found", SpellFuncType);
                     }
 
                     if (!(SpellFuncType = skElement.GetAttributeValue("TickFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("TickFuncName")).ISEMPTY())
@@ -355,10 +355,10 @@ namespace CrimsonStainedLands
                                 skill.TickFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                             }
                             else
-                                game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                         }
                         else
-                            game.log("Type {0} not found", SpellFuncType);
+                            Game.log("Type {0} not found", SpellFuncType);
                     }
 
                     if (!(SpellFuncType = skElement.GetAttributeValue("EndFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("EndFuncName")).ISEMPTY())
@@ -374,10 +374,10 @@ namespace CrimsonStainedLands
                                 skill.EndFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                             }
                             else
-                                game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                         }
                         else
-                            game.log("Type {0} not found", SpellFuncType);
+                            Game.log("Type {0} not found", SpellFuncType);
                     }
                     
                     if (skElement.GetAttributeValue("AutoCast").StringCmp("false"))
@@ -398,7 +398,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    skill = new SkillSpell(skname, skname, null, game.PULSE_PER_SECOND, true);
+                    skill = new SkillSpell(skname, skname, null, Game.PULSE_PER_SECOND, true);
                     Utility.GetEnumValue<TargetTypes>(skElement.GetAttributeValue("TargetType", "targetIgnore"), ref skill.targetType);
                     Utility.GetEnumValue<Positions>(skElement.GetAttributeValue("MinimumPosition", "Standing"), ref skill.minimumPosition);
                     Utility.GetEnumValues<SkillSpellTypes>(skElement.GetAttributeValue("SkillTypes", "Skill"), ref skill.SkillTypes);
@@ -412,7 +412,7 @@ namespace CrimsonStainedLands
                     skill.MessageItemToRoom = skElement.GetAttributeValue("MessageItemToRoom");
                     skill.Prerequisites = skElement.GetAttributeValue("Prerequisites");
                     skill.PrerequisitePercentage = skElement.GetAttributeValueInt("PrerequisitePercentage");
-                    skill.waitTime = skElement.GetAttributeValueInt("WaitTime", game.PULSE_VIOLENCE);
+                    skill.waitTime = skElement.GetAttributeValueInt("WaitTime", Game.PULSE_VIOLENCE);
                     skill.AutoCastScript = skElement.GetAttributeValue("AutoCastScript");
                     //if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
                     if (skElement.GetAttributeValue("AutoCast", "true") == "false")
@@ -432,10 +432,10 @@ namespace CrimsonStainedLands
                                 skill.spellFun = (SpellFunc)method.CreateDelegate(typeof(SpellFunc));
                             }
                             else
-                                game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                         }
                         else
-                            game.log("Type {0} not found", SpellFuncType);
+                            Game.log("Type {0} not found", SpellFuncType);
                     }
                     if (!(SpellFuncType = skElement.GetAttributeValue("TickFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("TickFuncName")).ISEMPTY())
                     {
@@ -450,10 +450,10 @@ namespace CrimsonStainedLands
                                 skill.TickFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                             }
                             else
-                                game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                         }
                         else
-                            game.log("Type {0} not found", SpellFuncType);
+                            Game.log("Type {0} not found", SpellFuncType);
                     }
 
                     if (!(SpellFuncType = skElement.GetAttributeValue("EndFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("EndFuncName")).ISEMPTY())
@@ -469,10 +469,10 @@ namespace CrimsonStainedLands
                                 skill.EndFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                             }
                             else
-                                game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                         }
                         else
-                            game.log("Type {0} not found", SpellFuncType);
+                            Game.log("Type {0} not found", SpellFuncType);
                     }
                     foreach (var levelelement in skElement.Elements("SkillLevel"))
                     {
@@ -493,14 +493,14 @@ namespace CrimsonStainedLands
         {
             SkillSpell skill;
             
-            if (!System.IO.File.Exists("data\\songs.xml"))
+            if (!System.IO.File.Exists(Settings.DataPath + "\\songs.xml"))
                 return;
 
             //var element = XElement.Load("data\\songs.xml", LoadOptions.PreserveWhitespace);
             var settings = new XmlReaderSettings();
             settings.IgnoreWhitespace = true;
             settings.ConformanceLevel = ConformanceLevel.Fragment;
-            using (var xmlReader = XmlReader.Create("data\\songs.xml", settings))
+            using (var xmlReader = XmlReader.Create(Settings.DataPath + "\\songs.xml", settings))
             {
                 var element = XElement.Load(xmlReader);
                 foreach (var skElement in element.Elements("Song"))
@@ -547,10 +547,10 @@ namespace CrimsonStainedLands
                                     skill.spellFun = (SpellFunc)method.CreateDelegate(typeof(SpellFunc));
                                 }
                                 else
-                                    game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                    Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                             }
                             else
-                                game.log("Type {0} not found", SpellFuncType);
+                                Game.log("Type {0} not found", SpellFuncType);
                         }
                         if (!(SpellFuncType = skElement.GetAttributeValue("TickFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("TickFuncName")).ISEMPTY())
                         {
@@ -565,10 +565,10 @@ namespace CrimsonStainedLands
                                     skill.TickFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                                 }
                                 else
-                                    game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                    Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                             }
                             else
-                                game.log("Type {0} not found", SpellFuncType);
+                                Game.log("Type {0} not found", SpellFuncType);
                         }
 
                         if (!(SpellFuncType = skElement.GetAttributeValue("EndFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("EndFuncName")).ISEMPTY())
@@ -584,10 +584,10 @@ namespace CrimsonStainedLands
                                     skill.EndFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                                 }
                                 else
-                                    game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                    Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                             }
                             else
-                                game.log("Type {0} not found", SpellFuncType);
+                                Game.log("Type {0} not found", SpellFuncType);
                         }
                         foreach (var levelelement in skElement.Elements("SkillLevel"))
                         {
@@ -603,7 +603,7 @@ namespace CrimsonStainedLands
                     }
                     else
                     {
-                        skill = new SkillSpell(skname, skname, null, game.PULSE_PER_SECOND, true);
+                        skill = new SkillSpell(skname, skname, null, Game.PULSE_PER_SECOND, true);
                         Utility.GetEnumValue<TargetTypes>(skElement.GetAttributeValue("TargetType", "targetIgnore"), ref skill.targetType);
                         Utility.GetEnumValue<Positions>(skElement.GetAttributeValue("MinimumPosition", "Standing"), ref skill.minimumPosition);
                         Utility.GetEnumValues<SkillSpellTypes>(skElement.GetAttributeValue("SkillTypes", "Skill"), ref skill.SkillTypes);
@@ -618,7 +618,7 @@ namespace CrimsonStainedLands
                         //skill.Lyrics = skElement.GetAttributeValue("Lyrics").Trim();
                         skill.Prerequisites = skElement.GetAttributeValue("Prerequisites");
                         skill.PrerequisitePercentage = skElement.GetAttributeValueInt("PrerequisitePercentage");
-                        skill.waitTime = skElement.GetAttributeValueInt("WaitTime", game.PULSE_VIOLENCE);
+                        skill.waitTime = skElement.GetAttributeValueInt("WaitTime", Game.PULSE_VIOLENCE);
                         skill.Lyrics = skElement.GetElementValue("Lyrics", skill.Lyrics).Trim();
                         skill.AutoCastScript = skElement.GetAttributeValue("AutoCastScript");
                         //if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
@@ -639,10 +639,10 @@ namespace CrimsonStainedLands
                                     skill.spellFun = (SpellFunc)method.CreateDelegate(typeof(SpellFunc));
                                 }
                                 else
-                                    game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                    Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                             }
                             else
-                                game.log("Type {0} not found", SpellFuncType);
+                                Game.log("Type {0} not found", SpellFuncType);
                         }
                         if (!(SpellFuncType = skElement.GetAttributeValue("TickFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("TickFuncName")).ISEMPTY())
                         {
@@ -657,10 +657,10 @@ namespace CrimsonStainedLands
                                     skill.TickFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                                 }
                                 else
-                                    game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                    Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                             }
                             else
-                                game.log("Type {0} not found", SpellFuncType);
+                                Game.log("Type {0} not found", SpellFuncType);
                         }
 
                         if (!(SpellFuncType = skElement.GetAttributeValue("EndFuncType")).ISEMPTY() && !(SpellFuncName = skElement.GetAttributeValue("EndFuncName")).ISEMPTY())
@@ -676,10 +676,10 @@ namespace CrimsonStainedLands
                                     skill.EndFunction = (TickFunc)method.CreateDelegate(typeof(TickFunc));
                                 }
                                 else
-                                    game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
+                                    Game.log("Method {0} not found in type {1}", SpellFuncName, SpellFuncType);
                             }
                             else
-                                game.log("Type {0} not found", SpellFuncType);
+                                Game.log("Type {0} not found", SpellFuncType);
                         }
                         foreach (var levelelement in skElement.Elements("SkillLevel"))
                         {
@@ -751,7 +751,7 @@ namespace CrimsonStainedLands
                new XElement("Lyrics", "\n" + sk.Lyrics.TOSTRINGTRIM() + "\n    ") : null
                        )
                 );
-            System.IO.File.WriteAllText("data\\songs.xml", element.ToStringFormatted());
+            System.IO.File.WriteAllText(Settings.DataPath + "\\songs.xml", element.ToStringFormatted());
             //element.Save("data\\songs.xml");
         }
 
@@ -813,7 +813,7 @@ namespace CrimsonStainedLands
                        new XAttribute("PrerequisitePercentage", sk.guildPreRequisiteSkillPercentage[guildlevel.Key]) : null,
                        new XAttribute("Rating", 1)))));
             //element.Save("data\\skilllevels.xml");
-            System.IO.File.WriteAllText("data\\skilllevels.xml", element.ToStringFormatted());
+            System.IO.File.WriteAllText(Settings.DataPath + "\\skilllevels.xml", element.ToStringFormatted());
         }
 
         public static SkillSpell SkillLookup(string name)
@@ -829,7 +829,7 @@ namespace CrimsonStainedLands
                 }
             }
             if (!name.ISEMPTY())
-                game.log("Skill not found: {0}", name);
+                Game.log("Skill not found: {0}", name);
 
             return null;
         }

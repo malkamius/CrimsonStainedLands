@@ -28,7 +28,7 @@ namespace CrimsonStainedLands
             this.Spell = SkillSpell.SkillLookup(SpellName);
 
             if(Spell == null ) {
-                game.log("Unknown spell in ItemSpellData: {0}", SpellName);
+                Game.log("Unknown spell in ItemSpellData: {0}", SpellName);
             }
         }
 

@@ -130,7 +130,7 @@ namespace CrimsonStainedLands
 
             // Check if the damage exceeds 500, log a message if true
             if (damage > 500)
-                game.log(ch.Name + " did more than 500 damage in one hit.");
+                Game.log(ch.Name + " did more than 500 damage in one hit.");
 
             // Perform actions on the attacker (ch) if it exists
             if (ch != null)
@@ -291,7 +291,7 @@ namespace CrimsonStainedLands
                 ch != victim &&
                 victim.Room == ch.Room &&
                 damage > 0 &&
-                victim.Wait < game.PULSE_VIOLENCE / 2)
+                victim.Wait < Game.PULSE_VIOLENCE / 2)
             {
                 // Check flee conditions and execute fleeing
                 if (((victim.Flags.ISSET(ActFlags.Wimpy) && Utility.Random(0, 4) == 0 && victim.HitPoints < victim.MaxHitPoints / 5)) ||
@@ -313,7 +313,7 @@ namespace CrimsonStainedLands
                     victim.Room == ch.Room &&
                     allowflee &&
                     victim.HitPoints < player.Wimpy &&
-                    victim.Wait < game.PULSE_VIOLENCE / 2)
+                    victim.Wait < Game.PULSE_VIOLENCE / 2)
                 {
                     Combat.DoFlee(victim, "");
                 }
@@ -927,7 +927,7 @@ namespace CrimsonStainedLands
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
                 ch.send("You fall flat on your face.\n\r");
-                ch.WaitState(game.PULSE_VIOLENCE * 1);
+                ch.WaitState(Game.PULSE_VIOLENCE * 1);
                 return;
             }
             ItemData shield;
@@ -950,7 +950,7 @@ namespace CrimsonStainedLands
             else if (CheckAcrobatics(ch, victim)) return;
             else if (victim.FindAffect(SkillSpell.SkillLookup("protective shield")) != null)
             {
-                ch.WaitState(game.PULSE_VIOLENCE);
+                ch.WaitState(Game.PULSE_VIOLENCE);
                 ch.Act("You try to bash $N but fall straight through $M.\n\r", victim, type: ActType.ToChar);
                 ch.Act("$n tries to bash $N but falls straight through $M.\n\r", victim, type: ActType.ToRoomNotVictim);
             }
@@ -965,15 +965,15 @@ namespace CrimsonStainedLands
                 victim.send("{0} bashes you to the ground.\n\r", ch.Display(victim));
 
                 Combat.Damage(ch, victim, dam, skill);
-                ch.WaitState(game.PULSE_VIOLENCE * 2);
-                victim.WaitState(game.PULSE_VIOLENCE * 1);
+                ch.WaitState(Game.PULSE_VIOLENCE * 2);
+                victim.WaitState(Game.PULSE_VIOLENCE * 1);
                 ch.CheckImprove(skill, true, 1);
                 CheckCheapShot(victim);
                 CheckGroundControl(victim);
             }
             else
             {
-                ch.WaitState(game.PULSE_VIOLENCE * 1);
+                ch.WaitState(Game.PULSE_VIOLENCE * 1);
                 ch.send("You fall flat on your face.\n\r");
                 ch.Position = Positions.Sitting;
                 ch.CheckImprove(skill, false, 1);
@@ -1035,7 +1035,7 @@ namespace CrimsonStainedLands
 
                 Combat.Damage(ch, victim, dam, skill);
                 ch.WaitState(skill.waitTime);
-                victim.WaitState(game.PULSE_VIOLENCE * 1);
+                victim.WaitState(Game.PULSE_VIOLENCE * 1);
                 ch.CheckImprove(skill, true, 1);
                 CheckCheapShot(victim);
                 CheckGroundControl(victim);
@@ -1401,7 +1401,7 @@ namespace CrimsonStainedLands
                 if (weapon.WeaponDamageType != null)
                     damagenoun = weapon.WeaponDamageType.Message.ToString().ToLower();
                 else
-                    game.bug("{0} has null weapon damage message on {1}", weapon.Vnum, ch.Name);
+                    Game.bug("{0} has null weapon damage message on {1}", weapon.Vnum, ch.Name);
             }
 
             // Check for special conditions that affect the hit
@@ -1971,7 +1971,7 @@ namespace CrimsonStainedLands
                     weapon = null;
 
                 Combat.oneHit(ch, victim, weapon);
-                ch.WaitState(game.PULSE_VIOLENCE);
+                ch.WaitState(Game.PULSE_VIOLENCE);
             }
             else if (victim == ch)
                 ch.send("Suicide is a mortal sin.\n\r");
@@ -2534,7 +2534,7 @@ namespace CrimsonStainedLands
 
             if (victim.FindAffect(SkillSpell.SkillLookup("protective shield")) != null)
             {
-                ch.WaitState(game.PULSE_VIOLENCE);
+                ch.WaitState(Game.PULSE_VIOLENCE);
                 ch.Act("You try to shield jab $N but miss $M.\n\r", victim, type: ActType.ToChar);
                 ch.Act("$n tries to shield jab $N but miss $M.\n\r", victim, type: ActType.ToRoomNotVictim);
             }
@@ -3574,9 +3574,9 @@ namespace CrimsonStainedLands
                     ch.Act("You grunt in pain as $n lands a particularly vicious kick!", victim, type: ActType.ToVictim);
                     ch.Act("$N grunts in pain as $n lands a particularly vicious kick!", victim, type: ActType.ToRoomNotVictim);
                     dam = dam * 2;
-                    victim.WaitState(game.PULSE_VIOLENCE);
+                    victim.WaitState(Game.PULSE_VIOLENCE);
                 }
-                victim.WaitState(game.PULSE_VIOLENCE);
+                victim.WaitState(Game.PULSE_VIOLENCE);
                 ch.CheckImprove(skill, true, 1);
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
             }
@@ -3887,7 +3887,7 @@ namespace CrimsonStainedLands
                 ch.Act("You attempt to start a flurry, but fail.", victim, type: ActType.ToChar);
                 ch.Act("$n flails out wildly with $s swords but blunders.", type: ActType.ToRoom);
                 ch.CheckImprove(skill, false, 2);
-                ch.WaitState(2 * game.PULSE_VIOLENCE);
+                ch.WaitState(2 * Game.PULSE_VIOLENCE);
                 return;
             }
 
@@ -3945,7 +3945,7 @@ namespace CrimsonStainedLands
 
             }
             ch.CheckImprove(skill, true, 1);
-            ch.WaitState(2 * game.PULSE_VIOLENCE);
+            ch.WaitState(2 * Game.PULSE_VIOLENCE);
             if ((numhits == 2))
             {
                 ch.MovementPoints -= 25;
@@ -4028,7 +4028,7 @@ namespace CrimsonStainedLands
                 ch.Act("You attempt to start drumming with your maces, but fail.", victim, type: ActType.ToChar);
                 ch.Act("$n attempts to start drumming with two maces, but fails.", type: ActType.ToRoom);
                 ch.CheckImprove(skill, false, 1);
-                ch.WaitState(2 * game.PULSE_VIOLENCE);
+                ch.WaitState(2 * Game.PULSE_VIOLENCE);
                 return;
             }
 
@@ -4069,7 +4069,7 @@ namespace CrimsonStainedLands
             }
             Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
             ch.CheckImprove(skill, true, 1);
-            ch.WaitState(2 * game.PULSE_VIOLENCE);
+            ch.WaitState(2 * Game.PULSE_VIOLENCE);
             return;
         }
 
@@ -5288,7 +5288,7 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            ch.WaitState(game.PULSE_VIOLENCE);
+            ch.WaitState(Game.PULSE_VIOLENCE);
             if (chance >= Utility.NumberPercent())
             {
 
@@ -5339,7 +5339,7 @@ namespace CrimsonStainedLands
             }
             else if (chance >= Utility.NumberPercent())
             {
-                ch.WaitState(game.PULSE_VIOLENCE);
+                ch.WaitState(Game.PULSE_VIOLENCE);
                 if (tointercept != null && tointercept.Fighting != null)
                 {
                     tointercept.Fighting = ch;
@@ -5351,7 +5351,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.WaitState(game.PULSE_VIOLENCE);
+                ch.WaitState(Game.PULSE_VIOLENCE);
                 ch.Act("$n tries to intercept $N, but fails.", tointercept, type: ActType.ToRoomNotVictim);
                 ch.Act("$n tries to intercept you, but fails.", tointercept, type: ActType.ToVictim);
                 ch.Act("You try to intercept $N, but fail.", tointercept, type: ActType.ToChar);
@@ -5850,7 +5850,7 @@ namespace CrimsonStainedLands
                 ch.Act("$n headbutts $N.", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("$n headbutts you.", victim, type: ActType.ToVictim);
                 ch.Act("You headbutt $N.", victim, type: ActType.ToChar);
-                victim.WaitState(game.PULSE_VIOLENCE * 2);
+                victim.WaitState(Game.PULSE_VIOLENCE * 2);
                 dam = Utility.Random(dam_each[level], dam_each[level] * 2);
                 ch.CheckImprove(skill, true, 1);
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
@@ -6095,7 +6095,7 @@ namespace CrimsonStainedLands
 
                 dam = Utility.Random(dam_each[level], dam_each[level] * 2);
                 ch.CheckImprove(skill, true, 1);
-                victim.WaitState(game.PULSE_VIOLENCE * 2);
+                victim.WaitState(Game.PULSE_VIOLENCE * 2);
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Pierce);
             }
             else
@@ -7983,7 +7983,7 @@ namespace CrimsonStainedLands
                 dam += Utility.Random(ch.Level / 2, ch.Level);
                 dam += Utility.Random(ch.Level / 5, ch.Level / 4);
 
-                victim.WaitState(game.PULSE_VIOLENCE);
+                victim.WaitState(Game.PULSE_VIOLENCE);
 
                 Damage(ch, victim, dam, skill);
                 ch.CheckImprove(skill, true, 1);
@@ -8063,7 +8063,7 @@ namespace CrimsonStainedLands
                 dam += Utility.Random(ch.Level / 5, ch.Level / 4);
                 dam = dam * 3 / 2;
 
-                victim.WaitState(game.PULSE_VIOLENCE);
+                victim.WaitState(Game.PULSE_VIOLENCE);
 
                 Damage(ch, victim, dam, skill);
                 ch.CheckImprove(skill, true, 1);
@@ -8249,7 +8249,7 @@ namespace CrimsonStainedLands
                 dam += Utility.Random(ch.Level / 5, ch.Level / 4);
                 dam = dam * 5 / 2;
 
-                victim.WaitState(game.PULSE_VIOLENCE);
+                victim.WaitState(Game.PULSE_VIOLENCE);
 
                 Damage(ch, victim, dam, skill);
                 ch.CheckImprove(skill, true, 1);
@@ -8341,7 +8341,7 @@ namespace CrimsonStainedLands
                         dam += Utility.Random(ch.Level / 5, ch.Level / 4);
                         dam = dam * 3;
 
-                        victim.WaitState(game.PULSE_VIOLENCE);
+                        victim.WaitState(Game.PULSE_VIOLENCE);
 
                         Damage(ch, victim, dam, skill);
                     }
@@ -9031,7 +9031,7 @@ namespace CrimsonStainedLands
                 ch.CheckImprove(skill, true, 1);
 
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
-                victim.WaitState(game.PULSE_VIOLENCE);
+                victim.WaitState(Game.PULSE_VIOLENCE);
                 CheckGroundControl(victim);
                 CheckCheapShot(victim);
                 return true;
@@ -9951,7 +9951,7 @@ namespace CrimsonStainedLands
                 ch.Act("You lash $N with $p and pull $M to the ground.", victim, wield, type: ActType.ToChar);
                 ch.CheckImprove(skill, true, 1);
                 Combat.Damage(ch, victim, damage, skill, wield != null ? wield.WeaponDamageType.Type : WeaponDamageTypes.Sting);
-                victim.WaitState(game.PULSE_VIOLENCE * 2);
+                victim.WaitState(Game.PULSE_VIOLENCE * 2);
                 CheckCheapShot(victim);
                 CheckGroundControl(victim);
             }
@@ -10439,7 +10439,7 @@ namespace CrimsonStainedLands
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
                 ch.send("You don't know how to do that.\n\r");
-                ch.WaitState(game.PULSE_VIOLENCE * 1);
+                ch.WaitState(Game.PULSE_VIOLENCE * 1);
                 return;
             }
             ItemData shield;
@@ -10463,7 +10463,7 @@ namespace CrimsonStainedLands
 
             else if (victim.FindAffect(SkillSpell.SkillLookup("protective shield")) != null)
             {
-                ch.WaitState(game.PULSE_VIOLENCE);
+                ch.WaitState(Game.PULSE_VIOLENCE);
                 ch.Act("You try to shield bash $N but miss $M.\n\r", victim, type: ActType.ToChar);
                 ch.Act("$n tries to shield bash $N but miss $M.\n\r", victim, type: ActType.ToRoomNotVictim);
             }
@@ -10478,15 +10478,15 @@ namespace CrimsonStainedLands
                 victim.send("{0} shield bashes you to the ground.\n\r", ch.Display(victim));
 
                 Combat.Damage(ch, victim, dam, skill);
-                ch.WaitState(game.PULSE_VIOLENCE * 2);
-                victim.WaitState(game.PULSE_VIOLENCE * 1);
+                ch.WaitState(Game.PULSE_VIOLENCE * 2);
+                victim.WaitState(Game.PULSE_VIOLENCE * 1);
                 ch.CheckImprove(skill, true, 1);
                 CheckCheapShot(victim);
                 CheckGroundControl(victim);
             }
             else
             {
-                ch.WaitState(game.PULSE_VIOLENCE * 1);
+                ch.WaitState(Game.PULSE_VIOLENCE * 1);
                 ch.send("You failed to shield bash.\n\r");
                 ch.CheckImprove(skill, false, 1);
             }
@@ -10614,7 +10614,7 @@ namespace CrimsonStainedLands
                 ch.Act("$n smashes $s palm forward, quickly stricking you with a powerful attack.\n\r", victim, type: ActType.ToVictim);
 
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
-                victim.WaitState(game.PULSE_VIOLENCE * 1);
+                victim.WaitState(Game.PULSE_VIOLENCE * 1);
                 ch.CheckImprove(skill, true, 1);
                 CheckCheapShot(ch, victim);
             }
@@ -11163,7 +11163,7 @@ namespace CrimsonStainedLands
 
                 if (!victim.IsAffected(AffectFlags.Flying))
                 {
-                    victim.WaitState(game.PULSE_VIOLENCE * 2);
+                    victim.WaitState(Game.PULSE_VIOLENCE * 2);
                 }
                 ch.CheckImprove(skill, true, 1);
                 CheckCheapShot(victim);

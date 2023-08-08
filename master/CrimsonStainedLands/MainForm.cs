@@ -27,12 +27,11 @@ namespace CrimsonStainedLands
         private void MainForm_Load(object sender, EventArgs e)
         {
             Visible = false;
-
-
         }
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
+            //Settings.Save();
             if (loading)
             {
                 loading = false;
@@ -43,20 +42,9 @@ namespace CrimsonStainedLands
                 notifyIcon.Visible = true;
                 notifyIcon.ContextMenu = new ContextMenu(new MenuItem[] { new MenuItem("Show", notifyIcon_Show), new MenuItem("Exit", notifyIcon_Exit) });
 
-                if (!System.IO.File.Exists("Settings.xml"))
-                {
-                    var settings = new XElement("Settings", new XAttribute("Port", 4000), new XAttribute("MaxPlayersOnlineEver", 0));
-                    settings.Save("Settings.xml");
-                }
-                else
-                {
-                    var settings = XElement.Load("Settings.xml");
-                    game.MaxPlayersOnlineEver = settings.GetAttributeValueInt("MaxPlayersOnlineEver", 0);
-                    port = settings.GetAttributeValueInt("Port", 4000);
-                    
-                }
+                port = Settings.Port;
                 Text = string.Format("CrimsonStainedLands - {0}", port);
-                game.Launch(port, this);
+                Game.Launch(port, this);
                 syncTimer.Enabled = true;
             }
         }
@@ -65,7 +53,7 @@ namespace CrimsonStainedLands
         {
             try
             {
-                game.Instance.Dispose();
+                Game.Instance.Dispose();
             }
             catch { }
             exit = true;
@@ -95,7 +83,7 @@ namespace CrimsonStainedLands
         private void shutdownButton_Click(object sender, EventArgs e)
         {
             exit = true;
-            game.shutdown();
+            Game.shutdown();
 
             Close();
         }
@@ -103,7 +91,7 @@ namespace CrimsonStainedLands
         private void restartButton_Click(object sender, EventArgs e)
         {
             exit = true;
-            game.shutdown();
+            Game.shutdown();
 
             Close();
             System.Diagnostics.Process.Start(Application.ExecutablePath);
@@ -117,7 +105,7 @@ namespace CrimsonStainedLands
                 if (selected != null)
                 {
                     ((Player)selected).socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("You have been kicked.\n\r"));
-                    game.CloseSocket((Player)selected);
+                    Game.CloseSocket((Player)selected);
                 }
             }
             catch { }
@@ -129,11 +117,11 @@ namespace CrimsonStainedLands
 
         }
 
-        public void sync(game.gameInfo info)
+        public void sync(Game.GameInfo info)
         {
             try
             {
-                if (info != null && info.log != null)
+                if (info != null && info.Log != null)
                 {
                     var text = info.RetrieveLog();
 
@@ -156,7 +144,7 @@ namespace CrimsonStainedLands
                     //this.playersListBox.Items.Clear();
 
 
-                    playersListBox.DataSource = new List<Player>(from connection in info.connections where connection.socket != null select connection);
+                    playersListBox.DataSource = new List<Player>(from connection in info.Connections where connection.socket != null select connection);
                     //playersListBox.ValueMember = "name";
                     playersListBox.DisplayMember = "name";
 
@@ -181,7 +169,7 @@ namespace CrimsonStainedLands
         {
             SuspendLayout();
             logRichTextBox.SuspendLayout();
-            sync(game.Instance.Info);
+            sync(Game.Instance.Info);
             logRichTextBox.ResumeLayout();
             ResumeLayout();
         }

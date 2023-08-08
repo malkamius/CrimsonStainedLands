@@ -610,7 +610,7 @@ namespace CrimsonStainedLands
                     ch.Act("$n legsweeps $N with $p.", victim, wield, type: ActType.ToRoomNotVictim);
                     ch.Act("$n legsweeps you with $p.", victim, wield, type: ActType.ToVictim);
                     ch.Act("You legsweep $N with $p.", victim, wield, type: ActType.ToChar);
-                    victim.WaitState(game.PULSE_VIOLENCE * 2);
+                    victim.WaitState(Game.PULSE_VIOLENCE * 2);
                     dam = Utility.Random(10, ch.Level);
                     ch.CheckImprove(skill, true, 1);
                     Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
@@ -1208,7 +1208,7 @@ namespace CrimsonStainedLands
                     CheckEnhancedDamage(ch, ref damage);
                     Combat.Damage(ch, victim, (int)damage, skill, wield.WeaponDamageType.Type);
 
-                    victim.WaitState(game.PULSE_VIOLENCE * 2);
+                    victim.WaitState(Game.PULSE_VIOLENCE * 2);
                 }
                 else
                 {
@@ -1291,7 +1291,7 @@ namespace CrimsonStainedLands
                     }
                     else
                     {
-                        victim.WaitState(game.PULSE_VIOLENCE);
+                        victim.WaitState(Game.PULSE_VIOLENCE);
                     }
                 }
                 else

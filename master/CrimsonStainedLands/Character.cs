@@ -372,7 +372,7 @@ namespace CrimsonStainedLands
         public int ArmorSlash = 0;
         public int ArmorExotic = 0;
         public Positions DefaultPosition;
-        public bool IsImmortal => Level > game.LEVEL_HERO && !IsNPC;
+        public bool IsImmortal => Level > Game.LEVEL_HERO && !IsNPC;
         public bool IsAwake => Position > Positions.Sleeping;
 
         public bool IS_OUTSIDE => Room != null && !Room.flags.ISSET(RoomFlags.Indoors) && Room.sector != SectorTypes.Inside;
@@ -396,7 +396,7 @@ namespace CrimsonStainedLands
         {
             if (onlooker != null && !onlooker.CanSee(this))
             {
-                if (!this.IsNPC && this.Level >= game.LEVEL_IMMORTAL && this.Flags.ISSET(ActFlags.WizInvis))
+                if (!this.IsNPC && this.Level >= Game.LEVEL_IMMORTAL && this.Flags.ISSET(ActFlags.WizInvis))
                     return "An Immortal";
                 else
                     return "someone";
@@ -851,13 +851,13 @@ namespace CrimsonStainedLands
                 return;
 
             /*ch->exp = UMAX( exp_per_level(ch,ch->pcdata->points), ch->exp + gain );*/
-            if (Level < game.LEVEL_HERO)
+            if (Level < Game.LEVEL_HERO)
                 Xp += gain;
 
             if (Xp > XpTotal)
                 XpTotal = Xp;
 
-            while (Level < game.LEVEL_HERO && Xp >=
+            while (Level < Game.LEVEL_HERO && Xp >=
                 XpToLevel * (Level))
             {
                 AdvanceLevel();
@@ -1661,7 +1661,7 @@ namespace CrimsonStainedLands
                         if (!string.IsNullOrEmpty(social.OthersFound) && !string.IsNullOrEmpty(social.CharFound) && !IsNPC && victim.IsNPC && victim.IsAwake)
                         {
                             // Perform additional social command actions when the character is not an NPC, the victim is an NPC and awake
-                            switch (game.Instance.random.Next(0, 12))
+                            switch (Game.Instance.random.Next(0, 12))
                             {
                                 case 0:
                                 case 1:
@@ -2824,7 +2824,7 @@ namespace CrimsonStainedLands
                 ch.Dispose();
                 ((Player)ch).socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("\nGoodbye!\n\r"));
 
-                game.CloseSocket((Player) ch, true);
+                Game.CloseSocket((Player) ch, true);
             }
         }
 
@@ -2877,7 +2877,7 @@ namespace CrimsonStainedLands
             StringBuilder whoList = new StringBuilder();
             int playersOnline = 0;
             whoList.AppendLine("You can see:");
-            foreach (var connection in game.Instance.Info.connections)
+            foreach (var connection in Game.Instance.Info.Connections)
             {
                 if (connection.state == Player.ConnectionStates.Playing && connection.socket != null && (!connection.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= connection.Level))
                 {
@@ -2892,8 +2892,8 @@ namespace CrimsonStainedLands
                 }
             }
             whoList.Append("Visible players: " + playersOnline + "\n\r");
-            whoList.Append("Max players online at once since last reboot: " + game.Instance.MaxPlayersOnline + "\n\r");
-            whoList.Append("Max players online at once ever: " + game.MaxPlayersOnlineEver + "\n\r");
+            whoList.Append("Max players online at once since last reboot: " + Game.Instance.MaxPlayersOnline + "\n\r");
+            whoList.Append("Max players online at once ever: " + Game.MaxPlayersOnlineEver + "\n\r");
 
             using (new Page(ch))
                 ch.SendToChar(whoList.ToString());
@@ -4421,7 +4421,7 @@ namespace CrimsonStainedLands
             {
                 if (victim == null)
                 {
-                    game.bug("Act: null vch with TO_VICT.");
+                    Game.bug("Act: null vch with TO_VICT.");
                     return;
                 }
 
@@ -7060,7 +7060,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in game.Instance.Info.connections)
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing)
                     {
@@ -7083,7 +7083,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in game.Instance.Info.connections)
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch.Room != null && player.Room.Area == ch.Room.Area)
@@ -7107,7 +7107,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in game.Instance.Info.connections)
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch != null && ch.Room != null && player.Room == ch.Room)
@@ -7123,10 +7123,10 @@ namespace CrimsonStainedLands
             }
         }
 
-        public bool HasBuilderPermission(AreaData area) => area != null && (area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC));
-        public bool HasBuilderPermission(RoomData room) => room.Area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
-        public bool HasBuilderPermission(ItemTemplateData item) => item.Area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
-        public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.Builders.IsName(Name, true) || (Level == game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(AreaData area) => area != null && (area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC));
+        public bool HasBuilderPermission(RoomData room) => room.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(ItemTemplateData item) => item.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
 
     } // end of character
 } // end namespace

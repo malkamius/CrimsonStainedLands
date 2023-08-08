@@ -28,7 +28,7 @@ namespace CrimsonStainedLands
         public StringBuilder output = new StringBuilder();
         private string password;
 
-        public game game;
+        public Game game;
         public DateTime LastSaveTime = DateTime.MinValue;
         public TimeSpan TotalPlayTime = TimeSpan.Zero;
         public DateTime LastReadNote;
@@ -73,13 +73,13 @@ namespace CrimsonStainedLands
 
         static Player()
         {
-            if (System.IO.File.Exists("data\\invalidnames.txt"))
+            if (System.IO.File.Exists(Settings.DataPath + "\\invalidnames.txt"))
             {
-                InvalidNames = System.IO.File.ReadAllText("data\\invalidnames.txt").Replace("\n", " ").Replace("\r", " ");
+                InvalidNames = System.IO.File.ReadAllText(Settings.DataPath + "\\invalidnames.txt").Replace("\n", " ").Replace("\r", " ");
             }
         }
 
-        public Player(game game, Socket socket)
+        public Player(Game game, Socket socket)
         {
             this.game = game;
             this.socket = socket;
@@ -94,7 +94,7 @@ namespace CrimsonStainedLands
             //}catch (Exception e)
             //{
             //    game.bug(e.ToString());
-            game.log("New connection from " + socket.RemoteEndPoint.ToString());
+            Game.log("New connection from " + socket.RemoteEndPoint.ToString());
             //}
 
             state = ConnectionStates.GetName;
@@ -215,14 +215,14 @@ namespace CrimsonStainedLands
                 }
                 Name = line[0].ToString().ToUpper() + line.Substring(1).ToLower();
 
-                if (game.CheckIsBanned(Name, string.Empty))
+                if (Game.CheckIsBanned(Name, string.Empty))
                 {
                     WizardNet.Wiznet(WizardNet.Flags.Logins, "Banned Login Attempt - {0} at {1}", null, null, Name, Address);
 
                     try
                     {
                         sendRaw("You are banned.\n\r");
-                        game.CloseSocket(this, true);
+                        Game.CloseSocket(this, true);
                     }
                     catch
                     {
@@ -231,16 +231,16 @@ namespace CrimsonStainedLands
                 }
 
                 send("What is your password? ");
-                if (System.IO.File.Exists("data\\players\\" + Name + ".xml"))
+                if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
                 {
-                    if (LoadCharacterFile("data\\players\\" + Name + ".xml"))
+                    if (LoadCharacterFile(Settings.PlayersPath + "\\" + Name + ".xml"))
                         state = ConnectionStates.GetPassword;
                     else
                         state = ConnectionStates.GetNewPassword;
                 }
-                else if (System.IO.File.Exists("data\\" + Name + ".chr"))
+                else if (System.IO.File.Exists(Settings.DataPath + "\\" + Name + ".chr"))
                 {
-                    if (LoadCharacterFile("data\\" + Name + ".chr"))
+                    if (LoadCharacterFile(Settings.DataPath + "\\" + Name + ".chr"))
                         state = ConnectionStates.GetPassword;
                     else
                         state = ConnectionStates.GetNewPassword;
@@ -292,7 +292,7 @@ namespace CrimsonStainedLands
             {
                 if (MD5.ComputeHash(line + "salt") == password)
                 {
-                    if (game.Instance.Info.connections.Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
+                    if (Game.Instance.Info.Connections.Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
                     {
                         state = ConnectionStates.GetPlayerAlreadyLoggedIn;
                         send("This player is already connected, continuing will disconnect them. Continue? ");
@@ -305,7 +305,7 @@ namespace CrimsonStainedLands
                 else
                 {
                     sendRaw("Incorrect password!\n\r");
-                    game.CloseSocket(this, true, false);
+                    Game.CloseSocket(this, true, false);
                     return true;
                 }
             }
@@ -313,7 +313,7 @@ namespace CrimsonStainedLands
             {
                 if ("yes".StringPrefix(line))
                 {
-                    foreach (var connection in game.Instance.Info.connections.ToArray().Where(connection => connection.Name == Name && connection != this))
+                    foreach (var connection in Game.Instance.Info.Connections.ToArray().Where(connection => connection.Name == Name && connection != this))
                     {
                         try
                         {
@@ -332,7 +332,7 @@ namespace CrimsonStainedLands
 
                                 try
                                 {
-                                    game.CloseSocket(this, true, false);
+                                    Game.CloseSocket(this, true, false);
                                 }
                                 catch { }
 
@@ -345,7 +345,7 @@ namespace CrimsonStainedLands
                             connection.Address = this.Address;
                             connection.ConnectExistingPlayer(true);
                             this.socket = null;
-                            game.Info.connections.Remove(this);
+                            game.Info.Connections.Remove(this);
 
                         }
                         catch { }
@@ -355,7 +355,7 @@ namespace CrimsonStainedLands
                 else
                 {
                     sendRaw("Goodbye.\n\r");
-                    game.CloseSocket(this, true);
+                    Game.CloseSocket(this, true);
                 }
 
             }
@@ -499,7 +499,7 @@ namespace CrimsonStainedLands
                 line = line.Substring(0, newLineIndex);//;
                 input.Remove(0, newLineIndex + 1);
                 line = line.Trim('\n', '\r');
-                if (line.Length > 120 && this.Level < game.LEVEL_IMMORTAL)
+                if (line.Length > 120 && this.Level < Game.LEVEL_IMMORTAL)
                 {
                     line = "";
                     send("Line too long.\n\r");
@@ -529,12 +529,12 @@ namespace CrimsonStainedLands
 
             int playersonline = 0;
 
-            if ((playersonline = game.Info.connections.Count(p => p.state == ConnectionStates.Playing)) > game.Instance.MaxPlayersOnline)
+            if ((playersonline = game.Info.Connections.Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
             {
-                game.Instance.MaxPlayersOnline = playersonline;
-                if (playersonline > game.MaxPlayersOnlineEver)
+                Game.Instance.MaxPlayersOnline = playersonline;
+                if (playersonline > Game.MaxPlayersOnlineEver)
                 {
-                    game.MaxPlayersOnlineEver = playersonline;
+                    Game.MaxPlayersOnlineEver = playersonline;
                     if (System.IO.File.Exists("Settings.xml"))
                     {
                         var settings = XElement.Load("Settings.xml");
@@ -577,8 +577,8 @@ namespace CrimsonStainedLands
             if (reconnect)
             {
                 Act("$n regains their animation.", type: ActType.ToRoom);
-                game.Info.connections.Remove(this);
-                game.Info.connections.Add(this);
+                game.Info.Connections.Remove(this);
+                game.Info.Connections.Add(this);
             }
         }
 
@@ -705,22 +705,22 @@ namespace CrimsonStainedLands
 
                 if(Guild.name == "mage") LearnSkill(SkillSpell.SkillLookup("hand to hand"), 75);
 
-                if (System.IO.File.Exists("data\\players\\" + Name + ".xml"))
+                if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
                 {
                     sendRaw("It seems someone else has taken this name. Unable to continue.\n\r");
-                    game.CloseSocket(this, true);
+                    Game.CloseSocket(this, true);
                     return false;
                 }
 
                 this.state = ConnectionStates.Playing;
                 WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
                 int playersonline = 0;
-                if ((playersonline = game.Info.connections.Count(p => p.state == ConnectionStates.Playing)) > game.Instance.MaxPlayersOnline)
+                if ((playersonline = game.Info.Connections.Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
                 {
-                    game.Instance.MaxPlayersOnline = playersonline;
-                    if (playersonline > game.MaxPlayersOnlineEver)
+                    Game.Instance.MaxPlayersOnline = playersonline;
+                    if (playersonline > Game.MaxPlayersOnlineEver)
                     {
-                        game.MaxPlayersOnlineEver = playersonline;
+                        Game.MaxPlayersOnlineEver = playersonline;
                         if (System.IO.File.Exists("Settings.xml"))
                         {
                             var settings = XElement.Load("Settings.xml");
@@ -765,10 +765,9 @@ namespace CrimsonStainedLands
         {
             TotalPlayTime += DateTime.Now - LastSaveTime;
             LastSaveTime = DateTime.Now;
-            if (!Directory.Exists("data"))
-                Directory.CreateDirectory("data");
-            if (!Directory.Exists("data\\players"))
-                Directory.CreateDirectory("data\\players");
+            
+            if (!Directory.Exists(Settings.PlayersPath))
+                Directory.CreateDirectory(Settings.PlayersPath);
 
             if (Name != null && password != null && Race != null && Room != null)
             {
@@ -787,7 +786,7 @@ namespace CrimsonStainedLands
                 element.Add(new XElement("LastReadNote", LastReadNote.ToString()));
                 element.Add(new XElement("TotalPlayTime", TotalPlayTime.ToString()));
                 element.Add(new XElement("password", password));
-                element.Save("data\\players\\" + Name + ".xml");
+                element.Save(Settings.PlayersPath + "\\" + Name + ".xml");
 
             }
             //File.WriteAllText("data\\" + name + ".chr", "Password " + password + "\n\r" + "Race " + race.Name + "\n\r" + "Alignment " + alignment.ToString() + "\n\r" + "Ethos " + ethos.ToString() + "\n\r" + (inRoom != null ? "Room " + inRoom.vnum + "\n\r" : "") + "Guild " + guild + "\n\r");
@@ -796,8 +795,8 @@ namespace CrimsonStainedLands
         public bool LoadCharacterFile(string path)
         {
             LastSaveTime = DateTime.Now;
-            if (!Directory.Exists("data"))
-                Directory.CreateDirectory("data");
+            if (!System.IO.Directory.Exists(Settings.PlayersPath))
+                Directory.CreateDirectory(Settings.PlayersPath);
 
             if (path.EndsWith(".xml"))
             {
@@ -980,7 +979,7 @@ namespace CrimsonStainedLands
 
         public void LoadPet()
         {
-            var element = XElement.Load("data\\players\\" + Name + ".xml");
+            var element = XElement.Load(Settings.PlayersPath + "\\" + Name + ".xml");
             if (element.HasElement("Pet"))
             {
                 var pet = new NPCData(element.GetElement("Pet").GetElement("Character"), Room);
@@ -1002,10 +1001,10 @@ namespace CrimsonStainedLands
                 Room.Characters.Remove(this);
             }
             state = Player.ConnectionStates.Deleting;
-            System.IO.File.Delete("data\\players\\" + Name + ".xml");
+            System.IO.File.Delete(Settings.PlayersPath + "\\" + Name + ".xml");
             sendRaw("Character deleted.\n\r");
 
-            game.CloseSocket(this, true);
+            Game.CloseSocket(this, true);
 
         }
 

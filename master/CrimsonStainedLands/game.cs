@@ -54,7 +54,7 @@ using static System.Windows.Forms.AxHost;
 
 namespace CrimsonStainedLands
 {
-    public class game : IDisposable
+    public class Game : IDisposable
     {
         /*
          *  TODO
@@ -149,51 +149,51 @@ namespace CrimsonStainedLands
          * ---- Set [obj, mob]
          */
 
-        public class gameInfo
+        public class GameInfo
         {
-            public List<Player> connections = new List<Player>();
-            public StreamWriter logWriter = null;
-            public bool exiting = false;
-            public int port = 4000;
-            public object logLock = new object();
-            public StringBuilder log = new StringBuilder();
+            public List<Player> Connections = new List<Player>();
+            public StreamWriter LogWriter = null;
+            public bool Exiting = false;
+            public int Port = 4000;
+            public object LogLock = new object();
+            public StringBuilder Log = new StringBuilder();
             public IAsyncResult launchResult;
-            public MainForm mainForm;
-            public Action<gameInfo> launchMethod;
+            public MainForm MainForm;
+            public Action<GameInfo> LaunchMethod;
 
 
 
             public void LogLine(string text)
             {
-                lock (logLock)
+                lock (LogLock)
                 {
                     var newText = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " :: " + text;
-                    log.AppendLine(newText);
-                    if (logWriter != null)
+                    Log.AppendLine(newText);
+                    if (LogWriter != null)
                     {
-                        logWriter.WriteLine(newText);
-                        logWriter.Flush();
+                        LogWriter.WriteLine(newText);
+                        LogWriter.Flush();
                     }
                 }
             }
 
             public string RetrieveLog()
             {
-                lock (logLock)
+                lock (LogLock)
                 {
-                    var value = log.ToString();
+                    var value = Log.ToString();
 
-                    log.Clear();
+                    Log.Clear();
                     return value;
                 }
             }
 
         }
-        public static game Instance;
+        public static Game Instance;
 
         public static int MaxPlayersOnlineEver = 0;
 
-        public gameInfo Info;
+        public GameInfo Info;
 
         public Random random = new Random();
 
@@ -207,22 +207,22 @@ namespace CrimsonStainedLands
             if (Instance != null)
                 Instance.Dispose();
 
-            Instance = new game(port, form);
+            Instance = new Game(port, form);
         }
 
         private Socket listeningSocket;
-        private game(int port, MainForm form)
+        private Game(int port, MainForm form)
         {
-            var launchMethod = new Action<gameInfo>(launch);
+            var launchMethod = new Action<GameInfo>(launch);
 
 
 
-            Info = new gameInfo() { mainForm = form, port = port };
-            lock (Info.logLock)
+            Info = new GameInfo() { MainForm = form, Port = port };
+            lock (Info.LogLock)
             {
-                Info.launchMethod = launchMethod;
+                Info.LaunchMethod = launchMethod;
                 Info.launchResult = launchMethod.BeginInvoke(Info, launched, Info);
-                Info.logWriter = new StreamWriter("logs.txt");
+                Info.LogWriter = new StreamWriter("logs.txt");
             }
 
         }
@@ -243,27 +243,27 @@ namespace CrimsonStainedLands
             log(text, parameters);
         }
 
-        private void SetupListeningSocket(gameInfo state)
+        private void SetupListeningSocket(GameInfo state)
         {
             listeningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
             // listen on all adapters at port specified for new connections
-            listeningSocket.Bind(new System.Net.IPEndPoint(0, state.port));
+            listeningSocket.Bind(new System.Net.IPEndPoint(0, state.Port));
             listeningSocket.Listen(50);
-            state.log.AppendLine("Listening on port " + state.port);
+            state.Log.AppendLine("Listening on port " + state.Port);
         }
 
         private void LoadData()
         {
             Liquid.loadLiquids();
-            game.log("{0} liquids loaded.", Liquid.Liquids.Count);
+            Game.log("{0} liquids loaded.", Liquid.Liquids.Count);
 
             Race.LoadRaces();
-            game.log("{0} races loaded.", Race.Races.Count);
+            Game.log("{0} races loaded.", Race.Races.Count);
             //Race.SaveRaces();
 
             PcRace.LoadRaces();
-            game.log("{0} PC races loaded.", PcRace.PcRaces.Count);
+            Game.log("{0} PC races loaded.", PcRace.PcRaces.Count);
             //PcRace.SaveRaces();
 
             SkillSpellGroup.LoadSkillSpellGroups();
@@ -284,7 +284,7 @@ namespace CrimsonStainedLands
             ItemData.LoadCorpsesAndPits();
 
         }
-        private void launch(gameInfo state)
+        private void launch(GameInfo state)
         {
             SetupListeningSocket(state);
 
@@ -303,7 +303,7 @@ namespace CrimsonStainedLands
             Command.CommandAttribute.AddAttributeCommands();
 
             GuildData.WriteGuildSkillsHtml();
-            game.log("Accepting connections...");
+            Game.log("Accepting connections...");
 
             mainLoop(state);
         }
@@ -320,11 +320,11 @@ namespace CrimsonStainedLands
 
         
 
-        private void mainLoop(gameInfo state)
+        private void mainLoop(GameInfo state)
         {
             try
             {
-                while (!state.exiting)
+                while (!state.Exiting)
                 {
                     try
                     {
@@ -342,9 +342,9 @@ namespace CrimsonStainedLands
                         // Check for pending output
                         ProcessConnectionsOutput();
 
-                        var timeToSleep = (int)Math.Max(1f, game.MILLISECONDS_PER_PULSE - (DateTime.Now - time).TotalMilliseconds);
+                        var timeToSleep = (int)Math.Max(1f, Game.MILLISECONDS_PER_PULSE - (DateTime.Now - time).TotalMilliseconds);
 
-                        if ((DateTime.Now - time).TotalMilliseconds > game.MILLISECONDS_PER_PULSE)
+                        if ((DateTime.Now - time).TotalMilliseconds > Game.MILLISECONDS_PER_PULSE)
                             log((DateTime.Now - time).TotalMilliseconds + "ms to loop once");
 
                         /// Had issues with listening socket poll on windows, using Sleep instead
@@ -374,15 +374,15 @@ namespace CrimsonStainedLands
             while (listeningSocket.Poll(1, SelectMode.SelectRead))
             {
                 var player = new Player(this, listeningSocket.Accept());
-                Info.connections.Add(player);
-                if (game.CheckIsBanned(string.Empty, player.Address))
+                Info.Connections.Add(player);
+                if (Game.CheckIsBanned(string.Empty, player.Address))
                 {
                     try
                     {
                         WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
 
                         player.sendRaw("You are banned.\n\r");
-                        game.CloseSocket(player, true, true);
+                        Game.CloseSocket(player, true, true);
                     }
                     catch
                     {
@@ -487,7 +487,7 @@ namespace CrimsonStainedLands
                                     foreach (var option in Options)
                                         connection.Flags.SETBIT(option);
 
-                                game.log(ClientString + " client detected.");
+                                Game.log(ClientString + " client detected.");
                             }
                         }
                     }
@@ -509,7 +509,7 @@ namespace CrimsonStainedLands
                                 {
 
                                     connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
-                                    game.CloseSocket(connection, false, true);
+                                    Game.CloseSocket(connection, false, true);
                                     connection.inanimate = DateTime.Now;
                                 }
                             }
@@ -553,7 +553,7 @@ namespace CrimsonStainedLands
             if (connection.socket != null)
             {
 
-                if (connection.state == Player.ConnectionStates.Playing && connection.Level == game.MAX_LEVEL)
+                if (connection.state == Player.ConnectionStates.Playing && connection.Level == Game.MAX_LEVEL)
                 {
                     // immortals process all received input immediately
                     while (connection.ProcessInput())
@@ -589,7 +589,7 @@ namespace CrimsonStainedLands
                 connection.Dispose();
 
 
-                Info.connections.Remove(connection);
+                Info.Connections.Remove(connection);
             }
 
             if (connection.socket == null && !connection.inanimate.HasValue)
@@ -598,7 +598,7 @@ namespace CrimsonStainedLands
 
         private void ProcessConnectionsOutput()
         {
-            foreach (var connection in new List<Player>(Info.connections))
+            foreach (var connection in new List<Player>(Info.Connections))
             {
                 try
                 {
@@ -631,7 +631,7 @@ namespace CrimsonStainedLands
 
         private void CheckConnectionsForAndProcessInput()
         {
-            foreach (var connection in Info.connections.ToArray())
+            foreach (var connection in Info.Connections.ToArray())
             {
                 if (connection.LastSaveTime != DateTime.MinValue && (DateTime.Now - connection.LastSaveTime).Minutes >= 5)
                 {
@@ -658,7 +658,7 @@ namespace CrimsonStainedLands
                     {
                         if (connection.socket != null)
                         {
-                            game.CloseSocket(connection, false, false);
+                            Game.CloseSocket(connection, false, false);
                             connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
                         }
                         connection.socket = null;
@@ -678,7 +678,7 @@ namespace CrimsonStainedLands
         private void LastDitchAttemptToSendOutput()
         {
             //exiting, one last attempt at sending any remaining output
-            foreach (var connection in Info.connections.ToArray())
+            foreach (var connection in Info.Connections.ToArray())
             {
                 try
                 {
@@ -727,7 +727,7 @@ namespace CrimsonStainedLands
         public static void shutdown()
         {
 
-            foreach (var connection in game.Instance.Info.connections.ToArray())
+            foreach (var connection in Game.Instance.Info.Connections.ToArray())
             {
                 try
                 {
@@ -743,25 +743,25 @@ namespace CrimsonStainedLands
 
             NoteData.SaveNotes();
 
-            game.log("Notes saved.");
+            Game.log("Notes saved.");
 
             ItemData.SaveCorpsesAndPits(true);
 
-            game.Instance.Info.mainForm.exit = true;
-            game.Instance.Info.exiting = true;
+            Game.Instance.Info.MainForm.exit = true;
+            Game.Instance.Info.Exiting = true;
 
 
-            game.Instance.Info.mainForm.Invoke(new Action(game.Instance.Info.mainForm.Close));
+            Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
             try
             {
-                game.Instance.Dispose();
+                Game.Instance.Dispose();
             }
             catch
             {
             }
             try
             {
-                game.Instance.Info.logWriter.Close();
+                Game.Instance.Info.LogWriter.Close();
 
             }
             catch
@@ -770,7 +770,7 @@ namespace CrimsonStainedLands
 
         public static void reboot()
         {
-            foreach (var connection in game.Instance.Info.connections.ToArray())
+            foreach (var connection in Game.Instance.Info.Connections.ToArray())
             {
                 try
                 {
@@ -785,23 +785,23 @@ namespace CrimsonStainedLands
             }
 
             NoteData.SaveNotes();
-            game.log("Notes saved.");
+            Game.log("Notes saved.");
 
             System.Diagnostics.Process.Start(Application.ExecutablePath);
 
-            game.Instance.Info.mainForm.exit = true;
-            game.Instance.Info.exiting = true;
-            game.Instance.Info.mainForm.Invoke(new Action(game.Instance.Info.mainForm.Close));
+            Game.Instance.Info.MainForm.exit = true;
+            Game.Instance.Info.Exiting = true;
+            Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
             try
             {
-                game.Instance.Dispose();
+                Game.Instance.Dispose();
             }
             catch
             {
             }
             try
             {
-                game.Instance.Info.logWriter.Close();
+                Game.Instance.Info.LogWriter.Close();
 
             }
             catch
@@ -1185,7 +1185,7 @@ namespace CrimsonStainedLands
                         else if (ch.Thirst <= 0 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
                             ch.Dehydrated++;
 
-                        if (ch.Level > 10 && ch.Level <= game.LEVEL_HERO)
+                        if (ch.Level > 10 && ch.Level <= Game.LEVEL_HERO)
                         {
                             if (ch.Hunger == 0 && !ch.IsAffected(AffectFlags.Sated) && !ch.IsAffected(AffectFlags.Ghost))
                                 ch.Starving++;
@@ -1695,7 +1695,7 @@ namespace CrimsonStainedLands
             if (buf.Length > 0)
             {
                 var buffer = buf.ToString();
-                foreach (var player in game.Instance.Info.connections)
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing
                         && player.IS_OUTSIDE
@@ -1708,24 +1708,24 @@ namespace CrimsonStainedLands
         }
         public void Dispose()
         {
-            Info.exiting = true;
+            Info.Exiting = true;
 
 
-            Info.launchMethod.EndInvoke(Info.launchResult);
+            Info.LaunchMethod.EndInvoke(Info.launchResult);
 
             listeningSocket.Dispose();
-            foreach (var connection in game.Instance.Info.connections.ToArray())
+            foreach (var connection in Game.Instance.Info.Connections.ToArray())
             {
                 try
                 {
                     connection.Dispose();
                     if (connection.socket != null)
                         connection.socket.Dispose();
-                    game.Instance.Info.connections.Remove(connection);
+                    Game.Instance.Info.Connections.Remove(connection);
                 }
                 catch (Exception exception)
                 {
-                    game.log(exception.ToString());
+                    Game.log(exception.ToString());
                 }
             }
         }
@@ -1958,7 +1958,7 @@ namespace CrimsonStainedLands
             if (duration.ISEMPTY())
                 duration = (DateTime.MaxValue - DateTime.Now - TimeSpan.FromMinutes(1)).ToString();
 
-            string banspath = @"data\bans.xml";
+            string banspath = Settings.DataPath + @"\bans.xml";
             XElement bans = new XElement("bans");
 
             if (System.IO.File.Exists(banspath))
@@ -1972,7 +1972,7 @@ namespace CrimsonStainedLands
             if ((bancharacter = Character.GetCharacterWorld(ch, name, true, false)) != null && bancharacter is Player)
             {
                 ((Player)bancharacter).sendRaw("You have been banned.\n\r");
-                game.CloseSocket(((Player)bancharacter), true);
+                Game.CloseSocket(((Player)bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
 
@@ -2004,7 +2004,7 @@ namespace CrimsonStainedLands
             {
                 address = ((Player)bancharacter).Address;
                 ((Player)bancharacter).sendRaw("You have been banned.\n\r");
-                game.CloseSocket(((Player)bancharacter), true);
+                Game.CloseSocket(((Player)bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
             else
@@ -2029,7 +2029,7 @@ namespace CrimsonStainedLands
                 }
             }
 
-            string banspath = @"data\bans.xml";
+            string banspath = Settings.DataPath + @"\bans.xml";
             XElement bans = new XElement("bans");
 
             if (System.IO.File.Exists(banspath))
@@ -2056,13 +2056,13 @@ namespace CrimsonStainedLands
 
             if (remove)
             {
-                game.Instance.Info.connections.Remove(player);
+                Game.Instance.Info.Connections.Remove(player);
             }
         }
 
         public static bool CheckIsBanned(string name, string ipAddress)
         {
-            string banspath = @"data\bans.xml";
+            string banspath = Settings.DataPath + @"\bans.xml";
             if (System.IO.File.Exists(banspath))
             {
                 DateTime BanEndDate;

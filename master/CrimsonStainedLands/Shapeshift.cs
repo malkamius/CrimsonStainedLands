@@ -140,7 +140,7 @@ namespace CrimsonStainedLands
             Type = type;
             FormSkill = SkillSpell.SkillLookup(formSkill);
             if (FormSkill == null)
-                game.log("Form skill not found: {0}", formSkill);
+                Game.log("Form skill not found: {0}", formSkill);
         }
 
 
@@ -433,13 +433,13 @@ namespace CrimsonStainedLands
             }
 
             //element.Save("data\\shapeshiftforms.xml");
-            System.IO.File.WriteAllText("data\\shapeshiftforms.xml", element.ToStringFormatted());
+            System.IO.File.WriteAllText(Settings.DataPath + "\\shapeshiftforms.xml", element.ToStringFormatted());
         }
 
         public static void LoadShapeshiftForms()
         {
             ShapeshiftForm.Forms.Clear();
-            var element = XElement.Load("data\\shapeshiftforms.xml");
+            var element = XElement.Load(Settings.DataPath + "\\shapeshiftforms.xml");
 
             foreach (var formelement in element.Elements("Form"))
             {
@@ -489,7 +489,7 @@ namespace CrimsonStainedLands
                 Utility.GetEnumValue(formelement.GetAttributeValue("Type"), ref form.Type);
                 ShapeshiftForm.Forms.Add(form);
             }
-            game.log("Loaded {0} shapeshift forms.", ShapeshiftForm.Forms.Count);
+            Game.log("Loaded {0} shapeshift forms.", ShapeshiftForm.Forms.Count);
         }
         public static void DoShapeFocus(Character ch, string arguments)
         {

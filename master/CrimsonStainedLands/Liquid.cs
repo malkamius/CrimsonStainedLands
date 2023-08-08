@@ -22,7 +22,7 @@ namespace CrimsonStainedLands
 
         public static void loadLiquids()
         {
-            var element = XElement.Load(@"data\liquids.xml");
+            var element = XElement.Load(Settings.DataPath + @"\liquids.xml");
 
             foreach(var liquidElement in element.Elements())
             {

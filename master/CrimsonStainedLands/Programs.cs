@@ -73,7 +73,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            game.log("AffectProgram {0} not found.", name);
+            Game.log("AffectProgram {0} not found.", name);
             return false;
         }
 
@@ -89,7 +89,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            game.log("ItemProgram {0} not found.", name);
+            Game.log("ItemProgram {0} not found.", name);
             return false;
         }
 
@@ -105,7 +105,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            game.log("NpcProgram {0} not found.", name);
+            Game.log("NpcProgram {0} not found.", name);
             return false;
         }
 
@@ -121,7 +121,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            game.log("RoomProgram {0} not found.", name);
+            Game.log("RoomProgram {0} not found.", name);
             return false;
         }
 

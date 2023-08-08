@@ -125,7 +125,7 @@ namespace CrimsonStainedLands
                 if (sector.Value.name.IsName(sectorLookup, true))
                     return sector.Value;
 
-            game.log("Sector " + sectorLookup + " not found.");
+            Game.log("Sector " + sectorLookup + " not found.");
             return sectors[SectorTypes.Inside];
         }
 
@@ -300,7 +300,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    game.log("Duplicate room vnum: {0} in {1}", Vnum, area.FileName);
+                    Game.log("Duplicate room vnum: {0} in {1}", Vnum, area.FileName);
                 }
                 if (!Rooms.ContainsKey(Vnum))
                 {
@@ -308,7 +308,7 @@ namespace CrimsonStainedLands
                     Rooms.Add(Vnum, this);
                 }
                 else
-                    game.log("Duplicate room vnum: {0} in {1} conflicts with {2}", Vnum, area.FileName, Rooms[Vnum].Area.FileName);
+                    Game.log("Duplicate room vnum: {0} in {1} conflicts with {2}", Vnum, area.FileName, Rooms[Vnum].Area.FileName);
 
             }
         } // End Constructor(AreaData, XElement)

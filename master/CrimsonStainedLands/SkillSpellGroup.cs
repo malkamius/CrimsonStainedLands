@@ -17,7 +17,7 @@ namespace CrimsonStainedLands
 
         public static void LoadSkillSpellGroups()
         {
-            var element = XElement.Load("data\\skillGroups.xml", LoadOptions.PreserveWhitespace);
+            var element = XElement.Load(Settings.DataPath + "\\skillGroups.xml", LoadOptions.PreserveWhitespace);
 
             foreach(var subElement in element.Elements())
             {

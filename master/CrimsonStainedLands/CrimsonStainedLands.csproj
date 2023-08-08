@@ -79,7 +79,7 @@
     <Compile Include="Extensions\XTermColor.cs" />
     <Compile Include="Extensions\Utility.cs" />
     <Compile Include="ExtraDescription.cs" />
-    <Compile Include="game.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="GuildData.cs" />
     <Compile Include="HelpData.cs" />
     <Compile Include="HometownData.cs" />
@@ -109,6 +109,7 @@
     <Compile Include="RoomAffectData.cs" />
     <Compile Include="RoomData.cs" />
     <Compile Include="RoslynScripts.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Shapeshift.cs" />
     <Compile Include="SkillSpell.cs" />
     <Compile Include="SkillSpellGroup.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="WizardNet.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

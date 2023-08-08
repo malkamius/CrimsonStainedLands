@@ -43,7 +43,7 @@ namespace CrimsonStainedLands
         {
             DateTime loadstart = DateTime.Now;
             /// Now load area programs before area npcs and rooms, things referencing programs
-            foreach (var file in Directory.GetFiles("data\\areas", "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
+            foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
             {
                 var area = new AreaData(file, true);
                 NLuaPrograms.LoadPrograms(area);
@@ -54,12 +54,12 @@ namespace CrimsonStainedLands
                 area.Load(area.FileName);
             }
 
-            game.log("Loaded areas in {0}", DateTime.Now - loadstart);
+            Game.log("Loaded areas in {0}", DateTime.Now - loadstart);
 
             if (!headersOnly)
                 FixExits();
 
-            game.log("Loaded " + Areas.Count + " areas.");
+            Game.log("Loaded " + Areas.Count + " areas.");
 
             //foreach (var file in Directory.GetFiles("data\\updates", "*.xml"))
             //{
@@ -181,7 +181,7 @@ namespace CrimsonStainedLands
                                 room.exits[i] = otherexit;
                                 room.exits[otheri] = exit;
 
-                                game.log("Switched {0} with {1} in {2}.", Enum.GetName(typeof(Direction), i), Enum.GetName(typeof(Direction), otheri), room.Vnum);
+                                Game.log("Switched {0} with {1} in {2}.", Enum.GetName(typeof(Direction), i), Enum.GetName(typeof(Direction), otheri), room.Vnum);
                             }
                         }
                     }
@@ -226,11 +226,11 @@ namespace CrimsonStainedLands
                     Credits = areaData.GetElementValue("Credits");
                     OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
                     if (Name.ISEMPTY())
-                        game.log("Area " + FileName + "has no name");
+                        Game.log("Area " + FileName + "has no name");
                     if (this.VNumStart == 0)
-                        game.log("Area " + Name + " has no start vnum");
+                        Game.log("Area " + Name + " has no start vnum");
                     if (this.VNumEnd == 0)
-                        game.log("Area " + Name + " has no end vnum");
+                        Game.log("Area " + Name + " has no end vnum");
 
                 }
             }
@@ -265,11 +265,11 @@ namespace CrimsonStainedLands
                     Credits = areaData.GetElementValue("Credits");
                     OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
                     if (Name.ISEMPTY())
-                        game.log("Area " + FileName + "has no name");
+                        Game.log("Area " + FileName + "has no name");
                     if (this.VNumStart == 0)
-                        game.log("Area " + Name + " has no start vnum");
+                        Game.log("Area " + Name + " has no start vnum");
                     if (this.VNumEnd == 0)
-                        game.log("Area " + Name + " has no end vnum");
+                        Game.log("Area " + Name + " has no end vnum");
 
                 }
 
@@ -343,7 +343,7 @@ namespace CrimsonStainedLands
                     }
                     catch (Exception ex)
                     {
-                        game.log(ex.ToString());
+                        Game.log(ex.ToString());
                     }
                 }
             }
@@ -367,7 +367,7 @@ namespace CrimsonStainedLands
                     }
                     catch (Exception ex)
                     {
-                        game.log(ex.ToString());
+                        Game.log(ex.ToString());
                     }
 
 
@@ -392,7 +392,7 @@ namespace CrimsonStainedLands
                     }
                     catch (Exception ex)
                     {
-                        game.log(ex.ToString());
+                        Game.log(ex.ToString());
                     }
                 }
         }
@@ -416,7 +416,7 @@ namespace CrimsonStainedLands
                     }
                     catch (Exception ex)
                     {
-                        game.log(ex.ToString());
+                        Game.log(ex.ToString());
                     }
                 }
             }
@@ -438,7 +438,7 @@ namespace CrimsonStainedLands
                     }
                     catch (Exception ex)
                     {
-                        game.log(ex.ToString());
+                        Game.log(ex.ToString());
                     }
 
                 }

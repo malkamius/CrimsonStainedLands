@@ -54,9 +54,9 @@ namespace CrimsonStainedLands
 
     public static class TimeInfo
     {
-        public static long Minute => (long)((DateTime.Now - new DateTime(2023, 1, 1)).TotalSeconds / (game.PULSE_TICK / game.PULSE_PER_SECOND) * 60) % 60;
+        public static long Minute => (long)((DateTime.Now - new DateTime(2023, 1, 1)).TotalSeconds / (Game.PULSE_TICK / Game.PULSE_PER_SECOND) * 60) % 60;
 
-        public static long Hours => (long)((DateTime.Now - new DateTime(2023, 1, 1)).TotalSeconds / (game.PULSE_TICK / game.PULSE_PER_SECOND));
+        public static long Hours => (long)((DateTime.Now - new DateTime(2023, 1, 1)).TotalSeconds / (Game.PULSE_TICK / Game.PULSE_PER_SECOND));
 
         public static long Hour => Hours % 24;
 
