@@ -58,9 +58,9 @@ namespace CrimsonStainedLands
                 for (var x = 0; x < Width * 3; x++)
                 {
                     if (map.TryGetValue(new Point(x, y), out var str))
-                        buffer.Append(CrimsonStainedLands.Extensions.color.colorString(str));
+                        buffer.Append(str);
                     else
-                        buffer.Append(CrimsonStainedLands.Extensions.color.colorString("\\x "));
+                        buffer.Append("\\x ");
                 }
                 buffer.AppendLine();
             }

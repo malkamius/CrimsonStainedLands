@@ -503,7 +503,7 @@ namespace CrimsonStainedLands
                     line = "";
                     send("Line too long.\n\r");
                 }
-                if (!IsImmortal) line = line.escapeColor();
+                if (!IsImmortal) line = line.EscapeColor();
                 if (!NewCharacterInputHandler(line) && state == ConnectionStates.Playing)
                 {
 
@@ -867,8 +867,13 @@ namespace CrimsonStainedLands
 
                     Guild = GuildData.GuildLookup(element.GetElementValue("guild", "warrior")) ?? GuildData.GuildLookup("warrior");
 
+                    bool Color256 = Flags.ISSET(ActFlags.Color256), ColorRGB = Flags.ISSET(ActFlags.ColorRGB);
+
                     if (element.HasElement("Flags"))
                         Utility.GetEnumValues<ActFlags>(element.GetElementValue("flags"), ref this.Flags);
+
+                    if (Color256) Flags.SETBIT(ActFlags.Color256);
+                    if (ColorRGB) Flags.SETBIT(ActFlags.ColorRGB);
 
                     Utility.GetEnumValues<WeaponDamageTypes>(element.GetElementValue("Immune"), ref this.ImmuneFlags);
                     Utility.GetEnumValues<WeaponDamageTypes>(element.GetElementValue("Resist"), ref this.ResistFlags);

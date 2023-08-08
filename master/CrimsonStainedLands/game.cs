@@ -312,6 +312,17 @@ namespace CrimsonStainedLands
             mainLoop(state);
         }
 
+        private enum TelnetOptions : byte
+        {
+            TTYPE = 24,
+            SE = 240,
+            SB = 250,
+            WILL = 251,
+            DO = 253,
+            IAC = 255,
+        }
+
+
         private void mainLoop(gameInfo state)
         {
             try
@@ -342,7 +353,10 @@ namespace CrimsonStainedLands
                                 }
                             }
                             else
+                            {
                                 WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
+                                player.socket.Send(new byte[] { (byte)TelnetOptions.IAC, (byte)TelnetOptions.DO, (byte)TelnetOptions.TTYPE });
+                            }
 
                         }
 
@@ -386,23 +400,91 @@ namespace CrimsonStainedLands
                                     else
                                     {
                                         var position = connection.input.Length;
-                                        foreach (var Byte in buffer)
+
+                                        if (received > 0 && buffer[0] == 255)
                                         {
-                                            if (Byte == 8 && position > 0)
+                                            var Byte = buffer[0];
+                                            var byteindex = 0;
+                                            if (Byte == (byte)TelnetOptions.IAC && received > byteindex + 2)
                                             {
-                                                connection.input.Remove(connection.input.Length - 1, 1);
-                                                position -= 1;
+                                                if (buffer[byteindex + 1] == (byte)TelnetOptions.WILL
+                                                    && buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE)
+                                                {
+                                                    connection.socket.Send(
+                                                        new byte[] { (byte) TelnetOptions.IAC,
+                                                                (byte)TelnetOptions.SB,
+                                                                (byte)TelnetOptions.TTYPE,
+                                                                1,
+                                                                (byte) TelnetOptions.IAC,
+                                                                (byte) TelnetOptions.SE});
+
+
+                                                }
+                                                else if (received > byteindex + 4 &&
+                                                    buffer[byteindex + 1] == (byte)TelnetOptions.SB &&
+                                                    buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE &&
+                                                    buffer[byteindex + 3] == 0)
+                                                {
+                                                    // supposed to send back different result, cmud sends the same
+
+                                                    //connection.socket.Send(
+                                                    //    new byte[] { (byte) TelnetOptions.IAC,
+                                                    //            (byte)TelnetOptions.SB,
+                                                    //            (byte)TelnetOptions.TTYPE,
+                                                    //            1,
+                                                    //            (byte) TelnetOptions.IAC,
+                                                    //            (byte) TelnetOptions.SE});
+                                                    var TerminalTypeResponse = new MemoryStream();
+                                                    for (int responseindex = 4; responseindex < received; responseindex++)
+                                                    {
+                                                        if (buffer[responseindex] == (byte)TelnetOptions.IAC)
+                                                            break;
+                                                        TerminalTypeResponse.WriteByte(buffer[responseindex]);
+                                                    }
+                                                    var ClientString = ASCIIEncoding.ASCII.GetString(TerminalTypeResponse.ToArray());
+                                                    var ClientColorOptions = new Dictionary<string, ActFlags[]>
+                                                    {
+                                                        { "CMUD", new ActFlags[] { ActFlags.Color, ActFlags.Color256 } },
+                                                        { "ANSI", new ActFlags[] { ActFlags.Color} },
+                                                        { "Mudlet", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
+                                                        { "Mushclient", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
+                                                    };
+
+                                                    var Options = (from option in ClientColorOptions where option.Key.StringPrefix(ClientString) select option.Value).FirstOrDefault();
+
+                                                    if (Options != null)
+                                                        foreach (var option in Options)
+                                                            connection.Flags.SETBIT(option);
+
+                                                    game.log(ClientString + " client detected.");
+                                                }
                                             }
-                                            else if (Byte == 13 || Byte == 10 || (Byte >= 32 && Byte <= 126))
+                                        }
+                                        else
+                                        {
+                                            for (int byteindex = 0; byteindex < received; byteindex++)// (var Byte in buffer)
                                             {
-                                                connection.input.Append((char)Byte);
-                                                position++;
-                                                if (connection.input.Length > 4200) // not writing a novel yet?
+                                                var Byte = buffer[byteindex];
+                                                if (Byte == 8 && position > 0)
+                                                {
+                                                    connection.input.Remove(connection.input.Length - 1, 1);
+                                                    position -= 1;
+                                                }
+                                                else if (Byte == 13 || Byte == 10 || (Byte >= 32 && Byte <= 126))
+                                                {
+                                                    connection.input.Append((char)Byte);
+                                                    position++;
+                                                    if (connection.input.Length > 4200) // not writing a novel yet?
+                                                    {
+
+                                                        connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
+                                                        game.CloseSocket(connection, false, true);
+                                                        connection.inanimate = DateTime.Now;
+                                                    }
+                                                }
+                                                else
                                                 {
 
-                                                    connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
-                                                    game.CloseSocket(connection, false, true);
-                                                    connection.inanimate = DateTime.Now;
                                                 }
                                             }
                                         }
@@ -434,7 +516,7 @@ namespace CrimsonStainedLands
 
                                 if ((connection.state != Player.ConnectionStates.Playing && connection.socket == null) || (connection.inanimate.HasValue && connection.inanimate.Value.AddMinutes(5) < DateTime.Now))
                                 {
-                                    
+
 
                                     WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection {0} removed from list of active connections.", connection, null, connection.Address);
 
@@ -447,7 +529,7 @@ namespace CrimsonStainedLands
                                     }
                                     connection.Dispose();
 
-                                    
+
                                     state.connections.Remove(connection);
                                 }
 
@@ -1873,9 +1955,9 @@ namespace CrimsonStainedLands
             }
             else if ((bancharacter = Character.GetCharacterWorld(ch, nameOrAddress, true, false)) != null && bancharacter is Player)
             {
-                address = ((Player) bancharacter).Address;
+                address = ((Player)bancharacter).Address;
                 ((Player)bancharacter).sendRaw("You have been banned.\n\r");
-                game.CloseSocket(((Player) bancharacter), true);
+                game.CloseSocket(((Player)bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
             else
@@ -1925,7 +2007,7 @@ namespace CrimsonStainedLands
             if (settonull)
                 player.socket = null;
 
-            if(remove)
+            if (remove)
             {
                 game.Instance.Info.connections.Remove(player);
             }

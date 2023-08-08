@@ -161,7 +161,9 @@ namespace CrimsonStainedLands
         Gain = Trainer,
         Practice = GuildMaster,
         ColorOn = Color,
-        NewbieChannel = 71
+        NewbieChannel = 71,
+        ColorRGB = 72,
+        Color256 = 73
     }
 
     public enum Sexes
@@ -472,7 +474,7 @@ namespace CrimsonStainedLands
             {
                 Level = 1;
                 Xp = 0;
-                Flags.ADDFLAG(ActFlags.Color);
+                //Flags.ADDFLAG(ActFlags.Color);
                 Flags.ADDFLAG(ActFlags.AutoAssist);
                 Flags.ADDFLAG(ActFlags.AutoExit);
                 Flags.ADDFLAG(ActFlags.AutoGold);
@@ -1190,7 +1192,7 @@ namespace CrimsonStainedLands
                     data = data.Replace("\r", "").Replace("\n", "\n\r");
             if (this is Player player && ((Player)this).socket != null)
             {
-                player.socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes(data.colorString(this)));
+                player.socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(!this.Flags.ISSET(ActFlags.Color), this.Flags.ISSET(ActFlags.Color256), this.Flags.ISSET(ActFlags.ColorRGB))));
             }
         }
 
