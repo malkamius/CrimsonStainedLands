@@ -537,9 +537,7 @@ namespace CrimsonStainedLands
                     Game.MaxPlayersOnlineEver = playersonline;
                     if (System.IO.File.Exists("Settings.xml"))
                     {
-                        var settings = XElement.Load("Settings.xml");
-                        settings.SetAttributeValue("MaxPlayersOnlineEver", playersonline);
-                        settings.Save("Settings.xml");
+                        Settings.Save();
                     }
                 }
             }
@@ -723,9 +721,7 @@ namespace CrimsonStainedLands
                         Game.MaxPlayersOnlineEver = playersonline;
                         if (System.IO.File.Exists("Settings.xml"))
                         {
-                            var settings = XElement.Load("Settings.xml");
-                            settings.SetAttributeValue("MaxPlayersOnlineEver", playersonline);
-                            settings.Save("Settings.xml");
+                            Settings.Save();
                         }
                     }
                 }
