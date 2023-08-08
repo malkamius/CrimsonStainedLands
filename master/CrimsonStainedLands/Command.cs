@@ -393,40 +393,41 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "map", Action = DoActMapper.DoMap, Info = "Display an ascii map of your current surroundings.", MinimumPosition = Positions.Dead });
 
             // IMM COMMANDS
-            Commands.Add(new Command { Name = "immortal", Action = DoActWiz.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
-            Commands.Add(new Command { Name = "holylight", Action = DoActWiz.DoHolyLight, Info = "View immortal stuff", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "wizinvis", Action = DoActWiz.DoWizInvis, Info = "Make yourself invisible.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "immortal", Action = DoActWizard.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
+            Commands.Add(new Command { Name = "holylight", Action = DoActWizard.DoHolyLight, Info = "View immortal stuff", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "wizinvis", Action = DoActWizard.DoWizInvis, Info = "Make yourself invisible.", MinimumPosition = Positions.Dead });
 
-            Commands.Add(new Command { Name = "goto", Action = DoActWiz.DoGoto, Info = "Teleport to the specified room.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "restore", Action = DoActWiz.DoRestore, Info = "Restore the hitpoints, mana and movement of a character.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "reset", Action = DoActWiz.DoResetArea, Info = "Reset an area.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "shutdown", Action = DoActWiz.DoShutdown, Info = "Shutdown the server", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
+            Commands.Add(new Command { Name = "goto", Action = DoActWizard.DoGoto, Info = "Teleport to the specified room.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "restore", Action = DoActWizard.DoRestore, Info = "Restore the hitpoints, mana and movement of a character.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "reset", Action = DoActWizard.DoResetArea, Info = "Reset an area.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "shutdown", Action = DoActWizard.DoShutdown, Info = "Shutdown the server", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
 
 
-            Commands.Add(new Command { Name = "load", Action = DoActWiz.DoLoad, Info = "Load an object or mob into the room.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "stat", Action = DoActWiz.DoStat, Info = "List details of a room, mobile or object.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "set", Action = DoActWiz.DoSet, Info = "Set instance details of a mobile or object.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "string", Action = DoActWiz.DoString, Info = "Set instance strings of a mobile or object.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "slay", Action = DoActWiz.DoSlay, Info = "Instantly kill something.", MinimumPosition = Positions.Dead, MinimumLevel = 1 });
-            Commands.Add(new Command { Name = "enumerate", Action = DoActWiz.DoEnumerate, Info = "List all areas, rooms, npcs or items.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "transfer", Action = DoActWiz.DoTransfer, Info = "Transfer a character to a location.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "load", Action = DoActWizard.DoLoad, Info = "Load an object or mob into the room.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "stat", Action = DoActWizard.DoStat, Info = "List details of a room, mobile or object.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "set", Action = DoActWizard.DoSet, Info = "Set instance details of a mobile or object.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "string", Action = DoActWizard.DoString, Info = "Set instance strings of a mobile or object.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "slay", Action = DoActWizard.DoSlay, Info = "Instantly kill something.", MinimumPosition = Positions.Dead, MinimumLevel = 1 });
+            Commands.Add(new Command { Name = "enumerate", Action = DoActWizard.DoEnumerate, Info = "List all areas, rooms, npcs or items.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "transfer", Action = DoActWizard.DoTransfer, Info = "Transfer a character to a location.", MinimumPosition = Positions.Dead });
 
-            Commands.Add(new Command { Name = "startquest", Action = DoActWiz.DoStartQuest, Info = "Set progress of a quest to inprogress.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "completequest", Action = DoActWiz.DoCompleteQuest, Info = "Set progress of a quest to complete.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "failquest", Action = DoActWiz.DoFailQuest, Info = "Set progress of a quest to failed.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "disablequest", Action = DoActWiz.DoDisableQuest, Info = "Set progress of a quest to disabled.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "resetquest", Action = DoActWiz.DoResetQuest, Info = "Set progress of a quest to inprogress.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "dropquest", Action = DoActWiz.DoDropQuest, Info = "Set progress of a quest to none.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "startquest", Action = DoActWizard.DoStartQuest, Info = "Set progress of a quest to inprogress.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "completequest", Action = DoActWizard.DoCompleteQuest, Info = "Set progress of a quest to complete.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "failquest", Action = DoActWizard.DoFailQuest, Info = "Set progress of a quest to failed.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "disablequest", Action = DoActWizard.DoDisableQuest, Info = "Set progress of a quest to disabled.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "resetquest", Action = DoActWizard.DoResetQuest, Info = "Set progress of a quest to inprogress.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "dropquest", Action = DoActWizard.DoDropQuest, Info = "Set progress of a quest to none.", MinimumPosition = Positions.Dead });
 
-            Commands.Add(new Command { Name = "reboot", Action = DoActWiz.DoReboot, Info = "Restart the server.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
-            
+            Commands.Add(new Command { Name = "reboot", Action = DoActWizard.DoReboot, Info = "Restart the server.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
+            Commands.Add(new Command { Name = "wiznet", Action = WizardNet.DoWiznet, Info = "Enable wiznet to monitor events.", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
+
             // OLC
             Commands.Add(new Command { Name = "asaveworld", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "saveworld", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "worldsave", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "builders", Action = OLC.DoBuilder, Info = "Assign builders to an area.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
             Commands.Add(new Command { Name = "dig", Action = OLC.DoDig, Info = "Create a new exit or room.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "purge", Action = DoActWiz.DoPurge, Info = "Purge NPCs and items in a room.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "purge", Action = DoActWizard.DoPurge, Info = "Purge NPCs and items in a room.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "edit", Action = OLC.DoEdit, Info = "Edit a room, item or npc", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "aedit", Action = OLC.DoAEdit, Info = "Edit an area", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "redit", Action = OLC.DoREdit, Info = "Edit a room", MinimumPosition = Positions.Dead });
@@ -437,21 +438,21 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "renumber", Action = OLC.DoRenumber, Info = "Renumber area, rooms, items and NPCs in the given range of vnums", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
             Commands.Add(new Command { Name = "nextvnum", Action = OLC.DoNextVnum, Info = "Show the next vnum for rooms, npcs and items.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "freevnumranges", Action = OLC.DoFreeVnumRanges, Info = "Show the ranges of vnums not being used by areas.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "areaconnections", Action = DoActWiz.DoAreaConnections, Info = "List areas this area links to.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "areaconnections", Action = DoActWizard.DoAreaConnections, Info = "List areas this area links to.", MinimumPosition = Positions.Dead });
             // END OLC
-            Commands.Add(new Command { Name = "advance", Action = DoActWiz.DoAdvance, Info = "Set a player's level.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "flags", Action = DoActWiz.DoFlags, Info = "Set an instance of an item, mobile or player's flags.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "title", Action = DoActWiz.DoTitle, Info = "Set a player's title.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "force", Action = DoActWiz.DoForce, Info = "Force someone to execute a command.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "switch", Action = DoActWiz.DoSwitch, Info = "Switch into an NPC.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "return", Action = DoActWiz.DoReturn, Info = "Return from a switch command.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "snoop", Action = DoActWiz.DoSnoop, Info = "Watch a players input and output.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "advance", Action = DoActWizard.DoAdvance, Info = "Set a player's level.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "flags", Action = DoActWizard.DoFlags, Info = "Set an instance of an item, mobile or player's flags.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "title", Action = DoActWizard.DoTitle, Info = "Set a player's title.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "force", Action = DoActWizard.DoForce, Info = "Force someone to execute a command.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "switch", Action = DoActWizard.DoSwitch, Info = "Switch into an NPC.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "return", Action = DoActWizard.DoReturn, Info = "Return from a switch command.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "snoop", Action = DoActWizard.DoSnoop, Info = "Watch a players input and output.", MinimumPosition = Positions.Dead });
 
-            Commands.Add(new Command { Name = "extitle", Action = DoActWiz.DoExtendedTitle, Info = "Set a player's extended title.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "extendedtitle", Action = DoActWiz.DoExtendedTitle, Info = "Set a player's extended title.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "stripaffects", Action = DoActWiz.DoStripAffects, Info = "Strip your affects.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "forcetick", Action = DoActWiz.DoForceTick, Info = "Force a tick update to happen.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "setplayerpassword", Action = DoActWiz.DoSetPlayerPassword, Info = "Set another player's password.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
+            Commands.Add(new Command { Name = "extitle", Action = DoActWizard.DoExtendedTitle, Info = "Set a player's extended title.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "extendedtitle", Action = DoActWizard.DoExtendedTitle, Info = "Set a player's extended title.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "stripaffects", Action = DoActWizard.DoStripAffects, Info = "Strip your affects.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "forcetick", Action = DoActWizard.DoForceTick, Info = "Force a tick update to happen.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "setplayerpassword", Action = DoActWizard.DoSetPlayerPassword, Info = "Set another player's password.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
 
             Commands.Add(new Command { Name = "connections", Action = game.DoConnections, Info = "See connections to the mud.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
             Commands.Add(new Command { Name = "banbyname", Action = game.DoBanByName, Info = "Ban a player name, connected or not.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });

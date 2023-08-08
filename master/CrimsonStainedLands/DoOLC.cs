@@ -2924,10 +2924,10 @@ namespace CrimsonStainedLands
                 else if (mod == "-")
                 {
                     args = args.OneArgument();
-                    if (ch.EditingHelp.text.IndexOf("\n\r") >= 0)
+                    if (ch.EditingHelp.text.IndexOf("\n") >= 0)
                     {
                         ch.EditingHelp.text = ch.EditingHelp.text.Substring(0, ch.EditingHelp.text.LastIndexOf('\n') - 1);
-                        if (ch.EditingHelp.text.IndexOf("\n\r") >= 0)
+                        if (ch.EditingHelp.text.IndexOf("\n") >= 0)
                             ch.EditingHelp.text = ch.EditingHelp.text.Substring(0, ch.EditingHelp.text.LastIndexOf('\n'));
                         else
                             ch.EditingHelp.text = "";
@@ -2941,7 +2941,7 @@ namespace CrimsonStainedLands
                 else if (mod == "+")
                 {
                     args = args.OneArgument();
-                    ch.EditingHelp.text += (!string.IsNullOrEmpty(ch.EditingHelp.text) && !ch.EditingHelp.text.Contains('\n') ? "\n" : "") + args + "\n";
+                    ch.EditingHelp.text += (!string.IsNullOrEmpty(ch.EditingHelp.text) && !ch.EditingHelp.text.EndsWith("\n") ? "\n" : "") + args + "\n";
                     ch.EditingHelp.area.saved = false;
                     ch.send("OK.\n\r");
                 }

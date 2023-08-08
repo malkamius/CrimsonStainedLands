@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Sockets;
+using System.Net;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.InteropServices;
@@ -16,6 +18,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.AxHost;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using System.Numerics;
 
 namespace CrimsonStainedLands
 {
@@ -215,6 +218,7 @@ namespace CrimsonStainedLands
             new WearSlot() { id = WearSlotIDs.Tattoo, flag = WearFlags.Tattoo, slot =       "<tattood>          ", wearString = "on your arm", wearStringOthers = "on their arm"}
         };
 
+        public HashSet<WizardNet.Flags> WiznetFlags = new HashSet<WizardNet.Flags>();
 
         public string Name { get; set; }
 
@@ -865,7 +869,8 @@ namespace CrimsonStainedLands
             if (show)
                 send("\\gYou raise a level!!  \\x\n\r");
             Level += 1;
-            game.log("{0} gained level {1}", Name, Level);
+            //game.log("{0} gained level {1}", Name, Level);
+            WizardNet.Wiznet(WizardNet.Flags.Levels, "{0} gained level {1}", null, null, Name, Level);
             //sprintf(buf, "$N has attained level %d!", ch->level);
             //wiznet(buf, ch, NULL, WIZ_LEVELS, 0, 0);
             GiveAdvanceLevelGains(show);
@@ -2816,10 +2821,8 @@ namespace CrimsonStainedLands
                 ch.RemoveCharacterFromRoom();
                 ch.Dispose();
                 ((Player)ch).socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("\nGoodbye!\n\r"));
-                ((Player)ch).socket.Close();
-                try { ((Player)ch).socket.Dispose(); } catch { }
-                ((Player)ch).socket = null;
-                game.Instance.Info.connections.Remove((Player)ch);
+
+                game.CloseSocket((Player) ch, true);
             }
         }
 
@@ -4622,6 +4625,8 @@ namespace CrimsonStainedLands
                         new XElement("vulnerable", string.Join(" ", from flag in VulnerableFlags select flag.ToString())),
 
                         new XElement("affectedBy", string.Join(" ", from flag in AffectedBy.Distinct() select flag.ToString())),
+                        new XElement("WiznetFlags", string.Join(" ", from flag in WiznetFlags select flag.ToString())),
+
                         WeaponDamageMessage != null ? new XElement("WeaponDamageMessage", WeaponDamageMessage.Keyword) : null,
                         DamageDice != null && DamageDice.HasValue ? new XElement("DamageDiceSides", DamageDice.DiceSides) : null,
                         DamageDice != null && DamageDice.HasValue ? new XElement("DamageDiceCount", DamageDice.DiceCount) : null,

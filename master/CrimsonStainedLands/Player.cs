@@ -20,6 +20,9 @@ namespace CrimsonStainedLands
     public class Player : Character
     {
         public Socket socket;
+
+        public string Address { get; private set; }
+
         public DateTime? inanimate = null;
         public StringBuilder input = new StringBuilder();
         public StringBuilder output = new StringBuilder();
@@ -27,7 +30,7 @@ namespace CrimsonStainedLands
 
         public game game;
         public DateTime LastSaveTime = DateTime.MinValue;
-
+        public TimeSpan TotalPlayTime = TimeSpan.Zero;
         public DateTime LastReadNote;
 
         public NoteData UnsentNote = new NoteData();
@@ -80,7 +83,7 @@ namespace CrimsonStainedLands
         {
             this.game = game;
             this.socket = socket;
-
+            Address = ((IPEndPoint)socket.RemoteEndPoint).Address.MapToIPv4().ToString();
             Name = "new connection";
 
             //var address = ((System.Net.IPEndPoint)socket.RemoteEndPoint).Address;
@@ -214,11 +217,12 @@ namespace CrimsonStainedLands
 
                 if (game.CheckIsBanned(Name, string.Empty))
                 {
+                    WizardNet.Wiznet(WizardNet.Flags.Logins, "Banned Login Attempt - {0} at {1}", null, null, Name, Address);
+
                     try
                     {
                         sendRaw("You are banned.\n\r");
-                        socket.Close();
-                        socket = null;
+                        game.CloseSocket(this, true);
                     }
                     catch
                     {
@@ -301,7 +305,7 @@ namespace CrimsonStainedLands
                 else
                 {
                     sendRaw("Incorrect password!\n\r");
-                    socket.Close();
+                    game.CloseSocket(this, true, false);
                     return true;
                 }
             }
@@ -314,6 +318,8 @@ namespace CrimsonStainedLands
                         try
                         {
                             connection.sendRaw("This character is being logged in elsewhere.\n\r");
+                            connection.socket.Close();
+                            connection.socket = null;
                         }
                         catch { }
 
@@ -325,8 +331,7 @@ namespace CrimsonStainedLands
 
                                 try
                                 {
-                                    if (connection.socket != null)
-                                        connection.socket.Close();
+                                    game.CloseSocket(this, true, false);
                                 }
                                 catch { }
 
@@ -336,15 +341,10 @@ namespace CrimsonStainedLands
                             }
                             connection.inanimate = null;
                             connection.socket = this.socket;
+                            connection.Address = this.Address;
                             connection.ConnectExistingPlayer(true);
                             this.socket = null;
                             game.Info.connections.Remove(this);
-
-                            //connection.Dispose();
-                            //game.Info.connections.Remove(connection);
-                            //LoadCharacterFile("data\\players\\" + Name + ".xml");
-                            //if (connection.socket != null)
-                            //connection.socket.Close();
 
                         }
                         catch { }
@@ -354,8 +354,7 @@ namespace CrimsonStainedLands
                 else
                 {
                     sendRaw("Goodbye.\n\r");
-                    socket.Close();
-                    socket = null;
+                    game.CloseSocket(this, true);
                 }
 
             }
@@ -543,7 +542,7 @@ namespace CrimsonStainedLands
                     }
                 }
             }
-
+            WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
             Character.ReadHelp(this, "greeting", true);
             send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
             Character.ReadHelp(this, "MOTD", true);
@@ -707,14 +706,12 @@ namespace CrimsonStainedLands
                 if (System.IO.File.Exists("data\\players\\" + Name + ".xml"))
                 {
                     sendRaw("It seems someone else has taken this name. Unable to continue.\n\r");
-                    socket.Close();
-                    socket = null;
-                    game.Info.connections.Remove(this);
+                    game.CloseSocket(this, true);
                     return false;
                 }
 
                 this.state = ConnectionStates.Playing;
-
+                WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
                 int playersonline = 0;
                 if ((playersonline = game.Info.connections.Count(p => p.state == ConnectionStates.Playing)) > game.Instance.MaxPlayersOnline)
                 {
@@ -764,6 +761,7 @@ namespace CrimsonStainedLands
 
         public void SaveCharacterFile()
         {
+            TotalPlayTime += DateTime.Now - LastSaveTime;
             LastSaveTime = DateTime.Now;
             if (!Directory.Exists("data"))
                 Directory.CreateDirectory("data");
@@ -785,6 +783,7 @@ namespace CrimsonStainedLands
                     element.Add(new XElement("WeaponSpecializations", WeaponSpecializations.ToString()));
 
                 element.Add(new XElement("LastReadNote", LastReadNote.ToString()));
+                element.Add(new XElement("TotalPlayTime", TotalPlayTime.ToString()));
                 element.Add(new XElement("password", password));
                 element.Save("data\\players\\" + Name + ".xml");
 
@@ -859,6 +858,9 @@ namespace CrimsonStainedLands
                     Starving = element.GetElementValueInt("starving", 0);
                     Wimpy = element.GetElementValueInt("Wimpy", 0);
                     WeaponSpecializations = element.GetElementValueInt("WeaponSpecializations");
+                    
+                    var totalPlayTime = element.GetElementValue("TotalPlayTime");
+                    TimeSpan.TryParse(totalPlayTime, out TotalPlayTime);
 
                     var lastReadNote = element.GetElementValue("LastReadNote");
                     DateTime.TryParse(lastReadNote, out LastReadNote);
@@ -875,6 +877,9 @@ namespace CrimsonStainedLands
 
                     if (element.HasElement("affectedBy"))
                         Utility.GetEnumValues<AffectFlags>(element.GetElementValue("affectedBy"), ref this.AffectedBy);
+
+                    if (element.HasElement("WiznetFlags"))
+                        Utility.GetEnumValues<WizardNet.Flags>(element.GetElementValue("WiznetFlags"), ref this.WiznetFlags);
 
                     if (element.HasElement("PermanentStats"))
                     {
@@ -992,9 +997,9 @@ namespace CrimsonStainedLands
             state = Player.ConnectionStates.Deleting;
             System.IO.File.Delete("data\\players\\" + Name + ".xml");
             sendRaw("Character deleted.\n\r");
-            socket.Close();
-            socket.Dispose();
-            socket = null;
+
+            game.CloseSocket(this, true);
+
         }
 
         public void SetPassword(string password)

@@ -200,7 +200,7 @@ namespace CrimsonStainedLands
         public DateTime GameStarted = DateTime.Now;
 
         public int MaxPlayersOnline = 0;
-        
+
 
         public static void Launch(int port, MainForm form)
         {
@@ -327,20 +327,23 @@ namespace CrimsonStainedLands
                         {
                             var player = new Player(this, listeningSocket.Accept());
                             state.connections.Add(player);
-
-                            if (game.CheckIsBanned(string.Empty, ((IPEndPoint)player.socket.RemoteEndPoint).Address.MapToIPv4().ToString()))
+                            if (game.CheckIsBanned(string.Empty, player.Address))
                             {
                                 try
                                 {
+                                    WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
+
                                     player.sendRaw("You are banned.\n\r");
-                                    player.socket.Close();
-                                    player.socket = null;
+                                    game.CloseSocket(player, true, true);
                                 }
                                 catch
                                 {
 
                                 }
                             }
+                            else
+                                WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
+
                         }
 
 
@@ -398,10 +401,7 @@ namespace CrimsonStainedLands
                                                 {
 
                                                     connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
-                                                    try { connection.socket.Close(); } catch { }
-
-                                                    try { connection.socket.Dispose(); } catch { }
-                                                    connection.socket = null;
+                                                    game.CloseSocket(connection, false, true);
                                                     connection.inanimate = DateTime.Now;
                                                 }
                                             }
@@ -434,6 +434,10 @@ namespace CrimsonStainedLands
 
                                 if ((connection.state != Player.ConnectionStates.Playing && connection.socket == null) || (connection.inanimate.HasValue && connection.inanimate.Value.AddMinutes(5) < DateTime.Now))
                                 {
+                                    
+
+                                    WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection {0} removed from list of active connections.", connection, null, connection.Address);
+
                                     connection.Act("$n disappears into the void.", null, null, null, ActType.ToRoom);
                                     if (connection.state == Player.ConnectionStates.Playing)
                                         connection.SaveCharacterFile();
@@ -442,6 +446,8 @@ namespace CrimsonStainedLands
                                         connection.RemoveCharacterFromRoom();
                                     }
                                     connection.Dispose();
+
+                                    
                                     state.connections.Remove(connection);
                                 }
 
@@ -465,8 +471,7 @@ namespace CrimsonStainedLands
                                 {
                                     if (connection.socket != null)
                                     {
-                                        try { connection.socket.Close(); } catch { }
-                                        try { connection.socket.Dispose(); } catch { }
+                                        game.CloseSocket(connection, false, false);
                                         connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
                                     }
                                     connection.socket = null;
@@ -1161,7 +1166,7 @@ namespace CrimsonStainedLands
                         {
                             ch.send("You feel your body start to transition back to a physical form.\n\r");
                         }
-                        
+
                         if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
                         {
                             prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
@@ -1799,7 +1804,7 @@ namespace CrimsonStainedLands
                 ch.send("{0,20} {1,20} {2, 10}\n\r", "Name", "Address", "State");
                 foreach (var player in Character.Characters.OfType<Player>())
                 {
-                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, (((IPEndPoint)(player.socket.RemoteEndPoint)).Address.MapToIPv4().ToString()), player.state.ToString());
+                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, player.Address, player.state.ToString());
                 }
 
                 ch.send(Character.Characters.OfType<Player>().Count() + " players online.\n\r");
@@ -1838,8 +1843,7 @@ namespace CrimsonStainedLands
             if ((bancharacter = Character.GetCharacterWorld(ch, name, true, false)) != null && bancharacter is Player)
             {
                 ((Player)bancharacter).sendRaw("You have been banned.\n\r");
-                ((Player)bancharacter).socket.Close();
-                ((Player)bancharacter).socket = null;
+                game.CloseSocket(((Player)bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
 
@@ -1869,10 +1873,9 @@ namespace CrimsonStainedLands
             }
             else if ((bancharacter = Character.GetCharacterWorld(ch, nameOrAddress, true, false)) != null && bancharacter is Player)
             {
-                address = ((IPEndPoint)((Player)bancharacter).socket.RemoteEndPoint).Address.MapToIPv4().ToString();
+                address = ((Player) bancharacter).Address;
                 ((Player)bancharacter).sendRaw("You have been banned.\n\r");
-                ((Player)bancharacter).socket.Close();
-                ((Player)bancharacter).socket = null;
+                game.CloseSocket(((Player) bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
             else
@@ -1881,15 +1884,14 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            foreach(var player in Character.Characters.OfType<Player>())
+            foreach (var player in Character.Characters.OfType<Player>())
             {
                 try // player may already be kicked
                 {
-                    if (((IPEndPoint)player.socket.RemoteEndPoint).Address.MapToIPv4().ToString().StartsWith(address))
+                    if (player.Address.StartsWith(address))
                     {
                         player.sendRaw("You have been banned.\n\r");
-                        player.socket.Close();
-                        player.socket = null;
+                        CloseSocket(player);
                     }
                 }
                 catch
@@ -1911,6 +1913,22 @@ namespace CrimsonStainedLands
 
 
             ch.send($"Ban entry added. In effect for {duration}.\n\r");
+        }
+
+        public static void CloseSocket(Player player, bool remove = false, bool settonull = true)
+        {
+            WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection from {0}({1}) terminated, state was {2}.", player, null, player.Address, !player.Name.ISEMPTY() ? player.Name : "", player.state);
+
+            try { player.socket.Close(); } catch { }
+            try { player.socket.Dispose(); } catch { }
+
+            if (settonull)
+                player.socket = null;
+
+            if(remove)
+            {
+                game.Instance.Info.connections.Remove(player);
+            }
         }
 
         public static bool CheckIsBanned(string name, string ipAddress)

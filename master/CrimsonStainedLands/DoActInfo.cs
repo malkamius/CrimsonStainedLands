@@ -1306,6 +1306,11 @@ namespace CrimsonStainedLands
             ch.send("Server started at {0}.\n\rThe system time is {1}.\n\rGame has been running for {2} days, {3} hours and {4} minutes.\n\r", 
                 game.Instance.GameStarted, DateTime.Now, runningtime.Days, runningtime.Hours, runningtime.Minutes);
 
+            if (ch is Player)
+            {
+                var player = ch as Player;
+                ch.send("Total Time played: {0}\n\r", (player.TotalPlayTime + (DateTime.Now - player.LastSaveTime)));
+            }
             return;
         }
 

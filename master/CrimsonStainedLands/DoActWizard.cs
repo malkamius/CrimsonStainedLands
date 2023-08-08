@@ -9,7 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace CrimsonStainedLands
 {
-    public class DoActWiz
+    public class DoActWizard
     {
         public static void DoGoto(Character ch, string arguments)
         {

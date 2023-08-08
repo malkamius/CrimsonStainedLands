@@ -117,8 +117,7 @@ namespace CrimsonStainedLands
                 if (selected != null)
                 {
                     ((Player)selected).socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("You have been kicked.\n\r"));
-                    ((Player)selected).socket.Close();
-                    ((Player)selected).socket = null;
+                    game.CloseSocket((Player)selected);
                 }
             }
             catch { }

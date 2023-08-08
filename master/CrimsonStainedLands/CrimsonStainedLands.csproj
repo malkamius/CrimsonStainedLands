@@ -109,7 +109,7 @@
     <Compile Include="Combat.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="DoActMapper.cs" />
-    <Compile Include="DoActWiz.cs" />
+    <Compile Include="DoActWizard.cs" />
     <Compile Include="DoOLC.cs" />
     <Compile Include="NLuaPrograms.cs" />
     <Compile Include="Player.cs" />
@@ -155,6 +155,7 @@
     <Compile Include="WarriorSpecializationSkills.cs" />
     <Compile Include="WeaponDamageMessage.cs" />
     <Compile Include="WeatherData.cs" />
+    <Compile Include="WizardNet.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
