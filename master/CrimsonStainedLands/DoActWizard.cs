@@ -928,6 +928,30 @@ namespace CrimsonStainedLands
                         NPCData mob = new NPCData(mobt, ch.Room);
                         ch.Act("$N magically appears.\n\r", mob);
                         ch.Act("$N magically appears.\n\r", mob, null, null, ActType.ToRoomNotVictim);
+                        var resets = mobt.Area.resets;
+
+                        if (resets.Any())
+                        {
+                            var reset = resets.FirstOrDefault(r => r.resetType == ResetTypes.NPC && r.spawnVnum == mobt.Vnum);
+                            if (reset != null)
+                            {
+                                var resetindex = resets.IndexOf(reset);
+                                ItemData lastitem = null;
+                                if (resetindex + 1 < resets.Count)
+                                {
+                                    for (int i = resetindex + 1; i < resets.Count; i++)
+                                    {
+                                        reset = resets[i];
+                                        if (reset.resetType != ResetTypes.Give && reset.resetType != ResetTypes.Equip)
+                                        {
+                                            break;
+                                        }
+                                        else
+                                            reset.execute(ref mob, ref lastitem);
+                                    }
+                                }
+                            }
+                        }
                     }
                     else ch.send("mob vnum not found.\n\r");
                 }
