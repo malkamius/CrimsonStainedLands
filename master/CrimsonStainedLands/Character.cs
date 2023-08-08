@@ -14,7 +14,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using global::CrimsonStainedLands.Extensions;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+//using Microsoft.CodeAnalysis.CSharp.Syntax;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.AxHost;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;

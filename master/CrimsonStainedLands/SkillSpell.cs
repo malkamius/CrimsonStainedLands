@@ -319,7 +319,7 @@ namespace CrimsonStainedLands
                     
                     // Avoid using Roslyn for now, it adds startup time significantly.
                     
-                    if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
+                    //if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
 
                     string SpellFuncType;
                     string SpellFuncName;
@@ -414,7 +414,7 @@ namespace CrimsonStainedLands
                     skill.PrerequisitePercentage = skElement.GetAttributeValueInt("PrerequisitePercentage");
                     skill.waitTime = skElement.GetAttributeValueInt("WaitTime", game.PULSE_VIOLENCE);
                     skill.AutoCastScript = skElement.GetAttributeValue("AutoCastScript");
-                    if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
+                    //if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
                     if (skElement.GetAttributeValue("AutoCast", "true") == "false")
                         skill.BoolAutoCast = false;
                     string SpellFuncType;
@@ -529,7 +529,7 @@ namespace CrimsonStainedLands
                         skill.Lyrics = skElement.GetElementValue("Lyrics", skill.Lyrics).Trim();
                         
                         skill.AutoCastScript = skElement.GetAttributeValue("AutoCastScript");
-                        if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
+                        //if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
                         if (skElement.GetAttributeValue("AutoCast").StringCmp("false"))
                             skill.BoolAutoCast = false;
                         string SpellFuncType;
@@ -621,7 +621,7 @@ namespace CrimsonStainedLands
                         skill.waitTime = skElement.GetAttributeValueInt("WaitTime", game.PULSE_VIOLENCE);
                         skill.Lyrics = skElement.GetElementValue("Lyrics", skill.Lyrics).Trim();
                         skill.AutoCastScript = skElement.GetAttributeValue("AutoCastScript");
-                        if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
+                        //if (!skill.AutoCastScript.ISEMPTY() && UseRoslyn) RoslynScripts.PrepareCharacterBoolScript(skill.AutoCastScript);
                         if (skElement.GetAttributeValue("AutoCast").StringCmp("false"))
                             skill.BoolAutoCast = false;
                         string SpellFuncType;
