@@ -15,7 +15,6 @@ using global::CrimsonStainedLands.Extensions;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
 
-using Microsoft.Extensions.Logging;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Diagnostics.Eventing.Reader;

@@ -35,7 +35,6 @@
 ***************************************************************************/
 
 using CrimsonStainedLands.Extensions;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -149,7 +148,6 @@ namespace CrimsonStainedLands
          * ---- Player Descriptions
          * ---- Set [obj, mob]
          */
-        public static ILogger logger = new LoggerFactory().CreateLogger("CrimsonStainedLands");
 
         public class GameInfo
         {
