@@ -48,7 +48,8 @@ namespace CrimsonStainedLands
             Color256,
             SuppressGoAhead,
             MUDeXtensionProtocol,
-            WontMSSP
+            WontMSSP,
+            Ansi
         }
         public List<TelnetOptionFlags> TelnetOptions = new List<TelnetOptionFlags>();
 
@@ -165,6 +166,8 @@ namespace CrimsonStainedLands
             }
         }
 
+        public List<string> ClientTypes = new List<string>();
+
         private void ProcessBytes(byte[] buffer, int length)
         {
             lock (this)
@@ -234,17 +237,32 @@ namespace CrimsonStainedLands
                                             { "CMUD", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256 } },
                                             { "Mudlet", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
                                             { "Mushclient", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
+                                            { "TRUECOLOR", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.ColorRGB } },
+                                            { "256COLOR", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256 } },
+                                            { "VT100", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Ansi } },
+                                            { "ANSI", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Ansi } },
                                         };
 
-                                        var Options = (from option in TelnetOptionFlags where ClientString.StringPrefix(option.Key) select option.Value).FirstOrDefault();
+                                        var Options = (from option in TelnetOptionFlags 
+                                                       where ClientString.StringPrefix(option.Key) || 
+                                                            ClientString.ToUpper().Replace(" ", "").Contains(option.Key) 
+                                                       select option.Value).FirstOrDefault();
 
                                         if (Options != null)
                                             foreach (var option in Options)
                                                 TelnetOptions.SETBIT(option);
 
                                         Game.log(ClientString + " client detected.");
+                                        if (!ClientTypes.Contains(ClientString))
+                                        {
+                                            ClientTypes.Add(ClientString);
+                                            sendRaw(TelnetProtocol.ServerGetTelnetTypeNegotiate, true);
+                                        }
+                                        else
+                                            sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                     }
-                                    sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                    else
+                                        sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
                                 else if(command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
                                 {
@@ -832,6 +850,10 @@ namespace CrimsonStainedLands
             Character.ReadHelp(this, "greeting", true);
             send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
             Character.ReadHelp(this, "MOTD", true);
+            if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
+            {
+                send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
+            }
             var notecount = (from note in NoteData.Notes where note.Sent > LastReadNote && (note.To.IsName("all", true) || note.To.IsName(Name, true)) select note).Count();
 
             if (notecount > 0)
@@ -1024,7 +1046,10 @@ namespace CrimsonStainedLands
 
                 Act("$n appears in the room suddenly.\n\r", type: ActType.ToRoom);
                 send("\n\rWelcome to the Crimson Stained Lands\n\r\n\r");
-
+                if(!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
+                {
+                    send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
+                }
                 Character.DoOutfit(this, "");
 
                 HitPoints = MaxHitPoints;

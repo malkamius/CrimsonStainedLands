@@ -15,6 +15,7 @@ namespace CrimsonStainedLands
     {
         public enum Options : byte
         {
+            ECHO = 1,
             MUDServerStatusProtocolVariable = 1,
             MUDServerStatusProtocolValue = 2,
             TelnetType = 24,
@@ -156,6 +157,24 @@ namespace CrimsonStainedLands
         public static readonly byte[] ClientGetWillUnknown = new byte[] {
             (byte)Options.InterpretAsCommand,
             (byte)Options.WILL};
+
+        public static readonly byte[] ServerGetTelnetTypeNegotiate = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.SubNegotiation,
+            (byte)Options.TelnetType,
+            (byte)1,
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.SubNegotiationEnd};
+
+        public static readonly byte[] ClientGetDoEcho = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DO,
+            (byte)Options.ECHO};
+
+        public static readonly byte[] ServerGetWillEcho = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WILL,
+            (byte)Options.ECHO};
         public static void ProcessInterpretAsCommand(object sender, byte[] data, int position, out int newposition, out byte[] carryover, EventHandler<Command> callback)
         {
             /// IAC TType Negotiation
