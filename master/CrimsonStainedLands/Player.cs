@@ -165,7 +165,7 @@ namespace CrimsonStainedLands
 
                 if (ReceiveBufferBacklog != null)
                 {
-                    data = new byte[ReceiveBufferBacklog.Length + buffer.Length];
+                    data = new byte[ReceiveBufferBacklog.Length + length];
                     ReceiveBufferBacklog.CopyTo(data, 0);
                     buffer.CopyTo(data, ReceiveBufferBacklog.Length);
                 }
@@ -205,77 +205,56 @@ namespace CrimsonStainedLands
                             inanimate = DateTime.Now;
                         }
                     }
-                    else if (singlecharacter == (byte)Game.TelnetOptions.IAC)
+                    else if (singlecharacter == (byte)TelnetProtocol.Options.InterpretAsCommand)
                     {
-                        /// IAC TType Negotiation
-                        /// https://tintin.mudhalla.net/protocols/mtts/
-                        /// https://tintin.mudhalla.net/rfc/rfc854/
-                        /// https://www.rfc-editor.org/rfc/rfc1091
-                        /// https://tintin.mudhalla.net/info/ansicolor/
-
-                        if (data.Length > byteindex + 2)
-                        {
-                            /// DO TTYPE sent on connection acceptance, Client responds with WILL TTYPE
-                            if (data[byteindex + 1] == (byte)Game.TelnetOptions.WILL
-                                && data[byteindex + 2] == (byte)Game.TelnetOptions.TTYPE)
+                        TelnetProtocol.ProcessInterpretAsCommand(this, data, byteindex, out var newbyteindex, out var carryover,
+                            (sender, command) =>
                             {
-                                /// READY TO RECEIVE TTYPE
-                                sendRaw(
-                                    new byte[] { (byte) Game.TelnetOptions.IAC,
-                                                                        (byte)Game.TelnetOptions.SB,
-                                                                        (byte)Game.TelnetOptions.TTYPE,
-                                                                        1,
-                                                                        (byte) Game.TelnetOptions.IAC,
-                                                                        (byte) Game.TelnetOptions.SE});
-
-
-                            }
-                            /// TTYPE Received from Client
-                            else if (length > byteindex + 4 &&
-                                data[byteindex + 1] == (byte)Game.TelnetOptions.SB &&
-                                data[byteindex + 2] == (byte)Game.TelnetOptions.TTYPE &&
-                                data[byteindex + 3] == 0)
-                            {
-                                bool hittheend = false;
-                                var TerminalTypeResponse = new MemoryStream();
-                                for (int responseindex = byteindex + 4; responseindex < length; responseindex++)
+                                if (command.Type == TelnetProtocol.Command.Types.WillTelnetType)
                                 {
-                                    if (data[responseindex] == (byte)Game.TelnetOptions.IAC)
+                                    sendRaw(TelnetProtocol.ServerGetWillTelnetType, true);
+                                }
+                                else if (command.Type == TelnetProtocol.Command.Types.ClientSendNegotiateType)
+                                {
+                                    if (command.Values.TryGetValue("TelnetType", out var telnettypes) && telnettypes != null && telnettypes.Length > 0)
                                     {
-                                        hittheend = true;
-                                        break;
+                                        var ClientString = telnettypes.First(); ;
+
+                                        var TelnetOptionFlags = new Dictionary<string, Player.TelnetOptionFlags[]>
+                                        {
+                                            { "CMUD", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256 } },
+                                            { "Mudlet", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
+                                            { "Mushclient", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
+                                        };
+
+                                        var Options = (from option in TelnetOptionFlags where ClientString.StringPrefix(option.Key) select option.Value).FirstOrDefault();
+
+                                        if (Options != null)
+                                            foreach (var option in Options)
+                                                TelnetOptions.SETBIT(option);
+
+                                        Game.log(ClientString + " client detected.");
                                     }
-                                    TerminalTypeResponse.WriteByte(buffer[responseindex]);
+                                    sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
-                                if (hittheend)
+                                else if(command.Type == TelnetProtocol.Command.Types.DoMudServerStatusProtocol)
                                 {
+                                    var variables = new Dictionary<string, string[]>();
+                                    variables["NAME"] = new string[] { "CRIMSON STAINED LANDS" };
+                                    variables["PLAYERS"] = new string[] { game.Info.Connections.ToArrayLocked().Count(con => con.state == ConnectionStates.Playing ).ToString() };
+                                    variables["UPTIME"] = new string[] { (DateTime.Now - Game.Instance.GameStarted).TotalSeconds.ToString() };
+                                    variables["HOSTNAME"] = new string[] { "kbs-cloud.com" };
+                                    variables["PORT"] = new string[] { Settings.Port.ToString() };
+                                    variables["SSL"] = new string[] { Settings.SSLPort.ToString() };
+                                    variables["CODEBASE"] = new string[] { "CUSTOM" };
+                                    variables["WEBSITE"] = new string[] { "https://kbs-cloud.com" };
 
-                                    var ClientString = ASCIIEncoding.ASCII.GetString(TerminalTypeResponse.ToArray());
-                                    var TelnetOptionFlags = new Dictionary<string, Player.TelnetOptionFlags[]>
-                                    {
-                                        { "CMUD", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256 } },
-                                        { "Mudlet", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
-                                        { "Mushclient", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
-                                    };
-
-                                    var Options = (from option in TelnetOptionFlags where ClientString.StringPrefix(option.Key) select option.Value).FirstOrDefault();
-
-                                    if (Options != null)
-                                        foreach (var option in Options)
-                                            TelnetOptions.SETBIT(option);
-
-                                    Game.log(ClientString + " client detected.");
-                                    byteindex += (int)TerminalTypeResponse.Length + 4;
+                                    sendRaw(TelnetProtocol.ServerGetNegotiateMudServerStatusProtocol(variables), true);
                                 }
-                                else
-                                {
-                                    ReceiveBufferBacklog = new byte[data.Length - byteindex];
-                                    data.CopyTo(ReceiveBufferBacklog, 0);
-                                    break;
-                                }
-                            }
-                        }
-
+                            });
+                        if(newbyteindex > byteindex)
+                        byteindex = newbyteindex;
+                        this.ReceiveBufferBacklog = carryover;
                     }
                     // else skip the character
                 }
@@ -297,7 +276,7 @@ namespace CrimsonStainedLands
                         if (received == 0)
                         {
                             Game.CloseSocket(connection, connection.state < ConnectionStates.Playing, true);
-                           connection.inanimate = DateTime.Now;
+                            connection.inanimate = DateTime.Now;
                         }
                         else
                         {
@@ -619,15 +598,15 @@ namespace CrimsonStainedLands
                                         //    this.socket.EndReceive(this.readop);
                                         //    connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
                                         //}
-                                        
+
                                         //this.readop = null;
                                         //this.writeop = null;
                                         this.socket = null;
                                         this.sslsocket = null;
-                                        
+
                                         connection.ConnectExistingPlayer(true);
 
-                                       
+
                                     }
 
 

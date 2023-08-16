@@ -329,19 +329,6 @@ namespace CrimsonStainedLands
             mainLoop(state);
         }
 
-        public enum TelnetOptions : byte
-        {
-            TTYPE = 24,
-            SE = 240,
-            GoAhead = 249,
-            SB = 250,
-            WILL = 251,
-            DO = 253,
-            IAC = 255,
-        }
-
-
-
         private void mainLoop(GameInfo state)
         {
             try
@@ -451,7 +438,8 @@ namespace CrimsonStainedLands
                 /// https://tintin.mudhalla.net/rfc/rfc854/
                 /// https://www.rfc-editor.org/rfc/rfc1091
                 /// https://tintin.mudhalla.net/info/ansicolor/
-                player.sendRaw(new byte[] { (byte)TelnetOptions.IAC, (byte)TelnetOptions.DO, (byte)TelnetOptions.TTYPE }, true);
+                player.sendRaw(TelnetProtocol.ServerGetDoTelnetType, true);
+                
             }
         }
 
