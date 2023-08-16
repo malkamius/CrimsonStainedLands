@@ -255,7 +255,13 @@ namespace CrimsonStainedLands.Extensions
             {
                 text = text.Substring(0, match.Index) + match.Groups[2].Value + (text.Length > match.Index + match.Length ? text.Substring(match.Index + match.Length) : "");
             }
-
+            regex = new Regex(@"<([/a-zA-Z].*?)\b[^>]*>");
+            text = regex.Replace(text, "");
+            //while ((match = regex.Match(text, 0)) != null && match.Length > 0)
+            //{
+            //    text = text.Substring(0, match.Index) + (text.Length > match.Index + match.Length ? text.Substring(match.Index + match.Length) : "");
+            //}
+            
             return text.Replace(@"\", @"\\").Replace("{", "{{");
         }
 
