@@ -24,6 +24,7 @@ namespace CrimsonStainedLands
             SubNegotiation = 250,
             WILL = 251,
             DO = 253,
+            DONT = 254,
             InterpretAsCommand = 255,
         }
 
@@ -85,7 +86,10 @@ namespace CrimsonStainedLands
             (byte)Options.InterpretAsCommand,
             (byte)Options.DO,
             (byte)Options.MudServerStatusProtocol };
-
+        public static readonly byte[] ClientGetWontMudServerStatusProtocol = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DONT,
+            (byte)Options.MudServerStatusProtocol };
         public static byte[] ServerGetNegotiateMudServerStatusProtocol(Dictionary<string, string[]> Values)
         {
             var data = new MemoryStream();
@@ -178,6 +182,12 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.DoMudServerStatusProtocol
                     });
+                    return;
+                }
+                else if(data.StartsWith(ClientGetWontMudServerStatusProtocol, position))
+                {
+                    newposition = position + ClientGetWontMudServerStatusProtocol.Length;
+                    carryover = null;
                     return;
                 }
             }
