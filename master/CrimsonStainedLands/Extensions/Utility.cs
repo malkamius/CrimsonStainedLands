@@ -838,6 +838,11 @@ namespace CrimsonStainedLands.Extensions
             }
         }
 
+        public static T[] ToArrayLocked<T>(this IEnumerable<T> enumerable)
+        {
+            lock(enumerable) return enumerable.ToArray();
+        }
+
         //public static void RemoveAll<T>(this HashSet<T> list, Func<T, bool> predicate)
         //{
         //    foreach (var val in list)

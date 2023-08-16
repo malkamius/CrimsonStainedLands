@@ -104,7 +104,7 @@ namespace CrimsonStainedLands
                 var selected = playersListBox.SelectedItem;
                 if (selected != null)
                 {
-                    ((Player)selected).socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("You have been kicked.\n\r"));
+                    ((Player)selected).sendRaw("You have been kicked.\n\r");
                     Game.CloseSocket((Player)selected);
                 }
             }
@@ -144,7 +144,7 @@ namespace CrimsonStainedLands
                     //this.playersListBox.Items.Clear();
 
 
-                    playersListBox.DataSource = new List<Player>(from connection in info.Connections where connection.socket != null select connection);
+                    playersListBox.DataSource = new List<Player>(from connection in info.Connections.ToArrayLocked() where connection.socket != null select connection);
                     //playersListBox.ValueMember = "name";
                     playersListBox.DisplayMember = "name";
 

@@ -35,6 +35,7 @@
 ***************************************************************************/
 
 using CrimsonStainedLands.Extensions;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -148,6 +149,7 @@ namespace CrimsonStainedLands
          * ---- Player Descriptions
          * ---- Set [obj, mob]
          */
+        public static ILogger logger = new LoggerFactory().CreateLogger("CrimsonStainedLands");
 
         public class GameInfo
         {
@@ -211,6 +213,9 @@ namespace CrimsonStainedLands
         }
 
         private Socket listeningSocket;
+        private Socket sshlisteningSocket;
+        private Socket ssllisteningSocket;
+
         private Game(int port, MainForm form)
         {
             var launchMethod = new Action<GameInfo>(launch);
@@ -251,6 +256,22 @@ namespace CrimsonStainedLands
             listeningSocket.Bind(new System.Net.IPEndPoint(0, state.Port));
             listeningSocket.Listen(50);
             state.Log.AppendLine("Listening on port " + state.Port);
+
+            ssllisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+
+            // listen on all adapters at port specified for new connections
+            ssllisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSLPort));
+            ssllisteningSocket.Listen(50);
+
+            //sshlisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+
+            //// listen on all adapters at port specified for new connections
+            //sshlisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSHPort));
+            //sshlisteningSocket.Listen(50);
+
+
+
+
         }
 
         private void LoadData()
@@ -308,22 +329,24 @@ namespace CrimsonStainedLands
             mainLoop(state);
         }
 
-        private enum TelnetOptions : byte
+        public enum TelnetOptions : byte
         {
             TTYPE = 24,
             SE = 240,
+            GoAhead = 249,
             SB = 250,
             WILL = 251,
             DO = 253,
             IAC = 255,
         }
 
-        
+
 
         private void mainLoop(GameInfo state)
         {
             try
             {
+                AcceptNewSockets();
                 while (!state.Exiting)
                 {
                     try
@@ -331,7 +354,7 @@ namespace CrimsonStainedLands
                         var time = DateTime.Now;
 
                         // Accept the new connections
-                        AcceptNewSockets();
+
 
                         // Check for input
                         CheckConnectionsForAndProcessInput();
@@ -366,43 +389,76 @@ namespace CrimsonStainedLands
             }
         }
 
+        private void EndAcceptNewSocket(IAsyncResult result)
+        {
+            var socket = result.AsyncState as Socket;
+
+            lock (Info.Connections)
+            {
+                try
+                {
+                    var player = new Player(this, socket.EndAccept(result), socket == ssllisteningSocket, socket == sshlisteningSocket);
+                    
+                    
+                }
+                catch { }
+
+                try
+                {
+                    socket.BeginAccept(EndAcceptNewSocket, socket);
+                }
+                catch { }
+            }
+        }
+
         /// <summary>
         /// Poll for pending connections and accept them
         /// </summary>
         private void AcceptNewSockets()
         {
-            while (listeningSocket.Poll(1, SelectMode.SelectRead))
+
+            listeningSocket.BeginAccept(EndAcceptNewSocket, listeningSocket);
+
+            if (ssllisteningSocket != null)
+                ssllisteningSocket.BeginAccept(EndAcceptNewSocket, ssllisteningSocket);
+
+            if (sshlisteningSocket != null)
+                sshlisteningSocket.BeginAccept(EndAcceptNewSocket, sshlisteningSocket);
+        }
+
+        public void SocketAccepted(Player player)
+        {
+            if (Game.CheckIsBanned(string.Empty, player.Address))
             {
-                var player = new Player(this, listeningSocket.Accept());
-                Info.Connections.Add(player);
-                if (Game.CheckIsBanned(string.Empty, player.Address))
+                try
                 {
-                    try
-                    {
-                        WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
+                    WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
 
-                        player.sendRaw("You are banned.\n\r");
-                        Game.CloseSocket(player, true, true);
-                    }
-                    catch
-                    {
-
-                    }
+                    player.sendRaw("You are banned.\n\r");
+                    Game.CloseSocket(player, true, true);
                 }
-                else
+                catch
                 {
-                    WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
 
-                    /// IAC TType Negotiation
-                    /// https://tintin.mudhalla.net/protocols/mtts/
-                    /// https://tintin.mudhalla.net/rfc/rfc854/
-                    /// https://www.rfc-editor.org/rfc/rfc1091
-                    /// https://tintin.mudhalla.net/info/ansicolor/
-                    player.socket.Send(new byte[] { (byte)TelnetOptions.IAC, (byte)TelnetOptions.DO, (byte)TelnetOptions.TTYPE });
                 }
+            }
+            else
+            {
+                WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
 
+                /// IAC TType Negotiation
+                /// https://tintin.mudhalla.net/protocols/mtts/
+                /// https://tintin.mudhalla.net/rfc/rfc854/
+                /// https://www.rfc-editor.org/rfc/rfc1091
+                /// https://tintin.mudhalla.net/info/ansicolor/
+                player.sendRaw(new byte[] { (byte)TelnetOptions.IAC, (byte)TelnetOptions.DO, (byte)TelnetOptions.TTYPE }, true);
             }
         }
+
+
+
+
+
 
         /// <summary>
         /// Poll for pending data to be received and receive it, handles IAC TType Negotiation
@@ -410,117 +466,48 @@ namespace CrimsonStainedLands
         /// <param name="connection">Player Connection containing the socket to be handled</param>
         private void ReceiveSocketBytes(Player connection)
         {
-            if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+            lock (connection)
             {
-                byte[] buffer = new byte[255];
-                int received = connection.socket.Receive(buffer);
+                //if (connection.sslsocket != null)
+                //{
+                //    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                //    {
 
-                if (received == 0)
-                {
-                    connection.socket.Dispose();
-                    connection.socket = null;
-                    connection.inanimate = DateTime.Now;
-                }
-                else
-                {
-                    var position = connection.input.Length;
+                //        if (connection.sslsocket.IsAuthenticated && (connection.readop == null || connection.readop.IsCompleted))
+                //        {
+                //            if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
+                //            if (connection.readop == null || connection.readop.IsCompleted)
+                //                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
+                //        }
+                //    }
 
-                    /// IAC TType Negotiation
-                    /// https://tintin.mudhalla.net/protocols/mtts/
-                    /// https://tintin.mudhalla.net/rfc/rfc854/
-                    /// https://www.rfc-editor.org/rfc/rfc1091
-                    /// https://tintin.mudhalla.net/info/ansicolor/
-                    if (received > 0 && buffer[0] == (byte)TelnetOptions.IAC)
-                    {
-                        var byteindex = 0;
-                        if (received > byteindex + 2)
-                        {
-                            /// DO TTYPE sent on connection acceptance, Client responds with WILL TTYPE
-                            if (buffer[byteindex + 1] == (byte)TelnetOptions.WILL
-                                && buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE)
-                            {
-                                /// READY TO RECEIVE TTYPE
-                                connection.socket.Send(
-                                    new byte[] { (byte) TelnetOptions.IAC,
-                                                                (byte)TelnetOptions.SB,
-                                                                (byte)TelnetOptions.TTYPE,
-                                                                1,
-                                                                (byte) TelnetOptions.IAC,
-                                                                (byte) TelnetOptions.SE});
+                //    else if (connection.socket == null)
+                //        connection.sslsocket = null;
+                //}
+                //else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                //{
+
+                //    if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
+                //    //int received = connection.socket.Receive(buffer);
+                //    if (connection.readop == null || connection.readop.IsCompleted)
+                //        connection.readop = connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
+                //}
+
+                ////else
+                ////{
 
 
-                            }
-                            /// TTYPE Received from Client
-                            else if (received > byteindex + 4 &&
-                                buffer[byteindex + 1] == (byte)TelnetOptions.SB &&
-                                buffer[byteindex + 2] == (byte)TelnetOptions.TTYPE &&
-                                buffer[byteindex + 3] == 0)
-                            {
-                                // supposed to send back different result, cmud sends the same
 
-                                //connection.socket.Send(
-                                //    new byte[] { (byte) TelnetOptions.IAC,
-                                //            (byte)TelnetOptions.SB,
-                                //            (byte)TelnetOptions.TTYPE,
-                                //            1,
-                                //            (byte) TelnetOptions.IAC,
-                                //            (byte) TelnetOptions.SE});
-                                var TerminalTypeResponse = new MemoryStream();
-                                for (int responseindex = 4; responseindex < received; responseindex++)
-                                {
-                                    if (buffer[responseindex] == (byte)TelnetOptions.IAC)
-                                        break;
-                                    TerminalTypeResponse.WriteByte(buffer[responseindex]);
-                                }
-                                var ClientString = ASCIIEncoding.ASCII.GetString(TerminalTypeResponse.ToArray());
-                                var ClientColorOptions = new Dictionary<string, ActFlags[]>
-                                                    {
-                                                        { "CMUD", new ActFlags[] { ActFlags.Color, ActFlags.Color256 } },
-                                                        { "ANSI", new ActFlags[] { ActFlags.Color} },
-                                                        { "Mudlet", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
-                                                        { "Mushclient", new ActFlags[] { ActFlags.Color, ActFlags.Color256, ActFlags.ColorRGB } },
-                                                    };
-
-                                var Options = (from option in ClientColorOptions where option.Key.StringPrefix(ClientString) select option.Value).FirstOrDefault();
-
-                                if (Options != null)
-                                    foreach (var option in Options)
-                                        connection.Flags.SETBIT(option);
-
-                                Game.log(ClientString + " client detected.");
-                            }
-                        }
-                    }
-                    else // normal data, filter it for valid characters
-                    {
-                        for (int byteindex = 0; byteindex < received; byteindex++)// (var Byte in buffer)
-                        {
-                            var singlecharacter = buffer[byteindex];
-                            if (singlecharacter == 8 && position > 0) // backspace
-                            {
-                                connection.input.Remove(connection.input.Length - 1, 1);
-                                position -= 1;
-                            }
-                            else if (singlecharacter == 13 || singlecharacter == 10 || (singlecharacter >= 32 && singlecharacter <= 126)) // new lines and standard characters
-                            {
-                                connection.input.Append((char)singlecharacter);
-                                position++;
-                                if (connection.input.Length > 4200) // not writing a novel yet?
-                                {
-
-                                    connection.socket.Send(ASCIIEncoding.ASCII.GetBytes("Too much data to process at once.\n\r"));
-                                    Game.CloseSocket(connection, false, true);
-                                    connection.inanimate = DateTime.Now;
-                                }
-                            }
-                            // else skip the character
-                        }
-                    }
-                    // Above method of adding input makes sure only characters space through 126 are allowed into the game and also supports backspace for telnet
-                    //connection.input.Append(System.Text.ASCIIEncoding.ASCII.GetChars(buffer, 0, received));
-                }
+                ////    else // normal data, filter it for valid characters
+                ////    {
+                ////        ProcessBytes(connection, buffer, received);
+                ////    }
+                //// Above method of adding input makes sure only characters space through 126 are allowed into the game and also supports backspace for telnet
+                ////connection.input.Append(System.Text.ASCIIEncoding.ASCII.GetChars(buffer, 0, received));
             }
         }
+
+
 
         /// <summary>
         /// Decrement the Wait Lag counter
@@ -588,8 +575,8 @@ namespace CrimsonStainedLands
                 }
                 connection.Dispose();
 
-
-                Info.Connections.Remove(connection);
+                lock (Info.Connections)
+                    Info.Connections.Remove(connection);
             }
 
             if (connection.socket == null && !connection.inanimate.HasValue)
@@ -598,7 +585,7 @@ namespace CrimsonStainedLands
 
         private void ProcessConnectionsOutput()
         {
-            foreach (var connection in new List<Player>(Info.Connections))
+            foreach (var connection in Info.Connections.ToArrayLocked())
             {
                 try
                 {
@@ -617,6 +604,7 @@ namespace CrimsonStainedLands
                             connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
                         }
                         connection.socket = null;
+                        connection.sslsocket = null;
                         connection.inanimate = DateTime.Now;
 
                     }
@@ -631,7 +619,7 @@ namespace CrimsonStainedLands
 
         private void CheckConnectionsForAndProcessInput()
         {
-            foreach (var connection in Info.Connections.ToArray())
+            foreach (var connection in Info.Connections.ToArrayLocked())
             {
                 if (connection.LastSaveTime != DateTime.MinValue && (DateTime.Now - connection.LastSaveTime).Minutes >= 5)
                 {
@@ -662,6 +650,7 @@ namespace CrimsonStainedLands
                             connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
                         }
                         connection.socket = null;
+                        connection.sslsocket = null;
                         connection.inanimate = DateTime.Now;
 
                     }
@@ -678,22 +667,35 @@ namespace CrimsonStainedLands
         private void LastDitchAttemptToSendOutput()
         {
             //exiting, one last attempt at sending any remaining output
-            foreach (var connection in Info.Connections.ToArray())
+            foreach (var connection in Info.Connections.ToArrayLocked())
             {
                 try
                 {
-                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                    if (connection.sslsocket != null)
                     {
-                        byte[] buffer = new byte[255];
-                        int received = connection.socket.Receive(buffer);
+                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                        {
+                            byte[] buffer = new byte[255];
+                            int received = connection.sslsocket.Read(buffer, 0, buffer.Length);
 
-                        if (received == 0)
-                            throw new Exception("Socket Read Exception");
+                            if (received == 0)
+                                throw new Exception("Socket Read Exception");
+                        }
                     }
+                    else
+                    {
+                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                        {
+                            byte[] buffer = new byte[255];
+                            int received = connection.socket.Receive(buffer);
 
-                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
-                        throw new Exception("Socket Exception");
+                            if (received == 0)
+                                throw new Exception("Socket Read Exception");
+                        }
 
+                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
+                            throw new Exception("Socket Exception");
+                    }
                     connection.ProcessOutput();
                     if (connection.state == Player.ConnectionStates.Playing)
                         connection.SaveCharacterFile();
@@ -713,6 +715,7 @@ namespace CrimsonStainedLands
                             connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
                         }
                         connection.socket = null;
+                        connection.sslsocket = null;
                         connection.inanimate = DateTime.Now;
 
                     }
@@ -727,7 +730,7 @@ namespace CrimsonStainedLands
         public static void shutdown()
         {
 
-            foreach (var connection in Game.Instance.Info.Connections.ToArray())
+            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
             {
                 try
                 {
@@ -770,7 +773,7 @@ namespace CrimsonStainedLands
 
         public static void reboot()
         {
-            foreach (var connection in Game.Instance.Info.Connections.ToArray())
+            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
             {
                 try
                 {
@@ -1592,6 +1595,7 @@ namespace CrimsonStainedLands
 
         private long _lasthour;
 
+
         public void UpdateWeather()
         {
             var buf = new StringBuilder();
@@ -1695,7 +1699,7 @@ namespace CrimsonStainedLands
             if (buf.Length > 0)
             {
                 var buffer = buf.ToString();
-                foreach (var player in Game.Instance.Info.Connections)
+                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (player.state == Player.ConnectionStates.Playing
                         && player.IS_OUTSIDE
@@ -1714,14 +1718,15 @@ namespace CrimsonStainedLands
             Info.LaunchMethod.EndInvoke(Info.launchResult);
 
             listeningSocket.Dispose();
-            foreach (var connection in Game.Instance.Info.Connections.ToArray())
+            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
             {
                 try
                 {
                     connection.Dispose();
                     if (connection.socket != null)
                         connection.socket.Dispose();
-                    Game.Instance.Info.Connections.Remove(connection);
+                    lock (Game.Instance.Info.Connections)
+                        Game.Instance.Info.Connections.Remove(connection);
                 }
                 catch (Exception exception)
                 {
@@ -2052,11 +2057,15 @@ namespace CrimsonStainedLands
             try { player.socket.Dispose(); } catch { }
 
             if (settonull)
+            {
                 player.socket = null;
+                player.sslsocket = null;
+            }
 
             if (remove)
             {
-                Game.Instance.Info.Connections.Remove(player);
+                lock (Game.Instance.Info.Connections)
+                    Game.Instance.Info.Connections.Remove(player);
             }
         }
 

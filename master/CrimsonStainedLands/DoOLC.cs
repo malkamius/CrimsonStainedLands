@@ -2193,7 +2193,7 @@ namespace CrimsonStainedLands
             {
 
                 var area = AreaData.Areas.FirstOrDefault(a => a.Name.IsName(areaname));
-                var character = Game.Instance.Info.Connections.FirstOrDefault(p => p.Name.IsName(arguments, true));
+                var character = Game.Instance.Info.Connections.ToArrayLocked().FirstOrDefault(p => p.Name.IsName(arguments, true));
 
 
                 if (character != null && area != null)

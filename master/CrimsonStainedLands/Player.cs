@@ -15,11 +15,17 @@ using global::CrimsonStainedLands.Extensions;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Net.WebRequestMethods;
 
+using Microsoft.Extensions.Logging;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
+using System.Diagnostics.Eventing.Reader;
+
 namespace CrimsonStainedLands
 {
     public class Player : Character
     {
         public Socket socket;
+        public SslStream sslsocket;
 
         public string Address { get; private set; }
 
@@ -37,6 +43,15 @@ namespace CrimsonStainedLands
 
         public List<QuestProgressData> Quests = new List<QuestProgressData>();
 
+        public enum TelnetOptionFlags
+        {
+            ColorRGB,
+            Color256,
+            SuppressGoAhead
+        }
+        public List<TelnetOptionFlags> TelnetOptions = new List<TelnetOptionFlags>();
+
+        public Stack<byte[]> WriteBuffers = new Stack<byte[]>();
         public enum ConnectionStates
         {
             GetName = 1,
@@ -52,7 +67,8 @@ namespace CrimsonStainedLands
             Playing,
             GetGuild,
             GetDefaultWeapon,
-            Deleting
+            Deleting,
+            NegotiateSSH
         }
 
         public ConnectionStates state;
@@ -69,7 +85,10 @@ namespace CrimsonStainedLands
         public bool SittingAtPrompt { get; internal set; }
 
         public static string InvalidNames = "self";
-
+        internal IAsyncResult writeop;
+        internal IAsyncResult readop;
+        internal byte[] receivebuffer;
+        public byte[] ReceiveBufferBacklog;
 
         static Player()
         {
@@ -79,13 +98,13 @@ namespace CrimsonStainedLands
             }
         }
 
-        public Player(Game game, Socket socket)
+        public Player(Game game, Socket socket, bool ssl = false, bool ssh = false)
         {
             this.game = game;
             this.socket = socket;
             Address = ((IPEndPoint)socket.RemoteEndPoint).Address.MapToIPv4().ToString();
             Name = "new connection";
-
+            Game.Instance.Info.Connections.Add(this);
             //var address = ((System.Net.IPEndPoint)socket.RemoteEndPoint).Address;
             //try
             //{
@@ -97,12 +116,243 @@ namespace CrimsonStainedLands
             Game.log("New connection from " + socket.RemoteEndPoint.ToString());
             //}
 
-            state = ConnectionStates.GetName;
+            if (ssl)
+            {
+                state = ConnectionStates.NegotiateSSH;
+                this.sslsocket = new SslStream(new System.Net.Sockets.NetworkStream(socket));
 
-            ReadHelp(this, "DIKU", true);
-            send("\n\rEnter your name: ");
+                var certificate = new X509Certificate2("kbs-cloud.com.pfx", "T3hposmud");
+                if (certificate != null)
+                    this.sslsocket.BeginAuthenticateAsServer(certificate, new AsyncCallback((result) =>
+                    {
+                        this.sslsocket.EndAuthenticateAsServer(result);
+                        Game.Instance.SocketAccepted(this);
+                        state = ConnectionStates.GetName;
+
+                        ReadHelp(this, "DIKU", true);
+                        send("\n\rEnter your name: ");
+                        if (receivebuffer == null) receivebuffer = new byte[255];
+                        if (readop == null || readop.IsCompleted)
+                            readop = sslsocket.BeginRead(receivebuffer, 0, receivebuffer.Length, EndReceiveSsl, this.sslsocket);
+
+                    }), null);
+                //this.sslsocket.AuthenticateAsServer(certificate, false,true);
+
+            }
+            else
+            {
+                state = ConnectionStates.GetName;
+                Game.Instance.SocketAccepted(this);
+                ReadHelp(this, "DIKU", true);
+                send("\n\rEnter your name: ");
+
+                lock (this)
+                {
+                    if (receivebuffer == null) receivebuffer = new byte[255];
+                    //int received = connection.socket.Receive(buffer);
+                    if (readop == null || readop.IsCompleted)
+                        readop = socket.BeginReceive(receivebuffer, 0, receivebuffer.Length, SocketFlags.None, EndReceive, this.socket);
+                }
+            }
         }
 
+        private void ProcessBytes(byte[] buffer, int length)
+        {
+            lock (this)
+            {
+                var position = input.Length;
+                byte[] data;
+
+                if (ReceiveBufferBacklog != null)
+                {
+                    data = new byte[ReceiveBufferBacklog.Length + buffer.Length];
+                    ReceiveBufferBacklog.CopyTo(data, 0);
+                    buffer.CopyTo(data, ReceiveBufferBacklog.Length);
+                }
+                else
+                {
+                    data = new byte[length];
+                    Buffer.BlockCopy(buffer, 0, data, 0, length);
+                }
+
+
+                if (data.Length > 4200)
+                {
+                    sendRaw("Too much data to process at once.\n\r");
+                    Game.CloseSocket(this, false, true);
+                    inanimate = DateTime.Now;
+                }
+
+                ReceiveBufferBacklog = null;
+                for (int byteindex = 0; byteindex < data.Length; byteindex++)// (var Byte in buffer)
+                {
+                    var singlecharacter = data[byteindex];
+
+                    if (singlecharacter == 8 && position > 0) // backspace
+                    {
+                        input.Remove(input.Length - 1, 1);
+                        position -= 1;
+                    }
+                    else if (singlecharacter == 13 || singlecharacter == 10 || (singlecharacter >= 32 && singlecharacter <= 126)) // new lines and standard characters
+                    {
+                        input.Append((char)singlecharacter);
+                        position++;
+                        if (input.Length > 4200) // not writing a novel yet?
+                        {
+
+                            sendRaw("Too much data to process at once.\n\r");
+                            Game.CloseSocket(this, false, true);
+                            inanimate = DateTime.Now;
+                        }
+                    }
+                    else if (singlecharacter == (byte)Game.TelnetOptions.IAC)
+                    {
+                        /// IAC TType Negotiation
+                        /// https://tintin.mudhalla.net/protocols/mtts/
+                        /// https://tintin.mudhalla.net/rfc/rfc854/
+                        /// https://www.rfc-editor.org/rfc/rfc1091
+                        /// https://tintin.mudhalla.net/info/ansicolor/
+
+                        if (data.Length > byteindex + 2)
+                        {
+                            /// DO TTYPE sent on connection acceptance, Client responds with WILL TTYPE
+                            if (data[byteindex + 1] == (byte)Game.TelnetOptions.WILL
+                                && data[byteindex + 2] == (byte)Game.TelnetOptions.TTYPE)
+                            {
+                                /// READY TO RECEIVE TTYPE
+                                sendRaw(
+                                    new byte[] { (byte) Game.TelnetOptions.IAC,
+                                                                        (byte)Game.TelnetOptions.SB,
+                                                                        (byte)Game.TelnetOptions.TTYPE,
+                                                                        1,
+                                                                        (byte) Game.TelnetOptions.IAC,
+                                                                        (byte) Game.TelnetOptions.SE});
+
+
+                            }
+                            /// TTYPE Received from Client
+                            else if (length > byteindex + 4 &&
+                                data[byteindex + 1] == (byte)Game.TelnetOptions.SB &&
+                                data[byteindex + 2] == (byte)Game.TelnetOptions.TTYPE &&
+                                data[byteindex + 3] == 0)
+                            {
+                                bool hittheend = false;
+                                var TerminalTypeResponse = new MemoryStream();
+                                for (int responseindex = byteindex + 4; responseindex < length; responseindex++)
+                                {
+                                    if (data[responseindex] == (byte)Game.TelnetOptions.IAC)
+                                    {
+                                        hittheend = true;
+                                        break;
+                                    }
+                                    TerminalTypeResponse.WriteByte(buffer[responseindex]);
+                                }
+                                if (hittheend)
+                                {
+
+                                    var ClientString = ASCIIEncoding.ASCII.GetString(TerminalTypeResponse.ToArray());
+                                    var TelnetOptionFlags = new Dictionary<string, Player.TelnetOptionFlags[]>
+                                    {
+                                        { "CMUD", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256 } },
+                                        { "Mudlet", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
+                                        { "Mushclient", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Color256, Player.TelnetOptionFlags.ColorRGB } },
+                                    };
+
+                                    var Options = (from option in TelnetOptionFlags where ClientString.StringPrefix(option.Key) select option.Value).FirstOrDefault();
+
+                                    if (Options != null)
+                                        foreach (var option in Options)
+                                            TelnetOptions.SETBIT(option);
+
+                                    Game.log(ClientString + " client detected.");
+                                    byteindex += (int)TerminalTypeResponse.Length + 4;
+                                }
+                                else
+                                {
+                                    ReceiveBufferBacklog = new byte[data.Length - byteindex];
+                                    data.CopyTo(ReceiveBufferBacklog, 0);
+                                    break;
+                                }
+                            }
+                        }
+
+                    }
+                    // else skip the character
+                }
+            }
+        }
+        public void EndReceive(IAsyncResult result)
+        {
+            lock (Game.Instance.Info.Connections)
+                try
+                {
+                    var socket = result.AsyncState as Socket;
+                    //if (connection.socket == null) return;
+                    var connections = Game.Instance.Info.Connections.ToArrayLocked();
+                    var connection = (from c in connections where c.socket == socket select c).FirstOrDefault();
+                    lock (connection)
+                    {
+
+                        var received = connection.socket.EndReceive(result);
+                        if (received == 0)
+                        {
+                            connection.socket.Dispose();
+                            connection.socket = null;
+                            connection.sslsocket = null;
+                            connection.inanimate = DateTime.Now;
+                        }
+                        else
+                        {
+                            connection.ProcessBytes(connection.receivebuffer, received);
+                            if (connection.readop == null || connection.readop.IsCompleted)
+                                connection.readop = connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, EndReceive, socket);
+                        }
+                    }
+
+                }
+                catch { }
+        }
+
+        public void EndReceiveSsl(IAsyncResult result)
+        {
+            lock (Game.Instance.Info.Connections)
+                try
+                {
+                    var socket = result.AsyncState as SslStream;
+                    //if (connection.socket == null) return;
+                    var connections = Game.Instance.Info.Connections.ToArrayLocked();
+                    var connection = (from c in connections where c.sslsocket == socket select c).FirstOrDefault();
+                    //if (connection.socket == null) return;
+                    //var connections = Game.Instance.Info.Connections.ToArrayLocked();
+                    //connection = (from c in connections where c.Name == connection.Name select c).FirstOrDefault();
+                    lock (connection)
+                    {
+
+                        var received = socket.EndRead(result);
+                        connection.ProcessBytes(connection.receivebuffer, received);
+                        try
+                        {
+                            if (connection.readop == null || connection.readop.IsCompleted)
+                                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, EndReceiveSsl, connection.sslsocket);
+                        }
+                        catch
+                        {
+                            try
+                            {
+                                connection.socket.Close();
+                            }
+                            catch { }
+                            connection.socket = null;
+
+                        }
+                    }
+
+                }
+                catch
+                {
+
+                }
+        }
         internal void ProcessOutput()
         {
             if (socket == null) output.Clear();
@@ -147,7 +397,7 @@ namespace CrimsonStainedLands
                 var text = output.ToString();
                 if (state == ConnectionStates.Playing && (Position == Positions.Fighting || SittingAtPrompt) && !text.StartsWith("\n\r"))
                     text = "\n\r" + text;
-                
+
                 sendRaw(text);
                 output.Clear();
                 SittingAtPrompt = true;
@@ -292,7 +542,7 @@ namespace CrimsonStainedLands
             {
                 if (MD5.ComputeHash(line + "salt") == password)
                 {
-                    if (Game.Instance.Info.Connections.Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
+                    if (Game.Instance.Info.Connections.ToArrayLocked().Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
                     {
                         state = ConnectionStates.GetPlayerAlreadyLoggedIn;
                         send("This player is already connected, continuing will disconnect them. Continue? ");
@@ -313,14 +563,15 @@ namespace CrimsonStainedLands
             {
                 if ("yes".StringPrefix(line))
                 {
-                    foreach (var connection in Game.Instance.Info.Connections.ToArray().Where(connection => connection.Name == Name && connection != this))
+                    foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked().Where(connection => connection.Name == Name && connection != this))
                     {
                         try
                         {
                             connection.sendRaw("This character is being logged in elsewhere.\n\r");
-                            if(connection.socket != null)
-                            connection.socket.Close();
+                            if (connection.socket != null)
+                                connection.socket.Close();
                             connection.socket = null;
+                            connection.sslsocket = null;
                         }
                         catch { }
 
@@ -340,12 +591,39 @@ namespace CrimsonStainedLands
                                 //connection.SaveCharacterFile();
                                 //connection.RemoveCharacterFromRoom();
                             }
-                            connection.inanimate = null;
-                            connection.socket = this.socket;
-                            connection.Address = this.Address;
-                            connection.ConnectExistingPlayer(true);
-                            this.socket = null;
-                            game.Info.Connections.Remove(this);
+                            lock (game.Info.Connections)
+                                lock (this)
+                                    lock (connection)
+                                    {
+                                        game.Info.Connections.Remove(this);
+                                        connection.inanimate = null;
+                                        connection.readop = this.readop;
+                                        connection.writeop = this.writeop;
+                                        connection.socket = this.socket;
+                                        connection.sslsocket = this.sslsocket;
+                                        connection.receivebuffer = this.receivebuffer;
+                                        connection.Address = this.Address;
+                                        //if (this.sslsocket != null)
+                                        //{
+                                        //    this.sslsocket.EndRead(this.readop);
+                                        //    connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
+                                        //}
+                                        //else if (this.socket != null)
+                                        //{
+                                        //    this.socket.EndReceive(this.readop);
+                                        //    connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
+                                        //}
+                                        
+                                        //this.readop = null;
+                                        //this.writeop = null;
+                                        this.socket = null;
+                                        this.sslsocket = null;
+                                        
+                                        connection.ConnectExistingPlayer(true);
+
+                                       
+                                    }
+
 
                         }
                         catch { }
@@ -529,7 +807,7 @@ namespace CrimsonStainedLands
 
             int playersonline = 0;
 
-            if ((playersonline = game.Info.Connections.Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
+            if ((playersonline = game.Info.Connections.ToArrayLocked().Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
             {
                 Game.Instance.MaxPlayersOnline = playersonline;
                 if (playersonline > Game.MaxPlayersOnlineEver)
@@ -566,17 +844,20 @@ namespace CrimsonStainedLands
                     Act("$n appears in the room.", type: ActType.ToRoom);
             }
 
-            
 
-            
+
+
             //DoLook(this, "auto");
             if (!reconnect)
                 LoadPet();
             if (reconnect)
             {
                 Act("$n regains their animation.", type: ActType.ToRoom);
-                game.Info.Connections.Remove(this);
-                game.Info.Connections.Add(this);
+                lock (game.Info.Connections)
+                {
+                    game.Info.Connections.Remove(this);
+                    game.Info.Connections.Add(this);
+                }
             }
         }
 
@@ -701,7 +982,7 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                if(Guild.name == "mage") LearnSkill(SkillSpell.SkillLookup("hand to hand"), 75);
+                if (Guild.name == "mage") LearnSkill(SkillSpell.SkillLookup("hand to hand"), 75);
 
                 if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
                 {
@@ -713,7 +994,7 @@ namespace CrimsonStainedLands
                 this.state = ConnectionStates.Playing;
                 WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
                 int playersonline = 0;
-                if ((playersonline = game.Info.Connections.Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
+                if ((playersonline = game.Info.Connections.ToArrayLocked().Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
                 {
                     Game.Instance.MaxPlayersOnline = playersonline;
                     if (playersonline > Game.MaxPlayersOnlineEver)
@@ -761,7 +1042,7 @@ namespace CrimsonStainedLands
         {
             TotalPlayTime += DateTime.Now - LastSaveTime;
             LastSaveTime = DateTime.Now;
-            
+
             if (!Directory.Exists(Settings.PlayersPath))
                 Directory.CreateDirectory(Settings.PlayersPath);
 
@@ -855,7 +1136,7 @@ namespace CrimsonStainedLands
                     Starving = element.GetElementValueInt("starving", 0);
                     Wimpy = element.GetElementValueInt("Wimpy", 0);
                     WeaponSpecializations = element.GetElementValueInt("WeaponSpecializations");
-                    
+
                     var totalPlayTime = element.GetElementValue("TotalPlayTime");
                     TimeSpan.TryParse(totalPlayTime, out TotalPlayTime);
 
@@ -864,13 +1145,13 @@ namespace CrimsonStainedLands
 
                     Guild = GuildData.GuildLookup(element.GetElementValue("guild", "warrior")) ?? GuildData.GuildLookup("warrior");
 
-                    bool Color256 = Flags.ISSET(ActFlags.Color256), ColorRGB = Flags.ISSET(ActFlags.ColorRGB);
+                    bool Color256 = TelnetOptions.ISSET(TelnetOptionFlags.Color256), ColorRGB = TelnetOptions.ISSET(TelnetOptionFlags.ColorRGB);
 
                     if (element.HasElement("Flags"))
                         Utility.GetEnumValues<ActFlags>(element.GetElementValue("flags"), ref this.Flags);
 
-                    if (Color256) Flags.SETBIT(ActFlags.Color256);
-                    if (ColorRGB) Flags.SETBIT(ActFlags.ColorRGB);
+                    if (Color256) TelnetOptions.SETBIT(TelnetOptionFlags.Color256);
+                    if (ColorRGB) TelnetOptions.SETBIT(TelnetOptionFlags.ColorRGB);
 
                     Utility.GetEnumValues<WeaponDamageTypes>(element.GetElementValue("Immune"), ref this.ImmuneFlags);
                     Utility.GetEnumValues<WeaponDamageTypes>(element.GetElementValue("Resist"), ref this.ResistFlags);

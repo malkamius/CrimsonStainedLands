@@ -19,6 +19,8 @@ using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.AxHost;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 using System.Numerics;
+using System.Diagnostics.Eventing.Reader;
+using static CrimsonStainedLands.Game;
 
 namespace CrimsonStainedLands
 {
@@ -162,8 +164,6 @@ namespace CrimsonStainedLands
         Practice = GuildMaster,
         ColorOn = Color,
         NewbieChannel = 71,
-        ColorRGB = 72,
-        Color256 = 73
     }
 
     public enum Sexes
@@ -1142,11 +1142,11 @@ namespace CrimsonStainedLands
                 PageText.Clear();
                 if (text.Length > index + 1)
                     PageText.Insert(0, text.Substring(index + 1, text.Length - index - 1));
-                sendRaw(text.Substring(0, index + 1));
+                send(text.Substring(0, index + 1));
 
                 if (HasPageText)
                 {
-                    sendRaw("[Hit Enter to Continue]");
+                    send("[Hit Enter to Continue]");
                     ((Player)this).SittingAtPrompt = true;
                 }
                 else
@@ -1155,7 +1155,7 @@ namespace CrimsonStainedLands
             else
             {
                 ClearPage();
-                sendRaw(text + "\n\r");
+                send(text + "\n\r");
 
             }
         }
@@ -1185,18 +1185,143 @@ namespace CrimsonStainedLands
 
         public void SendToChar(string text) => send(text);
 
-        public void sendRaw(string data)
+        
+
+        public void sendRaw(string data, bool sendimmediate = true)
         {
-            if (!data.ISEMPTY())
-                if (data.Contains("\n"))
-                    data = data.Replace("\r", "").Replace("\n", "\n\r");
-            if (this is Player player && ((Player)this).socket != null)
+            if (this is Player player && player.socket != null)
             {
-                player.socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(!this.Flags.ISSET(ActFlags.Color), this.Flags.ISSET(ActFlags.Color256), this.Flags.ISSET(ActFlags.ColorRGB))));
+                if (!data.ISEMPTY())
+                    if (data.Contains("\n"))
+                        data = data.Replace("\r", "").Replace("\n", "\n\r");
+
+                var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(!player.Flags.ISSET(ActFlags.Color), player.TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256), player.TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB)));
+                var newbytes = new byte[bytes.Length + 2];
+                bytes.CopyTo(newbytes, 0);
+                newbytes[newbytes.Length - 2] = (byte)Game.TelnetOptions.IAC;
+                newbytes[newbytes.Length - 1] = (byte)Game.TelnetOptions.GoAhead;
+                bytes = newbytes;
+                lock (player)
+                    if (player.sslsocket != null)
+                    {
+                        if(!sendimmediate)
+                        try
+                        {
+                            if (player.sslsocket.IsAuthenticated && (player.writeop == null || player.writeop.IsCompleted))
+                                player.writeop = player.sslsocket.BeginWrite(bytes, 0, bytes.Length, EndSslWrite, player);
+                            else
+                                player.WriteBuffers.Push(bytes);
+                        }
+                        catch { }
+                        else
+                        {
+                            player.sslsocket.Write(bytes, 0, bytes.Length);
+                            player.sslsocket.Flush();
+                        }
+                        
+                    }
+                    else
+                    {
+                        if (!sendimmediate)
+                            try
+                            {
+                                if ((player.writeop == null || player.writeop.IsCompleted))
+                                    player.writeop = player.socket.BeginSend(bytes, 0, bytes.Length, SocketFlags.None, EndSend, player);
+                                else
+                                    player.WriteBuffers.Push(bytes);
+                            }
+                            catch { }
+                        else
+                            player.socket.Send(bytes);
+                    }
             }
         }
 
+        public void sendRaw(byte[] data, bool sendimmediate = true)
+        {
+            if (this is Player player && player.socket != null)
+            {
+                lock (player)
+                    if (player.sslsocket != null)
+                    {
+                        if (!sendimmediate)
+                        {
+                            if (player.sslsocket.IsAuthenticated && (player.writeop == null || player.writeop.IsCompleted))
+                                player.writeop = player.sslsocket.BeginWrite(data, 0, data.Length, EndSslWrite, player);
+                            else
+                                player.WriteBuffers.Push(data);
+                        }
+                        else if(player.sslsocket.IsAuthenticated)
+                        {
+                            player.sslsocket.Write(data, 0, data.Length);
+                            player.sslsocket.Flush();
+                        }
+                        }
+                    else
+                    {
+                        if (!sendimmediate)
+                        {
+                            if ((player.writeop == null || player.writeop.IsCompleted))
+                                player.writeop = player.socket.BeginSend(data, 0, data.Length, SocketFlags.None, EndSend, player);
+                            else
+                                player.WriteBuffers.Push(data);
+                        }
+                        else
+                            player.socket.Send(data);
+                    }
+            }
+        }
 
+        public void EndSslWrite(IAsyncResult result)
+        {
+            var connection = result.AsyncState as Player;
+            lock (Game.Instance.Info.Connections)
+                try
+                {
+                    //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
+                    lock (connection)
+                    {
+                        try
+                        {
+                            connection.sslsocket.EndWrite(result);
+                            connection.sslsocket.Flush();
+                            if (connection.WriteBuffers.Count > 0)
+                            {
+                                var bytes = connection.WriteBuffers.Pop();
+                                connection.writeop = connection.sslsocket.BeginWrite(bytes, 0, bytes.Length, EndSslWrite, connection);
+                            }
+                        }
+                        catch { }
+                    }
+                }
+                catch { }
+        }
+
+        public void EndSend(IAsyncResult result)
+        {
+            
+            var connection = result.AsyncState as Player;
+            lock (Game.Instance.Info.Connections)
+                try
+            {
+                //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
+                lock (connection)
+                {
+                    try
+                    {
+                        connection.socket.EndSend(result);
+
+                        if (connection.WriteBuffers.Count > 0)
+                        {
+                            var bytes = connection.WriteBuffers.Pop();
+                            connection.writeop = connection.socket.BeginSend(bytes, 0, bytes.Length, SocketFlags.None, EndSend, connection);
+                        }
+                    }
+                    catch { }
+                }
+            }
+            catch { }
+        }
 
         public void RemoveCharacterFromRoom()
         {
@@ -1247,7 +1372,7 @@ namespace CrimsonStainedLands
 
                 Character.DoLook(this, "auto");
 
-                
+
             }
             if (executeRoomAndNPCProgs)
             {
@@ -1704,7 +1829,7 @@ namespace CrimsonStainedLands
         //    if (ch.Room != null)
         //    {
         //        Programs.ExecutePrograms(Programs.ProgramTypes.Say, ch, null, ch.Room, arguments);
-                
+
         //        foreach (var npc in ch.Room.Characters.OfType<NPCData>())
         //        {
         //            Programs.ExecutePrograms(Programs.ProgramTypes.Say, ch, npc, null, arguments);
@@ -2362,7 +2487,7 @@ namespace CrimsonStainedLands
                     ch.Act("$n opens $p.\n\r", null, container, null, ActType.ToRoom);
 
                     Programs.ExecutePrograms(Programs.ProgramTypes.Open, ch, container, "");
-                    
+
                     return;
                 }
                 else
@@ -2822,9 +2947,9 @@ namespace CrimsonStainedLands
                 ((Player)ch).SaveCharacterFile();
                 ch.RemoveCharacterFromRoom();
                 ch.Dispose();
-                ((Player)ch).socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("\nGoodbye!\n\r"));
+                ((Player)ch).sendRaw("\nGoodbye!\n\r");
 
-                Game.CloseSocket((Player) ch, true);
+                Game.CloseSocket((Player)ch, true);
             }
         }
 
@@ -2877,7 +3002,8 @@ namespace CrimsonStainedLands
             StringBuilder whoList = new StringBuilder();
             int playersOnline = 0;
             whoList.AppendLine("You can see:");
-            foreach (var connection in Game.Instance.Info.Connections)
+            
+            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
             {
                 if (connection.state == Player.ConnectionStates.Playing && connection.socket != null && (!connection.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= connection.Level))
                 {
@@ -7060,7 +7186,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in Game.Instance.Info.Connections)
+                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (player.state == Player.ConnectionStates.Playing)
                     {
@@ -7083,7 +7209,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in Game.Instance.Info.Connections)
+                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch.Room != null && player.Room.Area == ch.Room.Area)
@@ -7107,7 +7233,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in Game.Instance.Info.Connections)
+                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch != null && ch.Room != null && player.Room == ch.Room)

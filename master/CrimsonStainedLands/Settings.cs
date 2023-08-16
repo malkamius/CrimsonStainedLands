@@ -11,6 +11,8 @@ namespace CrimsonStainedLands
     public class Settings
     {
         public static int Port { get; set; } = 4000;
+        public static int SSLPort { get; set; } = 4001;
+        public static int SSHPort { get; set; } = 4002;
         public static string DataPath { get; set; } = "..\\..\\data";
         public static string AreasPath { get; set; } = "..\\..\\data\\areas";
         public static string PlayersPath { get; set; } = "..\\..\\data\\players";
@@ -25,7 +27,9 @@ namespace CrimsonStainedLands
         public static void Save()
         {
             var settings = new XElement("Settings", 
-                new XAttribute("Port", Port), 
+                new XAttribute("Port", Port),
+                new XAttribute("SSLPort", SSHPort),
+                new XAttribute("SSHPort", SSHPort),
                 new XAttribute("MaxPlayersOnlineEver", Game.MaxPlayersOnlineEver),
                 new XAttribute("DataPath", DataPath),
                 new XAttribute("AreasPath", AreasPath),
@@ -46,6 +50,8 @@ namespace CrimsonStainedLands
                 var settings = XElement.Load("Settings.xml");
                 Game.MaxPlayersOnlineEver = settings.GetAttributeValueInt("MaxPlayersOnlineEver", 0);
                 Port = settings.GetAttributeValueInt("Port", 4000);
+                SSLPort = settings.GetAttributeValueInt("SSLPort", 4001);
+                SSHPort = settings.GetAttributeValueInt("SSHPort", 4002);
                 DataPath = settings.GetAttributeValue("DataPath", "..\\..\\data");
                 AreasPath = settings.GetAttributeValue("AreasPath", "..\\..\\data\\areas");
                 PlayersPath = settings.GetAttributeValue("PlayersPath", "..\\..\\data\\players");

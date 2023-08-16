@@ -72,7 +72,7 @@ namespace CrimsonStainedLands
 
             if (monitorentry != null)
             {
-                foreach (var imm in Game.Instance.Info.Connections)
+                foreach (var imm in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (imm.state == Player.ConnectionStates.Playing && imm.socket != null && imm.Level >= monitorentry.Level && imm.WiznetFlags.ISSET(flag))
                     {

@@ -71,7 +71,7 @@ namespace CrimsonStainedLands
             {
                 ch.send("Syntax: SetPlayerPassword {Player Name} {New Password} {Confirm New Password}\n\r");
             }
-            else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
+            else if ((player = (from connection in Game.Instance.Info.Connections.ToArrayLocked() where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
             {
                 ch.send("Could not find player.\n\r");
             }
@@ -97,7 +97,7 @@ namespace CrimsonStainedLands
             {
                 ch.send("Syntax: Advance {character} {level}");
             }
-            else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
+            else if ((player = (from connection in Game.Instance.Info.Connections.ToArrayLocked() where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
             {
                 ch.send("No player with that exact name found.\n\r");
             }
@@ -831,7 +831,7 @@ namespace CrimsonStainedLands
 
             if (arg1.StringCmp("all"))
             {
-                foreach (var player in Game.Instance.Info.Connections)
+                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (player.state == Player.ConnectionStates.Playing && player != ch && player.Room != null && ch.CanSee(player))
                     {
@@ -1524,7 +1524,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY())
             {
-                foreach(var player in Game.Instance.Info.Connections)
+                foreach(var player in Game.Instance.Info.Connections.ToArrayLocked())
                 {
                     if (player.SnoopedBy == ch) player.SnoopedBy = null;
                 }
