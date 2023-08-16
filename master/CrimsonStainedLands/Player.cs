@@ -296,10 +296,8 @@ namespace CrimsonStainedLands
                         var received = connection.socket.EndReceive(result);
                         if (received == 0)
                         {
-                            connection.socket.Dispose();
-                            connection.socket = null;
-                            connection.sslsocket = null;
-                            connection.inanimate = DateTime.Now;
+                            Game.CloseSocket(connection, connection.state < ConnectionStates.Playing, true);
+                           connection.inanimate = DateTime.Now;
                         }
                         else
                         {
@@ -329,21 +327,29 @@ namespace CrimsonStainedLands
                     {
 
                         var received = socket.EndRead(result);
-                        connection.ProcessBytes(connection.receivebuffer, received);
-                        try
+                        if (received == 0)
                         {
-                            if (connection.readop == null || connection.readop.IsCompleted)
-                                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, EndReceiveSsl, connection.sslsocket);
+                            Game.CloseSocket(connection, connection.state < ConnectionStates.Playing, true);
+                            connection.inanimate = DateTime.Now;
                         }
-                        catch
+                        else
                         {
+                            connection.ProcessBytes(connection.receivebuffer, received);
                             try
                             {
-                                connection.socket.Close();
+                                if (connection.readop == null || connection.readop.IsCompleted)
+                                    connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, EndReceiveSsl, connection.sslsocket);
                             }
-                            catch { }
-                            connection.socket = null;
+                            catch
+                            {
+                                try
+                                {
+                                    connection.socket.Close();
+                                }
+                                catch { }
+                                connection.socket = null;
 
+                            }
                         }
                     }
 
