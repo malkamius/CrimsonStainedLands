@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace CrimsonStainedLands.Extensions
 {
@@ -36,7 +38,7 @@ namespace CrimsonStainedLands.Extensions
             }
         }
 
-        public static string ColorStringRGBColor(this string text, bool StripColor = false, bool Support256 = true, bool SupportRGB = true)
+        public static string ColorStringRGBColor(this string text, bool StripColor = false, bool Support256 = false, bool SupportRGB = false, bool MXP = false)
         {
             StringBuilder ResultBuilder = new StringBuilder();
             char EscapeChar = '\0';
@@ -186,6 +188,20 @@ namespace CrimsonStainedLands.Extensions
                                     ColorCodeOffset++;
                                 break;
                             }
+                        //case '<':
+                            
+                        //    if (MXP)
+                        //        ResultBuilder.Append("\x001b[0z<");
+                        //    else
+                        //    {
+                        //        //    var index = text.IndexOf('>', ColorMarkerIndex);
+                        //        //    if (index > -1)
+                        //        //        ColorCodeOffset = index - ColorMarkerIndex;
+                        //        var regex = new Regex(@"<([a-zA-Z].*?)\b[^>]*>(.*?)<\/\1>");
+                        //        var match = regex.Match(text, ColorMarkerIndex);
+                        //        ColorCodeOffset = match.Length;
+                        //    }
+                        //    break;
                         default:
                             break;
                     }
@@ -225,6 +241,13 @@ namespace CrimsonStainedLands.Extensions
 
         public static string EscapeColor(this string text)
         {
+            //var regex = new Regex(@"<([a-zA-Z].*?)\b[^>]*>(.*?)<\/\1>");
+            //Match match;
+            //while((match = regex.Match(text, 0)) != null && match.Length > 0)
+            //{
+            //    text = text.Substring(0, match.Index) + match.Groups[2].Value + (text.Length > match.Index + match.Length ? text.Substring(match.Index + match.Length) : "");
+            //}
+            
             return text.Replace(@"\", @"\\").Replace("{", "{{");
         }
 

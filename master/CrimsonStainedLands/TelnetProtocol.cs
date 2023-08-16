@@ -15,14 +15,17 @@ namespace CrimsonStainedLands
     {
         public enum Options : byte
         {
-            MudServerStatusProtocolVariable = 1,
-            MudServerStatusProtocolValue = 2,
+            MUDServerStatusProtocolVariable = 1,
+            MUDServerStatusProtocolValue = 2,
             TelnetType = 24,
-            MudServerStatusProtocol = 70,
+            MUDServerStatusProtocol = 70,
+            MUDSoundProtocol = 90,
+            MUDeXtensionProtocol = 91,
             SubNegotiationEnd = 240,
             GoAhead = 249,
             SubNegotiation = 250,
             WILL = 251,
+            WONT = 252,
             DO = 253,
             DONT = 254,
             InterpretAsCommand = 255,
@@ -34,7 +37,9 @@ namespace CrimsonStainedLands
             {
                 WillTelnetType,
                 ClientSendNegotiateType,
-                DoMudServerStatusProtocol
+                DoMUDServerStatusProtocol,
+                DontMUDServerStatusProtocol,
+                DoMUDExtensionProtocol
             }
             public Types Type { get; set; }
 
@@ -80,32 +85,39 @@ namespace CrimsonStainedLands
         public static readonly byte[] ServerGetWillMudServerStatusProtocol = new byte[] { 
             (byte)Options.InterpretAsCommand, 
             (byte)Options.WILL, 
-            (byte)Options.MudServerStatusProtocol };
+            (byte)Options.MUDServerStatusProtocol };
 
-        public static readonly byte[] ClientGetWillMudServerStatusProtocol = new byte[] {
+        public static readonly byte[] ClientGetWillMUDServerStatusProtocol = new byte[] {
             (byte)Options.InterpretAsCommand,
             (byte)Options.DO,
-            (byte)Options.MudServerStatusProtocol };
-        public static readonly byte[] ClientGetWontMudServerStatusProtocol = new byte[] {
+            (byte)Options.MUDServerStatusProtocol };
+
+        public static readonly byte[] ClientGetDontMUDServerStatusProtocol = new byte[] {
             (byte)Options.InterpretAsCommand,
             (byte)Options.DONT,
-            (byte)Options.MudServerStatusProtocol };
-        public static byte[] ServerGetNegotiateMudServerStatusProtocol(Dictionary<string, string[]> Values)
+            (byte)Options.MUDServerStatusProtocol };
+
+        public static readonly byte[] ClientGetWontMUDServerStatusProtocol = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WONT,
+            (byte)Options.MUDServerStatusProtocol };
+
+        public static byte[] ServerGetNegotiateMUDServerStatusProtocol(Dictionary<string, string[]> Values)
         {
             var data = new MemoryStream();
             data.WriteByte((byte) Options.InterpretAsCommand);
             data.WriteByte((byte)Options.SubNegotiation);
-            data.WriteByte((byte)Options.MudServerStatusProtocol);
+            data.WriteByte((byte)Options.MUDServerStatusProtocol);
 
             foreach(var variable in Values)
             {
-                data.WriteByte((byte)Options.MudServerStatusProtocolVariable);
+                data.WriteByte((byte)Options.MUDServerStatusProtocolVariable);
                 var name = Encoding.ASCII.GetBytes(variable.Key);
                 data.Write(name, 0, name.Length);
 
                 foreach(var value in variable.Value)
                 {
-                    data.WriteByte((byte)Options.MudServerStatusProtocolValue);
+                    data.WriteByte((byte)Options.MUDServerStatusProtocolValue);
                     var valuebytes = Encoding.ASCII.GetBytes(value);
                     data.Write(valuebytes, 0, valuebytes.Length);
                 }
@@ -117,6 +129,33 @@ namespace CrimsonStainedLands
             return data.ToArray();
         }
 
+        public static readonly byte[] ServerGetWillMUDExtensionProtocol = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WILL,
+            (byte)Options.MUDeXtensionProtocol };
+
+        public static readonly byte[] ClientGetDoMUDExtensionProtocol = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DO,
+            (byte)Options.MUDeXtensionProtocol };
+        
+        public static readonly byte[] ClientGetWillMUDExtensionProtocol = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WILL,
+            (byte)Options.MUDeXtensionProtocol };
+
+        public static readonly byte[] ClientGetDontMUDExtensionProtocol = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DONT,
+            (byte)Options.MUDeXtensionProtocol };
+
+        public static readonly byte[] ClientGetDontUnknown = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DONT};
+
+        public static readonly byte[] ClientGetWillUnknown = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WILL};
         public static void ProcessInterpretAsCommand(object sender, byte[] data, int position, out int newposition, out byte[] carryover, EventHandler<Command> callback)
         {
             /// IAC TType Negotiation
@@ -131,7 +170,7 @@ namespace CrimsonStainedLands
                 if (data.StartsWith(ClientGetWillTelnetType, position))
                 {
                     /// READY TO RECEIVE TTYPE
-                    callback(sender, new Command () { Type = Command.Types.WillTelnetType });
+                    callback(sender, new Command() { Type = Command.Types.WillTelnetType });
                     carryover = null;
                     newposition = position + 3;
                     return;
@@ -161,8 +200,8 @@ namespace CrimsonStainedLands
                                 {"TelnetType", new string[] {ClientString } }
                             }
                         });
-                        
-                        newposition = position + (int)TerminalTypeResponse.Length + ClientNegotiateTelnetType.Length;
+
+                        newposition = position + (int)TerminalTypeResponse.Length + ClientNegotiateTelnetType.Length + 1;
                         carryover = null;
                         return;
                     }
@@ -174,19 +213,50 @@ namespace CrimsonStainedLands
                         return;
                     }
                 }
-                else if(data.StartsWith(ClientGetWillMudServerStatusProtocol, position))
+                else if (data.StartsWith(ClientGetWillMUDServerStatusProtocol, position))
                 {
-                    newposition = position + ClientGetWillMudServerStatusProtocol.Length;
+                    newposition = position + ClientGetWillMUDServerStatusProtocol.Length;
                     carryover = null;
                     callback(sender, new Command()
                     {
-                        Type = Command.Types.DoMudServerStatusProtocol
+                        Type = Command.Types.DoMUDServerStatusProtocol
                     });
                     return;
                 }
-                else if(data.StartsWith(ClientGetWontMudServerStatusProtocol, position))
+                else if (data.StartsWith(ClientGetDontMUDServerStatusProtocol, position))
                 {
-                    newposition = position + ClientGetWontMudServerStatusProtocol.Length;
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.DontMUDServerStatusProtocol
+                    });
+                    newposition = position + ClientGetDontMUDServerStatusProtocol.Length;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ClientGetWillMUDExtensionProtocol, position) || 
+                    data.StartsWith(ClientGetDoMUDExtensionProtocol, position))
+                {
+                    callback(sender, new Command() {  Type = Command.Types.DoMUDExtensionProtocol });
+                    newposition = position + ClientGetWillMUDExtensionProtocol.Length;
+                    carryover = null;
+                    return;
+                }
+                else if(data.StartsWith(ClientGetDontMUDExtensionProtocol, position))
+                {
+                    newposition = position + ClientGetDontMUDExtensionProtocol.Length;
+                    carryover = null;
+                    return;
+                }
+
+                else if (data.StartsWith(ClientGetDontUnknown, position))
+                {
+                    newposition = position + ClientGetDontUnknown.Length + 1;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ClientGetWillUnknown, position))
+                {
+                    newposition = position + ClientGetWillUnknown.Length + 1;
                     carryover = null;
                     return;
                 }

@@ -47,7 +47,9 @@ namespace CrimsonStainedLands
         {
             ColorRGB,
             Color256,
-            SuppressGoAhead
+            SuppressGoAhead,
+            MUDeXtensionProtocol,
+            WontMSSP
         }
         public List<TelnetOptionFlags> TelnetOptions = new List<TelnetOptionFlags>();
 
@@ -237,8 +239,9 @@ namespace CrimsonStainedLands
                                     }
                                     sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
-                                else if(command.Type == TelnetProtocol.Command.Types.DoMudServerStatusProtocol)
+                                else if(command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
                                 {
+                                    Game.log("SENDING MSSP DATA");
                                     var variables = new Dictionary<string, string[]>();
                                     variables["NAME"] = new string[] { "CRIMSON STAINED LANDS" };
                                     variables["PLAYERS"] = new string[] { game.Info.Connections.ToArrayLocked().Count(con => con.state == ConnectionStates.Playing ).ToString() };
@@ -249,7 +252,19 @@ namespace CrimsonStainedLands
                                     variables["CODEBASE"] = new string[] { "CUSTOM" };
                                     variables["WEBSITE"] = new string[] { "https://kbs-cloud.com" };
 
-                                    sendRaw(TelnetProtocol.ServerGetNegotiateMudServerStatusProtocol(variables), true);
+                                    sendRaw(TelnetProtocol.ServerGetNegotiateMUDServerStatusProtocol(variables), true);
+                                    //sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
+                                }
+                                else if(command.Type == TelnetProtocol.Command.Types.DontMUDServerStatusProtocol)
+                                {
+                                    Game.log("WONT MSSP");
+
+                                    //sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
+                                }
+                                else if(command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
+                                {
+                                    TelnetOptions.SETBIT(TelnetOptionFlags.MUDeXtensionProtocol);
+                                    Game.log("MXP Enabled.");
                                 }
                             });
                         if(newbyteindex > byteindex)
@@ -260,6 +275,7 @@ namespace CrimsonStainedLands
                 }
             }
         }
+
         public void EndReceive(IAsyncResult result)
         {
             lock (Game.Instance.Info.Connections)

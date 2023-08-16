@@ -1195,7 +1195,11 @@ namespace CrimsonStainedLands
                     if (data.Contains("\n"))
                         data = data.Replace("\r", "").Replace("\n", "\n\r");
 
-                var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(!player.Flags.ISSET(ActFlags.Color), player.TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256), player.TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB)));
+                var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(
+                    !player.Flags.ISSET(ActFlags.Color), 
+                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256), 
+                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB), 
+                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
                 var newbytes = new byte[bytes.Length + 2];
                 bytes.CopyTo(newbytes, 0);
                 newbytes[newbytes.Length - 2] = (byte)TelnetProtocol.Options.InterpretAsCommand;
