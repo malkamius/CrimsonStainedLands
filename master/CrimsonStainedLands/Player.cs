@@ -119,24 +119,32 @@ namespace CrimsonStainedLands
 
             if (ssl)
             {
-                state = ConnectionStates.NegotiateSSH;
-                this.sslsocket = new SslStream(new System.Net.Sockets.NetworkStream(socket));
+                try
+                {
+                    state = ConnectionStates.NegotiateSSH;
+                    this.sslsocket = new SslStream(new System.Net.Sockets.NetworkStream(socket));
 
-                var certificate = new X509Certificate2("kbs-cloud.com.pfx", "T3hposmud");
-                if (certificate != null)
-                    this.sslsocket.BeginAuthenticateAsServer(certificate, new AsyncCallback((result) =>
-                    {
-                        this.sslsocket.EndAuthenticateAsServer(result);
-                        Game.Instance.SocketAccepted(this);
-                        state = ConnectionStates.GetName;
+                    var certificate = new X509Certificate2("kbs-cloud.com.pfx", "T3hposmud");
+                    if (certificate != null)
+                        this.sslsocket.BeginAuthenticateAsServer(certificate, new AsyncCallback((result) =>
+                        {
+                            try
+                            {
+                                this.sslsocket.EndAuthenticateAsServer(result);
+                                Game.Instance.SocketAccepted(this);
+                                state = ConnectionStates.GetName;
 
-                        ReadHelp(this, "DIKU", true);
-                        send("\n\rEnter your name: ");
-                        if (receivebuffer == null) receivebuffer = new byte[255];
-                        if (readop == null || readop.IsCompleted)
-                            readop = sslsocket.BeginRead(receivebuffer, 0, receivebuffer.Length, EndReceiveSsl, this.sslsocket);
+                                ReadHelp(this, "DIKU", true);
+                                send("\n\rEnter your name: ");
+                                if (receivebuffer == null) receivebuffer = new byte[255];
+                                if (readop == null || readop.IsCompleted)
+                                    readop = sslsocket.BeginRead(receivebuffer, 0, receivebuffer.Length, EndReceiveSsl, this.sslsocket);
+                            }
+                            catch { }
 
-                    }), null);
+                        }), null);
+                }
+                catch { }
                 //this.sslsocket.AuthenticateAsServer(certificate, false,true);
 
             }
@@ -252,13 +260,13 @@ namespace CrimsonStainedLands
                                     variables["WEBSITE"] = new string[] { "https://kbs-cloud.com" };
 
                                     sendRaw(TelnetProtocol.ServerGetNegotiateMUDServerStatusProtocol(variables), true);
-                                    //sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
+                                    sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
                                 else if(command.Type == TelnetProtocol.Command.Types.DontMUDServerStatusProtocol)
                                 {
                                     Game.log("WONT MSSP");
 
-                                    //sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
+                                    sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
                                 else if(command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
                                 {
@@ -603,6 +611,7 @@ namespace CrimsonStainedLands
                                         connection.sslsocket = this.sslsocket;
                                         connection.receivebuffer = this.receivebuffer;
                                         connection.Address = this.Address;
+                                        connection.TelnetOptions = this.TelnetOptions;
                                         //if (this.sslsocket != null)
                                         //{
                                         //    this.sslsocket.EndRead(this.readop);

@@ -45,6 +45,8 @@ namespace CrimsonStainedLands.Extensions
             int LastIndex = 0;
             int ColorCodeOffset = 0;
             var @base = 38;
+            if (MXP)
+                ResultBuilder.Append("\x01B[7z");
             for (int ColorMarkerIndex = text.NextColorMarkerIndex(LastIndex, out EscapeChar); ColorMarkerIndex > -1; ColorMarkerIndex = text.NextColorMarkerIndex(LastIndex, out EscapeChar))
             {
                 ColorCodeOffset = 0;
@@ -130,6 +132,7 @@ namespace CrimsonStainedLands.Extensions
 
                         case 'x':
                             ResultBuilder.Append("\x001b[0m");
+                            ResultBuilder.Append("\u001b[4z\x01B[3z\x01B[7z");
                             color = -1;
                             break;
                         case 'e':
@@ -188,20 +191,25 @@ namespace CrimsonStainedLands.Extensions
                                     ColorCodeOffset++;
                                 break;
                             }
-                        //case '<':
-                            
-                        //    if (MXP)
-                        //        ResultBuilder.Append("\x001b[0z<");
-                        //    else
-                        //    {
-                        //        //    var index = text.IndexOf('>', ColorMarkerIndex);
-                        //        //    if (index > -1)
-                        //        //        ColorCodeOffset = index - ColorMarkerIndex;
-                        //        var regex = new Regex(@"<([a-zA-Z].*?)\b[^>]*>(.*?)<\/\1>");
-                        //        var match = regex.Match(text, ColorMarkerIndex);
-                        //        ColorCodeOffset = match.Length;
-                        //    }
-                        //    break;
+                        case '<':
+                            if (MXP)
+                            {
+                                ResultBuilder.Append("\x1b[4z<");
+                                var regex = new Regex(@"(<([a-zA-Z].*?)\b[^>]*>)(.*?)^(<\/\1>)");
+                            }
+                            else
+                            {
+
+                                //    var index = text.IndexOf('>', ColorMarkerIndex);
+                                //    if (index > -1)
+                                //        ColorCodeOffset = index - ColorMarkerIndex;
+                                //                                ResultBuilder.Append("\x01B[7z");
+                                var regex = new Regex(@"<([a-zA-Z].*?)\b[^>]*>(.*?)\\?<\/\1>");
+                                var match = regex.Match(text, ColorMarkerIndex);
+                                ColorCodeOffset = match.Length;
+                                ResultBuilder.Append(match.Groups[2].Value);
+                            }
+                            break;
                         default:
                             break;
                     }
@@ -241,13 +249,13 @@ namespace CrimsonStainedLands.Extensions
 
         public static string EscapeColor(this string text)
         {
-            //var regex = new Regex(@"<([a-zA-Z].*?)\b[^>]*>(.*?)<\/\1>");
-            //Match match;
-            //while((match = regex.Match(text, 0)) != null && match.Length > 0)
-            //{
-            //    text = text.Substring(0, match.Index) + match.Groups[2].Value + (text.Length > match.Index + match.Length ? text.Substring(match.Index + match.Length) : "");
-            //}
-            
+            var regex = new Regex(@"<([a-zA-Z].*?)\b[^>]*>(.*?)<\/\1>");
+            Match match;
+            while ((match = regex.Match(text, 0)) != null && match.Length > 0)
+            {
+                text = text.Substring(0, match.Index) + match.Groups[2].Value + (text.Length > match.Index + match.Length ? text.Substring(match.Index + match.Length) : "");
+            }
+
             return text.Replace(@"\", @"\\").Replace("{", "{{");
         }
 
