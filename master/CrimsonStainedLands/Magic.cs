@@ -599,6 +599,9 @@ namespace CrimsonStainedLands
 
         public static bool IsSafeSpell(Character ch, Character victim, bool area)
         {
+            if ((ch.FindAffect(AffectFlags.DuelInProgress, out var chduel) || ch.Master != null && ch.Master.FindAffect(AffectFlags.DuelInProgress, out chduel)) && chduel.ownerName == victim.Name)
+                return false;
+
             if (ch.IsAffected(AffectFlags.Calm))
             {
                 ch.send("You feel to calm to fight.\n\r");

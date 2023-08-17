@@ -145,7 +145,12 @@ namespace CrimsonStainedLands
         Haven = 67,
         Ghost = 68,
         KnowAlignment = 69,
-        Protection = 70
+        Protection = 70,
+        DuelChallenge,
+        DuelChallenged,
+        DuelStarting,
+        DuelInProgress,
+        DuelCancelling
     }
 
     public enum Frequency

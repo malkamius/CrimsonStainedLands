@@ -392,6 +392,10 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "bug", Action = Game.DoBug, Info = "Report a bug or typo.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "map", Action = DoActMapper.DoMap, Info = "Display an ascii map of your current surroundings.", MinimumPosition = Positions.Dead });
 
+            Commands.Add(new Command { Name = "duelchallenge", Action = Dueling.DoIssueDuelChallenge, Info = "Issue a duel challenge to another player.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "duelaccept", Action = Dueling.DoDuelAccept, Info = "Accept a duel challenge from another player.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "duelcancel", Action = Dueling.DoDuelDecline, Info = "Decline a duel challenge from another player.", MinimumPosition = Positions.Resting });
+
             // IMM COMMANDS
             Commands.Add(new Command { Name = "immortal", Action = DoActWizard.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
             Commands.Add(new Command { Name = "holylight", Action = DoActWizard.DoHolyLight, Info = "View immortal stuff", MinimumPosition = Positions.Dead });

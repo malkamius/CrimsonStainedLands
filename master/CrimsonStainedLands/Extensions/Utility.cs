@@ -354,6 +354,9 @@ namespace CrimsonStainedLands.Extensions
         {
             return list.Contains(flag);
         }
+
+        public static bool ISSET<T>(this IEnumerable<T> list, params T[] flags) => list.Any(item => flags.Contains(item));
+
         /// <summary>
         /// Remove a flag from a list if it is set
         /// </summary>

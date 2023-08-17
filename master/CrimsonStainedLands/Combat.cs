@@ -60,6 +60,9 @@ namespace CrimsonStainedLands
         /// <returns>True if it is safe, false otherwise.</returns>
         public static bool CheckIsSafe(Character ch, Character victim)
         {
+            if ((ch.FindAffect(AffectFlags.DuelInProgress, out var chduel) || ch.Master != null && ch.Master.FindAffect(AffectFlags.DuelInProgress, out chduel)) && chduel.ownerName == victim.Name)
+                return false;
+
             // If the victim is a ghost and not already in combat, it is safe
             if (victim.IsAffected(AffectFlags.Ghost) && victim.Fighting == null)
                 return true;
@@ -449,6 +452,34 @@ namespace CrimsonStainedLands
                     break;
 
                 case Positions.Dead:
+
+                    if(victim.FindAffect(AffectFlags.DuelInProgress, out var duelaffect) && ch != null && (!ch.IsNPC || (ch.Master != null && !ch.Master.IsNPC)))
+                    {
+                        if (ch.Master != null)
+                        {
+                            ch.Master.StripAffect(AffectFlags.DuelInProgress);
+                            if (ch.Master.Fighting == ch)
+                                ch.Master.Fighting = null;
+                        }
+                        else
+                            ch.StripAffect(AffectFlags.DuelInProgress);
+
+                        if (ch.Fighting == victim)
+                            ch.Fighting = null;
+                        if(victim.Fighting == ch || (ch.Master != null && victim.Fighting == ch.Master))
+                            victim.Fighting = null;
+
+                        victim.Act("$N stops $mself before finishing off $n.", ch, type: ActType.GlobalNotVictim);
+                        victim.Act("$N stops $mself before finishing you off.", ch, type: ActType.ToChar);
+                        victim.Act("You stop yourself before finishing $n off.", ch, type: ActType.ToVictim);
+                        victim.HitPoints = 20;
+                        victim.Position = Positions.Sitting;
+                        foreach (var aff in victim.AffectsList.ToArray())
+                            victim.AffectFromChar(aff, true);
+                        
+                        return;
+                    }
+
                     victim.Act("$n is DEAD!!", null, null, null, ActType.ToRoom);
                     victim.send("You have been KILLED!!\n\r\n\r");
                     break;

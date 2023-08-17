@@ -59,6 +59,9 @@ namespace CrimsonStainedLands
 
             //NPCPrograms.Add(new ForemanRespondProgram());
             //NPCPrograms.Add(new DocksBountyQuestProgram());
+
+            AffectPrograms.Add(new AffectDuelStartingProgram());
+            AffectPrograms.Add(new AffectDuelStartProgram());
         }
 
         public static bool AffectProgramLookup(string name, out Program<AffectData> program)
@@ -807,5 +810,60 @@ namespace CrimsonStainedLands
                 return false;
             } // end execute
         } // end ForemanRespondProgram
+
+        public class AffectDuelStartingProgram : Program<AffectData>
+        {
+            public string Name => "DuelStartingProgram";
+            public string Description => "Count down a duel";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.AffectTick };
+
+            public bool Execute(Character player, AffectData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                var opponent = Character.Characters.Where(c => !c.IsNPC && c.Name == sender.ownerName).FirstOrDefault();
+
+                if (opponent == null)
+                {
+                    player.send("Your opponent seems to not be around any longer.\n\r");
+                    player.StripAffect(AffectFlags.DuelStarting);
+                }
+
+                player.send("Your duel starts in the span of \\r{0}\\x rounds of combat.\n\r", sender.duration + 1);
+                return true;
+            } // end execute
+        } // end AffectDuelStartingProgram
+
+        public class AffectDuelStartProgram : Program<AffectData>
+        {
+            public string Name => "DuelStartProgram";
+            public string Description => "Initiate a duel";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.AffectEnd };
+
+            public bool Execute(Character player, AffectData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                var opponent = Character.Characters.Where(c => !c.IsNPC && c.Name == sender.ownerName).FirstOrDefault();
+
+                if (opponent == null)
+                {
+                    player.send("Your opponent seems to not be around any longer.\n\r");
+                }
+                else
+                {
+                    var newaffect = new AffectData();
+                    newaffect.flags.SETBIT(AffectFlags.DuelInProgress);
+                    newaffect.ownerName = opponent.Name;
+                    newaffect.duration = -1;
+                    newaffect.frequency = Frequency.Violence;
+                    newaffect.displayName = "Dueling " + newaffect.ownerName;
+                    newaffect.endMessage = "Your duel has ended.";
+                    newaffect.beginMessage = "Your duel has started.";
+                    newaffect.hidden = false;
+
+                    player.AffectToChar(newaffect);
+                }
+                return true;
+            } // end execute
+        } // end AffectDuelStartProgram
     } // end programs
 } // end crimsonstainedlands

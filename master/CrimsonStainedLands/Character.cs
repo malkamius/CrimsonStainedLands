@@ -21,6 +21,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 using System.Numerics;
 using System.Diagnostics.Eventing.Reader;
 using static CrimsonStainedLands.Game;
+using System.Configuration;
 
 namespace CrimsonStainedLands
 {
@@ -31,7 +32,8 @@ namespace CrimsonStainedLands
         ToVictim = 2,
         ToChar = 3,
         ToAll = 4,
-        ToGroupInRoom = 5
+        ToGroupInRoom = 5,
+        GlobalNotVictim = 6
     }
 
     public enum WearSlotIDs
@@ -164,6 +166,7 @@ namespace CrimsonStainedLands
         Practice = GuildMaster,
         ColorOn = Color,
         NewbieChannel = 71,
+        NoDuels = 72,
     }
 
     public enum Sexes
@@ -676,7 +679,7 @@ namespace CrimsonStainedLands
 
             return PermanentStats != null && ModifiedStats != null ? PermanentStats[stat] + ModifiedStats[stat] : (IsNPC ? 20 : 3);
         }
-        public bool CanSee(Character victim)
+        public bool CanSee(Character victim, params GetFlags[] flags)
         {
             if (victim == this) return true;
             return (Flags.ISSET(ActFlags.HolyLight) && (Level >= victim.Level || victim.IsNPC)) ||
@@ -3214,54 +3217,59 @@ namespace CrimsonStainedLands
 
         }
 
+        public void NoFollow()
+        {
+            if (this.Following != null)
+            {
+                this.send("You stop following " + (this.Following.Display(this)) + ".\n\r");
+                if (this.Following.Group.Contains(this))
+                    this.Following.Group.Remove(this);
+
+                this.Following = null;
+                this.Leader = null;
+            }
+            this.send("You stop allowing followers.\n\r");
+
+            foreach (var other in Characters.ToArray())
+            {
+                if (other.Following == this)
+                {
+
+                    if (other.Leader == this)
+                    {
+                        other.Leader = null;
+                        if (this.Group.Contains(other)) this.Group.Remove(other);
+                        this.Act("$N leaves your group.\n\r", other, type: ActType.ToChar);
+                        this.Act("You leave $n's group.\n\r", other, type: ActType.ToVictim);
+                    }
+                    if (other == this.Pet)
+                    {
+                        this.Pet = null;
+                        other.Act("$n wanders off.", type: ActType.ToRoom);
+                        other.RemoveCharacterFromRoom();
+                        other.Dispose();
+                    }
+
+                    if (other.Leader == this)
+                        other.Leader = null;
+
+                    if (other.Following == this)
+                    {
+
+                        other.Following = null;
+                        this.Act("$N stops following you.\n\r", other, type: ActType.ToChar);
+                        this.Act("You stop following $n.\n\r", other, type: ActType.ToVictim);
+                    }
+                }
+            }
+        }
+
         public static void DoNofollow(Character ch, string arguments)
         {
             if (!ch.Flags.ISSET(ActFlags.NoFollow))
             {
                 ch.Flags.ADDFLAG(ActFlags.NoFollow);
-                if (ch.Following != null)
-                {
-                    ch.send("You stop following " + (ch.Following.Display(ch)) + ".\n\r");
-                    if (ch.Following.Group.Contains(ch))
-                        ch.Following.Group.Remove(ch);
-
-                    ch.Following = null;
-                    ch.Leader = null;
-                }
-                ch.send("You stop allowing followers.\n\r");
-
-                foreach (var other in Characters.ToArray())
-                {
-                    if (other.Following == ch)
-                    {
-
-                        if (other.Leader == ch)
-                        {
-                            other.Leader = null;
-                            if (ch.Group.Contains(other)) ch.Group.Remove(other);
-                            ch.Act("$N leaves your group.\n\r", other, type: ActType.ToChar);
-                            ch.Act("You leave $n's group.\n\r", other, type: ActType.ToVictim);
-                        }
-                        if (other == ch.Pet)
-                        {
-                            ch.Pet = null;
-                            other.Act("$n wanders off.", type: ActType.ToRoom);
-                            other.RemoveCharacterFromRoom();
-                            other.Dispose();
-                        }
-
-                        if (other.Leader == ch)
-                            other.Leader = null;
-
-                        if (other.Following == ch)
-                        {
-
-                            other.Following = null;
-                            ch.Act("$N stops following you.\n\r", other, type: ActType.ToChar);
-                            ch.Act("You stop following $n.\n\r", other, type: ActType.ToVictim);
-                        }
-                    }
-                }
+                ch.NoFollow();
             }
             else
             {
@@ -3944,10 +3952,13 @@ namespace CrimsonStainedLands
                 return false;
         }
 
+        public bool FindAffect(SkillSpell skillSpell, out AffectData affect) => (affect = FindAffect(skillSpell)) != null;
+
         public AffectData FindAffect(SkillSpell skillSpell) => skillSpell == null ? null : (from aff in AffectsList where aff.skillSpell == skillSpell select aff).FirstOrDefault();
 
         public AffectData FindAffect(string skillname) => FindAffect(SkillSpell.SkillLookup(skillname));
 
+        public bool FindAffect(AffectFlags flag, out AffectData affect) => (affect = FindAffect(flag)) != null;
         public AffectData FindAffect(AffectFlags flag) => (from aff in AffectsList where aff.flags.ISSET(flag) select aff).FirstOrDefault();
 
         public AffectData[] FindAffects(AffectFlags flag) => (from aff in AffectsList where aff.flags.ISSET(flag) select aff).ToArray();
@@ -4016,29 +4027,53 @@ namespace CrimsonStainedLands
             return null;
         }
 
-        public bool GetCharacterFromRoomByName(string arguments, out Character person) => (person = GetCharacterFromRoomByName(arguments)) != null;
-        public bool GetCharacterFromRoomByName(string arguments, ref int count, out Character person) => (person = GetCharacterFromRoomByName(arguments, ref count)) != null;
-
-        public Character GetCharacterFromRoomByName(string arguments)
+        public enum GetFlags
         {
-            int count = 0;
-            return GetCharacterFromRoomByName(arguments, ref count);
+            DisallowStringPrefix,
+            DisrespectMortalVisibility,
+            DisrespectImmortalVisibility,
+            PlayersOnly,
+            PlayerName
         }
 
-        public Character GetCharacterFromRoomByName(string arguments, ref int count) =>
-            Room != null ? GetCharacterFromListByName(Room.Characters, arguments, ref count) : null;
+        public bool GetCharacterFromRoomByName(string arguments, out Character person, params GetFlags[] flags) => (person = GetCharacterFromRoomByName(arguments, flags)) != null;
+        public bool GetCharacterFromRoomByName(string arguments, ref int count, out Character person, params GetFlags[] flags) => (person = GetCharacterFromRoomByName(arguments, ref count, flags)) != null;
 
-        public Character GetCharacterFromListByName(IEnumerable<Character> CharacterList, string arguments, ref int count)
+        public Character GetCharacterFromRoomByName(string arguments, params GetFlags[] flags)
+        {
+            int count = 0;
+            return GetCharacterFromRoomByName(arguments, ref count, flags);
+        }
+
+        public Character GetCharacterFromRoomByName(string arguments, ref int count, params GetFlags[] flags) =>
+            Room != null ? GetCharacterFromListByName(Room.Characters, arguments, ref count, flags) : null;
+
+        public bool GetCharacterFromListByName(IEnumerable<Character> CharacterList, string arguments, out Character victim, params GetFlags[] flags) => (victim = GetCharacterFromListByName(CharacterList, arguments, flags)) != null;
+
+        public Character GetCharacterFromListByName(IEnumerable<Character> CharacterList, string arguments, params GetFlags[] flags)
+        {
+            int count = 0;
+            return GetCharacterFromListByName(CharacterList, arguments, ref count, flags);
+        }
+
+        public Character GetCharacterFromListByName(IEnumerable<Character> CharacterList, string arguments, ref int count, params GetFlags[] flags)
         {
             if (arguments.ISEMPTY()) return null;
             if (arguments.StringCmp("self"))
                 return this;
             int num = arguments.number_argument(ref arguments);
 
+            bool UnalteredName = flags.ISSET(GetFlags.PlayerName);
+            var DisallowPrefix = flags.ISSET(GetFlags.DisallowStringPrefix);
+
             foreach (Character other in CharacterList)
             {
-                if (!CanSee(other)) continue;
-                if ((arguments.ISEMPTY() || other.GetName.IsName(arguments) || (IsImmortal && other.Name.IsName(arguments))) && ++count >= num)
+                if (!CanSee(other, flags)) continue;
+                if ((arguments.ISEMPTY() || 
+                        ((UnalteredName && other.Name.IsName(arguments, DisallowPrefix)) || 
+                        (!UnalteredName &&  other.GetName.IsName(arguments, DisallowPrefix))) || 
+                    (IsImmortal && other.Name.IsName(arguments))) && 
+                    ++count >= num)
                     return other;
             }
             return null;
@@ -4592,6 +4627,17 @@ namespace CrimsonStainedLands
                     }
                 }
             }
+            else if(type == ActType.GlobalNotVictim)
+            {
+                foreach (var @to in Character.Characters)
+                {
+                    if (to != this && to != victim)
+                    {
+                        var output = FormatActMessage(msg, to, victim, item, item2, args);
+                        to.send(output);
+                    }
+                }
+            }
             else if (type == ActType.ToVictim)
             {
                 var output = FormatActMessage(msg, victim, victim, item, item2, args);
@@ -4778,6 +4824,8 @@ namespace CrimsonStainedLands
                         (AffectsList != null && AffectsList.Any() ?
                         new XElement("Affects",
                             from aff in AffectsList
+                            where 
+                                !aff.flags.ISSET(AffectFlags.DuelCancelling, AffectFlags.DuelChallenge, AffectFlags.DuelChallenged, AffectFlags.DuelInProgress, AffectFlags.DuelStarting)
                             select aff.Element
                        ) : null),
                         (Inventory != null && Inventory.Any() ?
@@ -6867,12 +6915,12 @@ namespace CrimsonStainedLands
             }
         } // end of steal
 
-        internal void StripAffect(AffectFlags Flag)
+        internal void StripAffect(AffectFlags Flag, bool silent = false)
         {
             var affects = FindAffects(Flag);
             foreach (var affect in affects.ToArray())
             {
-                AffectFromChar(affect);
+                AffectFromChar(affect, silent);
             }
         }
         public static void DoGreaseItem(Character ch, string arguments)
