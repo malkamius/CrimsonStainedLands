@@ -454,30 +454,44 @@ namespace CrimsonStainedLands
         {
             lock (connection)
             {
-                //if (connection.sslsocket != null)
-                //{
-                //    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                //    {
-
+                if (connection.sslsocket != null)
+                {
+                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                    {
+                        byte[] buffer = new byte[256];
+                        int received = connection.socket.Receive(buffer, SocketFlags.Peek);
+                        if(received == 0)
+                        {
+                            throw new SocketException();
+                        }
                 //        if (connection.sslsocket.IsAuthenticated && (connection.readop == null || connection.readop.IsCompleted))
                 //        {
                 //            if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
                 //            if (connection.readop == null || connection.readop.IsCompleted)
                 //                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
                 //        }
-                //    }
+                    }
 
-                //    else if (connection.socket == null)
-                //        connection.sslsocket = null;
-                //}
-                //else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                //{
-
-                //    if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
-                //    //int received = connection.socket.Receive(buffer);
-                //    if (connection.readop == null || connection.readop.IsCompleted)
-                //        connection.readop = connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
-                //}
+                    else if (connection.socket == null)
+                        connection.sslsocket = null;
+                    else if(connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
+                    {
+                        throw new SocketException();
+                    }
+                }
+                else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
+                {
+                    byte[] buffer = new byte[256];
+                    int received = connection.socket.Receive(buffer, SocketFlags.Peek);
+                    if (received == 0)
+                    {
+                        throw new SocketException();
+                    }
+                    //    if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
+                    //    //int received = connection.socket.Receive(buffer);
+                    //    if (connection.readop == null || connection.readop.IsCompleted)
+                    //        connection.readop = connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
+                }
 
                 ////else
                 ////{

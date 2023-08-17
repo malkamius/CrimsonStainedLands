@@ -123,6 +123,7 @@ namespace CrimsonStainedLands
                 try
                 {
                     state = ConnectionStates.NegotiateSSH;
+                    inanimate = DateTime.Now;
                     this.sslsocket = new SslStream(new System.Net.Sockets.NetworkStream(socket));
 
                     var certificate = new X509Certificate2("kbs-cloud.com.pfx", "T3hposmud");
@@ -140,6 +141,7 @@ namespace CrimsonStainedLands
                                 if (receivebuffer == null) receivebuffer = new byte[255];
                                 if (readop == null || readop.IsCompleted)
                                     readop = sslsocket.BeginRead(receivebuffer, 0, receivebuffer.Length, EndReceiveSsl, this.sslsocket);
+                                inanimate = null;
                             }
                             catch { }
 
@@ -850,7 +852,7 @@ namespace CrimsonStainedLands
             Character.ReadHelp(this, "greeting", true);
             send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
             Character.ReadHelp(this, "MOTD", true);
-            if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
+            if(!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
             {
                 send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
             }
