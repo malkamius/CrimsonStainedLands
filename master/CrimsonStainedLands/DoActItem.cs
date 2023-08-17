@@ -904,6 +904,12 @@ namespace CrimsonStainedLands
                         return;
                     }
 
+                    if(container.ItemType.ISSET(ItemTypes.PC_Corpse) && container.Owner != ch.Name)
+                    {
+                        ch.Act("The gods wouldn't approve of that.");
+                        return;
+                    }
+
                     if (fAll)
                     {
                         // Pick up all items from the container
@@ -1684,6 +1690,12 @@ namespace CrimsonStainedLands
                     if (item.ItemType.Contains(ItemTypes.Fountain) || !item.wearFlags.Contains(WearFlags.Take))
                     {
                         ch.send(string.Format("Are you nuts? You cannot sacrifice {0} to the gods.\n\r", item.ShortDescription));
+                        return;
+                    }
+
+                    if (item.ItemType.ISSET(ItemTypes.PC_Corpse))
+                    {
+                        ch.Act("The gods wouldn't approve of that.");
                         return;
                     }
 
