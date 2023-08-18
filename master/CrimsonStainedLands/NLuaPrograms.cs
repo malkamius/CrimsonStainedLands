@@ -289,6 +289,51 @@ namespace CrimsonStainedLands
                 Character.DoGive(ch, arguments);
             }
 
+            public void MoveCharacter(Character ch, Direction direction)
+            {
+                ch.moveChar(direction, true, false);
+            }
+
+            public Character GetNPCByVNumRoom(Character ch, int vnum)
+            {
+                foreach(var other in ch.Room.Characters.OfType<NPCData>().ToArray())
+                {
+                    if (other.vnum == vnum) return other;
+                }
+                return null;
+            }
+
+            public void Attack(Character ch, Character victim)
+            {
+                if(ch != null && victim != null && ch != victim)
+                {
+                    Combat.Attack(ch, victim);
+                }
+            }
+
+            public ExitData GetRandomExit(Character ch, string arguments)
+            {
+                var exits = new List<ExitData>();
+                foreach(var exit in ch.Room.exits)
+                {
+                    if(exit != null && exit.destination != null)
+                    {
+                        if (arguments.Contains("SameArea") && exit.destination.Area != exit.source.Area)
+                            continue;
+                        exits.Add(exit);
+                    }
+                }
+                if (exits.Any())
+                    return exits[Utility.Random(0, exits.Count - 1)];
+                else
+                    return null;
+            }
+
+            public void Flee(Character ch)
+            {
+                Combat.DoFlee(ch, "");
+            }
+
             public void Log(string text)
             {
                 Game.log(text);

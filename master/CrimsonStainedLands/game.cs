@@ -1382,6 +1382,8 @@ namespace CrimsonStainedLands
         {
             foreach (var ch in new List<Character>(Character.Characters))
             {
+                Programs.ExecutePrograms(Programs.ProgramTypes.PulseViolence, ch, null, null, ch.Room, string.Empty);
+
                 foreach (var affect in new List<AffectData>(ch.AffectsList))
                 {
                     if (affect.frequency == Frequency.Violence && affect.duration > 0)
@@ -1493,6 +1495,8 @@ namespace CrimsonStainedLands
         {
             foreach (var aggressor in Character.Characters.ToArray())
             {
+                Programs.ExecutePrograms(Programs.ProgramTypes.Pulse, aggressor, null, null, aggressor.Room, string.Empty);
+
                 if (!aggressor.IsNPC && aggressor.Form != null && Utility.NumberPercent() > 110)
                     aggressor.CheckImprove(aggressor.Form.FormSkill, true, 100);
 

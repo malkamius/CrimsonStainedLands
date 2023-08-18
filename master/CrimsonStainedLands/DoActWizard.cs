@@ -1440,7 +1440,7 @@ namespace CrimsonStainedLands
                 }
                 ch.send("OK.\n\r");
             }
-            else if ((pet = Character.GetCharacterWorld(ch, name, false)) != null && pet.IsNPC || pet.Level < ch.Level)
+            else if ((pet = Character.GetCharacterWorld(ch, name, false)) != null && (pet.IsNPC || pet.Level < ch.Level))
             {
                 pet.DoCommand(command + " " + commandargs + (!arguments.ISEMPTY()? " " + arguments:""));
                 ch.send("OK.\n\r");

@@ -1983,16 +1983,12 @@ namespace CrimsonStainedLands
             }
         }
 
-        public static void DoKill(Character ch, string arguments)
+        public static void Attack(Character ch, Character victim)
         {
-            Character victim;
-            int count = 0;
-
-            if (ch.IsAffected(AffectFlags.Calm)) { ch.send("You feel too calm to attack.\n\r"); return; }
-
-            if ((victim = ch.GetCharacterFromRoomByName(arguments, ref count)) != null && victim != ch)
+            if(ch != null && victim != null && ch != victim)
             {
                 if (CheckIsSafe(ch, victim)) return;
+
                 ItemData weapon;
                 ch.Position = Positions.Fighting;
                 ch.Fighting = victim;
@@ -2003,6 +1999,20 @@ namespace CrimsonStainedLands
 
                 Combat.oneHit(ch, victim, weapon);
                 ch.WaitState(Game.PULSE_VIOLENCE);
+            }
+        }
+
+        public static void DoKill(Character ch, string arguments)
+        {
+            Character victim;
+            int count = 0;
+
+            if (ch.IsAffected(AffectFlags.Calm)) { ch.send("You feel too calm to attack.\n\r"); return; }
+
+            if ((victim = ch.GetCharacterFromRoomByName(arguments, ref count)) != null && victim != ch)
+            {
+                Attack(ch, victim);
+                
             }
             else if (victim == ch)
                 ch.send("Suicide is a mortal sin.\n\r");

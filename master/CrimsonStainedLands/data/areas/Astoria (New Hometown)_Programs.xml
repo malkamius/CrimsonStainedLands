@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs>
+	<LuaProgram 
+		Name="AstoriaGoodVSEvil" 
+		Description="Quest for player to say yes or no to the foreman" 
+		ProgramTypes="EnterRoom PulseViolence">
+		if ProgramType == "PulseViolence" then
+			-- local exits = {}
+			-- for i,oneexit in ipairs(Player.Room.exits) do 
+			-- 	if oneexit ~= nil and oneexit.destination ~= nil and oneexit.destination.Area == oneexit.source.Area then
+			-- 		table.insert(exits, oneexit);
+			-- 	end
+			-- end
+			-- random_exit = exits[math.random(#exits)];
+			if Player.Fighting ~= nil then
+			
+				local seraphel = WorldHelper:GetNPCByVNumRoom(Player, 19044);
+				local ravenshadow = WorldHelper:GetNPCByVNumRoom(Player, 19045);
+				
+				if (Player == seraphel or Player == ravenshadow) and (Player.Fighting == seraphel or Player.Fighting == ravenshadow) then
+					if Player.HitPoints &lt; (Player.MaxHitPoints - Player.MaxHitPoints / 4) then
+						WorldHelper:Flee(Player);
+					end
+				end
+			end
+			
+			if math.random(4) &lt; 2 then
+				local random_exit = WorldHelper:GetRandomExit(Player, "SameArea")
+				if random_exit ~= nil and Player.Fighting == nil then
+					WorldHelper:MoveCharacter(Player, random_exit.direction);
+					
+					local seraphel = WorldHelper:GetNPCByVNumRoom(Player, 19044);
+					local ravenshadow = WorldHelper:GetNPCByVNumRoom(Player, 19045);
+					
+					if seraphel ~= nil and ravenshadow ~= nil and seraphel.Fighting == nil then
+						WorldHelper:DoSay(seraphel, "Be vanquished, evil one!");
+						WorldHelper:Attack(seraphel, ravenshadow);
+					end
+				end
+			end
+		elseif ProgramType == "EnterRoom" then			
+			local seraphel = WorldHelper:GetNPCByVNumRoom(Player, 19044);
+			local ravenshadow = WorldHelper:GetNPCByVNumRoom(Player, 19045);
+			
+			if seraphel ~= nil and ravenshadow ~= nil and seraphel.Fighting == nil then
+				WorldHelper:DoSay(seraphel, "Be vanquished, evil one!");
+				WorldHelper:Attack(seraphel, ravenshadow);
+			end
+		end
+		return false;
+	</LuaProgram>
+	
+</Programs>

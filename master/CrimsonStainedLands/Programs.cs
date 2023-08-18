@@ -39,7 +39,9 @@ namespace CrimsonStainedLands
             AffectTick,
             AffectEnd,
             BeforeUnlock,
-            BeforeRelock
+            BeforeRelock,
+            Pulse,
+            PulseViolence
         }
 
         static Programs()
@@ -169,32 +171,52 @@ namespace CrimsonStainedLands
                 {
                     if (program.ProgramTypes.ISSET(type))
                     {
-                        success = program.Execute(player, null, null, item, null, null, type, arguments);
+                        success = program.Execute(player, null, room, item, null, null, type, arguments);
                         if (success) break;
                     }
-                }
-
-                if (npc is NPCData)
-                {
-                    foreach (var program in ((NPCData)npc).Programs)
-                    {
-                        if (program.Types.ISSET(type))
-                        {
-                            success = program.Execute(player, (NPCData)npc, npc, item, null, type, arguments);
-                        }
-                        if (success) break;
-                    }
-                    if (!success)
-                        foreach (var program in ((NPCData)npc).LuaPrograms)
-                        {
-                            if (program.ProgramTypes.ISSET(type))
-                            {
-                                success = program.Execute(player, npc, null, item, null, null, type, arguments);
-                            }
-                            if (success) break;
-                        }
                 }
             }
+            if (player is NPCData)
+            {
+                foreach (var program in ((NPCData)player).Programs)
+                {
+                    if (program.Types.ISSET(type))
+                    {
+                        success = program.Execute(player, (NPCData)npc, npc, item, null, type, arguments);
+                    }
+                    if (success) break;
+                }
+                if (!success)
+                    foreach (var program in ((NPCData)player).LuaPrograms)
+                    {
+                        if (program.ProgramTypes.ISSET(type))
+                        {
+                            success = program.Execute(player, npc, null, item, null, null, type, arguments);
+                        }
+                        if (success) break;
+                    }
+            }
+            else if (npc is NPCData)
+            {
+                foreach (var program in ((NPCData)npc).Programs)
+                {
+                    if (program.Types.ISSET(type))
+                    {
+                        success = program.Execute(player, (NPCData)npc, npc, item, null, type, arguments);
+                    }
+                    if (success) break;
+                }
+                if (!success)
+                    foreach (var program in ((NPCData)npc).LuaPrograms)
+                    {
+                        if (program.ProgramTypes.ISSET(type))
+                        {
+                            success = program.Execute(player, npc, null, item, null, null, type, arguments);
+                        }
+                        if (success) break;
+                    }
+            }
+            
             return success;
         }
 
@@ -246,6 +268,31 @@ namespace CrimsonStainedLands
                     foreach (var program in luaPrograms)
                     {
                         if ((success = program.Execute(player, triggernpc, room, null, null, null, type, "")))
+                            break;
+                    }
+
+                    if (success) return success;
+                }
+
+                if(player is NPCData)
+                { 
+                    var programs = from program in ((NPCData) player).Programs
+                                   where program.Types.ISSET(type)
+                                   select program;
+                    foreach (var program in programs)
+                    {
+                        if ((success = program.Execute(player, ((NPCData)player), null, null, null, type, "")))
+                            break;
+                    }
+
+                    if (success) return success;
+
+                    var luaPrograms = from program in ((NPCData)player).LuaPrograms
+                                      where program.ProgramTypes.ISSET(type)
+                                      select program;
+                    foreach (var program in luaPrograms)
+                    {
+                        if ((success = program.Execute(player, ((NPCData)player), room, null, null, null, type, "")))
                             break;
                     }
 
