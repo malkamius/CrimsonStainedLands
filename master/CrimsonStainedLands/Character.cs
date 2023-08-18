@@ -384,6 +384,8 @@ namespace CrimsonStainedLands
 
         public ShapeshiftForm Form { get; set; }
 
+        public string LastCommand = "";
+
         public string GetName
         {
             get
@@ -1619,6 +1621,9 @@ namespace CrimsonStainedLands
         /// <param name="arguments">The command arguments.</param>
         public void DoCommand(string arguments)
         {
+            if (arguments == "!")
+                arguments = LastCommand;
+            LastCommand = arguments;
             // Check if the character is switched to another entity
             if (Switched != null)
             {
