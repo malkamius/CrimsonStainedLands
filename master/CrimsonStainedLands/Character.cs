@@ -1623,7 +1623,8 @@ namespace CrimsonStainedLands
         {
             if (arguments == "!")
                 arguments = LastCommand;
-            LastCommand = arguments;
+            if(!arguments.ISEMPTY())
+                LastCommand = arguments;
             // Check if the character is switched to another entity
             if (Switched != null)
             {

@@ -25,7 +25,7 @@ namespace CrimsonStainedLands
 
         public static void LoadSocials()
         {
-            if (System.IO.File.Exists(Settings.DataPath + "\\social.area"))
+            if (System.IO.File.Exists(Settings.DataPath + "\\social.are"))
             {
                 var file = new FileInfo(Settings.DataPath + "\\social.are");
 
@@ -62,6 +62,8 @@ namespace CrimsonStainedLands
                             Socials.Add(social);
                         }
                     }
+
+                    Game.log("{0} socials loaded.", Socials.Count);
                 }
             }
         }
