@@ -535,7 +535,7 @@ namespace CrimsonStainedLands
                             {
                                 string flags = "";
                                 if (person is Player player && player.IsAFK)
-                                    flags += "(AFK)";
+                                    flags += "\\r(AFK)\\x";
                                 if (person.Flags.ISSET(ActFlags.WizInvis))
                                     flags += "(WizInvis)";
                                 if (person.AffectedBy.ISSET(AffectFlags.Ghost))
@@ -784,7 +784,7 @@ namespace CrimsonStainedLands
                     {
                         var flags = "";
                         if (other is Player player && player.IsAFK)
-                            flags += "(AFK)";
+                            flags += "\\r(AFK)\\x";
                         if (other.Flags.ISSET(ActFlags.WizInvis))
                             flags += "(WizInvis)";
                         if (other.AffectedBy.ISSET(AffectFlags.Ghost))

@@ -2149,7 +2149,7 @@ namespace CrimsonStainedLands
                 // Check if character is allowed to enter a room protected by a guild guard
                 foreach (var guildguard in Room.Characters.OfType<NPCData>())
                 {
-                    if (guildguard.Guild != null && guildguard.Guild != Guild && guildguard.Protects.Count > 0 && guildguard.Protects.Contains(exit.destinationVnum))
+                    if (guildguard.Guild != null && guildguard.Guild != Guild && guildguard.Protects.Count > 0 && guildguard.Protects.Contains(exit.destinationVnum) && !this.IsImmortal && !this.IsNPC)
                     {
                         Act("$N steps in your way.", guildguard, type: ActType.ToChar);
                         Act("$N steps in your $n's way.", guildguard, type: ActType.ToRoomNotVictim);
@@ -3033,7 +3033,7 @@ namespace CrimsonStainedLands
                     whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}{6}\n\r",
                         connection.Level.ToString().PadRight(4),
                         connection.Guild.whoName,
-                        connection.IsAFK? "(AFK)" : "     ",
+                        connection.IsAFK? "\\r(AFK)\\x" : "     ",
                         connection == ch ? "*" : " ",
                         connection.Name,
                         (!connection.Title.ISEMPTY() ? ((!connection.Title.ISEMPTY() && connection.Title.StartsWith(",") ? connection.Title : " " + connection.Title)) : ""),
