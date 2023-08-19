@@ -22,6 +22,7 @@ using System.Numerics;
 using System.Diagnostics.Eventing.Reader;
 using static CrimsonStainedLands.Game;
 using System.Configuration;
+using static CrimsonStainedLands.WizardNet;
 
 namespace CrimsonStainedLands
 {
@@ -167,6 +168,7 @@ namespace CrimsonStainedLands
         ColorOn = Color,
         NewbieChannel = 71,
         NoDuels = 72,
+        AFK = 73,
     }
 
     public enum Sexes
@@ -1151,8 +1153,16 @@ namespace CrimsonStainedLands
 
                 if (HasPageText)
                 {
-                    send("[Hit Enter to Continue]");
-                    ((Player)this).SittingAtPrompt = true;
+
+                    if(this is Player player)
+                    {
+                        if(player.state != Player.ConnectionStates.Playing)
+                            send("[Hit Enter to Continue]"); // output while playing will display a prompt and this line at time of output
+
+                        player.SittingAtPrompt = true;
+                    }
+                    else
+                        send("[Hit Enter to Continue]");
                 }
                 else
                     send("\n\r");
@@ -3020,9 +3030,10 @@ namespace CrimsonStainedLands
             {
                 if (connection.state == Player.ConnectionStates.Playing && connection.socket != null && (!connection.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= connection.Level))
                 {
-                    whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}\n\r",
+                    whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}{6}\n\r",
                         connection.Level.ToString().PadRight(4),
                         connection.Guild.whoName,
+                        connection.IsAFK? "(AFK)" : "     ",
                         connection == ch ? "*" : " ",
                         connection.Name,
                         (!connection.Title.ISEMPTY() ? ((!connection.Title.ISEMPTY() && connection.Title.StartsWith(",") ? connection.Title : " " + connection.Title)) : ""),
@@ -7311,6 +7322,13 @@ namespace CrimsonStainedLands
         public bool HasBuilderPermission(RoomData room) => room.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
         public bool HasBuilderPermission(ItemTemplateData item) => item.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
         public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
+
+
+        public bool IsInactive { get { return (this is Player player && DateTime.Now - player.LastActivity > TimeSpan.FromMinutes(5)); } }
+
+        public bool IsAFK { get { return this.Flags.ISSET(ActFlags.AFK) || IsInactive; } }
+
+        
 
     } // end of character
 } // end namespace

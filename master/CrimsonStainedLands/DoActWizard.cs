@@ -283,7 +283,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.HolyLight)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.HolyLight);
-                ch.send("\\GHolyLight\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GHolyLight\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: HolyLight [on|off]\n\r");
@@ -299,7 +299,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.WizInvis)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.WizInvis);
-                ch.send("\\GWizInvis\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GWizInvis\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: WizInvis [on|off]\n\r");

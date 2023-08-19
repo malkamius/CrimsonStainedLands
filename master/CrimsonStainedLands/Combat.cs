@@ -1178,6 +1178,9 @@ namespace CrimsonStainedLands
                 return;
             }
 
+            if (ch is Player player) player.LastActivity = DateTime.Now;
+            if (victim is Player vplayer) vplayer.LastActivity = DateTime.Now;
+
             // Strip hidden, invisibility, sneak, and camouflage status
             ch.StripHidden();
             ch.StripInvis();

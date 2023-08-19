@@ -312,8 +312,9 @@ namespace CrimsonStainedLands
         public string DisplayFlags(Character to)
         {
             string flags = "";
+
             if (this.extraFlags.Contains(ExtraFlags.Glow))
-                flags = "(Glowing)";
+                flags += "(Glowing)";
             if (this.extraFlags.Contains(ExtraFlags.Hum))
                 flags += "(Humming)";
             if (this.extraFlags.Contains(ExtraFlags.Invisibility))
@@ -598,8 +599,8 @@ namespace CrimsonStainedLands
                 foreach (var program in template.Programs)
                 {
                     if (!Programs.Any(p => p.Name == program.Name))
-                    { 
-                        Programs.Add(program); 
+                    {
+                        Programs.Add(program);
                     }
                 }
             }
@@ -609,8 +610,8 @@ namespace CrimsonStainedLands
                 foreach (var program in template.LuaPrograms)
                 {
                     if (!LuaPrograms.Any(p => p.Name == program.Name))
-                    { 
-                        LuaPrograms.Add(program); 
+                    {
+                        LuaPrograms.Add(program);
                     }
                 }
             }

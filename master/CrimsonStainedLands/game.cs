@@ -1173,7 +1173,7 @@ namespace CrimsonStainedLands
 
 
 
-                if (!ch.IsNPC && !ch.IsImmortal)
+                if (!ch.IsNPC && !ch.IsImmortal && !ch.IsInactive)
                 {
                     int survivalist = 0;
                     if ((ch.GetSkillPercentage("slow metabolism") <= 1 && (survivalist = ch.GetSkillPercentage("survivalist")) <= 1) || Utility.Random(0, 15) == 0)

@@ -203,6 +203,22 @@ namespace CrimsonStainedLands
                 ch.send("Syntax: color [on|off]\n\r");
         }
 
+        public static void DoAFK(Character ch, string arguments)
+        {
+            if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AFK)))
+            {
+                ch.Flags.REMOVEFLAG(ActFlags.AFK);
+                ch.send("AFK \\rOFF\\x.\n\r");
+            }
+            else if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AFK)))
+            {
+                ch.Flags.SETBIT(ActFlags.AFK);
+                ch.send("AFK \\gON\\x.\n\r");
+            }
+            else
+                ch.send("Syntax: AFK [on|off]\n\r");
+        }
+
         public static void DoAutosac(Character ch, string arguments)
         {
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AutoSac)))
@@ -213,7 +229,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoSac)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoSac);
-                ch.send("\\GAutosac\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GAutosac\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: Autosac [on|off]\n\r");
@@ -231,7 +247,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoLoot)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoLoot);
-                ch.send("\\GAutoLoot\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GAutoLoot\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: AutoLoot [on|off]\n\r");
@@ -247,7 +263,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoGold)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoGold);
-                ch.send("\\GAutoGold\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GAutoGold\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: AutoGold [on|off]\n\r");
@@ -263,7 +279,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoSplit)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoSplit);
-                ch.send("\\GAutoSplit\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GAutoSplit\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: AutoSplit [on|off]\n\r");
@@ -279,7 +295,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.Brief)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.Brief);
-                ch.send("Brief is OFF.\n\r");
+                ch.send("Brief is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: Brief [on|off]\n\r");
@@ -294,7 +310,7 @@ namespace CrimsonStainedLands
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoAssist)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoAssist);
-                ch.send("\\GAutoAssist\\x is \\gOFF\\x.\n\r");
+                ch.send("\\GAutoAssist\\x is \\rOFF\\x.\n\r");
             }
             else
                 ch.send("Syntax: AutoGold [on|off]\n\r");
@@ -518,6 +534,8 @@ namespace CrimsonStainedLands
                             if (ch.IsAffected(AffectFlags.DarkVision) || ch.IsAffected(AffectFlags.Infrared) || ch.IsAffected(AffectFlags.NightVision) || !IsDark)
                             {
                                 string flags = "";
+                                if (person is Player player && player.IsAFK)
+                                    flags += "(AFK)";
                                 if (person.Flags.ISSET(ActFlags.WizInvis))
                                     flags += "(WizInvis)";
                                 if (person.AffectedBy.ISSET(AffectFlags.Ghost))
@@ -765,6 +783,8 @@ namespace CrimsonStainedLands
                     foreach (var other in others)
                     {
                         var flags = "";
+                        if (other is Player player && player.IsAFK)
+                            flags += "(AFK)";
                         if (other.Flags.ISSET(ActFlags.WizInvis))
                             flags += "(WizInvis)";
                         if (other.AffectedBy.ISSET(AffectFlags.Ghost))
@@ -1429,6 +1449,7 @@ namespace CrimsonStainedLands
         public static void DoToggle(Character ch, string arguments)
         {
             var flags = new ActFlags[] { 
+                ActFlags.AFK,
                 ActFlags.AutoAssist, 
                 ActFlags.AutoSac, 
                 ActFlags.AutoLoot, 
@@ -1448,7 +1469,7 @@ namespace CrimsonStainedLands
                 foreach(var flag in flags)
                 {
                     if ((flag == ActFlags.HolyLight || flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
-                    ch.send("{0,-20}: \\g{1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "ON" : "OFF");
+                    ch.send("{0,-20}: {1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "\\gON" : "\\rOFF");
                 }
             }
             else
@@ -1466,7 +1487,7 @@ namespace CrimsonStainedLands
                         else
                             ch.Flags.SETBIT(flag);
 
-                        ch.send("{0,-20}: \\g{1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "ON" : "OFF");
+                        ch.send("{0,-20}: {1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "\\gON" : "\\rOFF");
                         return;
                     }
                 }

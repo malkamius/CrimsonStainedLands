@@ -91,6 +91,7 @@ namespace CrimsonStainedLands
         internal IAsyncResult readop;
         internal byte[] receivebuffer;
         public byte[] ReceiveBufferBacklog;
+        public DateTime LastActivity { get; set; } = DateTime.Now;
 
         static Player()
         {
@@ -415,7 +416,11 @@ namespace CrimsonStainedLands
                     //socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("\n\r"));
 
                     DisplayPrompt();
-
+                    if (HasPageText)
+                    {
+                        send("\n\r[Hit Enter to Continue]");
+                        ((Player)this).SittingAtPrompt = true;
+                    }
                     //output.AppendFormat("\n<{0}%hp {1}%m {2}%mv {3}> ",
                     //    HitPoints > 0 ? Math.Floor((float)HitPoints / (float)MaxHitPoints * 100) : 0,
                     //    ManaPoints > 0 ? Math.Floor((float)ManaPoints / (float)MaxManaPoints * 100) : 0,
@@ -801,7 +806,7 @@ namespace CrimsonStainedLands
             if (input.ToString().Contains((char)10))
             {
                 var line = input.Replace("\r", "").ToString();  //input.ToString();
-
+                LastActivity = DateTime.Now;
                 var newLineIndex = line.IndexOf((char)10);
                 line = line.Substring(0, newLineIndex);//;
                 input.Remove(0, newLineIndex + 1);
@@ -833,7 +838,7 @@ namespace CrimsonStainedLands
         private void ConnectExistingPlayer(bool reconnect = false)
         {
             state = ConnectionStates.Playing;
-
+            LastActivity = DateTime.Now;
             int playersonline = 0;
 
             if ((playersonline = game.Info.Connections.ToArrayLocked().Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
@@ -1025,6 +1030,7 @@ namespace CrimsonStainedLands
                 }
 
                 this.state = ConnectionStates.Playing;
+                LastActivity = DateTime.Now;
                 WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
                 int playersonline = 0;
                 if ((playersonline = game.Info.Connections.ToArrayLocked().Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
