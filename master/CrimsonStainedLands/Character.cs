@@ -1222,11 +1222,14 @@ namespace CrimsonStainedLands
                     player.TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256),
                     player.TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
                     player.TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
-                var newbytes = new byte[bytes.Length + 2];
-                bytes.CopyTo(newbytes, 0);
-                newbytes[newbytes.Length - 2] = (byte)TelnetProtocol.Options.InterpretAsCommand;
-                newbytes[newbytes.Length - 1] = (byte)TelnetProtocol.Options.GoAhead;
-                bytes = newbytes;
+                if (bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r')
+                {
+                    var newbytes = new byte[bytes.Length + 2];
+                    bytes.CopyTo(newbytes, 0);
+                    newbytes[newbytes.Length - 2] = (byte)TelnetProtocol.Options.InterpretAsCommand;
+                    newbytes[newbytes.Length - 1] = (byte)TelnetProtocol.Options.GoAhead;
+                    bytes = newbytes;
+                }
                 lock (player)
                     if (player.sslsocket != null)
                     {

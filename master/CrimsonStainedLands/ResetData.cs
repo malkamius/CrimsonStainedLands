@@ -112,7 +112,7 @@ namespace CrimsonStainedLands
             {
                 RoomData room;
                 NPCTemplateData template = null;
-                if (((roomVnum == 0 && (room = area.Rooms[area.Rooms.Keys.ToArray()[Utility.Random(0, area.Rooms.Count)]]) != null) ||
+                if (((roomVnum == 0 && (room = area.Rooms[area.Rooms.Keys.ToArray()[Utility.Random(0, area.Rooms.Count - 1)]]) != null) ||
                     RoomData.Rooms.TryGetValue(roomVnum, out room))
                     && NPCTemplateData.Templates.TryGetValue(spawnVnum, out template))
                 {

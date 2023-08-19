@@ -255,9 +255,10 @@ namespace CrimsonStainedLands
                                             foreach (var option in Options)
                                                 TelnetOptions.SETBIT(option);
 
-                                        Game.log(ClientString + " client detected.");
+                                        
                                         if (!ClientTypes.Contains(ClientString))
                                         {
+                                            Game.log(ClientString + " client detected.");
                                             ClientTypes.Add(ClientString);
                                             sendRaw(TelnetProtocol.ServerGetTelnetTypeNegotiate, true);
                                         }
