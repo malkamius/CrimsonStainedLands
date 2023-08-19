@@ -6,6 +6,18 @@ using CrimsonStainedLands.Extensions;
 
 namespace CrimsonStainedLands
 {
+    public enum AffectRemoveReason
+    {
+        Cleansed,
+        Moved,
+        Died,
+        ChangedPosition,
+        WoreOff,
+        Other,
+        Stripped,
+        Combat
+    }
+
     public enum ApplyTypes
     {
         None,
@@ -74,7 +86,7 @@ namespace CrimsonStainedLands
 
     public enum AffectFlags
     {
-        Blind = 1,
+        Blind,
         Invisible,
         DetectEvil,
         DetectInvis,
@@ -117,40 +129,43 @@ namespace CrimsonStainedLands
         Retract,
         Deafen,
         EnhancedFastHealing,
-        ProtectEvil = ProtectionEvil,
-        ProtectGood = ProtectionGood,
-        GrandNocturne = 44,
-        SuddenDeath = 45,
-        Distracted = 46,
-        Silenced = 47,
-        BindHands = 48,
-        BindLegs = 49,
-        Greased = 50,
-        Smelly = 51,
-        ArcaneVision = 52,
-        Lightning = 53,
-        Shield = 54,
-        Watershield = 55,
-        Airshield = 56,
-        Fireshield = 57,
-        Lightningshield = 58,
-        Frostshield = 59,
-        Earthshield = 60,
-        Immolation = 61,
-        BestialFury = 62,
-        SkinOfTheDisplacer = 63,
-        ZigZagFeint = 64,
-        Sated = 65,
-        Quenched = 66,
-        Haven = 67,
-        Ghost = 68,
-        KnowAlignment = 69,
-        Protection = 70,
+        
+        GrandNocturne,
+        SuddenDeath,
+        Distracted,
+        Silenced,
+        BindHands,
+        BindLegs,
+        Greased,
+        Smelly,
+        ArcaneVision,
+        Lightning,
+        Shield,
+        Watershield,
+        Airshield,
+        Fireshield,
+        Lightningshield,
+        Frostshield,
+        Earthshield,
+        Immolation,
+        BestialFury,
+        SkinOfTheDisplacer,
+        ZigZagFeint,
+        Sated,
+        Quenched,
+        Haven,
+        Ghost,
+        KnowAlignment,
+        Protection,
         DuelChallenge,
         DuelChallenged,
         DuelStarting,
         DuelInProgress,
-        DuelCancelling
+        DuelCancelling,
+        ApplyingFirstAid,
+        FirstAidBeingApplied,
+        ProtectEvil = ProtectionEvil,
+        ProtectGood = ProtectionGood,
     }
 
     public enum Frequency
@@ -161,6 +176,15 @@ namespace CrimsonStainedLands
 
     public class AffectData
     {
+        public enum StripAndSaveFlags
+        {
+            DoNotSave,
+            RemoveOnMove,
+            RemoveOnPositionChange,
+            RemoveOnCombat,
+            PersistThroughDeath,
+        }
+
         public string ownerName = "";
         public string name = "";
         public string displayName = "";
@@ -185,6 +209,8 @@ namespace CrimsonStainedLands
         public string endProgram = "";
 
         public XElement ExtraState = new XElement("ExtraState");
+
+        public List<StripAndSaveFlags> RemoveAndSaveFlags = new List<StripAndSaveFlags>();
 
         public AffectData()
         {
@@ -214,6 +240,7 @@ namespace CrimsonStainedLands
             DamageTypes.AddRange(toCopy.DamageTypes);
             tickProgram = toCopy.tickProgram;
             endProgram = toCopy.endProgram;
+            RemoveAndSaveFlags.AddRange(toCopy.RemoveAndSaveFlags);
             ExtraState = new XElement("ExtraState", toCopy.ExtraState.Elements());
         }
 
@@ -241,6 +268,7 @@ namespace CrimsonStainedLands
             skillSpell = SkillSpell.SkillLookup(affectElement.GetAttributeValue("skillSpell"));
             tickProgram = affectElement.GetAttributeValue("TickProgram");
             endProgram = affectElement.GetAttributeValue("EndProgram");
+            RemoveAndSaveFlags.AddRange(Utility.LoadFlagList<StripAndSaveFlags>(affectElement.GetAttributeValue("RemoveAndSaveFlags")));
             ExtraState = new XElement("ExtraState", (affectElement.GetElement("ExtraState") ?? new XElement("ExtraState")).Elements());
         }
 
@@ -270,10 +298,14 @@ namespace CrimsonStainedLands
                     skillSpell != null ? new XAttribute("skillSpell", skillSpell != null ? skillSpell.internalName : "") : null,
                     !tickProgram.ISEMPTY() ? new XAttribute("TickProgram", tickProgram.TOSTRINGTRIM()) : null,
                     !endProgram.ISEMPTY() ? new XAttribute("EndProgram", endProgram.TOSTRINGTRIM()) : null,
+                    RemoveAndSaveFlags.Any() ? new XAttribute("RemoveAndSaveFlags", string.Join(" ", from removeflag in RemoveAndSaveFlags select removeflag.ToString())) : null,
                     ExtraState
                     );
             }
         }
 
+        public AffectRemoveReason RemovedReason { get; internal set; }
+
+        public Character GetOwner() => Character.GetCharacterWorld(null, ownerName, false, false, true);
     }
 }

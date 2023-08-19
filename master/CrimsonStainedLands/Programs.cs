@@ -64,6 +64,10 @@ namespace CrimsonStainedLands
 
             AffectPrograms.Add(new AffectDuelStartingProgram());
             AffectPrograms.Add(new AffectDuelStartProgram());
+            AffectPrograms.Add(new AffectDuelTickProgram());
+
+            AffectPrograms.Add(new AffectFirstAidTick());
+            AffectPrograms.Add(new AffectFirstAidEnd());
         }
 
         public static bool AffectProgramLookup(string name, out Program<AffectData> program)
@@ -110,7 +114,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-                        
+
             return false;
         }
 
@@ -216,7 +220,7 @@ namespace CrimsonStainedLands
                         if (success) break;
                     }
             }
-            
+
             return success;
         }
 
@@ -274,9 +278,9 @@ namespace CrimsonStainedLands
                     if (success) return success;
                 }
 
-                if(player is NPCData)
-                { 
-                    var programs = from program in ((NPCData) player).Programs
+                if (player is NPCData)
+                {
+                    var programs = from program in ((NPCData)player).Programs
                                    where program.Types.ISSET(type)
                                    select program;
                     foreach (var program in programs)
@@ -331,7 +335,7 @@ namespace CrimsonStainedLands
                     return success;
                 }
             } // end enter / exit room
-            else if(type == ProgramTypes.Say)
+            else if (type == ProgramTypes.Say)
             {
 
                 {
@@ -871,7 +875,7 @@ namespace CrimsonStainedLands
 
                 if (opponent == null)
                 {
-                    player.send("Your opponent seems to not be around any longer.\n\r");
+                    player.send("Your opponent doesn't seem to be around any more.\n\r");
                     player.StripAffect(AffectFlags.DuelStarting);
                 }
 
@@ -893,7 +897,7 @@ namespace CrimsonStainedLands
 
                 if (opponent == null)
                 {
-                    player.send("Your opponent seems to not be around any longer.\n\r");
+                    player.send("Your opponent doesn't seem to be around any more.\n\r");
                 }
                 else
                 {
@@ -906,11 +910,133 @@ namespace CrimsonStainedLands
                     newaffect.endMessage = "Your duel has ended.";
                     newaffect.beginMessage = "Your duel has started.";
                     newaffect.hidden = false;
-
+                    newaffect.tickProgram = "DuelTickProgram";
+                    newaffect.RemoveAndSaveFlags.SETBIT(AffectData.StripAndSaveFlags.DoNotSave);
                     player.AffectToChar(newaffect);
                 }
                 return true;
             } // end execute
         } // end AffectDuelStartProgram
+
+        public class AffectDuelTickProgram : Program<AffectData>
+        {
+            public string Name => "DuelTickProgram";
+            public string Description => "Continue a duel";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.AffectTick };
+
+            public bool Execute(Character player, AffectData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                var opponent = Character.Characters.Where(c => !c.IsNPC && c.Name == sender.ownerName).FirstOrDefault();
+
+                if (opponent == null)
+                {
+                    player.send("Your opponent doesn't seem to be around any more.\n\r");
+
+                    player.AffectFromChar(sender, AffectRemoveReason.Other);
+
+                }
+
+                return true;
+            } // end execute
+        }
+
+        public class AffectFirstAidTick : Program<AffectData>
+        {
+            public string Name => "AffectFirstAidTick";
+            public string Description => "Continue a duel";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.AffectTick };
+
+            public bool Execute(Character player, AffectData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                Character applicator;
+                Character recipient;
+
+                if (sender.flags.ISSET(AffectFlags.ApplyingFirstAid))
+                {
+                    recipient = sender.GetOwner();
+                    applicator = player;
+                }
+                else
+                {
+                    recipient = player;
+                    applicator = sender.GetOwner();
+                }
+
+                if (applicator == null || recipient == null)
+                {
+                    return true;
+                }
+
+                if (applicator.Room == recipient.Room && sender.flags.ISSET(AffectFlags.ApplyingFirstAid))
+                {
+
+                    applicator.Act("$n continues applying bandages to $N's wounds.", recipient, type: ActType.ToRoomNotVictim);
+                    if (applicator != recipient)
+                    {
+                        applicator.Act("$n continues applying bandages to your wounds.", recipient, type: ActType.ToVictim);
+                        applicator.Act("You continue applying bandages to $N's wounds.", recipient, type: ActType.ToChar);
+                    }
+                    else
+                        applicator.Act("You continue applying bandages to your wounds.", recipient, type: ActType.ToChar);
+                }
+
+                return true;
+            } // end execute
+        }
+
+        public class AffectFirstAidEnd : Program<AffectData>
+        {
+            public string Name => "AffectFirstAidEnd";
+            public string Description => "First aid ended";
+
+            public List<ProgramTypes> Types => new List<ProgramTypes> { ProgramTypes.AffectEnd };
+
+            public bool Execute(Character player, AffectData sender, Character victim, ItemData item, SkillSpell skill, ProgramTypes type, string arguments)
+            {
+                Character applicator;
+                Character recipient;
+
+                if (sender.flags.ISSET(AffectFlags.ApplyingFirstAid))
+                {
+                    recipient = sender.GetOwner();
+                    applicator = player;
+                }
+                else
+                {
+                    recipient = player;
+                    applicator = sender.GetOwner();
+                }
+
+                if (applicator == null || recipient == null)
+                {
+                    return true;
+                }
+
+                if (sender.RemovedReason == AffectRemoveReason.Moved ||
+                    sender.RemovedReason == AffectRemoveReason.ChangedPosition ||
+                    sender.RemovedReason == AffectRemoveReason.Combat ||
+                    sender.RemovedReason == AffectRemoveReason.Died)
+                {
+                    applicator.Act("$n's attempt to apply bandages to $N's wounds is disrupted.", recipient, type: ActType.ToRoomNotVictim);
+                    if (applicator != recipient)
+                    {
+                        applicator.Act("$n's attempt to apply bandages to your wounds is disrupted.", recipient, type: ActType.ToVictim);
+                        applicator.Act("Your attempt to apply bandages to $N's wounds is disrupted.", recipient, type: ActType.ToChar);
+                    }
+                    else
+                        applicator.Act("Your attempt to apply bandages to your wounds is disrupted.", recipient, type: ActType.ToChar);
+                    applicator.StripAffect(AffectFlags.ApplyingFirstAid, true);
+                    recipient.StripAffect(AffectFlags.FirstAidBeingApplied, true);
+                }
+                else if (player == applicator && sender.duration == 0 && sender.flags.ISSET(AffectFlags.ApplyingFirstAid))
+                {
+                    Character.EndFirstAid(applicator, recipient);
+                }
+
+                return true;
+            } // end execute
+        }
     } // end programs
 } // end crimsonstainedlands

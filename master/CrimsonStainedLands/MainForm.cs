@@ -36,14 +36,15 @@ namespace CrimsonStainedLands
             {
                 loading = false;
                 //Hide();
-                notifyIcon.Text = "Crimson Stained Lands Server";
+                
                 notifyIcon.Icon = this.Icon;
                 notifyIcon.DoubleClick += notifyIcon_DoubleClick;
                 notifyIcon.Visible = true;
                 notifyIcon.ContextMenu = new ContextMenu(new MenuItem[] { new MenuItem("Show", notifyIcon_Show), new MenuItem("Exit", notifyIcon_Exit) });
 
                 port = Settings.Port;
-                Text = string.Format("CrimsonStainedLands - {0}", port);
+                Text = string.Format("CrimsonStainedLands Server - Standard port {0}, SSL port {1}", port, Settings.SSLPort);
+                notifyIcon.Text = Text;
                 Game.Launch(port, this);
                 syncTimer.Enabled = true;
             }

@@ -252,16 +252,16 @@ namespace CrimsonStainedLands
         public WeaponDamageMessage WeaponDamageMessage = null;
         public Alignment Alignment;
         public Ethos Ethos;
-        private Positions _positions;
+        private Positions _position;
         public Positions Position
         {
-            get { return _positions; }
+            get { return _position; }
             set
             {
                 if (value != Positions.Sleeping && IsAffected(SkillSpell.SkillLookup("camp")))
-                    AffectFromChar(FindAffect("camp"));
+                    AffectFromChar(FindAffect("camp"), AffectRemoveReason.ChangedPosition);
                 if (value != Positions.Sleeping && IsAffected(AffectFlags.Sleep))
-                    AffectFromChar(FindAffect(AffectFlags.Sleep));
+                    AffectFromChar(FindAffect(AffectFlags.Sleep), AffectRemoveReason.ChangedPosition);
                 if (value == Positions.Standing && Room != null)
                 {
                     foreach (var other in Room.Characters)
@@ -272,7 +272,14 @@ namespace CrimsonStainedLands
                         }
                     }
                 }
-                _positions = value;
+
+                if (_position != value)
+                {
+                    var removeaffects = (from aff in AffectsList where aff.RemoveAndSaveFlags.ISSET(AffectData.StripAndSaveFlags.RemoveOnPositionChange) select aff).ToArray();
+                    foreach (var aff in removeaffects)
+                        AffectFromChar(aff, AffectRemoveReason.ChangedPosition);
+                }
+                _position = value;
             }
         }
         public Race Race;
@@ -1154,9 +1161,9 @@ namespace CrimsonStainedLands
                 if (HasPageText)
                 {
 
-                    if(this is Player player)
+                    if (this is Player player)
                     {
-                        if(player.state != Player.ConnectionStates.Playing)
+                        if (player.state != Player.ConnectionStates.Playing)
                             send("[Hit Enter to Continue]"); // output while playing will display a prompt and this line at time of output
 
                         player.SittingAtPrompt = true;
@@ -1200,7 +1207,7 @@ namespace CrimsonStainedLands
 
         public void SendToChar(string text) => send(text);
 
-        
+
 
         public void sendRaw(string data, bool sendimmediate = true)
         {
@@ -1211,9 +1218,9 @@ namespace CrimsonStainedLands
                         data = data.Replace("\r", "").Replace("\n", "\n\r");
 
                 var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(
-                    !player.Flags.ISSET(ActFlags.Color), 
-                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256), 
-                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB), 
+                    !player.Flags.ISSET(ActFlags.Color),
+                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256),
+                    player.TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
                     player.TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
                 var newbytes = new byte[bytes.Length + 2];
                 bytes.CopyTo(newbytes, 0);
@@ -1223,21 +1230,21 @@ namespace CrimsonStainedLands
                 lock (player)
                     if (player.sslsocket != null)
                     {
-                        if(!sendimmediate)
-                        try
-                        {
-                            if (player.sslsocket.IsAuthenticated && (player.writeop == null || player.writeop.IsCompleted))
-                                player.writeop = player.sslsocket.BeginWrite(bytes, 0, bytes.Length, EndSslWrite, player);
-                            else
-                                player.WriteBuffers.Push(bytes);
-                        }
-                        catch { }
+                        if (!sendimmediate)
+                            try
+                            {
+                                if (player.sslsocket.IsAuthenticated && (player.writeop == null || player.writeop.IsCompleted))
+                                    player.writeop = player.sslsocket.BeginWrite(bytes, 0, bytes.Length, EndSslWrite, player);
+                                else
+                                    player.WriteBuffers.Push(bytes);
+                            }
+                            catch { }
                         else
                         {
                             player.sslsocket.Write(bytes, 0, bytes.Length);
                             player.sslsocket.Flush();
                         }
-                        
+
                     }
                     else
                     {
@@ -1270,12 +1277,12 @@ namespace CrimsonStainedLands
                             else
                                 player.WriteBuffers.Push(data);
                         }
-                        else if(player.sslsocket.IsAuthenticated)
+                        else if (player.sslsocket.IsAuthenticated)
                         {
                             player.sslsocket.Write(data, 0, data.Length);
                             player.sslsocket.Flush();
                         }
-                        }
+                    }
                     else
                     {
                         if (!sendimmediate)
@@ -1318,28 +1325,28 @@ namespace CrimsonStainedLands
 
         public void EndSend(IAsyncResult result)
         {
-            
+
             var connection = result.AsyncState as Player;
             lock (Game.Instance.Info.Connections)
                 try
-            {
-                //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
-                lock (connection)
                 {
-                    try
+                    //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
+                    lock (connection)
                     {
-                        connection.socket.EndSend(result);
-
-                        if (connection.WriteBuffers.Count > 0)
+                        try
                         {
-                            var bytes = connection.WriteBuffers.Pop();
-                            connection.writeop = connection.socket.BeginSend(bytes, 0, bytes.Length, SocketFlags.None, EndSend, connection);
+                            connection.socket.EndSend(result);
+
+                            if (connection.WriteBuffers.Count > 0)
+                            {
+                                var bytes = connection.WriteBuffers.Pop();
+                                connection.writeop = connection.socket.BeginSend(bytes, 0, bytes.Length, SocketFlags.None, EndSend, connection);
+                            }
                         }
+                        catch { }
                     }
-                    catch { }
                 }
-            }
-            catch { }
+                catch { }
         }
 
         public void RemoveCharacterFromRoom()
@@ -1365,8 +1372,13 @@ namespace CrimsonStainedLands
                 AffectData gentlewalk;
                 if ((gentlewalk = (from aff in AffectsList where aff.skillSpell == SkillSpell.SkillLookup("gentle walk") && aff.duration == -1 select aff).FirstOrDefault()) != null)
                 {
-                    AffectFromChar(gentlewalk);
+                    AffectFromChar(gentlewalk, AffectRemoveReason.Other);
                 }
+
+                var removeaffects = (from aff in AffectsList where aff.RemoveAndSaveFlags.ISSET(AffectData.StripAndSaveFlags.RemoveOnMove) select aff).ToArray();
+                foreach (var aff in removeaffects)
+                    AffectFromChar(aff, AffectRemoveReason.Moved);
+
                 if (this is Player && Room.Area.People.Contains(this))
                 {
                     Room.Area.People.Remove(this);
@@ -1633,7 +1645,7 @@ namespace CrimsonStainedLands
         {
             if (arguments == "!")
                 arguments = LastCommand;
-            if(!arguments.ISEMPTY())
+            if (!arguments.ISEMPTY())
                 LastCommand = arguments;
             // Check if the character is switched to another entity
             if (Switched != null)
@@ -2373,7 +2385,7 @@ namespace CrimsonStainedLands
             {
                 AffectData aff;
                 while ((aff = FindAffect(AffectFlags.Camouflage)) != null)
-                    AffectFromChar(aff);
+                    AffectFromChar(aff, AffectRemoveReason.WoreOff);
                 AffectedBy.REMOVEFLAG(AffectFlags.Camouflage);
 
                 if (creep)
@@ -2402,7 +2414,7 @@ namespace CrimsonStainedLands
                 }
 
                 foreach (var aff in affects)
-                    AffectFromChar(aff);
+                    AffectFromChar(aff, AffectRemoveReason.WoreOff);
                 AffectedBy.REMOVEFLAG(AffectFlags.Hide);
 
             }
@@ -2422,7 +2434,7 @@ namespace CrimsonStainedLands
                 }
 
                 foreach (var aff in affects)
-                    AffectFromChar(aff);
+                    AffectFromChar(aff, AffectRemoveReason.WoreOff);
                 AffectedBy.REMOVEFLAG(AffectFlags.Invisible);
 
             }
@@ -2439,7 +2451,7 @@ namespace CrimsonStainedLands
             {
                 AffectData aff;
                 while ((aff = FindAffect(AffectFlags.Sneak)) != null)
-                    AffectFromChar(aff);
+                    AffectFromChar(aff, AffectRemoveReason.WoreOff);
                 AffectedBy.REMOVEFLAG(AffectFlags.Sneak);
                 Act("You trample around loudly.", null, null, null, ActType.ToChar);
             }
@@ -3025,7 +3037,7 @@ namespace CrimsonStainedLands
             StringBuilder whoList = new StringBuilder();
             int playersOnline = 0;
             whoList.AppendLine("You can see:");
-            
+
             foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
             {
                 if (connection.state == Player.ConnectionStates.Playing && connection.socket != null && (!connection.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= connection.Level))
@@ -3033,7 +3045,7 @@ namespace CrimsonStainedLands
                     whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}{6}\n\r",
                         connection.Level.ToString().PadRight(4),
                         connection.Guild.whoName,
-                        connection.IsAFK? "\\r(AFK)\\x" : "     ",
+                        connection.IsAFK ? "\\r(AFK)\\x" : "     ",
                         connection == ch ? "*" : " ",
                         connection.Name,
                         (!connection.Title.ISEMPTY() ? ((!connection.Title.ISEMPTY() && connection.Title.StartsWith(",") ? connection.Title : " " + connection.Title)) : ""),
@@ -4086,10 +4098,10 @@ namespace CrimsonStainedLands
             foreach (Character other in CharacterList)
             {
                 if (!CanSee(other, flags)) continue;
-                if ((arguments.ISEMPTY() || 
-                        ((UnalteredName && other.Name.IsName(arguments, DisallowPrefix)) || 
-                        (!UnalteredName &&  other.GetName.IsName(arguments, DisallowPrefix))) || 
-                    (IsImmortal && other.Name.IsName(arguments))) && 
+                if ((arguments.ISEMPTY() ||
+                        ((UnalteredName && other.Name.IsName(arguments, DisallowPrefix)) ||
+                        (!UnalteredName && other.GetName.IsName(arguments, DisallowPrefix))) ||
+                    (IsImmortal && other.Name.IsName(arguments))) &&
                     ++count >= num)
                     return other;
             }
@@ -4418,12 +4430,14 @@ namespace CrimsonStainedLands
         /// Remove an affect from the affects list and remove its affect
         /// </summary>
         /// <param name="aff"></param>
-        public void AffectFromChar(AffectData aff, bool silent = false)
+        public void AffectFromChar(AffectData aff, AffectRemoveReason reason, bool silent = false)
         {
             if (aff == null) return;
 
             if (!AffectsList.Remove(aff))
                 return;
+
+            aff.RemovedReason = reason;
             // don't duplicate affectapply removes for affectfromchar, item affects are applied directly with affectapply
             AffectApply(aff, true, silent);
 
@@ -4431,9 +4445,25 @@ namespace CrimsonStainedLands
             {
                 // Remove entire affect linked by skill/spell or flags, maybe use name instead?
                 if (otheraff.skillSpell != null && otheraff.skillSpell == aff.skillSpell && otheraff.duration == aff.duration && otheraff.affectType == aff.affectType)
-                    AffectFromChar(otheraff, silent);
+                    AffectFromChar(otheraff, reason, silent);
                 else if (otheraff.flags.Count > 0 && otheraff.flags.Count == aff.flags.Count && string.Join(" ", otheraff.flags) == string.Join(" ", aff.flags) && otheraff.affectType == aff.affectType)
-                    AffectFromChar(otheraff, silent);
+                    AffectFromChar(otheraff, reason, silent);
+            }
+
+            if (aff.skillSpell != null && aff.skillSpell.EndFunction != null)
+                aff.skillSpell.EndFunction(this, aff);
+
+            if (!aff.endProgram.ISEMPTY())
+            {
+                if (Programs.AffectProgramLookup(aff.endProgram, out var prog))
+                {
+                    prog.Execute(this, aff, null, null, aff.skillSpell, Programs.ProgramTypes.AffectEnd, "");
+                }
+                if (NLuaPrograms.ProgramLookup(aff.endProgram, out var luaprog))
+                    luaprog.Execute(this, null, this.Room, null, aff.skillSpell, aff, Programs.ProgramTypes.AffectEnd, "");
+
+                if (prog == null && luaprog == null)
+                    Game.log("AffectEndProgram not found: {0}", aff.endProgram);
             }
             if (aff.flags.ISSET(AffectFlags.SuddenDeath))
             {
@@ -4644,7 +4674,7 @@ namespace CrimsonStainedLands
                     }
                 }
             }
-            else if(type == ActType.GlobalNotVictim)
+            else if (type == ActType.GlobalNotVictim)
             {
                 foreach (var @to in Character.Characters)
                 {
@@ -4841,8 +4871,7 @@ namespace CrimsonStainedLands
                         (AffectsList != null && AffectsList.Any() ?
                         new XElement("Affects",
                             from aff in AffectsList
-                            where 
-                                !aff.flags.ISSET(AffectFlags.DuelCancelling, AffectFlags.DuelChallenge, AffectFlags.DuelChallenged, AffectFlags.DuelInProgress, AffectFlags.DuelStarting)
+                            where !aff.RemoveAndSaveFlags.ISSET(AffectData.StripAndSaveFlags.DoNotSave)
                             select aff.Element
                        ) : null),
                         (Inventory != null && Inventory.Any() ?
@@ -5536,9 +5565,9 @@ namespace CrimsonStainedLands
             }
         }
 
+        public static Character GetCharacterWorld(string argument, bool onlyPlayers = true, bool truename = false) => GetCharacterWorld(null, argument, onlyPlayers, false);
 
-
-        public static Character GetCharacterWorld(Character ch, string argument, bool onlyPlayers = true, bool checkCanSee = true)
+        public static Character GetCharacterWorld(Character ch, string argument, bool onlyPlayers = true, bool checkCanSee = true, bool truename = false)
         {
             string arg = "";
             Character wch;
@@ -5548,8 +5577,9 @@ namespace CrimsonStainedLands
             if (argument.StringCmp("self"))
                 return ch;
 
-            if ((wch = ch.GetCharacterFromRoomByName(argument, ref count)) != null)
-                return wch;
+            if (ch != null)
+                if ((wch = ch.GetCharacterFromRoomByName(argument, ref count)) != null)
+                    return wch;
 
             number = argument.number_argument(ref arg);
             count = 0;
@@ -5557,8 +5587,7 @@ namespace CrimsonStainedLands
             foreach (var other in Character.Characters.ToArray())
             {
                 if (other.Room == null || (checkCanSee && !ch.CanSee(other))
-                    || (!other.GetName.IsName(arg) && ((!ch.IsImmortal && (!ch.IsNPC || !onlyPlayers)) || !other.Name.IsName(arg))))
-                    //&&  ( !IS_IMMORTAL(ch) && wch->original_name && !is_name(arg,wch->original_name))) )
+                    || (!other.GetName.IsName(arg) && ((!truename || !other.Name.StringCmp(arg)) || ((ch != null && !ch.IsImmortal && (!ch.IsNPC || !onlyPlayers)) || !other.Name.IsName(arg)))))
                     continue;
 
                 if (++count >= number)
@@ -6937,7 +6966,7 @@ namespace CrimsonStainedLands
             var affects = FindAffects(Flag);
             foreach (var affect in affects.ToArray())
             {
-                AffectFromChar(affect, silent);
+                AffectFromChar(affect, AffectRemoveReason.Stripped, silent);
             }
         }
         public static void DoGreaseItem(Character ch, string arguments)
@@ -7109,6 +7138,7 @@ namespace CrimsonStainedLands
             level = Math.Max(0, level);
             return Utility.Random((int)(dam_each[level] * LowEndMultiplier + bonus), (int)(dam_each[level] * HighEndMultiplier + bonus));
         } // end get damage
+
         public static void DoFirstAid(Character ch, string argument)
         {
             AffectData af;
@@ -7126,6 +7156,18 @@ namespace CrimsonStainedLands
             else if (!argument.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(argument)) == null)
             {
                 ch.Act("You don't see them here.\n\r");
+            }
+            else if(ch.IsAffected(AffectFlags.ApplyingFirstAid))
+            {
+                ch.send("You are already delivering first aid.\n\r");
+            }
+            else if(victim.IsAffected(AffectFlags.FirstAidBeingApplied))
+            {
+                if (victim == ch)
+                    ch.Act("You are receiving first aid already.\n\r");
+                else
+                    ch.Act("$N is already receiving first aid.", victim);
+
             }
             else if (victim.IsAffected(skill))
             {
@@ -7151,72 +7193,121 @@ namespace CrimsonStainedLands
             }
             else
             {
-                if (victim == ch)
+                if (ch != victim)
                 {
-                    ch.Act("You successfully apply bandages to yourself.", victim);
-                    ch.Act("$n successfully applies bandages to themselves.", victim, type: ActType.ToRoom);
-                    ch.Act("You feel better.");
+                    ch.Act("You begin applying first aid to $N.", victim);
+                    ch.Act("$n begins applying first aid to $N.", victim, type: ActType.ToRoomNotVictim);
+                    ch.Act("$n begins applying first aid to you.", victim, type: ActType.ToVictim);
                 }
                 else
                 {
-                    ch.Act("You successfully apply bandages you prepared for $N.", victim);
-                    ch.Act("$n successfully applies bandages $e perpared for $N.", victim, type: ActType.ToRoomNotVictim);
-                    ch.Act("$n successfully applies bandages $e had prepared for you.", victim, type: ActType.ToVictim);
-                    ch.Act("You feel better.", type: ActType.ToVictim);
+                    ch.Act("You begin applying first aid to yourself.");
+                    ch.Act("$n begins applying first aid to $mself.", type: ActType.ToRoom);
                 }
-
-                ch.HitPoints += (int)(ch.MaxHitPoints * 0.2);
-                victim.HitPoints = Math.Min(victim.HitPoints, victim.MaxHitPoints);
-
-                if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Plague))
-                {
-                    var aff = victim.FindAffect(SkillSpell.SkillLookup("plague"));
-                    aff.duration /= 2;
-                    aff.modifier /= 2;
-                    aff.level /= 2;
-                    victim.Act("The sores on $n's body look less severe.\n\r", type: ActType.ToRoom);
-                    victim.Act("The sores on your body look less severe.\n\r");
-                }
-                if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(SkillSpell.SkillLookup("blindness")))
-                {
-                    victim.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")));
-                    victim.send("Your vision returns!\n\r");
-                }
-                if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Poison))
-                {
-                    var aff = victim.FindAffect(SkillSpell.SkillLookup("poison"));
-                    aff.duration /= 2;
-                    aff.modifier /= 2;
-                    aff.level /= 2;
-                    victim.Act("The poison through your body feels less severe.");
-                    victim.Act("The poison running through $n's body seems less severe.", type: ActType.ToRoom);
-                }
-                if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected("bleeding"))
-                {
-                    var aff = victim.FindAffect("bleeding");
-                    aff.duration /= 2;
-                    aff.modifier /= 2;
-                    aff.level /= 2;
-                    victim.Act("Your bleeding wound feels less severe.");
-                    victim.Act("$n's bleeding would looks less severe.", type: ActType.ToRoom);
-                }
-                ch.CheckImprove(skill, true, 1);
 
                 af = new AffectData();
-
-                af.where = AffectWhere.ToAffects;
-                af.skillSpell = skill;
-                af.location = 0;
-                af.duration = 2;
-                af.modifier = 0;
-                af.level = ch.Level;
                 af.affectType = AffectTypes.Skill;
-                af.displayName = "first aid";
-                af.endMessage = "You can once again receive first aid.";
+                af.hidden = true;
+                af.flags.SETBIT(AffectFlags.ApplyingFirstAid);
+                af.duration = 3;
+                af.frequency = Frequency.Violence;
+                af.ownerName = victim.Name;
+                af.RemoveAndSaveFlags.SETBITS(AffectData.StripAndSaveFlags.DoNotSave, 
+                    AffectData.StripAndSaveFlags.RemoveOnCombat, 
+                    AffectData.StripAndSaveFlags.RemoveOnMove,
+                    AffectData.StripAndSaveFlags.RemoveOnPositionChange);
+                af.tickProgram = "AffectFirstAidTick";
+                af.endProgram = "AffectFirstAidEnd";
+                ch.AffectToChar(af);
+
+                af = new AffectData();
+                af.affectType = AffectTypes.Skill;
+                af.hidden = true;
+                af.flags.SETBIT(AffectFlags.FirstAidBeingApplied);
+                af.duration = 3;
+                af.frequency = Frequency.Violence;
+                af.ownerName = ch.Name;
+                af.RemoveAndSaveFlags.SETBITS(AffectData.StripAndSaveFlags.DoNotSave,
+                    AffectData.StripAndSaveFlags.RemoveOnCombat,
+                    AffectData.StripAndSaveFlags.RemoveOnMove,
+                    AffectData.StripAndSaveFlags.RemoveOnPositionChange);
+                af.tickProgram = "AffectFirstAidTick";
+                af.endProgram = "AffectFirstAidEnd";
                 victim.AffectToChar(af);
-                ch.WaitState(skill.waitTime);
+
+                //EndFirstAid(ch, victim);
             }
         } // end first aid
+
+        public static void EndFirstAid(Character ch, Character victim)
+        {
+            var skill = SkillSpell.SkillLookup("first aid");
+            if (victim == ch)
+            {
+                ch.Act("You successfully apply bandages to yourself.", victim);
+                ch.Act("$n successfully applies bandages to themselves.", victim, type: ActType.ToRoom);
+                ch.Act("You feel better.");
+            }
+            else
+            {
+                ch.Act("You successfully apply bandages you prepared for $N.", victim);
+                ch.Act("$n successfully applies bandages $e perpared for $N.", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n successfully applies bandages $e had prepared for you.", victim, type: ActType.ToVictim);
+                ch.Act("You feel better.", victim, type: ActType.ToVictim);
+            }
+
+            ch.HitPoints += (int)(ch.MaxHitPoints * 0.2);
+            victim.HitPoints = Math.Min(victim.HitPoints, victim.MaxHitPoints);
+
+            if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Plague))
+            {
+                var aff = victim.FindAffect(SkillSpell.SkillLookup("plague"));
+                aff.duration /= 2;
+                aff.modifier /= 2;
+                aff.level /= 2;
+                victim.Act("The sores on $n's body look less severe.\n\r", type: ActType.ToRoom);
+                victim.Act("The sores on your body look less severe.\n\r");
+            }
+            if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(SkillSpell.SkillLookup("blindness")))
+            {
+                victim.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
+                victim.send("Your vision returns!\n\r");
+            }
+            if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Poison))
+            {
+                var aff = victim.FindAffect(SkillSpell.SkillLookup("poison"));
+                aff.duration /= 2;
+                aff.modifier /= 2;
+                aff.level /= 2;
+                victim.Act("The poison through your body feels less severe.");
+                victim.Act("The poison running through $n's body seems less severe.", type: ActType.ToRoom);
+            }
+            if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected("bleeding"))
+            {
+                var aff = victim.FindAffect("bleeding");
+                aff.duration /= 2;
+                aff.modifier /= 2;
+                aff.level /= 2;
+                victim.Act("Your bleeding wound feels less severe.");
+                victim.Act("$n's bleeding would looks less severe.", type: ActType.ToRoom);
+            }
+            ch.CheckImprove(skill, true, 1);
+
+            var af = new AffectData();
+
+            af.where = AffectWhere.ToAffects;
+            af.skillSpell = skill;
+            af.location = 0;
+            af.duration = 2;
+            af.modifier = 0;
+            af.level = ch.Level;
+            af.affectType = AffectTypes.Skill;
+            af.displayName = "first aid";
+            af.endMessage = "You can once again receive first aid.";
+            victim.AffectToChar(af);
+            ch.WaitState(skill.waitTime);
+        }
+
         public static void DoFlyto(Character ch, string arguments)
         {
 
@@ -7328,7 +7419,7 @@ namespace CrimsonStainedLands
 
         public bool IsAFK { get { return this.Flags.ISSET(ActFlags.AFK) || IsInactive; } }
 
-        
+
 
     } // end of character
 } // end namespace

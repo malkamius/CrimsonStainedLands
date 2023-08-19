@@ -18,26 +18,28 @@ namespace CrimsonStainedLands
 
         internal static NLua.Lua Lua = new NLua.Lua();
 
-        public static void LoadPrograms(AreaData area)
+        public static void LoadPrograms()
         {
-            string AreaProgramsPath = System.IO.Path.GetDirectoryName(area.FileName) + "\\" + System.IO.Path.GetFileNameWithoutExtension(area.FileName) + "_Programs.xml";
-            if (System.IO.File.Exists(AreaProgramsPath))
+            foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => path.ToLower().EndsWith("_programs.xml")))
             {
-                var elements = XElement.Load(AreaProgramsPath);
-                foreach (var element in elements.Elements("LuaProgram"))
+                string AreaProgramsPath = file;
+                if (System.IO.File.Exists(AreaProgramsPath))
                 {
-                    var newProgram = new NLuaProgram()
+                    var elements = XElement.Load(AreaProgramsPath);
+                    foreach (var element in elements.Elements("LuaProgram"))
                     {
-                        Name = element.GetAttributeValue("Name"),
-                        Description = element.GetAttributeValue("Description"),
-                        Path = AreaProgramsPath,
-                        Area = area
-                    };
-                    Utility.GetEnumValues(element.GetAttributeValue("ProgramTypes"), ref newProgram.ProgramTypes);
+                        var newProgram = new NLuaProgram()
+                        {
+                            Name = element.GetAttributeValue("Name"),
+                            Description = element.GetAttributeValue("Description"),
+                            Path = AreaProgramsPath
+                        };
+                        Utility.GetEnumValues(element.GetAttributeValue("ProgramTypes"), ref newProgram.ProgramTypes);
 
-                    if (!newProgram.Name.ISEMPTY())
-                    {
-                        Programs[area.Name + "_" + newProgram.Name] = newProgram;
+                        if (!newProgram.Name.ISEMPTY())
+                        {
+                            Programs[newProgram.Name] = newProgram;
+                        }
                     }
                 }
             }
@@ -60,8 +62,6 @@ namespace CrimsonStainedLands
 
         public class NLuaProgram
         {
-
-            public AreaData Area { get; set; }
             /// <summary>
             /// The name of the program referenced by area files
             /// </summary>
@@ -290,6 +290,7 @@ namespace CrimsonStainedLands
 
             public void MoveCharacter(Character ch, Direction direction)
             {
+                Character.DoOpen(ch, direction.ToString());
                 ch.moveChar(direction, true, false);
             }
 

@@ -1212,7 +1212,7 @@ namespace CrimsonStainedLands
 
                     if (curse != null)
                     {
-                        victim.AffectFromChar(curse);
+                        victim.AffectFromChar(curse, AffectRemoveReason.Cleansed);
                         ch.Act("You place your hand on $N's head for a moment and a look of relief passes over $M.", victim, null, null, ActType.ToChar);
                         ch.Act("$n places their hand on $N's head for a moment and a look of relief passes over $M.", victim, null, null, ActType.ToRoomNotVictim);
                         ch.Act("$n places their hand on your head for a moment and a feeling of relief passes over you.", victim, null, null, ActType.ToVictim);
@@ -1298,7 +1298,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                if (victim.IsAffected(AffectFlags.Haven)) victim.AffectFromChar(victim.FindAffect(AffectFlags.Haven));
+                if (victim.IsAffected(AffectFlags.Haven)) victim.AffectFromChar(victim.FindAffect(AffectFlags.Haven), AffectRemoveReason.WoreOff);
                 victim.send("A white aura surrounds you.\n\r");
                 victim.Act("A white aura surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
@@ -1617,7 +1617,7 @@ namespace CrimsonStainedLands
 
             if (blindness != null)
             {
-                victim.AffectFromChar(blindness);
+                victim.AffectFromChar(blindness, AffectRemoveReason.Cleansed);
 
                 if (ch != victim)
                 {
@@ -2056,7 +2056,7 @@ namespace CrimsonStainedLands
                     if (Utility.NumberPercent() < chance)
                     {
                         stripped = true;
-                        victim.AffectFromChar(aff);
+                        victim.AffectFromChar(aff, AffectRemoveReason.Cleansed);
 
                         // remove all of the affect of that type - now done in affectfromchar
                         //foreach (var affother in victim.AffectsList.ToArray())
@@ -2093,13 +2093,13 @@ namespace CrimsonStainedLands
                     if (Utility.NumberPercent() < chance)
                     {
                         stripped = true;
-                        victim.AffectFromChar(aff);
+                        victim.AffectFromChar(aff, AffectRemoveReason.Cleansed);
 
                         // remove all of the affect of that type
                         foreach (var affother in victim.AffectsList.ToArray())
                         {
                             if (affother != aff && affother.skillSpell == aff.skillSpell)
-                                victim.AffectFromChar(affother);
+                                victim.AffectFromChar(affother, AffectRemoveReason.Cleansed);
                         }
                     }
                     else
@@ -2132,13 +2132,13 @@ namespace CrimsonStainedLands
                     if (Utility.NumberPercent() < chance)
                     {
                         stripped = true;
-                        victim.AffectFromChar(aff);
+                        victim.AffectFromChar(aff, AffectRemoveReason.Cleansed);
 
                         // remove all of the affect of that type
                         foreach (var affother in victim.AffectsList.ToArray())
                         {
                             if (affother != aff && affother.skillSpell == aff.skillSpell)
-                                victim.AffectFromChar(affother);
+                                victim.AffectFromChar(affother, AffectRemoveReason.Cleansed);
                         }
                     }
                     else
@@ -3098,7 +3098,7 @@ namespace CrimsonStainedLands
                     if (Utility.NumberPercent() < chance)
                     {
                         stripped = true;
-                        victim.AffectFromChar(aff);
+                        victim.AffectFromChar(aff, AffectRemoveReason.Cleansed);
 
                         // remove all of the affect of that type - now done in affectfromchar
                         //foreach (var affother in victim.AffectsList.ToArray())
@@ -3148,7 +3148,7 @@ namespace CrimsonStainedLands
             }
             else if ((affect = victim.FindAffect(AffectFlags.Haste)) != null)
             {
-                victim.AffectFromChar(affect);
+                victim.AffectFromChar(affect, AffectRemoveReason.WoreOff);
             }
             else
             {
@@ -3185,7 +3185,7 @@ namespace CrimsonStainedLands
             }
             else if ((affect = victim.FindAffect(AffectFlags.Slow)) != null)
             {
-                victim.AffectFromChar(affect);
+                victim.AffectFromChar(affect, AffectRemoveReason.WoreOff);
             }
             else
             {
@@ -3657,7 +3657,7 @@ namespace CrimsonStainedLands
             foreach (var aff in ch.AffectsList.ToArray())
             {
                 if (aff.skillSpell != null && aff.skillSpell.name.StartsWith("seal of"))
-                    ch.AffectFromChar(aff);
+                    ch.AffectFromChar(aff, AffectRemoveReason.WoreOff);
             }
         }
         public static void SpellSealOfLight(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -4034,7 +4034,7 @@ namespace CrimsonStainedLands
             {
                 if (affect.where == AffectWhere.ToDamageNoun)
                 {
-                    ch.AffectFromChar(affect);
+                    ch.AffectFromChar(affect, AffectRemoveReason.WoreOff);
                 }
             }
         } // end strip damage noun modifier
@@ -4851,7 +4851,7 @@ namespace CrimsonStainedLands
 
             if (deaf != null)
             {
-                victim.AffectFromChar(deaf);
+                victim.AffectFromChar(deaf, AffectRemoveReason.Cleansed);
 
                 if (ch != victim)
                 {
@@ -5116,7 +5116,7 @@ namespace CrimsonStainedLands
                 foreach (var malady in victim.AffectsList.ToArray())
                 {
                     if (malady.affectType == AffectTypes.Malady)
-                        victim.AffectFromChar(malady);
+                        victim.AffectFromChar(malady, AffectRemoveReason.Cleansed);
 
                 }
                 victim.Act("You wake up, fully healed, free from all maladies and ready to move.");
@@ -5178,7 +5178,7 @@ namespace CrimsonStainedLands
                 foreach (var malady in victim.AffectsList.ToArray())
                 {
                     if (malady.affectType == AffectTypes.Malady)
-                        victim.AffectFromChar(malady);
+                        victim.AffectFromChar(malady, AffectRemoveReason.Cleansed);
                 }
                 victim.Act("You are now free from all maladies.");
                 ch.Act("$N is free from all maladies.", victim, type: ActType.ToRoomNotVictim);

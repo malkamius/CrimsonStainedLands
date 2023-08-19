@@ -456,10 +456,10 @@ namespace CrimsonStainedLands
                 {
 
                     var effect = victim.FindAffect(AffectFlags.Sleep);
-                    if (effect != null) victim.AffectFromChar(effect);
+                    if (effect != null) victim.AffectFromChar(effect, AffectRemoveReason.Cleansed);
 
                     effect = victim.FindAffect(SkillSpell.SkillLookup("strangle"));
-                    if (effect != null) victim.AffectFromChar(effect);
+                    if (effect != null) victim.AffectFromChar(effect, AffectRemoveReason.Cleansed);
 
                     Character.DoStand(victim, "");
 

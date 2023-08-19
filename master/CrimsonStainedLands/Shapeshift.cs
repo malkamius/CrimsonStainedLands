@@ -206,7 +206,7 @@ namespace CrimsonStainedLands
                     var chance = ch.GetSkillPercentageOutOfForm(control) + 20;
                     if (chance <= 1 || chance < Utility.NumberPercent())
                     {
-                        ch.AffectFromChar(affect);
+                        ch.AffectFromChar(affect, AffectRemoveReason.WoreOff);
                         if (chance > 1) ch.CheckImprove(control, false, 1);
                     }
                     else ch.CheckImprove(control,true,1);
@@ -489,7 +489,6 @@ namespace CrimsonStainedLands
                 Utility.GetEnumValue(formelement.GetAttributeValue("Type"), ref form.Type);
                 ShapeshiftForm.Forms.Add(form);
             }
-            Game.log("Loaded {0} shapeshift forms.", ShapeshiftForm.Forms.Count);
         }
         public static void DoShapeFocus(Character ch, string arguments)
         {
@@ -616,7 +615,7 @@ namespace CrimsonStainedLands
                                 AffectData affect;
                                 var enlivenskill = SkillSpell.SkillLookup(enliven);
                                 while ((affect = ch.FindAffect(enlivenskill)) != null)
-                                    ch.AffectFromChar(affect);
+                                    ch.AffectFromChar(affect, AffectRemoveReason.WoreOff);
                             }
                         }
                         ch.Act("You enliven {0}.", args: spell);

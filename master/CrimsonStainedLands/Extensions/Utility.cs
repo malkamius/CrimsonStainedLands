@@ -44,6 +44,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using static CrimsonStainedLands.WizardNet;
 
 namespace CrimsonStainedLands.Extensions
 {
@@ -378,6 +379,12 @@ namespace CrimsonStainedLands.Extensions
         public static bool SETBIT<T>(this List<T> list, T flag)
         {
             return ADDFLAG(list, flag);
+        }
+
+        public static void SETBITS<T>(this List<T> list, params T[] flags)
+        {
+            foreach (var flag in flags)
+                ADDFLAG(list, flag);
         }
 
         public static void SETBITS<T>(this List<T> list, IEnumerable<T> flags)

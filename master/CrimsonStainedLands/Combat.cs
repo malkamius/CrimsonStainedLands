@@ -475,7 +475,7 @@ namespace CrimsonStainedLands
                         victim.HitPoints = 20;
                         victim.Position = Positions.Sitting;
                         foreach (var aff in victim.AffectsList.ToArray())
-                            victim.AffectFromChar(aff, true);
+                            victim.AffectFromChar(aff, AffectRemoveReason.Died, true);
                         
                         return;
                     }
@@ -511,7 +511,7 @@ namespace CrimsonStainedLands
 
                 // Remove affects from the victim
                 foreach (var aff in victim.AffectsList.ToArray())
-                    victim.AffectFromChar(aff, true);
+                    victim.AffectFromChar(aff, AffectRemoveReason.Died, true);
 
                 // Gain experience for killing an NPC victim
                 if (ch != null && victim != null && victim.IsNPC)
@@ -1187,6 +1187,10 @@ namespace CrimsonStainedLands
             ch.StripSneak();
             ch.StripCamouflage();
 
+            var removeaffects = (from aff in ch.AffectsList where aff.RemoveAndSaveFlags.ISSET(AffectData.StripAndSaveFlags.RemoveOnCombat) select aff).ToArray();
+            foreach (var aff in removeaffects)
+                ch.AffectFromChar(aff, AffectRemoveReason.Combat);
+
             // Don't perform skills on the first round of combat
             if (ch.Fighting != null && ch.Form == null)
             {
@@ -1444,7 +1448,7 @@ namespace CrimsonStainedLands
                 ch.Act("\\C$n swings wildly and misses $N.\\x", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("\\C$n swings wildly and misses you.\\x", victim, type: ActType.ToVictim);
                 ch.Act("\\CYou swing wildly and miss $N.\\x", victim, type: ActType.ToChar);
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("feint")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("feint")), AffectRemoveReason.WoreOff);
                 return;
             }
 
@@ -1453,7 +1457,7 @@ namespace CrimsonStainedLands
                 ch.Act("\\C$n swings wildly and misses $N.\\x", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("\\C$n swings wildly and misses you.\\x", victim, type: ActType.ToVictim);
                 ch.Act("\\CYou swing wildly and miss $N.\\x", victim, type: ActType.ToChar);
-                ch.AffectFromChar(ch.FindAffect(AffectFlags.Distracted));
+                ch.AffectFromChar(ch.FindAffect(AffectFlags.Distracted), AffectRemoveReason.WoreOff);
                 return;
             }
 
@@ -1474,7 +1478,7 @@ namespace CrimsonStainedLands
                 ch.Act("\\C$n swings wildly and misses $N.\\x", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("\\C$n swings wildly and misses you.\\x", victim, type: ActType.ToVictim);
                 ch.Act("\\CYou swing wildly and miss $N.\\x", victim, type: ActType.ToChar);
-                ch.AffectFromChar(ch.FindAffect(AffectFlags.ZigZagFeint));
+                ch.AffectFromChar(ch.FindAffect(AffectFlags.ZigZagFeint), AffectRemoveReason.WoreOff);
                 return;
             }
 
@@ -1483,7 +1487,7 @@ namespace CrimsonStainedLands
                 ch.Act("$n swings wildly and misses $N.", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("$n swings wildly and misses you.", victim, type: ActType.ToVictim);
                 ch.Act("You swing wildly and miss $N.", victim, type: ActType.ToChar);
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("thrust")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("thrust")), AffectRemoveReason.WoreOff);
                 return;
             }
 
@@ -3674,20 +3678,20 @@ namespace CrimsonStainedLands
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 4) && ch.IsAffected(AffectFlags.Plague))
             {
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("plague")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("plague")), AffectRemoveReason.Cleansed);
                 ch.Act("The sores on $n's body vanish.\n\r", type: ActType.ToRoom);
                 ch.send("The sores on your body vanish.\n\r");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(AffectFlags.Blind))
             {
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
                 ch.send("Your vision returns!\n\r");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && ch.IsAffected(AffectFlags.Poison))
             {
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("poison")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("poison")), AffectRemoveReason.Cleansed);
                 ch.send("A warm feeling goes through your body.\n\r");
                 ch.Act("$n looks better.", type: ActType.ToRoom);
             }
@@ -5947,20 +5951,20 @@ namespace CrimsonStainedLands
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 4) && ch.IsAffected(AffectFlags.Plague))
             {
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("plague")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("plague")), AffectRemoveReason.Cleansed);
                 ch.Act("The sores on $n's body vanish.\n\r", type: ActType.ToRoom);
                 ch.send("The sores on your body vanish.\n\r");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(AffectFlags.Blind))
             {
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
                 ch.send("Your vision returns!\n\r");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && ch.IsAffected(AffectFlags.Poison))
             {
-                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("poison")));
+                ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("poison")), AffectRemoveReason.Cleansed);
                 ch.send("A warm feeling goes through your body.\n\r");
                 ch.Act("$n looks better.", type: ActType.ToRoom);
             }
@@ -7857,20 +7861,20 @@ namespace CrimsonStainedLands
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 4) && victim.IsAffected(AffectFlags.Plague))
             {
-                victim.AffectFromChar(victim.FindAffect(SkillSpell.SkillLookup("plague")));
+                victim.AffectFromChar(victim.FindAffect(SkillSpell.SkillLookup("plague")), AffectRemoveReason.Cleansed);
                 victim.Act("The sores on $n's body vanish.\n\r", type: ActType.ToRoom);
                 victim.send("The sores on your body vanish.\n\r");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(AffectFlags.Blind))
             {
-                victim.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")));
+                victim.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
                 victim.send("Your vision returns!\n\r");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Poison))
             {
-                victim.AffectFromChar(victim.FindAffect(SkillSpell.SkillLookup("poison")));
+                victim.AffectFromChar(victim.FindAffect(SkillSpell.SkillLookup("poison")), AffectRemoveReason.Cleansed);
                 victim.send("A warm feeling goes through your body.\n\r");
                 victim.Act("$n looks better.", type: ActType.ToRoom);
             }
@@ -9609,7 +9613,7 @@ namespace CrimsonStainedLands
             if (ch.IsAffected(skill))
             {
                 var affect = ch.FindAffect(skill);
-                ch.AffectFromChar(affect);
+                ch.AffectFromChar(affect, AffectRemoveReason.Other);
             }
 
             //chance += level / 10;
@@ -9654,7 +9658,7 @@ namespace CrimsonStainedLands
             if (ch.Fighting == victim && ch.IsAffected(skill))
             {
                 var affect = ch.FindAffect(skill);
-                ch.AffectFromChar(affect);
+                ch.AffectFromChar(affect, AffectRemoveReason.Other);
 
                 if (DoAssassinKotegaeshi(ch, victim))
                 {

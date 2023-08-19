@@ -255,12 +255,15 @@ namespace CrimsonStainedLands
             listeningSocket.Listen(50);
             state.Log.AppendLine("Listening on port " + state.Port);
 
-            ssllisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+            if (Settings.SSLPort != 0)
+            {
+                ssllisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
-            // listen on all adapters at port specified for new connections
-            ssllisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSLPort));
-            ssllisteningSocket.Listen(50);
-
+                // listen on all adapters at port specified for new connections
+                ssllisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSLPort));
+                ssllisteningSocket.Listen(50);
+                state.Log.AppendLine("Listening for SSL connections on port " + Settings.SSLPort);
+            }
             //sshlisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
             //// listen on all adapters at port specified for new connections
@@ -274,30 +277,37 @@ namespace CrimsonStainedLands
 
         private void LoadData()
         {
-            Liquid.loadLiquids();
-            Game.log("{0} liquids loaded.", Liquid.Liquids.Count);
-
-            Race.LoadRaces();
-            Game.log("{0} races loaded.", Race.Races.Count);
+            using(new LoadTimer("LoadLiquids loaded {0} liquids", () => Liquid.Liquids.Count))
+                Liquid.loadLiquids();
+            
+            using (new LoadTimer("LoadRaces loaded {0} races", () => Race.Races.Count))
+                Race.LoadRaces();
             //Race.SaveRaces();
 
-            PcRace.LoadRaces();
-            Game.log("{0} PC races loaded.", PcRace.PcRaces.Count);
+            using (new LoadTimer("LoadPCRaces loaded {0} player races", () => PcRace.PcRaces.Count))
+                PcRace.LoadRaces();
             //PcRace.SaveRaces();
 
             SkillSpellGroup.LoadSkillSpellGroups();
 
-            GuildData.LoadGuilds();
+            using (new LoadTimer("LoadGuilds loaded {0} guilds", () => GuildData.Guilds.Count))
+                GuildData.LoadGuilds();
 
-            WeaponDamageMessage.LoadWeaponDamageMessages();
+            using (new LoadTimer("LoadWeaponDamageMessages loaded {0} messages", () => WeaponDamageMessage.WeaponDamageMessages.Count))
+                WeaponDamageMessage.LoadWeaponDamageMessages();
 
             //game.Instance.WriteSampleArea();
+            using (new LoadTimer("LoadPrograms loaded {0} programs", () => NLuaPrograms.Programs.Count))
+                NLuaPrograms.LoadPrograms();
 
-            AreaData.LoadAreas();
+            using (new LoadTimer("LoadAreas loaded {0} areas", () => AreaData.Areas.Count))
+                AreaData.LoadAreas();
 
-            Social.LoadSocials();
+            using (new LoadTimer("LoadSocials loaded {0} socials", () => Social.Socials.Count))
+                Social.LoadSocials();
 
-            NoteData.LoadNotes();
+            using (new LoadTimer("LoadNotes loaded {0} notes", () => NoteData.Notes.Count))
+                NoteData.LoadNotes();
 
             // Load corpses and pits before resetting areas so pits aren't duplicated
             ItemData.LoadCorpsesAndPits();
@@ -305,26 +315,37 @@ namespace CrimsonStainedLands
         }
         private void launch(GameInfo state)
         {
-            SetupListeningSocket(state);
+            try
+            {
+                using (new LoadTimer("Game loaded"))
+                {
+                    SetupListeningSocket(state);
 
-            LoadData();
+                    LoadData();
 
-            AreaData.ResetAreas(); // areas aren't reset till they're all loaded just in case there are cross area references for resets
+                    using (new LoadTimer("Reset areas")) 
+                        AreaData.ResetAreas(); // areas aren't reset till they're all loaded just in case there are cross area references for resets
 
-            WeatherData.Initialize();
+                    WeatherData.Initialize();
 
-            ShapeshiftForm.LoadShapeshiftForms();
+                    using (new LoadTimer("LoadShapeshiftForms loaded {0} forms", () => ShapeshiftForm.Forms.Count))
+                        ShapeshiftForm.LoadShapeshiftForms();
 
-            //ShapeshiftForm.SaveShapeshiftForms();
+                    //ShapeshiftForm.SaveShapeshiftForms();
 
-            Command.LinkCommandSkills();
+                    Command.LinkCommandSkills();
 
-            Command.CommandAttribute.AddAttributeCommands();
+                    Command.CommandAttribute.AddAttributeCommands();
 
-            GuildData.WriteGuildSkillsHtml();
-            Game.log("Accepting connections...");
-
-            mainLoop(state);
+                    GuildData.WriteGuildSkillsHtml();
+                    Game.log("Accepting connections... Standard port {0}, SSL Port {1}", Settings.Port, Settings.SSLPort);
+                }
+                mainLoop(state);
+            }
+            catch(Exception ex)
+            {
+                Game.bug("FATAL EXCEPTION: {0}", ex.ToString());
+            }
         }
 
         private void mainLoop(GameInfo state)
@@ -383,8 +404,8 @@ namespace CrimsonStainedLands
                 try
                 {
                     var player = new Player(this, socket.EndAccept(result), socket == ssllisteningSocket, socket == sshlisteningSocket);
-                    
-                    
+
+
                 }
                 catch { }
 
@@ -437,7 +458,7 @@ namespace CrimsonStainedLands
                 /// https://www.rfc-editor.org/rfc/rfc1091
                 /// https://tintin.mudhalla.net/info/ansicolor/
                 player.sendRaw(TelnetProtocol.ServerGetDoTelnetType, true);
-                
+
             }
         }
 
@@ -460,21 +481,21 @@ namespace CrimsonStainedLands
                     {
                         byte[] buffer = new byte[256];
                         int received = connection.socket.Receive(buffer, SocketFlags.Peek);
-                        if(received == 0)
+                        if (received == 0)
                         {
                             throw new SocketException();
                         }
-                //        if (connection.sslsocket.IsAuthenticated && (connection.readop == null || connection.readop.IsCompleted))
-                //        {
-                //            if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
-                //            if (connection.readop == null || connection.readop.IsCompleted)
-                //                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
-                //        }
+                        //        if (connection.sslsocket.IsAuthenticated && (connection.readop == null || connection.readop.IsCompleted))
+                        //        {
+                        //            if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
+                        //            if (connection.readop == null || connection.readop.IsCompleted)
+                        //                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
+                        //        }
                     }
 
                     else if (connection.socket == null)
                         connection.sslsocket = null;
-                    else if(connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
+                    else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
                     {
                         throw new SocketException();
                     }
@@ -1288,8 +1309,9 @@ namespace CrimsonStainedLands
 
                 foreach (var affect in new List<AffectData>(ch.AffectsList))
                 {
-                    if (affect.frequency == Frequency.Tick && affect.duration > 0)
+                    if (affect.frequency == Frequency.Tick && affect.duration != 0)
                     {
+                        if(affect.duration > 0)
                         affect.duration--;
                         if (affect.skillSpell != null && affect.skillSpell.TickFunction != null)
                             affect.skillSpell.TickFunction(ch, affect);
@@ -1299,22 +1321,24 @@ namespace CrimsonStainedLands
                             ch.send("You feel your body start to transition back to a physical form.\n\r");
                         }
 
-                        if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
+                        if (!affect.tickProgram.ISEMPTY())
                         {
-                            prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
+                            if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
+                            {
+                                prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
+                            }
+
+                            if (NLuaPrograms.ProgramLookup(affect.tickProgram, out var luaprog))
+                                luaprog.Execute(ch, null, ch.Room, null, affect.skillSpell, affect, Programs.ProgramTypes.AffectTick, "");
+
+                            if (prog == null && luaprog == null)
+                                Game.log("AffectTickProgram not found: {0}", affect.tickProgram);
                         }
                     }
                     else if (affect.frequency == Frequency.Tick && affect.duration == 0)
                     {
-                        ch.AffectFromChar(affect);
+                        ch.AffectFromChar(affect, AffectRemoveReason.WoreOff);
 
-                        if (affect.skillSpell != null && affect.skillSpell.EndFunction != null)
-                            affect.skillSpell.EndFunction(ch, affect);
-
-                        if (Programs.AffectProgramLookup(affect.endProgram, out var prog))
-                        {
-                            prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectEnd, "");
-                        }
                     }
                 } // end countdown affects
 
@@ -1386,28 +1410,31 @@ namespace CrimsonStainedLands
 
                 foreach (var affect in new List<AffectData>(ch.AffectsList))
                 {
-                    if (affect.frequency == Frequency.Violence && affect.duration > 0)
+                    if (affect.frequency == Frequency.Violence && affect.duration != 0)
                     {
-                        affect.duration--;
+                        if(affect.duration > 0)
+                            affect.duration--;
                         if (affect.skillSpell != null && affect.skillSpell.TickFunction != null)
                             affect.skillSpell.TickFunction(ch, affect);
-
-                        if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
+                        if (!affect.tickProgram.ISEMPTY())
                         {
-                            prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
+
+                            if (Programs.AffectProgramLookup(affect.tickProgram, out var prog))
+                            {
+                                prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectTick, "");
+                            }
+
+                            if (NLuaPrograms.ProgramLookup(affect.tickProgram, out var luaprog))
+                                luaprog.Execute(ch, null, ch.Room, null, affect.skillSpell, affect, Programs.ProgramTypes.AffectTick, "");
+
+                            if (prog == null && luaprog == null)
+                                Game.log("AffectTickProgram not found: {0}", affect.tickProgram);
                         }
                     }
                     else if (affect.frequency == Frequency.Violence && affect.duration == 0)
                     {
-                        ch.AffectFromChar(affect);
+                        ch.AffectFromChar(affect, AffectRemoveReason.WoreOff);
 
-                        if (affect.skillSpell != null && affect.skillSpell.EndFunction != null)
-                            affect.skillSpell.EndFunction(ch, affect);
-
-                        if (Programs.AffectProgramLookup(affect.endProgram, out var prog))
-                        {
-                            prog.Execute(ch, affect, null, null, affect.skillSpell, Programs.ProgramTypes.AffectEnd, "");
-                        }
                     }
                 } // end countdown affects
 

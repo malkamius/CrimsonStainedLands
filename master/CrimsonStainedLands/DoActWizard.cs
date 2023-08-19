@@ -1249,7 +1249,7 @@ namespace CrimsonStainedLands
 
             foreach (var aff in ch.AffectsList.ToArray())
             {
-                ch.AffectFromChar(aff);
+                ch.AffectFromChar(aff, AffectRemoveReason.Other);
             }
 
             ch.send("OK.\n\r");

@@ -49,6 +49,7 @@ namespace CrimsonStainedLands
                     affect.frequency = Frequency.Tick;
                     affect.displayName = "Challenge from " + affect.ownerName;
                     affect.endMessage = "You did not accept the challenge.";
+                    affect.RemoveAndSaveFlags.SETBIT(AffectData.StripAndSaveFlags.DoNotSave);
                     affect.hidden = false;
 
                     victim.AffectToChar(affect);
@@ -57,6 +58,7 @@ namespace CrimsonStainedLands
                     affect.ownerName = victim.Name;
                     affect.flags.Clear();
                     affect.flags.Add(AffectFlags.DuelChallenge);
+                    affect.RemoveAndSaveFlags.SETBIT(AffectData.StripAndSaveFlags.DoNotSave);
                     affect.displayName = "Challenge to " + affect.ownerName;
                     affect.endMessage = "Your challenge was not accepted.";
                     character.AffectToChar(affect);
@@ -91,13 +93,13 @@ namespace CrimsonStainedLands
                     newaffect.tickProgram = "DuelStartingProgram";
                     newaffect.endProgram = "DuelStartProgram";
                     newaffect.hidden = false;
-
+                    newaffect.RemoveAndSaveFlags.SETBIT(AffectData.StripAndSaveFlags.DoNotSave);
                     challenger.AffectToChar(newaffect);
 
                     newaffect = new AffectData(newaffect);
                     newaffect.ownerName = challenger.Name;
                     newaffect.displayName = "Duel starting: " + newaffect.ownerName;
-
+                    newaffect.RemoveAndSaveFlags.SETBIT(AffectData.StripAndSaveFlags.DoNotSave);
                     character.AffectToChar(newaffect);
                 }
             }
