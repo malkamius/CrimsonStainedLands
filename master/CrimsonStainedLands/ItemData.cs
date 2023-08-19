@@ -208,7 +208,7 @@ namespace CrimsonStainedLands
     public class ItemData : IDisposable
     {
         public static List<ItemData> Items = new List<ItemData>();
-
+        public static bool CorpsesAndPitsLoaded = false;
         public AreaData Area;
         public int Vnum;
         public string Name { get; set; } = "";
@@ -807,7 +807,7 @@ namespace CrimsonStainedLands
         public static DateTime LastSaveCorpsesAndPits = DateTime.Now;
         public static void SaveCorpsesAndPits(bool force = false)
         {
-            if (DateTime.Now >= LastSaveCorpsesAndPits.AddMinutes(5) || force)
+            if ((DateTime.Now >= LastSaveCorpsesAndPits.AddMinutes(5) || force) && CorpsesAndPitsLoaded)
             {
                 LastSaveCorpsesAndPits = DateTime.Now;
 
@@ -845,6 +845,7 @@ namespace CrimsonStainedLands
                     }
                 }
             }
+            CorpsesAndPitsLoaded = true;
         }
     }
 }

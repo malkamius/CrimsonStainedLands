@@ -72,18 +72,18 @@ namespace CrimsonStainedLands
         public ResetData(AreaData area, XElement reset)
         {
             this.area = area;
-            Extensions.Utility.GetEnumValue<ResetTypes>(reset.GetElementValue("type"), ref resetType);
+            Extensions.Utility.GetEnumValue<ResetTypes>(reset.GetAttributeValue("type", reset.GetElementValue("type")), ref resetType);
 
             if (resetType != ResetTypes.EquipRandom)
-                spawnVnum = reset.GetElementValueInt("vnum");
+                spawnVnum = reset.GetAttributeValueInt("vnum", reset.GetElementValueInt("vnum"));
             else
-                spawnVnums = reset.GetElementValue("vnum");
+                spawnVnums = reset.GetAttributeValue("vnum", reset.GetElementValue("vnum"));
 
             if (resetType == ResetTypes.NPC || resetType == ResetTypes.Item)
             {
-                roomVnum = reset.GetElementValueInt("destination");
-                count = reset.GetElementValueInt("count");
-                maxCount = Math.Max(reset.GetElementValueInt("max"), 1);
+                roomVnum = reset.GetAttributeValueInt("destination", reset.GetElementValueInt("destination"));
+                count = reset.GetAttributeValueInt("count", reset.GetElementValueInt("count"));
+                maxCount = Math.Max(reset.GetAttributeValueInt("max", reset.GetElementValueInt("max")), 1);
 
                 if (resetType == ResetTypes.NPC && NPCTemplateData.Templates.TryGetValue(spawnVnum, out var template))
                 {
@@ -110,8 +110,11 @@ namespace CrimsonStainedLands
         {
             if (resetType == ResetTypes.NPC)
             {
+                RoomData room;
                 NPCTemplateData template = null;
-                if (RoomData.Rooms.TryGetValue(roomVnum, out RoomData room) && NPCTemplateData.Templates.TryGetValue(spawnVnum, out template))
+                if (((roomVnum == 0 && (room = area.Rooms[area.Rooms.Keys.ToArray()[Utility.Random(0, area.Rooms.Count)]]) != null) ||
+                    RoomData.Rooms.TryGetValue(roomVnum, out room))
+                    && NPCTemplateData.Templates.TryGetValue(spawnVnum, out template))
                 {
                     //for(spawnNum = 0; spawnNum < count; spawnNum++)
                     //{
@@ -133,9 +136,10 @@ namespace CrimsonStainedLands
                     {
                         if (maxCount < template.MaxCount)
                         {
-                            Game.log("NPC " + spawnVnum + " has a maxcount of " + maxCount + " but template shows " + template.MaxCount + " resets" + (area != null ? " in area " + area.Name + "." : ""));
+                            //Game.log("NPC " + spawnVnum + " has a maxcount of " + maxCount + " but template shows " + template.MaxCount + " resets" + (area != null ? " in area " + area.Name + "." : ""));
                             // This will affect save world
                             //maxCount = template.MaxCount;
+                            //area.saved = false;
                         }
                         var newNPC = new NPCData(template, room);
                         lastNPC = newNPC;
@@ -316,13 +320,13 @@ namespace CrimsonStainedLands
 
                 return new XElement("Reset",
                     comment,
-                    new XElement("Type", resetType.ToString()),
-                    new XElement("Destination", roomVnum),
-                    new XElement("Count", count),
-                    new XElement("Max", maxCount),
+                    new XAttribute("Type", resetType.ToString()),
+                    new XAttribute("Destination", roomVnum),
+                    new XAttribute("Count", count),
+                    new XAttribute("Max", maxCount),
                     resetType != ResetTypes.EquipRandom ?
-                    new XElement("Vnum", spawnVnum) :
-                    new XElement("Vnum", spawnVnums)
+                    new XAttribute("Vnum", spawnVnum) :
+                    new XAttribute("Vnum", spawnVnums)
 
                     );
             }

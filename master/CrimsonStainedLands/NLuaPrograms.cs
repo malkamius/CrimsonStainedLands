@@ -55,7 +55,6 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            Game.log("LuaProgram {0} not found.", name);
             return false;
         }
 

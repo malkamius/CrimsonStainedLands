@@ -28,7 +28,7 @@ namespace CrimsonStainedLands
         {
             var settings = new XElement("Settings", 
                 new XAttribute("Port", Port),
-                new XAttribute("SSLPort", SSHPort),
+                new XAttribute("SSLPort", SSLPort),
                 new XAttribute("SSHPort", SSHPort),
                 new XAttribute("MaxPlayersOnlineEver", Game.MaxPlayersOnlineEver),
                 new XAttribute("DataPath", DataPath),

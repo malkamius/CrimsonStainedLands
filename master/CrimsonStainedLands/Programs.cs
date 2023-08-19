@@ -110,7 +110,7 @@ namespace CrimsonStainedLands
                     return true;
                 }
             }
-            Game.log("NpcProgram {0} not found.", name);
+                        
             return false;
         }
 

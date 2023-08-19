@@ -285,6 +285,8 @@ namespace CrimsonStainedLands
                     {
                         LuaPrograms.Add(luaprogram);
                     }
+                    else
+                        Game.log("Program not found: {0}", programElement.GetAttributeValue("Name"));
 
                 }
             }
