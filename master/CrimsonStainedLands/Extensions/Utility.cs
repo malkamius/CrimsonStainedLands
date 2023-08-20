@@ -42,6 +42,7 @@ using System.Linq;
 using System.Net.Configuration;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
 using static CrimsonStainedLands.WizardNet;
@@ -156,6 +157,59 @@ namespace CrimsonStainedLands.Extensions
             //    }
             //}
             //return newtext.ToString();
+        }
+
+        /// <summary>
+        /// WrapText without removing existing formatting...
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="width"></param>
+        /// <returns></returns>
+        public static string FriendlyWrapText(this string text, int width = 80)
+        {
+            var newtext = new StringBuilder();
+            var word = new StringBuilder();
+            text = text.Replace("\r", "");
+            text = text.Replace("\t", "   ");
+            int linelength = 0;
+
+            for(int i = 0; i < text.Length; i++)
+            {
+                if (linelength + word.Length > width)
+                {
+                    newtext.AppendLine();
+                    newtext.Append(word.ToString());
+                    linelength = word.Length;
+                    word.Clear();
+                }
+
+                if (text[i] == '\n')
+                {
+                    linelength = 0;
+                    newtext.Append(word.ToString());
+                    word.Clear();
+                    newtext.AppendLine();
+                }
+                else if (word.Length > width)
+                {
+                    newtext.AppendLine(word.ToString());
+                    word.Clear();
+                }
+                else if (text[i] == ' ' || text[i] == '\t')
+                {
+                    newtext.Append(word.ToString());
+                    newtext.Append(text[i]);
+                    linelength += word.Length + 1;
+                    word.Clear();
+                }
+                else
+                {
+                    word.Append(text[i]);
+                }
+            }
+            newtext.Append(word.ToString());
+
+            return newtext.ToString();
         }
 
         public static string TOSTRINGTRIM(this string args)

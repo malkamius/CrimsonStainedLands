@@ -5,13 +5,6 @@
 		Description="Quest for player to say yes or no to the foreman" 
 		ProgramTypes="EnterRoom PulseViolence">
 		if ProgramType == "PulseViolence" then
-			-- local exits = {}
-			-- for i,oneexit in ipairs(Player.Room.exits) do 
-			-- 	if oneexit ~= nil and oneexit.destination ~= nil and oneexit.destination.Area == oneexit.source.Area then
-			-- 		table.insert(exits, oneexit);
-			-- 	end
-			-- end
-			-- random_exit = exits[math.random(#exits)];
 			if Player.Fighting ~= nil then
 			
 				local seraphel = WorldHelper:GetNPCByVNumRoom(Player, 19044);

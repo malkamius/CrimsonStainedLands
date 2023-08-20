@@ -669,7 +669,7 @@ namespace CrimsonStainedLands
                                         game.Info.Connections.Remove(this);
                                         connection.input.Clear();
                                         connection.inanimate = null;
-                                        connection.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
+                                        
                                         connection.readop = this.readop;
                                         connection.writeop = this.writeop;
                                         connection.socket = this.socket;
@@ -694,7 +694,7 @@ namespace CrimsonStainedLands
                                         this.sslsocket = null;
 
                                         connection.ConnectExistingPlayer(true);
-
+                                        connection.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
 
                                     }
 

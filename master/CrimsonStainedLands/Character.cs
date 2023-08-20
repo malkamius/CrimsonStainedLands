@@ -1148,14 +1148,16 @@ namespace CrimsonStainedLands
         {
             int index = 0;
             int count = 0;
-            var text = PageText.ToString().Replace("\r", "");
-            for (index = text.IndexOf("\n", index); count < ScrollCount && text.Length > index + 2; index = text.IndexOf("\n", index + 1))
+            var text = PageText.ToString();//.Replace("\r", "");
+            for (index = text.IndexOf("\n", index); count < ScrollCount && text.Length > index + 1; index = text.IndexOf("\n", index + 1))
                 count++;
             if (index >= 0 && index < text.Length)
             {
                 PageText.Clear();
+
                 if (text.Length > index + 1)
-                    PageText.Insert(0, text.Substring(index + 1, text.Length - index - 1));
+                    PageText.Append(text.Substring(index + 1, text.Length - index - 1));
+
                 send(text.Substring(0, index + 1));
 
                 if (HasPageText)
@@ -1195,7 +1197,7 @@ namespace CrimsonStainedLands
                 if (!Paging)
                     ((Player)this).output.Append(data);
                 else
-                    PageText.Append(data);
+                    PageText.Append(data.Replace("\r", ""));
             }
             if (SwitchedBy != null)
                 SwitchedBy.send(data);
@@ -1352,10 +1354,11 @@ namespace CrimsonStainedLands
                 catch { }
         }
 
-        public void RemoveCharacterFromRoom()
+        public void RemoveCharacterFromRoom(bool ExecutePrograms = true)
         {
             if (Room != null)
             {
+                if(ExecutePrograms)
                 Programs.ExecutePrograms(Programs.ProgramTypes.ExitRoom, this, null, Room, "");
 
 
@@ -2961,7 +2964,7 @@ namespace CrimsonStainedLands
 
         public static void DoQuit(Character ch, string arguments)
         {
-            if (ch is Player)
+            if (ch is Player player)
             {
                 ch.Act("The form of $n disappears before you.", null, null, null, ActType.ToRoom);
                 // Remove keys
@@ -2982,11 +2985,10 @@ namespace CrimsonStainedLands
                     }
                 }
                 // end remove keys
-                ((Player)ch).SaveCharacterFile();
-                ch.RemoveCharacterFromRoom();
+                player.SaveCharacterFile();
+                player.sendRaw("\nGoodbye!\n\r", true);
+                ch.RemoveCharacterFromRoom(ExecutePrograms: false);
                 ch.Dispose();
-                ((Player)ch).sendRaw("\nGoodbye!\n\r");
-
                 Game.CloseSocket((Player)ch, true);
             }
         }

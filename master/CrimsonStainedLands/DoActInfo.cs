@@ -355,45 +355,76 @@ namespace CrimsonStainedLands
         public static void ReadHelp(Character ch, string arguments, bool plain = false)
         {
             StringBuilder output = new StringBuilder();
-            if (arguments.ISEMPTY())
-                arguments = "help";
-            int lvl;
-            foreach (var help in HelpData.Helps)
+
+            arguments.OneArgumentOut(out var firstarg);
+
+            if(!firstarg.ISEMPTY() && firstarg.StringCmp("list"))
             {
+                IEnumerable<HelpData> helps = null;
+                arguments = arguments.OneArgument();
 
-                lvl = (help.level < 0) ? -1 * help.level - 1 : help.level;
+                if (!arguments.ISEMPTY())
+                    helps = from help 
+                            in HelpData.Helps 
+                            where help.vnum.ToString().StringPrefix(arguments) || help.keyword.IsName(arguments) 
+                            orderby help.keyword 
+                            select help;
+                else
+                    helps = from help 
+                            in HelpData.Helps 
+                            orderby help.keyword 
+                            select help;
 
-                if (lvl > ch.Level)
-                    continue;
-
-                if (help.keyword.IsName(arguments) || help.vnum.ToString() == arguments)
+                foreach (var help in helps)
                 {
-                    if (!plain)
-                    {
-                        output.AppendLine("Keywords: " + help.keyword + " :: Help Entry " + help.vnum);
-                        output.Append("\n\r" + new string('-', 80) + "\n\r");
-                    }
-
-                    if (help.text.StartsWith("."))
-                        output.Append(help.text.Substring(1));
-                    else
-                        output.Append(help.text);
-
-                    if (!plain)
-                    {
-                        output.Append("\n\r" + new string('-', 80) + "\n\r");
-                        output.Append(string.Format("Last edited on {0} by {1}.\n\r", help.lastEditedOn, help.lastEditedBy));
-                        output.AppendLine();
-                    }
+                    if (help.level > ch.Level) continue;
+                    output.AppendLine(string.Format("{0,-10} :: {1}", help.vnum, help.keyword).FriendlyWrapText());
                 }
 
-
             }
-            IEnumerable<Command> commands;
-            if ((commands = Command.Commands.Where(com => com.Name.StringPrefix(arguments))).Any())
+            else
             {
-                foreach (var command in commands)
-                    output.AppendLine(command.Name + " - " + command.Info);
+                if (arguments.ISEMPTY())
+                    arguments = "help";
+                int lvl;
+                foreach (var help in HelpData.Helps)
+                {
+
+                    lvl = (help.level < 0) ? -1 * help.level - 1 : help.level;
+
+                    if (lvl > ch.Level)
+                        continue;
+
+                    if (help.keyword.IsName(arguments) || help.vnum.ToString() == arguments)
+                    {
+                        if (!plain)
+                        {
+                            output.AppendLine("Keywords: " + help.keyword + " :: Help Entry " + help.vnum);
+                            output.Append("\n\r" + new string('-', 80) + "\n\r");
+                        }
+
+                        if (help.text.StartsWith("."))
+                            output.Append(help.text.Substring(1));
+                        else
+                            output.Append(help.text.FriendlyWrapText());
+
+                        if (!plain)
+                        {
+                            output.Append("\n\r" + new string('-', 80) + "\n\r");
+                            output.Append(string.Format("Last edited on {0} by {1}.\n\r", help.lastEditedOn, help.lastEditedBy));
+                            output.AppendLine();
+                        }
+                    }
+
+
+                }
+                IEnumerable<Command> commands;
+                if ((commands = Command.Commands.Where(com => com.Name.StringPrefix(arguments))).Any())
+                {
+                    foreach (var command in commands)
+                        output.AppendLine(command.Name + " - " + command.Info);
+                }
+                
             }
             if (output.Length == 0)
                 ch.send("No help on that word.\n\r");
@@ -1347,13 +1378,13 @@ namespace CrimsonStainedLands
 
         public static void DoPrompt(Character ch, string argument)
         {
-            if (!(ch is Player)) return;
+            if (!(ch is Player player)) return;
 
             ch.send("The default prompt is: <%1%%h %2%%m %3%%mv %W> \n\r");
 
-            if (!argument.ISEMPTY() && argument.StringCmp("all"))
+            if (!argument.ISEMPTY() && (argument.StringCmp("all") || argument.StringCmp("default")))
             {
-                ((Player)ch).Prompt = "<%1%%h %2%%m %3%%mv %W> ";
+                player.Prompt = "<%1%%h %2%%m %3%%mv %W> ";
             }
             else if (!argument.ISEMPTY() && argument.StringCmp("?"))
             {
@@ -1361,10 +1392,10 @@ namespace CrimsonStainedLands
             }
             else if (!argument.ISEMPTY())
             {
-                ((Player)ch).Prompt = argument + (!argument.EndsWith(" ") ? " " : "");
+                player.Prompt = argument + (!argument.EndsWith(" ") ? " " : "");
             }
 
-            ch.send("Your prompt is: " + ((Player)ch).Prompt + "\n\r");
+            ch.send("Your prompt is: " + Extensions.XTermColor.EscapeColor(player.Prompt) + "\n\r");
         }
 
         public static void DoQuests(Character ch, string argument)

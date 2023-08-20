@@ -16,10 +16,10 @@ namespace CrimsonStainedLands
         public static Quest GetQuest(int vnum) => Quests.TryGetValue(vnum, out var result) ? result : null;
         public static Quest GetQuest(string name) => (from quest in Quests.Values where quest.Name.StringCmp(name) select quest).FirstOrDefault();
 
-        public static QuestProgressData GetQuestProgress(Character ch, int vnum) => ch is Player? ((Player)ch).Quests.FirstOrDefault(q => q.Quest.Vnum == vnum) : null;   
+        public static QuestProgressData GetQuestProgress(Character ch, int vnum) => ch is Player player ? player.Quests.FirstOrDefault(q => q.Quest.Vnum == vnum) : null;
 
         public static QuestProgressData GetQuestProgress(Character ch, Quest quest) => GetQuestProgress(ch, quest.Vnum);
-        
+
         public static void LoadQuests(AreaData area, XElement QuestsElement)
         {
             foreach (var questElement in QuestsElement.Elements("Quest"))
@@ -161,7 +161,7 @@ namespace CrimsonStainedLands
                         ch.send("You have started the quest '{0}'.\n\r", questProgress.Quest.Display);
                     }
                     player.Quests.Add(questProgress);
-                    
+
                     return true;
                 }
                 else
@@ -287,29 +287,30 @@ namespace CrimsonStainedLands
             }
         }
 
+        public static void DropQuest(Character ch, int vnum)
+        {
+            if (Quest.Quests.TryGetValue(vnum, out var quest))
+                DropQuest(ch, quest);
+        }
+
         public static void DropQuest(Character ch, Quest quest)
         {
             if (ch is Player && quest != null)
             {
                 var player = (Player)ch;
                 QuestProgressData questProgress = null;
-                if ((questProgress = player.Quests.FirstOrDefault(q => q.Quest == quest)) == null)
-                {
-                    questProgress = new QuestProgressData(quest, "");
-                    questProgress.LevelStarted = player.Level;
-                    player.Quests.Add(questProgress);
-                }
-
-                if (questProgress != null)
+                if ((questProgress = player.Quests.FirstOrDefault(q => q.Quest == quest)) != null)
                 {
                     questProgress.Status = Quest.QuestStatus.None;
                     questProgress.ExtraState = new XElement("ExtraState");
+
                     if (questProgress.Quest.ShowInQuests)
                     {
 
                         ch.send("Quest '{0}' has been dropped.\n\r", questProgress.Quest.Display);
                     }
 
+                    player.Quests.Remove(questProgress);
                 }
             }
         }
@@ -317,14 +318,17 @@ namespace CrimsonStainedLands
         public static bool IsQuestComplete(Character ch, Quest quest) => (ch is Player) && quest != null ?
             ((Player)ch).Quests.Any(q => q.Quest == quest && q.Status == Quest.QuestStatus.Complete) : false;
 
+        public static bool IsQuestComplete(Character ch, int questvnum) => ch is Player player &&
+            player.Quests.Any(q => q.Quest.Vnum == questvnum && q.Status == Quest.QuestStatus.Complete);
+
         public static bool IsQuestFailed(Character ch, Quest quest) => (ch is Player) && quest != null ?
             ((Player)ch).Quests.Any(q => q.Quest == quest && q.Status == Quest.QuestStatus.Failed) : false;
 
         public static bool IsQuestInProgress(Character ch, Quest quest) => (ch is Player) && quest != null ?
             ((Player)ch).Quests.Any(q => q.Quest == quest && q.Status == Quest.QuestStatus.InProgress) : false;
 
-        public static bool IsQuestAvailable(Character ch, Quest quest) => (ch is Player) && quest != null ?
-            (!((Player)ch).Quests.Any(q => q.Quest == quest && q.Status != Quest.QuestStatus.None)) && ch.Level >= quest.StartLevel && ch.Level <= quest.EndLevel : false;
+        public static bool IsQuestAvailable(Character ch, Quest quest) => (ch is Player player) && quest != null ?
+            (!player.Quests.Any(q => q.Quest == quest && q.Status != Quest.QuestStatus.None)) && quest.QuestPrerequisites.All(q => IsQuestComplete(ch, q)) && ch.Level >= quest.StartLevel && ch.Level <= quest.EndLevel : false;
 
         public static bool HasQuestPrerequisites(Character ch, Quest quest) => (ch is Player) ?
             quest.QuestPrerequisites.All(vnum => IsQuestComplete(ch, Quest.GetQuest(vnum))) : false;
