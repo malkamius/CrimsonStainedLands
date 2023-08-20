@@ -474,6 +474,20 @@ namespace CrimsonStainedLands
 
         private bool NewCharacterInputHandler(string line)
         {
+
+            if (!(new ConnectionStates[] { ConnectionStates.GetName, ConnectionStates.GetPassword, ConnectionStates.ConfirmPassword, ConnectionStates.Playing }.Contains(state)))
+            {
+                line.OneArgumentOut(out var command);
+                if (!command.ISEMPTY() && "help".StringPrefix(command))
+                {
+                    line = line.OneArgument(ref command);
+
+                    ReadHelp(this, line);
+                    SetState(state);
+                    return true;
+                }
+            }
+
             if (state == ConnectionStates.GetName)
             {
                 var numbers = new int[] { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', '=', '_' };
@@ -514,25 +528,32 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                send("What is your password? ");
                 if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
                 {
                     if (LoadCharacterFile(Settings.PlayersPath + "\\" + Name + ".xml"))
                         state = ConnectionStates.GetPassword;
                     else
+                    {
+                        send("New player.\n\r");
                         state = ConnectionStates.GetNewPassword;
+                    }
                 }
                 else if (System.IO.File.Exists(Settings.DataPath + "\\" + Name + ".chr"))
                 {
                     if (LoadCharacterFile(Settings.DataPath + "\\" + Name + ".chr"))
                         state = ConnectionStates.GetPassword;
                     else
+                    {
+                        send("New player.\n\r");
                         state = ConnectionStates.GetNewPassword;
+                    }
                 }
                 else
                 {
+                    send("New player.\n\r");
                     state = ConnectionStates.GetNewPassword;
                 }
+                send("What is your password? ");
             }
             else if (state == ConnectionStates.GetNewPassword)
             {
@@ -630,6 +651,7 @@ namespace CrimsonStainedLands
                                     lock (connection)
                                     {
                                         game.Info.Connections.Remove(this);
+                                        connection.input.Clear();
                                         connection.inanimate = null;
                                         connection.readop = this.readop;
                                         connection.writeop = this.writeop;
@@ -920,6 +942,7 @@ namespace CrimsonStainedLands
             else if (state == ConnectionStates.GetRace)
             {
                 this.state = ConnectionStates.GetRace;
+                send("Type `help races` for information on the races of this world.\n\r");
                 send("What is your race? (" + string.Join(" ", (from race in PcRace.PcRaces select race.name)) + ") ");
             }
             else if (state == ConnectionStates.GetEthos)
@@ -965,6 +988,7 @@ namespace CrimsonStainedLands
                 foreach (var guild in GuildData.Guilds)
                     if (guild.races.Contains(PcRace))
                         guilds.Add(guild);
+                send("Type `help guilds` for information on the guilds/classes of this world.\n\r");
                 send("What is your guild? ({0}) ", string.Join(",", from guild in guilds select guild.name));
             }
             else if (state == ConnectionStates.GetDefaultWeapon)

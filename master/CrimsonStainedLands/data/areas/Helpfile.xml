@@ -82,8 +82,7 @@ duelchallenge - Issue a duel challenge to another player.
 duelaccept - Accept a duel challenge from another player.
 duelcancel - Decline a duel challenge from another player.
 AFK flag added. No longer get hungry or thirsty
-after being inactive for five minutes.
-</Help>
+after being inactive for five minutes.</Help>
     <Help VNum="1100195" Level="0" Keyword="skills spells songs supplications" LastEditedBy="Giaken" LastEditedOn="2023-08-07T14:44:03.1718596-05:00">You can type 'practice' to see a list of all skills, spells and songs you
 can currently use. Type 'practice [skill/spell/song]' at a guildmaster to
 learn an ability better.
@@ -103,5 +102,123 @@ Each race has maximum values a stat can be raised to.
 You can type 'gain convert' to convert 10 practices into a train.
 You can type 'gain revert' to revert a train into 10 practices.
 You start with 3 trains and gain 1 train every 5 levels.</Help>
+    <Help VNum="1100215" Level="0" Keyword="races human elf dwarf orc minotaur" LastEditedBy="Giaken" LastEditedOn="2023-08-19T19:22:39.3798516-05:00">Elf      - starting stats  - 16 str 19 wis 23 int 19 dex 16 con 18 chr
+         - max stats       - 17 str 20 wis 25 int 22 dex 16 con 18 chr
+          (classes) warrior, paladin, healer, mage, shapeshifter, 
+           thief, bard, ranger, assassin)
+
+human    - starting stats  - 18 str 18 wis 18 int 18 dex 18 con 18 chr
+         - max stats       - 20 str 20 wis 20 int 20 dex 20 con 20 chr
+          (classes) warrior, paladin, healer, mage, shapeshifter, 
+           thief, bard, ranger, assassin)
+
+dwarf    - starting stats  - 20 str 18 wis 18 int 16 dex 24 con 15 chr
+         - max stats       - 22 str 18 wis 18 int 17 dex 25 con 16 chr
+          (classes) warrior, paladin, healer, bard, ranger, assassin)
+
+orc      - starting stats  -  21 str 15 wis 16 int 19 dex 21 con  8 chr
+         - max stats       - 23 str 17 wis 17 int 20 dex 23 con 12 chr
+          (classes) warrior, healer, thief, bard, ranger, assassin)
+
+minotaur - starting stats  - 21 str 16 wis 17 int 16 dex 20 con 12 chr
+         - max stats       - 23 str 18 wis 18 int 18 dex 22 con 12 chr
+          (classes) none</Help>
+    <Help VNum="1100225" Level="0" Keyword="classes guilds warrior paladin thief bard mage shapeshifter ranger healer assassin" LastEditedBy="Giaken" LastEditedOn="2023-08-19T19:42:36.0396669-05:00">warrior - focus on weapon specialization, decent at taking and 
+dealing damage. Gets a weapon specialization at level 20 and 40.
+Must be proficient in use of a weapon to specialize in it.
+Can shield block, dodge, parry and feint blows.
+
+assassin - focus on martial arts, gets improved kicks upon mastering
+earlier ones. Can dodge and parry. Can bind wounds when injured.
+
+mage - focus on perfecting elements. Unlock new elemental spells as
+you master earlier spells.
+
+shapeshifter - focus on changing into the forms of animals. First
+form at level 5 - 8, must have a shapefocus major chosen.
+
+thief - great at subterfuge, does better as a sidekick someone else
+standing in the fore. Can knock enemies out and bind their hands and
+legs. Can hide and sneak past some enemies and pick locks to open doors
+and containers.
+
+healer - great at cleansing maladies and restoring the health of their
+friends. Can grant flight, sanctuary, blessings and a battle frenzy.
+
+paladin - known for taking lead and standing in the fore of combat. They
+can grant themselves sanctuary. Choose whether to do more damage using
+a two handed weapon or block damage with a one handed weapon and a shield.
+
+bard - boost the morale and health of your party, dash the spirits of your
+foes and cause them harm with offensive lyrics.
+
+ranger - excel in the forests, caves, mountains and deserts of the world.
+Find and gather herbs for yourself or your party members to heal wounds.
+Take cover hiding yourself and ambush your prey in the wild. Explore the
+wilds, getting less tired as you move through them. Can fashion their own
+weapons in the wild and eventually be able to imbue them, causing them to
+heal during combat.</Help>
+    <Help VNum="1100235" Level="0" Keyword="alignment good neutral evil" LastEditedBy="Giaken" LastEditedOn="2023-08-19T20:02:51.1818461-05:00">Good: Characters who are aligned with "good" believe in altruism, respect
+for life, and a desire to help others. They tend to make choices that
+benefit not just themselves but also those around them, often at their own
+expense. Good characters are compassionate and will often go out of their
+way to prevent harm to innocents. They uphold values of kindness, charity,
+and self-sacrifice. 
+
+Neutral: Neutral characters tend to be more pragmatic
+and do not feel a strong pull towards either extreme of good or evil. Their
+actions may be driven by personal gain, a sense of balance, or the specific
+situation at hand rather than an inherent moral code. Neutral characters
+might believe in a natural balance and might act to restore that balance if
+they feel it's been disrupted. They may also prioritize their own
+well-being or the well-being of their close companions over broader ethical
+or moral considerations. 
+
+Evil: Characters who are "evil" prioritize their
+own needs and desires over those of others and may be willing to harm or
+manipulate others to achieve their goals. They might be driven by greed,
+power, anger, hatred, or a desire for revenge. Evil characters might not
+necessarily be cruel or violent, but they tend to lack empathy for others,
+especially if there's a conflict between their interests and the well-being
+of others. It's worth noting that these alignments serve as broad
+categories, and within them, there can be a lot of variation. For example,
+one "good" character might be driven by a strong sense of justice, while
+another might prioritize mercy. Similarly, an "evil" character could be a
+ruthless tyrant or a cunning manipulator. The alignment system helps
+players think about their characters' motivations and can guide
+decision-making within the game, but it's always up to individual
+interpretation.
+
+Good and evil characters receive bonus experience for
+slaying a character of the opposite alignment.
+</Help>
+    <Help VNum="1100245" Level="0" Keyword="ethos orderly neutral chaotic" LastEditedBy="Giaken" LastEditedOn="2023-08-19T20:09:18.9752668-05:00">Lawful (often referred to as Orderly): Characters with a lawful alignment
+believe in a structured society, rules, order, and tradition. They value
+discipline, responsibility, and adherence to a set code of behavior,
+whether personal or dictated by a governing body. Lawful characters might
+respect authority, keep their promises, and try to always act within the
+confines of the law. Their predictability is both a strength and a
+weakness. It's important to note that "lawful" doesn't necessarily mean
+"good"; a character can be lawful and evil, adhering strictly to a code or
+set of laws that are oppressive or harmful. 
+
+Neutral (with respect to ethos): Neutral characters, in terms of ethos, fall 
+between the extremes of lawfulness and chaos. They might respect order and 
+authority when it suits them or their goals but don't inherently adhere to 
+them. Similarly, they don't actively seek to disrupt order or sow chaos. 
+Their actions are often driven by what seems appropriate at the moment, 
+making them flexible and pragmatic. They tend to prioritize personal 
+freedom and will generally go with whatever system or approach offers 
+them the best balance of security and freedom. 
+
+Chaotic: Chaotic characters value individual freedom over
+structure and order. They are skeptical of authority and often resist
+rules, regulations, and traditions, seeing them as constraints. They
+prioritize personal freedom and often act based on their whims or personal
+desires rather than any external code of behavior. Like with the lawful
+alignment, "chaotic" does not inherently mean "evil"; a chaotic good
+character, for example, might defy oppressive laws to do what they believe
+is right.
+</Help>
   </Helps>
 </Area>

@@ -2933,7 +2933,7 @@ namespace CrimsonStainedLands
                             ch.EditingHelp.text = "";
                     }
                     else
-                        ch.EditingItemTemplate.Description = "";
+                        ch.EditingHelp.text = "";
 
                     ch.EditingHelp.area.saved = false;
                     ch.send("OK.\n\r");
