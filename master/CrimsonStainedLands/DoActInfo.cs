@@ -15,8 +15,12 @@ namespace CrimsonStainedLands
         public string DisplayFlags(Character viewer)
         {
             var flags = "";
-            if (this is Player player && player.IsAFK)
+            Player player = null;
+
+            if (this is Player && (player = (Player) this).IsAFK)
                 flags += "\\r(AFK)\\x";
+            if (player != null && player.inanimate != null)
+                flags += "(inanimate)";
             if (this.Flags.ISSET(ActFlags.WizInvis))
                 flags += "\\w(WizInvis)\\x";
             if (this.AffectedBy.ISSET(AffectFlags.Ghost))

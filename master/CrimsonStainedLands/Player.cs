@@ -28,7 +28,25 @@ namespace CrimsonStainedLands
 
         public string Address { get; private set; }
 
-        public DateTime? inanimate = null;
+        private DateTime? inanimate_time = null;
+        public DateTime? inanimate
+        {
+            get
+            {
+                return inanimate_time;
+            }
+            set
+            {
+                if (inanimate_time != value)
+                {
+                    inanimate_time = value;
+                    if (value != null)
+                        this.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
+                    else
+                        this.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
+                }
+            }
+        }
         public StringBuilder input = new StringBuilder();
         public StringBuilder output = new StringBuilder();
         private string password;
@@ -143,6 +161,7 @@ namespace CrimsonStainedLands
                                 if (readop == null || readop.IsCompleted)
                                     readop = sslsocket.BeginRead(receivebuffer, 0, receivebuffer.Length, EndReceiveSsl, this.sslsocket);
                                 inanimate = null;
+
                             }
                             catch { }
 
@@ -194,7 +213,7 @@ namespace CrimsonStainedLands
                 if (data.Length > 4200)
                 {
                     sendRaw("Too much data to process at once.\n\r");
-                    Game.CloseSocket(this, false, true);
+                    Game.CloseSocket(this, state < ConnectionStates.Playing, true);
                     inanimate = DateTime.Now;
                 }
 
@@ -216,7 +235,7 @@ namespace CrimsonStainedLands
                         {
 
                             sendRaw("Too much data to process at once.\n\r");
-                            Game.CloseSocket(this, false, true);
+                            Game.CloseSocket(this, state < ConnectionStates.Playing, true);
                             inanimate = DateTime.Now;
                         }
                     }
@@ -246,16 +265,16 @@ namespace CrimsonStainedLands
                                             { "ANSI", new Player.TelnetOptionFlags[] { Player.TelnetOptionFlags.Ansi } },
                                         };
 
-                                        var Options = (from option in TelnetOptionFlags 
-                                                       where ClientString.StringPrefix(option.Key) || 
-                                                            ClientString.ToUpper().Replace(" ", "").Contains(option.Key) 
+                                        var Options = (from option in TelnetOptionFlags
+                                                       where ClientString.StringPrefix(option.Key) ||
+                                                            ClientString.ToUpper().Replace(" ", "").Contains(option.Key)
                                                        select option.Value).FirstOrDefault();
 
                                         if (Options != null)
                                             foreach (var option in Options)
                                                 TelnetOptions.SETBIT(option);
 
-                                        
+
                                         if (!ClientTypes.Contains(ClientString))
                                         {
                                             Game.log(ClientString + " client detected.");
@@ -268,12 +287,12 @@ namespace CrimsonStainedLands
                                     else
                                         sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
-                                else if(command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
+                                else if (command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
                                 {
                                     Game.log("SENDING MSSP DATA");
                                     var variables = new Dictionary<string, string[]>();
                                     variables["NAME"] = new string[] { "CRIMSON STAINED LANDS" };
-                                    variables["PLAYERS"] = new string[] { game.Info.Connections.ToArrayLocked().Count(con => con.state == ConnectionStates.Playing ).ToString() };
+                                    variables["PLAYERS"] = new string[] { game.Info.Connections.ToArrayLocked().Count(con => con.state == ConnectionStates.Playing).ToString() };
                                     variables["UPTIME"] = new string[] { (DateTime.Now - Game.Instance.GameStarted).TotalSeconds.ToString() };
                                     variables["HOSTNAME"] = new string[] { "kbs-cloud.com" };
                                     variables["PORT"] = new string[] { Settings.Port.ToString() };
@@ -284,20 +303,20 @@ namespace CrimsonStainedLands
                                     sendRaw(TelnetProtocol.ServerGetNegotiateMUDServerStatusProtocol(variables), true);
                                     sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
-                                else if(command.Type == TelnetProtocol.Command.Types.DontMUDServerStatusProtocol)
+                                else if (command.Type == TelnetProtocol.Command.Types.DontMUDServerStatusProtocol)
                                 {
                                     Game.log("WONT MSSP");
 
                                     sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
-                                else if(command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
+                                else if (command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
                                 {
                                     TelnetOptions.SETBIT(TelnetOptionFlags.MUDeXtensionProtocol);
                                     Game.log("MXP Enabled.");
                                 }
                             });
-                        if(newbyteindex > byteindex)
-                        byteindex = newbyteindex;
+                        if (newbyteindex > byteindex)
+                            byteindex = newbyteindex;
                         this.ReceiveBufferBacklog = carryover;
                     }
                     // else skip the character
@@ -623,22 +642,19 @@ namespace CrimsonStainedLands
                         try
                         {
                             connection.sendRaw("This character is being logged in elsewhere.\n\r");
-                            if (connection.socket != null)
-                                connection.socket.Close();
-                            connection.socket = null;
-                            connection.sslsocket = null;
+                            Game.CloseSocket(connection, false, true);
                         }
                         catch { }
 
                         try
                         {
-                            if (connection.Room != null && connection.socket != null)
+                            if (connection.Room != null)
                             {
-                                connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-
+                                //connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
+                                connection.inanimate = DateTime.Now;
                                 try
                                 {
-                                    Game.CloseSocket(this, true, false);
+                                    Game.CloseSocket(connection, true, false);
                                 }
                                 catch { }
 
@@ -653,6 +669,7 @@ namespace CrimsonStainedLands
                                         game.Info.Connections.Remove(this);
                                         connection.input.Clear();
                                         connection.inanimate = null;
+                                        connection.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
                                         connection.readop = this.readop;
                                         connection.writeop = this.writeop;
                                         connection.socket = this.socket;
@@ -880,7 +897,7 @@ namespace CrimsonStainedLands
             Character.ReadHelp(this, "greeting", true);
             send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
             Character.ReadHelp(this, "MOTD", true);
-            if(!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
+            if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
             {
                 send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
             }
@@ -905,15 +922,18 @@ namespace CrimsonStainedLands
                     Act("$n appears in the room.", type: ActType.ToRoom);
             }
 
-
-
+            if (inanimate != null)
+            {
+                inanimate = null;
+                Act("$n regains their animation.", null, null, null, ActType.ToRoom);
+            }
 
             //DoLook(this, "auto");
             if (!reconnect)
                 LoadPet();
             if (reconnect)
             {
-                Act("$n regains their animation.", type: ActType.ToRoom);
+                //Act("$n regains their animation.", type: ActType.ToRoom);
                 lock (game.Info.Connections)
                 {
                     game.Info.Connections.Remove(this);
@@ -1079,7 +1099,7 @@ namespace CrimsonStainedLands
 
                 Act("$n appears in the room suddenly.\n\r", type: ActType.ToRoom);
                 send("\n\rWelcome to the Crimson Stained Lands\n\r\n\r");
-                if(!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
+                if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
                 {
                     send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
                 }

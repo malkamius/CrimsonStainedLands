@@ -619,20 +619,13 @@ namespace CrimsonStainedLands
 
                     try
                     {
-                        if (connection.socket != null)
-                        {
-                            try { connection.socket.Dispose(); } catch { }
-                            connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-                        }
-                        connection.socket = null;
-                        connection.sslsocket = null;
-                        connection.inanimate = DateTime.Now;
-
+                        Game.CloseSocket(connection, false, true);
                     }
                     catch (Exception disposeEx)
                     {
                         Info.LogLine(disposeEx.ToString());
                     }
+                    connection.inanimate = DateTime.Now;
 
                 }
             }
@@ -667,11 +660,10 @@ namespace CrimsonStainedLands
                     {
                         if (connection.socket != null)
                         {
-                            Game.CloseSocket(connection, false, false);
-                            connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
+                            Game.CloseSocket(connection, false, true);
+                            
                         }
-                        connection.socket = null;
-                        connection.sslsocket = null;
+                        
                         connection.inanimate = DateTime.Now;
 
                     }
@@ -726,24 +718,13 @@ namespace CrimsonStainedLands
                     Info.LogLine(ex.ToString());
                     try
                     {
-                        if (connection.socket != null)
-                        {
-                            try
-                            {
-                                connection.socket.Dispose();
-                            }
-                            catch { }
-                            connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-                        }
-                        connection.socket = null;
-                        connection.sslsocket = null;
-                        connection.inanimate = DateTime.Now;
-
+                        Game.CloseSocket(connection, false, true);
                     }
                     catch (Exception disposeEx)
                     {
                         Info.LogLine(disposeEx.ToString());
                     }
+                    connection.inanimate = DateTime.Now;
                 }
             }
         }
@@ -1969,7 +1950,7 @@ namespace CrimsonStainedLands
                 ch.send("{0,20} {1,20} {2, 10}\n\r", "Name", "Address", "State");
                 foreach (var player in Character.Characters.OfType<Player>())
                 {
-                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, player.Address, player.state.ToString());
+                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, player.socket != null? player.Address : "disconnected", player.state.ToString());
                 }
 
                 ch.send(Character.Characters.OfType<Player>().Count() + " players online.\n\r");
@@ -2097,6 +2078,7 @@ namespace CrimsonStainedLands
             {
                 lock (Game.Instance.Info.Connections)
                     Game.Instance.Info.Connections.Remove(player);
+                player.Dispose();
             }
         }
 
