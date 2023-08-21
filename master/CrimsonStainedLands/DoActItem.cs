@@ -15,7 +15,6 @@ namespace CrimsonStainedLands
 {
     public partial class Character
     {
-        
         public static void DoQuaf(Character character, string arguments)
         {
             string itemName = "";

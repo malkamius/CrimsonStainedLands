@@ -394,7 +394,7 @@ namespace CrimsonStainedLands
         public ShapeshiftForm Form { get; set; }
 
         public string LastCommand = "";
-
+        public DateTime MapLastDisplayed { get; internal set; }
         public string GetName
         {
             get

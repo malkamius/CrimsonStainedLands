@@ -28,6 +28,7 @@ using System.Threading.Tasks;
 using CrimsonStainedLands;
 using CrimsonStainedLands.Extensions;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace CrimsonStainedLands
 {
@@ -40,9 +41,55 @@ namespace CrimsonStainedLands
             else
                 ch.send("You aren't in a room.\n\r");
         }
+
+        private class MapRoom
+        {
+            public Dictionary<Point, string> map;
+            public HashSet<RoomData> rooms;
+            public Dictionary<char, string> POIs;
+            public RoomData room;
+            public int x;
+            public int y;
+            public int width;
+            public int height;
+            public Queue<MapRoom> queue;
+
+            public MapRoom(Dictionary<Point, string> map, HashSet<RoomData> rooms, Dictionary<char, string> POI, RoomData room, int x, int y, int width, int height, Queue<MapRoom> queue)
+            {
+                this.map = map;
+                this.rooms = rooms;
+                this.POIs = POI;
+                this.room = room;
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+                this.queue = queue;
+            }
+
+            public MapRoom(MapRoom copyfrom, RoomData room, int x, int y)
+            {
+                this.map = copyfrom.map;
+                this.rooms = copyfrom.rooms;
+                this.POIs = copyfrom.POIs;
+                this.room = room;
+                this.x = x;
+                this.y = y;
+                this.width = copyfrom.width;
+                this.height = copyfrom.height;
+                this.queue = copyfrom.queue;
+            }
+        }
+        
         static void DisplayMap(Character ch, RoomData room)
         {
             StringBuilder buffer = new StringBuilder();
+            if(ch.MapLastDisplayed != default(DateTime) && DateTime.Now - ch.MapLastDisplayed < TimeSpan.FromSeconds(5))
+            {
+                ch.send("Please wait a few seconds before displaying the map again.\n\r");
+                return;
+            }    
+            ch.MapLastDisplayed = DateTime.Now;
 
             var Width = 26;
             var Height = 12;
@@ -51,8 +98,12 @@ namespace CrimsonStainedLands
             var POIs = new Dictionary<char, string>();
 
             int X = Width / 2, Y = Height / 2;
+            var ToMap = new Queue<MapRoom>();
+            
+            ToMap.Enqueue(new MapRoom(map, new HashSet<RoomData>(), POIs, room, X, Y, Width, Height, ToMap));
 
-            MapRoom(map, new HashSet<RoomData>(), POIs, room, X, Y, Width, Height);
+            while (ToMap.Count > 0)
+                MapOneRoom(ToMap.Dequeue());
 
             for (var y = 0; y < Height * 3; y++)
             {
@@ -73,46 +124,49 @@ namespace CrimsonStainedLands
             ch.send(buffer.ToString());
         }
 
-        static void MapRoom(Dictionary<Point, string> map, HashSet<RoomData> rooms, Dictionary<char, string> POI, RoomData room, int x, int y, int width, int height)
+        static void MapOneRoom(MapRoom arguments)
         {
             var reversedirectionoffsets = new int[,] { { 0, -1 }, { 1, 0 }, { 0, 1 }, { -1, 0 } };
-            map[new Point(x * 3, y * 3)] = " ";
-            rooms.Add(room);
+            arguments.map[new Point(arguments.x * 3, arguments.y * 3)] = " ";
+            arguments.rooms.Add(arguments.room);
             for (int exit = 0; exit < 4; exit++)
             {
-                if (room.exits[exit] != null && room.exits[exit].destination != null)
+                if (arguments.room.exits[exit] != null && arguments.room.exits[exit].destination != null)
                 {
-                    var subx = x + reversedirectionoffsets[exit, 0];
-                    var suby = y + reversedirectionoffsets[exit, 1];
-                    if (subx >= 0 && subx < width && suby >= 0 && suby < height && !rooms.Contains(room.exits[exit].destination) && (!map.ContainsKey(new Point(subx * 3, suby * 3)) || map[new Point(subx * 3, suby * 3)] == " "))
-                        MapRoom(map, rooms, POI, room.exits[exit].destination, subx, suby, width, height);
+                    var subx = arguments.x + reversedirectionoffsets[exit, 0];
+                    var suby = arguments.y + reversedirectionoffsets[exit, 1];
+                    if (subx >= 0 && subx < arguments.width && suby >= 0 && suby < arguments.height && !arguments.rooms.Contains(arguments.room.exits[exit].destination) && (!arguments.map.ContainsKey(new Point(subx * 3, suby * 3)) || arguments.map[new Point(subx * 3, suby * 3)] == " "))
+                        arguments.queue.Enqueue(new MapRoom(arguments, arguments.room.exits[exit].destination, subx, suby));
+                        //MapRoom(map, rooms, POI, room.exits[exit].destination, subx, suby, width, height);
 
                 }
 
-                for (var yoffset = 0; yoffset < 3; yoffset++)
-                {
-                    for (var xoffset = 0; xoffset < 3; xoffset++)
-                    {
-                        if (!map.TryGetValue(new Point(x * 3 + xoffset, y * 3 + yoffset), out var existing) || existing == " " )
-                            AddMapChar(map, room, x, y, xoffset, yoffset, width, height);
+                
+            }
 
-                        
-                    }
+            for (var yoffset = 0; yoffset < 3; yoffset++)
+            {
+                for (var xoffset = 0; xoffset < 3; xoffset++)
+                {
+                    if (!arguments.map.TryGetValue(new Point(arguments.x * 3 + xoffset, arguments.y * 3 + yoffset), out var existing) || existing == " ")
+                        AddMapChar(arguments.map, arguments.room, arguments.x, arguments.y, xoffset, yoffset, arguments.width, arguments.height);
+
+
                 }
             }
 
-            foreach (var ch in room.Characters)
+            foreach (var ch in arguments.room.Characters)
             {
                 if (ch.Flags.ISSET(ActFlags.Practice, ActFlags.Train, ActFlags.Shopkeeper, ActFlags.Healer))
                 {
                     char POIChar;
-                    if (POI.Count > 8 && POI.Count < 'Z' - 'A' + 9)
+                    if (arguments.POIs.Count > 8 && arguments.POIs.Count < 'Z' - 'A' + 9)
                     {
-                        POIChar = (char)('A' + (POI.Count - 9));
+                        POIChar = (char)('A' + (arguments.POIs.Count - 9));
                     }
-                    else if (POI.Count < 9)
+                    else if (arguments.POIs.Count < 9)
                     {
-                        POIChar = (char)('1' + (POI.Count));
+                        POIChar = (char)('1' + (arguments.POIs.Count));
 
 
                     }
@@ -121,8 +175,8 @@ namespace CrimsonStainedLands
 
                     if (POIChar != '\0')
                     {
-                        map[new Point(x * 3 + 1, y * 3 + 1)] = POIChar.ToString();
-                        POI[POIChar] = ch.GetShortDescription(null);
+                        arguments.map[new Point(arguments.x * 3 + 1, arguments.y * 3 + 1)] = POIChar.ToString();
+                        arguments.POIs[POIChar] = ch.GetShortDescription(null);
                     }
                 }
             }
