@@ -45,13 +45,14 @@ namespace CrimsonStainedLands
             StringBuilder buffer = new StringBuilder();
 
             var Width = 26;
-            var Height = 6;
+            var Height = 12;
 
             var map = new Dictionary<Point, string>();
+            var POIs = new Dictionary<char, string>();
 
             int X = Width / 2, Y = Height / 2;
 
-            MapRoom(map, new HashSet<RoomData>(), room, X, Y, Width, Height);
+            MapRoom(map, new HashSet<RoomData>(), POIs, room, X, Y, Width, Height);
 
             for (var y = 0; y < Height * 3; y++)
             {
@@ -65,13 +66,17 @@ namespace CrimsonStainedLands
                 buffer.AppendLine();
             }
             buffer.AppendLine();
+            foreach (var POI in POIs)
+            {
+                buffer.AppendLine(string.Format("{0,5} :: {1}", POI.Key, POI.Value));
+            }
             ch.send(buffer.ToString());
         }
 
-        static void MapRoom(Dictionary<Point, string> map, HashSet<RoomData> rooms, RoomData room, int x, int y, int width, int height)
+        static void MapRoom(Dictionary<Point, string> map, HashSet<RoomData> rooms, Dictionary<char, string> POI, RoomData room, int x, int y, int width, int height)
         {
             var reversedirectionoffsets = new int[,] { { 0, -1 }, { 1, 0 }, { 0, 1 }, { -1, 0 } };
-            map[new Point(x, y)] = " ";
+            map[new Point(x * 3, y * 3)] = " ";
             rooms.Add(room);
             for (int exit = 0; exit < 4; exit++)
             {
@@ -80,7 +85,7 @@ namespace CrimsonStainedLands
                     var subx = x + reversedirectionoffsets[exit, 0];
                     var suby = y + reversedirectionoffsets[exit, 1];
                     if (subx >= 0 && subx < width && suby >= 0 && suby < height && !rooms.Contains(room.exits[exit].destination) && (!map.ContainsKey(new Point(subx * 3, suby * 3)) || map[new Point(subx * 3, suby * 3)] == " "))
-                        MapRoom(map, rooms, room.exits[exit].destination, subx, suby, width, height);
+                        MapRoom(map, rooms, POI, room.exits[exit].destination, subx, suby, width, height);
 
                 }
 
@@ -88,7 +93,36 @@ namespace CrimsonStainedLands
                 {
                     for (var xoffset = 0; xoffset < 3; xoffset++)
                     {
-                        AddMapChar(map, room, x, y, xoffset, yoffset, width, height);
+                        if (!map.TryGetValue(new Point(x * 3 + xoffset, y * 3 + yoffset), out var existing) || existing == " " )
+                            AddMapChar(map, room, x, y, xoffset, yoffset, width, height);
+
+                        
+                    }
+                }
+            }
+
+            foreach (var ch in room.Characters)
+            {
+                if (ch.Flags.ISSET(ActFlags.Practice, ActFlags.Train, ActFlags.Shopkeeper, ActFlags.Healer))
+                {
+                    char POIChar;
+                    if (POI.Count > 8 && POI.Count < 'Z' - 'A' + 9)
+                    {
+                        POIChar = (char)('A' + (POI.Count - 9));
+                    }
+                    else if (POI.Count < 9)
+                    {
+                        POIChar = (char)('1' + (POI.Count));
+
+
+                    }
+                    else
+                        POIChar = '\0';
+
+                    if (POIChar != '\0')
+                    {
+                        map[new Point(x * 3 + 1, y * 3 + 1)] = POIChar.ToString();
+                        POI[POIChar] = ch.GetShortDescription(null);
                     }
                 }
             }
@@ -114,11 +148,11 @@ namespace CrimsonStainedLands
                 (!UpExit.flags.ISSET(ExitFlags.HiddenWhileClosed) || !UpExit.flags.ISSET(ExitFlags.Closed))))
                 {
                     if (!UpExit.flags.ISSET(ExitFlags.Closed))
-                        AsciiString = "\\B^";
+                        AsciiString = "\\B^\\x";
                     else if (UpExit.flags.ISSET(ExitFlags.Locked))
-                        AsciiString = "\\Y^";
+                        AsciiString = "\\Y^\\x";
                     else
-                        AsciiString = "\\D^";
+                        AsciiString = "\\D^\\x";
                 }
                 else if ((pExit = room.exits[(int)Direction.West]) == null
                     || (xRoom = pExit.destination) == null
@@ -286,11 +320,11 @@ namespace CrimsonStainedLands
 
                     //Display doors.  Grey are locked, off white are just closed.
                     if (!pExit.flags.ISSET(ExitFlags.Closed))
-                        AsciiString = "|";
+                        AsciiString = "|\\x";
                     else if (pExit.flags.ISSET(ExitFlags.Locked))
-                        AsciiString = "\\Y-";
+                        AsciiString = "\\Y-\\x";
                     else
-                        AsciiString = "\\D-";
+                        AsciiString = "\\D-\\x";
                 }
                 else
                     AsciiString = roomWall;
@@ -314,9 +348,9 @@ namespace CrimsonStainedLands
                     if (!pExit.flags.ISSET(ExitFlags.Closed))
                         AsciiString = "|";
                     else if (pExit.flags.ISSET(ExitFlags.Locked))
-                        AsciiString = "\\Y-";
+                        AsciiString = "\\Y-\\x";
                     else
-                        AsciiString = "\\D-";
+                        AsciiString = "\\D-\\x";
                 }
                 else
                     AsciiString = roomWall;
@@ -338,11 +372,11 @@ namespace CrimsonStainedLands
 
                     //Display doors.  Grey are locked, off white are just closed.
                     if (!pExit.flags.ISSET(ExitFlags.Closed))
-                        AsciiString = "-";
+                        AsciiString = "-\\x";
                     else if (pExit.flags.ISSET(ExitFlags.Locked))
-                        AsciiString = "\\Y|";
+                        AsciiString = "\\Y|\\x";
                     else
-                        AsciiString = "\\D|";
+                        AsciiString = "\\D|\\x";
                 }
                 else
                     AsciiString = roomWall;
@@ -366,9 +400,9 @@ namespace CrimsonStainedLands
                     if (!pExit.flags.ISSET(ExitFlags.Closed))
                         AsciiString = "-";
                     else if (pExit.flags.ISSET(ExitFlags.Locked))
-                        AsciiString = "\\Y|";
+                        AsciiString = "\\Y|\\x";
                     else
-                        AsciiString = "\\D|";
+                        AsciiString = "\\D|\\x";
                 }
                 else
                     AsciiString = roomWall;
@@ -446,7 +480,7 @@ namespace CrimsonStainedLands
                     AsciiString = roomWall;
             }
             else if (xoffset == 1 && yoffset == 1 && x == width / 2 && y == height / 2)
-                AsciiString = "\\y*\\x";
+                AsciiString = "\\Y*\\x";
             else
                 AsciiString = roomFloor;
 
@@ -461,27 +495,27 @@ namespace CrimsonStainedLands
             {
                 switch (room.sector)
                 {
-                    case SectorTypes.Hills: return "\\Gn";
-                    case SectorTypes.Desert: return "\\Y+";
-                    case SectorTypes.City: return "\\W+";
-                    case SectorTypes.Underground: return "\\D+";
-                    case SectorTypes.Mountain: return "\\y^";
+                    case SectorTypes.Hills: return "\\Gn\\x";
+                    case SectorTypes.Desert: return "\\Y+\\x";
+                    case SectorTypes.City: return "\\W+\\x";
+                    case SectorTypes.Underground: return "\\D+\\x";
+                    case SectorTypes.Mountain: return "\\y^\\x";
                     case SectorTypes.Trail:
                     case SectorTypes.Road:
-                    case SectorTypes.Inside: return "\\W+";
-                    case SectorTypes.Field: return "\\g\"";
-                    case SectorTypes.Forest: return "\\G+";
+                    case SectorTypes.Inside: return "\\W+\\x";
+                    case SectorTypes.Field: return "\\g\"\\x";
+                    case SectorTypes.Forest: return "\\G+\\x";
                     case SectorTypes.River:
                     case SectorTypes.Swim:
                         if (Utility.Random(1, 3) < 2)
-                            return "\\C~";
+                            return "\\C~\\x";
                         else
-                            return "\\c~";
+                            return "\\c~\\x";
                     case SectorTypes.NoSwim:
                         if (Utility.Random(1, 3) < 2)
-                            return "\\B~";
+                            return "\\B~\\x";
                         else
-                            return "\\b~";
+                            return "\\b~\\x";
                     default: return " ";
                 }
             }
@@ -495,23 +529,23 @@ namespace CrimsonStainedLands
                     case SectorTypes.City:
                     case SectorTypes.Mountain:
                     case SectorTypes.Underground:
-                    case SectorTypes.Inside: return "\\W#";
+                    case SectorTypes.Inside: return "\\W#\\x";
                     case SectorTypes.Hills:
-                    case SectorTypes.Field: return "\\G\"";
-                    case SectorTypes.Forest: return "\\g@";
+                    case SectorTypes.Field: return "\\G\"\\x";
+                    case SectorTypes.Forest: return "\\g@\\x";
                     case SectorTypes.River:
                     case SectorTypes.Swim:
                         if (Utility.Random(1, 3) < 2)
-                            return "\\C~";
+                            return "\\C~\\x";
                         else
-                            return "\\c~";
+                            return "\\c~\\x";
                     case SectorTypes.Ocean:
                     case SectorTypes.Underwater:
                     case SectorTypes.NoSwim:
                         if (Utility.Random(1, 3) < 2)
-                            return "\\B~";
+                            return "\\B~\\x";
                         else
-                            return "\\b~";
+                            return "\\b~\\x";
                     default: return " ";
                 }
             }
