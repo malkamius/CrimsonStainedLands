@@ -126,6 +126,8 @@ namespace CrimsonStainedLands
 
         static void MapOneRoom(MapRoom arguments)
         {
+            if (arguments.rooms.Contains(arguments.room))
+                return;
             var reversedirectionoffsets = new int[,] { { 0, -1 }, { 1, 0 }, { 0, 1 }, { -1, 0 } };
             arguments.map[new Point(arguments.x * 3, arguments.y * 3)] = " ";
             arguments.rooms.Add(arguments.room);
