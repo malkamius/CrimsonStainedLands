@@ -105,7 +105,7 @@ namespace CrimsonStainedLands
                 var selected = playersListBox.SelectedItem;
                 if (selected != null)
                 {
-                    ((Player)selected).sendRaw("You have been kicked.\n\r");
+                    ((Player)selected).SendRaw("You have been kicked.\n\r");
                     Game.CloseSocket((Player)selected);
                 }
             }

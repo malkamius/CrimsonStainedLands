@@ -461,7 +461,7 @@ namespace CrimsonStainedLands
                     effect = victim.FindAffect(SkillSpell.SkillLookup("strangle"));
                     if (effect != null) victim.AffectFromChar(effect, AffectRemoveReason.Cleansed);
 
-                    Character.DoStand(victim, "");
+                    CharacterDoFunctions.DoStand(victim, "");
 
                     bard.Act("You are awakened by $n's Reveille.\n\r\n\r", victim, type: ActType.ToVictim);
                     bard.Act("$N is awakened by your Reveille.", victim, type: ActType.ToChar);

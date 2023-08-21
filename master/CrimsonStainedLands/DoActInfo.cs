@@ -10,45 +10,9 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace CrimsonStainedLands
 {
-    public partial class Character
+    public class DoActInfo
     {
-        public string DisplayFlags(Character viewer)
-        {
-            var flags = "";
-            Player player = null;
 
-            if (this is Player && (player = (Player) this).IsAFK)
-                flags += "\\r(AFK)\\x";
-            if (player != null && player.inanimate != null)
-                flags += "(inanimate)";
-            if (this.Flags.ISSET(ActFlags.WizInvis))
-                flags += "\\w(WizInvis)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Ghost))
-                flags += "\\W(Ghost)\\x";
-            if (this.IsAffected(AffectFlags.Burrow))
-                flags += "(Burrowed)";
-            if (this.IsAffected(AffectFlags.Camouflage))
-                flags += "\\G(Camouflaged)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Hide))
-                flags = "\\R(Hidden)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Invisible))
-                flags += "(Invis)";
-            if (this.AffectedBy.ISSET(AffectFlags.Sanctuary))
-                flags += "\\W(White Aura)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Haven))
-                flags += "(Haven)";
-            if (viewer.AffectedBy.ISSET(AffectFlags.KnowAlignment) && this.Alignment == Alignment.Evil)
-                flags += "\\r(Red Aura)\\x";
-            if (viewer.AffectedBy.ISSET(AffectFlags.KnowAlignment) && this.Alignment == Alignment.Good)
-                flags += "\\y(Golden Aura)\\x";
-            if (this.IsAffected(AffectFlags.FaerieFire) || this.IsAffected(SkillSpell.SkillLookup("faerie fog")))
-                flags += "\\m(Purple)\\x";
-            if (this.IsAffected(AffectFlags.Smelly))
-                flags += "(Smelly)";
-
-            if (flags.Length > 0) flags += " ";
-            return flags;
-        }
 
         public static void DoAffects(Character ch, string arguments)
         {
@@ -98,52 +62,7 @@ namespace CrimsonStainedLands
             }
         }
 
-        public (int acBash, int acSlash, int acPierce, int acExotic) GetArmorClass()
-        {
-            int acBash = 0;
-            int acSlash = 0;
-            int acPierce = 0;
-            int acExotic = 0;
 
-            if (Form == null)
-            {
-                foreach (var eq in Equipment)
-                {
-                    if (eq.Value != null)
-                    {
-                        acBash += -eq.Value.ArmorBash;
-                        acSlash += -eq.Value.ArmorSlash;
-                        acPierce += -eq.Value.ArmorPierce;
-                        acExotic += -eq.Value.ArmorExotic;
-                    }
-                }
-                acBash += ArmorBash;
-                acSlash += ArmorSlash;
-                acPierce += ArmorPierce;
-                acExotic += ArmorExotic;
-            }
-            else
-            {
-                acBash += Form.ArmorBash;
-                acSlash += Form.ArmorSlash;
-                acPierce += Form.ArmorPierce;
-                acExotic += Form.ArmorExotic;
-            }
-            acBash += ArmorClass;
-            acSlash += ArmorClass;
-            acPierce += ArmorClass;
-            acExotic += ArmorClass;
-
-            var dexAC = PhysicalStats.DexterityApply[GetCurrentStat(PhysicalStatTypes.Dexterity)].Defensive;
-
-            acBash += dexAC;
-            acSlash += dexAC;
-            acPierce += dexAC;
-            acExotic += dexAC;
-
-            return (acBash, acSlash, acPierce, acExotic);
-
-        }
 
         public static void DoScore(Character ch, string arguments)
         {
@@ -358,21 +277,21 @@ namespace CrimsonStainedLands
 
             arguments.OneArgumentOut(out var firstarg);
 
-            if(!firstarg.ISEMPTY() && firstarg.StringCmp("list"))
+            if (!firstarg.ISEMPTY() && firstarg.StringCmp("list"))
             {
                 IEnumerable<HelpData> helps = null;
                 arguments = arguments.OneArgument();
 
                 if (!arguments.ISEMPTY())
-                    helps = from help 
-                            in HelpData.Helps 
-                            where help.vnum.ToString().StringPrefix(arguments) || help.keyword.IsName(arguments) 
-                            orderby help.keyword 
+                    helps = from help
+                            in HelpData.Helps
+                            where help.vnum.ToString().StringPrefix(arguments) || help.keyword.IsName(arguments)
+                            orderby help.keyword
                             select help;
                 else
-                    helps = from help 
-                            in HelpData.Helps 
-                            orderby help.keyword 
+                    helps = from help
+                            in HelpData.Helps
+                            orderby help.keyword
                             select help;
 
                 foreach (var help in helps)
@@ -424,13 +343,13 @@ namespace CrimsonStainedLands
                     foreach (var command in commands)
                         output.AppendLine(command.Name + " - " + command.Info);
                 }
-                
+
             }
             if (output.Length == 0)
                 ch.send("No help on that word.\n\r");
             else
             {
-                using (var page = new Page(ch))
+                using (var page = new Character.Page(ch))
                 {
                     var outputstring = output.ToString();
                     ch.send(outputstring);
@@ -529,7 +448,7 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() || arguments.StringCmp("auto"))
             {
-                using (new Page(ch))
+                using (new Character.Page(ch))
                 {
                     if (!ch.IsAffected(AffectFlags.DarkVision) && !ch.IsAffected(AffectFlags.Infrared) && !ch.IsAffected(AffectFlags.NightVision) && IsDark)
                     {
@@ -600,8 +519,8 @@ namespace CrimsonStainedLands
 
                             if (ch.IsAffected(AffectFlags.DarkVision) || ch.IsAffected(AffectFlags.Infrared) || ch.IsAffected(AffectFlags.NightVision) || !IsDark)
                             {
-                                
-                                
+
+
                                 ch.send(person.DisplayFlags(ch)); // send separate so act capitalizes first character
                                 ch.Act(person.GetLongDescription(ch).Trim() + "\n\r");
                             }
@@ -683,7 +602,7 @@ namespace CrimsonStainedLands
                 //ch.send(other.Display(ch) + " " + health + "\n\r");
 
                 ch.Act("{0}", other, null, null, ActType.ToChar, other.GetEquipmentString(ch));
-                CheckPeek(ch, other);
+                Character.CheckPeek(ch, other);
             }
             else if (!string.IsNullOrEmpty((containername = arguments.OneArgument(ref incheck))) && "in".StringPrefix(incheck) && (lookitem = ch.GetItemHere(containername)) != null)
             {
@@ -698,7 +617,7 @@ namespace CrimsonStainedLands
                     ch.send("{0} is closed.\n\r", lookitem.Display(ch));
                     return;
                 }
-                SendItemList(ch, lookitem);
+                Character.SendItemList(ch, lookitem);
             }
             else if ((extraDescription = ch.GetExtraDescriptionByKeyword(arguments, ref count)) != null)
             {
@@ -721,7 +640,7 @@ namespace CrimsonStainedLands
                 {
                     var itemtype = string.Join(" ", lookitem.ItemType);
                     var wearloc = "";
-                    foreach (var slot in WearSlots)
+                    foreach (var slot in Character.WearSlots)
                         if (lookitem.wearFlags.ISSET(slot.flag))
                         {
                             wearloc = slot.wearString;
@@ -731,7 +650,7 @@ namespace CrimsonStainedLands
                 }
 
                 if (lookitem.ItemType.ISSET(ItemTypes.Container) && !lookitem.extraFlags.Contains(ExtraFlags.Closed))
-                    SendItemList(ch, lookitem);
+                    Character.SendItemList(ch, lookitem);
             } // end of look item
 
             else if ((exit = ch.Room.GetExit(arguments, ref count)) != null)
@@ -745,113 +664,19 @@ namespace CrimsonStainedLands
             }
         }
 
-        private static void SendItemList(Character ch, ItemData lookitem)
-        {
-            var tempItemList = new Dictionary<string, int>();
 
-            if (lookitem.Contains.Count != 0)
-            {
-                using (new Page(ch))
-                {
-                    foreach (var subitem in lookitem.Contains)
-                    {
-                        if (!ch.CanSee(subitem)) continue;
-                        string flags = "";
-                        if (subitem.extraFlags.Contains(ExtraFlags.Glow))
-                            flags = "(Glowing)";
-                        if (subitem.extraFlags.Contains(ExtraFlags.Hum))
-                            flags += "(Humming)";
-                        if (subitem.extraFlags.Contains(ExtraFlags.Invisibility))
-                            flags += "(Invis)";
-                        if (subitem.extraFlags.Contains(ExtraFlags.Magic) &&
-                            (ch.IsAffected(AffectFlags.DetectMagic) || ch.IsAffected(AffectFlags.ArcaneVision)))
-                            flags += "(Magic)";
-                        if (subitem.IsAffected(AffectFlags.Poison))
-                            flags += "(Poisonous)";
-                        if (flags.Length > 0) flags += " ";
-                        var itemshow = flags + (!subitem.ShortDescription.ISEMPTY() ? subitem.ShortDescription : subitem.Name);
-                        if (tempItemList.ContainsKey(itemshow))
-                            tempItemList[itemshow] = tempItemList[itemshow] + 1;
-                        else
-                            tempItemList[itemshow] = 1;
-                        //    carrying.AppendLine();
-                    }
-                    foreach (var itemkvp in tempItemList)
-                    {
-                        ch.send("    " + (itemkvp.Value > 1 ? "[" + itemkvp.Value + "] " : "") + itemkvp.Key + "\n\r");
-                    }
-                    if (tempItemList.Count == 0)
-                        ch.Act("$p appears to be empty.\n\r", null, lookitem);
-                }
-
-                //foreach (var subitem in lookitem.Contains)
-                //    ch.send("    " + subitem.ShortDescription + "\n\r");
-            }
-
-            else ch.Act("$p appears to be empty.\n\r", null, lookitem);
-        }
-
-        public static void ScanDirection(Character ch, Direction direction, RoomData room = null, int depth = 0)
-        {
-            depth++;
-            if (room == null) room = ch.Room;
-            if (depth == 1)
-            {
-                ch.send("You scan " + direction.ToString().ToLower() + ".\n\r");
-                ch.Act("$n scans " + direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
-            }
-            ExitData exit;
-            if ((exit = room.exits[(int)direction]) != null && exit.destination != null)// && !exit.flags.ISSET(ExitFlags.Closed))
-            {
-                var IsDark = exit.destination.IsDark;
-
-                var others = from other in exit.destination.Characters where ch.CanSee(other) && ch != other select other;
-
-                var fog = SkillSpell.SkillLookup("faerie fog");
-                if (exit.flags.ISSET(ExitFlags.Closed))
-                {
-                    ch.send("**** " + depth + " " + direction.ToString() + " ****\n\r");
-                    ch.send("Closed\n\r");
-                    return;
-                }
-                //else if (!ch.IsAffected(AffectFlags.Infrared) && !ch.IsAffected(AffectFlags.DarkVision) && !ch.IsAffected(AffectFlags.NightVision)  && IsDark)
-                //{
-                //    ch.send("**** " + depth + " " + direction.ToString() + " ****\n\r");
-                //    ch.send("Too dark to tell\n\r");
-                //}
-                else if (others.Any())
-                {
-                    ch.send("**** " + depth + " " + direction.ToString() + " ****\n\r");
-                    foreach (var other in others)
-                    {
-
-                        ch.send(other.DisplayFlags(ch));
-                        ch.Act(other.GetLongDescription(ch).Trim());
-
-                    }
-                }
-                if (depth < 4 && !exit.flags.ISSET(ExitFlags.Closed))
-                    ScanDirection(ch, direction, exit.destination, depth);
-
-                // if (depth == 1)
-                //ch.send("\n\r");
-
-            }
-            else
-                return;
-        }
         public static void DoScan(Character ch, string arguments)
         {
             Direction direction = Direction.North;
             if (Utility.GetEnumValueStrPrefix<Direction>(arguments, ref direction))
             {
-                ScanDirection(ch, direction);
+                Character.ScanDirection(ch, direction);
             }
             else if (arguments.ISEMPTY() || "all".StringPrefix(arguments))
             {
                 foreach (var alldirection in Enum.GetValues(typeof(Direction)).OfType<Direction>())
                 {
-                    ScanDirection(ch, alldirection);
+                    Character.ScanDirection(ch, alldirection);
                 }
             }
             else
@@ -863,7 +688,7 @@ namespace CrimsonStainedLands
         public static void DoCommands(Character ch, string arguments)
         {
             int count = 0;
-            using (new Page(ch))
+            using (new Character.Page(ch))
             {
                 ch.send("Current commands:\n\r");
                 foreach (var command in Command.Commands)
@@ -885,7 +710,7 @@ namespace CrimsonStainedLands
         public static void DoSocials(Character ch, string arguments)
         {
             int i = 1;
-            using (new Page(ch))
+            using (new Character.Page(ch))
             {
                 ch.send("Current socials:\n\r");
                 foreach (var social in Social.Socials)
@@ -901,7 +726,7 @@ namespace CrimsonStainedLands
         public static void DoSkills(Character ch, string arguments)
         {
             // var skills = from skill in ch.learned where skill.Key.skillType.Contains(SkillSpellTypes.Skill) && (skill.Key.skillLevel.ContainsKey(ch.guild.name) || skill.Value > 0) orderby skill.Key.skillLevel.ContainsKey(ch.guild.name) ? skill.Key.skillLevel[ch.guild.name] : 100 select skill;
-            using (new Page(ch))
+            using (new Character.Page(ch))
             {
                 var text = new StringBuilder();
 
@@ -1166,87 +991,7 @@ namespace CrimsonStainedLands
             } // using new page(ch)
         }
 
-        public static void ShowSpells(Character ch, string arguments)
-        {
-            int lastLevel = 0;
-            int column = 0;
-            var text = new StringBuilder();
 
-            if (!arguments.ISEMPTY())
-            {
-                var skills = (from sk in SkillSpell.Skills.Values
-                              where sk.name.StringPrefix(arguments) &&
-                             (sk.SkillTypes.Contains(SkillSpellTypes.Spell)
-                                || sk.SkillTypes.Contains(SkillSpellTypes.Commune)
-                                || sk.SkillTypes.Contains(SkillSpellTypes.Song)
-                                || (sk.SkillTypes.ISSET(SkillSpellTypes.InForm) && sk.spellFun != null))
-                              orderby ch.GetLevelSkillLearnedAt(sk)
-                              select sk);
-
-                if (!skills.Any())
-                {
-                    ch.send("You don't know any abilities by that name");
-                    return;
-                }
-                else
-                {
-                    foreach (var skill in skills)
-                    {
-                        var percent = ch.GetSkillPercentage(skill);
-                        var lvl = ch.GetLevelSkillLearnedAt(skill);
-                        if (ch.Level < lvl)
-                        {
-                            ch.send("You haven't learned that ability yet.");
-                            return;
-                        }
-
-                        ch.send(skill.name + " " + percent + "% {0} mana\n\r", skill.GetManaCost(ch));
-                    }
-                    return;
-                }
-            }
-
-            using (new Page(ch))
-            {
-                foreach (var skill in from tempskill in SkillSpell.Skills.Values
-                                      where (tempskill.SkillTypes.Contains(SkillSpellTypes.Spell)
-                                      || tempskill.SkillTypes.Contains(SkillSpellTypes.Commune)
-                                      || tempskill.SkillTypes.Contains(SkillSpellTypes.Song)
-                                      || (tempskill.SkillTypes.ISSET(SkillSpellTypes.InForm) && tempskill.spellFun != null))
-                                      orderby ch.GetLevelSkillLearnedAt(tempskill)
-                                      select tempskill) //skills)
-                {
-                    //ch.Learned.TryGetValue(skill, out int percent);
-                    //skill.skillLevel.TryGetValue(ch.Guild.name, out int lvl);
-
-                    var percent = ch.GetSkillPercentage(skill);
-                    var lvl = ch.GetLevelSkillLearnedAt(skill);
-
-                    if ((lvl <= Game.LEVEL_HERO || ch.IsImmortal) || percent > 1) // || (ch.Level > lvl && lvl > 0))
-                    {
-                        if (lvl != lastLevel)
-                        {
-                            lastLevel = lvl;
-                            column = 0;
-                            text.AppendLine();
-                            text.Append("Lvl " + lvl + ": ".PadRight(5));
-                            text.AppendLine();
-                        }
-
-                        text.Append("    " + ((skill.name + " " + (ch.Level > lvl || percent > 1 ? percent + "% " : "N/A")).PadLeft(30) + (percent >= 1 ? skill.GetManaCost(ch) + " mana" : "")).PadRight(35));
-
-                        if (column == 1)
-                        {
-                            text.AppendLine();
-                            column = 0;
-                        }
-                        else
-                            column++;
-                    }
-                }
-                ch.send(text + "\n\r");
-            }
-        }
 
         public static void DoSpells(Character ch, string arguments)
         {
@@ -1256,7 +1001,7 @@ namespace CrimsonStainedLands
                 ch.send("You don't know any spells.\n\r");
                 return;
             }
-            ShowSpells(ch, arguments);
+            Character.ShowSpells(ch, arguments);
         }
 
         public static void DoSupplications(Character ch, string arguments)
@@ -1267,7 +1012,7 @@ namespace CrimsonStainedLands
                 ch.send("You don't know any supplications.\n\r");
                 return;
             }
-            ShowSpells(ch, arguments);
+            Character.ShowSpells(ch, arguments);
         }
 
         public static void DoSongs(Character ch, string arguments)
@@ -1278,7 +1023,7 @@ namespace CrimsonStainedLands
                 ch.send("You don't know any songs.\n\r");
                 return;
             }
-            ShowSpells(ch, arguments);
+            Character.ShowSpells(ch, arguments);
         }
 
         public static void DoForms(Character ch, string arguments)
@@ -1400,7 +1145,7 @@ namespace CrimsonStainedLands
 
         public static void DoQuests(Character ch, string argument)
         {
-            using (new Page(ch))
+            using (new Character.Page(ch))
             {
                 ch.send("Current Quests:\n\r");
                 if (ch is Player)

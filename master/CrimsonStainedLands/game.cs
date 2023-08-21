@@ -440,7 +440,7 @@ namespace CrimsonStainedLands
                 {
                     WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
 
-                    player.sendRaw("You are banned.\n\r");
+                    player.SendRaw("You are banned.\n\r");
                     Game.CloseSocket(player, true, true);
                 }
                 catch
@@ -457,7 +457,7 @@ namespace CrimsonStainedLands
                 /// https://tintin.mudhalla.net/rfc/rfc854/
                 /// https://www.rfc-editor.org/rfc/rfc1091
                 /// https://tintin.mudhalla.net/info/ansicolor/
-                player.sendRaw(TelnetProtocol.ServerGetDoTelnetType, true);
+                player.SendRaw(TelnetProtocol.ServerGetDoTelnetType, true);
 
             }
         }
@@ -737,7 +737,7 @@ namespace CrimsonStainedLands
                 try
                 {
                     connection.SaveCharacterFile();
-                    connection.sendRaw("Shutting down NOW!\n\r");
+                    connection.SendRaw("Shutting down NOW!\n\r");
                     if (connection.socket != null)
                         try { connection.socket.Dispose(); } catch { }
 
@@ -780,7 +780,7 @@ namespace CrimsonStainedLands
                 try
                 {
                     connection.SaveCharacterFile();
-                    connection.sendRaw("Rebooting NOW!\n\r");
+                    connection.SendRaw("Rebooting NOW!\n\r");
                     if (connection.socket != null)
                         try { connection.socket.Dispose(); } catch { }
 
@@ -1368,7 +1368,7 @@ namespace CrimsonStainedLands
                     {
                         if (exit.flags.ISSET(ExitFlags.Closed))
                         {
-                            Character.DoOpen(ch, direction.ToString());
+                            CharacterDoFunctions.DoOpen(ch, direction.ToString());
                         }
                         if (!exit.flags.ISSET(ExitFlags.Closed))
                         {
@@ -1988,7 +1988,7 @@ namespace CrimsonStainedLands
             Character bancharacter;
             if ((bancharacter = Character.GetCharacterWorld(ch, name, true, false)) != null && bancharacter is Player)
             {
-                ((Player)bancharacter).sendRaw("You have been banned.\n\r");
+                ((Player)bancharacter).SendRaw("You have been banned.\n\r");
                 Game.CloseSocket(((Player)bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
@@ -2020,7 +2020,7 @@ namespace CrimsonStainedLands
             else if ((bancharacter = Character.GetCharacterWorld(ch, nameOrAddress, true, false)) != null && bancharacter is Player)
             {
                 address = ((Player)bancharacter).Address;
-                ((Player)bancharacter).sendRaw("You have been banned.\n\r");
+                ((Player)bancharacter).SendRaw("You have been banned.\n\r");
                 Game.CloseSocket(((Player)bancharacter), true);
                 ch.send("Character banned.\n\r");
             }
@@ -2036,7 +2036,7 @@ namespace CrimsonStainedLands
                 {
                     if (player.Address.StartsWith(address))
                     {
-                        player.sendRaw("You have been banned.\n\r");
+                        player.SendRaw("You have been banned.\n\r");
                         CloseSocket(player);
                     }
                 }

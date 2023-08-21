@@ -201,7 +201,7 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            Character.PerformTell(ch, victim, arguments);
+            CharacterDoFunctions.PerformTell(ch, victim, arguments);
         }
 
         public static void DoReply(Character ch, string arguments)

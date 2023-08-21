@@ -60,15 +60,15 @@ namespace CrimsonStainedLands
 
         static Command()
         {
-            Commands.Add(new Command { Name = "north", Action = Character.DoNorth, Info = "Walk north.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "east", Action = Character.DoEast, Info = "Walk east.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "south", Action = Character.DoSouth, Info = "Walk south.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "west", Action = Character.DoWest, Info = "Walk west.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "up", Action = Character.DoUp, Info = "Walk up.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "down", Action = Character.DoDown, Info = "Walk down.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "north", Action = CharacterDoFunctions.DoNorth, Info = "Walk north.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "east", Action = CharacterDoFunctions.DoEast, Info = "Walk east.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "south", Action = CharacterDoFunctions.DoSouth, Info = "Walk south.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "west", Action = CharacterDoFunctions.DoWest, Info = "Walk west.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "up", Action = CharacterDoFunctions.DoUp, Info = "Walk up.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "down", Action = CharacterDoFunctions.DoDown, Info = "Walk down.", MinimumPosition = Positions.Standing, NPCCommand = false });
             Commands.Add(new Command { Name = "say", Action = DoActCommunication.DoSay, Info = "Say something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "sayto", Action = DoActCommunication.DoSayTo, Info = "Say something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "save", Action = Character.DoSave, Info = "Save character information.", MinimumPosition = Positions.Dead, NPCCommand = false });
+            Commands.Add(new Command { Name = "save", Action = CharacterDoFunctions.DoSave, Info = "Save character information.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "sing", Action = Songs.DoSing, Info = "Sing a song.", MinimumPosition = Positions.Resting, NPCCommand = false });
             
             Commands.Add(new Command { Name = "reply", Action = DoActCommunication.DoReply, Info = "Reply to a tell.", MinimumPosition = Positions.Resting });
@@ -80,29 +80,29 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "pray", Action = DoActCommunication.DoPray, Info = "Pray something to the gods.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "newbie", Action = DoActCommunication.DoNewbie, Info = "Ask something on the newbie channel.", MinimumPosition = Positions.Dead, NPCCommand = false });
 
-            Commands.Add(new Command { Name = "quit", Action = Character.DoQuit, Info = "Exit the game.", MinimumPosition = Positions.Dead, NPCCommand = false });
-            Commands.Add(new Command { Name = "where", Action = Character.DoWhere, Info = "Display list of nearby players.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "who", Action = Character.DoWho, Info = "Display list of players online.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "look", Action = Character.DoLook, Info = "Look around in the room you are in.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "unlock", Action = Character.DoUnlock, Info = "Unlock a door using a key.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "picklock", Action = Character.DoPickLock, Info = "Unlock a door using a thiefpick.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "infiltrate", Action = Character.DoInfiltrate, Info = "Unlock unpickable locks without a thiefpick.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "relock", Action = Character.DoRelock, Info = "Relock a door or chest using a thiefpick.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "follow", Action = Character.DoFollow, Info = "Follow someone.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "order", Action = Character.DoOrder, Info = "Order a pet to do something.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "quit", Action = CharacterDoFunctions.DoQuit, Info = "Exit the game.", MinimumPosition = Positions.Dead, NPCCommand = false });
+            Commands.Add(new Command { Name = "where", Action = CharacterDoFunctions.DoWhere, Info = "Display list of nearby players.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "who", Action = CharacterDoFunctions.DoWho, Info = "Display list of players online.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "look", Action = DoActInfo.DoLook, Info = "Look around in the room you are in.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "unlock", Action = CharacterDoFunctions.DoUnlock, Info = "Unlock a door using a key.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "picklock", Action = CharacterDoFunctions.DoPickLock, Info = "Unlock a door using a thiefpick.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "infiltrate", Action = CharacterDoFunctions.DoInfiltrate, Info = "Unlock unpickable locks without a thiefpick.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "relock", Action = CharacterDoFunctions.DoRelock, Info = "Relock a door or chest using a thiefpick.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "follow", Action = CharacterDoFunctions.DoFollow, Info = "Follow someone.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "order", Action = CharacterDoFunctions.DoOrder, Info = "Order a pet to do something.", MinimumPosition = Positions.Resting, NPCCommand = false });
 
-            Commands.Add(new Command { Name = "get", Action = Character.DoGet, Info = "Pick up an item.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "get", Action = DoActItem.DoGet, Info = "Pick up an item.", MinimumPosition = Positions.Resting });
 
 
-            Commands.Add(new Command { Name = "group", Action = Character.DoGroup, Info = "Group with a follower.", MinimumPosition = Positions.Sleeping, NPCCommand = false });
+            Commands.Add(new Command { Name = "group", Action = CharacterDoFunctions.DoGroup, Info = "Group with a follower.", MinimumPosition = Positions.Sleeping, NPCCommand = false });
             Commands.Add(new Command { Name = "gtell", Action = DoActCommunication.DoGTell, Info = "Tell the group something.", MinimumPosition = Positions.Sleeping, NPCCommand = false });
 
-            Commands.Add(new Command { Name = "hide", Action = Character.DoHide, Info = "Hide in the shadows.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "sneak", Action = Character.DoSneak, Info = "Sneak around without stepping out of the shadows.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "gentlewalk", Action = Character.DoGentleWalk, Info = "Atempt to avoid combat with aggressive npc's when walking into their room.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "visible", Action = Character.DoVisible, Info = "Make yourself seen.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "detecthidden", Action = Character.DoDetectHidden, Info = "Become more aware of the shadows.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "arcanevision", Action = Character.DoArcaneVision, Info = "Become more aware magical items.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "hide", Action = CharacterDoFunctions.DoHide, Info = "Hide in the shadows.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "sneak", Action = CharacterDoFunctions.DoSneak, Info = "Sneak around without stepping out of the shadows.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "gentlewalk", Action = CharacterDoFunctions.DoGentleWalk, Info = "Atempt to avoid combat with aggressive npc's when walking into their room.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "visible", Action = CharacterDoFunctions.DoVisible, Info = "Make yourself seen.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "detecthidden", Action = CharacterDoFunctions.DoDetectHidden, Info = "Become more aware of the shadows.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "arcanevision", Action = CharacterDoFunctions.DoArcaneVision, Info = "Become more aware magical items.", MinimumPosition = Positions.Resting });
             Commands.Add(new Command { Name = "enliven", Action = ShapeshiftForm.DoEnliven, Info = "Activate a spell while in form.", MinimumPosition = Positions.Standing });
 
             Commands.Add(new Command { Name = "cast", Action = Magic.DoCast, Info = "Cast a spell.", MinimumPosition = Positions.Fighting });
@@ -113,7 +113,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "flee", Action = Combat.DoFlee, Info = "Run from combat.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "disengage", Action = Combat.DoDisengage, Info = "Disengage from combat and fade into the shadows.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "envenomweapon", Action = Combat.DoEnvenomWeapon, Info = "Apply poison to weapon, giving a chance per hit to poison enemy.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "greaseitem", Action = Character.DoGreaseItem, Info = "Apply grease to an item, so it may be removed or dropped without uncurse.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "greaseitem", Action = CharacterDoFunctions.DoGreaseItem, Info = "Apply grease to an item, so it may be removed or dropped without uncurse.", MinimumPosition = Positions.Standing });
 
             Commands.Add(new Command { Name = "berserk", Action = Combat.DoBerserk, Info = "Enrage to do more damage.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "warcry", Action = Combat.DoWarCry, Info = "You become inspired from a loud war cry.", MinimumPosition = Positions.Fighting });
@@ -130,84 +130,84 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "gag", Action = Combat.DoGag, Info = "Stuff a gag into someones mouth if they are sapped or sleeping, preventing them from casting.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "bindhands", Action = Combat.DoBindHands, Info = "Bind someones hands if they are sapped or sleeping, preventing them from holding anything.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "bindlegs", Action = Combat.DoBindLegs, Info = "Bind someones legs if they are sapped or sleeping, preventing them from moving.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "stand", Action = Character.DoStand, Info = "Stand up from a resting, sitting or sleeping position.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "rest", Action = Character.DoRest, Info = "Begin resting. Regeneration should be better than that of standing.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "sit", Action = Character.DoSit, Info = "Sit down.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "sleep", Action = Character.DoSleep, Info = "Go to sleep. Regeneration should be better than that of resting.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "score", Action = Character.DoScore, Info = "Display character details.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "scan", Action = Character.DoScan, Info = "Scan the exits for monsters.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "wake", Action = Character.DoWake, Info = "Wake and stand up.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "stand", Action = CharacterDoFunctions.DoStand, Info = "Stand up from a resting, sitting or sleeping position.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "rest", Action = CharacterDoFunctions.DoRest, Info = "Begin resting. Regeneration should be better than that of standing.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "sit", Action = CharacterDoFunctions.DoSit, Info = "Sit down.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "sleep", Action = CharacterDoFunctions.DoSleep, Info = "Go to sleep. Regeneration should be better than that of resting.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "score", Action = DoActInfo.DoScore, Info = "Display character details.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "scan", Action = DoActInfo.DoScan, Info = "Scan the exits for monsters.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "wake", Action = CharacterDoFunctions.DoWake, Info = "Wake and stand up.", MinimumPosition = Positions.Sleeping });
             Commands.Add(new Command { Name = "sleepingdisarm", Action = Combat.DoSleepingDisarm, Info = "Disarm weapon from your victim while they sleep.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "sacrifice", Action = Character.DoSacrifice, Info = "Sac items in room.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "sacrifice", Action = DoActItem.DoSacrifice, Info = "Sac items in room.", MinimumPosition = Positions.Dead });
                        
-            Commands.Add(new Command { Name = "open", Action = Character.DoOpen, Info = "Open a door or container.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "close", Action = Character.DoClose, Info = "Close a door or container.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "lock", Action = Character.DoLock, Info = "Lock a door or container.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "steal", Action = Character.DoSteal, Info = "Steal something from someone's inventory.", MinimumPosition = Positions.Fighting});
+            Commands.Add(new Command { Name = "open", Action = CharacterDoFunctions.DoOpen, Info = "Open a door or container.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "close", Action = CharacterDoFunctions.DoClose, Info = "Close a door or container.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "lock", Action = CharacterDoFunctions.DoLock, Info = "Lock a door or container.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "steal", Action = CharacterDoFunctions.DoSteal, Info = "Steal something from someone's inventory.", MinimumPosition = Positions.Fighting});
 
-            Commands.Add(new Command { Name = "eat", Action = Character.DoEat, Info = "Eat some food.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "drink", Action = Character.DoDrink, Info = "Quench your thirst.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "fill", Action = Character.DoFill, Info = "Fill a container with liquid.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "practice", Action = Character.DoPractice, Info = "Show skills or practice at a guildmaster.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "train", Action = Character.DoTrain, Info = "Train a stat at a trainer.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "eat", Action = DoActItem.DoEat, Info = "Eat some food.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "drink", Action = DoActItem.DoDrink, Info = "Quench your thirst.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "fill", Action = DoActItem.DoFill, Info = "Fill a container with liquid.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "practice", Action = CharacterDoFunctions.DoPractice, Info = "Show skills or practice at a guildmaster.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "train", Action = CharacterDoFunctions.DoTrain, Info = "Train a stat at a trainer.", MinimumPosition = Positions.Standing });
                         
-            Commands.Add(new Command { Name = "recall", Action = Character.DoRecall, Info = "Transport you to the temple in Midgaard.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "nofollow", Action = Character.DoNofollow, Info = "Allow or disallow followers.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "notes", Action = Character.DoNotes, Info = "View or write notes.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "outfit", Action = Character.DoOutfit, Info = "Receive basic armor from the gods.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "fly", Action = Character.DoFly, Info = "Fly into the air above the lands.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "recall", Action = CharacterDoFunctions.DoRecall, Info = "Transport you to the temple in Midgaard.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "nofollow", Action = CharacterDoFunctions.DoNofollow, Info = "Allow or disallow followers.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "notes", Action = CharacterDoFunctions.DoNotes, Info = "View or write notes.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "outfit", Action = CharacterDoFunctions.DoOutfit, Info = "Receive basic armor from the gods.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "fly", Action = CharacterDoFunctions.DoFly, Info = "Fly into the air above the lands.", MinimumPosition = Positions.Standing });
 
-            Commands.Add(new Command { Name = "inventory", Action = Character.DoInventory, Info = "Show items being carried", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "equipment", Action = Character.DoEquipment, Info = "Show items being worn.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "drop", Action = Character.DoDrop, Info = "Drop an item on the ground.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "wear", Action = Character.DoWear, Info = "Wear an item you are carrying.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "wield", Action = Character.DoWield, Info = "Wield a weapon you are carrying.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "remove", Action = Character.DoRemove, Info = "Remove an item you are wearing.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "give", Action = Character.DoGive, Info = "Give away an item you are holding.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "put", Action = Character.DoPut, Info = "Put an item inside of a container.", MinimumPosition = Positions.Resting, NPCCommand = false });
-            Commands.Add(new Command { Name = "quaf", Action = Character.DoQuaf, Info = "Quaf a magical potion to receive its benefits.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "recite", Action = Character.DoRecite, Info = "Recite a magical scroll on yourself or someone else.", MinimumPosition = Positions.Standing, NPCCommand = false });
-            Commands.Add(new Command { Name = "zap", Action = Character.DoZap, Info = "Zap yourself, someone else or something with a magical wand.", MinimumPosition = Positions.Fighting, NPCCommand = false });
-            Commands.Add(new Command { Name = "area", Action = Character.DoArea, Info = "Show the name of the area you are in.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "areas", Action = Character.DoAreas, Info = "List all areas with credits.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "list", Action = Character.DoList, Info = "List what a shopkeeper has to sell.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "buy", Action = Character.DoBuy, Info = "Buy something a vendor has to offer.", MinimumPosition = Positions.Resting , NPCCommand = false });
-            Commands.Add(new Command { Name = "sell", Action = Character.DoSell, Info = "Sell something to a shopkeeper.", MinimumPosition = Positions.Resting , NPCCommand = false });
-            Commands.Add(new Command { Name = "value", Action = Character.DoValue, Info = "Ask a shopkeeper how much something is worth to them.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "repair", Action = Character.DoRepair, Info = "Repair an item at a shopkeeper.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "inventory", Action = DoActItem.DoInventory, Info = "Show items being carried", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "equipment", Action = DoActItem.DoEquipment, Info = "Show items being worn.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "drop", Action = DoActItem.DoDrop, Info = "Drop an item on the ground.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "wear", Action = DoActItem.DoWear, Info = "Wear an item you are carrying.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "wield", Action = DoActItem.DoWield, Info = "Wield a weapon you are carrying.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "remove", Action = DoActItem.DoRemove, Info = "Remove an item you are wearing.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "give", Action = DoActItem.DoGive, Info = "Give away an item you are holding.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "put", Action = DoActItem.DoPut, Info = "Put an item inside of a container.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "quaf", Action = DoActItem.DoQuaf, Info = "Quaf a magical potion to receive its benefits.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "recite", Action = DoActItem.DoRecite, Info = "Recite a magical scroll on yourself or someone else.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "zap", Action = DoActItem.DoZap, Info = "Zap yourself, someone else or something with a magical wand.", MinimumPosition = Positions.Fighting, NPCCommand = false });
+            Commands.Add(new Command { Name = "area", Action = CharacterDoFunctions.DoArea, Info = "Show the name of the area you are in.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "areas", Action = CharacterDoFunctions.DoAreas, Info = "List all areas with credits.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "list", Action = DoActItem.DoList, Info = "List what a shopkeeper has to sell.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "buy", Action = DoActItem.DoBuy, Info = "Buy something a vendor has to offer.", MinimumPosition = Positions.Resting , NPCCommand = false });
+            Commands.Add(new Command { Name = "sell", Action = DoActItem.DoSell, Info = "Sell something to a shopkeeper.", MinimumPosition = Positions.Resting , NPCCommand = false });
+            Commands.Add(new Command { Name = "value", Action = DoActItem.DoValue, Info = "Ask a shopkeeper how much something is worth to them.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "repair", Action = DoActItem.DoRepair, Info = "Repair an item at a shopkeeper.", MinimumPosition = Positions.Resting });
 
-            Commands.Add(new Command { Name = "brandish", Action = Character.DoBrandish, Info = "Brandish a staff and use its magic.", MinimumPosition = Positions.Standing, NPCCommand = false });
+            Commands.Add(new Command { Name = "brandish", Action = DoActItem.DoBrandish, Info = "Brandish a staff and use its magic.", MinimumPosition = Positions.Standing, NPCCommand = false });
 
-            Commands.Add(new Command { Name = "gain", Action = Character.DoGain, Info = "Convert practices into trains or revert trains into practices.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "gain", Action = CharacterDoFunctions.DoGain, Info = "Convert practices into trains or revert trains into practices.", MinimumPosition = Positions.Resting });
 
             Commands.Add(new Command { Name = "rescue", Action = Combat.DoRescue, Info = "Rescue someone from others fighting them.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "intercept", Action = Combat.DoIntercept, Info = "Intercept someone from hitting someone else.", MinimumPosition = Positions.Fighting});
             
             Commands.Add(new Command { Name = "heal", Action = Magic.DoHeal, Info = "Heal at a healer or cleric.", MinimumPosition = Positions.Resting});
 
-            Commands.Add(new Command { Name = "autoloot", Action = Character.DoAutoloot, Info = "Automatically loot the corpses of slain enemies.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "autosac", Action = Character.DoAutosac, Info = "Automatically sacrifice the corpses of slain enemies.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "autogold", Action = Character.DoAutogold, Info = "Automatically loot gold of slain enemies.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "autosplit", Action = Character.DoAutosplit, Info = "Automatically split coins gathered.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "autoassist", Action = Character.DoAutoassist, Info = "Automatically assist your group in combat.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "brief", Action = Character.DoBrief, Info = "Hide room descriptions.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "affects", Action = Character.DoAffects, Info = "List current affects.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "autoloot", Action = DoActInfo.DoAutoloot, Info = "Automatically loot the corpses of slain enemies.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "autosac", Action = DoActInfo.DoAutosac, Info = "Automatically sacrifice the corpses of slain enemies.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "autogold", Action = DoActInfo.DoAutogold, Info = "Automatically loot gold of slain enemies.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "autosplit", Action = DoActInfo.DoAutosplit, Info = "Automatically split coins gathered.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "autoassist", Action = DoActInfo.DoAutoassist, Info = "Automatically assist your group in combat.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "brief", Action = DoActInfo.DoBrief, Info = "Hide room descriptions.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "affects", Action = DoActInfo.DoAffects, Info = "List current affects.", MinimumPosition = Positions.Dead });
             
-            Commands.Add(new Command { Name = "worth", Action = Character.DoWorth, Info = "Display character worth.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "color", Action = Character.DoColor, Info = "Toggle colors.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "description", Action = Character.DoDescription, Info = "Describe your character for others to see.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "consider", Action = Character.DoConsider, Info = "Consider how hard it would be to kill the target.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "skills", Action = Character.DoSkills, Info = "List skills learnable and learned.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "spells", Action = Character.DoSpells, Info = "List spells learnable and learned.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "supplications", Action = Character.DoSupplications, Info = "List supplications learnable and learned.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "songs", Action = Character.DoSongs, Info = "List songs learnable and learned.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "socials", Action = Character.DoSocials, Info = "List socials", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "commands", Action = Character.DoCommands, Info = "List commands.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "compare", Action = Character.DoCompare, Info = "Compare two items.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "wimpy", Action = Character.DoWimpy, Info = "Set an amount of hitpoints to automatically attempt to flee.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "worth", Action = DoActInfo.DoWorth, Info = "Display character worth.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "color", Action = DoActInfo.DoColor, Info = "Toggle colors.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "description", Action = DoActInfo.DoDescription, Info = "Describe your character for others to see.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "consider", Action = DoActInfo.DoConsider, Info = "Consider how hard it would be to kill the target.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "skills", Action = DoActInfo.DoSkills, Info = "List skills learnable and learned.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "spells", Action = DoActInfo.DoSpells, Info = "List spells learnable and learned.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "supplications", Action = DoActInfo.DoSupplications, Info = "List supplications learnable and learned.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "songs", Action = DoActInfo.DoSongs, Info = "List songs learnable and learned.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "socials", Action = DoActInfo.DoSocials, Info = "List socials", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "commands", Action = DoActInfo.DoCommands, Info = "List commands.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "compare", Action = DoActItem.DoCompare, Info = "Compare two items.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "wimpy", Action = DoActInfo.DoWimpy, Info = "Set an amount of hitpoints to automatically attempt to flee.", MinimumPosition = Positions.Dead });
 
-            Commands.Add(new Command { Name = "emote", Action = Character.DoEmote, Info = "Act something out for the room to see.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "help", Action = Character.DoHelp, Info = "Get information about a command or topic.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "emote", Action = DoActInfo.DoEmote, Info = "Act something out for the room to see.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "help", Action = DoActInfo.DoHelp, Info = "Get information about a command or topic.", MinimumPosition = Positions.Resting });
             
             Commands.Add(new Command { Name = "knife", Action = Combat.DoKnife, Info = "Knife an enemy with a dagger.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "stab", Action = Combat.DoStab, Info = "Stab an enemy with a dagger.", MinimumPosition = Positions.Fighting });
@@ -219,26 +219,26 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "circlestab", Action = Combat.DoCircleStab, Info = "Circle behind and stab an enemy with a dagger.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "flurry", Action = Combat.DoFlurry, Info = "Unleash a flurry of attacks with your swords.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "drum", Action = Combat.DoDrum, Info = "Drum on someone with your maces.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "deposit", Action = Character.DoDeposit, Info = "Deposit some coins into the bank.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "withdraw", Action = Character.DoWithdraw, Info = "Withdraw some coins from the bank.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "balance", Action = Character.DoBalance, Info = "Check your bank balance.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "specialize", Action = Character.DoSpecialize, Info = "Specialize in a weapon.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "deposit", Action = CharacterDoFunctions.DoDeposit, Info = "Deposit some coins into the bank.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "withdraw", Action = CharacterDoFunctions.DoWithdraw, Info = "Withdraw some coins from the bank.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "balance", Action = CharacterDoFunctions.DoBalance, Info = "Check your bank balance.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "specialize", Action = CharacterDoFunctions.DoSpecialize, Info = "Specialize in a weapon.", MinimumPosition = Positions.Dead });
 
-            Commands.Add(new Command { Name = "lore", Action = Character.DoLore, Info = "Inspect the quality of an item.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "lore", Action = CharacterDoFunctions.DoLore, Info = "Inspect the quality of an item.", MinimumPosition = Positions.Standing });
             
 
             Commands.Add(new Command { Name = "bonus", Action = BonusInfo.DoBonus, Info = "Give the bonus information.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "time", Action = Character.DoTime, Info = "Give the date in .", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "weather", Action = Character.DoWeather, Info = "Report the current weather situation.", MinimumPosition = Positions.Resting});
-            Commands.Add(new Command { Name = "prompt", Action = Character.DoPrompt, Info = "Set or view your prompt.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "creep", Action = Character.DoCreep, Info = "Maintain camouflage and Creep in a direction.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "crawl", Action = Character.DoCrawl, Info = "Crawl in a direction.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "drag", Action = Character.DoDrag, Info = "Drag someone in a direction.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "time", Action = DoActInfo.DoTime, Info = "Give the date in .", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "weather", Action = DoActInfo.DoWeather, Info = "Report the current weather situation.", MinimumPosition = Positions.Resting});
+            Commands.Add(new Command { Name = "prompt", Action = DoActInfo.DoPrompt, Info = "Set or view your prompt.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "creep", Action = CharacterDoFunctions.DoCreep, Info = "Maintain camouflage and Creep in a direction.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "crawl", Action = CharacterDoFunctions.DoCrawl, Info = "Crawl in a direction.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "drag", Action = CharacterDoFunctions.DoDrag, Info = "Drag someone in a direction.", MinimumPosition = Positions.Standing });
 
-            Commands.Add(new Command { Name = "flyto", Action = Character.DoFlyto, Info = "Fly to someone in the same area.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "quests", Action = Character.DoQuests, Info = "Display quests.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "use", Action = Character.DoUse, Info = "Use an item.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "invoke", Action = Character.DoInvoke, Info = "Invoke something.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "flyto", Action = CharacterDoFunctions.DoFlyto, Info = "Fly to someone in the same area.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "quests", Action = DoActInfo.DoQuests, Info = "Display quests.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "use", Action = DoActItem.DoUse, Info = "Use an item.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "invoke", Action = DoActItem.DoInvoke, Info = "Invoke something.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "shapeshift", Action = ShapeshiftForm.DoShapeshift, Info = "Take the form of something else.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "revert", Action = ShapeshiftForm.DoRevert, Info = "Revert back to your normal form.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "feint", Action = Combat.DoFeint, Info = "Distract a foe from their next attack.", MinimumPosition = Positions.Fighting });
@@ -247,16 +247,16 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "berserkersstrike", Action = Combat.DoBerserkersStrike, Info = "Strike a foe with the method of a berserker.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "risingkick", Action = Combat.DoRisingKick, Info = "Kick all enemies fighting you.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "bindwounds", Action = Combat.DoBindWounds, Info = "Bind your wounds.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "acutevision", Action = Character.DoAcuteVision, Info = "See into the cover of the wilderness.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "findwater", Action = Character.DoFindWater, Info = "Create a spring of water from the ground.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "acutevision", Action = CharacterDoFunctions.DoAcuteVision, Info = "See into the cover of the wilderness.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "findwater", Action = CharacterDoFunctions.DoFindWater, Info = "Create a spring of water from the ground.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "barkskin", Action = Combat.DoBarkskin, Info = "Makes your skin hard as bark, lowering your armor class.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "herbs", Action = Combat.DoHerbs, Info = "Find healing herbs in the wilderness.", MinimumPosition = Positions.Standing});
-            Commands.Add(new Command { Name = "firstaid", Action = Character.DoFirstAid, Info = "Bandage yourself or others while reducing duration and damge from bleeds or poisons.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "firstaid", Action = CharacterDoFunctions.DoFirstAid, Info = "Bandage yourself or others while reducing duration and damge from bleeds or poisons.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "serpentstrike", Action = Combat.DoSerpentStrike, Info = "Serpent strike a foe.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "lash", Action = Combat.DoLash, Info = "Lash a foe with whip or flail, lagging them.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "pugil", Action = Combat.DoPugil, Info = "Pugil someone with a staff.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "roundhouse", Action = Combat.DoRoundhouse, Info = "Roundhouse your foes.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "camp", Action = Character.DoCamp, Info = "Set up camp for improved regen while sleeping.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "camp", Action = CharacterDoFunctions.DoCamp, Info = "Set up camp for improved regen while sleeping.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "fashionstaff", Action = Combat.DoFashionStaff, Info = "Fashion a ranger staff from a nearby tree limb.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "fashionspear", Action = Combat.DoFashionSpear, Info = "Fashion a ranger spear from a nearby tree limb.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "palmsmash", Action = Combat.DoPalmSmash, Info = "Smash somene with your bare hands.", MinimumPosition = Positions.Fighting });
@@ -274,7 +274,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "doublespinkick", Action = Combat.DoDoubleSpinKick, Info = "Perform a double spin kick on your foe.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "risingphoenixkick", Action = Combat.DoRisingPhoenixKick, Info = "Perform a rising phoenix kick on your foe.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "caltraps", Action = Combat.DoCaltraps, Info = "Throw caltrops at the feet of your foe.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "heightenedawareness", Action = Character.DoHeightenedAwareness, Info = "Become more aware of the invisible.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "heightenedawareness", Action = CharacterDoFunctions.DoHeightenedAwareness, Info = "Become more aware of the invisible.", MinimumPosition = Positions.Resting });
             Commands.Add(new Command { Name = "strangle", Action = Combat.DoStrangle, Info = "Attempt to strangle someone putting them to sleep.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "sap", Action = Combat.DoSap, Info = "Attempt to sap someone to sleep.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "throw", Action = Combat.DoThrow, Info = "Attempt to throw someone to the ground.", MinimumPosition = Positions.Fighting });
@@ -322,13 +322,13 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "stenchcloud", Action = Combat.DoStenchCloud, Info = "Generate a stench cloud, causing damage and revealing most people: room affect.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "poisondagger", Action = Combat.DoPoisonDagger, Info = "Attempt to create a poisoned dagger.", MinimumPosition = Positions.Resting });
             Commands.Add(new Command { Name = "poisondust", Action = Combat.DoPoisonDust, Info = "Throw poisonous dust: room affect.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "butcher", Action = Character.DoButcher, Info = "Butchers a corpse into an edible steak.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "butcher", Action = CharacterDoFunctions.DoButcher, Info = "Butchers a corpse into an edible steak.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "owlkinship", Action = Combat.DoOwlKinship, Info = "Summon an owl to assist you in combat.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "wolfkinship", Action = Combat.DoWolfKinship, Info = "Summon a wolf to assist you in combat.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "serpentkinship", Action = Combat.DoSerpentKinship, Info = "Summon a serpent to assist you in combat.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "bearkinship", Action = Combat.DoBearKinship, Info = "Summon a bear to assist you in combat.", MinimumPosition = Positions.Fighting });
 
-            Commands.Add(new Command { Name = "forms", Action = Character.DoForms, Info = "Display the forms you are familiar with.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "forms", Action = DoActInfo.DoForms, Info = "Display the forms you are familiar with.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "shapefocus", Action = ShapeshiftForm.DoShapeFocus, Info = "Set your major and minor shapeshift specializations.", MinimumPosition = Positions.Dead });
 
             Commands.Add(new Command { Name = "bite", Action = Combat.DoBite, Info = "Attempt to bite an opponent.", MinimumPosition = Positions.Fighting });
@@ -338,9 +338,9 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "claw", Action = Combat.DoClaw, Info = "Attempt to claw an opponent.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "furor", Action = Combat.DoFuror, Info = "Unleash a series of vicious attacks at an opponent.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "trample", Action = Combat.DoTrample, Info = "Charge and trample an opponent.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "forage", Action = Character.DoForage, Info = "Forage around for food.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "forage", Action = CharacterDoFunctions.DoForage, Info = "Forage around for food.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "jump", Action = Combat.DoJump, Info = "Jump at someone damaging them.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "sprint", Action = Character.DoSprint, Info = "Sprint in a direction.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "sprint", Action = CharacterDoFunctions.DoSprint, Info = "Sprint in a direction.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "strike", Action = Combat.DoStrike, Info = "Coil and strike someone.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "pinch", Action = Combat.DoPinch, Info = "Pinch an enemy with your powerful pincers.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "mulekick", Action = Combat.DoAssassinMuleKick, Info = "Unleash a powerful kick on your second enemy.", MinimumPosition = Positions.Fighting });
@@ -351,9 +351,9 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "talonstrike", Action = Combat.DoTalonStrike, Info = "Strike your enemy with powerful talons, causing bleeding and poison.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "swipe", Action = Combat.DoSwipe, Info = "Swipe at your enemy.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "devour", Action = Combat.DoDevour, Info = "Devour your enemy.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "camouflage", Action = Character.DoCamouflage, Info = "Camouflage in the wilderness.", MinimumPosition = Positions.Standing });
-            Commands.Add(new Command { Name = "burrow", Action = Character.DoBurrow, Info = "Create a burrow to hide within.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "playdead", Action = Character.DoPlayDead, Info = "Attempt to fool your enemies into thinking you are dead.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "camouflage", Action = CharacterDoFunctions.DoCamouflage, Info = "Camouflage in the wilderness.", MinimumPosition = Positions.Standing });
+            Commands.Add(new Command { Name = "burrow", Action = CharacterDoFunctions.DoBurrow, Info = "Create a burrow to hide within.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "playdead", Action = CharacterDoFunctions.DoPlayDead, Info = "Attempt to fool your enemies into thinking you are dead.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "impale", Action = Combat.DoImpale, Info = "Impale your enemy, causing them to bleed.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "flank", Action = Combat.DoFlank, Info = "Flank your enemy, injuring them.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "ambush", Action = Combat.DoAmbush, Info = "Ambush your enemy.", MinimumPosition = Positions.Standing });
@@ -386,23 +386,23 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "snarl", Action = Combat.DoSnarl, Info = "Lowers targets hitRoll by half for a short time.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "autotomy", Action = Combat.DoAutotomy, Info = "Detatch tail, rest or run while you can.", MinimumPosition = Positions.Fighting });
 
-            Commands.Add(new Command { Name = "request", Action = Character.DoRequest, Info = "Request an item from an NPC with a good alignment.", MinimumPosition = Positions.Resting });
+            Commands.Add(new Command { Name = "request", Action = DoActItem.DoRequest, Info = "Request an item from an NPC with a good alignment.", MinimumPosition = Positions.Resting });
 
-            Commands.Add(new Command { Name = "toggle", Action = Character.DoToggle, Info = "List or Toggle an act flag on yourself.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "toggle", Action = DoActInfo.DoToggle, Info = "List or Toggle an act flag on yourself.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "bug", Action = Game.DoBug, Info = "Report a bug or typo.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "map", Action = DoActMapper.DoMap, Info = "Display an ascii map of your current surroundings.", MinimumPosition = Positions.Dead });
 
             Commands.Add(new Command { Name = "duelchallenge", Action = Dueling.DoIssueDuelChallenge, Info = "Issue a duel challenge to another player.", MinimumPosition = Positions.Resting });
             Commands.Add(new Command { Name = "duelaccept", Action = Dueling.DoDuelAccept, Info = "Accept a duel challenge from another player.", MinimumPosition = Positions.Resting });
             Commands.Add(new Command { Name = "duelcancel", Action = Dueling.DoDuelDecline, Info = "Decline a duel challenge from another player.", MinimumPosition = Positions.Resting });
-            Commands.Add(new Command { Name = "afk", Action = Character.DoAFK, Info = "Toggle your AFK flag.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "afk", Action = DoActInfo.DoAFK, Info = "Toggle your AFK flag.", MinimumPosition = Positions.Dead });
             // IMM COMMANDS
             Commands.Add(new Command { Name = "immortal", Action = DoActWizard.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
             Commands.Add(new Command { Name = "holylight", Action = DoActWizard.DoHolyLight, Info = "View immortal stuff", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "wizinvis", Action = DoActWizard.DoWizInvis, Info = "Make yourself invisible.", MinimumPosition = Positions.Dead });
 
             Commands.Add(new Command { Name = "goto", Action = DoActWizard.DoGoto, Info = "Teleport to the specified room.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "restore", Action = DoActWizard.DoRestore, Info = "Restore the hitpoints, mana and movement of a character.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "restore", Action = DoActWizard.DoRestore, Info = "Restore the hitpoints, mana and movement of a CharacterDoFunctions.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "reset", Action = DoActWizard.DoResetArea, Info = "Reset an area.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "shutdown", Action = DoActWizard.DoShutdown, Info = "Shutdown the server", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
 
@@ -462,19 +462,19 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "banbyname", Action = Game.DoBanByName, Info = "Ban a player name, connected or not.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
             Commands.Add(new Command { Name = "banbyaddress", Action = Game.DoBanByAddress, Info = "Ban a player by specifying their name if they are online or their ipaddress.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
 
-            Commands.Add(new Command { Name = "gecho", Action = Character.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
-            Commands.Add(new Command { Name = "globalecho", Action = Character.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
-            Commands.Add(new Command { Name = "aecho", Action = Character.DoAreaEcho, Info = "Echo a message to the area.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
-            Commands.Add(new Command { Name = "areaecho", Action = Character.DoAreaEcho, Info = "Echo a message to the area.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
-            Commands.Add(new Command { Name = "echo", Action = Character.DoEcho, Info = "Echo a message to the room.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "gecho", Action = CharacterDoFunctions.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "globalecho", Action = CharacterDoFunctions.DoGlobalEcho, Info = "Echo a message to the world.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "aecho", Action = CharacterDoFunctions.DoAreaEcho, Info = "Echo a message to the area.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "areaecho", Action = CharacterDoFunctions.DoAreaEcho, Info = "Echo a message to the area.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
+            Commands.Add(new Command { Name = "echo", Action = CharacterDoFunctions.DoEcho, Info = "Echo a message to the room.", MinimumPosition = Positions.Dead, MinimumLevel = 54 });
 
 
 
             // END IMM COMMANDS
 
-            Commands.Add(new Command { Name = "suicide", Action = Character.DoSuicide, Info = "End your life.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "password", Action = Character.DoPassword, Info = "Change your password.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "delete", Action = Character.DoDelete, Info = "Delete your character.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "suicide", Action = CharacterDoFunctions.DoSuicide, Info = "End your life.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "password", Action = CharacterDoFunctions.DoPassword, Info = "Change your password.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "delete", Action = CharacterDoFunctions.DoDelete, Info = "Delete your character.", MinimumPosition = Positions.Sleeping });
 
         }
 

@@ -285,12 +285,12 @@ namespace CrimsonStainedLands
 
             public void DoGive(Character ch, string arguments)
             {
-                Character.DoGive(ch, arguments);
+                DoActItem.DoGive(ch, arguments);
             }
 
             public void MoveCharacter(Character ch, Direction direction)
             {
-                Character.DoOpen(ch, direction.ToString());
+                CharacterDoFunctions.DoOpen(ch, direction.ToString());
                 ch.moveChar(direction, true, false);
             }
 

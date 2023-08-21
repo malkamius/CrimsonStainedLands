@@ -155,7 +155,7 @@ namespace CrimsonStainedLands
                                 Game.Instance.SocketAccepted(this);
                                 state = ConnectionStates.GetName;
 
-                                ReadHelp(this, "DIKU", true);
+                                DoActInfo.ReadHelp(this, "DIKU", true);
                                 send("\n\rEnter your name: ");
                                 if (receivebuffer == null) receivebuffer = new byte[255];
                                 if (readop == null || readop.IsCompleted)
@@ -175,7 +175,7 @@ namespace CrimsonStainedLands
             {
                 state = ConnectionStates.GetName;
                 Game.Instance.SocketAccepted(this);
-                ReadHelp(this, "DIKU", true);
+                DoActInfo.ReadHelp(this, "DIKU", true);
                 send("\n\rEnter your name: ");
 
                 lock (this)
@@ -212,7 +212,7 @@ namespace CrimsonStainedLands
 
                 if (data.Length > 4200)
                 {
-                    sendRaw("Too much data to process at once.\n\r");
+                    SendRaw("Too much data to process at once.\n\r");
                     Game.CloseSocket(this, state < ConnectionStates.Playing, true);
                     inanimate = DateTime.Now;
                 }
@@ -234,7 +234,7 @@ namespace CrimsonStainedLands
                         if (input.Length > 4200) // not writing a novel yet?
                         {
 
-                            sendRaw("Too much data to process at once.\n\r");
+                            SendRaw("Too much data to process at once.\n\r");
                             Game.CloseSocket(this, state < ConnectionStates.Playing, true);
                             inanimate = DateTime.Now;
                         }
@@ -246,7 +246,7 @@ namespace CrimsonStainedLands
                             {
                                 if (command.Type == TelnetProtocol.Command.Types.WillTelnetType)
                                 {
-                                    sendRaw(TelnetProtocol.ServerGetWillTelnetType, true);
+                                    SendRaw(TelnetProtocol.ServerGetWillTelnetType, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.ClientSendNegotiateType)
                                 {
@@ -279,13 +279,13 @@ namespace CrimsonStainedLands
                                         {
                                             Game.log(ClientString + " client detected.");
                                             ClientTypes.Add(ClientString);
-                                            sendRaw(TelnetProtocol.ServerGetTelnetTypeNegotiate, true);
+                                            SendRaw(TelnetProtocol.ServerGetTelnetTypeNegotiate, true);
                                         }
                                         else
-                                            sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                            SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                     }
                                     else
-                                        sendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                        SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
                                 {
@@ -300,14 +300,14 @@ namespace CrimsonStainedLands
                                     variables["CODEBASE"] = new string[] { "CUSTOM" };
                                     variables["WEBSITE"] = new string[] { "https://kbs-cloud.com" };
 
-                                    sendRaw(TelnetProtocol.ServerGetNegotiateMUDServerStatusProtocol(variables), true);
-                                    sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
+                                    SendRaw(TelnetProtocol.ServerGetNegotiateMUDServerStatusProtocol(variables), true);
+                                    SendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DontMUDServerStatusProtocol)
                                 {
                                     Game.log("WONT MSSP");
 
-                                    sendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
+                                    SendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
                                 {
@@ -324,13 +324,72 @@ namespace CrimsonStainedLands
             }
         }
 
+        public override void SendRaw(string data, bool sendimmediate = true)
+        {
+            if (socket != null)
+            {
+                if (!data.ISEMPTY())
+                    if (data.Contains("\n"))
+                        data = data.Replace("\r", "").Replace("\n", "\n\r");
+
+                var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(
+                    !Flags.ISSET(ActFlags.Color),
+                    TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256),
+                    TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
+                    TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
+                if (bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r')
+                {
+                    var newbytes = new byte[bytes.Length + 2];
+                    bytes.CopyTo(newbytes, 0);
+                    newbytes[newbytes.Length - 2] = (byte)TelnetProtocol.Options.InterpretAsCommand;
+                    newbytes[newbytes.Length - 1] = (byte)TelnetProtocol.Options.GoAhead;
+                    bytes = newbytes;
+                }
+                SendRaw(bytes, sendimmediate);
+            }
+        }
+
+        public override void SendRaw(byte[] data, bool sendimmediate = true)
+        {
+            base.SendRaw(data, sendimmediate);
+            if (socket != null)
+            {
+                lock (this)
+                    if (sslsocket != null)
+                    {
+                        if (!sendimmediate)
+                        {
+                            if (sslsocket.IsAuthenticated && (writeop == null || writeop.IsCompleted))
+                                writeop = sslsocket.BeginWrite(data, 0, data.Length, EndSslWrite, this);
+                            else
+                                WriteBuffers.Push(data);
+                        }
+                        else if (sslsocket.IsAuthenticated)
+                        {
+                            sslsocket.Write(data, 0, data.Length);
+                            sslsocket.Flush();
+                        }
+                    }
+                    else
+                    {
+                        if (!sendimmediate)
+                        {
+                            if ((writeop == null || writeop.IsCompleted))
+                                writeop = socket.BeginSend(data, 0, data.Length, SocketFlags.None, EndSend, this);
+                            else
+                                WriteBuffers.Push(data);
+                        }
+                        else
+                            socket.Send(data);
+                    }
+            }
+        }
         public void EndReceive(IAsyncResult result)
         {
             lock (Game.Instance.Info.Connections)
                 try
                 {
                     var socket = result.AsyncState as Socket;
-                    //if (connection.socket == null) return;
                     var connections = Game.Instance.Info.Connections.ToArrayLocked();
                     var connection = (from c in connections where c.socket == socket select c).FirstOrDefault();
                     lock (connection)
@@ -360,12 +419,9 @@ namespace CrimsonStainedLands
                 try
                 {
                     var socket = result.AsyncState as SslStream;
-                    //if (connection.socket == null) return;
                     var connections = Game.Instance.Info.Connections.ToArrayLocked();
                     var connection = (from c in connections where c.sslsocket == socket select c).FirstOrDefault();
-                    //if (connection.socket == null) return;
-                    //var connections = Game.Instance.Info.Connections.ToArrayLocked();
-                    //connection = (from c in connections where c.Name == connection.Name select c).FirstOrDefault();
+
                     lock (connection)
                     {
 
@@ -402,6 +458,58 @@ namespace CrimsonStainedLands
 
                 }
         }
+
+        public void EndSslWrite(IAsyncResult result)
+        {
+            var connection = result.AsyncState as Player;
+            lock (Game.Instance.Info.Connections)
+                try
+                {
+                    //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
+                    lock (connection)
+                    {
+                        try
+                        {
+                            connection.sslsocket.EndWrite(result);
+                            connection.sslsocket.Flush();
+                            if (connection.WriteBuffers.Count > 0)
+                            {
+                                var bytes = connection.WriteBuffers.Pop();
+                                connection.writeop = connection.sslsocket.BeginWrite(bytes, 0, bytes.Length, EndSslWrite, connection);
+                            }
+                        }
+                        catch { }
+                    }
+                }
+                catch { }
+        }
+
+        public void EndSend(IAsyncResult result)
+        {
+
+            var connection = result.AsyncState as Player;
+            lock (Game.Instance.Info.Connections)
+                try
+                {
+                    //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
+                    lock (connection)
+                    {
+                        try
+                        {
+                            connection.socket.EndSend(result);
+
+                            if (connection.WriteBuffers.Count > 0)
+                            {
+                                var bytes = connection.WriteBuffers.Pop();
+                                connection.writeop = connection.socket.BeginSend(bytes, 0, bytes.Length, SocketFlags.None, EndSend, connection);
+                            }
+                        }
+                        catch { }
+                    }
+                }
+                catch { }
+        }
+
         internal void ProcessOutput()
         {
             if (socket == null) output.Clear();
@@ -451,7 +559,7 @@ namespace CrimsonStainedLands
                 if (state == ConnectionStates.Playing && (Position == Positions.Fighting || SittingAtPrompt) && !text.StartsWith("\n\r"))
                     text = "\n\r" + text;
 
-                sendRaw(text);
+                SendRaw(text);
                 output.Clear();
                 SittingAtPrompt = true;
             }
@@ -501,7 +609,7 @@ namespace CrimsonStainedLands
                 {
                     line = line.OneArgument(ref command);
 
-                    ReadHelp(this, line);
+                    DoActInfo.ReadHelp(this, line);
                     SetState(state);
                     return true;
                 }
@@ -538,7 +646,7 @@ namespace CrimsonStainedLands
 
                     try
                     {
-                        sendRaw("You are banned.\n\r");
+                        SendRaw("You are banned.\n\r");
                         Game.CloseSocket(this, true);
                     }
                     catch
@@ -628,7 +736,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    sendRaw("Incorrect password!\n\r");
+                    SendRaw("Incorrect password!\n\r");
                     Game.CloseSocket(this, true, false);
                     return true;
                 }
@@ -641,7 +749,7 @@ namespace CrimsonStainedLands
                     {
                         try
                         {
-                            connection.sendRaw("This character is being logged in elsewhere.\n\r");
+                            connection.SendRaw("This character is being logged in elsewhere.\n\r");
                             Game.CloseSocket(connection, false, true);
                         }
                         catch { }
@@ -668,8 +776,9 @@ namespace CrimsonStainedLands
                                     {
                                         game.Info.Connections.Remove(this);
                                         connection.input.Clear();
+                                        connection.ClearPage();
                                         connection.inanimate = null;
-                                        
+
                                         connection.readop = this.readop;
                                         connection.writeop = this.writeop;
                                         connection.socket = this.socket;
@@ -677,19 +786,7 @@ namespace CrimsonStainedLands
                                         connection.receivebuffer = this.receivebuffer;
                                         connection.Address = this.Address;
                                         connection.TelnetOptions = this.TelnetOptions;
-                                        //if (this.sslsocket != null)
-                                        //{
-                                        //    this.sslsocket.EndRead(this.readop);
-                                        //    connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
-                                        //}
-                                        //else if (this.socket != null)
-                                        //{
-                                        //    this.socket.EndReceive(this.readop);
-                                        //    connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
-                                        //}
 
-                                        //this.readop = null;
-                                        //this.writeop = null;
                                         this.socket = null;
                                         this.sslsocket = null;
 
@@ -702,11 +799,10 @@ namespace CrimsonStainedLands
                         }
                         catch { }
                     }
-                    //ConnectExistingPlayer(true);
                 }
                 else
                 {
-                    sendRaw("Goodbye.\n\r");
+                    SendRaw("Goodbye.\n\r");
                     Game.CloseSocket(this, true);
                 }
 
@@ -894,9 +990,9 @@ namespace CrimsonStainedLands
                 }
             }
             WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
-            Character.ReadHelp(this, "greeting", true);
+            DoActInfo.ReadHelp(this, "greeting", true);
             send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
-            Character.ReadHelp(this, "MOTD", true);
+            DoActInfo.ReadHelp(this, "MOTD", true);
             if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
             {
                 send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
@@ -1069,7 +1165,7 @@ namespace CrimsonStainedLands
 
                 if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
                 {
-                    sendRaw("It seems someone else has taken this name. Unable to continue.\n\r");
+                    SendRaw("It seems someone else has taken this name. Unable to continue.\n\r");
                     Game.CloseSocket(this, true);
                     return false;
                 }
@@ -1091,8 +1187,8 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                Character.ReadHelp(this, "greeting", true);
-                Character.ReadHelp(this, "MOTD", true);
+                DoActInfo.ReadHelp(this, "greeting", true);
+                DoActInfo.ReadHelp(this, "MOTD", true);
                 AddCharacterToRoom(RoomData.Rooms[3760]);
 
                 Position = Positions.Standing;
@@ -1103,7 +1199,7 @@ namespace CrimsonStainedLands
                 {
                     send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
                 }
-                Character.DoOutfit(this, "");
+                CharacterDoFunctions.DoOutfit(this, "");
 
                 HitPoints = MaxHitPoints;
                 MovementPoints = MaxMovementPoints;
@@ -1119,7 +1215,7 @@ namespace CrimsonStainedLands
                 SaveCharacterFile();
 
                 BonusInfo.DoBonus(this, "");
-                DoLook(this, "auto");
+                DoActInfo.DoLook(this, "auto");
             }
 
             return true;
@@ -1366,7 +1462,7 @@ namespace CrimsonStainedLands
             }
             state = Player.ConnectionStates.Deleting;
             System.IO.File.Delete(Settings.PlayersPath + "\\" + Name + ".xml");
-            sendRaw("Character deleted.\n\r");
+            SendRaw("Character deleted.\n\r");
 
             Game.CloseSocket(this, true);
 

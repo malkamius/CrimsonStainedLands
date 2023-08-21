@@ -829,7 +829,7 @@ namespace CrimsonStainedLands
                             var topay = bountyKills - paidBountyKills;
                             DoActCommunication.DoSay(sender, string.Format("I see you've slain {0} critters. Here's your coin.", topay));
                             sender.Silver += topay;
-                            Character.DoGive(sender, string.Format("{0} silver {1}", topay, player.Name));
+                            DoActItem.DoGive(sender, string.Format("{0} silver {1}", topay, player.Name));
                             progress.ExtraState.SetAttributeValue("PaidBountyKills", bountyKills);
                         }
 

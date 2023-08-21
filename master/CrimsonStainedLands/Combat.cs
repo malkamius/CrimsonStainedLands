@@ -686,7 +686,7 @@ namespace CrimsonStainedLands
 
                 // Automatic sacrifice of the corpse by the killer
                 if (ch != null && victim.IsNPC && ch.Flags.ISSET(ActFlags.AutoSac))
-                    Character.DoSacrifice(ch, "corpse");
+                    DoActItem.DoSacrifice(ch, "corpse");
 
                 // Clear killer wait time on kill
                 if (ch != null)
@@ -8850,7 +8850,7 @@ namespace CrimsonStainedLands
         {
             if (ch.IsNPC)
             {
-                Character.DoStand(ch, "");
+                CharacterDoFunctions.DoStand(ch, "");
             }
         }
 

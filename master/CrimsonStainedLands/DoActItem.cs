@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace CrimsonStainedLands
 {
-    public partial class Character
+    public class DoActItem
     {
         public static void DoQuaf(Character character, string arguments)
         {
@@ -312,35 +312,7 @@ namespace CrimsonStainedLands
             }
         } // End DoBrandish
 
-        public static bool PutItem(Character ch, ItemData item, ItemData container)
-        {
-            if (container != null && container.ItemType.Contains(ItemTypes.Container) && item != null)
-            {
-                if (container.extraFlags.Contains(ExtraFlags.Closed))
-                {
-                    ch.Act("$p is closed.\n\r", null, container, null, ActType.ToChar);
-                    return false;
-                }
-                float weight = container.totalweight;
 
-                if (weight + item.Weight < container.MaxWeight)
-                {
-
-                    ch.Inventory.Remove(item);
-                    container.Contains.Insert(0, item);
-                    ch.Act("You put $p in $P.\n\r", null, item, container, ActType.ToChar);
-                    ch.Act("$n puts $p in $P.\n\r", null, item, container, ActType.ToRoom);
-                    item.CarriedBy = container.CarriedBy;
-                    item.Container = container;
-                    return true;
-                }
-                else
-                {
-                    ch.send("{0} cannot hold that much weight.\n\r", container.Display(ch));
-                }
-            }
-            return false;
-        }
         public static void DoPut(Character ch, string arguments)
         {
             string itemName = "";
@@ -367,7 +339,7 @@ namespace CrimsonStainedLands
                     {
                         foreach (var containeditem in ch.Inventory.ToArray())
                             if (containeditem != container)
-                                if (!PutItem(ch, containeditem, container))
+                                if (!Character.PutItem(ch, containeditem, container))
                                     return;
                     }
                     else if (itemName.Length > "all.".Length && itemName.StartsWith("all.", StringComparison.InvariantCultureIgnoreCase))
@@ -376,7 +348,7 @@ namespace CrimsonStainedLands
                         foreach (var containeditem in ch.Inventory.ToArray())
                             if (containeditem != container)
                                 if (containeditem.Name.IsName(itemName))
-                                    if (!PutItem(ch, containeditem, container))
+                                    if (!Character.PutItem(ch, containeditem, container))
                                         return;
                     }
                     else if ((item = ch.GetItemInventory(itemName, ref count)) != null)
@@ -387,7 +359,7 @@ namespace CrimsonStainedLands
                             return;
                         }
 
-                        PutItem(ch, item, container);
+                        Character.PutItem(ch, item, container);
                     }
                     else
                         ch.send("You don't have that.\n\r");
@@ -782,7 +754,7 @@ namespace CrimsonStainedLands
                             item.CarriedBy = null;
                             other.Room.items.Insert(0, item);
                             item.Room = other.Room;
-                            
+
                             other.Act("You drop $p.\n\r", ch, item, type: ActType.ToChar);
                             ch.Act("$N drops $p.\n\r", other, item, null, ActType.ToChar);
                             other.Act("$n drops $p.\n\r", ch, item, type: ActType.ToRoomNotVictim);
@@ -807,47 +779,7 @@ namespace CrimsonStainedLands
             ch.send(wearing);
         }
 
-        public bool GetItem(ItemData item, ItemData container = null)
-        {
-            if (item.wearFlags.ISSET(WearFlags.Take))
-            {
-                if (Carry + 1 > MaxCarry)
-                {
-                    send("You can't carry anymore items.\n\r");
-                    return false;
-                }
 
-                if (container == null)
-                {
-                    if (TotalWeight + item.Weight > MaxWeight)
-                    {
-                        send("You can't carry anymore weight.\n\r");
-                        return false;
-                    }
-                    Room.items.Remove(item);
-                    item.Room = null;
-                    Act("You get $p.\n\r", null, item, type: ActType.ToChar);
-                    Act("$n gets $p.\n\r", null, item, null, ActType.ToRoom);
-                }
-                else
-                {
-                    if (container.CarriedBy != this && TotalWeight + item.Weight > MaxWeight)
-                    {
-                        send("You can't carry anymore weight.\n\r");
-                        return false;
-                    }
-
-                    container.Contains.Remove(item);
-                    item.Container = null;
-                    Act("You get $p from $P.\n\r", null, item, container, ActType.ToChar);
-                    Act("$n gets $p from $P.\n\r", null, item, container, ActType.ToRoom);
-                }
-                AddInventoryItem(item);
-                return true;
-            }
-            else
-                return false;
-        }
 
         /// <summary>
         /// The code handles the logic for the "get" command, which allows the character to pick up items from the environment or containers.
@@ -903,7 +835,7 @@ namespace CrimsonStainedLands
                         return;
                     }
 
-                    if(container.ItemType.ISSET(ItemTypes.PC_Corpse) && container.Owner != ch.Name)
+                    if (container.ItemType.ISSET(ItemTypes.PC_Corpse) && container.Owner != ch.Name)
                     {
                         ch.Act("The gods wouldn't approve of that.");
                         return;
@@ -1105,7 +1037,7 @@ namespace CrimsonStainedLands
                 carrying.AppendLine("    Nothing.");
             }
 
-            using (new Page(ch))
+            using (new Character.Page(ch))
                 ch.SendToChar(carrying.ToString());
         }
 
@@ -1131,7 +1063,7 @@ namespace CrimsonStainedLands
 
             if (shopKeeper != null)
             {
-                using (new Page(ch))
+                using (new Character.Page(ch))
                 {
                     ch.send("This shop will purchase the following types of things: ");
                     ch.send("{0}\n\r", string.Join(", ", from type in shopKeeper.BuyTypes select type.ToString().ToLower()));
@@ -1190,7 +1122,7 @@ namespace CrimsonStainedLands
                 // Display repairable item types and damaged items the player character is wearing or carrying
                 if (arguments.ISEMPTY())
                 {
-                    using (new Page(ch))
+                    using (new Character.Page(ch))
                     {
                         ch.send("This shop will repair the following types of things: ");
                         ch.send("{0}\n\r", string.Join(", ", from type in shopKeeper.BuyTypes select type.ToString().ToLower()));
@@ -1613,7 +1545,7 @@ namespace CrimsonStainedLands
 
             if (arg2.ISEMPTY())
             {
-                obj2 = (from slot in WearSlots where obj1.wearFlags.ISSET(slot.flag) && ch.Equipment.ContainsKey(slot.id) && ch.Equipment[slot.id] != null select ch.Equipment[slot.id]).FirstOrDefault();
+                obj2 = (from slot in Character.WearSlots where obj1.wearFlags.ISSET(slot.flag) && ch.Equipment.ContainsKey(slot.id) && ch.Equipment[slot.id] != null select ch.Equipment[slot.id]).FirstOrDefault();
 
                 if (obj2 == null)
                 {
