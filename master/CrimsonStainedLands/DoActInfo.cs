@@ -464,29 +464,7 @@ namespace CrimsonStainedLands
                             ch.send("    " + desc + "\n\r\n\r");
                         else
                             ch.send("\n\r");
-                        var exits = new List<string>();
-
-                        foreach (var iexit in ch.Room.exits)
-                        {
-                            if (iexit != null && iexit.destination != null)
-                            {
-                                if (iexit.flags.ISSET(ExitFlags.HiddenWhileClosed) && iexit.flags.ISSET(ExitFlags.Closed))
-                                    continue;
-                                if (iexit.flags.ISSET(ExitFlags.Hidden))
-                                    continue;
-                                if (iexit.flags.ISSET(ExitFlags.Window))
-                                    continue;
-                                else if (iexit.flags.ISSET(ExitFlags.Closed) || iexit.flags.ISSET(ExitFlags.Locked))
-                                {
-                                    exits.Add("[" + iexit.direction.ToString().ToLower() + "]");
-                                }
-                                else
-                                    exits.Add(iexit.direction.ToString().ToLower());
-                            }
-                        }
-
-                        if (exits.Count == 0) exits.Add("none");
-                        ch.send("\\G[Exits " + String.Join(" ", exits) + "]\\x\n\r");
+                        DoExits(ch, "");
                         var tempItemList = new Dictionary<string, int>();
                         foreach (var item in ch.Room.items.Where(i => ch.CanSee(i)))
                         {
@@ -542,24 +520,24 @@ namespace CrimsonStainedLands
                         ch.send(iexit.description + "\n\r");
                     }
                     else if (iexit != null && iexit.destination != null)
-                        ch.send(((TimeInfo.IS_NIGHT && !iexit.destination.NightName.ISEMPTY() ? iexit.destination.NightName : iexit.destination.Name)) + " lies to the " + alldirection.ToString().ToLower() + ".\n\r");
+                        ch.send(((TimeInfo.IS_NIGHT && !iexit.destination.NightName.ISEMPTY() ? iexit.destination.NightName : iexit.destination.Name)) + " lies" + (alldirection == Direction.Up? " above" : (alldirection == Direction.Down? " below" : (" to the " + alldirection.ToString().ToLower()))) + ".\n\r");
                     else
                         ch.send("You don't see anything special that way.\n\r");
                 }
             }
-            else if (Utility.GetEnumValueStrPrefix<Direction>(arguments, ref direction))
+            else if (ch.Room != null && ch.Room.GetExit(arguments, out var iexit, ref count)) //  Utility.GetEnumValueStrPrefix<Direction>(arguments, ref direction))
             {
-                ch.send("You look " + direction.ToString().ToLower() + ".\n\r");
-                ch.Act("$n looks " + direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
-                ExitData iexit;
-                if ((iexit = ch.Room.exits[(int)direction]) != null && !string.IsNullOrEmpty(iexit.description))
+                ch.send("You look " + iexit.direction.ToString().ToLower() + ".\n\r");
+                ch.Act("$n looks " + iexit.direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
+                //ExitData iexit;
+                if (!string.IsNullOrEmpty(iexit.description))
                 {
                     //if(exit.destination != null)
                     //    ch.send(exit.destination.name + " lies in this direction.\n\r");
                     ch.send(iexit.description + "\n\r");
                 }
                 else if (iexit != null && iexit.destination != null)
-                    ch.send(((TimeInfo.IS_NIGHT && !iexit.destination.NightName.ISEMPTY() ? iexit.destination.NightName : iexit.destination.Name)) + " lies to the " + direction.ToString().ToLower() + ".\n\r");
+                    ch.send(((TimeInfo.IS_NIGHT && !iexit.destination.NightName.ISEMPTY() ? iexit.destination.NightName : iexit.destination.Name)) + " lies" + (iexit.direction == Direction.Up ? " above" : (iexit.direction == Direction.Down ? " below" : (" to the " + iexit.direction.ToString().ToLower()))) + ".\n\r");
                 else
                     ch.send("You don't see anything special that way.\n\r");
             }
@@ -653,17 +631,47 @@ namespace CrimsonStainedLands
                     Character.SendItemList(ch, lookitem);
             } // end of look item
 
-            else if ((exit = ch.Room.GetExit(arguments, ref count)) != null)
-            {
-                ch.send("You look " + exit.direction + ".\n\r");
-                ch.send(exit.description.Trim() + "\n\r");
-            }
+            //else if ((exit = ch.Room.GetExit(arguments, ref count)) != null)
+            //{
+            //    ch.send("You look " + exit.direction + ".\n\r");
+            //    ch.send(exit.description.Trim() + "\n\r");
+            //}
             else
             {
                 ch.send("You don't see that here.\n\r");
             }
         }
 
+        public static void DoExits(Character ch, string v)
+        {
+            var exits = new List<string>();
+
+            foreach (var iexit in ch.Room.exits)
+            {
+                if (iexit != null && iexit.destination != null)
+                {
+                    if (iexit.flags.ISSET(ExitFlags.HiddenWhileClosed) && iexit.flags.ISSET(ExitFlags.Closed))
+                        continue;
+                    if (iexit.flags.ISSET(ExitFlags.Hidden))
+                        continue;
+                    if (iexit.flags.ISSET(ExitFlags.Window))
+                        continue;
+
+                    if (!(ch.IsImmortal || (ch.Level <= iexit.destination.MaxLevel && ch.Level >= iexit.destination.MinLevel)))
+                        continue;
+
+                    else if (iexit.flags.ISSET(ExitFlags.Closed) || iexit.flags.ISSET(ExitFlags.Locked))
+                    {
+                        exits.Add("[" + iexit.direction.ToString().ToLower() + "]");
+                    }
+                    else
+                        exits.Add(iexit.direction.ToString().ToLower());
+                }
+            }
+
+            if (exits.Count == 0) exits.Add("none");
+            ch.send("\\G[Exits " + String.Join(" ", exits) + "]\\x\n\r");
+        }
 
         public static void DoScan(Character ch, string arguments)
         {

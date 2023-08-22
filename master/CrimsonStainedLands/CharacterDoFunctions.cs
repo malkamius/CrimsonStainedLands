@@ -2989,7 +2989,8 @@ namespace CrimsonStainedLands
                 ch.Act("You cannot drag them if they're awake or their hands and legs are unbound.\n\r");
             }
             else if ((exit = ch.Room.GetExit(direction)) == null || exit.destination == null
-                || exit.flags.ISSET(ExitFlags.Closed) || exit.flags.ISSET(ExitFlags.Window))
+                || exit.flags.ISSET(ExitFlags.Closed) || exit.flags.ISSET(ExitFlags.Window) ||
+                (!victim.IsImmortal && !victim.IsNPC && (exit.destination.MinLevel > victim.Level || exit.destination.MaxLevel < victim.Level)))
             {
                 ch.Act("You can't drag $N that way.", victim);
             }

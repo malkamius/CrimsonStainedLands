@@ -152,6 +152,8 @@ namespace CrimsonStainedLands
         public GuildData Guild = null;
         public List<Programs.Program<RoomData>> Programs = new List<Programs.Program<RoomData>>();
         public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();
+        public int MaxLevel = 60;
+        public int MinLevel = 0;
         //private int light;
 
         public string Description
@@ -218,6 +220,9 @@ namespace CrimsonStainedLands
                 Description = room.GetElementValue("description").TrimStart();
                 NightName = room.GetElementValue("NightName");
                 NightDescription = room.GetElementValue("NightDescription").TrimStart();
+                
+                MaxLevel = room.GetElementValueInt("MaxLevel", 60);
+                MinLevel = room.GetElementValueInt("MinLevel", 0);
 
                 if (room.HasElement("Guild"))
                     Guild = GuildData.GuildLookup(room.GetElementValue("Guild"));
@@ -318,6 +323,14 @@ namespace CrimsonStainedLands
 
         } // End Static Constructor
 
+        public bool GetExit(Direction direction, out ExitData exit) => (exit = GetExit(direction)) != null;
+        public bool GetExit(string keyword, out ExitData exit) => (exit = GetExit(keyword)) != null;
+        public bool GetExit(string keyword, out ExitData exit, ref int count)
+        {
+            exit = GetExit(keyword, ref count);
+            return exit != null;
+        }
+
         public ExitData GetExit(Direction direction)
         {
             return exits[(int)direction];
@@ -391,7 +404,8 @@ namespace CrimsonStainedLands
                     new XElement("NightDescription", NightDescription) : null,
 
                     Guild != null ? Guild.name : null,
-
+                    MaxLevel != 0 && MaxLevel != 60? new XElement("MaxLevel", MaxLevel) : null,
+                    MinLevel != 0 ? new XElement("MinLevel", MinLevel) : null,
                     new XElement("Sector", sector),
                     new XElement("Flags", flags.ToDelimitedString()), //string.Join(" ", from flag in flags select flag.ToString())); ;
                     new XElement("Exits",

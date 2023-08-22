@@ -1848,7 +1848,7 @@ namespace CrimsonStainedLands
             }
             var room = RoomData.Rooms.Values.SelectRandom();
 
-            if (room == null)
+            if (room == null || !(ch.IsImmortal || ch.IsNPC || (ch.Level <= room.MaxLevel && ch.Level >= room.MinLevel)))
             {
                 ch.send("You failed.\n\r");
                 return;
@@ -4607,7 +4607,8 @@ namespace CrimsonStainedLands
                 ch.Act("Which direction did you want to force $N in?\n\r", victim);
             }
             else if ((exit = ch.Room.GetExit(direction)) == null || exit.destination == null
-                || exit.flags.ISSET(ExitFlags.Closed) || exit.flags.ISSET(ExitFlags.Window))
+                || exit.flags.ISSET(ExitFlags.Closed) || exit.flags.ISSET(ExitFlags.Window) ||
+                (!victim.IsImmortal && !victim.IsNPC && (exit.destination.MinLevel > victim.Level || exit.destination.MaxLevel < victim.Level)))
             {
                 ch.Act("You can't force $N in that direction.", victim);
             }
@@ -4921,7 +4922,7 @@ namespace CrimsonStainedLands
             Character other;
             int count = 0;
 
-            if ((other = ch.GetCharacterFromListByName(Character.Characters, arguments, ref count)) != null && other.Room != null)
+            if ((other = ch.GetCharacterFromListByName(Character.Characters, arguments, ref count)) != null && other.Room != null && (ch.IsImmortal || ch.IsNPC || (ch.Level <= other.Room.MaxLevel && ch.Level >= other.Room.MinLevel)))
             {
                 ch.Act("$n creates a gate, then steps in, then $n and the gate disappears.\n\r", type: ActType.ToRoom);
                 ch.RemoveCharacterFromRoom();
@@ -5139,6 +5140,7 @@ namespace CrimsonStainedLands
             }
             foreach (var GroupMember in ch.GetGroupMembersInRoom())
             {
+                if(GroupMember.IsImmortal || GroupMember.IsNPC || (GroupMember.Level <= newroom.MaxLevel && GroupMember.Level >= newroom.MinLevel))
                 GroupMember.Act("$n vanishes!", type: ActType.ToRoom);
                 GroupMember.RemoveCharacterFromRoom();
                 GroupMember.AddCharacterToRoom(newroom);

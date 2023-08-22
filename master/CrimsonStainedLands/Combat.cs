@@ -2033,7 +2033,16 @@ namespace CrimsonStainedLands
                 ch.send("You aren't fighting anyone!\n\r");
             else
             {
-                var exits = new List<ExitData>(from exit in ch.Room.exits where exit != null && exit.destination != null && (!exit.flags.Contains(ExitFlags.Closed) || (!exit.flags.ISSET(ExitFlags.NoPass) && ch.IsAffected(AffectFlags.PassDoor))) && !exit.flags.Contains(ExitFlags.Window) select exit);
+                var exits = new List<ExitData>(from exit 
+                                               in ch.Room.exits 
+                                               where 
+                                                    exit != null && 
+                                                    exit.destination != null && 
+                                                    (!exit.flags.Contains(ExitFlags.Closed) || 
+                                                    (!exit.flags.ISSET(ExitFlags.NoPass) && ch.IsAffected(AffectFlags.PassDoor))) && 
+                                                    !exit.flags.Contains(ExitFlags.Window)  &&
+                                                    (ch.IsImmortal || ch.IsNPC || (ch.Level <= exit.destination.MaxLevel && ch.Level >= exit.destination.MinLevel))
+                                               select exit);
                 if (exits.Count > 0)
                 {
                     // TODO Chance to fail
@@ -9366,7 +9375,7 @@ namespace CrimsonStainedLands
                 {
                     int attempts = 0;
                     var newroom = ch.Room.Area.Rooms.Values.SelectRandom();
-                    while ((newroom == null || newroom == ch.Room || newroom.flags.ISSET(RoomFlags.Indoors) || newroom.sector == SectorTypes.Inside) && attempts <= 10)
+                    while ((newroom == null || newroom == ch.Room || newroom.flags.ISSET(RoomFlags.Indoors) || newroom.sector == SectorTypes.Inside || !(ch.IsImmortal || ch.IsNPC || (ch.Level <= newroom.MaxLevel && ch.Level >= newroom.MinLevel))) && attempts <= 10)
                     {
                         newroom = ch.Room.Area.Rooms.Values.SelectRandom();
                         attempts++;

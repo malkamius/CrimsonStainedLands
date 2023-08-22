@@ -1631,7 +1631,8 @@ namespace CrimsonStainedLands
                 if ((exit.flags.Contains(ExitFlags.Closed) && (exit.flags.Contains(ExitFlags.NoPass) || !IsAffected(AffectFlags.PassDoor))) ||
                     (exit.flags.Contains(ExitFlags.Locked) && (exit.flags.Contains(ExitFlags.NoPass) || !IsAffected(AffectFlags.PassDoor))) ||
                     (exit.flags.Contains(ExitFlags.Window) && !crawl) ||
-                    (!exit.flags.Contains(ExitFlags.Window) && crawl))
+                    (!exit.flags.Contains(ExitFlags.Window) && crawl) ||
+                    (!IsImmortal && (Level > exit.destination.MaxLevel || Level < exit.destination.MinLevel)))
                 {
                     SendToChar("Alas, you cannot go that way.\n\r");
                     return;
