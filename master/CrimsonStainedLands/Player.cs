@@ -1115,6 +1115,7 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.Playing)
             {
+                LastSaveTime = DateTime.Now;
                 var group = SkillSpellGroup.Lookup(Guild.guildGroup);
 
                 foreach (var classSkill in SkillSpell.Skills)
