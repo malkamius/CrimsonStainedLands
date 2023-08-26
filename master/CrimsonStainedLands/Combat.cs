@@ -2041,6 +2041,7 @@ namespace CrimsonStainedLands
                                                     (!exit.flags.Contains(ExitFlags.Closed) || 
                                                     (!exit.flags.ISSET(ExitFlags.NoPass) && ch.IsAffected(AffectFlags.PassDoor))) && 
                                                     !exit.flags.Contains(ExitFlags.Window)  &&
+                                                    (exit.destination.Area == ch.Room.Area || !ch.IsNPC || !ch.Flags.ISSET(ActFlags.StayArea)) &&
                                                     (ch.IsImmortal || ch.IsNPC || (ch.Level <= exit.destination.MaxLevel && ch.Level >= exit.destination.MinLevel))
                                                select exit);
                 if (exits.Count > 0)
