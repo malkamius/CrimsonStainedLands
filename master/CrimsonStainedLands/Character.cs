@@ -1399,6 +1399,7 @@ namespace CrimsonStainedLands
                                     SendToChar("No way! You are still fighting!\n\r");
                                     break;
                             }
+                            return;
                         }
                         else if (Level < command.MinimumLevel)
                         {
@@ -1419,8 +1420,9 @@ namespace CrimsonStainedLands
                         {
                             // Execute the command's action
                             command.Action(this, arguments);
+                            return;
                         }
-                        return;
+                        
                     }
                 }
 

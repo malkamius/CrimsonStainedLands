@@ -1224,6 +1224,7 @@ namespace CrimsonStainedLands
 
         public void SaveCharacterFile()
         {
+            if (LastSaveTime == default(DateTime)) LastSaveTime = DateTime.Now;
             TotalPlayTime += DateTime.Now - LastSaveTime;
             LastSaveTime = DateTime.Now;
 

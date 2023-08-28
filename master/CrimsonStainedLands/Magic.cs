@@ -4481,7 +4481,7 @@ namespace CrimsonStainedLands
             int learned = 0;
             var spellcraft = (CheckSpellcraft(ch, spell));
 
-            ch.Act("You conjure a magical bold of ice, then throw it at $N.\n\r", victim, type: ActType.ToChar);
+            ch.Act("You conjure a magical bolt of ice, then throw it at $N.\n\r", victim, type: ActType.ToChar);
             ch.Act("$n conjures a magical bolt of ice, then throws it at $N.\n\r", victim, type: ActType.ToRoomNotVictim);
 
             learned = ch.GetSkillPercentage(spell) + 20;
