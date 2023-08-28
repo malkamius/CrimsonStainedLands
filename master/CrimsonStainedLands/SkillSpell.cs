@@ -838,11 +838,11 @@ namespace CrimsonStainedLands
         {
             return (from tempskill in SkillSpell.Skills
                      where
-                       (tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Skill) ||
+                       ((tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Skill) ||
                        tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Spell) ||
                        tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Commune) ||
                        tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Song) ||
-                       (tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.InForm) && tempskill.Value.spellFun != null))
+                       (tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.InForm))) && tempskill.Value.spellFun != null)
                      && (ch.Level >= ch.GetLevelSkillLearnedAtOutOfForm(tempskill.Value) && ch.GetSkillPercentageOutOfForm(tempskill.Value) >= 1)
                      && tempskill.Value.name.StringPrefix(name)
                      orderby ch.GetLevelSkillLearnedAtOutOfForm(tempskill.Value) // skill.Value.skillLevel.ContainsKey(ch.Guild.name) ? skill.Value.skillLevel[ch.Guild.name] : 60

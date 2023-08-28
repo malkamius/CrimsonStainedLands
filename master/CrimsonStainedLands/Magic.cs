@@ -1322,7 +1322,12 @@ namespace CrimsonStainedLands
             if (victim == null)
                 victim = ch;
 
-            if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Shield))
+            if ((affect = victim.FindAffect(spell)) != null)
+            {
+                ch.send("You aren't ready to cast a shield again.\n\r");
+                return;
+            }
+            else if(victim.IsAffected(AffectFlags.Shield))
             {
                 if (victim != ch)
                     ch.send("They are already protected by a shield.\n\r");

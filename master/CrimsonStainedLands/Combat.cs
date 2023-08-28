@@ -315,8 +315,9 @@ namespace CrimsonStainedLands
                     ch != null &&
                     victim.Room == ch.Room &&
                     allowflee &&
-                    victim.HitPoints < player.Wimpy &&
-                    victim.Wait < Game.PULSE_VIOLENCE / 2)
+                    victim.HitPoints < player.Wimpy //&&
+                    //victim.Wait < Game.PULSE_VIOLENCE / 2
+                        )
                 {
                     Combat.DoFlee(victim, "");
                 }
@@ -1260,8 +1261,8 @@ namespace CrimsonStainedLands
                 if (ch.Fighting == victim)
                 {
                     // Check if the attacker has the skill or the random chance is successful
-                    if (attackskills[i].ISEMPTY() || ((skill = ch.GetSkillPercentage(SkillSpell.SkillLookup(attackskills[i]))) > 1 &&
-                        (skill + (haste ? 10 : slow ? -20 : 0) + 10) > Utility.NumberPercent()))
+                    if (attackskills[i].ISEMPTY() || (((skill = ch.GetSkillPercentage(SkillSpell.SkillLookup(attackskills[i]))) > 1 &&
+                        (skill + (haste ? 15 : slow ? -40 : 0)) > Utility.NumberPercent()) || (haste && 50 > Utility.NumberPercent())))
                     {
                         if (!attackskills[i].ISEMPTY())
                             ch.CheckImprove(attackskills[i], true, 1);
