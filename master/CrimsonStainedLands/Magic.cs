@@ -1344,7 +1344,7 @@ namespace CrimsonStainedLands
                 affect.level = level;
                 affect.location = ApplyTypes.None;
                 affect.where = AffectWhere.ToAffects;
-                affect.displayName = "shield";
+                affect.displayName = "shield cooldown";
                 affect.duration = 24;
                 affect.endMessage = "You feel ready to cast shield again.";
                 victim.AffectToChar(affect);

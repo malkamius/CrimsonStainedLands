@@ -1420,9 +1420,9 @@ namespace CrimsonStainedLands
                         {
                             // Execute the command's action
                             command.Action(this, arguments);
-                            return;
+                            
                         }
-                        
+                        return;
                     }
                 }
 
