@@ -1036,6 +1036,9 @@ namespace CrimsonStainedLands
                     game.Info.Connections.Add(this);
                 }
             }
+
+            if(!Character.Characters.Contains(this))
+                Character.Characters.Add(this);
         }
 
         /// <summary>

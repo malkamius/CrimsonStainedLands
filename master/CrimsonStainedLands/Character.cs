@@ -21,7 +21,7 @@ namespace CrimsonStainedLands
     public class Character : IDisposable
     {
         public static List<Character> Characters = new List<Character>();
-
+        
         public static WearSlot[] WearSlots = new WearSlot[]
         {
             new WearSlot() { id = WearSlotIDs.LeftFinger, flag = WearFlags.Finger, slot =   "<ring>             ", wearString = "on your finger", wearStringOthers = "on their finger"},
@@ -88,7 +88,7 @@ namespace CrimsonStainedLands
         public List<AffectData> AffectsList = new List<AffectData>();
         public Dictionary<SkillSpell, LearnedSkillSpell> Learned = new Dictionary<SkillSpell, LearnedSkillSpell>();
         public List<AffectFlags> AffectedBy = new List<AffectFlags>();
-
+        public List<string> Communications = new List<string>();
         public AreaData EditingArea { get; internal set; }
         public RoomData EditingRoom { get; internal set; }
         public NPCTemplateData EditingNPCTemplate { get; internal set; }
@@ -1023,6 +1023,11 @@ namespace CrimsonStainedLands
         {
             if (this is Player player && player.socket != null)
             {
+                if (CaptureCommunications.Capturing)
+                {
+                    this.Communications.Add(data);
+                    while (this.Communications.Count > 20) this.Communications.RemoveAt(0);
+                }
                 if (!Paging)
                     ((Player)this).output.Append(data);
                 else
@@ -2843,6 +2848,21 @@ namespace CrimsonStainedLands
 
                 Room.items.Insert(0, wield);
                 wield.Room = Room;
+            }
+        }
+
+        public class CaptureCommunications : IDisposable
+        {
+            public static bool Capturing = false;
+
+            public CaptureCommunications()
+            {
+                Capturing = true;
+            }
+
+            public void Dispose()
+            {
+                Capturing = false;
             }
         }
 
