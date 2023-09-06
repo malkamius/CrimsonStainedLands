@@ -1790,7 +1790,7 @@ namespace CrimsonStainedLands
             Liquid liq;
             if (Liquid.Liquids.TryGetValue(liquid, out liq))
             {
-                amount = Math.Min(liq.ssize, amount);
+                amount = Math.Max(liq.ssize, amount);
                 thirst = amount * liq.thirst / 3;
                 hunger = amount * liq.full / 3;
                 drunk = amount * liq.proof / 36;

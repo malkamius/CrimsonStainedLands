@@ -1506,15 +1506,15 @@ namespace CrimsonStainedLands
             {
                 switch (weapon != null ? weapon.WeaponDamageType.Type : WeaponDamageTypes.Bash)
                 {
-                    default: victim_ac += ch.ArmorExotic; break;
+                    default: victim_ac += victim.ArmorExotic; break;
                     case WeaponDamageTypes.Bash:
-                        victim_ac += ch.ArmorBash;
+                        victim_ac += victim.ArmorBash;
                         break;
                     case WeaponDamageTypes.Slash:
-                        victim_ac += ch.ArmorSlash;
+                        victim_ac += victim.ArmorSlash;
                         break;
                     case WeaponDamageTypes.Pierce:
-                        victim_ac += ch.ArmorPierce;
+                        victim_ac += victim.ArmorPierce;
                         break;
                 }
 
