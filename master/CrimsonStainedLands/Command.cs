@@ -332,9 +332,9 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "shapefocus", Action = ShapeshiftForm.DoShapeFocus, Info = "Set your major and minor shapeshift specializations.", MinimumPosition = Positions.Dead });
 
             Commands.Add(new Command { Name = "bite", Action = Combat.DoBite, Info = "Attempt to bite an opponent.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "puncturing bite", Action = Combat.DoPuncturingBite, Info = "Puncture an opponents skin, a causes bleeding, and blood feeding heals, fills your hunger and thirst.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "puncturingbite", Action = Combat.DoPuncturingBite, Info = "Puncture an opponents skin, a causes bleeding, and blood feeding heals, fills your hunger and thirst.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "peck", Action = Combat.DoPeck, Info = "Attempt to peck an opponent.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "wasp stubg", Action = Combat.DoWaspSting, Info = "Attempt to sting an opponent.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "waspsting", Action = Combat.DoWaspSting, Info = "Attempt to sting an opponent.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "claw", Action = Combat.DoClaw, Info = "Attempt to claw an opponent.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "furor", Action = Combat.DoFuror, Info = "Unleash a series of vicious attacks at an opponent.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "trample", Action = Combat.DoTrample, Info = "Charge and trample an opponent.", MinimumPosition = Positions.Fighting });

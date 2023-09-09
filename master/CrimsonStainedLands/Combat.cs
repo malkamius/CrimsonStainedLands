@@ -4203,7 +4203,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.Act("$n fails to mislead $N with $s feint!", type: ActType.ToRoomNotVictim);
+                ch.Act("$n fails to mislead $N with $s feint!", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("$n attempts to distract you, but fails to mislead your next attack.", victim, type: ActType.ToVictim);
                 ch.Act("You fail to distract $N from their next attack.", victim, type: ActType.ToChar);
 
@@ -8699,87 +8699,6 @@ namespace CrimsonStainedLands
             return;
         }
 
-        //public static void DoWhirl(Character ch, string arguments)
-        //{
-        //    var skill = SkillSpell.SkillLookup("whirl");
-        //    int chance;
-        //    float dam;
-        //    var level = ch.Level;
-        //    ItemData wield = null;
-
-        //    if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
-        //    {
-        //        if (!ch.CheckSocials("whirl", arguments))
-        //            ch.send("You don't know how to do that.\n\r");
-        //        return;
-        //    }
-
-        //    if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Axe) &&
-        //        ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || wield.WeaponType != WeaponTypes.Axe))
-        //    {
-        //        //if (!ch.CheckSocials("whirl", arguments))
-        //            ch.send("You must be wielding an axe to whirl at your enemy.");
-        //        return;
-        //    }
-
-        //    Character victim = null;
-
-        //    if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
-        //    {
-        //        ch.send("You aren't fighting anyone.\n\r");
-        //        return;
-        //    }
-        //    else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
-        //    {
-        //        ch.send("You don't see them here.\n\r");
-        //        return;
-        //    }
-
-        //    ch.WaitState(skill.waitTime);
-        //    if (chance > Utility.NumberPercent())
-        //    {
-        //        ch.Act("$n whirls $p at $N, leaving behind a painful injury.", victim, wield, type: ActType.ToRoomNotVictim);
-        //        ch.Act("$n whirls $p at you, leaving behind an painful injury.", victim, wield, type: ActType.ToVictim);
-        //        ch.Act("You whirl $p at $N, leaving behind a painful injury.", victim, wield, type: ActType.ToChar);
-
-        //        dam = wield.DamageDice.Roll() + ch.DamageRoll;
-
-        //        ch.CheckImprove(skill, true, 1);
-        //        Combat.Damage(ch, victim, (int) dam, skill, WeaponDamageTypes.Pierce);
-
-        //        if (!victim.IsAffected(skill))
-        //        {
-        //            var aff = new AffectData();
-        //            aff.skillSpell = skill;
-        //            aff.duration = 4;
-        //            aff.ownerName = ch.Name;
-        //            aff.level = ch.Level;
-        //            aff.modifier = -4;
-        //            aff.location = ApplyTypes.Strength;
-        //            aff.affectType = AffectTypes.Skill;
-        //            aff.displayName = "whirl";
-        //            aff.where = AffectWhere.ToAffects;
-
-        //            victim.AffectToChar(aff);
-
-        //            aff.location = ApplyTypes.Dexterity;
-        //            aff.endMessage = "Your injury feels better.";
-        //            aff.endMessageToRoom = "$n recovers from $s injury.";
-        //            victim.AffectToChar(aff);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        ch.Act("$n attempts to whirl $p at $N but doesn't connect.", victim, wield, type: ActType.ToRoomNotVictim);
-        //        ch.Act("$n tries to whirl $p at you!", victim, wield, type: ActType.ToVictim);
-        //        ch.Act("You try to whirl $p at $N but fail to connect.", victim, wield, type: ActType.ToChar);
-
-        //        ch.CheckImprove(skill, false, 1);
-        //        Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Pierce);
-        //    }
-        //    return;
-        //}
-
         public static void DoStrangle(Character ch, string arguments)
         {
             var skill = SkillSpell.SkillLookup("strangle");
@@ -9438,7 +9357,6 @@ namespace CrimsonStainedLands
 
             if (wield == null || wield.WeaponType != WeaponTypes.Staff)
             {
-                ch.send("You must use a staff to pugil someone.\n\r");
                 ch.send("You must use a staff to pugil someone.\n\r");
                 return;
             }

@@ -5286,7 +5286,7 @@ knowledge and mastery of magic is undeniable.</description>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
-      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <WeaponDamageMessage>beating</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
       <DamageDiceBonus>16</DamageDiceBonus>
@@ -5469,7 +5469,16 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="" />
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="">
+		<Pet Vnum="19022" />
+		<Pet Vnum="19023" />
+		<Pet Vnum="19024" />
+		<Pet Vnum="19025" />
+		<Pet Vnum="19026" />
+		<Pet Vnum="19027" />
+		<Pet Vnum="19028" />
+		<Pet Vnum="19029" />
+	  </Shop>
     </NPC>
     <NPC>
       <Vnum>19022</Vnum>

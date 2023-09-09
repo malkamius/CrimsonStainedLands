@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace CrimsonStainedLands
 {
@@ -66,6 +67,26 @@ namespace CrimsonStainedLands
                     Game.log("{0} socials loaded.", Socials.Count);
                 }
             }
+
+            var xml = new XElement("Socials");
+            var elements = from social in Socials
+                           select new XElement("Social",
+                new XAttribute("Keyword", social.Name),
+                new XAttribute("CharNoArg", social.CharNoArg ?? ""),
+                new XAttribute("OthersNoArg", social.OthersNoArg ?? ""),
+                new XAttribute("CharFound", social.CharFound ?? ""),
+                new XAttribute("OthersFound", social.OthersFound ?? ""),
+                new XAttribute("VictimFound", social.VictimFound ?? ""),
+                new XAttribute("CharNotFound", social.CharNotFound ?? ""),
+                new XAttribute("CharAuto", social.CharAuto ?? ""),
+                new XAttribute("OthersAuto", social.OthersAuto ?? "")
+                );
+            foreach(var element in elements)
+            xml.Add(element);
+            xml.Save(Settings.DataPath + "\\socials.xml");
+
+            var commands = from com in Command.Commands select com.Name;
+            System.IO.File.WriteAllText(Settings.DataPath + "\\commandslist.txt", string.Join(Environment.NewLine, commands));
         }
         private static bool readSocialField(StreamReader stream, out string socialField)
         {

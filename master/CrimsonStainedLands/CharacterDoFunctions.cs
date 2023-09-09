@@ -2958,7 +2958,7 @@ namespace CrimsonStainedLands
                 ch.CheckImprove(skill, true, 1);
             }
 
-        } // end envenom weapon
+        } // end grease item
         public static void DoDrag(Character ch, string arguments)
         {
             var skill = SkillSpell.SkillLookup("drag");
