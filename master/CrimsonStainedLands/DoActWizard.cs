@@ -1532,11 +1532,15 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            if ((pet = Character.GetCharacterWorld(ch, name, true)) != null && !pet.IsNPC)
+            if ((pet = Character.GetCharacterWorld(ch, name, true)) != null && !pet.IsNPC && pet != ch)
             {
                 pet.SnoopedBy = (Player) ch;
                 ch.send("OK.\n\r");
             }
+            //else if(pet == ch)
+            //{
+            //    DoReturn(ch, "");
+            //}
             else
             {
                 ch.send("You couldn't snoop them.\n\r");
