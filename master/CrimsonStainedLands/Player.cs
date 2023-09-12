@@ -1173,7 +1173,7 @@ namespace CrimsonStainedLands
                     Game.CloseSocket(this, true);
                     return false;
                 }
-
+                
                 this.state = ConnectionStates.Playing;
                 LastActivity = DateTime.Now;
                 WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
@@ -1190,7 +1190,7 @@ namespace CrimsonStainedLands
                         }
                     }
                 }
-
+                DoActInfo.DoPrompt(this, "default");
                 DoActInfo.ReadHelp(this, "greeting", true);
                 DoActInfo.ReadHelp(this, "MOTD", true);
                 AddCharacterToRoom(RoomData.Rooms[3760]);
