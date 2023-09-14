@@ -1573,7 +1573,7 @@ namespace CrimsonStainedLands
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
-                affect.displayName = "fire shield";
+                affect.displayName = "lightning shield";
                 affect.duration = 24;
                 affect.endMessage = "Your magical shield of lightning fades.\n\r";
                 affect.endMessageToRoom = "$n's magical shield of lightning fades.\n\r";
@@ -1604,7 +1604,7 @@ namespace CrimsonStainedLands
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
-                affect.displayName = "fire shield";
+                affect.displayName = "frost shield";
                 affect.duration = 24;
                 affect.endMessage = "Your magical shield of frost fades.\n\r";
                 affect.endMessageToRoom = "$n's magical shield of frost fades.\n\r";
@@ -2740,11 +2740,11 @@ namespace CrimsonStainedLands
             else
             {
                 item.Liquid = "water";
-                item.Charges = item.MaxCharges;
+                item.Charges = Math.Max(16, item.MaxCharges);
                 item.Nutrition = Liquid.Liquids["water"].thirst;
 
-                ch.Act("Water flows out of your finger into $p .\n\r", null, item, type: ActType.ToChar);
-                ch.Act("Water flows out of $n's finger into $p .\n\r", null, item, type: ActType.ToRoom);
+                ch.Act("Water flows out of your finger into $p.\n\r", null, item, type: ActType.ToChar);
+                ch.Act("Water flows out of $n's finger into $p.\n\r", null, item, type: ActType.ToRoom);
             }
         } // end create water
 

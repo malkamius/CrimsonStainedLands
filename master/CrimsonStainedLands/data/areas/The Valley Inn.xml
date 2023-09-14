@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>ABAL} Merthairu The Valley Inn</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1431,6 +1432,7 @@ citizen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1485,6 +1487,7 @@ enters the area.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Flying Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>12</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1539,6 +1542,7 @@ knows is drinks, and good ones!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1594,6 +1598,7 @@ out here, alone.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Weaken DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1648,6 +1653,7 @@ silver pocketwatch hangs out of his pocket, attracting the eyes of theives.</des
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary Infrared Sneak Haste</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1702,6 +1708,7 @@ blue eyes show little care for you or anyone else, just tiredness.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Haste DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1760,6 +1767,7 @@ His namtag says "Sam the Silly"</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1813,6 +1821,7 @@ His namtag says "Sam the Silly"</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil Sanctuary Infrared Sneak</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -1867,6 +1876,7 @@ falls to her shoulders, swaying as she twirls around.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1921,6 +1931,7 @@ cut jagged and unwashed.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Slow DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1974,6 +1985,7 @@ cut jagged and unwashed.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Flying Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2027,6 +2039,7 @@ cut jagged and unwashed.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared Regeneration</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2081,6 +2094,7 @@ great figure and bright sky-blue eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Infrared Sneak</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2134,7 +2148,8 @@ great figure and bright sky-blue eyes.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood PassDoor Haste DarkVision DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood PassDoor Haste DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>12</DamageDiceSides>
       <DamageDiceCount>9</DamageDiceCount>
@@ -2189,6 +2204,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Sneak Haste DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2229,7 +2245,8 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <MaxWeight>0</MaxWeight>
       <Material>wood</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2261,7 +2278,8 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <MaxWeight>0</MaxWeight>
       <Material>glass</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2293,7 +2311,8 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <MaxWeight>0</MaxWeight>
       <Material>wood</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2325,7 +2344,8 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <MaxWeight>0</MaxWeight>
       <Material>glass</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2357,7 +2377,8 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <MaxWeight>0</MaxWeight>
       <Material>wood</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2390,6 +2411,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2413,7 +2435,9 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags>Glow AntiEvil RotDeath</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="500" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="500" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2424,6 +2448,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2447,9 +2472,15 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2460,6 +2491,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>cottom</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -2483,8 +2515,12 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Instrument</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="22" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="22" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2495,6 +2531,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>ivory</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2527,6 +2564,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>cottom</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>12</ArmorBash>
       <ArmorSlash>12</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -2550,8 +2588,12 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2562,6 +2604,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>silk</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -2585,8 +2628,12 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags>Glow AntiEvil</ExtraFlags>
       <ItemTypes>Instrument</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2597,6 +2644,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2620,9 +2668,15 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags>Glow AntiEvil</ExtraFlags>
       <ItemTypes>Instrument</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2633,6 +2687,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2665,6 +2720,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>brass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2697,6 +2753,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2731,6 +2788,7 @@ A Fabrication of Creation - by Authenes Intimaedus III</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2806,6 +2864,7 @@ cleft from His soul.'</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2814,293 +2873,113 @@ cleft from His soul.'</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="12104" Count="1" Max="1" Vnum="12114">
       <!--Spawn a cat-like man to Entrance to the Inn-->
-      <Type>NPC</Type>
-      <Destination>12104</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12105" Count="1" Max="1" Vnum="12100">
       <!--Spawn a human bouncer to A crowded room-->
-      <Type>NPC</Type>
-      <Destination>12105</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12106" Count="1" Max="1" Vnum="12100">
       <!--Spawn a human bouncer to A crowded room-->
-      <Type>NPC</Type>
-      <Destination>12106</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12107" Count="1" Max="1" Vnum="12101">
       <!--Spawn a giant bouncer to The Bar-->
-      <Type>NPC</Type>
-      <Destination>12107</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12107" Count="1" Max="1" Vnum="12102">
       <!--Spawn baldur the bartender to The Bar-->
-      <Type>NPC</Type>
-      <Destination>12107</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12103">
       <!--Spawn a bottle of old beer to baldur the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12101">
       <!--Spawn a glass of elven maple tea to baldur the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12102">
       <!--Spawn a jigger of apple cider to baldur the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12104">
       <!--Spawn a jug of jack loukos firebreather to baldur the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12100">
       <!--Spawn a mug of dwarven ale to baldur the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="12108" Count="0" Max="1" Vnum="12105">
       <!--Spawn an oak couch to The Fireplace-->
-      <Type>Item</Type>
-      <Destination>12108</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>12105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12108" Count="1" Max="1" Vnum="12104">
       <!--Spawn an elven storyteller to The Fireplace-->
-      <Type>NPC</Type>
-      <Destination>12108</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12106">
       <!--Spawn a silver pocketwatch to an elven storyteller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12109" Count="1" Max="1" Vnum="12107">
       <!--Spawn an elven singer to The Stage-->
-      <Type>NPC</Type>
-      <Destination>12109</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12108">
       <!--Spawn an ivory harp to an elven singer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12110" Count="1" Max="1" Vnum="12105">
       <!--Spawn a small fox to A Small Library-->
-      <Type>NPC</Type>
-      <Destination>12110</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12110" Count="1" Max="1" Vnum="12106">
       <!--Spawn sam the silly to A Small Library-->
-      <Type>NPC</Type>
-      <Destination>12110</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="12107">
       <!--Spawn a pair of red suspenders to sam the silly-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12111" Count="1" Max="1" Vnum="12109">
       <!--Spawn a fat man to The Dance Floor-->
-      <Type>NPC</Type>
-      <Destination>12111</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="12109">
       <!--Spawn a black tux to a fat man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12111" Count="1" Max="1" Vnum="12108">
       <!--Spawn a short woman to The Dance Floor-->
-      <Type>NPC</Type>
-      <Destination>12111</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="12110">
       <!--Spawn a white ball gown to a short woman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12112" Count="1" Max="1" Vnum="12110">
       <!--Spawn an oddly dressed man to The Dance Floor-->
-      <Type>NPC</Type>
-      <Destination>12112</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12113" Count="2" Max="2" Vnum="12111">
       <!--Spawn a stage worker to Back Stage-->
-      <Type>NPC</Type>
-      <Destination>12113</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>12111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12113" Count="2" Max="2" Vnum="12111">
       <!--Spawn a stage worker to Back Stage-->
-      <Type>NPC</Type>
-      <Destination>12113</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>12111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12122" Count="1" Max="1" Vnum="12103">
       <!--Spawn an old man to The Porch-->
-      <Type>NPC</Type>
-      <Destination>12122</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12124" Count="1" Max="1" Vnum="12113">
       <!--Spawn the valley chanter to A Hallway-->
-      <Type>NPC</Type>
-      <Destination>12124</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="12129" Count="1" Max="1" Vnum="12112">
       <!--Spawn asmira the instrumentalist to The Hall of Music-->
-      <Type>NPC</Type>
-      <Destination>12129</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12112</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12112">
       <!--Spawn a coral harp to asmira the instrumentalist-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12112</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12111">
       <!--Spawn a silver flute to asmira the instrumentalist-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="12113">
       <!--Spawn a brass horn to asmira the instrumentalist-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>12113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="12110" Count="1" Max="1" Vnum="12114">
       <!--Spawn a large mahogany bookshelf to A Small Library-->
-      <Type>Item</Type>
-      <Destination>12110</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="1" Count="1" Max="1" Vnum="12110">
       <!--Spawn an oddly dressed man to The Void-->
-      <Type>NPC</Type>
-      <Destination>1</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="12110" Count="1" Max="1" Vnum="12115">
       <!--Spawn a lectern holding a single index card to A Small Library-->
-      <Type>Item</Type>
-      <Destination>12110</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="1" Count="1" Max="1" Vnum="12110">
       <!--Spawn an oddly dressed man to The Void-->
-      <Type>NPC</Type>
-      <Destination>1</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="12110" Count="1" Max="1" Vnum="12116">
       <!--Spawn fabrication creation authenes to A Small Library-->
-      <Type>Item</Type>
-      <Destination>12110</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>12116</Vnum>
     </Reset>
   </Resets>
 </Area>

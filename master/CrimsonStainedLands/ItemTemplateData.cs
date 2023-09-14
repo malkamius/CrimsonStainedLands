@@ -152,6 +152,15 @@ namespace CrimsonStainedLands
 
             MaxCharges = element.GetElementValueInt("maxcharges", 0);
             Charges = element.GetElementValueInt("charges", MaxCharges);
+            if(MaxCharges == 0 && this.itemTypes.ISSET(ItemTypes.DrinkContainer)) {
+                MaxCharges = 4;
+                area.saved = false;
+            }
+            if(Charges > MaxCharges)
+            {
+                MaxCharges = Charges;
+                area.saved = false;
+            }
             MaxDurability = element.GetElementValueInt("MaxDurability", 100);
             ArmorBash = element.GetElementValueInt("ArmorBash", 0);
             ArmorSlash = element.GetElementValueInt("ArmorSlash", 0);

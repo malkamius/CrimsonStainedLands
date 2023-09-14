@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 1 20} Copper  Plains of the North</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2407,6 +2408,7 @@ be in peace with himself and his surroundings.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2461,6 +2463,7 @@ simple clothing and looks like he has little or nothing to say.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2515,6 +2518,7 @@ wears normal, light clothing and has an anonymous face.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -2569,6 +2573,7 @@ She wears a minimum of clothing and has big ... Eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2624,6 +2629,7 @@ anyone can remember.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2679,6 +2685,7 @@ trading. He looks very fit and capable of protecting his goods.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2734,6 +2741,7 @@ wierdest drinks known. He also looks very big.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2788,6 +2796,7 @@ wierdest drinks known. He also looks very big.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2847,6 +2856,7 @@ haven't succeeded.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary Infrared Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2888,6 +2898,7 @@ haven't succeeded.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2925,6 +2936,7 @@ haven't succeeded.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2962,6 +2974,7 @@ haven't succeeded.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2999,7 +3012,8 @@ thorns on it.</Description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3038,6 +3052,7 @@ origin.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3067,7 +3082,9 @@ wear in your hair.</Description>
       <ExtraFlags>Magic NoDrop</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3078,6 +3095,7 @@ wear in your hair.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3117,6 +3135,7 @@ it.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3155,6 +3174,7 @@ Otherwise the staff seems of no real interest.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3198,6 +3218,7 @@ ferocious rabbit who's life now has changed to that of a tasty wabbit woast.</De
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3243,6 +3264,7 @@ death scenes depicted.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3290,6 +3312,7 @@ certainly not of this world.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3310,157 +3333,62 @@ closer you notice primitive drawings of men doing some kind of a ritual.</Descri
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="316" Count="0" Max="1" Vnum="304">
       <!--Spawn wild flowers to Grassy plains-->
-      <Type>Item</Type>
-      <Destination>316</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="318" Count="4" Max="10" Vnum="309">
       <!--Spawn the cute rabbit to Grassy plains-->
-      <Type>NPC</Type>
-      <Destination>318</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="319" Count="0" Max="1" Vnum="301">
       <!--Spawn a small dusk of black gyvel to Grassy plains-->
-      <Type>Item</Type>
-      <Destination>319</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="323" Count="0" Max="1" Vnum="304">
       <!--Spawn wild flowers to The steep foothills-->
-      <Type>Item</Type>
-      <Destination>323</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="323" Count="1" Max="1" Vnum="300">
       <!--Spawn Aruncus the Druid to The steep foothills-->
-      <Type>NPC</Type>
-      <Destination>323</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>300</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="308">
       <!--Spawn a druish staff to Aruncus the Druid-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>308</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="307">
       <!--Spawn a strange amulet to Aruncus the Druid-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="312">
       <!--Spawn a scroll titled 'jhyfrdow' to Aruncus the Druid-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>312</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="302">
       <!--Spawn a small dusk of poison ivy to Aruncus the Druid-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>302</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="324" Count="4" Max="10" Vnum="309">
       <!--Spawn the cute rabbit to The steep foothills-->
-      <Type>NPC</Type>
-      <Destination>324</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="327" Count="0" Max="1" Vnum="300">
       <!--Spawn a small dusk of timian herbs to The foothills-->
-      <Type>Item</Type>
-      <Destination>327</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>300</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="331" Count="1" Max="1" Vnum="301">
       <!--Spawn Sorbus the Hermit to Hermit's hut-->
-      <Type>NPC</Type>
-      <Destination>331</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="303">
       <!--Spawn a dark red jar to Sorbus the Hermit-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="331" Count="0" Max="1" Vnum="309">
       <!--Spawn a rabbit roast to Hermit's hut-->
-      <Type>Item</Type>
-      <Destination>331</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="334" Count="4" Max="10" Vnum="309">
       <!--Spawn the cute rabbit to The ancient path-->
-      <Type>NPC</Type>
-      <Destination>334</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="338" Count="0" Max="1" Vnum="304">
       <!--Spawn wild flowers to Grassy plains-->
-      <Type>Item</Type>
-      <Destination>338</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="344" Count="1" Max="1" Vnum="305">
       <!--Spawn Shudde-M'ell to The Hall of G'harne-->
-      <Type>NPC</Type>
-      <Destination>344</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>305</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="310">
       <!--Spawn a strange template to Shudde-M'ell-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>310</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="311">
       <!--Spawn a clear potion to Shudde-M'ell-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>311</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{10 35} Conner  New Thalos</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -11534,11 +11535,12 @@ guildmaster is a dark knight who awaits your request for a lesson.</Description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel Gain Practice Mage NoPurge</flags>
+      <flags>NPC Sentinel Gain GuildMaster Mage NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -11587,11 +11589,12 @@ guildmaster is a dark knight who awaits your request for a lesson.</Description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel Gain Practice Cleric NoPurge Fade</flags>
+      <flags>NPC Sentinel Gain GuildMaster Cleric NoPurge Fade</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -11640,11 +11643,12 @@ guildmaster is a dark knight who awaits your request for a lesson.</Description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain Practice Warrior NoPurge AreaAttack</flags>
+      <flags>NPC Sentinel Gain GuildMaster Warrior NoPurge AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -11695,11 +11699,12 @@ will now begin, is all he says.</description>
       <gold>35000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain Practice Warrior NoPurge</flags>
+      <flags>NPC Sentinel Gain GuildMaster Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Sneak</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -11755,6 +11760,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -11808,6 +11814,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -11862,6 +11869,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -11915,6 +11923,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -11968,6 +11977,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12021,6 +12031,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -12074,6 +12085,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12128,6 +12140,7 @@ a small moon-shaped birthmark on her left cheek.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12184,6 +12197,7 @@ of priceless parrots.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12238,6 +12252,7 @@ wardrobe.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12292,6 +12307,7 @@ wardrobe.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12347,6 +12363,7 @@ carelessly into the air.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12402,6 +12419,7 @@ his cold stare and place your order.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12456,6 +12474,7 @@ his cold stare and place your order.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12512,6 +12531,7 @@ the smell that permeates the air.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12567,6 +12587,7 @@ book and looking at his watch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -12620,6 +12641,7 @@ book and looking at his watch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -12674,6 +12696,7 @@ deep-green eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -12729,6 +12752,7 @@ yet bears a sword carved into the glittering stone of his statue.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -12782,6 +12806,7 @@ yet bears a sword carved into the glittering stone of his statue.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -12836,6 +12861,7 @@ longer, it seems to chuckle.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -12890,6 +12916,7 @@ and her eyes twinkle with gentle humour.  You take a step back in fear.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -12944,6 +12971,7 @@ her long tresses sensibly pulled back from her smooth, smiling face.</descriptio
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -12997,6 +13025,7 @@ her long tresses sensibly pulled back from her smooth, smiling face.</descriptio
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -13051,6 +13080,7 @@ to flicker over his face.  A pair of dice are enclosed in one hand.</description
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -13104,6 +13134,7 @@ to flicker over his face.  A pair of dice are enclosed in one hand.</description
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -13157,6 +13188,7 @@ to flicker over his face.  A pair of dice are enclosed in one hand.</description
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -13210,6 +13242,7 @@ to flicker over his face.  A pair of dice are enclosed in one hand.</description
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -13263,6 +13296,7 @@ to flicker over his face.  A pair of dice are enclosed in one hand.</description
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -13317,6 +13351,7 @@ tells you not to trust him very far.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -13370,6 +13405,7 @@ tells you not to trust him very far.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -13423,6 +13459,7 @@ tells you not to trust him very far.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -13477,6 +13514,7 @@ crates from the boats like so many lilies.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -13531,6 +13569,7 @@ Sultan's fee for living in his grand city.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -13584,6 +13623,7 @@ Sultan's fee for living in his grand city.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -13637,6 +13677,7 @@ Sultan's fee for living in his grand city.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -13690,6 +13731,7 @@ Sultan's fee for living in his grand city.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -13743,6 +13785,7 @@ Sultan's fee for living in his grand city.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -13797,6 +13840,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -13850,6 +13894,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -13903,6 +13948,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -13956,6 +14002,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -14009,6 +14056,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -14062,6 +14110,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14115,6 +14164,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -14168,6 +14218,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -14221,6 +14272,7 @@ to stand on corners and accost passers-by with his doomsday preaching.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -14275,6 +14327,7 @@ light blue viel. Her loyalty to the sultan is unwavering.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -14329,6 +14382,7 @@ out of grace with the Sultan.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -14383,6 +14437,7 @@ castrated for the ladies' safety.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -14437,6 +14492,7 @@ bad she's about to kill you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -14490,6 +14546,7 @@ bad she's about to kill you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -14543,6 +14600,7 @@ bad she's about to kill you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14596,6 +14654,7 @@ bad she's about to kill you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14649,6 +14708,7 @@ bad she's about to kill you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14703,6 +14763,7 @@ and steps to bar your way. You notice his hands resting on two sheafs.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14756,6 +14817,7 @@ and steps to bar your way. You notice his hands resting on two sheafs.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -14809,6 +14871,7 @@ and steps to bar your way. You notice his hands resting on two sheafs.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14862,6 +14925,7 @@ and steps to bar your way. You notice his hands resting on two sheafs.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -14915,6 +14979,7 @@ and steps to bar your way. You notice his hands resting on two sheafs.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -14968,6 +15033,7 @@ and steps to bar your way. You notice his hands resting on two sheafs.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15022,6 +15088,7 @@ beams a smile at you through his beard as you walk in.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15077,6 +15144,7 @@ break from his swealtering work to bid you welcome.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15131,6 +15199,7 @@ break from his swealtering work to bid you welcome.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -15186,6 +15255,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -15239,6 +15309,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15292,6 +15363,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -15345,6 +15417,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -15398,6 +15471,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -15454,6 +15528,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -15507,6 +15582,7 @@ upside down.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -15562,6 +15638,7 @@ dragon.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -15616,6 +15693,7 @@ color of the rainbow.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15670,6 +15748,7 @@ You wish you wounds would stop BLEEDING so much!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15724,6 +15803,7 @@ thoroughbred you've seen in the stables.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -15778,6 +15858,7 @@ hair to match her outfit.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -15832,6 +15913,7 @@ hair to match her outfit.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15886,6 +15968,7 @@ hair to match her outfit.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -15940,6 +16023,7 @@ through some training.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -15994,6 +16078,7 @@ or another.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -16049,6 +16134,7 @@ some sucker, um, customer to walk in his store.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -16104,6 +16190,7 @@ his garden.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -16159,6 +16246,7 @@ his love.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible DetectInvis PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -16213,6 +16301,7 @@ blades on it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -16266,6 +16355,7 @@ blades on it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -16319,6 +16409,7 @@ blades on it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -16372,6 +16463,7 @@ blades on it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -16425,6 +16517,7 @@ blades on it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -16478,6 +16571,7 @@ blades on it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -16532,7 +16626,8 @@ hand. Type 'heal' to see a listing of spells.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil ProtectionGood DarkVision DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectionGood DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -16581,11 +16676,12 @@ hand. Type 'heal' to see a listing of spells.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel StayArea Practice</flags>
+      <flags>NPC Sentinel StayArea GuildMaster</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden ProtectEvil ProtectionGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -16627,6 +16723,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16659,6 +16756,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16691,6 +16789,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16723,6 +16822,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16755,6 +16855,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16787,6 +16888,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16819,6 +16921,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16851,6 +16954,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16883,6 +16987,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16915,6 +17020,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16947,6 +17053,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -16979,6 +17086,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17011,6 +17119,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17043,6 +17152,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17075,6 +17185,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -17107,6 +17218,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -17139,6 +17251,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -17162,7 +17275,9 @@ hand. Type 'heal' to see a listing of spells.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -17173,6 +17288,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -17196,7 +17312,9 @@ hand. Type 'heal' to see a listing of spells.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -17207,6 +17325,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -17239,6 +17358,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -17271,6 +17391,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -17303,6 +17424,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17335,6 +17457,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17367,6 +17490,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17399,6 +17523,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17431,6 +17556,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17463,6 +17589,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17495,6 +17622,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -17527,6 +17655,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -17559,6 +17688,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -17591,6 +17721,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -17623,6 +17754,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -17655,6 +17787,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -17687,6 +17820,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17719,6 +17853,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17751,6 +17886,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17783,6 +17919,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17815,6 +17952,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17847,6 +17985,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17879,6 +18018,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17911,6 +18051,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17943,6 +18084,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -17975,6 +18117,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18007,6 +18150,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18039,6 +18183,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18071,6 +18216,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18103,6 +18249,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18135,6 +18282,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18167,6 +18315,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18199,6 +18348,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18231,6 +18381,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18263,6 +18414,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18295,6 +18447,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18327,6 +18480,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18359,6 +18513,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18391,6 +18546,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18423,6 +18579,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18455,6 +18612,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18487,6 +18645,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18519,6 +18678,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18551,6 +18711,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18583,6 +18744,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18615,6 +18777,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18647,6 +18810,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18678,7 +18842,8 @@ hand. Type 'heal' to see a listing of spells.</description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18710,7 +18875,8 @@ hand. Type 'heal' to see a listing of spells.</description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18742,7 +18908,8 @@ hand. Type 'heal' to see a listing of spells.</description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18778,6 +18945,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18814,6 +18982,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18849,6 +19018,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18884,6 +19054,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18920,6 +19091,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18951,7 +19123,8 @@ hand. Type 'heal' to see a listing of spells.</description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -18984,6 +19157,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>4</Charges>
       <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19015,7 +19189,8 @@ hand. Type 'heal' to see a listing of spells.</description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19051,6 +19226,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19086,6 +19262,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>3</Charges>
       <MaxCharges>3</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19126,6 +19303,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>5</Charges>
       <MaxCharges>5</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19166,6 +19344,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19201,6 +19380,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>3</Charges>
       <MaxCharges>3</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19233,6 +19413,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19265,6 +19446,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19297,6 +19479,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19334,6 +19517,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19357,7 +19541,9 @@ hand. Type 'heal' to see a listing of spells.</description>
       <ExtraFlags>Hum Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -19368,6 +19554,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -19400,6 +19587,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19432,6 +19620,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19464,6 +19653,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19496,6 +19686,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19528,6 +19719,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19560,6 +19752,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19592,6 +19785,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19624,6 +19818,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -19647,7 +19842,9 @@ hand. Type 'heal' to see a listing of spells.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -19658,6 +19855,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19690,6 +19888,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19713,8 +19912,12 @@ hand. Type 'heal' to see a listing of spells.</description>
       <ExtraFlags>Magic Bless TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -19725,6 +19928,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19757,6 +19961,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>2083</Charges>
       <MaxCharges>2083</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19789,6 +19994,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -19803,2589 +20009,974 @@ You look around to see if there are any others nearby.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="9501" Count="1" Max="1" Vnum="9504">
       <!--Spawn the receptionist to The Reception Area-->
-      <Type>NPC</Type>
-      <Destination>9501</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9502" Count="1" Max="1" Vnum="9505">
       <!--Spawn the withered mage to The Dancing Daemon Inn-->
-      <Type>NPC</Type>
-      <Destination>9502</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9569">
       <!--Spawn a bottle of grog to the withered mage-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9569</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9568">
       <!--Spawn a glass of wine to the withered mage-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9568</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9567">
       <!--Spawn a glass of blue oasis to the withered mage-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9502" Count="1" Max="1" Vnum="9506">
       <!--Spawn Brother John to The Dancing Daemon Inn-->
-      <Type>NPC</Type>
-      <Destination>9502</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9502" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to The Dancing Daemon Inn-->
-      <Type>Item</Type>
-      <Destination>9502</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9503" Count="1" Max="1" Vnum="9507">
       <!--Spawn a panhandler to The Medina-->
-      <Type>NPC</Type>
-      <Destination>9503</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9504" Count="1" Max="1" Vnum="9508">
       <!--Spawn a panhandler to The Medina-->
-      <Type>NPC</Type>
-      <Destination>9504</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9508</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9505" Count="1" Max="1" Vnum="9539">
       <!--Spawn Caramon to The Southern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9505</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9539</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9515">
       <!--Spawn a suit of banded mail to Caramon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9600">
       <!--Spawn the halberd to Caramon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9506" Count="2" Max="2" Vnum="9537">
       <!--Spawn the tax collector to The Center of Market Square-->
-      <Type>NPC</Type>
-      <Destination>9506</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9537</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9500">
       <!--Spawn the palace key of New Thalos to the tax collector-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9506" Count="1" Max="1" Vnum="9540">
       <!--Spawn Raistlin to The Center of Market Square-->
-      <Type>NPC</Type>
-      <Destination>9506</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9540</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9506" Count="0" Max="1" Vnum="9601">
       <!--Spawn a fountain to The Center of Market Square-->
-      <Type>Item</Type>
-      <Destination>9506</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>9601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9507" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to The Southeastern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9507</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9508" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to The Southwestern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9508</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9509" Count="2" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to The Western Market Square-->
-      <Type>NPC</Type>
-      <Destination>9509</Destination>
-      <Count>2</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9509" Count="2" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to The Western Market Square-->
-      <Type>NPC</Type>
-      <Destination>9509</Destination>
-      <Count>2</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9509" Count="11" Max="20" Vnum="9533">
       <!--Spawn A nomad merchant to The Western Market Square-->
-      <Type>NPC</Type>
-      <Destination>9509</Destination>
-      <Count>11</Count>
-      <Max>20</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9510" Count="3" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to The Common Square-->
-      <Type>NPC</Type>
-      <Destination>9510</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9510" Count="20" Max="20" Vnum="9509">
       <!--Spawn a beggar to The Common Square-->
-      <Type>NPC</Type>
-      <Destination>9510</Destination>
-      <Count>20</Count>
-      <Max>20</Max>
-      <Vnum>9509</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9511" Count="1" Max="1" Vnum="9547">
       <!--Spawn the dirt devil to Outside the Southern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9511</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9547</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9511" Count="1" Max="1" Vnum="9549">
       <!--Spawn the raggety dervish to Outside the Southern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9511</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9549</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9511" Count="1" Max="1" Vnum="9548">
       <!--Spawn the lamia to Outside the Southern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9511</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9548</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9512" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Southern Bridge Above River Ishtar-->
-      <Type>NPC</Type>
-      <Destination>9512</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9513" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the South Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9513</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9513" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the South Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9513</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9514" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to The Northwestern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9514</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9515" Count="1" Max="1" Vnum="9541">
       <!--Spawn Curley GreenLeaf to The Northern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9515</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9541</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9515" Count="1" Max="1" Vnum="9538">
       <!--Spawn Gord to The Northern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9515</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9538</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9516" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to The Northeastern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9516</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9517" Count="4" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to The Eastern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9517</Destination>
-      <Count>4</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9517" Count="4" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to The Eastern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9517</Destination>
-      <Count>4</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9517" Count="1" Max="20" Vnum="9533">
       <!--Spawn A nomad merchant to The Eastern Market Square-->
-      <Type>NPC</Type>
-      <Destination>9517</Destination>
-      <Count>1</Count>
-      <Max>20</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9518" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Sultan's Walk-->
-      <Type>NPC</Type>
-      <Destination>9518</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9519" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Sultan's Walk-->
-      <Type>NPC</Type>
-      <Destination>9519</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9520" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Sultan's Walk-->
-      <Type>NPC</Type>
-      <Destination>9520</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultan's guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9522" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the Northern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9522</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9522" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the Northern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9522</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9523" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the West Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9523</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9523" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the West Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9523</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9524" Count="4" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to West Main Street-->
-      <Type>NPC</Type>
-      <Destination>9524</Destination>
-      <Count>4</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9525" Count="2" Max="2" Vnum="9520">
       <!--Spawn a construction worker to West Main Street-->
-      <Type>NPC</Type>
-      <Destination>9525</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9586">
       <!--Spawn a sledge hammer to a construction worker-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9586</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9525" Count="2" Max="2" Vnum="9520">
       <!--Spawn a construction worker to West Main Street-->
-      <Type>NPC</Type>
-      <Destination>9525</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9586">
       <!--Spawn a sledge hammer to a construction worker-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9586</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9525" Count="1" Max="1" Vnum="9519">
       <!--Spawn the foreman to West Main Street-->
-      <Type>NPC</Type>
-      <Destination>9525</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9585">
       <!--Spawn a fountain pen to the foreman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9585</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9527" Count="8" Max="15" Vnum="9568">
       <!--Spawn a tourist to East Main Street-->
-      <Type>NPC</Type>
-      <Destination>9527</Destination>
-      <Count>8</Count>
-      <Max>15</Max>
-      <Vnum>9568</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9528" Count="8" Max="15" Vnum="9568">
       <!--Spawn a tourist to East Main Street-->
-      <Type>NPC</Type>
-      <Destination>9528</Destination>
-      <Count>8</Count>
-      <Max>15</Max>
-      <Vnum>9568</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9529" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to East Main Street-->
-      <Type>NPC</Type>
-      <Destination>9529</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9530" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to East Main Street-->
-      <Type>NPC</Type>
-      <Destination>9530</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9531" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the Eastern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9531</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9531" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the Eastern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9531</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to the sultans guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9532" Count="1" Max="1" Vnum="9518">
       <!--Spawn Cassandra to Cassandra's Catch of the Day-->
-      <Type>NPC</Type>
-      <Destination>9532</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9518</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9564">
       <!--Spawn a salted herring to Cassandra-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9564</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9565">
       <!--Spawn a mussel to Cassandra-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9565</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9533" Count="6" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
-      <Type>NPC</Type>
-      <Destination>9533</Destination>
-      <Count>6</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9533" Count="6" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
-      <Type>NPC</Type>
-      <Destination>9533</Destination>
-      <Count>6</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9533" Count="6" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
-      <Type>NPC</Type>
-      <Destination>9533</Destination>
-      <Count>6</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9534" Count="6" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
-      <Type>NPC</Type>
-      <Destination>9534</Destination>
-      <Count>6</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9534" Count="6" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
-      <Type>NPC</Type>
-      <Destination>9534</Destination>
-      <Count>6</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9535" Count="3" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
-      <Type>NPC</Type>
-      <Destination>9535</Destination>
-      <Count>3</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9543" Count="3" Max="18" Vnum="9536">
       <!--Spawn the dockworker to Boat Ramp-->
-      <Type>NPC</Type>
-      <Destination>9543</Destination>
-      <Count>3</Count>
-      <Max>18</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9544" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to West Casbah-->
-      <Type>NPC</Type>
-      <Destination>9544</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9544" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to West Casbah-->
-      <Type>NPC</Type>
-      <Destination>9544</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9545" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to West Casbah-->
-      <Type>NPC</Type>
-      <Destination>9545</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9545" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to West Casbah-->
-      <Type>NPC</Type>
-      <Destination>9545</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9546" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to The Casbah-->
-      <Type>NPC</Type>
-      <Destination>9546</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9547" Count="2" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to The Casbah-->
-      <Type>NPC</Type>
-      <Destination>9547</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9550" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to The Casbah-->
-      <Type>NPC</Type>
-      <Destination>9550</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9552" Count="2" Max="16" Vnum="9582">
       <!--Spawn The Royal Guard to The Casbah-->
-      <Type>NPC</Type>
-      <Destination>9552</Destination>
-      <Count>2</Count>
-      <Max>16</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9553" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to The Casbah-->
-      <Type>NPC</Type>
-      <Destination>9553</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9555" Count="2" Max="2" Vnum="9545">
       <!--Spawn the old man to Kali Row-->
-      <Type>NPC</Type>
-      <Destination>9555</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9545</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9590">
       <!--Spawn a chessboard to the old man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9590</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9555" Count="2" Max="2" Vnum="9545">
       <!--Spawn the old man to Kali Row-->
-      <Type>NPC</Type>
-      <Destination>9555</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9545</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9590">
       <!--Spawn a chessboard to the old man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9590</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9563" Count="1" Max="20" Vnum="9544">
       <!--Spawn the vulture to Guildsman's Row-->
-      <Type>NPC</Type>
-      <Destination>9563</Destination>
-      <Count>1</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9565" Count="1" Max="13" Vnum="9543">
       <!--Spawn the alley cat to Alley-->
-      <Type>NPC</Type>
-      <Destination>9565</Destination>
-      <Count>1</Count>
-      <Max>13</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9566" Count="1" Max="1" Vnum="9530">
       <!--Spawn Mustafah to Alley-->
-      <Type>NPC</Type>
-      <Destination>9566</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9530</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9566" Count="1" Max="1" Vnum="9532">
       <!--Spawn Kareem to Alley-->
-      <Type>NPC</Type>
-      <Destination>9566</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9532</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9566" Count="1" Max="1" Vnum="9531">
       <!--Spawn Fatima to Alley-->
-      <Type>NPC</Type>
-      <Destination>9566</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9531</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9566" Count="1" Max="1" Vnum="9529">
       <!--Spawn Aziz to Alley-->
-      <Type>NPC</Type>
-      <Destination>9566</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9529</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9567" Count="1" Max="13" Vnum="9543">
       <!--Spawn the alley cat to Alley-->
-      <Type>NPC</Type>
-      <Destination>9567</Destination>
-      <Count>1</Count>
-      <Max>13</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9568" Count="3" Max="3" Vnum="9535">
       <!--Spawn the skinny kid to Alley-->
-      <Type>NPC</Type>
-      <Destination>9568</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>9535</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9568" Count="3" Max="3" Vnum="9535">
       <!--Spawn the skinny kid to Alley-->
-      <Type>NPC</Type>
-      <Destination>9568</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>9535</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9568" Count="3" Max="3" Vnum="9535">
       <!--Spawn the skinny kid to Alley-->
-      <Type>NPC</Type>
-      <Destination>9568</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>9535</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9569" Count="3" Max="13" Vnum="9543">
       <!--Spawn the alley cat to Alley-->
-      <Type>NPC</Type>
-      <Destination>9569</Destination>
-      <Count>3</Count>
-      <Max>13</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9573" Count="3" Max="13" Vnum="9543">
       <!--Spawn the alley cat to Alley-->
-      <Type>NPC</Type>
-      <Destination>9573</Destination>
-      <Count>3</Count>
-      <Max>13</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9603" Count="1" Max="1" Vnum="9501">
       <!--Spawn the guildmaster to Priest's Sanctum-->
-      <Type>NPC</Type>
-      <Destination>9603</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9604" Count="1" Max="1" Vnum="9581">
       <!--Spawn the high priest to Chamber of the High Priest-->
-      <Type>NPC</Type>
-      <Destination>9604</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9581</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9607" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to The Craftsman's Guild-->
-      <Type>NPC</Type>
-      <Destination>9607</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9608" Count="2" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to Inside the Temple-->
-      <Type>NPC</Type>
-      <Destination>9608</Destination>
-      <Count>2</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9609" Count="2" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to Inside the Temple-->
-      <Type>NPC</Type>
-      <Destination>9609</Destination>
-      <Count>2</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9609" Count="1" Max="1" Vnum="9593">
       <!--Spawn A healer to Inside the Temple-->
-      <Type>NPC</Type>
-      <Destination>9609</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9593</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9611" Count="1" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9611</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9611" Count="1" Max="1" Vnum="9524">
       <!--Spawn the statue of Nightshade to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9611</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9611" Count="1" Max="1" Vnum="9528">
       <!--Spawn the statue of Landru to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9611</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9528</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9611" Count="1" Max="1" Vnum="9521">
       <!--Spawn the statue of Nati to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9611</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9611" Count="1" Max="1" Vnum="9526">
       <!--Spawn the statue of Shandra to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9611</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9526</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9612" Count="2" Max="20" Vnum="9533">
       <!--Spawn A nomad merchant to Entrance to the Guild of Priests-->
-      <Type>NPC</Type>
-      <Destination>9612</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9612" Count="1" Max="1" Vnum="9557">
       <!--Spawn the guild guardian to Entrance to the Guild of Priests-->
-      <Type>NPC</Type>
-      <Destination>9612</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9557</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9613" Count="6" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to The Temple Gates-->
-      <Type>NPC</Type>
-      <Destination>9613</Destination>
-      <Count>6</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9613" Count="2" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to The Temple Gates-->
-      <Type>NPC</Type>
-      <Destination>9613</Destination>
-      <Count>2</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9613" Count="6" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to The Temple Gates-->
-      <Type>NPC</Type>
-      <Destination>9613</Destination>
-      <Count>6</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9614" Count="3" Max="13" Vnum="9543">
       <!--Spawn the alley cat to Ahkeem's Stuff-->
-      <Type>NPC</Type>
-      <Destination>9614</Destination>
-      <Count>3</Count>
-      <Max>13</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9614" Count="3" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to Ahkeem's Stuff-->
-      <Type>NPC</Type>
-      <Destination>9614</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9614" Count="1" Max="1" Vnum="9513">
       <!--Spawn Ahkeem the tailor to Ahkeem's Stuff-->
-      <Type>NPC</Type>
-      <Destination>9614</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9583">
       <!--Spawn a pair of sewing shears to Ahkeem the tailor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9583</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9555">
       <!--Spawn a silk jacket to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9555</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9554">
       <!--Spawn a sash to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9553">
       <!--Spawn a pair of sandles to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9553</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9552">
       <!--Spawn an embroidered robe to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9552</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9551">
       <!--Spawn a common robe to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9550">
       <!--Spawn a pair of hose to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9550</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9549">
       <!--Spawn a girdle to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9549</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9548">
       <!--Spawn a fur cloak to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9548</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9547">
       <!--Spawn a pair of hiking boots to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9547</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9546">
       <!--Spawn a belt to Ahkeem the tailor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9546</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9615" Count="2" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to Vera's Veggies-->
-      <Type>NPC</Type>
-      <Destination>9615</Destination>
-      <Count>2</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9615" Count="1" Max="1" Vnum="9514">
       <!--Spawn Vera the veggie lady to Vera's Veggies-->
-      <Type>NPC</Type>
-      <Destination>9615</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9514</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9560">
       <!--Spawn some dates to Vera the veggie lady-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9560</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9559">
       <!--Spawn a fig to Vera the veggie lady-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9559</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9558">
       <!--Spawn a tomato to Vera the veggie lady-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9558</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9557">
       <!--Spawn a carrot to Vera the veggie lady-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9557</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9556">
       <!--Spawn an egg to Vera the veggie lady-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9556</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9616" Count="1" Max="1" Vnum="9523">
       <!--Spawn the statue of Zump to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9616</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9523</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9616" Count="1" Max="1" Vnum="9522">
       <!--Spawn the statue of Alander to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9616</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9522</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9616" Count="1" Max="1" Vnum="9527">
       <!--Spawn the statue of Furey to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9616</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9527</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9616" Count="1" Max="1" Vnum="9525">
       <!--Spawn the statue of Satin to The Museum of the Greater Gods-->
-      <Type>NPC</Type>
-      <Destination>9616</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9621" Count="1" Max="1" Vnum="9512">
       <!--Spawn Nabil to Nabil's Exotic Animals-->
-      <Type>NPC</Type>
-      <Destination>9621</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9512</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9622" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to The Butchary-->
-      <Type>NPC</Type>
-      <Destination>9622</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9622" Count="1" Max="1" Vnum="9515">
       <!--Spawn Butch the meatcutter to The Butchary-->
-      <Type>NPC</Type>
-      <Destination>9622</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9584">
       <!--Spawn a meat cleaver to Butch the meatcutter-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9584</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9563">
       <!--Spawn a whole chicken to Butch the meatcutter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9563</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9562">
       <!--Spawn a side of beef to Butch the meatcutter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9562</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9561">
       <!--Spawn a leg of lamb to Butch the meatcutter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9623" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to The Witch's Brew-->
-      <Type>NPC</Type>
-      <Destination>9623</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9623" Count="1" Max="1" Vnum="9579">
       <!--Spawn Elvira to The Witch's Brew-->
-      <Type>NPC</Type>
-      <Destination>9623</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9579</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9574">
       <!--Spawn a dark blue potion to Elvira-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9574</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9573">
       <!--Spawn an off white potion to Elvira-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9573</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9572">
       <!--Spawn a crystal clear potion to Elvira-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9572</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9571">
       <!--Spawn a deep-green potion to Elvira-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9571</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9570">
       <!--Spawn a glowing blue vial to Elvira-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9570</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9624" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to Braheem's Magic Shop-->
-      <Type>NPC</Type>
-      <Destination>9624</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9624" Count="2" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to Braheem's Magic Shop-->
-      <Type>NPC</Type>
-      <Destination>9624</Destination>
-      <Count>2</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9624" Count="1" Max="1" Vnum="9580">
       <!--Spawn Braheem to Braheem's Magic Shop-->
-      <Type>NPC</Type>
-      <Destination>9624</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9580</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9582">
       <!--Spawn a pink wand to Braheem-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9582</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9581">
       <!--Spawn a wand of oak to Braheem-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9581</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9579">
       <!--Spawn a grey-silver wand to Braheem-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9579</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9578">
       <!--Spawn a scroll of recall to Braheem-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9578</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9625" Count="1" Max="1" Vnum="9556">
       <!--Spawn the guild guardian to Entrance to the Mage's Tower-->
-      <Type>NPC</Type>
-      <Destination>9625</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9556</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9626" Count="2" Max="20" Vnum="9533">
       <!--Spawn A nomad merchant to Entrance to the Guild of Warriors'-->
-      <Type>NPC</Type>
-      <Destination>9626</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9626" Count="1" Max="1" Vnum="9558">
       <!--Spawn the guild guardian to Entrance to the Guild of Warriors'-->
-      <Type>NPC</Type>
-      <Destination>9626</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9558</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9628" Count="1" Max="1" Vnum="9511">
       <!--Spawn the shopkeeper to The General Store-->
-      <Type>NPC</Type>
-      <Destination>9628</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9538">
       <!--Spawn a belt pouch to the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9538</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9539">
       <!--Spawn a candle to the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9539</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9537">
       <!--Spawn a basket to the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9537</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9536">
       <!--Spawn a backpack to the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9536</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9535">
       <!--Spawn an oil lamp to the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9535</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9534">
       <!--Spawn a sack to the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9534</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9629" Count="1" Max="1" Vnum="9516">
       <!--Spawn Abdul the armorer to Abdul's Armor-->
-      <Type>NPC</Type>
-      <Destination>9629</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9516</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9521">
       <!--Spawn a splinted shield to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9520">
       <!--Spawn a wooden shield to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9519">
       <!--Spawn a suit of splintmail to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9518">
       <!--Spawn a suit of ringmail to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9518</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9517">
       <!--Spawn a suit of field plate to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9516">
       <!--Spawn a suit of brigandine to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9516</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9515">
       <!--Spawn a suit of banded mail to Abdul the armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9631" Count="1" Max="1" Vnum="9564">
       <!--Spawn the mercenary to The Mercenary's Guild-->
-      <Type>NPC</Type>
-      <Destination>9631</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9564</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9632" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to Entrance to the Thieves' Guild-->
-      <Type>NPC</Type>
-      <Destination>9632</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9632" Count="1" Max="1" Vnum="9559">
       <!--Spawn the guild guardian to Entrance to the Thieves' Guild-->
-      <Type>NPC</Type>
-      <Destination>9632</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9559</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9634" Count="1" Max="1" Vnum="9502">
       <!--Spawn the guildmaster to Tournament and Practice Yard-->
-      <Type>NPC</Type>
-      <Destination>9634</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9635" Count="1" Max="1" Vnum="9510">
       <!--Spawn the baker to The Bread Stand-->
-      <Type>NPC</Type>
-      <Destination>9635</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9510</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9545">
       <!--Spawn some nuts to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9545</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9543">
       <!--Spawn some iron rations to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9542">
       <!--Spawn some dry rations to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9541">
       <!--Spawn a bread to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9541</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9540">
       <!--Spawn a hunk of cheese to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9540</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9636" Count="2" Max="20" Vnum="9533">
       <!--Spawn A nomad merchant to Igor's Implements of Destruction-->
-      <Type>NPC</Type>
-      <Destination>9636</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9636" Count="1" Max="1" Vnum="9517">
       <!--Spawn Igor the weaponsmith to Igor's Implements of Destruction-->
-      <Type>NPC</Type>
-      <Destination>9636</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9591">
       <!--Spawn a sesame seed to Igor the weaponsmith-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9591</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9514">
       <!--Spawn a rapier to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9514</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9513">
       <!--Spawn a scimitar to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9512">
       <!--Spawn a two-handed bastard sword to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9512</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9511">
       <!--Spawn a sickle to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9510">
       <!--Spawn a guisarme to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9510</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9509">
       <!--Spawn a glaive to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9509</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9508">
       <!--Spawn a fauchard to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9508</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9507">
       <!--Spawn a bill-guisarme to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9506">
       <!--Spawn a bec de corbine to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9505">
       <!--Spawn a bardiche to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9504">
       <!--Spawn an awl-pike to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9503">
       <!--Spawn a morningstar to Igor the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9637" Count="1" Max="1" Vnum="9584">
       <!--Spawn Stitch, the leather dude to Ye Old Leather Shoppe-->
-      <Type>NPC</Type>
-      <Destination>9637</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9584</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9533">
       <!--Spawn a leather shield to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9532">
       <!--Spawn a pair of studded leather gloves to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9532</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9531">
       <!--Spawn a pair of studded leather pants to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9531</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9530">
       <!--Spawn a pair of studded leather sleeves to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9530</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9529">
       <!--Spawn a studded leather jacket to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9529</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9528">
       <!--Spawn a pair of padded leather boots to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9528</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9527">
       <!--Spawn a pair of leather gloves to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9527</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9526">
       <!--Spawn a pair of leather pants to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9526</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9525">
       <!--Spawn a leather cap to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9524">
       <!--Spawn a pair of leather sleeves to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9523">
       <!--Spawn a leather jacket to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9523</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9522">
       <!--Spawn a buckler to Stitch, the leather dude-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9522</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9638" Count="1" Max="1" Vnum="9583">
       <!--Spawn Patch the bartender to Smuggler's Inn-->
-      <Type>NPC</Type>
-      <Destination>9638</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9583</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9577">
       <!--Spawn a shot to Patch the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9577</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9576">
       <!--Spawn a barrel of beer to Patch the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9576</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9575">
       <!--Spawn a flaming scorpion to Patch the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9575</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9638" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Smuggler's Inn-->
-      <Type>Item</Type>
-      <Destination>9638</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9642" Count="1" Max="1" Vnum="9565">
       <!--Spawn the shipwright to Shipwright-->
-      <Type>NPC</Type>
-      <Destination>9642</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9565</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3061">
       <!--Spawn a leather cap to the shipwright-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3061</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3060">
       <!--Spawn a leather jerkin to the shipwright-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9644" Count="1" Max="1" Vnum="9566">
       <!--Spawn the blacksmith to The Forge-->
-      <Type>NPC</Type>
-      <Destination>9644</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9566</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9589">
       <!--Spawn a riding crop to the blacksmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9589</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9588">
       <!--Spawn a saddle to the blacksmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9588</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9587">
       <!--Spawn a horse shoe to the blacksmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9587</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9645" Count="6" Max="6" Vnum="9567">
       <!--Spawn a horse to The Royal Stables-->
-      <Type>NPC</Type>
-      <Destination>9645</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9645" Count="6" Max="6" Vnum="9567">
       <!--Spawn a horse to The Royal Stables-->
-      <Type>NPC</Type>
-      <Destination>9645</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9645" Count="6" Max="6" Vnum="9567">
       <!--Spawn a horse to The Royal Stables-->
-      <Type>NPC</Type>
-      <Destination>9645</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9645" Count="6" Max="6" Vnum="9567">
       <!--Spawn a horse to The Royal Stables-->
-      <Type>NPC</Type>
-      <Destination>9645</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9645" Count="6" Max="6" Vnum="9567">
       <!--Spawn a horse to The Royal Stables-->
-      <Type>NPC</Type>
-      <Destination>9645</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9645" Count="6" Max="6" Vnum="9567">
       <!--Spawn a horse to The Royal Stables-->
-      <Type>NPC</Type>
-      <Destination>9645</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>9567</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9646" Count="1" Max="1" Vnum="9503">
       <!--Spawn the guildmaster to The Secret Yard-->
-      <Type>NPC</Type>
-      <Destination>9646</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9648" Count="1" Max="1" Vnum="9500">
       <!--Spawn the guildmaster to The Invokers Laboratory-->
-      <Type>NPC</Type>
-      <Destination>9648</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9649" Count="2" Max="20" Vnum="9544">
       <!--Spawn the vulture to The Hay Loft-->
-      <Type>NPC</Type>
-      <Destination>9649</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9654" Count="1" Max="1" Vnum="9589">
       <!--Spawn the mayor to City Hall-->
-      <Type>NPC</Type>
-      <Destination>9654</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9589</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9501">
       <!--Spawn the Key to the City of New Thalos to the mayor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9655" Count="1" Max="20" Vnum="9544">
       <!--Spawn the vulture to The Boyer/Fletcher's-->
-      <Type>NPC</Type>
-      <Destination>9655</Destination>
-      <Count>1</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9661" Count="2" Max="2" Vnum="9560">
       <!--Spawn a servant boy to Kitchen-->
-      <Type>NPC</Type>
-      <Destination>9661</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9560</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9661" Count="2" Max="2" Vnum="9560">
       <!--Spawn a servant boy to Kitchen-->
-      <Type>NPC</Type>
-      <Destination>9661</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>9560</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9661" Count="1" Max="1" Vnum="9590">
       <!--Spawn the chef to Kitchen-->
-      <Type>NPC</Type>
-      <Destination>9661</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9590</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9666" Count="1" Max="1" Vnum="9555">
       <!--Spawn Allah to Shrine of Allah-->
-      <Type>NPC</Type>
-      <Destination>9666</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9555</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9667" Count="1" Max="20" Vnum="9544">
       <!--Spawn the vulture to Outside the Northern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9667</Destination>
-      <Count>1</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9668" Count="1" Max="20" Vnum="9544">
       <!--Spawn the vulture to Outside the Eastern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9668</Destination>
-      <Count>1</Count>
-      <Max>20</Max>
-      <Vnum>9544</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9668" Count="1" Max="14" Vnum="9592">
       <!--Spawn the bodyguard to Outside the Eastern Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9668</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>9592</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9669" Count="2" Max="13" Vnum="9543">
       <!--Spawn the alley cat to Outside the West Gate of New Thalos-->
-      <Type>NPC</Type>
-      <Destination>9669</Destination>
-      <Count>2</Count>
-      <Max>13</Max>
-      <Vnum>9543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9672" Count="1" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Hall-->
-      <Type>NPC</Type>
-      <Destination>9672</Destination>
-      <Count>1</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9672" Count="2" Max="20" Vnum="9533">
       <!--Spawn A nomad merchant to Hall-->
-      <Type>NPC</Type>
-      <Destination>9672</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>9533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9678" Count="1" Max="1" Vnum="9585">
       <!--Spawn the gardener to Garden-->
-      <Type>NPC</Type>
-      <Destination>9678</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9585</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9680" Count="1" Max="1" Vnum="9588">
       <!--Spawn the mimic to Art Exhibit-->
-      <Type>NPC</Type>
-      <Destination>9680</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9588</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9681" Count="5" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Guest Room-->
-      <Type>NPC</Type>
-      <Destination>9681</Destination>
-      <Count>5</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9682" Count="5" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Hall-->
-      <Type>NPC</Type>
-      <Destination>9682</Destination>
-      <Count>5</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9683" Count="1" Max="1" Vnum="9586">
       <!--Spawn the nightmare to Garden Gazebo-->
-      <Type>NPC</Type>
-      <Destination>9683</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9586</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9683" Count="1" Max="1" Vnum="9578">
       <!--Spawn the pegasus to Garden Gazebo-->
-      <Type>NPC</Type>
-      <Destination>9683</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9578</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="4" Max="4" Vnum="9553">
       <!--Spawn a eunuch to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>9553</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="4" Max="4" Vnum="9553">
       <!--Spawn a eunuch to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>9553</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="4" Max="4" Vnum="9553">
       <!--Spawn a eunuch to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>9553</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="4" Max="4" Vnum="9553">
       <!--Spawn a eunuch to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>9553</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="1" Max="1" Vnum="9554">
       <!--Spawn Nichole, the sultan's favorite to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9687" Count="8" Max="8" Vnum="9551">
       <!--Spawn a harem girl to Harem-->
-      <Type>NPC</Type>
-      <Destination>9687</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>9551</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9688" Count="5" Max="32" Vnum="9561">
       <!--Spawn the sultan's guard to Small room-->
-      <Type>NPC</Type>
-      <Destination>9688</Destination>
-      <Count>5</Count>
-      <Max>32</Max>
-      <Vnum>9561</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9689" Count="1" Max="1" Vnum="9550">
       <!--Spawn The Sultan to Throne Room-->
-      <Type>NPC</Type>
-      <Destination>9689</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9550</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9691" Count="1" Max="1" Vnum="9552">
       <!--Spawn the jailer to Jailer's Room-->
-      <Type>NPC</Type>
-      <Destination>9691</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9552</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9593">
       <!--Spawn the jail key to the jailer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9593</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9696" Count="1" Max="1" Vnum="9587">
       <!--Spawn the wolverine to Secret Cell-->
-      <Type>NPC</Type>
-      <Destination>9696</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9587</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9599">
       <!--Spawn the wolverine claw to the wolverine-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9599</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9697" Count="1" Max="1" Vnum="9575">
       <!--Spawn the chimerical creature to Cell-->
-      <Type>NPC</Type>
-      <Destination>9697</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9575</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9698" Count="1" Max="1" Vnum="9574">
       <!--Spawn the behir to Cell-->
-      <Type>NPC</Type>
-      <Destination>9698</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9574</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9699" Count="5" Max="5" Vnum="9572">
       <!--Spawn the death dog to Cell-->
-      <Type>NPC</Type>
-      <Destination>9699</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>9572</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9699" Count="5" Max="5" Vnum="9572">
       <!--Spawn the death dog to Cell-->
-      <Type>NPC</Type>
-      <Destination>9699</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>9572</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9699" Count="5" Max="5" Vnum="9572">
       <!--Spawn the death dog to Cell-->
-      <Type>NPC</Type>
-      <Destination>9699</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>9572</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9699" Count="5" Max="5" Vnum="9572">
       <!--Spawn the death dog to Cell-->
-      <Type>NPC</Type>
-      <Destination>9699</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>9572</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9699" Count="5" Max="5" Vnum="9572">
       <!--Spawn the death dog to Cell-->
-      <Type>NPC</Type>
-      <Destination>9699</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>9572</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9700" Count="1" Max="1" Vnum="9570">
       <!--Spawn the cryohydra to Cell-->
-      <Type>NPC</Type>
-      <Destination>9700</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9570</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9701" Count="1" Max="1" Vnum="9577">
       <!--Spawn the giant hornet to Cell-->
-      <Type>NPC</Type>
-      <Destination>9701</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9577</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9702" Count="1" Max="1" Vnum="9576">
       <!--Spawn the couatl to Cell-->
-      <Type>NPC</Type>
-      <Destination>9702</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9576</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9703" Count="1" Max="1" Vnum="9573">
       <!--Spawn the spotted lion to Cell-->
-      <Type>NPC</Type>
-      <Destination>9703</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9573</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9704" Count="1" Max="1" Vnum="9571">
       <!--Spawn the minotaur lizard to Cell-->
-      <Type>NPC</Type>
-      <Destination>9704</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9571</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9706" Count="1" Max="1" Vnum="3097">
       <!--Spawn the tiger to Nabil's Back Room-->
-      <Type>NPC</Type>
-      <Destination>9706</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3097</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9706" Count="1" Max="1" Vnum="3096">
       <!--Spawn the lion to Nabil's Back Room-->
-      <Type>NPC</Type>
-      <Destination>9706</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3096</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9706" Count="1" Max="1" Vnum="3095">
       <!--Spawn the eagle to Nabil's Back Room-->
-      <Type>NPC</Type>
-      <Destination>9706</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3095</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9750" Count="0" Max="1" Vnum="9598">
       <!--Spawn the Daemon Claw to Igor's Secret Chamber-->
-      <Type>Item</Type>
-      <Destination>9750</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>9598</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9799" Count="1" Max="1" Vnum="9591">
       <!--Spawn the Ixitxachitl to Lair of the Ixitxachitl-->
-      <Type>NPC</Type>
-      <Destination>9799</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9591</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9602">
       <!--Spawn a beautiful white pearl to the Ixitxachitl-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9602</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9801" Count="1" Max="1" Vnum="9594">
       <!--Spawn the guildmaster to The Secret place-->
-      <Type>NPC</Type>
-      <Destination>9801</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9594</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9793" Count="1" Max="1" Vnum="3051">
       <!--Spawn a canoe to On the Docks-->
-      <Type>Item</Type>
-      <Destination>9793</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3051</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9793" Count="1" Max="1" Vnum="3051">
       <!--Spawn a canoe to On the Docks-->
-      <Type>Item</Type>
-      <Destination>9793</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3051</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="9793" Count="1" Max="1" Vnum="3051">
       <!--Spawn a canoe to On the Docks-->
-      <Type>Item</Type>
-      <Destination>9793</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3051</Vnum>
     </Reset>
   </Resets>
 </Area>

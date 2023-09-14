@@ -4251,7 +4251,7 @@ accessible only to the most trusted members of the guild.</Description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>Sentinel Trainer</flags>
+      <flags>Sentinel Gain</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4700,7 +4700,7 @@ ready to face any challenge that comes her way.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>Sentinel Trainer GuildMaster Warrior</flags>
+      <flags>Sentinel Gain GuildMaster Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4815,7 +4815,7 @@ inspire those around him to be brave and to fight for what is right.</descriptio
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>paladin</Guild>
-      <flags>Sentinel Trainer GuildMaster</flags>
+      <flags>Sentinel Gain GuildMaster</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4933,7 +4933,7 @@ healing arts is undeniable, and she is revered by her fellow healers.</descripti
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>Trainer GuildMaster Sentinel</flags>
+      <flags>Gain GuildMaster Sentinel</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5050,7 +5050,7 @@ silver tongue that makes him well-liked by his fellow thieves.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>Sentinel Trainer GuildMaster Thief Shopkeeper</flags>
+      <flags>Sentinel Gain GuildMaster Thief Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5169,7 +5169,7 @@ knowledge and mastery of magic is undeniable.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>Sentinel Trainer GuildMaster Mage</flags>
+      <flags>Sentinel Gain GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5469,16 +5469,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="">
-		<Pet Vnum="19022" />
-		<Pet Vnum="19023" />
-		<Pet Vnum="19024" />
-		<Pet Vnum="19025" />
-		<Pet Vnum="19026" />
-		<Pet Vnum="19027" />
-		<Pet Vnum="19028" />
-		<Pet Vnum="19029" />
-	  </Shop>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="" />
     </NPC>
     <NPC>
       <Vnum>19022</Vnum>
@@ -6093,7 +6084,7 @@ and leadership, and his mere presence commands respect from all those around.</d
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>bard</Guild>
-      <flags>Sentinel Trainer GuildMaster</flags>
+      <flags>Sentinel Gain GuildMaster</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6335,7 +6326,7 @@ commanding a dark and powerful presence that few could match.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>assassin</Guild>
-      <flags>Sentinel Trainer GuildMaster Shopkeeper</flags>
+      <flags>Sentinel Gain GuildMaster Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6701,7 +6692,7 @@ shapeshifting skills.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>shapeshifter</Guild>
-      <flags>Sentinel Trainer GuildMaster</flags>
+      <flags>Sentinel Gain GuildMaster</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6833,9 +6824,9 @@ glow, signifying her divine allegiance.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-	  <Programs>
+      <Programs>
         <Program Name="AstoriaGoodVSEvil" />
-	  </Programs>
+      </Programs>
     </NPC>
     <NPC>
       <Vnum>19045</Vnum>
@@ -6893,9 +6884,9 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-	  <Programs>
+      <Programs>
         <Program Name="AstoriaGoodVSEvil" />
-	  </Programs>
+      </Programs>
     </NPC>
   </NPCs>
   <Items>
@@ -8658,7 +8649,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <MaxWeight>0</MaxWeight>
       <Material>leather</Material>
       <Charges>8</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>8</MaxCharges>
       <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
@@ -8757,7 +8748,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <MaxWeight>0</MaxWeight>
       <Material>leather</Material>
       <Charges>16</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>16</MaxCharges>
       <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
@@ -11066,1645 +11057,616 @@ specifically trained in its use would be able to benefit from its secrets.</Desc
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="19105" Count="1" Max="1" Vnum="19002">
       <!--Spawn the cook to Krolicks BBQ-->
-      <Type>NPC</Type>
-      <Destination>19105</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19001">
       <!--Spawn a giant bbq turkey leg to the cook-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19002">
       <!--Spawn a big rack of bbq ribs to the cook-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19003">
       <!--Spawn a bbq pork loin to the cook-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19004">
       <!--Spawn a huge beef brisket to the cook-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19104" Count="1" Max="1" Vnum="19003">
       <!--Spawn the weapon master to Axe and Dagger-->
-      <Type>NPC</Type>
-      <Destination>19104</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19005">
       <!--Spawn a dagger to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19006">
       <!--Spawn a short Sword to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19007">
       <!--Spawn an axe to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19008">
       <!--Spawn a staff to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19009">
       <!--Spawn a mace to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19010">
       <!--Spawn a flail to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19011">
       <!--Spawn a whip to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19012">
       <!--Spawn a spear to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19013">
       <!--Spawn a polearm to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19014">
       <!--Spawn a fancy dagger to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19015">
       <!--Spawn a fancy short Sword to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19016">
       <!--Spawn a fancy axe to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19017">
       <!--Spawn a fancy staff to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19017</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19018">
       <!--Spawn a fancy mace to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19018</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19019">
       <!--Spawn a fancy flail to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19019</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19020">
       <!--Spawn a fancy whip to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19020</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19021">
       <!--Spawn a fancy spear to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19021</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19022">
       <!--Spawn a fancy polearm to the weapon master-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19102" Count="1" Max="1" Vnum="19004">
       <!--Spawn Clay the tanner to Tanners Shop-->
-      <Type>NPC</Type>
-      <Destination>19102</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19023">
       <!--Spawn a pair of leather boots to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19023</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19024">
       <!--Spawn a pair of leather pants to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19024</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19025">
       <!--Spawn a leather jerkin to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19025</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19026">
       <!--Spawn a pair of leather sleeves to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19026</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19027">
       <!--Spawn a pair of leather gloves to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19027</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19028">
       <!--Spawn a leather cap to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19028</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19029">
       <!--Spawn a pair of hardened leather boots to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19029</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19030">
       <!--Spawn a pair of hardened leather pants to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19030</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19031">
       <!--Spawn a hardened leather jerkin to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19031</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19032">
       <!--Spawn a pair of hardened leather sleeves to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19032</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19033">
       <!--Spawn a pair of hardened leather gloves to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19033</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19034">
       <!--Spawn a hardened leather cap to Clay the tanner-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19034</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19103" Count="1" Max="1" Vnum="19005">
       <!--Spawn Beatrice the weaver to Weavers and Woolens-->
-      <Type>NPC</Type>
-      <Destination>19103</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19035">
       <!--Spawn a pair of woolen boots to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19035</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19036">
       <!--Spawn a pair of woolen pants to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19036</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19037">
       <!--Spawn a woolen jerkin to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19037</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19038">
       <!--Spawn a pair of woolen sleeves to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19038</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19039">
       <!--Spawn a pair of woolen gloves to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19039</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19040">
       <!--Spawn a woolen cap to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19040</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19041">
       <!--Spawn a pair of fancy woolen boots to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19041</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19042">
       <!--Spawn a pair of fancy woolen pants to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19042</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19043">
       <!--Spawn a fancy woolen jerkin to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19043</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19044">
       <!--Spawn a pair of fancy woolen sleeves to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19044</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19045">
       <!--Spawn a pair of fancy woolen gloves to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19045</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19046">
       <!--Spawn a fancy woolen cap to Beatrice the weaver-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19046</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19100" Count="1" Max="1" Vnum="19006">
       <!--Spawn Mack the shopkeeper to General Store-->
-      <Type>NPC</Type>
-      <Destination>19100</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19047">
       <!--Spawn a large sack to Mack the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19047</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19048">
       <!--Spawn a water skin to Mack the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19048</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19049">
       <!--Spawn a simple torch to Mack the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19049</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19050">
       <!--Spawn a large trunk to Mack the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19050</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19051">
       <!--Spawn a canteen to Mack the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19051</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19052">
       <!--Spawn a ring to Mack the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19052</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19024" Count="1" Max="1" Vnum="19007">
       <!--Spawn Wendy the shopkeeper to Wendy's Shop of Magic-->
-      <Type>NPC</Type>
-      <Destination>19024</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19053">
       <!--Spawn a small scroll of armor to Wendy the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19053</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19054">
       <!--Spawn a small scroll of recall to Wendy the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19054</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19055">
       <!--Spawn a plain looking staff to Wendy the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19055</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19056">
       <!--Spawn a wand to Wendy the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19056</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19076">
       <!--Spawn a potion of return to Wendy the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19076</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19098">
       <!--Spawn a potion of flying to Wendy the shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19098</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19048" Count="1" Max="1" Vnum="19008">
       <!--Spawn the warrior guildmaster to Warriors Training-->
-      <Type>NPC</Type>
-      <Destination>19048</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19057">
       <!--Spawn a flaming sword to the warrior guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19057</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19036" Count="1" Max="1" Vnum="19009">
       <!--Spawn the guild guard to Adventurers Lane-->
-      <Type>NPC</Type>
-      <Destination>19036</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19057">
       <!--Spawn a flaming sword to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19057</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19030" Count="1" Max="1" Vnum="19010">
       <!--Spawn the paladin guildmaster to The Paladins Guidance-->
-      <Type>NPC</Type>
-      <Destination>19030</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19058">
       <!--Spawn a fauchard to the paladin guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19058</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19020" Count="1" Max="1" Vnum="19011">
       <!--Spawn the guild guard to Communer Lane-->
-      <Type>NPC</Type>
-      <Destination>19020</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19058">
       <!--Spawn a fauchard to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19058</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19032" Count="1" Max="1" Vnum="19012">
       <!--Spawn the healer guildmaster to The Healers Guidance-->
-      <Type>NPC</Type>
-      <Destination>19032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19060">
       <!--Spawn a gnarled branch to the healer guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19023" Count="1" Max="1" Vnum="19013">
       <!--Spawn the guild guard to Communer Lane-->
-      <Type>NPC</Type>
-      <Destination>19023</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19060">
       <!--Spawn a gnarled branch to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19050" Count="1" Max="1" Vnum="19014">
       <!--Spawn the thief guildmaster to Thiefs Guidance-->
-      <Type>NPC</Type>
-      <Destination>19050</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19112">
       <!--Spawn a thieve pick to the thief guildmaster-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19112</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19039" Count="1" Max="1" Vnum="19015">
       <!--Spawn the guild guard to Adventurers Lane-->
-      <Type>NPC</Type>
-      <Destination>19039</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19059">
       <!--Spawn a sharp dagger to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19085" Count="1" Max="1" Vnum="19016">
       <!--Spawn the mage guildmaster to Mages Guidance-->
-      <Type>NPC</Type>
-      <Destination>19085</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19061">
       <!--Spawn a coiled viper whip to the mage guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19061</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19076" Count="1" Max="1" Vnum="19017">
       <!--Spawn the guild guard to Soothsayer Lane-->
-      <Type>NPC</Type>
-      <Destination>19076</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19017</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19061">
       <!--Spawn a coiled viper whip to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19061</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19087" Count="1" Max="1" Vnum="19018">
       <!--Spawn the healer to Temple Altar-->
-      <Type>NPC</Type>
-      <Destination>19087</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19018</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19087" Count="1" Max="1" Vnum="19062">
       <!--Spawn a fountain to Temple Altar-->
-      <Type>Item</Type>
-      <Destination>19087</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19062</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19001" Count="1" Max="1" Vnum="19019">
       <!--Spawn the cityguard to The East Gate of Astoria-->
-      <Type>NPC</Type>
-      <Destination>19001</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19019</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19063">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19064">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19064</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19065">
       <!--Spawn a standard issue shield to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19066">
       <!--Spawn a standard issue cloak to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19067">
       <!--Spawn a standard issue helmet to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19068">
       <!--Spawn a pair of standard issue leggings to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19069">
       <!--Spawn a pair of standard issue boots to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19070">
       <!--Spawn a pair of standard issue gloves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19070</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19071">
       <!--Spawn a pair of standard issue sleeves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19072">
       <!--Spawn a standard issue cape to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19073">
       <!--Spawn a standard issue belt to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19073</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19074">
       <!--Spawn a standard issue bracer to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19074</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19075">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19075</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19013" Count="1" Max="1" Vnum="19019">
       <!--Spawn the cityguard to Western Gate-->
-      <Type>NPC</Type>
-      <Destination>19013</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19019</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19063">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19064">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19064</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19065">
       <!--Spawn a standard issue shield to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19066">
       <!--Spawn a standard issue cloak to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19067">
       <!--Spawn a standard issue helmet to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19068">
       <!--Spawn a pair of standard issue leggings to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19069">
       <!--Spawn a pair of standard issue boots to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19070">
       <!--Spawn a pair of standard issue gloves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19070</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19071">
       <!--Spawn a pair of standard issue sleeves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19072">
       <!--Spawn a standard issue cape to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19073">
       <!--Spawn a standard issue belt to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19073</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19074">
       <!--Spawn a standard issue bracer to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19074</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19075">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19075</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19114" Count="1" Max="1" Vnum="19019">
       <!--Spawn the cityguard to Inside the North Gate-->
-      <Type>NPC</Type>
-      <Destination>19114</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19019</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19063">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19064">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19064</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19065">
       <!--Spawn a standard issue shield to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19066">
       <!--Spawn a standard issue cloak to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19067">
       <!--Spawn a standard issue helmet to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19068">
       <!--Spawn a pair of standard issue leggings to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19069">
       <!--Spawn a pair of standard issue boots to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19070">
       <!--Spawn a pair of standard issue gloves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19070</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19071">
       <!--Spawn a pair of standard issue sleeves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19072">
       <!--Spawn a standard issue cape to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19073">
       <!--Spawn a standard issue belt to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19073</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19074">
       <!--Spawn a standard issue bracer to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19074</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19075">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19075</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19063" Count="1" Max="1" Vnum="19019">
       <!--Spawn the cityguard to Inside the South Gate-->
-      <Type>NPC</Type>
-      <Destination>19063</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19019</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19063">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19064">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19064</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19065">
       <!--Spawn a standard issue shield to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19066">
       <!--Spawn a standard issue cloak to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19067">
       <!--Spawn a standard issue helmet to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19068">
       <!--Spawn a pair of standard issue leggings to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19069">
       <!--Spawn a pair of standard issue boots to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19070">
       <!--Spawn a pair of standard issue gloves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19070</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19071">
       <!--Spawn a pair of standard issue sleeves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19072">
       <!--Spawn a standard issue cape to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19073">
       <!--Spawn a standard issue belt to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19073</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19074">
       <!--Spawn a standard issue bracer to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19074</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19075">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19075</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19101" Count="1" Max="1" Vnum="19020">
       <!--Spawn the merchant to Armory-->
-      <Type>NPC</Type>
-      <Destination>19101</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19020</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19077">
       <!--Spawn a mail vest to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19077</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19078">
       <!--Spawn a chainmail helmet to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19078</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19079">
       <!--Spawn a pair of chainmail leggings to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19079</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19080">
       <!--Spawn a pair of chainmail boots to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19080</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19081">
       <!--Spawn a pair of chainmail gloves to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19081</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19082">
       <!--Spawn a pair of chainmail sleeves to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19082</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19083">
       <!--Spawn a chainmail belt to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19083</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19084">
       <!--Spawn a chainmail bracer to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19084</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19085">
       <!--Spawn a plate vest to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19085</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19086">
       <!--Spawn a plate helmet to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19086</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19087">
       <!--Spawn a pair of plate leggings to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19087</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19088">
       <!--Spawn a pair of plate boots to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19088</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19089">
       <!--Spawn a pair of plate gloves to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19089</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19090">
       <!--Spawn a pair of plate sleeves to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19090</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19091">
       <!--Spawn a plate belt to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19091</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19092">
       <!--Spawn a plate bracer to the merchant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19092</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19068" Count="1" Max="1" Vnum="19021">
       <!--Spawn the pet shop boy to hollow tree-->
-      <Type>NPC</Type>
-      <Destination>19068</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19021</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19047" Count="1" Max="1" Vnum="19030">
       <!--Spawn the guard captain to Guard Station-->
-      <Type>NPC</Type>
-      <Destination>19047</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19030</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19093">
       <!--Spawn a flaming halberd to the guard captain-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19093</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19052" Count="1" Max="1" Vnum="19031">
       <!--Spawn the guard captain to Guard Shack-->
-      <Type>NPC</Type>
-      <Destination>19052</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19031</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19094">
       <!--Spawn a frost axe to the guard captain-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19094</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19096">
       <!--Spawn a small brass key to the guard captain-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19096</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19052" Count="1" Max="1" Vnum="19095">
       <!--Spawn the chest to Guard Shack-->
-      <Type>Item</Type>
-      <Destination>19052</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19095</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="19097">
       <!--Spawn the silver coins to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19097</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19029" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19029</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19031" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19031</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19033" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19033</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19049" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19049</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19051" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19051</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19053" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to dummy room-->
-      <Type>NPC</Type>
-      <Destination>19053</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19067" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19067</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19070" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Room-->
-      <Type>NPC</Type>
-      <Destination>19070</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19083" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Roon-->
-      <Type>NPC</Type>
-      <Destination>19083</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19086" Count="1" Max="1" Vnum="3059">
       <!--Spawn a practice dummy to Dummy Roon-->
-      <Type>NPC</Type>
-      <Destination>19086</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19091" Count="1" Max="1" Vnum="19000">
       <!--Spawn the donation pit to Temple of The Moon-->
-      <Type>Item</Type>
-      <Destination>19091</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19090" Count="1" Max="1" Vnum="19000">
       <!--Spawn the donation pit to Temple of The Shadow-->
-      <Type>Item</Type>
-      <Destination>19090</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19089" Count="1" Max="1" Vnum="19000">
       <!--Spawn the donation pit to Temple of the Sun-->
-      <Type>Item</Type>
-      <Destination>19089</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19107" Count="1" Max="1" Vnum="19001">
       <!--Spawn a banker to The Bank-->
-      <Type>NPC</Type>
-      <Destination>19107</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19066" Count="1" Max="1" Vnum="19032">
       <!--Spawn the bard guildmaster to Bards Guidance-->
-      <Type>NPC</Type>
-      <Destination>19066</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19032</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19099">
       <!--Spawn a silver flute to the bard guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19099</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19100">
       <!--Spawn a silver mace to the bard guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19057" Count="1" Max="1" Vnum="19033">
       <!--Spawn the guild guard to Rhymers Path-->
-      <Type>NPC</Type>
-      <Destination>19057</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19033</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19101">
       <!--Spawn a silver lute to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19102">
       <!--Spawn a wooden dagger to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19065" Count="1" Max="1" Vnum="19034">
       <!--Spawn the traveling bard to Bards Guild-->
-      <Type>NPC</Type>
-      <Destination>19065</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19034</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19103">
       <!--Spawn an ivory harp to the traveling bard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19104">
       <!--Spawn a coral harp to the traveling bard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19105">
       <!--Spawn a brass horn to the traveling bard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19106">
       <!--Spawn violin to the traveling bard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19041" Count="1" Max="1" Vnum="19035">
       <!--Spawn the guild guard to Adventurers Lane-->
-      <Type>NPC</Type>
-      <Destination>19041</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19035</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19059">
       <!--Spawn a sharp dagger to the guild guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19123" Count="1" Max="1" Vnum="19036">
       <!--Spawn the assassin guildmaster to Assassins Guidance-->
-      <Type>NPC</Type>
-      <Destination>19123</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19036</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19059">
       <!--Spawn a sharp dagger to the assassin guildmaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19107">
       <!--Spawn a small gold key to the assassin guildmaster-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19124" Count="1" Max="1" Vnum="19108">
       <!--Spawn the glass cabinet to Secret Alcove-->
-      <Type>Item</Type>
-      <Destination>19124</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="19109">
       <!--Spawn a glass dagger to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="19110">
       <!--Spawn a diamond dagger to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="19111">
       <!--Spawn a whalebone dagger to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19082" Count="1" Max="1" Vnum="19042">
       <!--Spawn the shapeshifter guildmaster to Shapeshifter Guidance-->
-      <Type>NPC</Type>
-      <Destination>19082</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19042</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19073" Count="1" Max="1" Vnum="19043">
       <!--Spawn the guild guard to Soothsayer Lane-->
-      <Type>NPC</Type>
-      <Destination>19073</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19043</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn Seraphel, Guardian of Light to Temple of The Moon-->
-      <Type>NPC</Type>
-      <Destination>0</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19044</Vnum>
-    </Reset>
-    <Reset>
-      <!--Spawn Ravenshadow, The Chaosbringer to Guard Shack-->
-      <Type>NPC</Type>
-      <Destination>0</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19045</Vnum>
-    </Reset>
+    <Reset Type="NPC" Destination="0" Count="1" Max="1" Vnum="19044" />
+    <Reset Type="NPC" Destination="0" Count="1" Max="1" Vnum="19045" />
   </Resets>
 </Area>

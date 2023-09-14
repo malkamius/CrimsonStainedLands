@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ ALL } Ceran   The Dale</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2787,7 +2788,7 @@ fields, or south.</Description>
           <Direction>West</Direction>
           <Destination>13651</Destination>
           <Display>the door west</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5119,7 +5120,7 @@ a narrow forest path.</Description>
           <Direction>East</Direction>
           <Destination>13575</Destination>
           <Display>the door east</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5129,7 +5130,7 @@ a narrow forest path.</Description>
           <Direction>West</Direction>
           <Destination>13652</Destination>
           <Display>the door west</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5149,7 +5150,7 @@ a narrow forest path.</Description>
           <Direction>East</Direction>
           <Destination>13651</Destination>
           <Display>the door east</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5159,7 +5160,7 @@ a narrow forest path.</Description>
           <Direction>South</Direction>
           <Destination>13653</Destination>
           <Display>the door south</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5179,7 +5180,7 @@ a narrow forest path.</Description>
           <Direction>North</Direction>
           <Destination>13652</Destination>
           <Display>the door north</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5189,7 +5190,7 @@ a narrow forest path.</Description>
           <Direction>West</Direction>
           <Destination>14176</Destination>
           <Display>the door west</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -5244,6 +5245,7 @@ that has begun to encompass the northern parts of Orthos.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5299,6 +5301,7 @@ dale means peace in his home, for the dale is his home.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -5354,6 +5357,7 @@ people.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -5408,6 +5412,7 @@ at you out of the corner of her eye in interest.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -5462,6 +5467,7 @@ too bright but he appears content.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -5517,6 +5523,7 @@ listeners.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Sanctuary Infrared Sneak</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5571,6 +5578,7 @@ tavern than at home fixing things.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5625,6 +5633,7 @@ against robbers and intruders such as yourself!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5680,6 +5689,7 @@ she can do, and thus returns to making her meal.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5735,6 +5745,7 @@ for now.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -5789,6 +5800,7 @@ waiting for your order.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -5844,6 +5856,7 @@ his face but he seems very content with his work.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -5899,6 +5912,7 @@ only a true creator could understand.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -5955,6 +5969,7 @@ time peddling off shoddy magical gear to any who will buy.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6011,6 +6026,7 @@ spilling quite a lot as she dodges the hands of drunken customers.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6064,6 +6080,7 @@ spilling quite a lot as she dodges the hands of drunken customers.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6119,6 +6136,7 @@ lunch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -6172,6 +6190,7 @@ lunch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -6225,6 +6244,7 @@ lunch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -6278,6 +6298,7 @@ lunch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6333,6 +6354,7 @@ This is where the real dale gets it's life from, the crops it produces.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6387,6 +6409,7 @@ some time to relax.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -6440,6 +6463,7 @@ some time to relax.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6495,6 +6519,7 @@ he appears to be communing with his deity, or at least pretending to.</descripti
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6548,6 +6573,7 @@ he appears to be communing with his deity, or at least pretending to.</descripti
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6602,6 +6628,7 @@ before she turns away shyly.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6656,6 +6683,7 @@ the more mundane task of providing community healing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6712,6 +6740,7 @@ minor magic from his friend Elminster.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6765,6 +6794,7 @@ minor magic from his friend Elminster.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6819,6 +6849,7 @@ before she opens shop. She seems quite worn out.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6873,6 +6904,7 @@ before she opens shop. She seems quite worn out.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6927,6 +6959,7 @@ before she opens shop. She seems quite worn out.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6981,6 +7014,7 @@ before she opens shop. She seems quite worn out.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -7036,6 +7070,7 @@ now turned enforcer.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7091,6 +7126,7 @@ visitors.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7132,6 +7168,7 @@ visitors.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7170,6 +7207,7 @@ visitors.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7212,6 +7250,7 @@ into the market.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7253,6 +7292,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7285,6 +7325,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7308,9 +7349,15 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags>AntiEvil RotDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7321,6 +7368,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -7344,8 +7392,12 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7356,6 +7408,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -7379,8 +7432,12 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags>AntiEvil RotDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7391,6 +7448,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -7414,9 +7472,15 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags>RotDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7427,6 +7491,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -7450,8 +7515,12 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7462,6 +7531,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -7494,6 +7564,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7517,8 +7588,12 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7529,6 +7604,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7561,6 +7637,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7584,8 +7661,12 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7596,6 +7677,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7619,11 +7701,21 @@ It is signed, Knights of Myth Drannor.</Description>
       <ExtraFlags>Glow Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7634,6 +7726,7 @@ It is signed, Knights of Myth Drannor.</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -7664,13 +7757,27 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="PassDoor" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="75" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="PassDoor" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="75" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7681,6 +7788,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>Energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -7713,6 +7821,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>1</Charges>
       <MaxCharges>1</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7744,7 +7853,8 @@ dale and perhaps he will come looking for it someday...</Description>
       <MaxWeight>0</MaxWeight>
       <Material>unique</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7776,7 +7886,8 @@ dale and perhaps he will come looking for it someday...</Description>
       <MaxWeight>0</MaxWeight>
       <Material>unique</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7808,7 +7919,8 @@ dale and perhaps he will come looking for it someday...</Description>
       <MaxWeight>0</MaxWeight>
       <Material>unique</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7840,7 +7952,8 @@ dale and perhaps he will come looking for it someday...</Description>
       <MaxWeight>0</MaxWeight>
       <Material>unique</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7873,6 +7986,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7905,6 +8019,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7928,9 +8043,15 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Hum Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7941,6 +8062,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7964,10 +8086,18 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Magic Bless AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7978,6 +8108,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -8001,9 +8132,15 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Magic Bless AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8014,6 +8151,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -8037,8 +8175,12 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="40" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8049,6 +8191,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -8072,8 +8215,12 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8084,6 +8231,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -8107,7 +8255,9 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8118,6 +8268,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -8153,6 +8304,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8188,6 +8340,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8223,6 +8376,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>silver</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8258,6 +8412,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>3</Charges>
       <MaxCharges>3</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8290,6 +8445,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8322,6 +8478,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8354,6 +8511,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8386,6 +8544,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8418,6 +8577,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>unique</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8450,6 +8610,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -8482,6 +8643,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8514,6 +8676,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8537,10 +8700,18 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8551,6 +8722,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -8574,11 +8746,21 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Glow AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8589,6 +8771,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -8612,9 +8795,15 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8625,6 +8814,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -8648,8 +8838,12 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Glow AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8660,6 +8854,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -8683,9 +8878,15 @@ dale and perhaps he will come looking for it someday...</Description>
       <ExtraFlags>Magic Bless AntiEvil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8696,6 +8897,7 @@ dale and perhaps he will come looking for it someday...</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8704,1309 +8906,494 @@ dale and perhaps he will come looking for it someday...</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="13502" Count="1" Max="2" Vnum="13519">
       <!--Spawn a rabbit to On a woodland trail-->
-      <Type>NPC</Type>
-      <Destination>13502</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>13519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13504" Count="1" Max="3" Vnum="13518">
       <!--Spawn a deer to On a woodland trail-->
-      <Type>NPC</Type>
-      <Destination>13504</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13518</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13506" Count="1" Max="2" Vnum="13519">
       <!--Spawn a rabbit to On a woodland trail-->
-      <Type>NPC</Type>
-      <Destination>13506</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>13519</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13508" Count="1" Max="3" Vnum="13518">
       <!--Spawn a deer to On a woodland trail-->
-      <Type>NPC</Type>
-      <Destination>13508</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13518</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="13517" Count="0" Max="1" Vnum="13500">
       <!--Spawn a signpost to A path in the woodlands-->
-      <Type>Item</Type>
-      <Destination>13517</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>13500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13518" Count="1" Max="6" Vnum="13502">
       <!--Spawn a dale watchman to At the entrance to Greenleaf dale-->
-      <Type>NPC</Type>
-      <Destination>13518</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13554">
       <!--Spawn a smooth-steel ring to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="13520" Count="0" Max="1" Vnum="13503">
       <!--Spawn a well to At a common square in the township-->
-      <Type>Item</Type>
-      <Destination>13520</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>13503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13520" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to At a common square in the township-->
-      <Type>NPC</Type>
-      <Destination>13520</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13520" Count="1" Max="6" Vnum="13502">
       <!--Spawn a dale watchman to At a common square in the township-->
-      <Type>NPC</Type>
-      <Destination>13520</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13554">
       <!--Spawn a smooth-steel ring to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13522" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to A pathway through the township-->
-      <Type>NPC</Type>
-      <Destination>13522</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13523" Count="1" Max="6" Vnum="13502">
       <!--Spawn a dale watchman to A pathway through the township-->
-      <Type>NPC</Type>
-      <Destination>13523</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13554">
       <!--Spawn a smooth-steel ring to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="13530" Count="0" Max="1" Vnum="13501">
       <!--Spawn a signpost to A pathway through the township-->
-      <Type>Item</Type>
-      <Destination>13530</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="13530" Count="0" Max="1" Vnum="13527">
       <!--Spawn a farmer's cart to A pathway through the township-->
-      <Type>Item</Type>
-      <Destination>13530</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>13527</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13530" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to A pathway through the township-->
-      <Type>NPC</Type>
-      <Destination>13530</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13530" Count="1" Max="1" Vnum="13516">
       <!--Spawn a cart owner to A pathway through the township-->
-      <Type>NPC</Type>
-      <Destination>13530</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13516</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13530" Count="1" Max="1" Vnum="13522">
       <!--Spawn a horse to A pathway through the township-->
-      <Type>NPC</Type>
-      <Destination>13530</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13522</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13531" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to Within the main township-->
-      <Type>NPC</Type>
-      <Destination>13531</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13532" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to NW corner of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13532</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13532" Count="1" Max="6" Vnum="13503">
       <!--Spawn a dale woman to NW corner of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13532</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13533" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to Northern end of the Dale Market-->
-      <Type>NPC</Type>
-      <Destination>13533</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13533" Count="1" Max="6" Vnum="13503">
       <!--Spawn a dale woman to Northern end of the Dale Market-->
-      <Type>NPC</Type>
-      <Destination>13533</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13533" Count="1" Max="6" Vnum="13504">
       <!--Spawn a dale man to Northern end of the Dale Market-->
-      <Type>NPC</Type>
-      <Destination>13533</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13534" Count="1" Max="6" Vnum="13504">
       <!--Spawn a dale man to NE corner of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13534</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="13536" Count="0" Max="1" Vnum="13504">
       <!--Spawn fountain to Centre of the Dale market-->
-      <Type>Item</Type>
-      <Destination>13536</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>13504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13536" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to Centre of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13536</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13536" Count="1" Max="6" Vnum="13504">
       <!--Spawn a dale man to Centre of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13536</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13536" Count="1" Max="1" Vnum="13505">
       <!--Spawn the town minstrel to Centre of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13536</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13538" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to SW corner of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13538</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13539" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to Southern end of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13539</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13539" Count="1" Max="6" Vnum="13502">
       <!--Spawn a dale watchman to Southern end of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13539</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13554">
       <!--Spawn a smooth-steel ring to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13539" Count="1" Max="6" Vnum="13504">
       <!--Spawn a dale man to Southern end of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13539</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13540" Count="1" Max="6" Vnum="13503">
       <!--Spawn a dale woman to SE corner of the Dale market-->
-      <Type>NPC</Type>
-      <Destination>13540</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13541" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to On a pathway amidst the Dale community-->
-      <Type>NPC</Type>
-      <Destination>13541</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13543" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to On a pathway amidst the Dale community-->
-      <Type>NPC</Type>
-      <Destination>13543</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13544" Count="1" Max="6" Vnum="13502">
       <!--Spawn a dale watchman to End of the township-->
-      <Type>NPC</Type>
-      <Destination>13544</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13554">
       <!--Spawn a smooth-steel ring to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13548" Count="1" Max="1" Vnum="13526">
       <!--Spawn the dale cleric to The altar room-->
-      <Type>NPC</Type>
-      <Destination>13548</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13526</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13549" Count="1" Max="3" Vnum="13514">
       <!--Spawn a barmaid to The Green Fletcher's Tavern-->
-      <Type>NPC</Type>
-      <Destination>13549</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13514</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13549" Count="2" Max="5" Vnum="13515">
       <!--Spawn a town drunk to The Green Fletcher's Tavern-->
-      <Type>NPC</Type>
-      <Destination>13549</Destination>
-      <Count>2</Count>
-      <Max>5</Max>
-      <Vnum>13515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13549" Count="2" Max="5" Vnum="13515">
       <!--Spawn a town drunk to The Green Fletcher's Tavern-->
-      <Type>NPC</Type>
-      <Destination>13549</Destination>
-      <Count>2</Count>
-      <Max>5</Max>
-      <Vnum>13515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13549" Count="1" Max="1" Vnum="13531">
       <!--Spawn the tavernkeeper to The Green Fletcher's Tavern-->
-      <Type>NPC</Type>
-      <Destination>13549</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13531</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13525">
       <!--Spawn a shot of orc's breath to the tavernkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13522">
       <!--Spawn a mug of ale to the tavernkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13522</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13546">
       <!--Spawn a hot meal to the tavernkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13546</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13550" Count="1" Max="1" Vnum="13532">
       <!--Spawn a baker to The Baker's Delight-->
-      <Type>NPC</Type>
-      <Destination>13550</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13532</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13541">
       <!--Spawn a loaf of bread to a baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13541</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13542">
       <!--Spawn a pie to a baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13542</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13543">
       <!--Spawn a donut to a baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13543</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13551" Count="1" Max="1" Vnum="13511">
       <!--Spawn the dale armorer to The Shadowdale Armory-->
-      <Type>NPC</Type>
-      <Destination>13551</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13505">
       <!--Spawn a suit of steel platemail to the dale armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13506">
       <!--Spawn a pair of steel gauntlets to the dale armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13507">
       <!--Spawn a dale-forged helm to the dale armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13508">
       <!--Spawn a pair of iron leggings to the dale armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13508</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13509">
       <!--Spawn some reinforced steel sleeves to the dale armorer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13509</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13552" Count="1" Max="1" Vnum="13512">
       <!--Spawn the weaponsmith to The Worthy Weapons shop-->
-      <Type>NPC</Type>
-      <Destination>13552</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13512</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13512">
       <!--Spawn a dale-forged mace to the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13512</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13513">
       <!--Spawn a fine dagger to the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13515">
       <!--Spawn A dual-headed flail to the weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13553" Count="1" Max="1" Vnum="13528">
       <!--Spawn the banker to The Dale Bank-->
-      <Type>NPC</Type>
-      <Destination>13553</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13528</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13554" Count="1" Max="1" Vnum="13529">
       <!--Spawn the seamstress to Wear 'N Tear-->
-      <Type>NPC</Type>
-      <Destination>13554</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13529</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13547">
       <!--Spawn a pair of leather boots to the seamstress-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13547</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13548">
       <!--Spawn a beautiful white dress to the seamstress-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13548</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13549">
       <!--Spawn a black suit to the seamstress-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13549</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13555" Count="1" Max="6" Vnum="13503">
       <!--Spawn a dale woman to The Crescent Moon-->
-      <Type>NPC</Type>
-      <Destination>13555</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13555" Count="1" Max="1" Vnum="13513">
       <!--Spawn K'daan the Magi to The Crescent Moon-->
-      <Type>NPC</Type>
-      <Destination>13555</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13513</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13537">
       <!--Spawn a blue potion to K'daan the Magi-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13537</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13538">
       <!--Spawn a pale green potion to K'daan the Magi-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13538</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13539">
       <!--Spawn a silver wand to K'daan the Magi-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13539</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13540">
       <!--Spawn a black rod to K'daan the Magi-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13540</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13556" Count="1" Max="6" Vnum="13503">
       <!--Spawn a dale woman to Forest Wear-->
-      <Type>NPC</Type>
-      <Destination>13556</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13556" Count="1" Max="1" Vnum="13530">
       <!--Spawn a clothing woman to Forest Wear-->
-      <Type>NPC</Type>
-      <Destination>13556</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13530</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13532">
       <!--Spawn a green tunic to a clothing woman-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13532</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13533">
       <!--Spawn a pair of soft leather boots to a clothing woman-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13534">
       <!--Spawn a camoflauge poncho to a clothing woman-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13534</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13561" Count="1" Max="4" Vnum="13507">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13561</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13562" Count="1" Max="4" Vnum="13507">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13562</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13562" Count="1" Max="4" Vnum="13525">
       <!--Spawn a young girl to A small house-->
-      <Type>NPC</Type>
-      <Destination>13562</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13563" Count="1" Max="3" Vnum="13508">
       <!--Spawn a local woman to A small house-->
-      <Type>NPC</Type>
-      <Destination>13563</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13508</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13563" Count="1" Max="4" Vnum="13525">
       <!--Spawn a young girl to A small house-->
-      <Type>NPC</Type>
-      <Destination>13563</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13564" Count="1" Max="1" Vnum="13533">
       <!--Spawn Jason the captain of the guard to The guard headquarters-->
-      <Type>NPC</Type>
-      <Destination>13564</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13533</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13558">
       <!--Spawn a reinforced steel buckler to Jason the captain of the guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13558</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13560">
       <!--Spawn an ivory-hilted steel longsword to Jason the captain of the guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13560</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13565" Count="1" Max="1" Vnum="13523">
       <!--Spawn the lord templar to The Lord Templar's Room-->
-      <Type>NPC</Type>
-      <Destination>13565</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13523</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13529">
       <!--Spawn a fine steel longsword to the lord templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13529</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13530">
       <!--Spawn a mithril-lined steel shield to the lord templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13530</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13531">
       <!--Spawn A set of fine steel sleeves to the lord templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13531</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13570" Count="1" Max="1" Vnum="13527">
       <!--Spawn the dale lord to The Lord's Private Study-->
-      <Type>NPC</Type>
-      <Destination>13570</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13527</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13555">
       <!--Spawn a cape of pure white cloth to the dale lord-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13555</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13556">
       <!--Spawn a silver-studded belt buckle to the dale lord-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13556</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13571" Count="1" Max="14" Vnum="13501">
       <!--Spawn a dale guard to A pathway through the township-->
-      <Type>NPC</Type>
-      <Destination>13571</Destination>
-      <Count>1</Count>
-      <Max>14</Max>
-      <Vnum>13501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13576" Count="1" Max="6" Vnum="13506">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13576</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13577" Count="1" Max="4" Vnum="13524">
       <!--Spawn a young boy to A small house-->
-      <Type>NPC</Type>
-      <Destination>13577</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13578" Count="1" Max="6" Vnum="13506">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13578</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13579" Count="1" Max="4" Vnum="13507">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13579</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13579" Count="1" Max="4" Vnum="13524">
       <!--Spawn a young boy to A small house-->
-      <Type>NPC</Type>
-      <Destination>13579</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13580" Count="1" Max="3" Vnum="13508">
       <!--Spawn a local woman to A small house-->
-      <Type>NPC</Type>
-      <Destination>13580</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13508</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13580" Count="1" Max="4" Vnum="13525">
       <!--Spawn a young girl to A small house-->
-      <Type>NPC</Type>
-      <Destination>13580</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13581" Count="1" Max="6" Vnum="13506">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13581</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13582" Count="1" Max="6" Vnum="13506">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13582</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13583" Count="1" Max="4" Vnum="13524">
       <!--Spawn a young boy to A small house-->
-      <Type>NPC</Type>
-      <Destination>13583</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13584" Count="1" Max="6" Vnum="13521">
       <!--Spawn a farmhand to A small house-->
-      <Type>NPC</Type>
-      <Destination>13584</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13586" Count="1" Max="6" Vnum="13521">
       <!--Spawn a farmhand to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13586</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13587" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13587</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13587" Count="1" Max="6" Vnum="13521">
       <!--Spawn a farmhand to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13587</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13590" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13590</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13591" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13591</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13593" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to Edge of a large lake in the fields-->
-      <Type>NPC</Type>
-      <Destination>13593</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13595" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13595</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13596" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13596</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13598" Count="1" Max="6" Vnum="13521">
       <!--Spawn a farmhand to Edge of a large lake in the fields-->
-      <Type>NPC</Type>
-      <Destination>13598</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13602" Count="1" Max="6" Vnum="13521">
       <!--Spawn a farmhand to Edge of a large lake in the fields-->
-      <Type>NPC</Type>
-      <Destination>13602</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13604" Count="1" Max="7" Vnum="13520">
       <!--Spawn a dale farmer to In the dale fields-->
-      <Type>NPC</Type>
-      <Destination>13604</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>13520</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="13606" Count="0" Max="1" Vnum="13502">
       <!--Spawn a signpost to On a path in the northern dale-->
-      <Type>Item</Type>
-      <Destination>13606</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13606" Count="1" Max="1" Vnum="13534">
       <!--Spawn a knight of Myth Drannor to On a path in the northern dale-->
-      <Type>NPC</Type>
-      <Destination>13606</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13534</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13609" Count="1" Max="3" Vnum="13518">
       <!--Spawn a deer to A path through the forest-->
-      <Type>NPC</Type>
-      <Destination>13609</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13518</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13612" Count="1" Max="6" Vnum="13517">
       <!--Spawn a dale fisherman to On the edge of the fishing lake-->
-      <Type>NPC</Type>
-      <Destination>13612</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13613" Count="1" Max="6" Vnum="13517">
       <!--Spawn a dale fisherman to On the edge of the fishing lake-->
-      <Type>NPC</Type>
-      <Destination>13613</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13615" Count="1" Max="6" Vnum="13517">
       <!--Spawn a dale fisherman to On the edge of the fishing lake-->
-      <Type>NPC</Type>
-      <Destination>13615</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13616" Count="1" Max="6" Vnum="13517">
       <!--Spawn a dale fisherman to On the edge of the fishing lake-->
-      <Type>NPC</Type>
-      <Destination>13616</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13616" Count="1" Max="6" Vnum="13517">
       <!--Spawn a dale fisherman to On the edge of the fishing lake-->
-      <Type>NPC</Type>
-      <Destination>13616</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13617" Count="1" Max="8" Vnum="13502">
       <!--Spawn a dale watchman to In a small outpost-->
-      <Type>NPC</Type>
-      <Destination>13617</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13511">
       <!--Spawn a steel longsword to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13511</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13554">
       <!--Spawn a smooth-steel ring to a dale watchman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13554</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13623" Count="1" Max="6" Vnum="13517">
       <!--Spawn a dale fisherman to On the edge of the fishing lake-->
-      <Type>NPC</Type>
-      <Destination>13623</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13624" Count="1" Max="6" Vnum="13506">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13624</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13625" Count="1" Max="3" Vnum="13508">
       <!--Spawn a local woman to A small house-->
-      <Type>NPC</Type>
-      <Destination>13625</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13508</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13625" Count="1" Max="4" Vnum="13525">
       <!--Spawn a young girl to A small house-->
-      <Type>NPC</Type>
-      <Destination>13625</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13525</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13626" Count="1" Max="4" Vnum="13507">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13626</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13626" Count="1" Max="4" Vnum="13524">
       <!--Spawn a young boy to A small house-->
-      <Type>NPC</Type>
-      <Destination>13626</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>13524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13627" Count="1" Max="6" Vnum="13506">
       <!--Spawn a local man to A small house-->
-      <Type>NPC</Type>
-      <Destination>13627</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>13506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13628" Count="1" Max="1" Vnum="13510">
       <!--Spawn the inkeeper to Within the Dale inn-->
-      <Type>NPC</Type>
-      <Destination>13628</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13510</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13521">
       <!--Spawn a jug of beer to the inkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13521</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13522">
       <!--Spawn a mug of ale to the inkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13522</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13523">
       <!--Spawn a mug of dwarven ale to the inkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13523</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13524">
       <!--Spawn a shot of flaming dragon spirits to the inkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13524</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13628" Count="1" Max="3" Vnum="13514">
       <!--Spawn a barmaid to Within the Dale inn-->
-      <Type>NPC</Type>
-      <Destination>13628</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13514</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13628" Count="1" Max="3" Vnum="13514">
       <!--Spawn a barmaid to Within the Dale inn-->
-      <Type>NPC</Type>
-      <Destination>13628</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13514</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13628" Count="3" Max="5" Vnum="13515">
       <!--Spawn a town drunk to Within the Dale inn-->
-      <Type>NPC</Type>
-      <Destination>13628</Destination>
-      <Count>3</Count>
-      <Max>5</Max>
-      <Vnum>13515</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13648" Count="1" Max="1" Vnum="13500">
       <!--Spawn elminster to Darokin's Observation room-->
-      <Type>NPC</Type>
-      <Destination>13648</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13517">
       <!--Spawn robes of the archmagi to elminster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13517</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13516">
       <!--Spawn a hat covered in arcane symbols to elminster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13516</Vnum>
     </Reset>
   </Resets>
 </Area>

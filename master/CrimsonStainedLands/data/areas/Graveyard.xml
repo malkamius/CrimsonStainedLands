@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 5 10} Alfa    Graveyard</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1197,6 +1198,7 @@ sorrow and depression.  He is haunted by a memory of a lost paradise.</descripti
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1250,6 +1252,7 @@ sorrow and depression.  He is haunted by a memory of a lost paradise.</descripti
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1304,6 +1307,7 @@ resemble claws.  Its eyes are a dark yellow colour and glare hungrily at you.</d
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -1358,6 +1362,7 @@ time.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1411,7 +1416,8 @@ time.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Infrared DetectIllusion</affectedBy>
+      <affectedBy>Infrared DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1465,6 +1471,7 @@ time.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1506,6 +1513,7 @@ time.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1544,6 +1552,7 @@ candles are a yellowish white colour.</Description>
       <Material>oldstyle</Material>
       <Charges>5</Charges>
       <MaxCharges>5</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1582,7 +1591,8 @@ amount money, even when empty.</Description>
       <MaxWeight>0</MaxWeight>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1622,6 +1632,7 @@ even when empty.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1660,6 +1671,7 @@ a dark, green colour.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1697,6 +1709,7 @@ a dark, green colour.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1734,6 +1747,7 @@ a dark, green colour.</Description>
       <Material>bones</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1773,6 +1787,7 @@ A dusty skeleton is in an excellent condition.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1801,8 +1816,12 @@ A dusty skeleton is in an excellent condition.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1813,6 +1832,7 @@ A dusty skeleton is in an excellent condition.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1841,7 +1861,9 @@ A dusty skeleton is in an excellent condition.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1852,6 +1874,7 @@ A dusty skeleton is in an excellent condition.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1866,229 +1889,89 @@ has been engraved on the blade next to the hilt.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="3604" Count="1" Max="4" Vnum="3604">
       <!--Spawn a dusty skeleton to In front of the Chapel-->
-      <Type>NPC</Type>
-      <Destination>3604</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3604</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3606" Count="1" Max="4" Vnum="3604">
       <!--Spawn a dusty skeleton to A Gravel Path on the Graveyard-->
-      <Type>NPC</Type>
-      <Destination>3606</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3604</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3607" Count="0" Max="1" Vnum="3610">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3607</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3609" Count="1" Max="4" Vnum="3603">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3609</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3611" Count="1" Max="4" Vnum="3603">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3611</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3611" Count="0" Max="1" Vnum="3613">
       <!--Spawn a silver dagger to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3611</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3613</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3612" Count="1" Max="4" Vnum="3604">
       <!--Spawn a dusty skeleton to A Gravel Path on the Graveyard-->
-      <Type>NPC</Type>
-      <Destination>3612</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3604</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3613" Count="1" Max="1" Vnum="3600">
       <!--Spawn Henry the Gardener to In a shed on the Graveyard-->
-      <Type>NPC</Type>
-      <Destination>3613</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3601">
       <!--Spawn a brandy bottle to Henry the Gardener-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3613" Count="0" Max="1" Vnum="3602">
       <!--Spawn a brandy bottle to In a shed on the Graveyard-->
-      <Type>Item</Type>
-      <Destination>3613</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3602</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3613" Count="0" Max="1" Vnum="3603">
       <!--Spawn a wheelbarrow to In a shed on the Graveyard-->
-      <Type>Item</Type>
-      <Destination>3613</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3613" Count="0" Max="1" Vnum="3604">
       <!--Spawn a shovel to In a shed on the Graveyard-->
-      <Type>Item</Type>
-      <Destination>3613</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3604</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3613" Count="0" Max="1" Vnum="3605">
       <!--Spawn a rake to In a shed on the Graveyard-->
-      <Type>Item</Type>
-      <Destination>3613</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3615" Count="0" Max="1" Vnum="3610">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3615</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3617" Count="1" Max="1" Vnum="3602">
       <!--Spawn the ghastly ghoul to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3617</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3602</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3612">
       <!--Spawn a silver pendant to the ghastly ghoul-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3612</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3619" Count="0" Max="1" Vnum="3610">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3619</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3638" Count="1" Max="3" Vnum="3605">
       <!--Spawn the rotting zombie to A Gravel Path on the Graveyard-->
-      <Type>NPC</Type>
-      <Destination>3638</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>3605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3639" Count="1" Max="4" Vnum="3603">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3639</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3640" Count="1" Max="4" Vnum="3604">
       <!--Spawn a dusty skeleton to A Gravel Path on the Graveyard-->
-      <Type>NPC</Type>
-      <Destination>3640</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3604</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3641" Count="0" Max="1" Vnum="3610">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3641</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3643" Count="0" Max="1" Vnum="3603">
       <!--Spawn a wheelbarrow to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3643</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3644" Count="1" Max="3" Vnum="3605">
       <!--Spawn the rotting zombie to A Gravel Path on the Graveyard-->
-      <Type>NPC</Type>
-      <Destination>3644</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>3605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3645" Count="1" Max="1" Vnum="3601">
       <!--Spawn the rotting zombie to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3645</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3611">
       <!--Spawn a amethyst to the rotting zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3611</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3647" Count="0" Max="1" Vnum="3610">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>Item</Type>
-      <Destination>3647</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3649" Count="1" Max="4" Vnum="3603">
       <!--Spawn a dusty skeleton to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3649</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>3603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3651" Count="1" Max="3" Vnum="3605">
       <!--Spawn the rotting zombie to In a dusty Tomb-->
-      <Type>NPC</Type>
-      <Destination>3651</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>3605</Vnum>
     </Reset>
   </Resets>
 </Area>

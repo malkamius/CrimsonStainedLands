@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ All } Diku    Midgaard</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -5973,6 +5974,7 @@ rings and bracelets.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6028,6 +6030,7 @@ body.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6082,6 +6085,7 @@ body.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6136,6 +6140,7 @@ body.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6191,6 +6196,7 @@ lifetime than you have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6245,6 +6251,7 @@ lifetime than you have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -6298,6 +6305,7 @@ lifetime than you have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6352,6 +6360,7 @@ lifetime than you have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6405,6 +6414,7 @@ lifetime than you have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6459,6 +6469,7 @@ lifetime than you have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6514,6 +6525,7 @@ keep herself going.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6572,6 +6584,7 @@ in his presence.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectHidden Infrared Haste DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6626,6 +6639,7 @@ Type 'heal' to see a listing of spells.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6676,11 +6690,12 @@ and you notice that she is surrounded by a blue shimmering aura.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel Practice Mage NoPurge</flags>
+      <flags>NPC Sentinel GuildMaster Mage NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared Sneak DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6730,11 +6745,12 @@ a peaceful, loving look. You notice that he is surrounded by a white aura.</desc
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel Practice Cleric NoPurge</flags>
+      <flags>NPC Sentinel GuildMaster Cleric NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Sanctuary DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6786,11 +6802,12 @@ human</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>NPC Sentinel Practice Thief NoPurge</flags>
+      <flags>NPC Sentinel GuildMaster Thief NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6841,11 +6858,12 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Practice Warrior NoPurge AreaAttack</flags>
+      <flags>NPC Sentinel GuildMaster Warrior NoPurge AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6901,6 +6919,7 @@ as well as defensive spells make him a deadly opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible DetectInvis Infrared Sneak</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6957,6 +6976,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7012,6 +7032,7 @@ them combined with his extraordinary stealth makes him a deadly opponent.</descr
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -7068,6 +7089,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>11</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7121,6 +7143,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7175,6 +7198,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7229,6 +7253,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7283,6 +7308,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7337,6 +7363,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7391,6 +7418,7 @@ opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7446,6 +7474,7 @@ but do not mess with him or else he'll get upset.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7500,6 +7529,7 @@ but do not mess with him or else he'll get upset.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -7553,6 +7583,7 @@ but do not mess with him or else he'll get upset.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7606,6 +7637,7 @@ but do not mess with him or else he'll get upset.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -7660,6 +7692,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7716,6 +7749,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7769,6 +7803,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7822,6 +7857,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -7875,6 +7911,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7932,6 +7969,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7985,6 +8023,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8038,6 +8077,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8092,6 +8132,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -8146,6 +8187,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8199,6 +8241,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8252,6 +8295,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8309,6 +8353,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -8365,6 +8410,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -8421,6 +8467,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8477,6 +8524,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -8534,6 +8582,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Flying DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -8591,6 +8640,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -8648,6 +8698,7 @@ around its teeth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -8706,6 +8757,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -8760,6 +8812,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -8813,6 +8866,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying Swim</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -8866,6 +8920,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying Swim</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -8919,6 +8974,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -8976,6 +9032,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying Swim</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -9029,6 +9086,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -9082,6 +9140,7 @@ for coming here more often.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -9137,6 +9196,7 @@ The Secretary says 'Please sit down and have a seat in the meantime'.</descripti
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9189,7 +9249,8 @@ The Secretary says 'Please sit down and have a seat in the meantime'.</descripti
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -9243,6 +9304,7 @@ The Secretary says 'Please sit down and have a seat in the meantime'.</descripti
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -9297,6 +9359,7 @@ smiles warmly at you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -9354,6 +9417,7 @@ at you, smiling faintly.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9410,6 +9474,7 @@ get him drunk.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9465,6 +9530,7 @@ of his fencing services are true...</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9518,6 +9584,7 @@ of his fencing services are true...</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -9569,11 +9636,12 @@ The guildmaster is in perfect condition.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea Practice Mage</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>9</DamageDiceCount>
@@ -9624,11 +9692,12 @@ the earth to serve him.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea Practice Mage</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9680,11 +9749,12 @@ appears to be wearing a necklace of human fingers.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea Practice Mage</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9735,11 +9805,12 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea Practice Warrior</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9789,11 +9860,12 @@ do a deadly strikes to your opponent.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea Practice Warrior</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>9</DamageDiceCount>
@@ -9846,7 +9918,8 @@ do a deadly strikes to your opponent.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>9</DamageDiceCount>
@@ -9900,6 +9973,7 @@ do a deadly strikes to your opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -9949,7 +10023,8 @@ do a deadly strikes to your opponent.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Sanctuary ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>Sanctuary ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -9995,11 +10070,12 @@ do a deadly strikes to your opponent.</description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel Practice NoTrack Cleric NoPurge Gain</flags>
+      <flags>NPC Sentinel GuildMaster NoTrack Cleric NoPurge Gain</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -10053,6 +10129,7 @@ do a deadly strikes to your opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -10106,6 +10183,7 @@ do a deadly strikes to your opponent.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Flying PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -10145,6 +10223,7 @@ do a deadly strikes to your opponent.</description>
       <Material>wood</Material>
       <Charges>8</Charges>
       <MaxCharges>8</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10176,7 +10255,8 @@ do a deadly strikes to your opponent.</description>
       <MaxWeight>0</MaxWeight>
       <Material>glass</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10208,7 +10288,8 @@ do a deadly strikes to your opponent.</description>
       <MaxWeight>0</MaxWeight>
       <Material>glass</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10241,6 +10322,7 @@ do a deadly strikes to your opponent.</description>
       <Material>glass</Material>
       <Charges>2</Charges>
       <MaxCharges>2</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10273,6 +10355,7 @@ do a deadly strikes to your opponent.</description>
       <Material>glass</Material>
       <Charges>2</Charges>
       <MaxCharges>2</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10305,6 +10388,7 @@ do a deadly strikes to your opponent.</description>
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10344,6 +10428,7 @@ or anyone.</Description>
       <Material>adamite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10376,6 +10461,7 @@ or anyone.</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10408,6 +10494,7 @@ or anyone.</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10446,6 +10533,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10478,6 +10566,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10510,6 +10599,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10542,6 +10632,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10574,6 +10665,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10606,6 +10698,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10638,6 +10731,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10661,7 +10755,9 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10672,6 +10768,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10695,7 +10792,9 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10706,6 +10805,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10738,6 +10838,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10770,6 +10871,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10802,6 +10904,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10825,7 +10928,9 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ExtraFlags>TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10836,6 +10941,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10859,7 +10965,9 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10870,6 +10978,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10902,6 +11011,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10934,6 +11044,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <Material>brass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10977,6 +11088,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11009,6 +11121,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11044,6 +11157,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>vellum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11084,6 +11198,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>vellum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11130,6 +11245,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11170,6 +11286,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>vellum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11198,8 +11315,12 @@ Some letters have been scratched on its bottom.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -11210,6 +11331,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11250,6 +11372,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11287,6 +11410,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -11319,6 +11443,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -11351,6 +11476,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -11383,6 +11509,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11420,6 +11547,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11457,6 +11585,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11489,6 +11618,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11521,6 +11651,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11553,6 +11684,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>Brand New Newbie Bone </Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11585,6 +11717,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>shadow</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11617,6 +11750,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11649,6 +11783,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11681,6 +11816,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11713,6 +11849,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11745,6 +11882,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11777,6 +11915,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>2</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11809,6 +11948,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11841,6 +11981,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11873,6 +12014,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11905,6 +12047,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11937,6 +12080,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -11969,6 +12113,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -12001,6 +12146,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12033,6 +12179,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12065,6 +12212,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12097,6 +12245,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12129,6 +12278,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12161,6 +12311,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12193,6 +12344,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12230,6 +12382,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12265,6 +12418,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12300,6 +12454,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12337,6 +12492,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>clay</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12372,6 +12528,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12409,6 +12566,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12444,6 +12602,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12479,6 +12638,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12514,6 +12674,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12546,6 +12707,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -12577,7 +12739,8 @@ Some letters have been scratched on its bottom.</Description>
       <MaxWeight>0</MaxWeight>
       <Material>china</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12614,7 +12777,8 @@ Some letters have been scratched on its bottom.</Description>
       <MaxWeight>0</MaxWeight>
       <Material>china</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12651,7 +12815,8 @@ Some letters have been scratched on its bottom.</Description>
       <MaxWeight>0</MaxWeight>
       <Material>clay</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -12689,6 +12854,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12721,6 +12887,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -12753,6 +12920,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12785,6 +12953,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12817,6 +12986,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12849,6 +13019,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12881,6 +13052,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12913,6 +13085,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12945,6 +13118,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -12977,6 +13151,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>2</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -13009,6 +13184,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13046,6 +13222,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13083,6 +13260,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13120,6 +13298,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>brass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13157,6 +13336,7 @@ Some letters have been scratched on its bottom.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13198,6 +13378,7 @@ A
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13230,6 +13411,7 @@ A
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13271,6 +13453,7 @@ A
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13308,6 +13491,7 @@ A
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13345,6 +13529,7 @@ A
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13384,6 +13569,7 @@ Arms.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13423,6 +13609,7 @@ other side.</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13460,6 +13647,7 @@ other side.</Description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13492,6 +13680,7 @@ other side.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13529,6 +13718,7 @@ other side.</Description>
       <Material>leather</Material>
       <Charges>1</Charges>
       <MaxCharges>1</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13561,6 +13751,7 @@ other side.</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13604,6 +13795,7 @@ Diana the Receptionist</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13646,7 +13838,8 @@ Midgaard City Bank</Description>
       <MaxWeight>0</MaxWeight>
       <Material>china</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13684,6 +13877,7 @@ Midgaard City Bank</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13721,6 +13915,7 @@ Midgaard City Bank</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13759,6 +13954,7 @@ hours.  Care for a bite?</Description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13795,7 +13991,8 @@ hours.  Care for a bite?</Description>
       <MaxWeight>0</MaxWeight>
       <Material>glass</Material>
       <Charges>0</Charges>
-      <MaxCharges>0</MaxCharges>
+      <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13834,6 +14031,7 @@ logo.  Worth every penny.</Description>
       <Material>ivory</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13866,6 +14064,7 @@ logo.  Worth every penny.</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -13942,6 +14141,7 @@ Midgaard              Midgaard                       Midgaard</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14009,6 +14209,7 @@ Type "areas" for a complete list with suggested levels and the authors.</Descrip
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14084,6 +14285,7 @@ Miden'Nir
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14155,6 +14357,7 @@ Roads          Drop-off
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14222,6 +14425,7 @@ Dwarf Forest</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14310,6 +14514,7 @@ Gate</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14380,6 +14585,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14412,6 +14618,7 @@ Mountain</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14444,6 +14651,7 @@ Mountain</Description>
       <Material>leather</Material>
       <Charges>1</Charges>
       <MaxCharges>1</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14479,6 +14687,7 @@ Mountain</Description>
       <Material>vellum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14525,6 +14734,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14565,6 +14775,7 @@ Mountain</Description>
       <Material>vellum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14606,6 +14817,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14643,6 +14855,7 @@ Mountain</Description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14678,6 +14891,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14713,6 +14927,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14750,6 +14965,7 @@ Mountain</Description>
       <Material>clay</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14785,6 +15001,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14822,6 +15039,7 @@ Mountain</Description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14857,6 +15075,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14892,6 +15111,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14927,6 +15147,7 @@ Mountain</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14959,6 +15180,7 @@ Mountain</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -14987,8 +15209,12 @@ Mountain</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -14999,6 +15225,7 @@ Mountain</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15027,8 +15254,12 @@ Mountain</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15039,6 +15270,7 @@ Mountain</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15068,8 +15300,12 @@ Merc Industries</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15080,6 +15316,7 @@ Merc Industries</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15109,8 +15346,12 @@ Merc Industries</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15121,6 +15362,7 @@ Merc Industries</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15159,6 +15401,7 @@ Merc Industries</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15197,6 +15440,7 @@ Merc Industries</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15235,6 +15479,7 @@ Merc Industries</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -15273,6 +15518,7 @@ Merc Industries</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15311,6 +15557,7 @@ Merc Industries</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15349,6 +15596,7 @@ Merc Industries</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15387,6 +15635,7 @@ Merc Industries</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15425,6 +15674,7 @@ Merc Industries</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15463,6 +15713,7 @@ Merc Industries</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -15501,6 +15752,7 @@ Merc Industries</Description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -15539,6 +15791,7 @@ Merc Industries</Description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -15568,8 +15821,12 @@ Merc Industries</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15580,6 +15837,7 @@ Merc Industries</Description>
       <Material>copper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15603,8 +15861,12 @@ Merc Industries</Description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Light</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15615,6 +15877,7 @@ Merc Industries</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15643,7 +15906,9 @@ Merc Industries</Description>
       <ExtraFlags>Bless</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15654,6 +15919,7 @@ Merc Industries</Description>
       <Material>diamond</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15683,7 +15949,9 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ExtraFlags>Bless</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -15694,6 +15962,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15731,6 +16000,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>pearl</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15763,6 +16033,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15795,6 +16066,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15827,6 +16099,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15859,6 +16132,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15891,6 +16165,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15926,6 +16201,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15958,6 +16234,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -15994,2725 +16271,1025 @@ Varggin Shih: n,d,3w,3s,d,2s,d,n,u,w,u,n,u,2n,e,d,n,d,2n</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="3101" Count="0" Max="1" Vnum="3134">
       <!--Spawn the Bench to Promenade-->
-      <Type>Item</Type>
-      <Destination>3101</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3134</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3102" Count="0" Max="1" Vnum="3134">
       <!--Spawn the Bench to Promenade-->
-      <Type>Item</Type>
-      <Destination>3102</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3134</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3103" Count="0" Max="1" Vnum="3134">
       <!--Spawn the Bench to Austral Square-->
-      <Type>Item</Type>
-      <Destination>3103</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3134</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3106" Count="1" Max="1" Vnum="3100">
       <!--Spawn the maid to Park Cafe-->
-      <Type>NPC</Type>
-      <Destination>3106</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3100">
       <!--Spawn a cup of tea to the maid-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3101">
       <!--Spawn a cup of coffee to the maid-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3102">
       <!--Spawn a cup of water to the maid-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3106" Count="1" Max="1" Vnum="3120">
       <!--Spawn the sexton to Park Cafe-->
-      <Type>NPC</Type>
-      <Destination>3106</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3120</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3121">
       <!--Spawn a key to the sexton-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3121</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3106" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Park Cafe-->
-      <Type>Item</Type>
-      <Destination>3106</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3109" Count="1" Max="1" Vnum="3123">
       <!--Spawn the sparrow to Small path in the park-->
-      <Type>NPC</Type>
-      <Destination>3109</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3123</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3109" Count="1" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Small path in the park-->
-      <Type>NPC</Type>
-      <Destination>3109</Destination>
-      <Count>1</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3363">
       <!--Spawn a standard issue bracer to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3363</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3111" Count="4" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Park Road-->
-      <Type>NPC</Type>
-      <Destination>3111</Destination>
-      <Count>4</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3120">
       <!--Spawn a key to the cityguard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3120</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3111" Count="4" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Park Road-->
-      <Type>NPC</Type>
-      <Destination>3111</Destination>
-      <Count>4</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3363">
       <!--Spawn a standard issue bracer to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3363</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3113" Count="1" Max="2" Vnum="3124">
       <!--Spawn the duck to A path in the park-->
-      <Type>NPC</Type>
-      <Destination>3113</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>3124</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3114" Count="1" Max="1" Vnum="3121">
       <!--Spawn the swan to The Pond-->
-      <Type>NPC</Type>
-      <Destination>3114</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3121</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3114" Count="1" Max="1" Vnum="3122">
       <!--Spawn the duckling to The Pond-->
-      <Type>NPC</Type>
-      <Destination>3114</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3122</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3115" Count="1" Max="2" Vnum="3124">
       <!--Spawn the duck to A path in the park-->
-      <Type>NPC</Type>
-      <Destination>3115</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>3124</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3117" Count="1" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Emerald Avenue-->
-      <Type>NPC</Type>
-      <Destination>3117</Destination>
-      <Count>1</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3120" Count="1" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Road Crossing-->
-      <Type>NPC</Type>
-      <Destination>3120</Destination>
-      <Count>1</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3120" Count="1" Max="1" Vnum="3144">
       <!--Spawn the town crier to Road Crossing-->
-      <Type>NPC</Type>
-      <Destination>3120</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3144</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3125" Count="1" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Emerald Avenue-->
-      <Type>NPC</Type>
-      <Destination>3125</Destination>
-      <Count>1</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3128" Count="2" Max="4" Vnum="3005">
       <!--Spawn the thief to On the Concourse-->
-      <Type>NPC</Type>
-      <Destination>3128</Destination>
-      <Count>2</Count>
-      <Max>4</Max>
-      <Vnum>3005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3351">
       <!--Spawn a standard issue dagger to the thief-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3351</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3137" Count="1" Max="1" Vnum="3142">
       <!--Spawn the secretary to The Waiting Room-->
-      <Type>NPC</Type>
-      <Destination>3137</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3142</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3138" Count="1" Max="1" Vnum="3143">
       <!--Spawn the mayor to The Mayor's Office-->
-      <Type>NPC</Type>
-      <Destination>3138</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3143</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3124">
       <!--Spawn a long sword to the mayor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3124</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3138" Count="4" Max="4" Vnum="3069">
       <!--Spawn the cityguard to The Mayor's Office-->
-      <Type>NPC</Type>
-      <Destination>3138</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3138" Count="4" Max="4" Vnum="3069">
       <!--Spawn the cityguard to The Mayor's Office-->
-      <Type>NPC</Type>
-      <Destination>3138</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3138" Count="4" Max="4" Vnum="3069">
       <!--Spawn the cityguard to The Mayor's Office-->
-      <Type>NPC</Type>
-      <Destination>3138</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3138" Count="4" Max="4" Vnum="3069">
       <!--Spawn the cityguard to The Mayor's Office-->
-      <Type>NPC</Type>
-      <Destination>3138</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3141" Count="0" Max="1" Vnum="3135">
       <!--Spawn a fountain to The end of Penny Lane-->
-      <Type>Item</Type>
-      <Destination>3141</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3135</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3141" Count="0" Max="1" Vnum="3136">
       <!--Spawn a small pile of coins to The end of Penny Lane-->
-      <Type>Item</Type>
-      <Destination>3141</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3136</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3142" Count="1" Max="1" Vnum="3140">
       <!--Spawn the captain to Captain's Office-->
-      <Type>NPC</Type>
-      <Destination>3142</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3140</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the captain-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3122">
       <!--Spawn a key to the captain-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3122</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3137">
       <!--Spawn a steel key to the captain-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3137</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3142" Count="4" Max="4" Vnum="3141">
       <!--Spawn the cityguard to Captain's Office-->
-      <Type>NPC</Type>
-      <Destination>3142</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3141</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3142" Count="4" Max="4" Vnum="3141">
       <!--Spawn the cityguard to Captain's Office-->
-      <Type>NPC</Type>
-      <Destination>3142</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3141</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3142" Count="4" Max="4" Vnum="3141">
       <!--Spawn the cityguard to Captain's Office-->
-      <Type>NPC</Type>
-      <Destination>3142</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3141</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3142" Count="4" Max="4" Vnum="3141">
       <!--Spawn the cityguard to Captain's Office-->
-      <Type>NPC</Type>
-      <Destination>3142</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>3141</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3142" Count="0" Max="1" Vnum="3130">
       <!--Spawn the desk to Captain's Office-->
-      <Type>Item</Type>
-      <Destination>3142</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3130</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="3123">
       <!--Spawn a key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3123</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3142" Count="0" Max="1" Vnum="3131">
       <!--Spawn the safe to Captain's Office-->
-      <Type>Item</Type>
-      <Destination>3142</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3131</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="3132">
       <!--Spawn the silver coins to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3132</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3150" Count="1" Max="1" Vnum="3150">
       <!--Spawn Esme to Kate's Diner-->
-      <Type>NPC</Type>
-      <Destination>3150</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3150</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3154">
       <!--Spawn a bottle of George Killian's Irish Red to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3154</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3152">
       <!--Spawn a bowl of beef stew to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3152</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3153">
       <!--Spawn a biscuit to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3153</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3151">
       <!--Spawn a bowl of chicken noodle soup to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3151</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1103">
       <!--Spawn a pipeweed bread to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3150">
       <!--Spawn a cup of cinnamon coffee to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3150</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3100">
       <!--Spawn a cup of tea to Esme-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3150" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Kate's Diner-->
-      <Type>Item</Type>
-      <Destination>3150</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3160" Count="1" Max="1" Vnum="3160">
       <!--Spawn Melancholy to Melancholy's Maps-->
-      <Type>NPC</Type>
-      <Destination>3160</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3160</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3168">
       <!--Spawn a map of Olympus to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3168</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3167">
       <!--Spawn a map of New Thalos to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3167</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3166">
       <!--Spawn a map of the first level of Moria to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3166</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3165">
       <!--Spawn a map of the Dwarven Kingdom to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3165</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3164">
       <!--Spawn a map of southern Midgaard to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3164</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3163">
       <!--Spawn a map of Orthos to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3163</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3162">
       <!--Spawn a map of the city of Midgaard to Melancholy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3162</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3160" Count="1" Max="1" Vnum="3161">
       <!--Spawn Lister to Melancholy's Maps-->
-      <Type>NPC</Type>
-      <Destination>3160</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3161</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3255" Count="2" Max="2" Vnum="3071">
       <!--Spawn the cityguard to Inside the South Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3255</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>3071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3361">
       <!--Spawn a standard issue cape to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3361</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3255" Count="2" Max="2" Vnum="3071">
       <!--Spawn the cityguard to Inside the South Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3255</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>3071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3362">
       <!--Spawn a standard issue belt to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3362</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3262" Count="1" Max="1" Vnum="3072">
       <!--Spawn the cityguard to Inside the North Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3262</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3354">
       <!--Spawn a standard issue shield to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3354</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3333" Count="1" Max="1" Vnum="3333">
       <!--Spawn a Seeker of Infinity to Within the Rift-->
-      <Type>NPC</Type>
-      <Destination>3333</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3333</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3333" Count="0" Max="1" Vnum="3333">
       <!--Spawn the Tome of Infinity to Within the Rift-->
-      <Type>Item</Type>
-      <Destination>3333</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3333</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3334" Count="1" Max="1" Vnum="3162">
       <!--Spawn Otho the Changer to A Money Changer's Room-->
-      <Type>NPC</Type>
-      <Destination>3334</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3162</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3352" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Grebe's Tavern-->
-      <Type>Item</Type>
-      <Destination>3352</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3355" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Andy's Pub-->
-      <Type>Item</Type>
-      <Destination>3355</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3356" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to A Room in the Pub-->
-      <Type>Item</Type>
-      <Destination>3356</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3361" Count="1" Max="1" Vnum="3168">
       <!--Spawn the guildmaster to An Assassins Study-->
-      <Type>NPC</Type>
-      <Destination>3361</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3168</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3364" Count="1" Max="1" Vnum="3164">
       <!--Spawn the guildmaster to Necromancer Sanctum-->
-      <Type>NPC</Type>
-      <Destination>3364</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3164</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3366" Count="1" Max="1" Vnum="3165">
       <!--Spawn the guildmaster to Druids Sanctrum-->
-      <Type>NPC</Type>
-      <Destination>3366</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3165</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3368" Count="1" Max="1" Vnum="3166">
       <!--Spawn the guildmaster to Torture Chamber-->
-      <Type>NPC</Type>
-      <Destination>3368</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3166</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3370" Count="1" Max="1" Vnum="3167">
       <!--Spawn the guildmaster to Paladin Guild-->
-      <Type>NPC</Type>
-      <Destination>3370</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3167</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3002" Count="1" Max="1" Vnum="3021">
       <!--Spawn the guildmaster to Priest's Inner Sanctum-->
-      <Type>NPC</Type>
-      <Destination>3002</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3021</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3003" Count="1" Max="1" Vnum="3043">
       <!--Spawn the waiter to Priest's Bar-->
-      <Type>NPC</Type>
-      <Destination>3003</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3043</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the waiter-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3002">
       <!--Spawn a bottle of ale to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3004">
       <!--Spawn a bottle of local specialty to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3003" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Priest's Bar-->
-      <Type>Item</Type>
-      <Destination>3003</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3004" Count="1" Max="1" Vnum="3025">
       <!--Spawn the knight templar to Entrance to Priest's Guild-->
-      <Type>NPC</Type>
-      <Destination>3004</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3025</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3004" Count="2" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Entrance to Priest's Guild-->
-      <Type>NPC</Type>
-      <Destination>3004</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3355">
       <!--Spawn a standard issue cloak to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3355</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3005" Count="0" Max="1" Vnum="3135">
       <!--Spawn a fountain to The Temple Square-->
-      <Type>Item</Type>
-      <Destination>3005</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3135</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3006" Count="5" Max="5" Vnum="3061">
       <!--Spawn the janitor to Entrance to the Grunting Boar Inn-->
-      <Type>NPC</Type>
-      <Destination>3006</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>3061</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3007" Count="1" Max="1" Vnum="3040">
       <!--Spawn the bartender to The Grunting Boar-->
-      <Type>NPC</Type>
-      <Destination>3007</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3040</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the bartender-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3000">
       <!--Spawn a barrel of beer to the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3001">
       <!--Spawn a bottle of beer to the bartender-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3007" Count="3" Max="3" Vnum="3064">
       <!--Spawn the drunk to The Grunting Boar-->
-      <Type>NPC</Type>
-      <Destination>3007</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>3064</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3007" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to The Grunting Boar-->
-      <Type>Item</Type>
-      <Destination>3007</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3008" Count="0" Max="1" Vnum="3139">
       <!--Spawn the receptionist's letter of resignation to The Defunct Reception-->
-      <Type>Item</Type>
-      <Destination>3008</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3139</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3008" Count="0" Max="1" Vnum="3140">
       <!--Spawn the bank's notice of liquidation to The Defunct Reception-->
-      <Type>Item</Type>
-      <Destination>3008</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3140</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3009" Count="1" Max="1" Vnum="3001">
       <!--Spawn the baker to The Bakery-->
-      <Type>NPC</Type>
-      <Destination>3009</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the baker-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3009">
       <!--Spawn a big pot pie to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3011">
       <!--Spawn a bread to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3012">
       <!--Spawn a cinnamon roll to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3013">
       <!--Spawn a batch of Sara's cookies to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3014">
       <!--Spawn a blueberry danish to the baker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3010" Count="1" Max="1" Vnum="3002">
       <!--Spawn the grocer to The General Store-->
-      <Type>NPC</Type>
-      <Destination>3010</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the grocer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3030">
       <!--Spawn a torch to the grocer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3030</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3031">
       <!--Spawn a hooded brass lantern to the grocer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3031</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3138">
       <!--Spawn a buffalo water skin to the grocer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3138</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3032">
       <!--Spawn a bag to the grocer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3032</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3033">
       <!--Spawn a box to the grocer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3033</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3011" Count="1" Max="1" Vnum="3003">
       <!--Spawn the weaponsmith to The Weapon Shop-->
-      <Type>NPC</Type>
-      <Destination>3011</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3012" Count="4" Max="16" Vnum="3062">
       <!--Spawn the beastly fido to Main Street-->
-      <Type>NPC</Type>
-      <Destination>3012</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>3062</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3014" Count="2" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Market Square-->
-      <Type>NPC</Type>
-      <Destination>3014</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3356">
       <!--Spawn a standard issue helmet to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3356</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3016" Count="4" Max="16" Vnum="3062">
       <!--Spawn the beastly fido to The Main Street-->
-      <Type>NPC</Type>
-      <Destination>3016</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>3062</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3017" Count="1" Max="1" Vnum="3024">
       <!--Spawn the sorcerer to Entrance to Mage's Guild-->
-      <Type>NPC</Type>
-      <Destination>3017</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3024</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3017" Count="2" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Entrance to Mage's Guild-->
-      <Type>NPC</Type>
-      <Destination>3017</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3357">
       <!--Spawn a pair of standard issue leggings to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3357</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3018" Count="1" Max="1" Vnum="3042">
       <!--Spawn the waiter to Mage's Bar-->
-      <Type>NPC</Type>
-      <Destination>3018</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3042</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the waiter-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3002">
       <!--Spawn a bottle of ale to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3003">
       <!--Spawn a bottle of firebreather to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3018" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to Mage's Bar-->
-      <Type>Item</Type>
-      <Destination>3018</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3019" Count="1" Max="1" Vnum="3020">
       <!--Spawn the guildmaster to Mage's Laboratory-->
-      <Type>NPC</Type>
-      <Destination>3019</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3020</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3020" Count="1" Max="1" Vnum="3004">
       <!--Spawn the armourer to The Armoury-->
-      <Type>NPC</Type>
-      <Destination>3020</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the armourer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3072">
       <!--Spawn a scale mail jerkin to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3073">
       <!--Spawn a scale mail coif to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3073</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3074">
       <!--Spawn a long scale mail skirt to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3074</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3075">
       <!--Spawn a pair of reinforced boots to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3075</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3076">
       <!--Spawn a pair of reinforced gloves to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3076</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3077">
       <!--Spawn a pair of scale mail sleeves to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3077</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3110">
       <!--Spawn a chain mail shirt to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3111">
       <!--Spawn a chain mail coif to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3112">
       <!--Spawn a long chain mail skirt to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3112</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3113">
       <!--Spawn a pair of iron-bound boots to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3114">
       <!--Spawn a pair of chain mail gauntlets to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3115">
       <!--Spawn a pair of chain mail sleeves to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3116">
       <!--Spawn a large metal shield to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3116</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3097">
       <!--Spawn a small metal shield to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3097</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3117">
       <!--Spawn a small wooden shield to the armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3117</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3021" Count="1" Max="1" Vnum="3027">
       <!--Spawn the knight to Entrance Hall to the Guild of Swordsmen-->
-      <Type>NPC</Type>
-      <Destination>3021</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3027</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3349">
       <!--Spawn a glowing long sword to the knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3349</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3021" Count="2" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Entrance Hall to the Guild of Swordsmen-->
-      <Type>NPC</Type>
-      <Destination>3021</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3358">
       <!--Spawn a pair of standard issue boots to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3358</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3022" Count="1" Max="1" Vnum="3045">
       <!--Spawn the waiter to The Bar of Swordsmen-->
-      <Type>NPC</Type>
-      <Destination>3022</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3045</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the waiter-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3002">
       <!--Spawn a bottle of ale to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3003">
       <!--Spawn a bottle of firebreather to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3004">
       <!--Spawn a bottle of local specialty to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3022" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to The Bar of Swordsmen-->
-      <Type>Item</Type>
-      <Destination>3022</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3023" Count="1" Max="1" Vnum="3023">
       <!--Spawn the guildmaster to The Tournament and Practice Yard-->
-      <Type>NPC</Type>
-      <Destination>3023</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3023</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3024" Count="4" Max="16" Vnum="3062">
       <!--Spawn the beastly fido to Eastern End of Poor Alley-->
-      <Type>NPC</Type>
-      <Destination>3024</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>3062</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3025" Count="4" Max="16" Vnum="3062">
       <!--Spawn the beastly fido to The Common Square-->
-      <Type>NPC</Type>
-      <Destination>3025</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>3062</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3026" Count="5" Max="5" Vnum="3063">
       <!--Spawn the vagabond to The Dark Alley-->
-      <Type>NPC</Type>
-      <Destination>3026</Destination>
-      <Count>5</Count>
-      <Max>5</Max>
-      <Vnum>3063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3021">
       <!--Spawn a small sword to the vagabond-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3021</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3066">
       <!--Spawn a hard leather jerkin to the vagabond-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3052">
       <!--Spawn a leather bracer to the vagabond-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3052</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3026" Count="1" Max="1" Vnum="3066">
       <!--Spawn an alley cat to The Dark Alley-->
-      <Type>NPC</Type>
-      <Destination>3026</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3027" Count="1" Max="1" Vnum="3026">
       <!--Spawn the assassin to Entrance Hall to the Guild of Thieves-->
-      <Type>NPC</Type>
-      <Destination>3027</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3026</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3349">
       <!--Spawn a glowing long sword to the assassin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3349</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3027" Count="2" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Entrance Hall to the Guild of Thieves-->
-      <Type>NPC</Type>
-      <Destination>3027</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3359">
       <!--Spawn a pair of standard issue gloves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3359</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3027" Count="2" Max="4" Vnum="3005">
       <!--Spawn the thief to Entrance Hall to the Guild of Thieves-->
-      <Type>NPC</Type>
-      <Destination>3027</Destination>
-      <Count>2</Count>
-      <Max>4</Max>
-      <Vnum>3005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3351">
       <!--Spawn a standard issue dagger to the thief-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3351</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3028" Count="1" Max="1" Vnum="3044">
       <!--Spawn the waiter to The Thieves Bar-->
-      <Type>NPC</Type>
-      <Destination>3028</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3044</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the waiter-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3003">
       <!--Spawn a bottle of firebreather to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3004">
       <!--Spawn a bottle of local specialty to the waiter-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3028" Count="0" Max="1" Vnum="3200">
       <!--Spawn the juke to The Thieves Bar-->
-      <Type>Item</Type>
-      <Destination>3028</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3029" Count="1" Max="1" Vnum="3022">
       <!--Spawn the guildmaster to The Secret Yard-->
-      <Type>NPC</Type>
-      <Destination>3029</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3031" Count="1" Max="1" Vnum="3008">
       <!--Spawn the pet shop boy to The Pet Shop-->
-      <Type>NPC</Type>
-      <Destination>3031</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3032" Count="1" Max="1" Vnum="3090">
       <!--Spawn the kitten to Pet Shop Store-->
-      <Type>NPC</Type>
-      <Destination>3032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3090</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3032" Count="1" Max="1" Vnum="3091">
       <!--Spawn the puppy to Pet Shop Store-->
-      <Type>NPC</Type>
-      <Destination>3032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3091</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3032" Count="1" Max="1" Vnum="3092">
       <!--Spawn the beagle to Pet Shop Store-->
-      <Type>NPC</Type>
-      <Destination>3032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3092</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3032" Count="1" Max="1" Vnum="3093">
       <!--Spawn the rottweiler to Pet Shop Store-->
-      <Type>NPC</Type>
-      <Destination>3032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3093</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3032" Count="1" Max="1" Vnum="3094">
       <!--Spawn the wolf to Pet Shop Store-->
-      <Type>NPC</Type>
-      <Destination>3032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3094</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3033" Count="1" Max="1" Vnum="3000">
       <!--Spawn the wizard to The Magic Shop-->
-      <Type>NPC</Type>
-      <Destination>3033</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3040">
       <!--Spawn a scroll of identify to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3040</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3041">
       <!--Spawn a yellow potion to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3041</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3039">
       <!--Spawn a scroll of cancellation to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3039</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3042">
       <!--Spawn a scroll of recall to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3042</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3043">
       <!--Spawn a ring of protection to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3043</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3044">
       <!--Spawn a wand of magic missiles to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3044</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3379">
       <!--Spawn a potion of return to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3379</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3059">
       <!--Spawn a portable hole to the wizard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3059</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3034" Count="1" Max="1" Vnum="3009">
       <!--Spawn the jeweller to The Jeweller's Shop-->
-      <Type>NPC</Type>
-      <Destination>3034</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3378">
       <!--Spawn an opal to the jeweller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3378</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3377">
       <!--Spawn a diamond to the jeweller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3377</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3376">
       <!--Spawn a ruby to the jeweller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3376</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3375">
       <!--Spawn an emerald to the jeweller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3375</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3374">
       <!--Spawn a garnet to the jeweller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3374</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3373">
       <!--Spawn a small pearl to the jeweller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3373</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3035" Count="1" Max="1" Vnum="3010">
       <!--Spawn the leather worker to The Leather Shop-->
-      <Type>NPC</Type>
-      <Destination>3035</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3060">
       <!--Spawn a leather jerkin to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3060</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3061">
       <!--Spawn a leather cap to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3061</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3062">
       <!--Spawn a pair of leather pants to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3062</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3063">
       <!--Spawn a pair of leather boots to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3064">
       <!--Spawn a pair of leather gloves to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3064</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3065">
       <!--Spawn a pair of leather sleeves to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3066">
       <!--Spawn a hard leather jerkin to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3066</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3067">
       <!--Spawn a hard leather cap to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3068">
       <!--Spawn a pair of hard leather pants to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3069">
       <!--Spawn a pair of hard leather boots to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3069</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3070">
       <!--Spawn a pair of hard leather gloves to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3070</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3071">
       <!--Spawn a pair of hard leather sleeves to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3071</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3052">
       <!--Spawn a leather bracer to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3052</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3053">
       <!--Spawn a leather belt to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3053</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3054">
       <!--Spawn a leather girdle to the leather worker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3054</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3040" Count="2" Max="2" Vnum="3068">
       <!--Spawn the cityguard to Inside the West Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3040</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>3068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3361">
       <!--Spawn a standard issue cape to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3361</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3040" Count="2" Max="2" Vnum="3068">
       <!--Spawn the cityguard to Inside the West Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3040</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>3068</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3362">
       <!--Spawn a standard issue belt to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3362</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3041" Count="2" Max="2" Vnum="3067">
       <!--Spawn the cityguard to Inside the East Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3041</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>3067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3360">
       <!--Spawn a pair of standard issue sleeves to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3360</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3041" Count="2" Max="2" Vnum="3067">
       <!--Spawn the cityguard to Inside the East Gate of Midgaard-->
-      <Type>NPC</Type>
-      <Destination>3041</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>3067</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
       <!--Spawn a war banner to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
       <!--Spawn a city guard signet ring to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
       <!--Spawn a standard issue sword to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
       <!--Spawn a standard issue vest to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3354">
       <!--Spawn a standard issue shield to the cityguard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3354</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3044" Count="1" Max="2" Vnum="3065">
       <!--Spawn the beggar to Poor Alley-->
-      <Type>NPC</Type>
-      <Destination>3044</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>3065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3048" Count="1" Max="1" Vnum="3046">
       <!--Spawn Filthy to Grubby Inn-->
-      <Type>NPC</Type>
-      <Destination>3048</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3046</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to Filthy-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3003">
       <!--Spawn a bottle of firebreather to Filthy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3004">
       <!--Spawn a bottle of local specialty to Filthy-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3048" Count="1" Max="1" Vnum="3163">
       <!--Spawn the thief to Grubby Inn-->
-      <Type>NPC</Type>
-      <Destination>3048</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3163</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3048" Count="1" Max="2" Vnum="3065">
       <!--Spawn the beggar to Grubby Inn-->
-      <Type>NPC</Type>
-      <Destination>3048</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>3065</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3049" Count="1" Max="1" Vnum="3006">
       <!--Spawn the captain to Levee-->
-      <Type>NPC</Type>
-      <Destination>3049</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3050">
       <!--Spawn a raft to the captain-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3050</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3051">
       <!--Spawn a canoe to the captain-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3051</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3050" Count="1" Max="1" Vnum="3007">
       <!--Spawn the sailor to Abandoned Warehouse-->
-      <Type>NPC</Type>
-      <Destination>3050</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3054" Count="1" Max="5" Vnum="3012">
       <!--Spawn the healer to By the Temple Altar-->
-      <Type>NPC</Type>
-      <Destination>3054</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>3012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="3054" Count="0" Max="1" Vnum="3010">
       <!--Spawn the donation pit to By the Temple Altar-->
-      <Type>Item</Type>
-      <Destination>3054</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>3010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3055" Count="1" Max="1" Vnum="3350">
       <!--Spawn The Newbie Creator to Newbie Creators Room-->
-      <Type>NPC</Type>
-      <Destination>3055</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3056" Count="1" Max="5" Vnum="3070">
       <!--Spawn the ancient potion-brewer to The Fountain of Youth Apothecary-->
-      <Type>NPC</Type>
-      <Destination>3056</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>3070</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3082">
       <!--Spawn a potion of divine protection to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3082</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3083">
       <!--Spawn a potion of cure light wounds to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3083</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3084">
       <!--Spawn a potion of cure serious wounds to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3084</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3086">
       <!--Spawn a bottle of antidote to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3086</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3087">
       <!--Spawn a potion of cure blindness to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3087</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3088">
       <!--Spawn a vial of holy water to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3088</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3089">
       <!--Spawn a potion of armor to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3089</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3090">
       <!--Spawn a potion of negation to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3090</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3091">
       <!--Spawn a potion of flying to the ancient potion-brewer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3091</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3059" Count="1" Max="1" Vnum="3353">
       <!--Spawn the trainer to Training Room-->
-      <Type>NPC</Type>
-      <Destination>3059</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3060" Count="1" Max="1" Vnum="3352">
       <!--Spawn the guildmaster to Practice Room-->
-      <Type>NPC</Type>
-      <Destination>3060</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3352</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3062" Count="1" Max="1" Vnum="3351">
       <!--Spawn a newbie dude helper to The Room Of Passage-->
-      <Type>NPC</Type>
-      <Destination>3062</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3351</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="3062" Count="1" Max="1" Vnum="3354">
       <!--Spawn a newbie musician to The Room Of Passage-->
-      <Type>NPC</Type>
-      <Destination>3062</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3354</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3079">
       <!--Spawn a newbie recorder to a newbie musician-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3079</Vnum>
     </Reset>
   </Resets>
 </Area>

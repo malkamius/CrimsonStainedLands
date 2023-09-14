@@ -1710,7 +1710,7 @@ namespace CrimsonStainedLands
 
             else // fill the damn container!
             {
-                container.Charges = container.MaxCharges;
+                container.Charges = Math.Max(16, container.MaxCharges);
                 container.Liquid = fountain.Liquid;
                 ch.send("You fill {0} with {1} from {2}.\n\r", container.Display(ch), fountain.Liquid, fountain.Display(ch));
                 ch.Act("$n fills $p with {0} from $P.\n\r", null, container, fountain, ActType.ToRoom, fountain.Liquid);
@@ -1742,7 +1742,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                if (ch.Form != null || (container = ch.GetItemInventory(containerName, ref count)) == null)
+                if (ch.Form != null || (container = ch.GetItemHere(containerName, ref count)) == null)
                 {
                     ch.send("You can't find it.\n\r");
                     return;
@@ -1791,7 +1791,7 @@ namespace CrimsonStainedLands
             var drunk = 0;
 
             Liquid liq;
-            if (Liquid.Liquids.TryGetValue(liquid, out liq))
+            if (Liquid.Liquids.TryGetValue(liquid.ToLower(), out liq))
             {
                 amount = Math.Max(liq.ssize, amount);
                 thirst = amount * liq.thirst / 3;
