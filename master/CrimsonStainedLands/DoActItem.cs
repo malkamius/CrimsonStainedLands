@@ -686,8 +686,11 @@ namespace CrimsonStainedLands
             var item = ch.GetItemInventory(itemname, ref count);
             count = 0;
             other = ch.GetCharacterFromRoomByName(arguments, ref count);
-
-            if (other == ch)
+            if(item == null)
+            {
+                ch.send("You couldn't find it.\n\r");
+            }
+            else if (other == ch)
             {
                 ch.send("You can't give yourself anything.\n\r");
             }

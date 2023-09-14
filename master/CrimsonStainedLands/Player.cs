@@ -762,7 +762,7 @@ namespace CrimsonStainedLands
                                 connection.inanimate = DateTime.Now;
                                 try
                                 {
-                                    Game.CloseSocket(connection, true, false);
+                                    Game.CloseSocket(connection, false, false);
                                 }
                                 catch { }
 

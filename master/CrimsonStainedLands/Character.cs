@@ -525,6 +525,7 @@ namespace CrimsonStainedLands
         }
         public bool CanSee(Character victim, params GetFlags[] flags)
         {
+            if (victim == null) return false;
             if (victim == this) return true;
             return (Flags.ISSET(ActFlags.HolyLight) && (Level >= victim.Level || victim.IsNPC)) ||
                 (!IsAffected(AffectFlags.Blind) &&
@@ -537,6 +538,7 @@ namespace CrimsonStainedLands
 
         public bool CanSee(ItemData item)
         {
+            if (item == null) return false;
             return Flags.ISSET(ActFlags.HolyLight) ||
                 (!IsAffected(AffectFlags.Blind) && (!item.extraFlags.ISSET(ExtraFlags.VisDeath) || IsImmortal || IsNPC) &&
                 (IsAffected(AffectFlags.DetectInvis) || !item.extraFlags.ISSET(ExtraFlags.Invisibility) || IsAffected(AffectFlags.ArcaneVision)));
@@ -1628,10 +1630,11 @@ namespace CrimsonStainedLands
             }
 
             var wasInRoom = Room;
-            ExitData exit = Room.exits[(int)direction];
+
+            ExitData exit; //= Room.exits[(int)direction];
 
             // Check if there is a valid exit in the specified direction
-            if (Room != null && exit != null && exit.destination != null)
+            if (Room != null && (exit = Room.exits[(int)direction]) != null && exit.destination != null)
             {
                 var reverseDirections = new string[] { "the south", "the west", "the north", "the east", "below", "above" };
                 // Check if the exit is closed or locked, or if character is unable to pass through it
