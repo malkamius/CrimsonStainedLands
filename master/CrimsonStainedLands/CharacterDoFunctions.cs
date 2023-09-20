@@ -641,15 +641,17 @@ namespace CrimsonStainedLands
             }
             else if ("show".StringCmp(command))
             {
-                ch.send("Subject: " + connection.UnsentNote.Subject + "\n\r" + "Body: " + connection.UnsentNote.Body + "\n\r");
+                ch.send("To: " + connection.UnsentNote.To + "\n\rSubject: " + connection.UnsentNote.Subject + "\n\r" + "Body: " + connection.UnsentNote.Body + "\n\r");
             }
             else if ("to".StringCmp(command))
             {
                 connection.UnsentNote.To = arguments;
+                ch.send("Note to {0}.\n\r", arguments);
             }
             else if ("subject".StringCmp(command))
             {
                 connection.UnsentNote.Subject = arguments;
+                ch.send("Note suject {0}.\n\r", arguments);
             }
             else if ("+".StringCmp(command))
             {
@@ -658,7 +660,10 @@ namespace CrimsonStainedLands
                     ch.send("Note too long.\n\r");
                 }
                 else
+                {
                     connection.UnsentNote.Body = connection.UnsentNote.Body + "\n\r" + arguments;
+                    ch.send("OK.\n\r");
+                }
             }
             else if ("-".StringCmp(command))
             {

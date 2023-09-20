@@ -2475,7 +2475,7 @@ namespace CrimsonStainedLands
                 // TODO Chance to fail / maybe destroy item?
                 var aff = (from ia in item.affects where ia.skillSpell == spell && ia.location == ApplyTypes.AC select ia).FirstOrDefault();
 
-                if (aff != null && aff.modifier >= 50)
+                if (aff != null && aff.modifier <= -50)
                 {
                     ch.Act("$p flares blindingly and then fades completely.\n\r", null, item);
                     ch.Act("$p flares blindingly and then fades completely.\n\r", null, item, null, ActType.ToRoom);
@@ -2495,7 +2495,7 @@ namespace CrimsonStainedLands
                     {
                         ch.AffectApply(aff, true);
                     }
-                    aff.modifier += 10;
+                    aff.modifier -= 10;
                     if (ch.GetEquipmentWearSlot(item) != null)
                     {
                         ch.AffectApply(aff);
@@ -2510,7 +2510,7 @@ namespace CrimsonStainedLands
                     aff.skillSpell = spell;
                     aff.where = AffectWhere.ToObject;
                     aff.location = ApplyTypes.AC;
-                    aff.modifier = 10;
+                    aff.modifier = -10;
                     aff.level = ch_level;
                     aff.duration = -1;
                     item.affects.Add(aff);
