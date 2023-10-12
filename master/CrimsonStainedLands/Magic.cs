@@ -4134,9 +4134,9 @@ namespace CrimsonStainedLands
                 var dam = ch.GetDamage(weaponaffect.level, .5f, 1); //dam = Utility.Random(dam_each[level] / 2, dam_each[level]);
                 if (SavesSpell(weaponaffect.level, victim, WeaponDamageTypes.Lightning))
                     dam /= 2;
-                ch.Act("As $p strikes $N, its stored chearge is unleashed!\n\r", victim, weapon, type: ActType.ToChar);
-                ch.Act("As $n strikes $N with $p, its stored chearge is unleashed!\n\r", victim, weapon, type: ActType.ToRoomNotVictim);
-                ch.Act("As $p strikes you, its stored chearge is unleashed!\n\r", victim, weapon, type: ActType.ToVictim);
+                ch.Act("As $p strikes $N, its stored charge is unleashed!\n\r", victim, weapon, type: ActType.ToChar);
+                ch.Act("As $n strikes $N with $p, its stored charge is unleashed!\n\r", victim, weapon, type: ActType.ToRoomNotVictim);
+                ch.Act("As $p strikes you, its stored charge is unleashed!\n\r", victim, weapon, type: ActType.ToVictim);
 
                 Combat.Damage(ch, victim, dam, weaponaffect.skillSpell, WeaponDamageTypes.Lightning);
                 return;
