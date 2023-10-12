@@ -686,6 +686,7 @@ namespace CrimsonStainedLands
                     NoteData.Notes.Add(connection.UnsentNote);
                     NoteData.SaveNotes();
                     connection.UnsentNote = new NoteData();
+                    ch.send("Note sent.\n\r");
                 }
                 else
                     ch.send("One or more of the note fields are blank\n\r");

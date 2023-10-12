@@ -730,9 +730,10 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    if ("level".StringPrefix(field))
+                    if ("level".StringPrefix(field) && int.TryParse(valuestring, out var level))
                     {
-                        item.Name = arguments;
+                        
+                        item.Level = level;
                         ch.send("Item level updated.\n\r");
                     }
                     else

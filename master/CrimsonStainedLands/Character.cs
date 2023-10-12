@@ -1043,6 +1043,8 @@ namespace CrimsonStainedLands
 
         public void send(string data, params object[] args) => send(string.Format(data, args));
 
+        public void SendToChar(string text) => send(text);
+
         public void SendToChar(string text, params object[] args) => send(text, args);
 
         public virtual void SendRaw(string data, bool sendimmediate = true)
