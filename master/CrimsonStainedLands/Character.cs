@@ -3019,7 +3019,17 @@ namespace CrimsonStainedLands
             }
             if (!msg.EndsWith("\n\r"))
                 formatmsg.AppendLine();
-            var output = string.Format(formatmsg.ToString(), args);
+
+            string output;
+            if (args != null && args.Length > 0)
+            {
+                output = string.Format(formatmsg.ToString(), args);
+            } 
+            else
+            {
+                output = formatmsg.ToString();
+            }
+
             if (!string.IsNullOrEmpty(output) && output.Length > 1)
             {
                 if (output.StartsWith("\\") && output.Length > 3)
