@@ -101,6 +101,10 @@ namespace CrimsonStainedLands
             {
                 ch.send("No player with that exact name found.\n\r");
             }
+            else if(level > ch.Level)
+            {
+                ch.send("Level must be between 1 and " + ch.Level + ".\n\r");
+            }
             else if (level < 1 || level > Game.MAX_LEVEL)
             {
                 ch.send("Level must be between 1 and " + Game.MAX_LEVEL);
@@ -110,6 +114,7 @@ namespace CrimsonStainedLands
                 if (level < player.Level)
                 {
                     player.Level = level;
+                    ch.send("OK.\n\r");
                 }
                 else if (level > player.Level)
                 {
@@ -118,6 +123,7 @@ namespace CrimsonStainedLands
                         player.AdvanceLevel(false);
                     }
                     player.AdvanceLevel(true);
+                    ch.send("OK.\n\r");
                 }
                 else
                     ch.send("They are already that level.\n\r");

@@ -4164,7 +4164,11 @@ namespace CrimsonStainedLands
             var chance = ch.GetSkillPercentage(spell) + 20;
             var spellcraft = (CheckSpellcraft(ch, spell));
             var dam = ch.GetDamage(level, 1, 2); //dam = Utility.Random(dam_each[level] / 2, dam_each[level]);
-
+            //if(victim == ch)
+            //{
+            //    ch.send("You can't target yourself with that.\n\r");
+            //    return;
+            //}
             if (spellcraft)
                 dam += level;
             if (SavesSpell(level, victim, WeaponDamageTypes.Cold))
