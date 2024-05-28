@@ -10,7 +10,7 @@ CastType="Commune"	THAC0="20" THAC032="-6"	/>
 		
 	<Guild name="healer" whoName="HEA" races="human dwarf orc elf" alignments="good neutral evil"
 		guildGroup="healer" guildBasicsGroup="healer_basics" startingWeapon="40003" HitpointGain="8" HitpointGainMax="12"
-CastType="Commune"	THAC0="20" THAC032="-10"	/>
+CastType="Commune"	THAC0="20" THAC032="2"	/>
 		
 	<Guild name="mage" whoName="MAG" races="human elf" alignments="good neutral evil"
 		guildGroup="mage" guildBasicsGroup="mage_basics" startingWeapon="40005" HitpointGain="8" HitpointGainMax="10" 
@@ -28,8 +28,8 @@ THAC0="20" THAC032="-4"		/>
 		THAC0="20" THAC032="-10" CastType="Sing" />
 	<Guild name="ranger" whoName="RAN" races="human dwarf orc elf" alignments="good neutral evil"
 		guildGroup="warrior" guildBasicsGroup="warrior_basics" startingWeapon="40004" HitpointGain="10" HitpointGainMax="15" 
-		CastType="Cast" THAC0="20" THAC032="-10" />
+		CastType="Cast" THAC0="20" THAC032="-6" />
 	<Guild name="assassin" whoName="ASN" races="human dwarf orc elf" alignments="good neutral evil"
 		guildGroup="warrior" guildBasicsGroup="warrior_basics" startingWeapon="40000" HitpointGain="10" HitpointGainMax="15" 
-		THAC0="20" THAC032="-10" />
+		THAC0="20" THAC032="-6" />
 </Guilds>
