@@ -224,15 +224,15 @@ namespace CrimsonStainedLands
             lock (Info.LogLock)
             {
                 Info.LaunchMethod = launchMethod;
-                Info.launchResult = launchMethod.BeginInvoke(Info, launched, Info);
                 Info.LogWriter = new StreamWriter("logs.txt");
+                LaunchAsync(Info);
             }
 
         }
-
-        private void launched(IAsyncResult ar)
+        private async void LaunchAsync(GameInfo info)
         {
-
+            LaunchTask = Task.Run(() => launch(info));
+            
         }
 
         public static void log(string text, params object[] parameters)
@@ -1606,7 +1606,7 @@ namespace CrimsonStainedLands
         }
 
         private long _lasthour;
-
+        private Task LaunchTask;
 
         public void UpdateWeather()
         {
@@ -1722,13 +1722,13 @@ namespace CrimsonStainedLands
 
             return;
         }
-        public void Dispose()
+        public async void Dispose()
         {
             Info.Exiting = true;
 
 
-            Info.LaunchMethod.EndInvoke(Info.launchResult);
-
+            //Info.LaunchMethod.EndInvoke(Info.launchResult);
+            await LaunchTask;
             listeningSocket.Dispose();
             foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
             {

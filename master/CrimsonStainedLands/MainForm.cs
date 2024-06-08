@@ -40,7 +40,11 @@ namespace CrimsonStainedLands
                 notifyIcon.Icon = this.Icon;
                 notifyIcon.DoubleClick += notifyIcon_DoubleClick;
                 notifyIcon.Visible = true;
-                notifyIcon.ContextMenu = new ContextMenu(new MenuItem[] { new MenuItem("Show", notifyIcon_Show), new MenuItem("Exit", notifyIcon_Exit) });
+                // TODO ContextMenu is no longer supported. Use ContextMenuStrip instead. For more details see https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls
+                notifyIcon.ContextMenuStrip = new ContextMenuStrip();
+                //new MenuItem[] { new MenuItem("Show", notifyIcon_Show), new MenuItem("Exit", notifyIcon_Exit) });
+                notifyIcon.ContextMenuStrip.Items.Add("Show", null, notifyIcon_Show);
+                notifyIcon.ContextMenuStrip.Items.Add("Exit", null, notifyIcon_Exit);
 
                 port = Settings.Port;
                 Text = string.Format("CrimsonStainedLands Server - Standard port {0}, SSL port {1}", port, Settings.SSLPort);
