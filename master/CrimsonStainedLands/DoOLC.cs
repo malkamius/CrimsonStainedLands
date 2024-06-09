@@ -186,7 +186,7 @@ namespace CrimsonStainedLands
                     var room = new RoomData() { Area = ch.EditingArea, Vnum = vnum };
                     ch.EditingArea.Rooms.Add(vnum, room);
                     ch.EditingRoom = room;
-                    RoomData.Rooms.Add(vnum, room);
+                    RoomData.Rooms.TryAdd(vnum, room);
                     ch.send("OK.\n\r");
                 }
             }
@@ -1993,7 +1993,7 @@ namespace CrimsonStainedLands
                 }
                 room.Area = area;
                 room.Area.Rooms.Add(vnum, room);
-                RoomData.Rooms.Add(vnum, room);
+                RoomData.Rooms.TryAdd(vnum, room);
             }
             if (!ch.HasBuilderPermission(room))
             {
@@ -2095,8 +2095,8 @@ namespace CrimsonStainedLands
                     {
                         room.Area.saved = false;
                         room.Vnum = room.Vnum - minVnumFrom + vnumTo;
-                        RoomData.Rooms.Remove(vnum);
-                        RoomData.Rooms.Add(room.Vnum, room);
+                        RoomData.Rooms.TryRemove(vnum, out _);
+                        RoomData.Rooms.TryAdd(room.Vnum, room);
                     }
 
                     if (NPCTemplateData.Templates.TryGetValue(vnum, out npcTemplate))
@@ -2104,8 +2104,8 @@ namespace CrimsonStainedLands
                         npcTemplate.Area.saved = false;
                         npcTemplate.Vnum = npcTemplate.Vnum - minVnumFrom + vnumTo;
 
-                        NPCTemplateData.Templates.Remove(vnum);
-                        NPCTemplateData.Templates.Add(npcTemplate.Vnum, npcTemplate);
+                        NPCTemplateData.Templates.TryRemove(vnum, out _);
+                        NPCTemplateData.Templates.TryAdd(npcTemplate.Vnum, npcTemplate);
                     }
 
                     if (ItemTemplateData.Templates.TryGetValue(vnum, out itemTemplate))
@@ -2113,8 +2113,8 @@ namespace CrimsonStainedLands
                         itemTemplate.Area.saved = false;
                         itemTemplate.Vnum = itemTemplate.Vnum - minVnumFrom + vnumTo;
 
-                        ItemTemplateData.Templates.Remove(vnum);
-                        ItemTemplateData.Templates.Add(itemTemplate.Vnum, itemTemplate);
+                        ItemTemplateData.Templates.TryRemove(vnum, out _);
+                        ItemTemplateData.Templates.TryAdd(itemTemplate.Vnum, itemTemplate);
                     }
 
                     if (Quest.Quests.TryGetValue(vnum, out var quest))

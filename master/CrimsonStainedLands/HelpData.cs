@@ -10,7 +10,7 @@ namespace CrimsonStainedLands
 {
     public class HelpData
     {
-        public static List<HelpData> Helps = new List<HelpData>();
+        public static ConcurrentList<HelpData> Helps = new ConcurrentList<HelpData>();
 
         public AreaData area;
         public int vnum;

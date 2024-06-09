@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Linq.Expressions;
+using System.Collections.Concurrent;
 
 namespace CrimsonStainedLands
 {
@@ -132,7 +133,8 @@ namespace CrimsonStainedLands
         /// <summary>
         /// all rooms regardless of area
         /// </summary>
-        public static Dictionary<int, RoomData> Rooms = new Dictionary<int, RoomData>();
+        
+        public static ConcurrentDictionary<int, RoomData> Rooms = new ConcurrentDictionary<int, RoomData>();
         public AreaData Area;
         public int Vnum;
         public string Name;
@@ -310,7 +312,7 @@ namespace CrimsonStainedLands
                 if (!Rooms.ContainsKey(Vnum))
                 {
 
-                    Rooms.Add(Vnum, this);
+                    Rooms.TryAdd(Vnum, this);
                 }
                 else
                     Game.log("Duplicate room vnum: {0} in {1} conflicts with {2}", Vnum, area.FileName, Rooms[Vnum].Area.FileName);

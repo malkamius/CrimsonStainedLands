@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -39,15 +40,25 @@ namespace CrimsonStainedLands
         public int Timer;
         public Dictionary<int, Quest> Quests = new Dictionary<int, Quest>();
 
-        public static void LoadAreas(bool headersOnly = false)
+        public async static void LoadAreas(bool headersOnly = false)
         {
             DateTime loadstart = DateTime.Now;
+            var tasks = new List<Task>();
             /// Now load area programs before area npcs and rooms, things referencing programs
             foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
             {
-                AreaData area = new AreaData(file, headersOnly);
-                //area.Load(area.FileName);
+                //AreaData area = new AreaData(file, headersOnly);
+                tasks.Add(Task.Run(async () =>
+                {
+                    AreaData area = new AreaData();
+                    if(headersOnly)
+                        area.LoadHeader(file);
+                    else
+                        area.Load(file);
+                }));
             }
+            
+            tasks.ForEach(t => t.Wait());
 
             Game.log("Loaded areas in {0}", DateTime.Now - loadstart);
 
@@ -270,19 +281,19 @@ namespace CrimsonStainedLands
 
                 // Clear rooms for a reload
                 foreach (var room in Rooms.ToArray())
-                    RoomData.Rooms.Remove(room.Key);
+                    RoomData.Rooms.TryRemove(room.Key, out _);
                 Rooms.Clear();
 
                 LoadRooms(root);
 
                 // Clear and reload item templates
                 foreach (var itemtemplate in ItemTemplates)
-                    ItemTemplateData.Templates.Remove(itemtemplate.Key);
+                    ItemTemplateData.Templates.TryRemove(itemtemplate.Key, out _);
                 ItemTemplates.Clear();
                 LoadItemTemplates(root);
 
                 foreach (var npctemplate in NPCTemplates)
-                    NPCTemplateData.Templates.Remove(npctemplate.Key);
+                    NPCTemplateData.Templates.TryRemove(npctemplate.Key, out _);
                 NPCTemplates.Clear();
                 LoadNPCTemplates(root);
 

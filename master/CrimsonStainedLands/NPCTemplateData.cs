@@ -1,5 +1,6 @@
 ﻿using CrimsonStainedLands.Extensions;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +38,7 @@ namespace CrimsonStainedLands
 
     public class NPCTemplateData : Character
     {
-        public static Dictionary<int, NPCTemplateData> Templates = new Dictionary<int, NPCTemplateData>();
+        public static ConcurrentDictionary<int, NPCTemplateData> Templates = new ConcurrentDictionary<int, NPCTemplateData>();
 
         public AreaData Area;
         public int Vnum;
@@ -293,7 +294,7 @@ namespace CrimsonStainedLands
 
             try
             {
-                NPCTemplateData.Templates.Add(Vnum, this);
+                NPCTemplateData.Templates.TryAdd(Vnum, this);
             }
             catch
             {

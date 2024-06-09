@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
@@ -7,7 +8,7 @@ namespace CrimsonStainedLands
 {
     public class ItemTemplateData
     {
-        public static Dictionary<int, ItemTemplateData> Templates = new Dictionary<int, ItemTemplateData>();
+        public static ConcurrentDictionary<int, ItemTemplateData> Templates = new ConcurrentDictionary<int, ItemTemplateData>();
 
         public AreaData Area;
 
@@ -197,7 +198,7 @@ namespace CrimsonStainedLands
             try
             {
                 if (!ItemTemplateData.Templates.ContainsKey(Vnum))
-                    ItemTemplateData.Templates.Add(Vnum, this);
+                    ItemTemplateData.Templates.TryAdd(Vnum, this);
                 else
                     Game.log("Bad ItemTemplateData.Templates.Add - duplicate vnum " + Vnum + " in area " + (area != null ? area.Name : "null"));
             }
