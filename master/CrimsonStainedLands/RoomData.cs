@@ -149,7 +149,7 @@ namespace CrimsonStainedLands
         public List<Character> Characters = new List<Character>();
         public List<ItemData> items = new List<ItemData>();
         public List<RoomAffectData> affects = new List<RoomAffectData>();
-        public List<RoomFlags> flags = new List<RoomFlags>();
+        public HashSet<RoomFlags> flags = new HashSet<RoomFlags>();
         public SectorTypes sector;
         public GuildData Guild = null;
         public List<Programs.Program<RoomData>> Programs = new List<Programs.Program<RoomData>>();
@@ -484,8 +484,8 @@ namespace CrimsonStainedLands
         public RoomData source;
         public RoomData destination;
         public int destinationVnum;
-        public List<ExitFlags> flags = new List<ExitFlags>();
-        public List<ExitFlags> originalFlags = new List<ExitFlags>();
+        public HashSet<ExitFlags> flags = new HashSet<ExitFlags>();
+        public HashSet<ExitFlags> originalFlags = new HashSet<ExitFlags>();
         public List<int> keys = new List<int>();
         public string keywords;
         public CharacterSize ExitSize = CharacterSize.Giant;
@@ -499,8 +499,8 @@ namespace CrimsonStainedLands
             this.source = toclone.source;
             this.destination = toclone.destination;
             this.destinationVnum = toclone.destinationVnum;
-            this.flags = new List<ExitFlags>(toclone.flags);
-            this.originalFlags = new List<ExitFlags>(toclone.originalFlags);
+            this.flags = new HashSet<ExitFlags>(toclone.flags);
+            this.originalFlags = new HashSet<ExitFlags>(toclone.originalFlags);
             this.keys = new List<int>(toclone.keys);
             this.keywords = toclone.keywords;
             ExitSize = toclone.ExitSize;

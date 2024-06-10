@@ -79,7 +79,7 @@ namespace CrimsonStainedLands
         public Dictionary<WearSlotIDs, ItemData> Equipment = new Dictionary<WearSlotIDs, ItemData>();
         public List<AffectData> AffectsList = new List<AffectData>();
         public Dictionary<SkillSpell, LearnedSkillSpell> Learned = new Dictionary<SkillSpell, LearnedSkillSpell>();
-        public List<AffectFlags> AffectedBy = new List<AffectFlags>();
+        public HashSet<AffectFlags> AffectedBy = new HashSet<AffectFlags>();
         public List<string> Communications = new List<string>();
         public AreaData EditingArea { get; internal set; }
         public RoomData EditingRoom { get; internal set; }

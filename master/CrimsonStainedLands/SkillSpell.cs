@@ -77,7 +77,7 @@ namespace CrimsonStainedLands
 
         public bool BoolAutoCast = true;
         public Func<Character, bool> AutoCast;
-        public List<SkillSpellTypes> SkillTypes = new List<SkillSpellTypes>();
+        public HashSet<SkillSpellTypes> SkillTypes = new HashSet<SkillSpellTypes>();
         public string Prerequisites;
         public int PrerequisitePercentage;
 
@@ -167,7 +167,7 @@ namespace CrimsonStainedLands
             //this.NounDamage = nounDamage;
             //this.MessageOff = messageOff;
             //this.MessageItem = messageItem;
-            this.SkillTypes = new List<SkillSpellTypes>();
+            this.SkillTypes = new HashSet<SkillSpellTypes>();
             this.AutoCast = autocast;
             Skills.Add(internalName, this);
 
@@ -187,7 +187,7 @@ namespace CrimsonStainedLands
             //this.NounDamage = nounDamage;
             //this.MessageOff = messageOff;
             //this.MessageItem = messageItem;
-            this.SkillTypes = new List<SkillSpellTypes>();
+            this.SkillTypes = new HashSet<SkillSpellTypes>();
             this.AutoCast = autocast;
             Skills.Add(internalName, this);
 
@@ -207,7 +207,7 @@ namespace CrimsonStainedLands
             //this.NounDamage = nounDamage;
             //this.MessageOff = messageOff;
             //this.MessageItem = messageItem;
-            this.SkillTypes = new List<SkillSpellTypes>();
+            this.SkillTypes = new HashSet<SkillSpellTypes>();
             //this.AutoCast = new Func<Character, bool>(c => autocast);
             this.BoolAutoCast = autocast;
             Skills.Add(internalName, this);
@@ -228,7 +228,7 @@ namespace CrimsonStainedLands
             //this.NounDamage = nounDamage;
             //this.MessageOff = messageOff;
             //this.MessageItem = messageItem;
-            this.SkillTypes = new List<SkillSpellTypes>();
+            this.SkillTypes = new HashSet<SkillSpellTypes>();
             //this.AutoCast = new Func<Character, bool>(c => autocast);
             this.BoolAutoCast = autocast;
             Skills.Add(internalName, this);

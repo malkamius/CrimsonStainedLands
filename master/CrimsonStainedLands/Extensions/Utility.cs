@@ -561,11 +561,11 @@ namespace CrimsonStainedLands.Extensions
 
             bool found = false;
 
-            foreach (var flag in flags.Distinct())
+            foreach (var flag in flags)//.Distinct())
             {
                 found = false;
                 for (int i = 0; i < names.Length; i++)
-                    if (names[i] == flag)// names[i].ToLower() == flag.ToLower())// || names[i].Replace("_", "").ToLower() == flag.Replace("_", "").ToLower())
+                    if (names[i].equals(flag))// names[i].ToLower() == flag.ToLower())// || names[i].Replace("_", "").ToLower() == flag.Replace("_", "").ToLower())
                     {
                         value.SETBIT((T)values.GetValue(i));
                         found = true;
@@ -600,15 +600,13 @@ namespace CrimsonStainedLands.Extensions
         {
             if (value == null)
                 value = new HashSet<T>();
+            else if (clear) value.Clear();
+
             if (search.ISEMPTY()) return false;
             //var type = typeof(T);
             var names = EnumGetNames<T>();// Enum.GetNames(typeof(T));
             var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
             var flags = search.Split(delimiter);
-
-
-
-            if (clear) value.Clear();
 
             if (search.StringCmp("none"))
                 return false;
@@ -672,8 +670,9 @@ namespace CrimsonStainedLands.Extensions
 
         public static XElement GetElement(this XElement element, string subElementName)
         {
-            if (element != null && element.Element(subElementName) != null)
-                return element.Element(subElementName);
+            XElement result = null;
+            if (element != null && (result = element.Element(subElementName)) != null)
+                return result;
             //subElementName = subElementName.ToLower();
             return (from newelement in element.Elements() where newelement.Name.LocalName.Equals(subElementName, StringComparison.InvariantCultureIgnoreCase) select newelement).FirstOrDefault();
         }

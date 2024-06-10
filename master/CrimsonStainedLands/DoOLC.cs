@@ -2006,8 +2006,8 @@ namespace CrimsonStainedLands
             var revDirection = reverseDirections[direction];
             var flags = new List<ExitFlags>();
             Utility.GetEnumValues(arguments, ref flags);
-            room.OriginalExits[(int)revDirection] = new ExitData() { destination = ch.Room, destinationVnum = ch.Room.Vnum, direction = revDirection, description = "", flags = new List<ExitFlags>(flags), originalFlags = new List<ExitFlags>(flags) };
-            ch.Room.OriginalExits[(int)direction] = new ExitData() { destination = room, direction = direction, description = "", flags = new List<ExitFlags>(flags), originalFlags = new List<ExitFlags>(flags) };
+            room.OriginalExits[(int)revDirection] = new ExitData() { destination = ch.Room, destinationVnum = ch.Room.Vnum, direction = revDirection, description = "", flags = new HashSet<ExitFlags>(flags), originalFlags = new HashSet<ExitFlags>(flags) };
+            ch.Room.OriginalExits[(int)direction] = new ExitData() { destination = room, direction = direction, description = "", flags = new HashSet<ExitFlags>(flags), originalFlags = new HashSet<ExitFlags>(flags) };
             for (int i = 0; i < ch.Room.exits.Length; i++)
             {
                 if (ch.Room.OriginalExits[i] != null)
