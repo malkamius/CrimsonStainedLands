@@ -36,6 +36,7 @@
 
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.IO;
@@ -577,8 +578,8 @@ namespace CrimsonStainedLands.Extensions
             return found;
         }
 
-        static Dictionary<Type, string[]> EnumNames = new Dictionary<Type, string[]>();
-        static Dictionary<Type, Array> EnumValues = new Dictionary<Type, Array>();
+        static ConcurrentDictionary<Type, string[]> EnumNames = new ConcurrentDictionary<Type, string[]>();
+        static ConcurrentDictionary<Type, Array> EnumValues = new ConcurrentDictionary<Type, Array>();
 
         private static string[] EnumGetNames<T>() 
         {

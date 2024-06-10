@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
 namespace CrimsonStainedLands
@@ -213,7 +214,7 @@ namespace CrimsonStainedLands
             //    MaxWeight = MaxWeight / 10;
             //}
         } // end constructor (area, xelement)
-
+        [JsonIgnore]
         public XElement Element
         {
             get

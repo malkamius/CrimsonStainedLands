@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Xml;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
 namespace CrimsonStainedLands
@@ -19,55 +20,54 @@ namespace CrimsonStainedLands
         /// <summary>
         /// level summary
         /// </summary>
-        public string info;
+        public string info { get; set; } = string.Empty;
 
-        public int VNumStart;
-        public int VNumEnd;
-        public string Builders;
-        public int Security;
-        public string Credits;
-        public short Age;
-        public int OverRoomVnum;
+        public int VNumStart { get; set; }
+        public int VNumEnd { get; set; }
+        public string Builders { get; set; }
+        public int Security { get; set; }
+        public string Credits { get; set; }
+        public short Age { get; set; }
+        public int OverRoomVnum { get; set; }
         int LastPeopleCount = 0;
-        public Dictionary<int, NPCTemplateData> NPCTemplates = new Dictionary<int, NPCTemplateData>();
-        public Dictionary<int, ItemTemplateData> ItemTemplates = new Dictionary<int, ItemTemplateData>();
-        public List<HelpData> Helps = new List<HelpData>();
+        public Dictionary<int, NPCTemplateData> NPCTemplates { get; set; }  = new Dictionary<int, NPCTemplateData>();
+        public Dictionary<int, ItemTemplateData> ItemTemplates { get; set; } = new Dictionary<int, ItemTemplateData>();
+        public List<HelpData> Helps { get; set; } = new List<HelpData>();
 
-        public Dictionary<int, RoomData> Rooms = new Dictionary<int, RoomData>();
-        public List<ResetData> Resets = new List<ResetData>();
+        public Dictionary<int, RoomData> Rooms { get; set; } = new Dictionary<int, RoomData>();
+        public List<ResetData> Resets { get; set; } = new List<ResetData>();
 
         public List<Character> People = new List<Character>();
         public int Timer;
-        public Dictionary<int, Quest> Quests = new Dictionary<int, Quest>();
+        public Dictionary<int, Quest> Quests { get; set; } = new Dictionary<int, Quest>();
 
-        public async static void LoadAreas(bool headersOnly = false)
+        public static void LoadAreas(bool headersOnly = false)
         {
             DateTime loadstart = DateTime.Now;
             var tasks = new List<Task>();
             /// Now load area programs before area npcs and rooms, things referencing programs
-            Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")).AsParallel().ForAll(file =>
+            Directory.GetFiles(Settings.AreasPath, "*.xml").
+                Concat(Directory.GetFiles(Settings.AreasPath, "*.json")).
+                Where(path => 
+                !path.EndsWith("_programs.xml", StringComparison.InvariantCultureIgnoreCase) && 
+                !path.EndsWith("_programs.json", StringComparison.InvariantCultureIgnoreCase)
+                ).AsParallel().ForAll(file =>
             {
-                AreaData area = new AreaData();
-                if (headersOnly)
-                    area.LoadHeader(file);
+                if (file.EndsWith(".xml", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    AreaData area = new AreaData();
+                    if (headersOnly)
+                        area.LoadHeader(file);
+                    else
+                        area.Load(file);
+                } 
                 else
-                    area.Load(file);
+                {
+                    string jsonString = File.ReadAllText(file);
+                    AreaData area = JsonSerializer.Deserialize<AreaData>(jsonString);
+                    Areas.Add(area);
+                }
             });
-            //foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
-            //{
-                
-            //    //AreaData area = new AreaData(file, headersOnly);
-            //    tasks.Add(Task.Run(async () =>
-            //    {
-            //        AreaData area = new AreaData();
-            //        if(headersOnly)
-            //            area.LoadHeader(file);
-            //        else
-            //            area.Load(file);
-            //    }));
-            //}
-            
-            //tasks.ForEach(t => t.Wait());
 
             Game.log("Loaded areas in {0}", DateTime.Now - loadstart);
 
@@ -528,6 +528,7 @@ namespace CrimsonStainedLands
         /// <summary>
         /// work in progress for olc
         /// </summary>
+        [JsonIgnore]
         public XElement Element
         {
             get
@@ -568,6 +569,21 @@ namespace CrimsonStainedLands
             }
         }
 
+        public void SaveToJson()
+        {
+            var jsonpath = Settings.AreasPath + "_json";
+            System.IO.Directory.CreateDirectory(jsonpath);
+            if (!string.IsNullOrEmpty(FileName))
+            {
+                var jsonname = System.IO.Path.GetFileNameWithoutExtension(FileName);
+                var fullfilepath = System.IO.Path.Join(jsonpath, jsonname + ".json");
+                
+                string jsonString = JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = true, ReferenceHandler = ReferenceHandler.Preserve });
+                File.WriteAllText(fullfilepath, jsonString);
+                saved = true;
+            }
+        }
+
         public static void DoASaveWorlds(Character ch, string arguments)
         {
             int areaCount = 0;
@@ -575,7 +591,7 @@ namespace CrimsonStainedLands
             {
                 if (!area.saved || arguments.StringCmp("world"))
                 {
-                    area.Save();
+                    area.SaveToJson();
                     areaCount++;
                 }
             }

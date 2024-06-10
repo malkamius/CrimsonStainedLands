@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using global::CrimsonStainedLands.Extensions;
@@ -3037,7 +3038,7 @@ namespace CrimsonStainedLands
         {
             Wait += time;
         }
-
+        [JsonIgnore]
         public XElement Element
         {
             get

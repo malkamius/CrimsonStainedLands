@@ -136,8 +136,8 @@ namespace CrimsonStainedLands
         
         public static ConcurrentDictionary<int, RoomData> Rooms = new ConcurrentDictionary<int, RoomData>();
         public AreaData Area;
-        public int Vnum;
-        public string Name;
+        public int Vnum { get; set; }
+        public string Name { get; set; } = "";
         public string NightName { get; set; } = "";
 
         public string _Description = "";
@@ -145,12 +145,15 @@ namespace CrimsonStainedLands
 
         public ExitData[] exits = new ExitData[6];
         public ExitData[] OriginalExits = new ExitData[6];
+        public ExitData[] Exits { get { return OriginalExits; } set { OriginalExits = value; exits = value; } }
 
         public List<Character> Characters = new List<Character>();
         public List<ItemData> items = new List<ItemData>();
         public List<RoomAffectData> affects = new List<RoomAffectData>();
         public HashSet<RoomFlags> flags = new HashSet<RoomFlags>();
         public SectorTypes sector;
+        public SectorTypes Sector { get { return sector; } set { sector = value; } }
+        public RoomFlags[] Flags { get { return flags.ToArray(); } set { foreach (var flag in value) flags.SETBIT(flag); } }
         public GuildData Guild = null;
         public List<Programs.Program<RoomData>> Programs = new List<Programs.Program<RoomData>>();
         public List<NLuaPrograms.NLuaProgram> LuaPrograms = new List<NLuaPrograms.NLuaProgram>();

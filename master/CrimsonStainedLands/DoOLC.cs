@@ -113,12 +113,13 @@ namespace CrimsonStainedLands
 
                 area.Name = nameString;
                 area.FileName = Settings.AreasPath + "\\" + nameString + ".xml";
-                if (!int.TryParse(vnumStartString, out area.VNumStart) || !int.TryParse(vnumEndString, out area.VNumEnd))
+                if (!int.TryParse(vnumStartString, out var VNumStart) || !int.TryParse(vnumEndString, out var VNumEnd))
                 {
                     ch.send("Create Area \"name\" vnumstart vnumend");
                     return;
                 }
-
+                area.VNumStart = VNumStart;
+                area.VNumEnd = VNumEnd;
                 AreaData.Areas.Add(area);
                 ch.EditingArea = area;
                 area.saved = false;
