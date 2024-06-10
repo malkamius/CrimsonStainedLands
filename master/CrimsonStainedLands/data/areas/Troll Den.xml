@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{10 15} Merc    Troll Den</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -358,6 +359,7 @@ saliva dripping from the beast's jaw.  The guardian beast snarls again.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -413,6 +415,7 @@ of yours!!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -468,6 +471,7 @@ His eyes dart toward you, as he realizes you are one third his size.</descriptio
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -523,6 +527,7 @@ He notices you and gargles "WANNA JOIN?".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -578,6 +583,7 @@ You gasp as you realize you have intruded upon his acts of passion!</description
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -633,6 +639,7 @@ Her smiles turn into snarls as she screams at you!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -687,6 +694,7 @@ It moves quickly, from corpse to corpse.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -743,6 +751,7 @@ jaw.  The roving beast snarls at you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -798,6 +807,7 @@ He advances toward you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -839,6 +849,7 @@ He advances toward you.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -871,6 +882,7 @@ He advances toward you.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -894,7 +906,9 @@ He advances toward you.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -905,6 +919,7 @@ He advances toward you.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -934,7 +949,9 @@ and feels bad.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -945,6 +962,7 @@ and feels bad.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -973,7 +991,9 @@ and feels bad.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -984,6 +1004,7 @@ and feels bad.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1007,7 +1028,9 @@ and feels bad.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1018,6 +1041,7 @@ and feels bad.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1041,7 +1065,9 @@ and feels bad.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="16" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="16" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1052,6 +1078,7 @@ and feels bad.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1060,197 +1087,77 @@ and feels bad.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="2801" Count="1" Max="2" Vnum="2800">
       <!--Spawn the guardian beast to A Troll Wastedump-->
-      <Type>NPC</Type>
-      <Destination>2801</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>2800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="2801" Count="0" Max="1" Vnum="2805">
       <!--Spawn a silver ring to A Troll Wastedump-->
-      <Type>Item</Type>
-      <Destination>2801</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>2805</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2802" Count="2" Max="2" Vnum="2801">
       <!--Spawn the young troll to Troll's Larder-->
-      <Type>NPC</Type>
-      <Destination>2802</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>2801</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2802" Count="2" Max="2" Vnum="2801">
       <!--Spawn the young troll to Troll's Larder-->
-      <Type>NPC</Type>
-      <Destination>2802</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>2801</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2802" Count="4" Max="10" Vnum="2806">
       <!--Spawn a fat worm to Troll's Larder-->
-      <Type>NPC</Type>
-      <Destination>2802</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>2806</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2802" Count="4" Max="10" Vnum="2806">
       <!--Spawn a fat worm to Troll's Larder-->
-      <Type>NPC</Type>
-      <Destination>2802</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>2806</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2802" Count="1" Max="1" Vnum="2807">
       <!--Spawn the roving beast to Troll's Larder-->
-      <Type>NPC</Type>
-      <Destination>2802</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2807</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2803" Count="1" Max="1" Vnum="2802">
       <!--Spawn the medium troll to Troll's Living Room-->
-      <Type>NPC</Type>
-      <Destination>2803</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2802</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2803" Count="1" Max="2" Vnum="2800">
       <!--Spawn the guardian beast to Troll's Living Room-->
-      <Type>NPC</Type>
-      <Destination>2803</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>2800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2803" Count="4" Max="10" Vnum="2806">
       <!--Spawn a fat worm to Troll's Living Room-->
-      <Type>NPC</Type>
-      <Destination>2803</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>2806</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2803" Count="4" Max="10" Vnum="2806">
       <!--Spawn a fat worm to Troll's Living Room-->
-      <Type>NPC</Type>
-      <Destination>2803</Destination>
-      <Count>4</Count>
-      <Max>10</Max>
-      <Vnum>2806</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2803" Count="1" Max="1" Vnum="2808">
       <!--Spawn the medium troll to Troll's Living Room-->
-      <Type>NPC</Type>
-      <Destination>2803</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2808</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="2804" Count="0" Max="1" Vnum="2800">
       <!--Spawn the cadaver-toy to The Playpen-->
-      <Type>Item</Type>
-      <Destination>2804</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>2800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="2804">
       <!--Spawn a copper ring to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2804</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2804" Count="4" Max="4" Vnum="2803">
       <!--Spawn a baby troll to The Playpen-->
-      <Type>NPC</Type>
-      <Destination>2804</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>2803</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2804" Count="4" Max="4" Vnum="2803">
       <!--Spawn a baby troll to The Playpen-->
-      <Type>NPC</Type>
-      <Destination>2804</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>2803</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2804" Count="4" Max="4" Vnum="2803">
       <!--Spawn a baby troll to The Playpen-->
-      <Type>NPC</Type>
-      <Destination>2804</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>2803</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2804" Count="4" Max="4" Vnum="2803">
       <!--Spawn a baby troll to The Playpen-->
-      <Type>NPC</Type>
-      <Destination>2804</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>2803</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2804" Count="2" Max="10" Vnum="2806">
       <!--Spawn a fat worm to The Playpen-->
-      <Type>NPC</Type>
-      <Destination>2804</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>2806</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2805" Count="1" Max="1" Vnum="2804">
       <!--Spawn the giant troll to Troll's Bedroom-->
-      <Type>NPC</Type>
-      <Destination>2805</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2804</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2802">
       <!--Spawn the troll skin to the giant troll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2802</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2805" Count="1" Max="1" Vnum="2805">
       <!--Spawn the large female troll to Troll's Bedroom-->
-      <Type>NPC</Type>
-      <Destination>2805</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2805</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="2805" Count="0" Max="1" Vnum="2801">
       <!--Spawn the heap of carnage to Troll's Bedroom-->
-      <Type>Item</Type>
-      <Destination>2805</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>2801</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="2803">
       <!--Spawn an opal ring to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2803</Vnum>
     </Reset>
   </Resets>
 </Area>

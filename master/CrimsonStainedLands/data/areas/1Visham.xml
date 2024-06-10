@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>[1 - 51] Visham City by Tholos</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4971,6 +4972,7 @@ difficult for those following the road to the east or west.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -5021,6 +5023,7 @@ difficult for those following the road to the east or west.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -5071,6 +5074,7 @@ difficult for those following the road to the east or west.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy></affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>9</DamageDiceCount>
@@ -5112,6 +5116,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5144,6 +5149,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5176,6 +5182,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5208,6 +5215,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5240,6 +5248,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5272,6 +5281,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5304,6 +5314,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5336,6 +5347,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5368,6 +5380,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5400,6 +5413,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5420,7 +5434,7 @@ difficult for those following the road to the east or west.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>0.5</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable</ExtraFlags>
+      <ExtraFlags>Closable</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -5432,6 +5446,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5452,7 +5467,7 @@ difficult for those following the road to the east or west.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>0.1</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -5464,6 +5479,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5499,6 +5515,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>skin</Material>
       <Charges>16</Charges>
       <MaxCharges>16</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5525,9 +5542,15 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Glow Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingRod" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingRod" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5538,6 +5561,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -5561,10 +5585,18 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5575,6 +5607,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -5598,11 +5631,21 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5613,6 +5656,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -5636,10 +5680,18 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5650,6 +5702,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -5673,9 +5726,15 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5686,6 +5745,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -5709,11 +5769,21 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5724,6 +5794,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -5747,9 +5818,15 @@ difficult for those following the road to the east or west.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5760,6 +5837,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -5792,6 +5870,7 @@ difficult for those following the road to the east or west.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5821,8 +5900,12 @@ full-bodied tones.</Description>
       <ExtraFlags>Outfit</ExtraFlags>
       <ItemTypes>Instrument</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5833,6 +5916,7 @@ full-bodied tones.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>-5</ArmorBash>
       <ArmorSlash>-5</ArmorSlash>
       <ArmorPierce>-5</ArmorPierce>
@@ -5841,213 +5925,83 @@ full-bodied tones.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="40000" Count="1" Max="1" Vnum="40000">
       <!--Spawn A monk to Within the Cathedral of Visham-->
-      <Type>NPC</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40000" Count="1" Max="1" Vnum="40001">
       <!--Spawn Endeavor to Within the Cathedral of Visham-->
-      <Type>NPC</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40000">
       <!--Spawn a short practice sword to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40001">
       <!--Spawn a practice axe to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40002">
       <!--Spawn a practice dagger to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40003">
       <!--Spawn a practice mace to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40004">
       <!--Spawn a practice spear to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40005">
       <!--Spawn a practice staff to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40006">
       <!--Spawn a practice whip to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40007">
       <!--Spawn a practice flail to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40009">
       <!--Spawn a fountain to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40010">
       <!--Spawn a large bag to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40011">
       <!--Spawn a pouch to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="40000" Count="1" Max="1" Vnum="40012">
       <!--Spawn a water skin to Within the Cathedral of Visham-->
-      <Type>Item</Type>
-      <Destination>40000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40800" Count="4" Max="4" Vnum="40002">
       <!--Spawn brutish city watchman to Before the Gates of Visham-->
-      <Type>NPC</Type>
-      <Destination>40800</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40072" Count="4" Max="4" Vnum="40002">
       <!--Spawn brutish city watchman to Intersection of Main Street and Beggar's Run-->
-      <Type>NPC</Type>
-      <Destination>40072</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40072" Count="1" Max="1" Vnum="40002">
       <!--Spawn brutish city watchman to Intersection of Main Street and Beggar's Run-->
-      <Type>NPC</Type>
-      <Destination>40072</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40072" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to Intersection of Main Street and Beggar's Run-->
-      <Type>NPC</Type>
-      <Destination>40072</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40072" Count="4" Max="4" Vnum="40002">
       <!--Spawn brutish city watchman to Intersection of Main Street and Beggar's Run-->
-      <Type>NPC</Type>
-      <Destination>40072</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40070" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to Main Street-->
-      <Type>NPC</Type>
-      <Destination>40070</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40068" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to Intersection of Main Street and Market Square-->
-      <Type>NPC</Type>
-      <Destination>40068</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40087" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to Eastern Market Square-->
-      <Type>NPC</Type>
-      <Destination>40087</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40146" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to Western Market Square-->
-      <Type>NPC</Type>
-      <Destination>40146</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40066" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to The Beginning of Main Street-->
-      <Type>NPC</Type>
-      <Destination>40066</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40037" Count="2" Max="2" Vnum="40002">
       <!--Spawn brutish city watchman to The Outer Temple Gate-->
-      <Type>NPC</Type>
-      <Destination>40037</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40068" Count="3" Max="3" Vnum="767">
       <!--Spawn a wandering merchant to Intersection of Main Street and Market Square-->
-      <Type>NPC</Type>
-      <Destination>40068</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>767</Vnum>
     </Reset>
   </Resets>
 </Area>

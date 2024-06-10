@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1456,6 +1457,7 @@ is part of the goblin clan here.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1511,6 +1513,7 @@ is part of the goblin clan here.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1566,6 +1569,7 @@ is part of the goblin clan here.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1619,6 +1623,7 @@ is part of the goblin clan here.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy></affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1672,6 +1677,7 @@ is part of the goblin clan here.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy></affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1713,6 +1719,7 @@ is part of the goblin clan here.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1745,6 +1752,7 @@ is part of the goblin clan here.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1768,9 +1776,15 @@ is part of the goblin clan here.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1781,6 +1795,7 @@ is part of the goblin clan here.</description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1789,205 +1804,80 @@ is part of the goblin clan here.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="50400" Count="2" Max="2" Vnum="50400">
       <!--Spawn a goblin guard to Outside the Gate of the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50400</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>50400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="50400">
       <!--Spawn a crude spear to a goblin guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>50400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50400" Count="2" Max="2" Vnum="50400">
       <!--Spawn a goblin guard to Outside the Gate of the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50400</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>50400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="50400">
       <!--Spawn a crude spear to a goblin guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>50400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50401" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Inside the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50401</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50404" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Outside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50404</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50406" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Outside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50406</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50410" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Outside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50410</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50412" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Outside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50412</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50416" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Outside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50416</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50418" Count="1" Max="1" Vnum="50401">
       <!--Spawn a female goblin citizen to Outside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50418</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50417" Count="1" Max="1" Vnum="50402">
       <!--Spawn a male goblin citizen to Inside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50417</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50402</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50419" Count="1" Max="1" Vnum="50402">
       <!--Spawn a male goblin citizen to Inside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50419</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50402</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50413" Count="1" Max="1" Vnum="50402">
       <!--Spawn a male goblin citizen to Inside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50413</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50402</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50411" Count="1" Max="1" Vnum="50402">
       <!--Spawn a male goblin citizen to Inside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50411</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50402</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50405" Count="1" Max="1" Vnum="50402">
       <!--Spawn a male goblin citizen to Inside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50405</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50402</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50407" Count="1" Max="1" Vnum="50402">
       <!--Spawn a male goblin citizen to Inside a goblin hut-->
-      <Type>NPC</Type>
-      <Destination>50407</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50402</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50423" Count="2" Max="10" Vnum="50403">
       <!--Spawn an orcish guard to Inside of a cave in the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50423</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>50403</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50423" Count="2" Max="10" Vnum="50403">
       <!--Spawn an orcish guard to Inside of a cave in the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50423</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>50403</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50424" Count="2" Max="10" Vnum="50403">
       <!--Spawn an orcish guard to Inside of a cave in the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50424</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>50403</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50425" Count="1" Max="10" Vnum="50403">
       <!--Spawn an orcish guard to Inside of a cave in the Goblin Village-->
-      <Type>NPC</Type>
-      <Destination>50425</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>50403</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50427" Count="1" Max="10" Vnum="50403">
       <!--Spawn an orcish guard to Outside a prison cell-->
-      <Type>NPC</Type>
-      <Destination>50427</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>50403</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="50426" Count="1" Max="1" Vnum="50404">
       <!--Spawn a troll commander to The commander's room-->
-      <Type>NPC</Type>
-      <Destination>50426</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>50404</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="50401">
       <!--Spawn a cruel battleaxe to a troll commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>50401</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="50402">
       <!--Spawn a wide bronze belt to a troll commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>50402</Vnum>
     </Reset>
   </Resets>
 </Area>

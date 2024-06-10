@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{35 50} Stile   Blight</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -456,7 +457,7 @@ you!</Description>
       <Description>As you move through the thick oily waters of the lake you wonder what evil
 creatures live in this slime.  Movement stirs on all sides of you, and you
 come  face to face with one of it's denizens...</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags></Flags>
       <Exits>
         <Exit>
@@ -8927,7 +8928,8 @@ spotting you, it picks it's teeth as it prepares to slaughter you.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -8984,7 +8986,8 @@ your last battle...</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Sneak Hide DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Sneak Hide DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -9041,7 +9044,8 @@ spotting you, it picks it's teeth as it prepares to slaughter you.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared Swim DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared Swim DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9098,7 +9102,8 @@ it pecks at the last of it's meal as it prepares to slaughter you.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared Flying Swim DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared Flying Swim DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9154,6 +9159,7 @@ your flesh.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -9210,7 +9216,8 @@ as it charges to attack.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared Swim DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared Swim DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9265,6 +9272,7 @@ Lake.  It seems quite hostile.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -9319,6 +9327,7 @@ disease.  Unlike the other trees, this one seems a little more lively.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9374,6 +9383,7 @@ weapons.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -9429,6 +9439,7 @@ fell the emense hatred this creature feels for you, it rambles closer...</descri
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Plague DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -9484,7 +9495,8 @@ be trifled with.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Invisible DetectInvis DetectHidden Infrared ProtectionEvil Sneak Hide DarkVision DetectIllusion</affectedBy>
+      <affectedBy>Invisible DetectInvis DetectHidden Infrared ProtectEvil Sneak Hide DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -9540,7 +9552,8 @@ or good, but a sense of purpose.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil Haste DarkVision Swim DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil Haste DarkVision Swim DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9596,7 +9609,8 @@ or good, but a sense of purpose.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil Haste DarkVision Swim DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil Haste DarkVision Swim DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9654,6 +9668,7 @@ in life.  It intends to try to do it in death.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible DetectInvis DetectHidden Infrared Sneak PassDoor DarkVision Slow DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -9710,7 +9725,8 @@ in life.  It intends to try to do it in death.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Invisible DetectInvis DetectHidden Infrared ProtectionEvil Sneak PassDoor DarkVision Slow DetectIllusion</affectedBy>
+      <affectedBy>Invisible DetectInvis DetectHidden Infrared ProtectEvil Sneak PassDoor DarkVision Slow DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -9765,6 +9781,7 @@ disease.  Unlike the other trees, this one seems a little more lively.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9819,6 +9836,7 @@ disease.  Unlike the other trees, this one seems a little more lively.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9873,6 +9891,7 @@ disease.  Unlike the other trees, this one seems a little more lively.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -9929,6 +9948,7 @@ have ever seen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Swim DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -9985,6 +10005,7 @@ did not come from any land you have ever heard of.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Flying DarkVision Swim DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -10042,6 +10063,7 @@ he seems like a pretty nice guy.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Sneak Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -10097,6 +10119,7 @@ to fight.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -10129,9 +10152,15 @@ to fight.</description>
       <ExtraFlags>Dark Magic AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10142,6 +10171,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10174,6 +10204,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10206,6 +10237,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10238,6 +10270,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10270,6 +10303,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10302,6 +10336,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10334,6 +10369,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10357,9 +10393,15 @@ to fight.</description>
       <ExtraFlags>Hum Dark Evil Magic AntiGood AntiNeutral NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10370,6 +10412,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10393,8 +10436,12 @@ to fight.</description>
       <ExtraFlags>Dark Evil Magic AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10405,6 +10452,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>13</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>13</ArmorPierce>
@@ -10428,9 +10476,15 @@ to fight.</description>
       <ExtraFlags>Lock Evil Magic AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10441,6 +10495,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>13</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -10464,7 +10519,9 @@ to fight.</description>
       <ExtraFlags>Glow Hum Magic Bless AntiEvil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10475,6 +10532,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10498,9 +10556,15 @@ to fight.</description>
       <ExtraFlags>Magic Bless AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10511,6 +10575,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>12</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -10543,6 +10608,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10575,6 +10641,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10607,6 +10674,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10639,6 +10707,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10671,6 +10740,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10703,6 +10773,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10726,9 +10797,15 @@ to fight.</description>
       <ExtraFlags>Hum Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-12" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-12" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10739,6 +10816,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -10762,9 +10840,15 @@ to fight.</description>
       <ExtraFlags>Magic Bless NoRemove Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10775,6 +10859,7 @@ to fight.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10798,9 +10883,15 @@ to fight.</description>
       <ExtraFlags>Glow Magic AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10811,6 +10902,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -10834,9 +10926,15 @@ to fight.</description>
       <ExtraFlags>Glow Magic AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10847,6 +10945,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>21</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -10870,9 +10969,15 @@ to fight.</description>
       <ExtraFlags>Magic NoRemove Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10883,6 +10988,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10906,9 +11012,15 @@ to fight.</description>
       <ExtraFlags>Glow Magic AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -10919,6 +11031,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>19</ArmorBash>
       <ArmorSlash>21</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -10951,6 +11064,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10983,6 +11097,7 @@ to fight.</description>
       <Material>marble</Material>
       <Charges>1</Charges>
       <MaxCharges>1</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11015,6 +11130,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11055,6 +11171,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>8</Charges>
       <MaxCharges>8</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11087,6 +11204,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11124,6 +11242,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11161,6 +11280,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11189,7 +11309,9 @@ to fight.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Wand</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Spells>
         <Spell Level="40" SpellName="armor" />
@@ -11203,6 +11325,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11226,9 +11349,15 @@ to fight.</description>
       <ExtraFlags>Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -11239,6 +11368,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>13</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -11262,9 +11392,15 @@ to fight.</description>
       <ExtraFlags>Evil AntiGood AntiNeutral NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -11275,6 +11411,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11298,8 +11435,12 @@ to fight.</description>
       <ExtraFlags>Magic Bless Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -11310,6 +11451,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -11333,9 +11475,15 @@ to fight.</description>
       <ExtraFlags>Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -11346,6 +11494,7 @@ to fight.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -11354,853 +11503,323 @@ to fight.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="16001" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>16001</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16005" Count="1" Max="4" Vnum="15015">
       <!--Spawn The spirit to The Armoury-->
-      <Type>NPC</Type>
-      <Destination>16005</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>15015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15001" Count="1" Max="3" Vnum="15002">
       <!--Spawn The Myrddraal to Edge of the Blight-->
-      <Type>NPC</Type>
-      <Destination>15001</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15008">
       <!--Spawn a black sword to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15009">
       <!--Spawn an unmoving black cloak to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15010">
       <!--Spawn snake-like overlapping black plates to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15001" Count="1" Max="6" Vnum="15001">
       <!--Spawn The trolloc to Edge of the Blight-->
-      <Type>NPC</Type>
-      <Destination>15001</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15005" Count="1" Max="6" Vnum="15001">
       <!--Spawn The trolloc to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15005</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15007" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15007</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15008" Count="1" Max="1" Vnum="15008">
       <!--Spawn The twisted tree to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15008</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16033" Count="1" Max="4" Vnum="15015">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>16033</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>15015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15009" Count="1" Max="1" Vnum="15007">
       <!--Spawn The creature to One of the Hundred Lakes-->
-      <Type>NPC</Type>
-      <Destination>15009</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="15009" Count="0" Max="1" Vnum="15029">
       <!--Spawn encased in the lakes muck to One of the Hundred Lakes-->
-      <Type>Item</Type>
-      <Destination>15009</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>15029</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15025">
       <!--Spawn a strange ward to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15025</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15010" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15010</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="16035" Count="0" Max="1" Vnum="15027">
       <!--Spawn the small alcove to The Hallway-->
-      <Type>Item</Type>
-      <Destination>16035</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>15027</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15028">
       <!--Spawn an engraved staff to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15028</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15012" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15012</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="16037" Count="0" Max="1" Vnum="15031">
       <!--Spawn a skeleton to The Barracks-->
-      <Type>Item</Type>
-      <Destination>16037</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>15031</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15005">
       <!--Spawn a blood-stained key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15006">
       <!--Spawn a heavy iron key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15007">
       <!--Spawn an often used key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15016" Count="1" Max="6" Vnum="15001">
       <!--Spawn The trolloc to Edge of the Blight-->
-      <Type>NPC</Type>
-      <Destination>15016</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16043" Count="1" Max="4" Vnum="15015">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>16043</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>15015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15020" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15020</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15022" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15022</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16047" Count="1" Max="1" Vnum="15013">
       <!--Spawn The Lord of the tower to The Lord's Quarters-->
-      <Type>NPC</Type>
-      <Destination>16047</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15022">
       <!--Spawn a suit of Malkerian battle armor to The Lord of the tower-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15023">
       <!--Spawn a heartstone dagger to The Lord of the tower-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15023</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15024">
       <!--Spawn a Lord's sceptre to The Lord of the tower-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15024</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15024" Count="1" Max="1" Vnum="15016">
       <!--Spawn The twisted tree to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15024</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16051" Count="1" Max="4" Vnum="15015">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>16051</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>15015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15028" Count="1" Max="3" Vnum="15006">
       <!--Spawn The trolloc to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15028</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15028" Count="1" Max="3" Vnum="15006">
       <!--Spawn The trolloc to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15028</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15028" Count="1" Max="3" Vnum="15006">
       <!--Spawn The trolloc to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15028</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15033" Count="1" Max="3" Vnum="15002">
       <!--Spawn The Myrddraal to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15033</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15008">
       <!--Spawn a black sword to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15009">
       <!--Spawn an unmoving black cloak to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15010">
       <!--Spawn snake-like overlapping black plates to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15033" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15033</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15035" Count="1" Max="1" Vnum="15005">
       <!--Spawn The flock of ravens to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15035</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15013">
       <!--Spawn a shiny platinum key to The flock of ravens-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15037" Count="1" Max="3" Vnum="15004">
       <!--Spawn The trolloc to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15037</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15037" Count="1" Max="3" Vnum="15004">
       <!--Spawn The trolloc to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15037</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15037" Count="1" Max="3" Vnum="15004">
       <!--Spawn The trolloc to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15037</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15039" Count="1" Max="1" Vnum="15009">
       <!--Spawn The draghkar to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15039</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15034">
       <!--Spawn a seductive smile to The draghkar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15034</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15014">
       <!--Spawn a shiny golden key to The draghkar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15042" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15042</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15043" Count="1" Max="1" Vnum="15017">
       <!--Spawn The twisted tree to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15043</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15017</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16068" Count="1" Max="3" Vnum="15022">
       <!--Spawn The grolm to The Center-->
-      <Type>NPC</Type>
-      <Destination>16068</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16069" Count="1" Max="3" Vnum="15022">
       <!--Spawn The grolm to The Southern Yard-->
-      <Type>NPC</Type>
-      <Destination>16069</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15045" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15045</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16071" Count="1" Max="1" Vnum="15021">
       <!--Spawn The fox-like humanoid to The Eastern Yard-->
-      <Type>NPC</Type>
-      <Destination>16071</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15021</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a wicked-looking knife to The fox-like humanoid-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15035</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15035">
+      <!--Spawn a wicked-looking knife to a bass-->
     </Reset>
-    <Reset>
-      <!--Spawn a foxheaded medallion to The fox-like humanoid-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15036</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15036">
+      <!--Spawn a foxheaded medallion to a bass-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15047" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15047</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16073" Count="1" Max="1" Vnum="15020">
       <!--Spawn The metallic orb to The Northern Yard-->
-      <Type>NPC</Type>
-      <Destination>16073</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15020</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16075" Count="1" Max="1" Vnum="15019">
       <!--Spawn The Sul'Dam to The Western Yard-->
-      <Type>NPC</Type>
-      <Destination>16075</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15019</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn an A'dam to The Sul'Dam-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15032</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15032">
+      <!--Spawn an A'dam to a bass-->
     </Reset>
-    <Reset>
-      <!--Spawn a plain dress pannelled with lightning bolts to The Sul'Dam-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15033</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15033">
+      <!--Spawn a plain dress pannelled with lightning bolts to a bass-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15051" Count="1" Max="3" Vnum="15003">
       <!--Spawn The trolloc to Edge of the Blight-->
-      <Type>NPC</Type>
-      <Destination>15051</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15003</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
+      <!--Spawn a huge curved blade to a bass-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15051" Count="1" Max="3" Vnum="15003">
       <!--Spawn The trolloc to Edge of the Blight-->
-      <Type>NPC</Type>
-      <Destination>15051</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
       <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15051" Count="1" Max="3" Vnum="15003">
       <!--Spawn The trolloc to Edge of the Blight-->
-      <Type>NPC</Type>
-      <Destination>15051</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15003</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a huge curved blade to The trolloc-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15001</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15001">
+      <!--Spawn a huge curved blade to a bass-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16076" Count="1" Max="3" Vnum="15022">
       <!--Spawn The grolm to The Southwest Corner-->
-      <Type>NPC</Type>
-      <Destination>16076</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15054" Count="1" Max="1" Vnum="15018">
       <!--Spawn The twisted tree to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15054</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15018</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15057" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to Entering the Blight-->
-      <Type>NPC</Type>
-      <Destination>15057</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="16082" Count="1" Max="2" Vnum="15011">
       <!--Spawn The warder to Tarwin's Gap-->
-      <Type>NPC</Type>
-      <Destination>16082</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>15011</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a finely crafted sword to The warder-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15011</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15011">
+      <!--Spawn a finely crafted sword to a carp-->
     </Reset>
-    <Reset>
-      <!--Spawn a cloak of shifting colors to The warder-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15012</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15012">
+      <!--Spawn a cloak of shifting colors to a carp-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15059" Count="2" Max="20" Vnum="15010">
       <!--Spawn The diseased creature to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15059</Destination>
-      <Count>2</Count>
-      <Max>20</Max>
-      <Vnum>15010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15060" Count="1" Max="3" Vnum="15002">
       <!--Spawn The Myrddraal to The Blight-->
-      <Type>NPC</Type>
-      <Destination>15060</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>15002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15008">
       <!--Spawn a black sword to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15008</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn an unmoving black cloak to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15009</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15009">
+      <!--Spawn an unmoving black cloak to a carp-->
     </Reset>
-    <Reset>
-      <!--Spawn snake-like overlapping black plates to The Myrddraal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15010</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15010">
+      <!--Spawn snake-like overlapping black plates to a carp-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15062" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>15062</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15064" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>15064</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15073" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>15073</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15082" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>15082</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="15086" Count="0" Max="1" Vnum="15030">
       <!--Spawn a skeleton to The Barracks-->
-      <Type>Item</Type>
-      <Destination>15086</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>15030</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15002">
       <!--Spawn a blood-stained key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15003">
       <!--Spawn a heavy iron key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="15004">
       <!--Spawn an often used key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15092" Count="1" Max="7" Vnum="15014">
       <!--Spawn The spirit to The Hallway-->
-      <Type>NPC</Type>
-      <Destination>15092</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>15014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15096" Count="1" Max="1" Vnum="15012">
       <!--Spawn The Lord of the tower to The Lord's Quarters-->
-      <Type>NPC</Type>
-      <Destination>15096</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>15012</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a small figurine to The Lord of the tower-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15019</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15019">
+      <!--Spawn a small figurine to a blue-gill-->
     </Reset>
-    <Reset>
-      <!--Spawn a Heron marked blade to The Lord of the tower-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15020</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15020">
+      <!--Spawn a Heron marked blade to a blue-gill-->
     </Reset>
-    <Reset>
-      <!--Spawn a helm stylized into a golden crane to The Lord of the tower-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15021</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15021">
+      <!--Spawn a helm stylized into a golden crane to a blue-gill-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15100" Count="1" Max="6" Vnum="15001">
       <!--Spawn The trolloc to By the Shore-->
-      <Type>NPC</Type>
-      <Destination>15100</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15101" Count="1" Max="2" Vnum="15011">
       <!--Spawn The warder to In the Borderlands-->
-      <Type>NPC</Type>
-      <Destination>15101</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>15011</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a finely crafted sword to The warder-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15011</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15011">
+      <!--Spawn a finely crafted sword to a blue-gill-->
     </Reset>
-    <Reset>
-      <!--Spawn a cloak of shifting colors to The warder-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>15012</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="15012">
+      <!--Spawn a cloak of shifting colors to a blue-gill-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15101" Count="1" Max="6" Vnum="15001">
       <!--Spawn The trolloc to In the Borderlands-->
-      <Type>NPC</Type>
-      <Destination>15101</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="15110" Count="1" Max="6" Vnum="15001">
       <!--Spawn The trolloc to In the Borderlands-->
-      <Type>NPC</Type>
-      <Destination>15110</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>15001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="15115" Count="0" Max="1" Vnum="15026">
       <!--Spawn the spring to A Warded Glade-->
-      <Type>Item</Type>
-      <Destination>15115</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>15026</Vnum>
     </Reset>
   </Resets>
 </Area>

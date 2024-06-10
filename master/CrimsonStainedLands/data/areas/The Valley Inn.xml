@@ -2148,7 +2148,7 @@ great figure and bright sky-blue eyes.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood PassDoor Haste DarkVision DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood PassDoor Haste DarkVision DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>12</DamageDiceSides>
@@ -2435,7 +2435,7 @@ blue eyes are set softly into his skull. He purrs softly at you and smiles.</des
       <ExtraFlags>Glow AntiEvil RotDeath</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="500" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="500" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>

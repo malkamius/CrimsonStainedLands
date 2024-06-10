@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{30 up} Ceran   Drannor, Rakshasa Domain</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2304,6 +2305,7 @@ kill, and it surrenders the noble part of it's mind to the tiger in it.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2360,6 +2362,7 @@ in the ruins of the ancient cities.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2416,6 +2419,7 @@ powerful as they once were.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2473,6 +2477,7 @@ planes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion Flying PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2528,6 +2533,7 @@ the king has already succumbed to despair and rules only by tradition.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2584,6 +2590,7 @@ have fallen back to the despicable magics of necromancy and transformation.</des
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2639,6 +2646,7 @@ high priest has used them as personal slaves.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2695,6 +2703,7 @@ against his enemies.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2749,6 +2758,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2790,6 +2800,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2813,8 +2824,12 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2825,6 +2840,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2848,8 +2864,12 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2860,6 +2880,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>16</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -2883,9 +2904,15 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2896,6 +2923,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>17</ArmorPierce>
@@ -2916,14 +2944,24 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <DiceBonus>1</DiceBonus>
       <Weight>9</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Dark Evil Invisibility AntiGood</ExtraFlags>
+      <ExtraFlags>Dark Evil Invis AntiGood</ExtraFlags>
       <ItemTypes>Trash</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2934,6 +2972,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2954,14 +2993,24 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <DiceBonus>1</DiceBonus>
       <Weight>1</Weight>
       <WearFlags>Take Finger</WearFlags>
-      <ExtraFlags>Dark Evil Invisibility Magic AntiGood</ExtraFlags>
+      <ExtraFlags>Dark Evil Invis Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2972,6 +3021,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -2995,7 +3045,9 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3006,6 +3058,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>19</ArmorSlash>
       <ArmorPierce>18</ArmorPierce>
@@ -3029,9 +3082,15 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>Magic NoDrop</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3042,6 +3101,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3065,10 +3125,18 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3079,6 +3147,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -3111,6 +3180,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3139,10 +3209,18 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>Glow Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3153,6 +3231,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -3176,12 +3255,24 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>Glow Magic Bless</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3192,6 +3283,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3215,11 +3307,21 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3230,6 +3332,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>diamond</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3253,11 +3356,21 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>Hum Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3268,6 +3381,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -3291,8 +3405,12 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <ExtraFlags>Hum Magic Bless</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3303,6 +3421,7 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3311,589 +3430,224 @@ a small dragon, and certainly the largest tiger you have ever heard of.</descrip
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="13902" Count="2" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
-      <Type>NPC</Type>
-      <Destination>13902</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13902" Count="2" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
-      <Type>NPC</Type>
-      <Destination>13902</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13904" Count="2" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
-      <Type>NPC</Type>
-      <Destination>13904</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13904" Count="2" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to Guard Post Outside the Tower-->
-      <Type>NPC</Type>
-      <Destination>13904</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13905" Count="1" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13905</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13906" Count="1" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to Inside the Tower-->
-      <Type>NPC</Type>
-      <Destination>13906</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13908" Count="1" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to Inside the Tower-->
-      <Type>NPC</Type>
-      <Destination>13908</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13910" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Barracks-->
-      <Type>NPC</Type>
-      <Destination>13910</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13911" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Barracks-->
-      <Type>NPC</Type>
-      <Destination>13911</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13912" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13912</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13912" Count="1" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13912</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13917" Count="1" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13917</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13920" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Barracks-->
-      <Type>NPC</Type>
-      <Destination>13920</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13921" Count="1" Max="1" Vnum="13905">
       <!--Spawn a two-headed rakshasa to Officer's Quarters-->
-      <Type>NPC</Type>
-      <Destination>13921</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13912">
       <!--Spawn a blood-soaked collar to a two-headed rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13912</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13923" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Corridor in the Barracks-->
-      <Type>NPC</Type>
-      <Destination>13923</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13927" Count="1" Max="1" Vnum="13903">
       <!--Spawn the lich rakshasa to Atop the Tower of Carrion-->
-      <Type>NPC</Type>
-      <Destination>13927</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13907">
       <!--Spawn a coat of black rakshasa fur to the lich rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13905">
       <!--Spawn a sceptre of gold to the lich rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13927" Count="2" Max="2" Vnum="13906">
       <!--Spawn the zombie of a dark-elven warrior to Atop the Tower of Carrion-->
-      <Type>NPC</Type>
-      <Destination>13927</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>13906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13927" Count="2" Max="2" Vnum="13906">
       <!--Spawn the zombie of a dark-elven warrior to Atop the Tower of Carrion-->
-      <Type>NPC</Type>
-      <Destination>13927</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>13906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13930" Count="1" Max="10" Vnum="13902">
       <!--Spawn a brown rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13930</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13904">
       <!--Spawn a pair of brown rakshasa claws to a brown rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13931" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Corridor in the Barracks-->
-      <Type>NPC</Type>
-      <Destination>13931</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13933" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Officer's Quarters-->
-      <Type>NPC</Type>
-      <Destination>13933</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13937" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13937</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13939" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Inside the Lich Temple-->
-      <Type>NPC</Type>
-      <Destination>13939</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13942" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13942</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13944" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to Barracks-->
-      <Type>NPC</Type>
-      <Destination>13944</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13948" Count="1" Max="5" Vnum="13900">
       <!--Spawn a black rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13948</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13902">
       <!--Spawn claws of a black rakshasa to a black rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13949" Count="1" Max="12" Vnum="13901">
       <!--Spawn a red rakshasa to A Corridor in the Tower-->
-      <Type>NPC</Type>
-      <Destination>13949</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>13901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13903">
       <!--Spawn the claws of a red rakshasa to a red rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13951" Count="1" Max="5" Vnum="13900">
       <!--Spawn a black rakshasa to Before the Throne room-->
-      <Type>NPC</Type>
-      <Destination>13951</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13902">
       <!--Spawn claws of a black rakshasa to a black rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13953" Count="1" Max="5" Vnum="13900">
       <!--Spawn a black rakshasa to Entrance of the Throne Room-->
-      <Type>NPC</Type>
-      <Destination>13953</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13902">
       <!--Spawn claws of a black rakshasa to a black rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13956" Count="1" Max="1" Vnum="13904">
       <!--Spawn Daedalus, the rakshasa prince to Prince's Chambers-->
-      <Type>NPC</Type>
-      <Destination>13956</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13908">
       <!--Spawn a dual-bladed axe named 'Beholderkin Slayer to Daedalus, the rakshasa prince-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13908</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13900">
       <!--Spawn a red tinted seal to Daedalus, the rakshasa prince-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13920">
       <!--Spawn an emblem of rakshasa pride to Daedalus, the rakshasa prince-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13920</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13914">
       <!--Spawn a royal rakshasa signet ring to Daedalus, the rakshasa prince-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13914</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13957" Count="1" Max="5" Vnum="13900">
       <!--Spawn a black rakshasa to West Alcove of the Throne Room-->
-      <Type>NPC</Type>
-      <Destination>13957</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13902">
       <!--Spawn claws of a black rakshasa to a black rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13959" Count="1" Max="5" Vnum="13900">
       <!--Spawn a black rakshasa to West Alcove of the Throne Room-->
-      <Type>NPC</Type>
-      <Destination>13959</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13902">
       <!--Spawn claws of a black rakshasa to a black rakshasa-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13961" Count="1" Max="1" Vnum="13908">
       <!--Spawn a massive tiger to King's Treasure Chamber-->
-      <Type>NPC</Type>
-      <Destination>13961</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13908</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13921">
       <!--Spawn the claw of a massive tiger to a massive tiger-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13921</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13962" Count="1" Max="1" Vnum="13907">
       <!--Spawn the rakshasa king to Before the King's Throne-->
-      <Type>NPC</Type>
-      <Destination>13962</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13913">
       <!--Spawn a red ioun stone to the rakshasa king-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13913</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13916">
       <!--Spawn a crown of gold to the rakshasa king-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13916</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13914">
       <!--Spawn a royal rakshasa signet ring to the rakshasa king-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13914</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13917">
       <!--Spawn a diamond studded necklace to the rakshasa king-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13917</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{40 up} Barsak  Varggin Shih</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -3204,6 +3205,7 @@ dark town of Varggin Shih, he trains as a warrior in their small community.</des
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3258,6 +3260,7 @@ readies his bow for a battle, glaring at you with hatred.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3313,6 +3316,7 @@ and his skin is tough. Perhaps you should rethink your plans...</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3370,6 +3374,7 @@ though, his trolls have taken offense to the infidels.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Haste Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -3423,6 +3428,7 @@ though, his trolls have taken offense to the infidels.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3479,6 +3485,7 @@ against the intruders.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3535,7 +3542,8 @@ two they live in luxury.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Sanctuary ProtectionGood Flying PassDoor Regeneration DetectIllusion</affectedBy>
+      <affectedBy>Sanctuary ProtectGood Flying PassDoor Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3568,7 +3576,9 @@ two they live in luxury.</description>
       <ExtraFlags>Evil AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3579,6 +3589,7 @@ two they live in luxury.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3602,10 +3613,18 @@ two they live in luxury.</description>
       <ExtraFlags>AntiGood</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Chr" modifier="45" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Chr" modifier="45" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3616,6 +3635,7 @@ two they live in luxury.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3639,11 +3659,21 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3654,6 +3684,7 @@ two they live in luxury.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>11</ArmorBash>
       <ArmorSlash>12</ArmorSlash>
       <ArmorPierce>11</ArmorPierce>
@@ -3677,9 +3708,15 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3690,6 +3727,7 @@ two they live in luxury.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -3713,9 +3751,15 @@ two they live in luxury.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3726,6 +3770,7 @@ two they live in luxury.</description>
       <Material>fur</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>13</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>13</ArmorPierce>
@@ -3749,9 +3794,15 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3762,6 +3813,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -3785,10 +3837,18 @@ two they live in luxury.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3799,6 +3859,7 @@ two they live in luxury.</description>
       <Material>onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -3837,6 +3898,7 @@ two they live in luxury.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3860,8 +3922,12 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3872,6 +3938,7 @@ two they live in luxury.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3895,7 +3962,9 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Hum TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3906,6 +3975,7 @@ two they live in luxury.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3942,6 +4012,7 @@ two they live in luxury.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3965,8 +4036,12 @@ two they live in luxury.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3977,6 +4052,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -4000,8 +4076,12 @@ two they live in luxury.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4012,6 +4092,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -4035,8 +4116,12 @@ two they live in luxury.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4047,6 +4132,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -4070,8 +4156,12 @@ two they live in luxury.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4082,6 +4172,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -4105,8 +4196,12 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="200" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-200" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="200" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-200" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4117,6 +4212,7 @@ two they live in luxury.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -4140,8 +4236,12 @@ two they live in luxury.</description>
       <ExtraFlags>Glow Hum Evil AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4152,6 +4252,7 @@ two they live in luxury.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -4175,10 +4276,18 @@ two they live in luxury.</description>
       <ExtraFlags>Glow AntiGood NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4189,6 +4298,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -4212,7 +4322,9 @@ two they live in luxury.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4223,6 +4335,7 @@ two they live in luxury.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -4246,10 +4359,18 @@ two they live in luxury.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4260,6 +4381,7 @@ two they live in luxury.</description>
       <Material>fur</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -4268,389 +4390,149 @@ two they live in luxury.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="22025" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22025</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22027" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22027</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22031" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22031</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22034" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22034</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22041" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22041</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22043" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22043</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22054" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22054</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22056" Count="1" Max="8" Vnum="22004">
       <!--Spawn the troll citizen to the street of Varggin Shih-->
-      <Type>NPC</Type>
-      <Destination>22056</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22057" Count="1" Max="5" Vnum="22000">
       <!--Spawn a disgusting troll warrior to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22057</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22058" Count="1" Max="5" Vnum="22000">
       <!--Spawn a disgusting troll warrior to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22058</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22060" Count="1" Max="5" Vnum="22000">
       <!--Spawn a disgusting troll warrior to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22060</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22062" Count="1" Max="5" Vnum="22000">
       <!--Spawn a disgusting troll warrior to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22062</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22000">
       <!--Spawn a blood-covered axe to a disgusting troll warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22063" Count="1" Max="5" Vnum="22000">
       <!--Spawn a disgusting troll warrior to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22063</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22064" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22064</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22065" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22065</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22001">
       <!--Spawn a deadly bow to a strong troll archer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22067" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22067</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22068" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22068</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22069" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22069</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22070" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22070</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22071" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22071</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22011">
       <!--Spawn a bone breastplate to a large troll ranger-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22012">
       <!--Spawn a pair of bone leggings to a large troll ranger-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22012</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a pair of bone boots to a large troll ranger-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22013</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22013">
+      <!--Spawn a pair of bone boots to a stronghold patrolman-->
     </Reset>
-    <Reset>
-      <!--Spawn a bone shield to a large troll ranger-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22014</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22014">
+      <!--Spawn a bone shield to a stronghold patrolman-->
     </Reset>
-    <Reset>
-      <!--Spawn the staff of Zargg Nihl to a large troll ranger-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22009</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22009">
+      <!--Spawn the staff of Zargg Nihl to a stronghold patrolman-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22072" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22072</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22073" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22073</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22074" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22074</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22076" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22076</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22078" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22078</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22082" Count="1" Max="1" Vnum="22006">
       <!--Spawn the shaman of Varggin Shih to The Shaman's Room-->
-      <Type>NPC</Type>
-      <Destination>22082</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>22006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22015">
       <!--Spawn the robe of Pain to the shaman of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22016">
       <!--Spawn the bracelet of suffering to the shaman of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22017">
       <!--Spawn the cracked skull of the shaman of Varggin Shih to the shaman of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22017</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="22018">
       <!--Spawn the strange bone to the shaman of Varggin Shih-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22018</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn some tough fur leggings to the shaman of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22019</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22019">
+      <!--Spawn some tough fur leggings to a stronghold patrolman-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22083" Count="1" Max="1" Vnum="22002">
       <!--Spawn a elite troll guard to the Hallway-->
-      <Type>NPC</Type>
-      <Destination>22083</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>22002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22084" Count="1" Max="1" Vnum="22003">
       <!--Spawn the king of Varggin Shih to The Throne Room-->
-      <Type>NPC</Type>
-      <Destination>22084</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>22003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22002">
       <!--Spawn a Varggin Shih signet ring to the king of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22003">
       <!--Spawn a crude iron belt to the king of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22004">
       <!--Spawn the helm of blackened furs to the king of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="22005">
       <!--Spawn a centaur hoof to the king of Varggin Shih-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22006">
       <!--Spawn some blood-covered battlearmor to the king of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22008">
       <!--Spawn the wicked iron longsword to the king of Varggin Shih-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22087" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22087</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22091" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
-      <Type>NPC</Type>
-      <Destination>22091</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>22005</Vnum>
     </Reset>
   </Resets>
 </Area>

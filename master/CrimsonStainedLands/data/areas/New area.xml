@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>Liriel</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1116,7 +1117,7 @@ and you see more trees beyond that.</Description>
       <VNum>426</VNum>
       <Name>A Beautiful Waterfall</Name>
       <Description></Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags></Flags>
       <Exits>
         <Exit>
@@ -1438,6 +1439,7 @@ embroidered with rainbow hues of unearthly magnificence.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared Sneak</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -1483,6 +1485,7 @@ embroidered with rainbow hues of unearthly magnificence.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1515,6 +1518,7 @@ embroidered with rainbow hues of unearthly magnificence.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -1523,13 +1527,8 @@ embroidered with rainbow hues of unearthly magnificence.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="410" Count="1" Max="1" Vnum="400">
       <!--Spawn a napaea to A Turn in the Trail-->
-      <Type>NPC</Type>
-      <Destination>410</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>400</Vnum>
     </Reset>
   </Resets>
 </Area>

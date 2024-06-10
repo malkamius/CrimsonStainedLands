@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 5 30} Diku    Sewer</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4098,7 +4099,7 @@ it looks more dry, south however the drain runs down into some water.</Descripti
       <Description>You swim in some dirty water and is holding you breath. You'll better 
 continue before you drown. It is a good thing that you can hold your light
 above water-level.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark NoMob</Flags>
       <Exits>
         <Exit>
@@ -5215,7 +5216,7 @@ looks like there is smoke inside it.</Description>
       <Name>The mudhole</Name>
       <Description>You are standing in a lot of mud. The mud goes to your  chest. You feel the
 presence of something IN the mud.  The only obvious exit is to the west.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark NoMob</Flags>
       <Exits>
         <Exit>
@@ -6637,7 +6638,7 @@ see that it's a big lake. Light seeps from the water.</Description>
       <VNum>7443</VNum>
       <Name>The pool</Name>
       <Description>You are swimming in water. It is getting deep here. It is dark in this end.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark NoMob</Flags>
       <Exits>
         <Exit>
@@ -6698,7 +6699,7 @@ see that it's a big lake. Light seeps from the water.</Description>
       <Name>The pool</Name>
       <Description>You are swimming in DARKNESS. You feel something
 touching your right leg.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark NoMob</Flags>
       <Exits>
         <Exit>
@@ -6778,6 +6779,7 @@ flesh for breakfast and is strongly intent on having the same for dinner.</descr
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -6833,6 +6835,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Flying DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6890,6 +6893,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6943,6 +6947,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6996,6 +7001,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -7049,6 +7055,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7102,6 +7109,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -7155,6 +7163,7 @@ cruel creature doesn't seem appealing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7210,6 +7219,7 @@ teeth gleaming yellow.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -7264,6 +7274,7 @@ glowing eyes. The lower body is in an orange shading.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -7319,6 +7330,7 @@ at you with such a glint in the eyes that reminds you of immense hunger.</descri
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7374,6 +7386,7 @@ flesh for breakfast and is strongly intent on having the same for dinner.</descr
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -7429,6 +7442,7 @@ it moves closer.  'Can one NEVER sleep in peace ... Hsss'.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7484,6 +7498,7 @@ and it has small sharp horns.  It hates beauty.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -7540,6 +7555,7 @@ leads to some evil creatures'.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7595,6 +7611,7 @@ glowing pale green.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -7651,6 +7668,7 @@ mind has been burned out.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7706,6 +7724,7 @@ filthy and moth eaten. Jones really stinks...</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7761,6 +7780,7 @@ hangs dead mouses and rats. He does not smell good.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -7816,6 +7836,7 @@ moment now. In the middle of its head are four tentacles with sharp points.</des
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -7871,6 +7892,7 @@ tentacles with very sharp points.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7926,6 +7948,7 @@ center of its head.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7980,6 +8003,7 @@ that it is standing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -8034,6 +8058,7 @@ the size of your head looking very nasty.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -8066,8 +8091,12 @@ the size of your head looking very nasty.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8078,6 +8107,7 @@ the size of your head looking very nasty.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8101,8 +8131,12 @@ the size of your head looking very nasty.</description>
       <ExtraFlags>Magic Vorpal TwoHands Shocking Poison</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8113,6 +8147,7 @@ the size of your head looking very nasty.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8142,7 +8177,9 @@ very sharp purple tentacles at the end.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8153,6 +8190,7 @@ very sharp purple tentacles at the end.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8182,7 +8220,9 @@ purple tentacles tied together.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8193,6 +8233,7 @@ purple tentacles tied together.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8222,7 +8263,9 @@ It consists of a black handle and a purple head.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8233,6 +8276,7 @@ It consists of a black handle and a purple head.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -8270,6 +8314,7 @@ It consists of a black handle and a purple head.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8302,6 +8347,7 @@ It consists of a black handle and a purple head.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8325,7 +8371,9 @@ It consists of a black handle and a purple head.</Description>
       <ExtraFlags>Magic NoDrop</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8336,6 +8384,7 @@ It consists of a black handle and a purple head.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -8378,6 +8427,7 @@ the inside.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8411,7 +8461,9 @@ to throw it away you notice some small letters.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8422,6 +8474,7 @@ to throw it away you notice some small letters.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -8459,6 +8512,7 @@ to throw it away you notice some small letters.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8487,7 +8541,9 @@ to throw it away you notice some small letters.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8498,6 +8554,7 @@ to throw it away you notice some small letters.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8521,8 +8578,12 @@ to throw it away you notice some small letters.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8533,6 +8594,7 @@ to throw it away you notice some small letters.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8561,7 +8623,9 @@ to throw it away you notice some small letters.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8572,6 +8636,7 @@ to throw it away you notice some small letters.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -8601,7 +8666,9 @@ some kind of silver or platinum.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8612,6 +8679,7 @@ some kind of silver or platinum.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -8640,8 +8708,12 @@ some kind of silver or platinum.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8652,6 +8724,7 @@ some kind of silver or platinum.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -8680,7 +8753,9 @@ some kind of silver or platinum.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8691,6 +8766,7 @@ some kind of silver or platinum.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -8720,7 +8796,9 @@ on the top.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8731,6 +8809,7 @@ on the top.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -8760,7 +8839,9 @@ background. You also notice the inscription :'Pax Est Sanctuum'.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8771,6 +8852,7 @@ background. You also notice the inscription :'Pax Est Sanctuum'.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -8799,7 +8881,9 @@ background. You also notice the inscription :'Pax Est Sanctuum'.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8810,6 +8894,7 @@ background. You also notice the inscription :'Pax Est Sanctuum'.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -8838,7 +8923,9 @@ background. You also notice the inscription :'Pax Est Sanctuum'.</Description>
       <ExtraFlags>Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8849,6 +8936,7 @@ background. You also notice the inscription :'Pax Est Sanctuum'.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -8887,6 +8975,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8924,6 +9013,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8961,6 +9051,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8993,6 +9084,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -9016,8 +9108,12 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Talisman</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Spells>
         <Spell Level="13" SpellName="sanctuary" />
@@ -9031,6 +9127,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -9054,8 +9151,12 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9066,6 +9167,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -9089,8 +9191,12 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9101,6 +9207,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -9124,7 +9231,9 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Furniture</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9135,6 +9244,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -9158,9 +9268,15 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9171,6 +9287,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -9194,7 +9311,9 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9205,6 +9324,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -9228,8 +9348,12 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9240,6 +9364,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -9263,8 +9388,12 @@ color.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -9275,6 +9404,7 @@ color.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -9283,741 +9413,281 @@ color.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="7200" Count="0" Max="1" Vnum="7204">
       <!--Spawn an neon blue potion to The Treasury-->
-      <Type>Item</Type>
-      <Destination>7200</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>7204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7201" Count="1" Max="1" Vnum="7200">
       <!--Spawn the master mindflayer to The inner Lair-->
-      <Type>NPC</Type>
-      <Destination>7201</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>7200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7200">
       <!--Spawn the devil rod to the master mindflayer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7203">
       <!--Spawn a purple cloak to the master mindflayer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="7205">
       <!--Spawn a black key to the master mindflayer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7203" Count="1" Max="1" Vnum="7201">
       <!--Spawn the senior mindflayer to The Lair-->
-      <Type>NPC</Type>
-      <Destination>7203</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>7201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7201">
       <!--Spawn the large mace to the senior mindflayer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7205" Count="1" Max="2" Vnum="7202">
       <!--Spawn the junior mindflayer to The Lair-->
-      <Type>NPC</Type>
-      <Destination>7205</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>7202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7202">
       <!--Spawn the small mace to the junior mindflayer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="7206" Count="0" Max="1" Vnum="7206">
       <!--Spawn a strange white skull to The lair.-->
-      <Type>Item</Type>
-      <Destination>7206</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>7206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7207" Count="1" Max="2" Vnum="7202">
       <!--Spawn the junior mindflayer to The lair.-->
-      <Type>NPC</Type>
-      <Destination>7207</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>7202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7202">
       <!--Spawn the small mace to the junior mindflayer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7213" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The sewer drain.-->
-      <Type>NPC</Type>
-      <Destination>7213</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7214" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The drain end.-->
-      <Type>NPC</Type>
-      <Destination>7214</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7215" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The half-wet drain.-->
-      <Type>NPC</Type>
-      <Destination>7215</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7217" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The half-dry drain.-->
-      <Type>NPC</Type>
-      <Destination>7217</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="7208">
       <!--Spawn a small stick to the ugly wererat-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7219" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to A dry sewer drain.-->
-      <Type>NPC</Type>
-      <Destination>7219</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7209">
       <!--Spawn a pair of muddy boots to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7221" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The sewer drain.-->
-      <Type>NPC</Type>
-      <Destination>7221</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="7208">
       <!--Spawn a small stick to the ugly wererat-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7223" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The sewer bend.-->
-      <Type>NPC</Type>
-      <Destination>7223</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7209">
       <!--Spawn a pair of muddy boots to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7225" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The sewer-->
-      <Type>NPC</Type>
-      <Destination>7225</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7233" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The sewer drain-->
-      <Type>NPC</Type>
-      <Destination>7233</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="7208">
       <!--Spawn a small stick to the ugly wererat-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7233" Count="1" Max="10" Vnum="7203">
       <!--Spawn the ugly wererat to The sewer drain-->
-      <Type>NPC</Type>
-      <Destination>7233</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>7203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7209">
       <!--Spawn a pair of muddy boots to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7211">
       <!--Spawn a short sword to the ugly wererat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7234" Count="1" Max="1" Vnum="7204">
       <!--Spawn the gigantic rat to The rat's lair-->
-      <Type>NPC</Type>
-      <Destination>7234</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>7204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7280" Count="1" Max="8" Vnum="7000">
       <!--Spawn the horrifying mudmonster to The entrance.-->
-      <Type>NPC</Type>
-      <Destination>7280</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>7000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7281" Count="2" Max="8" Vnum="7000">
       <!--Spawn the horrifying mudmonster to The corridor.-->
-      <Type>NPC</Type>
-      <Destination>7281</Destination>
-      <Count>2</Count>
-      <Max>8</Max>
-      <Vnum>7000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7281" Count="2" Max="8" Vnum="7000">
       <!--Spawn the horrifying mudmonster to The corridor.-->
-      <Type>NPC</Type>
-      <Destination>7281</Destination>
-      <Count>2</Count>
-      <Max>8</Max>
-      <Vnum>7000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7285" Count="1" Max="7" Vnum="7002">
       <!--Spawn the great sewer rat to The tortureroom.-->
-      <Type>NPC</Type>
-      <Destination>7285</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>7002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7190">
       <!--Spawn a glinting ring of silver to the great sewer rat-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7190</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7285" Count="1" Max="7" Vnum="7002">
       <!--Spawn the great sewer rat to The tortureroom.-->
-      <Type>NPC</Type>
-      <Destination>7285</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>7002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7286" Count="2" Max="8" Vnum="7000">
       <!--Spawn the horrifying mudmonster to The hells yard-->
-      <Type>NPC</Type>
-      <Destination>7286</Destination>
-      <Count>2</Count>
-      <Max>8</Max>
-      <Vnum>7000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7286" Count="2" Max="8" Vnum="7013">
       <!--Spawn the horrifying mudmonster to The hells yard-->
-      <Type>NPC</Type>
-      <Destination>7286</Destination>
-      <Count>2</Count>
-      <Max>8</Max>
-      <Vnum>7013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7401" Count="4" Max="4" Vnum="7008">
       <!--Spawn the homonculus to Cave tunnel-->
-      <Type>NPC</Type>
-      <Destination>7401</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>7008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7403" Count="3" Max="3" Vnum="7013">
       <!--Spawn the horrifying mudmonster to Cave T-cross-->
-      <Type>NPC</Type>
-      <Destination>7403</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>7013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7406" Count="6" Max="6" Vnum="7044">
       <!--Spawn the lemure blob to The mudhole-->
-      <Type>NPC</Type>
-      <Destination>7406</Destination>
-      <Count>6</Count>
-      <Max>6</Max>
-      <Vnum>7044</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7412" Count="3" Max="3" Vnum="7013">
       <!--Spawn the horrifying mudmonster to The stalagmite tunnel-->
-      <Type>NPC</Type>
-      <Destination>7412</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>7013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7419" Count="1" Max="1" Vnum="7045">
       <!--Spawn Jones to The square lair-->
-      <Type>NPC</Type>
-      <Destination>7419</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>7045</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7422" Count="3" Max="3" Vnum="7007">
       <!--Spawn the evil wanderer to North tunnel-->
-      <Type>NPC</Type>
-      <Destination>7422</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>7007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7423" Count="3" Max="3" Vnum="7011">
       <!--Spawn the shadowy morkoth to The L-shaped room.-->
-      <Type>NPC</Type>
-      <Destination>7423</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>7011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7424" Count="1" Max="1" Vnum="7046">
       <!--Spawn Herald to The Circular hall.-->
-      <Type>NPC</Type>
-      <Destination>7424</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>7046</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7428" Count="1" Max="1" Vnum="7040">
       <!--Spawn the red dragon to Dragons lair-->
-      <Type>NPC</Type>
-      <Destination>7428</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>7040</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7304">
       <!--Spawn a red dragon torso to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7305">
       <!--Spawn red dragonscale leggings to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7305</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7306">
       <!--Spawn a pair of red dragon claws to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7306</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7307">
       <!--Spawn a red dragonhelm to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7308">
       <!--Spawn the red dragon shield to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7308</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7309">
       <!--Spawn a pair of a red dragon's rear claws to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7310">
       <!--Spawn red dragon arm guards to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7310</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7216">
       <!--Spawn a red dragon claw to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="7303">
       <!--Spawn the Red DragonOrb to the red dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>7303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7429" Count="2" Max="2" Vnum="7010">
       <!--Spawn the evil chreffn to The burned room-->
-      <Type>NPC</Type>
-      <Destination>7429</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>7010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7435" Count="2" Max="2" Vnum="7042">
       <!--Spawn the guardian naga to Dark tunnel-->
-      <Type>NPC</Type>
-      <Destination>7435</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>7042</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7439" Count="3" Max="3" Vnum="7043">
       <!--Spawn the scaled basilisk to North-western part of basilisks cave-->
-      <Type>NPC</Type>
-      <Destination>7439</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>7043</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="7439" Count="0" Max="1" Vnum="7300">
       <!--Spawn a backpack to North-western part of basilisks cave-->
-      <Type>Item</Type>
-      <Destination>7439</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>7300</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7444" Count="2" Max="2" Vnum="7041">
       <!--Spawn the sea hag to The south end of the pool-->
-      <Type>NPC</Type>
-      <Destination>7444</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>7041</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7004" Count="6" Max="12" Vnum="7001">
       <!--Spawn the small bat to The Dark Pit-->
-      <Type>NPC</Type>
-      <Destination>7004</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>7001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7004" Count="6" Max="12" Vnum="7001">
       <!--Spawn the small bat to The Dark Pit-->
-      <Type>NPC</Type>
-      <Destination>7004</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>7001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7025" Count="3" Max="12" Vnum="7001">
       <!--Spawn the small bat to Another intersection-->
-      <Type>NPC</Type>
-      <Destination>7025</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>7001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7031" Count="1" Max="7" Vnum="7002">
       <!--Spawn the great sewer rat to A triple junction-->
-      <Type>NPC</Type>
-      <Destination>7031</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>7002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7037" Count="3" Max="8" Vnum="7003">
       <!--Spawn the small spider to The round room-->
-      <Type>NPC</Type>
-      <Destination>7037</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7037" Count="3" Max="8" Vnum="7003">
       <!--Spawn the small spider to The round room-->
-      <Type>NPC</Type>
-      <Destination>7037</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7039" Count="3" Max="8" Vnum="7003">
       <!--Spawn the small spider to The Sewer Store Room-->
-      <Type>NPC</Type>
-      <Destination>7039</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7039" Count="3" Max="8" Vnum="7003">
       <!--Spawn the small spider to The Sewer Store Room-->
-      <Type>NPC</Type>
-      <Destination>7039</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7039" Count="3" Max="8" Vnum="7003">
       <!--Spawn the small spider to The Sewer Store Room-->
-      <Type>NPC</Type>
-      <Destination>7039</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7041" Count="3" Max="12" Vnum="7001">
       <!--Spawn the small bat to The Shaft-->
-      <Type>NPC</Type>
-      <Destination>7041</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>7001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7049" Count="1" Max="7" Vnum="7002">
       <!--Spawn the great sewer rat to The junction-->
-      <Type>NPC</Type>
-      <Destination>7049</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>7002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7050" Count="2" Max="8" Vnum="7003">
       <!--Spawn the small spider to The small room-->
-      <Type>NPC</Type>
-      <Destination>7050</Destination>
-      <Count>2</Count>
-      <Max>8</Max>
-      <Vnum>7003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7101" Count="2" Max="6" Vnum="7006">
       <!--Spawn the slithering snake to Under the mudhole-->
-      <Type>NPC</Type>
-      <Destination>7101</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>7006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7102" Count="3" Max="3" Vnum="7004">
       <!--Spawn the giant earth beetle to Under the Dark Pit-->
-      <Type>NPC</Type>
-      <Destination>7102</Destination>
-      <Count>3</Count>
-      <Max>3</Max>
-      <Vnum>7004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7102" Count="2" Max="6" Vnum="7006">
       <!--Spawn the slithering snake to Under the Dark Pit-->
-      <Type>NPC</Type>
-      <Destination>7102</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>7006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7103" Count="3" Max="8" Vnum="7000">
       <!--Spawn the horrifying mudmonster to A muddy bend in the sewer system-->
-      <Type>NPC</Type>
-      <Destination>7103</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7103" Count="3" Max="8" Vnum="7000">
       <!--Spawn the horrifying mudmonster to A muddy bend in the sewer system-->
-      <Type>NPC</Type>
-      <Destination>7103</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>7000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7104" Count="3" Max="7" Vnum="7002">
       <!--Spawn the great sewer rat to A junction in the sewer pipes-->
-      <Type>NPC</Type>
-      <Destination>7104</Destination>
-      <Count>3</Count>
-      <Max>7</Max>
-      <Vnum>7002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7104" Count="2" Max="6" Vnum="7006">
       <!--Spawn the slithering snake to A junction in the sewer pipes-->
-      <Type>NPC</Type>
-      <Destination>7104</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>7006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7112" Count="4" Max="7" Vnum="7005">
       <!--Spawn the maggot to An odd intersection-->
-      <Type>NPC</Type>
-      <Destination>7112</Destination>
-      <Count>4</Count>
-      <Max>7</Max>
-      <Vnum>7005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7112" Count="4" Max="7" Vnum="7005">
       <!--Spawn the maggot to An odd intersection-->
-      <Type>NPC</Type>
-      <Destination>7112</Destination>
-      <Count>4</Count>
-      <Max>7</Max>
-      <Vnum>7005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="7122" Count="3" Max="7" Vnum="7005">
       <!--Spawn the maggot to Under the pit-->
-      <Type>NPC</Type>
-      <Destination>7122</Destination>
-      <Count>3</Count>
-      <Max>7</Max>
-      <Vnum>7005</Vnum>
     </Reset>
   </Resets>
 </Area>

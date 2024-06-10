@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{35 up} Ceran   Red Tinged tower</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -784,6 +785,7 @@ from a  normal castle room. To the north is a large red door.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -837,6 +839,7 @@ from a  normal castle room. To the north is a large red door.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -890,6 +893,7 @@ from a  normal castle room. To the north is a large red door.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -945,6 +949,7 @@ death and an uncaring need to destroy life where he has none.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -986,6 +991,7 @@ death and an uncaring need to destroy life where he has none.</description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1031,6 +1037,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1063,6 +1070,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1095,6 +1103,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1118,10 +1127,18 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Dark Evil Magic NoDrop AntiGood NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1132,6 +1149,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1155,7 +1173,9 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Dark Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1166,6 +1186,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -1189,9 +1210,15 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Hum Dark Evil AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1202,6 +1229,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -1225,8 +1253,12 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Glow Dark Evil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1237,6 +1269,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1260,8 +1293,12 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Dark Evil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1272,6 +1309,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1295,8 +1333,12 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Hum Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1307,6 +1349,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1315,325 +1358,125 @@ joined the black tower will reveal it's secrets..</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="23207" Count="1" Max="4" Vnum="23200">
       <!--Spawn an undead archer to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23207</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23202">
       <!--Spawn an wooden bow to an undead archer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23208" Count="1" Max="4" Vnum="23200">
       <!--Spawn an undead archer to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23208</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23202">
       <!--Spawn an wooden bow to an undead archer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23209" Count="1" Max="4" Vnum="23200">
       <!--Spawn an undead archer to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23209</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23202">
       <!--Spawn an wooden bow to an undead archer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23201">
       <!--Spawn a blood red key to an undead archer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23210" Count="1" Max="4" Vnum="23200">
       <!--Spawn an undead archer to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23210</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23202">
       <!--Spawn an wooden bow to an undead archer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23212" Count="1" Max="4" Vnum="23201">
       <!--Spawn an undead elven warrior to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23212</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23207">
       <!--Spawn a blood-encrusted hand axe to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23208">
       <!--Spawn a thin bladed dagger to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23213" Count="1" Max="4" Vnum="23201">
       <!--Spawn an undead elven warrior to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23213</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23207">
       <!--Spawn a blood-encrusted hand axe to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23208">
       <!--Spawn a thin bladed dagger to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23201">
       <!--Spawn a blood red key to an undead elven warrior-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23214" Count="1" Max="4" Vnum="23201">
       <!--Spawn an undead elven warrior to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23214</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23207">
       <!--Spawn a blood-encrusted hand axe to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23208">
       <!--Spawn a thin bladed dagger to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23215" Count="1" Max="4" Vnum="23201">
       <!--Spawn an undead elven warrior to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23215</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23207">
       <!--Spawn a blood-encrusted hand axe to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23208">
       <!--Spawn a thin bladed dagger to an undead elven warrior-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23217" Count="1" Max="4" Vnum="23202">
       <!--Spawn an undead paladin to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23217</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23203">
       <!--Spawn a black sword to an undead paladin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23201">
       <!--Spawn a blood red key to an undead paladin-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23218" Count="1" Max="4" Vnum="23202">
       <!--Spawn an undead paladin to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23218</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23203">
       <!--Spawn a black sword to an undead paladin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23201">
       <!--Spawn a blood red key to an undead paladin-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23219" Count="1" Max="4" Vnum="23202">
       <!--Spawn an undead paladin to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23219</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23203">
       <!--Spawn a black sword to an undead paladin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23201">
       <!--Spawn a blood red key to an undead paladin-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23220" Count="1" Max="4" Vnum="23202">
       <!--Spawn an undead paladin to On a reddened parapet-->
-      <Type>NPC</Type>
-      <Destination>23220</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23203">
       <!--Spawn a black sword to an undead paladin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23201">
       <!--Spawn a blood red key to an undead paladin-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23221" Count="1" Max="1" Vnum="23203">
       <!--Spawn the elven deathknight to In a room of dark red stone-->
-      <Type>NPC</Type>
-      <Destination>23221</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23200">
       <!--Spawn a red tinted seal to the elven deathknight-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23204">
       <!--Spawn an ancient two-handed sword to the elven deathknight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13738">
       <!--Spawn a flesh-cutter named 'Hydraslayer' to the elven deathknight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13738</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23205">
       <!--Spawn a suit of blood-red armor to the elven deathknight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23206">
       <!--Spawn a blood-encrusted visor to the elven deathknight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23206</Vnum>
     </Reset>
   </Resets>
 </Area>

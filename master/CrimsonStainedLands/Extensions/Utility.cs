@@ -528,15 +528,16 @@ namespace CrimsonStainedLands.Extensions
             var names = EnumGetNames<T>();// Enum.GetNames(typeof(T));
             var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
 
-            if (search.StringCmp("none"))
-                return false;
-
+            
             for (int i = 0; i < names.Length; i++)
                 if (names[i].ToLower() == search.ToLower() || names[i].Replace("_", "").ToLower() == search.Replace("_", "").ToLower())
                 {
                     value = (T)values.GetValue(i);
                     return true;
                 }
+
+            if (search.StringCmp("none"))
+                return false;
 
             if (!string.IsNullOrEmpty(search) && search.ToLower() != "none")
                 Game.bug("EnumValue not found: {0} {1}", typeof(T).Name, search);
@@ -557,9 +558,7 @@ namespace CrimsonStainedLands.Extensions
 
             if (clear) value.Clear();
 
-            if (search.StringCmp("none"))
-                return false;
-
+            
             bool found = false;
 
             foreach (var flag in flags)//.Distinct())
@@ -575,6 +574,10 @@ namespace CrimsonStainedLands.Extensions
                 if (!found && !string.IsNullOrEmpty(flag))
                     Game.log("Flag " + flag + " not found. " + typeof(T).Name.ToString());
             }
+
+            if (!found && search.StringCmp("none"))
+                return false;
+
             return found;
         }
 
@@ -609,9 +612,7 @@ namespace CrimsonStainedLands.Extensions
             var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
             var flags = search.Split(delimiter);
 
-            if (search.StringCmp("none"))
-                return false;
-
+            
             bool found = false;
 
             foreach (var flag in flags.Distinct())
@@ -627,6 +628,7 @@ namespace CrimsonStainedLands.Extensions
                 if (!found && !string.IsNullOrEmpty(flag))
                     Game.log("Flag " + flag + " not found. " + typeof(T).Name.ToString());
             }
+            
             return found;
         }
 

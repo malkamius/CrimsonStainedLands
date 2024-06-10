@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{30 35} Fstall  Nirvana</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2008,6 +2009,7 @@ east.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2061,6 +2063,7 @@ east.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2114,6 +2117,7 @@ east.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2167,6 +2171,7 @@ east.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2220,6 +2225,7 @@ east.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2274,6 +2280,7 @@ it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2328,6 +2335,7 @@ with 7 tentacles coming from it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2382,6 +2390,7 @@ and 4 tentacles below tipped with sharp claws.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2437,6 +2446,7 @@ fan-like wings attached to their shoulders.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2492,6 +2502,7 @@ like ball.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2546,6 +2557,7 @@ and deepset eyes. It radiates intense power.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2601,6 +2613,7 @@ he looks very displeased to see you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2633,8 +2646,12 @@ he looks very displeased to see you.</description>
       <ExtraFlags>Glow Magic AntiGood AntiEvil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2645,6 +2662,7 @@ he looks very displeased to see you.</description>
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2683,6 +2701,7 @@ on it.  It glows with the power of Primus, Lord of the Plane of Nirvana.</Descri
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2697,365 +2716,140 @@ peace and balance with the world around you.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="9001" Count="3" Max="9" Vnum="9001">
       <!--Spawn the quadrone to The Plane of Nirvana-->
-      <Type>NPC</Type>
-      <Destination>9001</Destination>
-      <Count>3</Count>
-      <Max>9</Max>
-      <Vnum>9001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9002" Count="2" Max="10" Vnum="9000">
       <!--Spawn the tridrone to The Plane of Nirvana-->
-      <Type>NPC</Type>
-      <Destination>9002</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>9000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9003" Count="2" Max="10" Vnum="9000">
       <!--Spawn the tridrone to A Change in Direction-->
-      <Type>NPC</Type>
-      <Destination>9003</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>9000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9011" Count="1" Max="6" Vnum="9002">
       <!--Spawn the pentadrone to An intersection in the Tower of Nirvana-->
-      <Type>NPC</Type>
-      <Destination>9011</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>9002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9012" Count="3" Max="9" Vnum="9001">
       <!--Spawn the quadrone to At the door to the Tower of Nirvana-->
-      <Type>NPC</Type>
-      <Destination>9012</Destination>
-      <Count>3</Count>
-      <Max>9</Max>
-      <Vnum>9001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9013" Count="2" Max="10" Vnum="9000">
       <!--Spawn the tridrone to At the door to the Tower of Nirvana-->
-      <Type>NPC</Type>
-      <Destination>9013</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>9000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9016" Count="1" Max="4" Vnum="9008">
       <!--Spawn the quinton to Dead End-->
-      <Type>NPC</Type>
-      <Destination>9016</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9017" Count="1" Max="4" Vnum="9008">
       <!--Spawn the quinton to Dead End-->
-      <Type>NPC</Type>
-      <Destination>9017</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9018" Count="1" Max="4" Vnum="9009">
       <!--Spawn the tertian to A Tertain's lair-->
-      <Type>NPC</Type>
-      <Destination>9018</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9019" Count="1" Max="4" Vnum="9009">
       <!--Spawn the tertian to A Tertian's lair-->
-      <Type>NPC</Type>
-      <Destination>9019</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9020" Count="1" Max="1" Vnum="9011">
       <!--Spawn Primus to The Lair of Primus-->
-      <Type>NPC</Type>
-      <Destination>9020</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9000">
       <!--Spawn THE long sword to Primus-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9021" Count="1" Max="4" Vnum="9009">
       <!--Spawn the tertian to A Tertian's lair-->
-      <Type>NPC</Type>
-      <Destination>9021</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9022" Count="1" Max="4" Vnum="9008">
       <!--Spawn the quinton to The office of a Quinton-->
-      <Type>NPC</Type>
-      <Destination>9022</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9024" Count="1" Max="4" Vnum="9009">
       <!--Spawn the tertian to A Tertian's lair-->
-      <Type>NPC</Type>
-      <Destination>9024</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9025" Count="1" Max="4" Vnum="9008">
       <!--Spawn the quinton to A north south tunnel-->
-      <Type>NPC</Type>
-      <Destination>9025</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9027" Count="2" Max="10" Vnum="9000">
       <!--Spawn the tridrone to A change of direction-->
-      <Type>NPC</Type>
-      <Destination>9027</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>9000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9028" Count="3" Max="9" Vnum="9001">
       <!--Spawn the quadrone to A change of direction-->
-      <Type>NPC</Type>
-      <Destination>9028</Destination>
-      <Count>3</Count>
-      <Max>9</Max>
-      <Vnum>9001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9029" Count="2" Max="10" Vnum="9000">
       <!--Spawn the tridrone to An east-west route on the Plane of Nirvana-->
-      <Type>NPC</Type>
-      <Destination>9029</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>9000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9031" Count="1" Max="6" Vnum="9002">
       <!--Spawn the pentadrone to A large door in the passage-->
-      <Type>NPC</Type>
-      <Destination>9031</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>9002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9033" Count="1" Max="4" Vnum="9005">
       <!--Spawn the octon to The office of the Octon-->
-      <Type>NPC</Type>
-      <Destination>9033</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9034" Count="1" Max="2" Vnum="9006">
       <!--Spawn the septon to A small room-->
-      <Type>NPC</Type>
-      <Destination>9034</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>9006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9036" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to Lair of a Hexton-->
-      <Type>NPC</Type>
-      <Destination>9036</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9037" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to Office of a Hexton-->
-      <Type>NPC</Type>
-      <Destination>9037</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9038" Count="1" Max="6" Vnum="9002">
       <!--Spawn the pentadrone to Office of a Secundus-->
-      <Type>NPC</Type>
-      <Destination>9038</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>9002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9038" Count="1" Max="4" Vnum="9010">
       <!--Spawn secundus to Office of a Secundus-->
-      <Type>NPC</Type>
-      <Destination>9038</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9040" Count="1" Max="4" Vnum="9005">
       <!--Spawn the octon to Office of an Octon-->
-      <Type>NPC</Type>
-      <Destination>9040</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9041" Count="1" Max="2" Vnum="9006">
       <!--Spawn the septon to Office of a Septon-->
-      <Type>NPC</Type>
-      <Destination>9041</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>9006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9043" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to The Barracks-->
-      <Type>NPC</Type>
-      <Destination>9043</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9044" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to The Commander's Post-->
-      <Type>NPC</Type>
-      <Destination>9044</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9045" Count="1" Max="6" Vnum="9002">
       <!--Spawn the pentadrone to The chamber of the second Secundus-->
-      <Type>NPC</Type>
-      <Destination>9045</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>9002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9045" Count="1" Max="4" Vnum="9010">
       <!--Spawn secundus to The chamber of the second Secundus-->
-      <Type>NPC</Type>
-      <Destination>9045</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9047" Count="1" Max="4" Vnum="9005">
       <!--Spawn the octon to Chamber of the Octon-->
-      <Type>NPC</Type>
-      <Destination>9047</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9048" Count="1" Max="1" Vnum="9004">
       <!--Spawn the nonaton to Chamber of the Nonaton-->
-      <Type>NPC</Type>
-      <Destination>9048</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9001">
       <!--Spawn a luminescent moonstone to the nonaton-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9050" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to Chamber of a Hexton-->
-      <Type>NPC</Type>
-      <Destination>9050</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9051" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to Chamber of a Hexton-->
-      <Type>NPC</Type>
-      <Destination>9051</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9052" Count="1" Max="6" Vnum="9002">
       <!--Spawn the pentadrone to Chamber of the Secudus-->
-      <Type>NPC</Type>
-      <Destination>9052</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>9002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9052" Count="1" Max="4" Vnum="9010">
       <!--Spawn secundus to Chamber of the Secudus-->
-      <Type>NPC</Type>
-      <Destination>9052</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9054" Count="1" Max="4" Vnum="9005">
       <!--Spawn the octon to A small chamber-->
-      <Type>NPC</Type>
-      <Destination>9054</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9055" Count="1" Max="1" Vnum="9003">
       <!--Spawn the decaton to A cramped room-->
-      <Type>NPC</Type>
-      <Destination>9055</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9056" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to A large room-->
-      <Type>NPC</Type>
-      <Destination>9056</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9057" Count="1" Max="8" Vnum="9007">
       <!--Spawn the hexton to A room-->
-      <Type>NPC</Type>
-      <Destination>9057</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>9007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9058" Count="1" Max="6" Vnum="9002">
       <!--Spawn the pentadrone to Chamber of The First Secundus-->
-      <Type>NPC</Type>
-      <Destination>9058</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>9002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9058" Count="1" Max="4" Vnum="9010">
       <!--Spawn secundus to Chamber of The First Secundus-->
-      <Type>NPC</Type>
-      <Destination>9058</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>9010</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 5 15} Copper  Miden'nir</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -3439,6 +3440,7 @@ APPEAR to be very hungry ... yet.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3497,6 +3499,7 @@ APPEAR to be very hungry ... yet.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3551,6 +3554,7 @@ He is apparently the only survivor of the ambush.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3606,6 +3610,7 @@ place that is used to be in days past.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3660,6 +3665,7 @@ has been sitting here quite a while, drinking himself into oblivion.</descriptio
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3714,6 +3720,7 @@ little bits.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3768,6 +3775,7 @@ beat up upon, but maybe you will do just fine ...</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -3822,6 +3830,7 @@ for his shortsword and lunges for your neck.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -3854,7 +3863,9 @@ for his shortsword and lunges for your neck.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3865,6 +3876,7 @@ for his shortsword and lunges for your neck.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3893,7 +3905,9 @@ for his shortsword and lunges for your neck.</description>
       <ExtraFlags>TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3904,6 +3918,7 @@ for his shortsword and lunges for your neck.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3941,6 +3956,7 @@ for his shortsword and lunges for your neck.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3973,6 +3989,7 @@ for his shortsword and lunges for your neck.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -3996,7 +4013,9 @@ for his shortsword and lunges for your neck.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4007,6 +4026,7 @@ for his shortsword and lunges for your neck.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>2</ArmorPierce>
@@ -4035,7 +4055,9 @@ for his shortsword and lunges for your neck.</description>
       <ExtraFlags>Magic AntiEvil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4046,6 +4068,7 @@ for his shortsword and lunges for your neck.</description>
       <Material>mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4061,349 +4084,134 @@ with a stylized ivory hilt.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="40506" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Miden'nir-->
-      <Type>NPC</Type>
-      <Destination>40506</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3074">
       <!--Spawn a long scale mail skirt to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3074</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40509" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Miden'nir-->
-      <Type>NPC</Type>
-      <Destination>40509</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3072">
       <!--Spawn a scale mail jerkin to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40512" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Miden'nir-->
-      <Type>NPC</Type>
-      <Destination>40512</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3045">
       <!--Spawn a scale mail jacket to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3045</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40512" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Miden'nir-->
-      <Type>NPC</Type>
-      <Destination>40512</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40502">
       <!--Spawn a black horned helmet to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3075">
       <!--Spawn a pair of reinforced boots to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3075</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40513" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Miden'nir-->
-      <Type>NPC</Type>
-      <Destination>40513</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3077">
       <!--Spawn a pair of scale mail sleeves to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3077</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40521" Count="2" Max="2" Vnum="40500">
       <!--Spawn the wyvern to Carnage-->
-      <Type>NPC</Type>
-      <Destination>40521</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40521" Count="2" Max="2" Vnum="40500">
       <!--Spawn the wyvern to Carnage-->
-      <Type>NPC</Type>
-      <Destination>40521</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40551" Count="2" Max="2" Vnum="40506">
       <!--Spawn the goblin lieutenant to The Deep in the Forest of Miden'nir-->
-      <Type>NPC</Type>
-      <Destination>40551</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40502">
       <!--Spawn a black horned helmet to the goblin lieutenant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin lieutenant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3072">
       <!--Spawn a scale mail jerkin to the goblin lieutenant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40556" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Goblin Headquarters-->
-      <Type>NPC</Type>
-      <Destination>40556</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3076">
       <!--Spawn a pair of reinforced gloves to the goblin-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3076</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40556" Count="2" Max="2" Vnum="40506">
       <!--Spawn the goblin lieutenant to The Goblin Headquarters-->
-      <Type>NPC</Type>
-      <Destination>40556</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40506</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40500">
       <!--Spawn a goblin's short sword to the goblin lieutenant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40502">
       <!--Spawn a black horned helmet to the goblin lieutenant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3072">
       <!--Spawn a scale mail jerkin to the goblin lieutenant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40556" Count="1" Max="1" Vnum="40507">
       <!--Spawn the goblin leader to The Goblin Headquarters-->
-      <Type>NPC</Type>
-      <Destination>40556</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40507</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3072">
       <!--Spawn a scale mail jerkin to the goblin leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3072</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40501">
       <!--Spawn a long spear to the goblin leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40502">
       <!--Spawn a black horned helmet to the goblin leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40575" Count="1" Max="1" Vnum="40502">
       <!--Spawn the small boy to The Ambush Point-->
-      <Type>NPC</Type>
-      <Destination>40575</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40576" Count="1" Max="1" Vnum="40503">
       <!--Spawn the Innkeeper to The Bar-->
-      <Type>NPC</Type>
-      <Destination>40576</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40577" Count="1" Max="1" Vnum="40504">
       <!--Spawn the bard to The Bard's Table-->
-      <Type>NPC</Type>
-      <Destination>40577</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>40504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40505">
       <!--Spawn a rune-covered knife to the bard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40583" Count="2" Max="2" Vnum="40505">
       <!--Spawn the dark horseman to On the Trail of the Horsemen-->
-      <Type>NPC</Type>
-      <Destination>40583</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40503">
       <!--Spawn a stained travelling cloak to the dark horseman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the dark horseman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40584" Count="2" Max="2" Vnum="40505">
       <!--Spawn the dark horseman to A Dead End Trail-->
-      <Type>NPC</Type>
-      <Destination>40584</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>40505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="40504">
       <!--Spawn an enchanted leather bracer to the dark horseman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>40504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
       <!--Spawn a long sword to the dark horseman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3022</Vnum>
     </Reset>
   </Resets>
 </Area>

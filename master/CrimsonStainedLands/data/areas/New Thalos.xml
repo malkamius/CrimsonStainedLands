@@ -11535,7 +11535,7 @@ guildmaster is a dark knight who awaits your request for a lesson.</Description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel Gain GuildMaster Mage NoPurge</flags>
+      <flags>NPC Sentinel Trainer Practice Mage NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -11589,7 +11589,7 @@ guildmaster is a dark knight who awaits your request for a lesson.</Description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel Gain GuildMaster Cleric NoPurge Fade</flags>
+      <flags>NPC Sentinel Trainer Practice Cleric NoPurge Fade</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -11643,7 +11643,7 @@ guildmaster is a dark knight who awaits your request for a lesson.</Description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain GuildMaster Warrior NoPurge AreaAttack</flags>
+      <flags>NPC Sentinel Trainer Practice Warrior NoPurge AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -11699,7 +11699,7 @@ will now begin, is all he says.</description>
       <gold>35000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain GuildMaster Warrior NoPurge</flags>
+      <flags>NPC Sentinel Trainer Practice Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -16626,7 +16626,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectionGood DarkVision DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectGood DarkVision DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
@@ -16676,11 +16676,11 @@ hand. Type 'heal' to see a listing of spells.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel StayArea GuildMaster</flags>
+      <flags>NPC Sentinel StayArea Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden ProtectEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden ProtectEvil ProtectGood DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
@@ -17239,7 +17239,7 @@ hand. Type 'heal' to see a listing of spells.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>28</Weight>
       <WearFlags>Take Body</WearFlags>
-      <ExtraFlags>Invisibility Magic Bless AntiEvil AntiNeutral</ExtraFlags>
+      <ExtraFlags>Invis Magic Bless AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -20196,10 +20196,22 @@ You look around to see if there are any others nearby.</Description>
       <!--Spawn a scimitar to the sultans guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
-      <!--Spawn a suit of splintmail to the sultans guard-->
+      <!--Spawn a suit of splintmail to a pelican-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
-      <!--Spawn a splinted shield to the sultans guard-->
+      <!--Spawn a splinted shield to a pelican-->
+    </Reset>
+    <Reset Type="NPC" Destination="9523" Count="5" Max="20" Vnum="9562">
+      <!--Spawn the sultans guard to Inside the West Gate of New Thalos-->
+    </Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
+      <!--Spawn a scimitar to a green sea serpent-->
+    </Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
+      <!--Spawn a suit of splintmail to a green sea serpent-->
+    </Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
+      <!--Spawn a splinted shield to an albatross-->
     </Reset>
     <Reset Type="NPC" Destination="9523" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the West Gate of New Thalos-->
@@ -20211,19 +20223,7 @@ You look around to see if there are any others nearby.</Description>
       <!--Spawn a suit of splintmail to the sultans guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
-      <!--Spawn a splinted shield to the sultans guard-->
-    </Reset>
-    <Reset Type="NPC" Destination="9523" Count="5" Max="20" Vnum="9562">
-      <!--Spawn the sultans guard to Inside the West Gate of New Thalos-->
-    </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9513">
-      <!--Spawn a scimitar to the sultans guard-->
-    </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
-      <!--Spawn a suit of splintmail to the sultans guard-->
-    </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
-      <!--Spawn a splinted shield to the sultans guard-->
+      <!--Spawn a splinted shield to a red sea serpent-->
     </Reset>
     <Reset Type="NPC" Destination="9524" Count="4" Max="22" Vnum="9542">
       <!--Spawn the wandering prophet to West Main Street-->
@@ -20238,13 +20238,13 @@ You look around to see if there are any others nearby.</Description>
       <!--Spawn a construction worker to West Main Street-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9586">
-      <!--Spawn a sledge hammer to a construction worker-->
+      <!--Spawn a sledge hammer to an albatross-->
     </Reset>
     <Reset Type="NPC" Destination="9525" Count="1" Max="1" Vnum="9519">
       <!--Spawn the foreman to West Main Street-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9585">
-      <!--Spawn a fountain pen to the foreman-->
+      <!--Spawn a fountain pen to a red sea serpent-->
     </Reset>
     <Reset Type="NPC" Destination="9527" Count="8" Max="15" Vnum="9568">
       <!--Spawn a tourist to East Main Street-->
@@ -20265,25 +20265,25 @@ You look around to see if there are any others nearby.</Description>
       <!--Spawn a suit of splintmail to the sultans guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
-      <!--Spawn a splinted shield to the sultans guard-->
+      <!--Spawn a splinted shield to a pelican-->
     </Reset>
     <Reset Type="NPC" Destination="9531" Count="5" Max="20" Vnum="9562">
       <!--Spawn the sultans guard to Inside the Eastern Gate of New Thalos-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9519">
-      <!--Spawn a suit of splintmail to the sultans guard-->
+      <!--Spawn a suit of splintmail to a merman guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9521">
-      <!--Spawn a splinted shield to the sultans guard-->
+      <!--Spawn a splinted shield to a golden haired mermaid-->
     </Reset>
     <Reset Type="NPC" Destination="9532" Count="1" Max="1" Vnum="9518">
       <!--Spawn Cassandra to Cassandra's Catch of the Day-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9564">
-      <!--Spawn a salted herring to Cassandra-->
+      <!--Spawn a salted herring to a merman guard-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9565">
-      <!--Spawn a mussel to Cassandra-->
+      <!--Spawn a mussel to a merman guard-->
     </Reset>
     <Reset Type="NPC" Destination="9533" Count="6" Max="18" Vnum="9536">
       <!--Spawn the dockworker to West Ishtar Drive-->
@@ -20337,13 +20337,13 @@ You look around to see if there are any others nearby.</Description>
       <!--Spawn the old man to Kali Row-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9590">
-      <!--Spawn a chessboard to the old man-->
+      <!--Spawn a chessboard to a tawny haired mermaid-->
     </Reset>
     <Reset Type="NPC" Destination="9555" Count="2" Max="2" Vnum="9545">
       <!--Spawn the old man to Kali Row-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="9590">
-      <!--Spawn a chessboard to the old man-->
+      <!--Spawn a chessboard to a pelican-->
     </Reset>
     <Reset Type="NPC" Destination="9563" Count="1" Max="20" Vnum="9544">
       <!--Spawn the vulture to Guildsman's Row-->

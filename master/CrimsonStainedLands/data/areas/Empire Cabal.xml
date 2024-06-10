@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>ABAL} Dioxide Empire Cabal</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -504,7 +505,8 @@ like he's aged a day in his life.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -561,6 +563,7 @@ blade infused with the magical energies of the elves.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Swim DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -615,6 +618,7 @@ payment to pass as he collects tithe for the Empire.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -656,6 +660,7 @@ payment to pass as he collects tithe for the Empire.</description>
       <Material>adamantite</Material>
       <Charges>41666</Charges>
       <MaxCharges>41666</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -688,6 +693,7 @@ payment to pass as he collects tithe for the Empire.</description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -720,6 +726,7 @@ payment to pass as he collects tithe for the Empire.</description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -752,6 +759,7 @@ payment to pass as he collects tithe for the Empire.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -784,6 +792,7 @@ payment to pass as he collects tithe for the Empire.</description>
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -804,61 +813,26 @@ become part of the Empire's inevitable glorious victory.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="8101" Count="0" Max="1" Vnum="8104">
       <!--Spawn the obsidian tablet of Imperial philosophy to Standing in the Courtyard-->
-      <Type>Item</Type>
-      <Destination>8101</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8102" Count="1" Max="1" Vnum="8101">
       <!--Spawn the Centurion Omegus to The Inner Gates-->
-      <Type>NPC</Type>
-      <Destination>8102</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8101">
       <!--Spawn the Imperial Codex to the Centurion Omegus-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8103" Count="0" Max="1" Vnum="8100">
       <!--Spawn a fountain to Within the Palace of Dominace-->
-      <Type>Item</Type>
-      <Destination>8103</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8106" Count="0" Max="1" Vnum="8103">
       <!--Spawn the pit for donations to The Altar Room-->
-      <Type>Item</Type>
-      <Destination>8106</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8108" Count="1" Max="1" Vnum="8100">
       <!--Spawn the old shaman to The Throne Room-->
-      <Type>NPC</Type>
-      <Destination>8108</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8108" Count="0" Max="1" Vnum="8102">
       <!--Spawn the Emperor's Throne to The Throne Room-->
-      <Type>Item</Type>
-      <Destination>8108</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8102</Vnum>
     </Reset>
   </Resets>
 </Area>

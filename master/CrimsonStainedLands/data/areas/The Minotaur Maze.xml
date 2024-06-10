@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{25 50} Kyrissaean The Minotaur Maze</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -5473,6 +5474,7 @@ put his underlings in their place.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -5529,6 +5531,7 @@ any purpose other than to meet their lifemate.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5585,6 +5588,7 @@ them take lovers.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -5642,6 +5646,7 @@ better than everyone elses.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5699,6 +5704,7 @@ determined to arrage it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -5756,6 +5762,7 @@ something, she gets it, or else...</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -5813,6 +5820,7 @@ find him before his father finds out.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -5869,6 +5877,7 @@ It's eye, a mixture of yellow and red stare warningly at you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -5928,6 +5937,7 @@ hearing distance.  No one pays him a bit of attention.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -5984,6 +5994,7 @@ a specially designed metallic, mesh sack.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6041,6 +6052,7 @@ back and forth.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6082,6 +6094,7 @@ back and forth.</description>
       <Material>wood</Material>
       <Charges>2083</Charges>
       <MaxCharges>2083</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -6114,6 +6127,7 @@ back and forth.</description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -6137,9 +6151,15 @@ back and forth.</description>
       <ExtraFlags>Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6150,6 +6170,7 @@ back and forth.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -6173,10 +6194,18 @@ back and forth.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6187,6 +6216,7 @@ back and forth.</description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -6210,9 +6240,15 @@ back and forth.</description>
       <ExtraFlags>Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6223,6 +6259,7 @@ back and forth.</description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -6246,8 +6283,12 @@ back and forth.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6258,6 +6299,7 @@ back and forth.</description>
       <Material>silk</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>11</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -6281,9 +6323,15 @@ back and forth.</description>
       <ExtraFlags>Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6294,6 +6342,7 @@ back and forth.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -6317,10 +6366,18 @@ back and forth.</description>
       <ExtraFlags>Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6331,6 +6388,7 @@ back and forth.</description>
       <Material>wool</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -6354,11 +6412,21 @@ back and forth.</description>
       <ExtraFlags>BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6369,6 +6437,7 @@ back and forth.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>12</ArmorBash>
       <ArmorSlash>12</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -6392,11 +6461,21 @@ back and forth.</description>
       <ExtraFlags>BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6407,6 +6486,7 @@ back and forth.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>11</ArmorBash>
       <ArmorSlash>12</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -6427,12 +6507,18 @@ back and forth.</description>
       <DiceBonus>0</DiceBonus>
       <Weight>8</Weight>
       <WearFlags>Take Wield</WearFlags>
-      <ExtraFlags>Invisibility NoDrop NoRemove</ExtraFlags>
+      <ExtraFlags>Invis NoDrop NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6443,6 +6529,7 @@ back and forth.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -6466,10 +6553,18 @@ back and forth.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="75" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="75" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6480,6 +6575,7 @@ back and forth.</description>
       <Material>wool</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>18</ArmorBash>
       <ArmorSlash>18</ArmorSlash>
       <ArmorPierce>18</ArmorPierce>
@@ -6503,10 +6599,18 @@ back and forth.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6517,6 +6621,7 @@ back and forth.</description>
       <Material>ebony</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -6540,10 +6645,18 @@ back and forth.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6554,6 +6667,7 @@ back and forth.</description>
       <Material>ebony</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>16</ArmorSlash>
       <ArmorPierce>18</ArmorPierce>
@@ -6577,10 +6691,18 @@ back and forth.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="75" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="75" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6591,6 +6713,7 @@ back and forth.</description>
       <Material>ebony</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>16</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -6623,6 +6746,7 @@ back and forth.</description>
       <Material>ebony</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -6646,8 +6770,12 @@ back and forth.</description>
       <ExtraFlags>NoDrop NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6658,6 +6786,7 @@ back and forth.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -6681,10 +6810,18 @@ back and forth.</description>
       <ExtraFlags>PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6695,6 +6832,7 @@ back and forth.</description>
       <Material>metal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -6718,9 +6856,15 @@ back and forth.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6731,6 +6875,7 @@ back and forth.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -6754,9 +6899,15 @@ back and forth.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6767,6 +6918,7 @@ back and forth.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -6790,10 +6942,18 @@ back and forth.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -6804,6 +6964,7 @@ back and forth.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -6812,1205 +6973,455 @@ back and forth.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="17900" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17900</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17903">
       <!--Spawn an opalescent ball to a minotaur lad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17901" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17901</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17901" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17901</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17905">
       <!--Spawn some studded cuff links to a minotaur man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17902" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17902</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17903" Count="1" Max="5" Vnum="17902">
       <!--Spawn a minotaur father to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17903</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17907">
       <!--Spawn a wool cloak to a minotaur father-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17906" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17906</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17907" Count="1" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17907</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17904">
       <!--Spawn a jade bracelet to a minotaur maiden-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17908" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17908</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17908">
       <!--Spawn some steel-toed boots to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17908</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17909" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17909</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17910" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17910</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17911" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17911</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17912" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17912</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17909">
       <!--Spawn a gleaming belt buckle to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17909</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17913" Count="1" Max="5" Vnum="17903">
       <!--Spawn a minotaur mother to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17913</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17906">
       <!--Spawn a mother's ring to a minotaur mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17916" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17916</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17916" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17916</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17918" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17918</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
       <!--Spawn a chain-link collar to a minotaur mongrel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17919" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17919</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17919" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17919</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17920" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17920</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17922" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17922</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17903">
       <!--Spawn an opalescent ball to a minotaur lad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17923" Count="1" Max="3" Vnum="17910">
       <!--Spawn a minotaur girl to Dead End-->
-      <Type>NPC</Type>
-      <Destination>17923</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>17910</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17918">
       <!--Spawn a thin gold necklace to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17918</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold bracelet to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17919</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17919">
+      <!--Spawn a thin gold bracelet to a deer-->
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold ring to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17920</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17920">
+      <!--Spawn a thin gold ring to a deer-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17924" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17924</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17905">
       <!--Spawn some studded cuff links to a minotaur man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17924" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17924</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17924" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17924</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17925" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17925</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a watchman's cudgel to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17910</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17910">
+      <!--Spawn a watchman's cudgel to a dale watchman-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17925" Count="1" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17925</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17904">
       <!--Spawn a jade bracelet to a minotaur maiden-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17926" Count="1" Max="3" Vnum="17909">
       <!--Spawn a minotaur gardener to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17926</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>17909</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17917">
       <!--Spawn a gardener's belt sack to a minotaur gardener-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17917</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17927" Count="1" Max="5" Vnum="17902">
       <!--Spawn a minotaur father to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17927</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17927" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17927</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17930" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17930</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17908">
       <!--Spawn some steel-toed boots to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17908</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17930" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17930</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17930" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17930</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17932" Count="1" Max="2" Vnum="17908">
       <!--Spawn a minotaur janitor to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17932</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>17908</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a janitor's stick to a minotaur janitor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17916</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17916">
+      <!--Spawn a janitor's stick to a dale guard-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17933" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17933</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17934" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17934</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17936" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17936</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
       <!--Spawn a chain-link collar to a minotaur mongrel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17937" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17937</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17938" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17938</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17939" Count="1" Max="5" Vnum="17903">
       <!--Spawn a minotaur mother to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17939</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17940" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17940</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17905">
       <!--Spawn some studded cuff links to a minotaur man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17940" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17940</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17942" Count="1" Max="5" Vnum="17902">
       <!--Spawn a minotaur father to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17942</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17907">
       <!--Spawn a wool cloak to a minotaur father-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17942" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17942</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17944" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17944</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17903">
       <!--Spawn an opalescent ball to a minotaur lad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17945" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17945</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17948" Count="1" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17948</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17904">
       <!--Spawn a jade bracelet to a minotaur maiden-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17948" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17948</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17949" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17949</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17909">
       <!--Spawn a gleaming belt buckle to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17909</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17950" Count="1" Max="3" Vnum="17909">
       <!--Spawn a minotaur gardener to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17950</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>17909</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17917">
       <!--Spawn a gardener's belt sack to a minotaur gardener-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17917</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17952" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17952</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17954" Count="1" Max="5" Vnum="17903">
       <!--Spawn a minotaur mother to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17954</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a mother's ring to a minotaur mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17906</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17906">
+      <!--Spawn a mother's ring to a dale man-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17954" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17954</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
       <!--Spawn a chain-link collar to a minotaur mongrel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17955" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17955</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17955" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17955</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17956" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17956</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17910">
       <!--Spawn a watchman's cudgel to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17910</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17956" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17956</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17958" Count="1" Max="3" Vnum="17910">
       <!--Spawn a minotaur girl to Dead End-->
-      <Type>NPC</Type>
-      <Destination>17958</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>17910</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold necklace to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17918</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17918">
+      <!--Spawn a thin gold necklace to the town minstrel-->
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold bracelet to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17919</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17919">
+      <!--Spawn a thin gold bracelet to the town minstrel-->
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold ring to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17920</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17920">
+      <!--Spawn a thin gold ring to the town minstrel-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17959" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17959</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17959" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17959</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17960" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17960</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17963" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17963</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17964" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17964</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17908">
       <!--Spawn some steel-toed boots to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17908</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17966" Count="1" Max="5" Vnum="17902">
       <!--Spawn a minotaur father to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17966</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17966" Count="1" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17966</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17904">
       <!--Spawn a jade bracelet to a minotaur maiden-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17966" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17966</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17903">
       <!--Spawn an opalescent ball to a minotaur lad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17966" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17966</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17969" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17969</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17905">
       <!--Spawn some studded cuff links to a minotaur man-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17969" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17969</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17970" Count="1" Max="3" Vnum="17910">
       <!--Spawn a minotaur girl to The Minotaur Deadlands-->
-      <Type>NPC</Type>
-      <Destination>17970</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>17910</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17918">
       <!--Spawn a thin gold necklace to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17918</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold bracelet to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17919</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17919">
+      <!--Spawn a thin gold bracelet to a dale watchman-->
     </Reset>
-    <Reset>
-      <!--Spawn a thin gold ring to a minotaur girl-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17920</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17920">
+      <!--Spawn a thin gold ring to a dale watchman-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17972" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17972</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
       <!--Spawn a chain-link collar to a minotaur mongrel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17973" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17973</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17973" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17973</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17973" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17973</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17974" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17974</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17975" Count="1" Max="5" Vnum="17903">
       <!--Spawn a minotaur mother to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17975</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17977" Count="1" Max="1" Vnum="17900">
       <!--Spawn the minotaur commander to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17977</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the minotaur commander's combat uniform to the minotaur commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17911</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17911">
+      <!--Spawn the minotaur commander's combat uniform to the tavernkeeper-->
     </Reset>
-    <Reset>
-      <!--Spawn the minotaur commander's combat crest to the minotaur commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17912</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17912">
+      <!--Spawn the minotaur commander's combat crest to the tavernkeeper-->
     </Reset>
-    <Reset>
-      <!--Spawn the minotaur commander's combat sollerets to the minotaur commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17913</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17913">
+      <!--Spawn the minotaur commander's combat sollerets to the tavernkeeper-->
     </Reset>
-    <Reset>
-      <!--Spawn the minotaur commander's combat gloves to the minotaur commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17914</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17914">
+      <!--Spawn the minotaur commander's combat gloves to the tavernkeeper-->
     </Reset>
-    <Reset>
-      <!--Spawn a key to the minotaur commander-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17915</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17915">
+      <!--Spawn a key to the tavernkeeper-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17977" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17977</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17980" Count="1" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17980</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17904">
       <!--Spawn a jade bracelet to a minotaur maiden-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17981" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17981</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17983" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17983</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17909">
       <!--Spawn a gleaming belt buckle to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17909</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17984" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17984</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17988" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17988</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17988" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17988</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17988" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17988</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17903">
       <!--Spawn an opalescent ball to a minotaur lad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17988" Count="1" Max="2" Vnum="17908">
       <!--Spawn a minotaur janitor to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17988</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>17908</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17916">
       <!--Spawn a janitor's stick to a minotaur janitor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17916</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17988" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17988</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17989" Count="1" Max="5" Vnum="17902">
       <!--Spawn a minotaur father to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17989</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17907">
       <!--Spawn a wool cloak to a minotaur father-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17991" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17991</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17907</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
       <!--Spawn a chain-link collar to a minotaur mongrel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17992" Count="1" Max="3" Vnum="17909">
       <!--Spawn a minotaur gardener to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17992</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>17909</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17917">
       <!--Spawn a gardener's belt sack to a minotaur gardener-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17917</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17992" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17992</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17994" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17994</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17994" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17994</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>17905</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17996" Count="1" Max="5" Vnum="17903">
       <!--Spawn a minotaur mother to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17996</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>17903</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17906">
       <!--Spawn a mother's ring to a minotaur mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17906</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17996" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17996</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>17904</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17997" Count="1" Max="9" Vnum="17901">
       <!--Spawn a minotaur guard to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17997</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>17901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17910">
       <!--Spawn a watchman's cudgel to a minotaur guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>17910</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="17998" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->
-      <Type>Item</Type>
-      <Destination>17998</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>17900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="17999" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
-      <Type>NPC</Type>
-      <Destination>17999</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>17906</Vnum>
     </Reset>
   </Resets>
 </Area>

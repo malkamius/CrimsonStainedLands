@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{10 20} Raff    Dwarven Catacombs</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2448,6 +2449,7 @@ directions but you have a feeling that you are hopelessly lost.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Flying DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2505,6 +2507,7 @@ directions but you have a feeling that you are hopelessly lost.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2561,6 +2564,7 @@ probably won't last long.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -2615,6 +2619,7 @@ They seem like little more than zombie servants themselves.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2668,6 +2673,7 @@ They seem like little more than zombie servants themselves.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Sneak PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2720,7 +2726,8 @@ They seem like little more than zombie servants themselves.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectIllusion</affectedBy>
+      <affectedBy>DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2775,6 +2782,7 @@ continues for him in his charmed state.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion DetectInvis DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2831,6 +2839,7 @@ A templar tells you, "You must die for your sin!".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2884,6 +2893,7 @@ A templar tells you, "You must die for your sin!".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2937,6 +2947,7 @@ A templar tells you, "You must die for your sin!".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2990,6 +3001,7 @@ A templar tells you, "You must die for your sin!".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion DetectInvis PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3043,6 +3055,7 @@ A templar tells you, "You must die for your sin!".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Sneak PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -3096,6 +3109,7 @@ A templar tells you, "You must die for your sin!".</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Flying DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3154,6 +3168,7 @@ to kill you to get a fresh corpse!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3208,6 +3223,7 @@ of an eye he seems stern again.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3261,6 +3277,7 @@ of an eye he seems stern again.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion Infrared Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3314,6 +3331,7 @@ of an eye he seems stern again.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -3355,6 +3373,7 @@ of an eye he seems stern again.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3378,7 +3397,9 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Hum AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3389,6 +3410,7 @@ of an eye he seems stern again.</description>
       <Material>granite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>8</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -3412,8 +3434,12 @@ of an eye he seems stern again.</description>
       <ExtraFlags>AntiGood</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3424,6 +3450,7 @@ of an eye he seems stern again.</description>
       <Material>onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3447,8 +3474,12 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Hum AntiGood AntiEvil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3459,6 +3490,7 @@ of an eye he seems stern again.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3482,8 +3514,12 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Glow Magic AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3494,6 +3530,7 @@ of an eye he seems stern again.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3517,7 +3554,9 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Bless</ExtraFlags>
       <ItemTypes>Key</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3528,6 +3567,7 @@ of an eye he seems stern again.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3548,7 +3588,7 @@ of an eye he seems stern again.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Glow Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Glow Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -3560,6 +3600,7 @@ of an eye he seems stern again.</description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3596,6 +3637,7 @@ of an eye he seems stern again.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3628,6 +3670,7 @@ of an eye he seems stern again.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -3651,7 +3694,9 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3662,6 +3707,7 @@ of an eye he seems stern again.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -3685,11 +3731,21 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3700,6 +3756,7 @@ of an eye he seems stern again.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -3723,7 +3780,9 @@ of an eye he seems stern again.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3734,6 +3793,7 @@ of an eye he seems stern again.</description>
       <Material>dragonscale</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -3769,6 +3829,7 @@ of an eye he seems stern again.</description>
       <Material>crystal</Material>
       <Charges>4</Charges>
       <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3792,7 +3853,9 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3803,6 +3866,7 @@ of an eye he seems stern again.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -3839,6 +3903,7 @@ of an eye he seems stern again.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3862,7 +3927,9 @@ of an eye he seems stern again.</description>
       <ExtraFlags>Bless</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3873,6 +3940,7 @@ of an eye he seems stern again.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3881,941 +3949,356 @@ of an eye he seems stern again.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="2049" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to Striped tunnel-->
-      <Type>NPC</Type>
-      <Destination>2049</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2050" Count="1" Max="1" Vnum="2016">
       <!--Spawn the prism dragon to Prism cave-->
-      <Type>NPC</Type>
-      <Destination>2050</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2012">
       <!--Spawn a dragonscale shield to the prism dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2013">
       <!--Spawn a prism wand to the prism dragon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="3" Max="6" Vnum="2001">
       <!--Spawn a bat to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>3</Count>
-      <Max>6</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="3" Max="6" Vnum="2001">
       <!--Spawn a bat to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>3</Count>
-      <Max>6</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="3" Max="6" Vnum="2001">
       <!--Spawn a bat to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>3</Count>
-      <Max>6</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="1" Max="1" Vnum="2013">
       <!--Spawn The vampire to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2013</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2004">
       <!--Spawn the neutralizer to The vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="3" Max="6" Vnum="2001">
       <!--Spawn a bat to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>3</Count>
-      <Max>6</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="3" Max="6" Vnum="2001">
       <!--Spawn a bat to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>3</Count>
-      <Max>6</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2052" Count="3" Max="6" Vnum="2001">
       <!--Spawn a bat to Basement-->
-      <Type>NPC</Type>
-      <Destination>2052</Destination>
-      <Count>3</Count>
-      <Max>6</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2053" Count="2" Max="4" Vnum="2004">
       <!--Spawn a graverobber to Fresh graves-->
-      <Type>NPC</Type>
-      <Destination>2053</Destination>
-      <Count>2</Count>
-      <Max>4</Max>
-      <Vnum>2004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2053" Count="2" Max="4" Vnum="2004">
       <!--Spawn a graverobber to Fresh graves-->
-      <Type>NPC</Type>
-      <Destination>2053</Destination>
-      <Count>2</Count>
-      <Max>4</Max>
-      <Vnum>2004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2053" Count="1" Max="4" Vnum="2011">
       <!--Spawn zombie to Fresh graves-->
-      <Type>NPC</Type>
-      <Destination>2053</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2055" Count="2" Max="4" Vnum="2004">
       <!--Spawn a graverobber to Scene of ghastly horror-->
-      <Type>NPC</Type>
-      <Destination>2055</Destination>
-      <Count>2</Count>
-      <Max>4</Max>
-      <Vnum>2004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2055" Count="2" Max="4" Vnum="2004">
       <!--Spawn a graverobber to Scene of ghastly horror-->
-      <Type>NPC</Type>
-      <Destination>2055</Destination>
-      <Count>2</Count>
-      <Max>4</Max>
-      <Vnum>2004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2055" Count="1" Max="1" Vnum="2014">
       <!--Spawn the evil necromancer to Scene of ghastly horror-->
-      <Type>NPC</Type>
-      <Destination>2055</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2011">
       <!--Spawn the shield of defense to the evil necromancer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2064" Count="1" Max="2" Vnum="2003">
       <!--Spawn a spelunker to Tunnel-->
-      <Type>NPC</Type>
-      <Destination>2064</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>2003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2002" Count="1" Max="2" Vnum="2003">
       <!--Spawn a spelunker to North/south tunnel-->
-      <Type>NPC</Type>
-      <Destination>2002</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>2003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2003" Count="1" Max="12" Vnum="2008">
       <!--Spawn a templar to Weapon training area-->
-      <Type>NPC</Type>
-      <Destination>2003</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2004" Count="1" Max="12" Vnum="2008">
       <!--Spawn a templar to Prayer training area-->
-      <Type>NPC</Type>
-      <Destination>2004</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2005" Count="1" Max="12" Vnum="2008">
       <!--Spawn a templar to Junction of hallways-->
-      <Type>NPC</Type>
-      <Destination>2005</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2006" Count="1" Max="12" Vnum="2008">
       <!--Spawn a templar to Hallway-->
-      <Type>NPC</Type>
-      <Destination>2006</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2008" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Pages' sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2008</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2008" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Pages' sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2008</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2008" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Pages' sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2008</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2008" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Pages' sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2008</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2008" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Pages' sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2008</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2009" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Templar Knights sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2009</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2009" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to Templar Knights sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2009</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2009" Count="3" Max="12" Vnum="2008">
       <!--Spawn a templar to Templar Knights sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2009</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2009" Count="3" Max="12" Vnum="2008">
       <!--Spawn a templar to Templar Knights sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2009</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2009" Count="3" Max="12" Vnum="2008">
       <!--Spawn a templar to Templar Knights sleeping quarters-->
-      <Type>NPC</Type>
-      <Destination>2009</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2010" Count="8" Max="8" Vnum="2002">
       <!--Spawn a templar page to N/S hallway-->
-      <Type>NPC</Type>
-      <Destination>2010</Destination>
-      <Count>8</Count>
-      <Max>8</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2015" Count="1" Max="6" Vnum="2010">
       <!--Spawn the templar officer to Mid-level leader's room-->
-      <Type>NPC</Type>
-      <Destination>2015</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2016" Count="3" Max="12" Vnum="2008">
       <!--Spawn a templar to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2016</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2016" Count="3" Max="12" Vnum="2008">
       <!--Spawn a templar to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2016</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2016" Count="3" Max="12" Vnum="2008">
       <!--Spawn a templar to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2016</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2016" Count="2" Max="6" Vnum="2010">
       <!--Spawn the templar officer to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2016</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2016" Count="2" Max="6" Vnum="2010">
       <!--Spawn the templar officer to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2016</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2016" Count="2" Max="6" Vnum="2010">
       <!--Spawn the templar officer to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2016</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2018" Count="1" Max="6" Vnum="2010">
       <!--Spawn the templar officer to High officer's room-->
-      <Type>NPC</Type>
-      <Destination>2018</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2019" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to Mossy intersection-->
-      <Type>NPC</Type>
-      <Destination>2019</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2023" Count="2" Max="12" Vnum="2008">
       <!--Spawn a templar to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2023</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to a templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2023" Count="2" Max="12" Vnum="2008">
       <!--Spawn a templar to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2023</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2023" Count="1" Max="6" Vnum="2010">
       <!--Spawn the templar officer to Mess hall-->
-      <Type>NPC</Type>
-      <Destination>2023</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2016">
       <!--Spawn a templar's sword to the templar officer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2016</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2025" Count="1" Max="1" Vnum="2015">
       <!--Spawn the grand templar to Grand Templar's room-->
-      <Type>NPC</Type>
-      <Destination>2025</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2010">
       <!--Spawn a white cape to the grand templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2010</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2001">
       <!--Spawn a glowing key to the grand templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2008">
       <!--Spawn a flask of holy water to the grand templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2008</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2026" Count="2" Max="2" Vnum="2012">
       <!--Spawn the shadow to Very dark passage-->
-      <Type>NPC</Type>
-      <Destination>2026</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>2012</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2014">
       <!--Spawn a shadow cloak to the shadow-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2014</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2028" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to The holy grove-->
-      <Type>NPC</Type>
-      <Destination>2028</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2030" Count="1" Max="1" Vnum="2017">
       <!--Spawn The DarkenBeast to Deep within the catacombs-->
-      <Type>NPC</Type>
-      <Destination>2030</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2017</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2003">
       <!--Spawn an onyx ring to The DarkenBeast-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2002">
       <!--Spawn a suit of granite platemail to The DarkenBeast-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2006">
       <!--Spawn a kingly crown to The DarkenBeast-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="2032" Count="0" Max="1" Vnum="2007">
       <!--Spawn stone to The holy place-->
-      <Type>Item</Type>
-      <Destination>2032</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>2007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="2005">
       <!--Spawn the sword Excalibur to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2033" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to Misty passageway-->
-      <Type>NPC</Type>
-      <Destination>2033</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2033" Count="1" Max="9" Vnum="2005">
       <!--Spawn some mist to Misty passageway-->
-      <Type>NPC</Type>
-      <Destination>2033</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2035" Count="1" Max="4" Vnum="2007">
       <!--Spawn a skeleton to Entrance to the burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2035</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a skeleton-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2036" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to The burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2036</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2036" Count="1" Max="4" Vnum="2007">
       <!--Spawn a skeleton to The burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2036</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2036" Count="1" Max="4" Vnum="2011">
       <!--Spawn zombie to The burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2036</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2037" Count="1" Max="4" Vnum="2007">
       <!--Spawn a skeleton to The burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2037</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2009">
       <!--Spawn a suit of chainmail to a skeleton-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2037" Count="1" Max="4" Vnum="2011">
       <!--Spawn zombie to The burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2037</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2011</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2038" Count="1" Max="4" Vnum="2007">
       <!--Spawn a skeleton to The burial grounds-->
-      <Type>NPC</Type>
-      <Destination>2038</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>2007</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2039" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to New graves-->
-      <Type>NPC</Type>
-      <Destination>2039</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2039" Count="2" Max="2" Vnum="2009">
       <!--Spawn a mysterious wraith to New graves-->
-      <Type>NPC</Type>
-      <Destination>2039</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2040" Count="1" Max="7" Vnum="2006">
       <!--Spawn It to Misty cavern-->
-      <Type>NPC</Type>
-      <Destination>2040</Destination>
-      <Count>1</Count>
-      <Max>7</Max>
-      <Vnum>2006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2040" Count="2" Max="9" Vnum="2005">
       <!--Spawn some mist to Misty cavern-->
-      <Type>NPC</Type>
-      <Destination>2040</Destination>
-      <Count>2</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2040" Count="2" Max="9" Vnum="2005">
       <!--Spawn some mist to Misty cavern-->
-      <Type>NPC</Type>
-      <Destination>2040</Destination>
-      <Count>2</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2041" Count="2" Max="9" Vnum="2005">
       <!--Spawn some mist to Misty cavern-->
-      <Type>NPC</Type>
-      <Destination>2041</Destination>
-      <Count>2</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2041" Count="2" Max="9" Vnum="2005">
       <!--Spawn some mist to Misty cavern-->
-      <Type>NPC</Type>
-      <Destination>2041</Destination>
-      <Count>2</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2042" Count="1" Max="9" Vnum="2005">
       <!--Spawn some mist to Mist cavern-->
-      <Type>NPC</Type>
-      <Destination>2042</Destination>
-      <Count>1</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2043" Count="3" Max="9" Vnum="2005">
       <!--Spawn some mist to Waterfall of mist-->
-      <Type>NPC</Type>
-      <Destination>2043</Destination>
-      <Count>3</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2043" Count="3" Max="9" Vnum="2005">
       <!--Spawn some mist to Waterfall of mist-->
-      <Type>NPC</Type>
-      <Destination>2043</Destination>
-      <Count>3</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2043" Count="3" Max="9" Vnum="2005">
       <!--Spawn some mist to Waterfall of mist-->
-      <Type>NPC</Type>
-      <Destination>2043</Destination>
-      <Count>3</Count>
-      <Max>9</Max>
-      <Vnum>2005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2015">
       <!--Spawn a misty potion to some mist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2015</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2047" Count="2" Max="2" Vnum="2009">
       <!--Spawn a mysterious wraith to Fresh graves-->
-      <Type>NPC</Type>
-      <Destination>2047</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>2009</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2047" Count="4" Max="4" Vnum="2011">
       <!--Spawn zombie to Fresh graves-->
-      <Type>NPC</Type>
-      <Destination>2047</Destination>
-      <Count>4</Count>
-      <Max>4</Max>
-      <Vnum>2011</Vnum>
     </Reset>
   </Resets>
 </Area>

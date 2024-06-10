@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>ABAL} Dev     Knight Castle</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -425,6 +426,7 @@ their fight to Shadow.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -477,7 +479,8 @@ their fight to Shadow.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil Haste Swim Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil Haste Swim Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -526,11 +529,12 @@ their fight to Shadow.</description>
       <gold>5000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Gain Warrior Outdoors AreaAttack</flags>
+      <flags>NPC Trainer Warrior Outdoors AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared ProtectionEvil Flying Haste Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared ProtectEvil Flying Haste Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -572,6 +576,7 @@ their fight to Shadow.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -592,7 +597,7 @@ their fight to Shadow.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>0.1</Weight>
       <WearFlags>NoSac</WearFlags>
-      <ExtraFlags>NoPurge BurnProof Closeable PickProof</ExtraFlags>
+      <ExtraFlags>NoPurge BurnProof Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -604,6 +609,7 @@ their fight to Shadow.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -636,6 +642,7 @@ their fight to Shadow.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -659,9 +666,15 @@ their fight to Shadow.</description>
       <ExtraFlags>Glow Hum Bless AntiEvil AntiNeutral RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -672,6 +685,7 @@ their fight to Shadow.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -704,6 +718,7 @@ their fight to Shadow.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -736,6 +751,7 @@ their fight to Shadow.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -759,14 +775,30 @@ their fight to Shadow.</description>
       <ExtraFlags>Glow Hum Magic Bless AntiEvil AntiNeutral BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="60" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="60" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -777,6 +809,7 @@ their fight to Shadow.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -800,8 +833,12 @@ their fight to Shadow.</description>
       <ExtraFlags>Glow AntiEvil AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -812,6 +849,7 @@ their fight to Shadow.</description>
       <Material>light</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -820,37 +858,17 @@ their fight to Shadow.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="4500" Count="1" Max="1" Vnum="4501">
       <!--Spawn The Golden Knight to The Entrance-->
-      <Type>NPC</Type>
-      <Destination>4500</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4502">
       <!--Spawn the code of honor to The Golden Knight-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4504" Count="1" Max="1" Vnum="4500">
       <!--Spawn a Healer to The Altar-->
-      <Type>NPC</Type>
-      <Destination>4504</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4504" Count="0" Max="1" Vnum="4501">
       <!--Spawn the altar to The Altar-->
-      <Type>Item</Type>
-      <Destination>4504</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4501</Vnum>
     </Reset>
   </Resets>
 </Area>

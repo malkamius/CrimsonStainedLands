@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Linq.Expressions;
 using System.Collections.Concurrent;
+using System.Text.Json.Serialization;
 
 namespace CrimsonStainedLands
 {
@@ -263,7 +264,9 @@ namespace CrimsonStainedLands
                         newExit.flags.REMOVEFLAG(ExitFlags.Locked);
                         newExit.originalFlags.REMOVEFLAG(ExitFlags.Locked);
                     }
-                    Utility.GetEnumValue<CharacterSize>(exit.GetElementValue("ExitSize"), ref newExit.ExitSize, CharacterSize.Giant);
+                    CharacterSize exitsize = CharacterSize.Giant;
+                    Utility.GetEnumValue<CharacterSize>(exit.GetElementValue("ExitSize"), ref exitsize, CharacterSize.Giant);
+                    newExit.ExitSize = exitsize;
 
                     exits[(int)newExit.direction] = newExit;
                     OriginalExits[(int)newExit.direction] = new ExitData(newExit);
@@ -391,7 +394,7 @@ namespace CrimsonStainedLands
 
             return result;
         }
-
+        [JsonIgnore]
         public XElement Element
         {
             get
@@ -486,12 +489,13 @@ namespace CrimsonStainedLands
         }
         public RoomData source;
         public RoomData destination;
-        public int destinationVnum;
+        public int destinationVnum { get; set; }
         public HashSet<ExitFlags> flags = new HashSet<ExitFlags>();
         public HashSet<ExitFlags> originalFlags = new HashSet<ExitFlags>();
+
         public List<int> keys = new List<int>();
-        public string keywords;
-        public CharacterSize ExitSize = CharacterSize.Giant;
+        public string keywords { get; set; }
+        public CharacterSize ExitSize { get; set; } = CharacterSize.Giant;
 
         public ExitData() { }
         public ExitData(ExitData toclone)

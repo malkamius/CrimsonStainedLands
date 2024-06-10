@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{DEATH} Dioxide Battlefield</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -3477,6 +3478,7 @@ battles, but continues to fight.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>15</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3531,6 +3533,7 @@ battles, but continues to fight.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>25</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3584,6 +3587,7 @@ battles, but continues to fight.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>30</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3637,6 +3641,7 @@ battles, but continues to fight.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3691,6 +3696,7 @@ and dead.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Poison Plague DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -3741,7 +3747,8 @@ dirt and sweat as he continues to command his troops to press forward.</descript
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>40</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -3797,6 +3804,7 @@ whore.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Flying Berserk DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>40</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -3851,6 +3859,7 @@ moving. With every corpse he creates, he seems to get stronger.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Berserk DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>40</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -3905,7 +3914,8 @@ He communes blessings and calls wrath apon his enemies.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>40</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -3938,11 +3948,21 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3953,6 +3973,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3976,11 +3997,21 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiGood AntiNeutral NoRemove BurnProof NoUncurse Unholy TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3991,6 +4022,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4014,10 +4046,18 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum NoDrop AntiGood AntiNeutral NoRemove BurnProof NoUncurse Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4028,6 +4068,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4051,11 +4092,21 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4066,6 +4117,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4089,13 +4141,27 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Mental" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectEvil" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Mental" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4106,6 +4172,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4129,13 +4196,27 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectionEvil" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Disease" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectEvil" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Disease" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4146,6 +4227,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -4169,10 +4251,18 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum Evil AntiGood AntiNeutral NoRemove NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectionGood" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Holy" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectGood" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Holy" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4183,6 +4273,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -4206,12 +4297,24 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum Evil AntiGood AntiNeutral NoRemove NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="75" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="75" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4222,6 +4325,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4245,10 +4349,18 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4259,6 +4371,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -4282,11 +4395,21 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4297,6 +4420,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4320,11 +4444,21 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ExtraFlags>Glow Hum AntiEvil AntiNeutral NoRemove BurnProof NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4335,6 +4469,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4343,1181 +4478,446 @@ He communes blessings and calls wrath apon his enemies.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="23102" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23102</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23102" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23102</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23102" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23102</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23102" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23102</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23102" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23102</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23104" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23104</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23104" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23104</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23106" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23106</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23106" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23106</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23106" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23106</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23106" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23106</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23106" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23106</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23108" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23108</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23108" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23108</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23109" Count="1" Max="1" Vnum="23105">
       <!--Spawn Sir Lothar to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23109</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23100">
       <!--Spawn the silver longsword of Lothar to Sir Lothar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23104">
       <!--Spawn the helmet of salvation to Sir Lothar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the belt of truth to Sir Lothar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23110</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23110">
+      <!--Spawn the belt of truth to a lesser troll-->
     </Reset>
-    <Reset>
-      <!--Spawn the shield of faith to Sir Lothar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23108</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23108">
+      <!--Spawn the shield of faith to a lesser troll-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23110" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23110</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23110" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23110</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23110" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23110</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23110" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23110</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23110" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23110</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23112" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23112</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23112" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23112</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23112" Count="1" Max="1" Vnum="23108">
       <!--Spawn Raag to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23112</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23102">
       <!--Spawn the double-bladed axe of Raag to Raag-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn robe of malignancy to Raag-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23106</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23106">
+      <!--Spawn robe of malignancy to a lesser troll-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23114" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23114</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23114" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23114</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23114" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23114</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23114" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23114</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23114" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23114</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23116" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23116</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23116" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23116</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23118" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23118</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23118" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23118</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23118" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23118</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23118" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23118</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23118" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23118</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23120" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23120</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23120" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23120</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23122" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23122</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23122" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23122</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23122" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23122</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23122" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23122</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23122" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Southern Trail-->
-      <Type>NPC</Type>
-      <Destination>23122</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23124" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23124</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23124" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23124</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23126" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23126</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23126" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23126</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23126" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23126</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23126" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23126</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23126" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23126</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23128" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23128</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23128" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23128</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23130" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23130</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23130" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23130</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23130" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23130</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23130" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23130</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23130" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23130</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23132" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23132</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23132" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to March Hill-->
-      <Type>NPC</Type>
-      <Destination>23132</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23134" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23134</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23134" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23134</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23134" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23134</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23134" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23134</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23134" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23134</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23136" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23136</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23136" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23136</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23138" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23138</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23138" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23138</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23138" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23138</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23138" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23138</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23138" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23138</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23140" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23140</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23140" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23140</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23142" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23142</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23142" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23142</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23142" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23142</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23142" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23142</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23142" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23142</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23143" Count="1" Max="1" Vnum="23106">
       <!--Spawn Youatt to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23143</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23101">
       <!--Spawn the bloody spear of Youatt to Youatt-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23107">
       <!--Spawn belt of malice to Youatt-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23144" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23144</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23144" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23144</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23146" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23146</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23146" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23146</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23146" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23146</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23146" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23146</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23146" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23146</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23148" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23148</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23148" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23148</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23150" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23150</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23150" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23150</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23150" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23150</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23150" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23150</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23150" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23150</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23152" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23152</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23152" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23152</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23152" Count="1" Max="1" Vnum="23109">
       <!--Spawn Sir Cire to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23152</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23103">
       <!--Spawn the holy mace of Cire to Sir Cire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23105">
       <!--Spawn the breastplate of righteousness to Sir Cire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23108">
       <!--Spawn the shield of faith to Sir Cire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23109">
       <!--Spawn the boots of readiness to Sir Cire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23154" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23154</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23154" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23154</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23154" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23154</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23154" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23154</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23154" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23154</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23156" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23156</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23156" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23156</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23158" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23158</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23158" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23158</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23158" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23158</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23158" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23158</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23158" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23158</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23160" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23160</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23160" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23160</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23162" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23162</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23162" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23162</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23162" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23162</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23162" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23162</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23162" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23162</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23164" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23164</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23164" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23164</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23166" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23166</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23166" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23166</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23166" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23166</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23166" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23166</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23166" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23166</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23168" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23168</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23168" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Bloody fields-->
-      <Type>NPC</Type>
-      <Destination>23168</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23170" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23170</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23170" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23170</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23170" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23170</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23170" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23170</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23170" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23170</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23172" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23172</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23172" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23172</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23174" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23174</Destination>
-      <Count>4</Count>
-      <Max>250</Max>
-      <Vnum>23100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23174" Count="2" Max="125" Vnum="23101">
       <!--Spawn a human paladin to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23174</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23174" Count="2" Max="125" Vnum="23102">
       <!--Spawn a troll captain to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23174</Destination>
-      <Count>2</Count>
-      <Max>125</Max>
-      <Vnum>23102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23174" Count="5" Max="300" Vnum="23103">
       <!--Spawn a goblin soldier to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23174</Destination>
-      <Count>5</Count>
-      <Max>300</Max>
-      <Vnum>23103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23174" Count="2" Max="100" Vnum="23104">
       <!--Spawn someone to Storm Hill-->
-      <Type>NPC</Type>
-      <Destination>23174</Destination>
-      <Count>2</Count>
-      <Max>100</Max>
-      <Vnum>23104</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{35 up} Ceran   Green Tinged tower</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -770,6 +771,7 @@ your warm flesh.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sneak Flying DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -824,6 +826,7 @@ in his room where he once sought to be a priest of healing.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Sneak Flying DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -880,6 +883,7 @@ of the ruins.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared Haste DetectIllusion Flying PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -934,6 +938,7 @@ lives as a reminder of how the weak are used and the evil control them.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -987,6 +992,7 @@ lives as a reminder of how the weak are used and the evil control them.</descrip
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Haste DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1043,6 +1049,7 @@ his release.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1099,6 +1106,7 @@ watches over the power that will one day help release the Lord of the ruins.</de
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Haste DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1140,6 +1148,7 @@ watches over the power that will one day help release the Lord of the ruins.</de
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1184,6 +1193,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1207,11 +1217,21 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1222,6 +1242,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1254,6 +1275,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -1277,10 +1299,18 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Dark Evil Magic Bless</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1291,6 +1321,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -1314,7 +1345,9 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Glow Magic AntiGood</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1325,6 +1358,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1358,11 +1392,21 @@ if they managed to cut it right.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1373,6 +1417,7 @@ if they managed to cut it right.</Description>
       <Material>emerald</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -1396,11 +1441,21 @@ if they managed to cut it right.</Description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1411,6 +1466,7 @@ if they managed to cut it right.</Description>
       <Material>ivory</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1443,6 +1499,7 @@ if they managed to cut it right.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1475,6 +1532,7 @@ if they managed to cut it right.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1507,6 +1565,7 @@ if they managed to cut it right.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1539,6 +1598,7 @@ if they managed to cut it right.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1562,8 +1622,12 @@ if they managed to cut it right.</Description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1574,6 +1638,7 @@ if they managed to cut it right.</Description>
       <Material>opal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -1597,11 +1662,21 @@ if they managed to cut it right.</Description>
       <ExtraFlags>Magic NoDrop AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1612,6 +1687,7 @@ if they managed to cut it right.</Description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -1644,6 +1720,7 @@ if they managed to cut it right.</Description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1652,213 +1729,83 @@ if they managed to cut it right.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="23261" Count="1" Max="4" Vnum="23260">
       <!--Spawn a spirit priest to In a foyer filled with a green aura-->
-      <Type>NPC</Type>
-      <Destination>23261</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23260</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23263" Count="1" Max="4" Vnum="23260">
       <!--Spawn a spirit priest to In a foyer filled with a green aura-->
-      <Type>NPC</Type>
-      <Destination>23263</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23260</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23264" Count="1" Max="4" Vnum="23260">
       <!--Spawn a spirit priest to In a corridor bathed in a green glow-->
-      <Type>NPC</Type>
-      <Destination>23264</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23260</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23266" Count="1" Max="4" Vnum="23260">
       <!--Spawn a spirit priest to In a corridor bathed in a green glow-->
-      <Type>NPC</Type>
-      <Destination>23266</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23260</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="23271" Count="0" Max="1" Vnum="23276">
       <!--Spawn a glowing green fountain to In a room with a green fountain-->
-      <Type>Item</Type>
-      <Destination>23271</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>23276</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23272" Count="1" Max="1" Vnum="23261">
       <!--Spawn an undead elven novice to In a sparse room-->
-      <Type>NPC</Type>
-      <Destination>23272</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23261</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23272">
       <!--Spawn an opal shield to an undead elven novice-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23272</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23268">
       <!--Spawn a key to an undead elven novice-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23268</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23273" Count="1" Max="1" Vnum="23262">
       <!--Spawn a lich cleric to In a meditation room-->
-      <Type>NPC</Type>
-      <Destination>23273</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23262</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23274">
       <!--Spawn a cap made from an elven skull to a lich cleric-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23274</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23269">
       <!--Spawn a key to a lich cleric-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23269</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23274" Count="1" Max="1" Vnum="23263">
       <!--Spawn the undead elven healer to In a room of healing-->
-      <Type>NPC</Type>
-      <Destination>23274</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23263</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23267">
       <!--Spawn the amulet of heaven to the undead elven healer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23267</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23270">
       <!--Spawn a key to the undead elven healer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23270</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23262">
       <!--Spawn an obsidian pendant to the undead elven healer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23262</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23275" Count="1" Max="1" Vnum="23264">
       <!--Spawn the undead elven bishop to In the holy place-->
-      <Type>NPC</Type>
-      <Destination>23275</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23264</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23266">
       <!--Spawn a green emerald bracer to the undead elven bishop-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23266</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23271">
       <!--Spawn a key to the undead elven bishop-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23271</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23277" Count="1" Max="2" Vnum="23265">
       <!--Spawn a dark angel to In an unholy green light-->
-      <Type>NPC</Type>
-      <Destination>23277</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>23265</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23265">
       <!--Spawn a dark angel's flesh-cutter to a dark angel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23265</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23278" Count="1" Max="2" Vnum="23265">
       <!--Spawn a dark angel to In an unholy green light-->
-      <Type>NPC</Type>
-      <Destination>23278</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>23265</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23265">
       <!--Spawn a dark angel's flesh-cutter to a dark angel-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23265</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23281" Count="1" Max="1" Vnum="23267">
       <!--Spawn the undead elven cardinal to Within the unholy fire-->
-      <Type>NPC</Type>
-      <Destination>23281</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23267</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23260">
       <!--Spawn a green tinted seal to the undead elven cardinal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23260</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23261">
       <!--Spawn the mace of disruption to the undead elven cardinal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23261</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23264">
       <!--Spawn a green mitre to the undead elven cardinal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23264</Vnum>
     </Reset>
   </Resets>
 </Area>

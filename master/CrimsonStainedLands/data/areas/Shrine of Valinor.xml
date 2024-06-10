@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{SHRINE} Valinor The Shrine of Valinor</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -83,7 +84,8 @@ smile.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil ProtectionGood Sneak PassDoor Haste</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectGood Sneak PassDoor Haste</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>12</DamageDiceSides>
       <DamageDiceCount>44</DamageDiceCount>
@@ -125,6 +127,7 @@ smile.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -148,12 +151,24 @@ smile.</description>
       <ExtraFlags>Glow Hum Bless AntiEvil VisDeath Flaming Frost Vorpal TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Haste" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sanctuary" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="300" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="11" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="11" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="None" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Haste" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sanctuary" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="300" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="11" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="11" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -164,6 +179,7 @@ smile.</description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -172,21 +188,11 @@ smile.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="4456" Count="1" Max="1" Vnum="4456">
       <!--Spawn an elven harpist to A beautiful alcove.-->
-      <Type>NPC</Type>
-      <Destination>4456</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4456</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4456">
       <!--Spawn a silver harp strung with crystal tears to an elven harpist-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4456</Vnum>
     </Reset>
   </Resets>
 </Area>

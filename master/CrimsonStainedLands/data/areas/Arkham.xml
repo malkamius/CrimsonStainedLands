@@ -9432,7 +9432,7 @@ during his career. He shouts at you to get out of his home.</description>
       <ExtraFlags>AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9477,7 +9477,7 @@ during his career. He shouts at you to get out of his home.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9519,7 +9519,7 @@ during his career. He shouts at you to get out of his home.</description>
       <ExtraFlags>AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="8" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="8" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9795,7 +9795,7 @@ during his career. He shouts at you to get out of his home.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10974,7 +10974,7 @@ is granted. 1994 (c)</Description>
       <ExtraFlags>AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -11016,7 +11016,7 @@ is granted. 1994 (c)</Description>
       <ExtraFlags>AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -11755,7 +11755,7 @@ air.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
@@ -12035,7 +12035,7 @@ air.</Description>
       <!--Spawn an ugly rogue to The Wharf-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="715">
-      <!--Spawn thief's dagger to an ugly rogue-->
+      <!--Spawn thief's dagger to the nanny-->
     </Reset>
     <Reset Type="NPC" Destination="703" Count="1" Max="11" Vnum="705">
       <!--Spawn an Arkham Guard to The Wharf-->
@@ -12044,10 +12044,10 @@ air.</Description>
       <!--Spawn darkened platemail to an Arkham Guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="701">
-      <!--Spawn darkened helm to an Arkham Guard-->
+      <!--Spawn darkened helm to a raggedy anne doll-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="704">
-      <!--Spawn guardian sword to an Arkham Guard-->
+      <!--Spawn guardian sword to a raggedy anne doll-->
     </Reset>
     <Reset Type="NPC" Destination="703" Count="1" Max="3" Vnum="729">
       <!--Spawn a pickpocket to The Wharf-->
@@ -12059,7 +12059,7 @@ air.</Description>
       <!--Spawn Spitfire to The Wharf-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="716">
-      <!--Spawn cloak of Nightwing to Spitfire-->
+      <!--Spawn cloak of Nightwing to a toy soldier-->
     </Reset>
     <Reset Type="NPC" Destination="704" Count="1" Max="3" Vnum="753">
       <!--Spawn fisherman to The Wharf-->
@@ -12068,25 +12068,25 @@ air.</Description>
       <!--Spawn an Arkham Guard to The End of the Wharf-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="702">
-      <!--Spawn darkened platemail to an Arkham Guard-->
+      <!--Spawn darkened platemail to the ugly bear-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="701">
-      <!--Spawn darkened helm to an Arkham Guard-->
+      <!--Spawn darkened helm to a toy soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="704">
-      <!--Spawn guardian sword to an Arkham Guard-->
+      <!--Spawn guardian sword to a toy soldier-->
     </Reset>
     <Reset Type="NPC" Destination="705" Count="5" Max="11" Vnum="705">
       <!--Spawn an Arkham Guard to The End of the Wharf-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="702">
-      <!--Spawn darkened platemail to an Arkham Guard-->
+      <!--Spawn darkened platemail to the dwarven youth-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="739">
-      <!--Spawn darkened bracer to an Arkham Guard-->
+      <!--Spawn darkened bracer to the dwarven youth-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="704">
-      <!--Spawn guardian sword to an Arkham Guard-->
+      <!--Spawn guardian sword to a toy soldier-->
     </Reset>
     <Reset Type="NPC" Destination="706" Count="1" Max="6" Vnum="722">
       <!--Spawn a citizen of Arkham to Main Street-->
@@ -12095,19 +12095,19 @@ air.</Description>
       <!--Spawn an Arkham Guard to Main Street-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="702">
-      <!--Spawn darkened platemail to an Arkham Guard-->
+      <!--Spawn darkened platemail to a toy soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="739">
-      <!--Spawn darkened bracer to an Arkham Guard-->
+      <!--Spawn darkened bracer to a toy soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="704">
-      <!--Spawn guardian sword to an Arkham Guard-->
+      <!--Spawn guardian sword to the armed guard-->
     </Reset>
     <Reset Type="NPC" Destination="709" Count="1" Max="1" Vnum="706">
       <!--Spawn a street sweeper to Main Street-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="729">
-      <!--Spawn broom to a street sweeper-->
+      <!--Spawn broom to the spoiled brat-->
     </Reset>
     <Reset Type="NPC" Destination="710" Count="1" Max="2" Vnum="742">
       <!--Spawn a peasant to Main Street-->
@@ -12569,7 +12569,7 @@ air.</Description>
       <!--Spawn stoneware jug to Deborah-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="750">
-      <!--Spawn an oil lantern to Deborah-->
+      <!--Spawn an oil lantern to the black pudding-->
     </Reset>
     <Reset Type="NPC" Destination="801" Count="1" Max="1" Vnum="754">
       <!--Spawn the monster to Corridor-->
@@ -12584,7 +12584,7 @@ air.</Description>
       <!--Spawn a mummy to Sepulchure-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="724">
-      <!--Spawn jar of nectar to a mummy-->
+      <!--Spawn jar of nectar to a warped creature from a nightmare-->
     </Reset>
     <Reset Type="NPC" Destination="810" Count="3" Max="6" Vnum="739">
       <!--Spawn a skeleton to Corridor-->
@@ -12599,7 +12599,7 @@ air.</Description>
       <!--Spawn a ghost to Corridor-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="728">
-      <!--Spawn ghost ring to a ghost-->
+      <!--Spawn ghost ring to the black pudding-->
     </Reset>
     <Reset Type="NPC" Destination="823" Count="1" Max="1" Vnum="748">
       <!--Spawn a mummy to Sepulchure-->

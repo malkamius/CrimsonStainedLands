@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>LOSED} Grikthoran  Temple of the Fallen</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -273,7 +274,8 @@ battle.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionGood Flying Haste DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectGood Flying Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -331,6 +333,7 @@ imprisoned for so long then you must hold the key to his freedom.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Sneak Hide Flying Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>48</DamageDiceSides>
       <DamageDiceCount>2</DamageDiceCount>
@@ -388,7 +391,8 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectHidden Sanctuary Infrared ProtectionEvil Flying Haste</affectedBy>
+      <affectedBy>DetectHidden Sanctuary Infrared ProtectEvil Flying Haste</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>50</DamageDiceCount>
@@ -430,6 +434,7 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -453,10 +458,18 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <ExtraFlags>Glow Hum BurnProof Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -467,6 +480,7 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <Material>diamond</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -475,53 +489,23 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="29900" Count="1" Max="1" Vnum="29900">
       <!--Spawn The shrouded knight to The Gates of the Temple-->
-      <Type>NPC</Type>
-      <Destination>29900</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="29900">
       <!--Spawn a star-shaped key to The shrouded knight-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29900</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29902" Count="4" Max="6" Vnum="29902">
       <!--Spawn a guard dragon to A Dark Damp Hallway-->
-      <Type>NPC</Type>
-      <Destination>29902</Destination>
-      <Count>4</Count>
-      <Max>6</Max>
-      <Vnum>29902</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29904" Count="1" Max="1" Vnum="29901">
       <!--Spawn Quimtir to A Room Seared by Flames-->
-      <Type>NPC</Type>
-      <Destination>29904</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29901">
       <!--Spawn the dagger 'Legend' to Quimtir-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29901</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29905" Count="4" Max="6" Vnum="29902">
       <!--Spawn a guard dragon to A Dark Damp Hallway-->
-      <Type>NPC</Type>
-      <Destination>29905</Destination>
-      <Count>4</Count>
-      <Max>6</Max>
-      <Vnum>29902</Vnum>
     </Reset>
   </Resets>
 </Area>

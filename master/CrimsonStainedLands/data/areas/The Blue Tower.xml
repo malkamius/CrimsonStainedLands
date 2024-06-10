@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{35 up} Ceran   Blue Tinged tower</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1132,6 +1133,7 @@ All you know is that it appears to be guarding the way past.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden PassDoor DetectIllusion DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -1187,6 +1189,7 @@ sending sizzling blue energy through the air!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectMagic Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1244,6 +1247,7 @@ blue energy that sizzles in the air.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion Flying PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1300,6 +1304,7 @@ of the Lord.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -1354,6 +1359,7 @@ covered in symbols guarding against control by those not of the darkest soul.</d
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -1395,6 +1401,7 @@ covered in symbols guarding against control by those not of the darkest soul.</d
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1430,8 +1437,12 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Glow Evil Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1442,6 +1453,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>crystal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -1465,10 +1477,18 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Magic Bless Flaming Frost Vorpal</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1479,6 +1499,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1502,10 +1523,18 @@ joined the black tower will reveal it's secrets..</Description>
       <ExtraFlags>Dark Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1516,6 +1545,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>sapphire</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -1548,6 +1578,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1568,12 +1599,18 @@ joined the black tower will reveal it's secrets..</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>1</Weight>
       <WearFlags>Take Finger</WearFlags>
-      <ExtraFlags>Invisibility Magic</ExtraFlags>
+      <ExtraFlags>Invis Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1584,6 +1621,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -1616,6 +1654,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1636,12 +1675,18 @@ joined the black tower will reveal it's secrets..</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>1</Weight>
       <WearFlags>Take Finger</WearFlags>
-      <ExtraFlags>Invisibility Magic</ExtraFlags>
+      <ExtraFlags>Invis Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1652,6 +1697,7 @@ joined the black tower will reveal it's secrets..</Description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -1660,173 +1706,68 @@ joined the black tower will reveal it's secrets..</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="23232" Count="1" Max="6" Vnum="23230">
       <!--Spawn a spirit mage to A room bathed in blue light-->
-      <Type>NPC</Type>
-      <Destination>23232</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>23230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23234" Count="1" Max="6" Vnum="23230">
       <!--Spawn a spirit mage to A room bathed in blue light-->
-      <Type>NPC</Type>
-      <Destination>23234</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>23230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23236" Count="1" Max="6" Vnum="23230">
       <!--Spawn a spirit mage to A room bathed in blue light-->
-      <Type>NPC</Type>
-      <Destination>23236</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>23230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23237" Count="1" Max="6" Vnum="23230">
       <!--Spawn a spirit mage to A room bathed in blue light-->
-      <Type>NPC</Type>
-      <Destination>23237</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>23230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23238" Count="1" Max="6" Vnum="23230">
       <!--Spawn a spirit mage to A room bathed in blue light-->
-      <Type>NPC</Type>
-      <Destination>23238</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>23230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23239" Count="1" Max="6" Vnum="23230">
       <!--Spawn a spirit mage to A room bathed in blue light-->
-      <Type>NPC</Type>
-      <Destination>23239</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>23230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23242" Count="1" Max="4" Vnum="23231">
       <!--Spawn a ghost with a blue aura to Standing within a blinding blue light-->
-      <Type>NPC</Type>
-      <Destination>23242</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23231</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23244" Count="1" Max="4" Vnum="23231">
       <!--Spawn a ghost with a blue aura to Standing within a blinding blue light-->
-      <Type>NPC</Type>
-      <Destination>23244</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23231</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23246" Count="1" Max="4" Vnum="23231">
       <!--Spawn a ghost with a blue aura to Standing within a blinding blue light-->
-      <Type>NPC</Type>
-      <Destination>23246</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23231</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23248" Count="1" Max="4" Vnum="23231">
       <!--Spawn a ghost with a blue aura to Standing within a blinding blue light-->
-      <Type>NPC</Type>
-      <Destination>23248</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23231</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23253" Count="1" Max="1" Vnum="23232">
       <!--Spawn the elven lich archmage to Before the burning blue stairwell-->
-      <Type>NPC</Type>
-      <Destination>23253</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23232</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23236">
       <!--Spawn a ring of wizardry to the elven lich archmage-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23236</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23235">
       <!--Spawn (blue-green) a wand of spellfire to the elven lich archmage-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23235</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23254" Count="1" Max="4" Vnum="23234">
       <!--Spawn a satanic familiar to On a balcony wreathed in blue fire-->
-      <Type>NPC</Type>
-      <Destination>23254</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>23234</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23237">
       <!--Spawn a blue key to a satanic familiar-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23237</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23233">
       <!--Spawn a blue sapphire collar to a satanic familiar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23233</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="23255" Count="1" Max="1" Vnum="23233">
       <!--Spawn the witch queen of Myth Drannor to The Witch Queen's Watch-->
-      <Type>NPC</Type>
-      <Destination>23255</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>23233</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23238">
       <!--Spawn a ring of wizardry to the witch queen of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23238</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23231">
       <!--Spawn a blue crystal tiara to the witch queen of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23231</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23232">
       <!--Spawn a blue-ice dagger to the witch queen of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23232</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="23230">
       <!--Spawn a blue tinted seal to the witch queen of Myth Drannor-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>23230</Vnum>
     </Reset>
   </Resets>
 </Area>

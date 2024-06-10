@@ -4251,7 +4251,7 @@ accessible only to the most trusted members of the guild.</Description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>Sentinel Gain</flags>
+      <flags>Sentinel Trainer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4700,7 +4700,7 @@ ready to face any challenge that comes her way.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>Sentinel Gain GuildMaster Warrior</flags>
+      <flags>Sentinel Trainer Practice Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4815,7 +4815,7 @@ inspire those around him to be brave and to fight for what is right.</descriptio
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>paladin</Guild>
-      <flags>Sentinel Gain GuildMaster</flags>
+      <flags>Sentinel Trainer Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4933,7 +4933,7 @@ healing arts is undeniable, and she is revered by her fellow healers.</descripti
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>Gain GuildMaster Sentinel</flags>
+      <flags>Trainer Practice Sentinel</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5050,7 +5050,7 @@ silver tongue that makes him well-liked by his fellow thieves.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>Sentinel Gain GuildMaster Thief Shopkeeper</flags>
+      <flags>Sentinel Trainer Practice Thief Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5169,7 +5169,7 @@ knowledge and mastery of magic is undeniable.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>Sentinel Gain GuildMaster Mage</flags>
+      <flags>Sentinel Trainer Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5469,16 +5469,15 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="">
-		<Pet Vnum="19022" />
-		<Pet Vnum="19023" />
-		<Pet Vnum="19024" />
-		<Pet Vnum="19025" />
-		<Pet Vnum="19026" />
-		<Pet Vnum="19027" />
-		<Pet Vnum="19028" />
-		<Pet Vnum="19029" />
-	  </Shop>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="" />
+      <Pet Vnum="19022" />
+      <Pet Vnum="19023" />
+      <Pet Vnum="19024" />
+      <Pet Vnum="19025" />
+      <Pet Vnum="19026" />
+      <Pet Vnum="19027" />
+      <Pet Vnum="19028" />
+      <Pet Vnum="19029" />
     </NPC>
     <NPC>
       <Vnum>19022</Vnum>
@@ -6093,7 +6092,7 @@ and leadership, and his mere presence commands respect from all those around.</d
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>bard</Guild>
-      <flags>Sentinel Gain GuildMaster</flags>
+      <flags>Sentinel Trainer Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6335,7 +6334,7 @@ commanding a dark and powerful presence that few could match.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>assassin</Guild>
-      <flags>Sentinel Gain GuildMaster Shopkeeper</flags>
+      <flags>Sentinel Trainer Practice Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6701,7 +6700,7 @@ shapeshifting skills.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>shapeshifter</Guild>
-      <flags>Sentinel Gain GuildMaster</flags>
+      <flags>Sentinel Trainer Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -7749,7 +7748,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" beginMessage="You feel stronger as you put on a leather jerkin.">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell" beginMessage="You feel stronger as you put on a leather jerkin.">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7903,7 +7902,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7943,7 +7942,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7980,10 +7979,10 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8023,7 +8022,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8063,7 +8062,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8106,7 +8105,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
@@ -8220,7 +8219,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8374,7 +8373,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell" beginMessage="You feel ready to travel as you put on a pair of fancy woolen boots.">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8414,7 +8413,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="10" hidden="False" affectType="Spell" beginMessage="You feel wiser AND healthier as you put on a pair of fancy woolen pants.">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8454,7 +8453,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="10" hidden="False" affectType="Spell" beginMessage="You feel smarter as you put on a fancy woolen jerkin.">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8494,7 +8493,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8534,7 +8533,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8577,7 +8576,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
@@ -8614,7 +8613,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8647,7 +8646,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>5</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>DrinkContainer</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8713,7 +8712,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8746,7 +8745,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>8</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>DrinkContainer</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -9098,7 +9097,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9657,7 +9656,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9694,7 +9693,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9953,7 +9952,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9990,7 +9989,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10030,7 +10029,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10070,7 +10069,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10187,7 +10186,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10227,7 +10226,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10327,7 +10326,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closed Closeable Locked PickProof</ExtraFlags>
+      <ExtraFlags>Closed Closable Locked PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Keys>
         <Key vnum="19096" />
@@ -10517,7 +10516,7 @@ wonder and enchantment in those who behold it.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
@@ -10856,7 +10855,7 @@ the blood they have spilled in the hands of their anonymous wielders.</Descripti
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closed Locked Closeable</ExtraFlags>
+      <ExtraFlags>Closed Locked Closable</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Keys>
         <Key vnum="19107" />
@@ -10947,7 +10946,7 @@ ornament.</Description>
       <ExtraFlags>Magic Glow UniqueEquip</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
@@ -11044,7 +11043,7 @@ specifically trained in its use would be able to benefit from its secrets.</Desc
         <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -11613,49 +11612,49 @@ specifically trained in its use would be able to benefit from its secrets.</Desc
       <!--Spawn the bard guildmaster to Bards Guidance-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19099">
-      <!--Spawn a silver flute to the bard guildmaster-->
+      <!--Spawn a silver flute to someone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19100">
-      <!--Spawn a silver mace to the bard guildmaster-->
+      <!--Spawn a silver mace to a lesser troll-->
     </Reset>
     <Reset Type="NPC" Destination="19057" Count="1" Max="1" Vnum="19033">
       <!--Spawn the guild guard to Rhymers Path-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19101">
-      <!--Spawn a silver lute to the guild guard-->
+      <!--Spawn a silver lute to a lesser troll-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19102">
-      <!--Spawn a wooden dagger to the guild guard-->
+      <!--Spawn a wooden dagger to Raag-->
     </Reset>
     <Reset Type="NPC" Destination="19065" Count="1" Max="1" Vnum="19034">
       <!--Spawn the traveling bard to Bards Guild-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19103">
-      <!--Spawn an ivory harp to the traveling bard-->
+      <!--Spawn an ivory harp to a human swordsman-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19104">
-      <!--Spawn a coral harp to the traveling bard-->
+      <!--Spawn a coral harp to a human paladin-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19105">
-      <!--Spawn a brass horn to the traveling bard-->
+      <!--Spawn a brass horn to a human paladin-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19106">
-      <!--Spawn violin to the traveling bard-->
+      <!--Spawn violin to a troll captain-->
     </Reset>
     <Reset Type="NPC" Destination="19041" Count="1" Max="1" Vnum="19035">
       <!--Spawn the guild guard to Adventurers Lane-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19059">
-      <!--Spawn a sharp dagger to the guild guard-->
+      <!--Spawn a sharp dagger to someone-->
     </Reset>
     <Reset Type="NPC" Destination="19123" Count="1" Max="1" Vnum="19036">
       <!--Spawn the assassin guildmaster to Assassins Guidance-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="19059">
-      <!--Spawn a sharp dagger to the assassin guildmaster-->
+      <!--Spawn a sharp dagger to someone-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="19107">
-      <!--Spawn a small gold key to the assassin guildmaster-->
+      <!--Spawn a small gold key to someone-->
     </Reset>
     <Reset Type="Item" Destination="19124" Count="1" Max="1" Vnum="19108">
       <!--Spawn the glass cabinet to Secret Alcove-->

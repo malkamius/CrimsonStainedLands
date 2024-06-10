@@ -13422,7 +13422,7 @@ not alone and are being watched.</Description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
@@ -13476,7 +13476,7 @@ not alone and are being watched.</Description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis Sanctuary Infrared ProtectEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis Sanctuary Infrared ProtectEvil ProtectGood DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
@@ -16114,7 +16114,7 @@ not alone and are being watched.</Description>
       <ExtraFlags>Hum Evil AntiGood AntiNeutral BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
@@ -16168,7 +16168,7 @@ not alone and are being watched.</Description>
       <ExtraFlags>Glow NoDrop AntiEvil NoRemove BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-2" hidden="False" affectType="Spell">
@@ -16423,7 +16423,7 @@ not alone and are being watched.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
@@ -16859,7 +16859,7 @@ not alone and are being watched.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
@@ -17781,7 +17781,7 @@ not alone and are being watched.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -17865,7 +17865,7 @@ not alone and are being watched.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
@@ -18131,7 +18131,7 @@ not alone and are being watched.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-20" hidden="False" affectType="Spell">
@@ -18173,7 +18173,7 @@ not alone and are being watched.</Description>
       <DiceBonus>0</DiceBonus>
       <Weight>5</Weight>
       <WearFlags>Take Wield</WearFlags>
-      <ExtraFlags>Hum Evil Invisibility Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+      <ExtraFlags>Hum Evil Invis Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
@@ -18496,7 +18496,7 @@ not alone and are being watched.</Description>
       <ExtraFlags>BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -18792,7 +18792,7 @@ not alone and are being watched.</Description>
       <ExtraFlags>BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -19759,7 +19759,7 @@ not alone and are being watched.</Description>
       <DiceBonus>0</DiceBonus>
       <Weight>7</Weight>
       <WearFlags>Take Wield</WearFlags>
-      <ExtraFlags>Hum Evil Invisibility AntiNeutral Unholy</ExtraFlags>
+      <ExtraFlags>Hum Evil Invis AntiNeutral Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
@@ -20300,7 +20300,7 @@ not alone and are being watched.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-25" hidden="False" affectType="Spell">
@@ -20614,7 +20614,7 @@ not alone and are being watched.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
@@ -20736,13 +20736,13 @@ not alone and are being watched.</Description>
       <!--Spawn The human mercenary to Outer corridor the the Temple-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21631">
-      <!--Spawn a hammered iron sword to The human mercenary-->
+      <!--Spawn a hammered iron sword to a knight of Myth Drannor-->
     </Reset>
     <Reset Type="NPC" Destination="21619" Count="2" Max="18" Vnum="21610">
       <!--Spawn a draconian guard to Western Entrance to the Temple-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21627">
-      <!--Spawn a long, black polearm to a draconian guard-->
+      <!--Spawn a long, black polearm to a knight of Myth Drannor-->
     </Reset>
     <Reset Type="NPC" Destination="21622" Count="1" Max="15" Vnum="21616">
       <!--Spawn The minotaur mercenary to Outer corridor the the Temple-->
@@ -20829,10 +20829,10 @@ not alone and are being watched.</Description>
       <!--Spawn Berem to Entrance to the Dungeon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21601">
-      <!--Spawn the Green Gemstone to Berem-->
+      <!--Spawn the Green Gemstone to a spirit of Myth Drannor-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="21625">
-      <!--Spawn a green gemstone shard to Berem-->
+      <!--Spawn a green gemstone shard to a man-eater trap-->
     </Reset>
     <Reset Type="NPC" Destination="21676" Count="1" Max="20" Vnum="21643">
       <!--Spawn an Aurak soldier to Meeting Hall Antechamber-->
@@ -20844,10 +20844,10 @@ not alone and are being watched.</Description>
       <!--Spawn Bulmammon to Meeting Hall Antechamber-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21698">
-      <!--Spawn the claw of unseen death to Bulmammon-->
+      <!--Spawn the claw of unseen death to a shadow demon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21655">
-      <!--Spawn the ear of an elf to Bulmammon-->
+      <!--Spawn the ear of an elf to a spirit of Myth Drannor-->
     </Reset>
     <Reset Type="Item" Destination="21681" Count="0" Max="1" Vnum="21695">
       <!--Spawn a scroll of necromancy to A necromancer's learning room-->
@@ -20910,52 +20910,52 @@ not alone and are being watched.</Description>
       <!--Spawn a draconian black soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21680">
-      <!--Spawn some black dragonscale boots to a draconian black soldier-->
+      <!--Spawn some black dragonscale boots to a lizardman-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21670">
-      <!--Spawn a pair of black dragonscale gauntlets to a draconian black soldier-->
+      <!--Spawn a pair of black dragonscale gauntlets to a lizardman-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21626">
-      <!--Spawn a long, black spear to a draconian black soldier-->
+      <!--Spawn a long, black spear to a lizardman-->
     </Reset>
     <Reset Type="NPC" Destination="21693" Count="2" Max="10" Vnum="21608">
       <!--Spawn a draconian green soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21667">
-      <!--Spawn a green dragonscale helm to a draconian green soldier-->
+      <!--Spawn a green dragonscale helm to a man-eater trap-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21682">
-      <!--Spawn a pair of green dragonscale boots to a draconian green soldier-->
+      <!--Spawn a pair of green dragonscale boots to a lizardman-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="21638">
-      <!--Spawn a box of rations to a draconian green soldier-->
+      <!--Spawn a box of rations to a lizardman-->
     </Reset>
     <Reset Type="NPC" Destination="21696" Count="2" Max="10" Vnum="21607">
       <!--Spawn a draconian white soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21668">
-      <!--Spawn a white dragonscale helmet to a draconian white soldier-->
+      <!--Spawn a white dragonscale helmet to a lizardman-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21678">
-      <!--Spawn a pair of white dragonscale sleeves to a draconian white soldier-->
+      <!--Spawn a pair of white dragonscale sleeves to a lizardman-->
     </Reset>
     <Reset Type="NPC" Destination="21698" Count="2" Max="10" Vnum="21607">
       <!--Spawn a draconian white soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21673">
-      <!--Spawn a pair of white dragonscale gauntlets to a draconian white soldier-->
+      <!--Spawn a pair of white dragonscale gauntlets to a horned cacodaemon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21623">
-      <!--Spawn a white steel broadsword to a draconian white soldier-->
+      <!--Spawn a white steel broadsword to a horned cacodaemon-->
     </Reset>
     <Reset Type="NPC" Destination="21703" Count="2" Max="10" Vnum="21605">
       <!--Spawn a draconian red soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21666">
-      <!--Spawn a helm of red dragonscale to a draconian red soldier-->
+      <!--Spawn a helm of red dragonscale to a shadow demon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21626">
-      <!--Spawn a long, black spear to a draconian red soldier-->
+      <!--Spawn a long, black spear to a shadow demon-->
     </Reset>
     <Reset Type="NPC" Destination="21703" Count="2" Max="10" Vnum="21606">
       <!--Spawn a draconian black soldier to Hall of the Dragon Highlords-->
@@ -20973,7 +20973,7 @@ not alone and are being watched.</Description>
       <!--Spawn a white dragonscale armor to a draconian white soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21683">
-      <!--Spawn a pair of white dragonscale boots to a draconian white soldier-->
+      <!--Spawn a pair of white dragonscale boots to a shadow demon-->
     </Reset>
     <Reset Type="NPC" Destination="21706" Count="2" Max="10" Vnum="21606">
       <!--Spawn a draconian black soldier to Hall of the Dragon Highlords-->
@@ -20982,7 +20982,7 @@ not alone and are being watched.</Description>
       <!--Spawn a pair of black dragonscale gauntlets to a draconian black soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21627">
-      <!--Spawn a long, black polearm to a draconian black soldier-->
+      <!--Spawn a long, black polearm to a rock ogre-->
     </Reset>
     <Reset Type="NPC" Destination="21706" Count="2" Max="10" Vnum="21608">
       <!--Spawn a draconian green soldier to Hall of the Dragon Highlords-->
@@ -20991,7 +20991,7 @@ not alone and are being watched.</Description>
       <!--Spawn a pair of green dragonscale sleeves to a draconian green soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21627">
-      <!--Spawn a long, black polearm to a draconian green soldier-->
+      <!--Spawn a long, black polearm to a spirit of Myth Drannor-->
     </Reset>
     <Reset Type="NPC" Destination="21707" Count="2" Max="10" Vnum="21606">
       <!--Spawn a draconian black soldier to Hall of the Dragon Highlords-->
@@ -21006,25 +21006,25 @@ not alone and are being watched.</Description>
       <!--Spawn Ariakas to In front of Lord Ariakas' Throne-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21600">
-      <!--Spawn the Crown to Ariakas-->
+      <!--Spawn the Crown to a horned cacodaemon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21684">
-      <!--Spawn a suit of chromatic dragonscale armor to Ariakas-->
+      <!--Spawn a suit of chromatic dragonscale armor to a rock imp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21688">
-      <!--Spawn a pair of chromatic dragonscale boots to Ariakas-->
+      <!--Spawn a pair of chromatic dragonscale boots to a rock imp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21687">
-      <!--Spawn a chromatic dragonscale armguards to Ariakas-->
+      <!--Spawn a chromatic dragonscale armguards to a rock imp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21608">
-      <!--Spawn a blade engraved with the Insignia of the Dark Queen to Ariakas-->
+      <!--Spawn a blade engraved with the Insignia of the Dark Queen to a rock imp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21686">
-      <!--Spawn a pair of chromatic dragonscale gauntlets to Ariakas-->
+      <!--Spawn a pair of chromatic dragonscale gauntlets to a spirit of Myth Drannor-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="21685">
-      <!--Spawn a chromatic dragonscale helmet to Ariakas-->
+      <!--Spawn a chromatic dragonscale helmet to a spirit of Myth Drannor-->
     </Reset>
     <Reset Type="Item" Destination="21709" Count="0" Max="1" Vnum="21707">
       <!--Spawn the Red Throne to In front of Lord Ariakas' Throne-->
@@ -21036,22 +21036,22 @@ not alone and are being watched.</Description>
       <!--Spawn a blue dragonscale armor to Kitiara-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21664">
-      <!--Spawn a blue dragonscale helmet to Kitiara-->
+      <!--Spawn a blue dragonscale helmet to an ancient green dragon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21679">
-      <!--Spawn a pair of blue dragonscale boots to Kitiara-->
+      <!--Spawn a pair of blue dragonscale boots to an ancient green dragon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21669">
-      <!--Spawn a pair of blue dragonscale gauntlets to Kitiara-->
+      <!--Spawn a pair of blue dragonscale gauntlets to an ancient green dragon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21674">
-      <!--Spawn a pair of blue dragonscale armguards to Kitiara-->
+      <!--Spawn a pair of blue dragonscale armguards to a paladin knight of Myth Drannor-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21694">
-      <!--Spawn a shield forged with evil intent to Kitiara-->
+      <!--Spawn a shield forged with evil intent to a paladin knight of Myth Drannor-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21697">
-      <!--Spawn a sparkling blue steel scimitar to Kitiara-->
+      <!--Spawn a sparkling blue steel scimitar to a paladin knight of Myth Drannor-->
     </Reset>
     <Reset Type="Item" Destination="21711" Count="0" Max="1" Vnum="21708">
       <!--Spawn the Blue Throne to Kitiara's Seat-->
@@ -21063,16 +21063,16 @@ not alone and are being watched.</Description>
       <!--Spawn a blue dragonscale armor to a draconian blue soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21664">
-      <!--Spawn a blue dragonscale helmet to a draconian blue soldier-->
+      <!--Spawn a blue dragonscale helmet to the spectre of the elven First king-->
     </Reset>
     <Reset Type="NPC" Destination="21711" Count="3" Max="20" Vnum="21646">
       <!--Spawn an undead skeleton to Kitiara's Seat-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21628">
-      <!--Spawn a hammered iron plate mail to an undead skeleton-->
+      <!--Spawn a hammered iron plate mail to tyranthraxus-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21631">
-      <!--Spawn a hammered iron sword to an undead skeleton-->
+      <!--Spawn a hammered iron sword to tyranthraxus-->
     </Reset>
     <Reset Type="NPC" Destination="21712" Count="2" Max="10" Vnum="21604">
       <!--Spawn a draconian blue soldier to Hall of the Dragon Highlords-->
@@ -21093,10 +21093,10 @@ not alone and are being watched.</Description>
       <!--Spawn a draconian green soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21672">
-      <!--Spawn a pair of green dragonscale gauntlets to a draconian green soldier-->
+      <!--Spawn a pair of green dragonscale gauntlets to a rock imp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21677">
-      <!--Spawn a pair of green dragonscale sleeves to a draconian green soldier-->
+      <!--Spawn a pair of green dragonscale sleeves to a rock imp-->
     </Reset>
     <Reset Type="Item" Destination="21714" Count="0" Max="1" Vnum="21705">
       <!--Spawn the White Throne to In front of the White Highlord's throne-->
@@ -21108,19 +21108,19 @@ not alone and are being watched.</Description>
       <!--Spawn a white dragonscale armor to a draconian white soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21683">
-      <!--Spawn a pair of white dragonscale boots to a draconian white soldier-->
+      <!--Spawn a pair of white dragonscale boots to a mud dweller-->
     </Reset>
     <Reset Type="NPC" Destination="21715" Count="2" Max="10" Vnum="21604">
       <!--Spawn a draconian blue soldier to Hall of the Dragon Highlords-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21664">
-      <!--Spawn a blue dragonscale helmet to a draconian blue soldier-->
+      <!--Spawn a blue dragonscale helmet to a hissing frog-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21674">
-      <!--Spawn a pair of blue dragonscale armguards to a draconian blue soldier-->
+      <!--Spawn a pair of blue dragonscale armguards to a mud dweller-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21627">
-      <!--Spawn a long, black polearm to a draconian blue soldier-->
+      <!--Spawn a long, black polearm to a mud dweller-->
     </Reset>
     <Reset Type="NPC" Destination="21715" Count="2" Max="10" Vnum="21605">
       <!--Spawn a draconian red soldier to Hall of the Dragon Highlords-->
@@ -21141,13 +21141,13 @@ not alone and are being watched.</Description>
       <!--Spawn a blue dragonscale helmet to a draconian blue soldier-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21674">
-      <!--Spawn a pair of blue dragonscale armguards to a draconian blue soldier-->
+      <!--Spawn a pair of blue dragonscale armguards to a hissing frog-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21627">
-      <!--Spawn a long, black polearm to a draconian blue soldier-->
+      <!--Spawn a long, black polearm to a mud dweller-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="21638">
-      <!--Spawn a box of rations to a draconian blue soldier-->
+      <!--Spawn a box of rations to a mud dweller-->
     </Reset>
     <Reset Type="NPC" Destination="21716" Count="2" Max="10" Vnum="21606">
       <!--Spawn a draconian black soldier to Hall of the Dragon Highlords-->
@@ -21984,16 +21984,16 @@ not alone and are being watched.</Description>
       <!--Spawn A fat hobgoblin cook to Mess kitchen-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21646">
-      <!--Spawn a bloody apron to A fat hobgoblin cook-->
+      <!--Spawn a bloody apron to a Tar Valon guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21648">
-      <!--Spawn a bloody cleaver to A fat hobgoblin cook-->
+      <!--Spawn a bloody cleaver to a Tar Valon guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21647">
-      <!--Spawn a large stirring spoon to A fat hobgoblin cook-->
+      <!--Spawn a large stirring spoon to a Tar Valon guard-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="21640">
-      <!--Spawn a piece of soggy meat to A fat hobgoblin cook-->
+      <!--Spawn a piece of soggy meat to a Tar Valon guard-->
     </Reset>
     <Reset Type="Item" Destination="21958" Count="0" Max="1" Vnum="21635">
       <!--Spawn a small cot to Inside a tent-->
@@ -22002,7 +22002,7 @@ not alone and are being watched.</Description>
       <!--Spawn The minotaur mercenary to Inside a tent-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21631">
-      <!--Spawn a hammered iron sword to The minotaur mercenary-->
+      <!--Spawn a hammered iron sword to a Tar Valon guard-->
     </Reset>
     <Reset Type="Item" Destination="21959" Count="0" Max="1" Vnum="21635">
       <!--Spawn a small cot to Inside a tent-->
@@ -22017,10 +22017,10 @@ not alone and are being watched.</Description>
       <!--Spawn a necromancer to A necromancer's room-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21657">
-      <!--Spawn a wand made from a bone and a skull to a necromancer-->
+      <!--Spawn a wand made from a bone and a skull to a Tar Valon guard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21719">
-      <!--Spawn the black robes of a necromancer to a necromancer-->
+      <!--Spawn the black robes of a necromancer to a Tar Valon guard-->
     </Reset>
     <Reset Type="Item" Destination="21962" Count="0" Max="1" Vnum="21654">
       <!--Spawn a hard wooden bed to A cleric's room-->
@@ -22041,7 +22041,7 @@ not alone and are being watched.</Description>
       <!--Spawn the undead spectre to The Forge-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="21711">
-      <!--Spawn a forge-axe to the undead spectre-->
+      <!--Spawn a forge-axe to a citizen-->
     </Reset>
   </Resets>
 </Area>

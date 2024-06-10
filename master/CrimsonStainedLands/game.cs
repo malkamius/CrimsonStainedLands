@@ -2110,16 +2110,17 @@ namespace CrimsonStainedLands
     public enum Alignment
     {
         Good = 1,
-        None = 2,
+        Neutral = 2,
         Evil = 3,
+        None = 2,
         Unknown = 2,
-        Neutral = 2
+        
     }
 
     public enum Ethos
     {
-        Orderly = 1,
         Lawful = 1,
+        Orderly = 1,
         Neutral = 2,
         Chaotic = 3,
         Unknown = Neutral,

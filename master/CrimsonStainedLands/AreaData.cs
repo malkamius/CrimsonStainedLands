@@ -569,6 +569,10 @@ namespace CrimsonStainedLands
             }
         }
 
+        /// <summary>
+        /// JSON doesn't support strings with new lines unescaped, big reason not to continue working on this...
+        /// Can't very easily use a text editor to change room descriptions etc
+        /// </summary>
         public void SaveToJson()
         {
             var jsonpath = Settings.AreasPath + "_json";
@@ -591,7 +595,7 @@ namespace CrimsonStainedLands
             {
                 if (!area.saved || arguments.StringCmp("world"))
                 {
-                    area.SaveToJson();
+                    area.Save();
                     areaCount++;
                 }
             }

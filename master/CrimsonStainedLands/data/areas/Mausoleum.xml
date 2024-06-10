@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{25 51} Khargqwzxdds Mausoleum</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1693,6 +1694,7 @@ to make its kill.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1750,6 +1752,7 @@ sockets.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared DarkVision DetectIllusion PassDoor</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -1803,6 +1806,7 @@ sockets.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared PassDoor DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1860,6 +1864,7 @@ perhaps you will be her dinner?</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared Sneak PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1915,6 +1920,7 @@ when he sees it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared PassDoor DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1970,6 +1976,7 @@ walked into the room.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Flying DetectIllusion PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2023,6 +2030,7 @@ walked into the room.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible DetectInvis DetectHidden Sanctuary Infrared Sneak Hide DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -2077,6 +2085,7 @@ You don't like it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectHidden Infrared Sneak Flying Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2131,6 +2140,7 @@ mess with it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared PassDoor DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2184,6 +2194,7 @@ mess with it.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared DarkVision DetectIllusion Flying PassDoor</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2238,6 +2249,7 @@ disturbed by your intrusion during his meditation.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden PassDoor DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2292,6 +2304,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Invisible DetectInvis DetectHidden Sanctuary Hide Flying PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2333,6 +2346,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2356,9 +2370,15 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <ExtraFlags>Magic NoDrop Bless Flaming Frost Vorpal TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2369,6 +2389,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2392,11 +2413,21 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <ExtraFlags>Dark Evil Magic Bless AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2407,6 +2438,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>Onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>12</ArmorBash>
       <ArmorSlash>12</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -2439,6 +2471,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2462,12 +2495,24 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <ExtraFlags>Glow Hum Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2478,6 +2523,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -2501,12 +2547,24 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <ExtraFlags>Glow Hum Dark Evil Bless AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2517,6 +2575,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -2540,11 +2599,21 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <ExtraFlags>Glow Hum Dark Evil Bless AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2555,6 +2624,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>12</ArmorBash>
       <ArmorSlash>16</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -2585,11 +2655,21 @@ Only a great warrior may wear them with little fear of death.</Description>
       <ExtraFlags>Glow Hum Dark Evil Magic Bless AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2600,6 +2680,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2623,11 +2704,21 @@ Only a great warrior may wear them with little fear of death.</Description>
       <ExtraFlags>Glow Hum NoDrop AntiGood NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2638,6 +2729,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>12</ArmorPierce>
@@ -2661,8 +2753,12 @@ Only a great warrior may wear them with little fear of death.</Description>
       <ExtraFlags>Glow Hum Dark Evil Magic Bless AntiGood NoRemove Vorpal TwoHands Shocking Poison</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2673,6 +2769,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2710,6 +2807,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2745,6 +2843,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>wood</Material>
       <Charges>5</Charges>
       <MaxCharges>5</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2768,11 +2867,21 @@ Only a great warrior may wear them with little fear of death.</Description>
       <ExtraFlags>Dark Evil Magic NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="250" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-250" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="250" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-250" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2783,6 +2892,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>13</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>13</ArmorPierce>
@@ -2818,6 +2928,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2838,14 +2949,24 @@ Only a great warrior may wear them with little fear of death.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags>Take Finger</WearFlags>
-      <ExtraFlags>Glow Hum Dark Evil Invisibility Magic NoDrop Bless NoRemove</ExtraFlags>
+      <ExtraFlags>Glow Hum Dark Evil Invis Magic NoDrop Bless NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Sex" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2856,6 +2977,7 @@ Only a great warrior may wear them with little fear of death.</Description>
       <Material>copper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2894,6 +3016,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2917,9 +3040,15 @@ one not worthy of the true powers you behold'...</Description>
       <ExtraFlags>Glow Hum Dark AntiGood NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="9" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="9" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2930,6 +3059,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2953,11 +3083,21 @@ one not worthy of the true powers you behold'...</Description>
       <ExtraFlags>NoDrop NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2968,6 +3108,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3000,6 +3141,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3037,6 +3179,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3069,6 +3212,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3092,9 +3236,15 @@ one not worthy of the true powers you behold'...</Description>
       <ExtraFlags>Glow Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3105,6 +3255,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -3128,8 +3279,12 @@ one not worthy of the true powers you behold'...</Description>
       <ExtraFlags>Glow Hum NoDrop NoRemove Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3140,6 +3295,7 @@ one not worthy of the true powers you behold'...</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3169,10 +3325,18 @@ the portal to the spirit realms...</Description>
       <ExtraFlags>Glow Hum NoDrop NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-200" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-200" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3183,6 +3347,7 @@ the portal to the spirit realms...</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3212,10 +3377,18 @@ the portal to the spirit realms...</Description>
       <ExtraFlags>Glow Hum Dark Evil Magic NoDrop Bless NoRemove Vorpal TwoHands Shocking Poison</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3226,6 +3399,7 @@ the portal to the spirit realms...</Description>
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3258,6 +3432,7 @@ the portal to the spirit realms...</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3281,8 +3456,12 @@ the portal to the spirit realms...</Description>
       <ExtraFlags>Dark Evil NoDrop</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3293,6 +3472,7 @@ the portal to the spirit realms...</Description>
       <Material>Energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3330,6 +3510,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3368,6 +3549,7 @@ the portal to the spirit realms...</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3388,15 +3570,27 @@ the portal to the spirit realms...</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>0.3</Weight>
       <WearFlags>Take About</WearFlags>
-      <ExtraFlags>Glow Hum Dark Evil Invisibility</ExtraFlags>
+      <ExtraFlags>Glow Hum Dark Evil Invis</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects>
-        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Summon" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Summon" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3407,6 +3601,7 @@ the portal to the spirit realms...</Description>
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3444,6 +3639,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3481,6 +3677,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3518,6 +3715,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3555,6 +3753,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3592,6 +3791,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3628,6 +3828,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3664,6 +3865,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3700,6 +3902,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3736,6 +3939,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3774,6 +3978,7 @@ the portal to the spirit realms...</Description>
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3811,6 +4016,7 @@ the portal to the spirit realms...</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3848,6 +4054,7 @@ the portal to the spirit realms...</Description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3871,11 +4078,21 @@ the portal to the spirit realms...</Description>
       <ExtraFlags>Glow Hum Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3886,6 +4103,7 @@ the portal to the spirit realms...</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>16</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>13</ArmorPierce>
@@ -3894,925 +4112,350 @@ the portal to the spirit realms...</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="4600" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Outside of the mausoleum-->
-      <Type>Item</Type>
-      <Destination>4600</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4600" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to Outside of the mausoleum-->
-      <Type>NPC</Type>
-      <Destination>4600</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
+      <!--Spawn a small black skeleton key to A killer clown-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4601" Count="6" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A grisly scene, NW corner of Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4601</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4603" Count="6" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A grisly scene, NE corner of Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4603</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4604" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4604</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
       <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4605" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Northwest main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4605</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4605" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Northwest main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4605</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4606" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Northern main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4606</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4606" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Northern main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4606</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn humanoid to a disgusting, rotting Zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4603</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
+      <!--Spawn humanoid to A zombie chipmunk-->
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4607" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Northeastern main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4607</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4607" Count="0" Max="1" Vnum="4615">
       <!--Spawn a corpse of an elfin wizard to Northeastern main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4607</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4615</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4607" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Northeastern main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4607</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4608" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4608</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4608" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4608</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4608" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4608</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
+      <!--Spawn a small black skeleton key to the bartender-->
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4609" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to The Kharzandra's coffin room-->
-      <Type>Item</Type>
-      <Destination>4609</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4625</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4610" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to The workroom of Kharzandra.-->
-      <Type>Item</Type>
-      <Destination>4610</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4610" Count="0" Max="1" Vnum="4610">
       <!--Spawn a potion of healing to The workroom of Kharzandra.-->
-      <Type>Item</Type>
-      <Destination>4610</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4610" Count="1" Max="1" Vnum="4603">
       <!--Spawn Kharzandra, the Dark-elf Vampire to The workroom of Kharzandra.-->
-      <Type>NPC</Type>
-      <Destination>4610</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4622">
       <!--Spawn the Shadow Dagger to Kharzandra, the Dark-elf Vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4622</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4623">
       <!--Spawn the Shadow Dagger to Kharzandra, the Dark-elf Vampire-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4623</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a potion of divine protection to Kharzandra, the Dark-elf Vampire-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4628</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4628">
+      <!--Spawn a potion of divine protection to some purple clouds-->
     </Reset>
-    <Reset>
-      <!--Spawn the cloak of wizardry to Kharzandra, the Dark-elf Vampire-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4629</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4629">
+      <!--Spawn the cloak of wizardry to some purple clouds-->
     </Reset>
-    <Reset>
-      <!--Spawn the Libram of Gainful Conjuration to Kharzandra, the Dark-elf Vampire-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4627</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4627">
+      <!--Spawn the Libram of Gainful Conjuration to some purple clouds-->
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4613">
       <!--Spawn an ancient yellow parchment to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4613</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4630">
       <!--Spawn a scroll of ultimate overkill to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4630</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4631">
       <!--Spawn a scroll of truimph to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4631</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4632">
       <!--Spawn a scroll of feasting to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4632</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4633">
       <!--Spawn a scroll of room-redecoration to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4633</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4634">
       <!--Spawn a scroll of protection to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4634</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4635">
       <!--Spawn a scroll of invulnerability to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4635</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4636">
       <!--Spawn a scroll of the Wolverine to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4636</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4637">
       <!--Spawn a scroll of lifebane to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4637</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4638">
       <!--Spawn a scroll of destruction to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4638</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4639">
       <!--Spawn a scroll of chaos to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4639</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4611" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Western main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4611</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4612" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Central main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4612</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4612" Count="0" Max="1" Vnum="4618">
       <!--Spawn a half-eaten corpse to Central main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4612</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4618</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4612" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4612</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4612" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4612</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
       <!--Spawn humanoid to a disgusting, rotting Zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4614" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to The workroom of Shadar Lunn-->
-      <Type>Item</Type>
-      <Destination>4614</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4614" Count="1" Max="1" Vnum="4604">
       <!--Spawn the Vampire, Shadar Lunn to The workroom of Shadar Lunn-->
-      <Type>NPC</Type>
-      <Destination>4614</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4604</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a pair of darkened boots to the Vampire, Shadar Lunn-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4604</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4604">
+      <!--Spawn a pair of darkened boots to A small vortex-->
     </Reset>
-    <Reset>
-      <!--Spawn a darkened helmet to the Vampire, Shadar Lunn-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4605</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4605">
+      <!--Spawn a darkened helmet to A small vortex-->
     </Reset>
-    <Reset>
-      <!--Spawn a pair of darkened leggings to the Vampire, Shadar Lunn-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4606</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4606">
+      <!--Spawn a pair of darkened leggings to a stripper-->
     </Reset>
-    <Reset>
-      <!--Spawn the Arkham signet ring to the Vampire, Shadar Lunn-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4607</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4607">
+      <!--Spawn the Arkham signet ring to a stripper-->
     </Reset>
-    <Reset>
-      <!--Spawn a guardian sword to the Vampire, Shadar Lunn-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4609</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4609">
+      <!--Spawn a guardian sword to a stripper-->
     </Reset>
-    <Reset>
-      <!--Spawn a darkened shield to the Vampire, Shadar Lunn-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4608</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4608">
+      <!--Spawn a darkened shield to a stripper-->
     </Reset>
-    <Reset>
-      <!--Spawn a darkened platemail to the Vampire, Shadar Lunn-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4642</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4642">
+      <!--Spawn a darkened platemail to a stripper-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4615" Count="1" Max="1" Vnum="4611">
       <!--Spawn the dark priest vampire to The dark priest's coffin room.-->
-      <Type>NPC</Type>
-      <Destination>4615</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4611</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4626">
       <!--Spawn the flaming sceptre of Chaos to the dark priest vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4626</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn an unholy symbol of Lloth to the dark priest vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4602</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4602">
+      <!--Spawn an unholy symbol of Lloth to A half naked woman-->
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4615" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to The dark priest's coffin room.-->
-      <Type>Item</Type>
-      <Destination>4615</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4625</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4611">
       <!--Spawn a staff of wrath to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4611</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4616" Count="2" Max="2" Vnum="4602">
       <!--Spawn a young vampire to The dark priest's workroom.-->
-      <Type>NPC</Type>
-      <Destination>4616</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>4602</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4601">
       <!--Spawn a Frostbrand sword to a young vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a rat-eaten poncho to a young vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4617</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4617">
+      <!--Spawn a rat-eaten poncho to A half naked woman-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4617" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Western check point.-->
-      <Type>NPC</Type>
-      <Destination>4617</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4617" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to Western check point.-->
-      <Type>NPC</Type>
-      <Destination>4617</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
+      <!--Spawn a small black skeleton key to a dealer-->
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4618" Count="0" Max="1" Vnum="4615">
       <!--Spawn a corpse of an elfin wizard to Central main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4618</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4615</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4618" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4618</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
       <!--Spawn humanoid to a disgusting, rotting Zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4619" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Eastern check point.-->
-      <Type>NPC</Type>
-      <Destination>4619</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4619" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Eastern check point.-->
-      <Type>NPC</Type>
-      <Destination>4619</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4619" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to Eastern check point.-->
-      <Type>NPC</Type>
-      <Destination>4619</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
       <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4620" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to A vacant workroom.-->
-      <Type>NPC</Type>
-      <Destination>4620</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4620" Count="1" Max="1" Vnum="4612">
       <!--Spawn the dark spectre to A vacant workroom.-->
-      <Type>NPC</Type>
-      <Destination>4620</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4612</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4619">
       <!--Spawn an emerald potion to the dark spectre-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4619</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4619">
       <!--Spawn an emerald potion to the dark spectre-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4619</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4622" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Western main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4622</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4622" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to Western main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4622</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4623" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4623</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4623" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4623</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
       <!--Spawn humanoid to a disgusting, rotting Zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4623" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4623</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4624" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Eastern main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4624</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4624" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to Eastern main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4624</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4625" Count="0" Max="1" Vnum="4618">
       <!--Spawn a half-eaten corpse to Roaming ground for the Demon.-->
-      <Type>Item</Type>
-      <Destination>4625</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4618</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4625" Count="2" Max="2" Vnum="4602">
       <!--Spawn a young vampire to Roaming ground for the Demon.-->
-      <Type>NPC</Type>
-      <Destination>4625</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>4602</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4601">
       <!--Spawn a Frostbrand sword to a young vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a rat-eaten poncho to a young vampire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4617</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4617">
+      <!--Spawn a rat-eaten poncho to a patron-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4625" Count="1" Max="1" Vnum="4609">
       <!--Spawn the demon familiar to Roaming ground for the Demon.-->
-      <Type>NPC</Type>
-      <Destination>4625</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>4609</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the flail of Pestilance to the demon familiar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4616</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4616">
+      <!--Spawn the flail of Pestilance to A female dancer-->
     </Reset>
-    <Reset>
-      <!--Spawn an ulrician belt to the demon familiar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4621</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4621">
+      <!--Spawn an ulrician belt to A male dancer-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4626" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4626</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4626" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4626</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
       <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4627" Count="0" Max="1" Vnum="4620">
       <!--Spawn a peaceful corpse to Southwest main area of the Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4627</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4620</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4627" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Southwest main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4627</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4628" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4628</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn humanoid to a disgusting, rotting Zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4603</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
+      <!--Spawn humanoid to an irritated kid-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4629" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Southeast main area of the Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4629</Destination>
-      <Count>9</Count>
-      <Max>35</Max>
-      <Vnum>4600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4630" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4630</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4630" Count="10" Max="40" Vnum="4601">
       <!--Spawn the Juju zombie to A small room.-->
-      <Type>NPC</Type>
-      <Destination>4630</Destination>
-      <Count>10</Count>
-      <Max>40</Max>
-      <Vnum>4601</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a small black skeleton key to the Juju zombie-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4600</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
+      <!--Spawn a small black skeleton key to A stone gargoyle-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4631" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A grisly scene, SW corner of Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4631</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4632" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to A hole in the southern wall.-->
-      <Type>Item</Type>
-      <Destination>4632</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4633" Count="0" Max="1" Vnum="4619">
       <!--Spawn an emerald potion to A grisly scene, SE corner of Mausoleum.-->
-      <Type>Item</Type>
-      <Destination>4633</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4619</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="4633" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A grisly scene, SE corner of Mausoleum.-->
-      <Type>NPC</Type>
-      <Destination>4633</Destination>
-      <Count>4</Count>
-      <Max>12</Max>
-      <Vnum>4605</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4634" Count="0" Max="1" Vnum="4610">
       <!--Spawn a potion of healing to Shadar Lunn's coffin room-->
-      <Type>Item</Type>
-      <Destination>4634</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4610</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4634" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to Shadar Lunn's coffin room-->
-      <Type>Item</Type>
-      <Destination>4634</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4625</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4640">
       <!--Spawn a potion of healing to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4640</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4635" Count="0" Max="1" Vnum="4618">
       <!--Spawn a half-eaten corpse to Lost in the graveyard fog.-->
-      <Type>Item</Type>
-      <Destination>4635</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4618</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4636" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to A Rakshaka's lair.-->
-      <Type>Item</Type>
-      <Destination>4636</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4625</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="4637" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to A burnt room.-->
-      <Type>Item</Type>
-      <Destination>4637</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>4625</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4640">
       <!--Spawn a potion of healing to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4640</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4611">
       <!--Spawn a staff of wrath to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4611</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4641">
       <!--Spawn a potion of life to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>4641</Vnum>
     </Reset>
   </Resets>
 </Area>

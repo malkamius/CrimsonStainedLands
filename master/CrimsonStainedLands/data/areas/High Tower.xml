@@ -10360,7 +10360,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
@@ -10397,7 +10397,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Glow Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Glow Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -10546,7 +10546,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="3" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="3" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10613,7 +10613,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -10646,7 +10646,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -11203,7 +11203,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Glow Magic Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Glow Magic Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -12147,7 +12147,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <DiceBonus>1</DiceBonus>
       <Weight>4</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Invisibility Magic</ExtraFlags>
+      <ExtraFlags>Invis Magic</ExtraFlags>
       <ItemTypes>Instrument</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-6" hidden="False" affectType="Spell">
@@ -13862,10 +13862,10 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <!--Spawn the master's apprentice to The antechamber-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1382">
-      <!--Spawn a grey robe to the master's apprentice-->
+      <!--Spawn a grey robe to The dervish-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1384">
-      <!--Spawn a glinting silver bracelet to the master's apprentice-->
+      <!--Spawn a glinting silver bracelet to The dervish-->
     </Reset>
     <Reset Type="NPC" Destination="1454" Count="1" Max="1" Vnum="1355">
       <!--Spawn a grey cat to The main chamber-->
@@ -13880,7 +13880,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <!--Spawn an iron shod staff to the master of Neutrality-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1386">
-      <!--Spawn a ward minor to the master of Neutrality-->
+      <!--Spawn a ward minor to The coral snake-->
     </Reset>
     <Reset Type="NPC" Destination="1461" Count="1" Max="1" Vnum="1357">
       <!--Spawn a black robed apprentice to The chamber of darkness-->
@@ -13889,7 +13889,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <!--Spawn a black robe to a black robed apprentice-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1388">
-      <!--Spawn an onyx bracelet to a black robed apprentice-->
+      <!--Spawn an onyx bracelet to The slave-->
     </Reset>
     <Reset Type="NPC" Destination="1464" Count="1" Max="1" Vnum="1358">
       <!--Spawn a black cat to The inner chamber-->
@@ -13904,7 +13904,7 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <!--Spawn a sharp shard of obsidian to the master of the black robes-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1386">
-      <!--Spawn a ward minor to the master of the black robes-->
+      <!--Spawn a ward minor to The nomad commander-->
     </Reset>
     <Reset Type="NPC" Destination="1467" Count="1" Max="1" Vnum="1360">
       <!--Spawn a white robed apprentice to An antechamber-->
@@ -13946,16 +13946,16 @@ The Grand Master pets her familiar and smiles at you in confidence.</description
       <!--Spawn a small emerald ring to The Grand Mistress-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1398">
-      <!--Spawn an emerald bracelet to The Grand Mistress-->
+      <!--Spawn an emerald bracelet to the brass dragon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1399">
-      <!--Spawn a ward major to The Grand Mistress-->
+      <!--Spawn a ward major to the brass dragon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="1400">
-      <!--Spawn the ebony kris to The Grand Mistress-->
+      <!--Spawn the ebony kris to the brass dragon-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1339">
-      <!--Spawn an intricately carved key to The Grand Mistress-->
+      <!--Spawn an intricately carved key to the brass dragon-->
     </Reset>
     <Reset Type="Item" Destination="1480" Count="0" Max="1" Vnum="1336">
       <!--Spawn a golden altar to The altar-->

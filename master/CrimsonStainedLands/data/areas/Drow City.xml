@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{15 25} Drkside Drow City</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1926,6 +1927,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1979,6 +1981,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2032,6 +2035,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -2085,6 +2089,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2138,6 +2143,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2191,6 +2197,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2244,6 +2251,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2297,6 +2305,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2350,6 +2359,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2403,6 +2413,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -2456,6 +2467,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2509,6 +2521,7 @@ to get this kind of treatment.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2541,8 +2554,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2553,6 +2570,7 @@ to get this kind of treatment.</Description>
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2576,8 +2594,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2588,6 +2610,7 @@ to get this kind of treatment.</Description>
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2611,8 +2634,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2623,6 +2650,7 @@ to get this kind of treatment.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2646,8 +2674,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2658,6 +2690,7 @@ to get this kind of treatment.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2681,8 +2714,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2693,6 +2730,7 @@ to get this kind of treatment.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2716,8 +2754,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2728,6 +2770,7 @@ to get this kind of treatment.</Description>
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2751,8 +2794,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow Magic AntiGood</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2763,6 +2810,7 @@ to get this kind of treatment.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2786,8 +2834,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow Magic AntiGood</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2798,6 +2850,7 @@ to get this kind of treatment.</Description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2830,6 +2883,7 @@ to get this kind of treatment.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -2853,7 +2907,9 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2864,6 +2920,7 @@ to get this kind of treatment.</Description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -2899,6 +2956,7 @@ to get this kind of treatment.</Description>
       <Material>silver</Material>
       <Charges>3</Charges>
       <MaxCharges>3</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2922,7 +2980,9 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2933,6 +2993,7 @@ to get this kind of treatment.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -2956,7 +3017,9 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2967,6 +3030,7 @@ to get this kind of treatment.</Description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2990,8 +3054,12 @@ to get this kind of treatment.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3002,6 +3070,7 @@ to get this kind of treatment.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3025,7 +3094,9 @@ to get this kind of treatment.</Description>
       <ExtraFlags>NoDrop</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3036,6 +3107,7 @@ to get this kind of treatment.</Description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -3044,461 +3116,176 @@ to get this kind of treatment.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="5120" Count="1" Max="3" Vnum="5105">
       <!--Spawn The drow master to Mage's Academy-->
-      <Type>NPC</Type>
-      <Destination>5120</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>5105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
       <!--Spawn a snake headed whip to The drow master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5110">
       <!--Spawn a silvery blue wand to The drow master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5122" Count="15" Max="15" Vnum="5100">
       <!--Spawn the goblin slave to Slave Chamber-->
-      <Type>NPC</Type>
-      <Destination>5122</Destination>
-      <Count>15</Count>
-      <Max>15</Max>
-      <Vnum>5100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5124" Count="1" Max="4" Vnum="5102">
       <!--Spawn the drow warrior noble to 4th house-->
-      <Type>NPC</Type>
-      <Destination>5124</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5101">
       <!--Spawn a noble's longsword to the drow warrior noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5124" Count="1" Max="4" Vnum="5103">
       <!--Spawn the drow mage noble to 4th house-->
-      <Type>NPC</Type>
-      <Destination>5124</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
       <!--Spawn a snake headed whip to the drow mage noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5124" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 4th house-->
-      <Type>NPC</Type>
-      <Destination>5124</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5103">
       <!--Spawn a snake headed whip to the drow priestess-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5125" Count="1" Max="3" Vnum="5107">
       <!--Spawn the matron mother to Throne Room-->
-      <Type>NPC</Type>
-      <Destination>5125</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>5107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
       <!--Spawn a snake headed whip to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="5114">
       <!--Spawn a small bright green hat to the matron mother-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5133" Count="5" Max="10" Vnum="5101">
       <!--Spawn the drow commoner to Warrior's Barracks-->
-      <Type>NPC</Type>
-      <Destination>5133</Destination>
-      <Count>5</Count>
-      <Max>10</Max>
-      <Vnum>5101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5100">
       <!--Spawn a commoner's longsword to the drow commoner-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5148" Count="1" Max="1" Vnum="5109">
       <!--Spawn the yochlol to Dais-->
-      <Type>NPC</Type>
-      <Destination>5148</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>5109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5113">
       <!--Spawn a spider shaped dagger to the yochlol-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5150" Count="1" Max="2" Vnum="5106">
       <!--Spawn The weapons master to Weaponsmaster's Chamber-->
-      <Type>NPC</Type>
-      <Destination>5150</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>5106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5105">
       <!--Spawn a black longsword to The weapons master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5105</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a pair of gauntlets to The weapons master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5109</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5109">
+      <!--Spawn a pair of gauntlets to the giant-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5101" Count="1" Max="2" Vnum="5106">
       <!--Spawn The weapons master to City street-->
-      <Type>NPC</Type>
-      <Destination>5101</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>5106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5105">
       <!--Spawn a black longsword to The weapons master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5104" Count="1" Max="4" Vnum="5102">
       <!--Spawn the drow warrior noble to 3rd House-->
-      <Type>NPC</Type>
-      <Destination>5104</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5101">
       <!--Spawn a noble's longsword to the drow warrior noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5104" Count="1" Max="4" Vnum="5103">
       <!--Spawn the drow mage noble to 3rd House-->
-      <Type>NPC</Type>
-      <Destination>5104</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to the drow mage noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5102</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
+      <!--Spawn a snake headed whip to the dwarven guard-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5104" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 3rd House-->
-      <Type>NPC</Type>
-      <Destination>5104</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5103">
       <!--Spawn a snake headed whip to the drow priestess-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5105" Count="1" Max="3" Vnum="5107">
       <!--Spawn the matron mother to Throne Room-->
-      <Type>NPC</Type>
-      <Destination>5105</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>5107</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5104</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
+      <!--Spawn a snake headed whip to the dwarven guard-->
     </Reset>
-    <Reset>
-      <!--Spawn a small helmet to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5111</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5111">
+      <!--Spawn a small helmet to the dwarven guard-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5108" Count="1" Max="4" Vnum="5102">
       <!--Spawn the drow warrior noble to 2nd House-->
-      <Type>NPC</Type>
-      <Destination>5108</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5101">
       <!--Spawn a noble's longsword to the drow warrior noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5108" Count="1" Max="4" Vnum="5103">
       <!--Spawn the drow mage noble to 2nd House-->
-      <Type>NPC</Type>
-      <Destination>5108</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to the drow mage noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5102</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
+      <!--Spawn a snake headed whip to the giant lizard-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5108" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 2nd House-->
-      <Type>NPC</Type>
-      <Destination>5108</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to the drow priestess-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5103</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5103">
+      <!--Spawn a snake headed whip to the storekeeper-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5109" Count="1" Max="3" Vnum="5107">
       <!--Spawn the matron mother to Throne Room-->
-      <Type>NPC</Type>
-      <Destination>5109</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>5107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
       <!--Spawn a snake headed whip to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5108">
       <!--Spawn an iron bracer to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5111" Count="1" Max="4" Vnum="5102">
       <!--Spawn the drow warrior noble to 1st House-->
-      <Type>NPC</Type>
-      <Destination>5111</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5101">
       <!--Spawn a noble's longsword to the drow warrior noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5111" Count="1" Max="4" Vnum="5103">
       <!--Spawn the drow mage noble to 1st House-->
-      <Type>NPC</Type>
-      <Destination>5111</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to the drow mage noble-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5102</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
+      <!--Spawn a snake headed whip to the barracks guard-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5111" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 1st House-->
-      <Type>NPC</Type>
-      <Destination>5111</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>5104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5103">
       <!--Spawn a snake headed whip to the drow priestess-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5113" Count="1" Max="1" Vnum="5108">
       <!--Spawn the matron mother to Main Chamber-->
-      <Type>NPC</Type>
-      <Destination>5113</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>5108</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5104</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
+      <!--Spawn a snake headed whip to the dwarven guard-->
     </Reset>
-    <Reset>
-      <!--Spawn a small ruby ring to the matron mother-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5112</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5112">
+      <!--Spawn a small ruby ring to the dwarven guard-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5116" Count="1" Max="3" Vnum="5105">
       <!--Spawn The drow master to Cleric Academy-->
-      <Type>NPC</Type>
-      <Destination>5116</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>5105</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a snake headed whip to The drow master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5104</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
+      <!--Spawn a snake headed whip to the dwarf-->
     </Reset>
-    <Reset>
-      <!--Spawn a silvery blue wand to The drow master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5110</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5110">
+      <!--Spawn a silvery blue wand to the dwarf-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5118" Count="5" Max="10" Vnum="5101">
       <!--Spawn the drow commoner to Warrior's Academy-->
-      <Type>NPC</Type>
-      <Destination>5118</Destination>
-      <Count>5</Count>
-      <Max>10</Max>
-      <Vnum>5101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5100">
       <!--Spawn a commoner's longsword to the drow commoner-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5100</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5118" Count="1" Max="3" Vnum="5105">
       <!--Spawn The drow master to Warrior's Academy-->
-      <Type>NPC</Type>
-      <Destination>5118</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>5105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5105">
       <!--Spawn a black longsword to The drow master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5105</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a silvery blue wand to The drow master-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>5110</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5110">
+      <!--Spawn a silvery blue wand to the dwarf-->
     </Reset>
   </Resets>
 </Area>

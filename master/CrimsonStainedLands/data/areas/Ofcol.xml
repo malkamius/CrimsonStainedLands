@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ All } Alfa    Ofcol</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -277,101 +278,41 @@ Mike, Sprocket and Stormbringer.</Description>
   <NPCs />
   <Items />
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="5550" Count="3" Max="5" Vnum="303">
       <!--Spawn the citizen to Village street-->
-      <Type>NPC</Type>
-      <Destination>5550</Destination>
-      <Count>3</Count>
-      <Max>5</Max>
-      <Vnum>303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5552" Count="3" Max="5" Vnum="304">
       <!--Spawn the citizen to Village square-->
-      <Type>NPC</Type>
-      <Destination>5552</Destination>
-      <Count>3</Count>
-      <Max>5</Max>
-      <Vnum>304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3020">
       <!--Spawn a dagger to the citizen-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3020</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5553" Count="3" Max="5" Vnum="304">
       <!--Spawn the citizen to The small alley-->
-      <Type>NPC</Type>
-      <Destination>5553</Destination>
-      <Count>3</Count>
-      <Max>5</Max>
-      <Vnum>304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5555" Count="1" Max="1" Vnum="306">
       <!--Spawn Luxan to Luxan's mixed shop-->
-      <Type>NPC</Type>
-      <Destination>5555</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>306</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="304">
       <!--Spawn wild flowers to Luxan-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3030">
       <!--Spawn a torch to Luxan-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3030</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5556" Count="3" Max="5" Vnum="303">
       <!--Spawn the citizen to The Local Inn-->
-      <Type>NPC</Type>
-      <Destination>5556</Destination>
-      <Count>3</Count>
-      <Max>5</Max>
-      <Vnum>303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5556" Count="1" Max="1" Vnum="308">
       <!--Spawn the Innkeeper to The Local Inn-->
-      <Type>NPC</Type>
-      <Destination>5556</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>308</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3000">
       <!--Spawn a barrel of beer to the Innkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3001">
       <!--Spawn a bottle of beer to the Innkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>3001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="5577" Count="1" Max="1" Vnum="350">
       <!--Spawn the pet dragon to Ravan's hideout-->
-      <Type>NPC</Type>
-      <Destination>5577</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>350</Vnum>
     </Reset>
   </Resets>
 </Area>

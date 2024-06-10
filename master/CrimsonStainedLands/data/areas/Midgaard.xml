@@ -2814,7 +2814,7 @@ park entrance and to the east you see a small pond.</Description>
       <Name>The Pond</Name>
       <Description>You are swimming around in the pond, feeling rather stupid.  You can get
 back on the path from the eastern and western end of the pond.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Law</Flags>
       <Exits>
         <Exit>
@@ -6355,7 +6355,7 @@ lifetime than you have ever seen.</description>
       <gold>58</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain Warrior NoPurge</flags>
+      <flags>NPC Sentinel Trainer Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6690,7 +6690,7 @@ and you notice that she is surrounded by a blue shimmering aura.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel GuildMaster Mage NoPurge</flags>
+      <flags>NPC Sentinel Practice Mage NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6745,7 +6745,7 @@ a peaceful, loving look. You notice that he is surrounded by a white aura.</desc
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel GuildMaster Cleric NoPurge</flags>
+      <flags>NPC Sentinel Practice Cleric NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6802,7 +6802,7 @@ human</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>NPC Sentinel GuildMaster Thief NoPurge</flags>
+      <flags>NPC Sentinel Practice Thief NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6858,7 +6858,7 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel GuildMaster Warrior NoPurge AreaAttack</flags>
+      <flags>NPC Sentinel Practice Warrior NoPurge AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9636,7 +9636,7 @@ The guildmaster is in perfect condition.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
+      <flags>NPC Sentinel StayArea Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9692,7 +9692,7 @@ the earth to serve him.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
+      <flags>NPC Sentinel StayArea Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9749,7 +9749,7 @@ appears to be wearing a necklace of human fingers.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
+      <flags>NPC Sentinel StayArea Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9805,7 +9805,7 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
+      <flags>NPC Sentinel StayArea Practice Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9860,7 +9860,7 @@ do a deadly strikes to your opponent.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
+      <flags>NPC Sentinel StayArea Practice Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9918,7 +9918,7 @@ do a deadly strikes to your opponent.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood Flying PassDoor DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
@@ -10070,7 +10070,7 @@ do a deadly strikes to your opponent.</description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel GuildMaster NoTrack Cleric NoPurge Gain</flags>
+      <flags>NPC Sentinel Practice NoTrack Cleric NoPurge Trainer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -10124,7 +10124,7 @@ do a deadly strikes to your opponent.</description>
       <gold>10000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain NoTrack Mage Warrior NoPurge</flags>
+      <flags>NPC Sentinel Trainer NoTrack Mage Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -13399,7 +13399,7 @@ A
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -13441,7 +13441,7 @@ A
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>

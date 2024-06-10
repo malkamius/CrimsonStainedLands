@@ -4830,7 +4830,7 @@ positioned that are from the time period. Nothing special to it.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <affectedBy>ProtectGood Flying PassDoor DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
@@ -5237,7 +5237,7 @@ intruders like you.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared ProtectGood Flying PassDoor DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
@@ -5410,7 +5410,7 @@ that radiates from its body.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Infrared ProtectionGood Flying DetectIllusion PassDoor DarkVision</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Infrared ProtectGood Flying DetectIllusion PassDoor DarkVision</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
@@ -5624,7 +5624,7 @@ is something decidedly unnatural about the beast, whatever it may be.</descripti
       <ExtraFlags>Evil Magic NoDrop AntiEvil NoRemove BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
@@ -5633,7 +5633,7 @@ is something decidedly unnatural about the beast, whatever it may be.</descripti
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
@@ -5724,7 +5724,7 @@ is blackened all over, and the Rose is now Black.</Description>
       <ExtraFlags>Evil Magic NoDrop Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
@@ -5825,7 +5825,7 @@ each finger of the right glove are tiny red runes.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="70" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -5875,7 +5875,7 @@ time has ruined it forever.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="60" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
@@ -5925,7 +5925,7 @@ fire seems as if it is absorbing all light, as if it were real.</Description>
       <ExtraFlags>Evil Magic NoDrop AntiGood AntiNeutral BurnProof Frost Sharp Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell">
@@ -5937,7 +5937,7 @@ fire seems as if it is absorbing all light, as if it were real.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -5984,7 +5984,7 @@ around it.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-1" hidden="False" affectType="Spell">
@@ -6160,7 +6160,7 @@ oak, covered with beautiful plates and candelabras.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -6358,7 +6358,7 @@ her last breath. Even now, the chandelier exudes evil and malice.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>1000</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>NoPurge BurnProof Closeable PickProof</ExtraFlags>
+      <ExtraFlags>NoPurge BurnProof Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -6506,7 +6506,7 @@ glow gives you an idea of the evil power contained within.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>2</Weight>
       <WearFlags>Take Body</WearFlags>
-      <ExtraFlags>Glow Invisibility Magic AntiEvil VisDeath BurnProof</ExtraFlags>
+      <ExtraFlags>Glow Invis Magic AntiEvil VisDeath BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="3" hidden="False" affectType="Spell">
@@ -6556,7 +6556,7 @@ absolutely beautiful, even though it flickers in and out of your sight.</Descrip
       <DiceBonus>1</DiceBonus>
       <Weight>2</Weight>
       <WearFlags>Take Head</WearFlags>
-      <ExtraFlags>Glow Invisibility Magic AntiEvil VisDeath BurnProof</ExtraFlags>
+      <ExtraFlags>Glow Invis Magic AntiEvil VisDeath BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
@@ -6663,7 +6663,7 @@ years of not being used.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -6843,7 +6843,7 @@ defiled or ruined in any way.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -6888,7 +6888,7 @@ red that seems like it was dyed with blood.</Description>
       <ExtraFlags>Evil Magic NoDrop NoRemove VisDeath BurnProof</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
@@ -6897,7 +6897,7 @@ red that seems like it was dyed with blood.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7033,10 +7033,10 @@ the weapon has. Iron is usually reddish.</Description>
       <ExtraFlags>Glow Hum Magic AntiGood AntiEvil BurnProof Vorpal TwoHands Shocking Poison</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
@@ -7082,7 +7082,7 @@ the tip of the steel cap is a worn symbol of the Healer.</Description>
       <ExtraFlags>Glow Hum Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell">
@@ -7226,10 +7226,10 @@ quite high up in the Keep. A fall from this height would be fatal to you.</Descr
       <DiceBonus>1</DiceBonus>
       <Weight>0.2</Weight>
       <WearFlags>Take Neck</WearFlags>
-      <ExtraFlags>Glow Invisibility Magic NoDrop NoRemove VisDeath BurnProof</ExtraFlags>
+      <ExtraFlags>Glow Invis Magic NoDrop NoRemove VisDeath BurnProof</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="45" hidden="False" affectType="Spell">
@@ -7238,7 +7238,7 @@ quite high up in the Keep. A fall from this height would be fatal to you.</Descr
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7562,7 +7562,7 @@ miles and miles.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
@@ -7610,10 +7610,10 @@ miles and miles.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
@@ -7912,7 +7912,7 @@ magical power flows from the cloth. It shimmers with energy.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7994,7 +7994,7 @@ were employed here.</Description>
       <ExtraFlags>Evil Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
@@ -8003,7 +8003,7 @@ were employed here.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8101,10 +8101,10 @@ the skull.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="3" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
@@ -8160,7 +8160,7 @@ makes you feel stronger and weaker at the same time.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8207,7 +8207,7 @@ colours blend together well, creating a feeling of strength.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
@@ -8255,7 +8255,7 @@ quite strange. It is not blood which stains them, but the blemishes are red.</De
       <ExtraFlags>Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="50" hidden="False" affectType="Spell">
@@ -8310,7 +8310,7 @@ quite strange. It is not blood which stains them, but the blemishes are red.</De
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
@@ -8366,7 +8366,7 @@ of protection. And it looks like it could be fun later.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8423,7 +8423,7 @@ knight.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8479,7 +8479,7 @@ and the head seems to be alive.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8525,10 +8525,10 @@ is bubbling with horrible smelling smoke.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
@@ -8580,7 +8580,7 @@ piece of glass.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
@@ -8627,7 +8627,7 @@ at you with immense hatred.</Description>
       <ExtraFlags>Glow Hum Evil Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="-50" hidden="False" affectType="Spell">
@@ -8740,7 +8740,7 @@ them commands fear and weakness from foes.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="35" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
@@ -8797,7 +8797,7 @@ go.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8849,7 +8849,7 @@ so that it might fit on your head ... It could be a little tight, though.</Descr
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8896,10 +8896,10 @@ artifact of undeath ... Requires either great courage or great stupidity.</Descr
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="35" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
@@ -8985,10 +8985,10 @@ it will testify.</Description>
       <DiceBonus>4</DiceBonus>
       <Weight>3</Weight>
       <WearFlags>Take Wield</WearFlags>
-      <ExtraFlags>Glow Evil Invisibility Magic</ExtraFlags>
+      <ExtraFlags>Glow Evil Invis Magic</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-5" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
@@ -9047,7 +9047,7 @@ serpent biting its own tail.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9103,7 +9103,7 @@ scream at the same time, with a horrible noise to all.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9150,7 +9150,7 @@ limits of imagination ... Magic from the edge of the world.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9187,7 +9187,7 @@ limits of imagination ... Magic from the edge of the world.</Description>
       <ExtraFlags>AntiGood NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
@@ -9284,10 +9284,10 @@ weapons one could use.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9336,7 +9336,7 @@ powers.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="35" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9416,7 +9416,7 @@ it, but not too many.</Description>
       <ExtraFlags>AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-15" hidden="False" affectType="Spell">
@@ -9644,10 +9644,10 @@ it, but not too many.</Description>
       <!--Spawn a tapestry depicting great war to an enormous reanimated minotaur-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16132">
-      <!--Spawn a massive obsidian mace inlaid with emeralds to an enormous reanimated minotaur-->
+      <!--Spawn a massive obsidian mace inlaid with emeralds to a troll gang member-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16164">
-      <!--Spawn a pendant of two crossed bones to an enormous reanimated minotaur-->
+      <!--Spawn a pendant of two crossed bones to a troll gang member-->
     </Reset>
     <Reset Type="Item" Destination="16134" Count="0" Max="1" Vnum="16108">
       <!--Spawn an old musty bed to An old bedroom-->
@@ -9665,7 +9665,7 @@ it, but not too many.</Description>
       <!--Spawn an ethereal wraith to An old bedroom-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16111">
-      <!--Spawn a cold-bladed ethereal scythe to an ethereal wraith-->
+      <!--Spawn a cold-bladed ethereal scythe to a bruiser-->
     </Reset>
     <Reset Type="Item" Destination="16135" Count="0" Max="1" Vnum="16108">
       <!--Spawn an old musty bed to An old bedroom-->
@@ -9677,7 +9677,7 @@ it, but not too many.</Description>
       <!--Spawn an ethereal wraith to An old bedroom-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16111">
-      <!--Spawn a cold-bladed ethereal scythe to an ethereal wraith-->
+      <!--Spawn a cold-bladed ethereal scythe to a troll gang member-->
     </Reset>
     <Reset Type="Item" Destination="16136" Count="0" Max="1" Vnum="16109">
       <!--Spawn a fine silver goblet to An ancient dining hall-->
@@ -9695,10 +9695,10 @@ it, but not too many.</Description>
       <!--Spawn an intangible elven wedding gown to the ethereal spirit of Soth's wife-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16121">
-      <!--Spawn an immaterial elven wedding veil to the ethereal spirit of Soth's wife-->
+      <!--Spawn an immaterial elven wedding veil to a troll gang member-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16112">
-      <!--Spawn a tarnished silver key to the ethereal spirit of Soth's wife-->
+      <!--Spawn a tarnished silver key to a troll gang member-->
     </Reset>
     <Reset Type="NPC" Destination="16137" Count="1" Max="4" Vnum="16108">
       <!--Spawn a burning red-boned skeleton to Fourth floor landing-->
@@ -9719,10 +9719,10 @@ it, but not too many.</Description>
       <!--Spawn an experienced necromancer to Inside a waiting hall-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16172">
-      <!--Spawn a serpentine white-bladed dirk to an experienced necromancer-->
+      <!--Spawn a serpentine white-bladed dirk to a bruiser-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16179">
-      <!--Spawn an bracer of polished black glass to an experienced necromancer-->
+      <!--Spawn an bracer of polished black glass to a bruiser-->
     </Reset>
     <Reset Type="NPC" Destination="16141" Count="1" Max="6" Vnum="16105">
       <!--Spawn a decaying mummy to Inside a waiting hall-->
@@ -9866,7 +9866,7 @@ it, but not too many.</Description>
       <!--Spawn a force of sheer evil to A private counsel room-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="16180">
-      <!--Spawn a golden tablet engraved with a skull to a force of sheer evil-->
+      <!--Spawn a golden tablet engraved with a skull to A Death Knight-->
     </Reset>
     <Reset Type="NPC" Destination="16173" Count="1" Max="2" Vnum="16121">
       <!--Spawn a force of sheer evil to A private counsel room-->
@@ -9893,7 +9893,7 @@ it, but not too many.</Description>
       <!--Spawn a platinum morningstar spiked with diamonds to the lich that was a cleric of Paladine-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16181">
-      <!--Spawn a burned silver cross to the lich that was a cleric of Paladine-->
+      <!--Spawn a burned silver cross to A Death Knight-->
     </Reset>
     <Reset Type="NPC" Destination="16177" Count="1" Max="3" Vnum="16116">
       <!--Spawn an infernal hellhound to A hallway of Dargaard-->
@@ -9923,19 +9923,19 @@ it, but not too many.</Description>
       <!--Spawn a huge red dracolich to Before a fountain in the courtyard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16166">
-      <!--Spawn the red wings of a dracolich to a huge red dracolich-->
+      <!--Spawn the red wings of a dracolich to A Death Knight-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16168">
-      <!--Spawn the clenched claw of a red dracolich to a huge red dracolich-->
+      <!--Spawn the clenched claw of a red dracolich to A Death Knight-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16170">
-      <!--Spawn the rib cage of a red dracolich to a huge red dracolich-->
+      <!--Spawn the rib cage of a red dracolich to A Death Knight-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16167">
-      <!--Spawn the red skull of a mighty dracolich to a huge red dracolich-->
+      <!--Spawn the red skull of a mighty dracolich to A Death Knight-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="16169">
-      <!--Spawn the red spine of a great dracolich to a huge red dracolich-->
+      <!--Spawn the red spine of a great dracolich to A Death Knight-->
     </Reset>
     <Reset Type="NPC" Destination="16187" Count="1" Max="6" Vnum="16125">
       <!--Spawn a servitor nightgaunt to In the courtyard-->

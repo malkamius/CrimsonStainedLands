@@ -8,6 +8,7 @@
     <Builders>Sarin Sarin</Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4178,6 +4179,7 @@ surrounding landscape.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy></affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -4194,365 +4196,140 @@ surrounding landscape.</Description>
   </NPCs>
   <Items />
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="40775" Count="18" Max="1" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40775</Destination>
-      <Count>18</Count>
-      <Max>1</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40772" Count="18" Max="1" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40772</Destination>
-      <Count>18</Count>
-      <Max>1</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40769" Count="18" Max="1" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40769</Destination>
-      <Count>18</Count>
-      <Max>1</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40769" Count="2" Max="18" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40769</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40772" Count="2" Max="18" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40772</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40775" Count="2" Max="18" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40775</Destination>
-      <Count>2</Count>
-      <Max>18</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40775" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40775</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40775" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40775</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40772" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40772</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40778" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40778</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40784" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40784</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40786" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40786</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40788" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40788</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40767" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to Entering The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40767</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40765" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path-->
-      <Type>NPC</Type>
-      <Destination>40765</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40807" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path-->
-      <Type>NPC</Type>
-      <Destination>40807</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40804" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path-->
-      <Type>NPC</Type>
-      <Destination>40804</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40803" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Beaten Path-->
-      <Type>NPC</Type>
-      <Destination>40803</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40798" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Winding Path Through the Mountains-->
-      <Type>NPC</Type>
-      <Destination>40798</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40799" Count="1" Max="3" Vnum="40700">
       <!--Spawn a heavily-cloaked sentry to A Winding Path Through the Mountains-->
-      <Type>NPC</Type>
-      <Destination>40799</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>40700</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40793" Count="1" Max="1" Vnum="26102">
       <!--Spawn a grizzled mountain goat to Rim of the Canyon-->
-      <Type>NPC</Type>
-      <Destination>40793</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40789" Count="1" Max="1" Vnum="26102">
       <!--Spawn a grizzled mountain goat to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40789</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40788" Count="1" Max="1" Vnum="26102">
       <!--Spawn a grizzled mountain goat to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40788</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40783" Count="1" Max="1" Vnum="26102">
       <!--Spawn a grizzled mountain goat to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40783</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40778" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40778</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40778" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40778</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40787" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40787</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40788" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40788</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40789" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40789</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40791" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40791</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40793" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to Rim of the Canyon-->
-      <Type>NPC</Type>
-      <Destination>40793</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40798" Count="1" Max="1" Vnum="26105">
       <!--Spawn a red-tailed hawk to A Winding Path Through the Mountains-->
-      <Type>NPC</Type>
-      <Destination>40798</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40764" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Beaten Path-->
-      <Type>NPC</Type>
-      <Destination>40764</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40804" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Beaten Path-->
-      <Type>NPC</Type>
-      <Destination>40804</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40770" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40770</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40778" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40778</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40776" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40776</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40786" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40786</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40782" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40782</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40791" Count="1" Max="1" Vnum="11110">
       <!--Spawn A tiny squirrel to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40791</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>11110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40781" Count="1" Max="1" Vnum="26109">
       <!--Spawn a tall, rugged ranger to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40781</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40781" Count="1" Max="1" Vnum="26109">
       <!--Spawn a tall, rugged ranger to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40781</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40784" Count="1" Max="1" Vnum="26109">
       <!--Spawn a tall, rugged ranger to A Twisting Mountain Path -->
-      <Type>NPC</Type>
-      <Destination>40784</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40777" Count="1" Max="1" Vnum="26109">
       <!--Spawn a tall, rugged ranger to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40777</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="40768" Count="1" Max="1" Vnum="26109">
       <!--Spawn a tall, rugged ranger to A Beaten Path Through The Canyon-->
-      <Type>NPC</Type>
-      <Destination>40768</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26109</Vnum>
     </Reset>
   </Resets>
 </Area>

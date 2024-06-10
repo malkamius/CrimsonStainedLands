@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 5 35} Lichen Castle of Trials</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -6613,7 +6614,8 @@ You see through the helmet a pair of glowing silver eyes burning with the desire
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden ProtectionGood Plague DetectIllusion DarkVision</affectedBy>
+      <affectedBy>DetectInvis DetectHidden ProtectGood Plague DetectIllusion DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6667,6 +6669,7 @@ You see through the helmet a pair of glowing silver eyes burning with the desire
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Infrared DarkVision Berserk</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -6720,6 +6723,7 @@ You see through the helmet a pair of glowing silver eyes burning with the desire
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Infrared Weaken Berserk</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6772,7 +6776,8 @@ You see through the helmet a pair of glowing silver eyes burning with the desire
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Infrared ProtectionEvil DetectIllusion</affectedBy>
+      <affectedBy>Infrared ProtectEvil DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -6829,7 +6834,8 @@ is covered in ebony armor from head to toe, gripping a large razor edged sword i
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6883,7 +6889,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionGood PassDoor DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectGood PassDoor DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -6936,7 +6943,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionEvil ProtectionGood Flying DarkVision</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood Flying DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -6989,7 +6997,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionGood Flying DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectGood Flying DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7042,7 +7051,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -7095,7 +7105,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -7148,7 +7159,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionGood Hide DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectGood Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7201,7 +7213,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil Hide DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7254,7 +7267,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil ProtectionGood Hide DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectGood Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7307,7 +7321,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionGood Hide DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectGood Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -7360,7 +7375,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -7413,7 +7429,8 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionGood Flying</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectGood Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -7443,11 +7460,21 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Hum Evil NoDrop AntiGood Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Invisible Hide" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Invisible Hide" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7458,6 +7485,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7486,11 +7514,21 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToVulnerabilities" level="0" duration="-1" location="None" DamageTypes="Magic Negative" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Curse" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToVulnerabilities" level="0" duration="-1" location="None" DamageTypes="Magic Negative" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Curse" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7501,6 +7539,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7524,10 +7563,18 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7538,6 +7585,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7576,6 +7624,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>parchment</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7599,12 +7648,24 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Hum Evil NoDrop AntiGood AntiNeutral Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-100" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="150" hidden="False" affectType="Spell" />
-        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Magic" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectGood" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="150" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Magic" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7615,6 +7676,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7635,15 +7697,27 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <DiceBonus>0</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take Wield</WearFlags>
-      <ExtraFlags>Invisibility Magic BurnProof</ExtraFlags>
+      <ExtraFlags>Invis Magic BurnProof</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Magic Pierce" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell" />
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Magic Pierce" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7654,6 +7728,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>nothingness</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7677,10 +7752,18 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow AntiGood Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7691,6 +7774,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7714,11 +7798,21 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Hum Evil NoDrop AntiGood AntiNeutral BurnProof Vorpal TwoHands Shocking Poison</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToResist" level="0" duration="-1" location="None" flags="Poison" DamageTypes="Disease" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToResist" level="0" duration="-1" location="None" flags="Poison" DamageTypes="Disease" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7729,6 +7823,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>bone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7752,9 +7847,15 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Magic BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7765,6 +7866,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -7788,9 +7890,15 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Hum Magic BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -7801,6 +7909,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>9</ArmorPierce>
@@ -7836,6 +7945,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7868,6 +7978,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7900,6 +8011,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>silk</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7932,6 +8044,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>obsidian</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7964,6 +8077,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>electrum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -7996,6 +8110,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>black dragonscale</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8028,6 +8143,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8060,6 +8176,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8092,6 +8209,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>adamantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -8115,9 +8233,15 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Hum VisDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8128,6 +8252,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>snakeskin</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -8151,9 +8276,15 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Hum VisDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8164,6 +8295,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>snakeskin</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -8187,9 +8319,15 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Hum VisDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8200,6 +8338,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>snakeskin</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -8223,9 +8362,15 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <ExtraFlags>Glow Hum VisDeath</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingBreath" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -8236,6 +8381,7 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
       <Material>snakeskin</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -8244,637 +8390,242 @@ A hood covers most of his face only exposing his snowy white hair and an evil gr
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="18213" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Northeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18213</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a set of spiked obsidian platemail to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18208</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18208">
+      <!--Spawn a set of spiked obsidian platemail to A powerful orc warrior-->
     </Reset>
-    <Reset>
-      <!--Spawn some spiked obsidian armplates to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18209</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18209">
+      <!--Spawn some spiked obsidian armplates to A powerful orc warrior-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18215" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Northeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18215</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18217" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Northeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18217</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a set of spiked obsidian platemail to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18208</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18208">
+      <!--Spawn a set of spiked obsidian platemail to A powerful orc warrior-->
     </Reset>
-    <Reset>
-      <!--Spawn some spiked obsidian armplates to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18209</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18209">
+      <!--Spawn some spiked obsidian armplates to A powerful orc warrior-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18220" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to The Northern Arch-->
-      <Type>NPC</Type>
-      <Destination>18220</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18223" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Northwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18223</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18226" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Northwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18226</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18208">
       <!--Spawn a set of spiked obsidian platemail to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18209">
       <!--Spawn some spiked obsidian armplates to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18228" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Northwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18228</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18232" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to The western halls-->
-      <Type>NPC</Type>
-      <Destination>18232</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18208">
       <!--Spawn a set of spiked obsidian platemail to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn some spiked obsidian armplates to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18209</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18209">
+      <!--Spawn some spiked obsidian armplates to A powerful orc warrior-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18237" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to The western halls-->
-      <Type>NPC</Type>
-      <Destination>18237</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18243" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Southwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18243</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18245" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Southwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18245</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18248" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Southwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18248</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18208">
       <!--Spawn a set of spiked obsidian platemail to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18209">
       <!--Spawn some spiked obsidian armplates to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18250" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to The Southern Arch-->
-      <Type>NPC</Type>
-      <Destination>18250</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18253" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Southeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18253</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18256" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Southeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18256</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18208">
       <!--Spawn a set of spiked obsidian platemail to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18209">
       <!--Spawn some spiked obsidian armplates to A skeletal knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18258" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to Southeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18258</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18261" Count="2" Max="34" Vnum="18200">
       <!--Spawn A skeletal knight to The eastern halls-->
-      <Type>NPC</Type>
-      <Destination>18261</Destination>
-      <Count>2</Count>
-      <Max>34</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18271" Count="1" Max="1" Vnum="18201">
       <!--Spawn Nordinath to Lair of the Nordinath-->
-      <Type>NPC</Type>
-      <Destination>18271</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18212">
       <!--Spawn a key covered with silk to Nordinath-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18212</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18274" Count="1" Max="1" Vnum="18202">
       <!--Spawn A crazed man to Room of the crazed man-->
-      <Type>NPC</Type>
-      <Destination>18274</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18201">
       <!--Spawn a small needle to A crazed man-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18284" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The northern halls-->
-      <Type>NPC</Type>
-      <Destination>18284</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18287" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Northeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18287</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18290" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Northeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18290</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18294" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The eastern halls-->
-      <Type>NPC</Type>
-      <Destination>18294</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18297" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The eastern halls-->
-      <Type>NPC</Type>
-      <Destination>18297</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18300" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The eastern halls-->
-      <Type>NPC</Type>
-      <Destination>18300</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18304" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The eastern halls-->
-      <Type>NPC</Type>
-      <Destination>18304</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18308" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Southeastern corridor-->
-      <Type>NPC</Type>
-      <Destination>18308</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18312" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The southern halls-->
-      <Type>NPC</Type>
-      <Destination>18312</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18315" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Southwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18315</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18318" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Southwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18318</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18320" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Southwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18320</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18322" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The western halls-->
-      <Type>NPC</Type>
-      <Destination>18322</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18331" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to The western halls-->
-      <Type>NPC</Type>
-      <Destination>18331</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18338" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Northwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18338</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18340" Count="2" Max="32" Vnum="18208">
       <!--Spawn A demon hound to Northwestern corridor-->
-      <Type>NPC</Type>
-      <Destination>18340</Destination>
-      <Count>2</Count>
-      <Max>32</Max>
-      <Vnum>18208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18343" Count="1" Max="1" Vnum="18206">
       <!--Spawn Chaos Drone to A small room-->
-      <Type>NPC</Type>
-      <Destination>18343</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18213">
       <!--Spawn an obsidian key to Chaos Drone-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18346" Count="1" Max="1" Vnum="18207">
       <!--Spawn A greater beholder to A back room-->
-      <Type>NPC</Type>
-      <Destination>18346</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18215">
       <!--Spawn a charred black key to A greater beholder-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18215</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18348" Count="1" Max="1" Vnum="18204">
       <!--Spawn Durion, The Berserker to A back room-->
-      <Type>NPC</Type>
-      <Destination>18348</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18204">
       <!--Spawn A sword etched with the name, "Reaver of the Mind" to Durion, The Berserker-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18207">
       <!--Spawn A sword etched with the name, "Reaver of the Soul" to Durion, The Berserker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18217">
       <!--Spawn a wooden key to Durion, The Berserker-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18217</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="18350" Count="0" Max="1" Vnum="18214">
       <!--Spawn an emerald key to A back room-->
-      <Type>Item</Type>
-      <Destination>18350</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18352" Count="1" Max="1" Vnum="18205">
       <!--Spawn Lar'enth Motur to A back room-->
-      <Type>NPC</Type>
-      <Destination>18352</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="18200">
       <!--Spawn the Sceptre of Imminent Doom to Lar'enth Motur-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18218">
       <!--Spawn a key to the third floor to Lar'enth Motur-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18218</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18358" Count="1" Max="1" Vnum="18209">
       <!--Spawn El Jefe to A room before the prize-->
-      <Type>NPC</Type>
-      <Destination>18358</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18358" Count="1" Max="1" Vnum="18203">
       <!--Spawn Lewis, the Giant Guard Dog to A room before the prize-->
-      <Type>NPC</Type>
-      <Destination>18358</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18366" Count="1" Max="1" Vnum="18211">
       <!--Spawn A coral blue snake to Cradle of the northwest tower-->
-      <Type>NPC</Type>
-      <Destination>18366</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18222">
       <!--Spawn scales of the coral serpent to A coral blue snake-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18372" Count="1" Max="1" Vnum="18210">
       <!--Spawn A crimson viper to Cradle of the northeast tower-->
-      <Type>NPC</Type>
-      <Destination>18372</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18210</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18221">
       <!--Spawn scales of the crimson serpent to A crimson viper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18221</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18380" Count="1" Max="1" Vnum="18212">
       <!--Spawn A great violet python to Cradle of the southwest tower-->
-      <Type>NPC</Type>
-      <Destination>18380</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18212</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18219">
       <!--Spawn scales of the violet serpent to A great violet python-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18219</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18386" Count="1" Max="1" Vnum="18213">
       <!--Spawn An ebony viper to Cradle of the southeast tower-->
-      <Type>NPC</Type>
-      <Destination>18386</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="18220">
       <!--Spawn scales of the ebony serpent to An ebony viper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>18220</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18387" Count="5" Max="20" Vnum="18214">
       <!--Spawn A pit viper to In the dungeon-->
-      <Type>NPC</Type>
-      <Destination>18387</Destination>
-      <Count>5</Count>
-      <Max>20</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18388" Count="3" Max="20" Vnum="18214">
       <!--Spawn A pit viper to In the dungeon-->
-      <Type>NPC</Type>
-      <Destination>18388</Destination>
-      <Count>3</Count>
-      <Max>20</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18389" Count="3" Max="20" Vnum="18214">
       <!--Spawn A pit viper to In the dungeon-->
-      <Type>NPC</Type>
-      <Destination>18389</Destination>
-      <Count>3</Count>
-      <Max>20</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18390" Count="3" Max="20" Vnum="18214">
       <!--Spawn A pit viper to In the dungeon-->
-      <Type>NPC</Type>
-      <Destination>18390</Destination>
-      <Count>3</Count>
-      <Max>20</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18392" Count="3" Max="20" Vnum="18214">
       <!--Spawn A pit viper to In the dungeon-->
-      <Type>NPC</Type>
-      <Destination>18392</Destination>
-      <Count>3</Count>
-      <Max>20</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18393" Count="3" Max="20" Vnum="18214">
       <!--Spawn A pit viper to In the dungeon-->
-      <Type>NPC</Type>
-      <Destination>18393</Destination>
-      <Count>3</Count>
-      <Max>20</Max>
-      <Vnum>18214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="18396" Count="1" Max="1" Vnum="18215">
       <!--Spawn A large shadowy wyvern to The Throne of Hiddukel-->
-      <Type>NPC</Type>
-      <Destination>18396</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>18215</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="18397" Count="0" Max="1" Vnum="18202">
       <!--Spawn A golden chalice to A private treasure room-->
-      <Type>Item</Type>
-      <Destination>18397</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>18202</Vnum>
     </Reset>
   </Resets>
 </Area>

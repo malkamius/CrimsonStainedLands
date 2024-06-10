@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{15 25} Generic Old Marsh</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -246,7 +247,7 @@ boots.  Better stop and check for leeches when you get out of here.</Description
       <Name>Swamp Thing's Lair</Name>
       <Description>A horrible swamp thing resides here.  Mutilated corpses suffuse the air with
 the overwhelming stench of putrid flesh.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark</Flags>
       <Exits>
         <Exit>
@@ -274,7 +275,7 @@ it is not for the likes of you...'</Description>
       <Description>You stand by a large oozing pool of quick sand.  Luckily only a complete
 klutz could not avoid it.  Dancing lights fly about you and one seems to
 be taunting you towards the pool.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark</Flags>
       <Exits>
         <Exit>
@@ -325,7 +326,7 @@ be taunting you towards the pool.</Description>
       <Description>You stand beside a large dark pond.  The water boils not with heat, but with
 motion, as if it is alive.  A creaking beat pulses through the air, leaving
 you with a cold sweat and fear in your heart.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark</Flags>
       <Exits>
         <Exit>
@@ -373,7 +374,7 @@ you with a cold sweat and fear in your heart.</Description>
 a huge patch of vegetation.  You sense an evil presence and notice 
 a beast flying overhead to the south east, towards what looks to be a 
 huge fortress, half buried in the marsh.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark</Flags>
       <Exits>
         <Exit>
@@ -422,7 +423,7 @@ northeast side, a window glows blue with magical energy.</Description>
       <Name>Cloud of Darkness.</Name>
       <Description>As you travel through this cloud of darkness, a fear such as you have never
 known before assails you.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark</Flags>
       <Exits>
         <Exit>
@@ -453,7 +454,7 @@ known before assails you.</Description>
       <Name>Near Vegetation from Hell.</Name>
       <Description>You stand near some of the strangest plant life you have ever seen, a mixture
 of tumescent vegetables, evil-smelling fruit trees, and malignant ferns.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark</Flags>
       <Exits>
         <Exit>
@@ -751,6 +752,7 @@ as he approaches and raises two black taloned claws to strike you.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -806,6 +808,7 @@ and cackles with glee.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -859,6 +862,7 @@ and cackles with glee.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -912,6 +916,7 @@ and cackles with glee.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -965,6 +970,7 @@ and cackles with glee.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1019,6 +1025,7 @@ appendages.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1073,6 +1080,7 @@ sword blow.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1128,6 +1136,7 @@ are just able to notice a small pair of glowing eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1181,6 +1190,7 @@ are just able to notice a small pair of glowing eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1234,6 +1244,7 @@ are just able to notice a small pair of glowing eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -1288,6 +1299,7 @@ because she thinks you stink too, and she's about to do something about it.</des
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -1342,6 +1354,7 @@ swamp light, the blade of his scythe gleams.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1396,6 +1409,7 @@ into the marsh.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -1453,6 +1467,7 @@ into the marsh.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1507,6 +1522,7 @@ painted on his face and hands.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1560,6 +1576,7 @@ painted on his face and hands.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1613,6 +1630,7 @@ painted on his face and hands.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -1645,8 +1663,12 @@ painted on his face and hands.</description>
       <ExtraFlags>AntiGood TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1657,6 +1679,7 @@ painted on his face and hands.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1680,8 +1703,12 @@ painted on his face and hands.</description>
       <ExtraFlags>AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1692,6 +1719,7 @@ painted on his face and hands.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -1729,6 +1757,7 @@ painted on his face and hands.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>8</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -1752,8 +1781,12 @@ painted on his face and hands.</description>
       <ExtraFlags>NoDrop AntiGood TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1764,6 +1797,7 @@ painted on his face and hands.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1799,6 +1833,7 @@ painted on his face and hands.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1836,6 +1871,7 @@ painted on his face and hands.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1844,421 +1880,161 @@ painted on his face and hands.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="8303" Count="1" Max="2" Vnum="8301">
       <!--Spawn a swamp troll to Marshy Forest-->
-      <Type>NPC</Type>
-      <Destination>8303</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8303" Count="2" Max="6" Vnum="8302">
       <!--Spawn a green troll to Marshy Forest-->
-      <Type>NPC</Type>
-      <Destination>8303</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>8302</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8307">
       <!--Spawn a murky green potion to a green troll-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8303" Count="1" Max="3" Vnum="8303">
       <!--Spawn an ogre to Marshy Forest-->
-      <Type>NPC</Type>
-      <Destination>8303</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>8303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8304" Count="2" Max="6" Vnum="8302">
       <!--Spawn a green troll to On a hill.-->
-      <Type>NPC</Type>
-      <Destination>8304</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>8302</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8307">
       <!--Spawn a murky green potion to a green troll-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8304" Count="1" Max="2" Vnum="8306">
       <!--Spawn a huge hairy beast to On a hill.-->
-      <Type>NPC</Type>
-      <Destination>8304</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8306</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8304" Count="1" Max="2" Vnum="8310">
       <!--Spawn a large snake to On a hill.-->
-      <Type>NPC</Type>
-      <Destination>8304</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8310</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8304" Count="1" Max="6" Vnum="8314">
       <!--Spawn a marsh wolf to On a hill.-->
-      <Type>NPC</Type>
-      <Destination>8304</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>8314</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8305" Count="1" Max="2" Vnum="8307">
       <!--Spawn a rather small beast to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8305</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8305" Count="1" Max="2" Vnum="8309">
       <!--Spawn the monstrous snake to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8305</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8305" Count="1" Max="2" Vnum="8310">
       <!--Spawn a large snake to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8305</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8310</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8305" Count="1" Max="6" Vnum="8314">
       <!--Spawn a marsh wolf to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8305</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>8314</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8306" Count="2" Max="6" Vnum="8302">
       <!--Spawn a green troll to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8306</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>8302</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8306" Count="2" Max="2" Vnum="8305">
       <!--Spawn a gnoll to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8306</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>8305</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="8303">
       <!--Spawn a suit of chainmail to a gnoll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="8308">
       <!--Spawn a rusty claymore to a gnoll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8308</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8306" Count="1" Max="6" Vnum="8314">
       <!--Spawn a marsh wolf to An Oozing Bog-->
-      <Type>NPC</Type>
-      <Destination>8306</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>8314</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8307" Count="1" Max="3" Vnum="8303">
       <!--Spawn an ogre to Swamp Thing's Lair-->
-      <Type>NPC</Type>
-      <Destination>8307</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>8303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8307" Count="1" Max="1" Vnum="8304">
       <!--Spawn the Swamp Thing to Swamp Thing's Lair-->
-      <Type>NPC</Type>
-      <Destination>8307</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8304</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8307" Count="1" Max="6" Vnum="8314">
       <!--Spawn a marsh wolf to Swamp Thing's Lair-->
-      <Type>NPC</Type>
-      <Destination>8307</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>8314</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8307" Count="1" Max="5" Vnum="8320">
       <!--Spawn a marsh giant to Swamp Thing's Lair-->
-      <Type>NPC</Type>
-      <Destination>8307</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>8320</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8301">
       <!--Spawn a long spear to a marsh giant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8308" Count="1" Max="2" Vnum="8301">
       <!--Spawn a swamp troll to Pool of Quick Sand-->
-      <Type>NPC</Type>
-      <Destination>8308</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8308" Count="1" Max="1" Vnum="8308">
       <!--Spawn the Will-O-Wisp to Pool of Quick Sand-->
-      <Type>NPC</Type>
-      <Destination>8308</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8308</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8308" Count="1" Max="6" Vnum="8314">
       <!--Spawn a marsh wolf to Pool of Quick Sand-->
-      <Type>NPC</Type>
-      <Destination>8308</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>8314</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8309" Count="1" Max="2" Vnum="8312">
       <!--Spawn the Marsh Hag to A Dark Pool.-->
-      <Type>NPC</Type>
-      <Destination>8309</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8312</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8309" Count="1" Max="6" Vnum="8314">
       <!--Spawn a marsh wolf to A Dark Pool.-->
-      <Type>NPC</Type>
-      <Destination>8309</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>8314</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8309" Count="1" Max="5" Vnum="8320">
       <!--Spawn a marsh giant to A Dark Pool.-->
-      <Type>NPC</Type>
-      <Destination>8309</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>8320</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8301">
       <!--Spawn a long spear to a marsh giant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8310" Count="1" Max="2" Vnum="8306">
       <!--Spawn a huge hairy beast to Gloomy Path Through the Marsh.-->
-      <Type>NPC</Type>
-      <Destination>8310</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8306</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8310" Count="1" Max="2" Vnum="8312">
       <!--Spawn the Marsh Hag to Gloomy Path Through the Marsh.-->
-      <Type>NPC</Type>
-      <Destination>8310</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8312</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8310" Count="1" Max="1" Vnum="8313">
       <!--Spawn a Death Slaad to Gloomy Path Through the Marsh.-->
-      <Type>NPC</Type>
-      <Destination>8310</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8313</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="8306">
       <!--Spawn a huge, wicked-looking scythe to a Death Slaad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8306</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="8302">
       <!--Spawn a dark horned helmet to a Death Slaad-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8302</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8311" Count="1" Max="2" Vnum="8309">
       <!--Spawn the monstrous snake to Cloud of Darkness.-->
-      <Type>NPC</Type>
-      <Destination>8311</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8309</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8311" Count="1" Max="5" Vnum="8320">
       <!--Spawn a marsh giant to Cloud of Darkness.-->
-      <Type>NPC</Type>
-      <Destination>8311</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>8320</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8301">
       <!--Spawn a long spear to a marsh giant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8312" Count="2" Max="2" Vnum="8318">
       <!--Spawn a shambling mound to Near Vegetation from Hell.-->
-      <Type>NPC</Type>
-      <Destination>8312</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>8318</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8307">
       <!--Spawn a murky green potion to a shambling mound-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8312" Count="2" Max="2" Vnum="8318">
       <!--Spawn a shambling mound to Near Vegetation from Hell.-->
-      <Type>NPC</Type>
-      <Destination>8312</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>8318</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8307">
       <!--Spawn a murky green potion to a shambling mound-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8313" Count="1" Max="3" Vnum="8303">
       <!--Spawn an ogre to By the Monolith.-->
-      <Type>NPC</Type>
-      <Destination>8313</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>8303</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8313" Count="1" Max="2" Vnum="8307">
       <!--Spawn a rather small beast to By the Monolith.-->
-      <Type>NPC</Type>
-      <Destination>8313</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8313" Count="1" Max="5" Vnum="8320">
       <!--Spawn a marsh giant to By the Monolith.-->
-      <Type>NPC</Type>
-      <Destination>8313</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>8320</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8301">
       <!--Spawn a long spear to a marsh giant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8307">
       <!--Spawn a murky green potion to a marsh giant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8307</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8315" Count="1" Max="5" Vnum="8320">
       <!--Spawn a marsh giant to Northern Lake Side.-->
-      <Type>NPC</Type>
-      <Destination>8315</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>8320</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8301">
       <!--Spawn a long spear to a marsh giant-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8301</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="8302">
       <!--Spawn a dark horned helmet to a marsh giant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8302</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8318" Count="2" Max="2" Vnum="8321">
       <!--Spawn a gargoyle to Before the Great Gates.-->
-      <Type>NPC</Type>
-      <Destination>8318</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>8321</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8318" Count="2" Max="2" Vnum="8321">
       <!--Spawn a gargoyle to Before the Great Gates.-->
-      <Type>NPC</Type>
-      <Destination>8318</Destination>
-      <Count>2</Count>
-      <Max>2</Max>
-      <Vnum>8321</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -3237,7 +3237,7 @@ His muscles thick and well-honed, he is clearly a veteran of warfare.</descripti
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel StayArea GuildMaster</flags>
+      <flags>NPC Sentinel StayArea Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4192,13 +4192,13 @@ in and out of focus above the fountain...</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="33" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="33" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -4241,7 +4241,7 @@ in and out of focus above the fountain...</Description>
         <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
@@ -4370,7 +4370,7 @@ in and out of focus above the fountain...</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
@@ -4416,7 +4416,7 @@ in and out of focus above the fountain...</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="78" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="41" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="41" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
@@ -4505,7 +4505,7 @@ in and out of focus above the fountain...</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-6" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
@@ -4642,7 +4642,7 @@ front of the well's structure.</Description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="800" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="800" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -4750,7 +4750,7 @@ front of the well's structure.</Description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
@@ -4796,7 +4796,7 @@ front of the well's structure.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take</WearFlags>
-      <ExtraFlags>Closeable</ExtraFlags>
+      <ExtraFlags>Closable</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>ABAL} Deomanix  The Sylvan Grove</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -238,7 +239,8 @@ opening up.</Description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil Sneak Haste Swim</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil Sneak Haste Swim</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>19</DamageDiceSides>
       <DamageDiceCount>13</DamageDiceCount>
@@ -292,6 +294,7 @@ opening up.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -333,6 +336,7 @@ opening up.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -356,11 +360,21 @@ opening up.</Description>
       <ExtraFlags>Glow NoDrop Bless Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -371,6 +385,7 @@ opening up.</Description>
       <Material>Metal forged in the Depths of a Volcano</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -379,29 +394,14 @@ opening up.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="8800" Count="1" Max="1" Vnum="8801">
       <!--Spawn an herbalist to On top of the Ancient Oak-->
-      <Type>NPC</Type>
-      <Destination>8800</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8801</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8805" Count="1" Max="1" Vnum="8800">
       <!--Spawn the Ancient Ranger to Through the deep forest-->
-      <Type>NPC</Type>
-      <Destination>8805</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8800</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the Young Sapling to the Ancient Ranger-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>8800</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8800">
+      <!--Spawn the Young Sapling to the citizen-->
     </Reset>
   </Resets>
 </Area>

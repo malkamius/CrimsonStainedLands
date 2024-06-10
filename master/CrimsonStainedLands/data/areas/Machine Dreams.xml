@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 1  5} Furey   Machine Dreams</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2234,6 +2235,7 @@ same obsidian color as the ground and you can't find a horizon.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -2275,6 +2277,7 @@ same obsidian color as the ground and you can't find a horizon.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -2318,6 +2321,7 @@ into the leather.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -2355,6 +2359,7 @@ into the leather.</Description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -2395,6 +2400,7 @@ into the leather.</Description>
       <Material>oldstyle</Material>
       <Charges>4</Charges>
       <MaxCharges>4</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2409,53 +2415,23 @@ highly polished.  It looks more like a ritual device than a weapon.</Description
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="8631" Count="0" Max="1" Vnum="8600">
       <!--Spawn morris bells to Newfane Village Square-->
-      <Type>Item</Type>
-      <Destination>8631</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8600</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8632" Count="0" Max="1" Vnum="8601">
       <!--Spawn a morris handkerchief to A Large Dance Hall-->
-      <Type>Item</Type>
-      <Destination>8632</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8634" Count="0" Max="1" Vnum="8601">
       <!--Spawn a morris handkerchief to A Small Hall-->
-      <Type>Item</Type>
-      <Destination>8634</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8601</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8637" Count="0" Max="1" Vnum="8602">
       <!--Spawn a morris sash to An Old Wooden Church-->
-      <Type>Item</Type>
-      <Destination>8637</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8602</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="8639" Count="0" Max="1" Vnum="8603">
       <!--Spawn a morris staff to Yule Tree Farm-->
-      <Type>Item</Type>
-      <Destination>8639</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>8603</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="8699" Count="1" Max="1" Vnum="8600">
       <!--Spawn the keeper to The Void-->
-      <Type>NPC</Type>
-      <Destination>8699</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>8600</Vnum>
     </Reset>
   </Resets>
 </Area>

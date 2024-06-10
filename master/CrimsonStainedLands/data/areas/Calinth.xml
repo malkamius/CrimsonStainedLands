@@ -10790,7 +10790,7 @@ in the pool.  Children and there families are in abundance.  No one has
 anything to hide here.  There are many attractive members of the opposite
 sex here both alone and with friends but the cold water tends to ward off
 any feelings of romance.  There are steps leading up out of the pool.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags></Flags>
       <Exits>
         <Exit>
@@ -11334,7 +11334,7 @@ moving merchandise his whole life.</description>
       <gold>30</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel StayArea Gain NoPurge AssistVnum</flags>
+      <flags>NPC Sentinel StayArea Trainer NoPurge AssistVnum</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -13989,7 +13989,7 @@ and manners. He probably is a tough opponent.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Aggressive StayArea Gain Warrior Rescue AssistAlign AssistGuard</flags>
+      <flags>NPC Aggressive StayArea Trainer Warrior Rescue AssistAlign AssistGuard</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -14642,7 +14642,7 @@ and manners. He probably is a tough opponent.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Invisible DetectInvis DetectHidden ProtectionGood Sneak Hide Flying PassDoor DarkVision DetectIllusion</affectedBy>
+      <affectedBy>Invisible DetectInvis DetectHidden ProtectGood Sneak Hide Flying PassDoor DarkVision DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
@@ -14854,11 +14854,11 @@ and manners. He probably is a tough opponent.</description>
       <gold>10000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea Gain GuildMaster Cleric Mage Thief Warrior NoAlign NoPurge Healer AreaAttack Fade Rescue</flags>
+      <flags>NPC Sentinel StayArea Trainer Practice Cleric Mage Thief Warrior NoAlign NoPurge Healer AreaAttack Fade Rescue</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectionGood DarkVision DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectGood DarkVision DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
@@ -15443,7 +15443,7 @@ and manners. He probably is a tough opponent.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectionGood" modifier="0" hidden="False" affectType="Spell">
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectGood" modifier="0" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToImmune" level="0" duration="-1" location="None" flags="Charm" modifier="0" hidden="False" affectType="Spell">
@@ -18528,7 +18528,7 @@ Some letters have been scratched on its bottom.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>40</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -18570,7 +18570,7 @@ Some letters have been scratched on its bottom.</Description>
       <DiceBonus>1</DiceBonus>
       <Weight>200</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -27576,82 +27576,82 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <!--Spawn the sexton to Common Room-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20266">
-      <!--Spawn a black tunic to the sexton-->
+      <!--Spawn a black tunic to the tridrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20062">
-      <!--Spawn a pair of gloves to the sexton-->
+      <!--Spawn a pair of gloves to the tridrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20187">
-      <!--Spawn a holy circle to the sexton-->
+      <!--Spawn a holy circle to the pentadrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20053">
-      <!--Spawn a black headband to the sexton-->
+      <!--Spawn a black headband to the quadrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20204">
-      <!--Spawn a pair of black breeches to the sexton-->
+      <!--Spawn a pair of black breeches to the tridrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20149">
-      <!--Spawn a pair of black boots to the sexton-->
+      <!--Spawn a pair of black boots to the tridrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20146">
-      <!--Spawn a heavy cloak to the sexton-->
+      <!--Spawn a heavy cloak to the quinton-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20153">
-      <!--Spawn a leather belt to the sexton-->
+      <!--Spawn a leather belt to the quinton-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20276">
-      <!--Spawn a spade to the sexton-->
+      <!--Spawn a spade to the quinton-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20078">
-      <!--Spawn a cup of tea to the sexton-->
+      <!--Spawn a cup of tea to the tertian-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20103">
-      <!--Spawn a small pile of coins to the sexton-->
+      <!--Spawn a small pile of coins to the tertian-->
     </Reset>
     <Reset Type="NPC" Destination="20013" Count="3" Max="3" Vnum="20002">
       <!--Spawn an off-duty guard to Common Room-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20155">
-      <!--Spawn a town guard signet ring to an off-duty guard-->
+      <!--Spawn a town guard signet ring to the tertian-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20146">
-      <!--Spawn a heavy cloak to an off-duty guard-->
+      <!--Spawn a heavy cloak to the quinton-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20235">
-      <!--Spawn a chainmail jerkin to an off-duty guard-->
+      <!--Spawn a chainmail jerkin to the tertian-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20084">
-      <!--Spawn a chain mail coif to an off-duty guard-->
+      <!--Spawn a chain mail coif to the quinton-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20085">
-      <!--Spawn a long chain mail skirt to an off-duty guard-->
+      <!--Spawn a long chain mail skirt to the quinton-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20086">
-      <!--Spawn a pair of iron-bound boots to an off-duty guard-->
+      <!--Spawn a pair of iron-bound boots to the tridrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20087">
-      <!--Spawn a pair of chain mail gauntlets to an off-duty guard-->
+      <!--Spawn a pair of chain mail gauntlets to the quadrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20088">
-      <!--Spawn a pair of chain mail sleeves to an off-duty guard-->
+      <!--Spawn a pair of chain mail sleeves to the tridrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20190">
-      <!--Spawn a medium shield to an off-duty guard-->
+      <!--Spawn a medium shield to the pentadrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20043">
-      <!--Spawn a strong red bracer to an off-duty guard-->
+      <!--Spawn a strong red bracer to the pentadrone-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20043">
-      <!--Spawn a strong red bracer to an off-duty guard-->
+      <!--Spawn a strong red bracer to the octon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20095">
-      <!--Spawn a long sword to an off-duty guard-->
+      <!--Spawn a long sword to the septon-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20103">
-      <!--Spawn a small pile of coins to an off-duty guard-->
+      <!--Spawn a small pile of coins to the hexton-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20007">
-      <!--Spawn a black bottle of ale to an off-duty guard-->
+      <!--Spawn a black bottle of ale to the hexton-->
     </Reset>
     <Reset Type="Item" Destination="20013" Count="0" Max="1" Vnum="20274">
       <!--Spawn a long bar to Common Room-->
@@ -29223,103 +29223,103 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <!--Spawn a jellylike potion to a traveling merchant-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20067">
-      <!--Spawn a faint potion to a traveling merchant-->
+      <!--Spawn a faint potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20068">
-      <!--Spawn an aqua potion to a traveling merchant-->
+      <!--Spawn an aqua potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20069">
-      <!--Spawn a murky potion to a traveling merchant-->
+      <!--Spawn a murky potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20070">
-      <!--Spawn a glowing potion to a traveling merchant-->
+      <!--Spawn a glowing potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20071">
-      <!--Spawn a seagreen potion to a traveling merchant-->
+      <!--Spawn a seagreen potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20072">
-      <!--Spawn a vial of holy water to a traveling merchant-->
+      <!--Spawn a vial of holy water to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20073">
-      <!--Spawn a black potion to a traveling merchant-->
+      <!--Spawn a black potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20074">
-      <!--Spawn a yellow potion to a traveling merchant-->
+      <!--Spawn a yellow potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20075">
-      <!--Spawn a green potion to a traveling merchant-->
+      <!--Spawn a green potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20076">
-      <!--Spawn a blue potion to a traveling merchant-->
+      <!--Spawn a blue potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20124">
-      <!--Spawn a tattered scroll to a traveling merchant-->
+      <!--Spawn a tattered scroll to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20125">
-      <!--Spawn a yellow potion to a traveling merchant-->
+      <!--Spawn a yellow potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20126">
-      <!--Spawn a withered scroll to a traveling merchant-->
+      <!--Spawn a withered scroll to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20127">
-      <!--Spawn a aqua potion to a traveling merchant-->
+      <!--Spawn a aqua potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20128">
-      <!--Spawn a black potion to a traveling merchant-->
+      <!--Spawn a black potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20129">
-      <!--Spawn a glowing potion to a traveling merchant-->
+      <!--Spawn a glowing potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20130">
-      <!--Spawn a blood red potion to a traveling merchant-->
+      <!--Spawn a blood red potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20131">
-      <!--Spawn a murky potion to a traveling merchant-->
+      <!--Spawn a murky potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20132">
-      <!--Spawn a green potion to a traveling merchant-->
+      <!--Spawn a green potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20133">
-      <!--Spawn a bottle of clear fluid to a traveling merchant-->
+      <!--Spawn a bottle of clear fluid to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20134">
-      <!--Spawn a orange potion to a traveling merchant-->
+      <!--Spawn a orange potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20135">
-      <!--Spawn a vial of holy water to a traveling merchant-->
+      <!--Spawn a vial of holy water to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20136">
-      <!--Spawn a grey potion to a traveling merchant-->
+      <!--Spawn a grey potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20137">
-      <!--Spawn a electric potion to a traveling merchant-->
+      <!--Spawn a electric potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20138">
-      <!--Spawn a cloudy potion to a traveling merchant-->
+      <!--Spawn a cloudy potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20139">
-      <!--Spawn a thick potion to a traveling merchant-->
+      <!--Spawn a thick potion to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20157">
-      <!--Spawn a diamond wedding ring to a traveling merchant-->
+      <!--Spawn a diamond wedding ring to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20158">
-      <!--Spawn a gold wedding band to a traveling merchant-->
+      <!--Spawn a gold wedding band to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20158">
-      <!--Spawn a gold wedding band to a traveling merchant-->
+      <!--Spawn a gold wedding band to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20267">
-      <!--Spawn a bag of holding to a traveling merchant-->
+      <!--Spawn a bag of holding to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20240">
-      <!--Spawn a crying no mask to a traveling merchant-->
+      <!--Spawn a crying no mask to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20241">
-      <!--Spawn a smiling no mask to a traveling merchant-->
+      <!--Spawn a smiling no mask to a bunny-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="20239">
-      <!--Spawn a gray and red striped shirt to a traveling merchant-->
+      <!--Spawn a gray and red striped shirt to a bunny-->
     </Reset>
     <Reset Type="Item" Destination="20231" Count="0" Max="1" Vnum="20268">
       <!--Spawn a street lamp (out) to Grayford Lane 100 Block-->

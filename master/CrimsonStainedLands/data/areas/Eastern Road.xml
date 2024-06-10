@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1037,7 +1038,7 @@ from the road to the north and the south.</Description>
           <Direction>South</Direction>
           <Destination>17508</Destination>
           <Display>the door south</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -4266,6 +4267,7 @@ from the road to the north and the south.</Description>
       <Material></Material>
       <Charges>0</Charges>
       <MaxCharges>100</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4274,125 +4276,50 @@ from the road to the north and the south.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="19660" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19660</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19640" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19640</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19632" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19632</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19625" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19625</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19614" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19614</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19600" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19600</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19667" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19667</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19680" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19680</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19689" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19689</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19694" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19694</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19688" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19688</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19681" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19681</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19676" Count="1" Max="1" Vnum="20063">
       <!--Spawn a weary traveler to Along the Eastern Road-->
-      <Type>NPC</Type>
-      <Destination>19676</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>20063</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="19650" Count="1" Max="1" Vnum="3405">
       <!--Spawn the priest to The Large Crossroads-->
-      <Type>NPC</Type>
-      <Destination>19650</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>3405</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="19650" Count="1" Max="1" Vnum="19600">
       <!--Spawn a crudely dug well to The Large Crossroads-->
-      <Type>Item</Type>
-      <Destination>19650</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19600</Vnum>
     </Reset>
   </Resets>
 </Area>

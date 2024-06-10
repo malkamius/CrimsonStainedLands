@@ -4684,7 +4684,7 @@ green cloak, he is currently practicing the use of his staff.</description>
       <gold>100</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel GuildMaster Gain Changer</flags>
+      <flags>NPC Sentinel Practice Trainer Changer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4742,7 +4742,7 @@ finished with them.</description>
       <gold>100</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel Gain Changer</flags>
+      <flags>NPC Sentinel Trainer Changer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4917,7 +4917,7 @@ closed eyes issuing an invitation you somehow cannot resist.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectGood DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
@@ -5311,7 +5311,7 @@ glad".</description>
       <gold>30</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel StayArea Gain Changer Shopkeeper</flags>
+      <flags>NPC Sentinel StayArea Trainer Changer Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5894,7 +5894,7 @@ Siew Bao' ".</description>
       <gold>30</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel StayArea Gain Changer AssistAlign Shopkeeper</flags>
+      <flags>NPC Sentinel StayArea Trainer Changer AssistAlign Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9273,7 +9273,7 @@ huntsmen in service to Gertrude.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>0.8</Weight>
       <WearFlags>Take Head</WearFlags>
-      <ExtraFlags>Glow Invisibility Magic</ExtraFlags>
+      <ExtraFlags>Glow Invis Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
@@ -9322,7 +9322,7 @@ oak leaf tacked to its front. It seems several sizes too large for you.</Descrip
       <ExtraFlags>Glow Magic NoDrop NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-5" hidden="False" affectType="Spell">
@@ -9386,7 +9386,7 @@ oak leaf tacked to its front. It seems several sizes too large for you.</Descrip
         <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10570,7 +10570,7 @@ the word "eskimo" has been circled repeatedly in red.</Description>
       <ExtraFlags>Hum Magic AntiEvil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
@@ -10617,7 +10617,7 @@ You feel at once angry with and tired of life just looking at the device.</Descr
       <ExtraFlags>Magic AntiEvil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="-10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="-10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
@@ -10665,7 +10665,7 @@ weapon is the device of the Order of the Knights Melancholic and the words,
       <DiceBonus>0</DiceBonus>
       <Weight>1</Weight>
       <WearFlags>Take Wield</WearFlags>
-      <ExtraFlags>Invisibility Magic Bless</ExtraFlags>
+      <ExtraFlags>Invis Magic Bless</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
@@ -11702,7 +11702,7 @@ whisker of a marmalade cat g) a cup of spring water Instructions overleaf.</Desc
         <Affect where="ToObject" level="0" duration="-1" location="Age" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
@@ -11902,7 +11902,7 @@ and leaves.</Description>
       <ExtraFlags>Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="15" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="15" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
@@ -12238,7 +12238,7 @@ glows for a moment and it seems to be your own.</Description>
       <ExtraFlags>NoDrop NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>

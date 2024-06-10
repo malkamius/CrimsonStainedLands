@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{20 40} Ceran   Forest of Drannor</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4007,6 +4008,7 @@ the forest confines.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -4061,6 +4063,7 @@ as it scuttles across the ground.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -4116,6 +4119,7 @@ creature and they stare at you in contempt.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -4170,6 +4174,7 @@ eyes are a malevolent red. A snarl of fierce hate sounds from it's jaws.</descri
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic Infrared DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -4225,6 +4230,7 @@ he stands eternal watch over the dead city's gates.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared DetectIllusion DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>6</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -4280,6 +4286,7 @@ else of substance seems to exist.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -4312,8 +4319,12 @@ else of substance seems to exist.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4324,6 +4335,7 @@ else of substance seems to exist.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4347,9 +4359,15 @@ else of substance seems to exist.</description>
       <ExtraFlags>AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4360,6 +4378,7 @@ else of substance seems to exist.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -4368,349 +4387,134 @@ else of substance seems to exist.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="22528" Count="1" Max="5" Vnum="22502">
       <!--Spawn a treant to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22528</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22530" Count="1" Max="6" Vnum="22505">
       <!--Spawn a forest shade to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22530</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22534" Count="1" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22534</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22537" Count="2" Max="6" Vnum="22503">
       <!--Spawn a darkened beast to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22537</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>22503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22538" Count="1" Max="5" Vnum="22502">
       <!--Spawn a treant to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22538</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22538" Count="1" Max="6" Vnum="22505">
       <!--Spawn a forest shade to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22538</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22539" Count="1" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22539</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22541" Count="1" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22541</Destination>
-      <Count>1</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22541" Count="2" Max="6" Vnum="22503">
       <!--Spawn a darkened beast to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22541</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>22503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22544" Count="2" Max="6" Vnum="22503">
       <!--Spawn a darkened beast to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22544</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>22503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22545" Count="3" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22545</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22546" Count="1" Max="6" Vnum="22505">
       <!--Spawn a forest shade to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22546</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22547" Count="3" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22547</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22549" Count="2" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22549</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22550" Count="2" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22550</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22550" Count="1" Max="5" Vnum="22502">
       <!--Spawn a treant to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22550</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22551" Count="1" Max="6" Vnum="22505">
       <!--Spawn a forest shade to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22551</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22552" Count="2" Max="6" Vnum="22503">
       <!--Spawn a darkened beast to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22552</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>22503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22556" Count="1" Max="6" Vnum="22503">
       <!--Spawn a darkened beast to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22556</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22557" Count="2" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22557</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22559" Count="3" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22559</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22559" Count="1" Max="5" Vnum="22502">
       <!--Spawn a treant to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22559</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22560" Count="2" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22560</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22560" Count="1" Max="6" Vnum="22505">
       <!--Spawn a forest shade to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22560</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22505</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22504" Count="1" Max="4" Vnum="22500">
       <!--Spawn a Knight scout of Myth Drannor to On a rough dirt track through the forest-->
-      <Type>NPC</Type>
-      <Destination>22504</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22501">
       <!--Spawn a forest green tunic to a Knight scout of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22508" Count="1" Max="5" Vnum="22502">
       <!--Spawn a treant to On a rough dirt track through the forest-->
-      <Type>NPC</Type>
-      <Destination>22508</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>22502</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22509" Count="1" Max="4" Vnum="22500">
       <!--Spawn a Knight scout of Myth Drannor to On a rough dirt track through the forest-->
-      <Type>NPC</Type>
-      <Destination>22509</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22501">
       <!--Spawn a forest green tunic to a Knight scout of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22515" Count="1" Max="4" Vnum="22500">
       <!--Spawn a Knight scout of Myth Drannor to On a rough dirt track through the forest-->
-      <Type>NPC</Type>
-      <Destination>22515</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22501">
       <!--Spawn a forest green tunic to a Knight scout of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22519" Count="1" Max="3" Vnum="22504">
       <!--Spawn an elven skeleton to Before some stone ruins-->
-      <Type>NPC</Type>
-      <Destination>22519</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>22504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22500">
       <!--Spawn a rusted iron sword to an elven skeleton-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22521" Count="1" Max="4" Vnum="22500">
       <!--Spawn a Knight scout of Myth Drannor to On a rough dirt track through the forest-->
-      <Type>NPC</Type>
-      <Destination>22521</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22501">
       <!--Spawn a forest green tunic to a Knight scout of Myth Drannor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22523" Count="1" Max="3" Vnum="22504">
       <!--Spawn an elven skeleton to Before some stone ruins-->
-      <Type>NPC</Type>
-      <Destination>22523</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>22504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22500">
       <!--Spawn a rusted iron sword to an elven skeleton-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22524" Count="1" Max="3" Vnum="22504">
       <!--Spawn an elven skeleton to Before some stone ruins-->
-      <Type>NPC</Type>
-      <Destination>22524</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>22504</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22500">
       <!--Spawn a rusted iron sword to an elven skeleton-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>22500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22525" Count="2" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22525</Destination>
-      <Count>2</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22525" Count="2" Max="6" Vnum="22503">
       <!--Spawn a darkened beast to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22525</Destination>
-      <Count>2</Count>
-      <Max>6</Max>
-      <Vnum>22503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22527" Count="3" Max="12" Vnum="22501">
       <!--Spawn a giant spider to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22527</Destination>
-      <Count>3</Count>
-      <Max>12</Max>
-      <Vnum>22501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="22527" Count="1" Max="6" Vnum="22505">
       <!--Spawn a forest shade to Within the Forest of Myth Drannor-->
-      <Type>NPC</Type>
-      <Destination>22527</Destination>
-      <Count>1</Count>
-      <Max>6</Max>
-      <Vnum>22505</Vnum>
     </Reset>
   </Resets>
 </Area>

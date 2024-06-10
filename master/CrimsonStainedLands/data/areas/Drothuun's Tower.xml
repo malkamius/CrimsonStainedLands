@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>[ ALL ] Tinesthia      Drothuun's Peak</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -836,6 +837,7 @@ on to the east.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>18</DamageDiceSides>
       <DamageDiceCount>25</DamageDiceCount>
@@ -877,6 +879,7 @@ on to the east.</Description>
       <Material>Stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -885,13 +888,8 @@ on to the east.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="30619" Count="0" Max="1" Vnum="30600">
       <!--Spawn stone slab to -->
-      <Type>Item</Type>
-      <Destination>30619</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>30600</Vnum>
     </Reset>
   </Resets>
 </Area>

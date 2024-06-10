@@ -494,7 +494,7 @@ Bones of previous adventurers lie strewn on the cavern floor.</Description>
       <VNum>5015</VNum>
       <Name>Underground pool</Name>
       <Description>You are wading in a knee deep pool of lime-water.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark NoMob</Flags>
       <Exits>
         <Exit>
@@ -3484,7 +3484,7 @@ has the same effect).</description>
       <ExtraFlags>Magic NoDrop</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
@@ -3752,7 +3752,7 @@ has the same effect).</description>
       <!--Spawn The drider to At the foot of the rubble-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
-      <!--Spawn a long sword to The drider-->
+      <!--Spawn a long sword to an animated skeleton-->
     </Reset>
     <Reset Type="NPC" Destination="5011" Count="1" Max="1" Vnum="5010">
       <!--Spawn The dracolich to Giant cave-->
@@ -3761,7 +3761,7 @@ has the same effect).</description>
       <!--Spawn a glowing suit of banded mail to The dracolich-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="5002">
-      <!--Spawn the halberd to The dracolich-->
+      <!--Spawn the halberd to an undead giant-->
     </Reset>
     <Reset Type="Item" Destination="5011" Count="0" Max="1" Vnum="5005">
       <!--Spawn a large leg bone to Giant cave-->
@@ -3770,7 +3770,7 @@ has the same effect).</description>
       <!--Spawn The dark dwarf to Damp hallway-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5000">
-      <!--Spawn a small mining pick to The dark dwarf-->
+      <!--Spawn a small mining pick to a wooden golem-->
     </Reset>
     <Reset Type="NPC" Destination="5021" Count="4" Max="4" Vnum="5013">
       <!--Spawn the myconoid to Fungus temple-->
@@ -3788,7 +3788,7 @@ has the same effect).</description>
       <!--Spawn The dervish to The Sands of Sorrow-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3021">
-      <!--Spawn a small sword to The dervish-->
+      <!--Spawn a small sword to an ugly witch-->
     </Reset>
     <Reset Type="NPC" Destination="5026" Count="1" Max="4" Vnum="5015">
       <!--Spawn The dustdigger to The Sands of Sorrow-->
@@ -3809,10 +3809,10 @@ has the same effect).</description>
       <!--Spawn a pink potion to The giant, purple sand worm-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="5020">
-      <!--Spawn a platinum wand to The giant, purple sand worm-->
+      <!--Spawn a platinum wand to a pair of disembodied eyes-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="5021">
-      <!--Spawn a strange energy bow to The giant, purple sand worm-->
+      <!--Spawn a strange energy bow to a pair of disembodied eyes-->
     </Reset>
     <Reset Type="NPC" Destination="5029" Count="1" Max="3" Vnum="5000">
       <!--Spawn The dervish to The Sands of Sorrow-->
@@ -3827,7 +3827,7 @@ has the same effect).</description>
       <!--Spawn The dervish to The Sands of Sorrow-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3022">
-      <!--Spawn a long sword to The dervish-->
+      <!--Spawn a long sword to the master of Neutrality-->
     </Reset>
     <Reset Type="NPC" Destination="5031" Count="5" Max="5" Vnum="5002">
       <!--Spawn The coral snake to The Sands of Sorrow-->
@@ -3866,7 +3866,7 @@ has the same effect).</description>
       <!--Spawn The nomad leader to The main tent-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5016">
-      <!--Spawn a long, curved sabre to The nomad leader-->
+      <!--Spawn a long, curved sabre to The master of goodness-->
     </Reset>
     <Reset Type="Item" Destination="5061" Count="0" Max="1" Vnum="5008">
       <!--Spawn a small wicker basket to The main tent-->

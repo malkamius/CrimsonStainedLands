@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1537,6 +1538,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Swim</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>7</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -1549,9 +1551,9 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-	  <Programs>
+      <Programs>
         <Program Name="ForemanRespondProgram" />
-		<Program Name="DocksBountyQuestProgram" />
+        <Program Name="DocksBountyQuestProgram" />
       </Programs>
     </NPC>
     <NPC>
@@ -1594,6 +1596,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>bite</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>2</DamageDiceCount>
@@ -1610,7 +1613,7 @@ front of him.</description>
         <SkillSpell Name="dodge" Value="80" Level="1" />
         <SkillSpell Name="second attack" Value="80" Level="1" />
       </Learned>
-	  <Programs>
+      <Programs>
         <Program Name="DocksBountyQuestProgram" />
       </Programs>
     </NPC>
@@ -1654,6 +1657,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>suction</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>2</DamageDiceCount>
@@ -1666,7 +1670,7 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-	  <Programs>
+      <Programs>
         <Program Name="DocksBountyQuestProgram" />
       </Programs>
     </NPC>
@@ -1710,6 +1714,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>bite</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>2</DamageDiceCount>
@@ -1722,7 +1727,7 @@ front of him.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-	  <Programs>
+      <Programs>
         <Program Name="DocksBountyQuestProgram" />
       </Programs>
     </NPC>
@@ -1766,6 +1771,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>peck</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1819,6 +1825,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>peck</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1872,6 +1879,7 @@ front of him.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>peck</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -1885,7 +1893,7 @@ front of him.</description>
         <Charisma>16</Charisma>
       </PermanentStats>
     </NPC>
-	    <NPC>
+    <NPC>
       <Vnum>60007</Vnum>
       <name>Margaret Maggie Whitman</name>
       <description>Maggie Whitman is a hardy woman in her late sixties, running the renowned
@@ -1935,11 +1943,12 @@ an indispensable resource for all things maritime in Astoria.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NoWander</flags>
+      <flags>NoWander Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy></affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -1952,7 +1961,7 @@ an indispensable resource for all things maritime in Astoria.</description>
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-	  <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="Boat" />
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="Boat" />
     </NPC>
   </NPCs>
   <Items>
@@ -1973,9 +1982,15 @@ an indispensable resource for all things maritime in Astoria.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1986,6 +2001,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>-1</ArmorBash>
       <ArmorSlash>-1</ArmorSlash>
       <ArmorPierce>-1</ArmorPierce>
@@ -2009,7 +2025,9 @@ an indispensable resource for all things maritime in Astoria.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2020,6 +2038,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>-1</ArmorBash>
       <ArmorSlash>-1</ArmorSlash>
       <ArmorPierce>-1</ArmorPierce>
@@ -2040,7 +2059,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closed Closeable Locked</ExtraFlags>
+      <ExtraFlags>Closed Closable Locked</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Keys>
         <Key vnum="60003" />
@@ -2055,6 +2074,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2087,6 +2107,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <Material>oldstyle</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2095,260 +2116,102 @@ an indispensable resource for all things maritime in Astoria.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="60039" Count="1" Max="1" Vnum="60000">
       <!--Spawn the foreman to Foreman's Ofice-->
-      <Type>NPC</Type>
-      <Destination>60039</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60000">
       <!--Spawn a charred bracer to the foreman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>60000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60001">
       <!--Spawn a pair of black sleeves to the foreman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="60003">
       <!--Spawn a key to the foreman-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>60003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="60040" Count="1" Max="1" Vnum="60002">
       <!--Spawn the cabinet to Back Office-->
-      <Type>Item</Type>
-      <Destination>60040</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="19097">
       <!--Spawn the silver coins to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>19097</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60015" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to The Docks-->
-      <Type>NPC</Type>
-      <Destination>60015</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60013" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to The Docks-->
-      <Type>NPC</Type>
-      <Destination>60013</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60011" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to The Docks-->
-      <Type>NPC</Type>
-      <Destination>60011</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60019" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to The Docks-->
-      <Type>NPC</Type>
-      <Destination>60019</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60042" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to Storage Room-->
-      <Type>NPC</Type>
-      <Destination>60042</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60041" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to Storage Room-->
-      <Type>NPC</Type>
-      <Destination>60041</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60021" Count="1" Max="1" Vnum="60001">
       <!--Spawn the rat to The Docks-->
-      <Type>NPC</Type>
-      <Destination>60021</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60000" Count="1" Max="1" Vnum="19019">
       <!--Spawn the cityguard to The Docks-->
-      <Type>NPC</Type>
-      <Destination>60000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>19019</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60041" Count="1" Max="1" Vnum="60002">
       <!--Spawn the centipede to Storage Room-->
-      <Type>NPC</Type>
-      <Destination>60041</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60042" Count="1" Max="1" Vnum="60002">
       <!--Spawn the centipede to Storage Room-->
-      <Type>NPC</Type>
-      <Destination>60042</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60042" Count="1" Max="1" Vnum="60003">
       <!--Spawn the spider to Storage Room-->
-      <Type>NPC</Type>
-      <Destination>60042</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60041" Count="1" Max="1" Vnum="60003">
       <!--Spawn the spider to Storage Room-->
-      <Type>NPC</Type>
-      <Destination>60041</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60003</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60024" Count="1" Max="1" Vnum="60004">
       <!--Spawn the pigeon to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60024</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60025" Count="1" Max="1" Vnum="60005">
       <!--Spawn the starling to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60025</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60026" Count="1" Max="1" Vnum="60006">
       <!--Spawn the sparrow to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60026</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60028" Count="1" Max="1" Vnum="60004">
       <!--Spawn the pigeon to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60028</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60029" Count="1" Max="1" Vnum="60005">
       <!--Spawn the starling to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60029</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60030" Count="1" Max="1" Vnum="60006">
       <!--Spawn the sparrow to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60030</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60032" Count="1" Max="1" Vnum="60004">
       <!--Spawn the pigeon to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60032</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60033" Count="1" Max="1" Vnum="60005">
       <!--Spawn the starling to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60033</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60005</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60035" Count="1" Max="1" Vnum="60006">
       <!--Spawn the sparrow to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60035</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60006</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60036" Count="1" Max="1" Vnum="60004">
       <!--Spawn the pigeon to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60036</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60037" Count="1" Max="1" Vnum="60004">
       <!--Spawn the pigeon to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60037</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60004</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="60038" Count="1" Max="1" Vnum="60005">
       <!--Spawn the starling to The Catwalk-->
-      <Type>NPC</Type>
-      <Destination>60038</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60005</Vnum>
     </Reset>
-	<Reset>
-      <Type>NPC</Type>
-      <Destination>60002</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>60007</Vnum>
+    <Reset Type="NPC" Destination="60002" Count="1" Max="1" Vnum="60007">
+      <!--Spawn Margaret "Maggie" Whitman to Boat Shop-->
     </Reset>
-	<Reset>
-		<Type>Give</Type>
-		<Destination>0</Destination>
-		<Count>1</Count>
-		<Max>1</Max>
-		<Vnum>3051</Vnum>
-	</Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3051">
+      <!--Spawn a canoe to Margaret "Maggie" Whitman-->
+    </Reset>
   </Resets>
   <Quests>
     <Quest Vnum="60000">
@@ -2362,7 +2225,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <RewardGold>0</RewardGold>
       <ShowInQuests>true</ShowInQuests>
     </Quest>
-	<Quest Vnum="60001">
+    <Quest Vnum="60001">
       <Name>docks_critters_quest</Name>
       <Display>Docks Bounty</Display>
       <ShortDescription></ShortDescription>

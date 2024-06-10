@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ 5 15} Raff    Dangerous Neighborhood</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2683,6 +2684,7 @@ A doorway empties out into Solomon  street to the west.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2736,6 +2738,7 @@ A doorway empties out into Solomon  street to the west.</Description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2790,6 +2793,7 @@ guess mostly brute force from the size of his muscles.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -2843,6 +2847,7 @@ guess mostly brute force from the size of his muscles.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2896,6 +2901,7 @@ guess mostly brute force from the size of his muscles.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2949,6 +2955,7 @@ guess mostly brute force from the size of his muscles.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3002,6 +3009,7 @@ guess mostly brute force from the size of his muscles.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3056,6 +3064,7 @@ His fangs are blood-stained from hearty meals of ... steak?!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3112,6 +3121,7 @@ His fangs are blood-stained from hearty meals of ... steak?!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3165,6 +3175,7 @@ His fangs are blood-stained from hearty meals of ... steak?!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -3219,6 +3230,7 @@ breaking heads for the Ogres.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -3260,6 +3272,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3292,6 +3305,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -3315,8 +3329,12 @@ breaking heads for the Ogres.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3327,6 +3345,7 @@ breaking heads for the Ogres.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3359,6 +3378,7 @@ breaking heads for the Ogres.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3394,6 +3414,7 @@ breaking heads for the Ogres.</description>
       <Material>aluminum</Material>
       <Charges>2</Charges>
       <MaxCharges>2</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3417,8 +3438,12 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3429,6 +3454,7 @@ breaking heads for the Ogres.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3452,8 +3478,12 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3464,6 +3494,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3499,6 +3530,7 @@ breaking heads for the Ogres.</description>
       <Material>glass</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3522,7 +3554,9 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3533,6 +3567,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -3556,8 +3591,12 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3568,6 +3607,7 @@ breaking heads for the Ogres.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3591,8 +3631,12 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3603,6 +3647,7 @@ breaking heads for the Ogres.</description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3626,7 +3671,9 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3637,6 +3684,7 @@ breaking heads for the Ogres.</description>
       <Material>brass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>1</ArmorBash>
       <ArmorSlash>1</ArmorSlash>
       <ArmorPierce>1</ArmorPierce>
@@ -3660,8 +3708,12 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3672,6 +3724,7 @@ breaking heads for the Ogres.</description>
       <Material>lead</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3704,6 +3757,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>4</ArmorPierce>
@@ -3736,6 +3790,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -3768,6 +3823,7 @@ breaking heads for the Ogres.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3800,6 +3856,7 @@ breaking heads for the Ogres.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>4</ArmorBash>
       <ArmorSlash>4</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3828,7 +3885,9 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3839,6 +3898,7 @@ breaking heads for the Ogres.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3862,7 +3922,9 @@ breaking heads for the Ogres.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3873,6 +3935,7 @@ breaking heads for the Ogres.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3886,1701 +3949,641 @@ breaking heads for the Ogres.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="2102" Count="1" Max="3" Vnum="2109">
       <!--Spawn a punk to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2102</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>2109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2105">
       <!--Spawn a spray paint can to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2102" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2102</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
+      <!--Spawn a Troll gang jacket to an enormous reanimated minotaur-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2103" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2103</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2104" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2104</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2105" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2105</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2106" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2106</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2107" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2107</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2108" Count="1" Max="5" Vnum="2104">
       <!--Spawn a bruiser to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2108</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2109">
       <!--Spawn comfortable leather gloves to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2113">
       <!--Spawn a lead pipe to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2108" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2108</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2109" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2109</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2110" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2110</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2111" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2111</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2112" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2112</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2113" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2113</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2114" Count="1" Max="5" Vnum="2104">
       <!--Spawn a bruiser to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2114</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a troll signet ring to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2111</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2111">
+      <!--Spawn a troll signet ring to a burning red-boned skeleton-->
     </Reset>
-    <Reset>
-      <!--Spawn a hefty length of chain to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2103</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2103">
+      <!--Spawn a hefty length of chain to a burning red-boned skeleton-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2114" Count="1" Max="3" Vnum="2109">
       <!--Spawn a punk to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2114</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>2109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a switchblade to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2118</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2118">
+      <!--Spawn a switchblade to the black skeleton of a knight-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2114" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2114</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2115" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2115</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2116" Count="1" Max="5" Vnum="2104">
       <!--Spawn a bruiser to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2116</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2104">
       <!--Spawn a metal shield to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2103">
       <!--Spawn a hefty length of chain to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2116" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2116</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2117" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2117</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
+      <!--Spawn a Troll gang jacket to the undead mage of the Abyss-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2118" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2118</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2119" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2119</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2120" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2120</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2121" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to Shortcut-->
-      <Type>NPC</Type>
-      <Destination>2121</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2122" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2122</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2123" Count="1" Max="5" Vnum="2104">
       <!--Spawn a bruiser to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2123</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2113">
       <!--Spawn a lead pipe to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2117">
       <!--Spawn a pair of black leather pants to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2117</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2123" Count="2" Max="10" Vnum="2105">
       <!--Spawn a doll to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2123</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2108">
       <!--Spawn a mirror to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2124" Count="1" Max="1" Vnum="2103">
       <!--Spawn the Troll gang leader to Old Abandoned Warehouse-->
-      <Type>NPC</Type>
-      <Destination>2124</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2119">
       <!--Spawn a broken bottle to the Troll gang leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2119</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2111">
       <!--Spawn a troll signet ring to the Troll gang leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to the Troll gang leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2124" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to Old Abandoned Warehouse-->
-      <Type>NPC</Type>
-      <Destination>2124</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2124" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to Old Abandoned Warehouse-->
-      <Type>NPC</Type>
-      <Destination>2124</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2124" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to Old Abandoned Warehouse-->
-      <Type>NPC</Type>
-      <Destination>2124</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2124" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to Old Abandoned Warehouse-->
-      <Type>NPC</Type>
-      <Destination>2124</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2125" Count="2" Max="10" Vnum="2105">
       <!--Spawn a doll to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2125</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2108">
       <!--Spawn a mirror to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2107">
       <!--Spawn spiked heeled boots to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2128" Count="1" Max="3" Vnum="2109">
       <!--Spawn a punk to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2128</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>2109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2105">
       <!--Spawn a spray paint can to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2118">
       <!--Spawn a switchblade to a punk-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2118</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2128" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2128</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2130" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2130</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2131" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2131</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2131" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2131</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2116">
       <!--Spawn a police whistle to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2116</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2132" Count="2" Max="10" Vnum="2105">
       <!--Spawn a doll to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2132</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2107">
       <!--Spawn spiked heeled boots to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2132" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to Gangland Camp-->
-      <Type>NPC</Type>
-      <Destination>2132</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2133" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2133</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2116">
       <!--Spawn a police whistle to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2116</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2134" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2134</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
       <!--Spawn a Troll gang jacket to a troll gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2134" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2134</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2135" Count="1" Max="5" Vnum="2104">
       <!--Spawn a bruiser to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2135</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2114">
       <!--Spawn a studded Troll gang jacket to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2114</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2104">
       <!--Spawn a metal shield to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2111">
       <!--Spawn a troll signet ring to a bruiser-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2135" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2135</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2136" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2136</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2116">
       <!--Spawn a police whistle to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2116</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2137" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to NO MAN'S LAND-->
-      <Type>NPC</Type>
-      <Destination>2137</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2137" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to NO MAN'S LAND-->
-      <Type>NPC</Type>
-      <Destination>2137</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2138" Count="1" Max="5" Vnum="2111">
       <!--Spawn a thug to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2138</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2103">
       <!--Spawn a hefty length of chain to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2109">
       <!--Spawn comfortable leather gloves to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2138" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2138</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2116">
       <!--Spawn a police whistle to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2116</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2139" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2139</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2116">
       <!--Spawn a police whistle to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2116</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2140" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2140</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2140" Count="1" Max="10" Vnum="2106">
       <!--Spawn a patrolman to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2140</Destination>
-      <Count>1</Count>
-      <Max>10</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2110">
       <!--Spawn a patrol club to a patrolman-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2142" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2142</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2143" Count="1" Max="3" Vnum="2107">
       <!--Spawn a vandal to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2143</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>2107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2118">
       <!--Spawn a switchblade to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2118</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2145" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2145</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2146" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2146</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2147" Count="1" Max="5" Vnum="2111">
       <!--Spawn a thug to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2147</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2103">
       <!--Spawn a hefty length of chain to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2112">
       <!--Spawn brass knuckles to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2112</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2148" Count="1" Max="1" Vnum="2110">
       <!--Spawn the Ogre gang leader to A small ruined chapel-->
-      <Type>NPC</Type>
-      <Destination>2148</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>2110</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to the Ogre gang leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2106">
       <!--Spawn a stiletto to the Ogre gang leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2112">
       <!--Spawn brass knuckles to the Ogre gang leader-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2112</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2148" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to A small ruined chapel-->
-      <Type>NPC</Type>
-      <Destination>2148</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2148" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to A small ruined chapel-->
-      <Type>NPC</Type>
-      <Destination>2148</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2148" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to A small ruined chapel-->
-      <Type>NPC</Type>
-      <Destination>2148</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2148" Count="6" Max="12" Vnum="2108">
       <!--Spawn a pitbull to A small ruined chapel-->
-      <Type>NPC</Type>
-      <Destination>2148</Destination>
-      <Count>6</Count>
-      <Max>12</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2149" Count="2" Max="10" Vnum="2105">
       <!--Spawn a doll to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2149</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2107">
       <!--Spawn spiked heeled boots to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2108">
       <!--Spawn a mirror to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2150" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2150</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2151" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to Achilles Avenue-->
-      <Type>NPC</Type>
-      <Destination>2151</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2152" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2152</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2152" Count="2" Max="10" Vnum="2105">
       <!--Spawn a doll to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2152</Destination>
-      <Count>2</Count>
-      <Max>10</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2108">
       <!--Spawn a mirror to a doll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2108</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2153" Count="1" Max="5" Vnum="2111">
       <!--Spawn a thug to What is left of the weaponshop-->
-      <Type>NPC</Type>
-      <Destination>2153</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2113">
       <!--Spawn a lead pipe to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2113</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2117">
       <!--Spawn a pair of black leather pants to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2117</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2153" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to What is left of the weaponshop-->
-      <Type>NPC</Type>
-      <Destination>2153</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2154" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2154</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2155" Count="1" Max="5" Vnum="2111">
       <!--Spawn a thug to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2155</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2104">
       <!--Spawn a metal shield to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2109">
       <!--Spawn comfortable leather gloves to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2109</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2155" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2155</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2156" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2156</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2157" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2157</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2158" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2158</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2159" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2159</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2160" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to Entrance to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2160</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2161" Count="1" Max="3" Vnum="2107">
       <!--Spawn a vandal to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2161</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>2107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2105">
       <!--Spawn a spray paint can to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2161" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2161</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2162" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2162</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2163" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2163</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2164" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2164</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2165" Count="1" Max="3" Vnum="2107">
       <!--Spawn a vandal to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2165</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>2107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2105">
       <!--Spawn a spray paint can to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2118">
       <!--Spawn a switchblade to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2118</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a vandal-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2165" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2165</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2166" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2166</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2167" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2167</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2169" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2169</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2170" Count="1" Max="5" Vnum="2111">
       <!--Spawn a thug to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2170</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>2111</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2115">
       <!--Spawn a studded Ogre gang jacket to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2115</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2104">
       <!--Spawn a metal shield to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2117">
       <!--Spawn a pair of black leather pants to a thug-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2117</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="2170" Count="1" Max="25" Vnum="2102">
       <!--Spawn an ogre gang member to No-Man's-Land Camp-->
-      <Type>NPC</Type>
-      <Destination>2170</Destination>
-      <Count>1</Count>
-      <Max>25</Max>
-      <Vnum>2102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2102">
       <!--Spawn an Ogre gang jacket to an ogre gang member-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>2102</Vnum>
     </Reset>
   </Resets>
 </Area>

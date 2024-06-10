@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -241,7 +242,7 @@ see the passage.</Description>
           <Display>the door east</Display>
           <Keywords></Keywords>
           <Description></Description>
-          <Flags>NonObvious Window</Flags>
+          <Flags>Hidden Window</Flags>
           <Keys>0</Keys>
           <ExitSize>Giant</ExitSize>
         </Exit>
@@ -279,7 +280,7 @@ knees.</Description>
           <Display>the door west</Display>
           <Keywords></Keywords>
           <Description></Description>
-          <Flags>NonObvious Window</Flags>
+          <Flags>Hidden Window</Flags>
           <Keys>0</Keys>
           <ExitSize>Giant</ExitSize>
         </Exit>
@@ -333,6 +334,7 @@ now ghostly form of this spirit.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>11</DamageDiceSides>
       <DamageDiceCount>18</DamageDiceCount>
@@ -391,6 +393,7 @@ now ghostly form of this spirit.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>11</DamageDiceSides>
       <DamageDiceCount>18</DamageDiceCount>
@@ -423,9 +426,15 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingRod" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingRod" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -436,6 +445,7 @@ now ghostly form of this spirit.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -459,10 +469,18 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -473,6 +491,7 @@ now ghostly form of this spirit.</description>
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -496,11 +515,21 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -511,6 +540,7 @@ now ghostly form of this spirit.</description>
       <Material>Mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -534,10 +564,18 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -548,6 +586,7 @@ now ghostly form of this spirit.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>18</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -571,9 +610,15 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -584,6 +629,7 @@ now ghostly form of this spirit.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>18</ArmorSlash>
       <ArmorPierce>17</ArmorPierce>
@@ -607,10 +653,18 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -621,6 +675,7 @@ now ghostly form of this spirit.</description>
       <Material>mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>9</ArmorBash>
       <ArmorSlash>13</ArmorSlash>
       <ArmorPierce>13</ArmorPierce>
@@ -644,9 +699,15 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -657,6 +718,7 @@ now ghostly form of this spirit.</description>
       <Material>mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -680,7 +742,9 @@ now ghostly form of this spirit.</description>
       <ExtraFlags>Glow</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="20" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="20" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -691,6 +755,7 @@ now ghostly form of this spirit.</description>
       <Material>mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -699,93 +764,38 @@ now ghostly form of this spirit.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30801">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30801</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30800">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30800</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="30807" Count="1" Max="1" Vnum="30801">
       <!--Spawn a moaning, lost Dwarven Spirit to Small Passageway-->
-      <Type>NPC</Type>
-      <Destination>30807</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>30801</Vnum>
     </Reset>
   </Resets>
 </Area>

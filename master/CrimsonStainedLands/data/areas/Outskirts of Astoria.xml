@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2937,13 +2938,8 @@ the city.</Description>
   <NPCs />
   <Items />
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="51570" Count="1" Max="20" Vnum="51517">
       <!--Spawn a bunny to Within a Dense Forest-->
-      <Type>NPC</Type>
-      <Destination>51570</Destination>
-      <Count>1</Count>
-      <Max>20</Max>
-      <Vnum>51517</Vnum>
     </Reset>
   </Resets>
 </Area>

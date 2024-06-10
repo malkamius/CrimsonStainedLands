@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{SHRINE} Ceial  Shrine of Corruption</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1723,6 +1724,7 @@ you to strike.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Flying Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -1778,6 +1780,7 @@ this world.  You suddenly have an impulse to turn and run.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Infrared Sneak Haste</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -1834,6 +1837,7 @@ attack this massive specimen.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary Berserk Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -1890,6 +1894,7 @@ Ceial.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Infrared Sneak Haste</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>1</DamageDiceSides>
       <DamageDiceCount>1</DamageDiceCount>
@@ -1922,10 +1927,18 @@ Ceial.</description>
       <ExtraFlags>Glow Evil Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="35" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1936,6 +1949,7 @@ Ceial.</description>
       <Material>onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -1959,8 +1973,12 @@ Ceial.</description>
       <ExtraFlags>Glow Hum Evil AntiGood NoRemove Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1971,6 +1989,7 @@ Ceial.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1994,9 +2013,15 @@ Ceial.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2007,6 +2032,7 @@ Ceial.</description>
       <Material>onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -2039,6 +2065,7 @@ Ceial.</description>
       <Material>earth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2062,9 +2089,15 @@ Ceial.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="40" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="40" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2075,6 +2108,7 @@ Ceial.</description>
       <Material>onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -2112,6 +2146,7 @@ Ceial.</description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2135,9 +2170,15 @@ Ceial.</description>
       <ExtraFlags>Glow Hum Evil</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2148,6 +2189,7 @@ Ceial.</description>
       <Material>onyx</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>25</ArmorBash>
       <ArmorSlash>25</ArmorSlash>
       <ArmorPierce>25</ArmorPierce>
@@ -2156,197 +2198,77 @@ Ceial.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="502" Count="1" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to A dark clearing-->
-      <Type>NPC</Type>
-      <Destination>502</Destination>
-      <Count>1</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="503" Count="2" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>503</Destination>
-      <Count>2</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="505" Count="3" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>505</Destination>
-      <Count>3</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="506" Count="4" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>506</Destination>
-      <Count>4</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="512" Count="15" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>512</Destination>
-      <Count>15</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="515" Count="14" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>515</Destination>
-      <Count>14</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="516" Count="5" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>516</Destination>
-      <Count>5</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="518" Count="8" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>518</Destination>
-      <Count>8</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="519" Count="1" Max="1" Vnum="502">
       <!--Spawn The Orc General to Center of the field-->
-      <Type>NPC</Type>
-      <Destination>519</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>502</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a breastplate adorned with a black rose to The Orc General-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>502</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="502">
+      <!--Spawn a breastplate adorned with a black rose to A skeletal knight-->
     </Reset>
-    <Reset>
-      <!--Spawn a helm engraved with a black rose with a single thorn to The Orc General-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>500</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="500">
+      <!--Spawn a helm engraved with a black rose with a single thorn to A skeletal knight-->
     </Reset>
-    <Reset>
-      <!--Spawn the Sword of Devotion to The Orc General-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>501</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="501">
+      <!--Spawn the Sword of Devotion to A skeletal knight-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="520" Count="9" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>520</Destination>
-      <Count>9</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="521" Count="10" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>521</Destination>
-      <Count>10</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="522" Count="13" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>522</Destination>
-      <Count>13</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="523" Count="12" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>523</Destination>
-      <Count>12</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="524" Count="11" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>524</Destination>
-      <Count>11</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="527" Count="7" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>527</Destination>
-      <Count>7</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="529" Count="6" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
-      <Type>NPC</Type>
-      <Destination>529</Destination>
-      <Count>6</Count>
-      <Max>15</Max>
-      <Vnum>500</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="535" Count="1" Max="1" Vnum="501">
       <!--Spawn the Dreadlord to Chamber of the Dreadlord-->
-      <Type>NPC</Type>
-      <Destination>535</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>501</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="504">
       <!--Spawn the bracer of dread to the Dreadlord-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>504</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the scroll of despair to the Dreadlord-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>505</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="505">
+      <!--Spawn the scroll of despair to A skeletal knight-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="536" Count="1" Max="1" Vnum="503">
       <!--Spawn the Fallen Templar to Room of the fallen templar-->
-      <Type>NPC</Type>
-      <Destination>536</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>503</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="506">
       <!--Spawn the Shield of the Fallen Templar to the Fallen Templar-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>506</Vnum>
     </Reset>
   </Resets>
 </Area>

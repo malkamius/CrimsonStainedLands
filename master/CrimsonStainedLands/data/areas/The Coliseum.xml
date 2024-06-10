@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{ All } Dioxide  The Coliseum</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2132,11 +2133,12 @@ uniform, but seems to be healing the wounded.</description>
       <gold>1</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel StayArea Gain Practice Healer</flags>
+      <flags>NPC Sentinel StayArea Trainer Practice Healer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectionEvil ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary Infrared ProtectEvil ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>50</DamageDiceSides>
       <DamageDiceCount>2</DamageDiceCount>
@@ -2191,6 +2193,7 @@ razor-sharp and covered in red blood.  It is very, very angry.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Infrared Berserk DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>2</DamageDiceCount>
@@ -2238,6 +2241,7 @@ razor-sharp and covered in red blood.  It is very, very angry.</description>
       <Material>plastic</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2261,11 +2265,21 @@ razor-sharp and covered in red blood.  It is very, very angry.</description>
       <ExtraFlags>Glow Hum NoDrop NoRemove RotDeath MeltDrop BurnProof Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="15" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2276,6 +2290,7 @@ razor-sharp and covered in red blood.  It is very, very angry.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2308,6 +2323,7 @@ razor-sharp and covered in red blood.  It is very, very angry.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2316,109 +2332,44 @@ razor-sharp and covered in red blood.  It is very, very angry.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="26000" Count="1" Max="1" Vnum="26000">
       <!--Spawn an old healer to Below the Coliseum-->
-      <Type>NPC</Type>
-      <Destination>26000</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26002" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Northeast Corner of the Arena Floor-->
-      <Type>Item</Type>
-      <Destination>26002</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26004" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Southeast Corner of the Arena Floor-->
-      <Type>Item</Type>
-      <Destination>26004</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26006" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Southwest Corner of the Arena Floor-->
-      <Type>Item</Type>
-      <Destination>26006</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26008" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Northwest Corner of the Arena Floor-->
-      <Type>Item</Type>
-      <Destination>26008</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26009" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Northern Wing of the 2nd Level-->
-      <Type>Item</Type>
-      <Destination>26009</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26013" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Eastern Wing of the 2nd Level-->
-      <Type>Item</Type>
-      <Destination>26013</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26017" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Southern Wing of the 2nd Level-->
-      <Type>Item</Type>
-      <Destination>26017</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26021" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Western Wing of the 2nd Level-->
-      <Type>Item</Type>
-      <Destination>26021</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26028" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Northeast Corner of the 3rd Level-->
-      <Type>Item</Type>
-      <Destination>26028</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26034" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Southeast Corner of the 3rd Level-->
-      <Type>Item</Type>
-      <Destination>26034</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26040" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Southwest Corner of the 3rd Level-->
-      <Type>Item</Type>
-      <Destination>26040</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="26046" Count="0" Max="1" Vnum="26000">
       <!--Spawn a pill of health to Northwest Corner of the 3rd Level-->
-      <Type>Item</Type>
-      <Destination>26046</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>26000</Vnum>
     </Reset>
   </Resets>
 </Area>

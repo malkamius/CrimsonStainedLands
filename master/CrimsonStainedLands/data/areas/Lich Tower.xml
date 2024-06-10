@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{DEATH} Someone   Lich Tower</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1045,6 +1046,7 @@ necromancy, they were the most renown knights of their day.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1100,6 +1102,7 @@ them.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1155,6 +1158,7 @@ and fangs it uses as weapons make you consider running as fast as posible.</desc
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Flying DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -1211,6 +1215,7 @@ corrupt your soul.  Fear him mortal for you are about to die.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Infrared Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>11</DamageDiceSides>
       <DamageDiceCount>5</DamageDiceCount>
@@ -1268,6 +1273,7 @@ he has found to any seeking necromancy on some level.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Infrared DetectIllusion DetectInvis Flying PassDoor DarkVision</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>11</DamageDiceCount>
@@ -1323,6 +1329,7 @@ perhaps you should run now, before you're dead.  ;&gt;</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Infrared Flying</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>claw</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -1379,6 +1386,7 @@ is much larger and appears to be more powerful as well.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -1420,6 +1428,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1443,12 +1452,24 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Light</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1459,6 +1480,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1494,6 +1516,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>Onyx</Material>
       <Charges>10</Charges>
       <MaxCharges>10</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1529,6 +1552,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>Iron</Material>
       <Charges>3</Charges>
       <MaxCharges>3</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1552,10 +1576,18 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Glow Magic NoDrop</ExtraFlags>
       <ItemTypes>Treasure</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1566,6 +1598,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1589,9 +1622,15 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Hum Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1602,6 +1641,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>admantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>18</ArmorBash>
       <ArmorSlash>17</ArmorSlash>
       <ArmorPierce>18</ArmorPierce>
@@ -1625,10 +1665,18 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Glow Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1639,6 +1687,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>21</ArmorBash>
       <ArmorSlash>21</ArmorSlash>
       <ArmorPierce>21</ArmorPierce>
@@ -1662,8 +1711,12 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Glow Magic Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1674,6 +1727,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>admantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1697,11 +1751,21 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1712,6 +1776,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>admantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>22</ArmorBash>
       <ArmorSlash>21</ArmorSlash>
       <ArmorPierce>21</ArmorPierce>
@@ -1735,12 +1800,24 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Glow Hum Evil Magic NoRemove Vorpal TwoHands Shocking Poison</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1751,6 +1828,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>admantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1774,10 +1852,18 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Magic NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="150" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sanctuary" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Summon" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="150" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sanctuary" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Summon" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1788,6 +1874,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>24</ArmorBash>
       <ArmorSlash>24</ArmorSlash>
       <ArmorPierce>24</ArmorPierce>
@@ -1811,14 +1898,30 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Glow Hum Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1829,6 +1932,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>23</ArmorBash>
       <ArmorSlash>24</ArmorSlash>
       <ArmorPierce>23</ArmorPierce>
@@ -1867,6 +1971,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1899,6 +2004,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1922,10 +2028,18 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Boat</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Regeneration" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Regeneration" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1936,6 +2050,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1959,8 +2074,12 @@ is much larger and appears to be more powerful as well.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1971,6 +2090,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>admantite</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>13</ArmorBash>
       <ArmorSlash>12</ArmorSlash>
       <ArmorPierce>13</ArmorPierce>
@@ -2003,6 +2123,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2035,6 +2156,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2067,6 +2189,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2099,6 +2222,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2131,6 +2255,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2163,6 +2288,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2195,6 +2321,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2227,6 +2354,7 @@ is much larger and appears to be more powerful as well.</description>
       <Material>stone</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2235,309 +2363,119 @@ is much larger and appears to be more powerful as well.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="29350" Count="0" Max="1" Vnum="29373">
       <!--Spawn a large obsidian cross to Before the Tower-->
-      <Type>Item</Type>
-      <Destination>29350</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29373</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29352" Count="1" Max="1" Vnum="29355">
       <!--Spawn The Dracolich to The Dracolich's Lair-->
-      <Type>NPC</Type>
-      <Destination>29352</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29355</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="29352">
       <!--Spawn an onyx encrusted wand to The Dracolich-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29352</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29353" Count="1" Max="4" Vnum="29350">
       <!--Spawn A Death Knight to The Entrance Hall-->
-      <Type>NPC</Type>
-      <Destination>29353</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29350">
       <!--Spawn an old black mace to A Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="29354" Count="0" Max="1" Vnum="29367">
       <!--Spawn a large wooden chair to The Dining Hall-->
-      <Type>Item</Type>
-      <Destination>29354</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29367</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="29354" Count="0" Max="1" Vnum="29368">
       <!--Spawn a huge dining table to The Dining Hall-->
-      <Type>Item</Type>
-      <Destination>29354</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29368</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29360" Count="1" Max="4" Vnum="29350">
       <!--Spawn A Death Knight to Lich's Study-->
-      <Type>NPC</Type>
-      <Destination>29360</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29350">
       <!--Spawn an old black mace to A Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="29360" Count="0" Max="1" Vnum="29370">
       <!--Spawn a large mahogany desk to Lich's Study-->
-      <Type>Item</Type>
-      <Destination>29360</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29370</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="29360" Count="0" Max="1" Vnum="29371">
       <!--Spawn a closet carved into the wall to Lich's Study-->
-      <Type>Item</Type>
-      <Destination>29360</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29371</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="29361">
       <!--Spawn the Infinity Scroll to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29361</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="29362">
       <!--Spawn a silvery potion to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29362</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="29363">
       <!--Spawn a golden key to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29363</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="29364">
       <!--Spawn boots of waterwalking to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29364</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="29365">
       <!--Spawn a Thieve's Tunic to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29365</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="29366">
       <!--Spawn a blank piece of paper to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29366</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="29361" Count="0" Max="1" Vnum="29372">
       <!--Spawn a powerful grimoire to The Library-->
-      <Type>Item</Type>
-      <Destination>29361</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29372</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29362" Count="1" Max="4" Vnum="29350">
       <!--Spawn A Death Knight to The Library-->
-      <Type>NPC</Type>
-      <Destination>29362</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29350">
       <!--Spawn an old black mace to A Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="29362" Count="0" Max="1" Vnum="29369">
       <!--Spawn an old wooden bookshelf to The Library-->
-      <Type>Item</Type>
-      <Destination>29362</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>29369</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29363" Count="1" Max="1" Vnum="29353">
       <!--Spawn A Major Demon to A Summoning Room-->
-      <Type>NPC</Type>
-      <Destination>29363</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29353</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29356">
       <!--Spawn the Amulet of the Night to A Major Demon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29356</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29364" Count="1" Max="1" Vnum="29351">
       <!--Spawn The Inquisitor to The Torture Chamber-->
-      <Type>NPC</Type>
-      <Destination>29364</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29351</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29351">
       <!--Spawn a Flaming Skull to The Inquisitor-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29351</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29365" Count="1" Max="1" Vnum="29352">
       <!--Spawn A Minor Demon to A Summoning Room-->
-      <Type>NPC</Type>
-      <Destination>29365</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29352</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the Bracer of the Night to A Minor Demon-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29355</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29355">
+      <!--Spawn the Bracer of the Night to an undead elven maiden-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29366" Count="1" Max="2" Vnum="29356">
       <!--Spawn An Elite Death Knight to A Large Hall-->
-      <Type>NPC</Type>
-      <Destination>29366</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>29356</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29357">
       <!--Spawn an Ancient Longsword to An Elite Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29357</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29358">
       <!--Spawn a black dragon scale to An Elite Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29358</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29367" Count="1" Max="1" Vnum="29354">
       <!--Spawn Myzelak the Lich Lord to The Lich's Throne Room-->
-      <Type>NPC</Type>
-      <Destination>29367</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>29354</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn the Hell's Wraith to Myzelak the Lich Lord-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29359</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29359">
+      <!--Spawn the Hell's Wraith to a corrupted treant-->
     </Reset>
-    <Reset>
-      <!--Spawn sorceror's robes to Myzelak the Lich Lord-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29360</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29360">
+      <!--Spawn sorceror's robes to a corrupted treant-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29368" Count="1" Max="2" Vnum="29356">
       <!--Spawn An Elite Death Knight to A Large Hall-->
-      <Type>NPC</Type>
-      <Destination>29368</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>29356</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29357">
       <!--Spawn an Ancient Longsword to An Elite Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29357</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29358">
       <!--Spawn a black dragon scale to An Elite Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29358</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="29369" Count="1" Max="4" Vnum="29350">
       <!--Spawn A Death Knight to A Storage Room-->
-      <Type>NPC</Type>
-      <Destination>29369</Destination>
-      <Count>1</Count>
-      <Max>4</Max>
-      <Vnum>29350</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29350">
       <!--Spawn an old black mace to A Death Knight-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>29350</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{51 60} ROM     Immortal Zone</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1040,6 +1041,7 @@ world for this tree is as old as the world itself.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary Flying PassDoor Haste DarkVision Regeneration</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>500</DamageDiceSides>
       <DamageDiceCount>50</DamageDiceCount>
@@ -1093,6 +1095,7 @@ world for this tree is as old as the world itself.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>
@@ -1131,6 +1134,7 @@ world for this tree is as old as the world itself.</description>
       <Material>plant</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1163,6 +1167,7 @@ world for this tree is as old as the world itself.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1186,10 +1191,18 @@ world for this tree is as old as the world itself.</description>
       <ExtraFlags>Glow Hum Dark Magic RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell" />
-        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Mental" modifier="-1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToResist" level="0" duration="-1" location="None" DamageTypes="Mental" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1200,6 +1213,7 @@ world for this tree is as old as the world itself.</description>
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1223,9 +1237,15 @@ world for this tree is as old as the world itself.</description>
       <ExtraFlags>Glow Hum Evil RotDeath SellExtract Flaming Frost Sharp Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="50" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Chr" modifier="-25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="50" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Chr" modifier="-25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1236,6 +1256,7 @@ world for this tree is as old as the world itself.</description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1268,6 +1289,7 @@ world for this tree is as old as the world itself.</description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1328,8 +1350,12 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1340,6 +1366,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>48</ArmorBash>
       <ArmorSlash>68</ArmorSlash>
       <ArmorPierce>62</ArmorPierce>
@@ -1363,8 +1390,12 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1375,6 +1406,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>33</ArmorBash>
       <ArmorSlash>49</ArmorSlash>
       <ArmorPierce>49</ArmorPierce>
@@ -1398,7 +1430,9 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1409,6 +1443,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>29</ArmorBash>
       <ArmorSlash>43</ArmorSlash>
       <ArmorPierce>43</ArmorPierce>
@@ -1432,11 +1467,21 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1447,6 +1492,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>gem</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>37</ArmorBash>
       <ArmorSlash>31</ArmorSlash>
       <ArmorPierce>24</ArmorPierce>
@@ -1470,8 +1516,12 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1482,6 +1532,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>mineral</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>36</ArmorBash>
       <ArmorSlash>23</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -1505,9 +1556,15 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1518,6 +1575,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1541,8 +1599,12 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1553,6 +1615,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>37</ArmorBash>
       <ArmorSlash>23</ArmorSlash>
       <ArmorPierce>21</ArmorPierce>
@@ -1576,8 +1639,12 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1588,6 +1655,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>cloth</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>30</ArmorBash>
       <ArmorSlash>23</ArmorSlash>
       <ArmorPierce>23</ArmorPierce>
@@ -1611,7 +1679,9 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1622,6 +1692,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>30</ArmorBash>
       <ArmorSlash>43</ArmorSlash>
       <ArmorPierce>39</ArmorPierce>
@@ -1645,9 +1716,15 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Light</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1658,6 +1735,7 @@ shields..helpful for newbie paladins. Onward you go! Doing well so far right?</D
       <Material>iron</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1687,8 +1765,12 @@ to keep your surroundings visible.</Description>
       <ExtraFlags>Glow RotDeath SellExtract</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1699,6 +1781,7 @@ to keep your surroundings visible.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>77</ArmorBash>
       <ArmorSlash>116</ArmorSlash>
       <ArmorPierce>116</ArmorPierce>
@@ -1731,6 +1814,7 @@ to keep your surroundings visible.</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1763,6 +1847,7 @@ to keep your surroundings visible.</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1821,6 +1906,7 @@ Varggin Shih: n,d,3w,3s,d,2s,d,n,u,w,u,n,u,2n,e,d,n,d,2n</Description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1829,157 +1915,62 @@ Varggin Shih: n,d,3w,3s,d,2s,d,n,u,w,u,n,u,2n,e,d,n,d,2n</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="1202" Count="1" Max="1" Vnum="1210">
       <!--Spawn A Lone Guardian Of Newbies Stands Here With His Trophies to The Center of the Universe-->
-      <Type>NPC</Type>
-      <Destination>1202</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>1210</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1222">
       <!--Spawn a map written on parchment to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1221">
       <!--Spawn a leather backpack to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1221</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1220">
       <!--Spawn a polished shield to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1220</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1219">
       <!--Spawn an unbalanced pole to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1219</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1218">
       <!--Spawn a pair of tarnished boots to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1218</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1217">
       <!--Spawn a pair of cloth leggings to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1217</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1216">
       <!--Spawn an embroidered belt to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1216</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a charred cloth bracer to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1215</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1215">
+      <!--Spawn a charred cloth bracer to an imp-->
     </Reset>
-    <Reset>
-      <!--Spawn a charred cloth bracer to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1215</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1215">
+      <!--Spawn a charred cloth bracer to an imp-->
     </Reset>
-    <Reset>
-      <!--Spawn a ring set with a dull stone to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1214</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1214">
+      <!--Spawn a ring set with a dull stone to an imp-->
     </Reset>
-    <Reset>
-      <!--Spawn a ring set with a dull stone to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1214</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1214">
+      <!--Spawn a ring set with a dull stone to an imp-->
     </Reset>
-    <Reset>
-      <!--Spawn a dusty necklace to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1213</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1213">
+      <!--Spawn a dusty necklace to an imp-->
     </Reset>
-    <Reset>
-      <!--Spawn a dusty necklace to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1213</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1213">
+      <!--Spawn a dusty necklace to an imp-->
     </Reset>
-    <Reset>
-      <!--Spawn a pair of steel gauntlets to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1212</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1212">
+      <!--Spawn a pair of steel gauntlets to a fire beast-->
     </Reset>
-    <Reset>
-      <!--Spawn a pair of steel armguards to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1211</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1211">
+      <!--Spawn a pair of steel armguards to a fire beast-->
     </Reset>
-    <Reset>
-      <!--Spawn a rusted breastplate to A Lone Guardian Of Newbies Stands Here With His Trophies-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>1210</Vnum>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="1210">
+      <!--Spawn a rusted breastplate to a fire beast-->
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="1222" Count="0" Max="1" Vnum="1201">
       <!--Spawn a few bushes are bunched together making a sort of gateway through the leaves to Nature's Haven-->
-      <Type>Item</Type>
-      <Destination>1222</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>1201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="1222" Count="1" Max="1" Vnum="1207">
       <!--Spawn A massive Oak Tree stands in the center of the Glade to Nature's Haven-->
-      <Type>NPC</Type>
-      <Destination>1222</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>1207</Vnum>
     </Reset>
   </Resets>
 </Area>

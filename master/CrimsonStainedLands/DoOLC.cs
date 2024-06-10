@@ -766,13 +766,15 @@ namespace CrimsonStainedLands
             else if ("size".StringPrefix(command))
             {
                 var flags = new List<ExitFlags>();
-                if (!Utility.GetEnumValue(args, ref exit.ExitSize))
+                CharacterSize exitsize = CharacterSize.Giant;
+                if (!Utility.GetEnumValue(args, ref exitsize))
                 {
                     ch.send("Valid sizes are {0}.\n\r", string.Join(" ", Utility.GetEnumValues<CharacterSize>()));
                     return;
                 }
                 else
                 {
+                    exit.ExitSize = exitsize;
                     for (int i = 0; i < ch.Room.exits.Length; i++)
                     {
                         if (ch.EditingRoom.OriginalExits[i] != null)

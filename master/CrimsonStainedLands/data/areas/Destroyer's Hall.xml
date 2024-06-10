@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>[ ALL ] Lyug           Destroyer's Hall</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -10101,11 +10102,12 @@ if not paying attention to immediate mundane surroundings.</description>
       <gold>50</gold>
       <SavingThrow>0</SavingThrow>
       <Guild></Guild>
-      <flags>NPC Sentinel Aggressive StayArea NoAlign Gain AreaAttack</flags>
+      <flags>NPC Sentinel Aggressive StayArea NoAlign Trainer AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DarkVision DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -10147,6 +10149,7 @@ if not paying attention to immediate mundane surroundings.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10185,6 +10188,7 @@ flesh has mostly been ripped apart by the scavengers of these mountains.</Descri
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10227,6 +10231,7 @@ before.</Description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -10246,61 +10251,26 @@ location.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="Item" Destination="31024" Count="0" Max="1" Vnum="31000">
       <!--Spawn a bloodless corpse to A Wide Path Covered in Blood and Snow-->
-      <Type>Item</Type>
-      <Destination>31024</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>31000</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="31026" Count="0" Max="1" Vnum="31001">
       <!--Spawn the mound of the mutilated and decapitated to The Crumbling Ruins of the Southern Gate-->
-      <Type>Item</Type>
-      <Destination>31026</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>31001</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Item" Destination="31026" Count="0" Max="1" Vnum="31002">
       <!--Spawn a heavy, wooden cart to The Crumbling Ruins of the Southern Gate-->
-      <Type>Item</Type>
-      <Destination>31026</Destination>
-      <Count>0</Count>
-      <Max>1</Max>
-      <Vnum>31002</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="31448" Count="1" Max="1" Vnum="31400">
       <!--Spawn Niolas te Famo the Amber Occultist to Amber-->
-      <Type>NPC</Type>
-      <Destination>31448</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>31400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="31448" Count="1" Max="1" Vnum="31400">
       <!--Spawn Niolas te Famo the Amber Occultist to Amber-->
-      <Type>NPC</Type>
-      <Destination>31448</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>31400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="31448" Count="1" Max="1" Vnum="31400">
       <!--Spawn Niolas te Famo the Amber Occultist to Amber-->
-      <Type>NPC</Type>
-      <Destination>31448</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>31400</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="31448" Count="1" Max="1" Vnum="31400">
       <!--Spawn Niolas te Famo the Amber Occultist to Amber-->
-      <Type>NPC</Type>
-      <Destination>31448</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>31400</Vnum>
     </Reset>
   </Resets>
 </Area>

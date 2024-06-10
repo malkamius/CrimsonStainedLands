@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{25 51} Amlaruil Giant Village</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -616,7 +617,7 @@ around  your boots.  Leaning on an awkward slant, a delapedated signpost stands.
           <Direction>North</Direction>
           <Destination>1555</Destination>
           <Display>the door north</Display>
-          <Keywords />
+          <Keywords></Keywords>
           <Description></Description>
           <Flags></Flags>
           <Keys></Keys>
@@ -2315,7 +2316,7 @@ with etchings in it stands off to the side.</Description>
       <Description>A steep slope causes you to fall downwards into a large pool of water.  You 
 are able to travel outwards to the west, and looking southwards you see
 nothing,   it is pitch-black.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Dark NoMob</Flags>
       <Exits>
         <Exit>
@@ -2805,7 +2806,8 @@ concentrated upon seeking your death.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectEvil DetectInvis DetectHidden Sanctuary ProtectionGood Haste DetectIllusion</affectedBy>
+      <affectedBy>DetectEvil DetectInvis DetectHidden Sanctuary ProtectGood Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>30</DamageDiceSides>
       <DamageDiceCount>3</DamageDiceCount>
@@ -2864,7 +2866,8 @@ sends shivers down your spine.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Invisible DetectEvil DetectInvis DetectHidden Sanctuary ProtectionGood Haste DetectIllusion</affectedBy>
+      <affectedBy>Invisible DetectEvil DetectInvis DetectHidden Sanctuary ProtectGood Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>25</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -2919,7 +2922,8 @@ warrior, dedicated to the protection of his village.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>ProtectionGood Haste DetectIllusion</affectedBy>
+      <affectedBy>ProtectGood Haste DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -2974,7 +2978,8 @@ warrior, dedicated to the protection of his village.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3032,6 +3037,7 @@ silver coins.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3087,7 +3093,8 @@ perhaps very concentrated, to the extent that he looks rather fatigued.</descrip
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3144,6 +3151,7 @@ more stocky.  His large complextion offthrows his youthfulness.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3199,6 +3207,7 @@ doesn't carry the weight of saddness within his eyes.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3253,7 +3262,8 @@ look of a great barbarian.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden DetectGood Sanctuary ProtectionGood DarkVision Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden DetectGood Sanctuary ProtectGood DarkVision Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>27</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3308,6 +3318,7 @@ stupidity.  Watch yourself!</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3361,7 +3372,8 @@ some plain armors.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectionEvil ProtectionGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectEvil ProtectGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3416,7 +3428,8 @@ some plain weapons.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectionEvil ProtectionGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectEvil ProtectGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3471,7 +3484,8 @@ for the slaughtering process.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectionEvil ProtectionGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectEvil ProtectGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3526,7 +3540,8 @@ to himself.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectionEvil ProtectionGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectEvil ProtectGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3581,7 +3596,8 @@ now cure wounds and take peoples money for doing so.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectionEvil ProtectionGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden DetectGood Sanctuary Infrared ProtectEvil ProtectGood Haste DarkVision Regeneration DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -3635,7 +3651,8 @@ village.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3692,6 +3709,7 @@ of endless torture.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3746,7 +3764,8 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>ProtectionGood DetectIllusion</affectedBy>
+      <affectedBy>ProtectGood DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>8</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3779,10 +3798,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Hum Evil Bless MeltDrop Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToVulnerabilities" level="0" duration="-1" location="None" DamageTypes="Cold" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Fire" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToVulnerabilities" level="0" duration="-1" location="None" DamageTypes="Cold" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Fire" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3793,6 +3820,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3816,11 +3844,21 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum NoDrop RotDeath VisDeath MeltDrop</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-9" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Regeneration" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-9" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Regeneration" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3831,6 +3869,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>platinum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -3855,12 +3894,24 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum Magic NoDrop Bless NoRemove NoUncurse</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectHidden" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="-6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="-6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="-100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="DetectHidden" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-10" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3871,6 +3922,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>platinum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -3895,10 +3947,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum Evil NoDrop</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="6" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3909,6 +3969,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>platinum</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>18</ArmorBash>
       <ArmorSlash>7</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -3941,6 +4002,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3964,8 +4026,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectionGood" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="ProtectGood" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3976,6 +4042,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -3999,11 +4066,21 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4014,6 +4091,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4037,7 +4115,9 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4048,6 +4128,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4071,9 +4152,15 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="300" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="300" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4084,6 +4171,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4107,8 +4195,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4119,6 +4211,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4142,9 +4235,15 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4155,6 +4254,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4178,10 +4278,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-11" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-11" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4192,6 +4300,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4215,8 +4324,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Dark Evil Magic AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4227,6 +4340,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>marble</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4250,9 +4364,15 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum Dark Evil AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4263,6 +4383,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -4286,8 +4407,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum Dark Evil Bless AntiGood MeltDrop BurnProof Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4298,6 +4423,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4321,10 +4447,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum Evil Magic Bless AntiGood NoRemove Flaming Frost Vorpal TwoHands Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Cold" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToImmune" level="0" duration="-1" location="None" DamageTypes="Cold" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4335,6 +4469,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>dragonscale</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4372,6 +4507,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4400,8 +4536,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Magic Bless Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4412,6 +4552,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>mithril</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4435,10 +4576,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Hum Evil AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4449,6 +4598,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>diamond</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>20</ArmorBash>
       <ArmorSlash>20</ArmorSlash>
       <ArmorPierce>20</ArmorPierce>
@@ -4472,9 +4622,15 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="60" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="PassDoor" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="60" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="PassDoor" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4485,6 +4641,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>ivory</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -4508,10 +4665,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Evil AntiGood AntiNeutral</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sneak" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Hide" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Sneak" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Hide" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4522,6 +4687,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>wool</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>12</ArmorBash>
       <ArmorSlash>9</ArmorSlash>
       <ArmorPierce>8</ArmorPierce>
@@ -4554,6 +4720,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4589,6 +4756,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4617,8 +4785,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-12" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-12" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4629,6 +4801,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4652,8 +4825,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-12" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Armor" modifier="-12" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4664,6 +4841,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4687,8 +4865,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-7" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-7" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4699,6 +4881,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4722,9 +4905,15 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Magic NoRemove</ExtraFlags>
       <ItemTypes>Talisman</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-35" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="100" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-35" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="-25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Spells>
         <Spell Level="60" SpellName="sanctuary" />
@@ -4738,6 +4927,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>wood</Material>
       <Charges>20</Charges>
       <MaxCharges>20</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4770,6 +4960,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4793,8 +4984,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Evil Bless NoRemove BurnProof Frost Sharp TwoHands Poison Unholy</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="8" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="8" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4805,6 +5000,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>fire</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4828,9 +5024,15 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Hum Evil Bless NoRemove BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4841,6 +5043,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>copper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>15</ArmorBash>
       <ArmorSlash>15</ArmorSlash>
       <ArmorPierce>15</ArmorPierce>
@@ -4864,10 +5067,18 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Evil Bless AntiGood AntiNeutral NoRemove BurnProof</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4878,6 +5089,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>copper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>5</ArmorBash>
       <ArmorSlash>5</ArmorSlash>
       <ArmorPierce>5</ArmorPierce>
@@ -4901,8 +5113,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-25" hidden="False" affectType="Spell" />
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Blind" modifier="0" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-25" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Blind" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -4913,6 +5129,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4946,6 +5163,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>bamboo</Material>
       <Charges>20</Charges>
       <MaxCharges>20</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -4978,6 +5196,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>brass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5015,6 +5234,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5047,6 +5267,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5079,6 +5300,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>food</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5102,8 +5324,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5114,6 +5340,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -5137,8 +5364,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5149,6 +5380,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -5172,8 +5404,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5184,6 +5420,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -5207,8 +5444,12 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="-1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5219,6 +5460,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>10</ArmorBash>
       <ArmorSlash>10</ArmorSlash>
       <ArmorPierce>10</ArmorPierce>
@@ -5242,7 +5484,9 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <ExtraFlags>Glow Hum Bless</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -5253,6 +5497,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5285,6 +5530,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5317,6 +5563,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5349,6 +5596,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>wood</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5381,6 +5629,7 @@ negotiate peace.  Though he has little confidence in himself.</description>
       <Material>gold</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -5389,829 +5638,314 @@ negotiate peace.  Though he has little confidence in himself.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="13213" Count="1" Max="2" Vnum="13202">
       <!--Spawn A huge Fire giant guard to Entering the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13213</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>13202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13217">
       <!--Spawn a heavy double-bladed mithril broadsword to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13217</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13219">
       <!--Spawn a pair of thick ivory armguards to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13219</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13220">
       <!--Spawn a darkened robe etched with a white skull to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13220</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13216">
       <!--Spawn a bubbling elixir to A huge Fire giant guard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13213" Count="1" Max="2" Vnum="13202">
       <!--Spawn A huge Fire giant guard to Entering the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13213</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>13202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13217">
       <!--Spawn a heavy double-bladed mithril broadsword to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13217</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13219">
       <!--Spawn a pair of thick ivory armguards to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13219</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13220">
       <!--Spawn a darkened robe etched with a white skull to A huge Fire giant guard-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13220</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13216">
       <!--Spawn a bubbling elixir to A huge Fire giant guard-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13214" Count="1" Max="2" Vnum="13215">
       <!--Spawn A stone gargoyle to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13214</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>13215</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13214" Count="1" Max="2" Vnum="13215">
       <!--Spawn A stone gargoyle to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13214</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>13215</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13215" Count="1" Max="5" Vnum="13203">
       <!--Spawn A Fire giant patroller to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13215</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13214">
       <!--Spawn a fiery dual-bladed dagger to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13222">
       <!--Spawn a smooth black quartz vial to A Fire giant patroller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13220" Count="1" Max="1" Vnum="13212">
       <!--Spawn A Fire giant butcher to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13220</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13212</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13235">
       <!--Spawn a large juicy steak to A Fire giant butcher-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13235</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13236">
       <!--Spawn a roasted lamb leg to A Fire giant butcher-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13236</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13222" Count="1" Max="1" Vnum="13210">
       <!--Spawn A Fire giant armourer to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13222</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13210</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13237">
       <!--Spawn some steel platemail to A Fire giant armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13237</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13238">
       <!--Spawn a steel helm to A Fire giant armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13238</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13239">
       <!--Spawn some steel legplates to A Fire giant armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13239</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13240">
       <!--Spawn some steel boots to A Fire giant armourer-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13240</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13224" Count="1" Max="1" Vnum="13211">
       <!--Spawn A Fire giant weaponsmith to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13224</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13241">
       <!--Spawn a large steel broadsword to A Fire giant weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13241</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13242">
       <!--Spawn a small dagger to A Fire giant weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13242</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13243">
       <!--Spawn a small mace to A Fire giant weaponsmith-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13243</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13225" Count="1" Max="3" Vnum="13205">
       <!--Spawn A Fire giant squire to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13225</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13225">
       <!--Spawn a ragged brown cloak to A Fire giant squire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13225</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13226" Count="1" Max="1" Vnum="13213">
       <!--Spawn A Fire giant shopkeeper to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13226</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13232">
       <!--Spawn a large mystical gourd filled with water to A Fire giant shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13232</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13233">
       <!--Spawn a hooded brass lantern to A Fire giant shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13233</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13234">
       <!--Spawn a bag to A Fire giant shopkeeper-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13234</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13228" Count="1" Max="5" Vnum="13206">
       <!--Spawn A young Fire giant to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13228</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13231" Count="1" Max="5" Vnum="13203">
       <!--Spawn A Fire giant patroller to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13231</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13214">
       <!--Spawn a fiery dual-bladed dagger to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13222">
       <!--Spawn a smooth black quartz vial to A Fire giant patroller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13232" Count="1" Max="5" Vnum="13206">
       <!--Spawn A young Fire giant to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13232</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13233" Count="1" Max="1" Vnum="13209">
       <!--Spawn The village idiot to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13233</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13231">
       <!--Spawn a blindfold to The village idiot-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13231</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13235" Count="1" Max="3" Vnum="13205">
       <!--Spawn A Fire giant squire to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13235</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13225">
       <!--Spawn a ragged brown cloak to A Fire giant squire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13225</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13235" Count="1" Max="5" Vnum="13206">
       <!--Spawn A young Fire giant to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13235</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13235" Count="1" Max="5" Vnum="13206">
       <!--Spawn A young Fire giant to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13235</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13236" Count="1" Max="5" Vnum="13206">
       <!--Spawn A young Fire giant to A Broken Lava Bed-->
-      <Type>NPC</Type>
-      <Destination>13236</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13237" Count="1" Max="1" Vnum="13204">
       <!--Spawn A Fire giant tax collector to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13237</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13223">
       <!--Spawn a shinning gold necklace to A Fire giant tax collector-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13223</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13224">
       <!--Spawn a shinning gold bracelet to A Fire giant tax collector-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13224</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13221">
       <!--Spawn a tax collection book to A Fire giant tax collector-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13221</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13226">
       <!--Spawn the staff of knowledge and protection to A Fire giant tax collector-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13226</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13215">
       <!--Spawn the tail from a young ice dragon to A Fire giant tax collector-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13215</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="13244">
       <!--Spawn a blackwood staff to previous item-->
-      <Type>Put</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13244</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13237" Count="1" Max="1" Vnum="13214">
       <!--Spawn A Fire giant Healer to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13237</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13238" Count="1" Max="5" Vnum="13203">
       <!--Spawn A Fire giant patroller to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13238</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13214">
       <!--Spawn a fiery dual-bladed dagger to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13222">
       <!--Spawn a smooth black quartz vial to A Fire giant patroller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13241" Count="1" Max="1" Vnum="13207">
       <!--Spawn An old looking Fire giant to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13241</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13227">
       <!--Spawn a large golden cane embedded with diamonds to An old looking Fire giant-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13227</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13242" Count="1" Max="5" Vnum="13203">
       <!--Spawn A Fire giant patroller to Rim of the Volcano-->
-      <Type>NPC</Type>
-      <Destination>13242</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13214">
       <!--Spawn a fiery dual-bladed dagger to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13222">
       <!--Spawn a smooth black quartz vial to A Fire giant patroller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13244" Count="1" Max="5" Vnum="13203">
       <!--Spawn A Fire giant patroller to The Hangman's Stump-->
-      <Type>NPC</Type>
-      <Destination>13244</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>13203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13213">
       <!--Spawn the signet ring of the Fire giant village to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13213</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13214">
       <!--Spawn a fiery dual-bladed dagger to A Fire giant patroller-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13214</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="13222">
       <!--Spawn a smooth black quartz vial to A Fire giant patroller-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13222</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13245" Count="1" Max="3" Vnum="13205">
       <!--Spawn A Fire giant squire to A worn trail-->
-      <Type>NPC</Type>
-      <Destination>13245</Destination>
-      <Count>1</Count>
-      <Max>3</Max>
-      <Vnum>13205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13225">
       <!--Spawn a ragged brown cloak to A Fire giant squire-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13225</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13245" Count="1" Max="1" Vnum="13217">
       <!--Spawn A bold adventurer to A worn trail-->
-      <Type>NPC</Type>
-      <Destination>13245</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13217</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13243">
       <!--Spawn a small mace to A bold adventurer-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13243</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13251" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to Inside the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13251</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13251" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to Inside the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13251</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13254" Count="1" Max="1" Vnum="13200">
       <!--Spawn The Fire Elemental Efreeti to Efreeti's Domain-->
-      <Type>NPC</Type>
-      <Destination>13254</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13200">
       <!--Spawn the Flaming Sword of Efreeti to The Fire Elemental Efreeti-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13201">
       <!--Spawn a massive breastplate covered with spikes to The Fire Elemental Efreeti-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13202">
       <!--Spawn a massive face mask named 'Hero's Helm' to The Fire Elemental Efreeti-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13203">
       <!--Spawn a pair of massive spiked greaves to The Fire Elemental Efreeti-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13255" Count="1" Max="1" Vnum="13208">
       <!--Spawn The Fire giant slavemaster to The Center of the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13255</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13230">
       <!--Spawn a battle ring shimmering with black flames to The Fire giant slavemaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13230</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13218">
       <!--Spawn the slavemaster's insignia to The Fire giant slavemaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13218</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13229">
       <!--Spawn a suit of flaming battle armor to The Fire giant slavemaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13229</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13228">
       <!--Spawn a dual-bladed battleaxe with tips of flame to The Fire giant slavemaster-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13228</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13255" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to The Center of the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13255</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13256" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to Inside the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13256</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13257" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to A Dark Corner in the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13257</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13257" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to A Dark Corner in the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13257</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13258" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to Inside the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13258</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13259" Count="1" Max="8" Vnum="13216">
       <!--Spawn A Storm giant slave to A Dark Corner in the Slave Pens-->
-      <Type>NPC</Type>
-      <Destination>13259</Destination>
-      <Count>1</Count>
-      <Max>8</Max>
-      <Vnum>13216</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="13262" Count="1" Max="1" Vnum="13201">
       <!--Spawn The Unholy Magician to The Unholy Magicians Vault-->
-      <Type>NPC</Type>
-      <Destination>13262</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>13201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13204">
       <!--Spawn the Sceptre of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13205">
       <!--Spawn the chainmail of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13206">
       <!--Spawn the helm of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13206</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13207">
       <!--Spawn the greaves of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13207</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13208">
       <!--Spawn the boots of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13208</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13209">
       <!--Spawn the gauntlets of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13209</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13210">
       <!--Spawn the vambraces of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13210</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13211">
       <!--Spawn the pitch-black belt of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13211</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13212">
       <!--Spawn the bracelet of the Abyss to The Unholy Magician-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>13212</Vnum>
     </Reset>
   </Resets>
 </Area>

@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{10 40} Ceran   The Dead Forest</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2464,6 +2465,7 @@ the surrounding wastes, but not enough for your liking.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -2518,6 +2520,7 @@ the surrounding wastes, but not enough for your liking.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -2572,6 +2575,7 @@ but pain and suffering.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectEvil DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>7</DamageDiceCount>
@@ -2626,6 +2630,7 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Infrared DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -2658,8 +2663,12 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <ExtraFlags>Glow Evil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="3" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2670,6 +2679,7 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2693,9 +2703,15 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <ExtraFlags>Dark Evil NoDrop AntiGood</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2706,6 +2722,7 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <Material>flesh</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>7</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>7</ArmorPierce>
@@ -2729,8 +2746,12 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <ExtraFlags>Glow Evil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2741,6 +2762,7 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2771,8 +2793,12 @@ control a large number of trolls or something.</Description>
       <ExtraFlags>Glow Evil</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="-2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -2783,6 +2809,7 @@ control a large number of trolls or something.</Description>
       <Material>steel</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -2791,453 +2818,173 @@ control a large number of trolls or something.</Description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="24205" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24205</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24205" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24205</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24206" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24206</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24207" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24207</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24207" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24207</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24208" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24208</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24209" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24209</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24210" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24210</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24212" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24212</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24212" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24212</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24213" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24213</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24214" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24214</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24215" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24215</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24216" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24216</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24217" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Before a collapsed tree-->
-      <Type>NPC</Type>
-      <Destination>24217</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24218" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24218</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24220" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24220</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24222" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24222</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24223" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24223</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24225" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24225</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24225" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24225</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24226" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24226</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24227" Count="3" Max="22" Vnum="24202">
       <!--Spawn a lesser troll to Within the Dead Woodlands-->
-      <Type>NPC</Type>
-      <Destination>24227</Destination>
-      <Count>3</Count>
-      <Max>22</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24231" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24231</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24232" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24232</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24234" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24234</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24235" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24235</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24235" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24235</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24200">
       <!--Spawn a Troll-sword to a greater troll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24200</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24235" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24235</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24236" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24236</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24237" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24237</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24238" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24238</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a robe of toughened troll-skin to a greater troll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24201</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24201">
+      <!--Spawn a robe of toughened troll-skin to a human paladin-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24239" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24239</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24240" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A Bloody corner of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24240</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24241" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24241</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24201">
       <!--Spawn a robe of toughened troll-skin to a greater troll-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24201</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24242" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24242</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24243" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24243</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24244" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24244</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24244" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
-      <Type>NPC</Type>
-      <Destination>24244</Destination>
-      <Count>4</Count>
-      <Max>16</Max>
-      <Vnum>24203</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24253" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24253</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24255" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24255</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24256" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24256</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24257" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24257</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24258" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24258</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24258" Count="1" Max="2" Vnum="24205">
       <!--Spawn an anti-ranger scout to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24258</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>24205</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a sword named 'Troll-slayer' to an anti-ranger scout-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24202</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24202">
+      <!--Spawn a sword named 'Troll-slayer' to a human paladin-->
     </Reset>
-    <Reset>
-      <!--Spawn a dagger named 'naga-slayer' to an anti-ranger scout-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24203</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24203">
+      <!--Spawn a dagger named 'naga-slayer' to a troll captain-->
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24259" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24259</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24262" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24262</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24263" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24263</Destination>
-      <Count>3</Count>
-      <Max>8</Max>
-      <Vnum>24204</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="24264" Count="1" Max="2" Vnum="24205">
       <!--Spawn an anti-ranger scout to Within a Dark Clearing-->
-      <Type>NPC</Type>
-      <Destination>24264</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>24205</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24202">
       <!--Spawn a sword named 'Troll-slayer' to an anti-ranger scout-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24202</Vnum>
     </Reset>
-    <Reset>
-      <!--Spawn a dagger named 'naga-slayer' to an anti-ranger scout-->
-      <Type>Equip</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>24203</Vnum>
+    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24203">
+      <!--Spawn a dagger named 'naga-slayer' to a human swordsman-->
     </Reset>
   </Resets>
 </Area>

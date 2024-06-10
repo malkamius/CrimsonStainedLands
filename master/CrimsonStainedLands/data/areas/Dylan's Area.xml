@@ -8,6 +8,7 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{15 25} Dylan   Dylan's Area</Credits>
+    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -3051,6 +3052,7 @@ sharp talons flex as she considers you for her dinner.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>8</DamageDiceCount>
@@ -3107,6 +3109,7 @@ her presence.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3161,6 +3164,7 @@ because objects behind it seem to waver and are slightly blurred.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectHidden Sneak Hide DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -3215,6 +3219,7 @@ finest ghostly silks and a headdress with an elaborate brooch.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary Sneak DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3269,6 +3274,7 @@ moves surprisingly fast for something of its size.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>2</DamageDiceSides>
       <DamageDiceCount>10</DamageDiceCount>
@@ -3323,6 +3329,7 @@ moves surprisingly fast for something of its size.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>5</DamageDiceSides>
       <DamageDiceCount>4</DamageDiceCount>
@@ -3378,6 +3385,7 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis Sanctuary DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>4</DamageDiceSides>
       <DamageDiceCount>6</DamageDiceCount>
@@ -3410,9 +3418,15 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <ExtraFlags>Magic</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Flying" modifier="0" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToAffects" level="0" duration="-1" location="None" flags="Flying" modifier="0" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Saves" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3423,6 +3437,7 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>3</ArmorBash>
       <ArmorSlash>3</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3455,6 +3470,7 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <Material>bronze</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>3</ArmorPierce>
@@ -3475,11 +3491,15 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take Neck</WearFlags>
-      <ExtraFlags>Invisibility</ExtraFlags>
+      <ExtraFlags>Invis</ExtraFlags>
       <ItemTypes>Jewelry</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell" />
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
+          <ExtraState />
+        </Affect>
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -3490,6 +3510,7 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <Material>silver</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3527,6 +3548,7 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <Material>glass</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3564,6 +3586,7 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
       <Material>paper</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
+      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -3572,413 +3595,158 @@ they would be quite painful.  Her eyes pierce your very soul.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset>
+    <Reset Type="NPC" Destination="9102" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9102</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9102" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9102</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9105" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9105</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9105" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9105</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9108" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9108</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9108" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9108</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9108" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9108</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9109" Count="1" Max="5" Vnum="9103">
       <!--Spawn the ghostly air elemental to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9109</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>9103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9112" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Narrow rocky trail.-->
-      <Type>NPC</Type>
-      <Destination>9112</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9112" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Narrow rocky trail.-->
-      <Type>NPC</Type>
-      <Destination>9112</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9117" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Steep mountainside.-->
-      <Type>NPC</Type>
-      <Destination>9117</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9119" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Treacherous Cliff.-->
-      <Type>NPC</Type>
-      <Destination>9119</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9119" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Treacherous Cliff.-->
-      <Type>NPC</Type>
-      <Destination>9119</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9119" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Treacherous Cliff.-->
-      <Type>NPC</Type>
-      <Destination>9119</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9121" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Dank, dark, smelly hole.-->
-      <Type>NPC</Type>
-      <Destination>9121</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9122" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Large, sturdy ledge.-->
-      <Type>NPC</Type>
-      <Destination>9122</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9122" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Large, sturdy ledge.-->
-      <Type>NPC</Type>
-      <Destination>9122</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9123" Count="1" Max="2" Vnum="9102">
       <!--Spawn the screaming harpy leader to Absolutely disgusting lair.-->
-      <Type>NPC</Type>
-      <Destination>9123</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>9102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9104">
       <!--Spawn magenta potion to the screaming harpy leader-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9124" Count="1" Max="2" Vnum="9102">
       <!--Spawn the screaming harpy leader to Absolutely disgusting lair.-->
-      <Type>NPC</Type>
-      <Destination>9124</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>9102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9105">
       <!--Spawn an ancient illustrated parchment to the screaming harpy leader-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9127" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9127</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9127" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9127</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9127" Count="3" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to A fluffy white cloud.-->
-      <Type>NPC</Type>
-      <Destination>9127</Destination>
-      <Count>3</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9129" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Sleepy little cloud.-->
-      <Type>NPC</Type>
-      <Destination>9129</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9131" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Happy little cloud.-->
-      <Type>NPC</Type>
-      <Destination>9131</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9133" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Sneezing little cloud.-->
-      <Type>NPC</Type>
-      <Destination>9133</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9135" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Doc-like little cloud.-->
-      <Type>NPC</Type>
-      <Destination>9135</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9137" Count="1" Max="5" Vnum="9103">
       <!--Spawn the ghostly air elemental to Cold, damp cloud.-->
-      <Type>NPC</Type>
-      <Destination>9137</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>9103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9141" Count="1" Max="1" Vnum="9107">
       <!--Spawn the ugly, wicked witch to Witches Tower-->
-      <Type>NPC</Type>
-      <Destination>9141</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9107</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9144" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9144</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9145" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9145</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9146" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9146</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9147" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9147</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9148" Count="1" Max="5" Vnum="9103">
       <!--Spawn the ghostly air elemental to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9148</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>9103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9149" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9149</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9150" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9150</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9151" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9151</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9152" Count="1" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Raging hurricane.-->
-      <Type>NPC</Type>
-      <Destination>9152</Destination>
-      <Count>1</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9153" Count="1" Max="1" Vnum="9106">
       <!--Spawn the gigantic roc to Calm cloud.-->
-      <Type>NPC</Type>
-      <Destination>9153</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9106</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9156" Count="1" Max="1" Vnum="9105">
       <!--Spawn the gigantic roc to Roc's Nest.-->
-      <Type>NPC</Type>
-      <Destination>9156</Destination>
-      <Count>1</Count>
-      <Max>1</Max>
-      <Vnum>9105</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9158" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Dark hidden cloud.-->
-      <Type>NPC</Type>
-      <Destination>9158</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9158" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Dark hidden cloud.-->
-      <Type>NPC</Type>
-      <Destination>9158</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9162" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Croquet game-->
-      <Type>NPC</Type>
-      <Destination>9162</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9162" Count="2" Max="35" Vnum="9101">
       <!--Spawn the screaming, filthy harpy to Croquet game-->
-      <Type>NPC</Type>
-      <Destination>9162</Destination>
-      <Count>2</Count>
-      <Max>35</Max>
-      <Vnum>9101</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9163" Count="1" Max="5" Vnum="9103">
       <!--Spawn the ghostly air elemental to Huge, gorgeous fountain.-->
-      <Type>NPC</Type>
-      <Destination>9163</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>9103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9177" Count="1" Max="5" Vnum="9103">
       <!--Spawn the ghostly air elemental to Foyer.-->
-      <Type>NPC</Type>
-      <Destination>9177</Destination>
-      <Count>1</Count>
-      <Max>5</Max>
-      <Vnum>9103</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9182" Count="1" Max="2" Vnum="9104">
       <!--Spawn the mysterious efreeti to Western tower.-->
-      <Type>NPC</Type>
-      <Destination>9182</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>9104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9102">
       <!--Spawn A carved bronze bracer to the mysterious efreeti-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9102</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="NPC" Destination="9187" Count="1" Max="2" Vnum="9104">
       <!--Spawn the mysterious efreeti to Eastern tower.-->
-      <Type>NPC</Type>
-      <Destination>9187</Destination>
-      <Count>1</Count>
-      <Max>2</Max>
-      <Vnum>9104</Vnum>
     </Reset>
-    <Reset>
+    <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="9103">
       <!--Spawn an ornate brooch to the mysterious efreeti-->
-      <Type>Give</Type>
-      <Destination>0</Destination>
-      <Count>0</Count>
-      <Max>0</Max>
-      <Vnum>9103</Vnum>
     </Reset>
   </Resets>
 </Area>
