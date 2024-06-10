@@ -465,13 +465,21 @@ namespace CrimsonStainedLands
     }
     public class ExitData
     {
+        static string[] defaultdescriptions = new string[] {
+            "the door north",
+            "the door east",
+            "the door south",
+            "the door west",
+            "the door up",
+            "the door down"
+            };
         public Direction direction;
         public string description = "";
         private string _display;
         public string display
         {
             get { return _display.ISEMPTY() ? "the door " + direction.ToString().ToLower() : _display; }
-            set { if (value != "the door " + direction.ToString().ToLower()) _display = value; }
+            set { if (value != defaultdescriptions[(int)direction]) _display = value; }
         }
         public RoomData source;
         public RoomData destination;

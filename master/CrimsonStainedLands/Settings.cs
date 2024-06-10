@@ -15,7 +15,8 @@ namespace CrimsonStainedLands
         public static int SSHPort { get; set; } = 4002;
         public static string DataPath { get; set; } = "..\\..\\..\\data";
         public static string AreasPath { get; set; } = "..\\..\\..\\data\\areas";
-        public static string PlayersPath { get; set; } = "..\\..\\..\\data\\players";
+        public static string PlayersPath { get; set; } = "data\\players";
+        public static string NotesPath { get; set; } = "data\\";
         public static string GuildsPath{ get; set; } = "..\\..\\..\\data\\guilds";
         public static string RacesPath { get; set; } = "..\\..\\..\\data\\races";
 
@@ -34,6 +35,7 @@ namespace CrimsonStainedLands
                 new XAttribute("DataPath", DataPath),
                 new XAttribute("AreasPath", AreasPath),
                 new XAttribute("PlayersPath", PlayersPath),
+                new XAttribute("NotesPath", NotesPath),
                 new XAttribute("GuildsPath", GuildsPath),
                 new XAttribute("RacesPath", RacesPath));
             settings.Save("Settings.xml");
@@ -55,6 +57,7 @@ namespace CrimsonStainedLands
                 DataPath = settings.GetAttributeValue("DataPath", "..\\..\\..\\data");
                 AreasPath = settings.GetAttributeValue("AreasPath", "..\\..\\..\\data\\areas");
                 PlayersPath = settings.GetAttributeValue("PlayersPath", "..\\..\\..\\data\\players");
+                NotesPath = settings.GetAttributeValue("NotesPath", "data\\");
                 GuildsPath = settings.GetAttributeValue("GuildsPath", "..\\..\\..\\data\\guilds");
                 RacesPath = settings.GetAttributeValue("RacesPath", "..\\..\\..\\data\\races");
             }

@@ -45,20 +45,29 @@ namespace CrimsonStainedLands
             DateTime loadstart = DateTime.Now;
             var tasks = new List<Task>();
             /// Now load area programs before area npcs and rooms, things referencing programs
-            foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
+            Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")).AsParallel().ForAll(file =>
             {
-                //AreaData area = new AreaData(file, headersOnly);
-                tasks.Add(Task.Run(async () =>
-                {
-                    AreaData area = new AreaData();
-                    if(headersOnly)
-                        area.LoadHeader(file);
-                    else
-                        area.Load(file);
-                }));
-            }
+                AreaData area = new AreaData();
+                if (headersOnly)
+                    area.LoadHeader(file);
+                else
+                    area.Load(file);
+            });
+            //foreach (var file in Directory.GetFiles(Settings.AreasPath, "*.xml").Where(path => !path.ToLower().EndsWith("_programs.xml")))
+            //{
+                
+            //    //AreaData area = new AreaData(file, headersOnly);
+            //    tasks.Add(Task.Run(async () =>
+            //    {
+            //        AreaData area = new AreaData();
+            //        if(headersOnly)
+            //            area.LoadHeader(file);
+            //        else
+            //            area.Load(file);
+            //    }));
+            //}
             
-            tasks.ForEach(t => t.Wait());
+            //tasks.ForEach(t => t.Wait());
 
             Game.log("Loaded areas in {0}", DateTime.Now - loadstart);
 

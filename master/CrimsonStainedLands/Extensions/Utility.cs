@@ -34,6 +34,7 @@
 *       found in the file /Tartarus/doc/tartarus.doc                       *
 ***************************************************************************/
 
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
@@ -86,20 +87,20 @@ namespace CrimsonStainedLands.Extensions
             //    if (length > 0) word = " " + word;
             //    newtext.Append(word) ;
             //    length = length + word.Length;
-            
+
             //}
             //return newtext.ToString();
-            
+
             int index = text.IndexOf(' ');
             int lastindex = 0;
             var restwidth = width;
             //int endlineindex = -1;
             bool firstline = true;
-            while(text.Length > 0)
+            while (text.Length > 0)
             {
                 if (firstline) width = firstlinelength;
                 else width = restwidth;
-                while(index > -1 && index <= width && index < text.Length)
+                while (index > -1 && index <= width && index < text.Length)
                 {
                     lastindex = index;
                     index = text.IndexOf(' ', index + 1);
@@ -110,14 +111,14 @@ namespace CrimsonStainedLands.Extensions
                 {
                     newtext.AppendLine(text.Substring(0, index).Trim());
                 }
-                else if(!text.ISEMPTY() && text.Length < width)
+                else if (!text.ISEMPTY() && text.Length < width)
                 {
                     newtext.AppendLine(text.Trim());
                     text = "";
                 }
                 else
                 {
-                    
+
                     newtext.AppendLine(text.Substring(0, lastindex).Trim());
 
                     if (text.Length > lastindex)
@@ -172,7 +173,7 @@ namespace CrimsonStainedLands.Extensions
             text = text.Replace("\t", "   ");
             int linelength = 0;
 
-            for(int i = 0; i < text.Length; i++)
+            for (int i = 0; i < text.Length; i++)
             {
                 if (linelength + word.Length > width)
                 {
@@ -217,7 +218,7 @@ namespace CrimsonStainedLands.Extensions
         }
 
         public static string TOUPPERFIRST(this string args) => args.ISEMPTY() ? "" : (args.Length == 1 ? args.ToUpper() : args[0].ToString().ToUpper() + args.Substring(1));
-        
+
 
         public static string ToDelimitedString<T>(this IEnumerable<T> list, string separator = " ")
         {
@@ -256,7 +257,7 @@ namespace CrimsonStainedLands.Extensions
         /// <returns>The remaining string after an argument is removed</returns>
         public static string OneArgument(this string ListOfArguments, ref string SingleArgument, string Delimiter = " ")
         {
-            if(ListOfArguments.ISEMPTY())
+            if (ListOfArguments.ISEMPTY())
             {
                 ListOfArguments = "";
                 SingleArgument = "";
@@ -269,7 +270,7 @@ namespace CrimsonStainedLands.Extensions
                 {
                     //if (args.IndexOf(args[0], 1) >= 0)
                     //{
-                        Delimiter = ListOfArguments[0].ToString();
+                    Delimiter = ListOfArguments[0].ToString();
                     //}
                     ListOfArguments = ListOfArguments.Substring(1);
                 }
@@ -312,7 +313,7 @@ namespace CrimsonStainedLands.Extensions
             return (int)Math.Round(Math.Round((double)((((double)value) / ((double)max)) * 100.0), 0));
         }
 
-        
+
         [ThreadStatic]
         private static Random randomSeedGenerator;
 
@@ -333,7 +334,7 @@ namespace CrimsonStainedLands.Extensions
         public static int Random(this int inclusiveLowerBound, int inclusiveUpperBound)
         {
             initializeRandom();
-            if(inclusiveLowerBound > inclusiveUpperBound)
+            if (inclusiveLowerBound > inclusiveUpperBound)
             {
                 var upper = inclusiveUpperBound;
                 inclusiveUpperBound = inclusiveLowerBound;
@@ -346,7 +347,7 @@ namespace CrimsonStainedLands.Extensions
             int exclusiveUpperBound = inclusiveUpperBound + 1;
             return randomSeedGenerator.Next(inclusiveLowerBound, exclusiveUpperBound);
         }
-        
+
 
         public static float Random(this float inclusiveLowerBound, float inclusiveUpperBound)
         {
@@ -360,8 +361,8 @@ namespace CrimsonStainedLands.Extensions
             }
 
             double val = (SystemRandomGenerator.NextDouble() * (inclusiveUpperBound - inclusiveLowerBound) + inclusiveLowerBound);
-            
-            return (float) val;
+
+            return (float)val;
         }
 
         public static T SelectRandom<T>(this IEnumerable<T> list)
@@ -396,7 +397,7 @@ namespace CrimsonStainedLands.Extensions
 
         public static bool equals(this string firststring, string secondstring)
         {
-            return firststring.ISEMPTY()? false : firststring.Equals(secondstring, StringComparison.InvariantCultureIgnoreCase);
+            return (firststring == null || secondstring == null) ? false : firststring.Equals(secondstring, StringComparison.InvariantCultureIgnoreCase); //firststring.ISEMPTY()? false : firststring.Equals(secondstring, StringComparison.InvariantCultureIgnoreCase);
         }
 
         public static bool ISSET<T>(this List<T> list, T flag)
@@ -442,7 +443,7 @@ namespace CrimsonStainedLands.Extensions
 
         public static void SETBITS<T>(this List<T> list, IEnumerable<T> flags)
         {
-            foreach(var flag in flags)
+            foreach (var flag in flags)
                 ADDFLAG(list, flag);
         }
 
@@ -507,7 +508,7 @@ namespace CrimsonStainedLands.Extensions
         {
             //if (!list.Contains(flag))
             //{
-                return list.Add(flag);
+            return list.Add(flag);
             //    return true;
             //}
             //else
@@ -523,8 +524,8 @@ namespace CrimsonStainedLands.Extensions
 
         public static bool GetEnumValue<T>(string search, ref T value, T defaultValue = default)
         {
-            var names = Enum.GetNames(typeof(T));
-            var values = Enum.GetValues(typeof(T));
+            var names = EnumGetNames<T>();// Enum.GetNames(typeof(T));
+            var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
 
             if (search.StringCmp("none"))
                 return false;
@@ -544,14 +545,14 @@ namespace CrimsonStainedLands.Extensions
 
         public static bool GetEnumValues<T>(string search, ref List<T> value, bool clear = true, char delimiter = ' ')
         {
-            if(value == null)
+            if (value == null)
                 value = new List<T>();
             if (search.ISEMPTY()) return false;
-            var names = Enum.GetNames(typeof(T));
-            var values = Enum.GetValues(typeof(T));
+            var names = EnumGetNames<T>();// Enum.GetNames(typeof(T));
+            var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
             var flags = search.Split(delimiter);
-            
-            
+
+
 
             if (clear) value.Clear();
 
@@ -564,7 +565,7 @@ namespace CrimsonStainedLands.Extensions
             {
                 found = false;
                 for (int i = 0; i < names.Length; i++)
-                    if (names[i].ToLower() == flag.ToLower() || names[i].Replace("_", "").ToLower() == flag.Replace("_", "").ToLower())
+                    if (names[i] == flag)// names[i].ToLower() == flag.ToLower())// || names[i].Replace("_", "").ToLower() == flag.Replace("_", "").ToLower())
                     {
                         value.SETBIT((T)values.GetValue(i));
                         found = true;
@@ -576,13 +577,33 @@ namespace CrimsonStainedLands.Extensions
             return found;
         }
 
+        static Dictionary<Type, string[]> EnumNames = new Dictionary<Type, string[]>();
+        static Dictionary<Type, Array> EnumValues = new Dictionary<Type, Array>();
+
+        private static string[] EnumGetNames<T>() 
+        {
+            var type = typeof(T);
+            if (!EnumNames.TryGetValue(type, out var names))
+                names = EnumNames[type] = Enum.GetNames(typeof(T));
+            return names;
+        }
+
+        private static Array EnumGetValues<T>()
+        {
+            var type = typeof(T);
+            if (!EnumValues.TryGetValue(type, out var values))
+                values = EnumValues[type] = Enum.GetValues(typeof(T));
+            return values;
+        }
+
         public static bool GetEnumValues<T>(string search, ref HashSet<T> value, bool clear = true, char delimiter = ' ')
         {
             if (value == null)
                 value = new HashSet<T>();
             if (search.ISEMPTY()) return false;
-            var names = Enum.GetNames(typeof(T));
-            var values = Enum.GetValues(typeof(T));
+            //var type = typeof(T);
+            var names = EnumGetNames<T>();// Enum.GetNames(typeof(T));
+            var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
             var flags = search.Split(delimiter);
 
 
@@ -598,7 +619,7 @@ namespace CrimsonStainedLands.Extensions
             {
                 found = false;
                 for (int i = 0; i < names.Length; i++)
-                    if (names[i].ToLower() == flag.ToLower() || names[i].Replace("_", "").ToLower() == flag.Replace("_", "").ToLower())
+                    if (names[i].equals(flag))// || names[i].Replace("_", "").ToLower() == flag.Replace("_", "").ToLower())
                     {
                         value.SETBIT((T)values.GetValue(i));
                         found = true;
@@ -623,9 +644,9 @@ namespace CrimsonStainedLands.Extensions
 
         public static bool GetEnumValueStrPrefix<T>(string search, ref T value)
         {
-            var names = Enum.GetNames(typeof(T));
-            var values = Enum.GetValues(typeof(T));
-            
+            var names = EnumGetNames<T>();// Enum.GetNames(typeof(T));
+            var values = EnumGetValues<T>();// Enum.GetValues(typeof(T));
+
             if (search.StringCmp("none"))
                 return false;
             for (int i = 0; i < names.Length; i++)
@@ -640,32 +661,36 @@ namespace CrimsonStainedLands.Extensions
 
         public static bool HasElement(this XElement element, string subElementName)
         {
-            subElementName = subElementName.ToLower();
-            return element != null && (element.Element(subElementName) != null || (from newelement in element.Elements() where newelement.Name.ToString().ToLower() == subElementName select newelement).FirstOrDefault() != null);
+            return element != null && element.Elements().Any(newelement => newelement.Name.LocalName.Equals(subElementName, StringComparison.InvariantCultureIgnoreCase));
+        }
+
+        public static bool HasElement(this XElement element, string subElementName, out XElement outelement)
+        {
+            outelement = null;
+            return element != null && (outelement = element.Elements().FirstOrDefault(newelement => newelement.Name.LocalName.Equals(subElementName, StringComparison.InvariantCultureIgnoreCase))) != null;
         }
 
         public static XElement GetElement(this XElement element, string subElementName)
         {
             if (element != null && element.Element(subElementName) != null)
                 return element.Element(subElementName);
-            subElementName = subElementName.ToLower();
-            return (from newelement in element.Elements() where newelement.Name.ToString().ToLower() == subElementName select newelement).FirstOrDefault();
+            //subElementName = subElementName.ToLower();
+            return (from newelement in element.Elements() where newelement.Name.LocalName.Equals(subElementName, StringComparison.InvariantCultureIgnoreCase) select newelement).FirstOrDefault();
         }
 
         public static string GetElementValue(this XElement element, string subElementName, string defaultValue = "")
         {
-            if (element.HasElement(subElementName))
-                return element.GetElement(subElementName).Value;
-            else
-                return defaultValue;
+            var subelement = element.GetElement(subElementName);
+            return subelement == null || subelement.Value== null ? defaultValue : subelement.Value;
         }
 
         public static int GetElementValueInt(this XElement element, string subElementName, int defaultValue = 0)
         {
-            int result = defaultValue;
-            if (element.HasElement(subElementName))
+            var subelement = element.GetElement(subElementName);
+            
+            if (subelement != null && !string.IsNullOrEmpty(subelement.Value))
             {
-                if (int.TryParse(element.GetElement(subElementName).Value, out result))
+                if (int.TryParse(subelement.Value, out var result))
                     return result;
             }
 

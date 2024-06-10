@@ -46,10 +46,11 @@ namespace CrimsonStainedLands
         {
             get
             {
-                var regex = new Regex("(?m)^\\s+");
+                //var regex = new Regex("(?m)^\\s+");
                 if (_description.StartsWith("."))
                     return _description.Replace("\n\r", "\n").Replace("\r\n", "\n");
-                return regex.Replace(_description.Trim(), "");
+                return _description.Trim();
+                //return regex.Replace(_description.Trim(), "");
             }
             set
             {
@@ -361,13 +362,13 @@ namespace CrimsonStainedLands
         }
 
         public int GetLevelSkillLearnedAt(string skillname) => GetLevelSkillLearnedAt(SkillSpell.SkillLookup(skillname));
-
+        static string[] informskills = new string[] { "control speed", "trance", "meditation", "control phase", "control skin", "control levitation" };
         public int GetLevelSkillLearnedAt(SkillSpell skill)
         {
             if (skill == null)
                 return 60;
 
-            var informskills = new string[] { "control speed", "trance", "meditation", "control phase", "control skin", "control levitation" };
+            
             if (Form != null && !skill.SkillTypes.Contains(SkillSpellTypes.InForm) && !informskills.Contains(skill.name) && skill.spellFun == null)
             {
                 return 60;
@@ -414,7 +415,6 @@ namespace CrimsonStainedLands
         {
             if (Form != null && skill != null)
             {
-                var informskills = new string[] { "control speed", "trance", "meditation", "control phase", "control skin", "control levitation" };
                 if (Form.FormSkill != skill) // no stack overflow
                 {
                     var formskill = GetSkillPercentage(Form.FormSkill);
