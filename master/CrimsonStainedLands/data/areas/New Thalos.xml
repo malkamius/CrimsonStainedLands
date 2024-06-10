@@ -5734,14 +5734,13 @@ golden plaque above the door.</Description>
       <ExtraDescriptions>
         <ExtraDescription>
           <Keyword>plaque</Keyword>
-          <Description>The Holy Shrine of Allah
-(remember Allah is a god, I wouldn't attack him)</Description>
+          <Description>The Holy Shrine of Orsi</Description>
         </ExtraDescription>
       </ExtraDescriptions>
     </Room>
     <Room>
       <VNum>9666</VNum>
-      <Name>Shrine of Allah</Name>
+      <Name>Shrine of Orsi</Name>
       <Description>As you step into this room you seem to leave the material plane. The
 walls here are decorated with beautiful, multi-colored tiles. There
 is a strange stillness about the air. You sense the presence of an
@@ -14508,10 +14507,10 @@ bad she's about to kill you.</description>
     </NPC>
     <NPC>
       <Vnum>9555</Vnum>
-      <name>oldstyle allah</name>
-      <description>You see the all-knowing Allah.</description>
-      <longDescription>Allah is here.</longDescription>
-      <shortDescription>Allah</shortDescription>
+      <name>oldstyle acolyte orsi</name>
+      <description>You see the acolyte of Orsi.</description>
+      <longDescription>The acolyte of Orsi is here.</longDescription>
+      <shortDescription>acolyte of Orsi</shortDescription>
       <Sex>None</Sex>
       <level>32</level>
       <HitPointDiceSides>10</HitPointDiceSides>
@@ -20817,7 +20816,7 @@ You look around to see if there are any others nearby.</Description>
       <!--Spawn the chef to Kitchen-->
     </Reset>
     <Reset Type="NPC" Destination="9666" Count="1" Max="1" Vnum="9555">
-      <!--Spawn Allah to Shrine of Allah-->
+      <!--Spawn Acolyte of Orsi to Shrine of Orsi-->
     </Reset>
     <Reset Type="NPC" Destination="9667" Count="1" Max="20" Vnum="9544">
       <!--Spawn the vulture to Outside the Northern Gate of New Thalos-->
