@@ -7,6 +7,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>reaper.ico</ApplicationIcon>
+    <BaseOutputPath>.\</BaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <OutDir>./</OutDir>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="reaper.ico" />
