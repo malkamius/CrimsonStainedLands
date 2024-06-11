@@ -8,15 +8,16 @@ To get started with this project locally:<br />
 Clone the repository at https://github.com/malkamius/CrimsonStainedLands<br />
 <br />
 Open the solution under CrimsonStainedLands\master CrimsonStainedLands.sln with visual studio 2022<br />
+Or open the CrimsonStainedLands folder with VS Code<br />
 <br />
-Edit the settings master\CrimsonStainedLands\bin\Debug\Settings.xml if you want to change the port.<br />
+Edit the settings master\CrimsonStainedLands\Settings.xml if you want to change the port.<br />
 <br />
 Run the solution in debug or release mode. It should load all the areas under the bin\Debug\Data\Areas folder. <br />
 It will spit out a lot of logs to the screen as it loads.<br />
 <br />
 Use a mud client to connect to the localhost at the port(default 4000) specified in settings.xml<br />
 <br />
-Player files will be saved as XML to the bin\Debug\data\players folder. You can log out and edit your player level using a text editor like notepad++<br />(highly recommend this)<br />
+Player files will be saved as XML to the data\players folder. You can log out and edit your player level using a text editor<br /><br />
 <br />
 Once you are level 60 I recommend doing a 'help olc'. OLC is custom for this mud, so it doesn't work like other ROMs...<br />
 <br />
