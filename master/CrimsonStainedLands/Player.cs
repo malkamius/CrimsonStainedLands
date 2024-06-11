@@ -1167,7 +1167,7 @@ namespace CrimsonStainedLands
 
                 if (Guild.name == "mage") LearnSkill(SkillSpell.SkillLookup("hand to hand"), 75);
 
-                if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
+                if (System.IO.File.Exists(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml")))
                 {
                     SendRaw("It seems someone else has taken this name. Unable to continue.\n\r");
                     Game.CloseSocket(this, true);
@@ -1251,7 +1251,7 @@ namespace CrimsonStainedLands
                 element.Add(new XElement("LastReadNote", LastReadNote.ToString()));
                 element.Add(new XElement("TotalPlayTime", TotalPlayTime.ToString()));
                 element.Add(new XElement("password", password));
-                element.Save(Settings.PlayersPath + "\\" + Name + ".xml");
+                element.Save(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
 
             }
             //File.WriteAllText("data\\" + name + ".chr", "Password " + password + "\n\r" + "Race " + race.Name + "\n\r" + "Alignment " + alignment.ToString() + "\n\r" + "Ethos " + ethos.ToString() + "\n\r" + (inRoom != null ? "Room " + inRoom.vnum + "\n\r" : "") + "Guild " + guild + "\n\r");
@@ -1444,7 +1444,7 @@ namespace CrimsonStainedLands
 
         public void LoadPet()
         {
-            var element = XElement.Load(Settings.PlayersPath + "\\" + Name + ".xml");
+            var element = XElement.Load(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
             if (element.HasElement("Pet"))
             {
                 var pet = new NPCData(element.GetElement("Pet").GetElement("Character"), Room);
@@ -1466,7 +1466,7 @@ namespace CrimsonStainedLands
                 Room.Characters.Remove(this);
             }
             state = Player.ConnectionStates.Deleting;
-            System.IO.File.Delete(Settings.PlayersPath + "\\" + Name + ".xml");
+            System.IO.File.Delete(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
             SendRaw("Character deleted.\n\r");
 
             Game.CloseSocket(this, true);
