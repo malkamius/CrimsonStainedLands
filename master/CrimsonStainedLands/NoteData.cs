@@ -48,7 +48,7 @@ namespace CrimsonStainedLands
 
         public static void SaveNotes()
         {
-            var path = Settings.NotesPath + "\\notes.xml";
+            var path = System.IO.Path.Join(Settings.NotesPath, "notes.xml");
             if (!Directory.Exists(Settings.NotesPath))
                 Directory.CreateDirectory(Settings.NotesPath);
             var element = new XElement("Notes");
