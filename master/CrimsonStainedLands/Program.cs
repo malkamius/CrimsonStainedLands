@@ -12,6 +12,7 @@ namespace CrimsonStainedLands
         /// </summary>
         static void Main()
         {
+            Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
             Game.Launch(Settings.Port);
             while (!Game.Instance.Info.Exiting)
             {
