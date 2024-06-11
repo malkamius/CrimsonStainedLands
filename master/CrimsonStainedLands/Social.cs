@@ -26,9 +26,9 @@ namespace CrimsonStainedLands
 
         public static void LoadSocials()
         {
-            if (System.IO.File.Exists(Settings.DataPath + "\\social.are"))
+            if (System.IO.File.Exists(System.IO.Path.Join(Settings.DataPath, "social.are")))
             {
-                var file = new FileInfo(Settings.DataPath + "\\social.are");
+                var file = new FileInfo(System.IO.Path.Join(Settings.DataPath, "social.are"));
 
                 if (file.Exists)
                 {
@@ -83,10 +83,10 @@ namespace CrimsonStainedLands
                 );
             foreach(var element in elements)
             xml.Add(element);
-            xml.Save(Settings.DataPath + "\\socials.xml");
+            xml.Save(System.IO.Path.Join(Settings.DataPath, "socials.xml"));
 
             var commands = from com in Command.Commands select com.Name;
-            System.IO.File.WriteAllText(Settings.DataPath + "\\commandslist.txt", string.Join(Environment.NewLine, commands));
+            System.IO.File.WriteAllText(System.IO.Path.Join(Settings.DataPath, "commandslist.txt"), string.Join(Environment.NewLine, commands));
         }
         private static bool readSocialField(StreamReader stream, out string socialField)
         {

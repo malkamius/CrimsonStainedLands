@@ -45,12 +45,10 @@ using System.Reflection.Emit;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml.Schema;
 using static CrimsonStainedLands.WeatherData;
 using static System.Net.WebRequestMethods;
-using static System.Windows.Forms.AxHost;
 
 namespace CrimsonStainedLands
 {
@@ -791,8 +789,8 @@ namespace CrimsonStainedLands
 
             NoteData.SaveNotes();
             Game.log("Notes saved.");
-
-            System.Diagnostics.Process.Start(Application.ExecutablePath);
+            
+            System.Diagnostics.Process.Start(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
 
             //Game.Instance.Info.MainForm.exit = true;
             Game.Instance.Info.Exiting = true;

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml.Schema;
 
@@ -433,13 +432,13 @@ namespace CrimsonStainedLands
             }
 
             //element.Save("data\\shapeshiftforms.xml");
-            System.IO.File.WriteAllText(Settings.DataPath + "\\shapeshiftforms.xml", element.ToStringFormatted());
+            System.IO.File.WriteAllText(System.IO.Path.Join(Settings.DataPath, "shapeshiftforms.xml"), element.ToStringFormatted());
         }
 
         public static void LoadShapeshiftForms()
         {
             ShapeshiftForm.Forms.Clear();
-            var element = XElement.Load(Settings.DataPath + "\\shapeshiftforms.xml");
+            var element = XElement.Load(System.IO.Path.Join(Settings.DataPath, "shapeshiftforms.xml"));
 
             foreach (var formelement in element.Elements("Form"))
             {

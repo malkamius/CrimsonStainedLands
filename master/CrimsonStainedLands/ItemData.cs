@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Windows.Forms;
+
 using System.Xml.Linq;
 
 namespace CrimsonStainedLands
@@ -826,15 +826,15 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                System.IO.File.WriteAllText(Settings.DataPath + "\\corpses_and_pits.xml", itemData.ToStringFormatted());
+                System.IO.File.WriteAllText(System.IO.Path.Join(Settings.DataPath, "corpses_and_pits.xml"), itemData.ToStringFormatted());
             }
         }
 
         public static void LoadCorpsesAndPits()
         {
-            if (System.IO.File.Exists(Settings.DataPath + "\\corpses_and_pits.xml"))
+            if (System.IO.File.Exists(System.IO.Path.Join(Settings.DataPath, "corpses_and_pits.xml")))
             {
-                XElement itemsData = XElement.Load(Settings.DataPath + "\\corpses_and_pits.xml");
+                XElement itemsData = XElement.Load(System.IO.Path.Join(Settings.DataPath, "corpses_and_pits.xml"));
 
                 foreach (var itemElement in itemsData.Elements())
                 {

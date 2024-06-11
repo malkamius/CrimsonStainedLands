@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
+
 using System.Xml.Linq;
 
 namespace CrimsonStainedLands
@@ -34,7 +33,7 @@ namespace CrimsonStainedLands
         public Dictionary<int, GuildTitle> Titles = new Dictionary<int, GuildTitle>();
         public static void LoadGuilds()
         {
-            var element = XElement.Load(Settings.DataPath + "\\guilds.xml", LoadOptions.PreserveWhitespace);
+            var element = XElement.Load(System.IO.Path.Join(Settings.DataPath, "guilds.xml"), LoadOptions.PreserveWhitespace);
 
             foreach (var guildElement in element.Elements())
             {

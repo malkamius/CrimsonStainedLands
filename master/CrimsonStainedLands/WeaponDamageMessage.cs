@@ -27,9 +27,9 @@ namespace CrimsonStainedLands
         public static void LoadWeaponDamageMessages()
         {
             var loadedMessages = new List<WeaponDamageMessage>();
-            if (File.Exists(Settings.DataPath + "\\damage_messages.xml"))
+            if (File.Exists(System.IO.Path.Join(Settings.DataPath, "damage_messages.xml")))
             {
-                XElement WeaponDamageMessageElement = XElement.Load(Settings.DataPath + "\\damage_messages.xml");
+                XElement WeaponDamageMessageElement = XElement.Load(System.IO.Path.Join(Settings.DataPath, "damage_messages.xml"));
 
                 foreach (var weaponDamageMessageElement in WeaponDamageMessageElement.Elements())
                 {

@@ -113,9 +113,9 @@ namespace CrimsonStainedLands
 
         static Player()
         {
-            if (System.IO.File.Exists(Settings.DataPath + "\\invalidnames.txt"))
+            if (System.IO.File.Exists(System.IO.Path.Join(Settings.DataPath, "invalidnames.txt")))
             {
-                InvalidNames = System.IO.File.ReadAllText(Settings.DataPath + "\\invalidnames.txt").Replace("\n", " ").Replace("\r", " ");
+                InvalidNames = System.IO.File.ReadAllText(System.IO.Path.Join(Settings.DataPath, "invalidnames.txt")).Replace("\n", " ").Replace("\r", " ");
             }
         }
 
@@ -655,9 +655,9 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                if (System.IO.File.Exists(Settings.PlayersPath + "\\" + Name + ".xml"))
+                if (System.IO.File.Exists(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml")))
                 {
-                    if (LoadCharacterFile(Settings.PlayersPath + "\\" + Name + ".xml"))
+                    if (LoadCharacterFile(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml")))
                         state = ConnectionStates.GetPassword;
                     else
                     {
@@ -665,9 +665,9 @@ namespace CrimsonStainedLands
                         state = ConnectionStates.GetNewPassword;
                     }
                 }
-                else if (System.IO.File.Exists(Settings.DataPath + "\\" + Name + ".chr"))
+                else if (System.IO.File.Exists(System.IO.Path.Join(Settings.DataPath, Name + ".chr")))
                 {
-                    if (LoadCharacterFile(Settings.DataPath + "\\" + Name + ".chr"))
+                    if (LoadCharacterFile(System.IO.Path.Join(Settings.DataPath, Name + ".chr")))
                         state = ConnectionStates.GetPassword;
                     else
                     {

@@ -118,14 +118,14 @@ namespace CrimsonStainedLands
             }
             if (!Directory.Exists(Settings.DataPath))
                 Directory.CreateDirectory(Settings.DataPath);
-            element.Save(Settings.DataPath + "\\PC_Races.xml");
+            element.Save(System.IO.Path.Join(Settings.DataPath, "PC_Races.xml"));
         }
 
         public static void LoadRaces()
         {
-            if (File.Exists(Settings.DataPath + "\\PC_Races.xml"))
+            if (File.Exists(System.IO.Path.Join(Settings.DataPath, "PC_Races.xml")))
             {
-                XElement Races = XElement.Load(Settings.DataPath + "\\PC_Races.xml");
+                XElement Races = XElement.Load(System.IO.Path.Join(Settings.DataPath, "PC_Races.xml"));
                 var loadedRaces = new List<PcRace>();
 
                 try

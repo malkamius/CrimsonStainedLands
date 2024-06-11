@@ -13,7 +13,6 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using System.Windows.Forms;
 using static CrimsonStainedLands.Magic;
 using static System.Net.Mime.MediaTypeNames;
 

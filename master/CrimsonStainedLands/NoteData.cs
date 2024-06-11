@@ -21,7 +21,7 @@ namespace CrimsonStainedLands
 
         public static void LoadNotes()
         {
-            var path =Settings.NotesPath + "\\notes.xml";
+            var path = System.IO.Path.Join(Settings.NotesPath, "notes.xml");
             if (!Directory.Exists(Settings.DataPath))
                 Directory.CreateDirectory(Settings.DataPath);
 

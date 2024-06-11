@@ -293,7 +293,7 @@ namespace CrimsonStainedLands
         private static void LoadSkills()
         {
             SkillSpell skill;
-            var element = XElement.Load(Settings.DataPath + "\\skilllevels.xml");
+            var element = XElement.Load(System.IO.Path.Join(Settings.DataPath, "skilllevels.xml"));
 
             foreach (var skElement in element.Elements("SkillSpell"))
             {
@@ -493,14 +493,14 @@ namespace CrimsonStainedLands
         {
             SkillSpell skill;
             
-            if (!System.IO.File.Exists(Settings.DataPath + "\\songs.xml"))
+            if (!System.IO.File.Exists(System.IO.Path.Join(Settings.DataPath, "songs.xml")))
                 return;
 
             //var element = XElement.Load("data\\songs.xml", LoadOptions.PreserveWhitespace);
             var settings = new XmlReaderSettings();
             settings.IgnoreWhitespace = true;
             settings.ConformanceLevel = ConformanceLevel.Fragment;
-            using (var xmlReader = XmlReader.Create(Settings.DataPath + "\\songs.xml", settings))
+            using (var xmlReader = XmlReader.Create(System.IO.Path.Join(Settings.DataPath, "songs.xml"), settings))
             {
                 var element = XElement.Load(xmlReader);
                 foreach (var skElement in element.Elements("Song"))
@@ -751,7 +751,7 @@ namespace CrimsonStainedLands
                new XElement("Lyrics", "\n" + sk.Lyrics.TOSTRINGTRIM() + "\n    ") : null
                        )
                 );
-            System.IO.File.WriteAllText(Settings.DataPath + "\\songs.xml", element.ToStringFormatted());
+            System.IO.File.WriteAllText(System.IO.Path.Join(Settings.DataPath, "songs.xml"), element.ToStringFormatted());
             //element.Save("data\\songs.xml");
         }
 
@@ -813,7 +813,7 @@ namespace CrimsonStainedLands
                        new XAttribute("PrerequisitePercentage", sk.guildPreRequisiteSkillPercentage[guildlevel.Key]) : null,
                        new XAttribute("Rating", 1)))));
             //element.Save("data\\skilllevels.xml");
-            System.IO.File.WriteAllText(Settings.DataPath + "\\skilllevels.xml", element.ToStringFormatted());
+            System.IO.File.WriteAllText(System.IO.Path.Join(Settings.DataPath, "skilllevels.xml"), element.ToStringFormatted());
         }
 
         public static SkillSpell SkillLookup(string name)

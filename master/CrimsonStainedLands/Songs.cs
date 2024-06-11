@@ -1,12 +1,7 @@
 ﻿using CrimsonStainedLands.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using static CrimsonStainedLands.Magic;
 
 namespace CrimsonStainedLands
