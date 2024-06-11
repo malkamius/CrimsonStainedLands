@@ -158,7 +158,7 @@ namespace CrimsonStainedLands
             public object LogLock = new object();
             public StringBuilder Log = new StringBuilder();
             public IAsyncResult launchResult;
-            public MainForm MainForm;
+            //public MainForm MainForm;
             public Action<GameInfo> LaunchMethod;
 
 
@@ -202,25 +202,25 @@ namespace CrimsonStainedLands
         public int MaxPlayersOnline = 0;
 
 
-        public static void Launch(int port, MainForm form)
+        public static void Launch(int port)
         {
             if (Instance != null)
                 Instance.Dispose();
 
-            Instance = new Game(port, form);
+            Instance = new Game(port);
         }
 
         private Socket listeningSocket;
         private Socket sshlisteningSocket;
         private Socket ssllisteningSocket;
 
-        private Game(int port, MainForm form)
+        private Game(int port)
         {
             var launchMethod = new Action<GameInfo>(launch);
 
 
 
-            Info = new GameInfo() { MainForm = form, Port = port };
+            Info = new GameInfo() { Port = port };
             lock (Info.LogLock)
             {
                 Info.LaunchMethod = launchMethod;
@@ -752,11 +752,11 @@ namespace CrimsonStainedLands
 
             ItemData.SaveCorpsesAndPits(true);
 
-            Game.Instance.Info.MainForm.exit = true;
+           // Game.Instance.Info.MainForm.exit = true;
             Game.Instance.Info.Exiting = true;
 
 
-            Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
+            //Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
             try
             {
                 Game.Instance.Dispose();
@@ -794,9 +794,9 @@ namespace CrimsonStainedLands
 
             System.Diagnostics.Process.Start(Application.ExecutablePath);
 
-            Game.Instance.Info.MainForm.exit = true;
+            //Game.Instance.Info.MainForm.exit = true;
             Game.Instance.Info.Exiting = true;
-            Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
+            //Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
             try
             {
                 Game.Instance.Dispose();

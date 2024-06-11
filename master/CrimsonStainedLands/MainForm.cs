@@ -49,7 +49,7 @@ namespace CrimsonStainedLands
                 port = Settings.Port;
                 Text = string.Format("CrimsonStainedLands Server - Standard port {0}, SSL port {1}", port, Settings.SSLPort);
                 notifyIcon.Text = Text;
-                Game.Launch(port, this);
+                Game.Launch(port);
                 syncTimer.Enabled = true;
             }
         }
