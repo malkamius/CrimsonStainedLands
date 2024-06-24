@@ -12,17 +12,31 @@ namespace CrimsonStainedLands
         /// </summary>
         static void Main()
         {
+            Console.CancelKeyPress += Console_CancelKeyPress;
+            
             Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
-            Game.Launch(Settings.Port);
-            while (!Game.Instance.Info.Exiting)
+            try
             {
-                var log = Game.Instance.Info.RetrieveLog();
-                if (!string.IsNullOrEmpty(log))
+                Game.Launch(Settings.Port);
+                while (!Game.Instance.Info.Exiting)
                 {
-                    Console.WriteLine(log.Trim());
+                    var log = Game.Instance.Info.RetrieveLog();
+                    if (!string.IsNullOrEmpty(log))
+                    {
+                        Console.WriteLine(log.Trim());
+                    }
+                    System.Threading.Thread.Sleep(1);
                 }
-                System.Threading.Thread.Sleep(1);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
+        {
+            System.Environment.Exit(0);
         }
     }
 }
