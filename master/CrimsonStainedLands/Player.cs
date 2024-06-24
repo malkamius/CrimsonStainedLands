@@ -333,6 +333,7 @@ namespace CrimsonStainedLands
                         data = data.Replace("\r", "").Replace("\n", "\n\r");
 
                 var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(
+                    this,
                     !Flags.ISSET(ActFlags.Color),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
@@ -952,7 +953,7 @@ namespace CrimsonStainedLands
                     line = "";
                     send("Line too long.\n\r");
                 }
-                if (!IsImmortal) line = line.EscapeColor();
+                //if (!IsImmortal) line = line.EscapeColor();
                 if (!NewCharacterInputHandler(line) && state == ConnectionStates.Playing)
                 {
 

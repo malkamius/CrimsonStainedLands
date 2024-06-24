@@ -756,116 +756,117 @@ namespace CrimsonStainedLands
             string punct;
 
             // Determine the appropriate verb phrases based on the damage amount
-            if (damageAmount == 0)
-            {
-                vs = "miss";
-                vp = "misses";
-            }
-            else if (damageAmount <= 1)
-            {
-                vs = "barely scratch";
-                vp = "barely scratches";
-            }
-            else if (damageAmount <= 2)
-            {
-                vs = "scratch";
-                vp = "scratches";
-            }
-            else if (damageAmount <= 4)
-            {
-                vs = "graze";
-                vp = "grazes";
-            }
-            else if (damageAmount <= 7)
-            {
-                vs = "hit";
-                vp = "hits";
-            }
-            else if (damageAmount <= 11)
-            {
-                vs = "injure";
-                vp = "injures";
-            }
-            else if (damageAmount <= 15)
-            {
-                vs = "wound";
-                vp = "wounds";
-            }
-            else if (damageAmount <= 20)
-            {
-                vs = "maul";
-                vp = "mauls";
-            }
-            else if (damageAmount <= 25)
-            {
-                vs = "decimate";
-                vp = "decimates";
-            }
-            else if (damageAmount <= 30)
-            {
-                vs = "devastate";
-                vp = "devastates";
-            }
-            else if (damageAmount <= 37)
-            {
-                vs = "maim";
-                vp = "maims";
-            }
-            else if (damageAmount <= 45)
-            {
-                vs = "MUTILATE";
-                vp = "MUTILATES";
-            }
-            else if (damageAmount <= 55)
-            {
-                vs = "EVISCERATE";
-                vp = "EVISCERATES";
-            }
-            else if (damageAmount <= 65)
-            {
-                vs = "DISMEMBER";
-                vp = "DISMEMBERS";
-            }
-            else if (damageAmount <= 85)
-            {
-                vs = "MASSACRE";
-                vp = "MASSACRES";
-            }
-            else if (damageAmount <= 100)
-            {
-                vs = "MANGLE";
-                vp = "MANGLES";
-            }
-            else if (damageAmount <= 135)
-            {
-                vs = "*** DEMOLISH ***";
-                vp = "*** DEMOLISHES ***";
-            }
-            else if (damageAmount <= 160)
-            {
-                vs = "*** DEVASTATE ***";
-                vp = "*** DEVASTATES ***";
-            }
-            else if (damageAmount <= 250)
-            {
-                vs = "=== OBLITERATE ===";
-                vp = "=== OBLITERATES ===";
-            }
-            else if (damageAmount <= 330)
-            {
-                vs = ">>> ANNIHILATE <<<";
-                vp = ">>> ANNIHILATES <<<";
-            }
-            else if (damageAmount <= 380)
-            {
-                vs = "<<< ERADICATE >>>";
-                vp = "<<< ERADICATES >>>";
-            }
-            else
-            {
-                vs = "do UNSPEAKABLE things to";
-                vp = "does UNSPEAKABLE things to";
-            }
+            //if (damageAmount == 0)
+            //{
+            //    vs = "miss";
+            //    vp = "misses";
+            //}
+            //else if (damageAmount <= 1)
+            //{
+            //    vs = "barely scratch";
+            //    vp = "barely scratches";
+            //}
+            //else if (damageAmount <= 2)
+            //{
+            //    vs = "scratch";
+            //    vp = "scratches";
+            //}
+            //else if (damageAmount <= 4)
+            //{
+            //    vs = "graze";
+            //    vp = "grazes";
+            //}
+            //else if (damageAmount <= 7)
+            //{
+            //    vs = "hit";
+            //    vp = "hits";
+            //}
+            //else if (damageAmount <= 11)
+            //{
+            //    vs = "injure";
+            //    vp = "injures";
+            //}
+            //else if (damageAmount <= 15)
+            //{
+            //    vs = "wound";
+            //    vp = "wounds";
+            //}
+            //else if (damageAmount <= 20)
+            //{
+            //    vs = "maul";
+            //    vp = "mauls";
+            //}
+            //else if (damageAmount <= 25)
+            //{
+            //    vs = "decimate";
+            //    vp = "decimates";
+            //}
+            //else if (damageAmount <= 30)
+            //{
+            //    vs = "devastate";
+            //    vp = "devastates";
+            //}
+            //else if (damageAmount <= 37)
+            //{
+            //    vs = "maim";
+            //    vp = "maims";
+            //}
+            //else if (damageAmount <= 45)
+            //{
+            //    vs = "MUTILATE";
+            //    vp = "MUTILATES";
+            //}
+            //else if (damageAmount <= 55)
+            //{
+            //    vs = "EVISCERATE";
+            //    vp = "EVISCERATES";
+            //}
+            //else if (damageAmount <= 65)
+            //{
+            //    vs = "DISMEMBER";
+            //    vp = "DISMEMBERS";
+            //}
+            //else if (damageAmount <= 85)
+            //{
+            //    vs = "MASSACRE";
+            //    vp = "MASSACRES";
+            //}
+            //else if (damageAmount <= 100)
+            //{
+            //    vs = "MANGLE";
+            //    vp = "MANGLES";
+            //}
+            //else if (damageAmount <= 135)
+            //{
+            //    vs = "*** DEMOLISH ***";
+            //    vp = "*** DEMOLISHES ***";
+            //}
+            //else if (damageAmount <= 160)
+            //{
+            //    vs = "*** DEVASTATE ***";
+            //    vp = "*** DEVASTATES ***";
+            //}
+            //else if (damageAmount <= 250)
+            //{
+            //    vs = "=== OBLITERATE ===";
+            //    vp = "=== OBLITERATES ===";
+            //}
+            //else if (damageAmount <= 330)
+            //{
+            //    vs = ">>> ANNIHILATE <<<";
+            //    vp = ">>> ANNIHILATES <<<";
+            //}
+            //else if (damageAmount <= 380)
+            //{
+            //    vs = "<<< ERADICATE >>>";
+            //    vp = "<<< ERADICATES >>>";
+            //}
+            //else
+            //{
+            //    vs = "do UNSPEAKABLE things to";
+            //    vp = "does UNSPEAKABLE things to";
+            //}
+            var dammessagetext = DamageMessageText.GetWeaponDamageMessageText(DamageType, damageAmount);
 
             // Determine the appropriate punctuation based on the damage amount
             punct = (damageAmount <= 33) ? "." : "!";
@@ -902,45 +903,45 @@ namespace CrimsonStainedLands
             if (victim != ch && ch != null && !nounDamage.ISEMPTY())
             {
                 // Display damage messages with specific noun to the attacker, victim, and the room
-                ch.Act("Your {0} \\R{1}\\x $N{2}", victim, null, null, ActType.ToChar, nounDamage, vp, punct);
-                victim.Act("$N's {0} \\R{1}\\x you{2}", ch, null, null, ActType.ToChar, nounDamage, vp, punct);
-                ch.Act("$n's {0} \\R{1}\\x $N{2}", victim, null, null, ActType.ToRoomNotVictim, nounDamage, vp, punct);
+                ch.Act("Your {0} {3}$D{4} $N{2}", victim, null, null, ActType.ToChar, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                victim.Act("$N's {0} {3}$D{4} you{2}", ch, null, null, ActType.ToChar, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("$n's {0} {3}$D{4} $N{2}", victim, null, null, ActType.ToRoomNotVictim, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
             // If the attacker is null and there is a specific damage noun
             else if (ch == null && !nounDamage.ISEMPTY())
             {
                 // Display damage messages with specific noun to the victim and the room
-                victim.Act("Your {0} \\R{1}\\x you{2}", null, null, null, ActType.ToChar, nounDamage, vp, punct);
-                victim.Act("$n's {0} \\R{1}\\x them{2}", null, null, null, ActType.ToRoom, nounDamage, vp, punct);
+                victim.Act("Your {0} {3}$D{4} you{2}", null, null, null, ActType.ToChar, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                victim.Act("$n's {0} {3}$D{4} them{2}", null, null, null, ActType.ToRoom, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
             // If there is a specific damage noun but no attacker
             else if (!nounDamage.ISEMPTY())
             {
                 // Display damage messages with specific noun to the attacker (if available) and the room
-                ch.Act("Your {0} \\R{1}\\x you{2}", null, null, null, ActType.ToChar, nounDamage, vp, punct);
-                ch.Act("$n's {0} \\R{1}\\x them{2}", victim, null, null, ActType.ToRoom, nounDamage, vp, punct);
+                ch.Act("Your {0} {3}$D{4} you{2}", null, null, null, ActType.ToChar, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("$n's {0} {3}$D{4} them{2}", victim, null, null, ActType.ToRoom, nounDamage, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
             // If the attacker and victim are different characters and there is no specific damage noun
             else if (victim != ch && ch != null)
             {
                 // Display generic damage messages to the attacker, victim, and the room
-                ch.Act("You \\R{0}\\x $N{1}", victim, null, null, ActType.ToChar, vs, punct);
-                victim.Act("$N \\R{0}\\x you{1}", ch, null, null, ActType.ToChar, vp, punct);
-                ch.Act("$n \\R{0}\\x $N{1}", victim, null, null, ActType.ToRoomNotVictim, vp, punct);
+                ch.Act("You {2}$d{3} $N{1}", victim, null, null, ActType.ToChar, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                victim.Act("$N {2}$D{3} you{1}", ch, null, null, ActType.ToChar, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("$n {2}$D{3} $N{1}", victim, null, null, ActType.ToRoomNotVictim, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
             // If the attacker is null and there is no specific damage noun
             else if (ch == null && nounDamage.ISEMPTY())
             {
                 // Display generic damage messages to the victim and the room
-                victim.Act("You \\R{0}\\x yourself{1}", null, null, null, ActType.ToChar, vs, punct);
-                victim.Act("$n \\R{0}\\x $mself{1}", null, null, null, ActType.ToRoom, vp, punct);
+                victim.Act("You {2}$d{3} yourself{1}", null, null, null, ActType.ToChar, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                victim.Act("$n {2}$D{3} $mself{1}", null, null, null, ActType.ToRoom, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
             // If there is no specific damage noun
             else if (nounDamage.ISEMPTY())
             {
                 // Display generic damage messages to the attacker and the room
-                ch.Act("You \\R{0}\\x yourself{1}", null, null, null, ActType.ToChar, vs, punct);
-                ch.Act("$n \\R{0}\\x $mself{1}", victim, null, null, ActType.ToRoom, vp, punct);
+                ch.Act("You {2}$d{3} yourself{1}", null, null, null, ActType.ToChar, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("$n {2}$D{3} $mself{1}", victim, null, null, ActType.ToRoom, dammessagetext, punct, ColorConfiguration.ColorString(ColorConfiguration.Keys.Combat_Damage), ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
         } // end damageMessage
 

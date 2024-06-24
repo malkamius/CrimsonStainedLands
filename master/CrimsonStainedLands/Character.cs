@@ -10,7 +10,7 @@ using global::CrimsonStainedLands.Extensions;
 namespace CrimsonStainedLands
 {
    
-    public class Character : IDisposable
+    public partial class Character : IDisposable
     {
         public static List<Character> Characters = new List<Character>();
         
@@ -321,6 +321,7 @@ namespace CrimsonStainedLands
                 Flags.ADDFLAG(ActFlags.AutoSplit);
                 Flags.ADDFLAG(ActFlags.AutoLoot);
                 Flags.ADDFLAG(ActFlags.AutoSac);
+                Flags.ADDFLAG(ActFlags.DamageOnType);
                 //xpToLevel is generated off of level
                 MaxHitPoints = 100;
                 HitPoints = 100;
@@ -1419,6 +1420,7 @@ namespace CrimsonStainedLands
                         }
                         else
                         {
+                            if (!IsImmortal && !command.Action.Method.GetCustomAttributes(false).Any(a => a is ColorConfiguration.NoEscapeColor)) arguments = arguments.EscapeColor();
                             // Execute the command's action
                             command.Action(this, arguments);
                             
@@ -2950,6 +2952,24 @@ namespace CrimsonStainedLands
                     {
                         switch (msg[i])
                         {
+                            case 'd':
+                                var message = args.FirstOrDefault(a => a is DamageMessageText) as DamageMessageText;
+                                if (message != null)
+                                {
+                                    formatmsg.Append(message.ToString(to, false));
+                                }
+                                else
+                                    formatmsg.Append("unknown");
+                                break;
+                            case 'D':
+                                message = args.FirstOrDefault(a => a is DamageMessageText) as DamageMessageText;
+                                if (message != null)
+                                {
+                                    formatmsg.Append(message.ToString(to, true));
+                                }
+                                else
+                                    formatmsg.Append("unknown");
+                                break;
                             case 'n':
                                 formatmsg.Append(this.Display(to));
                                 break;

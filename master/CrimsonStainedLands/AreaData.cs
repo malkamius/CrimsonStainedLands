@@ -13,7 +13,7 @@ namespace CrimsonStainedLands
 {
     public class AreaData
     {
-        public static ObservableCollection<AreaData> Areas = new ObservableCollection<AreaData>();
+        public static ConcurrentList<AreaData> Areas = new ConcurrentList<AreaData>();
         public string Name;
         public bool saved = true;
         public string FileName { get; set; } = string.Empty;
@@ -54,19 +54,28 @@ namespace CrimsonStainedLands
                 !path.EndsWith("_programs.json", StringComparison.InvariantCultureIgnoreCase)
                 ).AsParallel().ForAll(file =>
             {
-                if (file.EndsWith(".xml", StringComparison.InvariantCultureIgnoreCase))
+                try
                 {
-                    AreaData area = new AreaData();
-                    if (headersOnly)
-                        area.LoadHeader(file);
+                    if (file.EndsWith(".xml", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        AreaData area = new AreaData();
+                        if (headersOnly)
+                            area.LoadHeader(file);
+                        else
+                            area.Load(file);
+                    }
                     else
-                        area.Load(file);
+                    {
+                        string jsonString = File.ReadAllText(file);
+                        AreaData area = JsonSerializer.Deserialize<AreaData>(jsonString);
+                        Areas.Add(area);
+                        if (AreaData.Areas.Any(a => a == null)) 
+                            Game.log("Null area");
+                    }
                 } 
-                else
+                catch (Exception ex)
                 {
-                    string jsonString = File.ReadAllText(file);
-                    AreaData area = JsonSerializer.Deserialize<AreaData>(jsonString);
-                    Areas.Add(area);
+                    Game.log(ex.ToString());
                 }
             });
 
@@ -251,6 +260,8 @@ namespace CrimsonStainedLands
                 }
             }
             AreaData.Areas.Add(this);
+            if (AreaData.Areas.Any(a => a == null)) 
+                Game.log("Null area");
         }
 
         /// <summary>
@@ -313,9 +324,12 @@ namespace CrimsonStainedLands
                 LoadHelps(root);
 
 
-                if(!AreaData.Areas.Contains(this))
+                if (!AreaData.Areas.Contains(this))
+                {
                     AreaData.Areas.Add(this);
-
+                    if (AreaData.Areas.Any(a => a == null)) 
+                        Game.log("Null area");
+                }
                 Resets.Clear();
                 
                 LoadResets(root);

@@ -398,6 +398,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "afk", Action = DoActInfo.DoAFK, Info = "Toggle your AFK flag.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "exits", Action = DoActInfo.DoExits, Info = "List current obvious exits.", MinimumPosition = Positions.Resting});
             Commands.Add(new Command { Name = "replay", Action = DoActCommunication.DoReplay, Info = "Play back the last 20 communications.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "damage", Action = DoActInfo.DoDamage, Info = "Toggle specific damage messages for damage type.", MinimumPosition = Positions.Dead });
 
             // IMM COMMANDS
             Commands.Add(new Command { Name = "immortal", Action = DoActWizard.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });

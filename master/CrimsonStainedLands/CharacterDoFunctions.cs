@@ -24,8 +24,12 @@ namespace CrimsonStainedLands
             // maybe move striphidden to dotell, let hidden mobs stay hidden while they tell?
             ch.StripHidden();
 
-            ch.Act("\\r$n tells you '{0}'\\x\n\r", victim, null, null, ActType.ToVictim, arguments);
-            ch.Act("\\rYou tell $N '" + arguments + "'\\x\n\r", victim);
+            ch.Act("{1}$n tells you '{0}'{2}\n\r", victim, null, null, ActType.ToVictim, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Tell),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+            ch.Act("{1}You tell $N '{0}'{2}\n\r", victim, null, null, ActType.ToChar, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Tell),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
 
             if (!ch.IsNPC)
                 victim.ReplyTo = ch;

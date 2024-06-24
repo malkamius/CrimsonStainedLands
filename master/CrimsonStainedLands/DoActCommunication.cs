@@ -39,10 +39,14 @@ namespace CrimsonStainedLands
             foreach (var other in ch.Room.Area.People)
             {
                 if (other != ch)
-                    ch.Act("\\R$n yells '{0}'\\x\n\r", other, null, null, ActType.ToVictim, arguments);
+                    ch.Act("{1}$n yells '{0}'{2}\n\r", other, null, null, ActType.ToVictim, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Yell),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
 
-            ch.Act("\\RYou yell '{0}'\\x\n\r", null, null, null, ActType.ToChar, arguments);
+            ch.Act("{1}You yell '{0}'{2}\n\r", null, null, null, ActType.ToChar, arguments,
+                ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Yell),
+                ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
         }
 
         public static void DoSay(Character ch, string arguments)
@@ -68,8 +72,12 @@ namespace CrimsonStainedLands
             ch.StripHidden();
             using (new Character.CaptureCommunications())
             {
-                ch.Act("\\Y$n says '{0}'\\x\n\r", null, null, null, ActType.ToRoom, arguments);
-                ch.SendToChar("\\YYou say '" + arguments + "'\\x\n\r");
+                ch.Act("{1}$n says '{0}'{2}\n\r", null, null, null, ActType.ToRoom, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.SendToChar("{1}You say '{0}'{2}\n\r", arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
             //Character.ExecuteSayProgs(ch, arguments);
             if(ch is Player)
@@ -116,9 +124,15 @@ namespace CrimsonStainedLands
             using (new Character.CaptureCommunications())
             {
                 if (victim.Position != Positions.Sleeping)
-                    ch.Act("\\y$n says to you '{0}'\\x\n\r", victim, null, null, ActType.ToVictim, arguments);
-                ch.Act("\\y$n says to $N '{0}'\\x\n\r", victim, null, null, ActType.ToRoomNotVictim, arguments);
-                ch.Act("\\yYou says to $N '{0}'\\x\n\r", victim, null, null, ActType.ToChar, arguments);
+                    ch.Act("{1}$n says to you '{0}'{2}\n\r", victim, null, null, ActType.ToVictim, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("{1}$n says to $N '{0}'{2}\n\r", victim, null, null, ActType.ToRoomNotVictim, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("{1}You says to $N '{0}'{2}\n\r", victim, null, null, ActType.ToChar, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
 
         }
@@ -138,8 +152,12 @@ namespace CrimsonStainedLands
             }
             using (new Character.CaptureCommunications())
             {
-                ch.Act("\\r$n whisper '{0}'\\x\n\r", null, null, null, ActType.ToRoom, arguments);
-                ch.Act("\\rYou whisper '{0}'\\x\n\r", null, null, null, ActType.ToChar, arguments);
+                ch.Act("{1}$n whisper '{0}'{2}\n\r", null, null, null, ActType.ToRoom, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("{1}You whisper '{0}'{2}\n\r", null, null, null, ActType.ToChar, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
 
         }
@@ -180,9 +198,15 @@ namespace CrimsonStainedLands
             using (new Character.CaptureCommunications())
             {
                 if (victim.Position != Positions.Sleeping)
-                    ch.Act("\\r$n whisper to you '{0}'\\x\n\r", victim, null, null, ActType.ToVictim, arguments);
-                ch.Act("\\r$n whisper to $N '{0}'\\x\n\r", victim, null, null, ActType.ToRoomNotVictim, arguments);
-                ch.Act("\\rYou whisper to $N '{0}'\\x\n\r", victim, null, null, ActType.ToChar, arguments);
+                    ch.Act("{1}$n whisper to you '{0}'{2}\n\r", victim, null, null, ActType.ToVictim, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("{1}$n whisper to $N '{0}'{2}\n\r", victim, null, null, ActType.ToRoomNotVictim, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
+                ch.Act("{1}You whisper to $N '{0}'{2}\n\r", victim, null, null, ActType.ToChar, arguments,
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
+                        ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
         }
 

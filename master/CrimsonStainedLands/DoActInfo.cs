@@ -142,6 +142,7 @@ namespace CrimsonStainedLands
             return;
         }
 
+        [ColorConfiguration.NoEscapeColor]
         public static void DoColor(Character ch, string arguments)
         {
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.Color)))
@@ -155,7 +156,28 @@ namespace CrimsonStainedLands
                 ch.send("Color is OFF.\n\r");
             }
             else
-                ch.send("Syntax: color [on|off]\n\r");
+            {
+                arguments = arguments.OneArgumentOut(out var option);
+
+                var configs = from kvp in ColorConfiguration.DefaultColors select new { Key = kvp.Key.ToString().Replace("_", "."), Value = kvp.Key };
+
+                var config = configs.FirstOrDefault(c => c.Key.StringCmp(option));
+
+                if(config != null && Enum.TryParse<ColorConfiguration.Keys>(config.Key.Replace(".", "_"), false, out var configkey))
+                {
+                    ch.ColorConfigurations[configkey] = arguments;
+                    ch.send($"Color configured to {arguments}{XTermColor.EscapeColor(arguments)}\\x.\n\r");
+                }
+                else
+                {
+                    foreach(var kvp in configs)
+                    {
+                        ch.send($"Syntax: color {kvp.Key} {ch.GetColor(kvp.Value)}{XTermColor.EscapeColor(ch.GetColor(kvp.Value))}\\x\n\r");
+                    }
+                    ch.send("Syntax: color [on|off]\n\r");
+                }
+
+            }
         }
 
         public static void DoAFK(Character ch, string arguments)
@@ -173,6 +195,23 @@ namespace CrimsonStainedLands
             else
                 ch.send("Syntax: AFK [on|off]\n\r");
         }
+
+        public static void DoDamage(Character ch, string arguments)
+        {
+            if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.DamageOnType)))
+            {
+                ch.Flags.REMOVEFLAG(ActFlags.DamageOnType);
+                ch.send("Damage message based on type now \\rOFF\\x.\n\r");
+            }
+            else if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.DamageOnType)))
+            {
+                ch.Flags.SETBIT(ActFlags.DamageOnType);
+                ch.send("Damage message based on type now \\gON\\x.\n\r");
+            }
+            else
+                ch.send("Syntax: AFK [on|off]\n\r");
+        }
+
 
         public static void DoAutosac(Character ch, string arguments)
         {
@@ -1129,6 +1168,7 @@ namespace CrimsonStainedLands
             return;
         }
 
+        [ColorConfiguration.NoEscapeColor]
         public static void DoPrompt(Character ch, string argument)
         {
             if (!(ch is Player player)) return;

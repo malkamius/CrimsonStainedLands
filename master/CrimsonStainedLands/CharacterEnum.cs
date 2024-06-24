@@ -61,6 +61,7 @@ namespace CrimsonStainedLands
         GuildMaster = 1,
         NoAlign = 2,
         Color = 3,
+        DamageOnType,
         SkipAutoDeletePrompt,
         AutoAssist,
         AutoExit,
