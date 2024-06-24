@@ -135,7 +135,7 @@ namespace CrimsonStainedLands
         /// all rooms regardless of area
         /// </summary>
         
-        public static ConcurrentDictionary<int, RoomData> Rooms = new ConcurrentDictionary<int, RoomData>();
+        public static ObservableConcurrentDictionary<int, RoomData> Rooms = new ObservableConcurrentDictionary<int, RoomData>();
         public AreaData Area;
         public int Vnum { get; set; }
         public string Name { get; set; } = "";

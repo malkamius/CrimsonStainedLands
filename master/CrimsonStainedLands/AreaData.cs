@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
+using System.Collections.ObjectModel;
 
 namespace CrimsonStainedLands
 {
     public class AreaData
     {
-        public static List<AreaData> Areas = new List<AreaData>();
+        public static ObservableCollection<AreaData> Areas = new ObservableCollection<AreaData>();
         public string Name;
         public bool saved = true;
         public string FileName { get; set; } = string.Empty;
@@ -40,7 +41,7 @@ namespace CrimsonStainedLands
         public List<Character> People = new List<Character>();
         public int Timer;
         public Dictionary<int, Quest> Quests { get; set; } = new Dictionary<int, Quest>();
-
+        
         public static void LoadAreas(bool headersOnly = false)
         {
             DateTime loadstart = DateTime.Now;

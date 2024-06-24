@@ -9,7 +9,7 @@ namespace CrimsonStainedLands
 {
     public class ItemTemplateData
     {
-        public static ConcurrentDictionary<int, ItemTemplateData> Templates = new ConcurrentDictionary<int, ItemTemplateData>();
+        public static ObservableConcurrentDictionary<int, ItemTemplateData> Templates = new ObservableConcurrentDictionary<int, ItemTemplateData>();
 
         public AreaData Area;
 

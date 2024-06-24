@@ -16,7 +16,7 @@ namespace CrimsonStainedLands
 
         public static Dictionary<string, NLuaProgram> Programs = new Dictionary<string, NLuaProgram>();
 
-        internal static NLua.Lua Lua = new NLua.Lua();
+        //internal static NLua.Lua Lua = new NLua.Lua();
 
         public static void LoadPrograms()
         {
@@ -103,41 +103,47 @@ namespace CrimsonStainedLands
             }
 
             static bool Executing = false;
+            static int Depth = 0;
             public bool Execute(Character player, Character npc, RoomData room, ItemData item, SkillSpell skill, AffectData affect, Programs.ProgramTypes type, string arguments)
             {
-                if (Executing) return false;
+                //if (Executing) return false;
+                if (Depth > 5) return false;
                 try
                 {
                     Executing = true;
+                    Depth++;
                     var code = GetCodeFromFile();
 
                     if (!code.ISEMPTY())
                     {
-                        Lua["Player"] = player;
-                        Lua["NPC"] = npc;
-                        Lua["Room"] = room;
-                        Lua["Item"] = item;
-                        Lua["Skill"] = skill;
-                        Lua["Affect"] = affect;
-                        Lua["ProgramType"] = type.ToString();
-                        Lua["Arguments"] = arguments;
-                        /// an instance of a wrapper class to call quest functions from lua
-                        Lua["QuestHelper"] = new QuestHelperClass();
-
-                        Lua["WorldHelper"] = new WorldHelperClass();
-                        Lua["StringHelper"] = new StringHelperClass();
-
-
-                        try
+                        using (var Lua = new NLua.Lua())
                         {
-                            var results = Lua.DoString(code);
+                            Lua["Player"] = player;
+                            Lua["NPC"] = npc;
+                            Lua["Room"] = room;
+                            Lua["Item"] = item;
+                            Lua["Skill"] = skill;
+                            Lua["Affect"] = affect;
+                            Lua["ProgramType"] = type.ToString();
+                            Lua["Arguments"] = arguments;
+                            /// an instance of a wrapper class to call quest functions from lua
+                            Lua["QuestHelper"] = QuestHelperClass.instance;
 
-                            if (results.Length > 0 && results[0] is bool)
-                                return (bool)results[0];
-                        }
-                        catch (Exception ex)
-                        {
-                            Game.log("Error executing lua script: {0}", ex.ToString());
+                            Lua["WorldHelper"] = WorldHelperClass.instance;
+                            Lua["StringHelper"] = StringHelperClass.instance;
+
+
+                            try
+                            {
+                                var results = Lua.DoString(code);
+
+                                if (results.Length > 0 && results[0] is bool)
+                                    return (bool)results[0];
+                            }
+                            catch (Exception ex)
+                            {
+                                Game.log("Error executing lua script: {0}", ex.ToString());
+                            }
                         }
                     }
 
@@ -146,12 +152,15 @@ namespace CrimsonStainedLands
                 finally
                 {
                     Executing = false;
+                    Depth--;
                 }
             }
         } // end NLuaProgram
 
         public class QuestHelperClass
         {
+            public static QuestHelperClass instance = new QuestHelperClass();
+
             public bool IsQuestComplete(Character ch, int vnum)
             {
                 var quest = Quest.GetQuest(vnum);
@@ -278,6 +287,7 @@ namespace CrimsonStainedLands
 
         public class WorldHelperClass
         {
+            public static WorldHelperClass instance = new WorldHelperClass();
             public void DoSay(Character ch, string arguments)
             {
                 DoActCommunication.DoSay(ch, arguments);
@@ -342,6 +352,7 @@ namespace CrimsonStainedLands
 
         public class StringHelperClass
         {
+            public static StringHelperClass instance = new StringHelperClass();
             public bool StringPrefix(string full, string partial)
             {
                 return full.StringPrefix(partial);

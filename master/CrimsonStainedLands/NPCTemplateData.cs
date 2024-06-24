@@ -39,7 +39,7 @@ namespace CrimsonStainedLands
 
     public class NPCTemplateData : Character
     {
-        public static ConcurrentDictionary<int, NPCTemplateData> Templates = new ConcurrentDictionary<int, NPCTemplateData>();
+        public static ObservableConcurrentDictionary<int, NPCTemplateData> Templates = new ObservableConcurrentDictionary<int, NPCTemplateData>();
 
         public AreaData Area;
         public int Vnum;
