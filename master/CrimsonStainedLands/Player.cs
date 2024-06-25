@@ -393,6 +393,7 @@ namespace CrimsonStainedLands
                     var socket = result.AsyncState as Socket;
                     var connections = Game.Instance.Info.Connections.ToArrayLocked();
                     var connection = (from c in connections where c.socket == socket select c).FirstOrDefault();
+                    if(connection != null)
                     lock (connection)
                     {
 
@@ -422,7 +423,7 @@ namespace CrimsonStainedLands
                     var socket = result.AsyncState as SslStream;
                     var connections = Game.Instance.Info.Connections.ToArrayLocked();
                     var connection = (from c in connections where c.sslsocket == socket select c).FirstOrDefault();
-
+                    if (connection != null)
                     lock (connection)
                     {
 
@@ -624,9 +625,9 @@ namespace CrimsonStainedLands
                     send("Name must be between 3 and 16 characters in length.\n\rWhat is your name: ");
                     return true;
                 }
-                else if (line.Contains(" ") || line.Any(c => numbers.Contains(c)))
+                else if (line.Contains(" ") || line.Any(c => numbers.Contains(c)) || line.Any(c => char.ToLower(c) == char.ToUpper(c)))
                 {
-                    send("Name cannot contain spaces or numbers.\n\rWhat is your name: ");
+                    send("Name cannot contain spaces or numbers or special characters.\n\rWhat is your name: ");
                     return true;
                 }
                 else if (InvalidNames.IsName(line, true) || line.StringPrefix("self"))
@@ -954,7 +955,7 @@ namespace CrimsonStainedLands
                     send("Line too long.\n\r");
                 }
                 //if (!IsImmortal) line = line.EscapeColor();
-                if (!NewCharacterInputHandler(line) && state == ConnectionStates.Playing)
+                if (!NewCharacterInputHandler(line.EscapeColor()) && state == ConnectionStates.Playing)
                 {
 
                     if (HasPageText && line.TOSTRINGTRIM() == "")
@@ -1242,7 +1243,13 @@ namespace CrimsonStainedLands
                 if (Quests.Any())
                     element.Add(new XElement("Quests", from quest in Quests select quest.Element));
                 element.Add(new XElement("Prompt", Prompt));
-
+                if(ColorConfigurations.Any()) 
+                    element.Add(new XElement("ColorConfigurations", 
+                        from colorConfiguration 
+                        in ColorConfigurations 
+                        select new XElement("ColorConfiguration", 
+                            new XAttribute("Key", colorConfiguration.Key.ToString()), 
+                            new XAttribute("Value", colorConfiguration.Value))));
                 element.Add(new XElement("ShapeFocusMajor", ShapeFocusMajor.ToString()));
                 element.Add(new XElement("ShapeFocusMinor", ShapeFocusMinor.ToString()));
                 element.Add(new XElement("Wimpy", Wimpy.ToString()));
@@ -1341,6 +1348,19 @@ namespace CrimsonStainedLands
 
                     if (Color256) TelnetOptions.SETBIT(TelnetOptionFlags.Color256);
                     if (ColorRGB) TelnetOptions.SETBIT(TelnetOptionFlags.ColorRGB);
+
+                    if(element.HasElement("ColorConfigurations"))
+                    {
+                        var colorConfigs = element.GetElement("ColorConfigurations").Elements();
+                        foreach ( var colorConfig in colorConfigs)
+                        {
+                            var keystring = colorConfig.GetAttributeValue("Key");
+                            if(Enum.TryParse<ColorConfiguration.Keys>(keystring, out var key))
+                            {
+                                ColorConfigurations[key] = colorConfig.GetAttributeValue("Value", ColorConfiguration.DefaultColors[key]);
+                            }
+                        }
+                    }
 
                     Utility.GetEnumValues<WeaponDamageTypes>(element.GetElementValue("Immune"), ref this.ImmuneFlags);
                     Utility.GetEnumValues<WeaponDamageTypes>(element.GetElementValue("Resist"), ref this.ResistFlags);

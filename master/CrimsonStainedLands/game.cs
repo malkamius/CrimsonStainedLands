@@ -2063,8 +2063,11 @@ namespace CrimsonStainedLands
         {
             WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection from {0}({1}) terminated, state was {2}.", player, null, player.Address, !player.Name.ISEMPTY() ? player.Name : "", player.state);
 
-            try { player.socket.Close(); } catch { }
-            try { player.socket.Dispose(); } catch { }
+            if (player.socket != null)
+            {
+                try { player.socket.Close(); } catch { }
+                try { player.socket.Dispose(); } catch { }
+            }
 
             if (settonull)
             {

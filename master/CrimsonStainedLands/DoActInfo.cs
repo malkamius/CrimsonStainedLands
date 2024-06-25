@@ -160,14 +160,23 @@ namespace CrimsonStainedLands
             {
                 arguments = arguments.OneArgumentOut(out var option);
 
-                var configs = from kvp in ColorConfiguration.DefaultColors select new { Key = kvp.Key.ToString().Replace("_", "."), Value = kvp.Key };
+                var configs = from kvp in ColorConfiguration.DefaultColors select new { Key = kvp.Key.ToString().Replace("_", "."), Value = kvp.Key, ColorValue = kvp.Value };
 
                 var config = configs.FirstOrDefault(c => c.Key.StringCmp(option));
 
                 if(config != null && Enum.TryParse<ColorConfiguration.Keys>(config.Key.Replace(".", "_"), false, out var configkey))
                 {
-                    ch.ColorConfigurations[configkey] = arguments;
-                    ch.send($"Color configured to {arguments}{XTermColor.EscapeColor(arguments)}\\x.\n\r");
+                    if (arguments.ISEMPTY() || arguments.StringCmp("default"))
+                    {
+                        ch.ColorConfigurations.Remove(configkey);
+                        ch.send($"Color reset to default {config.ColorValue}{XTermColor.EscapeColor(config.ColorValue)}\\x.\n\r");
+                    }
+                    else
+                    {
+                        ch.ColorConfigurations[configkey] = arguments;
+                        ch.send($"Color configured to {arguments}{XTermColor.EscapeColor(arguments)}\\x.\n\r");
+                    }
+                    
                 }
                 else
                 {
