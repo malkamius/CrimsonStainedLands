@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -1256,46 +1257,47 @@ namespace CrimsonStainedLands
 
         public static void DoToggle(Character ch, string arguments)
         {
-            var flags = new ActFlags[] {
-                ActFlags.AFK,
-                ActFlags.AutoAssist,
-                ActFlags.AutoSac,
-                ActFlags.AutoLoot,
-                ActFlags.AutoExit,
-                ActFlags.AutoGold,
-                ActFlags.AutoSplit,
-                ActFlags.Color,
-                ActFlags.Brief,
-                ActFlags.NoSummon,
-                ActFlags.NoFollow,
-                ActFlags.NewbieChannel,
-                ActFlags.WizInvis,
-                ActFlags.HolyLight
+            var flags = new [] {
+                new {Flag = ActFlags.AFK, Name = "AFK", Description = "Away from keyboard" },
+                new {Flag = ActFlags.AutoAssist, Name = "AutoAssist" ,Description = "Assist group members" },
+                new {Flag = ActFlags.AutoSac, Name = "AutoSac" ,Description = "Sacrifice corpses" },
+                new {Flag = ActFlags.AutoLoot, Name = "AutoLoot" ,Description = "Loot kills" },
+                new {Flag = ActFlags.AutoExit, Name = "AutoExit" ,Description = "Show room exits on look" },
+                new {Flag = ActFlags.AutoGold, Name = "AutoGold" ,Description = "Automatically loot gold" },
+                new {Flag = ActFlags.AutoSplit, Name = "AutoSplit" ,Description = "Split gold looted amongst the group" },
+                new {Flag = ActFlags.Color, Name = "Color" ,Description = "ANSI Color" },
+                new {Flag = ActFlags.DamageOnType, Name = "Damage", Description = "Damage type specific messages" },
+                new {Flag = ActFlags.Brief, Name = "Brief", Description = "Do not show room descriptions on movement" },
+                new {Flag = ActFlags.NoSummon, Name = "NoSummon", Description = "Do not allow players to summon you" },
+                new {Flag = ActFlags.NoFollow, Name = "NoFollow", Description = "Do not allow followers" },
+                new {Flag = ActFlags.NewbieChannel, Name = "Newbie", Description = "Receive newbie channel messages" },
+                new {Flag = ActFlags.WizInvis, Name = "WizInvis", Description = "Invisible to lower level players" },
+                new {Flag = ActFlags.HolyLight, Name = "HolyLight", Description = "Immortal vision" }
             };
             if (arguments.ISEMPTY())
             {
                 foreach (var flag in flags)
                 {
-                    if ((flag == ActFlags.HolyLight || flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
-                    ch.send("{0,-20}: {1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "\\gON" : "\\rOFF");
+                    if ((flag.Flag == ActFlags.HolyLight || flag.Flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
+                    ch.send("{0,-15}: {1,-10} {2,-20}\\x\n\r", flag.Name, ch.Flags.ISSET(flag.Flag) ? "\\gON\\x" : "\\rOFF\\x", flag.Description);
                 }
             }
             else
             {
                 foreach (var flag in flags)
                 {
-                    if ((flag == ActFlags.HolyLight || flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
+                    if ((flag.Flag == ActFlags.HolyLight || flag.Flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
 
-                    if (flag.ToString().StringPrefix(arguments))
+                    if (flag.Name.StringPrefix(arguments))
                     {
-                        if (ch.Flags.ISSET(flag))
+                        if (ch.Flags.ISSET(flag.Flag))
                         {
-                            ch.Flags.REMOVEFLAG(flag);
+                            ch.Flags.REMOVEFLAG(flag.Flag);
                         }
                         else
-                            ch.Flags.SETBIT(flag);
+                            ch.Flags.SETBIT(flag.Flag);
 
-                        ch.send("{0,-20}: {1}\\x\n\r", flag.ToString(), ch.Flags.ISSET(flag) ? "\\gON" : "\\rOFF");
+                        ch.send("{0,-15}: {1,-10} {2,-20}\\x\n\r", flag.Name, ch.Flags.ISSET(flag.Flag) ? "\\gON\\x" : "\\rOFF\\x", flag.Description);
                         return;
                     }
                 }
