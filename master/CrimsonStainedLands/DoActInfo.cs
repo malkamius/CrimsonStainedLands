@@ -156,6 +156,11 @@ namespace CrimsonStainedLands
                 ch.Flags.REMOVEFLAG(ActFlags.Color);
                 ch.send("Color is OFF.\n\r");
             }
+            else if("reset".StringPrefix(arguments))
+            {
+                ch.ColorConfigurations.Clear();
+                ch.send("Color reset.\n\r");
+            }
             else
             {
                 arguments = arguments.OneArgumentOut(out var option);
