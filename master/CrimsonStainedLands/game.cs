@@ -501,17 +501,10 @@ namespace CrimsonStainedLands
                 else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
                 {
                     byte[] buffer = new byte[256];
-                    try
+                    int received = connection.socket.Receive(buffer, SocketFlags.Peek);
+                    if (received == 0)
                     {
-                        int received = connection.socket.Receive(buffer, SocketFlags.Peek);
-                        if (received == 0)
-                        {
-                            throw new SocketException();
-                        }
-                    }
-                    catch (SocketException ex)
-                    {
-                        Game.log(ex.Message);
+                        throw new SocketException();
                     }
                     //    if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
                     //    //int received = connection.socket.Receive(buffer);
