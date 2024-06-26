@@ -38,7 +38,7 @@ namespace CrimsonStainedLands.Extensions
             }
         }
 
-        public static string ColorStringRGBColor(this string text, Character playercharacter = null, bool StripColor = false, bool Support256 = false, bool SupportRGB = false, bool MXP = false)
+        public static string ColorStringRGBColor(this string text, Character playercharacter = null, bool StripColor = false, bool Support256 = false, bool SupportRGB = false, bool MXP = false, bool FirstPass = true)
         {
             StringBuilder ResultBuilder = new StringBuilder();
             char EscapeChar = '\0';
@@ -163,13 +163,13 @@ namespace CrimsonStainedLands.Extensions
                         case '=':
                             string colorkey = "";
                             var endindex = text.IndexOf("}", ColorMarkerIndex);
-                            if(playercharacter != null && endindex != -1)
+                            if(playercharacter != null && endindex != -1 && FirstPass == true)
                             {
                                 colorkey = text.Substring(ColorMarkerIndex + 2, endindex - ColorMarkerIndex - 2);
                                 if(Enum.TryParse<ColorConfiguration.Keys>(colorkey, out var parsedkey))
                                 {
                                     var colorstring = playercharacter.GetColor(parsedkey);
-                                    ResultBuilder.Append(colorstring.ColorStringRGBColor(null, StripColor, Support256, SupportRGB, MXP));
+                                    ResultBuilder.Append(colorstring.ColorStringRGBColor(null, StripColor, Support256, SupportRGB, MXP, false));
                                 }
                                 ColorCodeOffset += colorkey.Length + 1;
                             }

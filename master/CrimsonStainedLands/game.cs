@@ -652,7 +652,12 @@ namespace CrimsonStainedLands
                 }
                 catch (Exception ex)
                 {
-                    Info.LogLine(ex.ToString());
+                    if(ex is SocketException)
+                    {
+                        Info.LogLine(ex.Message);
+                    }
+                    else
+                        Info.LogLine(ex.ToString());
 
                     try
                     {

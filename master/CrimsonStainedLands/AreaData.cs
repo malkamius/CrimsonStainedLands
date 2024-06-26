@@ -179,10 +179,12 @@ namespace CrimsonStainedLands
 
         public static void ResetAreas()
         {
+            List<Task> tasks = new List<Task>();
             foreach (var area in Areas)
             {
-                area.ResetArea();
+                tasks.Add(Task.Run(() => area.ResetArea()));
             }
+            tasks.ForEach(task => task.Wait());
         }
 
         private void RandomizeExits()
