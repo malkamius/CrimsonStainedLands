@@ -1538,6 +1538,10 @@ namespace CrimsonStainedLands
             else
             {
                 ((Player)ch).SetPassword(password);
+                
+                ((Player)ch).SaveCharacterFile();
+
+                ch.send("Password changed and character file saved.\n\r");
             }
         }
 

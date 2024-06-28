@@ -50,6 +50,7 @@ namespace CrimsonStainedLands
         public StringBuilder input = new StringBuilder();
         public StringBuilder output = new StringBuilder();
         private string password;
+        private string salt = "salt";
 
         public Game game;
         public DateTime LastSaveTime = DateTime.MinValue;
@@ -686,13 +687,14 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.GetNewPassword)
             {
-                password = MD5.ComputeHash(line + "salt");
+                salt = Guid.NewGuid().ToString();
+                password = MD5.ComputeHash(line + salt);
                 send("Confirm your password: ");
                 state = ConnectionStates.ConfirmPassword;
             }
             else if (state == ConnectionStates.ConfirmPassword)
             {
-                if (MD5.ComputeHash(line + "salt") == password)
+                if (MD5.ComputeHash(line + salt) == password)
                 {
                     SetState(ConnectionStates.GetColorOn);
                     //state = connectionState.getRace;
@@ -724,7 +726,7 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.GetPassword)
             {
-                if (MD5.ComputeHash(line + "salt") == password)
+                if (MD5.ComputeHash(line + salt) == password)
                 {
                     if (Game.Instance.Info.Connections.ToArrayLocked().Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
                     {
@@ -1259,6 +1261,7 @@ namespace CrimsonStainedLands
                 element.Add(new XElement("LastReadNote", LastReadNote.ToString()));
                 element.Add(new XElement("TotalPlayTime", TotalPlayTime.ToString()));
                 element.Add(new XElement("password", password));
+                element.Add(new XElement("salt", salt));
                 element.Save(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
 
             }
@@ -1280,6 +1283,7 @@ namespace CrimsonStainedLands
                     var playerData = element;
                     Name = element.GetElement("name").Value;
                     password = element.GetElement("password").Value;
+                    salt = element.GetElementValue("salt", "salt");
                     PcRace = PcRace.GetRace(element.GetElementValue("race", "human")) ?? PcRace.GetRace("human");
                     Race = Race.GetRace(element.GetElementValue("race", "human")) ?? Race.GetRace("human");
                     Utility.GetEnumValue<Alignment>(element.GetElementValue("alignment", "neutral"), ref Alignment);
@@ -1498,7 +1502,8 @@ namespace CrimsonStainedLands
         {
             if (!password.ISEMPTY() && password.Length >= 3 && password.Length <= 16)
             {
-                this.password = MD5.ComputeHash(password + "salt");
+                salt = Guid.NewGuid().ToString();
+                this.password = MD5.ComputeHash(password + salt);
             }
             else if (password.ISEMPTY())
             {
