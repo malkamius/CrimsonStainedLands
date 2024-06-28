@@ -165,7 +165,7 @@ namespace CrimsonStainedLands
             {
                 arguments = arguments.OneArgumentOut(out var option);
 
-                var configs = from kvp in ColorConfiguration.DefaultColors select new { Key = kvp.Key.ToString().Replace("_", "."), Value = kvp.Key, ColorValue = kvp.Value };
+                var configs = from kvp in ColorConfiguration.DefaultColors where !kvp.Key.ToString().Contains("Holylight", StringComparison.InvariantCultureIgnoreCase) || ch.IsImmortal select new { Key = kvp.Key.ToString().Replace("_", "."), Value = kvp.Key, ColorValue = kvp.Value };
 
                 var config = configs.FirstOrDefault(c => c.Key.StringCmp(option));
 
@@ -513,9 +513,9 @@ namespace CrimsonStainedLands
                         var desc = (TimeInfo.IS_NIGHT && !ch.Room.NightDescription.ISEMPTY() ? ch.Room.NightDescription : ch.Room.Description);
                         desc = desc.WrapText(firstlinelength: 75);
 
-                        ch.send("\\c" + (TimeInfo.IS_NIGHT && !ch.Room.NightName.ISEMPTY() ? ch.Room.NightName : ch.Room.Name) + "\\x" + (ch.Flags.ISSET(ActFlags.HolyLight) ? " \\C[" + ch.Room.Vnum + "]\\x" : "") + "\n\r");
+                        ch.send(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Name) + (TimeInfo.IS_NIGHT && !ch.Room.NightName.ISEMPTY() ? ch.Room.NightName : ch.Room.Name) + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset) + (ch.Flags.ISSET(ActFlags.HolyLight) ? ColorConfiguration.ColorString(ColorConfiguration.Keys.Holylight_VNum) + " [" + ch.Room.Vnum + "]\\x" : "") + "\n\r");
                         if (!ch.Flags.ISSET(ActFlags.Brief) || arguments.ISEMPTY())
-                            ch.send("    " + desc + "\n\r\n\r");
+                            ch.send("    " + ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Description) + desc + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset) + "\n\r\n\r");
                         else
                             ch.send("\n\r");
                         DoExits(ch, "");
@@ -716,7 +716,7 @@ namespace CrimsonStainedLands
 
                     else if (iexit.flags.ISSET(ExitFlags.Closed) || iexit.flags.ISSET(ExitFlags.Locked))
                     {
-                        exits.Add("[" + iexit.direction.ToString().ToLower() + "]");
+                        exits.Add(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Exits_Door) + "[" + iexit.direction.ToString().ToLower() + "]" + ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Exits));
                     }
                     else
                         exits.Add(iexit.direction.ToString().ToLower());
@@ -724,7 +724,7 @@ namespace CrimsonStainedLands
             }
 
             if (exits.Count == 0) exits.Add("none");
-            ch.send("\\G[Exits " + String.Join(" ", exits) + "]\\x\n\r");
+            ch.send(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Exits) + "[Exits " + String.Join(" ", exits) + "]" + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset)  + "\n\r");
         }
 
         public static void DoScan(Character ch, string arguments)

@@ -26,8 +26,14 @@ namespace CrimsonStainedLands
             Communication_Yell,
             Communication_GroupTell,
             Communication_Newbie,
+            Room_Name,
+            Room_Description,
+            Room_Exits,
+            Room_Exits_Door,
+            Holylight_VNum,
             Combat_Damage,
-            Reset
+            Reset,
+            
         }
         public static Dictionary<Keys, string> DefaultColors = new Dictionary<Keys, string>()
         {
@@ -36,6 +42,11 @@ namespace CrimsonStainedLands
             { Keys.Communication_Say, "{Y" },
             { Keys.Communication_Yell, "{R" },
             { Keys.Communication_GroupTell, "{M" },
+            { Keys.Room_Name, "{c" },
+            { Keys.Room_Description, "{x" },
+            { Keys.Room_Exits, "{G" },
+            { Keys.Room_Exits_Door, "{W" },
+            { Keys.Holylight_VNum, "{C" },
             { Keys.Combat_Damage, "{R" },
             { Keys.Reset, "{x" }
         };
