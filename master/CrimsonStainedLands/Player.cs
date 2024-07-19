@@ -68,7 +68,10 @@ namespace CrimsonStainedLands
             SuppressGoAhead,
             MUDeXtensionProtocol,
             WontMSSP,
-            Ansi
+            Ansi,
+            ClientWontEcho,
+            ServerDontEcho,
+            TemporaryDontEcho
         }
         public List<TelnetOptionFlags> TelnetOptions = new List<TelnetOptionFlags>();
 
@@ -225,12 +228,20 @@ namespace CrimsonStainedLands
 
                     if (singlecharacter == 8 && position > 0) // backspace
                     {
+                        if (TelnetOptions.ISSET(TelnetOptionFlags.ClientWontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.ServerDontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.TemporaryDontEcho))
+                        {
+                            SendRaw(((char)singlecharacter).ToString(), true);
+                        }
                         input.Remove(input.Length - 1, 1);
                         position -= 1;
                     }
                     else if (singlecharacter == 13 || singlecharacter == 10 || (singlecharacter >= 32 && singlecharacter <= 126)) // new lines and standard characters
                     {
                         input.Append((char)singlecharacter);
+                        if (TelnetOptions.ISSET(TelnetOptionFlags.ClientWontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.ServerDontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.TemporaryDontEcho))
+                        {
+                            SendRaw(((char)singlecharacter).ToString(), true);
+                        }
                         position++;
                         if (input.Length > 4200) // not writing a novel yet?
                         {
@@ -310,10 +321,25 @@ namespace CrimsonStainedLands
 
                                     SendRaw(TelnetProtocol.ServerGetWillMUDExtensionProtocol, true);
                                 }
+                                else if (command.Type == TelnetProtocol.Command.Types.DontMUDExtensionProtocol)
+                                {
+                                    Game.log("MXP Disabled.");
+                                    SendRaw(TelnetProtocol.ServerGetWillEcho, true);
+                                }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
                                 {
                                     TelnetOptions.SETBIT(TelnetOptionFlags.MUDeXtensionProtocol);
                                     Game.log("MXP Enabled.");
+
+                                    SendRaw(TelnetProtocol.ServerGetWillEcho, true);
+                                }
+                                else if (command.Type == TelnetProtocol.Command.Types.ClientWontEcho)
+                                {
+                                    TelnetOptions.SETBIT(TelnetOptionFlags.ClientWontEcho);
+                                }
+                                else if (command.Type == TelnetProtocol.Command.Types.ServerDontEcho)
+                                {
+                                    TelnetOptions.SETBIT(TelnetOptionFlags.ServerDontEcho);
                                 }
                             });
                         if (newbyteindex > byteindex)
@@ -684,6 +710,8 @@ namespace CrimsonStainedLands
                     state = ConnectionStates.GetNewPassword;
                 }
                 send("What is your password? ");
+                TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
+                //this.SendRaw(TelnetProtocol.ServerGetWillEcho);
             }
             else if (state == ConnectionStates.GetNewPassword)
             {
@@ -691,11 +719,15 @@ namespace CrimsonStainedLands
                 password = MD5.ComputeHash(line + salt);
                 send("Confirm your password: ");
                 state = ConnectionStates.ConfirmPassword;
+                TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
+                //this.SendRaw(TelnetProtocol.ServerGetWillEcho);
             }
             else if (state == ConnectionStates.ConfirmPassword)
             {
                 if (MD5.ComputeHash(line + salt) == password)
                 {
+                    //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
+                    TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
                     SetState(ConnectionStates.GetColorOn);
                     //state = connectionState.getRace;
                     //send("What is your race? (" + string.Join(" ", (from race in Race.Races select race.name)) + ") ");
@@ -704,6 +736,8 @@ namespace CrimsonStainedLands
                 {
                     send("Wrong password.\nEnter Password: ");
                     state = ConnectionStates.GetNewPassword;
+                    TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
+                    //this.SendRaw(TelnetProtocol.ServerGetWillEcho);
                 }
             }
             else if (state == ConnectionStates.GetColorOn)
@@ -728,6 +762,8 @@ namespace CrimsonStainedLands
             {
                 if (MD5.ComputeHash(line + salt) == password)
                 {
+                    //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
+                    TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
                     if (Game.Instance.Info.Connections.ToArrayLocked().Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
                     {
                         state = ConnectionStates.GetPlayerAlreadyLoggedIn;
@@ -740,6 +776,8 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
+                    //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
+                    TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
                     SendRaw("Incorrect password!\n\r");
                     Game.CloseSocket(this, true, false);
                     return true;

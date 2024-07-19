@@ -450,6 +450,7 @@ namespace CrimsonStainedLands
             {
                 WizardNet.Wiznet(WizardNet.Flags.Connections, "New Connection - {0}", null, null, player.Address);
 
+                //player.SendRaw(TelnetProtocol.ClientGetDoEcho);
                 /// IAC TType Negotiation
                 /// https://tintin.mudhalla.net/protocols/mtts/
                 /// https://tintin.mudhalla.net/rfc/rfc854/

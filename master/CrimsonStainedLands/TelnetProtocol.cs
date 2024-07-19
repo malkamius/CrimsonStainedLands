@@ -37,7 +37,10 @@ namespace CrimsonStainedLands
                 ClientSendNegotiateType,
                 DoMUDServerStatusProtocol,
                 DontMUDServerStatusProtocol,
-                DoMUDExtensionProtocol
+                DoMUDExtensionProtocol,
+                DontMUDExtensionProtocol,
+                ClientWontEcho,
+                ServerDontEcho
             }
             public Types Type { get; set; }
 
@@ -172,6 +175,17 @@ namespace CrimsonStainedLands
             (byte)Options.InterpretAsCommand,
             (byte)Options.WILL,
             (byte)Options.ECHO};
+
+        public static readonly byte[] ServerGetWontEcho = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WONT,
+            (byte)Options.ECHO};
+
+        public static readonly byte[] ServerGetDontEcho = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DONT,
+            (byte)Options.ECHO};
+
         public static void ProcessInterpretAsCommand(object sender, byte[] data, int position, out int newposition, out byte[] carryover, EventHandler<Command> callback)
         {
             /// IAC TType Negotiation
@@ -259,11 +273,31 @@ namespace CrimsonStainedLands
                 }
                 else if(data.StartsWith(ClientGetDontMUDExtensionProtocol, position))
                 {
+                    callback(sender, new Command() { Type = Command.Types.DontMUDExtensionProtocol });
                     newposition = position + ClientGetDontMUDExtensionProtocol.Length;
                     carryover = null;
                     return;
                 }
-
+                else if(data.StartsWith(ClientGetDoEcho, position))
+                {
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.ClientWontEcho
+                    });
+                    newposition = position + ClientGetDoEcho.Length + 1;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ServerGetDontEcho, position))
+                {
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.ServerDontEcho
+                    });
+                    newposition = position + ServerGetDontEcho.Length + 1;
+                    carryover = null;
+                    return;
+                }
                 else if (data.StartsWith(ClientGetDontUnknown, position))
                 {
                     newposition = position + ClientGetDontUnknown.Length + 1;
