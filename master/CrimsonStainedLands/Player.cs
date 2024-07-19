@@ -333,9 +333,9 @@ namespace CrimsonStainedLands
 
                                     SendRaw(TelnetProtocol.ServerGetWillEcho, true);
                                 }
-                                else if (command.Type == TelnetProtocol.Command.Types.ClientWontEcho)
+                                else if (command.Type == TelnetProtocol.Command.Types.ClientDoEcho)
                                 {
-                                    TelnetOptions.SETBIT(TelnetOptionFlags.ClientWontEcho);
+                                    TelnetOptions.SETBIT(TelnetOptionFlags.ServerDontEcho);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.ServerDontEcho)
                                 {

@@ -40,7 +40,8 @@ namespace CrimsonStainedLands
                 DoMUDExtensionProtocol,
                 DontMUDExtensionProtocol,
                 ClientWontEcho,
-                ServerDontEcho
+                ServerDontEcho,
+                ClientDoEcho
             }
             public Types Type { get; set; }
 
@@ -282,7 +283,7 @@ namespace CrimsonStainedLands
                 {
                     callback(sender, new Command()
                     {
-                        Type = Command.Types.ClientWontEcho
+                        Type = Command.Types.ClientDoEcho
                     });
                     newposition = position + ClientGetDoEcho.Length + 1;
                     carryover = null;
