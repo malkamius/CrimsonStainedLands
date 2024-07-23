@@ -40,6 +40,9 @@ namespace CrimsonStainedLands
 
         public List<Character> People = new List<Character>();
         public int Timer;
+
+        public string Continent { get; set; } = "Mainland";
+
         public Dictionary<int, Quest> Quests { get; set; } = new Dictionary<int, Quest>();
         
         public static void LoadAreas(bool headersOnly = false)
@@ -229,6 +232,37 @@ namespace CrimsonStainedLands
 
         }
 
+        public void LoadHeader(XElement root)
+        {
+            if (root.HasElement("AreaData"))
+            {
+
+                var areaData = root.Elements("AreaData").FirstOrDefault();
+
+                Name = areaData.GetElementValue("Name");
+
+                this.VNumStart = areaData.GetElementValueInt("vnumStart");
+                this.VNumEnd = areaData.GetElementValueInt("vnumEnd");
+
+                info = areaData.GetElementValue("Info");
+                Builders = areaData.GetElementValue("Builders");
+                Security = areaData.GetElementValueInt("Security");
+                Credits = areaData.GetElementValue("Credits");
+                OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
+                Continent = areaData.GetElementValue("Continent", Continent);
+
+                if (Name.ISEMPTY())
+                    Game.log("Area " + FileName + "has no name");
+                if (this.VNumStart == 0)
+                    Game.log("Area " + Name + " has no start vnum");
+                if (this.VNumEnd == 0)
+                    Game.log("Area " + Name + " has no end vnum");
+
+            }
+
+            AreaData.Areas.Add(this);
+        }
+
         public void LoadHeader(string file)
         {
             if (!string.IsNullOrEmpty(file))
@@ -237,33 +271,9 @@ namespace CrimsonStainedLands
 
                 XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
 
-                if (root.HasElement("AreaData"))
-                {
-
-                    var areaData = root.Elements("AreaData").FirstOrDefault();
-
-                    Name = areaData.GetElementValue("Name");
-
-                    this.VNumStart = areaData.GetElementValueInt("vnumStart");
-                    this.VNumEnd = areaData.GetElementValueInt("vnumEnd");
-
-                    info = areaData.GetElementValue("Info");
-                    Builders = areaData.GetElementValue("Builders");
-                    Security = areaData.GetElementValueInt("Security");
-                    Credits = areaData.GetElementValue("Credits");
-                    OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
-                    if (Name.ISEMPTY())
-                        Game.log("Area " + FileName + "has no name");
-                    if (this.VNumStart == 0)
-                        Game.log("Area " + Name + " has no start vnum");
-                    if (this.VNumEnd == 0)
-                        Game.log("Area " + Name + " has no end vnum");
-
-                }
+                LoadHeader(root);
+                
             }
-            AreaData.Areas.Add(this);
-            if (AreaData.Areas.Any(a => a == null)) 
-                Game.log("Null area");
         }
 
         /// <summary>
@@ -277,30 +287,8 @@ namespace CrimsonStainedLands
                 FileName = file;
                   
                 XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
-                
-                if (root.HasElement("AreaData"))
-                {
 
-                    var areaData = root.Elements("AreaData").FirstOrDefault();
-
-                    Name = areaData.GetElementValue("Name");
-
-                    this.VNumStart = areaData.GetElementValueInt("vnumStart");
-                    this.VNumEnd = areaData.GetElementValueInt("vnumEnd");
-
-                    info = areaData.GetElementValue("Info");
-                    Builders = areaData.GetElementValue("Builders");
-                    Security = areaData.GetElementValueInt("Security");
-                    Credits = areaData.GetElementValue("Credits");
-                    OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
-                    if (Name.ISEMPTY())
-                        Game.log("Area " + FileName + "has no name");
-                    if (this.VNumStart == 0)
-                        Game.log("Area " + Name + " has no start vnum");
-                    if (this.VNumEnd == 0)
-                        Game.log("Area " + Name + " has no end vnum");
-
-                }
+                LoadHeader(root);
 
                 // Clear rooms for a reload
                 foreach (var room in Rooms.ToArray())
@@ -325,13 +313,6 @@ namespace CrimsonStainedLands
                 Helps.Clear();
                 LoadHelps(root);
 
-
-                if (!AreaData.Areas.Contains(this))
-                {
-                    AreaData.Areas.Add(this);
-                    if (AreaData.Areas.Any(a => a == null)) 
-                        Game.log("Null area");
-                }
                 Resets.Clear();
                 
                 LoadResets(root);

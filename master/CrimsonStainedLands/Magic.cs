@@ -1850,9 +1850,12 @@ namespace CrimsonStainedLands
                 ch.send("You failed.\n\r");
                 return;
             }
-            var room = RoomData.Rooms.Values.SelectRandom();
 
-            if (room == null || !(ch.IsImmortal || ch.IsNPC || (ch.Level <= room.MaxLevel && ch.Level >= room.MinLevel)))
+            //var room = RoomData.Rooms.Values.SelectRandom();
+            
+            var room = GetTeleportRoom(ch);
+
+            if (room == null || !(ch.IsImmortal || ch.IsNPC))
             {
                 ch.send("You failed.\n\r");
                 return;
@@ -5135,20 +5138,24 @@ namespace CrimsonStainedLands
         public static void SpellGroupTeleport(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
 
-            var newroom = RoomData.Rooms.Values.SelectRandom();
-
+            //var newroom = RoomData.Rooms.Values.SelectRandom();
+            
             if (ch.Room == null || (!ch.IsNPC && ch.Room.flags.ISSET(RoomFlags.NoRecall)) || (!ch.IsNPC && ch.Fighting != null))
             {
                 ch.Act("You failed.\n\r");
                 return;
             }
-            else if (newroom == null)
+
+            var newroom = GetTeleportRoom(ch);
+                
+
+            if (newroom == null)
             {
                 ch.send("You failed.\n\r");
             }
             foreach (var GroupMember in ch.GetGroupMembersInRoom())
             {
-                if(GroupMember.IsImmortal || GroupMember.IsNPC || (GroupMember.Level <= newroom.MaxLevel && GroupMember.Level >= newroom.MinLevel))
+                if(GroupMember.IsImmortal || GroupMember.IsNPC)
                 GroupMember.Act("$n vanishes!", type: ActType.ToRoom);
                 GroupMember.RemoveCharacterFromRoom();
                 GroupMember.AddCharacterToRoom(newroom);
@@ -5156,6 +5163,20 @@ namespace CrimsonStainedLands
                 //Character.DoLook(GroupMember, "auto");
             }
         } // end group teleport
+
+        private static RoomData GetTeleportRoom(Character ch)
+        {
+            RoomData result = null;
+            int tries = 0;
+            while (result == null && tries++ < 100)
+            {
+                // equal chance to end in any area regardless of area size
+                result = (from area in AreaData.Areas where area.Continent == ch.Room.Area.Continent select area).SelectRandom().Rooms.Where(r => !string.IsNullOrEmpty(r.Value.Name) && !string.IsNullOrEmpty(r.Value.Description) && r.Value.MinLevel <= ch.Level && r.Value.MaxLevel >= ch.Level).SelectRandom().Value;
+                //if (result.flags.ISSET(RoomFlags.NoRecall)) { }
+            }
+            return result;
+        }
+
         public static void SpellMassHealing(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
             foreach (var GroupMember in ch.GetGroupMembersInRoom())
