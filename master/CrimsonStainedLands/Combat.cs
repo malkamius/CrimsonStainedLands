@@ -715,7 +715,7 @@ namespace CrimsonStainedLands
                     victim.DamageRoll = 0;
 
                     // Clear the LastFighting reference from other NPCs
-                    foreach (var npc in Character.Characters)
+                    foreach (var npc in Character.Characters.ToArray())
                     {
                         if (npc.LastFighting == victim)
                             npc.LastFighting = null;
@@ -3027,7 +3027,7 @@ namespace CrimsonStainedLands
         {
             if (world)
             {
-                foreach (var other in Character.Characters)
+                foreach (var other in Character.Characters.ToArray())
                 {
                     if (other.Fighting == ch)
                     {

@@ -2507,7 +2507,7 @@ namespace CrimsonStainedLands
 
             Combat.StopFighting(this, true);
 
-            foreach (var character in Characters)
+            foreach (var character in Characters.ToArray())
             {
                 if (character != null && character != this)
                 {
