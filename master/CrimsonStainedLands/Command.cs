@@ -461,7 +461,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "stripaffects", Action = DoActWizard.DoStripAffects, Info = "Strip your affects.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "forcetick", Action = DoActWizard.DoForceTick, Info = "Force a tick update to happen.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "setplayerpassword", Action = DoActWizard.DoSetPlayerPassword, Info = "Set another player's password.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
-
+            Commands.Add(new Command { Name = "renameplayer", Action = DoActWizard.DoRenamePlayer, Info = "Rename a player.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
             Commands.Add(new Command { Name = "connections", Action = Game.DoConnections, Info = "See connections to the mud.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
             Commands.Add(new Command { Name = "banbyname", Action = Game.DoBanByName, Info = "Ban a player name, connected or not.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });
             Commands.Add(new Command { Name = "banbyaddress", Action = Game.DoBanByAddress, Info = "Ban a player by specifying their name if they are online or their ipaddress.", MinimumPosition = Positions.Dead, MinimumLevel = 59 });

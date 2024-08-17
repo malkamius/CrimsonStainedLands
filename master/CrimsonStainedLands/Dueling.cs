@@ -23,7 +23,7 @@ namespace CrimsonStainedLands
         {
             if (character.GetCharacterFromListByName(
                     from player 
-                    in Game.Instance.Info.Connections.ToArrayLocked() 
+                    in Game.Instance.Info.Connections 
                     where player.state == Player.ConnectionStates.Playing
                     select player, 
                 arguments, out var victim, Character.GetFlags.PlayerName, Character.GetFlags.DisallowStringPrefix))

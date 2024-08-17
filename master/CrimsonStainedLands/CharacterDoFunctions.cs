@@ -780,7 +780,7 @@ namespace CrimsonStainedLands
             int playersOnline = 0;
             whoList.AppendLine("You can see:");
 
-            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
+            foreach (var connection in Game.Instance.Info.Connections)
             {
                 if (connection.state == Player.ConnectionStates.Playing && connection.socket != null && (!connection.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= connection.Level))
                 {
@@ -3213,7 +3213,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing)
                     {
@@ -3236,7 +3236,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch.Room != null && player.Room.Area == ch.Room.Area)
@@ -3260,7 +3260,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing &&
                         player.Room != null && ch != null && ch.Room != null && player.Room == ch.Room)

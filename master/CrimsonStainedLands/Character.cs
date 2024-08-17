@@ -12,7 +12,7 @@ namespace CrimsonStainedLands
    
     public partial class Character : IDisposable
     {
-        public static List<Character> Characters = new List<Character>();
+        public static ConcurrentList<Character> Characters = new ConcurrentList<Character>();
         
         public static WearSlot[] WearSlots = new WearSlot[]
         {

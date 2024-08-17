@@ -20,6 +20,12 @@ namespace CrimsonStainedLands
         public static string GuildsPath{ get; set; } = "data/guilds";
         public static string RacesPath { get; set; } = "data/races";
 
+        public static string SettingsPath { get; set; } = "DebugSettings.xml";
+
+        public static string X509CertificatePath { get; set; } = "localhost.pfx";
+
+        public static string X509CertificatePassword { get; set; } = "localhost";
+
         static Settings()
         {
             Load();
@@ -37,19 +43,21 @@ namespace CrimsonStainedLands
                 new XAttribute("PlayersPath", PlayersPath),
                 new XAttribute("NotesPath", NotesPath),
                 new XAttribute("GuildsPath", GuildsPath),
-                new XAttribute("RacesPath", RacesPath));
-            settings.Save("Settings.xml");
+                new XAttribute("RacesPath", RacesPath),
+                new XAttribute("X509CertificatePath", X509CertificatePath),
+                new XAttribute("X509CertificatePassword", X509CertificatePassword));
+            settings.Save(SettingsPath);
         }
 
         public static void Load()
         {
-            if (!System.IO.File.Exists("Settings.xml"))
+            if (!System.IO.File.Exists(SettingsPath) && !System.IO.File.Exists(SettingsPath = "Settings.xml"))
             {
                 Save();
             }
             else
             {
-                var settings = XElement.Load("Settings.xml");
+                var settings = XElement.Load(SettingsPath);
                 Game.MaxPlayersOnlineEver = settings.GetAttributeValueInt("MaxPlayersOnlineEver", 0);
                 Port = settings.GetAttributeValueInt("Port", 4000);
                 SSLPort = settings.GetAttributeValueInt("SSLPort", 4001);
@@ -60,6 +68,8 @@ namespace CrimsonStainedLands
                 NotesPath = settings.GetAttributeValue("NotesPath", "data/");
                 GuildsPath = settings.GetAttributeValue("GuildsPath", "data/guilds");
                 RacesPath = settings.GetAttributeValue("RacesPath", "data/races");
+                X509CertificatePath = settings.GetAttributeValue("X509CertificatePath", "localhost.pfx");
+                X509CertificatePassword = settings.GetAttributeValue("X509CertificatePassword", "localhost");
             }
         }
     }

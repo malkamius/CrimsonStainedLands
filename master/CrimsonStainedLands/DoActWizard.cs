@@ -1,6 +1,7 @@
 ﻿using CrimsonStainedLands.Extensions;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -48,40 +49,114 @@ namespace CrimsonStainedLands
 
         public static void DoSetPlayerPassword(Character ch, string arguments)
         {
-            string playerName = "";
-            string password = "";
-            string passwordConfirm = "";
+
+            arguments = arguments.OneArgumentOut(out var playerName);
+            arguments = arguments.OneArgumentOut(out var password);
+            arguments = arguments.OneArgumentOut(out var passwordConfirm);
+
             Player player = null;
             if (ch.IsNPC)
             {
-                return;
+                ch.send("Non player characters can't do that.\r\n");
             }
-
-            if (!ch.IsImmortal)
+            else if (!ch.IsImmortal)
             {
                 ch.send("Huh?\n\r");
                 return;
-            }
-
-            arguments = arguments.OneArgument(ref playerName);
-            arguments = arguments.OneArgument(ref password);
-            arguments = arguments.OneArgument(ref passwordConfirm);
-
-            if (playerName.ISEMPTY() || password.ISEMPTY() || passwordConfirm.ISEMPTY())
+            }            
+            else if (playerName.ISEMPTY() || password.ISEMPTY() || passwordConfirm.ISEMPTY())
             {
                 ch.send("Syntax: SetPlayerPassword {Player Name} {New Password} {Confirm New Password}\n\r");
-            }
-            else if ((player = (from connection in Game.Instance.Info.Connections.ToArrayLocked() where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
-            {
-                ch.send("Could not find player.\n\r");
             }
             else if (password != passwordConfirm)
             {
                 ch.send("Passwords do not match.\n\r");
             }
+            else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
+            {
+                playerName = playerName[0].ToString().ToUpper() + playerName.Substring(1).ToLower();
+
+                var playerpath = Path.Join(Settings.PlayersPath, playerName + ".xml");
+
+                if(System.IO.File.Exists(playerpath)) 
+                {
+                    player = new Player(playerpath);
+                    player.SetPassword(password);
+                    player.SaveCharacterFile();
+                    ch.send("Password of offline player changed.\r\n");
+                }
+                else
+                {
+                    ch.send("Could not find player.\n\r");
+                }
+            }
             else
             {
                 player.SetPassword(password);
+                player.SaveCharacterFile();
+                ch.send("Password of online player changed.\r\n");
+            }
+        }
+
+        
+        public static void DoRenamePlayer(Character ch, string arguments) 
+        {
+            Player connectedplayer = null;
+            arguments = arguments.OneArgumentOut(out var playername);
+            arguments = arguments.OneArgumentOut(out var newplayername);
+            if (ch.IsNPC)
+            {
+                ch.send("Non player characters can't do that.\r\n");
+            }
+            else if(!ch.IsImmortal) 
+            {
+                ch.send("Huh?\r\n");
+            }
+            else if(playername.ISEMPTY() || newplayername.ISEMPTY()) 
+            {
+                ch.send("Syntax: renameplayer playername newplayername\r\n");
+            }
+            else if(playername.Length < 3 || newplayername.Length < 3) 
+            {
+                ch.send("Name must be at least 3 characters in length.\r\n");
+            }
+            else
+            {
+                playername = playername[0].ToString().ToUpper() + playername.Substring(1).ToLower();
+                newplayername = newplayername[0].ToString().ToUpper() + newplayername.Substring(1).ToLower();
+                
+                var newplayerpath = Path.Join(Settings.PlayersPath, newplayername + ".xml");
+                var oldplayerpath = Path.Join(Settings.PlayersPath, playername + ".xml");
+
+                if(System.IO.File.Exists(newplayerpath))
+                {
+                    ch.send("A player file with the new player name already exists.\r\n");
+                }
+                else if(!System.IO.File.Exists(oldplayerpath))
+                {
+                    ch.send("Could not find the player file with the player name.\r\n");
+                }
+                else 
+                {
+                    connectedplayer = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(playername) select connection).FirstOrDefault();
+
+                    if(connectedplayer != null) 
+                    {
+                        connectedplayer.Name = newplayername;
+                        connectedplayer.SaveCharacterFile();
+
+                        ch.send("Renamed online player.\r\n");
+                    }
+                    else 
+                    {
+                        var player = new Player(oldplayerpath);
+                        player.Name = newplayername;
+                        player.SaveCharacterFile();
+                        
+                        ch.send("Renamed offline player.\r\n");
+                    }
+                    System.IO.File.Move(oldplayerpath, Path.Join(Path.GetDirectoryName(oldplayerpath), Path.GetFileNameWithoutExtension(oldplayerpath) + ".renamed.xml"));
+                }
             }
         }
 
@@ -97,7 +172,7 @@ namespace CrimsonStainedLands
             {
                 ch.send("Syntax: Advance {character} {level}");
             }
-            else if ((player = (from connection in Game.Instance.Info.Connections.ToArrayLocked() where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
+            else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
             {
                 ch.send("No player with that exact name found.\n\r");
             }
@@ -838,7 +913,7 @@ namespace CrimsonStainedLands
 
             if (arg1.StringCmp("all"))
             {
-                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing && player != ch && player.Room != null && ch.CanSee(player))
                     {
@@ -1531,7 +1606,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY())
             {
-                foreach(var player in Game.Instance.Info.Connections.ToArrayLocked())
+                foreach(var player in Game.Instance.Info.Connections)
                 {
                     if (player.SnoopedBy == ch) player.SnoopedBy = null;
                 }

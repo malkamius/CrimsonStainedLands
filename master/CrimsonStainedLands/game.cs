@@ -149,7 +149,7 @@ namespace CrimsonStainedLands
 
         public class GameInfo
         {
-            public List<Player> Connections = new List<Player>();
+            public ConcurrentList<Player> Connections = new ConcurrentList<Player>();
             public StreamWriter LogWriter = null;
             public bool Exiting = false;
             public int Port = 4000;
@@ -209,7 +209,7 @@ namespace CrimsonStainedLands
         }
 
         private Socket listeningSocket;
-        private Socket sshlisteningSocket;
+        private Socket sshlisteningSocket = null;
         private Socket ssllisteningSocket;
 
         private Game(int port)
@@ -227,10 +227,9 @@ namespace CrimsonStainedLands
             }
 
         }
-        private async void LaunchAsync(GameInfo info)
+        private void LaunchAsync(GameInfo info)
         {
             LaunchTask = Task.Run(() => launch(info));
-            
         }
 
         public static void log(string text, params object[] parameters)
@@ -605,7 +604,7 @@ namespace CrimsonStainedLands
 
         private void ProcessConnectionsOutput()
         {
-            foreach (var connection in Info.Connections.ToArrayLocked())
+            foreach (var connection in Info.Connections)
             {
                 try
                 {
@@ -632,7 +631,7 @@ namespace CrimsonStainedLands
 
         private void CheckConnectionsForAndProcessInput()
         {
-            foreach (var connection in Info.Connections.ToArrayLocked())
+            foreach (var connection in Info.Connections)
             {
                 if (connection.LastSaveTime != DateTime.MinValue && (DateTime.Now - connection.LastSaveTime).Minutes >= 5)
                 {
@@ -684,7 +683,7 @@ namespace CrimsonStainedLands
         private void LastDitchAttemptToSendOutput()
         {
             //exiting, one last attempt at sending any remaining output
-            foreach (var connection in Info.Connections.ToArrayLocked())
+            foreach (var connection in Info.Connections)
             {
                 try
                 {
@@ -736,7 +735,7 @@ namespace CrimsonStainedLands
         public static void shutdown()
         {
 
-            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
+            foreach (var connection in Game.Instance.Info.Connections)
             {
                 try
                 {
@@ -779,7 +778,7 @@ namespace CrimsonStainedLands
 
         public static void reboot()
         {
-            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
+            foreach (var connection in Game.Instance.Info.Connections)
             {
                 try
                 {
@@ -1715,7 +1714,7 @@ namespace CrimsonStainedLands
             if (buf.Length > 0)
             {
                 var buffer = buf.ToString();
-                foreach (var player in Game.Instance.Info.Connections.ToArrayLocked())
+                foreach (var player in Game.Instance.Info.Connections)
                 {
                     if (player.state == Player.ConnectionStates.Playing
                         && player.IS_OUTSIDE
@@ -1734,7 +1733,7 @@ namespace CrimsonStainedLands
             //Info.LaunchMethod.EndInvoke(Info.launchResult);
             await LaunchTask;
             listeningSocket.Dispose();
-            foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked())
+            foreach (var connection in Game.Instance.Info.Connections)
             {
                 try
                 {

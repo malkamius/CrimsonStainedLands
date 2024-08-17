@@ -123,6 +123,20 @@ namespace CrimsonStainedLands
             }
         }
 
+        /// <summary>
+        /// Load a player file offline
+        /// </summary>
+        /// <param name="path">The full path of the player file</param>
+        public Player(string path) 
+        {
+            this.LoadCharacterFile(path);
+
+            RoomData room;
+            if (!RoomData.Rooms.TryGetValue(roomVnum, out room))
+                RoomData.Rooms.TryGetValue(3760, out room);
+            this.Room = room;
+        }
+
         public Player(Game game, Socket socket, bool ssl = false, bool ssh = false)
         {
             this.game = game;
@@ -149,7 +163,7 @@ namespace CrimsonStainedLands
                     inanimate = DateTime.Now;
                     this.sslsocket = new SslStream(new System.Net.Sockets.NetworkStream(socket));
 
-                    var certificate = new X509Certificate2("kbs-cloud.com.pfx", "T3hposmud");
+                    var certificate = new X509Certificate2(Settings.X509CertificatePath, Settings.X509CertificatePassword);
                     if (certificate != null)
                         this.sslsocket.BeginAuthenticateAsServer(certificate, new AsyncCallback((result) =>
                         {
@@ -304,7 +318,7 @@ namespace CrimsonStainedLands
                                     Game.log("SENDING MSSP DATA");
                                     var variables = new Dictionary<string, string[]>();
                                     variables["NAME"] = new string[] { "CRIMSON STAINED LANDS" };
-                                    variables["PLAYERS"] = new string[] { game.Info.Connections.ToArrayLocked().Count(con => con.state == ConnectionStates.Playing).ToString() };
+                                    variables["PLAYERS"] = new string[] { game.Info.Connections.Count(con => con.state == ConnectionStates.Playing).ToString() };
                                     variables["UPTIME"] = new string[] { (DateTime.Now - Game.Instance.GameStarted).TotalSeconds.ToString() };
                                     variables["HOSTNAME"] = new string[] { "kbs-cloud.com" };
                                     variables["PORT"] = new string[] { Settings.Port.ToString() };
@@ -357,7 +371,7 @@ namespace CrimsonStainedLands
             {
                 if (!data.ISEMPTY())
                     if (data.Contains("\n"))
-                        data = data.Replace("\r", "").Replace("\n", "\n\r");
+                        data = data.Replace("\r", "").Replace("\n", "\r\n");
 
                 var bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(data.ColorStringRGBColor(
                     this,
@@ -418,7 +432,7 @@ namespace CrimsonStainedLands
                 try
                 {
                     var socket = result.AsyncState as Socket;
-                    var connections = Game.Instance.Info.Connections.ToArrayLocked();
+                    var connections = Game.Instance.Info.Connections;
                     var connection = (from c in connections where c.socket == socket select c).FirstOrDefault();
                     if(connection != null)
                     lock (connection)
@@ -448,7 +462,7 @@ namespace CrimsonStainedLands
                 try
                 {
                     var socket = result.AsyncState as SslStream;
-                    var connections = Game.Instance.Info.Connections.ToArrayLocked();
+                    var connections = Game.Instance.Info.Connections;
                     var connection = (from c in connections where c.sslsocket == socket select c).FirstOrDefault();
                     if (connection != null)
                     lock (connection)
@@ -764,7 +778,7 @@ namespace CrimsonStainedLands
                 {
                     //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
                     TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
-                    if (Game.Instance.Info.Connections.ToArrayLocked().Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
+                    if (Game.Instance.Info.Connections.Any(connection => connection.Name.equals(Name) && connection.state == ConnectionStates.Playing))
                     {
                         state = ConnectionStates.GetPlayerAlreadyLoggedIn;
                         send("This player is already connected, continuing will disconnect them. Continue? ");
@@ -787,7 +801,7 @@ namespace CrimsonStainedLands
             {
                 if ("yes".StringPrefix(line))
                 {
-                    foreach (var connection in Game.Instance.Info.Connections.ToArrayLocked().Where(connection => connection.Name == Name && connection != this))
+                    foreach (var connection in Game.Instance.Info.Connections.Where(connection => connection.Name == Name && connection != this))
                     {
                         try
                         {
@@ -1019,7 +1033,7 @@ namespace CrimsonStainedLands
             LastActivity = DateTime.Now;
             int playersonline = 0;
 
-            if ((playersonline = game.Info.Connections.ToArrayLocked().Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
+            if ((playersonline = game.Info.Connections.Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
             {
                 Game.Instance.MaxPlayersOnline = playersonline;
                 if (playersonline > Game.MaxPlayersOnlineEver)
@@ -1220,7 +1234,7 @@ namespace CrimsonStainedLands
                 LastActivity = DateTime.Now;
                 WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
                 int playersonline = 0;
-                if ((playersonline = game.Info.Connections.ToArrayLocked().Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
+                if ((playersonline = game.Info.Connections.Count(p => p.state == ConnectionStates.Playing)) > Game.Instance.MaxPlayersOnline)
                 {
                     Game.Instance.MaxPlayersOnline = playersonline;
                     if (playersonline > Game.MaxPlayersOnlineEver)
