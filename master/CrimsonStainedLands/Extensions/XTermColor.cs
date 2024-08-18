@@ -38,7 +38,7 @@ namespace CrimsonStainedLands.Extensions
             }
         }
 
-        public static string ColorStringRGBColor(this string text, Character playercharacter = null, bool StripColor = false, bool Support256 = false, bool SupportRGB = false, bool MXP = false, bool FirstPass = true)
+        public static string ColorStringRGBColor(this string text, Character playercharacter = null, bool StripColor = false, bool Support256 = false, bool SupportRGB = false, bool MXP = false)
         {
             StringBuilder ResultBuilder = new StringBuilder();
             char EscapeChar = '\0';
@@ -131,8 +131,14 @@ namespace CrimsonStainedLands.Extensions
                             break;
 
                         case 'x':
-                            ResultBuilder.Append("\x001b[0m");
-                            ResultBuilder.Append("\u001b[4z\x01B[3z\x01B[7z");
+                            if (!StripColor)
+                            { 
+                                ResultBuilder.Append("\x001b[0m");
+                                //if (SupportRGB)
+                                //{
+                                //    ResultBuilder.Append("\u001b[4z\x01B[3z\x01B[7z");
+                                //}
+                            }
                             color = -1;
                             break;
                         case 'e':
@@ -163,13 +169,13 @@ namespace CrimsonStainedLands.Extensions
                         case '=':
                             string colorkey = "";
                             var endindex = text.IndexOf("}", ColorMarkerIndex);
-                            if(playercharacter != null && endindex != -1 && FirstPass == true)
+                            if(playercharacter != null && endindex != -1)
                             {
                                 colorkey = text.Substring(ColorMarkerIndex + 2, endindex - ColorMarkerIndex - 2);
                                 if(Enum.TryParse<ColorConfiguration.Keys>(colorkey, out var parsedkey))
                                 {
                                     var colorstring = playercharacter.GetColor(parsedkey);
-                                    ResultBuilder.Append(colorstring.ColorStringRGBColor(null, StripColor, Support256, SupportRGB, MXP, false));
+                                    ResultBuilder.Append(colorstring.ColorStringRGBColor(null, StripColor, Support256, SupportRGB, MXP));
                                 }
                                 ColorCodeOffset += colorkey.Length + 1;
                             }
