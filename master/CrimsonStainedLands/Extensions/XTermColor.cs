@@ -134,10 +134,10 @@ namespace CrimsonStainedLands.Extensions
                             if (!StripColor)
                             { 
                                 ResultBuilder.Append("\x001b[0m");
-                                //if (SupportRGB)
-                                //{
-                                //    ResultBuilder.Append("\u001b[4z\x01B[3z\x01B[7z");
-                                //}
+                                if (SupportRGB)
+                                {
+                                    ResultBuilder.Append("\u001b[4z\x01B[3z\x01B[7z");
+                                }
                             }
                             color = -1;
                             break;
@@ -175,6 +175,7 @@ namespace CrimsonStainedLands.Extensions
                                 if(Enum.TryParse<ColorConfiguration.Keys>(colorkey, out var parsedkey))
                                 {
                                     var colorstring = playercharacter.GetColor(parsedkey);
+                                    if(!StripColor)
                                     ResultBuilder.Append(colorstring.ColorStringRGBColor(null, StripColor, Support256, SupportRGB, MXP));
                                 }
                                 ColorCodeOffset += colorkey.Length + 1;
@@ -200,7 +201,7 @@ namespace CrimsonStainedLands.Extensions
 
                                 }
                                 int.TryParse(number, System.Globalization.NumberStyles.HexNumber, CultureInfo.InvariantCulture, out color);
-                                if (SupportRGB)
+                                if (SupportRGB && !StripColor)
                                 {
                                     ResultBuilder.Append(string.Format("\x001b[{0};2;{1:00};{2:00};{3:00}m", @base, color >> 16 & 0xFF, color >> 8 & 0xFF, color & 0xFF));
                                 }
