@@ -15,6 +15,7 @@ namespace CrimsonStainedLands
             ECHO = 1,
             MUDServerStatusProtocolVariable = 1,
             MUDServerStatusProtocolValue = 2,
+            SupressGoAhead = 3,
             TelnetType = 24,
             MUDServerStatusProtocol = 70,
             MUDSoundProtocol = 90,
@@ -23,8 +24,8 @@ namespace CrimsonStainedLands
             GoAhead = 249,
             SubNegotiation = 250,
             WILL = 251,
-            WONT = 252,
             DO = 253,
+            WONT = 252,
             DONT = 254,
             InterpretAsCommand = 255,
         }
@@ -41,7 +42,9 @@ namespace CrimsonStainedLands
                 DontMUDExtensionProtocol,
                 ClientWontEcho,
                 ServerDontEcho,
-                ClientDoEcho
+                ClientDoEcho,
+                DoGoAhead,
+                DontGoAhead
             }
             public Types Type { get; set; }
 
@@ -187,6 +190,21 @@ namespace CrimsonStainedLands
             (byte)Options.DONT,
             (byte)Options.ECHO};
 
+        public static readonly byte[] ServerWillSupressGoAhead = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WILL,
+            (byte)Options.SupressGoAhead};
+
+        public static readonly byte[] ClientDoSupressGoAhead = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DO,
+            (byte)Options.SupressGoAhead};
+
+        public static readonly byte[] ClientDontSupressGoAhead = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DONT,
+            (byte)Options.SupressGoAhead};
+
         public static void ProcessInterpretAsCommand(object sender, byte[] data, int position, out int newposition, out byte[] carryover, EventHandler<Command> callback)
         {
             /// IAC TType Negotiation
@@ -296,6 +314,26 @@ namespace CrimsonStainedLands
                         Type = Command.Types.ServerDontEcho
                     });
                     newposition = position + ServerGetDontEcho.Length + 1;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ClientDontSupressGoAhead, position))
+                {
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.DoGoAhead
+                    });
+                    newposition = position + ClientDontSupressGoAhead.Length + 1;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ClientDoSupressGoAhead, position))
+                {
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.DontGoAhead
+                    });
+                    newposition = position + ClientDoSupressGoAhead.Length + 1;
                     carryover = null;
                     return;
                 }

@@ -154,7 +154,7 @@ namespace CrimsonStainedLands
             //    game.bug(e.ToString());
             Game.log("New connection from " + socket.RemoteEndPoint.ToString());
             //}
-
+            TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
             if (ssl)
             {
                 try
@@ -308,10 +308,20 @@ namespace CrimsonStainedLands
                                             SendRaw(TelnetProtocol.ServerGetTelnetTypeNegotiate, true);
                                         }
                                         else
-                                            SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                            SendRaw(TelnetProtocol.ServerWillSupressGoAhead, true);
                                     }
                                     else
-                                        SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                        SendRaw(TelnetProtocol.ServerWillSupressGoAhead, true);
+                                }
+                                else if(command.Type == TelnetProtocol.Command.Types.DontGoAhead)
+                                {
+                                    TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
+                                    SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                }
+                                else if (command.Type == TelnetProtocol.Command.Types.DoGoAhead)
+                                {
+                                    TelnetOptions.REMOVEFLAG(TelnetOptionFlags.SuppressGoAhead);
+                                    SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
                                 {
@@ -338,14 +348,14 @@ namespace CrimsonStainedLands
                                 else if (command.Type == TelnetProtocol.Command.Types.DontMUDExtensionProtocol)
                                 {
                                     Game.log("MXP Disabled.");
-                                    SendRaw(TelnetProtocol.ServerGetWillEcho, true);
+                                    SendRaw(TelnetProtocol.ServerGetWontEcho, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoMUDExtensionProtocol)
                                 {
                                     TelnetOptions.SETBIT(TelnetOptionFlags.MUDeXtensionProtocol);
                                     Game.log("MXP Enabled.");
 
-                                    SendRaw(TelnetProtocol.ServerGetWillEcho, true);
+                                    SendRaw(TelnetProtocol.ServerGetWontEcho, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.ClientDoEcho)
                                 {
@@ -379,7 +389,7 @@ namespace CrimsonStainedLands
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
-                if (bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r')
+                if (bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r' && !TelnetOptions.ISSET(TelnetOptionFlags.SuppressGoAhead))
                 {
                     var newbytes = new byte[bytes.Length + 2];
                     bytes.CopyTo(newbytes, 0);
