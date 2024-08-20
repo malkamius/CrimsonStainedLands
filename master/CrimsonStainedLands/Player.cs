@@ -740,7 +740,7 @@ namespace CrimsonStainedLands
             else if (state == ConnectionStates.GetNewPassword)
             {
                 salt = Guid.NewGuid().ToString();
-                password = MD5.ComputeHash(line + salt);
+                password = SHA384.ComputeHash(line + salt);
                 send("Confirm your password: ");
                 state = ConnectionStates.ConfirmPassword;
                 TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
@@ -748,7 +748,7 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.ConfirmPassword)
             {
-                if (MD5.ComputeHash(line + salt) == password)
+                if (SHA384.ComputeHash(line + salt) == password)
                 {
                     //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
                     TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
@@ -784,7 +784,7 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.GetPassword)
             {
-                if (MD5.ComputeHash(line + salt) == password)
+                if (MD5.ComputeHash(line + salt) == password || SHA384.ComputeHash(line + salt) == password)
                 {
                     //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
                     TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
@@ -1565,7 +1565,7 @@ namespace CrimsonStainedLands
             if (!password.ISEMPTY() && password.Length >= 3 && password.Length <= 16)
             {
                 salt = Guid.NewGuid().ToString();
-                this.password = MD5.ComputeHash(password + salt);
+                this.password = SHA384.ComputeHash(password + salt);
             }
             else if (password.ISEMPTY())
             {
