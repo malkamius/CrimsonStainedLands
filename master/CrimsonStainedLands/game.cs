@@ -159,7 +159,7 @@ namespace CrimsonStainedLands
             //public MainForm MainForm;
             public Action<GameInfo> LaunchMethod;
 
-
+            public Task MainLoopTask { get; internal set; }
 
             public void LogLine(string text)
             {
@@ -169,8 +169,11 @@ namespace CrimsonStainedLands
                     Log.AppendLine(newText);
                     if (LogWriter != null)
                     {
-                        LogWriter.WriteLine(newText);
-                        LogWriter.Flush();
+                        try
+                        {
+                            LogWriter.WriteLine(newText);
+                            LogWriter.Flush();
+                        } catch { }
                     }
                 }
             }
@@ -274,9 +277,9 @@ namespace CrimsonStainedLands
 
         private void LoadData()
         {
-            using(new LoadTimer("LoadLiquids loaded {0} liquids", () => Liquid.Liquids.Count))
+            using (new LoadTimer("LoadLiquids loaded {0} liquids", () => Liquid.Liquids.Count))
                 Liquid.loadLiquids();
-            
+
             using (new LoadTimer("LoadRaces loaded {0} races", () => Race.Races.Count))
                 Race.LoadRaces();
             //Race.SaveRaces();
@@ -312,6 +315,7 @@ namespace CrimsonStainedLands
         }
         private void launch(GameInfo state)
         {
+            
             try
             {
                 using (new LoadTimer("Game loaded"))
@@ -320,7 +324,7 @@ namespace CrimsonStainedLands
 
                     LoadData();
 
-                    using (new LoadTimer("Reset areas")) 
+                    using (new LoadTimer("Reset areas"))
                         AreaData.ResetAreas(); // areas aren't reset till they're all loaded just in case there are cross area references for resets
 
                     WeatherData.Initialize();
@@ -337,16 +341,33 @@ namespace CrimsonStainedLands
                     GuildData.WriteGuildSkillsHtml();
                     Game.log("Accepting connections... Standard port {0}, SSL Port {1}", Settings.Port, Settings.SSLPort);
                 }
-                mainLoop(state);
+
+                Game.Instance.Info.MainLoopTask = Task.Run(() => mainLoop(state));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Game.bug("FATAL EXCEPTION: {0}", ex.ToString());
             }
         }
 
+        private void ConsoleHandler()
+        {
+            while (!Game.Instance.Info.Exiting)
+            {
+                var command = Console.ReadLine();
+
+                if(command.StringCmp("shutdown") || command.StringCmp("exit") || command.StringCmp("quit"))
+                {
+                    Game.log("Shutting down ...");
+                    Game.shutdown();
+                }
+            }
+        }
+
         private void mainLoop(GameInfo state)
         {
+            var read = Task.Run(ConsoleHandler);
+
             try
             {
                 AcceptNewSockets();
@@ -732,48 +753,52 @@ namespace CrimsonStainedLands
             }
         }
 
+        private static bool shutdowncomplete = false;
         public static void shutdown()
         {
-
-            foreach (var connection in Game.Instance.Info.Connections)
+            if (!shutdowncomplete)
             {
-                try
+
+                foreach (var connection in Game.Instance.Info.Connections)
                 {
-                    connection.SaveCharacterFile();
-                    connection.SendRaw("Shutting down NOW!\n\r");
-                    if (connection.socket != null)
-                        try { connection.socket.Dispose(); } catch { }
+                    try
+                    {
+                        connection.SaveCharacterFile();
+                        connection.SendRaw("Shutting down NOW!\n\r");
+                        if (connection.socket != null)
+                            try { connection.socket.Dispose(); } catch { }
+
+                    }
+                    catch { }
 
                 }
-                catch { }
 
+                NoteData.SaveNotes();
+
+                Game.log("Notes saved.");
+
+                ItemData.SaveCorpsesAndPits(true);
+
+                Game.log("Corpses and pits saved.");
+
+                Game.Instance.Info.Exiting = true;
+
+                try
+                {
+                    Game.Instance.Dispose();
+                }
+                catch
+                {
+                }
+                try
+                {
+                    Game.Instance.Info.LogWriter.Close();
+
+                }
+                catch
+                { }
             }
-
-            NoteData.SaveNotes();
-
-            Game.log("Notes saved.");
-
-            ItemData.SaveCorpsesAndPits(true);
-
-           // Game.Instance.Info.MainForm.exit = true;
-            Game.Instance.Info.Exiting = true;
-
-
-            //Game.Instance.Info.MainForm.Invoke(new Action(Game.Instance.Info.MainForm.Close));
-            try
-            {
-                Game.Instance.Dispose();
-            }
-            catch
-            {
-            }
-            try
-            {
-                Game.Instance.Info.LogWriter.Close();
-
-            }
-            catch
-            { }
+            shutdowncomplete = true;
         }
 
         public static void reboot()
@@ -1609,7 +1634,7 @@ namespace CrimsonStainedLands
         }
 
         private long _lasthour;
-        private Task LaunchTask;
+        public Task LaunchTask;
 
         public void UpdateWeather()
         {
@@ -1725,13 +1750,13 @@ namespace CrimsonStainedLands
 
             return;
         }
-        public async void Dispose()
+        public void Dispose()
         {
             Info.Exiting = true;
 
 
             //Info.LaunchMethod.EndInvoke(Info.launchResult);
-            await LaunchTask;
+            LaunchTask.Wait();
             listeningSocket.Dispose();
             foreach (var connection in Game.Instance.Info.Connections)
             {
