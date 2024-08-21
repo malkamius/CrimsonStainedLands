@@ -324,6 +324,7 @@ namespace CrimsonStainedLands
             public ExitData GetRandomExit(Character ch, string arguments)
             {
                 var exits = new List<ExitData>();
+                if (ch == null || ch.Room == null || ch.Room.exits == null) return null;
                 foreach(var exit in ch.Room.exits)
                 {
                     if(exit != null && exit.destination != null)
