@@ -401,7 +401,7 @@ namespace CrimsonStainedLands
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
                 
-                if(TelnetOptions.ISSET(TelnetOptionFlags.EOR))
+                if(bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r' && TelnetOptions.ISSET(TelnetOptionFlags.EOR))
                 {
                     var newbytes = new byte[bytes.Length + 2];
                     bytes.CopyTo(newbytes, 0);
