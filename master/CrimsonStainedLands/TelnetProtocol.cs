@@ -17,9 +17,11 @@ namespace CrimsonStainedLands
             MUDServerStatusProtocolValue = 2,
             SupressGoAhead = 3,
             TelnetType = 24,
+            EORNegotiate,
             MUDServerStatusProtocol = 70,
             MUDSoundProtocol = 90,
             MUDeXtensionProtocol = 91,
+            EOR = 239,
             SubNegotiationEnd = 240,
             GoAhead = 249,
             SubNegotiation = 250,
@@ -44,7 +46,9 @@ namespace CrimsonStainedLands
                 ServerDontEcho,
                 ClientDoEcho,
                 DoGoAhead,
-                DontGoAhead
+                DontGoAhead,
+                DoEOR,
+                DontEOR,
             }
             public Types Type { get; set; }
 
@@ -106,6 +110,21 @@ namespace CrimsonStainedLands
             (byte)Options.InterpretAsCommand,
             (byte)Options.WONT,
             (byte)Options.MUDServerStatusProtocol };
+
+        public static readonly byte[] ServerWillEOR = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.WILL,
+            (byte)Options.EORNegotiate };
+
+        public static readonly byte[] ClientDoEOR = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DO,
+            (byte)Options.EORNegotiate };
+
+        public static readonly byte[] ClientDontEOR = new byte[] {
+            (byte)Options.InterpretAsCommand,
+            (byte)Options.DONT,
+            (byte)Options.EORNegotiate };
 
         public static byte[] ServerGetNegotiateMUDServerStatusProtocol(Dictionary<string, string[]> Values)
         {
@@ -334,6 +353,26 @@ namespace CrimsonStainedLands
                         Type = Command.Types.DontGoAhead
                     });
                     newposition = position + ClientDoSupressGoAhead.Length + 1;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ClientDoEOR, position))
+                {
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.DoEOR
+                    });
+                    newposition = position + ClientDoEOR.Length + 1;
+                    carryover = null;
+                    return;
+                }
+                else if (data.StartsWith(ClientDontEOR, position))
+                {
+                    callback(sender, new Command()
+                    {
+                        Type = Command.Types.DontEOR
+                    });
+                    newposition = position + ClientDontEOR.Length + 1;
                     carryover = null;
                     return;
                 }

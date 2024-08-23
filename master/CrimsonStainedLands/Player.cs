@@ -71,7 +71,8 @@ namespace CrimsonStainedLands
             Ansi,
             ClientWontEcho,
             ServerDontEcho,
-            TemporaryDontEcho
+            TemporaryDontEcho,
+            EOR
         }
         public List<TelnetOptionFlags> TelnetOptions = new List<TelnetOptionFlags>();
 
@@ -316,11 +317,21 @@ namespace CrimsonStainedLands
                                 else if(command.Type == TelnetProtocol.Command.Types.DontGoAhead)
                                 {
                                     TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
-                                    SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                    SendRaw(TelnetProtocol.ServerWillEOR, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoGoAhead)
                                 {
                                     TelnetOptions.REMOVEFLAG(TelnetOptionFlags.SuppressGoAhead);
+                                    SendRaw(TelnetProtocol.ServerWillEOR, true);
+                                }
+                                else if (command.Type == TelnetProtocol.Command.Types.DoEOR)
+                                {
+                                    TelnetOptions.SETBIT(TelnetOptionFlags.EOR);
+                                    SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
+                                }
+                                else if (command.Type == TelnetProtocol.Command.Types.DontEOR)
+                                {
+                                    TelnetOptions.REMOVEFLAG(TelnetOptionFlags.EOR);
                                     SendRaw(TelnetProtocol.ServerGetWillMudServerStatusProtocol, true);
                                 }
                                 else if (command.Type == TelnetProtocol.Command.Types.DoMUDServerStatusProtocol)
@@ -389,7 +400,16 @@ namespace CrimsonStainedLands
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.Color256),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.ColorRGB),
                     TelnetOptions.ISSET(Player.TelnetOptionFlags.MUDeXtensionProtocol)));
-                if (bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r' && !TelnetOptions.ISSET(TelnetOptionFlags.SuppressGoAhead))
+                
+                if(TelnetOptions.ISSET(TelnetOptionFlags.EOR))
+                {
+                    var newbytes = new byte[bytes.Length + 2];
+                    bytes.CopyTo(newbytes, 0);
+                    newbytes[newbytes.Length - 2] = (byte)TelnetProtocol.Options.InterpretAsCommand;
+                    newbytes[newbytes.Length - 1] = (byte)TelnetProtocol.Options.EOR;
+                    bytes = newbytes;
+                }
+                else if (bytes[bytes.Length - 1] != '\n' && bytes[bytes.Length - 1] != '\r' && !TelnetOptions.ISSET(TelnetOptionFlags.SuppressGoAhead))
                 {
                     var newbytes = new byte[bytes.Length + 2];
                     bytes.CopyTo(newbytes, 0);
@@ -609,8 +629,8 @@ namespace CrimsonStainedLands
                     //    this.Room != null ? RoomData.sectors[Room.sector].display : "");
                 }
                 var text = output.ToString();
-                if (state == ConnectionStates.Playing && (Position == Positions.Fighting || SittingAtPrompt) && !text.StartsWith("\n\r"))
-                    text = "\n\r" + text;
+                if (state == ConnectionStates.Playing && (Position == Positions.Fighting || SittingAtPrompt) && !TelnetOptions.ISSET(TelnetOptionFlags.EOR) && !text.StartsWith("\r\n"))
+                    text = "\r\n" + text;
 
                 SendRaw(text);
                 output.Clear();
