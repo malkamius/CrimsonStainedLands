@@ -13,7 +13,7 @@ namespace CrimsonStainedLands
 
     public class Race
     {
-        public static List<Race> Races = new List<Race>();
+        public static ConcurrentList<Race> Races = new ConcurrentList<Race>();
 
         public string name;
         public bool isPCRace;
@@ -111,15 +111,12 @@ namespace CrimsonStainedLands
         {
             Races.Clear();
 
-            var loadedRaces = new List<Race>();
-            foreach (var file in Directory.GetFiles(Settings.RacesPath, "*.xml"))
+            Directory.GetFiles(Settings.RacesPath, "*.xml").AsParallel().ForAll(file =>
             {
                 var race = new Race(file);
 
-                loadedRaces.Add(race);
-            }
-            Races.Clear();
-            Races.AddRange(loadedRaces);
+                Races.Add(race);
+            });
             
         }
 

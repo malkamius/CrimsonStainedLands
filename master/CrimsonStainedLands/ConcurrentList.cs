@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pango;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -22,6 +23,19 @@ namespace CrimsonStainedLands
             try
             {
                 _list.Add(item);
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
+            }
+        }
+
+        public void Clear()
+        {
+            _lock.EnterWriteLock();
+            try
+            {
+                _list.Clear();
             }
             finally
             {
