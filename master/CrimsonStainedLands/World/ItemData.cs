@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,7 +7,7 @@ using System.Linq;
 
 using System.Xml.Linq;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.World
 {
     public enum WearFlags
     {

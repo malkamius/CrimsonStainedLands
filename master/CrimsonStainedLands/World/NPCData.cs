@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.World
 {
 
 public class NPCData : Character, IDisposable

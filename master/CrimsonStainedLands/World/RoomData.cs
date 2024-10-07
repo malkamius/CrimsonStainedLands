@@ -9,8 +9,9 @@ using System.Xml.Linq;
 using System.Linq.Expressions;
 using System.Collections.Concurrent;
 using System.Text.Json.Serialization;
+using CrimsonStainedLands.World;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.World
 {
     public enum Direction : int
     {

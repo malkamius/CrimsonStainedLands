@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace CrimsonStainedLands
     {
         public static void PerformTell(Character ch, Character victim, string arguments)
         {
-            if (victim == null || ((victim is Player) && ((Player)victim).socket == null))
+            if (victim == null || ((victim is Player) && ((Player)victim).connection == null))
             {
                 ch.send("They aren't here.\n\r");
                 return;
@@ -780,18 +781,18 @@ namespace CrimsonStainedLands
             int playersOnline = 0;
             whoList.AppendLine("You can see:");
 
-            foreach (var connection in Game.Instance.Info.Connections)
+            foreach (var player in Game.Instance.Info.Connections)
             {
-                if (connection.state == Player.ConnectionStates.Playing && connection.socket != null && (!connection.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= connection.Level))
+                if (player.state == Player.ConnectionStates.Playing && player.connection != null && (!player.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= player.Level))
                 {
                     whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}{6}\n\r",
-                        connection.Level.ToString().PadRight(4),
-                        connection.Guild.whoName,
-                        connection.IsAFK ? "\\r(AFK)\\x" : "     ",
-                        connection == ch ? "*" : " ",
-                        connection.Name,
-                        (!connection.Title.ISEMPTY() ? ((!connection.Title.ISEMPTY() && connection.Title.StartsWith(",") ? connection.Title : " " + connection.Title)) : ""),
-                        (!connection.ExtendedTitle.ISEMPTY() ? (!connection.ExtendedTitle.StartsWith(",") ? " " : "") + connection.ExtendedTitle : ""));
+                        player.Level.ToString().PadRight(4),
+                        player.Guild.whoName,
+                        player.IsAFK ? "\\r(AFK)\\x" : "     ",
+                        player == ch ? "*" : " ",
+                        player.Name,
+                        (!player.Title.ISEMPTY() ? ((!player.Title.ISEMPTY() && player.Title.StartsWith(",") ? player.Title : " " + player.Title)) : ""),
+                        (!player.ExtendedTitle.ISEMPTY() ? (!player.ExtendedTitle.StartsWith(",") ? " " : "") + player.ExtendedTitle : ""));
                     playersOnline++;
                 }
             }

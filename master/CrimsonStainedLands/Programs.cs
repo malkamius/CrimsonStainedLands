@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -270,8 +271,15 @@ namespace CrimsonStainedLands
                                       select program;
                     foreach (var program in luaPrograms)
                     {
-                        if ((success = program.Execute(player, triggernpc, room, null, null, null, type, "")))
-                            break;
+                        try
+                        {
+                            if ((success = program.Execute(player, triggernpc, room, null, null, null, type, "")))
+                                break;
+                        }
+                        catch (Exception ex)
+                        {
+                            Game.log(ex.Message);
+                        }
                     }
 
                     if (success) return success;
@@ -295,8 +303,15 @@ namespace CrimsonStainedLands
                                       select program;
                     foreach (var program in luaPrograms)
                     {
-                        if ((success = program.Execute(player, ((NPCData)player), room, null, null, null, type, "")))
-                            break;
+                        try
+                        {
+                            if ((success = program.Execute(player, ((NPCData)player), room, null, null, null, type, "")))
+                                break;
+                        }
+                        catch(Exception ex)
+                        {
+                            Game.log(ex.Message);
+                        }
                     }
 
                     if (success) return success;

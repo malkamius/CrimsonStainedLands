@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.World
 {
     public class RoomAffectData
     {
