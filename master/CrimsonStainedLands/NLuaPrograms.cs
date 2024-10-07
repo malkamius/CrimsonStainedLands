@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using static CrimsonStainedLands.Programs;
-
+using System.Runtime.InteropServices;
 namespace CrimsonStainedLands
 {
     public class NLuaPrograms
@@ -61,6 +61,41 @@ namespace CrimsonStainedLands
             return false;
         }
 
+
+   public static class NativeLibrary
+   {
+       [DllImport("kernel32.dll")]
+       private static extern IntPtr LoadLibrary(string dllToLoad);
+
+       [DllImport("kernel32.dll")]
+       private static extern IntPtr GetProcAddress(IntPtr hModule, string procedureName);
+
+       [DllImport("kernel32.dll")]
+       private static extern bool FreeLibrary(IntPtr hModule);
+
+       public static void PreloadLuaLibrary()
+       {
+           string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+           string luaDllPath = Path.Combine(baseDir, "runtimes", "win-x64", "native", "lua54.dll");
+
+           if (!File.Exists(luaDllPath))
+           {
+               throw new FileNotFoundException($"Lua DLL not found at expected path: {luaDllPath}");
+           }
+
+           IntPtr pDll = LoadLibrary(luaDllPath);
+
+           if (pDll == IntPtr.Zero)
+           {
+               throw new Exception($"Failed to load Lua library from {luaDllPath}. Error code: {Marshal.GetLastWin32Error()}");
+           }
+
+           Console.WriteLine($"Successfully loaded Lua library from {luaDllPath}");
+
+           // Optionally, you can free the library here if you just want to test loading
+           // FreeLibrary(pDll);
+       }
+   }
         public class NLuaProgram
         {
             /// <summary>
@@ -103,7 +138,7 @@ namespace CrimsonStainedLands
                 return null;
             }
 
-            static bool Executing = false;
+            //static bool Executing = false;
             static int Depth = 0;
             public bool Execute(Character player, Character npc, RoomData room, ItemData item, SkillSpell skill, AffectData affect, Programs.ProgramTypes type, string arguments)
             {
@@ -111,7 +146,7 @@ namespace CrimsonStainedLands
                 if (Depth > 5) return false;
                 try
                 {
-                    Executing = true;
+                    //Executing = true;
                     Depth++;
                     var code = GetCodeFromFile();
 
@@ -150,9 +185,14 @@ namespace CrimsonStainedLands
 
                     return false;
                 }
+                catch (Exception ex)
+                {
+                    Game.log("Error executing lua script: {0}", ex.Message);
+                    return false;
+                }
                 finally
                 {
-                    Executing = false;
+                    //Executing = false;
                     Depth--;
                 }
             }

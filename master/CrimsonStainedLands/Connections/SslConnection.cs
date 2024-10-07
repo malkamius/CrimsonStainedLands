@@ -68,7 +68,7 @@ namespace CrimsonStainedLands.Connections
                 else
                     return null;
             }
-            catch (IOException ex)
+            catch (IOException)
             {
                 return null;
             }

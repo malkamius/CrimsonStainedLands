@@ -28,8 +28,8 @@ namespace CrimsonStainedLands.Connections
 
         private bool _useCompression = false;
 
-        private DeflateStream? _compressor;
-        private DeflateStream? _decompressor;
+        private DeflateStream _compressor;
+        private DeflateStream _decompressor;
 
         private bool _clientNoContext = false;
         private bool _serverNoContext = false;

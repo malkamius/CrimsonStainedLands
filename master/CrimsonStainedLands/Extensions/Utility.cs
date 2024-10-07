@@ -34,7 +34,6 @@
 *       found in the file /Tartarus/doc/tartarus.doc                       *
 ***************************************************************************/
 
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
