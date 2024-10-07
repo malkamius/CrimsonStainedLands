@@ -5,11 +5,12 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using CrimsonStainedLands.World;
 using global::CrimsonStainedLands.Extensions;
 
 namespace CrimsonStainedLands
 {
-   
+
     public partial class Character : IDisposable
     {
         public static ConcurrentList<Character> Characters = new ConcurrentList<Character>();
@@ -1016,7 +1017,7 @@ namespace CrimsonStainedLands
 
         public void send(string data)
         {
-            if (this is Player player && player.socket != null)
+            if (this is Player player && player.connection != null)
             {
                 if (CaptureCommunications.Capturing)
                 {
@@ -1845,13 +1846,13 @@ namespace CrimsonStainedLands
                 {
                     foreach (var cch in wasInRoom.Characters.ToArray())
                     {
-                        if (cch != this && cch.Following == this && (!(cch is Player) || ((Player)cch).socket != null) && cch.IsAwake)
+                        if (cch != this && cch.Following == this && (!(cch is Player) || ((Player)cch).connection != null) && cch.IsAwake)
                         {
                             cch.SendToChar("You follow " + Display(this) + " " + direction.ToString().ToLower() + ".\n\r");
                             cch.Act("$n follows $N " + direction.ToString().ToLower() + ".\n\r", this, null, null, ActType.ToRoom);
                             cch.moveChar(direction, follow, crawl, false, sendWalkMessage, false, movementCost, movementWait);
                         }
-                        else if (cch != this && cch.Following == this && cch is Player && ((Player)cch).socket == null)
+                        else if (cch != this && cch.Following == this && cch is Player && ((Player)cch).connection == null)
                         {
                             Act("You try to drag $N along, but they've lost their animation.", cch, type: ActType.ToChar);
                             cch.Act("$N tries to drag $n along, but they've lost their animation.", this, type: ActType.ToRoomNotVictim);

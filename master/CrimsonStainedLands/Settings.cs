@@ -25,6 +25,7 @@ namespace CrimsonStainedLands
         public static string X509CertificatePath { get; set; } = "localhost.pfx";
 
         public static string X509CertificatePassword { get; set; } = "localhost";
+        public static string CertificateSettingsJsonPath { get; internal set; } = "../certs/settings.json";
 
         static Settings()
         {
@@ -33,7 +34,7 @@ namespace CrimsonStainedLands
 
         public static void Save()
         {
-            var settings = new XElement("Settings", 
+            var settings = new XElement("Settings",
                 new XAttribute("Port", Port),
                 new XAttribute("SSLPort", SSLPort),
                 new XAttribute("SSHPort", SSHPort),
@@ -44,8 +45,9 @@ namespace CrimsonStainedLands
                 new XAttribute("NotesPath", NotesPath),
                 new XAttribute("GuildsPath", GuildsPath),
                 new XAttribute("RacesPath", RacesPath),
-                new XAttribute("X509CertificatePath", X509CertificatePath),
-                new XAttribute("X509CertificatePassword", X509CertificatePassword));
+                new XAttribute("X509CertificatePath", X509CertificatePath), // Not used anymore
+                new XAttribute("X509CertificatePassword", X509CertificatePassword),
+                new XAttribute("CertificateSettingsJsonPath", CertificateSettingsJsonPath));
             settings.Save(SettingsPath);
         }
 
@@ -70,6 +72,7 @@ namespace CrimsonStainedLands
                 RacesPath = settings.GetAttributeValue("RacesPath", "data/races");
                 X509CertificatePath = settings.GetAttributeValue("X509CertificatePath", "localhost.pfx");
                 X509CertificatePassword = settings.GetAttributeValue("X509CertificatePassword", "localhost");
+                CertificateSettingsJsonPath = settings.GetAttributeValue("CertificateSettingsJsonPath", "../certs/settings.json");
             }
         }
     }

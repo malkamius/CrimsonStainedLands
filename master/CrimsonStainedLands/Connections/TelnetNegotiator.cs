@@ -1,4 +1,4 @@
-﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.Extensions;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using static CrimsonStainedLands.Game;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.Connections
 {
-    public static class TelnetProtocol
+    public class TelnetNegotiator
     {
         public enum Options : byte
         {
@@ -58,7 +58,7 @@ namespace CrimsonStainedLands
             } = new Dictionary<string, string[]>();
         }
 
-        public static bool StartsWith(this byte[] array, byte[] partial, int startindex = 0)
+        public static bool StartsWith(byte[] array, byte[] partial, int startindex = 0)
         {
             if (array == null || partial == null || array.Length - startindex < partial.Length) return false;
             var srcarray = ((ReadOnlySpan<byte>)array).Slice(startindex, partial.Length);
@@ -322,7 +322,7 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.ClientDoEcho
                     });
-                    newposition = position + ClientGetDoEcho.Length;
+                    newposition = position + ClientGetDoEcho.Length + 1;
                     carryover = null;
                     return;
                 }
@@ -332,7 +332,7 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.ServerDontEcho
                     });
-                    newposition = position + ServerGetDontEcho.Length;
+                    newposition = position + ServerGetDontEcho.Length + 1;
                     carryover = null;
                     return;
                 }
@@ -342,7 +342,7 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.DoGoAhead
                     });
-                    newposition = position + ClientDontSupressGoAhead.Length;
+                    newposition = position + ClientDontSupressGoAhead.Length + 1;
                     carryover = null;
                     return;
                 }
@@ -352,7 +352,7 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.DontGoAhead
                     });
-                    newposition = position + ClientDoSupressGoAhead.Length;
+                    newposition = position + ClientDoSupressGoAhead.Length + 1;
                     carryover = null;
                     return;
                 }
@@ -362,7 +362,7 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.DoEOR
                     });
-                    newposition = position + ClientDoEOR.Length;
+                    newposition = position + ClientDoEOR.Length + 1;
                     carryover = null;
                     return;
                 }
@@ -372,26 +372,25 @@ namespace CrimsonStainedLands
                     {
                         Type = Command.Types.DontEOR
                     });
-                    newposition = position + ClientDontEOR.Length;
+                    newposition = position + ClientDontEOR.Length + 1;
                     carryover = null;
                     return;
                 }
                 else if (data.StartsWith(ClientGetDontUnknown, position))
                 {
-                    newposition = position + ClientGetDontUnknown.Length;
+                    newposition = position + ClientGetDontUnknown.Length + 1;
                     carryover = null;
                     return;
                 }
                 else if (data.StartsWith(ClientGetWillUnknown, position))
                 {
-                    newposition = position + ClientGetWillUnknown.Length;
+                    newposition = position + ClientGetWillUnknown.Length + 1;
                     carryover = null;
                     return;
                 }
             }
 
             newposition = position + 1;
-            
             carryover = null;
         }
     }

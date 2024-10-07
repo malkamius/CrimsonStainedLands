@@ -18,13 +18,13 @@ using static System.Net.WebRequestMethods;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Diagnostics.Eventing.Reader;
+using CrimsonStainedLands.World;
+using CrimsonStainedLands.Connections;
 
 namespace CrimsonStainedLands
 {
     public class Player : Character
     {
-        public Socket socket;
-        public SslStream sslsocket;
 
         public string Address { get; private set; }
 
@@ -53,6 +53,7 @@ namespace CrimsonStainedLands
         private string salt = "salt";
 
         public Game game;
+        public BaseConnection connection;
         public DateTime LastSaveTime = DateTime.MinValue;
         public TimeSpan TotalPlayTime = TimeSpan.Zero;
         public DateTime LastReadNote;
@@ -110,8 +111,7 @@ namespace CrimsonStainedLands
         public bool SittingAtPrompt { get; internal set; }
 
         public static string InvalidNames = "self";
-        internal IAsyncResult writeop;
-        internal IAsyncResult readop;
+
         internal byte[] receivebuffer;
         public byte[] ReceiveBufferBacklog;
         public DateTime LastActivity { get; set; } = DateTime.Now;
@@ -138,11 +138,17 @@ namespace CrimsonStainedLands
             this.Room = room;
         }
 
-        public Player(Game game, Socket socket, bool ssl = false, bool ssh = false)
+        public Player(Game game, BaseConnection connection)
         {
             this.game = game;
-            this.socket = socket;
-            Address = ((IPEndPoint)socket.RemoteEndPoint).Address.MapToIPv4().ToString();
+            this.connection = connection;
+            if (connection.RemoteEndPoint is IPEndPoint ip)
+            {
+                Address = ip.Address.MapToIPv4().ToString();
+            }
+            else
+                Address = "Unknown";
+            //Address = ((IPEndPoint)socket.RemoteEndPoint).Address.MapToIPv4().ToString();
             Name = "new connection";
             Game.Instance.Info.Connections.Add(this);
             //var address = ((System.Net.IPEndPoint)socket.RemoteEndPoint).Address;
@@ -153,69 +159,27 @@ namespace CrimsonStainedLands
             //}catch (Exception e)
             //{
             //    game.bug(e.ToString());
-            Game.log("New connection from " + socket.RemoteEndPoint.ToString());
+            Game.log("New connection from " + connection.RemoteEndPoint.ToString());
             //}
             TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
-            if (ssl)
-            {
-                try
-                {
-                    state = ConnectionStates.NegotiateSSH;
-                    inanimate = DateTime.Now;
-                    this.sslsocket = new SslStream(new System.Net.Sockets.NetworkStream(socket));
-
-                    var certificate = new X509Certificate2(Settings.X509CertificatePath, Settings.X509CertificatePassword);
-                    if (certificate != null)
-                        this.sslsocket.BeginAuthenticateAsServer(certificate, new AsyncCallback((result) =>
-                        {
-                            try
-                            {
-                                this.sslsocket.EndAuthenticateAsServer(result);
-                                Game.Instance.SocketAccepted(this);
-                                state = ConnectionStates.GetName;
-
-                                DoActInfo.ReadHelp(this, "DIKU", true);
-                                send("\n\rEnter your name: ");
-                                if (receivebuffer == null) receivebuffer = new byte[255];
-                                if (readop == null || readop.IsCompleted)
-                                    readop = sslsocket.BeginRead(receivebuffer, 0, receivebuffer.Length, EndReceiveSsl, this.sslsocket);
-                                inanimate = null;
-
-                            }
-                            catch { }
-
-                        }), null);
-                }
-                catch { }
-                //this.sslsocket.AuthenticateAsServer(certificate, false,true);
-
-            }
-            else
-            {
-                state = ConnectionStates.GetName;
-                Game.Instance.SocketAccepted(this);
-                DoActInfo.ReadHelp(this, "DIKU", true);
-                send("\n\rEnter your name: ");
-
-                lock (this)
-                {
-                    if (receivebuffer == null) receivebuffer = new byte[255];
-                    //int received = connection.socket.Receive(buffer);
-                    if (readop == null || readop.IsCompleted)
-                        readop = socket.BeginReceive(receivebuffer, 0, receivebuffer.Length, SocketFlags.None, EndReceive, this.socket);
-                }
-            }
+            
+            state = ConnectionStates.GetName;
+            Game.Instance.SocketAccepted(this);
+            DoActInfo.ReadHelp(this, "DIKU", true);
+            send("\n\rEnter your name: ");
         }
 
         public List<string> ClientTypes = new List<string>();
 
-        private void ProcessBytes(byte[] buffer, int length)
+        public void ProcessBytes(byte[] buffer, int length)
         {
             lock (this)
             {
                 var position = input.Length;
                 byte[] data;
-
+                var str = Encoding.ASCII.GetString(buffer);
+                //if (buffer[0] == 255 && str.Contains("dagl") && (str.Length >= 6 || str.Length <= 8))
+                    //Console.WriteLine(str);
                 if (ReceiveBufferBacklog != null)
                 {
                     data = new byte[ReceiveBufferBacklog.Length + length];
@@ -378,7 +342,7 @@ namespace CrimsonStainedLands
                                 }
                             });
                         if (newbyteindex > byteindex)
-                            byteindex = newbyteindex;
+                            byteindex = newbyteindex - 1;
                         this.ReceiveBufferBacklog = carryover;
                     }
                     // else skip the character
@@ -388,7 +352,7 @@ namespace CrimsonStainedLands
 
         public override void SendRaw(string data, bool sendimmediate = true)
         {
-            if (socket != null)
+            if (connection != null)
             {
                 if (!data.ISEMPTY())
                     if (data.Contains("\n"))
@@ -421,171 +385,19 @@ namespace CrimsonStainedLands
             }
         }
 
-        public override void SendRaw(byte[] data, bool sendimmediate = true)
+        public override async void SendRaw(byte[] data, bool sendimmediate = true)
         {
             base.SendRaw(data, sendimmediate);
-            if (socket != null)
+            if (connection != null)
             {
-                lock (this)
-                    if (sslsocket != null)
-                    {
-                        if (!sendimmediate)
-                        {
-                            if (sslsocket.IsAuthenticated && (writeop == null || writeop.IsCompleted))
-                                writeop = sslsocket.BeginWrite(data, 0, data.Length, EndSslWrite, this);
-                            else
-                                WriteBuffers.Push(data);
-                        }
-                        else if (sslsocket.IsAuthenticated)
-                        {
-                            sslsocket.Write(data, 0, data.Length);
-                            sslsocket.Flush();
-                        }
-                    }
-                    else
-                    {
-                        if (!sendimmediate)
-                        {
-                            if ((writeop == null || writeop.IsCompleted))
-                                writeop = socket.BeginSend(data, 0, data.Length, SocketFlags.None, EndSend, this);
-                            else
-                                WriteBuffers.Push(data);
-                        }
-                        else
-                            socket.Send(data);
-                    }
+                await connection.Write(data);
             }
         }
-        public void EndReceive(IAsyncResult result)
-        {
-            lock (Game.Instance.Info.Connections)
-                try
-                {
-                    var socket = result.AsyncState as Socket;
-                    var connections = Game.Instance.Info.Connections;
-                    var connection = (from c in connections where c.socket == socket select c).FirstOrDefault();
-                    if(connection != null)
-                    lock (connection)
-                    {
-
-                        var received = connection.socket.EndReceive(result);
-                        if (received == 0)
-                        {
-                            Game.CloseSocket(connection, connection.state < ConnectionStates.Playing, true);
-                            connection.inanimate = DateTime.Now;
-                        }
-                        else
-                        {
-                            connection.ProcessBytes(connection.receivebuffer, received);
-                            if (connection.readop == null || connection.readop.IsCompleted)
-                                connection.readop = connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, EndReceive, socket);
-                        }
-                    }
-
-                }
-                catch { }
-        }
-
-        public void EndReceiveSsl(IAsyncResult result)
-        {
-            lock (Game.Instance.Info.Connections)
-                try
-                {
-                    var socket = result.AsyncState as SslStream;
-                    var connections = Game.Instance.Info.Connections;
-                    var connection = (from c in connections where c.sslsocket == socket select c).FirstOrDefault();
-                    if (connection != null)
-                    lock (connection)
-                    {
-
-                        var received = socket.EndRead(result);
-                        if (received == 0)
-                        {
-                            Game.CloseSocket(connection, connection.state < ConnectionStates.Playing, true);
-                            connection.inanimate = DateTime.Now;
-                        }
-                        else
-                        {
-                            connection.ProcessBytes(connection.receivebuffer, received);
-                            try
-                            {
-                                if (connection.readop == null || connection.readop.IsCompleted)
-                                    connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, EndReceiveSsl, connection.sslsocket);
-                            }
-                            catch
-                            {
-                                try
-                                {
-                                    connection.socket.Close();
-                                }
-                                catch { }
-                                connection.socket = null;
-
-                            }
-                        }
-                    }
-
-                }
-                catch
-                {
-
-                }
-        }
-
-        public void EndSslWrite(IAsyncResult result)
-        {
-            var connection = result.AsyncState as Player;
-            lock (Game.Instance.Info.Connections)
-                try
-                {
-                    //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
-                    lock (connection)
-                    {
-                        try
-                        {
-                            connection.sslsocket.EndWrite(result);
-                            connection.sslsocket.Flush();
-                            if (connection.WriteBuffers.Count > 0)
-                            {
-                                var bytes = connection.WriteBuffers.Pop();
-                                connection.writeop = connection.sslsocket.BeginWrite(bytes, 0, bytes.Length, EndSslWrite, connection);
-                            }
-                        }
-                        catch { }
-                    }
-                }
-                catch { }
-        }
-
-        public void EndSend(IAsyncResult result)
-        {
-
-            var connection = result.AsyncState as Player;
-            lock (Game.Instance.Info.Connections)
-                try
-                {
-                    //connection = (from c in Game.Instance.Info.Connections.ToArrayLocked() where c.Name == connection.Name select c).FirstOrDefault();
-                    lock (connection)
-                    {
-                        try
-                        {
-                            connection.socket.EndSend(result);
-
-                            if (connection.WriteBuffers.Count > 0)
-                            {
-                                var bytes = connection.WriteBuffers.Pop();
-                                connection.writeop = connection.socket.BeginSend(bytes, 0, bytes.Length, SocketFlags.None, EndSend, connection);
-                            }
-                        }
-                        catch { }
-                    }
-                }
-                catch { }
-        }
+        
 
         internal void ProcessOutput()
         {
-            if (socket == null) output.Clear();
+            if (connection == null) output.Clear();
 
             if (output.Length > 0)
             {
@@ -734,7 +546,8 @@ namespace CrimsonStainedLands
                         state = ConnectionStates.GetPassword;
                     else
                     {
-                        send("New player.\n\r");
+                        send($"New player {Name}.\n\r");
+                        Game.log($"New player {Name}.\n\r");
                         state = ConnectionStates.GetNewPassword;
                     }
                 }
@@ -744,13 +557,15 @@ namespace CrimsonStainedLands
                         state = ConnectionStates.GetPassword;
                     else
                     {
-                        send("New player.\n\r");
+                        send($"New player {Name}.\n\r");
+                        Game.log($"New player {Name}.\n\r");
                         state = ConnectionStates.GetNewPassword;
                     }
                 }
                 else
                 {
-                    send("New player.\n\r");
+                    send($"New player {Name}.\n\r");
+                    Game.log($"New player {Name}.\n\r");
                     state = ConnectionStates.GetNewPassword;
                 }
                 send("What is your password? ");
@@ -760,7 +575,7 @@ namespace CrimsonStainedLands
             else if (state == ConnectionStates.GetNewPassword)
             {
                 salt = Guid.NewGuid().ToString();
-                password = SHA384.ComputeHash(line + salt);
+                password = SHA.ComputeHash512(line + salt);
                 send("Confirm your password: ");
                 state = ConnectionStates.ConfirmPassword;
                 TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
@@ -768,7 +583,7 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.ConfirmPassword)
             {
-                if (SHA384.ComputeHash(line + salt) == password)
+                if (SHA.ComputeHash512(line + salt) == password)
                 {
                     //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
                     TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
@@ -804,7 +619,7 @@ namespace CrimsonStainedLands
             }
             else if (state == ConnectionStates.GetPassword)
             {
-                if (MD5.ComputeHash(line + salt) == password || SHA384.ComputeHash(line + salt) == password)
+                if (MD5.ComputeHash(line + salt) == password || SHA.ComputeHash384(line + salt) == password || SHA.ComputeHash512(line + salt) == password)
                 {
                     //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
                     TelnetOptions.REMOVEFLAG(TelnetOptionFlags.TemporaryDontEcho);
@@ -865,16 +680,12 @@ namespace CrimsonStainedLands
                                         connection.ClearPage();
                                         connection.inanimate = null;
 
-                                        connection.readop = this.readop;
-                                        connection.writeop = this.writeop;
-                                        connection.socket = this.socket;
-                                        connection.sslsocket = this.sslsocket;
+                                        connection.connection = this.connection;
                                         connection.receivebuffer = this.receivebuffer;
                                         connection.Address = this.Address;
                                         connection.TelnetOptions = this.TelnetOptions;
 
-                                        this.socket = null;
-                                        this.sslsocket = null;
+                                        this.connection = null;
 
                                         connection.ConnectExistingPlayer(true);
                                         connection.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
@@ -1585,7 +1396,7 @@ namespace CrimsonStainedLands
             if (!password.ISEMPTY() && password.Length >= 3 && password.Length <= 16)
             {
                 salt = Guid.NewGuid().ToString();
-                this.password = SHA384.ComputeHash(password + salt);
+                this.password = SHA.ComputeHash512(password + salt);
             }
             else if (password.ISEMPTY())
             {

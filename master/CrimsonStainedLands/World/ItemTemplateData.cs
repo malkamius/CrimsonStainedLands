@@ -1,11 +1,12 @@
 ﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.World
 {
     public class ItemTemplateData
     {

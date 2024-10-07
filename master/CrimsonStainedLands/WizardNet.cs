@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 
 namespace CrimsonStainedLands
 {
@@ -74,7 +75,7 @@ namespace CrimsonStainedLands
             {
                 foreach (var imm in Game.Instance.Info.Connections)
                 {
-                    if (imm.state == Player.ConnectionStates.Playing && imm.socket != null && imm.Level >= monitorentry.Level && imm.WiznetFlags.ISSET(flag))
+                    if (imm.state == Player.ConnectionStates.Playing && imm.connection != null && imm.Level >= monitorentry.Level && imm.WiznetFlags.ISSET(flag))
                     {
                         imm.send("\\rWIZNET ({0}) {1} :: {2} :: {3}\\x\n\r", 
                             ch != null ? ch.Name : item != null ? "item " + item.Vnum : "nobody", 

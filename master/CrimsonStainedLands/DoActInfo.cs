@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -461,12 +462,10 @@ namespace CrimsonStainedLands
         {
             Character other = null;
             ItemData lookitem = null;
-            Direction direction = Direction.North;
             String incheck = "";
             String containername;
             ExtraDescription extraDescription = null;
             int count = 0;
-            ExitData exit;
 
             if (ch.Room == null)
             {
@@ -566,32 +565,32 @@ namespace CrimsonStainedLands
                 {
                     ch.send("You look " + alldirection.ToString().ToLower() + ".\n\r");
                     ch.Act("$n looks " + alldirection.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
-                    ExitData iexit;
-                    if ((iexit = ch.Room.exits[(int)alldirection]) != null && !string.IsNullOrEmpty(iexit.description))
+                    ExitData exit;
+                    if ((exit = ch.Room.exits[(int)alldirection]) != null && !string.IsNullOrEmpty(exit.description))
                     {
                         //if(exit.destination != null)
                         //    ch.send(exit.destination.name + " lies in this direction.\n\r");
-                        ch.send(iexit.description + "\n\r");
+                        ch.send(exit.description + "\n\r");
                     }
-                    else if (iexit != null && iexit.destination != null)
-                        ch.send(((TimeInfo.IS_NIGHT && !iexit.destination.NightName.ISEMPTY() ? iexit.destination.NightName : iexit.destination.Name)) + " lies" + (alldirection == Direction.Up? " above" : (alldirection == Direction.Down? " below" : (" to the " + alldirection.ToString().ToLower()))) + ".\n\r");
+                    else if (exit != null && exit.destination != null)
+                        ch.send(((TimeInfo.IS_NIGHT && !exit.destination.NightName.ISEMPTY() ? exit.destination.NightName : exit.destination.Name)) + " lies" + (alldirection == Direction.Up? " above" : (alldirection == Direction.Down? " below" : (" to the " + alldirection.ToString().ToLower()))) + ".\n\r");
                     else
                         ch.send("You don't see anything special that way.\n\r");
                 }
             }
-            else if (ch.Room != null && ch.Room.GetExit(arguments, out var iexit, ref count)) //  Utility.GetEnumValueStrPrefix<Direction>(arguments, ref direction))
+            else if (ch.Room != null && ch.Room.GetExit(arguments, out var exit, ref count)) //  Utility.GetEnumValueStrPrefix<Direction>(arguments, ref direction))
             {
-                ch.send("You look " + iexit.direction.ToString().ToLower() + ".\n\r");
-                ch.Act("$n looks " + iexit.direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
+                ch.send("You look " + exit.direction.ToString().ToLower() + ".\n\r");
+                ch.Act("$n looks " + exit.direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
                 //ExitData iexit;
-                if (!string.IsNullOrEmpty(iexit.description))
+                if (!string.IsNullOrEmpty(exit.description))
                 {
                     //if(exit.destination != null)
                     //    ch.send(exit.destination.name + " lies in this direction.\n\r");
-                    ch.send(iexit.description + "\n\r");
+                    ch.send(exit.description + "\n\r");
                 }
-                else if (iexit != null && iexit.destination != null)
-                    ch.send(((TimeInfo.IS_NIGHT && !iexit.destination.NightName.ISEMPTY() ? iexit.destination.NightName : iexit.destination.Name)) + " lies" + (iexit.direction == Direction.Up ? " above" : (iexit.direction == Direction.Down ? " below" : (" to the " + iexit.direction.ToString().ToLower()))) + ".\n\r");
+                else if (exit != null && exit.destination != null)
+                    ch.send(((TimeInfo.IS_NIGHT && !exit.destination.NightName.ISEMPTY() ? exit.destination.NightName : exit.destination.Name)) + " lies" + (exit.direction == Direction.Up ? " above" : (exit.direction == Direction.Down ? " below" : (" to the " + exit.direction.ToString().ToLower()))) + ".\n\r");
                 else
                     ch.send("You don't see anything special that way.\n\r");
             }

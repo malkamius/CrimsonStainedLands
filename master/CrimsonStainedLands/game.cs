@@ -35,6 +35,7 @@
 ***************************************************************************/
 
 using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -211,15 +212,9 @@ namespace CrimsonStainedLands
             Instance = new Game(port);
         }
 
-        private Socket listeningSocket;
-        private Socket sshlisteningSocket = null;
-        private Socket ssllisteningSocket;
-
         private Game(int port)
         {
             var launchMethod = new Action<GameInfo>(launch);
-
-
 
             Info = new GameInfo() { Port = port };
             lock (Info.LogLock)
@@ -246,33 +241,27 @@ namespace CrimsonStainedLands
             log(text, parameters);
         }
 
-        private void SetupListeningSocket(GameInfo state)
+        private Task SetupListeningSocket(GameInfo state)
         {
-            listeningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+            ConnectionManager connectionManager = new ConnectionManager();
+            var task = connectionManager.RunAsync();
+            return task;
+            // listeningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
-            // listen on all adapters at port specified for new connections
-            listeningSocket.Bind(new System.Net.IPEndPoint(0, state.Port));
-            listeningSocket.Listen(50);
-            state.Log.AppendLine("Listening on port " + state.Port);
+            // // listen on all adapters at port specified for new connections
+            // listeningSocket.Bind(new System.Net.IPEndPoint(0, state.Port));
+            // listeningSocket.Listen(50);
+            // state.Log.AppendLine("Listening on port " + state.Port);
 
-            if (Settings.SSLPort != 0)
-            {
-                ssllisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+            // if (Settings.SSLPort != 0)
+            // {
+            //     ssllisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
 
-                // listen on all adapters at port specified for new connections
-                ssllisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSLPort));
-                ssllisteningSocket.Listen(50);
-                state.Log.AppendLine("Listening for SSL connections on port " + Settings.SSLPort);
-            }
-            //sshlisteningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
-
-            //// listen on all adapters at port specified for new connections
-            //sshlisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSHPort));
-            //sshlisteningSocket.Listen(50);
-
-
-
-
+            //     // listen on all adapters at port specified for new connections
+            //     ssllisteningSocket.Bind(new System.Net.IPEndPoint(0, Settings.SSLPort));
+            //     ssllisteningSocket.Listen(50);
+            //     state.Log.AppendLine("Listening for SSL connections on port " + Settings.SSLPort);
+            // }
         }
 
         private void LoadData()
@@ -318,9 +307,10 @@ namespace CrimsonStainedLands
             
             try
             {
+                var connectionManagerTask = SetupListeningSocket(state);
+
                 using (new LoadTimer("Game loaded"))
                 {
-                    SetupListeningSocket(state);
 
                     LoadData();
 
@@ -343,6 +333,7 @@ namespace CrimsonStainedLands
                 }
 
                 Game.Instance.Info.MainLoopTask = Task.Run(() => mainLoop(state));
+                connectionManagerTask.Wait();
             }
             catch (Exception ex)
             {
@@ -364,13 +355,13 @@ namespace CrimsonStainedLands
             }
         }
 
-        private void mainLoop(GameInfo state)
+        private async void mainLoop(GameInfo state)
         {
             var read = Task.Run(ConsoleHandler);
 
             try
             {
-                AcceptNewSockets();
+                //AcceptNewSockets();
                 while (!state.Exiting)
                 {
                     try
@@ -381,7 +372,7 @@ namespace CrimsonStainedLands
 
 
                         // Check for input
-                        CheckConnectionsForAndProcessInput();
+                        await CheckConnectionsForAndProcessInput();
 
                         // Update everything, combat happens here too
                         UpdateHandler();
@@ -413,42 +404,42 @@ namespace CrimsonStainedLands
             }
         }
 
-        private void EndAcceptNewSocket(IAsyncResult result)
-        {
-            var socket = result.AsyncState as Socket;
+        //private void EndAcceptNewSocket(IAsyncResult result)
+        //{
+        //    var socket = result.AsyncState as Socket;
 
-            lock (Info.Connections)
-            {
-                try
-                {
-                    var player = new Player(this, socket.EndAccept(result), socket == ssllisteningSocket, socket == sshlisteningSocket);
+        //    lock (Info.Connections)
+        //    {
+        //        try
+        //        {
+        //            var player = new Player(this, socket.EndAccept(result), socket == ssllisteningSocket, socket == sshlisteningSocket);
 
 
-                }
-                catch { }
+        //        }
+        //        catch { }
 
-                try
-                {
-                    socket.BeginAccept(EndAcceptNewSocket, socket);
-                }
-                catch { }
-            }
-        }
+        //        try
+        //        {
+        //            socket.BeginAccept(EndAcceptNewSocket, socket);
+        //        }
+        //        catch { }
+        //    }
+        //}
 
         /// <summary>
         /// Poll for pending connections and accept them
         /// </summary>
-        private void AcceptNewSockets()
-        {
+        //private void AcceptNewSockets()
+        //{
 
-            listeningSocket.BeginAccept(EndAcceptNewSocket, listeningSocket);
+        //    listeningSocket.BeginAccept(EndAcceptNewSocket, listeningSocket);
 
-            if (ssllisteningSocket != null)
-                ssllisteningSocket.BeginAccept(EndAcceptNewSocket, ssllisteningSocket);
+        //    if (ssllisteningSocket != null)
+        //        ssllisteningSocket.BeginAccept(EndAcceptNewSocket, ssllisteningSocket);
 
-            if (sshlisteningSocket != null)
-                sshlisteningSocket.BeginAccept(EndAcceptNewSocket, sshlisteningSocket);
-        }
+        //    if (sshlisteningSocket != null)
+        //        sshlisteningSocket.BeginAccept(EndAcceptNewSocket, sshlisteningSocket);
+        //}
 
         public void SocketAccepted(Player player)
         {
@@ -489,61 +480,15 @@ namespace CrimsonStainedLands
         /// <summary>
         /// Poll for pending data to be received and receive it, handles IAC TType Negotiation
         /// </summary>
-        /// <param name="connection">Player Connection containing the socket to be handled</param>
-        private void ReceiveSocketBytes(Player connection)
+        /// <param name="player">Player Connection containing the socket to be handled</param>
+        private async Task ReceiveSocketBytes(Player player)
         {
-            lock (connection)
+            if (player.connection != null)
             {
-                if (connection.sslsocket != null)
-                {
-                    if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                    {
-                        byte[] buffer = new byte[256];
-                        int received = connection.socket.Receive(buffer, SocketFlags.Peek);
-                        if (received == 0)
-                        {
-                            throw new SocketException();
-                        }
-                        //        if (connection.sslsocket.IsAuthenticated && (connection.readop == null || connection.readop.IsCompleted))
-                        //        {
-                        //            if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
-                        //            if (connection.readop == null || connection.readop.IsCompleted)
-                        //                connection.readop = connection.sslsocket.BeginRead(connection.receivebuffer, 0, connection.receivebuffer.Length, connection.EndReceiveSsl, connection);
-                        //        }
-                    }
-
-                    else if (connection.socket == null)
-                        connection.sslsocket = null;
-                    else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
-                    {
-                        throw new SocketException();
-                    }
-                }
-                else if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                {
-                    byte[] buffer = new byte[256];
-                    int received = connection.socket.Receive(buffer, SocketFlags.Peek);
-                    if (received == 0)
-                    {
-                        throw new SocketException();
-                    }
-                    //    if (connection.receivebuffer == null) connection.receivebuffer = new byte[255];
-                    //    //int received = connection.socket.Receive(buffer);
-                    //    if (connection.readop == null || connection.readop.IsCompleted)
-                    //        connection.readop = connection.socket.BeginReceive(connection.receivebuffer, 0, connection.receivebuffer.Length, SocketFlags.None, connection.EndReceive, connection);
-                }
-
-                ////else
-                ////{
-
-
-
-                ////    else // normal data, filter it for valid characters
-                ////    {
-                ////        ProcessBytes(connection, buffer, received);
-                ////    }
-                //// Above method of adding input makes sure only characters space through 126 are allowed into the game and also supports backspace for telnet
-                ////connection.input.Append(System.Text.ASCIIEncoding.ASCII.GetChars(buffer, 0, received));
+                byte[] buffer = new byte[256];
+                buffer = await player.connection.Read();
+                if(buffer != null)
+                    player.ProcessBytes(buffer, buffer.Length);
             }
         }
 
@@ -577,7 +522,7 @@ namespace CrimsonStainedLands
         /// <exception cref="Exception"></exception>
         private void ProcessPlayerInput(Player connection)
         {
-            if (connection.socket != null)
+            if (connection.connection != null)
             {
 
                 if (connection.state == Player.ConnectionStates.Playing && connection.Level == Game.MAX_LEVEL)
@@ -593,14 +538,14 @@ namespace CrimsonStainedLands
                         if (!connection.HasPageText)
                             connection.SittingAtPrompt = false;
                 }
-                if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
-                    throw new Exception("Socket Exception");
+                //if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
+                //    throw new Exception("Socket Exception");
             }
         }
 
         private void KickInanimatePlayer(Player connection)
         {
-            if ((connection.state != Player.ConnectionStates.Playing && connection.socket == null) || (connection.inanimate.HasValue && connection.inanimate.Value.AddMinutes(5) < DateTime.Now))
+            if ((connection.state != Player.ConnectionStates.Playing && (connection.connection == null || connection.connection.Status == Connections.BaseConnection.ConnectionStatus.Disconnected)) || (connection.inanimate.HasValue && connection.inanimate.Value.AddMinutes(5) < DateTime.Now))
             {
 
 
@@ -619,7 +564,7 @@ namespace CrimsonStainedLands
                     Info.Connections.Remove(connection);
             }
 
-            if (connection.socket == null && !connection.inanimate.HasValue)
+            if (connection.connection == null && !connection.inanimate.HasValue)
                 connection.inanimate = DateTime.Now;
         }
 
@@ -629,7 +574,7 @@ namespace CrimsonStainedLands
             {
                 try
                 {
-                    if (connection.socket != null)
+                    if (connection.connection != null)
                         connection.ProcessOutput();
                 }
                 catch (Exception ex)
@@ -650,7 +595,7 @@ namespace CrimsonStainedLands
             }
         }
 
-        private void CheckConnectionsForAndProcessInput()
+        private async Task CheckConnectionsForAndProcessInput()
         {
             foreach (var connection in Info.Connections)
             {
@@ -665,7 +610,7 @@ namespace CrimsonStainedLands
 
                 try
                 {
-                    ReceiveSocketBytes(connection);
+                    await ReceiveSocketBytes(connection);
 
                     ProcessPlayerInput(connection);
 
@@ -682,7 +627,7 @@ namespace CrimsonStainedLands
 
                     try
                     {
-                        if (connection.socket != null)
+                        if (connection.connection != null)
                         {
                             Game.CloseSocket(connection, false, true);
                             
@@ -708,31 +653,7 @@ namespace CrimsonStainedLands
             {
                 try
                 {
-                    if (connection.sslsocket != null)
-                    {
-                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                        {
-                            byte[] buffer = new byte[255];
-                            int received = connection.sslsocket.Read(buffer, 0, buffer.Length);
-
-                            if (received == 0)
-                                throw new Exception("Socket Read Exception");
-                        }
-                    }
-                    else
-                    {
-                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectRead))
-                        {
-                            byte[] buffer = new byte[255];
-                            int received = connection.socket.Receive(buffer);
-
-                            if (received == 0)
-                                throw new Exception("Socket Read Exception");
-                        }
-
-                        if (connection.socket != null && connection.socket.Poll(1, SelectMode.SelectError))
-                            throw new Exception("Socket Exception");
-                    }
+                    
                     connection.ProcessOutput();
                     if (connection.state == Player.ConnectionStates.Playing)
                         connection.SaveCharacterFile();
@@ -765,8 +686,8 @@ namespace CrimsonStainedLands
                     {
                         connection.SaveCharacterFile();
                         connection.SendRaw("Shutting down NOW!\n\r");
-                        if (connection.socket != null)
-                            try { connection.socket.Dispose(); } catch { }
+                        if (connection.connection != null)
+                            try { connection.connection.Cleanup(); } catch { }
 
                     }
                     catch { }
@@ -809,8 +730,8 @@ namespace CrimsonStainedLands
                 {
                     connection.SaveCharacterFile();
                     connection.SendRaw("Rebooting NOW!\n\r");
-                    if (connection.socket != null)
-                        try { connection.socket.Dispose(); } catch { }
+                    if (connection.connection != null)
+                        try { connection.connection.Cleanup(); } catch { }
 
                 }
                 catch { }
@@ -1757,14 +1678,14 @@ namespace CrimsonStainedLands
 
             //Info.LaunchMethod.EndInvoke(Info.launchResult);
             LaunchTask.Wait();
-            listeningSocket.Dispose();
+            //listeningSocket.Dispose();
             foreach (var connection in Game.Instance.Info.Connections)
             {
                 try
                 {
                     connection.Dispose();
-                    if (connection.socket != null)
-                        connection.socket.Dispose();
+                    if (connection.connection != null)
+                        connection.connection.Cleanup();
                     lock (Game.Instance.Info.Connections)
                         Game.Instance.Info.Connections.Remove(connection);
                 }
@@ -1978,7 +1899,7 @@ namespace CrimsonStainedLands
                 ch.send("{0,20} {1,20} {2, 10}\n\r", "Name", "Address", "State");
                 foreach (var player in Character.Characters.OfType<Player>())
                 {
-                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, player.socket != null? player.Address : "disconnected", player.state.ToString());
+                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, player.connection != null? player.Address : "disconnected", player.state.ToString());
                 }
 
                 ch.send(Character.Characters.OfType<Player>().Count() + " players online.\n\r");
@@ -2093,16 +2014,15 @@ namespace CrimsonStainedLands
         {
             WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection from {0}({1}) terminated, state was {2}.", player, null, player.Address, !player.Name.ISEMPTY() ? player.Name : "", player.state);
 
-            if (player.socket != null)
+            if (player.connection != null)
             {
-                try { player.socket.Close(); } catch { }
-                try { player.socket.Dispose(); } catch { }
+                try { player.connection.Cleanup(); } catch { }
+                
             }
 
             if (settonull)
             {
-                player.socket = null;
-                player.sslsocket = null;
+                player.connection = null;
             }
 
             if (remove)

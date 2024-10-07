@@ -315,21 +315,12 @@ namespace CrimsonStainedLands.Extensions
         }
 
 
-        [ThreadStatic]
-        private static Random randomSeedGenerator;
-
+        
+        
         private static void initializeRandom()
         {
-            if (randomSeedGenerator == null)
-            {
-                var cryptoResult = new byte[4];
-                using (var seedProvider = new RNGCryptoServiceProvider())
-                    seedProvider.GetBytes(cryptoResult);
-
-                int seed = BitConverter.ToInt32(cryptoResult, 0);
-
-                randomSeedGenerator = new Random(seed);
-            }
+            if(SystemRandomGenerator == null)
+                SystemRandomGenerator = new Random();
         }
         /// <seealso cref="http://stackoverflow.com/questions/1399039/best-way-to-seed-random-in-singleton"/>
         public static int Random(this int inclusiveLowerBound, int inclusiveUpperBound)
@@ -346,7 +337,7 @@ namespace CrimsonStainedLands.Extensions
                 return inclusiveLowerBound;
             // upper bound of Random.Next is exclusive
             int exclusiveUpperBound = inclusiveUpperBound + 1;
-            return randomSeedGenerator.Next(inclusiveLowerBound, exclusiveUpperBound);
+            return SystemRandomGenerator.Next(inclusiveLowerBound, exclusiveUpperBound);
         }
 
 
@@ -369,7 +360,7 @@ namespace CrimsonStainedLands.Extensions
         public static T SelectRandom<T>(this IEnumerable<T> list)
         {
             initializeRandom();
-            return list != null ? list.OrderBy(x => randomSeedGenerator.Next()).FirstOrDefault() : default(T);
+            return list != null ? list.OrderBy(x => SystemRandomGenerator.Next()).FirstOrDefault() : default(T);
         }
 
         /// <summary>

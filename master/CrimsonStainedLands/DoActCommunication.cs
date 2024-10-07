@@ -241,7 +241,7 @@ namespace CrimsonStainedLands
 
         public static void DoReply(Character ch, string arguments)
         {
-            if (ch.ReplyTo != null && ch is Player && ((Player)ch.ReplyTo).socket != null)
+            if (ch.ReplyTo != null && ch is Player && ((Player)ch.ReplyTo).connection != null)
             {
                 if (ch.ReplyTo.Position == Positions.Sleeping)
                 {

@@ -9,7 +9,7 @@ using System.Text.Json.Serialization;
 using System.Xml.Linq;
 using System.Collections.ObjectModel;
 
-namespace CrimsonStainedLands
+namespace CrimsonStainedLands.World
 {
     public class AreaData
     {
@@ -31,7 +31,7 @@ namespace CrimsonStainedLands
         public short Age { get; set; }
         public int OverRoomVnum { get; set; }
         int LastPeopleCount = 0;
-        public Dictionary<int, NPCTemplateData> NPCTemplates { get; set; }  = new Dictionary<int, NPCTemplateData>();
+        public Dictionary<int, NPCTemplateData> NPCTemplates { get; set; } = new Dictionary<int, NPCTemplateData>();
         public Dictionary<int, ItemTemplateData> ItemTemplates { get; set; } = new Dictionary<int, ItemTemplateData>();
         public List<HelpData> Helps { get; set; } = new List<HelpData>();
 
@@ -44,7 +44,7 @@ namespace CrimsonStainedLands
         public string Continent { get; set; } = "Mainland";
 
         public Dictionary<int, Quest> Quests { get; set; } = new Dictionary<int, Quest>();
-        
+
         public static void LoadAreas(bool headersOnly = false)
         {
             DateTime loadstart = DateTime.Now;
@@ -52,8 +52,8 @@ namespace CrimsonStainedLands
             /// Now load area programs before area npcs and rooms, things referencing programs
             Directory.GetFiles(Settings.AreasPath, "*.xml").
                 Concat(Directory.GetFiles(Settings.AreasPath, "*.json")).
-                Where(path => 
-                !path.EndsWith("_programs.xml", StringComparison.InvariantCultureIgnoreCase) && 
+                Where(path =>
+                !path.EndsWith("_programs.xml", StringComparison.InvariantCultureIgnoreCase) &&
                 !path.EndsWith("_programs.json", StringComparison.InvariantCultureIgnoreCase)
                 ).AsParallel().ForAll(file =>
             {
@@ -72,10 +72,10 @@ namespace CrimsonStainedLands
                         string jsonString = File.ReadAllText(file);
                         AreaData area = JsonSerializer.Deserialize<AreaData>(jsonString);
                         Areas.Add(area);
-                        if (AreaData.Areas.Any(a => a == null)) 
+                        if (Areas.Any(a => a == null))
                             Game.log("Null area");
                     }
-                } 
+                }
                 catch (Exception ex)
                 {
                     Game.log(ex.ToString());
@@ -152,20 +152,20 @@ namespace CrimsonStainedLands
             {
                 foreach (var room in area.Rooms.Values)
                 {
-                    for(var index = 0; index < room.exits.Length; index++)
+                    for (var index = 0; index < room.exits.Length; index++)
                     {
                         if (room.exits[index] != null)
                         {
                             var exit = room.exits[index];
                             RoomData.Rooms.TryGetValue(exit.destinationVnum, out exit.destination);
                             exit.source = room;
-                            if(room.OriginalExits[index] != null && room.OriginalExits[index].destinationVnum == exit.destinationVnum)
+                            if (room.OriginalExits[index] != null && room.OriginalExits[index].destinationVnum == exit.destinationVnum)
                             {
                                 var oexit = room.OriginalExits[index];
                                 oexit.source = room;
                                 oexit.destination = exit.destination;
                             }
-                            
+
                         }
                     }
                     //foreach (var exit in room.exits)
@@ -192,13 +192,13 @@ namespace CrimsonStainedLands
 
         private void RandomizeExits()
         {
-            foreach(var room in Rooms.Values)
+            foreach (var room in Rooms.Values)
             {
-                if(room.flags.ISSET(RoomFlags.RandomExits))
+                if (room.flags.ISSET(RoomFlags.RandomExits))
                 {
                     var exits = room.exits.ToArray();
 
-                    for(int i = 0; i < exits.Length; i++)
+                    for (int i = 0; i < exits.Length; i++)
                     {
                         var exit = room.exits[i];
                         if (exit != null && !exit.flags.ISSET(ExitFlags.NoRandomize))
@@ -241,8 +241,8 @@ namespace CrimsonStainedLands
 
                 Name = areaData.GetElementValue("Name");
 
-                this.VNumStart = areaData.GetElementValueInt("vnumStart");
-                this.VNumEnd = areaData.GetElementValueInt("vnumEnd");
+                VNumStart = areaData.GetElementValueInt("vnumStart");
+                VNumEnd = areaData.GetElementValueInt("vnumEnd");
 
                 info = areaData.GetElementValue("Info");
                 Builders = areaData.GetElementValue("Builders");
@@ -253,14 +253,14 @@ namespace CrimsonStainedLands
 
                 if (Name.ISEMPTY())
                     Game.log("Area " + FileName + "has no name");
-                if (this.VNumStart == 0)
+                if (VNumStart == 0)
                     Game.log("Area " + Name + " has no start vnum");
-                if (this.VNumEnd == 0)
+                if (VNumEnd == 0)
                     Game.log("Area " + Name + " has no end vnum");
 
             }
 
-            AreaData.Areas.Add(this);
+            Areas.Add(this);
         }
 
         public void LoadHeader(string file)
@@ -272,7 +272,7 @@ namespace CrimsonStainedLands
                 XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
 
                 LoadHeader(root);
-                
+
             }
         }
 
@@ -285,7 +285,7 @@ namespace CrimsonStainedLands
             if (!string.IsNullOrEmpty(file))
             {
                 FileName = file;
-                  
+
                 XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
 
                 LoadHeader(root);
@@ -314,11 +314,11 @@ namespace CrimsonStainedLands
                 LoadHelps(root);
 
                 Resets.Clear();
-                
+
                 LoadResets(root);
 
                 LoadQuests(root);
-                
+
                 // Prepare area for reset
                 Timer = 0;
 
@@ -442,7 +442,7 @@ namespace CrimsonStainedLands
         public void LoadResets(XElement root)
         {
             var resets = root.GetElement("Resets");
-            if (resets != null || (root.Name == "Resets" && (resets = root) != null))
+            if (resets != null || root.Name == "Resets" && (resets = root) != null)
                 foreach (var reset in resets.Elements())
                 {
                     try
@@ -470,7 +470,7 @@ namespace CrimsonStainedLands
             else
                 Timer = 0;
 
-            if (LastPeopleCount > 0 && this.People.Count == 0)
+            if (LastPeopleCount > 0 && People.Count == 0)
             {
                 Timer = 3;// game.PULSE_AREA;
             }
@@ -482,12 +482,12 @@ namespace CrimsonStainedLands
             {
                 Timer = 15; // game.PULSE_AREA * 5;
             }
-            LastPeopleCount = this.People.Count;
+            LastPeopleCount = People.Count;
             // RESET Every PULSE if empty, otherwise every 3 PULSEs
             if (Timer <= 0)// || (this.people.Count == 0 && timer <= (game.PULSE_AREA * 4)))
             {
                 RandomizeExits();
-                if (this.People.Count > 0)
+                if (People.Count > 0)
                     Timer = 15;//  game.PULSE_AREA * 5;
                 else
                     Timer = 3;// game.PULSE_AREA;
@@ -574,12 +574,12 @@ namespace CrimsonStainedLands
         public void SaveToJson()
         {
             var jsonpath = Settings.AreasPath + "_json";
-            System.IO.Directory.CreateDirectory(jsonpath);
+            Directory.CreateDirectory(jsonpath);
             if (!string.IsNullOrEmpty(FileName))
             {
-                var jsonname = System.IO.Path.GetFileNameWithoutExtension(FileName);
-                var fullfilepath = System.IO.Path.Join(jsonpath, jsonname + ".json");
-                
+                var jsonname = Path.GetFileNameWithoutExtension(FileName);
+                var fullfilepath = Path.Join(jsonpath, jsonname + ".json");
+
                 string jsonString = JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = true, ReferenceHandler = ReferenceHandler.Preserve });
                 File.WriteAllText(fullfilepath, jsonString);
                 saved = true;

@@ -1,4 +1,5 @@
 ﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.World;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -750,122 +751,7 @@ namespace CrimsonStainedLands
 
         public static void DamageMessage(Character ch, Character victim, int damageAmount, string nounDamage, WeaponDamageTypes DamageType = WeaponDamageTypes.Bash, bool immune = false)
         {
-            // Variables for verb singular, verb plural, and punctuation
-            string vs;
-            string vp;
             string punct;
-
-            // Determine the appropriate verb phrases based on the damage amount
-            //if (damageAmount == 0)
-            //{
-            //    vs = "miss";
-            //    vp = "misses";
-            //}
-            //else if (damageAmount <= 1)
-            //{
-            //    vs = "barely scratch";
-            //    vp = "barely scratches";
-            //}
-            //else if (damageAmount <= 2)
-            //{
-            //    vs = "scratch";
-            //    vp = "scratches";
-            //}
-            //else if (damageAmount <= 4)
-            //{
-            //    vs = "graze";
-            //    vp = "grazes";
-            //}
-            //else if (damageAmount <= 7)
-            //{
-            //    vs = "hit";
-            //    vp = "hits";
-            //}
-            //else if (damageAmount <= 11)
-            //{
-            //    vs = "injure";
-            //    vp = "injures";
-            //}
-            //else if (damageAmount <= 15)
-            //{
-            //    vs = "wound";
-            //    vp = "wounds";
-            //}
-            //else if (damageAmount <= 20)
-            //{
-            //    vs = "maul";
-            //    vp = "mauls";
-            //}
-            //else if (damageAmount <= 25)
-            //{
-            //    vs = "decimate";
-            //    vp = "decimates";
-            //}
-            //else if (damageAmount <= 30)
-            //{
-            //    vs = "devastate";
-            //    vp = "devastates";
-            //}
-            //else if (damageAmount <= 37)
-            //{
-            //    vs = "maim";
-            //    vp = "maims";
-            //}
-            //else if (damageAmount <= 45)
-            //{
-            //    vs = "MUTILATE";
-            //    vp = "MUTILATES";
-            //}
-            //else if (damageAmount <= 55)
-            //{
-            //    vs = "EVISCERATE";
-            //    vp = "EVISCERATES";
-            //}
-            //else if (damageAmount <= 65)
-            //{
-            //    vs = "DISMEMBER";
-            //    vp = "DISMEMBERS";
-            //}
-            //else if (damageAmount <= 85)
-            //{
-            //    vs = "MASSACRE";
-            //    vp = "MASSACRES";
-            //}
-            //else if (damageAmount <= 100)
-            //{
-            //    vs = "MANGLE";
-            //    vp = "MANGLES";
-            //}
-            //else if (damageAmount <= 135)
-            //{
-            //    vs = "*** DEMOLISH ***";
-            //    vp = "*** DEMOLISHES ***";
-            //}
-            //else if (damageAmount <= 160)
-            //{
-            //    vs = "*** DEVASTATE ***";
-            //    vp = "*** DEVASTATES ***";
-            //}
-            //else if (damageAmount <= 250)
-            //{
-            //    vs = "=== OBLITERATE ===";
-            //    vp = "=== OBLITERATES ===";
-            //}
-            //else if (damageAmount <= 330)
-            //{
-            //    vs = ">>> ANNIHILATE <<<";
-            //    vp = ">>> ANNIHILATES <<<";
-            //}
-            //else if (damageAmount <= 380)
-            //{
-            //    vs = "<<< ERADICATE >>>";
-            //    vp = "<<< ERADICATES >>>";
-            //}
-            //else
-            //{
-            //    vs = "do UNSPEAKABLE things to";
-            //    vp = "does UNSPEAKABLE things to";
-            //}
             var dammessagetext = DamageMessageText.GetWeaponDamageMessageText(DamageType, damageAmount);
 
             // Determine the appropriate punctuation based on the damage amount
