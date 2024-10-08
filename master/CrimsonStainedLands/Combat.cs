@@ -8150,12 +8150,12 @@ namespace CrimsonStainedLands
                     affect.location = ApplyTypes.Strength;
                     affect.duration = 5;
                     affect.modifier = -5;
-                    ch.AffectToChar(affect);
+                    victim.AffectToChar(affect);
 
                     affect.location = ApplyTypes.Dexterity;
                     affect.endMessage = "Your shoulder feels better.";
                     affect.endMessageToRoom = "$n's shoulder looks better.";
-                    ch.AffectToChar(affect);
+                    victim.AffectToChar(affect);
 
                 }
             }
