@@ -1680,11 +1680,11 @@ namespace CrimsonStainedLands
                 affect.location = ApplyTypes.None;
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.Add(AffectFlags.DetectHidden);
-                affect.duration = 6;
+                affect.duration = 6 + ch.Level / 3;
                 affect.endMessage = "You can no longer see the hidden.\n\r";
                 ch.AffectToChar(affect);
 
-                ch.send("Your awareness improves.\n\r");
+                ch.send("You focus your awareness on things in the shadows.\n\r");
                 ch.CheckImprove("detect hidden", true, 2);
             }
         }
@@ -1719,11 +1719,11 @@ namespace CrimsonStainedLands
                 affect.location = ApplyTypes.None;
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.Add(AffectFlags.DetectInvis);
-                affect.duration = 6;
+                affect.duration = 6 + (ch.Level / 3);
                 affect.endMessage = "Your awareness lessens slightly.\n\r";
                 ch.AffectToChar(affect);
 
-                ch.send("Your awareness improves.\n\r");
+                ch.send("You heighten your senses to things hidden by magic.\n\r");
                 ch.CheckImprove("heightened awareness", true, 2);
             }
         }
