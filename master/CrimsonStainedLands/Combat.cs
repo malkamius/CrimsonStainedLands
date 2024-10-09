@@ -9371,12 +9371,13 @@ namespace CrimsonStainedLands
                 ch.WaitState(skill.waitTime);
                 if (skillPercent > Utility.NumberPercent())
                 {
+                    var amt = -20 - (40 * ch.Level / 60);
                     affect = new AffectData();
                     affect.skillSpell = skill;
                     affect.level = ch.Level;
                     affect.location = ApplyTypes.SavingSpell;
                     affect.duration = 8;
-                    affect.modifier = -20;
+                    affect.modifier = amt;
                     affect.displayName = skill.name;
                     affect.affectType = AffectTypes.Skill;
                     ch.AffectToChar(affect);
@@ -9386,7 +9387,7 @@ namespace CrimsonStainedLands
                     affect.level = ch.Level;
                     affect.location = ApplyTypes.AC;
                     affect.duration = 8;
-                    affect.modifier = -20;
+                    affect.modifier = amt;
                     affect.displayName = skill.name;
                     affect.endMessage = "You are no longer enduring.\n\r";
                     //affect.endMessageToRoom = "$n's rage subsides.\n\r";
