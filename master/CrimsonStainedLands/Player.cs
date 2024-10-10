@@ -1114,7 +1114,11 @@ namespace CrimsonStainedLands
                 Flags.ADDFLAG(ActFlags.AutoLoot);
                 Flags.ADDFLAG(ActFlags.AutoSac);
                 Flags.ADDFLAG(ActFlags.NewbieChannel);
-
+                if (Race != null)
+                {
+                    foreach (var aff in Race.affects)
+                        AffectedBy.SETBIT(aff);
+                }
                 SaveCharacterFile();
 
                 BonusInfo.DoBonus(this, "");
@@ -1188,6 +1192,7 @@ namespace CrimsonStainedLands
                     salt = element.GetElementValue("salt", "salt");
                     PcRace = PcRace.GetRace(element.GetElementValue("race", "human")) ?? PcRace.GetRace("human");
                     Race = Race.GetRace(element.GetElementValue("race", "human")) ?? Race.GetRace("human");
+                    
                     Utility.GetEnumValue<Alignment>(element.GetElementValue("alignment", "neutral"), ref Alignment);
                     Utility.GetEnumValue<Ethos>(element.GetElementValue("ethos", "neutral"), ref Ethos);
                     var inRoom = element.HasElement("room") ? element.GetElement("room").Value : "3760";
@@ -1275,7 +1280,11 @@ namespace CrimsonStainedLands
 
                     if (element.HasElement("affectedBy"))
                         Utility.GetEnumValues<AffectFlags>(element.GetElementValue("affectedBy"), ref this.AffectedBy);
-
+                    if (Race != null)
+                    {
+                        foreach (var aff in Race.affects)
+                            AffectedBy.SETBIT(aff);
+                    }
                     if (element.HasElement("WiznetFlags"))
                         Utility.GetEnumValues<WizardNet.Flags>(element.GetElementValue("WiznetFlags"), ref this.WiznetFlags);
 
