@@ -2540,6 +2540,8 @@ namespace CrimsonStainedLands
                 NPCData.NPCs.Remove((NPCData)this);
 
             RemoveCharacterFromRoom();
+            if (this is Player player)
+                player.state = Player.ConnectionStates.Disconnected;
         }
 
         public void DeathCry()

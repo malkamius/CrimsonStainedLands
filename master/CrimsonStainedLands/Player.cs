@@ -94,7 +94,8 @@ namespace CrimsonStainedLands
             GetGuild,
             GetDefaultWeapon,
             Deleting,
-            NegotiateSSH
+            NegotiateSSH,
+            Disconnected
         }
 
         public ConnectionStates state;
@@ -660,7 +661,8 @@ namespace CrimsonStainedLands
                             if (connection.Room != null)
                             {
                                 //connection.Act("$n loses their animation.", null, null, null, ActType.ToRoom);
-                                connection.inanimate = DateTime.Now;
+                                if(connection.inanimate == null)
+                                    connection.inanimate = DateTime.Now;
                                 try
                                 {
                                     Game.CloseSocket(connection, false, false);
@@ -688,7 +690,7 @@ namespace CrimsonStainedLands
                                         this.connection = null;
 
                                         connection.ConnectExistingPlayer(true);
-                                        connection.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
+                                        //connection.Act("$n regains their animation.", null, null, null, ActType.ToRoom);
 
                                     }
 
@@ -918,7 +920,7 @@ namespace CrimsonStainedLands
             if (inanimate != null)
             {
                 inanimate = null;
-                Act("$n regains their animation.", null, null, null, ActType.ToRoom);
+                //Act("$n regains their animation.", null, null, null, ActType.ToRoom);
             }
 
             //DoLook(this, "auto");

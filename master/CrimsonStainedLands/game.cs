@@ -485,7 +485,7 @@ namespace CrimsonStainedLands
         {
             if (player.connection != null)
             {
-                byte[] buffer = new byte[256];
+                byte[] buffer;// = new byte[256];
                 buffer = await player.connection.Read();
                 if(buffer != null)
                     player.ProcessBytes(buffer, buffer.Length);
@@ -551,21 +551,21 @@ namespace CrimsonStainedLands
 
                 WizardNet.Wiznet(WizardNet.Flags.Connections, "Connection {0} removed from list of active connections.", connection, null, connection.Address);
 
-                connection.Act("$n disappears into the void.", null, null, null, ActType.ToRoom);
-                if (connection.state == Player.ConnectionStates.Playing)
-                    connection.SaveCharacterFile();
-                if (connection.Room != null)
-                {
-                    connection.RemoveCharacterFromRoom();
-                }
-                connection.Dispose();
+                //if (connection.state == Player.ConnectionStates.Playing)
+                //{
+                //    connection.Act("$n disappears into the void.", null, null, null, ActType.ToRoom);
+                //    //connection.SaveCharacterFile();
+                //}
 
-                lock (Info.Connections)
-                    Info.Connections.Remove(connection);
+                CloseSocket(connection, true, true);
             }
 
-            if (connection.connection == null && !connection.inanimate.HasValue)
-                connection.inanimate = DateTime.Now;
+            else if ((connection.connection == null || connection.connection.Status == Connections.BaseConnection.ConnectionStatus.Disconnected) && !connection.inanimate.HasValue)
+            {
+                CloseSocket(connection, connection.state != Player.ConnectionStates.Playing, true);
+                if(connection.state == Player.ConnectionStates.Playing)
+                    connection.inanimate = DateTime.Now;
+            }
         }
 
         private void ProcessConnectionsOutput()
@@ -822,174 +822,181 @@ namespace CrimsonStainedLands
         {
             foreach (var item in ItemData.Items.ToArray())
             {
-                foreach (var affect in item.affects.ToArray())
+                try
                 {
-                    // resist flags can expire and such?
-                    //if (affect.where == AffectWhere.ToObject || affect.where == AffectWhere.ToAffects)
-                    //{
-                    if (affect.frequency == Frequency.Tick && affect.duration > 0 && item.Template == null)
+
+                    foreach (var affect in item.affects.ToArray())
                     {
-                        affect.duration--;
-                    }
-                    else if (affect.frequency == Frequency.Tick && affect.duration == 0)
-                    {
-                        //item.AffectFromObject(affect);
-                        if (affect.endMessage != null && item.CarriedBy != null)
+                        // resist flags can expire and such?
+                        //if (affect.where == AffectWhere.ToObject || affect.where == AffectWhere.ToAffects)
+                        //{
+                        if (affect.frequency == Frequency.Tick && affect.duration > 0 && item.Template == null)
                         {
-                            item.CarriedBy.Act(affect.endMessage, item.CarriedBy, item, item);
+                            affect.duration--;
                         }
-                        if (affect.endMessageToRoom != null && (item.CarriedBy != null || item.Room != null))
+                        else if (affect.frequency == Frequency.Tick && affect.duration == 0)
                         {
-                            if (item.CarriedBy != null)
-                                item.CarriedBy.Act(affect.endMessageToRoom, item.CarriedBy, item, item, ActType.ToRoom);
-                            else
+                            //item.AffectFromObject(affect);
+                            if (affect.endMessage != null && item.CarriedBy != null)
                             {
-                                foreach (var person in item.Room.Characters)
-                                    person.Act(affect.endMessageToRoom, null, item, item);
+                                item.CarriedBy.Act(affect.endMessage, item.CarriedBy, item, item);
                             }
+                            if (affect.endMessageToRoom != null && (item.CarriedBy != null || item.Room != null))
+                            {
+                                if (item.CarriedBy != null)
+                                    item.CarriedBy.Act(affect.endMessageToRoom, item.CarriedBy, item, item, ActType.ToRoom);
+                                else
+                                {
+                                    foreach (var person in item.Room.Characters)
+                                        person.Act(affect.endMessageToRoom, null, item, item);
+                                }
+                            }
+                            item.affects.Remove(affect);
                         }
-                        item.affects.Remove(affect);
-                    }
-                    //}
+                        //}
 
-                } // end countdown affects
+                    } // end countdown affects
 
-                if (item.timer <= 0 || --item.timer > 0)
-                {
-                    continue;
-                }
-                else
-                {
-                    string message = "";
-                    if (item.ItemType.ISSET(ItemTypes.Fountain))
+                    if (item.timer <= 0 || --item.timer > 0)
                     {
-                        message = "$p dries up.";
-                    }
-                    else if (item.ItemType.ISSET(ItemTypes.Corpse) || item.ItemType.ISSET(ItemTypes.NPCCorpse))
-                    {
-                        message = "$p decays into dust.";
-                    }
-                    else if (item.ItemType.ISSET(ItemTypes.Food))
-                    {
-                        message = "$p decomposes.";
-                    }
-                    else if (item.ItemType.ISSET(ItemTypes.Potion))
-                    {
-                        message = "$p has evaporated from disuse.";
-                    }
-                    else if (item.ItemType.ISSET(ItemTypes.Portal))
-                    {
-                        message = "$p fades out of existence.";
+                        continue;
                     }
                     else
                     {
-                        message = "$p crumbles into dust.";
-                    }
-
-                    if (item.CarriedBy != null)
-                    {
-                        if (item.CarriedBy.IsNPC
-                            && item.CarriedBy.IsShop)
-                            item.CarriedBy.Gold += item.Value / 5;
+                        string message = "";
+                        if (item.ItemType.ISSET(ItemTypes.Fountain))
+                        {
+                            message = "$p dries up.";
+                        }
+                        else if (item.ItemType.ISSET(ItemTypes.Corpse) || item.ItemType.ISSET(ItemTypes.NPCCorpse))
+                        {
+                            message = "$p decays into dust.";
+                        }
+                        else if (item.ItemType.ISSET(ItemTypes.Food))
+                        {
+                            message = "$p decomposes.";
+                        }
+                        else if (item.ItemType.ISSET(ItemTypes.Potion))
+                        {
+                            message = "$p has evaporated from disuse.";
+                        }
+                        else if (item.ItemType.ISSET(ItemTypes.Portal))
+                        {
+                            message = "$p fades out of existence.";
+                        }
                         else
                         {
-                            item.CarriedBy.Act(message, null, item, null, ActType.ToChar);
+                            message = "$p crumbles into dust.";
                         }
-                    }
-                    else if (item.Room != null && item.Room.Characters.Count > 0)
-                    {
-                        item.Room.Characters.First().Act(message, null, item, null, ActType.ToRoom);
-                        item.Room.Characters.First().Act(message, null, item, null, ActType.ToChar);
-                    }
 
-                    if (item.Contains.Count > 0)
-                    {
                         if (item.CarriedBy != null)
                         {
-                            foreach (var contained in item.Contains.ToArray())
+                            if (item.CarriedBy.IsNPC
+                                && item.CarriedBy.IsShop)
+                                item.CarriedBy.Gold += item.Value / 5;
+                            else
                             {
-                                item.Contains.Remove(contained);
-                                item.CarriedBy.AddInventoryItem(contained);
+                                item.CarriedBy.Act(message, null, item, null, ActType.ToChar);
                             }
                         }
-                        else if (item.Room != null)
+                        else if (item.Room != null && item.Room.Characters.Count > 0)
                         {
-                            if (item.ItemType.ISSET(ItemTypes.Corpse))
+                            item.Room.Characters.First().Act(message, null, item, null, ActType.ToRoom);
+                            item.Room.Characters.First().Act(message, null, item, null, ActType.ToChar);
+                        }
+
+                        if (item.Contains.Count > 0)
+                        {
+                            if (item.CarriedBy != null)
                             {
-                                var owner = (from player in Player.Characters.OfType<Player>() where player.Name == item.Owner select player).FirstOrDefault();
-
-                                if (owner != null && owner.state == Player.ConnectionStates.Playing)
+                                foreach (var contained in item.Contains.ToArray())
                                 {
-
-                                    foreach (var contained in item.Contains.ToArray())
-                                    {
-                                        item.Contains.Remove(contained);
-                                        owner.Act("$p appears in your hands.", null, contained, null, ActType.ToChar);
-                                        owner.Act("$p appears in $n's hands.", null, contained, null, ActType.ToRoom);
-                                        owner.AddInventoryItem(contained);
-                                        contained.CarriedBy = owner;
-                                        contained.Container = null;
-                                    }
+                                    item.Contains.Remove(contained);
+                                    item.CarriedBy.AddInventoryItem(contained);
                                 }
-                                else
+                            }
+                            else if (item.Room != null)
+                            {
+                                if (item.ItemType.ISSET(ItemTypes.Corpse))
                                 {
-                                    RoomData recallroom = null;
-                                    ItemData pit;
-                                    if (item.Alignment == Alignment.Good)
-                                    {
-                                        RoomData.Rooms.TryGetValue(19089, out recallroom);
-                                    }
-                                    else if (item.Alignment == Alignment.Evil)
-                                    {
-                                        RoomData.Rooms.TryGetValue(19090, out recallroom);
+                                    var owner = (from player in Player.Characters.OfType<Player>() where player.Name == item.Owner select player).FirstOrDefault();
 
+                                    if (owner != null && owner.state == Player.ConnectionStates.Playing)
+                                    {
+
+                                        foreach (var contained in item.Contains.ToArray())
+                                        {
+                                            item.Contains.Remove(contained);
+                                            owner.Act("$p appears in your hands.", null, contained, null, ActType.ToChar);
+                                            owner.Act("$p appears in $n's hands.", null, contained, null, ActType.ToRoom);
+                                            owner.AddInventoryItem(contained);
+                                            contained.CarriedBy = owner;
+                                            contained.Container = null;
+                                        }
                                     }
                                     else
                                     {
-                                        RoomData.Rooms.TryGetValue(19091, out recallroom);
-                                    }
-                                    //var recallroom = 
-                                    if (recallroom != null)
-                                    {
-                                        pit = (from obj in recallroom.items where obj.Vnum == 19000 select obj).FirstOrDefault();
-
-                                        if (pit != null)
+                                        RoomData recallroom = null;
+                                        ItemData pit;
+                                        if (item.Alignment == Alignment.Good)
                                         {
-                                            foreach (var contained in item.Contains.ToArray())
-                                            {
-                                                item.Contains.Remove(contained);
-                                                pit.Contains.Add(contained);
+                                            RoomData.Rooms.TryGetValue(19089, out recallroom);
+                                        }
+                                        else if (item.Alignment == Alignment.Evil)
+                                        {
+                                            RoomData.Rooms.TryGetValue(19090, out recallroom);
 
-                                                contained.Container = pit;
+                                        }
+                                        else
+                                        {
+                                            RoomData.Rooms.TryGetValue(19091, out recallroom);
+                                        }
+                                        //var recallroom = 
+                                        if (recallroom != null)
+                                        {
+                                            pit = (from obj in recallroom.items where obj.Vnum == 19000 select obj).FirstOrDefault();
+
+                                            if (pit != null)
+                                            {
+                                                foreach (var contained in item.Contains.ToArray())
+                                                {
+                                                    item.Contains.Remove(contained);
+                                                    pit.Contains.Add(contained);
+
+                                                    contained.Container = pit;
+                                                }
                                             }
+                                            else
+                                                DumpItems(item);
                                         }
                                         else
                                             DumpItems(item);
                                     }
-                                    else
-                                        DumpItems(item);
+                                }
+                                else
+                                {
+                                    DumpItems(item);
                                 }
                             }
-                            else
+                            else if (item.Container != null)
                             {
-                                DumpItems(item);
+                                foreach (var contained in item.Contains.ToArray())
+                                {
+                                    item.Contains.Remove(contained);
+                                    item.Container.Contains.Add(contained);
+                                    contained.Container = item.Container;
+                                }
                             }
                         }
-                        else if (item.Container != null)
-                        {
-                            foreach (var contained in item.Contains.ToArray())
-                            {
-                                item.Contains.Remove(contained);
-                                item.Container.Contains.Add(contained);
-                                contained.Container = item.Container;
-                            }
-                        }
+
+                        item.Dispose();
+
                     }
-
-                    item.Dispose();
-
                 }
-
+                catch(Exception ex)
+                {
+                    Game.log(ex.Message);
+                }
             }
         }
 
@@ -1896,10 +1903,10 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.send("{0,20} {1,20} {2, 10}\n\r", "Name", "Address", "State");
+                ch.send("{0,-20}({1,-20}) {2,20} {3, 10}\n\r", "Name", "Type", "Address", "State");
                 foreach (var player in Character.Characters.OfType<Player>())
                 {
-                    ch.send("{0,20} {1,20} {2,10}\n\r", player.Name, player.connection != null? player.Address : "disconnected", player.state.ToString());
+                    ch.send("{0,-20}({1,-20}) {2,20} {3,10}\n\r", player.Name, player.connection != null? player.connection.GetType().Name : "(null)", player.connection != null? player.Address : "disconnected", player.state.ToString());
                 }
 
                 ch.send(Character.Characters.OfType<Player>().Count() + " players online.\n\r");
@@ -2027,8 +2034,13 @@ namespace CrimsonStainedLands
 
             if (remove)
             {
-                lock (Game.Instance.Info.Connections)
-                    Game.Instance.Info.Connections.Remove(player);
+                Game.Instance.Info.Connections.Remove(player);
+                if (player.state == Player.ConnectionStates.Playing)
+                {
+                    player.state = Player.ConnectionStates.Disconnected;
+                    player.SaveCharacterFile();
+                    player.Act("$n disappears into the void.", null, null, null, ActType.ToRoom);
+                }
                 player.Dispose();
             }
         }

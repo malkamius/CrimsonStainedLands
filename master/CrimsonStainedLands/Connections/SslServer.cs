@@ -10,6 +10,7 @@ namespace CrimsonStainedLands.Connections
 {
     public class SslServer
     {
+        public ConnectionManager Manager { get; }
         public IPAddress Address {get;}
         public int Port {get;}
 
@@ -21,8 +22,9 @@ namespace CrimsonStainedLands.Connections
 
         X509Certificate2 certificate;
 
-        public SslServer(string address, int port, X509Certificate2 certificate, CancellationTokenSource cancellationTokenSource)
+        public SslServer(ConnectionManager manager, string address, int port, X509Certificate2 certificate, CancellationTokenSource cancellationTokenSource)
         {
+            this.Manager = manager;
             Address = IPAddress.Parse(address);
             Port = port;
             this.cancellationTokenSource = cancellationTokenSource;
@@ -53,7 +55,7 @@ namespace CrimsonStainedLands.Connections
             {
                 var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
-                var connection = new SslConnection(this, newClientSocket, certificate);
+                var connection = new SslConnection(this.Manager, this, newClientSocket, certificate);
                 
             }
 

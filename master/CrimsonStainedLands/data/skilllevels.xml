@@ -1287,6 +1287,10 @@
       Guild="warrior"
       Level="1"
       Rating="1" />
+	<SkillLevel
+		Guild="bard"
+		Level="1"
+		Rating="1"	/>
     <SkillLevel
       Guild="mage"
       Level="1"
@@ -2242,7 +2246,6 @@
     MinmumMana="20"
     WaitTime="0"
     AutoCast="true"
-	NounDamage="plague"
     SpellFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands"
     SpellFuncName="SpellPlague"
 	TickFuncType="CrimsonStainedLands.Magic, CrimsonStainedLands"
@@ -3535,7 +3538,7 @@
   <SkillSpell
     Name="mule kick"
     MinimumPosition="Fighting"
-    WaitTime="24"
+    WaitTime="36"
     NounDamage="mule kick"
     AutoCast="true"
     Prerequisites="'scissors kick'"
@@ -4355,7 +4358,7 @@
     MinimumPosition="Fighting"
     WaitTime="12"
     NounDamage="rising phoenix kick"
-    AutoCast="true"
+    AutoCast="false"
     Prerequisites="'double spin kick'"
     PrerequisitePercentage="91"
     SkillTypes="Skill">

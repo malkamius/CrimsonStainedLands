@@ -14,7 +14,7 @@ namespace CrimsonStainedLands.Connections
 {
     public class WebServer
     {
-        
+        public ConnectionManager Manager { get; }
 
         public IPAddress Address {get;}
         public int Port {get;}
@@ -31,8 +31,9 @@ namespace CrimsonStainedLands.Connections
 
         public string WebRoot {get;set;} = "I:\\web";
 
-        public WebServer(string address, int port, X509Certificate2 certificate, CancellationTokenSource cancellationTokenSource)
+        public WebServer(ConnectionManager manager, string address, int port, X509Certificate2 certificate, CancellationTokenSource cancellationTokenSource)
         {
+            this.Manager = manager;
             Address = IPAddress.Parse(address);
             Port = port;
             this.cancellationTokenSource = cancellationTokenSource;
@@ -56,7 +57,7 @@ namespace CrimsonStainedLands.Connections
             {
                 var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
-                var connection = new WebsocketConnection(this, newClientSocket, certificate);
+                var connection = new WebsocketConnection(this.Manager, this, newClientSocket, certificate);
                 //ConnectionConnectedCallback(connection);
                 connections.Add(connection);
             }

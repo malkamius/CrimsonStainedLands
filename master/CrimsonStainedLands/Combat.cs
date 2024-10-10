@@ -9376,7 +9376,7 @@ namespace CrimsonStainedLands
                     affect.skillSpell = skill;
                     affect.level = ch.Level;
                     affect.location = ApplyTypes.SavingSpell;
-                    affect.duration = 8;
+                    affect.duration = 8 + (ch.Level / 4);
                     affect.modifier = amt;
                     affect.displayName = skill.name;
                     affect.affectType = AffectTypes.Skill;
@@ -9386,7 +9386,7 @@ namespace CrimsonStainedLands
                     affect.skillSpell = skill;
                     affect.level = ch.Level;
                     affect.location = ApplyTypes.AC;
-                    affect.duration = 8;
+                    affect.duration = 8 + (ch.Level / 4);
                     affect.modifier = amt;
                     affect.displayName = skill.name;
                     affect.endMessage = "You are no longer enduring.\n\r";

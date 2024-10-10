@@ -19,6 +19,7 @@ namespace CrimsonStainedLands.Connections
         byte[] buffer = new byte[1024];
 
         public Encoding Encoding {get;set;}
+        public ConnectionManager Manager { get; }
         public WebServer Server { get; }
         public NetworkStream BaseStream {get;set;}
         
@@ -53,8 +54,9 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        public WebsocketConnection(WebServer server, Socket socket, X509Certificate2 cert) : base(socket)
+        public WebsocketConnection(ConnectionManager manager, WebServer server, Socket socket, X509Certificate2 cert) : base(socket)
         {
+            this.Manager = manager;
             this.Server = server;
             this.BaseStream = new System.Net.Sockets.NetworkStream(socket);
             this.Stream = new SslStream(BaseStream);
@@ -67,7 +69,7 @@ namespace CrimsonStainedLands.Connections
         {
             try 
             {
-                if (this.Stream.CanRead)
+                if (this.Stream != null && this.Stream.CanRead && (Socket.Poll(1, SelectMode.SelectRead) || Socket.Available > 0))
                 {
                     int read = this.Stream.Read(buffer);
 
@@ -122,6 +124,8 @@ namespace CrimsonStainedLands.Connections
             }
             catch(IOException ex)
             {
+                if (ex.Message.Contains("forcibly closed"))
+                    Cleanup();
                 return null;
             }
             catch
@@ -175,6 +179,7 @@ namespace CrimsonStainedLands.Connections
         public override void Cleanup()
         {
             this.Status = ConnectionStatus.Disconnected;
+            this.Manager.Connections.Remove(this);
             try
             {
                 this.Stream.Dispose();
@@ -332,15 +337,15 @@ namespace CrimsonStainedLands.Connections
 
         private async Task SendWebSocketMessageAsync(byte[] messageBytes)
         {
-            messageBytes = Encoding.UTF8.GetBytes(Encoding.UTF8.GetString(messageBytes));
+            //messageBytes = Encoding.UTF8.GetBytes(Encoding.UTF8.GetString(messageBytes));
             if (_useCompression)
             {
                 messageBytes = CompressMessage(messageBytes);
             }
 
             byte[] frame = new byte[10 + messageBytes.Length];
-            frame[0] = 0b10000001; // FIN bit set, opcode 1 (text frame)
-
+            //frame[0] = 0b10000001; // FIN bit set, opcode 1 (text frame)
+            frame[0] = 0b10000010; // FIN bit set, opcode 2 (binary frame)
             if (_useCompression)
             {
                 frame[0] |= 0b01000000; // Set RSV1 bit for compression

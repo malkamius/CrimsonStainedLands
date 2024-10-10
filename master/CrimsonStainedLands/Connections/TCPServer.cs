@@ -7,6 +7,7 @@ namespace CrimsonStainedLands.Connections
 {
     public class TCPServer
     {
+        public ConnectionManager Manager { get; }
         public IPAddress Address {get;}
         public int Port {get;}
 
@@ -16,8 +17,9 @@ namespace CrimsonStainedLands.Connections
 
         ConnectionManager.ConnectionConnected ConnectionConnectedCallback {get;set;}
 
-        public TCPServer(string address, int port, CancellationTokenSource cancellationTokenSource)
+        public TCPServer(ConnectionManager manager, string address, int port, CancellationTokenSource cancellationTokenSource)
         {
+            this.Manager = manager;
             Address = IPAddress.Parse(address);
             Port = port;
             this.cancellationTokenSource = cancellationTokenSource;
@@ -35,7 +37,7 @@ namespace CrimsonStainedLands.Connections
             {
                 var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
-                var connection = new TCPConnection(newClientSocket);
+                var connection = new TCPConnection(this.Manager, newClientSocket);
                 ConnectionConnectedCallback(connection);
             }
         }

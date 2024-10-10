@@ -15,6 +15,7 @@ namespace CrimsonStainedLands.Connections
         byte[] buffer = new byte[1024];
 
         public Encoding Encoding { get; set; }
+        public ConnectionManager Manager { get; }
         public SslServer Server { get; }
         public NetworkStream BaseStream { get; set; }
 
@@ -37,8 +38,9 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        public SslConnection(SslServer server, Socket socket, X509Certificate2 cert) : base(socket)
+        public SslConnection(ConnectionManager manager, SslServer server, Socket socket, X509Certificate2 cert) : base(socket)
         {
+            this.Manager = manager;
             this.Server = server;
             this.BaseStream = new System.Net.Sockets.NetworkStream(socket);
             this.Stream = new SslStream(BaseStream);
@@ -50,7 +52,7 @@ namespace CrimsonStainedLands.Connections
         {
             try
             {
-                if (this.Stream.CanRead)
+                if (this.Stream != null && this.Stream.CanRead && (Socket.Poll(1, SelectMode.SelectRead) || Socket.Available > 0))
                 {
 
                     int read = this.Stream.Read(buffer);
@@ -68,8 +70,10 @@ namespace CrimsonStainedLands.Connections
                 else
                     return null;
             }
-            catch (IOException)
+            catch (IOException ex)
             {
+                if (ex.Message.Contains("forcibly closed"))
+                    Cleanup();
                 return null;
             }
             catch
@@ -118,6 +122,7 @@ namespace CrimsonStainedLands.Connections
         public override void Cleanup()
         {
             this.Status = ConnectionStatus.Disconnected;
+            this.Manager.Connections.Remove(this);
             try
             {
                 this.Stream.Dispose();

@@ -93,9 +93,9 @@ public class ConnectionManager
     public async Task RunAsync()
     {
         var cert = LoadCertificate();
-        var tcpServer = new TCPServer("0.0.0.0", Settings.Port, cancellationTokenSource);
-        var sslServer = new SslServer("0.0.0.0", Settings.SSLPort, cert, cancellationTokenSource);
-        var webServer = new WebServer("0.0.0.0", Settings.SSLPort + 2, cert, cancellationTokenSource);
+        var tcpServer = new TCPServer(this, "0.0.0.0", Settings.Port, cancellationTokenSource);
+        var sslServer = new SslServer(this, "0.0.0.0", Settings.SSLPort, cert, cancellationTokenSource);
+        var webServer = new WebServer(this, "0.0.0.0", Settings.SSLPort + 2, cert, cancellationTokenSource);
         
         var services = new List<Task>() {
             tcpServer.Start(OnConnectionConnected),
