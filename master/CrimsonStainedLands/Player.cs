@@ -1157,8 +1157,15 @@ namespace CrimsonStainedLands
                 element.Add(new XElement("TotalPlayTime", TotalPlayTime.ToString()));
                 element.Add(new XElement("password", password));
                 element.Add(new XElement("salt", salt));
-                element.Save(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
+                var playerpath = System.IO.Path.Join(Settings.PlayersPath, Name + ".xml");
+                var temppath = System.IO.Path.Join(Settings.PlayersPath, "temp");
+                element.Save(temppath);
 
+                if (System.IO.File.Exists(playerpath))
+                    System.IO.File.Move(playerpath, playerpath + ".backup", true);
+                System.IO.File.Move(temppath, playerpath, true);
+                //element.Save(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
+                
             }
             //File.WriteAllText("data\\" + name + ".chr", "Password " + password + "\n\r" + "Race " + race.Name + "\n\r" + "Alignment " + alignment.ToString() + "\n\r" + "Ethos " + ethos.ToString() + "\n\r" + (inRoom != null ? "Room " + inRoom.vnum + "\n\r" : "") + "Guild " + guild + "\n\r");
         }
