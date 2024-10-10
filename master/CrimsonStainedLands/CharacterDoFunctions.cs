@@ -1214,7 +1214,7 @@ namespace CrimsonStainedLands
                     return;
                 }
                 SkillSpell skill;
-                skill = (from tempskill in SkillSpell.Skills
+                skill = (from tempskill in SkillSpell.Skills orderby tempskill.Key
                          where
                            (tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Skill) ||
                            tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.Spell) ||
@@ -1223,7 +1223,7 @@ namespace CrimsonStainedLands
                            (tempskill.Value.SkillTypes.ISSET(SkillSpellTypes.InForm) && tempskill.Value.spellFun != null))
                          && (ch.Level >= ch.GetLevelSkillLearnedAtOutOfForm(tempskill.Value) && ch.GetSkillPercentageOutOfForm(tempskill.Value) >= 1)
                          && tempskill.Value.name.StringPrefix(arguments)
-                         orderby ch.GetLevelSkillLearnedAtOutOfForm(tempskill.Value) // skill.Value.skillLevel.ContainsKey(ch.Guild.name) ? skill.Value.skillLevel[ch.Guild.name] : 60
+                         //orderby ch.GetLevelSkillLearnedAtOutOfForm(tempskill.Value) // skill.Value.skillLevel.ContainsKey(ch.Guild.name) ? skill.Value.skillLevel[ch.Guild.name] : 60
                          select tempskill.Value).FirstOrDefault();
                 //skill = SkillSpell.SkillLookup(arguments);
                 Character practiceMob = null;
