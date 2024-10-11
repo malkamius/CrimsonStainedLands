@@ -1,3 +1,4 @@
+using CrimsonStainedLands.Web;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -27,9 +28,9 @@ namespace CrimsonStainedLands.Connections
 
         X509Certificate2 certificate;
 
-        private ConcurrentList<WebsocketConnection> connections = new ConcurrentList<WebsocketConnection>();
+        public ConcurrentList<WebsocketConnection> connections = new ConcurrentList<WebsocketConnection>();
 
-        public string WebRoot {get;set;} = "I:\\web";
+        public string WebRoot {get;set;} = "Web";
 
         public WebServer(ConnectionManager manager, string address, int port, X509Certificate2 certificate, CancellationTokenSource cancellationTokenSource)
         {
@@ -84,6 +85,21 @@ namespace CrimsonStainedLands.Connections
             return request.Contains("Connection: Upgrade", StringComparison.OrdinalIgnoreCase) &&
                 request.Contains("Upgrade: websocket", StringComparison.OrdinalIgnoreCase);
         }
+
+        private string GetOriginFromRequest(string request)
+        {
+            var lines = request.Split('\n');
+            foreach (var line in lines)
+            {
+                if (line.StartsWith("Origin: ", StringComparison.OrdinalIgnoreCase))
+                {
+                    return line.Substring("Origin: ".Length).Trim();
+                }
+            }
+            return string.Empty;
+        }
+
+
         private async Task handle_connection(WebsocketConnection connection)
         {
             if(connection.Status == BaseConnection.ConnectionStatus.Negotiating) {
@@ -105,7 +121,7 @@ namespace CrimsonStainedLands.Connections
                         var requestLine = requestLines[0].Split(' ');
                         var method = requestLine[0];
                         var url = requestLine[1];
-
+                        string origin = GetOriginFromRequest(request);
                         if (IsWebSocketUpgradeRequest(request))
                         {
                             connections.Remove(connection);
@@ -113,40 +129,64 @@ namespace CrimsonStainedLands.Connections
                         }
                         else
                         {
-                            await ServeContentAsync(connection, url);
+                            await ServeContentAsync(connection, url, origin);
                         }
                     }
                 }
             }
         }
 
-        private async Task ServeContentAsync(WebsocketConnection connection, string url)
+        private async Task ServeContentAsync(WebsocketConnection connection, string url, string origin)
         {
-            if(url.StartsWith("/js/") && url.Length > 4 && String.IsNullOrEmpty(Path.GetExtension(url)))
-                url += ".js";
-
-            string filePath = Path.Combine(WebRoot, url.TrimStart('/'));
-            
-            if (string.IsNullOrEmpty(url.Trim('/')))
+            try
             {
-                filePath = Path.Combine(filePath, "client.html");
+                if (url.StartsWith("/js/") && url.Length > 4 && String.IsNullOrEmpty(Path.GetExtension(url)))
+                    url += ".js";
+
+                string filePath = Path.Combine(WebRoot, url.TrimStart('/'));
+
+                if (string.IsNullOrEmpty(url.Trim('/')))
+                {
+                    filePath = Path.Combine(filePath, "client.html");
+                }
+
+                if (url == "/who")
+                {
+                    try
+                    { 
+                    await SendResponse(connection, 200, "OK", "application/json", new WhoListController().GetContent(), origin);
+                    }
+                    catch (Exception ex)
+                    {
+                        await SendResponse(connection, 500, "Server Error", "text/html", "An error occurred processing the request.", origin);
+                    }
+
+                }
+                else if (File.Exists(filePath))
+                {
+                    try
+                    {
+                        string content = File.ReadAllText(filePath);
+                        string contentType = GetContentType(filePath);
+
+                        // Apply simple templating
+                        content = ApplyTemplate(content);
+
+                        await SendResponse(connection, 200, "OK", contentType, content, origin);
+                    }
+                    catch (Exception ex)
+                    {
+                        await SendResponse(connection, 500, "Server Error", "text/html", "An error occurred processing the request.", origin);
+                    }
+                }
+                else
+                {
+                    await SendResponse(connection, 404, "Not Found", "text/html", "<h1>404 - Page Not Found</h1>", origin);
+                }
             }
-
-            
-            
-            if (File.Exists(filePath))
+            catch (Exception ex)
             {
-                string content = File.ReadAllText(filePath);
-                string contentType = GetContentType(filePath);
-
-                // Apply simple templating
-                content = ApplyTemplate(content);
-
-                await SendResponse(connection, 200, "OK", contentType, content);
-            }
-            else
-            {
-                await SendResponse(connection, 404, "Not Found", "text/html", "<h1>404 - Page Not Found</h1>");
+                connection.Cleanup();
             }
         }
 
@@ -159,14 +199,27 @@ namespace CrimsonStainedLands.Connections
             return content;
         }
 
-        private async Task SendResponse(WebsocketConnection connection, int statusCode, string statusText, string contentType, string content)
+        private async Task SendResponse(WebsocketConnection connection, int statusCode, string statusText, string contentType, string content, string origin)
         {
             if(connection.Status != BaseConnection.ConnectionStatus.Disconnected) {
                 byte[] contentBytes = Encoding.UTF8.GetBytes(content);
+                string[] allowedOrigins = new string[]
+                {
+                    "https://crimsonstainedlands.net",
+                    "https://kbs-cloud.com",
+                    "https://games.mywire.org"
+                };
+
+                string accessControlAllowOrigin = allowedOrigins.Contains(origin) ? origin : allowedOrigins[0];
+
                 string response = $"HTTP/1.1 {statusCode} {statusText}\r\n" +
                                 $"Content-Type: {contentType}\r\n" +
                                 $"Content-Length: {contentBytes.Length}\r\n" +
-                                "Connection: close\r\n\r\n";
+                                $"Access-Control-Allow-Origin: {accessControlAllowOrigin}\r\n" +
+                                "Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n" +
+                                "Access-Control-Allow-Headers: Content-Type\r\n" +
+                                "Connection: close\r\n" +
+                                "\r\n";
 
                 byte[] responseBytes = Encoding.ASCII.GetBytes(response);
                 await connection.Write(responseBytes);

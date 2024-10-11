@@ -79,35 +79,43 @@ namespace CrimsonStainedLands.Connections
                         else
                         {
                             messageBuffer.AddRange(buffer.Take(read));
+                            
                             var messages = new StringBuilder();
-                            while (messageBuffer.Count > 0)
+                            using (var stream = new MemoryStream())
                             {
-                                var (message, opcode, consumed) = DecodeWebSocketFrame(messageBuffer.ToArray());
+                                while (messageBuffer.Count > 0)
+                                {
+                                    var (binarydata, message, opcode, consumed) = DecodeWebSocketFrame(messageBuffer.ToArray());
 
-                                if (consumed == 0) break; // Not enough data for a complete frame
+                                    if (consumed == 0) break; // Not enough data for a complete frame
 
-                                messageBuffer.RemoveRange(0, consumed);
+                                    messageBuffer.RemoveRange(0, consumed);
 
-                                if (opcode == 8) // Close frame
-                                {
-                                    Console.WriteLine("Received close frame");
-                                    await SendCloseFrameAsync();
-                                    Cleanup();
+                                    if (opcode == 8) // Close frame
+                                    {
+                                        Console.WriteLine("Received close frame");
+                                        await SendCloseFrameAsync();
+                                        Cleanup();
+                                    }
+                                    else if (opcode == 9) // Ping frame
+                                    {
+                                        await SendPongFrameAsync(message);
+                                    }
+                                    else if (opcode == 10) // Pong frame
+                                    {
+                                        Console.WriteLine("Received pong");
+                                    }
+                                    else if (binarydata.Length > 0)
+                                    {
+                                        messages.Append(message);
+                                        stream.Write(binarydata);
+                                    }
                                 }
-                                else if (opcode == 9) // Ping frame
-                                {
-                                    await SendPongFrameAsync(message);
-                                }
-                                else if (opcode == 10) // Pong frame
-                                {
-                                    Console.WriteLine("Received pong");
-                                }
-                                else if (message.Length > 0)
-                                {
-                                    messages.Append(message);
-                                }
+                                return stream.ToArray();
+                                
+                                //return Encoding.UTF8.GetBytes(messages.ToString());
+
                             }
-                            return Encoding.UTF8.GetBytes(messages.ToString());
                         }
                     }
                     else
@@ -180,6 +188,7 @@ namespace CrimsonStainedLands.Connections
         {
             this.Status = ConnectionStatus.Disconnected;
             this.Manager.Connections.Remove(this);
+            this.Server.connections.Remove(this);
             try
             {
                 this.Stream.Dispose();
@@ -257,9 +266,9 @@ namespace CrimsonStainedLands.Connections
             _decompressor = new DeflateStream(decompressorStream, CompressionMode.Decompress, true);
         }
 
-        private (string message, int opcode, int consumed) DecodeWebSocketFrame(byte[] buffer)
+        private (byte[] binarydata, string message, int opcode, int consumed) DecodeWebSocketFrame(byte[] buffer)
         {
-            if (buffer.Length < 2) return (string.Empty, 0, 0);
+            if (buffer.Length < 2) return (new byte[] { }, string.Empty, 0, 0);
 
             bool fin = (buffer[0] & 0b10000000) != 0;
             bool rsv1 = (buffer[0] & 0b01000000) != 0; // Compression flag
@@ -272,21 +281,21 @@ namespace CrimsonStainedLands.Connections
 
             if (msglen == 126)
             {
-                if (buffer.Length < 4) return (string.Empty, 0, 0);
+                if (buffer.Length < 4) return (new byte[] { }, string.Empty, 0, 0);
                 msglen = BitConverter.ToUInt16(new byte[] { buffer[3], buffer[2] }, 0);
                 offset = 4;
             }
             else if (msglen == 127)
             {
-                if (buffer.Length < 10) return (string.Empty, 0, 0);
+                if (buffer.Length < 10) return (new byte[] { }, string.Empty, 0, 0);
                 msglen = BitConverter.ToInt64(new byte[] { buffer[9], buffer[8], buffer[7], buffer[6], buffer[5], buffer[4], buffer[3], buffer[2] }, 0);
                 offset = 10;
             }
 
             Console.WriteLine($"Message length: {msglen}, Data offset: {offset}");
 
-            if (mask && buffer.Length < offset + 4) return (string.Empty, 0, 0);
-            if (buffer.Length < offset + msglen) return (string.Empty, 0, 0);
+            if (mask && buffer.Length < offset + 4) return (new byte[] { }, string.Empty, 0, 0);
+            if (buffer.Length < offset + msglen) return (new byte[] { }, string.Empty, 0, 0);
 
             byte[] decoded = new byte[msglen];
             if (mask)
@@ -308,7 +317,7 @@ namespace CrimsonStainedLands.Connections
             }
 
             int totalConsumed = offset + (int)msglen;
-            return (Encoding.UTF8.GetString(decoded), opcode, totalConsumed);
+            return (decoded, Encoding.UTF8.GetString(decoded), opcode, totalConsumed);
         }
 
         private async Task SendCloseFrameAsync()

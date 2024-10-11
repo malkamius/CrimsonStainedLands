@@ -116,6 +116,7 @@ namespace CrimsonStainedLands
         internal byte[] receivebuffer;
         public byte[] ReceiveBufferBacklog;
         public DateTime LastActivity { get; set; } = DateTime.Now;
+        public DateTime LoginTime { get; private set; }
 
         static Player()
         {
@@ -922,6 +923,10 @@ namespace CrimsonStainedLands
                 inanimate = null;
                 //Act("$n regains their animation.", null, null, null, ActType.ToRoom);
             }
+            else
+            {
+                this.LoginTime = DateTime.Now;
+            }
 
             //DoLook(this, "auto");
             if (!reconnect)
@@ -1019,7 +1024,7 @@ namespace CrimsonStainedLands
             {
                 LastSaveTime = DateTime.Now;
                 var group = SkillSpellGroup.Lookup(Guild.guildGroup);
-
+                this.LoginTime = DateTime.Now;
                 foreach (var classSkill in SkillSpell.Skills)
                 {
                     if (classSkill.Value.skillLevel.ContainsKey(Guild.name)) // && classSkill.Value.skillLevel[Guild.name] == 1)

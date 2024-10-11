@@ -292,6 +292,15 @@ namespace CrimsonStainedLands
             using (new LoadTimer("LoadAreas loaded {0} areas", () => AreaData.Areas.Count))
                 AreaData.LoadAreas();
 
+            using (new LoadTimer("Updated {0} helps to database", () => HelpData.Helps.Count))
+            {
+                var db = new Data.Database();
+                foreach (var help in HelpData.Helps)
+                {
+                    db.AddHelp(help);
+                }
+            }
+
             using (new LoadTimer("LoadSocials loaded {0} socials", () => Social.Socials.Count))
                 Social.LoadSocials();
 

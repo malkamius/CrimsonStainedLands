@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web MUD Client</title>
+        <style>
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            #output {
+                flex-grow: 1;
+                overflow-y: auto;
+                background-color: #000;
+                color: #0f0;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-family: monospace;
+            }
+            #input {
+                width: 100%;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output"></div>
+        <input type="text" id="input" placeholder="Enter command..." value="/connect">
+        <script lang="javascript">
+            document.getElementById("input").select();
+        </script>
+        <script type="module" src="js/app"></script>
+    </body>
+</html>

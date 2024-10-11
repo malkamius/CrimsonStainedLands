@@ -1363,7 +1363,15 @@ namespace CrimsonStainedLands
             string arg = "";
 
             // Extract the first argument from the command arguments
-            arguments = arguments.OneArgument(ref arg);
+            if (!arguments.StartsWith("'"))
+            {
+                arguments = arguments.OneArgument(ref arg);
+            }
+            else
+            {
+                arguments = "say " + arguments.Substring(1, arguments.Length - 1);
+                arguments = arguments.OneArgument(ref arg);
+            }
 
             if (!string.IsNullOrEmpty(arg))
             {
