@@ -1363,6 +1363,17 @@ namespace CrimsonStainedLands
             string arg = "";
 
             // Extract the first argument from the command arguments
+            
+
+            if(this is Player player)
+            {
+                arguments.OneArgument(ref arg);
+                if (player.Aliases.TryGetValue(arg.ToLower(), out var newcommand))
+                {
+                    arguments = newcommand + (arguments.Length > arg.Length? arguments.Substring(arg.Length) : "");
+                }
+            }
+
             if (!arguments.StartsWith("'"))
             {
                 arguments = arguments.OneArgument(ref arg);
@@ -1445,7 +1456,7 @@ namespace CrimsonStainedLands
             else
             {
                 // Send an empty line if no arguments are provided
-                send(" ");
+                send("");
             }
         }
 

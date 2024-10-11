@@ -1316,6 +1316,64 @@ namespace CrimsonStainedLands
                 }
                 ch.send("Flag not found.\n\r");
             }
+        } // end DoToggle
+
+        public static void DoAlias(Character ch, string arguments)
+        {
+            arguments = arguments.OneArgumentOut(out var aliascommand);
+            arguments = arguments.OneArgumentOut(out var match);
+
+            match = match.ToLower();
+
+            if (!(ch is Player player))
+            {
+                ch.send("Only players can have aliases.\r\n");
+            }
+            else if (aliascommand.ISEMPTY())
+            {
+                ch.send("Syntax: alias [add|remove|list] [match] [command].\r\n");
+            }
+            else if("list".StringPrefix(aliascommand))
+            {
+                if (player.Aliases.Count == 0)
+                {
+                    ch.send("You currently have no aliases.\r\n");
+                }
+                else
+                {
+                    ch.send("Current Aliases:\r\n");
+                    ch.send("{0}\r\n", new string('-', 40));
+                    ch.send("{0,-20} {1,-20}\r\n", "Match", "Command");
+                    foreach (var alias in player.Aliases)
+                    {
+                        ch.send("{0,-20} {1,-20}\r\n", alias.Key, alias.Value);
+                    }
+                    ch.send("{0}\r\n", new string('-', 40));
+                }
+            }
+            else if (match.ISEMPTY())
+            {
+                ch.send("Syntax: alias [add|remove|list] [match] [command].\r\n");
+            }
+            else if ("remove".StringPrefix(aliascommand))
+            {
+                player.Aliases.Remove(match);
+                ch.send("Removed alias '{0}'\r\n", match);
+            }
+            else if (arguments.ISEMPTY())
+            {
+                ch.send("Syntax: alias [add|remove|list] [match] [command].\r\n");
+            }
+            else if("add".StringPrefix(aliascommand))
+            {
+                player.Aliases[match] = arguments;
+                ch.send("'{0}' is now an alias for '{1}'\r\n", match, arguments);
+            }
+            else
+            {
+                ch.send("Syntax: alias [add|remove|list] [match] [command].\r\n");
+            }
+            
         }
     } // end class
 } // end namespace

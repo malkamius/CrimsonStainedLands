@@ -20,6 +20,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Diagnostics.Eventing.Reader;
 using CrimsonStainedLands.World;
 using CrimsonStainedLands.Connections;
+using System.Xml.XPath;
 
 namespace CrimsonStainedLands
 {
@@ -117,6 +118,7 @@ namespace CrimsonStainedLands
         public byte[] ReceiveBufferBacklog;
         public DateTime LastActivity { get; set; } = DateTime.Now;
         public DateTime LoginTime { get; private set; }
+        public Dictionary<string, string> Aliases { get; private set; } = new Dictionary<string, string>();
 
         static Player()
         {
@@ -1166,6 +1168,7 @@ namespace CrimsonStainedLands
                 element.Add(new XElement("TotalPlayTime", TotalPlayTime.ToString()));
                 element.Add(new XElement("password", password));
                 element.Add(new XElement("salt", salt));
+                element.Add(new XElement("Aliases", from alias in Aliases select new XElement("Alias", new XAttribute("OldCommand", alias.Key), new XAttribute("NewCommand", alias.Value))));
                 var playerpath = System.IO.Path.Join(Settings.PlayersPath, Name + ".xml");
                 var temppath = System.IO.Path.Join(Settings.PlayersPath, "temp");
                 element.Save(temppath);
@@ -1248,7 +1251,15 @@ namespace CrimsonStainedLands
                     Starving = element.GetElementValueInt("starving", 0);
                     Wimpy = element.GetElementValueInt("Wimpy", 0);
                     WeaponSpecializations = element.GetElementValueInt("WeaponSpecializations");
+                    var aliases = element.XPathSelectElements("/Aliases/Alias");
+                    foreach (var alias in aliases)
+                    {
+                        var old = alias.GetAttributeValue("OldCommand");
+                        var newcommand = alias.GetAttributeValue("NewCommand");
 
+                        if (!old.ISEMPTY() && !newcommand.ISEMPTY())
+                            Aliases.Add(old, newcommand);
+                    }
                     var totalPlayTime = element.GetElementValue("TotalPlayTime");
                     TimeSpan.TryParse(totalPlayTime, out TotalPlayTime);
 

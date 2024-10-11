@@ -70,16 +70,22 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "say", Action = DoActCommunication.DoSay, Info = "Say something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "sayto", Action = DoActCommunication.DoSayTo, Info = "Say something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "save", Action = CharacterDoFunctions.DoSave, Info = "Save character information.", MinimumPosition = Positions.Dead, NPCCommand = false });
+
             Commands.Add(new Command { Name = "sing", Action = Songs.DoSing, Info = "Sing a song.", MinimumPosition = Positions.Resting, NPCCommand = false });
+            Commands.Add(new Command { Name = "stand", Action = CharacterDoFunctions.DoStand, Info = "Stand up from a resting, sitting or sleeping position.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "rest", Action = CharacterDoFunctions.DoRest, Info = "Begin resting. Regeneration should be better than that of standing.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "sit", Action = CharacterDoFunctions.DoSit, Info = "Sit down.", MinimumPosition = Positions.Sleeping });
+            Commands.Add(new Command { Name = "sleep", Action = CharacterDoFunctions.DoSleep, Info = "Go to sleep. Regeneration should be better than that of resting.", MinimumPosition = Positions.Sleeping });
             
             Commands.Add(new Command { Name = "reply", Action = DoActCommunication.DoReply, Info = "Reply to a tell.", MinimumPosition = Positions.Resting });
-
             Commands.Add(new Command { Name = "whisper", Action = DoActCommunication.DoWhisper, Info = "Whisper something to others in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "whisperto", Action = DoActCommunication.DoWhisperTo, Info = "Whisper something to the person in your room.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "tell", Action = DoActCommunication.DoTell, Info = "Tell something to a person.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "yell", Action = DoActCommunication.DoYell, Info = "Yell loudly in the area.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "pray", Action = DoActCommunication.DoPray, Info = "Pray something to the gods.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "newbie", Action = DoActCommunication.DoNewbie, Info = "Ask something on the newbie channel.", MinimumPosition = Positions.Dead, NPCCommand = false });
+
+            Commands.Add(new Command { Name = "alias", Action = DoActInfo.DoAlias, Info = "Set an alias for a command", MinimumPosition= Positions.Dead, NPCCommand = false });
 
             Commands.Add(new Command { Name = "quit", Action = CharacterDoFunctions.DoQuit, Info = "Exit the game.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "where", Action = CharacterDoFunctions.DoWhere, Info = "Display list of nearby players.", MinimumPosition = Positions.Resting });
@@ -131,10 +137,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "gag", Action = Combat.DoGag, Info = "Stuff a gag into someones mouth if they are sapped or sleeping, preventing them from casting.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "bindhands", Action = Combat.DoBindHands, Info = "Bind someones hands if they are sapped or sleeping, preventing them from holding anything.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "bindlegs", Action = Combat.DoBindLegs, Info = "Bind someones legs if they are sapped or sleeping, preventing them from moving.", MinimumPosition = Positions.Fighting });
-            Commands.Add(new Command { Name = "stand", Action = CharacterDoFunctions.DoStand, Info = "Stand up from a resting, sitting or sleeping position.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "rest", Action = CharacterDoFunctions.DoRest, Info = "Begin resting. Regeneration should be better than that of standing.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "sit", Action = CharacterDoFunctions.DoSit, Info = "Sit down.", MinimumPosition = Positions.Sleeping });
-            Commands.Add(new Command { Name = "sleep", Action = CharacterDoFunctions.DoSleep, Info = "Go to sleep. Regeneration should be better than that of resting.", MinimumPosition = Positions.Sleeping });
+            
             Commands.Add(new Command { Name = "score", Action = DoActInfo.DoScore, Info = "Display character details.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "scan", Action = DoActInfo.DoScan, Info = "Scan the exits for monsters.", MinimumPosition = Positions.Resting });
             Commands.Add(new Command { Name = "wake", Action = CharacterDoFunctions.DoWake, Info = "Wake and stand up.", MinimumPosition = Positions.Sleeping });
