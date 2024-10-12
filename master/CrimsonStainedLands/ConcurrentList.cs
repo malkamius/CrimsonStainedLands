@@ -30,6 +30,19 @@ namespace CrimsonStainedLands
             }
         }
 
+        public void Insert(int index, T item)
+        {
+            _lock.EnterWriteLock();
+            try
+            {
+                _list.Insert(index, item);
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
+            }
+        }
+
         public void Clear()
         {
             _lock.EnterWriteLock();

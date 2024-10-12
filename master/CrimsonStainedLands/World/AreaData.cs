@@ -244,10 +244,10 @@ namespace CrimsonStainedLands.World
                 VNumStart = areaData.GetElementValueInt("vnumStart");
                 VNumEnd = areaData.GetElementValueInt("vnumEnd");
 
-                info = areaData.GetElementValue("Info");
+                info = areaData.GetElementValue("Info").EscapeColor();
                 Builders = areaData.GetElementValue("Builders");
                 Security = areaData.GetElementValueInt("Security");
-                Credits = areaData.GetElementValue("Credits");
+                Credits = areaData.GetElementValue("Credits").EscapeColor();
                 OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
                 Continent = areaData.GetElementValue("Continent", Continent);
 

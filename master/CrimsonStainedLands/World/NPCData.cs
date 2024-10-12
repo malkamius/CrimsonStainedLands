@@ -11,7 +11,7 @@ namespace CrimsonStainedLands.World
 
 public class NPCData : Character, IDisposable
     {
-        public static List<NPCData> NPCs = new List<NPCData>();
+        public static ConcurrentList<NPCData> NPCs = new ConcurrentList<NPCData>();
 
         public int vnum;
         public NPCTemplateData template;

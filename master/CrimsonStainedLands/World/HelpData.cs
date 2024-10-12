@@ -45,6 +45,7 @@ namespace CrimsonStainedLands
 
             area.Helps.Add(this);
             Helps.Add(this);
+            
         }
 
         public XElement Element => new XElement("Help",

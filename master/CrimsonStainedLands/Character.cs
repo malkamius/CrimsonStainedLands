@@ -2393,7 +2393,7 @@ namespace CrimsonStainedLands
             return null;
         }
 
-        public ItemData GetItemList(string arguments, List<ItemData> items, ref int count)
+        public ItemData GetItemList(string arguments, IEnumerable<ItemData> items, ref int count)
         {
             if (arguments.ISEMPTY()) return null;
             int num = arguments.number_argument(ref arguments);

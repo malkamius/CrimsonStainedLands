@@ -208,7 +208,7 @@ namespace CrimsonStainedLands.World
 
     public class ItemData : IDisposable
     {
-        public static List<ItemData> Items = new List<ItemData>();
+        public static ConcurrentList<ItemData> Items = new ConcurrentList<ItemData>();
         public static bool CorpsesAndPitsLoaded = false;
         public AreaData Area;
         public int Vnum;

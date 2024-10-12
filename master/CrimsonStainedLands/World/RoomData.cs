@@ -149,8 +149,8 @@ namespace CrimsonStainedLands.World
         public ExitData[] OriginalExits = new ExitData[6];
         public ExitData[] Exits { get { return OriginalExits; } set { OriginalExits = value; exits = value; } }
 
-        public List<Character> Characters = new List<Character>();
-        public List<ItemData> items = new List<ItemData>();
+        public ConcurrentList<Character> Characters = new ConcurrentList<Character>();
+        public ConcurrentList<ItemData> items = new ConcurrentList<ItemData>();
         public List<RoomAffectData> affects = new List<RoomAffectData>();
         public HashSet<RoomFlags> flags = new HashSet<RoomFlags>();
         public SectorTypes sector;
