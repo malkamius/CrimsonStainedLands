@@ -31,8 +31,8 @@ public abstract class BaseConnection
 
     public EndPoint RemoteEndPoint { get; set; }
 
-    abstract public Task<byte[]> Read();
-    abstract public Task<int> Write(byte[] data);
+    abstract public byte[] Read();
+    abstract public int Write(byte[] data);
     
     abstract public ConnectionStatus Status { get; set; }
 

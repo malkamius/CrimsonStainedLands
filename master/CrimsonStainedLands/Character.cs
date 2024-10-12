@@ -96,7 +96,8 @@ namespace CrimsonStainedLands
         public int MaxMovementPoints;
         public int ManaPoints;
         public int MaxManaPoints;
-        public int Level;
+        private int _Level;
+        public int Level { get { return _Level; } set { _Level = value; if (Trust < _Level) Trust = _Level; } }
         public int Xp;
         public int XpTotal;
 
@@ -153,6 +154,8 @@ namespace CrimsonStainedLands
         public Character SnoopedBy = null;
         public Character SwitchedBy = null;
         public Character Switched = null;
+
+        public int Trust { get; set; }
 
 
         public Positions Position
@@ -214,7 +217,7 @@ namespace CrimsonStainedLands
         public int Carry => Inventory.Count + (from i in Equipment.Values where i != null select 1).Count();
 
         
-        public bool IsImmortal => Level > Game.LEVEL_HERO && !IsNPC;
+        public bool IsImmortal => Trust > Game.LEVEL_HERO && !IsNPC;
         public bool IsAwake => Position > Positions.Sleeping;
 
         public bool IS_OUTSIDE => Room != null && !Room.flags.ISSET(RoomFlags.Indoors) && Room.sector != SectorTypes.Inside;
@@ -1423,7 +1426,7 @@ namespace CrimsonStainedLands
                             }
                             return;
                         }
-                        else if (Level < command.MinimumLevel)
+                        else if (Trust < command.MinimumLevel)
                         {
                             // Continue to the next command if the character's level is below the minimum level required by the command
                             continue;
@@ -1456,7 +1459,7 @@ namespace CrimsonStainedLands
             else
             {
                 // Send an empty line if no arguments are provided
-                send("");
+                send(" ");
             }
         }
 
@@ -3094,6 +3097,7 @@ namespace CrimsonStainedLands
                         !NightShortDescription.ISEMPTY() ? new XElement("NightShortDescription", NightShortDescription) : null,
                         new XElement("Sex", _Sex),
                         new XElement("level", Level),
+                        new XElement("trust", Trust),
                         new XElement("hitpoints", HitPoints),
                         new XElement("maxhitpoints", MaxHitPoints),
                         new XElement("manapoints", ManaPoints),

@@ -1027,12 +1027,12 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            if (!int.TryParse(args.Trim(), out ch.EditingNPCTemplate.Level))
+            if (!int.TryParse(args.Trim(), out var lvl))
             {
                 ch.send("Syntax: edit npc [vnum] level [1-60]\n\r");
                 return;
             }
-
+            ch.EditingNPCTemplate.Level = lvl;
             ch.EditingNPCTemplate.Area.saved = false;
         }
 

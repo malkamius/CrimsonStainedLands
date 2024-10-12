@@ -48,7 +48,7 @@ namespace CrimsonStainedLands.Connections
             this.Stream.BeginAuthenticateAsServer(cert, Authenticated, this);
         }
 
-        public override async Task<byte[]> Read()
+        public override byte[] Read()
         {
             try
             {
@@ -86,7 +86,7 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        public override async Task<int> Write(byte[] data)
+        public override int Write(byte[] data)
         {
             try
             {
@@ -95,12 +95,12 @@ namespace CrimsonStainedLands.Connections
                 {
                     if (data[0] == (byte)TelnetNegotiator.Options.InterpretAsCommand)
                     {
-                        await this.Stream.WriteAsync(data);
+                        this.Stream.Write(data);
                         return data.Length;
                     }
                     else
                     {
-                        await this.Stream.WriteAsync(data);
+                        this.Stream.Write(data);
                         return data.Length;
                     }
                 }

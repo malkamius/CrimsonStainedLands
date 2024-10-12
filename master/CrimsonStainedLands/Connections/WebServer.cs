@@ -103,7 +103,7 @@ namespace CrimsonStainedLands.Connections
         private async Task handle_connection(WebsocketConnection connection)
         {
             if(connection.Status == BaseConnection.ConnectionStatus.Negotiating) {
-                var data = await connection.Read();
+                var data = connection.Read();
 
                 if (data != null)
                 {
@@ -129,14 +129,14 @@ namespace CrimsonStainedLands.Connections
                         }
                         else
                         {
-                            await ServeContentAsync(connection, url, origin);
+                            ServeContentAsync(connection, url, origin);
                         }
                     }
                 }
             }
         }
 
-        private async Task ServeContentAsync(WebsocketConnection connection, string url, string origin)
+        private void ServeContentAsync(WebsocketConnection connection, string url, string origin)
         {
             try
             {
@@ -154,11 +154,12 @@ namespace CrimsonStainedLands.Connections
                 {
                     try
                     { 
-                    await SendResponse(connection, 200, "OK", "application/json", new WhoListController().GetContent(), origin);
+                        SendResponse(connection, 200, "OK", "application/json", new WhoListController().GetContent(), origin);
                     }
                     catch (Exception ex)
                     {
-                        await SendResponse(connection, 500, "Server Error", "text/html", "An error occurred processing the request.", origin);
+                        Game.bug("Error sending response. {0}", ex.Message);
+                        SendResponse(connection, 500, "Server Error", "text/html", "An error occurred processing the request.", origin);
                     }
 
                 }
@@ -172,20 +173,22 @@ namespace CrimsonStainedLands.Connections
                         // Apply simple templating
                         content = ApplyTemplate(content);
 
-                        await SendResponse(connection, 200, "OK", contentType, content, origin);
+                        SendResponse(connection, 200, "OK", contentType, content, origin);
                     }
                     catch (Exception ex)
                     {
-                        await SendResponse(connection, 500, "Server Error", "text/html", "An error occurred processing the request.", origin);
+                        Game.bug("Error sending response. {0}", ex.Message);
+                        SendResponse(connection, 500, "Server Error", "text/html", "An error occurred processing the request.", origin);
                     }
                 }
                 else
                 {
-                    await SendResponse(connection, 404, "Not Found", "text/html", "<h1>404 - Page Not Found</h1>", origin);
+                    SendResponse(connection, 404, "Not Found", "text/html", "<h1>404 - Page Not Found</h1>", origin);
                 }
             }
             catch (Exception ex)
             {
+                Game.bug("Error serving content. {0}", ex.Message);
                 connection.Cleanup();
             }
         }
@@ -199,7 +202,7 @@ namespace CrimsonStainedLands.Connections
             return content;
         }
 
-        private async Task SendResponse(WebsocketConnection connection, int statusCode, string statusText, string contentType, string content, string origin)
+        private void SendResponse(WebsocketConnection connection, int statusCode, string statusText, string contentType, string content, string origin)
         {
             if(connection.Status != BaseConnection.ConnectionStatus.Disconnected) {
                 byte[] contentBytes = Encoding.UTF8.GetBytes(content);
@@ -222,8 +225,8 @@ namespace CrimsonStainedLands.Connections
                                 "\r\n";
 
                 byte[] responseBytes = Encoding.ASCII.GetBytes(response);
-                await connection.Write(responseBytes);
-                await connection.Write(contentBytes);
+                connection.Write(responseBytes);
+                connection.Write(contentBytes);
                 connections.Remove(connection);
                 connection.Stream.Flush();
                 connection.Stream.Close();

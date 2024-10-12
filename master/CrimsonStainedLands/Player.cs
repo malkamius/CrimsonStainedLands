@@ -389,12 +389,12 @@ namespace CrimsonStainedLands
             }
         }
 
-        public override async void SendRaw(byte[] data, bool sendimmediate = true)
+        public override void SendRaw(byte[] data, bool sendimmediate = true)
         {
             base.SendRaw(data, sendimmediate);
             if (connection != null)
             {
-                await connection.Write(data);
+                connection.Write(data);
             }
         }
         
@@ -1206,6 +1206,7 @@ namespace CrimsonStainedLands
                     var inRoom = element.HasElement("room") ? element.GetElement("room").Value : "3760";
                     int.TryParse(inRoom, out this.roomVnum);
                     Guild = element.HasElement("guild") ? GuildData.GuildLookup(element.GetElementValue("guild")) : GuildData.GuildLookup("warrior");
+                    Trust = element.GetElementValueInt("Trust", 1); // load trust before level so if level is higher, level property sets trust to level value
                     Level = element.GetElementValueInt("Level", 1);
                     Title = element.HasElement("Title") && !element.GetElementValue("Title").ISEMPTY() ? element.GetElementValue("Title") : (Guild != null && Guild.Titles.ContainsKey(Level) ? "the " + Guild.Titles[Level].MaleTitle : "");
                     ExtendedTitle = element.GetElementValue("ExtendedTitle");

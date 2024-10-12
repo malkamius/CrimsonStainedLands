@@ -139,6 +139,7 @@ public class NPCData : Character, IDisposable
             NightShortDescription = element.GetElementValue("NightShortDescription").Trim();
             NightLongDescription = element.GetElementValue("NightLongDescription").Trim();
             Description = element.GetElementValue("description").Trim().Replace("\r\n", "\n");
+            Trust= element.GetElementValueInt("trust", 1);
             Level = element.GetElementValueInt("level", 1);
             HitPoints = element.GetElementValueInt("hitpoints", Level * 20);
             MaxHitPoints = element.GetElementValueInt("maxHitpoints", Level * 20);

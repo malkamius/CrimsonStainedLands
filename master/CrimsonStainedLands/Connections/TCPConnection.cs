@@ -22,7 +22,7 @@ public class TCPConnection : BaseConnection
         this.Status = ConnectionStatus.Connected;
     }
 
-    public override async Task<byte[]> Read()
+    public override byte[] Read()
     {
         try 
         {
@@ -63,7 +63,7 @@ public class TCPConnection : BaseConnection
         }
     }
 
-    public override async Task<int> Write(byte[] data) 
+    public override int Write(byte[] data) 
     {
         try 
         {
@@ -73,13 +73,13 @@ public class TCPConnection : BaseConnection
                 if(data[0] == (byte) TelnetNegotiator.Options.InterpretAsCommand)
                 {
                     //var written = this.Socket.Send(data);
-                    await this.Stream.WriteAsync(data);
+                    this.Stream.Write(data);
                     return data.Length;
                 }
                 else
                 {
                     //var written = this.Socket.Send(data);
-                    await this.Stream.WriteAsync(data);
+                    this.Stream.Write(data);
                     return data.Length;
                 }
             }

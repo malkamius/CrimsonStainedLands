@@ -405,6 +405,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "damage", Action = DoActInfo.DoDamage, Info = "Toggle specific damage messages for damage type.", MinimumPosition = Positions.Dead });
 
             // IMM COMMANDS
+            Commands.Add(new Command { Name = "trust", Action = DoActWizard.DoTrust, Info = "Set the trust of a player", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
             Commands.Add(new Command { Name = "immortal", Action = DoActWizard.DoImmortal, Info = "Chat with other immortals", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
             Commands.Add(new Command { Name = "holylight", Action = DoActWizard.DoHolyLight, Info = "View immortal stuff", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "wizinvis", Action = DoActWizard.DoWizInvis, Info = "Make yourself invisible.", MinimumPosition = Positions.Dead });

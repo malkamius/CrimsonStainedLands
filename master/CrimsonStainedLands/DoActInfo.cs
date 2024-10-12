@@ -754,7 +754,7 @@ namespace CrimsonStainedLands
                 ch.send("Current commands:\n\r");
                 foreach (var command in Command.Commands)
                 {
-                    if (ch.Level < command.MinimumLevel)
+                    if (ch.Trust < command.MinimumLevel)
                         continue;
                     if (command.Skill != null && ch.GetSkillPercentage(command.Skill) == 0)
                         continue;
@@ -1001,7 +1001,7 @@ namespace CrimsonStainedLands
                         {
                             var percent = ch.GetSkillPercentage(skill);
                             var lvl = ch.GetLevelSkillLearnedAt(skill);
-                            if (ch.Level < lvl)
+                            if (ch.Level < lvl && percent <= 1)
                             {
                                 ch.send("You haven't learned that skill yet.");
                                 return;

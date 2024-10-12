@@ -2,6 +2,7 @@
 using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -171,7 +172,7 @@ namespace CrimsonStainedLands
 
             if (characterName.ISEMPTY() || !int.TryParse(arguments, out level))
             {
-                ch.send("Syntax: Advance {character} {level}");
+                ch.send("Syntax: Advance {{character} {{level}");
             }
             else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
             {
@@ -1630,5 +1631,30 @@ namespace CrimsonStainedLands
                 return;
             }
         } // end do snoop
+
+        public static void DoTrust(Character ch, string arguments)
+        {
+            arguments = arguments.OneArgumentOut(out var charactername);
+            arguments = arguments.OneArgumentOut(out var truststr);
+            Character target = null;
+            if (charactername.ISEMPTY() || truststr.ISEMPTY())
+            {
+                ch.send("Syntax: trust [charactername] [level]\r\n");
+                ch.send("Your trust is level {0}.\r\n", ch.Trust);
+            }
+            else if(!int.TryParse(truststr, out int value) || value < 1 || value > ch.Trust)
+            {
+                ch.send("Level must be numeric, greater than or equal to 1 and less than or equal to {0}.\r\n", ch.Trust);
+            }
+            else if((target = Character.GetCharacterWorld(charactername)) == null)
+            {
+                ch.send("You couldn't find them.\r\n");
+            }
+            else
+            {
+                target.Trust = value;
+                ch.send("{0}'s trust set to {1}.\r\n", target.Name, value);
+            }
+        }
     } // End DoActWiz
 }

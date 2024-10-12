@@ -65,7 +65,7 @@ namespace CrimsonStainedLands.Connections
             
         }
 
-        public override async Task<byte[]> Read()
+        public override byte[] Read()
         {
             try 
             {
@@ -94,12 +94,12 @@ namespace CrimsonStainedLands.Connections
                                     if (opcode == 8) // Close frame
                                     {
                                         Console.WriteLine("Received close frame");
-                                        await SendCloseFrameAsync();
+                                        SendCloseFrameAsync();
                                         Cleanup();
                                     }
                                     else if (opcode == 9) // Ping frame
                                     {
-                                        await SendPongFrameAsync(message);
+                                        SendPongFrameAsync(message);
                                     }
                                     else if (opcode == 10) // Pong frame
                                     {
@@ -144,7 +144,7 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        public override async Task<int> Write(byte[] data) 
+        public override int Write(byte[] data) 
         {
             try
             {
@@ -152,10 +152,10 @@ namespace CrimsonStainedLands.Connections
                 if(data.Length > 0)
                 {
                     if(Upgraded)
-                        await SendWebSocketMessageAsync(data);
+                        SendWebSocketMessageAsync(data);
                     else
                     {
-                        await this.Stream.WriteAsync(data);
+                        this.Stream.WriteAsync(data);
                     }
                     return data.Length;
                     //if(data[0] == (byte) TelnetNegotiator.Options.InterpretAsCommand)
@@ -320,17 +320,17 @@ namespace CrimsonStainedLands.Connections
             return (decoded, Encoding.UTF8.GetString(decoded), opcode, totalConsumed);
         }
 
-        private async Task SendCloseFrameAsync()
+        private void SendCloseFrameAsync()
         {
             byte[] closeFrame = new byte[] { 0x88, 0x00 }; // FIN bit set, opcode 8 (close frame), no payload
             if (this.Stream != null)
             {
-                await this.Stream.WriteAsync(closeFrame, 0, closeFrame.Length);
-                await this.Stream.FlushAsync();
+                this.Stream.Write(closeFrame, 0, closeFrame.Length);
+                this.Stream.Flush();
             }
         }
 
-        private async Task SendPongFrameAsync(string message)
+        private void SendPongFrameAsync(string message)
         {
             byte[] messageBytes = Encoding.UTF8.GetBytes(message);
             byte[] pongFrame = new byte[messageBytes.Length + 2];
@@ -339,12 +339,12 @@ namespace CrimsonStainedLands.Connections
             Array.Copy(messageBytes, 0, pongFrame, 2, messageBytes.Length);
             if (this.Stream != null)
             {
-                await this.Stream.WriteAsync(pongFrame, 0, pongFrame.Length);
-                await this.Stream.FlushAsync();
+                this.Stream.Write(pongFrame, 0, pongFrame.Length);
+                this.Stream.Flush();
             }
         }
 
-        private async Task SendWebSocketMessageAsync(byte[] messageBytes)
+        private void SendWebSocketMessageAsync(byte[] messageBytes)
         {
             //messageBytes = Encoding.UTF8.GetBytes(Encoding.UTF8.GetString(messageBytes));
             if (_useCompression)
@@ -366,7 +366,7 @@ namespace CrimsonStainedLands.Connections
                 {
                     frame[1] = (byte)messageBytes.Length;
                     Array.Copy(messageBytes, 0, frame, 2, messageBytes.Length);
-                    await this.Stream.WriteAsync(frame, 0, 2 + messageBytes.Length);
+                    this.Stream.Write(frame, 0, 2 + messageBytes.Length);
                 }
                 else if (messageBytes.Length <= 65535)
                 {
@@ -374,7 +374,7 @@ namespace CrimsonStainedLands.Connections
                     frame[2] = (byte)((messageBytes.Length >> 8) & 255);
                     frame[3] = (byte)(messageBytes.Length & 255);
                     Array.Copy(messageBytes, 0, frame, 4, messageBytes.Length);
-                    await this.Stream.WriteAsync(frame, 0, 4 + messageBytes.Length);
+                    this.Stream.Write(frame, 0, 4 + messageBytes.Length);
                 }
                 else
                 {
@@ -388,10 +388,10 @@ namespace CrimsonStainedLands.Connections
                     frame[8] = (byte)((messageBytes.Length >> 8) & 255);
                     frame[9] = (byte)(messageBytes.Length & 255);
                     Array.Copy(messageBytes, 0, frame, 10, messageBytes.Length);
-                    await this.Stream.WriteAsync(frame, 0, 10 + messageBytes.Length);
+                    this.Stream.Write(frame, 0, 10 + messageBytes.Length);
                 }
 
-                await this.Stream.FlushAsync();
+                this.Stream.Flush();
             }
         }
 

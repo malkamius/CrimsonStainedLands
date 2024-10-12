@@ -364,7 +364,7 @@ namespace CrimsonStainedLands
             }
         }
 
-        private async void mainLoop(GameInfo state)
+        private void mainLoop(GameInfo state)
         {
             var read = Task.Run(ConsoleHandler);
 
@@ -381,7 +381,7 @@ namespace CrimsonStainedLands
 
 
                         // Check for input
-                        await CheckConnectionsForAndProcessInput();
+                        CheckConnectionsForAndProcessInput();
 
                         // Update everything, combat happens here too
                         UpdateHandler();
@@ -490,12 +490,12 @@ namespace CrimsonStainedLands
         /// Poll for pending data to be received and receive it, handles IAC TType Negotiation
         /// </summary>
         /// <param name="player">Player Connection containing the socket to be handled</param>
-        private async Task ReceiveSocketBytes(Player player)
+        private void ReceiveSocketBytes(Player player)
         {
             if (player.connection != null)
             {
                 byte[] buffer;// = new byte[256];
-                buffer = await player.connection.Read();
+                buffer = player.connection.Read();
                 if(buffer != null)
                     player.ProcessBytes(buffer, buffer.Length);
             }
@@ -604,7 +604,7 @@ namespace CrimsonStainedLands
             }
         }
 
-        private async Task CheckConnectionsForAndProcessInput()
+        private void CheckConnectionsForAndProcessInput()
         {
             foreach (var connection in Info.Connections)
             {
@@ -619,7 +619,7 @@ namespace CrimsonStainedLands
 
                 try
                 {
-                    await ReceiveSocketBytes(connection);
+                    ReceiveSocketBytes(connection);
 
                     ProcessPlayerInput(connection);
 
