@@ -285,9 +285,16 @@ namespace CrimsonStainedLands.World
             if (!string.IsNullOrEmpty(file))
             {
                 FileName = file;
-
-                XElement root = XElement.Load(file, LoadOptions.PreserveWhitespace);
-
+                XElement root;
+                try
+                {
+                     root = XElement.Load(file, LoadOptions.PreserveWhitespace);
+                }
+                catch (Exception e)
+                {
+                    Game.bug("Error loading {0}", file);
+                    return;
+                }
                 LoadHeader(root);
 
                 // Clear rooms for a reload
@@ -301,7 +308,13 @@ namespace CrimsonStainedLands.World
                 foreach (var itemtemplate in ItemTemplates)
                     ItemTemplateData.Templates.TryRemove(itemtemplate.Key, out _);
                 ItemTemplates.Clear();
-                LoadItemTemplates(root);
+                try
+                {
+                    LoadItemTemplates(root);
+                }
+                catch (Exception ex)
+                {
+                }
 
                 foreach (var npctemplate in NPCTemplates)
                     NPCTemplateData.Templates.TryRemove(npctemplate.Key, out _);

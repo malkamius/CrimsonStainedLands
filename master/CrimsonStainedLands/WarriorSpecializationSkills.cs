@@ -338,7 +338,7 @@ namespace CrimsonStainedLands
                 {
                     ch.Act("You don't know how to do that.");
                 }
-                else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Mace) &&
+                else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Mace) ||
                     ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || wield.WeaponType != WeaponTypes.Mace))
                 {
                     ch.Act("You must be wielding a mace to backhand your enemy.");
@@ -366,7 +366,7 @@ namespace CrimsonStainedLands
                         CheckEnhancedDamage(ch, ref damage);
 
                         ch.CheckImprove(skill, true, 1);
-                        Combat.Damage(ch, victim, (int)damage, skill, WeaponDamageTypes.Pierce);
+                        Combat.Damage(ch, victim, (int)damage, skill, WeaponDamageTypes.Bash);
 
                     }
                     else
@@ -376,11 +376,11 @@ namespace CrimsonStainedLands
                         ch.Act("You try to hit $N with a backhand blow.", victim, type: ActType.ToChar);
 
                         ch.CheckImprove(skill, false, 1);
-                        Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Pierce);
+                        Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Bash);
                     }
                 }
             } // end backhand
-
+            
             public static void DoSting(Character ch, string arguments)
             {
                 var skill = SkillSpell.SkillLookup("sting");

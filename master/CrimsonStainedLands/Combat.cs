@@ -12302,5 +12302,113 @@ namespace CrimsonStainedLands
             }
             return;
         } // end puncture bite
+        public static void DoBonk(Character ch, string arguments)
+        {
+            var skill = SkillSpell.SkillLookup("headbonk");
+            int chance;
+            float damage;
+            Character victim = null;
+            ItemData wield = null;
+
+            if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
+            {
+                ch.Act("You don't know how to do that.");
+            }
+            else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Mace) &&
+                ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || wield.WeaponType != WeaponTypes.Mace))
+            {
+                ch.Act("You must be wielding a mace to bonk your enemy.");
+            }
+            else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
+            {
+                ch.Act("You aren't fighting anyone.");
+            }
+            else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
+            {
+                ch.Act("You don't see them here.");
+                return;
+            }
+            else
+            {
+                ch.WaitState(skill.waitTime);
+                if (chance > Utility.NumberPercent())
+                {
+                    ch.Act("$n bonks $N with $p.", victim, wield, type: ActType.ToRoomNotVictim);
+                    ch.Act("$n bonks you with $p.", victim, wield, type: ActType.ToVictim);
+                    ch.Act("You bonk $N with $p.", victim, wield, type: ActType.ToChar);
+
+                    damage = wield.DamageDice.Roll() + ch.DamageRoll;
+
+                    CheckEnhancedDamage(ch, ref damage);
+
+                    ch.CheckImprove(skill, true, 1);
+                    Combat.Damage(ch, victim, (int)damage, skill, WeaponDamageTypes.Bash);
+
+                }
+                else
+                {
+                    ch.Act("$n attempts to bonk $N on the head.", victim, type: ActType.ToRoomNotVictim);
+                    ch.Act("$n tries to bonk you on the head!", victim, type: ActType.ToVictim);
+                    ch.Act("You try to bonk $N on the head.", victim, type: ActType.ToChar);
+
+                    ch.CheckImprove(skill, false, 1);
+                    Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Bash);
+                }
+            }
+        } // end bonk
+        public static void DoCrack(Character ch, string arguments)
+        {
+            var skill = SkillSpell.SkillLookup("crack");
+            int chance;
+            float damage;
+            Character victim = null;
+            ItemData wield = null;
+
+            if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
+            {
+                ch.Act("You don't know how to do that.");
+            }
+            else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || (wield.WeaponType != WeaponTypes.Flail && wield.WeaponType!= WeaponTypes.Whip) &&
+                ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || (wield.WeaponType != WeaponTypes.Flail&& wield.WeaponType!= WeaponTypes.Whip))))
+            {
+                ch.Act("You must be wielding a whip or flail to strike your enemy.");
+            }
+            else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
+            {
+                ch.Act("You aren't fighting anyone.");
+            }
+            else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
+            {
+                ch.Act("You don't see them here.");
+                return;
+            }
+            else
+            {
+                ch.WaitState(skill.waitTime);
+                if (chance > Utility.NumberPercent())
+                {
+                    ch.Act("$n cracks $N with $p.", victim, wield, type: ActType.ToRoomNotVictim);
+                    ch.Act("$n cracks you with $p.", victim, wield, type: ActType.ToVictim);
+                    ch.Act("You crack $N with $p.", victim, wield, type: ActType.ToChar);
+
+                    damage = wield.DamageDice.Roll() + ch.DamageRoll;
+
+                    CheckEnhancedDamage(ch, ref damage);
+
+                    ch.CheckImprove(skill, true, 1);
+                    Combat.Damage(ch, victim, (int)damage, skill, WeaponDamageTypes.Sting);
+
+                }
+                else
+                {
+                    ch.Act("$n attempts to crack $N.", victim, type: ActType.ToRoomNotVictim);
+                    ch.Act("$n tries to crack you!", victim, type: ActType.ToVictim);
+                    ch.Act("You try to crack $N.", victim, type: ActType.ToChar);
+
+                    ch.CheckImprove(skill, false, 1);
+                    Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Sting);
+                }
+            }
+        } // end strike
     } // end combat
 } // end namespace

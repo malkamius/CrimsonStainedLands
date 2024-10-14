@@ -448,7 +448,7 @@ namespace CrimsonStainedLands
 
             if (skill == null)
                 return 0;
-            else if (IsImmortal && skill.SkillTypes.Any(type => type != SkillSpellTypes.InForm))
+            else if (Level >= 60 && skill.SkillTypes.Any(type => type != SkillSpellTypes.InForm))
                 return 100;
             else if (IsNPC && GetLevelSkillLearnedAt(skill) == 60)
                 return 0;
@@ -466,7 +466,7 @@ namespace CrimsonStainedLands
 
             if (skill == null || Guild == null)
                 return 0;
-            else if (IsImmortal)
+            else if (Level == 60)
                 return 100;
             else if (Learned.ContainsKey(skill) && Level >= GetLevelSkillLearnedAt(skill) && skill.PrerequisitesMet(this))
                 return Learned[skill].Percentage;

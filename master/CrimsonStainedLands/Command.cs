@@ -293,7 +293,8 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "thrust", Action = Combat.DoThrust, Info = "Attempt to knock your enemy back with a powerful thrust of a spear or polearm.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "headsmash", Action = Combat.DoHeadSmash, Info = "Attempt to smash your enemy's head after a successful feint with a staff or polearm.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "slice", Action = Combat.DoSlice, Info = "Attempt to slice open your enemy with a polearm.", MinimumPosition = Positions.Fighting });
-            
+            Commands.Add(new Command { Name = "headbonk", Action = Combat.DoBonk, Info = "Attempt to backhand your enemy.", MinimumPosition = Positions.Fighting });
+
             Commands.Add(new Command { Name = "whirl", Action = Combat.WarriorSpecializationSkills.DoWhirl, Info = "Attempt to whirl an axe at your enemy.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "backhand", Action = Combat.WarriorSpecializationSkills.DoBackhand, Info = "Attempt to backhand your enemy.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "sting", Action = Combat.WarriorSpecializationSkills.DoSting, Info = "Attempt to sting your enemy with a whip.", MinimumPosition = Positions.Fighting });
@@ -346,6 +347,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "jump", Action = Combat.DoJump, Info = "Jump at someone damaging them.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "sprint", Action = CharacterDoFunctions.DoSprint, Info = "Sprint in a direction.", MinimumPosition = Positions.Standing });
             Commands.Add(new Command { Name = "strike", Action = Combat.DoStrike, Info = "Coil and strike someone.", MinimumPosition = Positions.Fighting });
+            Commands.Add(new Command { Name = "crack", Action = Combat.DoCrack, Info = "Crack someone with your whip or flail.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "pinch", Action = Combat.DoPinch, Info = "Pinch an enemy with your powerful pincers.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "mulekick", Action = Combat.DoAssassinMuleKick, Info = "Unleash a powerful kick on your second enemy.", MinimumPosition = Positions.Fighting });
             Commands.Add(new Command { Name = "hoofstrike", Action = Combat.DoHoofStrike, Info = "Unleash a double kick with your hooves on your second enemy.", MinimumPosition = Positions.Fighting });

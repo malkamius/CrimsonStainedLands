@@ -2814,7 +2814,7 @@ park entrance and to the east you see a small pond.</Description>
       <Name>The Pond</Name>
       <Description>You are swimming around in the pond, feeling rather stupid.  You can get
 back on the path from the eastern and western end of the pond.</Description>
-      <Sector>WaterSwim</Sector>
+      <Sector>Swim</Sector>
       <Flags>Law</Flags>
       <Exits>
         <Exit>
@@ -6355,7 +6355,7 @@ lifetime than you have ever seen.</description>
       <gold>58</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Trainer Warrior NoPurge</flags>
+      <flags>NPC Sentinel Gain Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6690,7 +6690,7 @@ and you notice that she is surrounded by a blue shimmering aura.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel Practice Mage NoPurge</flags>
+      <flags>NPC Sentinel GuildMaster Mage NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6745,7 +6745,7 @@ a peaceful, loving look. You notice that he is surrounded by a white aura.</desc
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel Practice Cleric NoPurge</flags>
+      <flags>NPC Sentinel GuildMaster Cleric NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6802,7 +6802,7 @@ human</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>NPC Sentinel Practice Thief NoPurge</flags>
+      <flags>NPC Sentinel GuildMaster Thief NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6858,7 +6858,7 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Practice Warrior NoPurge AreaAttack</flags>
+      <flags>NPC Sentinel GuildMaster Warrior NoPurge AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9636,7 +9636,7 @@ The guildmaster is in perfect condition.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea Practice Mage</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9692,7 +9692,7 @@ the earth to serve him.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea Practice Mage</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9749,7 +9749,7 @@ appears to be wearing a necklace of human fingers.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea Practice Mage</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9805,7 +9805,7 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea Practice Warrior</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9860,7 +9860,7 @@ do a deadly strikes to your opponent.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea Practice Warrior</flags>
+      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9918,7 +9918,7 @@ do a deadly strikes to your opponent.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood Flying PassDoor DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
@@ -10070,7 +10070,7 @@ do a deadly strikes to your opponent.</description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel Practice NoTrack Cleric NoPurge Trainer</flags>
+      <flags>NPC Sentinel GuildMaster NoTrack Cleric NoPurge Gain</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -10124,7 +10124,7 @@ do a deadly strikes to your opponent.</description>
       <gold>10000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Trainer NoTrack Mage Warrior NoPurge</flags>
+      <flags>NPC Sentinel Gain NoTrack Mage Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -10203,7 +10203,7 @@ do a deadly strikes to your opponent.</description>
       <ShortDescription>a barrel of beer</ShortDescription>
       <LongDescription>A beer barrel has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10236,7 +10236,7 @@ do a deadly strikes to your opponent.</description>
       <ShortDescription>a bottle of beer</ShortDescription>
       <LongDescription>A beer bottle has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10269,7 +10269,7 @@ do a deadly strikes to your opponent.</description>
       <ShortDescription>a bottle of ale</ShortDescription>
       <LongDescription>A dark bottle of ale has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10302,7 +10302,7 @@ do a deadly strikes to your opponent.</description>
       <ShortDescription>a bottle of firebreather</ShortDescription>
       <LongDescription>A bottle of firebreather has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10335,7 +10335,7 @@ do a deadly strikes to your opponent.</description>
       <ShortDescription>a bottle of local specialty</ShortDescription>
       <LongDescription>A dark bottle has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10408,7 +10408,7 @@ or anyone.</Description>
       <ShortDescription>A Clan Stone</ShortDescription>
       <LongDescription>Somebody left their Clan Stone here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10441,7 +10441,7 @@ or anyone.</Description>
       <ShortDescription>a big pot pie</ShortDescription>
       <LongDescription>A big pot pie has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10474,7 +10474,7 @@ or anyone.</Description>
       <ShortDescription>the donation pit</ShortDescription>
       <LongDescription>A pit for sacrifices is in front of the altar.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10513,7 +10513,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a bread</ShortDescription>
       <LongDescription>A loaf of bread is here. It doesn't look too stale.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10546,7 +10546,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a cinnamon roll</ShortDescription>
       <LongDescription>A piping hot cinnamon roll is here. It looks delicious!</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10579,7 +10579,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a batch of Sara's cookies</ShortDescription>
       <LongDescription>A plate of chocolate chip cookies is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10612,7 +10612,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a blueberry danish</ShortDescription>
       <LongDescription>A scrumptious blueberry danish is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -10645,7 +10645,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a dagger</ShortDescription>
       <LongDescription>A dagger with a long thin blade is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>stab</WeaponDamageType>
       <WeaponType>Dagger</WeaponType>
       <DiceSides>4</DiceSides>
@@ -10678,7 +10678,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a small sword</ShortDescription>
       <LongDescription>A small sword lies here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>slice</WeaponDamageType>
       <WeaponType>Sword</WeaponType>
       <DiceSides>5</DiceSides>
@@ -10991,7 +10991,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a torch</ShortDescription>
       <LongDescription>A large torch.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11024,7 +11024,7 @@ convert more people to the belief of Mota, lord of the gods.</Description>
       <ShortDescription>a hooded brass lantern</ShortDescription>
       <LongDescription>A hooded brass lantern has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11068,7 +11068,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a bag</ShortDescription>
       <LongDescription>A small bag.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11101,7 +11101,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a box</ShortDescription>
       <LongDescription>A small box.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11207,11 +11207,6 @@ Some letters have been scratched on its bottom.</Description>
         <ExtraDescription>
           <Keyword>scroll identify</Keyword>
           <Description>The scroll has a magic formula drawn upon it:
-???
-?   ?
-?
-?
-?
 *</Description>
         </ExtraDescription>
       </ExtraDescriptions>
@@ -11222,7 +11217,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a yellow potion</ShortDescription>
       <LongDescription>A small yellow potion has carelessly been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>13</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11489,7 +11484,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a raft</ShortDescription>
       <LongDescription>A raft has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11527,7 +11522,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a canoe</ShortDescription>
       <LongDescription>A canoe has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11565,7 +11560,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a leather bracer</ShortDescription>
       <LongDescription>A strong leather bracer is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11598,7 +11593,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a leather belt</ShortDescription>
       <LongDescription>A soft leather belt is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11631,7 +11626,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a leather girdle</ShortDescription>
       <LongDescription>A wide leather girdle is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11664,7 +11659,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>newbie Bone Axe</ShortDescription>
       <LongDescription>Newbie Bone Axe</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>cleave</WeaponDamageType>
       <WeaponType>Axe</WeaponType>
       <DiceSides>9</DiceSides>
@@ -11730,7 +11725,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a leather jerkin</ShortDescription>
       <LongDescription>A leather jerkin is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11763,7 +11758,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a leather cap</ShortDescription>
       <LongDescription>A leather cap is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11796,7 +11791,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of leather pants</ShortDescription>
       <LongDescription>A pair of leather pants is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11829,7 +11824,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of leather boots</ShortDescription>
       <LongDescription>A pair of leather boots lies here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11862,7 +11857,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of leather gloves</ShortDescription>
       <LongDescription>A pair of leather gloves is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11895,7 +11890,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of leather sleeves</ShortDescription>
       <LongDescription>A pair of leather sleeves is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11928,7 +11923,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a hard leather jerkin</ShortDescription>
       <LongDescription>A hard leather jerkin is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11961,7 +11956,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a hard leather cap</ShortDescription>
       <LongDescription>A hard leather cap is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -11994,7 +11989,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of hard leather pants</ShortDescription>
       <LongDescription>A pair of hard leather pants is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12027,7 +12022,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of hard leather boots</ShortDescription>
       <LongDescription>A pair of hard leather boots lies here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12060,7 +12055,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of hard leather gloves</ShortDescription>
       <LongDescription>A pair of hard leather gloves is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12093,7 +12088,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a pair of hard leather sleeves</ShortDescription>
       <LongDescription>A pair of hard leather sleeves is lying on the ground.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12395,7 +12390,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a potion of cure light wounds</ShortDescription>
       <LongDescription>A potion of cure light wounds is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12505,7 +12500,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a potion of cure blindness</ShortDescription>
       <LongDescription>A potion of cure blindness is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12579,7 +12574,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a potion of armor</ShortDescription>
       <LongDescription>A potion of armor is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12720,7 +12715,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a cup of tea</ShortDescription>
       <LongDescription>A cup has been set here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12758,7 +12753,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a cup of coffee</ShortDescription>
       <LongDescription>A cup has been set here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -12796,7 +12791,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a cup of water</ShortDescription>
       <LongDescription>A cup has been set here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13164,7 +13159,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a key</ShortDescription>
       <LongDescription>An iron key has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13202,7 +13197,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a key</ShortDescription>
       <LongDescription>A rusty key has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13240,7 +13235,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a key</ShortDescription>
       <LongDescription>A wooden key has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13278,7 +13273,7 @@ Some letters have been scratched on its bottom.</Description>
       <ShortDescription>a key</ShortDescription>
       <LongDescription>A brass key has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13358,7 +13353,7 @@ A
       <ShortDescription>a pair of hand cuffs</ShortDescription>
       <LongDescription>A pair of hand cuffs has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13391,7 +13386,7 @@ A
       <ShortDescription>the desk</ShortDescription>
       <LongDescription>A desk is set against the western wall.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13399,7 +13394,7 @@ A
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closable PickProof</ExtraFlags>
+      <ExtraFlags>Closeable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -13433,7 +13428,7 @@ A
       <ShortDescription>the safe</ShortDescription>
       <LongDescription>A safe is placed in a dark corner of the room.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13441,7 +13436,7 @@ A
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closable PickProof</ExtraFlags>
+      <ExtraFlags>Closeable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -13471,7 +13466,7 @@ A
       <ShortDescription>the silver coins</ShortDescription>
       <LongDescription>A lot of silver is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13509,7 +13504,7 @@ A
       <ShortDescription>the City Key</ShortDescription>
       <LongDescription>The very big City Key is lying here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13549,7 +13544,7 @@ Arms.</Description>
       <ShortDescription>the Bench</ShortDescription>
       <LongDescription>A white-painted wooden bench is standing here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13589,7 +13584,7 @@ other side.</Description>
       <ShortDescription>a fountain</ShortDescription>
       <LongDescription>A small white fountain gushes forth here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13627,7 +13622,7 @@ other side.</Description>
       <ShortDescription>a small pile of coins</ShortDescription>
       <LongDescription>A small pile of coins lies here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13660,7 +13655,7 @@ other side.</Description>
       <ShortDescription>a steel key</ShortDescription>
       <LongDescription>A large steel key has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13698,7 +13693,7 @@ other side.</Description>
       <ShortDescription>a buffalo water skin</ShortDescription>
       <LongDescription>A bloated dead buffalo is on the floor.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13731,7 +13726,7 @@ other side.</Description>
       <ShortDescription>the receptionist's letter of resignation</ShortDescription>
       <LongDescription>The receptionist's letter of resignation is taped to the wall.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13775,7 +13770,7 @@ Diana the Receptionist</Description>
       <ShortDescription>the bank's notice of liquidation</ShortDescription>
       <LongDescription>The bank's notice of liquidation is taped to the wall.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13819,7 +13814,7 @@ Midgaard City Bank</Description>
       <ShortDescription>a cup of cinnamon coffee</ShortDescription>
       <LongDescription>A piping hot cup of cinnamon coffee is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13857,7 +13852,7 @@ Midgaard City Bank</Description>
       <ShortDescription>a bowl of chicken noodle soup</ShortDescription>
       <LongDescription>A nice hot bowl of chicken noodle soup is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13895,7 +13890,7 @@ Midgaard City Bank</Description>
       <ShortDescription>a bowl of beef stew</ShortDescription>
       <LongDescription>A bowl of nice thick beef stew, with lots of vegetables, steams here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13934,7 +13929,7 @@ hours.  Care for a bite?</Description>
       <ShortDescription>a biscuit</ShortDescription>
       <LongDescription>A yummy biscuit, covered with butter, is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -13972,7 +13967,7 @@ hours.  Care for a bite?</Description>
       <ShortDescription>a bottle of George Killian's Irish Red</ShortDescription>
       <LongDescription>A dark-tinted bottle of beer is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14011,7 +14006,7 @@ logo.  Worth every penny.</Description>
       <ShortDescription>a white key</ShortDescription>
       <LongDescription>A white key has been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14044,7 +14039,7 @@ logo.  Worth every penny.</Description>
       <ShortDescription>a map of the city of Midgaard</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14121,7 +14116,7 @@ Midgaard              Midgaard                       Midgaard</Description>
       <ShortDescription>a map of Orthos</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14189,7 +14184,7 @@ Type "areas" for a complete list with suggested levels and the authors.</Descrip
       <ShortDescription>a map of southern Midgaard</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14265,7 +14260,7 @@ Miden'Nir
       <ShortDescription>a map of the Dwarven Kingdom</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14337,7 +14332,7 @@ Roads          Drop-off
       <ShortDescription>a map of the first level of Moria</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14405,7 +14400,7 @@ Dwarf Forest</Description>
       <ShortDescription>a map of New Thalos</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14494,7 +14489,7 @@ Gate</Description>
       <ShortDescription>a map of Olympus</ShortDescription>
       <LongDescription>A rolled up map is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14565,7 +14560,7 @@ Mountain</Description>
       <ShortDescription>the juke</ShortDescription>
       <LongDescription>A neon-lit juke box sits in the corner of the bar.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14598,7 +14593,7 @@ Mountain</Description>
       <ShortDescription>the donation pit</ShortDescription>
       <LongDescription>A pit for sacrifices is in front of the altar.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14631,7 +14626,7 @@ Mountain</Description>
       <ShortDescription>a buffalo water skin</ShortDescription>
       <LongDescription>A bloated dead buffalo is on the floor.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14711,7 +14706,7 @@ Mountain</Description>
       <ShortDescription>a green potion</ShortDescription>
       <LongDescription>A small yellow potion has carelessly been left here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14868,7 +14863,7 @@ Mountain</Description>
       <ShortDescription>a potion of cure light wounds</ShortDescription>
       <LongDescription>A potion of cure light wounds is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -14978,7 +14973,7 @@ Mountain</Description>
       <ShortDescription>a potion of cure blindness</ShortDescription>
       <LongDescription>A potion of cure blindness is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -15052,7 +15047,7 @@ Mountain</Description>
       <ShortDescription>a potion of armor</ShortDescription>
       <LongDescription>A potion of armor is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -15160,7 +15155,7 @@ Mountain</Description>
       <ShortDescription>the Tome of Infinity</ShortDescription>
       <LongDescription>A tome embossed with the symbol of Infinity hovers here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -15980,7 +15975,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>a small pearl</ShortDescription>
       <LongDescription>A small but well-formed pearl lies here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -16013,7 +16008,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>a garnet</ShortDescription>
       <LongDescription>A garnet catches your eye.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -16046,7 +16041,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>an emerald</ShortDescription>
       <LongDescription>A deep green emerald winks at you.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -16079,7 +16074,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>a ruby</ShortDescription>
       <LongDescription>A beautiful, if small, ruby is here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -16112,7 +16107,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>a diamond</ShortDescription>
       <LongDescription>A diamond catches and reflects the lighting.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -16145,7 +16140,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>an opal</ShortDescription>
       <LongDescription>A lustrous opal reminds you of far-off places.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -16214,7 +16209,7 @@ Inscribed on the inside of the band is: 'Your loving husband, House'.</Descripti
       <ShortDescription>exotic map</ShortDescription>
       <LongDescription>A map to the exotic places of the realm lies here, half buried in the dirt.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>1</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>

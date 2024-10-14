@@ -339,7 +339,7 @@ namespace CrimsonStainedLands
                 }
                 else if (MethodUsed == CastType.Commune)
                 {
-                    ch.send("The gods don't seem to hear you.\n\r");
+                    ch.send("{0}: The gods don't seem to hear you.\n\r", spell.name);
                 }
                 //checkimprove(ch, spell);
                 ch.CheckImprove(spell, false, 1);
@@ -716,13 +716,15 @@ namespace CrimsonStainedLands
             }
             else
             {
+                var amt = -20 - (40 * ch.Level / 60);
+
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.where = AffectWhere.ToAffects;
                 affect.location = ApplyTypes.Armor;
-                affect.duration = level / 2;
-                affect.modifier = -20;
+                affect.duration = 10 + (ch.Level / 4);
+                affect.modifier = amt;
                 affect.displayName = "armor";
                 affect.endMessage = "The armor surrounding you fades.\n\r";
                 affect.endMessageToRoom = "The armor surrounding $n fades.\n\r";
@@ -851,10 +853,9 @@ namespace CrimsonStainedLands
                 affect.modifier = -(Math.Max(5, level / 3));
                 affect.displayName = "blessed";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
-                victim.AffectToChar(affect);
-
                 affect.endMessage = "The blessing surrounding you fades.\n\r";
                 affect.endMessageToRoom = "The blessing surrounding $n fades.\n\r";
+                victim.AffectToChar(affect);
 
                 victim.send("You are surrounded by a blessing.\n\r");
                 victim.Act("$n is surrounded by a blessing.", type: ActType.ToRoom);
@@ -935,7 +936,7 @@ namespace CrimsonStainedLands
                 affect.location = ApplyTypes.Hitroll;
                 affect.flags.Add(AffectFlags.Blind);
                 affect.duration = Math.Max(3, ch_level / 3);
-                affect.modifier = -4;
+                affect.modifier = ch_level / 2;
                 affect.displayName = "Blinded";
                 affect.endMessage = "You can see again.\n\r";
                 affect.endMessageToRoom = "$n can see again.\n\r";
@@ -2643,16 +2644,22 @@ namespace CrimsonStainedLands
                 affect.skillSpell = spell;
                 affect.level = ch_level;
                 affect.where = AffectWhere.ToAffects;
-                affect.location = ApplyTypes.None;
+                affect.location = ApplyTypes.Hitroll;
+                affect.modifier = -ch_level / 2;
+ 
                 affect.flags.Add(AffectFlags.Curse);
                 affect.duration = ch_level / 4;
-                affect.modifier = 0;
                 affect.displayName = "Cursed";
                 affect.endMessage = "You feel less unclean.\n\r";
                 affect.endMessageToRoom = "$n looks less uncomfortable.\n\r";
                 affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
+
+                affect.location = ApplyTypes.Damroll;
+                affect.modifier = -ch_level / 2;
+                victim.AffectToChar(affect);
+
                 victim.send("You feel unclean.\n\r");
                 victim.Act("$n looks very uncomfortable.", null, null, null, ActType.ToRoom);
             }

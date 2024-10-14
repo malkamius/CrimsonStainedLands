@@ -8,7 +8,6 @@
     <Builders></Builders>
     <Security>0</Security>
     <Credits>{45 51} Aino  Ur'Tazi</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -1058,7 +1057,6 @@ pull it out and massacre any threat that comes his way.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectInvis DetectMagic DetectHidden Sanctuary Infrared Flying Haste Regeneration DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1113,8 +1111,7 @@ are glaring malevolently at you.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Sanctuary Infrared ProtectEvil ProtectGood Flying Haste Berserk Regeneration DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
+      <affectedBy>Sanctuary Infrared ProtectionEvil ProtectionGood Flying Haste Berserk Regeneration DetectIllusion</affectedBy>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>20</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1169,8 +1166,7 @@ him to take out his revenge.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Sanctuary Infrared ProtectEvil ProtectGood Sneak Flying PassDoor Haste DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
+      <affectedBy>Sanctuary Infrared ProtectionEvil ProtectionGood Sneak Flying PassDoor Haste DetectIllusion</affectedBy>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1226,8 +1222,7 @@ the darkness as you look into them.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Sanctuary ProtectEvil ProtectGood Haste Regeneration DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
+      <affectedBy>Sanctuary ProtectionEvil ProtectionGood Haste Regeneration DetectIllusion</affectedBy>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>10</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1282,8 +1277,7 @@ next beast to please, so as not to make Lynchre unhappy with hi</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>Sanctuary ProtectEvil ProtectGood Sneak Flying Haste Regeneration DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
+      <affectedBy>Sanctuary ProtectionEvil ProtectionGood Sneak Flying Haste Regeneration DetectIllusion</affectedBy>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>15</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1340,7 +1334,6 @@ life.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>15</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1397,7 +1390,6 @@ forced to be in the world of the undead.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>15</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1454,7 +1446,6 @@ the last breaths of his life.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>15</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1510,7 +1501,6 @@ for her vengence like the others.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Flying Haste Regeneration DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>3</DamageDiceSides>
       <DamageDiceCount>12</DamageDiceCount>
@@ -1566,7 +1556,6 @@ job and family, but is now a worthless ghost.</description>
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>Sanctuary Flying Haste DetectIllusion</affectedBy>
-      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>15</DamageDiceSides>
       <DamageDiceCount>20</DamageDiceCount>
@@ -1599,18 +1588,10 @@ job and family, but is now a worthless ghost.</description>
       <ExtraFlags>Dark Evil AntiGood AntiNeutral NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="60" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="60" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="1" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1621,7 +1602,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>ore</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -1645,21 +1625,11 @@ job and family, but is now a worthless ghost.</description>
       <ExtraFlags>Dark Evil AntiGood AntiNeutral NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="5" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="5" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="5" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-3" hidden="False" affectType="Spell" />
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1670,7 +1640,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>ore</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>14</ArmorBash>
       <ArmorSlash>14</ArmorSlash>
       <ArmorPierce>14</ArmorPierce>
@@ -1694,15 +1663,9 @@ job and family, but is now a worthless ghost.</description>
       <ExtraFlags>Dark Evil Bless AntiGood AntiNeutral NoRemove TwoHands</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1713,7 +1676,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>ore</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1737,12 +1699,8 @@ job and family, but is now a worthless ghost.</description>
       <ExtraFlags>Dark Evil AntiGood AntiNeutral NoRemove</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="4" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="4" hidden="False" affectType="Spell" />
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1753,7 +1711,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>ore</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1786,7 +1743,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>power</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1819,7 +1775,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>metal</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1832,7 +1787,7 @@ job and family, but is now a worthless ghost.</description>
       <ShortDescription>a collar of fire</ShortDescription>
       <LongDescription>A circle of fire lys here.</LongDescription>
       <Description></Description>
-      <Level>0</Level>
+      <Level>45</Level>
       <WeaponDamageType>none</WeaponDamageType>
       <WeaponType>None</WeaponType>
       <DiceSides>1</DiceSides>
@@ -1843,12 +1798,8 @@ job and family, but is now a worthless ghost.</description>
       <ExtraFlags>Glow Hum Evil AntiGood AntiNeutral NoRemove</ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
-          <ExtraState />
-        </Affect>
+        <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="2" hidden="False" affectType="Spell" />
+        <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell" />
       </Affects>
       <Silver>0</Silver>
       <Gold>0</Gold>
@@ -1859,7 +1810,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>energy</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>6</ArmorBash>
       <ArmorSlash>6</ArmorSlash>
       <ArmorPierce>6</ArmorPierce>
@@ -1892,7 +1842,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>leather</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1925,7 +1874,6 @@ job and family, but is now a worthless ghost.</description>
       <Material>unknown</Material>
       <Charges>0</Charges>
       <MaxCharges>0</MaxCharges>
-      <MaxDurability>100</MaxDurability>
       <ArmorBash>0</ArmorBash>
       <ArmorSlash>0</ArmorSlash>
       <ArmorPierce>0</ArmorPierce>
@@ -1961,83 +1909,213 @@ job and family, but is now a worthless ghost.</description>
     </Item>
   </Items>
   <Resets>
-    <Reset Type="NPC" Destination="13312" Count="1" Max="5" Vnum="13304">
+    <Reset>
       <!--Spawn an imp to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13312</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13304</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13307">
+    <Reset>
       <!--Spawn a leash to an imp-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13307</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13313" Count="1" Max="5" Vnum="13304">
+    <Reset>
       <!--Spawn an imp to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13313</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13304</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13307">
+    <Reset>
       <!--Spawn a leash to an imp-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13307</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13314" Count="1" Max="10" Vnum="13303">
+    <Reset>
       <!--Spawn a fire beast to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13314</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13303</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13306">
+    <Reset>
       <!--Spawn a collar of fire to a fire beast-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13306</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13315" Count="1" Max="5" Vnum="13304">
+    <Reset>
       <!--Spawn an imp to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13315</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13304</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13307">
+    <Reset>
       <!--Spawn a leash to an imp-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13307</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13316" Count="1" Max="10" Vnum="13303">
+    <Reset>
       <!--Spawn a fire beast to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13316</Destination>
+      <Count>1</Count>
+      <Max>10</Max>
+      <Vnum>13303</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13306">
+    <Reset>
       <!--Spawn a collar of fire to a fire beast-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13306</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13317" Count="1" Max="5" Vnum="13304">
+    <Reset>
       <!--Spawn an imp to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13317</Destination>
+      <Count>1</Count>
+      <Max>5</Max>
+      <Vnum>13304</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13307">
+    <Reset>
       <!--Spawn a leash to an imp-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13307</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13317" Count="10" Max="10" Vnum="13303">
+    <Reset>
       <!--Spawn a fire beast to Within a cavern-->
+      <Type>NPC</Type>
+      <Destination>13317</Destination>
+      <Count>10</Count>
+      <Max>10</Max>
+      <Vnum>13303</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13306">
+    <Reset>
       <!--Spawn a collar of fire to a fire beast-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13306</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13319" Count="1" Max="1" Vnum="13302">
+    <Reset>
       <!--Spawn a ghost to A hidden passage, in the dark cave-->
+      <Type>NPC</Type>
+      <Destination>13319</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13302</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13324" Count="1" Max="1" Vnum="13301">
+    <Reset>
       <!--Spawn Larnest to Before a fiery cavern, in the dark cave-->
+      <Type>NPC</Type>
+      <Destination>13324</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13301</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13326" Count="1" Max="1" Vnum="13300">
+    <Reset>
       <!--Spawn Lynchre to The Forge of Ur'Tazi-->
+      <Type>NPC</Type>
+      <Destination>13326</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13300</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13300">
+    <Reset>
       <!--Spawn blood ore armor to Lynchre-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13300</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13301">
+    <Reset>
       <!--Spawn blood ore helmet to Lynchre-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13301</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13303">
+    <Reset>
       <!--Spawn blood ore axe to Lynchre-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13303</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13300" Count="1" Max="1" Vnum="13307">
+    <Reset>
       <!--Spawn Ganisha to Before a massive cave, on the mountainside-->
+      <Type>NPC</Type>
+      <Destination>13300</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13307</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13301" Count="1" Max="1" Vnum="13309">
+    <Reset>
       <!--Spawn Hamil to Within a slightly-lit cave-->
+      <Type>NPC</Type>
+      <Destination>13301</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13309</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13305" Count="1" Max="1" Vnum="13308">
+    <Reset>
       <!--Spawn Centra to Along a thin tunnel, within a dark cave-->
+      <Type>NPC</Type>
+      <Destination>13305</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13308</Vnum>
     </Reset>
-    <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="13305">
+    <Reset>
       <!--Spawn a large chain to Centra-->
+      <Type>Equip</Type>
+      <Destination>0</Destination>
+      <Count>0</Count>
+      <Max>0</Max>
+      <Vnum>13305</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13306" Count="1" Max="1" Vnum="13306">
+    <Reset>
       <!--Spawn Bungo to Along an odd tunnel, within a dark cave-->
+      <Type>NPC</Type>
+      <Destination>13306</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13306</Vnum>
     </Reset>
-    <Reset Type="NPC" Destination="13308" Count="1" Max="1" Vnum="13305">
+    <Reset>
       <!--Spawn Mimsa to Before a sharp turn, in the dark cave-->
+      <Type>NPC</Type>
+      <Destination>13308</Destination>
+      <Count>1</Count>
+      <Max>1</Max>
+      <Vnum>13305</Vnum>
     </Reset>
   </Resets>
 </Area>
