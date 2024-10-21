@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>23260</VnumStart>
     <VnumEnd>23281</VnumEnd>
+    <MinimumLevel>35</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{35 up} Ceran   Green Tinged tower</Credits>
+    <Credits>Ceran   Green Tinged tower</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -745,6 +748,7 @@ your warm flesh.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -800,6 +804,7 @@ in his room where he once sought to be a priest of healing.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>51</trust>
       <hitpoints>1020</hitpoints>
       <maxhitpoints>1020</maxhitpoints>
       <manapoints>0</manapoints>
@@ -857,6 +862,7 @@ of the ruins.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -912,6 +918,7 @@ lives as a reminder of how the weak are used and the evil control them.</descrip
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>58</trust>
       <hitpoints>1160</hitpoints>
       <maxhitpoints>1160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -966,6 +973,7 @@ lives as a reminder of how the weak are used and the evil control them.</descrip
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1023,6 +1031,7 @@ his release.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1080,6 +1089,7 @@ watches over the power that will one day help release the Lord of the ruins.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1760,28 +1770,28 @@ if they managed to cut it right.</Description>
       <!--Spawn a cap made from an elven skull to a lich cleric-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23269">
-      <!--Spawn a key to a lich cleric-->
+      <!--Spawn a key to the swan-->
     </Reset>
     <Reset Type="NPC" Destination="23274" Count="1" Max="1" Vnum="23263">
       <!--Spawn the undead elven healer to In a room of healing-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23267">
-      <!--Spawn the amulet of heaven to the undead elven healer-->
+      <!--Spawn the amulet of heaven to the duckling-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23270">
-      <!--Spawn a key to the undead elven healer-->
+      <!--Spawn a key to the duckling-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23262">
-      <!--Spawn an obsidian pendant to the undead elven healer-->
+      <!--Spawn an obsidian pendant to the duckling-->
     </Reset>
     <Reset Type="NPC" Destination="23275" Count="1" Max="1" Vnum="23264">
       <!--Spawn the undead elven bishop to In the holy place-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23266">
-      <!--Spawn a green emerald bracer to the undead elven bishop-->
+      <!--Spawn a green emerald bracer to the cityguard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23271">
-      <!--Spawn a key to the undead elven bishop-->
+      <!--Spawn a key to the cityguard-->
     </Reset>
     <Reset Type="NPC" Destination="23277" Count="1" Max="2" Vnum="23265">
       <!--Spawn a dark angel to In an unholy green light-->
@@ -1799,13 +1809,13 @@ if they managed to cut it right.</Description>
       <!--Spawn the undead elven cardinal to Within the unholy fire-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23260">
-      <!--Spawn a green tinted seal to the undead elven cardinal-->
+      <!--Spawn a green tinted seal to the cityguard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23261">
-      <!--Spawn the mace of disruption to the undead elven cardinal-->
+      <!--Spawn the mace of disruption to the cityguard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23264">
-      <!--Spawn a green mitre to the undead elven cardinal-->
+      <!--Spawn a green mitre to the cityguard-->
     </Reset>
   </Resets>
 </Area>

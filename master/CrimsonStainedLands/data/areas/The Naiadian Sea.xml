@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>17800</VnumStart>
     <VnumEnd>17899</VnumEnd>
+    <MinimumLevel>20</MinimumLevel>
+    <MaximumLevel>40</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{20 40} Kyrissaean The Naiadian Sea</Credits>
+    <Credits>Kyrissaean The Naiadian Sea</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -4075,6 +4078,7 @@ preparing to devour you piece by piece.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4132,6 +4136,7 @@ rip you apart.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4191,6 +4196,7 @@ honorable of deaths.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4248,6 +4254,7 @@ them down.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4305,6 +4312,7 @@ never disturbed her.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4362,6 +4370,7 @@ water, then continues her sunbathing session.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4419,6 +4428,7 @@ over her shoulder and resumes her exercises.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4477,6 +4487,7 @@ you with their purity.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4536,6 +4547,7 @@ the slighest ripple is created as it swims past.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4592,6 +4604,7 @@ bound to one another for protection.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4648,6 +4661,7 @@ it begins searching for its next meal.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4705,6 +4719,7 @@ currents.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5290,10 +5305,10 @@ currents.</description>
       <!--Spawn a merman hunter to The Naiadian Sea-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17804">
-      <!--Spawn a pair of golden arm bands inscribed with a trident to the sultans guard-->
+      <!--Spawn a pair of golden arm bands inscribed with a trident to a merman hunter-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17805">
-      <!--Spawn a golden trident to the sultans guard-->
+      <!--Spawn a golden trident to a merman hunter-->
     </Reset>
     <Reset Type="NPC" Destination="17836" Count="1" Max="3" Vnum="17801">
       <!--Spawn a red sea serpent to The Naiadian Sea-->
@@ -5311,7 +5326,7 @@ currents.</description>
       <!--Spawn a pair of golden arm bands inscribed with a trident to a merman hunter-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17805">
-      <!--Spawn a golden trident to a construction worker-->
+      <!--Spawn a golden trident to a merman hunter-->
     </Reset>
     <Reset Type="NPC" Destination="17843" Count="1" Max="3" Vnum="17800">
       <!--Spawn a green sea serpent to The Naiadian Sea-->
@@ -5458,22 +5473,22 @@ currents.</description>
       <!--Spawn a golden haired mermaid to An Outcropping of Rocks-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17808">
-      <!--Spawn a comb made from finger coral to the sultan's guard-->
+      <!--Spawn a comb made from finger coral to a golden haired mermaid-->
     </Reset>
     <Reset Type="NPC" Destination="17872" Count="1" Max="4" Vnum="17806">
       <!--Spawn a tawny haired mermaid to An Outcropping of Rocks-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17810">
-      <!--Spawn a bracelet made from seahorses to The Royal Guard-->
+      <!--Spawn a bracelet made from seahorses to a tawny haired mermaid-->
     </Reset>
     <Reset Type="NPC" Destination="17873" Count="1" Max="5" Vnum="17802">
       <!--Spawn a merman hunter to The Naiadian Sea-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17804">
-      <!--Spawn a pair of golden arm bands inscribed with a trident to the sultan's guard-->
+      <!--Spawn a pair of golden arm bands inscribed with a trident to a merman hunter-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17805">
-      <!--Spawn a golden trident to the sultan's guard-->
+      <!--Spawn a golden trident to a merman hunter-->
     </Reset>
     <Reset Type="NPC" Destination="17880" Count="1" Max="8" Vnum="17803">
       <!--Spawn a merman guard to An Outcropping of Rocks-->
@@ -5530,10 +5545,10 @@ currents.</description>
       <!--Spawn a merman hunter to The Naiadian Sea-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17804">
-      <!--Spawn a pair of golden arm bands inscribed with a trident to the alley cat-->
+      <!--Spawn a pair of golden arm bands inscribed with a trident to a merman hunter-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17805">
-      <!--Spawn a golden trident to the alley cat-->
+      <!--Spawn a golden trident to a merman hunter-->
     </Reset>
     <Reset Type="NPC" Destination="17899" Count="1" Max="3" Vnum="17801">
       <!--Spawn a red sea serpent to The Naiadian Sea-->

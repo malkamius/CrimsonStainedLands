@@ -5,10 +5,13 @@
     <Info></Info>
     <VnumStart>60700</VnumStart>
     <VnumEnd>60999</VnumEnd>
+    <MinimumLevel>10</MinimumLevel>
+    <MaximumLevel>25</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{10 25} Drkside Thalos</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
+    <Credits>Drkside Thalos</Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>101028</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -3700,6 +3703,7 @@ disintegrate you. Beholders are not known for their personality.</description>
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3756,6 +3760,7 @@ greedily.</description>
       <ManaPointDiceSides>4</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>9</trust>
       <hitpoints>180</hitpoints>
       <maxhitpoints>180</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3811,6 +3816,7 @@ front.</description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3865,6 +3871,7 @@ front.</description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3919,6 +3926,7 @@ front.</description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3973,6 +3981,7 @@ front.</description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4027,6 +4036,7 @@ front.</description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4081,6 +4091,7 @@ front.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>3</trust>
       <hitpoints>60</hitpoints>
       <maxhitpoints>60</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4136,6 +4147,7 @@ stone creature. He stands here still guarding the city.</description>
       <ManaPointDiceSides>12</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5671,13 +5683,13 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn a demon-faced talisman to The mimic-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="60711">
-      <!--Spawn an orange potion to The mimic-->
+      <!--Spawn an orange potion to a livery servant-->
     </Reset>
     <Reset Type="NPC" Destination="60720" Count="1" Max="12" Vnum="60701">
       <!--Spawn The lamia to The produce stand-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60752">
-      <!--Spawn a long slim dagger to The lamia-->
+      <!--Spawn a long slim dagger to a livery servant-->
     </Reset>
     <Reset Type="NPC" Destination="60724" Count="1" Max="12" Vnum="60701">
       <!--Spawn The lamia to Under the watchtower-->
@@ -5686,25 +5698,25 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn a clear stone to The lamia-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60752">
-      <!--Spawn a long slim dagger to The lamia-->
+      <!--Spawn a long slim dagger to a livery servant-->
     </Reset>
     <Reset Type="NPC" Destination="60726" Count="1" Max="12" Vnum="60701">
       <!--Spawn The lamia to A ruined clay dwelling-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60735">
-      <!--Spawn a pearly white stone to The lamia-->
+      <!--Spawn a pearly white stone to a livery servant-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60752">
-      <!--Spawn a long slim dagger to The lamia-->
+      <!--Spawn a long slim dagger to a livery servant-->
     </Reset>
     <Reset Type="NPC" Destination="60726" Count="1" Max="1" Vnum="60703">
       <!--Spawn The mimic to A ruined clay dwelling-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="60715">
-      <!--Spawn a tattered scroll to The mimic-->
+      <!--Spawn a tattered scroll to a livery servant-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="60739">
-      <!--Spawn a dull grey stone to The mimic-->
+      <!--Spawn a dull grey stone to a livery servant-->
     </Reset>
     <Reset Type="NPC" Destination="60727" Count="2" Max="4" Vnum="60707">
       <!--Spawn The horned lizard to A collapsed stone dwelling-->
@@ -5716,10 +5728,10 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn The mimic to An abandoned shop-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="60710">
-      <!--Spawn a black potion to The mimic-->
+      <!--Spawn a black potion to a livery servant-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60714">
-      <!--Spawn a smooth quartz ball to The mimic-->
+      <!--Spawn a smooth quartz ball to a livery servant-->
     </Reset>
     <Reset Type="Item" Destination="60731" Count="0" Max="1" Vnum="60725">
       <!--Spawn the desk to South wing of the city hall-->
@@ -5734,10 +5746,10 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn The lamia to The city hall-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60717">
-      <!--Spawn a silver flute to The lamia-->
+      <!--Spawn a silver flute to an pennatus trader-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60752">
-      <!--Spawn a long slim dagger to The lamia-->
+      <!--Spawn a long slim dagger to an pennatus trader-->
     </Reset>
     <Reset Type="NPC" Destination="60732" Count="2" Max="4" Vnum="60707">
       <!--Spawn The horned lizard to The city hall-->
@@ -5764,10 +5776,10 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn The lamia to A collapsed home-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60737">
-      <!--Spawn a lavender and green stone to The lamia-->
+      <!--Spawn a lavender and green stone to an pennatus trader-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60752">
-      <!--Spawn a long slim dagger to The lamia-->
+      <!--Spawn a long slim dagger to an pennatus trader-->
     </Reset>
     <Reset Type="NPC" Destination="60736" Count="1" Max="1" Vnum="60706">
       <!--Spawn The mimic to A collapsed home-->
@@ -5779,7 +5791,7 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn The mimic to A small shack-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60714">
-      <!--Spawn a smooth quartz ball to The mimic-->
+      <!--Spawn a smooth quartz ball to a pegasus-->
     </Reset>
     <Reset Type="NPC" Destination="60740" Count="1" Max="12" Vnum="60701">
       <!--Spawn The lamia to A back alley-->
@@ -5803,10 +5815,10 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn a two-handed sword to The stone golem-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60726">
-      <!--Spawn an engraved ivory seal to The stone golem-->
+      <!--Spawn an engraved ivory seal to a pegasus-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60703">
-      <!--Spawn some mithril sleeves to The stone golem-->
+      <!--Spawn some mithril sleeves to a pegasus-->
     </Reset>
     <Reset Type="NPC" Destination="60747" Count="2" Max="8" Vnum="60708">
       <!--Spawn The stone golem to The south-west watchtower-->
@@ -5833,7 +5845,7 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn a set of mithril leggings to The stone golem-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60706">
-      <!--Spawn a mithril girth to The stone golem-->
+      <!--Spawn a mithril girth to a pegasus-->
     </Reset>
     <Reset Type="NPC" Destination="60750" Count="1" Max="1" Vnum="60700">
       <!--Spawn The mighty beholder to The Temple of Thalos-->
@@ -5842,31 +5854,31 @@ stone creature. He stands here still guarding the city.</description>
       <!--Spawn a sturdy iron shield to The mighty beholder-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60723">
-      <!--Spawn a dark green cloak to The mighty beholder-->
+      <!--Spawn a dark green cloak to an pennatus prisoner-->
     </Reset>
     <Reset Type="NPC" Destination="60754" Count="2" Max="8" Vnum="60708">
       <!--Spawn The stone golem to The south-east watchtower-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60721">
-      <!--Spawn a two-handed sword to The stone golem-->
+      <!--Spawn a two-handed sword to an pennatus prisoner-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60701">
-      <!--Spawn a mithril helm to The stone golem-->
+      <!--Spawn a mithril helm to an pennatus prisoner-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60702">
-      <!--Spawn a pair of mithril gauntlets to The stone golem-->
+      <!--Spawn a pair of mithril gauntlets to an pennatus prisoner-->
     </Reset>
     <Reset Type="NPC" Destination="60767" Count="1" Max="2" Vnum="5111">
       <!--Spawn the drow scout to A valley in the dark dwarf forest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5100">
-      <!--Spawn a commoner's longsword to the drow scout-->
+      <!--Spawn a commoner's longsword to an pennatus prisoner-->
     </Reset>
     <Reset Type="NPC" Destination="60770" Count="2" Max="2" Vnum="5110">
       <!--Spawn the drow guard to Down the path into a dead end-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5100">
-      <!--Spawn a commoner's longsword to the drow guard-->
+      <!--Spawn a commoner's longsword to an pennatus prisoner-->
     </Reset>
     <Reset Type="NPC" Destination="60770" Count="2" Max="2" Vnum="5110">
       <!--Spawn the drow guard to Down the path into a dead end-->

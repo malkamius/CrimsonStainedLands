@@ -5,10 +5,13 @@
     <Info></Info>
     <VnumStart>20600</VnumStart>
     <VnumEnd>20699</VnumEnd>
+    <MinimumLevel>15</MinimumLevel>
+    <MaximumLevel>1</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{15-Up} FeaR    Emerald Forest</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
+    <Credits>FeaR    Emerald Forest</Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>101003</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4009,6 +4012,36 @@ to...</Description>
       </Exits>
       <ExtraDescriptions />
     </Room>
+    <Room>
+      <VNum>20700</VNum>
+      <Name>The air above Goblin Village.</Name>
+      <Description>Clouds wisp by making it easy to glide with your wings spread out.</Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>101002</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>50400</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
   </Rooms>
   <NPCs>
     <NPC>
@@ -4030,6 +4063,7 @@ the faerie folk.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>24</trust>
       <hitpoints>480</hitpoints>
       <maxhitpoints>480</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4088,6 +4122,7 @@ distance. She calls out to you to join her in her dance.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>29</trust>
       <hitpoints>580</hitpoints>
       <maxhitpoints>580</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4146,6 +4181,7 @@ them directly, he seems to be eyeing one of the brownies.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4202,6 +4238,7 @@ pockets are filled with acorns and nuts.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4261,6 +4298,7 @@ a pony-tail.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4319,6 +4357,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>39</trust>
       <hitpoints>780</hitpoints>
       <maxhitpoints>780</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4377,6 +4416,7 @@ curses at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4435,6 +4475,7 @@ all over it's forehead in every possible language known.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4492,6 +4533,7 @@ continue eating its weeds. It bares large yellowed teeth at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4548,6 +4590,7 @@ preparing for the Great Hunt and in a low voice he intones your name.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4605,6 +4648,7 @@ perhaps, or a foxtrot.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4663,6 +4707,7 @@ green cloak, he is currently practicing the use of his staff.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4721,6 +4766,7 @@ finished with them.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>58</trust>
       <hitpoints>1160</hitpoints>
       <maxhitpoints>1160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4775,6 +4821,7 @@ finished with them.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4836,6 +4883,7 @@ his duties.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4892,6 +4940,7 @@ closed eyes issuing an invitation you somehow cannot resist.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4949,6 +4998,7 @@ intense adhorrence for all beauty and youth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>41</trust>
       <hitpoints>820</hitpoints>
       <maxhitpoints>820</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5005,6 +5055,7 @@ the undeed to destroy you!</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5063,6 +5114,7 @@ young are known to fall into once in a while. Love.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5121,6 +5173,7 @@ happy worker, and no slacker.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5176,6 +5229,7 @@ SCRAM! He looks around for Maddie, the local beauty.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5231,6 +5285,7 @@ her ruffian suitors.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5290,6 +5345,7 @@ glad".</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5350,6 +5406,7 @@ and pears.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5410,6 +5467,7 @@ with scorn"</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5469,6 +5527,7 @@ High.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5528,6 +5587,7 @@ tonight. She looks at you pleadingly.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5585,6 +5645,7 @@ beautiful to describe.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5642,6 +5703,7 @@ its body and disappears.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5699,6 +5761,7 @@ out of him.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>38</trust>
       <hitpoints>760</hitpoints>
       <maxhitpoints>760</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5758,6 +5821,7 @@ Nobody really knows save the members of the order.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>37</trust>
       <hitpoints>740</hitpoints>
       <maxhitpoints>740</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5817,6 +5881,7 @@ hint of his oriental origin.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5873,6 +5938,7 @@ Siew Bao' ".</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5930,6 +5996,7 @@ you with an evil intelligence.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5986,6 +6053,7 @@ with sharp little teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>12</trust>
       <hitpoints>240</hitpoints>
       <maxhitpoints>240</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6043,6 +6111,7 @@ wanders the edge of this dark lake forever.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6100,6 +6169,7 @@ for a moment, you see upon her face the image of smiling demon.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>43</trust>
       <hitpoints>860</hitpoints>
       <maxhitpoints>860</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6160,6 +6230,7 @@ face.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>58</trust>
       <hitpoints>1160</hitpoints>
       <maxhitpoints>1160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6219,6 +6290,7 @@ last battle.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>54</trust>
       <hitpoints>1080</hitpoints>
       <maxhitpoints>1080</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6278,6 +6350,7 @@ hair fall gently over her shoulders making her strikingly beautiful.</descriptio
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>34</trust>
       <hitpoints>680</hitpoints>
       <maxhitpoints>680</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6336,6 +6409,7 @@ them directly, he seems to be eyeing one of the brownies.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6394,6 +6468,7 @@ them directly, he seems to be eyeing one of the brownies.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6452,6 +6527,7 @@ them directly, he seems to be eyeing one of the brownies.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6510,6 +6586,7 @@ them directly, he seems to be eyeing one of the brownies.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6569,6 +6646,7 @@ a pony-tail.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6628,6 +6706,7 @@ a pony-tail.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6687,6 +6766,7 @@ a pony-tail.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6746,6 +6826,7 @@ a pony-tail.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6805,6 +6886,7 @@ a pony-tail.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6861,6 +6943,7 @@ pockets are filled with acorns and nuts.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6917,6 +7000,7 @@ pockets are filled with acorns and nuts.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6973,6 +7057,7 @@ pockets are filled with acorns and nuts.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7029,6 +7114,7 @@ pockets are filled with acorns and nuts.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7088,6 +7174,7 @@ the faerie folk.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>24</trust>
       <hitpoints>480</hitpoints>
       <maxhitpoints>480</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7147,6 +7234,7 @@ the faerie folk.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>24</trust>
       <hitpoints>480</hitpoints>
       <maxhitpoints>480</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7206,6 +7294,7 @@ the faerie folk.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>24</trust>
       <hitpoints>480</hitpoints>
       <maxhitpoints>480</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7265,6 +7354,7 @@ the faerie folk.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>24</trust>
       <hitpoints>480</hitpoints>
       <maxhitpoints>480</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7323,6 +7413,7 @@ distance. She calls out to you to join her in her dance.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>29</trust>
       <hitpoints>580</hitpoints>
       <maxhitpoints>580</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7381,6 +7472,7 @@ distance. She calls out to you to join her in her dance.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>29</trust>
       <hitpoints>580</hitpoints>
       <maxhitpoints>580</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7439,6 +7531,7 @@ distance. She calls out to you to join her in her dance.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>29</trust>
       <hitpoints>580</hitpoints>
       <maxhitpoints>580</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7497,6 +7590,7 @@ distance. She calls out to you to join her in her dance.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>29</trust>
       <hitpoints>580</hitpoints>
       <maxhitpoints>580</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7556,6 +7650,7 @@ hair fall gently over her shoulders making her strikingly beautiful.</descriptio
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>34</trust>
       <hitpoints>680</hitpoints>
       <maxhitpoints>680</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7615,6 +7710,7 @@ hair fall gently over her shoulders making her strikingly beautiful.</descriptio
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>34</trust>
       <hitpoints>680</hitpoints>
       <maxhitpoints>680</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7673,6 +7769,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>39</trust>
       <hitpoints>780</hitpoints>
       <maxhitpoints>780</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7731,6 +7828,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>39</trust>
       <hitpoints>780</hitpoints>
       <maxhitpoints>780</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7789,6 +7887,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>39</trust>
       <hitpoints>780</hitpoints>
       <maxhitpoints>780</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7847,6 +7946,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>39</trust>
       <hitpoints>780</hitpoints>
       <maxhitpoints>780</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7905,6 +8005,7 @@ all over it's forehead in every possible language known.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7963,6 +8064,7 @@ all over it's forehead in every possible language known.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8021,6 +8123,7 @@ all over it's forehead in every possible language known.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8079,6 +8182,7 @@ all over it's forehead in every possible language known.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8136,6 +8240,7 @@ perhaps, or a foxtrot.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8193,6 +8298,7 @@ perhaps, or a foxtrot.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8250,6 +8356,7 @@ perhaps, or a foxtrot.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8307,6 +8414,7 @@ perhaps, or a foxtrot.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8364,6 +8472,7 @@ continue eating its weeds. It bares large yellowed teeth at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8421,6 +8530,7 @@ continue eating its weeds. It bares large yellowed teeth at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8478,6 +8588,7 @@ continue eating its weeds. It bares large yellowed teeth at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8535,6 +8646,7 @@ continue eating its weeds. It bares large yellowed teeth at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8591,6 +8703,7 @@ you with an evil intelligence.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8647,6 +8760,7 @@ you with an evil intelligence.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8703,6 +8817,7 @@ you with an evil intelligence.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8759,6 +8874,7 @@ preparing for the Great Hunt and in a low voice he intones your name.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8815,6 +8931,7 @@ preparing for the Great Hunt and in a low voice he intones your name.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8871,6 +8988,7 @@ preparing for the Great Hunt and in a low voice he intones your name.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8927,6 +9045,7 @@ preparing for the Great Hunt and in a low voice he intones your name.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8984,6 +9103,7 @@ braided cloak of forest green lies among the lilac bushes.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>27</trust>
       <hitpoints>540</hitpoints>
       <maxhitpoints>540</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9042,6 +9162,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9100,6 +9221,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9158,6 +9280,7 @@ small deer which seems to have injured it's leg.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9217,6 +9340,7 @@ huntsmen in service to Gertrude.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -13161,16 +13285,16 @@ It is surrounded with an aura of death.</Description>
       <!--Spawn Demon-Elf to A Hill in the Marsh-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20660">
-      <!--Spawn a gold scarab ring to Demon-Elf-->
+      <!--Spawn a gold scarab ring to Angelic Spirit-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20661">
-      <!--Spawn a green serpent-tressed wig to Demon-Elf-->
+      <!--Spawn a green serpent-tressed wig to Angelic Spirit-->
     </Reset>
     <Reset Type="NPC" Destination="20654" Count="1" Max="1" Vnum="20664">
       <!--Spawn a ranger to The Forest Road-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20640">
-      <!--Spawn an ashen longbow to a ranger-->
+      <!--Spawn an ashen longbow to a seccubi-->
     </Reset>
     <Reset Type="NPC" Destination="20655" Count="1" Max="2" Vnum="20657">
       <!--Spawn a dryad to The Forest Road-->
@@ -13185,10 +13309,10 @@ It is surrounded with an aura of death.</Description>
       <!--Spawn Imbessar to A Shady Bridge-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20662">
-      <!--Spawn the dead star circlet to Imbessar-->
+      <!--Spawn the dead star circlet to a dealer-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="20664">
-      <!--Spawn the whipping tail of a manticore to Imbessar-->
+      <!--Spawn the whipping tail of a manticore to a dealer-->
     </Reset>
     <Reset Type="NPC" Destination="20658" Count="1" Max="2" Vnum="20648">
       <!--Spawn a brownie to The Shady bridge-->

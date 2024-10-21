@@ -3944,10 +3944,10 @@ namespace CrimsonStainedLands
 
         
 
-        public bool HasBuilderPermission(AreaData area) => area != null && (area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC));
-        public bool HasBuilderPermission(RoomData room) => room.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
-        public bool HasBuilderPermission(ItemTemplateData item) => item.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
-        public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.Builders.IsName(Name, true) || (Level == Game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(AreaData area) => area != null && (area.Builders.IsName(Name, true) || (Trust == Game.MAX_LEVEL && !IsNPC));
+        public bool HasBuilderPermission(RoomData room) => room.Area.Builders.IsName(Name, true) || (Trust == Game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(ItemTemplateData item) => item.Area.Builders.IsName(Name, true) || (Trust == Game.MAX_LEVEL && !IsNPC);
+        public bool HasBuilderPermission(NPCTemplateData npc) => npc.Area.Builders.IsName(Name, true) || (Trust == Game.MAX_LEVEL && !IsNPC);
 
 
         public bool IsInactive { get { return (this is Player player && DateTime.Now - player.LastActivity > TimeSpan.FromMinutes(5)); } }

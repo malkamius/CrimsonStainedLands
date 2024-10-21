@@ -21,8 +21,16 @@ const keyMap = {
     'Numpad5': 'look',
     'Escape': '/selectinput'
 };
+function escapeHTML(unsafeText) {
+    return unsafeText
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
 function appendToOutput(message) {
-    const processedMessage = message
+    const processedMessage = escapeHTML(message)
         .replace(/\n/g, '<br>')
         .replace(/ /g, '&nbsp;')
         .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
@@ -71,7 +79,7 @@ function sendCommand(command) {
     }
     else if (wsManager.isConnected()) {
         wsManager.sendMessage(command);
-        appendToOutput(`> ${command}\n`);
+        appendToOutput(`${command}\n`);
     }
     else {
         appendToOutput('Not connected. Type /connect to connect to the MUD server.\n');

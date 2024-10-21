@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>2100</VnumStart>
     <VnumEnd>2199</VnumEnd>
+    <MinimumLevel>5</MinimumLevel>
+    <MaximumLevel>15</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{ 5 15} Raff    Dangerous Neighborhood</Credits>
+    <Credits>Raff    Dangerous Neighborhood</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -2658,6 +2661,7 @@ A doorway empties out into Solomon  street to the west.</Description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>100</hitpoints>
       <maxhitpoints>100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2712,6 +2716,7 @@ A doorway empties out into Solomon  street to the west.</Description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>100</hitpoints>
       <maxhitpoints>100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2767,6 +2772,7 @@ guess mostly brute force from the size of his muscles.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2821,6 +2827,7 @@ guess mostly brute force from the size of his muscles.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2875,6 +2882,7 @@ guess mostly brute force from the size of his muscles.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>7</trust>
       <hitpoints>140</hitpoints>
       <maxhitpoints>140</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2929,6 +2937,7 @@ guess mostly brute force from the size of his muscles.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>8</trust>
       <hitpoints>160</hitpoints>
       <maxhitpoints>160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2983,6 +2992,7 @@ guess mostly brute force from the size of his muscles.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3038,6 +3048,7 @@ His fangs are blood-stained from hearty meals of ... steak?!</description>
       <ManaPointDiceSides>2</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>100</hitpoints>
       <maxhitpoints>100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3095,6 +3106,7 @@ His fangs are blood-stained from hearty meals of ... steak?!</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3149,6 +3161,7 @@ His fangs are blood-stained from hearty meals of ... steak?!</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>13</trust>
       <hitpoints>260</hitpoints>
       <maxhitpoints>260</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3204,6 +3217,7 @@ breaking heads for the Ogres.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3962,7 +3976,7 @@ breaking heads for the Ogres.</description>
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
-      <!--Spawn a Troll gang jacket to an enormous reanimated minotaur-->
+      <!--Spawn a Troll gang jacket to a troll gang member-->
     </Reset>
     <Reset Type="NPC" Destination="2103" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
@@ -4049,10 +4063,10 @@ breaking heads for the Ogres.</description>
       <!--Spawn a studded Troll gang jacket to a bruiser-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2111">
-      <!--Spawn a troll signet ring to a burning red-boned skeleton-->
+      <!--Spawn a troll signet ring to a bruiser-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2103">
-      <!--Spawn a hefty length of chain to a burning red-boned skeleton-->
+      <!--Spawn a hefty length of chain to a bruiser-->
     </Reset>
     <Reset Type="NPC" Destination="2114" Count="1" Max="3" Vnum="2109">
       <!--Spawn a punk to No-Man's-Land Camp-->
@@ -4061,7 +4075,7 @@ breaking heads for the Ogres.</description>
       <!--Spawn a studded Troll gang jacket to a punk-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2118">
-      <!--Spawn a switchblade to the black skeleton of a knight-->
+      <!--Spawn a switchblade to a punk-->
     </Reset>
     <Reset Type="NPC" Destination="2114" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->
@@ -4097,7 +4111,7 @@ breaking heads for the Ogres.</description>
       <!--Spawn a troll gang member to Gangland Camp-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="2101">
-      <!--Spawn a Troll gang jacket to the undead mage of the Abyss-->
+      <!--Spawn a Troll gang jacket to a troll gang member-->
     </Reset>
     <Reset Type="NPC" Destination="2118" Count="1" Max="25" Vnum="2101">
       <!--Spawn a troll gang member to No-Man's-Land Camp-->

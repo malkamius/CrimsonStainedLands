@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>500</VnumStart>
     <VnumEnd>599</VnumEnd>
+    <MinimumLevel>1</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{SHRINE} Ceial  Shrine of Corruption</Credits>
+    <Credits>Ceial  Shrine of Corruption</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1698,6 +1701,7 @@ you to strike.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1754,6 +1758,7 @@ this world.  You suddenly have an impulse to turn and run.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>2000</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1811,6 +1816,7 @@ attack this massive specimen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>58</trust>
       <hitpoints>1160</hitpoints>
       <maxhitpoints>1160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1868,6 +1874,7 @@ Ceial.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>4000</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2226,13 +2233,13 @@ Ceial.</description>
       <!--Spawn The Orc General to Center of the field-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="502">
-      <!--Spawn a breastplate adorned with a black rose to A skeletal knight-->
+      <!--Spawn a breastplate adorned with a black rose to The Orc General-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="500">
-      <!--Spawn a helm engraved with a black rose with a single thorn to A skeletal knight-->
+      <!--Spawn a helm engraved with a black rose with a single thorn to The Orc General-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="501">
-      <!--Spawn the Sword of Devotion to A skeletal knight-->
+      <!--Spawn the Sword of Devotion to The Orc General-->
     </Reset>
     <Reset Type="NPC" Destination="520" Count="9" Max="15" Vnum="500">
       <!--Spawn A powerful orc warrior to Within the fields-->
@@ -2262,7 +2269,7 @@ Ceial.</description>
       <!--Spawn the bracer of dread to the Dreadlord-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="505">
-      <!--Spawn the scroll of despair to A skeletal knight-->
+      <!--Spawn the scroll of despair to the Dreadlord-->
     </Reset>
     <Reset Type="NPC" Destination="536" Count="1" Max="1" Vnum="503">
       <!--Spawn the Fallen Templar to Room of the fallen templar-->

@@ -278,19 +278,19 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            if(target == TargetIsType.targetChar && 
-                (spell.targetType == TargetTypes.targetCharOffensive || spell.targetType == TargetTypes.targetItemCharOff) && 
-                victim != null)
-            {
-                if (victim.Fighting == null)
-                    victim.Fighting = ch;
+            //if(target == TargetIsType.targetChar && 
+            //    (spell.targetType == TargetTypes.targetCharOffensive || spell.targetType == TargetTypes.targetItemCharOff) && 
+            //    victim != null)
+            //{
+            //    if (victim.Fighting == null)
+            //        victim.Fighting = ch;
 
-                if (ch.Fighting == null)
-                    ch.Fighting = victim;
+            //    if (ch.Fighting == null)
+            //        ch.Fighting = victim;
 
-                ch.Position = Positions.Fighting;
+            //    ch.Position = Positions.Fighting;
 
-            }
+            //}
 
             if (MethodUsed == CastType.Cast)
             {
@@ -360,6 +360,23 @@ namespace CrimsonStainedLands
                 }
                 if (spell.spellFun != null)
                     spell.spellFun(MethodUsed, spell, ch.Level, ch, vo, item, targetName + " " + argument, target);
+
+                if (target == TargetIsType.targetChar &&
+                (spell.targetType == TargetTypes.targetCharOffensive || spell.targetType == TargetTypes.targetItemCharOff) &&
+                victim != null && victim.Fighting == null)
+                {
+                    ItemData weapon;
+                    if (victim.Form != null)
+                        weapon = null;
+                    else
+                        victim.Equipment.TryGetValue(WearSlotIDs.Wield, out weapon);
+
+                    CharacterDoFunctions.DoStand(victim, "");
+                    if(victim.Position == Positions.Standing)
+                    {
+                        Combat.oneHit(victim, ch, weapon);
+                    }
+                }
             }
         } // End CastCommuneOrSing
 

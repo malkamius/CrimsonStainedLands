@@ -5,10 +5,13 @@
     <Info></Info>
     <VnumStart>40500</VnumStart>
     <VnumEnd>40699</VnumEnd>
+    <MinimumLevel>5</MinimumLevel>
+    <MaximumLevel>15</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{ 5 15} Copper  Miden'nir</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
+    <Credits>Copper  Miden'nir</Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>101001</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -3414,6 +3417,7 @@ APPEAR to be very hungry ... yet.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>8</trust>
       <hitpoints>160</hitpoints>
       <maxhitpoints>160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3473,6 +3477,7 @@ APPEAR to be very hungry ... yet.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>6</trust>
       <hitpoints>120</hitpoints>
       <maxhitpoints>120</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3528,6 +3533,7 @@ He is apparently the only survivor of the ambush.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>4</trust>
       <hitpoints>80</hitpoints>
       <maxhitpoints>80</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3584,6 +3590,7 @@ place that is used to be in days past.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3639,6 +3646,7 @@ has been sitting here quite a while, drinking himself into oblivion.</descriptio
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>8</trust>
       <hitpoints>160</hitpoints>
       <maxhitpoints>160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3694,6 +3702,7 @@ little bits.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>8</trust>
       <hitpoints>160</hitpoints>
       <maxhitpoints>160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3749,6 +3758,7 @@ beat up upon, but maybe you will do just fine ...</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>7</trust>
       <hitpoints>140</hitpoints>
       <maxhitpoints>140</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3804,6 +3814,7 @@ for his shortsword and lunges for your neck.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>9</trust>
       <hitpoints>180</hitpoints>
       <maxhitpoints>180</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4091,7 +4102,7 @@ with a stylized ivory hilt.</Description>
       <!--Spawn a goblin's short sword to the goblin-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3074">
-      <!--Spawn a long scale mail skirt to the goblin-->
+      <!--Spawn a long scale mail skirt to a napaea-->
     </Reset>
     <Reset Type="NPC" Destination="40509" Count="2" Max="2" Vnum="40501">
       <!--Spawn the goblin to The Miden'nir-->

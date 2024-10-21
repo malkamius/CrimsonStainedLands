@@ -851,7 +851,7 @@
       Rating="1" />
     <SkillLevel
       Guild="shapeshifter"
-      Level="10"
+      Level="8"
       Rating="1" />
   </SkillSpell>
   <SkillSpell
@@ -2313,7 +2313,7 @@
       Rating="1" />
     <SkillLevel
       Guild="shapeshifter"
-      Level="10"
+      Level="4"
       Rating="1" />
     <SkillLevel
       Guild="paladin"
@@ -4525,7 +4525,7 @@
       Rating="1" />
     <SkillLevel
       Guild="healer"
-      Level="18"
+      Level="12"
       Rating="1" />
     <SkillLevel
       Guild="paladin"
@@ -4545,7 +4545,7 @@
       Rating="1" />
     <SkillLevel
       Guild="shapeshifter"
-      Level="20"
+      Level="6"
       Rating="1" />
   </SkillSpell>
   <SkillSpell
@@ -4561,7 +4561,7 @@
       Rating="1" />
     <SkillLevel
       Guild="healer"
-      Level="19"
+      Level="4"
       Rating="1" />
     <SkillLevel
       Guild="ranger"
@@ -4822,6 +4822,30 @@
       PrerequisitePercentage="100"
       Rating="1" />
   </SkillSpell>
+	<SkillSpell
+	   Name="headbonk"
+	   MinimumPosition="standing"
+	   WaitTime="12"
+	   NounDamage="bonk"
+	   AutoCast="true"
+	   SkillTypes="Skill">
+		<SkillLevel
+		  Guild="healer"
+		  Level="14"
+		  Rating="1" />
+	</SkillSpell>
+	<SkillSpell
+	   Name="crack"
+	   MinimumPosition="standing"
+	   WaitTime="12"
+	   NounDamage="crack"
+	   AutoCast="true"
+	   SkillTypes="Skill">
+		<SkillLevel
+		  Guild="healer"
+		  Level="15"
+		  Rating="1" />
+	</SkillSpell>
   <SkillSpell
     Name="cross down parry"
     MinimumPosition="Fighting"

@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>29300</VnumStart>
     <VnumEnd>29399</VnumEnd>
+    <MinimumLevel>51</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{DEATH} Someone   Lich Tower</Credits>
+    <Credits>Someone   Lich Tower</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1020,6 +1023,7 @@ necromancy, they were the most renown knights of their day.</description>
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1076,6 +1080,7 @@ them.</description>
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1132,6 +1137,7 @@ and fangs it uses as weapons make you consider running as fast as posible.</desc
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1189,6 +1195,7 @@ corrupt your soul.  Fear him mortal for you are about to die.</description>
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>950</ManaPointDiceBonus>
+      <trust>65</trust>
       <hitpoints>1300</hitpoints>
       <maxhitpoints>1300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1247,6 +1254,7 @@ he has found to any seeking necromancy on some level.</description>
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>1950</ManaPointDiceBonus>
+      <trust>75</trust>
       <hitpoints>1500</hitpoints>
       <maxhitpoints>1500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1303,6 +1311,7 @@ perhaps you should run now, before you're dead.  ;&gt;</description>
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>1950</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1360,6 +1369,7 @@ is much larger and appears to be more powerful as well.</description>
       <ManaPointDiceSides>45</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>2950</ManaPointDiceBonus>
+      <trust>70</trust>
       <hitpoints>1400</hitpoints>
       <maxhitpoints>1400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2442,7 +2452,7 @@ is much larger and appears to be more powerful as well.</description>
       <!--Spawn A Minor Demon to A Summoning Room-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29355">
-      <!--Spawn the Bracer of the Night to an undead elven maiden-->
+      <!--Spawn the Bracer of the Night to A Minor Demon-->
     </Reset>
     <Reset Type="NPC" Destination="29366" Count="1" Max="2" Vnum="29356">
       <!--Spawn An Elite Death Knight to A Large Hall-->
@@ -2457,10 +2467,10 @@ is much larger and appears to be more powerful as well.</description>
       <!--Spawn Myzelak the Lich Lord to The Lich's Throne Room-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29359">
-      <!--Spawn the Hell's Wraith to a corrupted treant-->
+      <!--Spawn the Hell's Wraith to Myzelak the Lich Lord-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29360">
-      <!--Spawn sorceror's robes to a corrupted treant-->
+      <!--Spawn sorceror's robes to Myzelak the Lich Lord-->
     </Reset>
     <Reset Type="NPC" Destination="29368" Count="1" Max="2" Vnum="29356">
       <!--Spawn An Elite Death Knight to A Large Hall-->

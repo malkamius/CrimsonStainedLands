@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>11000</VnumStart>
     <VnumEnd>11099</VnumEnd>
+    <MinimumLevel>51</MinimumLevel>
+    <MaximumLevel>1</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{51-Up} Kraenesk Dark Forest</Credits>
+    <Credits>Kraenesk Dark Forest</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1336,6 +1339,7 @@ continue by land.</Description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1395,6 +1399,7 @@ darkness.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>52</trust>
       <hitpoints>1040</hitpoints>
       <maxhitpoints>1040</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1450,6 +1455,7 @@ of you and stares you down with his yellow eyes.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>52</trust>
       <hitpoints>1040</hitpoints>
       <maxhitpoints>1040</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1804,7 +1810,7 @@ of you and stares you down with his yellow eyes.</description>
       <!--Spawn a large bat to At the entrance to a Cave.-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11003">
-      <!--Spawn a bat's wings to a deer-->
+      <!--Spawn a bat's wings to a large bat-->
     </Reset>
     <Reset Type="NPC" Destination="11016" Count="1" Max="1" Vnum="11001">
       <!--Spawn a large bat to In a dark cave-->
@@ -1822,7 +1828,7 @@ of you and stares you down with his yellow eyes.</description>
       <!--Spawn a large bat to A passage in the cave-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11003">
-      <!--Spawn a bat's wings to a deer-->
+      <!--Spawn a bat's wings to a large bat-->
     </Reset>
     <Reset Type="NPC" Destination="11018" Count="1" Max="1" Vnum="11001">
       <!--Spawn a large bat to A passage in the cave-->
@@ -1834,16 +1840,16 @@ of you and stares you down with his yellow eyes.</description>
       <!--Spawn the bear to Inside the bear's den-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11001">
-      <!--Spawn A bear's hide to Taliesin, the Merlin of Britain-->
+      <!--Spawn A bear's hide to the bear-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11004">
-      <!--Spawn A large bear's front claws to Taliesin, the Merlin of Britain-->
+      <!--Spawn A large bear's front claws to the bear-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11005">
-      <!--Spawn a large bear's rear claws to a faerie lady-->
+      <!--Spawn a large bear's rear claws to the bear-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11000">
-      <!--Spawn A Large bear's Claw to a faerie lady-->
+      <!--Spawn A Large bear's Claw to the bear-->
     </Reset>
     <Reset Type="NPC" Destination="11021" Count="1" Max="1" Vnum="11002">
       <!--Spawn a large grey wolf to In a dark forest-->
@@ -1855,7 +1861,7 @@ of you and stares you down with his yellow eyes.</description>
       <!--Spawn a large grey wolf to In a dark forest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="11002">
-      <!--Spawn a Wolf's hide to Sulis, God of Sleep-->
+      <!--Spawn a Wolf's hide to a large grey wolf-->
     </Reset>
     <Reset Type="NPC" Destination="11026" Count="1" Max="1" Vnum="11002">
       <!--Spawn a large grey wolf to In a dark forest-->

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GLib;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -15,9 +16,6 @@ namespace CrimsonStainedLands
         {
             Console.CancelKeyPress += Console_CancelKeyPress;
 
-            // var cwd = System.IO.Directory.GetCurrentDirectory();;
-            // if(cwd.Contains(@"CrimsonStainedLands\bin\Debug\net8.0"))
-            //     System.IO.Directory.SetCurrentDirectory(System.IO.Path.Join(cwd, "..", "..", ".."));
             Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
 
             try

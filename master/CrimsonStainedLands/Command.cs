@@ -437,9 +437,9 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "wiznet", Action = WizardNet.DoWiznet, Info = "Enable wiznet to monitor events.", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
 
             // OLC
-            Commands.Add(new Command { Name = "asaveworld", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "saveworld", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead });
-            Commands.Add(new Command { Name = "worldsave", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead });
+            Commands.Add(new Command { Name = "asaveworld", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
+            Commands.Add(new Command { Name = "saveworld", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
+            Commands.Add(new Command { Name = "worldsave", Action = AreaData.DoASaveWorlds, Info = "Save unsaved areas.", MinimumPosition = Positions.Dead, MinimumLevel = 52 });
             Commands.Add(new Command { Name = "builders", Action = OLC.DoBuilder, Info = "Assign builders to an area.", MinimumPosition = Positions.Dead, MinimumLevel = 60 });
             Commands.Add(new Command { Name = "dig", Action = OLC.DoDig, Info = "Create a new exit or room.", MinimumPosition = Positions.Dead });
             Commands.Add(new Command { Name = "purge", Action = DoActWizard.DoPurge, Info = "Purge NPCs and items in a room.", MinimumPosition = Positions.Dead });

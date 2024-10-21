@@ -1553,7 +1553,7 @@ namespace CrimsonStainedLands
             if (ch.Room == null || ch.Room.Area == null)
                 ch.send("You aren't anywhere.");
             else
-                ch.send(ch.Room.Area.Name.TOSTRINGTRIM().PadRight(20) + " - " + (ch.Room.Area.Credits.TOSTRINGTRIM()).PadLeft(20));
+                ch.send(ch.Room.Area.Name.TOSTRINGTRIM().PadRight(20) + " - " + (ch.Room.Area.Credits.EscapeColor().TOSTRINGTRIM()).PadLeft(20));
 
         }
 
@@ -1563,10 +1563,10 @@ namespace CrimsonStainedLands
             {
                 if (ch.IsImmortal)
                     foreach (var area in from a in AreaData.Areas orderby a.VNumStart select a)
-                        ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.Name.EscapeColor().TOSTRINGTRIM(), area.Credits.EscapeColor().TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
+                        ch.send("{0,-20} - {{{{{1}-{2,-2}}} {3,-30} {4,-5} - {5,-5}\n\r", area.Name.EscapeColor().TOSTRINGTRIM(), area.MinimumLevel, area.MaximumLevel, area.Credits.EscapeColor().TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
                 else
-                    foreach (var area in from a in AreaData.Areas where a.Rooms.Any() orderby a.Credits select a)
-                        ch.send("{0,-20} - {1,-30} {2,-5} - {3,-5}\n\r", area.Name.EscapeColor().TOSTRINGTRIM(), area.Credits.EscapeColor().TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
+                    foreach (var area in from a in AreaData.Areas where a.Rooms.Any() && a.MinimumLevel <= 51 orderby a.MinimumLevel select a)
+                        ch.send("{0,-20} - {{{{{1}-{2,-2}}} {3,-30}\n\r", area.Name.EscapeColor().TOSTRINGTRIM(), area.MinimumLevel, area.MaximumLevel, area.Credits.EscapeColor().TOSTRINGTRIM());
             }
         }
 

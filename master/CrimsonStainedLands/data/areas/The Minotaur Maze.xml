@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>17900</VnumStart>
     <VnumEnd>17999</VnumEnd>
+    <MinimumLevel>25</MinimumLevel>
+    <MaximumLevel>50</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{25 50} Kyrissaean The Minotaur Maze</Credits>
+    <Credits>Kyrissaean The Minotaur Maze</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -5448,6 +5451,7 @@ put his underlings in their place.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5505,6 +5509,7 @@ any purpose other than to meet their lifemate.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5562,6 +5567,7 @@ them take lovers.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5620,6 +5626,7 @@ better than everyone elses.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5678,6 +5685,7 @@ determined to arrage it.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5736,6 +5744,7 @@ something, she gets it, or else...</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5794,6 +5803,7 @@ find him before his father finds out.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5851,6 +5861,7 @@ It's eye, a mixture of yellow and red stare warningly at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5911,6 +5922,7 @@ hearing distance.  No one pays him a bit of attention.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5968,6 +5980,7 @@ a specially designed metallic, mesh sack.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6026,6 +6039,7 @@ back and forth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7067,10 +7081,10 @@ back and forth.</description>
       <!--Spawn a thin gold necklace to a minotaur girl-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17919">
-      <!--Spawn a thin gold bracelet to a deer-->
+      <!--Spawn a thin gold bracelet to a minotaur girl-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17920">
-      <!--Spawn a thin gold ring to a deer-->
+      <!--Spawn a thin gold ring to a minotaur girl-->
     </Reset>
     <Reset Type="NPC" Destination="17924" Count="2" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
@@ -7088,7 +7102,7 @@ back and forth.</description>
       <!--Spawn a minotaur guard to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17910">
-      <!--Spawn a watchman's cudgel to a dale watchman-->
+      <!--Spawn a watchman's cudgel to a minotaur guard-->
     </Reset>
     <Reset Type="NPC" Destination="17925" Count="1" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
@@ -7124,7 +7138,7 @@ back and forth.</description>
       <!--Spawn a minotaur janitor to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17916">
-      <!--Spawn a janitor's stick to a dale guard-->
+      <!--Spawn a janitor's stick to a minotaur janitor-->
     </Reset>
     <Reset Type="NPC" Destination="17933" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
@@ -7169,7 +7183,7 @@ back and forth.</description>
       <!--Spawn a minotaur lad to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17903">
-      <!--Spawn an opalescent ball to a minotaur lad-->
+      <!--Spawn an opalescent ball to a young dragon-->
     </Reset>
     <Reset Type="NPC" Destination="17945" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
@@ -7202,13 +7216,13 @@ back and forth.</description>
       <!--Spawn a minotaur mother to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17906">
-      <!--Spawn a mother's ring to a dale man-->
+      <!--Spawn a mother's ring to the draconian fool-->
     </Reset>
     <Reset Type="NPC" Destination="17954" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
-      <!--Spawn a chain-link collar to a minotaur mongrel-->
+      <!--Spawn a chain-link collar to a phase dragon-->
     </Reset>
     <Reset Type="NPC" Destination="17955" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
@@ -7220,7 +7234,7 @@ back and forth.</description>
       <!--Spawn a minotaur guard to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17910">
-      <!--Spawn a watchman's cudgel to a minotaur guard-->
+      <!--Spawn a watchman's cudgel to a young dragon-->
     </Reset>
     <Reset Type="Item" Destination="17956" Count="0" Max="1" Vnum="17901">
       <!--Spawn a blue mushroom to A Four-Way Junction-->
@@ -7229,13 +7243,13 @@ back and forth.</description>
       <!--Spawn a minotaur girl to Dead End-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17918">
-      <!--Spawn a thin gold necklace to the town minstrel-->
+      <!--Spawn a thin gold necklace to a minotaur girl-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17919">
-      <!--Spawn a thin gold bracelet to the town minstrel-->
+      <!--Spawn a thin gold bracelet to a small white dragon-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17920">
-      <!--Spawn a thin gold ring to the town minstrel-->
+      <!--Spawn a thin gold ring to a small white dragon-->
     </Reset>
     <Reset Type="NPC" Destination="17959" Count="2" Max="15" Vnum="17905">
       <!--Spawn a minotaur maiden to A Four-Way Junction-->
@@ -7253,7 +7267,7 @@ back and forth.</description>
       <!--Spawn a minotaur guard to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17908">
-      <!--Spawn some steel-toed boots to a minotaur guard-->
+      <!--Spawn some steel-toed boots to a draconian commoner-->
     </Reset>
     <Reset Type="NPC" Destination="17966" Count="1" Max="5" Vnum="17902">
       <!--Spawn a minotaur father to A Four-Way Junction-->
@@ -7289,16 +7303,16 @@ back and forth.</description>
       <!--Spawn a thin gold necklace to a minotaur girl-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17919">
-      <!--Spawn a thin gold bracelet to a dale watchman-->
+      <!--Spawn a thin gold bracelet to a minotaur girl-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17920">
-      <!--Spawn a thin gold ring to a dale watchman-->
+      <!--Spawn a thin gold ring to a minotaur girl-->
     </Reset>
     <Reset Type="NPC" Destination="17972" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17902">
-      <!--Spawn a chain-link collar to a minotaur mongrel-->
+      <!--Spawn a chain-link collar to the Great Ranger-->
     </Reset>
     <Reset Type="NPC" Destination="17973" Count="1" Max="15" Vnum="17904">
       <!--Spawn a minotaur man to A Four-Way Junction-->
@@ -7319,19 +7333,19 @@ back and forth.</description>
       <!--Spawn the minotaur commander to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17911">
-      <!--Spawn the minotaur commander's combat uniform to the tavernkeeper-->
+      <!--Spawn the minotaur commander's combat uniform to the minotaur commander-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17912">
-      <!--Spawn the minotaur commander's combat crest to the tavernkeeper-->
+      <!--Spawn the minotaur commander's combat crest to the draconian fool-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17913">
-      <!--Spawn the minotaur commander's combat sollerets to the tavernkeeper-->
+      <!--Spawn the minotaur commander's combat sollerets to the draconian fool-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17914">
-      <!--Spawn the minotaur commander's combat gloves to the tavernkeeper-->
+      <!--Spawn the minotaur commander's combat gloves to the draconian fool-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17915">
-      <!--Spawn a key to the tavernkeeper-->
+      <!--Spawn a key to the draconian fool-->
     </Reset>
     <Reset Type="NPC" Destination="17977" Count="1" Max="10" Vnum="17906">
       <!--Spawn a minotaur lad to A Four-Way Junction-->
@@ -7379,7 +7393,7 @@ back and forth.</description>
       <!--Spawn a minotaur father to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17907">
-      <!--Spawn a wool cloak to a minotaur father-->
+      <!--Spawn a wool cloak to the Guardian of Tiamat-->
     </Reset>
     <Reset Type="NPC" Destination="17991" Count="1" Max="10" Vnum="17907">
       <!--Spawn a minotaur mongrel to A Four-Way Junction-->
@@ -7415,7 +7429,7 @@ back and forth.</description>
       <!--Spawn a minotaur guard to A Four-Way Junction-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="17910">
-      <!--Spawn a watchman's cudgel to a minotaur guard-->
+      <!--Spawn a watchman's cudgel to the Ancient Blue Dragon-->
     </Reset>
     <Reset Type="Item" Destination="17998" Count="0" Max="1" Vnum="17900">
       <!--Spawn a water barrel to A Four-Way Junction-->

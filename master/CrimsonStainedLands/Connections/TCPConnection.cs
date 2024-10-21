@@ -49,7 +49,7 @@ public class TCPConnection : BaseConnection
             }
             catch(IOException ex) 
             { 
-                if(ex.Message.Contains("was aborted "))
+                if(ex.Message.Contains("was aborted ") || ex.Message.Contains("closed"))
                 {
                     Cleanup();
                 }

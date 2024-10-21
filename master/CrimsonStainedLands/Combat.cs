@@ -9776,6 +9776,7 @@ namespace CrimsonStainedLands
         {
 
             var skill = SkillSpell.SkillLookup("lash");
+            float damage;
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
@@ -9808,14 +9809,19 @@ namespace CrimsonStainedLands
             ch.WaitState(skill.waitTime);
             if (chance > Utility.NumberPercent())
             {
-                var damage = Utility.dice(2, ch.Level / 2, ch.Level / 2);
+                //var damage = Utility.dice(2, ch.Level / 2, ch.Level / 2);
 
                 ch.Act("$n lashes $N with $p and pulls $M to the ground.", victim, wield, type: ActType.ToRoomNotVictim);
                 ch.Act("$n lashes you with $p and pulls you to the ground!", victim, wield, type: ActType.ToVictim);
                 ch.Act("You lash $N with $p and pull $M to the ground.", victim, wield, type: ActType.ToChar);
                 ch.CheckImprove(skill, true, 1);
-                Combat.Damage(ch, victim, damage, skill, wield != null ? wield.WeaponDamageType.Type : WeaponDamageTypes.Sting);
-                victim.WaitState(Game.PULSE_VIOLENCE * 2);
+                //Combat.Damage(ch, victim, damage, skill, wield != null ? wield.WeaponDamageType.Type : WeaponDamageTypes.Sting);
+                damage = wield.DamageDice.Roll() + ch.DamageRoll;
+
+                CheckEnhancedDamage(ch, ref damage);
+                Combat.Damage(ch, victim, (int)damage, skill, WeaponDamageTypes.Sting);
+                
+                victim.WaitState(Game.PULSE_VIOLENCE * 1);
                 CheckCheapShot(victim);
                 CheckGroundControl(victim);
             }

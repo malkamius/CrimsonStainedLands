@@ -5,10 +5,13 @@
     <Info></Info>
     <VnumStart>3000</VnumStart>
     <VnumEnd>3399</VnumEnd>
+    <MinimumLevel>1</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{ All } Diku    Midgaard</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
+    <Credits>Diku    Midgaard</Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>101039</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2814,7 +2817,7 @@ park entrance and to the east you see a small pond.</Description>
       <Name>The Pond</Name>
       <Description>You are swimming around in the pond, feeling rather stupid.  You can get
 back on the path from the eastern and western end of the pond.</Description>
-      <Sector>Swim</Sector>
+      <Sector>WaterSwim</Sector>
       <Flags>Law</Flags>
       <Exits>
         <Exit>
@@ -5948,6 +5951,7 @@ rings and bracelets.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <trust>38</trust>
       <hitpoints>760</hitpoints>
       <maxhitpoints>760</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6004,6 +6008,7 @@ body.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6059,6 +6064,7 @@ body.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6114,6 +6120,7 @@ body.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6170,6 +6177,7 @@ lifetime than you have ever seen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6225,6 +6233,7 @@ lifetime than you have ever seen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>8</trust>
       <hitpoints>160</hitpoints>
       <maxhitpoints>160</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6279,6 +6288,7 @@ lifetime than you have ever seen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6334,6 +6344,7 @@ lifetime than you have ever seen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6355,7 +6366,7 @@ lifetime than you have ever seen.</description>
       <gold>58</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain Warrior NoPurge</flags>
+      <flags>NPC Sentinel Trainer Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6388,6 +6399,7 @@ lifetime than you have ever seen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6443,6 +6455,7 @@ lifetime than you have ever seen.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6499,6 +6512,7 @@ keep herself going.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6558,6 +6572,7 @@ in his presence.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>499</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6613,6 +6628,7 @@ Type 'heal' to see a listing of spells.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6669,6 +6685,7 @@ and you notice that she is surrounded by a blue shimmering aura.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <trust>36</trust>
       <hitpoints>720</hitpoints>
       <maxhitpoints>720</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6690,7 +6707,7 @@ and you notice that she is surrounded by a blue shimmering aura.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel GuildMaster Mage NoPurge</flags>
+      <flags>NPC Sentinel Practice Mage NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6724,6 +6741,7 @@ a peaceful, loving look. You notice that he is surrounded by a white aura.</desc
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <trust>36</trust>
       <hitpoints>720</hitpoints>
       <maxhitpoints>720</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6745,7 +6763,7 @@ a peaceful, loving look. You notice that he is surrounded by a white aura.</desc
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel GuildMaster Cleric NoPurge</flags>
+      <flags>NPC Sentinel Practice Cleric NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6781,6 +6799,7 @@ human</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>36</trust>
       <hitpoints>720</hitpoints>
       <maxhitpoints>720</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6802,7 +6821,7 @@ human</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>NPC Sentinel GuildMaster Thief NoPurge</flags>
+      <flags>NPC Sentinel Practice Thief NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6837,6 +6856,7 @@ has a calm look on his face.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>36</trust>
       <hitpoints>720</hitpoints>
       <maxhitpoints>720</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6858,7 +6878,7 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel GuildMaster Warrior NoPurge AreaAttack</flags>
+      <flags>NPC Sentinel Practice Warrior NoPurge AreaAttack</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6893,6 +6913,7 @@ as well as defensive spells make him a deadly opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>499</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6950,6 +6971,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>499</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7006,6 +7028,7 @@ them combined with his extraordinary stealth makes him a deadly opponent.</descr
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7063,6 +7086,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7117,6 +7141,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7172,6 +7197,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7227,6 +7253,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7282,6 +7309,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7337,6 +7365,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7392,6 +7421,7 @@ opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7448,6 +7478,7 @@ but do not mess with him or else he'll get upset.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7503,6 +7534,7 @@ but do not mess with him or else he'll get upset.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>100</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>100</trust>
       <hitpoints>2000</hitpoints>
       <maxhitpoints>2000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7557,6 +7589,7 @@ but do not mess with him or else he'll get upset.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7611,6 +7644,7 @@ but do not mess with him or else he'll get upset.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7666,6 +7700,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>0</trust>
       <hitpoints>0</hitpoints>
       <maxhitpoints>0</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7723,6 +7758,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>100</hitpoints>
       <maxhitpoints>100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7777,6 +7813,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>2</trust>
       <hitpoints>40</hitpoints>
       <maxhitpoints>40</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7831,6 +7868,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7885,6 +7923,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>0</trust>
       <hitpoints>0</hitpoints>
       <maxhitpoints>0</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7943,6 +7982,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7997,6 +8037,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8051,6 +8092,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8106,6 +8148,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <trust>32</trust>
       <hitpoints>640</hitpoints>
       <maxhitpoints>640</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8161,6 +8204,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8215,6 +8259,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8269,6 +8314,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8327,6 +8373,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>3</trust>
       <hitpoints>60</hitpoints>
       <maxhitpoints>60</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8384,6 +8431,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>100</hitpoints>
       <maxhitpoints>100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8441,6 +8489,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>7</trust>
       <hitpoints>140</hitpoints>
       <maxhitpoints>140</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8498,6 +8547,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>9</trust>
       <hitpoints>180</hitpoints>
       <maxhitpoints>180</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8556,6 +8606,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>12</trust>
       <hitpoints>240</hitpoints>
       <maxhitpoints>240</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8614,6 +8665,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8672,6 +8724,7 @@ around its teeth.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8731,6 +8784,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8786,6 +8840,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>3</trust>
       <hitpoints>60</hitpoints>
       <maxhitpoints>60</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8840,6 +8895,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8894,6 +8950,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>0</trust>
       <hitpoints>0</hitpoints>
       <maxhitpoints>0</maxhitpoints>
       <manapoints>0</manapoints>
@@ -8948,6 +9005,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>0</trust>
       <hitpoints>0</hitpoints>
       <maxhitpoints>0</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9006,6 +9064,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9060,6 +9119,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9114,6 +9174,7 @@ for coming here more often.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9170,6 +9231,7 @@ The Secretary says 'Please sit down and have a seat in the meantime'.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>12</trust>
       <hitpoints>240</hitpoints>
       <maxhitpoints>240</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9224,6 +9286,7 @@ The Secretary says 'Please sit down and have a seat in the meantime'.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>53</trust>
       <hitpoints>1060</hitpoints>
       <maxhitpoints>1060</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9278,6 +9341,7 @@ The Secretary says 'Please sit down and have a seat in the meantime'.</descripti
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9333,6 +9397,7 @@ smiles warmly at you.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9391,6 +9456,7 @@ at you, smiling faintly.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9448,6 +9514,7 @@ get him drunk.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9504,6 +9571,7 @@ of his fencing services are true...</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9558,6 +9626,7 @@ of his fencing services are true...</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>30</trust>
       <hitpoints>600</hitpoints>
       <maxhitpoints>600</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9615,6 +9684,7 @@ The guildmaster is in perfect condition.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>400</ManaPointDiceBonus>
+      <trust>38</trust>
       <hitpoints>760</hitpoints>
       <maxhitpoints>760</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9636,7 +9706,7 @@ The guildmaster is in perfect condition.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
+      <flags>NPC Sentinel StayArea Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9671,6 +9741,7 @@ the earth to serve him.</description>
       <ManaPointDiceSides>3</ManaPointDiceSides>
       <ManaPointDiceCount>6</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9692,7 +9763,7 @@ the earth to serve him.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
+      <flags>NPC Sentinel StayArea Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9728,6 +9799,7 @@ appears to be wearing a necklace of human fingers.</description>
       <ManaPointDiceSides>2</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>700</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9749,7 +9821,7 @@ appears to be wearing a necklace of human fingers.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Mage</flags>
+      <flags>NPC Sentinel StayArea Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9784,6 +9856,7 @@ has a calm look on his face.</description>
       <ManaPointDiceSides>3</ManaPointDiceSides>
       <ManaPointDiceCount>7</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9805,7 +9878,7 @@ has a calm look on his face.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
+      <flags>NPC Sentinel StayArea Practice Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9839,6 +9912,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>3</ManaPointDiceSides>
       <ManaPointDiceCount>5</ManaPointDiceCount>
       <ManaPointDiceBonus>600</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9860,7 +9934,7 @@ do a deadly strikes to your opponent.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel StayArea GuildMaster Warrior</flags>
+      <flags>NPC Sentinel StayArea Practice Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -9893,6 +9967,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>9</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>9</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9918,7 +9993,7 @@ do a deadly strikes to your opponent.</description>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
-      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectionGood Flying PassDoor DetectIllusion</affectedBy>
+      <affectedBy>DetectInvis DetectHidden Sanctuary ProtectEvil ProtectGood Flying PassDoor DetectIllusion</affectedBy>
       <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <DamageDiceSides>9</DamageDiceSides>
@@ -9947,6 +10022,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>10</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>10</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -9998,6 +10074,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -10049,6 +10126,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>499</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -10070,7 +10148,7 @@ do a deadly strikes to your opponent.</description>
       <gold>15000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>NPC Sentinel GuildMaster NoTrack Cleric NoPurge Gain</flags>
+      <flags>NPC Sentinel Practice NoTrack Cleric NoPurge Trainer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -10103,6 +10181,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>499</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -10124,7 +10203,7 @@ do a deadly strikes to your opponent.</description>
       <gold>10000</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>NPC Sentinel Gain NoTrack Mage Warrior NoPurge</flags>
+      <flags>NPC Sentinel Trainer NoTrack Mage Warrior NoPurge</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -10157,6 +10236,7 @@ do a deadly strikes to your opponent.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -13394,7 +13474,7 @@ A
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -13436,7 +13516,7 @@ A
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closeable PickProof</ExtraFlags>
+      <ExtraFlags>Closable PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -16330,28 +16410,28 @@ Varggin Shih: n,d,3w,3s,d,2s,d,n,u,w,u,n,u,2n,e,d,n,d,2n</Description>
       <!--Spawn a standard issue sword to the cityguard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
-      <!--Spawn a standard issue vest to the cityguard-->
+      <!--Spawn a standard issue vest to a spirit priest-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3120">
-      <!--Spawn a key to the cityguard-->
+      <!--Spawn a key to a spirit priest-->
     </Reset>
     <Reset Type="NPC" Destination="3111" Count="4" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Park Road-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3365">
-      <!--Spawn a war banner to the cityguard-->
+      <!--Spawn a war banner to a spirit priest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
-      <!--Spawn a city guard signet ring to the cityguard-->
+      <!--Spawn a city guard signet ring to a spirit priest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
-      <!--Spawn a standard issue sword to the cityguard-->
+      <!--Spawn a standard issue sword to a spirit priest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
-      <!--Spawn a standard issue vest to the cityguard-->
+      <!--Spawn a standard issue vest to a spirit priest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3363">
-      <!--Spawn a standard issue bracer to the cityguard-->
+      <!--Spawn a standard issue bracer to an undead elven novice-->
     </Reset>
     <Reset Type="NPC" Destination="3113" Count="1" Max="2" Vnum="3124">
       <!--Spawn the duck to A path in the park-->
@@ -16372,13 +16452,13 @@ Varggin Shih: n,d,3w,3s,d,2s,d,n,u,w,u,n,u,2n,e,d,n,d,2n</Description>
       <!--Spawn a war banner to the cityguard-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3364">
-      <!--Spawn a city guard signet ring to the cityguard-->
+      <!--Spawn a city guard signet ring to a dark angel-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3350">
-      <!--Spawn a standard issue sword to the cityguard-->
+      <!--Spawn a standard issue sword to a dark angel-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3353">
-      <!--Spawn a standard issue vest to the cityguard-->
+      <!--Spawn a standard issue vest to a dark angel-->
     </Reset>
     <Reset Type="NPC" Destination="3120" Count="1" Max="18" Vnum="3060">
       <!--Spawn the cityguard to Road Crossing-->

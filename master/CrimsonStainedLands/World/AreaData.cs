@@ -1,13 +1,9 @@
 ﻿using CrimsonStainedLands.Extensions;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
-using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
+using Newtonsoft.Json.Linq;
 
 namespace CrimsonStainedLands.World
 {
@@ -25,6 +21,9 @@ namespace CrimsonStainedLands.World
 
         public int VNumStart { get; set; }
         public int VNumEnd { get; set; }
+        public int MinimumLevel { get; set; } = 0;
+        public int MaximumLevel { get; set; } = 51;
+
         public string Builders { get; set; }
         public int Security { get; set; }
         public string Credits { get; set; }
@@ -244,10 +243,69 @@ namespace CrimsonStainedLands.World
                 VNumStart = areaData.GetElementValueInt("vnumStart");
                 VNumEnd = areaData.GetElementValueInt("vnumEnd");
 
-                info = areaData.GetElementValue("Info").EscapeColor();
+                MinimumLevel = areaData.GetElementValueInt("MinimumLevel");
+                MaximumLevel = areaData.GetElementValueInt("MaximumLevel");
+
+                info = areaData.GetElementValue("Info");
                 Builders = areaData.GetElementValue("Builders");
                 Security = areaData.GetElementValueInt("Security");
-                Credits = areaData.GetElementValue("Credits").EscapeColor();
+                Credits = areaData.GetElementValue("Credits").Replace("{{", "{").Replace("{{", "{");
+                if (Credits.StartsWith("ABAL}"))
+                    Credits = Credits.Replace("ABAL}", "{CABAL}");
+                else if (Credits.StartsWith("LOSED}"))
+                    Credits = Credits.Replace("LOSED}", "{CLOSED}");
+
+                if (Credits.Contains("{ALL}"))
+                {
+                    MinimumLevel = 0;
+                    MaximumLevel = 51;
+                }
+                else
+                {
+                    var regex = new Regex(@"^\s*[\[{\(]\s*(?:(\d+)\s*-?\s*(.+)|\s*(ALL|SHRINE|CABAL|IMM|NULL|NONE|CLOSED|DEATH)\s*)\s*[\]\)}]", RegexOptions.IgnoreCase);
+                    
+                    var results = regex.Match(Credits);
+                    if(results.Groups.Count > 3 && !results.Groups[3].Value.ISEMPTY())
+                    {
+                        if (results.Groups[3].Value.StringCmp("none"))
+                        {
+                            MinimumLevel = 0;
+                            MaximumLevel = 0;
+                        }
+                        else if(results.Groups[3].Value.StringCmp("imm") || results.Groups[3].Value.StringCmp("closed"))
+                        {
+                            MinimumLevel = 52;
+                            MaximumLevel = 60;
+                        }
+                        else if (results.Groups[3].Value.StringCmp("death"))
+                        {
+                            MinimumLevel = 51;
+                            MaximumLevel = 51;
+                        }
+                        else
+                        {
+                            MinimumLevel = 1;
+                            MaximumLevel = 51;
+                        }
+                        Credits = Credits.Substring(results.Length).Trim();
+                    }
+                    else if(results.Groups.Count > 3)
+                    {
+                        MinimumLevel = int.Parse(results.Groups[1].Value);
+
+                        if (int.TryParse(results.Groups[2].Value, out var MaxLevel))
+                        {
+                            MaximumLevel = MaxLevel;
+                        }
+                        else if (results.Groups[2].Value == "up")
+                        {
+                            MaximumLevel = 51;
+                        }
+                        Credits = Credits.Substring(results.Length).Trim();
+                    }
+                    
+                }
+                MaximumLevel = Math.Max(1, MaximumLevel);
                 OverRoomVnum = areaData.GetElementValueInt("OverRoomVnum");
                 Continent = areaData.GetElementValue("Continent", Continent);
 
@@ -292,7 +350,7 @@ namespace CrimsonStainedLands.World
                 }
                 catch (Exception e)
                 {
-                    Game.bug("Error loading {0}", file);
+                    Game.bug("Error loading {0}: {1}", file, e.Message);
                     return;
                 }
                 LoadHeader(root);
@@ -314,6 +372,7 @@ namespace CrimsonStainedLands.World
                 }
                 catch (Exception ex)
                 {
+                    Game.bug("Failed to load item templates for {0}: {1}", this.Name, ex.Message);
                 }
 
                 foreach (var npctemplate in NPCTemplates)
@@ -549,9 +608,12 @@ namespace CrimsonStainedLands.World
                     new XElement("Info", info),
                     new XElement("VnumStart", VNumStart),
                     new XElement("VnumEnd", VNumEnd),
+                    new XElement("MinimumLevel", MinimumLevel),
+                    new XElement("MaximumLevel", MaximumLevel),
                     new XElement("Builders", Builders),
                     new XElement("Security", Security),
                     new XElement("Credits", Credits),
+                    new XElement("Continent", Continent),
                     new XElement("OverRoomVnum", OverRoomVnum)
                     );
             }
@@ -590,8 +652,8 @@ namespace CrimsonStainedLands.World
             Directory.CreateDirectory(jsonpath);
             if (!string.IsNullOrEmpty(FileName))
             {
-                var jsonname = Path.GetFileNameWithoutExtension(FileName);
-                var fullfilepath = Path.Join(jsonpath, jsonname + ".json");
+                var jsonname = System.IO.Path.GetFileNameWithoutExtension(FileName);
+                var fullfilepath = System.IO.Path.Join(jsonpath, jsonname + ".json");
 
                 string jsonString = JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = true, ReferenceHandler = ReferenceHandler.Preserve });
                 File.WriteAllText(fullfilepath, jsonString);
@@ -612,6 +674,49 @@ namespace CrimsonStainedLands.World
             }
             if (ch != null)
                 ch.send("World Saved - {0} areas affected.\n\r", areaCount);
+        }
+
+        public static void SaveAreaListJson()
+        {
+            var root = new JObject();
+            var areas_array = new JArray();
+            
+            foreach (var area in Areas)
+            {
+                var area_connections = new HashSet<AreaData>();
+                foreach (var room in area.Rooms.Values)
+                {
+                    foreach (var exit in room.exits)
+                    {
+                        if(exit != null && exit.destination != null && exit.destination.Area != room.Area)
+                        { 
+                            area_connections.Add(exit.destination.Area);
+                        }
+                    }
+                }
+                var connections_array = new JArray();
+                foreach (var connection in area_connections)
+                {
+                    connections_array.Add(connection.Name);
+                }
+
+                var area_object = new JObject();
+                area_object["Name"] = area.Name;
+                area_object["Credits"] = area.Credits;
+                area_object["MinimumVnum"] = area.VNumStart;
+                area_object["MaximumVnum"] = area.VNumEnd;
+                area_object["MinimumLevel"] = area.MinimumLevel;
+                area_object["MaximumLevel"] = area.MaximumLevel;
+                var mapname = area.Name;
+                char[] invalidChars = System.IO.Path.GetInvalidFileNameChars();
+                mapname = new string(mapname.Where(c => !invalidChars.Contains(c)).ToArray());
+                area_object["MapName"] = mapname;
+                area_object["Continent"] = area.Continent;
+                area_object["Connections"] = connections_array;
+                areas_array.Add(area_object);
+            }
+            root.Add("Areas", areas_array);
+            File.WriteAllText("areas.json", root.ToString());
         }
     }
 }

@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>8800</VnumStart>
     <VnumEnd>8899</VnumEnd>
+    <MinimumLevel>1</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>ABAL} Deomanix  The Sylvan Grove</Credits>
+    <Credits>Deomanix  The Sylvan Grove</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -214,6 +217,7 @@ opening up.</Description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>3999</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -268,6 +272,7 @@ opening up.</Description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>999</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -401,7 +406,7 @@ opening up.</Description>
       <!--Spawn the Ancient Ranger to Through the deep forest-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="8800">
-      <!--Spawn the Young Sapling to the citizen-->
+      <!--Spawn the Young Sapling to the Ancient Ranger-->
     </Reset>
   </Resets>
 </Area>

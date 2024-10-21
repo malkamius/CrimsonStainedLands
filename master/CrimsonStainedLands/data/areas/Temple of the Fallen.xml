@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>29900</VnumStart>
     <VnumEnd>29999</VnumEnd>
+    <MinimumLevel>52</MinimumLevel>
+    <MaximumLevel>60</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>LOSED} Grikthoran  Temple of the Fallen</Credits>
+    <Credits>Grikthoran  Temple of the Fallen</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -249,6 +252,7 @@ battle.</description>
       <ManaPointDiceSides>60</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>60</ManaPointDiceBonus>
+      <trust>65</trust>
       <hitpoints>1300</hitpoints>
       <maxhitpoints>1300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -307,6 +311,7 @@ imprisoned for so long then you must hold the key to his freedom.</description>
       <ManaPointDiceSides>70</ManaPointDiceSides>
       <ManaPointDiceCount>11</ManaPointDiceCount>
       <ManaPointDiceBonus>95</ManaPointDiceBonus>
+      <trust>70</trust>
       <hitpoints>1400</hitpoints>
       <maxhitpoints>1400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -366,6 +371,7 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <ManaPointDiceSides>65</ManaPointDiceSides>
       <ManaPointDiceCount>11</ManaPointDiceCount>
       <ManaPointDiceBonus>95</ManaPointDiceBonus>
+      <trust>65</trust>
       <hitpoints>1300</hitpoints>
       <maxhitpoints>1300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -493,7 +499,7 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <!--Spawn The shrouded knight to The Gates of the Temple-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="29900">
-      <!--Spawn a star-shaped key to The shrouded knight-->
+      <!--Spawn a star-shaped key to a Naiadian woman-->
     </Reset>
     <Reset Type="NPC" Destination="29902" Count="4" Max="6" Vnum="29902">
       <!--Spawn a guard dragon to A Dark Damp Hallway-->
@@ -502,7 +508,7 @@ snout turns into a snarl as it prepares to pounce upon you.</description>
       <!--Spawn Quimtir to A Room Seared by Flames-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="29901">
-      <!--Spawn the dagger 'Legend' to Quimtir-->
+      <!--Spawn the dagger 'Legend' to a Naiadian child-->
     </Reset>
     <Reset Type="NPC" Destination="29905" Count="4" Max="6" Vnum="29902">
       <!--Spawn a guard dragon to A Dark Damp Hallway-->

@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>60000</VnumStart>
     <VnumEnd>60299</VnumEnd>
+    <MinimumLevel>0</MinimumLevel>
+    <MaximumLevel>1</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1512,6 +1515,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>2200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1570,6 +1574,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>6</trust>
       <hitpoints>150</hitpoints>
       <maxhitpoints>150</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1631,6 +1636,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>150</hitpoints>
       <maxhitpoints>150</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1688,6 +1694,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>150</hitpoints>
       <maxhitpoints>150</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1745,6 +1752,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1799,6 +1807,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1853,6 +1862,7 @@ front of him.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>12</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1922,6 +1932,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <ManaPointDiceSides>8</ManaPointDiceSides>
       <ManaPointDiceCount>20</ManaPointDiceCount>
       <ManaPointDiceBonus>2000</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2120,13 +2131,13 @@ an indispensable resource for all things maritime in Astoria.</description>
       <!--Spawn the foreman to Foreman's Ofice-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60000">
-      <!--Spawn a charred bracer to the foreman-->
+      <!--Spawn a charred bracer to a stronghold patrolman-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="60001">
-      <!--Spawn a pair of black sleeves to the foreman-->
+      <!--Spawn a pair of black sleeves to a stronghold patrolman-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="60003">
-      <!--Spawn a key to the foreman-->
+      <!--Spawn a key to a stronghold patrolman-->
     </Reset>
     <Reset Type="Item" Destination="60040" Count="1" Max="1" Vnum="60002">
       <!--Spawn the cabinet to Back Office-->
@@ -2210,7 +2221,7 @@ an indispensable resource for all things maritime in Astoria.</description>
       <!--Spawn Margaret "Maggie" Whitman to Boat Shop-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3051">
-      <!--Spawn a canoe to Margaret "Maggie" Whitman-->
+      <!--Spawn a canoe to an elven noble-->
     </Reset>
   </Resets>
   <Quests>

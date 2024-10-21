@@ -5,10 +5,12 @@
     <Info></Info>
     <VnumStart>1</VnumStart>
     <VnumEnd>99</VnumEnd>
+    <MinimumLevel>0</MinimumLevel>
+    <MaximumLevel>1</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
     <Credits></Credits>
-	<Continent>Immortal</Continent>
+    <Continent>Immortal</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -37,6 +39,7 @@
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -63,6 +66,7 @@
       <resist></resist>
       <vulnerable></vulnerable>
       <affectedBy>DetectIllusion</affectedBy>
+      <WiznetFlags></WiznetFlags>
       <WeaponDamageMessage>punch</WeaponDamageMessage>
       <PermanentStats>
         <Strength>16</Strength>

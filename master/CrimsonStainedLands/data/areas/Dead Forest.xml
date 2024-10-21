@@ -5,10 +5,13 @@
     <Info></Info>
     <VnumStart>24200</VnumStart>
     <VnumEnd>24299</VnumEnd>
+    <MinimumLevel>10</MinimumLevel>
+    <MaximumLevel>40</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{10 40} Ceran   The Dead Forest</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
+    <Credits>Ceran   The Dead Forest</Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>101016</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -2439,6 +2442,7 @@ the surrounding wastes, but not enough for your liking.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>18</trust>
       <hitpoints>360</hitpoints>
       <maxhitpoints>360</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2494,6 +2498,7 @@ the surrounding wastes, but not enough for your liking.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>25</trust>
       <hitpoints>500</hitpoints>
       <maxhitpoints>500</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2549,6 +2554,7 @@ but pain and suffering.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2604,6 +2610,7 @@ forest is still prevailing and that nobody has come to prevent the decay.</descr
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>200</ManaPointDiceBonus>
+      <trust>41</trust>
       <hitpoints>820</hitpoints>
       <maxhitpoints>820</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2918,7 +2925,7 @@ control a large number of trolls or something.</Description>
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24201">
-      <!--Spawn a robe of toughened troll-skin to a human paladin-->
+      <!--Spawn a robe of toughened troll-skin to a greater troll-->
     </Reset>
     <Reset Type="NPC" Destination="24239" Count="4" Max="16" Vnum="24203">
       <!--Spawn a greater troll to A bloody part of the Dead Forest-->
@@ -2963,10 +2970,10 @@ control a large number of trolls or something.</Description>
       <!--Spawn an anti-ranger scout to Within a Dark Clearing-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24202">
-      <!--Spawn a sword named 'Troll-slayer' to a human paladin-->
+      <!--Spawn a sword named 'Troll-slayer' to an anti-ranger scout-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24203">
-      <!--Spawn a dagger named 'naga-slayer' to a troll captain-->
+      <!--Spawn a dagger named 'naga-slayer' to an anti-ranger scout-->
     </Reset>
     <Reset Type="NPC" Destination="24259" Count="3" Max="8" Vnum="24204">
       <!--Spawn a lesser forest naga to Within a Dark Clearing-->
@@ -2984,7 +2991,7 @@ control a large number of trolls or something.</Description>
       <!--Spawn a sword named 'Troll-slayer' to an anti-ranger scout-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="24203">
-      <!--Spawn a dagger named 'naga-slayer' to a human swordsman-->
+      <!--Spawn a dagger named 'naga-slayer' to an anti-ranger scout-->
     </Reset>
   </Resets>
 </Area>

@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>23100</VnumStart>
     <VnumEnd>23199</VnumEnd>
+    <MinimumLevel>51</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{DEATH} Dioxide Battlefield</Credits>
+    <Credits>Dioxide Battlefield</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -3452,6 +3455,7 @@ battles, but continues to fight.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3507,6 +3511,7 @@ battles, but continues to fight.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3561,6 +3566,7 @@ battles, but continues to fight.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3615,6 +3621,7 @@ battles, but continues to fight.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>800</hitpoints>
       <maxhitpoints>800</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3670,6 +3677,7 @@ and dead.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3722,6 +3730,7 @@ dirt and sweat as he continues to command his troops to press forward.</descript
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>5</ManaPointDiceCount>
       <ManaPointDiceBonus>6000</ManaPointDiceBonus>
+      <trust>54</trust>
       <hitpoints>1080</hitpoints>
       <maxhitpoints>1080</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3778,6 +3787,7 @@ whore.</description>
       <ManaPointDiceSides>10</ManaPointDiceSides>
       <ManaPointDiceCount>50</ManaPointDiceCount>
       <ManaPointDiceBonus>8000</ManaPointDiceBonus>
+      <trust>54</trust>
       <hitpoints>1080</hitpoints>
       <maxhitpoints>1080</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3833,6 +3843,7 @@ moving. With every corpse he creates, he seems to get stronger.</description>
       <ManaPointDiceSides>10</ManaPointDiceSides>
       <ManaPointDiceCount>50</ManaPointDiceCount>
       <ManaPointDiceBonus>8000</ManaPointDiceBonus>
+      <trust>54</trust>
       <hitpoints>1080</hitpoints>
       <maxhitpoints>1080</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3889,6 +3900,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>5</ManaPointDiceCount>
       <ManaPointDiceBonus>6000</ManaPointDiceBonus>
+      <trust>54</trust>
       <hitpoints>1080</hitpoints>
       <maxhitpoints>1080</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4530,10 +4542,10 @@ He communes blessings and calls wrath apon his enemies.</description>
       <!--Spawn the helmet of salvation to Sir Lothar-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23110">
-      <!--Spawn the belt of truth to a lesser troll-->
+      <!--Spawn the belt of truth to Sir Lothar-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23108">
-      <!--Spawn the shield of faith to a lesser troll-->
+      <!--Spawn the shield of faith to Sir Lothar-->
     </Reset>
     <Reset Type="NPC" Destination="23110" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->
@@ -4563,7 +4575,7 @@ He communes blessings and calls wrath apon his enemies.</description>
       <!--Spawn the double-bladed axe of Raag to Raag-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="23106">
-      <!--Spawn robe of malignancy to a lesser troll-->
+      <!--Spawn robe of malignancy to Raag-->
     </Reset>
     <Reset Type="NPC" Destination="23114" Count="4" Max="250" Vnum="23100">
       <!--Spawn a human swordsman to Bloody fields-->

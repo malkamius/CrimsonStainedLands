@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>5100</VnumStart>
     <VnumEnd>5199</VnumEnd>
+    <MinimumLevel>15</MinimumLevel>
+    <MaximumLevel>25</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{15 25} Drkside Drow City</Credits>
+    <Credits>Drkside Drow City</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1901,6 +1904,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1955,6 +1959,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>10</trust>
       <hitpoints>200</hitpoints>
       <maxhitpoints>200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2009,6 +2014,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>7</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>14</trust>
       <hitpoints>280</hitpoints>
       <maxhitpoints>280</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2063,6 +2069,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>15</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2117,6 +2124,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>17</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>17</trust>
       <hitpoints>340</hitpoints>
       <maxhitpoints>340</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2171,6 +2179,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>10</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>21</trust>
       <hitpoints>420</hitpoints>
       <maxhitpoints>420</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2225,6 +2234,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>11</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2279,6 +2289,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>12</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>24</trust>
       <hitpoints>480</hitpoints>
       <maxhitpoints>480</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2333,6 +2344,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>26</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>26</trust>
       <hitpoints>520</hitpoints>
       <maxhitpoints>520</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2387,6 +2399,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>17</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>35</trust>
       <hitpoints>700</hitpoints>
       <maxhitpoints>700</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2441,6 +2454,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>6</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>12</trust>
       <hitpoints>240</hitpoints>
       <maxhitpoints>240</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2495,6 +2509,7 @@ to get this kind of treatment.</Description>
       <ManaPointDiceSides>5</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>11</trust>
       <hitpoints>220</hitpoints>
       <maxhitpoints>220</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3174,7 +3189,7 @@ to get this kind of treatment.</Description>
       <!--Spawn a black longsword to The weapons master-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5109">
-      <!--Spawn a pair of gauntlets to the giant-->
+      <!--Spawn a pair of gauntlets to The weapons master-->
     </Reset>
     <Reset Type="NPC" Destination="5101" Count="1" Max="2" Vnum="5106">
       <!--Spawn The weapons master to City street-->
@@ -3192,7 +3207,7 @@ to get this kind of treatment.</Description>
       <!--Spawn the drow mage noble to 3rd House-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
-      <!--Spawn a snake headed whip to the dwarven guard-->
+      <!--Spawn a snake headed whip to the drow mage noble-->
     </Reset>
     <Reset Type="NPC" Destination="5104" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 3rd House-->
@@ -3204,10 +3219,10 @@ to get this kind of treatment.</Description>
       <!--Spawn the matron mother to Throne Room-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
-      <!--Spawn a snake headed whip to the dwarven guard-->
+      <!--Spawn a snake headed whip to the matron mother-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5111">
-      <!--Spawn a small helmet to the dwarven guard-->
+      <!--Spawn a small helmet to the matron mother-->
     </Reset>
     <Reset Type="NPC" Destination="5108" Count="1" Max="4" Vnum="5102">
       <!--Spawn the drow warrior noble to 2nd House-->
@@ -3219,13 +3234,13 @@ to get this kind of treatment.</Description>
       <!--Spawn the drow mage noble to 2nd House-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
-      <!--Spawn a snake headed whip to the giant lizard-->
+      <!--Spawn a snake headed whip to the drow mage noble-->
     </Reset>
     <Reset Type="NPC" Destination="5108" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 2nd House-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5103">
-      <!--Spawn a snake headed whip to the storekeeper-->
+      <!--Spawn a snake headed whip to the drow priestess-->
     </Reset>
     <Reset Type="NPC" Destination="5109" Count="1" Max="3" Vnum="5107">
       <!--Spawn the matron mother to Throne Room-->
@@ -3246,7 +3261,7 @@ to get this kind of treatment.</Description>
       <!--Spawn the drow mage noble to 1st House-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5102">
-      <!--Spawn a snake headed whip to the barracks guard-->
+      <!--Spawn a snake headed whip to the drow mage noble-->
     </Reset>
     <Reset Type="NPC" Destination="5111" Count="1" Max="4" Vnum="5104">
       <!--Spawn the drow priestess to 1st House-->
@@ -3258,19 +3273,19 @@ to get this kind of treatment.</Description>
       <!--Spawn the matron mother to Main Chamber-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
-      <!--Spawn a snake headed whip to the dwarven guard-->
+      <!--Spawn a snake headed whip to the matron mother-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5112">
-      <!--Spawn a small ruby ring to the dwarven guard-->
+      <!--Spawn a small ruby ring to the matron mother-->
     </Reset>
     <Reset Type="NPC" Destination="5116" Count="1" Max="3" Vnum="5105">
       <!--Spawn The drow master to Cleric Academy-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5104">
-      <!--Spawn a snake headed whip to the dwarf-->
+      <!--Spawn a snake headed whip to The drow master-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5110">
-      <!--Spawn a silvery blue wand to the dwarf-->
+      <!--Spawn a silvery blue wand to The drow master-->
     </Reset>
     <Reset Type="NPC" Destination="5118" Count="5" Max="10" Vnum="5101">
       <!--Spawn the drow commoner to Warrior's Academy-->
@@ -3285,7 +3300,7 @@ to get this kind of treatment.</Description>
       <!--Spawn a black longsword to The drow master-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="5110">
-      <!--Spawn a silvery blue wand to the dwarf-->
+      <!--Spawn a silvery blue wand to The drow master-->
     </Reset>
   </Resets>
 </Area>

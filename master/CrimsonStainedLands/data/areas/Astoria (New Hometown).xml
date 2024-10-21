@@ -5,10 +5,13 @@
     <Info></Info>
     <VnumStart>19000</VnumStart>
     <VnumEnd>19499</VnumEnd>
+    <MinimumLevel>1</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{ ALL } Astoria</Credits>
-    <OverRoomVnum>0</OverRoomVnum>
+    <Credits>Astoria</Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>101000</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4030,6 +4033,7 @@ accessible only to the most trusted members of the guild.</Description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4051,7 +4055,7 @@ accessible only to the most trusted members of the guild.</Description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>Sentinel Gain</flags>
+      <flags>Sentinel Trainer</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4091,6 +4095,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4142,6 +4147,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4197,6 +4203,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4252,6 +4259,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4307,6 +4315,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4362,6 +4371,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4417,6 +4427,7 @@ expertise in managing money is second to none.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4479,6 +4490,7 @@ ready to face any challenge that comes her way.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4500,7 +4512,7 @@ ready to face any challenge that comes her way.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>warrior</Guild>
-      <flags>Sentinel Gain GuildMaster Warrior</flags>
+      <flags>Sentinel Trainer Practice Warrior</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4533,6 +4545,7 @@ ready to face any challenge that comes her way.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4594,6 +4607,7 @@ inspire those around him to be brave and to fight for what is right.</descriptio
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>100</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4615,7 +4629,7 @@ inspire those around him to be brave and to fight for what is right.</descriptio
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>paladin</Guild>
-      <flags>Sentinel Gain GuildMaster</flags>
+      <flags>Sentinel Trainer Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4648,6 +4662,7 @@ inspire those around him to be brave and to fight for what is right.</descriptio
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4712,6 +4727,7 @@ healing arts is undeniable, and she is revered by her fellow healers.</descripti
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>10000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4733,7 +4749,7 @@ healing arts is undeniable, and she is revered by her fellow healers.</descripti
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>healer</Guild>
-      <flags>Gain GuildMaster Sentinel</flags>
+      <flags>Trainer Practice Sentinel</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4766,6 +4782,7 @@ healing arts is undeniable, and she is revered by her fellow healers.</descripti
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>200</ManaPointDiceCount>
       <ManaPointDiceBonus>160</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4829,6 +4846,7 @@ silver tongue that makes him well-liked by his fellow thieves.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>10000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4850,7 +4868,7 @@ silver tongue that makes him well-liked by his fellow thieves.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>thief</Guild>
-      <flags>Sentinel Gain GuildMaster Thief Shopkeeper</flags>
+      <flags>Sentinel Trainer Practice Thief Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -4884,6 +4902,7 @@ silver tongue that makes him well-liked by his fellow thieves.</description>
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>200</ManaPointDiceCount>
       <ManaPointDiceBonus>160</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4948,6 +4967,7 @@ knowledge and mastery of magic is undeniable.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>10000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4969,7 +4989,7 @@ knowledge and mastery of magic is undeniable.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>mage</Guild>
-      <flags>Sentinel Gain GuildMaster Mage</flags>
+      <flags>Sentinel Trainer Practice Mage</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5002,6 +5022,7 @@ knowledge and mastery of magic is undeniable.</description>
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>200</ManaPointDiceCount>
       <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5059,6 +5080,7 @@ knowledge and mastery of magic is undeniable.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>9999</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>11000</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5121,6 +5143,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5175,6 +5198,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>3000</hitpoints>
       <maxhitpoints>3000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5230,6 +5254,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>23</trust>
       <hitpoints>460</hitpoints>
       <maxhitpoints>460</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5269,16 +5294,15 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
         <Constitution>16</Constitution>
         <Charisma>16</Charisma>
       </PermanentStats>
-      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="">
-		<Pet Vnum="19022" />
-		<Pet Vnum="19023" />
-		<Pet Vnum="19024" />
-		<Pet Vnum="19025" />
-		<Pet Vnum="19026" />
-		<Pet Vnum="19027" />
-		<Pet Vnum="19028" />
-		<Pet Vnum="19029" />
-	  </Shop>
+      <Shop ProfitBuy="100" ProfitSell="100" OpenHour="0" CloseHour="23" BuyTypes="" />
+      <Pet Vnum="19022" />
+      <Pet Vnum="19023" />
+      <Pet Vnum="19024" />
+      <Pet Vnum="19025" />
+      <Pet Vnum="19026" />
+      <Pet Vnum="19027" />
+      <Pet Vnum="19028" />
+      <Pet Vnum="19029" />
     </NPC>
     <NPC>
       <Vnum>19022</Vnum>
@@ -5294,6 +5318,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5352,6 +5377,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>3</trust>
       <hitpoints>60</hitpoints>
       <maxhitpoints>60</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5409,6 +5435,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>5</trust>
       <hitpoints>100</hitpoints>
       <maxhitpoints>100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5466,6 +5493,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>7</trust>
       <hitpoints>140</hitpoints>
       <maxhitpoints>140</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5523,6 +5551,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>9</trust>
       <hitpoints>180</hitpoints>
       <maxhitpoints>180</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5581,6 +5610,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>12</trust>
       <hitpoints>240</hitpoints>
       <maxhitpoints>240</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5639,6 +5669,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>300</hitpoints>
       <maxhitpoints>300</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5697,6 +5728,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5755,6 +5787,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5809,6 +5842,7 @@ but fair demeanor, earning the respect of the people they serve and protect.</de
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>149</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5872,6 +5906,7 @@ and leadership, and his mere presence commands respect from all those around.</d
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>100</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5893,7 +5928,7 @@ and leadership, and his mere presence commands respect from all those around.</d
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>bard</Guild>
-      <flags>Sentinel Gain GuildMaster</flags>
+      <flags>Sentinel Trainer Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -5932,6 +5967,7 @@ she carrys a lute, ready to strum a tune if needed.</description>
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>200</ManaPointDiceCount>
       <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -5993,6 +6029,7 @@ of all shapes and sizes.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>99</ManaPointDiceBonus>
+      <trust>40</trust>
       <hitpoints>2000</hitpoints>
       <maxhitpoints>2000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6048,6 +6085,7 @@ of all shapes and sizes.</description>
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>200</ManaPointDiceCount>
       <ManaPointDiceBonus>160</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6114,6 +6152,7 @@ commanding a dark and powerful presence that few could match.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>10000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6135,7 +6174,7 @@ commanding a dark and powerful presence that few could match.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>assassin</Guild>
-      <flags>Sentinel Gain GuildMaster Shopkeeper</flags>
+      <flags>Sentinel Trainer Practice Shopkeeper</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6169,6 +6208,7 @@ commanding a dark and powerful presence that few could match.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>509</ManaPointDiceBonus>
+      <trust>15</trust>
       <hitpoints>510</hitpoints>
       <maxhitpoints>510</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6225,6 +6265,7 @@ streamlined body built for speed and agility.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>1</hitpoints>
       <maxhitpoints>1</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6288,6 +6329,7 @@ watchful, and it moves with a fluid, serpentine grace.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>1</hitpoints>
       <maxhitpoints>1</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6350,6 +6392,7 @@ untamed energy.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>1</hitpoints>
       <maxhitpoints>1</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6413,6 +6456,7 @@ it.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>1</trust>
       <hitpoints>1</hitpoints>
       <maxhitpoints>1</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6480,6 +6524,7 @@ shapeshifting skills.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>10</ManaPointDiceCount>
       <ManaPointDiceBonus>10000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>10000</hitpoints>
       <maxhitpoints>10000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6501,7 +6546,7 @@ shapeshifting skills.</description>
       <gold>0</gold>
       <SavingThrow>0</SavingThrow>
       <Guild>shapeshifter</Guild>
-      <flags>Sentinel Gain GuildMaster</flags>
+      <flags>Sentinel Trainer Practice</flags>
       <immune></immune>
       <resist></resist>
       <vulnerable></vulnerable>
@@ -6534,6 +6579,7 @@ shapeshifting skills.</description>
       <ManaPointDiceSides>25</ManaPointDiceSides>
       <ManaPointDiceCount>200</ManaPointDiceCount>
       <ManaPointDiceBonus>1000</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>5000</hitpoints>
       <maxhitpoints>5000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6594,6 +6640,7 @@ glow, signifying her divine allegiance.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>20</ManaPointDiceCount>
       <ManaPointDiceBonus>4000</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -6654,6 +6701,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ManaPointDiceSides>20</ManaPointDiceSides>
       <ManaPointDiceCount>20</ManaPointDiceCount>
       <ManaPointDiceBonus>4000</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>20</hitpoints>
       <maxhitpoints>20</maxhitpoints>
       <manapoints>0</manapoints>
@@ -7549,7 +7597,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="1" hidden="False" affectType="Spell" beginMessage="You feel stronger as you put on a leather jerkin.">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="1" hidden="False" affectType="Spell" beginMessage="You feel stronger as you put on a leather jerkin.">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7703,7 +7751,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7743,7 +7791,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7780,10 +7828,10 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7823,7 +7871,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7863,7 +7911,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -7906,7 +7954,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
@@ -8020,7 +8068,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8174,7 +8222,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell" beginMessage="You feel ready to travel as you put on a pair of fancy woolen boots.">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8214,7 +8262,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="10" hidden="False" affectType="Spell" beginMessage="You feel wiser AND healthier as you put on a pair of fancy woolen pants.">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8254,7 +8302,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Intelligence" modifier="10" hidden="False" affectType="Spell" beginMessage="You feel smarter as you put on a fancy woolen jerkin.">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8294,7 +8342,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8334,7 +8382,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -8377,7 +8425,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="1" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="10" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="10" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="20" hidden="False" affectType="Spell">
@@ -8414,7 +8462,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8447,7 +8495,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>5</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>DrinkContainer</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8513,7 +8561,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>10</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8546,7 +8594,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>8</Weight>
       <WearFlags>Take Hold</WearFlags>
-      <ExtraFlags>Closeable Closed</ExtraFlags>
+      <ExtraFlags>Closable Closed</ExtraFlags>
       <ItemTypes>DrinkContainer</ItemTypes>
       <Affects />
       <Silver>0</Silver>
@@ -8898,7 +8946,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags>Glow Hum</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="100" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="100" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9457,7 +9505,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9494,7 +9542,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9753,7 +9801,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9790,7 +9838,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <ExtraFlags></ExtraFlags>
       <ItemTypes>Armor</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9830,7 +9878,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Dexterity" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9870,7 +9918,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Move" modifier="100" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="50" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="50" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -9987,7 +10035,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Constitution" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10027,7 +10075,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
         <Affect where="ToObject" level="0" duration="-1" location="Damroll" modifier="5" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Strength" modifier="2" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Str" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>
@@ -10127,7 +10175,7 @@ presence is accompanied by the eerie cawing of unseen ravens.</description>
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closed Closeable Locked PickProof</ExtraFlags>
+      <ExtraFlags>Closed Closable Locked PickProof</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Keys>
         <Key vnum="19096" />
@@ -10317,7 +10365,7 @@ wonder and enchantment in those who behold it.</Description>
         <Affect where="ToObject" level="0" duration="-1" location="Wisdom" modifier="2" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="25" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="25" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Mana" modifier="25" hidden="False" affectType="Spell">
@@ -10656,7 +10704,7 @@ the blood they have spilled in the hands of their anonymous wielders.</Descripti
       <DiceBonus>1</DiceBonus>
       <Weight>0</Weight>
       <WearFlags></WearFlags>
-      <ExtraFlags>Closed Locked Closeable</ExtraFlags>
+      <ExtraFlags>Closed Locked Closable</ExtraFlags>
       <ItemTypes>Container</ItemTypes>
       <Keys>
         <Key vnum="19107" />
@@ -10747,7 +10795,7 @@ ornament.</Description>
       <ExtraFlags>Magic Glow UniqueEquip</ExtraFlags>
       <ItemTypes>Weapon</ItemTypes>
       <Affects>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="30" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="30" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
         <Affect where="ToObject" level="0" duration="-1" location="Hitroll" modifier="2" hidden="False" affectType="Spell">
@@ -10844,7 +10892,7 @@ specifically trained in its use would be able to benefit from its secrets.</Desc
         <Affect where="ToObject" level="0" duration="-1" location="SavingSpell" modifier="-20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
-        <Affect where="ToObject" level="0" duration="-1" location="Hp" modifier="20" hidden="False" affectType="Spell">
+        <Affect where="ToObject" level="0" duration="-1" location="Hitpoints" modifier="20" hidden="False" affectType="Spell">
           <ExtraState />
         </Affect>
       </Affects>

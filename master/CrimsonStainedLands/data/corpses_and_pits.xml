@@ -8,7 +8,950 @@
     <ExtraFlags>NoPurge</ExtraFlags>
     <Affects />
     <ItemTypes>Container</ItemTypes>
-    <Contains />
+    <Contains>
+      <Item>
+        <VNum>13107</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19060</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum TwoHands</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13243</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Bless</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13515</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags></ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19098</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Magic</ExtraFlags>
+        <Affects />
+        <ItemTypes>Potion</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19098</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Magic</ExtraFlags>
+        <Affects />
+        <ItemTypes>Potion</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19098</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Magic</ExtraFlags>
+        <Affects />
+        <ItemTypes>Potion</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19098</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Magic</ExtraFlags>
+        <Affects />
+        <ItemTypes>Potion</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>16156</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Finger</WearFlags>
+        <ExtraFlags>Glow Evil Magic NoDrop AntiNeutral</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="-1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13117</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Frost Sharp TwoHands Poison Unholy</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13103</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13109</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="60"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Constitution"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13109</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="60"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Constitution"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13113</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13111</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13108</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>51559</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13114</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum Flaming Frost Vorpal TwoHands</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13105</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>7625</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Shield</WearFlags>
+        <ExtraFlags>Glow Hum Evil MeltDrop BurnProof</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="25"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="-2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToAffects"
+            level="0"
+            duration="-1"
+            location="None"
+            flags="Haste"
+            modifier="0"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>17012</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>NoDrop Bless AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19059</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>4602</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Dark Evil Magic Bless AntiGood AntiNeutral</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>28523</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Hum Evil NoDrop AntiGood AntiNeutral NoRemove MeltDrop</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToResist"
+            level="0"
+            duration="-1"
+            location="None"
+            DamageTypes="Holy"
+            modifier="0"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToAffects"
+            level="0"
+            duration="-1"
+            location="None"
+            flags="DetectGood ProtectGood"
+            modifier="0"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="-1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>10120</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Invis Magic NoDrop AntiEvil NoRemove BurnProof Vorpal TwoHands Shocking Poison Unholy</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="8"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>20601</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Head</WearFlags>
+        <ExtraFlags>Glow Invis Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11414</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum NoDrop Bless NoRemove</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19061</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="100"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>10102</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Magic NoDrop AntiEvil NoRemove BurnProof Unholy</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Move"
+            modifier="-40"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="6"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>10102</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Magic NoDrop AntiEvil NoRemove BurnProof Unholy</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Move"
+            modifier="-40"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="6"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>28524</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Evil Invis AntiGood Flaming Frost Vorpal TwoHands Shocking Poison</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="-4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="8"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19057</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19094</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19093</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum TwoHands</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+    </Contains>
   </Item>
   <!--the donation pit in room 19090 - Temple of The Shadow-->
   <Item
@@ -18,7 +961,715 @@
     <ExtraFlags>NoPurge</ExtraFlags>
     <Affects />
     <ItemTypes>Container</ItemTypes>
-    <Contains />
+    <Contains>
+      <Item>
+        <VNum>18111</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Head</WearFlags>
+        <ExtraFlags>Hum Dark Evil Magic AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-8"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>7304</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Body</WearFlags>
+        <ExtraFlags>Magic AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="-1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40013</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Finger</WearFlags>
+        <ExtraFlags>Glow Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingRod"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40013</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Finger</WearFlags>
+        <ExtraFlags>Glow Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingRod"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>50603</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>19111</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Magic Glow UniqueEquip</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>50601</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags></ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>20632</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Magic AntiEvil</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>21608</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Evil Magic AntiGood AntiNeutral</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>20664</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>2340</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take About</WearFlags>
+        <ExtraFlags>Glow Hum Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-100"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Saves"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>2345</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum Magic Unholy</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="-1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="6"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="8"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40010</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Closable</ExtraFlags>
+        <Affects />
+        <ItemTypes>Container</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>18118</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Dark Evil Magic NoDrop AntiGood NoRemove</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="-3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-15"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>8708</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>18110</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Hum Dark Evil Magic AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="30"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Wand</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>8726</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Treasure</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>2008</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects />
+        <ItemTypes>Potion</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>8724</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Saves"
+            modifier="-2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Wand</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>8707</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow Magic</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Move"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Light</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>8711</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take</WearFlags>
+        <ExtraFlags></ExtraFlags>
+        <Affects />
+        <ItemTypes>Trash</ItemTypes>
+        <Contains />
+      </Item>
+    </Contains>
   </Item>
   <!--the donation pit in room 19089 - Temple of the Sun-->
   <Item
@@ -28,7 +1679,1232 @@
     <ExtraFlags>NoPurge</ExtraFlags>
     <Affects />
     <ItemTypes>Container</ItemTypes>
-    <Contains />
+    <Contains>
+      <Item>
+        <VNum>50606</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="6"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13104</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="25"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13106</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13110</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="30"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13103</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>13121</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Evil AntiGood Vorpal TwoHands Shocking Poison</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>18013</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="100"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>4601</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Magic NoDrop Bless Flaming Frost Vorpal TwoHands</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="-2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="6"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="6"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>7303</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Magic AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Talisman</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>50604</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wrist</WearFlags>
+        <ExtraFlags>Invis Glow</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>50401</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>7306</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hands</WearFlags>
+        <ExtraFlags>Magic AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Furniture</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>7307</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Head</WearFlags>
+        <ExtraFlags>Magic AntiGood</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="-1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="2"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>51003</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Hum Magic</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>50601</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags></ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>4609</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum Dark Magic Bless NoRemove Vorpal TwoHands Shocking Poison</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11414</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum NoDrop Bless NoRemove</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>21008</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags></ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Constitution"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11424</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Treasure</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11424</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Treasure</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11424</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Treasure</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11424</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Glow Hum</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Armor"
+            modifier="-10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Intelligence"
+            modifier="7"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="50"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Treasure</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>11414</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow Hum NoDrop Bless NoRemove</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40004</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow TwoHands</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40013</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Finger</WearFlags>
+        <ExtraFlags>Glow Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingRod"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40014</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40014</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="-3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40015</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Body</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="10"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Str"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40016</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Head</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="SavingSpell"
+            modifier="3"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Wisdom"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40017</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Legs</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40018</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Feet</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Dexterity"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Move"
+            modifier="20"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="4"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40019</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hands</WearFlags>
+        <ExtraFlags>Outfit</ExtraFlags>
+        <Affects>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Mana"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Hitpoints"
+            modifier="5"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+          <Affect
+            where="ToObject"
+            level="0"
+            duration="-1"
+            location="Damroll"
+            modifier="1"
+            hidden="False"
+            affectType="Spell">
+            <ExtraState />
+          </Affect>
+        </Affects>
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3712</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Waist</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3711</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take About</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3706</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Head</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3705</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Neck</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3708</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Feet</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3712</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Waist</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>3707</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Legs</WearFlags>
+        <ExtraFlags>MeltDrop</ExtraFlags>
+        <Affects />
+        <ItemTypes>Armor</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40004</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Wield</WearFlags>
+        <ExtraFlags>Glow TwoHands</ExtraFlags>
+        <Affects />
+        <ItemTypes>Weapon</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40012</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags></ExtraFlags>
+        <Programs>
+          <Program
+            Name="EverfullSkin" />
+        </Programs>
+        <Affects />
+        <ItemTypes>DrinkContainer</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40011</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Closable Closed</ExtraFlags>
+        <Programs>
+          <Program
+            Name="PouchNourishment" />
+        </Programs>
+        <Affects />
+        <ItemTypes>Container</ItemTypes>
+        <Contains />
+      </Item>
+      <Item>
+        <VNum>40010</VNum>
+        <Durability>100</Durability>
+        <WearFlags>Take Hold</WearFlags>
+        <ExtraFlags>Closable</ExtraFlags>
+        <Affects />
+        <ItemTypes>Container</ItemTypes>
+        <Contains />
+      </Item>
+    </Contains>
   </Item>
   <!--the donation pit in room 3054 - By the Temple Altar-->
   <Item

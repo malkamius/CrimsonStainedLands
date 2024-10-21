@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>3600</VnumStart>
     <VnumEnd>3699</VnumEnd>
+    <MinimumLevel>5</MinimumLevel>
+    <MaximumLevel>10</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{ 5 10} Alfa    Graveyard</Credits>
+    <Credits>Alfa    Graveyard</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1172,6 +1175,7 @@ sorrow and depression.  He is haunted by a memory of a lost paradise.</descripti
       <ManaPointDiceSides>2</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>4</trust>
       <hitpoints>80</hitpoints>
       <maxhitpoints>80</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1226,6 +1230,7 @@ sorrow and depression.  He is haunted by a memory of a lost paradise.</descripti
       <ManaPointDiceSides>2</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>4</trust>
       <hitpoints>80</hitpoints>
       <maxhitpoints>80</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1281,6 +1286,7 @@ resemble claws.  Its eyes are a dark yellow colour and glare hungrily at you.</d
       <ManaPointDiceSides>3</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>6</trust>
       <hitpoints>120</hitpoints>
       <maxhitpoints>120</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1336,6 +1342,7 @@ time.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>3</trust>
       <hitpoints>60</hitpoints>
       <maxhitpoints>60</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1391,6 +1398,7 @@ time.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>3</trust>
       <hitpoints>60</hitpoints>
       <maxhitpoints>60</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1445,6 +1453,7 @@ time.</description>
       <ManaPointDiceSides>2</ManaPointDiceSides>
       <ManaPointDiceCount>9</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>4</trust>
       <hitpoints>80</hitpoints>
       <maxhitpoints>80</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1914,7 +1923,7 @@ has been engraved on the blade next to the hilt.</Description>
       <!--Spawn Henry the Gardener to In a shed on the Graveyard-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3601">
-      <!--Spawn a brandy bottle to Henry the Gardener-->
+      <!--Spawn a brandy bottle to an ethereal wraith-->
     </Reset>
     <Reset Type="Item" Destination="3613" Count="0" Max="1" Vnum="3602">
       <!--Spawn a brandy bottle to In a shed on the Graveyard-->

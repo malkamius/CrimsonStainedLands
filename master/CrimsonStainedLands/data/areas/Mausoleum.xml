@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>4600</VnumStart>
     <VnumEnd>4699</VnumEnd>
+    <MinimumLevel>25</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{25 51} Khargqwzxdds Mausoleum</Credits>
+    <Credits>Khargqwzxdds Mausoleum</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -1668,6 +1671,7 @@ to make its kill.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>31</trust>
       <hitpoints>620</hitpoints>
       <maxhitpoints>620</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1726,6 +1730,7 @@ sockets.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>400</ManaPointDiceBonus>
+      <trust>36</trust>
       <hitpoints>720</hitpoints>
       <maxhitpoints>720</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1780,6 +1785,7 @@ sockets.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>100</ManaPointDiceBonus>
+      <trust>37</trust>
       <hitpoints>740</hitpoints>
       <maxhitpoints>740</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1838,6 +1844,7 @@ perhaps you will be her dinner?</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>4</ManaPointDiceCount>
       <ManaPointDiceBonus>600</ManaPointDiceBonus>
+      <trust>56</trust>
       <hitpoints>1120</hitpoints>
       <maxhitpoints>1120</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1894,6 +1901,7 @@ when he sees it.</description>
       <ManaPointDiceSides>100</ManaPointDiceSides>
       <ManaPointDiceCount>3</ManaPointDiceCount>
       <ManaPointDiceBonus>2000</ManaPointDiceBonus>
+      <trust>59</trust>
       <hitpoints>1180</hitpoints>
       <maxhitpoints>1180</maxhitpoints>
       <manapoints>0</manapoints>
@@ -1950,6 +1958,7 @@ walked into the room.</description>
       <ManaPointDiceSides>0</ManaPointDiceSides>
       <ManaPointDiceCount>0</ManaPointDiceCount>
       <ManaPointDiceBonus>300</ManaPointDiceBonus>
+      <trust>33</trust>
       <hitpoints>660</hitpoints>
       <maxhitpoints>660</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2004,6 +2013,7 @@ walked into the room.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>200</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2059,6 +2069,7 @@ You don't like it.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>199</ManaPointDiceBonus>
+      <trust>20</trust>
       <hitpoints>400</hitpoints>
       <maxhitpoints>400</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2114,6 +2125,7 @@ mess with it.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>400</ManaPointDiceBonus>
+      <trust>42</trust>
       <hitpoints>840</hitpoints>
       <maxhitpoints>840</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2168,6 +2180,7 @@ mess with it.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>400</ManaPointDiceBonus>
+      <trust>60</trust>
       <hitpoints>1200</hitpoints>
       <maxhitpoints>1200</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2223,6 +2236,7 @@ disturbed by your intrusion during his meditation.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>46</trust>
       <hitpoints>920</hitpoints>
       <maxhitpoints>920</maxhitpoints>
       <manapoints>0</manapoints>
@@ -2278,6 +2292,7 @@ it's red, glowing eyes... it looks pissed off that you're still alive.</descript
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>500</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4119,7 +4134,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn the Juju zombie to Outside of the mausoleum-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
-      <!--Spawn a small black skeleton key to A killer clown-->
+      <!--Spawn a small black skeleton key to the Juju zombie-->
     </Reset>
     <Reset Type="NPC" Destination="4601" Count="6" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A grisly scene, NW corner of Mausoleum.-->
@@ -4146,7 +4161,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn a disgusting, rotting Zombie to Northern main area of the Mausoleum.-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
-      <!--Spawn humanoid to A zombie chipmunk-->
+      <!--Spawn humanoid to a disgusting, rotting Zombie-->
     </Reset>
     <Reset Type="Item" Destination="4607" Count="0" Max="1" Vnum="4603">
       <!--Spawn humanoid to Northeastern main area of the Mausoleum.-->
@@ -4167,7 +4182,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn the Juju zombie to A small room.-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
-      <!--Spawn a small black skeleton key to the bartender-->
+      <!--Spawn a small black skeleton key to the Juju zombie-->
     </Reset>
     <Reset Type="Item" Destination="4609" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to The Kharzandra's coffin room-->
@@ -4182,19 +4197,19 @@ the portal to the spirit realms...</Description>
       <!--Spawn Kharzandra, the Dark-elf Vampire to The workroom of Kharzandra.-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4622">
-      <!--Spawn the Shadow Dagger to Kharzandra, the Dark-elf Vampire-->
+      <!--Spawn the Shadow Dagger to the Ogre Chieftain-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4623">
-      <!--Spawn the Shadow Dagger to Kharzandra, the Dark-elf Vampire-->
+      <!--Spawn the Shadow Dagger to the Ogre Chieftain-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4628">
-      <!--Spawn a potion of divine protection to some purple clouds-->
+      <!--Spawn a potion of divine protection to the Ogre Chieftain-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4629">
-      <!--Spawn the cloak of wizardry to some purple clouds-->
+      <!--Spawn the cloak of wizardry to the Ogre Chieftain-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4627">
-      <!--Spawn the Libram of Gainful Conjuration to some purple clouds-->
+      <!--Spawn the Libram of Gainful Conjuration to the Ogre Chieftain-->
     </Reset>
     <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="4613">
       <!--Spawn an ancient yellow parchment to previous item-->
@@ -4254,25 +4269,25 @@ the portal to the spirit realms...</Description>
       <!--Spawn the Vampire, Shadar Lunn to The workroom of Shadar Lunn-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4604">
-      <!--Spawn a pair of darkened boots to A small vortex-->
+      <!--Spawn a pair of darkened boots to the Vampire, Shadar Lunn-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4605">
-      <!--Spawn a darkened helmet to A small vortex-->
+      <!--Spawn a darkened helmet to the White Yeti-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4606">
-      <!--Spawn a pair of darkened leggings to a stripper-->
+      <!--Spawn a pair of darkened leggings to the White Yeti-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4607">
-      <!--Spawn the Arkham signet ring to a stripper-->
+      <!--Spawn the Arkham signet ring to the White Yeti-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4609">
-      <!--Spawn a guardian sword to a stripper-->
+      <!--Spawn a guardian sword to the White Yeti-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4608">
-      <!--Spawn a darkened shield to a stripper-->
+      <!--Spawn a darkened shield to the White Yeti-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4642">
-      <!--Spawn a darkened platemail to a stripper-->
+      <!--Spawn a darkened platemail to a male citizen-->
     </Reset>
     <Reset Type="NPC" Destination="4615" Count="1" Max="1" Vnum="4611">
       <!--Spawn the dark priest vampire to The dark priest's coffin room.-->
@@ -4281,7 +4296,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn the flaming sceptre of Chaos to the dark priest vampire-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4602">
-      <!--Spawn an unholy symbol of Lloth to A half naked woman-->
+      <!--Spawn an unholy symbol of Lloth to the dark priest vampire-->
     </Reset>
     <Reset Type="Item" Destination="4615" Count="0" Max="1" Vnum="4625">
       <!--Spawn a coffin to The dark priest's coffin room.-->
@@ -4296,7 +4311,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn a Frostbrand sword to a young vampire-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4617">
-      <!--Spawn a rat-eaten poncho to A half naked woman-->
+      <!--Spawn a rat-eaten poncho to the Minotaur Citizen-->
     </Reset>
     <Reset Type="NPC" Destination="4617" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Western check point.-->
@@ -4305,7 +4320,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn the Juju zombie to Western check point.-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
-      <!--Spawn a small black skeleton key to a dealer-->
+      <!--Spawn a small black skeleton key to the Juju zombie-->
     </Reset>
     <Reset Type="Item" Destination="4618" Count="0" Max="1" Vnum="4615">
       <!--Spawn a corpse of an elfin wizard to Central main area of the Mausoleum.-->
@@ -4374,16 +4389,16 @@ the portal to the spirit realms...</Description>
       <!--Spawn a Frostbrand sword to a young vampire-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4617">
-      <!--Spawn a rat-eaten poncho to a patron-->
+      <!--Spawn a rat-eaten poncho to a young vampire-->
     </Reset>
     <Reset Type="NPC" Destination="4625" Count="1" Max="1" Vnum="4609">
       <!--Spawn the demon familiar to Roaming ground for the Demon.-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4616">
-      <!--Spawn the flail of Pestilance to A female dancer-->
+      <!--Spawn the flail of Pestilance to the demon familiar-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="4621">
-      <!--Spawn an ulrician belt to A male dancer-->
+      <!--Spawn an ulrician belt to Darkoth-->
     </Reset>
     <Reset Type="NPC" Destination="4626" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A small room.-->
@@ -4404,7 +4419,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn a disgusting, rotting Zombie to Central main area of the Mausoleum.-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4603">
-      <!--Spawn humanoid to an irritated kid-->
+      <!--Spawn humanoid to a disgusting, rotting Zombie-->
     </Reset>
     <Reset Type="NPC" Destination="4629" Count="9" Max="35" Vnum="4600">
       <!--Spawn a disgusting, rotting Zombie to Southeast main area of the Mausoleum.-->
@@ -4416,7 +4431,7 @@ the portal to the spirit realms...</Description>
       <!--Spawn the Juju zombie to A small room.-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="4600">
-      <!--Spawn a small black skeleton key to A stone gargoyle-->
+      <!--Spawn a small black skeleton key to the Juju zombie-->
     </Reset>
     <Reset Type="NPC" Destination="4631" Count="4" Max="12" Vnum="4605">
       <!--Spawn a hungry ghoul to A grisly scene, SW corner of Mausoleum.-->

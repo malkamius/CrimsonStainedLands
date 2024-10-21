@@ -1930,6 +1930,8 @@ namespace CrimsonStainedLands
 
             arguments = arguments.OneArgument(ref vnumArg);
 
+            arguments.OneArgumentOut(out var flag);
+
             if (string.IsNullOrEmpty(directionArg))
             {
                 ch.send("What direction do you want to create a new room in?\n\r");
@@ -2008,8 +2010,15 @@ namespace CrimsonStainedLands
             ch.Room.Area.saved = false;
             var revDirection = reverseDirections[direction];
             var flags = new List<ExitFlags>();
+            bool oneway = false;
+            if("oneway".StringPrefix(flag))
+            {
+                arguments = arguments.OneArgumentOut(out flag);
+                oneway = true;
+            }
             Utility.GetEnumValues(arguments, ref flags);
-            room.OriginalExits[(int)revDirection] = new ExitData() { destination = ch.Room, destinationVnum = ch.Room.Vnum, direction = revDirection, description = "", flags = new HashSet<ExitFlags>(flags), originalFlags = new HashSet<ExitFlags>(flags) };
+            if(!oneway)
+                room.OriginalExits[(int)revDirection] = new ExitData() { destination = ch.Room, destinationVnum = ch.Room.Vnum, direction = revDirection, description = "", flags = new HashSet<ExitFlags>(flags), originalFlags = new HashSet<ExitFlags>(flags) };
             ch.Room.OriginalExits[(int)direction] = new ExitData() { destination = room, direction = direction, description = "", flags = new HashSet<ExitFlags>(flags), originalFlags = new HashSet<ExitFlags>(flags) };
             for (int i = 0; i < ch.Room.exits.Length; i++)
             {
@@ -2651,7 +2660,8 @@ namespace CrimsonStainedLands
             }
             else if (!vnumString.ISEMPTY() && (area = (from a in AreaData.Areas where a.Name.IsName(vnumString) select a).FirstOrDefault()) == null)
             {
-                ch.send("Area not found.\n\r");
+                //ch.send("Area not found. Using current rooms area.\n\r");
+                area = ch.Room.Area;
             }
             //else if (!ch.HasBuilderPermission(area))
             //{
@@ -2674,13 +2684,7 @@ namespace CrimsonStainedLands
                 ch.send("OK.\n\r");
                 return;
             }
-
-            if (area == null)
-            {
-                //ch.send("Area not found.\n\r");
-                //return;
-                area = (area ?? ch.EditingArea) ?? ch.Room.Area;
-            }
+            if (area == null) area = ch.Room.Area;
             ch.EditingArea = area;
             if (!ch.HasBuilderPermission(area))
             {

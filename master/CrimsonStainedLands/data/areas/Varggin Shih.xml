@@ -5,9 +5,12 @@
     <Info></Info>
     <VnumStart>22000</VnumStart>
     <VnumEnd>22099</VnumEnd>
+    <MinimumLevel>40</MinimumLevel>
+    <MaximumLevel>51</MaximumLevel>
     <Builders></Builders>
     <Security>0</Security>
-    <Credits>{40 up} Barsak  Varggin Shih</Credits>
+    <Credits>Barsak  Varggin Shih</Credits>
+    <Continent>Mainland</Continent>
     <OverRoomVnum>0</OverRoomVnum>
   </AreaData>
   <Rooms>
@@ -3179,6 +3182,7 @@ dark town of Varggin Shih, he trains as a warrior in their small community.</des
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>50</trust>
       <hitpoints>1000</hitpoints>
       <maxhitpoints>1000</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3234,6 +3238,7 @@ readies his bow for a battle, glaring at you with hatred.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3290,6 +3295,7 @@ and his skin is tough. Perhaps you should rethink your plans...</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>53</trust>
       <hitpoints>1060</hitpoints>
       <maxhitpoints>1060</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3348,6 +3354,7 @@ though, his trolls have taken offense to the infidels.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>55</trust>
       <hitpoints>1100</hitpoints>
       <maxhitpoints>1100</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3402,6 +3409,7 @@ though, his trolls have taken offense to the infidels.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>45</trust>
       <hitpoints>900</hitpoints>
       <maxhitpoints>900</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3459,6 +3467,7 @@ against the intruders.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>57</trust>
       <hitpoints>1140</hitpoints>
       <maxhitpoints>1140</maxhitpoints>
       <manapoints>0</manapoints>
@@ -3517,6 +3526,7 @@ two they live in luxury.</description>
       <ManaPointDiceSides>1</ManaPointDiceSides>
       <ManaPointDiceCount>1</ManaPointDiceCount>
       <ManaPointDiceBonus>1</ManaPointDiceBonus>
+      <trust>54</trust>
       <hitpoints>1080</hitpoints>
       <maxhitpoints>1080</maxhitpoints>
       <manapoints>0</manapoints>
@@ -4439,7 +4449,7 @@ two they live in luxury.</description>
       <!--Spawn a strong troll archer to A Small Home-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22001">
-      <!--Spawn a deadly bow to a strong troll archer-->
+      <!--Spawn a deadly bow to an antelope-->
     </Reset>
     <Reset Type="NPC" Destination="22067" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
@@ -4460,16 +4470,16 @@ two they live in luxury.</description>
       <!--Spawn a bone breastplate to a large troll ranger-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22012">
-      <!--Spawn a pair of bone leggings to a large troll ranger-->
+      <!--Spawn a pair of bone leggings to a valley elf sentry-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22013">
-      <!--Spawn a pair of bone boots to a stronghold patrolman-->
+      <!--Spawn a pair of bone boots to a valley elf sentry-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22014">
-      <!--Spawn a bone shield to a stronghold patrolman-->
+      <!--Spawn a bone shield to a valley elf sentry-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22009">
-      <!--Spawn the staff of Zargg Nihl to a stronghold patrolman-->
+      <!--Spawn the staff of Zargg Nihl to a valley elf sentry-->
     </Reset>
     <Reset Type="NPC" Destination="22072" Count="1" Max="8" Vnum="22005">
       <!--Spawn a large troll ranger to A Small Home-->
@@ -4502,7 +4512,7 @@ two they live in luxury.</description>
       <!--Spawn the strange bone to the shaman of Varggin Shih-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22019">
-      <!--Spawn some tough fur leggings to a stronghold patrolman-->
+      <!--Spawn some tough fur leggings to the shaman of Varggin Shih-->
     </Reset>
     <Reset Type="NPC" Destination="22083" Count="1" Max="1" Vnum="22002">
       <!--Spawn a elite troll guard to the Hallway-->
@@ -4517,16 +4527,16 @@ two they live in luxury.</description>
       <!--Spawn a crude iron belt to the king of Varggin Shih-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22004">
-      <!--Spawn the helm of blackened furs to the king of Varggin Shih-->
+      <!--Spawn the helm of blackened furs to a valley elf-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="22005">
-      <!--Spawn a centaur hoof to the king of Varggin Shih-->
+      <!--Spawn a centaur hoof to a valley elf-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22006">
-      <!--Spawn some blood-covered battlearmor to the king of Varggin Shih-->
+      <!--Spawn some blood-covered battlearmor to a valley elf-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="22008">
-      <!--Spawn the wicked iron longsword to the king of Varggin Shih-->
+      <!--Spawn the wicked iron longsword to a valley elf sentry-->
     </Reset>
     <Reset Type="NPC" Destination="22087" Count="1" Max="6" Vnum="22001">
       <!--Spawn a strong troll archer to A Small Home-->
