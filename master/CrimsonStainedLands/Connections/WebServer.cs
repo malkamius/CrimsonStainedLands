@@ -140,11 +140,12 @@ namespace CrimsonStainedLands.Connections
         {
             try
             {
+                url = url.Replace("..", "");
                 if (url.StartsWith("/js/") && url.Length > 4 && String.IsNullOrEmpty(Path.GetExtension(url)))
                     url += ".js";
 
                 string filePath = Path.Combine(WebRoot, url.TrimStart('/'));
-
+                
                 if (string.IsNullOrEmpty(url.Trim('/')))
                 {
                     filePath = Path.Combine(filePath, "client.html");
@@ -167,11 +168,18 @@ namespace CrimsonStainedLands.Connections
                 {
                     try
                     {
-                        string content = File.ReadAllText(filePath);
+                        string content;
+                        using (var reader = new StreamReader(filePath, Encoding.UTF8))
+                        {
+                            content = reader.ReadToEnd();
+                        }
                         string contentType = GetContentType(filePath);
 
-                        // Apply simple templating
-                        content = ApplyTemplate(content);
+                        if (filePath.EndsWith(".html"))
+                        {
+                            // Apply simple templating
+                            content = ApplyTemplate(content);
+                        }
 
                         SendResponse(connection, 200, "OK", contentType, content, origin);
                     }
@@ -204,34 +212,83 @@ namespace CrimsonStainedLands.Connections
 
         private void SendResponse(WebsocketConnection connection, int statusCode, string statusText, string contentType, string content, string origin)
         {
-            if(connection.Status != BaseConnection.ConnectionStatus.Disconnected) {
-                byte[] contentBytes = Encoding.UTF8.GetBytes(content);
-                string[] allowedOrigins = new string[]
+            try
+            {
+                if (connection?.Status != BaseConnection.ConnectionStatus.Disconnected && connection?.Stream != null)
                 {
-                    "https://crimsonstainedlands.net",
-                    "https://kbs-cloud.com",
-                    "https://games.mywire.org"
-                };
+                    // Use consistent UTF-8 encoding for all content
+                    byte[] contentBytes = Encoding.UTF8.GetBytes(content);
 
-                string accessControlAllowOrigin = allowedOrigins.Contains(origin) ? origin : allowedOrigins[0];
+                    string[] allowedOrigins = new string[]
+                    {
+                "https://crimsonstainedlands.net",
+                "https://kbs-cloud.com",
+                "https://games.mywire.org"
+                    };
 
-                string response = $"HTTP/1.1 {statusCode} {statusText}\r\n" +
-                                $"Content-Type: {contentType}\r\n" +
-                                $"Content-Length: {contentBytes.Length}\r\n" +
-                                $"Access-Control-Allow-Origin: {accessControlAllowOrigin}\r\n" +
-                                "Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n" +
-                                "Access-Control-Allow-Headers: Content-Type\r\n" +
-                                "Connection: close\r\n" +
-                                "\r\n";
+                    string accessControlAllowOrigin = allowedOrigins.Contains(origin) ? origin : allowedOrigins[0];
 
-                byte[] responseBytes = Encoding.ASCII.GetBytes(response);
-                connection.Write(responseBytes);
-                connection.Write(contentBytes);
-                connections.Remove(connection);
-                connection.Stream.Flush();
-                connection.Stream.Close();
-                connection.Cleanup();
+                    // Add charset and cache control headers
+                    string response = $"HTTP/1.1 {statusCode} {statusText}\r\n" +
+                                    $"Content-Type: {contentType}; charset=utf-8\r\n" +
+                                    $"Content-Length: {contentBytes.Length}\r\n" +
+                                    $"Access-Control-Allow-Origin: {accessControlAllowOrigin}\r\n" +
+                                    "Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n" +
+                                    "Access-Control-Allow-Headers: Content-Type\r\n" +
+                                    "Cache-Control: no-cache\r\n" +
+                                    "Connection: close\r\n" +
+                                    "\r\n";
 
+                    // Use UTF-8 for headers as well
+                    byte[] responseBytes = Encoding.UTF8.GetBytes(response);
+
+                    // Write with error checking
+                    try
+                    {
+                        connection.Stream.Write(responseBytes, 0, responseBytes.Length);
+                        connection.Stream.Write(contentBytes, 0, contentBytes.Length);
+                        connection.Stream.Flush();
+                    }
+                    catch (Exception ex)
+                    {
+                        Game.bug($"Error writing to stream: {ex.Message}");
+                        throw;
+                    }
+
+                    // Clean up in finally block
+                    try
+                    {
+                        connections.Remove(connection);
+                    }
+                    catch (Exception ex)
+                    {
+                        Game.bug($"Error removing connection: {ex.Message}");
+                    }
+                    finally
+                    {
+                        try
+                        {
+                            connection.Stream.Close();
+                            connection.Cleanup();
+                        }
+                        catch (Exception ex)
+                        {
+                            Game.bug($"Error during cleanup: {ex.Message}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Game.bug($"SendResponse failed: {ex.Message}");
+                // Try to clean up even if we failed
+                try
+                {
+                    connections.Remove(connection);
+                    connection?.Stream?.Close();
+                    connection?.Cleanup();
+                }
+                catch { } // Suppress cleanup errors
             }
         }
 
