@@ -77,7 +77,7 @@ namespace CrimsonStainedLands
                 {
                     if (imm.state == Player.ConnectionStates.Playing && imm.connection != null && imm.Level >= monitorentry.Level && imm.WiznetFlags.ISSET(flag))
                     {
-                        imm.send("\\rWIZNET ({0}) {1} :: {2} :: {3}\\x\n\r", 
+                        imm.send("\\rWIZNET ({0}) {1} :: {2} :: {3}\\x\r\n", 
                             ch != null ? ch.Name : item != null ? "item " + item.Vnum : "nobody", 
                             DateTime.Now.ToString(),
                             flag, text);
@@ -102,20 +102,20 @@ namespace CrimsonStainedLands
                 if (ch.WiznetFlags.ISSET(flag))
                 {
                     ch.WiznetFlags.REMOVEFLAG(flag);
-                    ch.send("Wiznet flag {0} unset.\n\r", flag);
+                    ch.send("Wiznet flag {0} unset.\r\n", flag);
                 }
                 else
                 {
                     ch.WiznetFlags.SETBIT(flag);
-                    ch.send("Wiznet flag {0} set.\n\r", flag);
+                    ch.send("Wiznet flag {0} set.\r\n", flag);
                 }
             }
             else
             {
-                ch.send("Choose a wiznet flag: {0}\n\r", string.Join(", ", from entry in MonitorEntries select entry.Flag));
-                ch.send("Current wiznet flags: {0}\n\r", string.Join(", ", from entry in MonitorEntries where ch.WiznetFlags.ISSET(entry.Flag) select entry.Flag));
+                ch.send("Choose a wiznet flag: {0}\r\n", string.Join(", ", from entry in MonitorEntries select entry.Flag));
+                ch.send("Current wiznet flags: {0}\r\n", string.Join(", ", from entry in MonitorEntries where ch.WiznetFlags.ISSET(entry.Flag) select entry.Flag));
             }
-            ch.send("WIZNET is \\g{0}\\x.\n\r", ch.WiznetFlags.ISSET(Flags.On) ? "ON" : "OFF");
+            ch.send("WIZNET is \\g{0}\\x.\r\n", ch.WiznetFlags.ISSET(Flags.On) ? "ON" : "OFF");
         }
     }
 }

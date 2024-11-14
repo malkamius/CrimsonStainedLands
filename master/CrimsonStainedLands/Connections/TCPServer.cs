@@ -38,7 +38,7 @@ namespace CrimsonStainedLands.Connections
                 var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
                 var connection = new TCPConnection(this.Manager, newClientSocket);
-                ConnectionConnectedCallback(connection);
+                ConnectionConnectedCallback(connection, null, null);
             }
         }
     }

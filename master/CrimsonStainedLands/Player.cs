@@ -142,7 +142,7 @@ namespace CrimsonStainedLands
             this.Room = room;
         }
 
-        public Player(Game game, BaseConnection connection)
+        public Player(Game game, BaseConnection connection, string username, string password)
         {
             this.game = game;
             this.connection = connection;
@@ -163,14 +163,29 @@ namespace CrimsonStainedLands
             //}catch (Exception e)
             //{
             //    game.bug(e.ToString());
-            Game.log("New connection from " + connection.RemoteEndPoint.ToString());
+            Game.log("New connection from " + (connection.Socket != null? connection.RemoteEndPoint.ToString() : connection.GetType().Name));
             //}
             TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
-            
-            state = ConnectionStates.GetName;
+
             Game.Instance.SocketAccepted(this);
+
             DoActInfo.ReadHelp(this, "DIKU", true);
-            send("\n\rEnter your name: ");
+            state = ConnectionStates.GetName;
+            send("\r\nEnter your name: ");
+
+            if (!string.IsNullOrEmpty(username))
+            {
+                this.NewCharacterInputHandler(username);
+
+                if (!string.IsNullOrEmpty(password) && (this.state == ConnectionStates.GetPassword || this.state == ConnectionStates.GetNewPassword))
+                {
+                    this.NewCharacterInputHandler(password);
+                }
+            }
+
+            
+            
+            
         }
 
         public List<string> ClientTypes = new List<string>();
@@ -199,7 +214,7 @@ namespace CrimsonStainedLands
 
                 if (data.Length > 4200)
                 {
-                    SendRaw("Too much data to process at once.\n\r");
+                    send("Too much data to process at once.\r\n");
                     Game.CloseSocket(this, state < ConnectionStates.Playing, true);
                     inanimate = DateTime.Now;
                 }
@@ -213,7 +228,7 @@ namespace CrimsonStainedLands
                     {
                         if (TelnetOptions.ISSET(TelnetOptionFlags.ClientWontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.ServerDontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.TemporaryDontEcho))
                         {
-                            SendRaw(((char)singlecharacter).ToString(), true);
+                            send(((char)singlecharacter).ToString(), true);
                         }
                         input.Remove(input.Length - 1, 1);
                         position -= 1;
@@ -223,13 +238,13 @@ namespace CrimsonStainedLands
                         input.Append((char)singlecharacter);
                         if (TelnetOptions.ISSET(TelnetOptionFlags.ClientWontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.ServerDontEcho) && !TelnetOptions.ISSET(TelnetOptionFlags.TemporaryDontEcho))
                         {
-                            SendRaw(((char)singlecharacter).ToString(), true);
+                            send(((char)singlecharacter).ToString(), true);
                         }
                         position++;
                         if (input.Length > 4200) // not writing a novel yet?
                         {
 
-                            SendRaw("Too much data to process at once.\n\r");
+                            send("Too much data to process at once.\r\n");
                             Game.CloseSocket(this, state < ConnectionStates.Playing, true);
                             inanimate = DateTime.Now;
                         }
@@ -427,15 +442,15 @@ namespace CrimsonStainedLands
                             health = "convulsing on the ground.";
                         else
                             health = "is dead.";
-                        //output.Append(fighting.Display(this) + " " + health + "\n\r");
-                        Act("$N " + health + "\n\r", Fighting);
+                        //output.Append(fighting.Display(this) + " " + health + "\r\n");
+                        Act("$N " + health + "\r\n", Fighting);
                     }
-                    //socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("\n\r"));
+                    //socket.Send(System.Text.ASCIIEncoding.ASCII.GetBytes("\r\n"));
 
                     DisplayPrompt();
                     if (HasPageText)
                     {
-                        send("\n\r[Hit Enter to Continue]");
+                        send("\r\n[Hit Enter to Continue]");
                         ((Player)this).SittingAtPrompt = true;
                     }
                     //output.AppendFormat("\n<{0}%hp {1}%m {2}%mv {3}> ",
@@ -509,22 +524,22 @@ namespace CrimsonStainedLands
                 var numbers = new int[] { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', '=', '_' };
                 if (line.Length < 3 || line.Length > 16)
                 {
-                    send("Name must be between 3 and 16 characters in length.\n\rWhat is your name: ");
+                    send("Name must be between 3 and 16 characters in length.\r\nWhat is your name: ");
                     return true;
                 }
                 else if (line.Contains(" ") || line.Any(c => numbers.Contains(c)) || line.Any(c => char.ToLower(c) == char.ToUpper(c)))
                 {
-                    send("Name cannot contain spaces or numbers or special characters.\n\rWhat is your name: ");
+                    send("Name cannot contain spaces or numbers or special characters.\r\nWhat is your name: ");
                     return true;
                 }
                 else if (InvalidNames.IsName(line, true) || line.StringPrefix("self"))
                 {
-                    send("That name is not allowed.\n\rWhat is your name: ");
+                    send("That name is not allowed.\r\nWhat is your name: ");
                     return true;
                 }
                 else if (Character.Characters.Any(npc => npc.IsNPC && npc.Name.IsName(line, true)))
                 {
-                    send("That name is taken.\n\rWhat is your name: ");
+                    send("That name is taken.\r\nWhat is your name: ");
                     return true;
                 }
                 Name = line[0].ToString().ToUpper() + line.Substring(1).ToLower();
@@ -535,7 +550,7 @@ namespace CrimsonStainedLands
 
                     try
                     {
-                        SendRaw("You are banned.\n\r");
+                        send("You are banned.\r\n");
                         Game.CloseSocket(this, true);
                     }
                     catch
@@ -550,8 +565,8 @@ namespace CrimsonStainedLands
                         state = ConnectionStates.GetPassword;
                     else
                     {
-                        send($"New player {Name}.\n\r");
-                        Game.log($"New player {Name}.\n\r");
+                        send($"New player {Name}.\r\n");
+                        Game.log($"New player {Name}.\r\n");
                         state = ConnectionStates.GetNewPassword;
                     }
                 }
@@ -561,15 +576,15 @@ namespace CrimsonStainedLands
                         state = ConnectionStates.GetPassword;
                     else
                     {
-                        send($"New player {Name}.\n\r");
-                        Game.log($"New player {Name}.\n\r");
+                        send($"New player {Name}.\r\n");
+                        Game.log($"New player {Name}.\r\n");
                         state = ConnectionStates.GetNewPassword;
                     }
                 }
                 else
                 {
-                    send($"New player {Name}.\n\r");
-                    Game.log($"New player {Name}.\n\r");
+                    send($"New player {Name}.\r\n");
+                    Game.log($"New player {Name}.\r\n");
                     state = ConnectionStates.GetNewPassword;
                 }
                 send("What is your password? ");
@@ -641,7 +656,7 @@ namespace CrimsonStainedLands
                 {
                     //this.SendRaw(TelnetProtocol.ServerGetWontEcho);
                     TelnetOptions.SETBIT(TelnetOptionFlags.TemporaryDontEcho);
-                    SendRaw("Incorrect password!\n\r");
+                    send("Incorrect password!\r\n");
                     Game.CloseSocket(this, true, false);
                     return true;
                 }
@@ -654,7 +669,7 @@ namespace CrimsonStainedLands
                     {
                         try
                         {
-                            connection.SendRaw("This character is being logged in elsewhere.\n\r");
+                            connection.send("This character is being logged in elsewhere.\r\n");
                             Game.CloseSocket(connection, false, true);
                         }
                         catch { }
@@ -704,7 +719,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    SendRaw("Goodbye.\n\r");
+                    send("Goodbye.\r\n");
                     Game.CloseSocket(this, true);
                 }
 
@@ -742,12 +757,12 @@ namespace CrimsonStainedLands
                     //if (race.alignments.Count == 1)
                     //{
                     //    state = connectionState.getEthos;
-                    //    send("You are " + race.alignments[0].ToString() + ".\n\r");
+                    //    send("You are " + race.alignments[0].ToString() + ".\r\n");
                     //    alignment = race.alignments[0];
 
                     //    if (race.ethosChoices.Count == 1)
                     //    {
-                    //        send("You are " + race.ethosChoices[0].ToString() + ".\n\r");
+                    //        send("You are " + race.ethosChoices[0].ToString() + ".\r\n");
                     //        ethos = race.ethosChoices[0];
                     //        SetState(connectionState.playing);
                     //    }
@@ -808,7 +823,7 @@ namespace CrimsonStainedLands
                 if (Utility.GetEnumValueStrPrefix<Alignment>(line, ref alignmentValue) && PcRace.alignments.Contains(alignmentValue) && Guild.alignments.Contains(alignmentValue))
                 {
                     Alignment = alignmentValue;
-                    send("You are " + Alignment.ToString() + ".\n\r");
+                    send("You are " + Alignment.ToString() + ".\r\n");
                 }
                 else
                 {
@@ -824,7 +839,7 @@ namespace CrimsonStainedLands
                 if (Utility.GetEnumValueStrPrefix<Ethos>(line, ref ethosValue) && PcRace.ethosChoices.Contains(ethosValue))
                 {
                     Ethos = ethosValue;
-                    send("You are " + Ethos.ToString() + ".\n\r");
+                    send("You are " + Ethos.ToString() + ".\r\n");
                 }
                 else
                 {
@@ -841,18 +856,41 @@ namespace CrimsonStainedLands
         }
         internal bool ProcessInput()
         {
-            if (input.ToString().Contains((char)10))
+            var line = input.ToString();
+            var lf = line.IndexOf((char)10);
+            var cr = line.IndexOf((char)13);
+            if (lf >= 0 || cr >= 0)
             {
-                var line = input.Replace("\r", "").ToString();  //input.ToString();
+                int index = 0;
+                //input.ToString();
                 LastActivity = DateTime.Now;
-                var newLineIndex = line.IndexOf((char)10);
-                line = line.Substring(0, newLineIndex);//;
-                input.Remove(0, newLineIndex + 1);
+                //var newLineIndex = line.IndexOf((char)10);
+                if (cr >= 0 && (lf < 0 || cr < lf))
+                {
+                    line = line.Substring(0, cr);
+                    index = cr;
+                    if (lf == cr + 1)
+                    {
+                        index++;
+                    }
+                }
+                else
+                {
+                    line = line.Substring(0, lf);
+                    index = lf;
+                    if (cr == lf + 1)
+                    {
+                        index++;
+                    }
+                }
+
+                //line = line.Substring(0, newLineIndex);//;
+                input.Remove(0, index + 1);
                 line = line.Trim('\n', '\r');
                 if (line.Length > 120 && this.Level < Game.LEVEL_IMMORTAL)
                 {
                     line = "";
-                    send("Line too long.\n\r");
+                    send("Line too long.\r\n");
                 }
                 //if (!IsImmortal) line = line.EscapeColor();
                 if (!NewCharacterInputHandler(line.EscapeColor()) && state == ConnectionStates.Playing)
@@ -862,7 +900,7 @@ namespace CrimsonStainedLands
                     {
                         SendPage();
                     }
-                    else if (HasPageText) { ClearPage(); send("Paged text cleared.\n\r"); }
+                    else if (HasPageText) { ClearPage(); send("Paged text cleared.\r\n"); }
                     else
                     {
                         this.DoCommand(line);
@@ -893,16 +931,16 @@ namespace CrimsonStainedLands
             }
             WizardNet.Wiznet(WizardNet.Flags.Logins, "{0} logged in at {1}", null, null, Name, Address);
             DoActInfo.ReadHelp(this, "greeting", true);
-            send("\n\rWelcome to the Crimson Stained Lands!\n\r\n\r");
+            send("\r\nWelcome to the Crimson Stained Lands!\r\n\r\n");
             DoActInfo.ReadHelp(this, "MOTD", true);
             if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
             {
-                send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
+                send("\r\nIt appears your client supports color. Type color to turn it on!\r\n\r\n");
             }
             var notecount = (from note in NoteData.Notes where note.Sent > LastReadNote && (note.To.IsName("all", true) || note.To.IsName(Name, true)) select note).Count();
 
             if (notecount > 0)
-                send("{0} unread notes.\n\r", notecount);
+                send("{0} unread notes.\r\n", notecount);
             send("\n");
             BonusInfo.DoBonus(this, "");
             if (!reconnect)
@@ -967,18 +1005,18 @@ namespace CrimsonStainedLands
             else if (state == ConnectionStates.GetRace)
             {
                 this.state = ConnectionStates.GetRace;
-                send("Type `help races` for information on the races of this world.\n\r");
+                send("Type `help races` for information on the races of this world.\r\n");
                 send("What is your race? (" + string.Join(" ", (from race in PcRace.PcRaces select race.name)) + ") ");
             }
             else if (state == ConnectionStates.GetEthos)
             {
                 this.state = ConnectionStates.GetEthos;
-                //send("You are " + race.alignments[0].ToString() + ".\n\r");
+                //send("You are " + race.alignments[0].ToString() + ".\r\n");
                 //alignment = race.alignments[0];
 
                 if (PcRace.ethosChoices.Count == 1)
                 {
-                    send("You are " + PcRace.ethosChoices[0].ToString() + ".\n\r");
+                    send("You are " + PcRace.ethosChoices[0].ToString() + ".\r\n");
                     Ethos = PcRace.ethosChoices[0];
                     SetState(ConnectionStates.Playing);
                 }
@@ -989,13 +1027,13 @@ namespace CrimsonStainedLands
             {
                 if (PcRace.alignments.Count == 1)
                 {
-                    send("You are " + PcRace.alignments[0].ToString() + ".\n\r");
+                    send("You are " + PcRace.alignments[0].ToString() + ".\r\n");
                     Alignment = PcRace.alignments[0];
                     SetState(ConnectionStates.GetEthos);
                 }
                 else if (Guild != null && Guild.alignments.Count == 1)
                 {
-                    send("You are " + Guild.alignments[0].ToString() + ".\n\r");
+                    send("You are " + Guild.alignments[0].ToString() + ".\r\n");
                     Alignment = Guild.alignments[0];
                     SetState(ConnectionStates.GetEthos);
 
@@ -1013,7 +1051,7 @@ namespace CrimsonStainedLands
                 foreach (var guild in GuildData.Guilds)
                     if (guild.races.Contains(PcRace))
                         guilds.Add(guild);
-                send("Type `help guilds` for information on the guilds/classes of this world.\n\r");
+                send("Type `help guilds` for information on the guilds/classes of this world.\r\n");
                 send("What is your guild? ({0}) ", string.Join(",", from guild in guilds select guild.name));
             }
             else if (state == ConnectionStates.GetDefaultWeapon)
@@ -1075,7 +1113,7 @@ namespace CrimsonStainedLands
 
                 if (System.IO.File.Exists(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml")))
                 {
-                    SendRaw("It seems someone else has taken this name. Unable to continue.\n\r");
+                    send("It seems someone else has taken this name. Unable to continue.\r\n");
                     Game.CloseSocket(this, true);
                     return false;
                 }
@@ -1103,11 +1141,11 @@ namespace CrimsonStainedLands
 
                 Position = Positions.Standing;
 
-                Act("$n appears in the room suddenly.\n\r", type: ActType.ToRoom);
-                send("\n\rWelcome to the Crimson Stained Lands\n\r\n\r");
+                Act("$n appears in the room suddenly.\r\n", type: ActType.ToRoom);
+                send("\r\nWelcome to the Crimson Stained Lands\r\n\r\n");
                 if (!Flags.ISSET(ActFlags.Color) && TelnetOptions.ISSET(TelnetOptionFlags.Ansi))
                 {
-                    send("\n\rIt appears your client supports color. Type color to turn it on!\n\r\n\r");
+                    send("\r\nIt appears your client supports color. Type color to turn it on!\r\n\r\n");
                 }
                 CharacterDoFunctions.DoOutfit(this, "");
 
@@ -1121,6 +1159,8 @@ namespace CrimsonStainedLands
                 Flags.ADDFLAG(ActFlags.AutoLoot);
                 Flags.ADDFLAG(ActFlags.AutoSac);
                 Flags.ADDFLAG(ActFlags.NewbieChannel);
+                Flags.ADDFLAG(ActFlags.OOCChannel);
+
                 if (Race != null)
                 {
                     foreach (var aff in Race.affects)
@@ -1143,7 +1183,7 @@ namespace CrimsonStainedLands
 
             if (!Directory.Exists(Settings.PlayersPath))
                 Directory.CreateDirectory(Settings.PlayersPath);
-
+            
             if (Name != null && password != null && Race != null && Room != null)
             {
                 var element = this.Element;
@@ -1179,7 +1219,7 @@ namespace CrimsonStainedLands
                 //element.Save(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
                 
             }
-            //File.WriteAllText("data\\" + name + ".chr", "Password " + password + "\n\r" + "Race " + race.Name + "\n\r" + "Alignment " + alignment.ToString() + "\n\r" + "Ethos " + ethos.ToString() + "\n\r" + (inRoom != null ? "Room " + inRoom.vnum + "\n\r" : "") + "Guild " + guild + "\n\r");
+            //File.WriteAllText("data\\" + name + ".chr", "Password " + password + "\r\n" + "Race " + race.Name + "\r\n" + "Alignment " + alignment.ToString() + "\r\n" + "Ethos " + ethos.ToString() + "\r\n" + (inRoom != null ? "Room " + inRoom.vnum + "\r\n" : "") + "Guild " + guild + "\r\n");
         }
 
         public bool LoadCharacterFile(string path)
@@ -1273,6 +1313,9 @@ namespace CrimsonStainedLands
 
                     if (element.HasElement("Flags"))
                         Utility.GetEnumValues<ActFlags>(element.GetElementValue("flags"), ref this.Flags);
+
+                    if (System.IO.File.GetLastWriteTime(path) < new DateTime(2024, 10, 26))
+                        this.Flags.SETBIT(ActFlags.OOCChannel);
 
                     if (Color256) TelnetOptions.SETBIT(TelnetOptionFlags.Color256);
                     if (ColorRGB) TelnetOptions.SETBIT(TelnetOptionFlags.ColorRGB);
@@ -1420,7 +1463,7 @@ namespace CrimsonStainedLands
             }
             state = Player.ConnectionStates.Deleting;
             System.IO.File.Delete(System.IO.Path.Join(Settings.PlayersPath, Name + ".xml"));
-            SendRaw("Character deleted.\n\r");
+            send("Character deleted.\r\n");
 
             Game.CloseSocket(this, true);
 
@@ -1435,10 +1478,10 @@ namespace CrimsonStainedLands
             }
             else if (password.ISEMPTY())
             {
-                send("You must provide a password.\n\r");
+                send("You must provide a password.\r\n");
             }
             else
-                send("Password must be between 3 and 16 characters.\n\r");
+                send("Password must be between 3 and 16 characters.\r\n");
         }
 
 

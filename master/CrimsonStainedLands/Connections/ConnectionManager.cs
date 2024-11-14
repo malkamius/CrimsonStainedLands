@@ -21,16 +21,16 @@ public class ConnectionManager
         public string CertKeyName { get; set; } = "-key.pem";
 
     }
-    public delegate void ConnectionConnected(BaseConnection connection);
+    public delegate void ConnectionConnected(BaseConnection connection, string username, string password);
 
     public ConcurrentList<BaseConnection> Connections {get;set;}
 
     private CancellationTokenSource cancellationTokenSource;
 
-    public void OnConnectionConnected(BaseConnection connection)
+    public void OnConnectionConnected(BaseConnection connection, string username, string password)
     {
         Connections.Add(connection);
-        connection.Player = new Player(Game.Instance, connection);
+        connection.Player = new Player(Game.Instance, connection, username, password);
     }
 
     public ConnectionManager()
@@ -96,11 +96,13 @@ public class ConnectionManager
         var tcpServer = new TCPServer(this, "0.0.0.0", Settings.Port, cancellationTokenSource);
         var sslServer = new SslServer(this, "0.0.0.0", Settings.SSLPort, cert, cancellationTokenSource);
         var webServer = new WebServer(this, "0.0.0.0", Settings.SSLPort + 2, cert, cancellationTokenSource);
-        
+        var sshServer = new SSHServer(this, "0.0.0.0", Settings.SSLPort + 1, cancellationTokenSource);
+
         var services = new List<Task>() {
             tcpServer.Start(OnConnectionConnected),
             sslServer.Start(OnConnectionConnected),
-            webServer.Start(OnConnectionConnected)
+            webServer.Start(OnConnectionConnected),
+            sshServer.Start(OnConnectionConnected),
         };
 
         try

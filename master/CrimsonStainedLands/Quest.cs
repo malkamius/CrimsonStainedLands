@@ -159,7 +159,7 @@ namespace CrimsonStainedLands
                     questProgress.Status = Quest.QuestStatus.InProgress;
                     if (questProgress.Quest.ShowInQuests)
                     {
-                        ch.send("You have started the quest '{0}'.\n\r", questProgress.Quest.Display);
+                        ch.send("You have started the quest '{0}'.\r\n", questProgress.Quest.Display);
                     }
                     player.Quests.Add(questProgress);
 
@@ -174,7 +174,7 @@ namespace CrimsonStainedLands
                         questProgress.Status = Quest.QuestStatus.InProgress;
                         if (questProgress.Quest.ShowInQuests)
                         {
-                            ch.send("You have started the quest '{0}'.\n\r", questProgress.Quest.Display);
+                            ch.send("You have started the quest '{0}'.\r\n", questProgress.Quest.Display);
                         }
                     }
 
@@ -210,15 +210,15 @@ namespace CrimsonStainedLands
                     }
                     if (questProgress.Quest.ShowInQuests)
                     {
-                        ch.send("You have completed the quest '{0}'.\n\r", questProgress.Quest.Display);
+                        ch.send("You have completed the quest '{0}'.\r\n", questProgress.Quest.Display);
                     }
 
                     if (questProgress.Quest.RewardXp > 0)
-                        ch.send("You receive {0} experience points.\n\r", questProgress.Quest.RewardXp);
+                        ch.send("You receive {0} experience points.\r\n", questProgress.Quest.RewardXp);
 
                     if (questProgress.Quest.RewardGold > 0)
                     {
-                        ch.send("You receive {0} silver and {1} gold.\n\r", questProgress.Quest.RewardGold % 1000, questProgress.Quest.RewardGold / 1000);
+                        ch.send("You receive {0} silver and {1} gold.\r\n", questProgress.Quest.RewardGold % 1000, questProgress.Quest.RewardGold / 1000);
                     }
 
                     foreach (var itemvnum in questProgress.Quest.RewardItems)
@@ -254,7 +254,7 @@ namespace CrimsonStainedLands
                     if (questProgress.Quest.ShowInQuests)
                     {
 
-                        ch.send("You have failed the quest '{0}'.\n\r", questProgress.Quest.Display);
+                        ch.send("You have failed the quest '{0}'.\r\n", questProgress.Quest.Display);
                     }
 
                 }
@@ -281,7 +281,7 @@ namespace CrimsonStainedLands
                     if (questProgress.Quest.ShowInQuests)
                     {
 
-                        ch.send("Your are no longer eligible for the quest '{0}'.\n\r", questProgress.Quest.Display);
+                        ch.send("Your are no longer eligible for the quest '{0}'.\r\n", questProgress.Quest.Display);
                     }
 
                 }
@@ -308,7 +308,7 @@ namespace CrimsonStainedLands
                     if (questProgress.Quest.ShowInQuests)
                     {
 
-                        ch.send("Quest '{0}' has been dropped.\n\r", questProgress.Quest.Display);
+                        ch.send("Quest '{0}' has been dropped.\r\n", questProgress.Quest.Display);
                     }
 
                     player.Quests.Remove(questProgress);
@@ -355,7 +355,7 @@ namespace CrimsonStainedLands
 
                     if (questProgress.Quest.ShowInQuests)
                     {
-                        ch.send("Your progress for the quest '{0}' has been reset.\n\r", questProgress.Quest.Display);
+                        ch.send("Your progress for the quest '{0}' has been reset.\r\n", questProgress.Quest.Display);
                     }
 
                 }

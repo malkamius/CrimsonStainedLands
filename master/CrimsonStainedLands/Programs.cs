@@ -558,8 +558,8 @@ namespace CrimsonStainedLands
                             var newitem = new ItemData(itemtemplate);
                             sender.Contains.Insert(0, newitem);
                             newitem.Container = sender;
-                            player.Act("The markings on $p glow briefly.\n\r", null, sender, null, ActType.ToChar);
-                            player.Act("The markings on $p glow briefly.\n\r", null, sender, null, ActType.ToRoom);
+                            player.Act("The markings on $p glow briefly.\r\n", null, sender, null, ActType.ToChar);
+                            player.Act("The markings on $p glow briefly.\r\n", null, sender, null, ActType.ToRoom);
                             return true;
                         }
                     }
@@ -579,8 +579,8 @@ namespace CrimsonStainedLands
             {
                 if (type == ProgramTypes.OneHitHit && Utility.Random(0, 10) <= 2)
                 {
-                    player.Act("\\W$p glows white.\\x\n\r", null, sender, null, ActType.ToChar);
-                    player.Act("\\W$p glows white.\\x\n\r", null, sender, null, ActType.ToRoom);
+                    player.Act("\\W$p glows white.\\x\r\n", null, sender, null, ActType.ToChar);
+                    player.Act("\\W$p glows white.\\x\r\n", null, sender, null, ActType.ToRoom);
                     Magic.ItemCastSpell(Magic.CastType.Cast, SkillSpell.SkillLookup("cure serious"), sender.Level, player, player, sender, null);
                     return true;
                 }
@@ -599,8 +599,8 @@ namespace CrimsonStainedLands
             {
                 if (type == ProgramTypes.OneHitHit && Utility.Random(0, 10) <= 2)
                 {
-                    player.Act("\\W$p hums loudly briefly.\\x\n\r", null, sender, null, ActType.ToChar);
-                    player.Act("\\W$p hums loudly briefly.\\x\n\r", null, sender, null, ActType.ToRoom);
+                    player.Act("\\W$p hums loudly briefly.\\x\r\n", null, sender, null, ActType.ToChar);
+                    player.Act("\\W$p hums loudly briefly.\\x\r\n", null, sender, null, ActType.ToRoom);
                     Magic.ItemCastSpell(Magic.CastType.Cast, SkillSpell.SkillLookup("lightning bolt"), sender.Level, player, victim, sender, null);
                     return true;
                 }
@@ -619,8 +619,8 @@ namespace CrimsonStainedLands
             {
                 if (type == ProgramTypes.OneHitHit && Utility.Random(0, 10) <= 2)
                 {
-                    player.Act("\\W$p hums loudly briefly.\\x\n\r", null, sender, null, ActType.ToChar);
-                    player.Act("\\W$p hums loudly briefly.\\x\n\r", null, sender, null, ActType.ToRoom);
+                    player.Act("\\W$p hums loudly briefly.\\x\r\n", null, sender, null, ActType.ToChar);
+                    player.Act("\\W$p hums loudly briefly.\\x\r\n", null, sender, null, ActType.ToRoom);
                     Magic.ItemCastSpell(Magic.CastType.Cast, SkillSpell.SkillLookup("lightning bolt"), sender.Level, player, victim, sender, null);
                     return true;
                 }
@@ -639,8 +639,8 @@ namespace CrimsonStainedLands
             {
                 if (type == ProgramTypes.OneHitHit && Utility.Random(0, 10) <= 2)
                 {
-                    player.Act("\\W$p glows white.\\x\n\r", null, sender, null, ActType.ToChar);
-                    player.Act("\\W$p glows white.\\x\n\r", null, sender, null, ActType.ToRoom);
+                    player.Act("\\W$p glows white.\\x\r\n", null, sender, null, ActType.ToChar);
+                    player.Act("\\W$p glows white.\\x\r\n", null, sender, null, ActType.ToRoom);
                     var heal = Utility.dice(2, item.Level / 2, item.Level / 2);
                     player.HitPoints = Math.Min(player.HitPoints + heal, player.MaxHitPoints);
 
@@ -735,17 +735,17 @@ namespace CrimsonStainedLands
                         if (template != null)
                         {
                             var cape = new ItemData(template, player);
-                            player.Act("You pull the lever and let go. It retracts to its original position.\n\r");
-                            player.Act("$n pulls the lever and lets go. It retracts to its original position.\n\r", type: ActType.ToRoom);
-                            player.Act("$p falls out of a chute to the west into your hands.\n\r", item: cape, type: ActType.ToChar);
-                            player.Act("$p falls out of a chute to the west into $n's hands.\n\r", item: cape, type: ActType.ToRoom);
+                            player.Act("You pull the lever and let go. It retracts to its original position.\r\n");
+                            player.Act("$n pulls the lever and lets go. It retracts to its original position.\r\n", type: ActType.ToRoom);
+                            player.Act("$p falls out of a chute to the west into your hands.\r\n", item: cape, type: ActType.ToChar);
+                            player.Act("$p falls out of a chute to the west into $n's hands.\r\n", item: cape, type: ActType.ToRoom);
                         }
 
 
                         QuestProgressData.CompleteQuest(player, quest);
                     }
                     else
-                        player.send("You pull the lever, but nothing seems to happen.\n\r");
+                        player.send("You pull the lever, but nothing seems to happen.\r\n");
                     return true;
                 }
                 return false;
@@ -889,11 +889,11 @@ namespace CrimsonStainedLands
 
                 if (opponent == null)
                 {
-                    player.send("Your opponent doesn't seem to be around any more.\n\r");
+                    player.send("Your opponent doesn't seem to be around any more.\r\n");
                     player.StripAffect(AffectFlags.DuelStarting);
                 }
 
-                player.send("Your duel starts in the span of \\r{0}\\x rounds of combat.\n\r", sender.duration + 1);
+                player.send("Your duel starts in the span of \\r{0}\\x rounds of combat.\r\n", sender.duration + 1);
                 return true;
             } // end execute
         } // end AffectDuelStartingProgram
@@ -911,7 +911,7 @@ namespace CrimsonStainedLands
 
                 if (opponent == null)
                 {
-                    player.send("Your opponent doesn't seem to be around any more.\n\r");
+                    player.send("Your opponent doesn't seem to be around any more.\r\n");
                 }
                 else
                 {
@@ -945,7 +945,7 @@ namespace CrimsonStainedLands
 
                 if (opponent == null)
                 {
-                    player.send("Your opponent doesn't seem to be around any more.\n\r");
+                    player.send("Your opponent doesn't seem to be around any more.\r\n");
 
                     player.AffectFromChar(sender, AffectRemoveReason.Other);
 

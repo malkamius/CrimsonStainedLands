@@ -168,12 +168,12 @@ namespace CrimsonStainedLands.World
             get
             {
                 var regex = new Regex("(?m)^\\s+");
-                if (_Description.StartsWith(".")) return _Description.Replace("\n\r", "\n").Replace("\r\n", "\n");
+                if (_Description.StartsWith(".")) return _Description.Replace("\r\n", "\n").Replace("\r\n", "\n");
                 return regex.Replace((_Description ?? ""), "");
             }
             set
             {
-                if (value != null) _Description = value.Replace("\n\r", "\n"); else _Description = "";
+                if (value != null) _Description = value.Replace("\r\n", "\n"); else _Description = "";
             }
         }
 
@@ -182,12 +182,12 @@ namespace CrimsonStainedLands.World
             get
             {
                 var regex = new Regex("(?m)^\\s+");
-                if (_NightDescription.StartsWith(".")) return _NightDescription.Replace("\n\r", "\n").Replace("\r\n", "\n");
+                if (_NightDescription.StartsWith(".")) return _NightDescription.Replace("\r\n", "\n").Replace("\r\n", "\n");
                 return regex.Replace((_NightDescription ?? ""), "");
             }
             set
             {
-                if (value != null) _NightDescription = value.Replace("\n\r", "\n"); else _NightDescription = "";
+                if (value != null) _NightDescription = value.Replace("\r\n", "\n"); else _NightDescription = "";
             }
         }
 

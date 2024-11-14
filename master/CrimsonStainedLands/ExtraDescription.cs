@@ -12,12 +12,12 @@ namespace CrimsonStainedLands
             get
             {
                 var regex = new Regex("(?m)^\\s+");
-                if (_description.StartsWith(".")) return _description.Replace("\n\r", "\n").Replace("\r\n", "\n");
+                if (_description.StartsWith(".")) return _description.Replace("\r\n", "\n").Replace("\r\n", "\n");
                 return regex.Replace(_description.Trim(), "");
             }
             set 
             { 
-                if (value != null) _description = value.Replace("\n\r", "\n").Replace("\r\n", "\n"); else _description = ""; 
+                if (value != null) _description = value.Replace("\r\n", "\n").Replace("\r\n", "\n"); else _description = ""; 
             }
         }
         public ExtraDescription(string Keywords, string Description)

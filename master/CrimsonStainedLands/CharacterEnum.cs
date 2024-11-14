@@ -143,6 +143,7 @@ namespace CrimsonStainedLands
         NewbieChannel = 71,
         NoDuels = 72,
         AFK = 73,
+        OOCChannel = 74,
     }
 
     public enum Sexes

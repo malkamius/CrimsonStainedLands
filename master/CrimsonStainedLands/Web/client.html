@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web MUD Client</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/xterm.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CrimsonStainedLands Web MUD Client</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/xterm.css" />
 
-    <style>
-        body {
-            height: 100%;
-        }
+        <style>
+            body {
+                height: 100%;
+            }
+            .terminal {
+                margin: 0px !important;
+                height: 100%;
+                min-height: 300px;
+            }
 
-        .terminal {
-            margin: 0px !important;
-            height: 100%;
-            min-height: 300px;
-        }
+            .main-content {
+                height: 80vh !important;
+            }
 
-        .main-content {
-            height: 80vh !important;
-        }
-
-        #input {
-            width: 100%;
-        }
-    </style>
-
-</head>
-<body>
-    <div class="main-content">
-        <!-- <div id="output"></div> -->
-        <div class="terminal" id="terminal"></div>
-        <div>
+            #input {
+                width: 100%;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div class="main-content">
+            <!-- <div id="output"></div> -->
+            <div class="terminal" id="terminal"></div>
+            <div>
             <input type="text" id="input" placeholder="Enter command..." value="/connect">
+            </div>
+            <script type="module">
+                import { App } from '/js/app.js';  // Make sure to include .js extension
+                document.addEventListener('DOMContentLoaded', () => {
+                    const app = new App(4003);
+                });
+                document.getElementById("input").select();
+            </script>
         </div>
-        <script type="module">
-            import { App } from '/js/app.js';  // Make sure to include .js extension
-            document.addEventListener('DOMContentLoaded', () => {
-                const app = new App();
-            });
-            document.getElementById("input").select();
-        </script>
-    </div>
-</body>
+    </body>
 </html>

@@ -16,21 +16,21 @@ namespace CrimsonStainedLands
 
         public static void DoBonus(Character player, string arguments)
         {
-            player.send("The following bonus information is available:\n\r");
+            player.send("The following bonus information is available:\r\n");
             if(ExperienceBonus > 1)
             {
-                player.send("\\&FF8000Experience bonus: \\G{0}% - Ends {1}\\x\n\r", (ExperienceBonus - 1) * 100, ExperienceBonusEnds.ToString());
+                player.send("\\&FF8000Experience bonus: \\G{0}% - Ends {1}\\x\r\n", (ExperienceBonus - 1) * 100, ExperienceBonusEnds.ToString());
             }
             else
-                player.send("\\&FF8000Experience bonus: \\Gnone\\x\n\r");
+                player.send("\\&FF8000Experience bonus: \\Gnone\\x\r\n");
 
             if (LearningBonus > 1)
             {
-                player.send("\\&FF8000Learning bonus: \\G{0}% - Ends {1}\\x\n\r", (LearningBonus - 1) * 100, LearningBonusEnds.ToString());
+                player.send("\\&FF8000Learning bonus: \\G{0}% - Ends {1}\\x\r\n", (LearningBonus - 1) * 100, LearningBonusEnds.ToString());
             }
             else
-                player.send("\\&FF8000Learning bonus: \\Gnone\\x\n\r");
-            player.send("\n\r");
+                player.send("\\&FF8000Learning bonus: \\Gnone\\x\r\n");
+            player.send("\r\n");
         }
     }
 }

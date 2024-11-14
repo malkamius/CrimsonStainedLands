@@ -27,6 +27,11 @@ namespace CrimsonStainedLands
         public static string X509CertificatePassword { get; set; } = "localhost";
         public static string CertificateSettingsJsonPath { get; internal set; } = "../certs/settings.json";
 
+        public static string CharacterGainWebhook { get; internal set; } = string.Empty;
+        public static string NewbieChannelWebhook { get; internal set; } = string.Empty;
+        public static string OOCChannelWebhook { get; internal set; } = string.Empty;
+        public static string BotToken { get; internal set; } = string.Empty;
+
         static Settings()
         {
             Load();
@@ -45,6 +50,10 @@ namespace CrimsonStainedLands
                 new XAttribute("NotesPath", NotesPath),
                 new XAttribute("GuildsPath", GuildsPath),
                 new XAttribute("RacesPath", RacesPath),
+                new XAttribute("CharacterGainWebhook", CharacterGainWebhook),
+                new XAttribute("NewbieChannelWebhook", NewbieChannelWebhook),
+                new XAttribute("OOCChannelWebhook", OOCChannelWebhook),
+                new XAttribute("BotToken", BotToken),
                 new XAttribute("X509CertificatePath", X509CertificatePath), // Not used anymore
                 new XAttribute("X509CertificatePassword", X509CertificatePassword),
                 new XAttribute("CertificateSettingsJsonPath", CertificateSettingsJsonPath));
@@ -73,6 +82,10 @@ namespace CrimsonStainedLands
                 X509CertificatePath = settings.GetAttributeValue("X509CertificatePath", "localhost.pfx");
                 X509CertificatePassword = settings.GetAttributeValue("X509CertificatePassword", "localhost");
                 CertificateSettingsJsonPath = settings.GetAttributeValue("CertificateSettingsJsonPath", "../certs/settings.json");
+                CharacterGainWebhook = settings.GetAttributeValue("CharacterGainWebhook", CharacterGainWebhook);
+                NewbieChannelWebhook = settings.GetAttributeValue("NewbieChannelWebhook", NewbieChannelWebhook);
+                OOCChannelWebhook = settings.GetAttributeValue("OOCChannelWebhook", OOCChannelWebhook);
+                BotToken = settings.GetAttributeValue("BotToken", BotToken);
             }
         }
     }

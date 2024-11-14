@@ -15,19 +15,19 @@ namespace CrimsonStainedLands
 
             if (itemName.ISEMPTY())
             {
-                character.send("Quaf what?\n\r");
+                character.send("Quaf what?\r\n");
             }
             else if ((potion = character.GetItemInventory(itemName, ref count)) == null)
             {
-                character.send("You don't have that.\n\r");
+                character.send("You don't have that.\r\n");
             }
             else if (!potion.ItemType.ISSET(ItemTypes.Potion))
             {
-                character.send("You can only quaf potions.\n\r");
+                character.send("You can only quaf potions.\r\n");
             }
             else if (character.Fighting != null)
             {
-                character.send("You are too busy fighting to quaf anything.\n\r");
+                character.send("You are too busy fighting to quaf anything.\r\n");
             }
             else
             {
@@ -59,22 +59,22 @@ namespace CrimsonStainedLands
 
             if (itemName.ISEMPTY())
             {
-                character.send("What scroll would you like to recite?\n\r");
+                character.send("What scroll would you like to recite?\r\n");
                 return;
             }
             else if ((scroll = character.GetItemInventory(itemName, ref count)) == null)
             {
-                character.send("You aren't carrying that scroll.\n\r");
+                character.send("You aren't carrying that scroll.\r\n");
                 return;
             }
             else if (!scroll.ItemType.ISSET(ItemTypes.Scroll))
             {
-                character.send("You can only recite magical scrolls.\n\r");
+                character.send("You can only recite magical scrolls.\r\n");
                 return;
             }
             else if (character.Level < scroll.Level)
             {
-                character.send("This scroll is too complex for you to comprehend.\n\r");
+                character.send("This scroll is too complex for you to comprehend.\r\n");
                 return;
             }
 
@@ -86,7 +86,7 @@ namespace CrimsonStainedLands
 
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("scrolls") * 4 / 5)
                 {
-                    character.send("You mispronounce a syllable.\n\r");
+                    character.send("You mispronounce a syllable.\r\n");
                     character.CheckImprove("scrolls", false, 2);
 
                 }
@@ -110,7 +110,7 @@ namespace CrimsonStainedLands
 
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("scrolls") * 4 / 5)
                 {
-                    character.send("You mispronounce a syllable.\n\r");
+                    character.send("You mispronounce a syllable.\r\n");
                     character.CheckImprove("scrolls", false, 2);
 
                 }
@@ -126,7 +126,7 @@ namespace CrimsonStainedLands
             }
             else if (!victimName.ISEMPTY())
             {
-                character.send("You don't see them here.\n\r");
+                character.send("You don't see them here.\r\n");
                 return;
             }
             else
@@ -136,7 +136,7 @@ namespace CrimsonStainedLands
                 character.WaitState(Game.PULSE_VIOLENCE);
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("scrolls") * 4 / 5)
                 {
-                    character.send("You mispronounce a syllable.\n\r");
+                    character.send("You mispronounce a syllable.\r\n");
                     character.CheckImprove("scrolls", false, 2);
 
                 }
@@ -164,26 +164,26 @@ namespace CrimsonStainedLands
 
             if (argument.ISEMPTY())
             {
-                character.send("Who do you want to zap?\n\r");
+                character.send("Who do you want to zap?\r\n");
                 return;
             }
             else if (character.Equipment.TryGetValue(WearSlotIDs.Held, out wand) == false)
             {
-                character.send("You aren't holding a wand.\n\r");
+                character.send("You aren't holding a wand.\r\n");
                 return;
             }
             else if (!wand.ItemType.ISSET(ItemTypes.Wand))
             {
-                character.send("You can only zap with wands.\n\r");
+                character.send("You can only zap with wands.\r\n");
                 return;
             }
             //else if (character.Fighting != null)
             //{
-            //    character.send("You are too busy fighting to zap anyone.\n\r");
+            //    character.send("You are too busy fighting to zap anyone.\r\n");
             //}
             else if ((victim = character.GetCharacterFromRoomByName(argument, ref count)) == null && (zapTarget = character.GetItemInventory(argument, ref count)) == null)
             {
-                character.send("You don't see them or that here.\n\r");
+                character.send("You don't see them or that here.\r\n");
                 return;
             }
             else if (victim != null)
@@ -257,17 +257,17 @@ namespace CrimsonStainedLands
 
             if ((staff = character.GetEquipment(WearSlotIDs.Held)) == null)
             {
-                character.send("You aren't using a staff.\n\r");
+                character.send("You aren't using a staff.\r\n");
                 return;
             }
             else if (!staff.ItemType.ISSET(ItemTypes.Staff))
             {
-                character.send("You can only brandish a staff.\n\r");
+                character.send("You can only brandish a staff.\r\n");
                 return;
             }
             else if (character.Fighting != null)
             {
-                character.send("You are too busy fighting to brandish your staff.\n\r");
+                character.send("You are too busy fighting to brandish your staff.\r\n");
                 return;
             }
             else
@@ -277,7 +277,7 @@ namespace CrimsonStainedLands
                 character.WaitState(Game.PULSE_VIOLENCE);
                 if (Utility.NumberPercent() >= 20 + character.GetSkillPercentage("talismans") * 4 / 5)
                 {
-                    character.Act("You fail to invoke $p.\n\r", null, staff);
+                    character.Act("You fail to invoke $p.\r\n", null, staff);
                     character.Act("... and nothing happens.", type: ActType.ToRoom);
                     character.CheckImprove("talismans", false, 2);
 
@@ -314,7 +314,7 @@ namespace CrimsonStainedLands
             ItemData item = null;
             if (ch.Form != null)
             {
-                ch.send("You aren't carrying anything.\n\r");
+                ch.send("You aren't carrying anything.\r\n");
                 return;
             }
             if (!string.IsNullOrEmpty(containerName))
@@ -353,22 +353,22 @@ namespace CrimsonStainedLands
                         Character.PutItem(ch, item, container);
                     }
                     else
-                        ch.send("You don't have that.\n\r");
+                        ch.send("You don't have that.\r\n");
 
 
                 }
                 else if (item != null && container != null)
                 {
-                    ch.send("That isn't a container.\n\r");
+                    ch.send("That isn't a container.\r\n");
                 }
                 else if (item == null)
                 {
-                    ch.send("You don't have {0}.\n\r", itemName);
+                    ch.send("You don't have {0}.\r\n", itemName);
                 }
                 else
-                    ch.send("You don't see that here.\n\r");
+                    ch.send("You don't see that here.\r\n");
             }
-            else ch.send("Put what in what?\n\r");
+            else ch.send("Put what in what?\r\n");
         }
 
         public static void DoWear(Character ch, string arguments)
@@ -376,12 +376,12 @@ namespace CrimsonStainedLands
             int count = 0;
             if (ch.Form != null)
             {
-                ch.send("You can't wear anything.\n\r");
+                ch.send("You can't wear anything.\r\n");
                 return;
             }
             if (arguments.ISEMPTY())
             {
-                ch.send("Wear what?\n\r");
+                ch.send("Wear what?\r\n");
                 return;
             }
             else if (arguments.StringCmp("all"))
@@ -392,7 +392,7 @@ namespace CrimsonStainedLands
                         woreanything = true;
 
                 if (!woreanything)
-                    ch.send("You wore nothing.\n\r");
+                    ch.send("You wore nothing.\r\n");
                 return;
             }
 
@@ -403,7 +403,7 @@ namespace CrimsonStainedLands
                 ch.wearItem(item);
             }
             else
-                ch.send("You aren't carrying that.\n\r");
+                ch.send("You aren't carrying that.\r\n");
         }
 
         public static void DoWield(Character ch, string arguments)
@@ -416,9 +416,9 @@ namespace CrimsonStainedLands
                 ch.wearItem(item);
             }
             else if (item != null)
-                ch.send("You can't wield that.\n\r");
+                ch.send("You can't wield that.\r\n");
             else
-                ch.send("You aren't carrying that.\n\r");
+                ch.send("You aren't carrying that.\r\n");
         }
 
         public static void DoRemove(Character ch, string arguments)
@@ -427,7 +427,7 @@ namespace CrimsonStainedLands
             ItemData item;
             if (ch.Form != null)
             {
-                ch.send("You aren't wearing anything.\n\r");
+                ch.send("You aren't wearing anything.\r\n");
                 return;
             }
             if (arguments.equals("all"))
@@ -446,9 +446,9 @@ namespace CrimsonStainedLands
                 ch.RemoveEquipment(item, true);
             }
             else if (item != null)
-                ch.send("You can't remove that.\n\r");
+                ch.send("You can't remove that.\r\n");
             else
-                ch.send("You aren't wearing that.\n\r");
+                ch.send("You aren't wearing that.\r\n");
 
         }
 
@@ -461,13 +461,13 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Drop what?\n\r");
+                ch.send("Drop what?\r\n");
                 return;
             }
 
             if (ch.Form != null)
             {
-                ch.send("You aren't carrying anything.\n\r");
+                ch.send("You aren't carrying anything.\r\n");
                 return;
             }
 
@@ -481,12 +481,12 @@ namespace CrimsonStainedLands
                     {
                         if (amount > ch.Gold)
                         {
-                            ch.send("You don't have that much gold.\n\r");
+                            ch.send("You don't have that much gold.\r\n");
                             return;
                         }
                         else if (amount < 1)
                         {
-                            ch.send("You can only drop a positive amount of gold.\n\r");
+                            ch.send("You can only drop a positive amount of gold.\r\n");
                             return;
                         }
                         var money = Character.CreateMoneyItem(0, amount);
@@ -503,12 +503,12 @@ namespace CrimsonStainedLands
                     {
                         if (amount > ch.Silver)
                         {
-                            ch.send("You don't have that much silver.\n\r");
+                            ch.send("You don't have that much silver.\r\n");
                             return;
                         }
                         else if (amount < 1)
                         {
-                            ch.send("You can only drop a positive amount of silver.\n\r");
+                            ch.send("You can only drop a positive amount of silver.\r\n");
                             return;
                         }
                         var money = Character.CreateMoneyItem(amount, 0);
@@ -524,7 +524,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.send("You can't drop a negative amount of coins.\n\r");
+                    ch.send("You can't drop a negative amount of coins.\r\n");
                     return;
                 }
             }
@@ -541,8 +541,8 @@ namespace CrimsonStainedLands
                         ch.Room.items.Insert(0, allitem);
                         allitem.CarriedBy = null;
                         allitem.Room = ch.Room;
-                        ch.send("You drop " + (!allitem.ShortDescription.ISEMPTY() ? allitem.ShortDescription : allitem.Name) + ".\n\r");
-                        ch.Act("$n drops $p.\n\r", item: allitem, type: ActType.ToRoom);
+                        ch.send("You drop " + (!allitem.ShortDescription.ISEMPTY() ? allitem.ShortDescription : allitem.Name) + ".\r\n");
+                        ch.Act("$n drops $p.\r\n", item: allitem, type: ActType.ToRoom);
 
                         if (allitem.extraFlags.ISSET(ExtraFlags.MeltDrop))
                         {
@@ -564,8 +564,8 @@ namespace CrimsonStainedLands
                         ch.Room.items.Insert(0, allitem);
                         allitem.CarriedBy = null;
                         allitem.Room = ch.Room;
-                        ch.send("You drop " + (!allitem.ShortDescription.ISEMPTY() ? allitem.ShortDescription : allitem.Name) + ".\n\r");
-                        ch.Act("$n drops $p.\n\r", item: allitem, type: ActType.ToRoom);
+                        ch.send("You drop " + (!allitem.ShortDescription.ISEMPTY() ? allitem.ShortDescription : allitem.Name) + ".\r\n");
+                        ch.Act("$n drops $p.\r\n", item: allitem, type: ActType.ToRoom);
 
                         if (allitem.extraFlags.ISSET(ExtraFlags.MeltDrop))
                         {
@@ -582,8 +582,8 @@ namespace CrimsonStainedLands
                 ch.Room.items.Insert(0, item);
                 item.CarriedBy = null;
                 item.Room = ch.Room;
-                ch.send("You drop " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + ".\n\r");
-                ch.Act("$n drops $p.\n\r", item: item, type: ActType.ToRoom);
+                ch.send("You drop " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + ".\r\n");
+                ch.Act("$n drops $p.\r\n", item: item, type: ActType.ToRoom);
 
                 if (item.extraFlags.ISSET(ExtraFlags.MeltDrop))
                 {
@@ -593,9 +593,9 @@ namespace CrimsonStainedLands
                 }
             }
             else if (item != null)
-                ch.send("You can't drop that.\n\r");
+                ch.send("You can't drop that.\r\n");
             else
-                ch.send("You aren't holding that.\n\r");
+                ch.send("You aren't holding that.\r\n");
         }
 
         public static void DoGive(Character ch, string arguments)
@@ -605,7 +605,7 @@ namespace CrimsonStainedLands
             int count = 0;
             if (ch.Form != null)
             {
-                ch.send("You aren't holding anything.\n\r");
+                ch.send("You aren't holding anything.\r\n");
                 return;
             }
             arguments = arguments.OneArgument(ref itemname);
@@ -616,12 +616,12 @@ namespace CrimsonStainedLands
 
                 if (other == ch)
                 {
-                    ch.send("You can't give yourself anything.\n\r");
+                    ch.send("You can't give yourself anything.\r\n");
                     return;
                 }
                 else if (other == null)
                 {
-                    ch.send("You don't see them here.\n\r");
+                    ch.send("You don't see them here.\r\n");
                     return;
                 }
 
@@ -629,12 +629,12 @@ namespace CrimsonStainedLands
                 {
                     if (amount > ch.Gold)
                     {
-                        ch.send("You don't have that much gold.\n\r");
+                        ch.send("You don't have that much gold.\r\n");
                         return;
                     }
                     else if (amount < 1)
                     {
-                        ch.send("You can only give a positive amount of gold.\n\r");
+                        ch.send("You can only give a positive amount of gold.\r\n");
                         return;
                     }
 
@@ -650,12 +650,12 @@ namespace CrimsonStainedLands
                 {
                     if (amount > ch.Silver)
                     {
-                        ch.send("You don't have that much silver.\n\r");
+                        ch.send("You don't have that much silver.\r\n");
                         return;
                     }
                     else if (amount < 1)
                     {
-                        ch.send("You can only give a positive amount of silver.\n\r");
+                        ch.send("You can only give a positive amount of silver.\r\n");
                         return;
                     }
 
@@ -669,7 +669,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.send("Give gold or silver?\n\r");
+                    ch.send("Give gold or silver?\r\n");
                     return;
                 }
 
@@ -679,15 +679,15 @@ namespace CrimsonStainedLands
             other = ch.GetCharacterFromRoomByName(arguments, ref count);
             if(item == null)
             {
-                ch.send("You couldn't find it.\n\r");
+                ch.send("You couldn't find it.\r\n");
             }
             else if (other == ch)
             {
-                ch.send("You can't give yourself anything.\n\r");
+                ch.send("You can't give yourself anything.\r\n");
             }
             else if (other == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
             else if (other != null && !other.CanSee(item))
             {
@@ -704,7 +704,7 @@ namespace CrimsonStainedLands
                 }
                 if (other.TotalWeight + item.Weight > other.MaxWeight)
                 {
-                    ch.send("You can't carry anymore weight.\n\r");
+                    ch.send("You can't carry anymore weight.\r\n");
                     ch.Act("$n tries to give you $p, but you are carrying too much weight.", other, item, type: ActType.ToVictim);
                     return;
                 }
@@ -713,9 +713,9 @@ namespace CrimsonStainedLands
                 ch.Inventory.Remove(item);
                 other.Inventory.Insert(0, item);
                 item.CarriedBy = other;
-                ch.send("You give " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + " to " + other.Display(ch) + ".\n\r");
-                other.Act("$N gives you $p.\n\r", ch, item, null, ActType.ToChar);
-                ch.Act("$n gives $p to $N.\n\r", other, item, type: ActType.ToRoomNotVictim);
+                ch.send("You give " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + " to " + other.Display(ch) + ".\r\n");
+                other.Act("$N gives you $p.\r\n", ch, item, null, ActType.ToChar);
+                ch.Act("$n gives $p to $N.\r\n", other, item, type: ActType.ToRoomNotVictim);
                 Programs.ExecutePrograms(Programs.ProgramTypes.Give, ch, other, item, null, "");
 
                 if (other.IsNPC)
@@ -736,9 +736,9 @@ namespace CrimsonStainedLands
                             ch.Inventory.Insert(0, item);
                             item.CarriedBy = ch;
 
-                            other.Act("You give $p to $N.\n\r", ch, item, type: ActType.ToChar);
-                            ch.Act("$N gives you $p.\n\r", other, item, null, ActType.ToChar);
-                            other.Act("$n gives $p to $N.\n\r", ch, item, type: ActType.ToRoomNotVictim);
+                            other.Act("You give $p to $N.\r\n", ch, item, type: ActType.ToChar);
+                            ch.Act("$N gives you $p.\r\n", other, item, null, ActType.ToChar);
+                            other.Act("$n gives $p to $N.\r\n", ch, item, type: ActType.ToRoomNotVictim);
 
 
                         }
@@ -749,9 +749,9 @@ namespace CrimsonStainedLands
                             other.Room.items.Insert(0, item);
                             item.Room = other.Room;
 
-                            other.Act("You drop $p.\n\r", ch, item, type: ActType.ToChar);
-                            ch.Act("$N drops $p.\n\r", other, item, null, ActType.ToChar);
-                            other.Act("$n drops $p.\n\r", ch, item, type: ActType.ToRoomNotVictim);
+                            other.Act("You drop $p.\r\n", ch, item, type: ActType.ToChar);
+                            ch.Act("$N drops $p.\r\n", other, item, null, ActType.ToChar);
+                            other.Act("$n drops $p.\r\n", ch, item, type: ActType.ToRoomNotVictim);
                         }
                         return;
                     }
@@ -759,11 +759,11 @@ namespace CrimsonStainedLands
 
             }
             else if (other != null && item != null)
-                ch.send("You can't let go of it!\n\r");
+                ch.send("You can't let go of it!\r\n");
             else if (item == null)
-                ch.send("You don't have that.\n\r");
+                ch.send("You don't have that.\r\n");
             else
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
         }
 
         public static void DoEquipment(Character ch, string arguments)
@@ -794,7 +794,7 @@ namespace CrimsonStainedLands
             // Check if the character is in a form that doesn't have hands
             if (ch.Form != null && !ch.Form.Parts.ISSET(PartFlags.Hands))
             {
-                ch.send("You can't pick anything up.\n\r");
+                ch.send("You can't pick anything up.\r\n");
                 return;
             }
 
@@ -825,7 +825,7 @@ namespace CrimsonStainedLands
                     // Check if the container is closed
                     if (container.extraFlags.Contains(ExtraFlags.Closed))
                     {
-                        ch.Act("$p is closed.\n\r", null, container, null, ActType.ToChar);
+                        ch.Act("$p is closed.\r\n", null, container, null, ActType.ToChar);
                         return;
                     }
 
@@ -847,7 +847,7 @@ namespace CrimsonStainedLands
                             }
                             else if (item != null)
                             {
-                                ch.send("You can't pick that up.\n\r");
+                                ch.send("You can't pick that up.\r\n");
                             }
                         }
                     }
@@ -868,7 +868,7 @@ namespace CrimsonStainedLands
                             }
                             else if (item != null)
                             {
-                                ch.send("You can't pick that up.\n\r");
+                                ch.send("You can't pick that up.\r\n");
                             }
                         }
                     }
@@ -884,17 +884,17 @@ namespace CrimsonStainedLands
                         }
                         else if (item != null)
                         {
-                            ch.send("You can't pick that up.\n\r");
+                            ch.send("You can't pick that up.\r\n");
                         }
                         else
                         {
-                            ch.send("You don't see that.\n\r");
+                            ch.send("You don't see that.\r\n");
                         }
                     }
                 }
                 else
                 {
-                    ch.send("You don't see that container here.\n\r");
+                    ch.send("You don't see that container here.\r\n");
                 }
             }
             else if (string.IsNullOrEmpty(containerName))
@@ -917,11 +917,11 @@ namespace CrimsonStainedLands
                         }
                         else if (item != null)
                         {
-                            ch.send("You can't pick that up.\n\r");
+                            ch.send("You can't pick that up.\r\n");
                         }
                         else
                         {
-                            ch.send("You don't see that here.\n\r");
+                            ch.send("You don't see that here.\r\n");
                         }
                     }
                 }
@@ -942,7 +942,7 @@ namespace CrimsonStainedLands
                         }
                         else if (item != null)
                         {
-                            ch.send("You can't pick that up.\n\r");
+                            ch.send("You can't pick that up.\r\n");
                         }
                     }
                 }
@@ -959,11 +959,11 @@ namespace CrimsonStainedLands
                     }
                     else if (item != null)
                     {
-                        ch.send("You can't pick that up.\n\r");
+                        ch.send("You can't pick that up.\r\n");
                     }
                     else
                     {
-                        ch.send("You don't see that here.\n\r");
+                        ch.send("You don't see that here.\r\n");
                     }
                 }
             }
@@ -985,7 +985,7 @@ namespace CrimsonStainedLands
                     }
                 }
 
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
             }
         }
 
@@ -1041,7 +1041,7 @@ namespace CrimsonStainedLands
 
             if (ch.Form != null)
             {
-                ch.send("They wouldn't be able to understand you.\n\r");
+                ch.send("They wouldn't be able to understand you.\r\n");
                 return;
             }
 
@@ -1060,11 +1060,11 @@ namespace CrimsonStainedLands
                 using (new Character.Page(ch))
                 {
                     ch.send("This shop will purchase the following types of things: ");
-                    ch.send("{0}\n\r", string.Join(", ", from type in shopKeeper.BuyTypes select type.ToString().ToLower()));
+                    ch.send("{0}\r\n", string.Join(", ", from type in shopKeeper.BuyTypes select type.ToString().ToLower()));
                     ch.Act("$N will sell you the following goods:", shopKeeper, type: ActType.ToChar);
                     foreach (var item in shopKeeper.Inventory)
                     {
-                        ch.send("[{0,3}] {1,7} - {2}\n\r", item.Level, item.Value * shopKeeper.SellProfitPercent / 100, item.DisplayFlags(ch) + item.Display(ch));
+                        ch.send("[{0,3}] {1,7} - {2}\r\n", item.Level, item.Value * shopKeeper.SellProfitPercent / 100, item.DisplayFlags(ch) + item.Display(ch));
                     }
                     if (shopKeeper.PetVNums.Any())
                     {
@@ -1073,7 +1073,7 @@ namespace CrimsonStainedLands
                         {
                             if (NPCTemplateData.Templates.TryGetValue(vnum, out var pettemplate))
                             {
-                                ch.send("[{0,2}] {1,8} - {2}\n\r", pettemplate.Level, 10 * pettemplate.Level * pettemplate.Level, pettemplate.ShortDescription);
+                                ch.send("[{0,2}] {1,8} - {2}\r\n", pettemplate.Level, 10 * pettemplate.Level * pettemplate.Level, pettemplate.ShortDescription);
                             }
                         }
                     }
@@ -1081,7 +1081,7 @@ namespace CrimsonStainedLands
                 }
             }
             else
-                ch.send("You see no shopkeepers here.\n\r");
+                ch.send("You see no shopkeepers here.\r\n");
         }
 
         /// <summary>
@@ -1096,7 +1096,7 @@ namespace CrimsonStainedLands
             // Check if the player character is in a form
             if (ch.Form != null)
             {
-                ch.send("They wouldn't be able to understand you.\n\r");
+                ch.send("They wouldn't be able to understand you.\r\n");
                 return;
             }
 
@@ -1119,7 +1119,7 @@ namespace CrimsonStainedLands
                     using (new Character.Page(ch))
                     {
                         ch.send("This shop will repair the following types of things: ");
-                        ch.send("{0}\n\r", string.Join(", ", from type in shopKeeper.BuyTypes select type.ToString().ToLower()));
+                        ch.send("{0}\r\n", string.Join(", ", from type in shopKeeper.BuyTypes select type.ToString().ToLower()));
                         ch.Act("$N will repair for you the following goods:", shopKeeper, type: ActType.ToChar);
 
                         // Get the damaged items from the player character's equipment and inventory
@@ -1129,7 +1129,7 @@ namespace CrimsonStainedLands
 
                         if (!items.Any())
                         {
-                            ch.send("You aren't wearing or carrying any damaged items.\n\r");
+                            ch.send("You aren't wearing or carrying any damaged items.\r\n");
                             return;
                         }
 
@@ -1139,7 +1139,7 @@ namespace CrimsonStainedLands
                             if (item.Durability < item.MaxDurability)
                             {
                                 var value = item.Value * shopKeeper.SellProfitPercent / 100 * (item.Durability / item.MaxDurability);
-                                ch.send("[{0,3}] {1,7} - {2}\n\r", item.Level, value, item.DisplayFlags(ch) + item.Display(ch));
+                                ch.send("[{0,3}] {1,7} - {2}\r\n", item.Level, value, item.DisplayFlags(ch) + item.Display(ch));
                             }
                         }
                     }
@@ -1158,7 +1158,7 @@ namespace CrimsonStainedLands
 
                     if (item == null)
                     {
-                        ch.send("You don't have that item.\n\r");
+                        ch.send("You don't have that item.\r\n");
                         return;
                     }
 
@@ -1170,7 +1170,7 @@ namespace CrimsonStainedLands
                     // Check if the player character has enough coins to cover the repair cost
                     if (ch.Silver + (ch.Gold * 1000) < value)
                     {
-                        ch.send("You don't have enough coins.\n\r");
+                        ch.send("You don't have enough coins.\r\n");
                         return;
                     }
                     else
@@ -1191,7 +1191,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.send("You see no shopkeepers here.\n\r");
+                ch.send("You see no shopkeepers here.\r\n");
             }
         }
 
@@ -1199,13 +1199,13 @@ namespace CrimsonStainedLands
         {
             if (ch.Form != null)
             {
-                ch.send("They wouldn't be able to understand you.\n\r");
+                ch.send("They wouldn't be able to understand you.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Sell what?\n\r");
+                ch.send("Sell what?\r\n");
                 return;
             }
 
@@ -1221,7 +1221,7 @@ namespace CrimsonStainedLands
             }
             if (shopKeeper == null)
             {
-                ch.send("There is no shopkeeper here.\n\r");
+                ch.send("There is no shopkeeper here.\r\n");
                 return;
             }
             int count = 0;
@@ -1229,11 +1229,11 @@ namespace CrimsonStainedLands
 
             if (item == null)
             {
-                ch.send("You don't seem to have that.\n\r");
+                ch.send("You don't seem to have that.\r\n");
             }
             else if (!item.ItemType.Any(itemtype => shopKeeper.BuyTypes.Contains(itemtype)))
             {
-                ch.send("This shopkeeper doesn't buy that kind of item.\n\r");
+                ch.send("This shopkeeper doesn't buy that kind of item.\r\n");
             }
             else
             {
@@ -1248,13 +1248,13 @@ namespace CrimsonStainedLands
         {
             if (ch.Form != null)
             {
-                ch.send("They wouldn't be able to understand you.\n\r");
+                ch.send("They wouldn't be able to understand you.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Sell what?\n\r");
+                ch.send("Sell what?\r\n");
                 return;
             }
 
@@ -1270,7 +1270,7 @@ namespace CrimsonStainedLands
             }
             if (shopKeeper == null)
             {
-                ch.send("There is no shopkeeper here.\n\r");
+                ch.send("There is no shopkeeper here.\r\n");
                 return;
             }
             int count = 0;
@@ -1278,11 +1278,11 @@ namespace CrimsonStainedLands
 
             if (item == null)
             {
-                ch.send("You don't seem to have that.\n\r");
+                ch.send("You don't seem to have that.\r\n");
             }
             else if (!item.ItemType.Any(itemtype => shopKeeper.BuyTypes.Contains(itemtype)))
             {
-                ch.send("This shopkeeper doesn't buy that kind of item.\n\r");
+                ch.send("This shopkeeper doesn't buy that kind of item.\r\n");
             }
             else if (shopKeeper.Inventory.Any(invitem => invitem.Template == item.Template))
             {
@@ -1320,13 +1320,13 @@ namespace CrimsonStainedLands
         {
             if (ch.Form != null)
             {
-                ch.send("They wouldn't be able to understand you.\n\r");
+                ch.send("They wouldn't be able to understand you.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Buy what?\n\r");
+                ch.send("Buy what?\r\n");
             }
             else
             {
@@ -1360,13 +1360,13 @@ namespace CrimsonStainedLands
                             {
                                 if (ch.Pet != null)
                                 {
-                                    ch.send("You already have a pet.\n\r");
+                                    ch.send("You already have a pet.\r\n");
                                     return;
                                 }
 
                                 if (pettemplate.Level > ch.Level)
                                 {
-                                    ch.send("Wait till you get a bit older first.\n\r");
+                                    ch.send("Wait till you get a bit older first.\r\n");
                                     return;
                                 }
                                 long cost = 10 * pettemplate.Level * pettemplate.Level;
@@ -1414,7 +1414,7 @@ namespace CrimsonStainedLands
                                     ch.Group.Add(pet);
                                 }
                                 else
-                                    ch.Act("$N says '\\yYou don't have enough coin for that.\\x'\n\r", shopKeeper);
+                                    ch.Act("$N says '\\yYou don't have enough coin for that.\\x'\r\n", shopKeeper);
 
                                 return;
                             }
@@ -1425,7 +1425,7 @@ namespace CrimsonStainedLands
 
                     if (item != null && ch.Level < item.Level)
                     {
-                        ch.send("Wait till you're a bit older to be able to buy that.\n\r");
+                        ch.send("Wait till you're a bit older to be able to buy that.\r\n");
                         return;
                     }
                     else if (item != null)
@@ -1434,7 +1434,7 @@ namespace CrimsonStainedLands
 
                         if (item.extraFlags.ISSET(ExtraFlags.Inventory) && numberof > 1)
                         {
-                            ch.send("You can only buy one of those.\n\r");
+                            ch.send("You can only buy one of those.\r\n");
                         }
                         else
                         {
@@ -1498,14 +1498,14 @@ namespace CrimsonStainedLands
 
                             }
                             else
-                                ch.Act("$N says '\\yYou don't have enough coin for that.\\x'\n\r", shopKeeper);
+                                ch.Act("$N says '\\yYou don't have enough coin for that.\\x'\r\n", shopKeeper);
                         }
                     }
                     else
-                        ch.Act("$N says '\\yI don't seem to be carrying that.\\x'\n\r", shopKeeper);
+                        ch.Act("$N says '\\yI don't seem to be carrying that.\\x'\r\n", shopKeeper);
                 }
                 else
-                    ch.send("You see no shopkeepers here.\n\r");
+                    ch.send("You see no shopkeepers here.\r\n");
             }
         }
 
@@ -1520,20 +1520,20 @@ namespace CrimsonStainedLands
             int count = 0;
             if (ch.Form != null)
             {
-                ch.send("You can't do that in your current form.\n\r");
+                ch.send("You can't do that in your current form.\r\n");
                 return;
             }
             arguments = arguments.OneArgument(ref arg1);
             arguments = arguments.OneArgument(ref arg2);
             if (arg1.ISEMPTY())
             {
-                ch.send("Compare what to what?\n\r");
+                ch.send("Compare what to what?\r\n");
                 return;
             }
 
             if ((obj1 = ch.GetItemInventory(arg1, ref count)) == null)
             {
-                ch.send("You do not have that item.\n\r");
+                ch.send("You do not have that item.\r\n");
                 return;
             }
 
@@ -1543,14 +1543,14 @@ namespace CrimsonStainedLands
 
                 if (obj2 == null)
                 {
-                    ch.send("You aren't wearing anything comparable.\n\r");
+                    ch.send("You aren't wearing anything comparable.\r\n");
                     return;
                 }
             }
 
             else if ((obj2 = ch.GetItemInventory(arg2, ref count)) == null && (obj2 = ch.GetItemEquipment(arg2, ref count)) != null)
             {
-                ch.send("You do not have that item.\n\r");
+                ch.send("You do not have that item.\r\n");
                 return;
             }
 
@@ -1614,7 +1614,7 @@ namespace CrimsonStainedLands
 
                     if (item.ItemType.Contains(ItemTypes.Fountain) || !item.wearFlags.Contains(WearFlags.Take))
                     {
-                        ch.send(string.Format("Are you nuts? You cannot sacrifice {0} to the gods.\n\r", item.ShortDescription));
+                        ch.send(string.Format("Are you nuts? You cannot sacrifice {0} to the gods.\r\n", item.ShortDescription));
                         return;
                     }
 
@@ -1642,11 +1642,11 @@ namespace CrimsonStainedLands
                     ch.Room.items.Remove(item);
                     item.Room = null;
                     item.Dispose();
-                    ch.send(string.Format("You sacrifice {0} to the gods.\n\r", item.ShortDescription));
-                    ch.Act("$n sacrifices $p to the gods.\n\r", null, item, null, ActType.ToRoom);
+                    ch.send(string.Format("You sacrifice {0} to the gods.\r\n", item.ShortDescription));
+                    ch.Act("$n sacrifices $p to the gods.\r\n", null, item, null, ActType.ToRoom);
                 }
 
-                else ch.send("You don't see that here.\n\r");
+                else ch.send("You don't see that here.\r\n");
             }
         }
 
@@ -1670,41 +1670,41 @@ namespace CrimsonStainedLands
 
             if (ch.Fighting != null)
             {
-                ch.send("You're too busy fighting to fill anything.\n\r");
+                ch.send("You're too busy fighting to fill anything.\r\n");
             }
 
             else if (fountain == null)
             {
-                ch.send("Nothing here to fill from.\n\r");
+                ch.send("Nothing here to fill from.\r\n");
                 return;
             }
 
             else if (string.IsNullOrEmpty(containerName))
             {
-                ch.send("Fill what?\n\r");
+                ch.send("Fill what?\r\n");
             }
 
             else if ((container = ch.GetItemInventory(containerName, ref count)) == null)
             {
-                ch.send("You can't find it.\n\r");
+                ch.send("You can't find it.\r\n");
             }
 
             else if (!container.ItemType.Contains(ItemTypes.DrinkContainer))
             {
-                ch.send("{0} can't be filled.\n\r", container.Display(ch));
+                ch.send("{0} can't be filled.\r\n", container.Display(ch));
             }
 
             else if (container.Charges >= container.MaxCharges)
             {
-                ch.send("{0} is already full.\n\r", container.Display(ch));
+                ch.send("{0} is already full.\r\n", container.Display(ch));
             }
 
             else // fill the damn container!
             {
                 container.Charges = Math.Max(16, container.MaxCharges);
                 container.Liquid = fountain.Liquid;
-                ch.send("You fill {0} with {1} from {2}.\n\r", container.Display(ch), fountain.Liquid, fountain.Display(ch));
-                ch.Act("$n fills $p with {0} from $P.\n\r", null, container, fountain, ActType.ToRoom, fountain.Liquid);
+                ch.send("You fill {0} with {1} from {2}.\r\n", container.Display(ch), fountain.Liquid, fountain.Display(ch));
+                ch.Act("$n fills $p with {0} from $P.\r\n", null, container, fountain, ActType.ToRoom, fountain.Liquid);
             }
         }
 
@@ -1727,7 +1727,7 @@ namespace CrimsonStainedLands
 
                 if (container == null)
                 {
-                    ch.send("Drink what?\n\r");
+                    ch.send("Drink what?\r\n");
                     return;
                 }
             }
@@ -1735,14 +1735,14 @@ namespace CrimsonStainedLands
             {
                 if (ch.Form != null || (container = ch.GetItemHere(containerName, ref count)) == null)
                 {
-                    ch.send("You can't find it.\n\r");
+                    ch.send("You can't find it.\r\n");
                     return;
                 }
             }
 
             if (ch.Fighting != null)
             {
-                ch.send("You're too busy fighting to drink anything.\n\r");
+                ch.send("You're too busy fighting to drink anything.\r\n");
                 return;
             }
 
@@ -1766,7 +1766,7 @@ namespace CrimsonStainedLands
 
                 if (charges == 0)
                 {
-                    ch.send("It's empty.\n\r");
+                    ch.send("It's empty.\r\n");
                     return;
                 }
                 else container.Charges--;
@@ -1774,7 +1774,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.send("You can't drink from that.\n\r");
+                ch.send("You can't drink from that.\r\n");
                 return;
             }
             var hunger = 0;
@@ -1793,7 +1793,7 @@ namespace CrimsonStainedLands
 
             if (ch.Drunk >= 48 && drunk > 0)
             {
-                ch.send("You fail to reach your mouth. *Hic*\n\r");
+                ch.send("You fail to reach your mouth. *Hic*\r\n");
                 return;
             }
 
@@ -1801,8 +1801,8 @@ namespace CrimsonStainedLands
             {
 
 
-                ch.Act("You drink {0} from $p.\n\r", null, container, args: liquid);
-                ch.Act("$n drinks {0} from $p.\n\r", null, container, null, ActType.ToRoom, liquid);
+                ch.Act("You drink {0} from $p.\r\n", null, container, args: liquid);
+                ch.Act("$n drinks {0} from $p.\r\n", null, container, null, ActType.ToRoom, liquid);
 
                 if (thirst != 0)
                     ch.Thirst = Math.Min(ch.Thirst + thirst, 48);
@@ -1821,20 +1821,20 @@ namespace CrimsonStainedLands
 
                 if (!ch.IsNPC && ch.Thirst >= 48 && thirst > 0)
                 {
-                    ch.send("Your thirst is quenched.\n\r");
+                    ch.send("Your thirst is quenched.\r\n");
                     ch.Dehydrated = 0;
                 }
 
                 if (!ch.IsNPC && ch.Hunger >= 48 && hunger > 0)
                 {
-                    ch.send("You are full.\n\r");
+                    ch.send("You are full.\r\n");
                     ch.Dehydrated = 0;
                     ch.Starving = 0;
                 }
 
                 if (!ch.IsNPC && ch.Drunk >= 20)
                 {
-                    ch.send("You're smashed!\n\r");
+                    ch.send("You're smashed!\r\n");
                     AffectData affect;
                     var alcoholpoisoning = SkillSpell.SkillLookup("alcohol poisoning");
 
@@ -1856,12 +1856,12 @@ namespace CrimsonStainedLands
                 }
                 else if (!ch.IsNPC && ch.Drunk >= 10)
                 {
-                    ch.send("You feel drunk.\n\r");
+                    ch.send("You feel drunk.\r\n");
 
                 }
                 else if (!ch.IsNPC && ch.Drunk >= 2)
                 {
-                    ch.send("You feel tipsy.\n\r");
+                    ch.send("You feel tipsy.\r\n");
 
                 }
 
@@ -1878,8 +1878,8 @@ namespace CrimsonStainedLands
                     affect.displayName = "food poisoning";
                     affect.duration = 2;
                     ch.AffectToChar(affect);
-                    ch.send("You choke and gag.\n\r");
-                    ch.Act("$n chokes and gags.\n\r", type: ActType.ToRoom);
+                    ch.send("You choke and gag.\r\n");
+                    ch.Act("$n chokes and gags.\r\n", type: ActType.ToRoom);
 
                 }
             }
@@ -1897,27 +1897,27 @@ namespace CrimsonStainedLands
 
             if (string.IsNullOrEmpty(foodName))
             {
-                ch.send("Eat what?\n\r");
+                ch.send("Eat what?\r\n");
                 return;
             }
             else if (ch.Form == null && (item = ch.GetItemInventory(foodName, ref count)) == null)
             {
-                ch.send("You don't have that item.\n\r");
+                ch.send("You don't have that item.\r\n");
                 return;
             }
             else if (ch.Form != null && (item = ch.GetItemRoom(foodName, ref count)) == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
             else if (item == null)
             {
-                ch.send("You don't have that item.\n\r");
+                ch.send("You don't have that item.\r\n");
                 return;
             }
             else if (ch.Fighting != null)
             {
-                ch.send("You are too busy fighting to worry about food\n\r");
+                ch.send("You are too busy fighting to worry about food\r\n");
                 return;
             }
             else if (carrionfeeding > 1 && ch.IsAffected(carrionskill))
@@ -1928,14 +1928,14 @@ namespace CrimsonStainedLands
                 (carrionfeeding <= 1 ||
                    !(item.ItemType.Contains(ItemTypes.NPCCorpse) || (item.Vnum >= 8 && item.Vnum <= 12))))
             {
-                ch.send("That's not edible.\n\r");
+                ch.send("That's not edible.\r\n");
                 return;
             }
             else if (!ch.IsNPC && !ch.IsImmortal && ch.Hunger > 40 &&
                 (carrionfeeding <= 1 ||
                    !(item.ItemType.Contains(ItemTypes.NPCCorpse) || (item.Vnum >= 8 && item.Vnum <= 12))))
             {
-                ch.send("You are too full to eat more.\n\r");
+                ch.send("You are too full to eat more.\r\n");
                 return;
             }
             else
@@ -1968,13 +1968,13 @@ namespace CrimsonStainedLands
                 ch.Hunger += item.Nutrition;
                 ch.Starving = 0;
                 if (ch.Hunger <= 4)
-                    ch.send("You are no longer hungry.\n\r");
+                    ch.send("You are no longer hungry.\r\n");
                 else if (ch.Hunger > 40)
-                    ch.send("You are full.\n\r");
+                    ch.send("You are full.\r\n");
 
                 if (item.extraFlags.Contains(ExtraFlags.Heart))
                 {
-                    ch.send("You feel empowered by eating the heart of your foe.\n\r");
+                    ch.send("You feel empowered by eating the heart of your foe.\r\n");
                     ch.HitPoints += 15;
                 }
                 if (item.extraFlags.Contains(ExtraFlags.Poison) && carrionfeeding <= 1)
@@ -1987,8 +1987,8 @@ namespace CrimsonStainedLands
                     affect.level = item.Level;
                     affect.duration = 2;
                     ch.AffectToChar(affect);
-                    ch.send("You choke and gag.\n\r");
-                    ch.Act("$n chokes and gags.\n\r", type: ActType.ToRoom);
+                    ch.send("You choke and gag.\r\n");
+                    ch.Act("$n chokes and gags.\r\n", type: ActType.ToRoom);
 
                 }
 
@@ -2015,7 +2015,7 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("Use what?\n\r");
+                ch.send("Use what?\r\n");
                 return;
             }
 
@@ -2027,7 +2027,7 @@ namespace CrimsonStainedLands
 
             if (item == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
 
@@ -2036,14 +2036,14 @@ namespace CrimsonStainedLands
             Programs.ExecutePrograms(Programs.ProgramTypes.Use, ch, item, "");
 
             if (!found)
-                ch.send("You can't seem to figure out how to do that.\n\r");
+                ch.send("You can't seem to figure out how to do that.\r\n");
         }
 
         public static void DoInvoke(Character ch, string arguments)
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("Invoke what?\n\r");
+                ch.send("Invoke what?\r\n");
                 return;
             }
 
@@ -2052,7 +2052,7 @@ namespace CrimsonStainedLands
                 bool result = false;
                 foreach (var item in ch.Equipment.Values.Concat(ch.Inventory).Concat(ch.Room.items).ToArray())
                     Programs.ExecutePrograms(Programs.ProgramTypes.Invoke, ch, item, "");
-                if (!result) ch.send("Nothing seems to happen.\n\r");
+                if (!result) ch.send("Nothing seems to happen.\r\n");
             }
         }
 
@@ -2061,17 +2061,17 @@ namespace CrimsonStainedLands
 
             if (ch.Alignment != Alignment.Good)
             {
-                ch.send("Only those who follow the Light can request items.\n\r");
+                ch.send("Only those who follow the Light can request items.\r\n");
                 return;
             }
             else if (ch.Position == Positions.Fighting)
             {
-                ch.send("No way! You are still fighting!\n\r");
+                ch.send("No way! You are still fighting!\r\n");
                 return;
             }
             else if (arguments.ISEMPTY())
             {
-                ch.send("Request what from who?\n\r");
+                ch.send("Request what from who?\r\n");
                 return;
             }
 
@@ -2085,27 +2085,27 @@ namespace CrimsonStainedLands
             WearSlotIDs slot;
             if (npcname.ISEMPTY() || itemname.ISEMPTY())
             {
-                ch.send("Request what from who?\n\r");
+                ch.send("Request what from who?\r\n");
                 return;
             }
             else if ((npc = ch.GetCharacterFromRoomByName(npcname)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (!npc.IsNPC)
             {
-                ch.send("You cannot request from other players.\n\r");
+                ch.send("You cannot request from other players.\r\n");
                 return;
             }
             else if (npc.Position <= Positions.Sleeping)
             {
-                ch.Act("$n must be awake and healthy to do that.\n\r", npc);
+                ch.Act("$n must be awake and healthy to do that.\r\n", npc);
                 return;
             }
             else if (npc.Alignment != Alignment.Good)
             {
-                ch.send("You can only request from beings that follow the Light.\n\r");
+                ch.send("You can only request from beings that follow the Light.\r\n");
                 return;
             }
             else if (npc.Flags.ISSET(ActFlags.Shopkeeper))
@@ -2154,8 +2154,8 @@ namespace CrimsonStainedLands
             npc.Inventory.Remove(item);
             ch.Inventory.Insert(0, item);
             item.CarriedBy = ch;
-            ch.Act("$N gives you $p.\n\r", npc, item, null, ActType.ToChar);
-            ch.Act("$N gives $p to $n.\n\r", npc, item, type: ActType.ToRoomNotVictim);
+            ch.Act("$N gives you $p.\r\n", npc, item, null, ActType.ToChar);
+            ch.Act("$N gives $p to $n.\r\n", npc, item, type: ActType.ToRoomNotVictim);
         } // end of DoRequest
 
 

@@ -169,12 +169,12 @@ namespace CrimsonStainedLands
 
             if (form == null)
             {
-                ch.send("You don't know that form.\n\r");
+                ch.send("You don't know that form.\r\n");
                 return;
             }
             else if (!form.Parts.ISSET(PartFlags.Legs) && form.AffectedBy.ISSET(AffectFlags.WaterBreathing))
             {
-                ch.send("You need to be in the water to become that.\n\r");
+                ch.send("You need to be in the water to become that.\r\n");
                 return;
             }
             else
@@ -229,7 +229,7 @@ namespace CrimsonStainedLands
                 checkControls(ch);
             }
             else
-                ch.send("You aren't shapeshifted.\n\r");
+                ch.send("You aren't shapeshifted.\r\n");
         }
 
         public static void CheckGainForm(Character ch)
@@ -256,7 +256,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -275,7 +275,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -294,7 +294,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -315,7 +315,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -334,7 +334,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -355,7 +355,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -374,7 +374,7 @@ namespace CrimsonStainedLands
                     {
                         var skill = selectedform.FormSkill;
                         ch.LearnSkill(skill, 75, ch.Level);
-                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\n\r", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
+                        ch.send("\\GYou have learned how to shapeshift into the form of {0}{1}!\\x\r\n", "aeiou".Contains(selectedform.Name[0]) ? "an " : "a ", selectedform.Name);
                         player.SaveCharacterFile();
                     }
                 }
@@ -510,7 +510,7 @@ namespace CrimsonStainedLands
             {
                 if (player.ShapeFocusMajor == ShapeshiftForm.FormType.None && Utility.GetEnumValue(arguments, ref player.ShapeFocusMajor, ShapeshiftForm.FormType.None) && player.ShapeFocusMajor != ShapeshiftForm.FormType.None && player.ShapeFocusMajor != ShapeshiftForm.FormType.Air && player.ShapeFocusMajor != ShapeshiftForm.FormType.Water)
                 {
-                    ch.send("You have chosen the major focus {0}.\n\r", player.ShapeFocusMajor.ToString().ToLower());
+                    ch.send("You have chosen the major focus {0}.\r\n", player.ShapeFocusMajor.ToString().ToLower());
                     if (player.ShapeFocusMajor == ShapeshiftForm.FormType.Offense)
                     {
                         player.LearnSkill(SkillSpell.SkillLookup("tiger frenzy"), 1, 30);
@@ -534,15 +534,15 @@ namespace CrimsonStainedLands
                 else if (player.ShapeFocusMajor == ShapeshiftForm.FormType.Air || player.ShapeFocusMajor == ShapeshiftForm.FormType.Water)
                 {
                     player.ShapeFocusMajor = ShapeshiftForm.FormType.None;
-                    ch.send("Syntax: shapefocus major [{0}].\n\r", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
+                    ch.send("Syntax: shapefocus major [{0}].\r\n", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
 
                 }
                 else if (player.ShapeFocusMajor != ShapeshiftForm.FormType.None)
                 {
-                    ch.send("Your major shapefocus is in {0} forms.\n\r", player.ShapeFocusMajor.ToString().ToLower());
+                    ch.send("Your major shapefocus is in {0} forms.\r\n", player.ShapeFocusMajor.ToString().ToLower());
                 }
                 else
-                    ch.send("Syntax: shapefocus major [{0}].\n\r", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
+                    ch.send("Syntax: shapefocus major [{0}].\r\n", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
 
 
             }
@@ -550,24 +550,24 @@ namespace CrimsonStainedLands
             {
                 if (player.ShapeFocusMinor == ShapeshiftForm.FormType.None && Utility.GetEnumValue(arguments, ref player.ShapeFocusMinor, ShapeshiftForm.FormType.None) && player.ShapeFocusMinor != ShapeshiftForm.FormType.None && player.ShapeFocusMinor != ShapeshiftForm.FormType.Air && player.ShapeFocusMinor != ShapeshiftForm.FormType.Water)
                 {
-                    ch.send("You have chosen the minor focus {0}.\n\r", player.ShapeFocusMinor.ToString().ToLower());
+                    ch.send("You have chosen the minor focus {0}.\r\n", player.ShapeFocusMinor.ToString().ToLower());
                     ShapeshiftForm.CheckGainForm(ch);
                 }
                 else if (player.ShapeFocusMinor == ShapeshiftForm.FormType.Air || player.ShapeFocusMinor == ShapeshiftForm.FormType.Water)
                 {
                     player.ShapeFocusMinor = ShapeshiftForm.FormType.None;
-                    ch.send("Syntax: shapefocus minor [{0}].\n\r", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
+                    ch.send("Syntax: shapefocus minor [{0}].\r\n", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
                 }
                 else if (player.ShapeFocusMinor != ShapeshiftForm.FormType.None)
                 {
-                    ch.send("Your minor shapefocus is in {0} forms.\n\r", player.ShapeFocusMinor.ToString().ToLower());
+                    ch.send("Your minor shapefocus is in {0} forms.\r\n", player.ShapeFocusMinor.ToString().ToLower());
                 }
                 else
-                    ch.send("Syntax: shapefocus minor [{0}].\n\r", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
+                    ch.send("Syntax: shapefocus minor [{0}].\r\n", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
 
             }
             else
-                ch.send("Syntax: shapefocus [major|minor] [{0}].\n\r", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
+                ch.send("Syntax: shapefocus [major|minor] [{0}].\r\n", string.Join(" ", Utility.GetEnumValues<ShapeshiftForm.FormType>().Where(f => f != ShapeshiftForm.FormType.Water && f != ShapeshiftForm.FormType.Air).Distinct()));
         } // end shape focus
         public static void DoEnliven(Character ch, string arguments)
         {

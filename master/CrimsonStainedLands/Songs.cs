@@ -63,10 +63,10 @@ namespace CrimsonStainedLands
 
                     GroupMember.MovementPoints = Math.Min(GroupMember.MovementPoints + FuzzyRefreshAmount, GroupMember.MaxMovementPoints);
 
-                    GroupMember.Act("You feel able to walk further.\n\r\n\r");
+                    GroupMember.Act("You feel able to walk further.\r\n\r\n");
                 }
                 else
-                    GroupMember.Act("Your feet are already fully rested.\n\r\n\r");
+                    GroupMember.Act("Your feet are already fully rested.\r\n\r\n");
             }
 
         }
@@ -92,10 +92,10 @@ namespace CrimsonStainedLands
 
                     GroupMember.HitPoints = Math.Min(GroupMember.HitPoints + FuzzyRefreshAmount, GroupMember.MaxHitPoints);
 
-                    GroupMember.Act("You feel a little better.\n\r\n\r");
+                    GroupMember.Act("You feel a little better.\r\n\r\n");
                 }
                 else
-                    GroupMember.Act("Your health is already fully restored.\n\r\n\r");
+                    GroupMember.Act("Your health is already fully restored.\r\n\r\n");
             }
         }
         public static void SongElvenAdagio(CastType castType, SkillSpell song, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -120,10 +120,10 @@ namespace CrimsonStainedLands
 
                     GroupMember.HitPoints = Math.Min(GroupMember.HitPoints + FuzzyRefreshAmount, GroupMember.MaxHitPoints);
 
-                    GroupMember.Act("You feel much better.\n\r\n\r");
+                    GroupMember.Act("You feel much better.\r\n\r\n");
                 }
                 else
-                    GroupMember.Act("Your health is already fully restored.\n\r\n\r");
+                    GroupMember.Act("Your health is already fully restored.\r\n\r\n");
             }
         }
 
@@ -164,12 +164,12 @@ namespace CrimsonStainedLands
 
                     GroupMember.AffectToChar(Affect);
 
-                    GroupMember.Act("You feel more lovely.\n\r\n\r");
+                    GroupMember.Act("You feel more lovely.\r\n\r\n");
                 }
                 else if (!GroupMember.IsAffected(AffectFlags.Deafen))
 
                 {
-                    GroupMember.Act("You already feel more lovely.\n\r\n\r");
+                    GroupMember.Act("You already feel more lovely.\r\n\r\n");
                 }
             }
         }
@@ -218,12 +218,12 @@ namespace CrimsonStainedLands
 
                     GroupMember.AffectToChar(Affect);
 
-                    GroupMember.Act("You feel blessed.\n\r\n\r");
+                    GroupMember.Act("You feel blessed.\r\n\r\n");
                 }
                 else if (!GroupMember.IsAffected(AffectFlags.Deafen))
 
                 {
-                    GroupMember.Act("You already feel blessed.\n\r\n\r");
+                    GroupMember.Act("You already feel blessed.\r\n\r\n");
                 }
             }
         }
@@ -264,9 +264,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You feel frightened by $n's battaglia.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel frightened by $n's battaglia.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be frightened by your battaglia.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be frightened by $n's battaglia.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be frightened by $n's battaglia.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
                 }
                 else if (bard.IsSameGroup(Victim) && !Victim.IsAffected(AffectFlags.Deafen) && !Victim.IsAffected(song))
                 {
@@ -291,14 +291,14 @@ namespace CrimsonStainedLands
 
                     if (bard != Victim)
                     {
-                        bard.Act("You feel frenzied by $n's battaglia.\n\r\n\r", Victim, type: ActType.ToVictim);
+                        bard.Act("You feel frenzied by $n's battaglia.\r\n\r\n", Victim, type: ActType.ToVictim);
                         bard.Act("$N appears to be frenzied by your battaglia.", Victim, type: ActType.ToChar);
-                        bard.Act("$N appears to be frenzied by $n's battaglia.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                        bard.Act("$N appears to be frenzied by $n's battaglia.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
                     }
                     else
                     {
-                        bard.Act("You feel frenzied by your battaglia.\n\r\n\r", Victim, type: ActType.ToVictim);
-                        bard.Act("$N appears to be frenzied by $s battaglia.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                        bard.Act("You feel frenzied by your battaglia.\r\n\r\n", Victim, type: ActType.ToVictim);
+                        bard.Act("$N appears to be frenzied by $s battaglia.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
                     }
                 }
             }
@@ -346,9 +346,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You feel weakened by $n's Languid Carol.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel weakened by $n's Languid Carol.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be weakened by your Languid Carol.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be weakened by $n's Languid Carol.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be weakened by $n's Languid Carol.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
 
                     if (Victim.Fighting == null && Victim.IsAwake)
                     {
@@ -389,12 +389,12 @@ namespace CrimsonStainedLands
 
                     GroupMember.AffectToChar(Affect);
 
-                    GroupMember.Act("You feel more resistant.\n\r\n\r");
+                    GroupMember.Act("You feel more resistant.\r\n\r\n");
                 }
                 else if (!GroupMember.IsAffected(AffectFlags.Deafen))
 
                 {
-                    GroupMember.Act("You already feel more resistant.\n\r\n\r");
+                    GroupMember.Act("You already feel more resistant.\r\n\r\n");
                 }
             }
 
@@ -432,9 +432,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You are revealed by $n's Riddle Of Revelation.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You are revealed by $n's Riddle Of Revelation.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N becomes revealed by your Riddle Of Revelation.", Victim, type: ActType.ToChar);
-                    bard.Act("$N becomes refealed by $n's Riddle of Revelation.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N becomes refealed by $n's Riddle of Revelation.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
 
                     Victim.StripHidden();
                     Victim.StripInvis();
@@ -459,9 +459,9 @@ namespace CrimsonStainedLands
 
                     CharacterDoFunctions.DoStand(victim, "");
 
-                    bard.Act("You are awakened by $n's Reveille.\n\r\n\r", victim, type: ActType.ToVictim);
+                    bard.Act("You are awakened by $n's Reveille.\r\n\r\n", victim, type: ActType.ToVictim);
                     bard.Act("$N is awakened by your Reveille.", victim, type: ActType.ToChar);
-                    bard.Act("$N becomes awakened by $n's Reveille.\n\r\n\r", victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N becomes awakened by $n's Reveille.\r\n\r\n", victim, type: ActType.ToRoomNotVictim);
                 }
             }
 
@@ -490,10 +490,10 @@ namespace CrimsonStainedLands
 
                     GroupMember.ManaPoints = Math.Min(GroupMember.ManaPoints + FuzzyManaAmount, GroupMember.MaxManaPoints);
 
-                    GroupMember.Act("You feel better able to concentrate.\n\r\n\r");
+                    GroupMember.Act("You feel better able to concentrate.\r\n\r\n");
                 }
                 else
-                    GroupMember.Act("Your ability to concentrate is already accomplished.\n\r\n\r");
+                    GroupMember.Act("Your ability to concentrate is already accomplished.\r\n\r\n");
             }
 
         }
@@ -521,9 +521,9 @@ namespace CrimsonStainedLands
 
                     }
 
-                    bard.Act("You are calmed by $n's Tranquil Serenade.\n\r\n\r", victim, type: ActType.ToVictim);
+                    bard.Act("You are calmed by $n's Tranquil Serenade.\r\n\r\n", victim, type: ActType.ToVictim);
                     bard.Act("$N is calmed by your Tranquil Serenade.", victim, type: ActType.ToChar);
-                    bard.Act("$N becomes calmed by $n's Tranquil Serenade.\n\r\n\r", victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N becomes calmed by $n's Tranquil Serenade.\r\n\r\n", victim, type: ActType.ToRoomNotVictim);
                 }
             }
 
@@ -539,7 +539,7 @@ namespace CrimsonStainedLands
                 if (Item.ItemType.ISSET(ItemTypes.PC_Corpse)) corpse=item;
             }
 
-            if (corpse == null) { bard.send("There is no player corpse here to sing over.\n\r"); return; }
+            if (corpse == null) { bard.send("There is no player corpse here to sing over.\r\n"); return; }
 
             foreach (var Victim in bard.Room.Characters.ToArray())
             {
@@ -561,9 +561,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You are inspired by $n's song of Requiem over $p.\n\r\n\r", Victim,corpse, type: ActType.ToVictim);
+                    bard.Act("You are inspired by $n's song of Requiem over $p.\r\n\r\n", Victim,corpse, type: ActType.ToVictim);
                     bard.Act("$N becomes inspired by your song of Requiem.", Victim, type: ActType.ToChar);
-                    bard.Act("$N becomes inspired by $n's song of Requiem over $p.\n\r\n\r", Victim,corpse, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N becomes inspired by $n's song of Requiem over $p.\r\n\r\n", Victim,corpse, type: ActType.ToRoomNotVictim);
 
                 }
 
@@ -581,7 +581,7 @@ namespace CrimsonStainedLands
                         victim.LastFighting = null;
 
                         bard.Act("$N is calmed by your Elegy Of Tears.", victim, type: ActType.ToChar);
-                        bard.Act("$N becomes calmed by $n's Elegy Of Tears.\n\r\n\r", victim, type: ActType.ToRoomNotVictim);
+                        bard.Act("$N becomes calmed by $n's Elegy Of Tears.\r\n\r\n", victim, type: ActType.ToRoomNotVictim);
                     }
                 }
             }
@@ -640,12 +640,12 @@ namespace CrimsonStainedLands
 
                     GroupMember.AffectToChar(Affect);
 
-                    GroupMember.Act("You feel more confidence.\n\r\n\r");
+                    GroupMember.Act("You feel more confidence.\r\n\r\n");
                 }
                 else if (!GroupMember.IsAffected(AffectFlags.Deafen))
 
                 {
-                    GroupMember.Act("You already feel more confident.\n\r\n\r");
+                    GroupMember.Act("You already feel more confident.\r\n\r\n");
                 }
             }
         }
@@ -701,9 +701,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You feel less coordinated by $n's Laborious Lament.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel less coordinated by $n's Laborious Lament.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be less coordinated by your Laborious Lament.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be less coordinated by $n's Laborious Lament.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be less coordinated by $n's Laborious Lament.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
 
                     if (Victim.Fighting == null && Victim.IsAwake)
                     {
@@ -800,9 +800,9 @@ namespace CrimsonStainedLands
                     Affect.endMessageToRoom = "$n looks disheartened.";
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You feel less disheartened by $n's Fantasia Of Palliation.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel less disheartened by $n's Fantasia Of Palliation.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be less disheartened by your Fantasia Of Palliation.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be less disheartened by $n's Fantasia Of Palliation.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be less disheartened by $n's Fantasia Of Palliation.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
 
                     if (Victim.Fighting == null && Victim.IsAwake)
                     {
@@ -847,9 +847,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You feel immolated by $n's Dirge Of Sacrifice.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel immolated by $n's Dirge Of Sacrifice.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be afflicted by immolation from your Dirge Of Sacrifice.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be afflicted by immolation from $n's Dirge Of Sacrifice.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be afflicted by immolation from $n's Dirge Of Sacrifice.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
 
                     if (Victim.Fighting == null && Victim.IsAwake)
                     {
@@ -881,9 +881,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
 
-                    bard.Act("You feel ineffective from $n's battaglia.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel ineffective from $n's battaglia.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be very ineffective by your battaglia.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be ineffective by $n's battaglia.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be ineffective by $n's battaglia.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
                 }
             }
         }
@@ -910,9 +910,9 @@ namespace CrimsonStainedLands
 
                     Victim.AffectToChar(Affect);
                     Victim.Position = Positions.Sleeping;
-                    bard.Act("You feel sleepy from $n's lullaby.\n\r\n\r", Victim, type: ActType.ToVictim);
+                    bard.Act("You feel sleepy from $n's lullaby.\r\n\r\n", Victim, type: ActType.ToVictim);
                     bard.Act("$N appears to be very sleepy by your lullaby.", Victim, type: ActType.ToChar);
-                    bard.Act("$N appears to be very sleepy by $n's lullaby.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    bard.Act("$N appears to be very sleepy by $n's lullaby.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
                 }
             }
         }

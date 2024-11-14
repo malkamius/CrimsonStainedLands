@@ -30,7 +30,7 @@ namespace CrimsonStainedLands
             {
                 if (DuelBlocking(victim))
                 {
-                    character.send("They aren't accepting duels right now.\n\r");
+                    character.send("They aren't accepting duels right now.\r\n");
                 }
                 else if (DuelPending(victim))
                 {
@@ -65,7 +65,7 @@ namespace CrimsonStainedLands
                 }
             }
             else
-                character.send("You don't see them here. (You must specify their entire unaltered name)\n\r");
+                character.send("You don't see them here. (You must specify their entire unaltered name)\r\n");
         }
 
         public static void DoDuelAccept(Character character, string arguments)
@@ -77,7 +77,7 @@ namespace CrimsonStainedLands
 
                 if(challenger == null)
                 {
-                    character.send("Your challenger doesn't seem to be around anymore.\n\r");
+                    character.send("Your challenger doesn't seem to be around anymore.\r\n");
                 }
                 else
                 {
@@ -104,7 +104,7 @@ namespace CrimsonStainedLands
                 }
             }
             else
-                character.send("You have not been challenged.\n\r");
+                character.send("You have not been challenged.\r\n");
         }
 
         public static void DoDuelDecline(Character character, string arguments)
@@ -116,7 +116,7 @@ namespace CrimsonStainedLands
 
                 if (challenger == null)
                 {
-                    character.send("Your challenger doesn't seem to be around anymore.\n\r");
+                    character.send("Your challenger doesn't seem to be around anymore.\r\n");
                 }
                 else
                 {
@@ -125,7 +125,7 @@ namespace CrimsonStainedLands
                 character.StripAffect(AffectFlags.DuelChallenged);
             }
             else
-                character.send("You have not been challenged.\n\r");
+                character.send("You have not been challenged.\r\n");
         }
     }
 }

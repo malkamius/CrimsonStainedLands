@@ -86,7 +86,7 @@ namespace CrimsonStainedLands.World
             Name = element.GetElementValue("name", "").Trim();
             ShortDescription = element.GetElementValue("ShortDescription", "").Trim();
             LongDescription = element.GetElementValue("LongDescription", "").Trim();
-            Description = element.GetElementValue("Description", "").TrimStart().Replace("\r\n", "\n").Replace("\n\r", "\n");
+            Description = element.GetElementValue("Description", "").TrimStart().Replace("\r\n", "\n").Replace("\r\n", "\n");
             NightShortDescription = element.GetElementValue("NightShortDescription", "").Trim();
             NightLongDescription = element.GetElementValue("NightLongDescription", "").TrimStart();
 

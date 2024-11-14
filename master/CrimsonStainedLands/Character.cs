@@ -7,6 +7,8 @@ using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using CrimsonStainedLands.World;
 using global::CrimsonStainedLands.Extensions;
+using Newtonsoft.Json.Linq;
+
 
 namespace CrimsonStainedLands
 {
@@ -50,13 +52,13 @@ namespace CrimsonStainedLands
             {
                 //var regex = new Regex("(?m)^\\s+");
                 if (_description.StartsWith("."))
-                    return _description.Replace("\n\r", "\n").Replace("\r\n", "\n");
+                    return _description.Replace("\r\n", "\n").Replace("\r\n", "\n");
                 return _description.Trim();
                 //return regex.Replace(_description.Trim(), "");
             }
             set
             {
-                if (value != null) _description = value.Replace("\n\r", "\n").Replace("\r\n", "\n"); else _description = "";
+                if (value != null) _description = value.Replace("\r\n", "\n").Replace("\r\n", "\n"); else _description = "";
             }
         }
         public string ShortDescription { get; set; } = "";
@@ -668,19 +670,19 @@ namespace CrimsonStainedLands
 
                 //if (gch.level - lch.level > 8)
                 //{
-                //    gch.send("You are too high for this group.\n\r");
+                //    gch.send("You are too high for this group.\r\n");
                 //    continue;
                 //}
 
                 //if (gch.level - lch.level < -8)
                 //{
-                //    gch.send("You are too low for this group.\n\r");
+                //    gch.send("You are too low for this group.\r\n");
                 //    continue;
                 //}
 
 
                 xp = gch.ExperienceCompute(victim, members, gch.Level); // group_levels);
-                var buf = string.Format("\\CYou receive \\W{0}\\C experience points.\\x\n\r", xp);
+                var buf = string.Format("\\CYou receive \\W{0}\\C experience points.\\x\r\n", xp);
                 gch.send(buf);
                 gch.GainExperience(xp);
             }
@@ -715,10 +717,13 @@ namespace CrimsonStainedLands
         public void AdvanceLevel(bool show = true)
         {
             if (show)
-                send("\\gYou raise a level!!  \\x\n\r");
+            {
+                send("\\gYou raise a level!!  \\x\r\n");
+                WizardNet.Wiznet(WizardNet.Flags.Levels, "{0} gained level {1}", null, null, Name, Level);
+                Task.Run(() => Discord.Instance.SendMessage(Settings.CharacterGainWebhook, "Crimson Stained Lands", string.Format("{0} gained level {1}", Name, Level)));
+            }
             Level += 1;
             //game.log("{0} gained level {1}", Name, Level);
-            WizardNet.Wiznet(WizardNet.Flags.Levels, "{0} gained level {1}", null, null, Name, Level);
             //sprintf(buf, "$N has attained level %d!", ch->level);
             //wiznet(buf, ch, NULL, WIZ_LEVELS, 0, 0);
             GiveAdvanceLevelGains(show);
@@ -829,23 +834,23 @@ namespace CrimsonStainedLands
 
             if (show)
             {
-                send("\\gYou gain {0}/{1} hp, {2}/{3} mana, {4}/{5} move, and {6}/{7} practices.\\x\n\r",
+                send("\\gYou gain {0}/{1} hp, {2}/{3} mana, {4}/{5} move, and {6}/{7} practices.\\x\r\n",
                     add_hp, MaxHitPoints, add_mana, MaxManaPoints,
                     add_move, MaxMovementPoints, add_prac, Practices);
 
                 if (Level % 5 == 0)
-                    send("\\YYou gain a train.\\x\n\r");
+                    send("\\YYou gain a train.\\x\r\n");
 
                 if (this is Player && Level % 20 == 0 && Guild.name == "warrior")
                 {
-                    send("\\YYou gain a weapon specialization.\\x\n\r");
+                    send("\\YYou gain a weapon specialization.\\x\r\n");
                     ((Player)this).WeaponSpecializations++;
                 }
 
                 if (this is Player && this.Guild != null && this.Guild.name == "shapeshifter" && (((Player)this).ShapeFocusMajor == ShapeshiftForm.FormType.None
                     || ((Player)this).ShapeFocusMinor == ShapeshiftForm.FormType.None))
                 {
-                    send("\\RYou have not chosen both of your shapefocuses yet. Type shapefocus major/minor to set it.\\x\n\r");
+                    send("\\RYou have not chosen both of your shapefocuses yet. Type shapefocus major/minor to set it.\\x\r\n");
                 }
             }
 
@@ -1006,12 +1011,12 @@ namespace CrimsonStainedLands
                         send("[Hit Enter to Continue]");
                 }
                 else
-                    send("\n\r");
+                    send("\r\n");
             }
             else
             {
                 ClearPage();
-                send(text + "\n\r");
+                send(text + "\r\n");
 
             }
         }
@@ -1158,8 +1163,8 @@ namespace CrimsonStainedLands
                         AffectApply(aff, true);
                 if (show)
                 {
-                    Act("You remove $p.\n\r", null, item, null, ActType.ToChar);
-                    Act("$n removes $p.\n\r", null, item, null, ActType.ToRoom);
+                    Act("You remove $p.\r\n", null, item, null, ActType.ToChar);
+                    Act("$n removes $p.\r\n", null, item, null, ActType.ToRoom);
                 }
                 AddInventoryItem(item);
                 return true;
@@ -1195,7 +1200,7 @@ namespace CrimsonStainedLands
                 {
                     if (other.Value.Vnum == itemData.Vnum)
                     {
-                        send("You can only wear one of those at a time.\n\r");
+                        send("You can only wear one of those at a time.\r\n");
                         return false;
                     }
                 }
@@ -1221,7 +1226,7 @@ namespace CrimsonStainedLands
                 // Check if the character's hands are bound and the item requires hand slots
                 if (itemData.wearFlags.Contains(slot.flag) && handslots.Contains(slot.id) && IsAffected(AffectFlags.BindHands))
                 {
-                    this.Act("You can't equip that while your hands are bound.\n\r");
+                    this.Act("You can't equip that while your hands are bound.\r\n");
                     return false;
                 }
 
@@ -1261,7 +1266,7 @@ namespace CrimsonStainedLands
             {
                 if (!RemoveEquipment(offhandSlotToRemove, sendMessage))
                 {
-                    send("You need two hands free for that weapon.\n\r");
+                    send("You need two hands free for that weapon.\r\n");
                     return false;
                 }
             }
@@ -1314,8 +1319,8 @@ namespace CrimsonStainedLands
                         noun = "wear";
 
                     // Display wear messages to the character and the room
-                    Act("You " + noun + " $p " + emptySlot.wearString + ".\n\r", null, itemData, null, ActType.ToChar);
-                    Act("$n " + noun + "s $p " + emptySlot.wearStringOthers + ".\n\r", null, itemData, null, ActType.ToRoom);
+                    Act("You " + noun + " $p " + emptySlot.wearString + ".\r\n", null, itemData, null, ActType.ToChar);
+                    Act("$n " + noun + "s $p " + emptySlot.wearStringOthers + ".\r\n", null, itemData, null, ActType.ToRoom);
                 }
 
                 // Add the item to the equipment slot
@@ -1340,7 +1345,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                send("You couldn't wear it.\n\r");
+                send("You couldn't wear it.\r\n");
                 return false;
             }
         }
@@ -1402,26 +1407,26 @@ namespace CrimsonStainedLands
                             switch (Position)
                             {
                                 case Positions.Dead:
-                                    SendToChar("Lie still; you are DEAD.\n\r");
+                                    SendToChar("Lie still; you are DEAD.\r\n");
                                     break;
                                 case Positions.Mortal:
                                 case Positions.Incapacitated:
-                                    SendToChar("You are hurt far too bad for that.\n\r");
+                                    SendToChar("You are hurt far too bad for that.\r\n");
                                     break;
                                 case Positions.Stunned:
-                                    SendToChar("You are too stunned to do that.\n\r");
+                                    SendToChar("You are too stunned to do that.\r\n");
                                     break;
                                 case Positions.Sleeping:
-                                    SendToChar("In your dreams or what?\n\r");
+                                    SendToChar("In your dreams or what?\r\n");
                                     break;
                                 case Positions.Resting:
-                                    SendToChar("Nah... You feel too relaxed...\n\r");
+                                    SendToChar("Nah... You feel too relaxed...\r\n");
                                     break;
                                 case Positions.Sitting:
-                                    SendToChar("Better stand up first.\n\r");
+                                    SendToChar("Better stand up first.\r\n");
                                     break;
                                 case Positions.Fighting:
-                                    SendToChar("No way! You are still fighting!\n\r");
+                                    SendToChar("No way! You are still fighting!\r\n");
                                     break;
                             }
                             return;
@@ -1454,7 +1459,7 @@ namespace CrimsonStainedLands
 
                 // If no matching command is found, check for social commands
                 if (!CheckSocials(arg, arguments))
-                    send("Huh?\n\r");
+                    send("Huh?\r\n");
             }
             else
             {
@@ -1485,19 +1490,19 @@ namespace CrimsonStainedLands
                     {
                         // Check the character's position against certain positions that restrict social commands
                         case Positions.Dead:
-                            SendToChar("Lie still; you are DEAD.\n\r");
+                            SendToChar("Lie still; you are DEAD.\r\n");
                             return true;
                         case Positions.Mortal:
                         case Positions.Incapacitated:
-                            SendToChar("You are hurt far too bad for that.\n\r");
+                            SendToChar("You are hurt far too bad for that.\r\n");
                             return true;
                         case Positions.Stunned:
-                            SendToChar("You are too stunned to do that.\n\r");
+                            SendToChar("You are too stunned to do that.\r\n");
                             return true;
                         case Positions.Sleeping:
                             if (social.Name == "snore")
                                 break; // Continue executing the social command
-                            SendToChar("In your dreams or what?\n\r");
+                            SendToChar("In your dreams or what?\r\n");
                             return true;
                     }
 
@@ -1510,7 +1515,7 @@ namespace CrimsonStainedLands
                     else if (string.IsNullOrEmpty(arguments) || (victim = GetCharacterFromRoomByName(arguments, ref count)) == null)
                     {
                         // The victim is not found in the room
-                        send("They aren't here.\n\r");
+                        send("They aren't here.\r\n");
                     }
                     else if (victim == this)
                     {
@@ -1603,7 +1608,7 @@ namespace CrimsonStainedLands
             // Check if character's legs are bound, preventing movement
             if (IsAffected(AffectFlags.BindLegs))
             {
-                this.Act("You can't move while your legs are bound!\n\r");
+                this.Act("You can't move while your legs are bound!\r\n");
                 return;
             }
 
@@ -1612,31 +1617,31 @@ namespace CrimsonStainedLands
             {
                 if (Position == Positions.Dead)
                 {
-                    SendToChar("Lie still; you are DEAD.\n\r");
+                    SendToChar("Lie still; you are DEAD.\r\n");
                 }
                 else if (Position < Positions.Incapacitated)
                 {
-                    SendToChar("You are hurt far too bad for that.\n\r");
+                    SendToChar("You are hurt far too bad for that.\r\n");
                 }
                 else if (Position == Positions.Sitting)
                 {
-                    SendToChar("You are too stunned to do that.\n\r");
+                    SendToChar("You are too stunned to do that.\r\n");
                 }
                 else if (Position < Positions.Resting)
                 {
-                    SendToChar("Nah... You feel too relaxed...\n\r");
+                    SendToChar("Nah... You feel too relaxed...\r\n");
                 }
                 else if (Position == Positions.Sitting)
                 {
-                    SendToChar("Better stand up first.\n\r");
+                    SendToChar("Better stand up first.\r\n");
                 }
                 else if (Position == Positions.Fighting)
                 {
-                    SendToChar("No way! You are still fighting!\n\r");
+                    SendToChar("No way! You are still fighting!\r\n");
                 }
                 else
                 {
-                    SendToChar("You aren't in the right position?\n\r");
+                    SendToChar("You aren't in the right position?\r\n");
                 }
                 return;
             }
@@ -1644,7 +1649,7 @@ namespace CrimsonStainedLands
             // Check if character is currently in combat
             if (Fighting != null)
             {
-                SendToChar("No way! You are still fighting!\n\r");
+                SendToChar("No way! You are still fighting!\r\n");
                 return;
             }
 
@@ -1663,14 +1668,14 @@ namespace CrimsonStainedLands
                     (!exit.flags.Contains(ExitFlags.Window) && crawl) ||
                     (!IsImmortal && (Level > exit.destination.MaxLevel || Level < exit.destination.MinLevel)))
                 {
-                    SendToChar("Alas, you cannot go that way.\n\r");
+                    SendToChar("Alas, you cannot go that way.\r\n");
                     return;
                 }
 
                 // Check if character's size is too large to fit through the exit
                 if (Size > exit.ExitSize)
                 {
-                    send("You can't fit.\n\r");
+                    send("You can't fit.\r\n");
                     return;
                 }
 
@@ -1686,7 +1691,7 @@ namespace CrimsonStainedLands
                 // Check character's movement points for sufficient stamina
                 if (!IsNPC && MovementPoints < movementCost)
                 {
-                    SendToChar("You can barely feel your feet!\n\r");
+                    SendToChar("You can barely feel your feet!\r\n");
                     return;
                 }
 
@@ -1705,13 +1710,13 @@ namespace CrimsonStainedLands
                 // Check if flying is required to move through air sectors
                 if ((wasInRoom.sector == SectorTypes.Air || exit.destination.sector == SectorTypes.Air) && !IsAffected(AffectFlags.Flying))
                 {
-                    send("You can't fly.\n\r");
+                    send("You can't fly.\r\n");
                     return;
                 }
 
                 if (creep && (!exit.destination.IsWilderness || exit.destination.IsWater))
                 {
-                    send("There's no cover there.\n\r");
+                    send("There's no cover there.\r\n");
                     return;
                 }
 
@@ -1723,7 +1728,7 @@ namespace CrimsonStainedLands
                     !Inventory.Any(b => b.ItemType.ISSET(ItemTypes.Boat)) &&
                     !Equipment.Values.Any(b => b.ItemType.ISSET(ItemTypes.Boat)))
                 {
-                    send("You need a boat to go there.\n\r");
+                    send("You need a boat to go there.\r\n");
                     return;
                 }
 
@@ -1732,7 +1737,7 @@ namespace CrimsonStainedLands
                     !IsAffected(AffectFlags.Swim) &&
                     !IsAffected(AffectFlags.WaterBreathing))
                 {
-                    send("You need water breathing to go there.\n\r");
+                    send("You need water breathing to go there.\r\n");
                     return;
                 }
 
@@ -1848,7 +1853,7 @@ namespace CrimsonStainedLands
                 }
 
                 if (!IsAffected(AffectFlags.Sneak))
-                    Act("$n arrives from " + reverseDirections[(int)direction] + ".\n\r", type: ActType.ToRoom);
+                    Act("$n arrives from " + reverseDirections[(int)direction] + ".\r\n", type: ActType.ToRoom);
 
                 /// Executed under AddCharacterToRoom
                 // Execute actions upon entering the new room
@@ -1870,8 +1875,8 @@ namespace CrimsonStainedLands
                     {
                         if (cch != this && cch.Following == this && (!(cch is Player) || ((Player)cch).connection != null) && cch.IsAwake)
                         {
-                            cch.SendToChar("You follow " + Display(this) + " " + direction.ToString().ToLower() + ".\n\r");
-                            cch.Act("$n follows $N " + direction.ToString().ToLower() + ".\n\r", this, null, null, ActType.ToRoom);
+                            cch.SendToChar("You follow " + Display(this) + " " + direction.ToString().ToLower() + ".\r\n");
+                            cch.Act("$n follows $N " + direction.ToString().ToLower() + ".\r\n", this, null, null, ActType.ToRoom);
                             cch.moveChar(direction, follow, crawl, false, sendWalkMessage, false, movementCost, movementWait);
                         }
                         else if (cch != this && cch.Following == this && cch is Player && ((Player)cch).connection == null)
@@ -1897,7 +1902,7 @@ namespace CrimsonStainedLands
                 }
 
                 //if (!IsAffected(AffectFlags.Sneak))
-                //    Act("$n arrives from " + reverseDirections[(int)direction] + ".\n\r", type: ActType.ToRoom);
+                //    Act("$n arrives from " + reverseDirections[(int)direction] + ".\r\n", type: ActType.ToRoom);
 
                 // Execute aggressive actions for characters in the room
                 if (first)
@@ -1907,7 +1912,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                SendToChar("Alas, you cannot go that way.\n\r");
+                SendToChar("Alas, you cannot go that way.\r\n");
             }
         }
 
@@ -2064,12 +2069,12 @@ namespace CrimsonStainedLands
 
                         if (share_silver > 0)
                         {
-                            send("You split {0} silver coins. Your share is {1} silver.\n\r", item.Silver, share_silver + extra_silver);
+                            send("You split {0} silver coins. Your share is {1} silver.\r\n", item.Silver, share_silver + extra_silver);
                         }
 
                         if (share_gold > 0)
                         {
-                            send("You split {0} gold coins. Your share is {1} gold.\n\r", item.Gold, share_gold + extra_gold);
+                            send("You split {0} gold coins. Your share is {1} gold.\r\n", item.Gold, share_gold + extra_gold);
 
                         }
                         string buf;
@@ -2086,7 +2091,7 @@ namespace CrimsonStainedLands
                         else
                         {
                             buf = string.Format(
-                                "$n splits {0} silver and {1} gold coins, giving you {2} silver and {3} gold.\n\r",
+                                "$n splits {0} silver and {1} gold coins, giving you {2} silver and {3} gold.\r\n",
                                  item.Silver, item.Gold, share_silver, share_gold);
                         }
 
@@ -2122,14 +2127,14 @@ namespace CrimsonStainedLands
         {
             if (this.Following != null)
             {
-                this.send("You stop following " + (this.Following.Display(this)) + ".\n\r");
+                this.send("You stop following " + (this.Following.Display(this)) + ".\r\n");
                 if (this.Following.Group.Contains(this))
                     this.Following.Group.Remove(this);
 
                 this.Following = null;
                 this.Leader = null;
             }
-            this.send("You stop allowing followers.\n\r");
+            this.send("You stop allowing followers.\r\n");
 
             foreach (var other in Characters.ToArray())
             {
@@ -2140,8 +2145,8 @@ namespace CrimsonStainedLands
                     {
                         other.Leader = null;
                         if (this.Group.Contains(other)) this.Group.Remove(other);
-                        this.Act("$N leaves your group.\n\r", other, type: ActType.ToChar);
-                        this.Act("You leave $n's group.\n\r", other, type: ActType.ToVictim);
+                        this.Act("$N leaves your group.\r\n", other, type: ActType.ToChar);
+                        this.Act("You leave $n's group.\r\n", other, type: ActType.ToVictim);
                     }
                     if (other == this.Pet)
                     {
@@ -2158,8 +2163,8 @@ namespace CrimsonStainedLands
                     {
 
                         other.Following = null;
-                        this.Act("$N stops following you.\n\r", other, type: ActType.ToChar);
-                        this.Act("You stop following $n.\n\r", other, type: ActType.ToVictim);
+                        this.Act("$N stops following you.\r\n", other, type: ActType.ToChar);
+                        this.Act("You stop following $n.\r\n", other, type: ActType.ToVictim);
                     }
                 }
             }
@@ -2540,7 +2545,7 @@ namespace CrimsonStainedLands
                     {
                         character.StopFollowing(); // unfollow, ungroup
                         //character.Following = null;
-                        //character.send("You stop following " + Display(character) + ".\n\r");
+                        //character.send("You stop following " + Display(character) + ".\r\n");
                     }
 
                     if (character.Fighting == this)
@@ -2548,7 +2553,7 @@ namespace CrimsonStainedLands
                         character.Fighting = null;
                         if (character.Position == Positions.Fighting)
                             character.Position = Positions.Standing;
-                        character.send("You stop fighting " + (Display(character)) + ".\n\r");
+                        character.send("You stop fighting " + (Display(character)) + ".\r\n");
                     }
 
                     if (character.LastFighting == this)
@@ -2624,7 +2629,7 @@ namespace CrimsonStainedLands
                     break;
             } // switch/select random part
 
-            Act(msg + "\n\r", type: ActType.ToRoom);
+            Act(msg + "\r\n", type: ActType.ToRoom);
 
             if (vnum != 0 && ItemTemplateData.Templates.TryGetValue(vnum, out ItemTemplateData template) && Room != null)
             {
@@ -2650,7 +2655,7 @@ namespace CrimsonStainedLands
                     {
                         foreach (Character other in exit.destination.Characters)
                         {
-                            other.send(msg + "\n\r");
+                            other.send(msg + "\r\n");
                         }
                     }
                 }
@@ -3054,7 +3059,7 @@ namespace CrimsonStainedLands
                     formatmsg.Append(msg[i]);
 
             }
-            if (!msg.EndsWith("\n\r"))
+            if (!msg.EndsWith("\r\n"))
                 formatmsg.AppendLine();
 
             string output;
@@ -3265,17 +3270,17 @@ namespace CrimsonStainedLands
                     if (sk.SkillTypes.ISSET(SkillSpellTypes.Form))
                     {
                         if (GetSkillPercentage(sk) == 100)
-                            send("\\GYou feel confident as a {0}!\\x\n\r", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
+                            send("\\GYou feel confident as a {0}!\\x\r\n", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
                         else
-                            send("\\GYou feel more confident as a {0}!\\x\n\r", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
+                            send("\\GYou feel more confident as a {0}!\\x\r\n", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
                     }
                     else if (GetSkillPercentage(sk) == 100)
                     {
-                        send("\\GYou have perfected {0}!\\x\n\r", sk.name);
+                        send("\\GYou have perfected {0}!\\x\r\n", sk.name);
                     }
                     else
                     {
-                        send("\\YYou have become better at {0}!\\x\n\r", sk.name);
+                        send("\\YYou have become better at {0}!\\x\r\n", sk.name);
                     }
                 }
             }
@@ -3292,17 +3297,17 @@ namespace CrimsonStainedLands
                     if (sk.SkillTypes.ISSET(SkillSpellTypes.Form))
                     {
                         if (GetSkillPercentage(sk) == 100)
-                            send("\\GYou feel confident as a {0}!\\x\n\r", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
+                            send("\\GYou feel confident as a {0}!\\x\r\n", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
                         else
-                            send("\\GYou feel more confident as a {0}!\\x\n\r", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
+                            send("\\GYou feel more confident as a {0}!\\x\r\n", (from form in ShapeshiftForm.Forms where form.FormSkill == sk select form.Name).FirstOrDefault() ?? "unknown");
                     }
                     else if (GetSkillPercentage(sk) == 100)
                     {
-                        send("\\GYou learn from your mistakes, and manage to perfect {0}!\\x\n\r", sk.name);
+                        send("\\GYou learn from your mistakes, and manage to perfect {0}!\\x\r\n", sk.name);
                     }
                     else
                     {
-                        send("\\YYou learn from your mistakes, and your {0} skill improves!\\x\n\r", sk.name);
+                        send("\\YYou learn from your mistakes, and your {0} skill improves!\\x\r\n", sk.name);
 
                     }
                 }
@@ -3311,7 +3316,7 @@ namespace CrimsonStainedLands
             {
                 if (prereqnotmet.Key.PrerequisitesMet(this))
                 {
-                    send("\\CYou feel a rush of insight into {0}!\\x\n\r", prereqnotmet.Key.name);
+                    send("\\CYou feel a rush of insight into {0}!\\x\r\n", prereqnotmet.Key.name);
                 }
             }
         } // End of check improve
@@ -3695,8 +3700,8 @@ namespace CrimsonStainedLands
         {
             if (Following != null)
             {
-                send("You stop following " + (Following.Display(this)) + ".\n\r");
-                Following.send(Display(Following) + " stops following you.\n\r");
+                send("You stop following " + (Following.Display(this)) + ".\r\n");
+                Following.send(Display(Following) + " stops following you.\r\n");
                 if (Following.Group.Contains(this))
                     Following.Group.Remove(this);
                 if (Following.Pet == this)
@@ -3798,7 +3803,7 @@ namespace CrimsonStainedLands
                 return;
             else if (chance < Utility.NumberPercent())
             {
-                ch.Act("You failed to peek at $N's inventory.\n\r", victim);
+                ch.Act("You failed to peek at $N's inventory.\r\n", victim);
                 ch.CheckImprove("peek", false, 1);
                 return;
             }
@@ -3899,13 +3904,13 @@ namespace CrimsonStainedLands
                 aff.duration /= 2;
                 aff.modifier /= 2;
                 aff.level /= 2;
-                victim.Act("The sores on $n's body look less severe.\n\r", type: ActType.ToRoom);
-                victim.Act("The sores on your body look less severe.\n\r");
+                victim.Act("The sores on $n's body look less severe.\r\n", type: ActType.ToRoom);
+                victim.Act("The sores on your body look less severe.\r\n");
             }
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(SkillSpell.SkillLookup("blindness")))
             {
                 victim.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
-                victim.send("Your vision returns!\n\r");
+                victim.send("Your vision returns!\r\n");
             }
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Poison))
             {
@@ -4073,17 +4078,17 @@ namespace CrimsonStainedLands
                     }
                     foreach (var itemkvp in tempItemList)
                     {
-                        ch.send("    " + (itemkvp.Value > 1 ? "[" + itemkvp.Value + "] " : "") + itemkvp.Key + "\n\r");
+                        ch.send("    " + (itemkvp.Value > 1 ? "[" + itemkvp.Value + "] " : "") + itemkvp.Key + "\r\n");
                     }
                     if (tempItemList.Count == 0)
-                        ch.Act("$p appears to be empty.\n\r", null, lookitem);
+                        ch.Act("$p appears to be empty.\r\n", null, lookitem);
                 }
 
                 //foreach (var subitem in lookitem.Contains)
-                //    ch.send("    " + subitem.ShortDescription + "\n\r");
+                //    ch.send("    " + subitem.ShortDescription + "\r\n");
             }
 
-            else ch.Act("$p appears to be empty.\n\r", null, lookitem);
+            else ch.Act("$p appears to be empty.\r\n", null, lookitem);
         }
 
         public static void ScanDirection(Character ch, Direction direction, RoomData room = null, int depth = 0)
@@ -4092,8 +4097,8 @@ namespace CrimsonStainedLands
             if (room == null) room = ch.Room;
             if (depth == 1)
             {
-                ch.send("You scan " + direction.ToString().ToLower() + ".\n\r");
-                ch.Act("$n scans " + direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
+                ch.send("You scan " + direction.ToString().ToLower() + ".\r\n");
+                ch.Act("$n scans " + direction.ToString().ToLower() + ".\r\n", type: ActType.ToRoom);
             }
             ExitData exit;
             if ((exit = room.exits[(int)direction]) != null && exit.destination != null)// && !exit.flags.ISSET(ExitFlags.Closed))
@@ -4105,18 +4110,18 @@ namespace CrimsonStainedLands
                 var fog = SkillSpell.SkillLookup("faerie fog");
                 if (exit.flags.ISSET(ExitFlags.Closed))
                 {
-                    ch.send("**** " + depth + " " + direction.ToString() + " ****\n\r");
-                    ch.send("Closed\n\r");
+                    ch.send("**** " + depth + " " + direction.ToString() + " ****\r\n");
+                    ch.send("Closed\r\n");
                     return;
                 }
                 //else if (!ch.IsAffected(AffectFlags.Infrared) && !ch.IsAffected(AffectFlags.DarkVision) && !ch.IsAffected(AffectFlags.NightVision)  && IsDark)
                 //{
-                //    ch.send("**** " + depth + " " + direction.ToString() + " ****\n\r");
-                //    ch.send("Too dark to tell\n\r");
+                //    ch.send("**** " + depth + " " + direction.ToString() + " ****\r\n");
+                //    ch.send("Too dark to tell\r\n");
                 //}
                 else if (others.Any())
                 {
-                    ch.send("**** " + depth + " " + direction.ToString() + " ****\n\r");
+                    ch.send("**** " + depth + " " + direction.ToString() + " ****\r\n");
                     foreach (var other in others)
                     {
 
@@ -4129,7 +4134,7 @@ namespace CrimsonStainedLands
                     ScanDirection(ch, direction, exit.destination, depth);
 
                 // if (depth == 1)
-                //ch.send("\n\r");
+                //ch.send("\r\n");
 
             }
             else
@@ -4170,7 +4175,7 @@ namespace CrimsonStainedLands
                             return;
                         }
 
-                        ch.send(skill.name + " " + percent + "% {0} mana\n\r", skill.GetManaCost(ch));
+                        ch.send(skill.name + " " + percent + "% {0} mana\r\n", skill.GetManaCost(ch));
                     }
                     return;
                 }
@@ -4214,7 +4219,7 @@ namespace CrimsonStainedLands
                             column++;
                     }
                 }
-                ch.send(text + "\n\r");
+                ch.send(text + "\r\n");
             }
         }
 
@@ -4224,7 +4229,7 @@ namespace CrimsonStainedLands
             {
                 if (Carry + 1 > MaxCarry)
                 {
-                    send("You can't carry anymore items.\n\r");
+                    send("You can't carry anymore items.\r\n");
                     return false;
                 }
 
@@ -4232,26 +4237,26 @@ namespace CrimsonStainedLands
                 {
                     if (TotalWeight + item.Weight > MaxWeight)
                     {
-                        send("You can't carry anymore weight.\n\r");
+                        send("You can't carry anymore weight.\r\n");
                         return false;
                     }
                     Room.items.Remove(item);
                     item.Room = null;
-                    Act("You get $p.\n\r", null, item, type: ActType.ToChar);
-                    Act("$n gets $p.\n\r", null, item, null, ActType.ToRoom);
+                    Act("You get $p.\r\n", null, item, type: ActType.ToChar);
+                    Act("$n gets $p.\r\n", null, item, null, ActType.ToRoom);
                 }
                 else
                 {
                     if (container.CarriedBy != this && TotalWeight + item.Weight > MaxWeight)
                     {
-                        send("You can't carry anymore weight.\n\r");
+                        send("You can't carry anymore weight.\r\n");
                         return false;
                     }
 
                     container.Contains.Remove(item);
                     item.Container = null;
-                    Act("You get $p from $P.\n\r", null, item, container, ActType.ToChar);
-                    Act("$n gets $p from $P.\n\r", null, item, container, ActType.ToRoom);
+                    Act("You get $p from $P.\r\n", null, item, container, ActType.ToChar);
+                    Act("$n gets $p from $P.\r\n", null, item, container, ActType.ToRoom);
                 }
                 AddInventoryItem(item);
                 return true;
@@ -4266,7 +4271,7 @@ namespace CrimsonStainedLands
             {
                 if (container.extraFlags.Contains(ExtraFlags.Closed))
                 {
-                    ch.Act("$p is closed.\n\r", null, container, null, ActType.ToChar);
+                    ch.Act("$p is closed.\r\n", null, container, null, ActType.ToChar);
                     return false;
                 }
                 float weight = container.totalweight;
@@ -4276,15 +4281,15 @@ namespace CrimsonStainedLands
 
                     ch.Inventory.Remove(item);
                     container.Contains.Insert(0, item);
-                    ch.Act("You put $p in $P.\n\r", null, item, container, ActType.ToChar);
-                    ch.Act("$n puts $p in $P.\n\r", null, item, container, ActType.ToRoom);
+                    ch.Act("You put $p in $P.\r\n", null, item, container, ActType.ToChar);
+                    ch.Act("$n puts $p in $P.\r\n", null, item, container, ActType.ToRoom);
                     item.CarriedBy = container.CarriedBy;
                     item.Container = container;
                     return true;
                 }
                 else
                 {
-                    ch.send("{0} cannot hold that much weight.\n\r", container.Display(ch));
+                    ch.send("{0} cannot hold that much weight.\r\n", container.Display(ch));
                 }
             }
             return false;

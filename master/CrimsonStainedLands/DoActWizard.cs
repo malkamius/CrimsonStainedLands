@@ -22,31 +22,31 @@ namespace CrimsonStainedLands
             {
                 if (RoomData.Rooms.TryGetValue(vnum, out RoomData room))
                 {
-                    ch.Act("$n disappears in a puff of smoke.\n\r", type: ActType.ToRoom);
+                    ch.Act("$n disappears in a puff of smoke.\r\n", type: ActType.ToRoom);
                     ch.RemoveCharacterFromRoom();
-                    ch.SendToChar("You goto " + room.Vnum + ".\n\r");
+                    ch.SendToChar("You goto " + room.Vnum + ".\r\n");
                     ch.AddCharacterToRoom(room);
                     
-                    ch.Act("$n appears out of a puff of smoke.\n\r", type: ActType.ToRoom);
+                    ch.Act("$n appears out of a puff of smoke.\r\n", type: ActType.ToRoom);
 
                     //Character.DoLook(ch, "auto");
                 }
                 else
-                    ch.SendToChar("Room not found.\n\r");
+                    ch.SendToChar("Room not found.\r\n");
             }
             else if ((other = ch.GetCharacterFromListByName(Character.Characters, arguments, ref count)) != null && other.Room != null)
             {
-                ch.Act("$n disappears in a puff of smoke.\n\r", type: ActType.ToRoom);
+                ch.Act("$n disappears in a puff of smoke.\r\n", type: ActType.ToRoom);
                 ch.RemoveCharacterFromRoom();
-                ch.SendToChar("You goto " + other.Room.Vnum + ".\n\r");
+                ch.SendToChar("You goto " + other.Room.Vnum + ".\r\n");
                 ch.AddCharacterToRoom(other.Room);
                 
-                ch.Act("$n appears out of a puff of smoke.\n\r", type: ActType.ToRoom);
+                ch.Act("$n appears out of a puff of smoke.\r\n", type: ActType.ToRoom);
 
                 //Character.DoLook(ch, "auto");
             }
             else
-                ch.SendToChar("Enter a valid vnum.\n\r");
+                ch.SendToChar("Enter a valid vnum.\r\n");
         }
 
         public static void DoSetPlayerPassword(Character ch, string arguments)
@@ -63,16 +63,16 @@ namespace CrimsonStainedLands
             }
             else if (!ch.IsImmortal)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }            
             else if (playerName.ISEMPTY() || password.ISEMPTY() || passwordConfirm.ISEMPTY())
             {
-                ch.send("Syntax: SetPlayerPassword {Player Name} {New Password} {Confirm New Password}\n\r");
+                ch.send("Syntax: SetPlayerPassword {Player Name} {New Password} {Confirm New Password}\r\n");
             }
             else if (password != passwordConfirm)
             {
-                ch.send("Passwords do not match.\n\r");
+                ch.send("Passwords do not match.\r\n");
             }
             else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(playerName) select connection).FirstOrDefault()) == null)
             {
@@ -89,7 +89,7 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.send("Could not find player.\n\r");
+                    ch.send("Could not find player.\r\n");
                 }
             }
             else
@@ -176,11 +176,11 @@ namespace CrimsonStainedLands
             }
             else if ((player = (from connection in Game.Instance.Info.Connections where connection.Name.StringCmp(characterName) select connection).FirstOrDefault()) == null)
             {
-                ch.send("No player with that exact name found.\n\r");
+                ch.send("No player with that exact name found.\r\n");
             }
             else if(level > ch.Level)
             {
-                ch.send("Level must be between 1 and " + ch.Level + ".\n\r");
+                ch.send("Level must be between 1 and " + ch.Level + ".\r\n");
             }
             else if (level < 1 || level > Game.MAX_LEVEL)
             {
@@ -191,7 +191,7 @@ namespace CrimsonStainedLands
                 if (level < player.Level)
                 {
                     player.Level = level;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
                 else if (level > player.Level)
                 {
@@ -200,10 +200,10 @@ namespace CrimsonStainedLands
                         player.AdvanceLevel(false);
                     }
                     player.AdvanceLevel(true);
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
                 else
-                    ch.send("They are already that level.\n\r");
+                    ch.send("They are already that level.\r\n");
             }
         }
 
@@ -212,7 +212,7 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Syntax: Enumerate [npcs|mobs|areas|rooms|items|objects] [filter]\n\r");
+                ch.send("Syntax: Enumerate [npcs|mobs|areas|rooms|items|objects] [filter]\r\n");
             }
             else
             {
@@ -228,7 +228,7 @@ namespace CrimsonStainedLands
                         {
                             if (arguments.ISEMPTY() || npc.Name.IsName(arguments))
                             {
-                                ch.send("Vnum " + npc.vnum + " - " + (!npc.ShortDescription.ISEMPTY() ? npc.ShortDescription : npc.Name) + "\n\r");
+                                ch.send("Vnum " + npc.vnum + " - " + (!npc.ShortDescription.ISEMPTY() ? npc.ShortDescription : npc.Name) + "\r\n");
                             }
                         }
                     }
@@ -238,7 +238,7 @@ namespace CrimsonStainedLands
                         {
                             if (arguments.ISEMPTY() || item.Name.IsName(arguments))
                             {
-                                ch.send("Vnum " + item.Template.Vnum + " - " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + " {0} {1}\n\r",
+                                ch.send("Vnum " + item.Template.Vnum + " - " + (!item.ShortDescription.ISEMPTY() ? item.ShortDescription : item.Name) + " {0} {1}\r\n",
                                     (item.CarriedBy != null ? "held by" : (item.Room != null ? "on the ground in" : "contained in")),
                                     (item.CarriedBy != null ? item.CarriedBy.Display(ch) : (item.Room != null ? (TimeInfo.IS_NIGHT && !item.Room.NightName.ISEMPTY() ? item.Room.NightName : item.Room.Name) : (item.Container != null ? item.Container.Display(ch) : ""))));
                             }
@@ -250,7 +250,7 @@ namespace CrimsonStainedLands
                         {
                             if (arguments.ISEMPTY() || room.Name.IsName(arguments))
                             {
-                                ch.send("Vnum " + room.Vnum + " - " + room.Name + "\n\r");
+                                ch.send("Vnum " + room.Vnum + " - " + room.Name + "\r\n");
                             }
                         }
                     }
@@ -260,7 +260,7 @@ namespace CrimsonStainedLands
                         {
                             if (arguments.ISEMPTY() || area.Name.IsName(arguments))
                             {
-                                ch.send("Vnums (" + area.VNumStart + " - " + area.VNumEnd + ") - " + area.Name + "\n\r");
+                                ch.send("Vnums (" + area.VNumStart + " - " + area.VNumEnd + ") - " + area.Name + "\r\n");
                             }
                         }
                     }
@@ -279,13 +279,13 @@ namespace CrimsonStainedLands
                             switch (reset.resetType)
                             {
                                 default:
-                                    ch.send("Type: {0} {1} {2} {3}\n\r", reset.resetType.ToString(), reset.roomVnum, reset.spawnVnum, reset.maxCount);
+                                    ch.send("Type: {0} {1} {2} {3}\r\n", reset.resetType.ToString(), reset.roomVnum, reset.spawnVnum, reset.maxCount);
                                     break;
                                 case ResetTypes.NPC:
                                     {
                                         RoomData.Rooms.TryGetValue(reset.roomVnum, out var room);
                                         NPCTemplateData.Templates.TryGetValue(reset.spawnVnum, out var template);
-                                        ch.send("Type: {0} Room: {1} {2}\n\tNPC {3} {4}\n\tMaxCount: {5}\n\r", reset.resetType.ToString(), reset.roomVnum, room != null ? room.Name : "unknown", reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
+                                        ch.send("Type: {0} Room: {1} {2}\n\tNPC {3} {4}\n\tMaxCount: {5}\r\n", reset.resetType.ToString(), reset.roomVnum, room != null ? room.Name : "unknown", reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
                                         lastNPC = template;
                                     }
                                     break;
@@ -293,7 +293,7 @@ namespace CrimsonStainedLands
                                     {
                                         RoomData.Rooms.TryGetValue(reset.roomVnum, out var room);
                                         ItemTemplateData.Templates.TryGetValue(reset.spawnVnum, out var template);
-                                        ch.send("Type: {0} Room: {1} {2}\n\tItem {3} {4}\n\tMaxCount: {5}\n\r", reset.resetType.ToString(), reset.roomVnum, room != null ? room.Name : "unknown", reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
+                                        ch.send("Type: {0} Room: {1} {2}\n\tItem {3} {4}\n\tMaxCount: {5}\r\n", reset.resetType.ToString(), reset.roomVnum, room != null ? room.Name : "unknown", reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
                                         lastItem = template;
                                     }
                                     break;
@@ -302,7 +302,7 @@ namespace CrimsonStainedLands
                                     if (lastNPC != null)
                                     {
                                         ItemTemplateData.Templates.TryGetValue(reset.spawnVnum, out var template);
-                                        ch.send("Type: {0} NPC: {1} {2}\n\tItem {3} {4}\n\tMaxCount: {5}\n\r", reset.resetType.ToString(), lastNPC.Vnum, !lastNPC.ShortDescription.ISEMPTY() ? lastNPC.ShortDescription : lastNPC.Name, reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
+                                        ch.send("Type: {0} NPC: {1} {2}\n\tItem {3} {4}\n\tMaxCount: {5}\r\n", reset.resetType.ToString(), lastNPC.Vnum, !lastNPC.ShortDescription.ISEMPTY() ? lastNPC.ShortDescription : lastNPC.Name, reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
                                         lastItem = template;
                                     }
                                     break;
@@ -310,7 +310,7 @@ namespace CrimsonStainedLands
                                     if (lastItem != null)
                                     {
                                         ItemTemplateData.Templates.TryGetValue(reset.spawnVnum, out var template);
-                                        ch.send("Type: {0} Container: {1} {2}\n\tItem {3} {4}\n\tMaxCount: {5}\n\r", reset.resetType.ToString(), lastItem.Vnum, !lastItem.ShortDescription.ISEMPTY() ? lastItem.ShortDescription : lastItem.Name, reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
+                                        ch.send("Type: {0} Container: {1} {2}\n\tItem {3} {4}\n\tMaxCount: {5}\r\n", reset.resetType.ToString(), lastItem.Vnum, !lastItem.ShortDescription.ISEMPTY() ? lastItem.ShortDescription : lastItem.Name, reset.spawnVnum, template != null ? (!template.ShortDescription.ISEMPTY() ? template.ShortDescription : template.Name) : "unknown", reset.maxCount);
                                         lastItem = template;
                                     }
                                     break;
@@ -321,7 +321,7 @@ namespace CrimsonStainedLands
                     }
 
                 }
-                ch.send("Syntax: Enumerate [npcs|mobs|areas|rooms|items|objects|resets] [filter]\n\r");
+                ch.send("Syntax: Enumerate [npcs|mobs|areas|rooms|items|objects|resets] [filter]\r\n");
             }
         } // end enumerate
 
@@ -329,7 +329,7 @@ namespace CrimsonStainedLands
         {
             if (ch.Room == null || ch.Room.Area == null)
             {
-                ch.send("You aren't in a room or area.\n\r");
+                ch.send("You aren't in a room or area.\r\n");
                 return;
             }
 
@@ -341,16 +341,16 @@ namespace CrimsonStainedLands
                     {
                         if (exit.destination.Area != room.Area && exit.destination.Area != null)
                         {
-                            ch.send("Connection from {0} to {1} in room {2} [{3}] {4} to room {5} [{6}]\n\r",
+                            ch.send("Connection from {0} to {1} in room {2} [{3}] {4} to room {5} [{6}]\r\n",
                                 room.Area.Name, exit.destination.Area.Name, room.Name, room.Vnum,
                                 exit.direction.ToString(), exit.destination.Name, exit.destination.Vnum);
                         }
                         else if (exit.destination.Area != room.Area)
-                            ch.send("Bad exit in {0} [{1}] - {2} to vnum {3} [{4}] without an area\n\r", room.Name, room.Vnum, exit.direction.ToString(), exit.destination.Name, exit.destinationVnum);
+                            ch.send("Bad exit in {0} [{1}] - {2} to vnum {3} [{4}] without an area\r\n", room.Name, room.Vnum, exit.direction.ToString(), exit.destination.Name, exit.destinationVnum);
                     }
                     else if (exit != null)
                     {
-                        ch.send("Bad exit in {0} [{1}] - {2} to bad vnum {3}\n\r", room.Name, room.Vnum, exit.direction.ToString(), exit.destinationVnum);
+                        ch.send("Bad exit in {0} [{1}] - {2} to bad vnum {3}\r\n", room.Name, room.Vnum, exit.direction.ToString(), exit.destinationVnum);
                     }
                 }
             }
@@ -361,15 +361,15 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.HolyLight)))
             {
                 ch.Flags.ADDFLAG(ActFlags.HolyLight);
-                ch.send("\\GHolyLight\\x is \\gON\\x.\n\r");
+                ch.send("\\GHolyLight\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.HolyLight)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.HolyLight);
-                ch.send("\\GHolyLight\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GHolyLight\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: HolyLight [on|off]\n\r");
+                ch.send("Syntax: HolyLight [on|off]\r\n");
         }
 
         public static void DoWizInvis(Character ch, string arguments)
@@ -377,15 +377,15 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.WizInvis)))
             {
                 ch.Flags.ADDFLAG(ActFlags.WizInvis);
-                ch.send("\\GWizInvis\\x is \\gON\\x.\n\r");
+                ch.send("\\GWizInvis\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.WizInvis)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.WizInvis);
-                ch.send("\\GWizInvis\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GWizInvis\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: WizInvis [on|off]\n\r");
+                ch.send("Syntax: WizInvis [on|off]\r\n");
         }
 
         public static void DoResetArea(Character ch, string arguments)
@@ -393,10 +393,10 @@ namespace CrimsonStainedLands
             if (ch.Room != null && ch.Room.Area != null)
             {
                 ch.Room.Area.ResetArea(true);
-                ch.send("Area Reset.\n\r");
+                ch.send("Area Reset.\r\n");
             }
             else
-                ch.send("You aren't in an area.\n\r");
+                ch.send("You aren't in an area.\r\n");
         }
 
         private static void PurgeRoom(RoomData room)
@@ -422,7 +422,7 @@ namespace CrimsonStainedLands
             if (command.ISEMPTY() || "room".StringPrefix(command))
             {
                 PurgeRoom(ch.Room);
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else if ("area".StringPrefix(command))
             {
@@ -434,7 +434,7 @@ namespace CrimsonStainedLands
 
                 if (area == null)
                 {
-                    ch.send("Area not found.\n\r");
+                    ch.send("Area not found.\r\n");
                 }
                 else
                 {
@@ -442,11 +442,11 @@ namespace CrimsonStainedLands
                     {
                         PurgeRoom(room);
                     }
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else
-                ch.send("purge room|purge area {\"@areaname\"}\n\r");
+                ch.send("purge room|purge area {\"@areaname\"}\r\n");
         }
 
         public static void DoShutdown(Character ch, string arguments)
@@ -481,18 +481,18 @@ namespace CrimsonStainedLands
 
                 if (!RoomData.Rooms.TryGetValue(vnum, out room))
                 {
-                    ch.send("Room not found.\n\r");
+                    ch.send("Room not found.\r\n");
                 }
                 else
                 {
-                    ch.send("Room details for {0}\n\r", room.Vnum);
+                    ch.send("Room details for {0}\r\n", room.Vnum);
 
-                    ch.send("Name: {0}\n\r", room.Name);
-                    ch.send("Description: {0}\n\r", room.Description);
-                    ch.send("Exits:\n\r");
+                    ch.send("Name: {0}\r\n", room.Name);
+                    ch.send("Description: {0}\r\n", room.Description);
+                    ch.send("Exits:\r\n");
                     foreach (var exit in room.OriginalExits)
                         if (exit != null)
-                            ch.send("\tDirection {0} Vnum {1} Name {2} Flags {3} Keys {4}\n\r", exit.direction.ToString(), exit.destination != null ? exit.destination.Vnum : exit.destinationVnum, exit.destination != null ? exit.destination.Name : "", string.Join(" ", exit.flags), string.Join(" ", exit.keys));
+                            ch.send("\tDirection {0} Vnum {1} Name {2} Flags {3} Keys {4}\r\n", exit.direction.ToString(), exit.destination != null ? exit.destination.Vnum : exit.destinationVnum, exit.destination != null ? exit.destination.Name : "", string.Join(" ", exit.flags), string.Join(" ", exit.keys));
                 }
             }
             else if ("object".StringPrefix(command) || "item".StringPrefix(command))
@@ -502,36 +502,36 @@ namespace CrimsonStainedLands
                     ItemTemplateData itemTemplate;
                     if (ItemTemplateData.Templates.TryGetValue(vnum, out itemTemplate))
                     {
-                        ch.send("Item Template details for {0}\n\r", itemTemplate.Vnum);
-                        ch.send("Name {0}\n\r", itemTemplate.Name);
-                        ch.send("Short Description {0}\n\r", itemTemplate.ShortDescription);
-                        ch.send("Long Description {0}\n\r", itemTemplate.LongDescription);
+                        ch.send("Item Template details for {0}\r\n", itemTemplate.Vnum);
+                        ch.send("Name {0}\r\n", itemTemplate.Name);
+                        ch.send("Short Description {0}\r\n", itemTemplate.ShortDescription);
+                        ch.send("Long Description {0}\r\n", itemTemplate.LongDescription);
                         if (!itemTemplate.NightShortDescription.ISEMPTY())
-                            ch.send("Night Short Description {0}\n\r", itemTemplate.NightShortDescription);
+                            ch.send("Night Short Description {0}\r\n", itemTemplate.NightShortDescription);
                         if (!itemTemplate.NightLongDescription.ISEMPTY())
-                            ch.send("Night Long Description {0}\n\r", itemTemplate.NightLongDescription);
-                        ch.send("Level {0}\n\r", itemTemplate.Level);
-                        ch.send("Item Types: {0}\n\r", string.Join(" ", (from flag in itemTemplate.itemTypes.Distinct() select flag.ToString())));
+                            ch.send("Night Long Description {0}\r\n", itemTemplate.NightLongDescription);
+                        ch.send("Level {0}\r\n", itemTemplate.Level);
+                        ch.send("Item Types: {0}\r\n", string.Join(" ", (from flag in itemTemplate.itemTypes.Distinct() select flag.ToString())));
 
                         if (itemTemplate.WeaponDamageType != null)
-                            ch.send("Weapon Damage Type {0}\n\r", itemTemplate.WeaponDamageType.Keyword);
-                        ch.send("Weapon Type {0}\n\r", itemTemplate.WeaponType.ToString());
+                            ch.send("Weapon Damage Type {0}\r\n", itemTemplate.WeaponDamageType.Keyword);
+                        ch.send("Weapon Type {0}\r\n", itemTemplate.WeaponType.ToString());
 
-                        ch.send("Damage Dice {0} avg({1})\n\r", itemTemplate.DamageDice.ToString(), itemTemplate.DamageDice.Average);
-                        ch.send("Weight {0}, Max Weight {1}\n\r", itemTemplate.Weight, itemTemplate.MaxWeight);
-                        ch.send("Cost {0}\n\r", itemTemplate.Value);
-                        ch.send("Nutrition {0}, Charges {1}, Max Charges {2}\n\r", itemTemplate.Nutrition, itemTemplate.Charges, itemTemplate.MaxCharges);
-                        ch.send("Material {0}, Liquid {1}\n\r", itemTemplate.Material, itemTemplate.Liquid);
-                        ch.send("Armor bash {0}, slash {1}, pierce {2}, magic {3}\n\r", itemTemplate.ArmorBash, itemTemplate.ArmorSlash, itemTemplate.ArmorPierce, itemTemplate.ArmorExotic);
-                        ch.send("Wear Flags: {0}\n\r", string.Join(" ", (from flag in itemTemplate.wearFlags.Distinct() select flag.ToString())));
-                        ch.send("Extra Flags: {0}\n\r", string.Join(" ", (from flag in itemTemplate.extraFlags.Distinct() select flag.ToString())));
+                        ch.send("Damage Dice {0} avg({1})\r\n", itemTemplate.DamageDice.ToString(), itemTemplate.DamageDice.Average);
+                        ch.send("Weight {0}, Max Weight {1}\r\n", itemTemplate.Weight, itemTemplate.MaxWeight);
+                        ch.send("Cost {0}\r\n", itemTemplate.Value);
+                        ch.send("Nutrition {0}, Charges {1}, Max Charges {2}\r\n", itemTemplate.Nutrition, itemTemplate.Charges, itemTemplate.MaxCharges);
+                        ch.send("Material {0}, Liquid {1}\r\n", itemTemplate.Material, itemTemplate.Liquid);
+                        ch.send("Armor bash {0}, slash {1}, pierce {2}, magic {3}\r\n", itemTemplate.ArmorBash, itemTemplate.ArmorSlash, itemTemplate.ArmorPierce, itemTemplate.ArmorExotic);
+                        ch.send("Wear Flags: {0}\r\n", string.Join(" ", (from flag in itemTemplate.wearFlags.Distinct() select flag.ToString())));
+                        ch.send("Extra Flags: {0}\r\n", string.Join(" ", (from flag in itemTemplate.extraFlags.Distinct() select flag.ToString())));
 
-                        ch.send("Affects: \n   {0}\n\r", string.Join("\n   ", (from aff in itemTemplate.affects select aff.@where + " - " + aff.location.ToString() + " " + aff.modifier + " - " + string.Join(",", aff.flags) + " - " + aff.duration)));
+                        ch.send("Affects: \n   {0}\r\n", string.Join("\n   ", (from aff in itemTemplate.affects select aff.@where + " - " + aff.location.ToString() + " " + aff.modifier + " - " + string.Join(",", aff.flags) + " - " + aff.duration)));
 
                     }
                     else
                     {
-                        ch.send("Item Template with that vnum not found.\n\r");
+                        ch.send("Item Template with that vnum not found.\r\n");
                     }
                 }
                 else
@@ -540,32 +540,32 @@ namespace CrimsonStainedLands
 
                     if (item == null)
                     {
-                        ch.send("You don't see that here.\n\r");
+                        ch.send("You don't see that here.\r\n");
                     }
                     else
                     {
-                        ch.send("Item details for {0}\n\r", item.Vnum);
-                        ch.send("Name {0}\n\r", item.Name);
-                        ch.send("Short Description {0}\n\r", item.ShortDescription);
-                        ch.send("Long Description {0}\n\r", item.LongDescription);
-                        ch.send("Level {0}\n\r", item.Level);
-                        ch.send("Item Types: {0}\n\r", string.Join(" ", (from flag in item.ItemType.Distinct() select flag.ToString())));
+                        ch.send("Item details for {0}\r\n", item.Vnum);
+                        ch.send("Name {0}\r\n", item.Name);
+                        ch.send("Short Description {0}\r\n", item.ShortDescription);
+                        ch.send("Long Description {0}\r\n", item.LongDescription);
+                        ch.send("Level {0}\r\n", item.Level);
+                        ch.send("Item Types: {0}\r\n", string.Join(" ", (from flag in item.ItemType.Distinct() select flag.ToString())));
 
                         if (item.WeaponDamageType != null)
-                            ch.send("Weapon Damage Type {0}\n\r", item.WeaponDamageType.Keyword);
-                        ch.send("Weapon Type {0}\n\r", item.WeaponType.ToString());
+                            ch.send("Weapon Damage Type {0}\r\n", item.WeaponDamageType.Keyword);
+                        ch.send("Weapon Type {0}\r\n", item.WeaponType.ToString());
 
-                        ch.send("Damage Dice {0} avg({1})\n\r", item.DamageDice.ToString(), item.DamageDice.Average);
-                        ch.send("Weight {0}, Max Weight {1}\n\r", item.Weight, item.MaxWeight);
-                        ch.send("Cost {0}\n\r", item.Value);
-                        ch.send("Timer {0}\n\r", item.timer);
-                        ch.send("Nutrition {0}, Charges {1}, Max Charges {2}\n\r", item.Nutrition, item.Charges, item.MaxCharges);
-                        ch.send("Material {0}, Liquid {1}\n\r", item.Material, item.Liquid);
-                        ch.send("Armor bash {0}, slash {1}, pierce {2}, magic {3}\n\r", item.ArmorBash, item.ArmorSlash, item.ArmorPierce, item.ArmorExotic);
-                        ch.send("Wear Flags: {0}\n\r", string.Join(" ", (from flag in item.wearFlags.Distinct() select flag.ToString())));
-                        ch.send("Extra Flags: {0}\n\r", string.Join(" ", (from flag in item.extraFlags.Distinct() select flag.ToString())));
+                        ch.send("Damage Dice {0} avg({1})\r\n", item.DamageDice.ToString(), item.DamageDice.Average);
+                        ch.send("Weight {0}, Max Weight {1}\r\n", item.Weight, item.MaxWeight);
+                        ch.send("Cost {0}\r\n", item.Value);
+                        ch.send("Timer {0}\r\n", item.timer);
+                        ch.send("Nutrition {0}, Charges {1}, Max Charges {2}\r\n", item.Nutrition, item.Charges, item.MaxCharges);
+                        ch.send("Material {0}, Liquid {1}\r\n", item.Material, item.Liquid);
+                        ch.send("Armor bash {0}, slash {1}, pierce {2}, magic {3}\r\n", item.ArmorBash, item.ArmorSlash, item.ArmorPierce, item.ArmorExotic);
+                        ch.send("Wear Flags: {0}\r\n", string.Join(" ", (from flag in item.wearFlags.Distinct() select flag.ToString())));
+                        ch.send("Extra Flags: {0}\r\n", string.Join(" ", (from flag in item.extraFlags.Distinct() select flag.ToString())));
 
-                        ch.send("Affects: \n   {0}\n\r", string.Join("\n   ", (from aff in item.affects select aff.@where + " - " + aff.location.ToString() + " " + aff.modifier + " - " + string.Join(",", aff.flags) + " - " + aff.duration)));
+                        ch.send("Affects: \n   {0}\r\n", string.Join("\n   ", (from aff in item.affects select aff.@where + " - " + aff.location.ToString() + " " + aff.modifier + " - " + string.Join(",", aff.flags) + " - " + aff.duration)));
 
 
                     }
@@ -579,29 +579,29 @@ namespace CrimsonStainedLands
                     NPCTemplateData npcTemplate;
                     if (NPCTemplateData.Templates.TryGetValue(vnum, out npcTemplate))
                     {
-                        ch.send("NPC Template details for {0}\n\r", npcTemplate.Vnum);
-                        ch.send("Name {0}\n\r", npcTemplate.Name);
-                        ch.send("Short Description {0}\n\r", npcTemplate.ShortDescription);
-                        ch.send("Long Description {0}\n\r", npcTemplate.LongDescription);
-                        ch.send("Level {0}\n\r", npcTemplate.Level);
-                        ch.send("Guild {0}\n\r", npcTemplate.Guild != null? npcTemplate.Guild.name : "none");
-                        ch.send("Gold {0}\n\r", npcTemplate.Gold);
-                        ch.send("Silver {0}\n\r", npcTemplate.Silver);
-                        ch.send("Race {0}\n\r", npcTemplate.Race != null ? npcTemplate.Race.name : "unknown");
-                        ch.send("Hitpoint Dice {0} avg ({1})\n\r", npcTemplate.HitPointDice.ToString(), npcTemplate.HitPointDice.Average);
-                        ch.send("Manapoint Dice {0} avg ({1})\n\r", npcTemplate.ManaPointDice.ToString(), npcTemplate.ManaPointDice.Average);
-                        ch.send("Damage Dice {0} avg ({1})\n\r", npcTemplate.DamageDice.ToString(), npcTemplate.DamageDice.Average);
-                        ch.send("HitRoll {0}, DamageRoll {1}\n\r", npcTemplate.HitRoll, npcTemplate.DamageRoll);
-                        ch.send("Act Flags: {0}\n\r", string.Join(" ", (from flag in npcTemplate.Flags.Distinct() select flag.ToString())));
-                        ch.send("AffectedBy Flags: {0}\n\r", string.Join(" ", (from flag in npcTemplate.AffectedBy.Distinct() select flag.ToString())));
-                        ch.send("Alignment {0}\n\r", npcTemplate.Alignment.ToString());
-                        ch.send("Armor bash {0}, slash {1}, pierce {2}, magic {3}\n\r", npcTemplate.ArmorBash, npcTemplate.ArmorSlash, npcTemplate.ArmorPierce, npcTemplate.ArmorExotic);
-                        ch.send("Skills: {0}\n\r", (string.Join(" ", from sk in npcTemplate.Learned select sk.Key.name)));
-                        ch.send("Affects: \n   {0}\n\r", string.Join("\n   ", (from aff in npcTemplate.AffectsList select aff.displayName + ", " + aff.@where + ", " + aff.location.ToString() + " " + aff.modifier + ", " + string.Join(",", aff.flags) + ", " + aff.duration)));
+                        ch.send("NPC Template details for {0}\r\n", npcTemplate.Vnum);
+                        ch.send("Name {0}\r\n", npcTemplate.Name);
+                        ch.send("Short Description {0}\r\n", npcTemplate.ShortDescription);
+                        ch.send("Long Description {0}\r\n", npcTemplate.LongDescription);
+                        ch.send("Level {0}\r\n", npcTemplate.Level);
+                        ch.send("Guild {0}\r\n", npcTemplate.Guild != null? npcTemplate.Guild.name : "none");
+                        ch.send("Gold {0}\r\n", npcTemplate.Gold);
+                        ch.send("Silver {0}\r\n", npcTemplate.Silver);
+                        ch.send("Race {0}\r\n", npcTemplate.Race != null ? npcTemplate.Race.name : "unknown");
+                        ch.send("Hitpoint Dice {0} avg ({1})\r\n", npcTemplate.HitPointDice.ToString(), npcTemplate.HitPointDice.Average);
+                        ch.send("Manapoint Dice {0} avg ({1})\r\n", npcTemplate.ManaPointDice.ToString(), npcTemplate.ManaPointDice.Average);
+                        ch.send("Damage Dice {0} avg ({1})\r\n", npcTemplate.DamageDice.ToString(), npcTemplate.DamageDice.Average);
+                        ch.send("HitRoll {0}, DamageRoll {1}\r\n", npcTemplate.HitRoll, npcTemplate.DamageRoll);
+                        ch.send("Act Flags: {0}\r\n", string.Join(" ", (from flag in npcTemplate.Flags.Distinct() select flag.ToString())));
+                        ch.send("AffectedBy Flags: {0}\r\n", string.Join(" ", (from flag in npcTemplate.AffectedBy.Distinct() select flag.ToString())));
+                        ch.send("Alignment {0}\r\n", npcTemplate.Alignment.ToString());
+                        ch.send("Armor bash {0}, slash {1}, pierce {2}, magic {3}\r\n", npcTemplate.ArmorBash, npcTemplate.ArmorSlash, npcTemplate.ArmorPierce, npcTemplate.ArmorExotic);
+                        ch.send("Skills: {0}\r\n", (string.Join(" ", from sk in npcTemplate.Learned select sk.Key.name)));
+                        ch.send("Affects: \n   {0}\r\n", string.Join("\n   ", (from aff in npcTemplate.AffectsList select aff.displayName + ", " + aff.@where + ", " + aff.location.ToString() + " " + aff.modifier + ", " + string.Join(",", aff.flags) + ", " + aff.duration)));
                     }
                     else
                     {
-                        ch.send("NPC Template with that vnum not found.\n\r");
+                        ch.send("NPC Template with that vnum not found.\r\n");
                     }
                 }
 
@@ -612,37 +612,37 @@ namespace CrimsonStainedLands
                     if (target == null) target = ch.GetCharacterFromListByName(Character.Characters, arguments, ref count);
                     if (target == null)
                     {
-                        ch.send("You don't see them here or they are not an NPC.\n\r");
+                        ch.send("You don't see them here or they are not an NPC.\r\n");
                     }
                     else
                     {
                         NPCData npc = null;
                         if (target is NPCData)
                             npc = (NPCData) target;
-                        ch.send("NPC details for {0}\n\r", npc?.vnum);
-                        ch.send("Name {0}\n\r", target.Name);
-                        ch.send("Short Description {0}\n\r", target.ShortDescription);
-                        ch.send("Long Description {0}\n\r", target.LongDescription);
-                        ch.send("Level {0}\n\r", target.Level);
-                        ch.send("Guild {0}\n\r", target.Guild != null? target.Guild.name : "none");
-                        ch.send("Gold {0}\n\r", target.Gold);
-                        ch.send("Silver {0}\n\r", target.Silver);
-                        ch.send("Race {0}\n\r", target.Race != null ? target.Race.name : "unknown");
+                        ch.send("NPC details for {0}\r\n", npc?.vnum);
+                        ch.send("Name {0}\r\n", target.Name);
+                        ch.send("Short Description {0}\r\n", target.ShortDescription);
+                        ch.send("Long Description {0}\r\n", target.LongDescription);
+                        ch.send("Level {0}\r\n", target.Level);
+                        ch.send("Guild {0}\r\n", target.Guild != null? target.Guild.name : "none");
+                        ch.send("Gold {0}\r\n", target.Gold);
+                        ch.send("Silver {0}\r\n", target.Silver);
+                        ch.send("Race {0}\r\n", target.Race != null ? target.Race.name : "unknown");
                         if (npc != null && NPCTemplateData.Templates.TryGetValue(npc.vnum, out var npcTemplate))
                         {
-                            ch.send("Hitpoint Dice {0} avg ({1})\n\r", npcTemplate.HitPointDice.ToString(), npcTemplate.HitPointDice.Average);
-                            ch.send("Manapoint Dice {0} avg ({1})\n\r", npcTemplate.ManaPointDice.ToString(), npcTemplate.ManaPointDice.Average);
-                            ch.send("Damage Dice {0} avg ({1})\n\r", target.DamageDice.ToString(), target.DamageDice.Average);
+                            ch.send("Hitpoint Dice {0} avg ({1})\r\n", npcTemplate.HitPointDice.ToString(), npcTemplate.HitPointDice.Average);
+                            ch.send("Manapoint Dice {0} avg ({1})\r\n", npcTemplate.ManaPointDice.ToString(), npcTemplate.ManaPointDice.Average);
+                            ch.send("Damage Dice {0} avg ({1})\r\n", target.DamageDice.ToString(), target.DamageDice.Average);
                         }
-                        ch.send("Hitpoints {0}/{1}, Mana {2}/{3}, Moves {4}/{5}\n\r", target.HitPoints, target.MaxHitPoints, target.ManaPoints, target.MaxManaPoints, target.MovementPoints, target.MaxMovementPoints);
-                        ch.send("HitRoll {0}, DamageRoll {1}\n\r", target.HitRoll, target.DamageRoll);
-                        ch.send("Act Flags: {0}\n\r", string.Join(" ", (from flag in target.Flags.Distinct() select flag.ToString())));
-                        ch.send("AffectedBy Flags: {0}\n\r", string.Join(" ", (from flag in target.AffectedBy.Distinct() select flag.ToString())));
-                        ch.send("Alignment {0}\n\r", target.Alignment.ToString());
+                        ch.send("Hitpoints {0}/{1}, Mana {2}/{3}, Moves {4}/{5}\r\n", target.HitPoints, target.MaxHitPoints, target.ManaPoints, target.MaxManaPoints, target.MovementPoints, target.MaxMovementPoints);
+                        ch.send("HitRoll {0}, DamageRoll {1}\r\n", target.HitRoll, target.DamageRoll);
+                        ch.send("Act Flags: {0}\r\n", string.Join(" ", (from flag in target.Flags.Distinct() select flag.ToString())));
+                        ch.send("AffectedBy Flags: {0}\r\n", string.Join(" ", (from flag in target.AffectedBy.Distinct() select flag.ToString())));
+                        ch.send("Alignment {0}\r\n", target.Alignment.ToString());
                         var ac = target.GetArmorClass();
-                        ch.send($"Armor bash {ac.acBash}, slash {ac.acSlash}, pierce {ac.acPierce}, magic {ac.acExotic}\n\r");
+                        ch.send($"Armor bash {ac.acBash}, slash {ac.acSlash}, pierce {ac.acPierce}, magic {ac.acExotic}\r\n");
                         if (target.PermanentStats != null)
-                            ch.send("Strength: {0}(+{1}), Wisdom: {2}(+{3}), Intelligence: {4}(+{5}), Dexterity: {6}(+{7}), Constitution: {8}(+{9}), Charisma: {10}(+{11})\n\r",
+                            ch.send("Strength: {0}(+{1}), Wisdom: {2}(+{3}), Intelligence: {4}(+{5}), Dexterity: {6}(+{7}), Constitution: {8}(+{9}), Charisma: {10}(+{11})\r\n",
                                 target.GetCurrentStat(PhysicalStatTypes.Strength), (target.GetModifiedStatUncapped(PhysicalStatTypes.Strength) >= target.GetCurrentStat(PhysicalStatTypes.Strength) ? target.GetModifiedStatUncapped(PhysicalStatTypes.Strength) - target.GetCurrentStat(PhysicalStatTypes.Strength) : 0),
                                 target.GetCurrentStat(PhysicalStatTypes.Wisdom), (target.GetModifiedStatUncapped(PhysicalStatTypes.Wisdom) > target.GetCurrentStat(PhysicalStatTypes.Wisdom) ? target.GetModifiedStatUncapped(PhysicalStatTypes.Wisdom) - target.GetCurrentStat(PhysicalStatTypes.Wisdom) : 0),
                                 target.GetCurrentStat(PhysicalStatTypes.Intelligence), (target.GetModifiedStatUncapped(PhysicalStatTypes.Intelligence) >= target.GetCurrentStat(PhysicalStatTypes.Intelligence) ? target.GetModifiedStatUncapped(PhysicalStatTypes.Intelligence) - target.GetCurrentStat(PhysicalStatTypes.Intelligence) : 0),
@@ -650,15 +650,15 @@ namespace CrimsonStainedLands
                                 target.GetCurrentStat(PhysicalStatTypes.Constitution), (target.GetModifiedStatUncapped(PhysicalStatTypes.Constitution) >= target.GetCurrentStat(PhysicalStatTypes.Constitution) ? target.GetModifiedStatUncapped(PhysicalStatTypes.Constitution) - target.GetCurrentStat(PhysicalStatTypes.Constitution) : 0),
                                 target.GetCurrentStat(PhysicalStatTypes.Charisma), (target.GetModifiedStatUncapped(PhysicalStatTypes.Charisma) >= target.GetCurrentStat(PhysicalStatTypes.Charisma) ? target.GetModifiedStatUncapped(PhysicalStatTypes.Charisma) - target.GetCurrentStat(PhysicalStatTypes.Charisma) : 0));
 
-                        ch.send("Skills: {0}\n\r", (string.Join(" ", from sk in target.Learned select sk.Key.name)));
-                        ch.send("Affects: \n   {0}\n\r", string.Join("\n   ", (from aff in target.AffectsList select aff.displayName + ", " + aff.@where + ", " + aff.location.ToString() + " " + aff.modifier + ", " + string.Join(",", aff.flags) + ", " + aff.duration)));
+                        ch.send("Skills: {0}\r\n", (string.Join(" ", from sk in target.Learned select sk.Key.name)));
+                        ch.send("Affects: \n   {0}\r\n", string.Join("\n   ", (from aff in target.AffectsList select aff.displayName + ", " + aff.@where + ", " + aff.location.ToString() + " " + aff.modifier + ", " + string.Join(",", aff.flags) + ", " + aff.duration)));
 
                     }
                 }
             }
             else
             {
-                ch.send("Stat [mobile|object|character] @name.\n\r");
+                ch.send("Stat [mobile|object|character] @name.\r\n");
             }
         }
         public static void DoString(Character ch, string arguments)
@@ -683,29 +683,29 @@ namespace CrimsonStainedLands
 
                 if (npc == null)
                 {
-                    ch.send("You don't see them here.\n\r");
+                    ch.send("You don't see them here.\r\n");
                 }
                 else
                 {
                     if ("name".StringPrefix(field) && npc.IsNPC)
                     {
                         npc.Name = arguments;
-                        ch.send("NPC Name updated.\n\r");
+                        ch.send("NPC Name updated.\r\n");
                     }
                     else if ("name".StringPrefix(field))
-                        ch.send("You cannot update player names this way.\n\r");
+                        ch.send("You cannot update player names this way.\r\n");
                     else if ("shortdescription".StringPrefix(field))
                     {
                         npc.ShortDescription = arguments;
-                        ch.send("NPC Short Description updated.\n\r");
+                        ch.send("NPC Short Description updated.\r\n");
                     }
                     else if ("longdescription".StringPrefix(field))
                     {
                         npc.LongDescription = arguments;
-                        ch.send("NPC Long Description updated.\n\r");
+                        ch.send("NPC Long Description updated.\r\n");
                     }
                     else
-                        ch.send("Invalid field for NPCs.\n\r");
+                        ch.send("Invalid field for NPCs.\r\n");
                 }
             }
             else if ("object".StringPrefix(command) || "item".StringPrefix(command))
@@ -714,27 +714,27 @@ namespace CrimsonStainedLands
 
                 if (item == null)
                 {
-                    ch.send("You don't see that here.\n\r");
+                    ch.send("You don't see that here.\r\n");
                 }
                 else
                 {
                     if ("name".StringPrefix(field))
                     {
                         item.Name = arguments;
-                        ch.send("Item Name updated.\n\r");
+                        ch.send("Item Name updated.\r\n");
                     }
                     else if ("shortdescription".StringPrefix(field))
                     {
                         item.ShortDescription = arguments;
-                        ch.send("Item Short Description updated.\n\r");
+                        ch.send("Item Short Description updated.\r\n");
                     }
                     else if ("longdescription".StringPrefix(field))
                     {
                         item.LongDescription = arguments;
-                        ch.send("Item Long Description updated.\n\r");
+                        ch.send("Item Long Description updated.\r\n");
                     }
                     else
-                        ch.send("Invalid field for objects.\n\r");
+                        ch.send("Invalid field for objects.\r\n");
                 }
             }
             else
@@ -766,50 +766,50 @@ namespace CrimsonStainedLands
             {
                 if (string.IsNullOrEmpty(valuestring) || !int.TryParse(valuestring, out value))
                 {
-                    ch.send("You must provide a value.\n\r");
+                    ch.send("You must provide a value.\r\n");
                     return;
                 }
                 var npc = ch.GetCharacterFromRoomByName(search, ref count);
 
                 if (npc == null)
                 {
-                    ch.send("You don't see them here.\n\r");
+                    ch.send("You don't see them here.\r\n");
                 }
                 else
                 {
                     if ("level".StringPrefix(field))
                     {
                         npc.Level = value;
-                        ch.send("NPC level updated.\n\r");
+                        ch.send("NPC level updated.\r\n");
                     }
                     else if ("maxhitpoints".StringPrefix(field))
                     {
                         npc.MaxHitPoints = value;
                         npc.HitPoints = value;
-                        ch.send("NPC max hitpoints updated.\n\r");
+                        ch.send("NPC max hitpoints updated.\r\n");
                     }
                     else if ("maxmanapoints".StringPrefix(field))
                     {
                         npc.MaxManaPoints = value;
                         npc.ManaPoints = value;
-                        ch.send("NPC max mana updated.\n\r");
+                        ch.send("NPC max mana updated.\r\n");
                     }
                     else
-                        ch.send("Invalid field for NPCs.\n\r");
+                        ch.send("Invalid field for NPCs.\r\n");
                 }
             }
             else if ("object".StringPrefix(command) || "item".StringPrefix(command))
             {
                 if (string.IsNullOrEmpty(valuestring) || !int.TryParse(valuestring, out value))
                 {
-                    ch.send("You must provide a value.\n\r");
+                    ch.send("You must provide a value.\r\n");
                     return;
                 }
                 var item = ch.GetItemHere(search);
 
                 if (item == null)
                 {
-                    ch.send("You don't see that here.\n\r");
+                    ch.send("You don't see that here.\r\n");
                 }
                 else
                 {
@@ -817,10 +817,10 @@ namespace CrimsonStainedLands
                     {
                         
                         item.Level = level;
-                        ch.send("Item level updated.\n\r");
+                        ch.send("Item level updated.\r\n");
                     }
                     else
-                        ch.send("Invalid field for objects.\n\r");
+                        ch.send("Invalid field for objects.\r\n");
 
                 }
             }
@@ -828,18 +828,18 @@ namespace CrimsonStainedLands
             {
                 if ((victim = Character.GetCharacterWorld(ch, search)) == null)
                 {
-                    ch.send("You don't see them.\n\r");
+                    ch.send("You don't see them.\r\n");
                     return;
                 }
 
                 if (!(victim is Player))
                 {
-                    ch.send("You can only grant specializations to players.\n\r");
+                    ch.send("You can only grant specializations to players.\r\n");
                     return;
                 }
                 if (string.IsNullOrEmpty(field) || !int.TryParse(field, out value))
                 {
-                    ch.send("You must provide a value.\n\r");
+                    ch.send("You must provide a value.\r\n");
                     return;
                 }
                 var player = (Player)victim;
@@ -849,12 +849,12 @@ namespace CrimsonStainedLands
             {
                 if (string.IsNullOrEmpty(valuestring) || !int.TryParse(valuestring, out value))
                 {
-                    ch.send("You must provide a value.\n\r");
+                    ch.send("You must provide a value.\r\n");
                     return;
                 }
                 if ((victim = Character.GetCharacterWorld(ch, search)) == null)
                 {
-                    ch.send("You don't see them.\n\r");
+                    ch.send("You don't see them.\r\n");
                     return;
                 }
                 SkillSpell skill = SkillSpell.SkillLookup(field);
@@ -865,7 +865,7 @@ namespace CrimsonStainedLands
                 //arguments = arguments.oneArgument(ref percentstring);
                 if (skill == null)
                 {
-                    ch.send("Skill not found.\n\r");
+                    ch.send("Skill not found.\r\n");
                     return;
                 }
 
@@ -886,13 +886,13 @@ namespace CrimsonStainedLands
                 {
                     if (prereqnotmet.Key.PrerequisitesMet(victim))
                     {
-                        victim.send("\\CYou feel a rush of insight into {0}!\\x\n\r", prereqnotmet.Key.name);
+                        victim.send("\\CYou feel a rush of insight into {0}!\\x\r\n", prereqnotmet.Key.name);
                     }
                 }
 
                 if (percent < 0)
                     victim.Learned.Remove(skill);
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             }
         } // end doset
@@ -909,7 +909,7 @@ namespace CrimsonStainedLands
 
             if (arg1.ISEMPTY())
             {
-                ch.send("Transfer whom (and where)?\n\r");
+                ch.send("Transfer whom (and where)?\r\n");
                 return;
             }
 
@@ -937,33 +937,33 @@ namespace CrimsonStainedLands
             {
                 if ((location = Character.FindLocation(ch, arg2)) == null)
                 {
-                    ch.send("No such location.\n\r");
+                    ch.send("No such location.\r\n");
                     return;
                 }
 
                 //if (!is_room_owner(ch, location) && room_is_private(location)
                 //    && get_trust(ch) < MAX_LEVEL)
                 //{
-                //    send_to_char("That room is private right now.\n\r", ch);
+                //    send_to_char("That room is private right now.\r\n", ch);
                 //    return;
                 //}
             }
 
             if ((victim = Character.GetCharacterWorld(ch, arg1)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
                 return;
             }
 
             if (victim.Room == null)
             {
-                ch.send("They are in limbo.\n\r");
+                ch.send("They are in limbo.\r\n");
                 return;
             }
 
             if (victim.Level >= ch.Level && !victim.IsNPC)
             {
-                ch.send("They are too high for you to mess with.\n\r");
+                ch.send("They are too high for you to mess with.\r\n");
                 return;
             }
 
@@ -977,22 +977,22 @@ namespace CrimsonStainedLands
             victim.Act("$n arrives from a puff of smoke.", type: ActType.ToRoom);
             
             //Character.DoLook(victim, "auto");
-            ch.send("Ok.\n\r");
+            ch.send("Ok.\r\n");
         }
 
         public static void DoRestore(Character ch, string args)
         {
             if (!string.IsNullOrEmpty(args) && !args.equals("self"))
             {
-                ch.send("Restoration of self is all that is possible right now.\n\r");
+                ch.send("Restoration of self is all that is possible right now.\r\n");
             }
             else
             {
                 ch.HitPoints = ch.MaxHitPoints;
                 ch.ManaPoints = ch.MaxManaPoints;
                 ch.MovementPoints = ch.MaxMovementPoints;
-                ch.send("You are restored.\n\r");
-                ch.Act("$n is restored.\n\r", type: ActType.ToRoom);
+                ch.send("You are restored.\r\n");
+                ch.Act("$n is restored.\r\n", type: ActType.ToRoom);
             }
         }
 
@@ -1010,8 +1010,8 @@ namespace CrimsonStainedLands
                     if (NPCTemplateData.Templates.TryGetValue(vnum, out NPCTemplateData mobt))
                     {
                         NPCData mob = new NPCData(mobt, ch.Room);
-                        ch.Act("$N magically appears.\n\r", mob);
-                        ch.Act("$N magically appears.\n\r", mob, null, null, ActType.ToRoomNotVictim);
+                        ch.Act("$N magically appears.\r\n", mob);
+                        ch.Act("$N magically appears.\r\n", mob, null, null, ActType.ToRoomNotVictim);
                         var resets = mobt.Area.Resets;
 
                         if (resets.Any())
@@ -1037,9 +1037,9 @@ namespace CrimsonStainedLands
                             }
                         }
                     }
-                    else ch.send("mob vnum not found.\n\r");
+                    else ch.send("mob vnum not found.\r\n");
                 }
-                else ch.send("You must enter a vnum to load.\n\r");
+                else ch.send("You must enter a vnum to load.\r\n");
             }
             else if ("item".StringPrefix(loadtype) || "object".StringPrefix(loadtype))
             {
@@ -1049,12 +1049,12 @@ namespace CrimsonStainedLands
                     if (ItemTemplateData.Templates.TryGetValue(vnum, out itemt))
                     {
                         ItemData item = new ItemData(itemt, ch);
-                        ch.send(string.Format("{0} magically appears.\n\r", item.Display(ch)));
-                        //ch.Act("$p magically appears.\n\r", null, item, null, ActType.ToRoom);
+                        ch.send(string.Format("{0} magically appears.\r\n", item.Display(ch)));
+                        //ch.Act("$p magically appears.\r\n", null, item, null, ActType.ToRoom);
                     }
-                    else ch.send("Item vnum not found.\n\r");
+                    else ch.send("Item vnum not found.\r\n");
                 }
-                else ch.send("You must enter a vnum to load.\n\r");
+                else ch.send("You must enter a vnum to load.\r\n");
             }
         }
 
@@ -1065,7 +1065,7 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Who would you like to slay?\n\r");
+                ch.send("Who would you like to slay?\r\n");
             }
             else if ((victim = ch.GetCharacterFromRoomByName(arguments, ref count)) != null && (victim.IsNPC || victim.Level < ch.Level))
             {
@@ -1077,11 +1077,11 @@ namespace CrimsonStainedLands
             }
             else if (victim != null)
             {
-                ch.send("They are too high level.\n\r");
+                ch.send("They are too high level.\r\n");
             }
             else
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
         }
 
@@ -1101,7 +1101,7 @@ namespace CrimsonStainedLands
             var victim = Character.GetCharacterWorld(ch, arg);
             if (victim == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !int.TryParse(arguments, out vnum))
@@ -1113,7 +1113,7 @@ namespace CrimsonStainedLands
             Quest quest;
             if ((quest = Quest.GetQuest(vnum)) == null)
             {
-                ch.send("Quest not found.\n\r");
+                ch.send("Quest not found.\r\n");
                 return;
             }
 
@@ -1136,7 +1136,7 @@ namespace CrimsonStainedLands
             var victim = Character.GetCharacterWorld(ch, arg);
             if (victim == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !int.TryParse(arguments, out vnum))
@@ -1148,7 +1148,7 @@ namespace CrimsonStainedLands
             Quest quest;
             if ((quest = Quest.GetQuest(vnum)) == null)
             {
-                ch.send("Quest not found.\n\r");
+                ch.send("Quest not found.\r\n");
                 return;
             }
 
@@ -1171,7 +1171,7 @@ namespace CrimsonStainedLands
             var victim = Character.GetCharacterWorld(ch, arg);
             if (victim == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !int.TryParse(arguments, out vnum))
@@ -1183,7 +1183,7 @@ namespace CrimsonStainedLands
             Quest quest;
             if ((quest = Quest.GetQuest(vnum)) == null)
             {
-                ch.send("Quest not found.\n\r");
+                ch.send("Quest not found.\r\n");
                 return;
             }
 
@@ -1206,7 +1206,7 @@ namespace CrimsonStainedLands
             var victim = Character.GetCharacterWorld(ch, arg);
             if (victim == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !int.TryParse(arguments, out vnum))
@@ -1218,7 +1218,7 @@ namespace CrimsonStainedLands
             Quest quest;
             if ((quest = Quest.GetQuest(vnum)) == null)
             {
-                ch.send("Quest not found.\n\r");
+                ch.send("Quest not found.\r\n");
                 return;
             }
 
@@ -1241,7 +1241,7 @@ namespace CrimsonStainedLands
             var victim = Character.GetCharacterWorld(ch, arg);
             if (victim == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !int.TryParse(arguments, out vnum))
@@ -1253,7 +1253,7 @@ namespace CrimsonStainedLands
             Quest quest;
             if ((quest = Quest.GetQuest(vnum)) == null)
             {
-                ch.send("Quest not found.\n\r");
+                ch.send("Quest not found.\r\n");
                 return;
             }
 
@@ -1276,7 +1276,7 @@ namespace CrimsonStainedLands
             var victim = Character.GetCharacterWorld(ch, arg);
             if (victim == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !int.TryParse(arguments, out vnum))
@@ -1288,7 +1288,7 @@ namespace CrimsonStainedLands
             Quest quest;
             if ((quest = Quest.GetQuest(vnum)) == null)
             {
-                ch.send("Quest not found.\n\r");
+                ch.send("Quest not found.\r\n");
                 return;
             }
 
@@ -1304,30 +1304,30 @@ namespace CrimsonStainedLands
         {
             if (!ch.IsImmortal)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Immortal what?\n\r");
+                ch.send("Immortal what?\r\n");
                 return;
             }
 
             foreach (var other in Character.Characters)
             {
                 if (other != ch && other.IsImmortal)
-                    ch.Act("\\WImmortal - $n: {0}\\x\n\r", other, null, null, ActType.ToVictim, arguments);
+                    ch.Act("\\WImmortal - $n: {0}\\x\r\n", other, null, null, ActType.ToVictim, arguments);
             }
             Game.log("{0}: '{1}'", ch.Name, arguments);
-            ch.Act("\\WImmortal - You: {0}\\x\n\r", null, null, null, ActType.ToChar, arguments);
+            ch.Act("\\WImmortal - You: {0}\\x\r\n", null, null, null, ActType.ToChar, arguments);
         }
 
         public static void DoStripAffects(Character ch, string arguments)
         {
             //if (!ch.IS_IMMORTAL)
             //{
-            //    ch.send("Huh?\n\r");
+            //    ch.send("Huh?\r\n");
             //    return;
             //}
 
@@ -1336,7 +1336,7 @@ namespace CrimsonStainedLands
                 ch.AffectFromChar(aff, AffectRemoveReason.Other);
             }
 
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         public static void DoTitle(Character ch, string arguments)
@@ -1346,31 +1346,31 @@ namespace CrimsonStainedLands
             Character target = null;
             if (string.IsNullOrEmpty(charname))
             {
-                ch.send("You must specify a player name.\n\r");
+                ch.send("You must specify a player name.\r\n");
             }
             else if ((target = ch.GetCharacterFromRoomByName(charname, ref count)) == null && (target = ch.GetCharacterFromListByName(Character.Characters, charname, ref count)) == null)
             {
-                ch.send("Player not found.\n\r");
+                ch.send("Player not found.\r\n");
             }
             else if (target.IsNPC)
             {
-                ch.send("Target is an NPC.\n\r");
+                ch.send("Target is an NPC.\r\n");
             }
             else if (target.Guild == null && arguments.ISEMPTY())
             {
-                ch.send("Target is not in a guild.\n\r");
+                ch.send("Target is not in a guild.\r\n");
             }
             else if (arguments.ISEMPTY())
             {
                 target.Title = target.Sex != Sexes.Female ?
                     (target.Guild.Titles.ContainsKey(target.Level) ? "the " + target.Guild.Titles[target.Level].MaleTitle : "") :
                     (target.Guild.Titles.ContainsKey(target.Level) ? "the " + target.Guild.Titles[target.Level].FemaleTitle : "");
-                ch.send("Title reset to guild title.\n\r");
+                ch.send("Title reset to guild title.\r\n");
             }
             else
             {
                 target.Title = arguments.Trim();
-                ch.send("Target title set.\n\r");
+                ch.send("Target title set.\r\n");
             }
         }
 
@@ -1381,25 +1381,25 @@ namespace CrimsonStainedLands
             Character target = null;
             if (string.IsNullOrEmpty(charname))
             {
-                ch.send("You must specify a player name.\n\r");
+                ch.send("You must specify a player name.\r\n");
             }
             else if ((target = ch.GetCharacterFromRoomByName(charname, ref count)) == null && (target = ch.GetCharacterFromListByName(Character.Characters, charname, ref count)) == null)
             {
-                ch.send("Player not found.\n\r");
+                ch.send("Player not found.\r\n");
             }
             else if (target.IsNPC)
             {
-                ch.send("Target is an NPC.\n\r");
+                ch.send("Target is an NPC.\r\n");
             }
             else if (arguments.ISEMPTY())
             {
                 target.ExtendedTitle = string.Empty;
-                ch.send("Target extended title cleared.\n\r");
+                ch.send("Target extended title cleared.\r\n");
             }
             else
             {
                 target.ExtendedTitle = arguments.Trim();
-                ch.send("Target extended title set.\n\r");
+                ch.send("Target extended title set.\r\n");
             }
         }
 
@@ -1422,7 +1422,7 @@ namespace CrimsonStainedLands
                 int count = 0; 
                 if((target = ch.GetCharacterFromRoomByName(targetname, ref count)) == null && (target = ch.GetCharacterFromListByName(Character.Characters, targetname, ref count)) == null)
                 {
-                    ch.send("Character not found, here or in the world.\n\r");
+                    ch.send("Character not found, here or in the world.\r\n");
                     return;
                 }
                 else if ("affectedby".StringPrefix(flagtype))
@@ -1448,10 +1448,10 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.send("flag character [affectedby|flags|immune|resist|vulnerable] @flags\n\r");
+                    ch.send("flag character [affectedby|flags|immune|resist|vulnerable] @flags\r\n");
                     return;
                 }
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else if ("item".StringPrefix(targettype) || "object".StringPrefix(targettype))
             {
@@ -1459,40 +1459,40 @@ namespace CrimsonStainedLands
                 
                 if ((target = ch.GetItemHere(targetname)) == null)
                 {
-                    ch.send("Item not found here.\n\r");
+                    ch.send("Item not found here.\r\n");
                     return;
                 }
                 else if ("wearflags".StringPrefix(flagtype))
                 {
                     if(!Utility.GetEnumValues(arguments, ref target.wearFlags))
-                        ch.send("Failed.\n\r");
+                        ch.send("Failed.\r\n");
                 }
                 else if ("extraflags".StringPrefix(flagtype))
                 {
                     if(!Utility.GetEnumValues(arguments, ref target.extraFlags))
-                        ch.send("Failed.\n\r");
+                        ch.send("Failed.\r\n");
                 }
                 else if("weapontype".StringPrefix(flagtype))
                 {
                     if (!Utility.GetEnumValue(arguments, ref target.WeaponType))
-                        ch.send("Failed.\n\r");
+                        ch.send("Failed.\r\n");
                 }
                 else
                 {
                     ch.send("flag item [wearflags|extraflags|weapontype] @flags");
                     return;
                 }
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
-                ch.send("flags [item|character] @target @flagtype @flags\n\r");
+                ch.send("flags [item|character] @target @flagtype @flags\r\n");
         }
 
         //[Command.Command("forcetick", "Force a tick update to happen.", Positions.Dead, 0)]
         public static void DoForceTick(Character ch, string arguments)
         {
             Game.Instance.PerformTick();
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         public static void DoForce(Character ch, string arguments)
@@ -1508,7 +1508,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY() || command.ISEMPTY())
             {
-                ch.send("Order who to do what?\n\r");
+                ch.send("Order who to do what?\r\n");
                 return;
             }
 
@@ -1522,16 +1522,16 @@ namespace CrimsonStainedLands
                     if(other.IsNPC || other.Level < ch.Level)
                     other.DoCommand(command + " " + commandargs + (!arguments.ISEMPTY() ? " " + arguments : ""));
                 }
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else if ((pet = Character.GetCharacterWorld(ch, name, false)) != null && (pet.IsNPC || pet.Level < ch.Level))
             {
                 pet.DoCommand(command + " " + commandargs + (!arguments.ISEMPTY()? " " + arguments:""));
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
-                ch.send("You couldn't force them to do anything.\n\r");
+                ch.send("You couldn't force them to do anything.\r\n");
                 return;
             }
 
@@ -1555,7 +1555,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY())
             {
-                ch.send("Switch to what npc?\n\r");
+                ch.send("Switch to what npc?\r\n");
                 return;
             }
 
@@ -1567,11 +1567,11 @@ namespace CrimsonStainedLands
                 }    
                 ch.Switched = pet;
                 pet.SwitchedBy = (Player) ch;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
-                ch.send("You couldn't switch into them.\n\r");
+                ch.send("You couldn't switch into them.\r\n");
                 return;
             }
         } // end do switch
@@ -1585,11 +1585,11 @@ namespace CrimsonStainedLands
                 ch = ch.SwitchedBy;
                 Switched.SwitchedBy = null;
                 ch.Switched = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
-                ch.send("You failed to return.\n\r");
+                ch.send("You failed to return.\r\n");
                 return;
             }
         } // end do return
@@ -1612,14 +1612,14 @@ namespace CrimsonStainedLands
                 {
                     if (player.SnoopedBy == ch) player.SnoopedBy = null;
                 }
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
 
             if ((pet = Character.GetCharacterWorld(ch, name, true)) != null && !pet.IsNPC && pet != ch)
             {
                 pet.SnoopedBy = (Player) ch;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             //else if(pet == ch)
             //{
@@ -1627,7 +1627,7 @@ namespace CrimsonStainedLands
             //}
             else
             {
-                ch.send("You couldn't snoop them.\n\r");
+                ch.send("You couldn't snoop them.\r\n");
                 return;
             }
         } // end do snoop

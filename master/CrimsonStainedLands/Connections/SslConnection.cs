@@ -28,7 +28,7 @@ namespace CrimsonStainedLands.Connections
                 this.Stream.EndAuthenticateAsServer(result);
                 this.Stream.ReadTimeout = 1;
                 this.Status = ConnectionStatus.Connected;
-                this.Server.ConnectionConnectedCallback(this);
+                this.Server.ConnectionConnectedCallback(this, null, null);
 
             }
             catch

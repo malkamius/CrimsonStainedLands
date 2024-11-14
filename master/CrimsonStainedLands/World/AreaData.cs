@@ -673,7 +673,7 @@ namespace CrimsonStainedLands.World
                 }
             }
             if (ch != null)
-                ch.send("World Saved - {0} areas affected.\n\r", areaCount);
+                ch.send("World Saved - {0} areas affected.\r\n", areaCount);
         }
 
         public static void SaveAreaListJson()

@@ -17,7 +17,10 @@ public abstract class BaseConnection
     public BaseConnection(Socket socket) 
     {
         this.Socket = socket;
-        this.RemoteEndPoint = socket.RemoteEndPoint;
+        if (socket != null)
+        {
+            this.RemoteEndPoint = socket.RemoteEndPoint;
+        }
         //this.Socket.Blocking = false;
         this.Status = ConnectionStatus.Accepted;
         this.Negotiator = new TelnetNegotiator();

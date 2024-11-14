@@ -394,7 +394,7 @@ namespace CrimsonStainedLands
 
                     if (chance <= 21)
                     {
-                        ch.send("You don't know how to do that.\n\r");
+                        ch.send("You don't know how to do that.\r\n");
                         return;
                     }
 
@@ -409,12 +409,12 @@ namespace CrimsonStainedLands
 
                     if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
                     {
-                        ch.send("You aren't fighting anyone.\n\r");
+                        ch.send("You aren't fighting anyone.\r\n");
                         return;
                     }
                     else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
                     {
-                        ch.send("You don't see them here.\n\r");
+                        ch.send("You don't see them here.\r\n");
                         return;
                     }
 
@@ -445,16 +445,16 @@ namespace CrimsonStainedLands
                     ch.WaitState(skill.waitTime);
                     if (chance < 21)
                     {
-                        ch.send("You don't know how to do that.\n\r");
+                        ch.send("You don't know how to do that.\r\n");
                     }
                     else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
                     {
-                        ch.send("You aren't fighting anyone.\n\r");
+                        ch.send("You aren't fighting anyone.\r\n");
                         return;
                     }
                     else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
                     {
-                        ch.send("You don't see them here.\n\r");
+                        ch.send("You don't see them here.\r\n");
                         return;
                     }
                     else if (chance < Utility.NumberPercent())
@@ -523,7 +523,7 @@ namespace CrimsonStainedLands
 
                 if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
                 {
-                    ch.send("You don't know how to do that.\n\r");
+                    ch.send("You don't know how to do that.\r\n");
                     return;
                 }
 
@@ -538,12 +538,12 @@ namespace CrimsonStainedLands
 
                 if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
                 {
-                    ch.send("You don't see them here.\n\r");
+                    ch.send("You don't see them here.\r\n");
                     return;
                 }
 
@@ -582,7 +582,7 @@ namespace CrimsonStainedLands
 
                 if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
                 {
-                    ch.send("You don't know how to do that.\n\r");
+                    ch.send("You don't know how to do that.\r\n");
                     return;
                 }
 
@@ -597,12 +597,12 @@ namespace CrimsonStainedLands
 
                 if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
                 {
-                    ch.send("You don't see them here.\n\r");
+                    ch.send("You don't see them here.\r\n");
                     return;
                 }
                 else if (chance > Utility.NumberPercent())
@@ -640,7 +640,7 @@ namespace CrimsonStainedLands
                 Character victim = null;
                 if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
                 {
-                    ch.send("You don't know how to do that.\n\r");
+                    ch.send("You don't know how to do that.\r\n");
                     return;
                 }
 
@@ -652,12 +652,12 @@ namespace CrimsonStainedLands
                 }
                 else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
                 {
-                    ch.send("You don't see them here.\n\r");
+                    ch.send("You don't see them here.\r\n");
                     return;
                 }
                 else if (victim.IsAffected(skill))
@@ -1318,17 +1318,17 @@ namespace CrimsonStainedLands
 
                 if (skill == null || (chance = ch.GetSkillPercentage(skill) + 20) <= 1)
                 {
-                    ch.send("You don't know how to entrap an opponents weapon.\n\r");
+                    ch.send("You don't know how to entrap an opponents weapon.\r\n");
                     return;
                 }
                 else if ((victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Polearm)
                 {
-                    ch.send("You must wield a polearm to entrap an opponents weapon.\n\r");
+                    ch.send("You must wield a polearm to entrap an opponents weapon.\r\n");
                     return;
                 }
 
@@ -1339,7 +1339,7 @@ namespace CrimsonStainedLands
                 }
                 else if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null)
                 {
-                    ch.send("Your opponent is not wielding a weapon.\n\r");
+                    ch.send("Your opponent is not wielding a weapon.\r\n");
                     return;
                 }
                 else
@@ -1417,18 +1417,18 @@ namespace CrimsonStainedLands
 
                 if (skill == null || (chance = ch.GetSkillPercentage(skill) + 20) <= 1)
                 {
-                    ch.send("You don't know how to strip an opponents weapon.\n\r");
+                    ch.send("You don't know how to strip an opponents weapon.\r\n");
                     return;
                 }
                 else if ((victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || (wield.WeaponType != WeaponTypes.Whip && wield.WeaponType != WeaponTypes.Flail))
                     && ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || (wield.WeaponType != WeaponTypes.Whip && wield.WeaponType != WeaponTypes.Flail)))
                 {
-                    ch.send("You must wield a whip or flail to strip an opponents weapon.\n\r");
+                    ch.send("You must wield a whip or flail to strip an opponents weapon.\r\n");
                     return;
                 }
 
@@ -1439,7 +1439,7 @@ namespace CrimsonStainedLands
                 }
                 else if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null)
                 {
-                    ch.send("Your opponent is not wielding a weapon.\n\r");
+                    ch.send("Your opponent is not wielding a weapon.\r\n");
                     return;
                 }
                 else
@@ -1517,18 +1517,18 @@ namespace CrimsonStainedLands
 
                 if (skill == null || (chance = ch.GetSkillPercentage(skill) + 20) <= 21)
                 {
-                    ch.send("You don't know how to hook an opponents weapon.\n\r");
+                    ch.send("You don't know how to hook an opponents weapon.\r\n");
                     return;
                 }
                 else if ((victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Axe)
                     && ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || wield.WeaponType != WeaponTypes.Axe))
                 {
-                    ch.send("You must wield an axe to hook an opponents weapon.\n\r");
+                    ch.send("You must wield an axe to hook an opponents weapon.\r\n");
                     return;
                 }
 
@@ -1539,7 +1539,7 @@ namespace CrimsonStainedLands
                 }
                 else if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null)
                 {
-                    ch.send("Your opponent is not wielding a weapon.\n\r");
+                    ch.send("Your opponent is not wielding a weapon.\r\n");
                     return;
                 }
                 else
@@ -1617,18 +1617,18 @@ namespace CrimsonStainedLands
 
                 if (skill == null || (chance = ch.GetSkillPercentage(skill) + 20) <= 21)
                 {
-                    ch.send("You don't know how to break an opponents weapon like that.\n\r");
+                    ch.send("You don't know how to break an opponents weapon like that.\r\n");
                     return;
                 }
                 else if ((victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Axe)
                     && ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || wield.WeaponType != WeaponTypes.Axe))
                 {
-                    ch.send("You must wield an axe to break an opponents weapon.\n\r");
+                    ch.send("You must wield an axe to break an opponents weapon.\r\n");
                     return;
                 }
 
@@ -1640,7 +1640,7 @@ namespace CrimsonStainedLands
                 else if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && obj.Durability > 0 && 
                     (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null && obj.Durability > 0)
                 {
-                    ch.send("Your opponent is not wielding a weapon you can break.\n\r");
+                    ch.send("Your opponent is not wielding a weapon you can break.\r\n");
                     return;
                 }
                 else
@@ -1693,24 +1693,24 @@ namespace CrimsonStainedLands
 
                 if (skill == null || (chance = ch.GetSkillPercentage(skill) + 20) <= 21)
                 {
-                    ch.send("You don't know how to dent an opponents armor.\n\r");
+                    ch.send("You don't know how to dent an opponents armor.\r\n");
                     return;
                 }
                 else if ((victim = ch.Fighting) == null)
                 {
-                    ch.send("You aren't fighting anyone.\n\r");
+                    ch.send("You aren't fighting anyone.\r\n");
                     return;
                 }
                 else if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Mace)
                     && ((wield = ch.GetEquipment(WearSlotIDs.DualWield)) == null || wield.WeaponType != WeaponTypes.Mace))
                 {
-                    ch.send("You must wield a mace to dent an opponents armor.\n\r");
+                    ch.send("You must wield a mace to dent an opponents armor.\r\n");
                     return;
                 }
                 else if (victim.Equipment.Keys.Count == 0 || victim.Equipment.All(kvp => (kvp.Value == null || !kvp.Value.ItemType.ISSET(ItemTypes.Armor)) 
                 && kvp.Value.Durability > 0))
                 {
-                    ch.send("They aren't wearing any armor for you to dent.\n\r");
+                    ch.send("They aren't wearing any armor for you to dent.\r\n");
                     return;
                 }
                 else
@@ -1722,7 +1722,7 @@ namespace CrimsonStainedLands
                                select item.Value).SelectRandom();
                     if(obj == null)
                     {
-                        ch.send("You couldn't find any armor to dent.\n\r");
+                        ch.send("You couldn't find any armor to dent.\r\n");
                         return;
                     }
                     /* find weapon skills */

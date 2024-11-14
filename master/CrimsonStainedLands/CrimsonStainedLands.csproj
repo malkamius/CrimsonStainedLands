@@ -20,8 +20,12 @@
   <ItemGroup>
     <Content Include="reaper.ico" />
   </ItemGroup>
+    <ItemGroup>
+	    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+    </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BouncyCastle.Cryptography" Version="2.4.0" />
+    <PackageReference Include="Discord.Net" Version="3.16.0" />
     <PackageReference Include="KeraLua" Version="1.4.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="MySql.Data" Version="9.0.0" />
@@ -34,18 +38,21 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
-	<None Update="Web\client.html">
-	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</None>
-	<None Update="Web\css\**\*.*">
-	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</None>
-	<None Update="Web\js\**\*.*">
-	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</None>
-	<None Update="Web\node_modules\@xterm\**\*.*">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</None>
+    <ProjectReference Include="..\FxSsh\FxSsh.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Web\client.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Web\css\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Web\js\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Web\node_modules\@xterm\**\*.*">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

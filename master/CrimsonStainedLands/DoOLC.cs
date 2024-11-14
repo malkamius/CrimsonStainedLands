@@ -143,13 +143,13 @@ namespace CrimsonStainedLands
                 }
                 if (!int.TryParse(vnumStartString, out vnumStart))
                 {
-                    ch.send("Invalid start vnum.\n\r");
+                    ch.send("Invalid start vnum.\r\n");
                     return;
 
                 }
                 if (!int.TryParse(vnumEndString, out vnumEnd))
                 {
-                    ch.send("Invalid end vnum, using current room vnum.\n\r");
+                    ch.send("Invalid end vnum, using current room vnum.\r\n");
                     vnumEnd = ch.Room.Vnum;
                     //return;
                 }
@@ -165,22 +165,22 @@ namespace CrimsonStainedLands
                 {
                     ResetData reset = new ResetData(areaData, resetType, vnumStart, vnumEnd, count, maxCount);
                     areaData.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else if ("room".StringPrefix(type))
             {
                 if (!int.TryParse(args, out var vnum))
                 {
-                    ch.send("You must specify a vnum.\n\r");
+                    ch.send("You must specify a vnum.\r\n");
                 }
                 else if (ch.EditingArea == null && (ch.EditingArea = ch.Room.Area) == null)
                 {
-                    ch.send("Area not found.\n\r");
+                    ch.send("Area not found.\r\n");
                 }
                 else if (RoomData.Rooms.ContainsKey(vnum))
                 {
-                    ch.send("Room with that vnum already exists.\n\r");
+                    ch.send("Room with that vnum already exists.\r\n");
                 }
                 else
                 {
@@ -188,49 +188,49 @@ namespace CrimsonStainedLands
                     ch.EditingArea.Rooms.Add(vnum, room);
                     ch.EditingRoom = room;
                     RoomData.Rooms.TryAdd(vnum, room);
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else if ("npc".StringPrefix(type) || "mobile".StringPrefix(type))
             {
                 if (!int.TryParse(args, out var vnum))
                 {
-                    ch.send("You must specify a vnum.\n\r");
+                    ch.send("You must specify a vnum.\r\n");
                 }
                 else if (ch.EditingArea == null && (ch.EditingArea = ch.Room.Area) == null)
                 {
-                    ch.send("Area not found.\n\r");
+                    ch.send("Area not found.\r\n");
                 }
                 else if (NPCTemplateData.Templates.ContainsKey(vnum))
                 {
-                    ch.send("NPC with that vnum already exists.\n\r");
+                    ch.send("NPC with that vnum already exists.\r\n");
                 }
                 else
                 {
                     var npc = new NPCTemplateData(ch.EditingArea, new XElement("NPC", new XElement("VNum", vnum)));
                     ch.EditingNPCTemplate = npc;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else if ("item".StringPrefix(type) || "object".StringPrefix(type))
             {
                 if (!int.TryParse(args, out var vnum))
                 {
-                    ch.send("You must specify a vnum.\n\r");
+                    ch.send("You must specify a vnum.\r\n");
                 }
                 else if (ch.EditingArea == null && (ch.EditingArea = ch.Room.Area) == null)
                 {
-                    ch.send("Area not found.\n\r");
+                    ch.send("Area not found.\r\n");
                 }
                 else if (ItemTemplateData.Templates.ContainsKey(vnum))
                 {
-                    ch.send("Item with that vnum already exists.\n\r");
+                    ch.send("Item with that vnum already exists.\r\n");
                 }
                 else
                 {
                     var item = new ItemTemplateData(ch.EditingArea, new XElement("Item", new XElement("VNum", vnum)));
                     ch.EditingItemTemplate = item;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else
@@ -239,7 +239,7 @@ namespace CrimsonStainedLands
                     "\ncreate room [vnum]" +
                     "\ncreate npc [vnum]" +
                     "\ncreate item [vnum]" +
-                    "\n\rOr: create reset [vnum] [desintation] [count] [maxcount] \n\r");
+                    "\r\nOr: create reset [vnum] [desintation] [count] [maxcount] \r\n");
 
             }
         }
@@ -278,11 +278,11 @@ namespace CrimsonStainedLands
                 //if (args.ISEMPTY() && ch.Room != null && ch.HasBuilderPermission(ch.Room.Area))
                 //{
                 //    ch.EditingArea = ch.Room.Area;
-                //    ch.send("Editing {0}.\n\r", ch.EditingArea.name);
+                //    ch.send("Editing {0}.\r\n", ch.EditingArea.name);
                 //}
                 //else if (args.ISEMPTY())
                 //{
-                //    ch.send("You aren't in an area.\n\r");
+                //    ch.send("You aren't in an area.\r\n");
                 //}
                 //else
                 //{
@@ -295,13 +295,13 @@ namespace CrimsonStainedLands
                 //        if ((((vnumStart != 0 && area.vnumStart == vnumStart) || area.name == nameString) && ch.HasBuilderPermission(area)))
                 //        {
                 //            ch.EditingArea = area;
-                //            ch.send("Editing {0}.\n\r", ch.EditingArea.name);
+                //            ch.send("Editing {0}.\r\n", ch.EditingArea.name);
                 //            break;
                 //        }
                 //    }
 
                 //    if (ch.EditingArea == null)
-                //        ch.send("Area not found or permissions not set.\n\r");
+                //        ch.send("Area not found or permissions not set.\r\n");
                 //}
             }
             else if ("room".StringPrefix(type))
@@ -328,11 +328,11 @@ namespace CrimsonStainedLands
                 ch.EditingItemTemplate = null;
                 ch.EditingArea = null;
                 ch.EditingHelp = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
-                ch.send("Syntax: Edit [area|room|item|object|npc|mobile]\n\r");
+                ch.send("Syntax: Edit [area|room|item|object|npc|mobile]\r\n");
             }
 
         }
@@ -354,16 +354,16 @@ namespace CrimsonStainedLands
                     arguments = arguments.OneArgument(ref vnumString);
                     if (!ch.HasBuilderPermission(npcTemplate))
                     {
-                        ch.send("Builder permissions not set.\n\r");
+                        ch.send("Builder permissions not set.\r\n");
                         return;
                     }
                     ch.EditingNPCTemplate = npcTemplate;
                 }
                 else
                 {
-                    ch.send("npc vnum not found.\n\r");
+                    ch.send("npc vnum not found.\r\n");
                     //npcTemplate = new NPCTemplateData(ch.Room.area, new XElement("NPC"));
-                    //ch.send("New NPC Created.\n\r");
+                    //ch.send("New NPC Created.\r\n");
                     return;
                 }
             }
@@ -373,14 +373,14 @@ namespace CrimsonStainedLands
                 ch.EditingNPCTemplate = null;
                 ch.EditingItemTemplate = null;
                 ch.EditingArea = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             else if (ch.EditingNPCTemplate != null && (editCommand = EditNPCCommands.FirstOrDefault(c => c.name.StringPrefix(vnumString))) != null)
             {
                 if (!ch.HasBuilderPermission(ch.EditingNPCTemplate))
                 {
-                    ch.send("Builder permissions not set.\n\r");
+                    ch.send("Builder permissions not set.\r\n");
                     return;
                 }
                 editCommand.action(ch, arguments);
@@ -390,19 +390,19 @@ namespace CrimsonStainedLands
             {
                 if (!ch.HasBuilderPermission(((NPCData)npc).template))
                 {
-                    ch.send("Builder permissions not set.\n\r");
+                    ch.send("Builder permissions not set.\r\n");
                     return;
                 }
                 ch.EditingNPCTemplate = ((NPCData)npc).template;
             }
             else if (npc != null && !npc.IsNPC)
-                ch.send("It isn't an npc.\n\r");
+                ch.send("It isn't an npc.\r\n");
             else if (npc != null && ((NPCData)npc).template == null)
-                ch.send("That npc doesn't have a template.\n\r");
+                ch.send("That npc doesn't have a template.\r\n");
             else
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
 
-            ch.send("Syntax: Edit NPC [vnum] [name|description|level|flags|affectedby|damageroll|hitroll|damagedice|hitpointdice|manapointdice]\n\r");
+            ch.send("Syntax: Edit NPC [vnum] [name|description|level|flags|affectedby|damageroll|hitroll|damagedice|hitpointdice|manapointdice]\r\n");
         }
 
         private static void DoEditItem(Character ch, string arguments)
@@ -419,14 +419,14 @@ namespace CrimsonStainedLands
                 {
                     if (!ch.HasBuilderPermission(itemTemplate))
                     {
-                        ch.send("Builder permissions not set.\n\r");
+                        ch.send("Builder permissions not set.\r\n");
                         return;
                     }
                     ch.EditingItemTemplate = itemTemplate;
                 }
                 else
                 {
-                    ch.send("Item with that vnum not found.\n\r");
+                    ch.send("Item with that vnum not found.\r\n");
                     return;
                 }
             }
@@ -436,14 +436,14 @@ namespace CrimsonStainedLands
                 ch.EditingNPCTemplate = null;
                 ch.EditingItemTemplate = null;
                 ch.EditingArea = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             else if (ch.EditingItemTemplate != null && (editCommand = EditItemCommands.FirstOrDefault(c => c.name.StringPrefix(vnumString))) != null)
             {
                 if (!ch.HasBuilderPermission(ch.EditingItemTemplate))
                 {
-                    ch.send("Builder permissions not set.\n\r");
+                    ch.send("Builder permissions not set.\r\n");
                     return;
                 }
                 editCommand.action(ch, arguments);
@@ -453,20 +453,20 @@ namespace CrimsonStainedLands
             {
                 if (!ch.HasBuilderPermission(item.Template))
                 {
-                    ch.send("Builder permissions not set.\n\r");
+                    ch.send("Builder permissions not set.\r\n");
                     return;
                 }
                 ch.EditingItemTemplate = item.Template;
             }
             else if (item != null && item.Template == null)
-                ch.send("That item doesn't have a template.\n\r");
+                ch.send("That item doesn't have a template.\r\n");
             else
             {
                 ch.send("You don't see that here.");
                 return;
             }
 
-            ch.send("Syntax: Edit Item [vnum] [name|description|level|extraflags|wearflags|itemtypes|value|nutrition|maxcharges|liquid|material|affects|damagedice|damagemessage|weapontype|weight|maxweight]\n\r");
+            ch.send("Syntax: Edit Item [vnum] [name|description|level|extraflags|wearflags|itemtypes|value|nutrition|maxcharges|liquid|material|affects|damagedice|damagemessage|weapontype|weight|maxweight]\r\n");
         }
 
 
@@ -482,12 +482,12 @@ namespace CrimsonStainedLands
                 args = args.OneArgument(ref vnumString);
                 if (!RoomData.Rooms.TryGetValue(vnum, out room))
                 {
-                    ch.send("room vnum not found.\n\r");
+                    ch.send("room vnum not found.\r\n");
                     return;
                 }
                 if (!ch.HasBuilderPermission(room))
                 {
-                    ch.send("Builder permissions not found.\n\r");
+                    ch.send("Builder permissions not found.\r\n");
                     return;
                 }
                 ch.EditingRoom = room;
@@ -496,7 +496,7 @@ namespace CrimsonStainedLands
             {
                 room = ch.Room;
                 ch.EditingRoom = room;
-                ch.send("OK, editing room set to current room.\n\r");
+                ch.send("OK, editing room set to current room.\r\n");
                 return;
             }
             else if ("done".StringPrefix(args))
@@ -505,7 +505,7 @@ namespace CrimsonStainedLands
                 ch.EditingNPCTemplate = null;
                 ch.EditingItemTemplate = null;
                 ch.EditingArea = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             else
@@ -515,7 +515,7 @@ namespace CrimsonStainedLands
 
             if (!ch.HasBuilderPermission(room))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
             string commandStr = "";
@@ -529,7 +529,7 @@ namespace CrimsonStainedLands
                     return;
                 }
             }
-            ch.send("Invalid command.\n\r");
+            ch.send("Invalid command.\r\n");
         }
 
         public static void DoEditRoomDescription(Character ch, string args)
@@ -558,21 +558,21 @@ namespace CrimsonStainedLands
             }
             else if (plusminus == "+")
             {
-                ch.EditingRoom.Description += (!string.IsNullOrEmpty(ch.EditingRoom.Description) && !ch.EditingRoom.Description.EndsWith("\n") && !ch.EditingRoom.Description.EndsWith("\n\r") ? "\n" : "") + newargs + "\n";
-                ch.send("OK.\n\r");
+                ch.EditingRoom.Description += (!string.IsNullOrEmpty(ch.EditingRoom.Description) && !ch.EditingRoom.Description.EndsWith("\n") && !ch.EditingRoom.Description.EndsWith("\r\n") ? "\n" : "") + newargs + "\n";
+                ch.send("OK.\r\n");
             }
             else if ("extradescriptions".StringPrefix(plusminus))
             {
                 if ("clear".StringPrefix(newargs))
                 {
                     ch.EditingRoom.ExtraDescriptions.Clear();
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else
             {
                 ch.EditingRoom.Description = args + Environment.NewLine;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             ch.EditingRoom.Area.saved = false;
 
@@ -582,14 +582,14 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingRoom == null)
             {
-                ch.send("Edit room not found\n\r");
+                ch.send("Edit room not found\r\n");
                 return;
             }
 
             ch.EditingRoom.Name = args;
 
             ch.EditingRoom.Area.saved = false;
-            ch.send("Done.\n\r");
+            ch.send("Done.\r\n");
         }
 
         public static void DoEditRoomSector(Character ch, string args)
@@ -599,20 +599,20 @@ namespace CrimsonStainedLands
 
             if (ch.EditingRoom == null)
             {
-                ch.send("Edit room not found\n\r");
+                ch.send("Edit room not found\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(ch.EditingRoom))
             {
-                ch.send("You don't have permission to edit that room.\n\r");
+                ch.send("You don't have permission to edit that room.\r\n");
             }
             else if (Utility.GetEnumValueStrPrefix(args, ref ch.EditingRoom.sector))
             {
-                ch.send("Sector changed to " + ch.EditingRoom.sector.ToString() + "\n\r");
+                ch.send("Sector changed to " + ch.EditingRoom.sector.ToString() + "\r\n");
                 ch.EditingRoom.Area.saved = false;
             }
             else
-                ch.send("Valid Sector Types are " + string.Join(", ", sectorNames) + "\n\r");
+                ch.send("Valid Sector Types are " + string.Join(", ", sectorNames) + "\r\n");
 
         }
 
@@ -620,21 +620,21 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingRoom == null)
             {
-                ch.send("Edit room not found\n\r");
+                ch.send("Edit room not found\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(ch.EditingRoom))
             {
-                ch.send("You don't have permission to edit that room.\n\r");
+                ch.send("You don't have permission to edit that room.\r\n");
             }
 
             else if (Utility.GetEnumValues(args, ref ch.EditingRoom.flags, true))
             {
-                ch.send("Room Flags changed to " + ch.EditingRoom.sector.ToString() + "\n\r");
+                ch.send("Room Flags changed to " + ch.EditingRoom.sector.ToString() + "\r\n");
                 ch.EditingRoom.Area.saved = false;
             }
             else
-                ch.send("Valid Flags are " + string.Join(", ", Utility.GetEnumValues<RoomFlags>()) + "\n\r");
+                ch.send("Valid Flags are " + string.Join(", ", Utility.GetEnumValues<RoomFlags>()) + "\r\n");
 
         }
 
@@ -648,13 +648,13 @@ namespace CrimsonStainedLands
 
             if (string.IsNullOrEmpty(directionArg))
             {
-                ch.send("What direction do you want to edit?\n\r");
+                ch.send("What direction do you want to edit?\r\n");
                 return;
             }
             Direction direction = Direction.North;
             if (!Utility.GetEnumValueStrPrefix<Direction>(directionArg, ref direction))
             {
-                ch.send("Invalid direction.\n\r");
+                ch.send("Invalid direction.\r\n");
                 return;
             }
 
@@ -672,7 +672,7 @@ namespace CrimsonStainedLands
                     else ch.EditingRoom.exits[i] = null;
                 }
                 ch.Room.Area.saved = false;
-                ch.send("Exit removed on this side\n\r");
+                ch.send("Exit removed on this side\r\n");
                 return;
             }
             else if ("destination".StringPrefix(command) && int.TryParse(args, out var vnum))
@@ -690,7 +690,7 @@ namespace CrimsonStainedLands
                     }
 
                     ch.EditingRoom.Area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                     return;
                 }
                 else
@@ -717,7 +717,7 @@ namespace CrimsonStainedLands
                         ch.EditingRoom.exits[i] = null;
                 }
                 ch.EditingRoom.Area.saved = false;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 ch.send("Valid flags are {0}\n", string.Join(" ", Utility.GetEnumValues<ExitFlags>()));
                 return;
             }
@@ -732,7 +732,7 @@ namespace CrimsonStainedLands
                         ch.EditingRoom.exits[i] = null;
                 }
                 ch.EditingRoom.Area.saved = false;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             else if ("display".StringPrefix(command))
@@ -746,7 +746,7 @@ namespace CrimsonStainedLands
                         ch.EditingRoom.exits[i] = null;
                 }
                 ch.EditingRoom.Area.saved = false;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             else if ("description".StringPrefix(command))
@@ -760,7 +760,7 @@ namespace CrimsonStainedLands
                         ch.EditingRoom.exits[i] = null;
                 }
                 ch.EditingRoom.Area.saved = false;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             else if ("size".StringPrefix(command))
@@ -769,7 +769,7 @@ namespace CrimsonStainedLands
                 CharacterSize exitsize = CharacterSize.Giant;
                 if (!Utility.GetEnumValue(args, ref exitsize))
                 {
-                    ch.send("Valid sizes are {0}.\n\r", string.Join(" ", Utility.GetEnumValues<CharacterSize>()));
+                    ch.send("Valid sizes are {0}.\r\n", string.Join(" ", Utility.GetEnumValues<CharacterSize>()));
                     return;
                 }
                 else
@@ -783,7 +783,7 @@ namespace CrimsonStainedLands
                             ch.EditingRoom.exits[i] = null;
                     }
                     ch.EditingRoom.Area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                     return;
                 }
             }
@@ -800,7 +800,7 @@ namespace CrimsonStainedLands
                             ch.EditingRoom.exits[i] = null;
                     }
                     ch.EditingRoom.Area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                     return;
                 }
                 else
@@ -824,19 +824,19 @@ namespace CrimsonStainedLands
                                 ch.EditingRoom.exits[i] = null;
                         }
                         ch.EditingRoom.Area.saved = false;
-                        ch.send("OK.\n\r");
+                        ch.send("OK.\r\n");
                         return;
                     }
                     else
                     {
-                        ch.send("Keys must be vnums separated by spaces\n\r");
+                        ch.send("Keys must be vnums separated by spaces\r\n");
                         return;
                     }
 
                 }
             }
 
-            ch.send("Edit room exits {direction} [keywords, description, destination, flags, size, keys, delete] {arguments}\n\r");
+            ch.send("Edit room exits {direction} [keywords, description, destination, flags, size, keys, delete] {arguments}\r\n");
         }
 
         public static void DoEditRoomResets(Character ch, string arguments)
@@ -846,18 +846,18 @@ namespace CrimsonStainedLands
 
             if (room == null)
             {
-                ch.send("You aren't editing a room.\n\r");
+                ch.send("You aren't editing a room.\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(room))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
             else if ("list".StringPrefix(command))
             {
                 var resets = room.GetResets();
-                ch.send("Resets for room {0} - {1}\n\r", room.Vnum, room.Name);
+                ch.send("Resets for room {0} - {1}\r\n", room.Vnum, room.Name);
                 for (int i = 0; i < resets.Count; i++)
                 {
                     var reset = resets[i];
@@ -873,12 +873,12 @@ namespace CrimsonStainedLands
                     if (SpawnName.ISEMPTY())
                         SpawnName = "unknown name";
 
-                    ch.send("[{0,5:D5}]    {1}Type {2}, SpawnVnum {3} - {4}, MaxRoomCount {5}, MaxCount {6}\n\r",
+                    ch.send("[{0,5:D5}]    {1}Type {2}, SpawnVnum {3} - {4}, MaxRoomCount {5}, MaxCount {6}\r\n",
                         i + 1,
                         reset.resetType == ResetTypes.Equip || reset.resetType == ResetTypes.Give || reset.resetType == ResetTypes.Put ? "    " : "",
                         reset.resetType.ToString(), reset.spawnVnum, SpawnName, reset.count, reset.maxCount);
                 }
-                ch.send("\n\r{0} resets.\n\r", resets.Count);
+                ch.send("\r\n{0} resets.\r\n", resets.Count);
             }
             else if ("delete".StringPrefix(command))
             {
@@ -888,10 +888,10 @@ namespace CrimsonStainedLands
                     var reset = resets[index - 1];
                     room.Area.Resets.Remove(reset);
                     room.Area.saved = false;
-                    ch.send("Reset removed.\n\r");
+                    ch.send("Reset removed.\r\n");
                 }
                 else
-                    ch.send("You must supply a valid index.\n\r");
+                    ch.send("You must supply a valid index.\r\n");
             }
             else if ("move".StringPrefix(command))
             {
@@ -918,10 +918,10 @@ namespace CrimsonStainedLands
                     }
 
                     room.Area.saved = false;
-                    ch.send("Reset moved.\n\r");
+                    ch.send("Reset moved.\r\n");
                 }
                 else
-                    ch.send("You must supply a valid start and end index.\n\r");
+                    ch.send("You must supply a valid start and end index.\r\n");
             }
             else if ("create".StringPrefix(command) || "new".StringPrefix(command))
             {
@@ -959,7 +959,7 @@ namespace CrimsonStainedLands
                 }
                 else if (index >= resets.Count)
                 {
-                    ch.send("Index must be less than or equal to the count of resets in the room.\n\r");
+                    ch.send("Index must be less than or equal to the count of resets in the room.\r\n");
                     return;
                 }
                 else
@@ -969,26 +969,26 @@ namespace CrimsonStainedLands
 
                 if (arg1.ISEMPTY() || !Utility.GetEnumValueStrPrefixOut<ResetTypes>(arg1, out var type))
                 {
-                    ch.send("You must supply a valid reset type.\n\r");
-                    ch.send("Valid reset types are {0}.\n\r", string.Join(", ", from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
-                    ch.send("redit reset create [{0}] @spawnvnum @roomcount @maxcount\n\r", string.Join("|", from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
+                    ch.send("You must supply a valid reset type.\r\n");
+                    ch.send("Valid reset types are {0}.\r\n", string.Join(", ", from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
+                    ch.send("redit reset create [{0}] @spawnvnum @roomcount @maxcount\r\n", string.Join("|", from t in Utility.GetEnumValues<ResetTypes>() select t.ToString()));
                     return;
                 }
                 else if (arg2.ISEMPTY() || !int.TryParse(arg2, out spawnvnum))
                 {
-                    ch.send("You must supply a valid spawn vnum.\n\r");
+                    ch.send("You must supply a valid spawn vnum.\r\n");
                     return;
                 }
 
                 if (!arg3.ISEMPTY() && !int.TryParse(arg3, out maxroomcount))
                 {
-                    ch.send("Max room count must be numeric if supplied.\n\r");
+                    ch.send("Max room count must be numeric if supplied.\r\n");
                     return;
                 }
 
                 if (!arg4.ISEMPTY() && !int.TryParse(arg4, out maxcount))
                 {
-                    ch.send("Max count must be numeric if supplied.\n\r");
+                    ch.send("Max count must be numeric if supplied.\r\n");
                     return;
                 }
 
@@ -1023,13 +1023,13 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!int.TryParse(args.Trim(), out var lvl))
             {
-                ch.send("Syntax: edit npc [vnum] level [1-60]\n\r");
+                ch.send("Syntax: edit npc [vnum] level [1-60]\r\n");
                 return;
             }
             ch.EditingNPCTemplate.Level = lvl;
@@ -1040,13 +1040,13 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!int.TryParse(args.Trim(), out ch.EditingNPCTemplate.DamageRoll))
             {
-                ch.send("Syntax: edit npc [vnum] damageroll [number]\n\r");
+                ch.send("Syntax: edit npc [vnum] damageroll [number]\r\n");
                 return;
             }
 
@@ -1057,13 +1057,13 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!int.TryParse(args.Trim(), out ch.EditingNPCTemplate.HitRoll))
             {
-                ch.send("Syntax: edit npc [vnum] hitroll [number]\n\r");
+                ch.send("Syntax: edit npc [vnum] hitroll [number]\r\n");
                 return;
             }
 
@@ -1074,7 +1074,7 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
@@ -1084,7 +1084,7 @@ namespace CrimsonStainedLands
             {
                 if (!int.TryParse(protectstring, out var vnum))
                 {
-                    ch.send("Syntax: edit npc [vnum] protects {vnum vnum vnum...}\n\r");
+                    ch.send("Syntax: edit npc [vnum] protects {vnum vnum vnum...}\r\n");
                     return;
                 }
                 protects.Add(vnum);
@@ -1099,13 +1099,13 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!long.TryParse(args.Trim(), out ch.EditingNPCTemplate.Gold))
             {
-                ch.send("Syntax: edit npc [vnum] gold [number]\n\r");
+                ch.send("Syntax: edit npc [vnum] gold [number]\r\n");
                 return;
             }
 
@@ -1116,19 +1116,19 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
             GuildData guild = null;
             if ((guild = GuildData.GuildLookup(args)) == null)
             {
-                ch.send("Syntax: edit npc [vnum] guild {guild name}\n\r");
-                ch.send("Valid guilds are {0}.\n\r", string.Join(", ", from g in GuildData.Guilds select g.name));
+                ch.send("Syntax: edit npc [vnum] guild {guild name}\r\n");
+                ch.send("Valid guilds are {0}.\r\n", string.Join(", ", from g in GuildData.Guilds select g.name));
                 return;
             }
 
             ch.EditingNPCTemplate.Guild = guild;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
             ch.EditingNPCTemplate.Area.saved = false;
         }
 
@@ -1136,19 +1136,19 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
             Race race = null;
             if ((race = Race.GetRace(args)) == null)
             {
-                ch.send("Syntax: edit npc [vnum] race {race name}\n\r");
-                ch.send("Valid races are {0}.\n\r", string.Join(", ", from g in Race.Races select g.name));
+                ch.send("Syntax: edit npc [vnum] race {race name}\r\n");
+                ch.send("Valid races are {0}.\r\n", string.Join(", ", from g in Race.Races select g.name));
                 return;
             }
 
             ch.EditingNPCTemplate.Race = race;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
             ch.EditingNPCTemplate.Area.saved = false;
         }
 
@@ -1156,19 +1156,19 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
             Sexes sex = Sexes.None;
             if (!Utility.GetEnumValueStrPrefix(args, ref sex))
             {
-                ch.send("Syntax: edit npc [vnum] gender {sex}\n\r");
-                ch.send("Valid sexes are {0}.\n\r", string.Join(", ", from g in Utility.GetEnumValues<Sexes>() select g.ToString()));
+                ch.send("Syntax: edit npc [vnum] gender {sex}\r\n");
+                ch.send("Valid sexes are {0}.\r\n", string.Join(", ", from g in Utility.GetEnumValues<Sexes>() select g.ToString()));
                 return;
             }
 
             ch.EditingNPCTemplate.Sex = sex;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
             ch.EditingNPCTemplate.Area.saved = false;
         }
 
@@ -1176,19 +1176,19 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
             Alignment alignment = Alignment.None;
             if (!Utility.GetEnumValueStrPrefix(args, ref alignment))
             {
-                ch.send("Syntax: edit npc [vnum] alignment {alignment}\n\r");
-                ch.send("Valid alignments are {0}.\n\r", string.Join(", ", from g in Utility.GetEnumValues<Alignment>() select g.ToString()));
+                ch.send("Syntax: edit npc [vnum] alignment {alignment}\r\n");
+                ch.send("Valid alignments are {0}.\r\n", string.Join(", ", from g in Utility.GetEnumValues<Alignment>() select g.ToString()));
                 return;
             }
 
             ch.EditingNPCTemplate.Alignment = alignment;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
             ch.EditingNPCTemplate.Area.saved = false;
         }
 
@@ -1196,127 +1196,127 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingNPCTemplate.Flags, true))
             {
-                ch.send("Valid flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<ActFlags>() select flag.ToString())));
+                ch.send("Valid flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<ActFlags>() select flag.ToString())));
             }
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCImmuneFlags(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingNPCTemplate.ImmuneFlags, true))
             {
-                ch.send("Valid flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponDamageTypes>() select flag.ToString())));
+                ch.send("Valid flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponDamageTypes>() select flag.ToString())));
             }
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCResistFlags(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingNPCTemplate.ResistFlags, true))
             {
-                ch.send("Valid flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponDamageTypes>() select flag.ToString())));
+                ch.send("Valid flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponDamageTypes>() select flag.ToString())));
             }
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCVulnerableFlags(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingNPCTemplate.VulnerableFlags, true))
             {
-                ch.send("Valid flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponDamageTypes>() select flag.ToString())));
+                ch.send("Valid flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponDamageTypes>() select flag.ToString())));
             }
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCAffectedBy(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingNPCTemplate.AffectedBy, true))
             {
-                ch.send("Valid flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<AffectFlags>() select flag.ToString())));
+                ch.send("Valid flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<AffectFlags>() select flag.ToString())));
             }
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCName(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingNPCTemplate.Name = args.Trim();
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCLongDescription(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingNPCTemplate.LongDescription = args.Trim();
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCShortDescription(Character ch, string args)
         {
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingNPCTemplate.ShortDescription = args.Trim();
 
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCDescription(Character ch, string args)
@@ -1324,7 +1324,7 @@ namespace CrimsonStainedLands
             string plusminus = "";
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
             string newargs = args.OneArgument(ref plusminus);
@@ -1345,14 +1345,14 @@ namespace CrimsonStainedLands
             }
             else if (plusminus == "+")
             {
-                ch.EditingNPCTemplate.Description += (!string.IsNullOrEmpty(ch.EditingNPCTemplate.Description) && !ch.EditingNPCTemplate.Description.EndsWith("\n") && !ch.EditingNPCTemplate.Description.EndsWith("\n\r") ? "\n" : "") + newargs + "\n";
+                ch.EditingNPCTemplate.Description += (!string.IsNullOrEmpty(ch.EditingNPCTemplate.Description) && !ch.EditingNPCTemplate.Description.EndsWith("\n") && !ch.EditingNPCTemplate.Description.EndsWith("\r\n") ? "\n" : "") + newargs + "\n";
             }
             else
             {
                 ch.EditingNPCTemplate.Description = args + Environment.NewLine;
             }
             ch.EditingNPCTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditNPCDamageDice(Character ch, string args)
@@ -1367,7 +1367,7 @@ namespace CrimsonStainedLands
 
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1376,11 +1376,11 @@ namespace CrimsonStainedLands
                 !int.TryParse(damagedicecountstring, out ch.EditingNPCTemplate.DamageDice.DiceCount) ||
                 !int.TryParse(damagedicebonusstring, out ch.EditingNPCTemplate.DamageDice.DiceBonus))
             {
-                ch.send("Syntax: edit npc [vnum] damagedice [dicesides] [dicecount] [dicebonus]\n\r");
+                ch.send("Syntax: edit npc [vnum] damagedice [dicesides] [dicecount] [dicebonus]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingNPCTemplate.Area.saved = false;
         }
@@ -1397,7 +1397,7 @@ namespace CrimsonStainedLands
 
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1406,11 +1406,11 @@ namespace CrimsonStainedLands
                 !int.TryParse(dicecountstring, out ch.EditingNPCTemplate.HitPointDice.DiceCount) ||
                 !int.TryParse(dicebonusstring, out ch.EditingNPCTemplate.HitPointDice.DiceBonus))
             {
-                ch.send("Syntax: edit npc [vnum] hitpointdice [dicesides] [dicecount] [dicebonus]\n\r");
+                ch.send("Syntax: edit npc [vnum] hitpointdice [dicesides] [dicecount] [dicebonus]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingNPCTemplate.Area.saved = false;
         }
@@ -1427,7 +1427,7 @@ namespace CrimsonStainedLands
 
             if (ch.EditingNPCTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1436,11 +1436,11 @@ namespace CrimsonStainedLands
                 !int.TryParse(dicecountstring, out ch.EditingNPCTemplate.ManaPointDice.DiceCount) ||
                 !int.TryParse(dicebonusstring, out ch.EditingNPCTemplate.ManaPointDice.DiceBonus))
             {
-                ch.send("Syntax: edit npc [vnum] manapointdice [dicesides] [dicecount] [dicebonus]\n\r");
+                ch.send("Syntax: edit npc [vnum] manapointdice [dicesides] [dicecount] [dicebonus]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingNPCTemplate.Area.saved = false;
         }
@@ -1450,17 +1450,17 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
             if (!int.TryParse(args.Trim(), out ch.EditingItemTemplate.Level))
             {
-                ch.send("Syntax: edit item [vnum] level [1-60]\n\r");
+                ch.send("Syntax: edit item [vnum] level [1-60]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1469,17 +1469,17 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
             if (!float.TryParse(args.Trim(), out ch.EditingItemTemplate.Weight))
             {
-                ch.send("Syntax: edit item [vnum] weight [number]\n\r");
+                ch.send("Syntax: edit item [vnum] weight [number]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1488,17 +1488,17 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
             if (!float.TryParse(args.Trim(), out ch.EditingItemTemplate.MaxWeight))
             {
-                ch.send("Syntax: edit item [vnum] maxweight [number]\n\r");
+                ch.send("Syntax: edit item [vnum] maxweight [number]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1507,17 +1507,17 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
             if (!int.TryParse(args.Trim(), out ch.EditingItemTemplate.Value))
             {
-                ch.send("Syntax: edit item [vnum] value [number]\n\r");
+                ch.send("Syntax: edit item [vnum] value [number]\r\n");
                 return;
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1526,7 +1526,7 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1534,10 +1534,10 @@ namespace CrimsonStainedLands
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingItemTemplate.extraFlags, true))
             {
-                ch.send("Valid extra flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<ExtraFlags>() select flag.ToString())));
+                ch.send("Valid extra flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<ExtraFlags>() select flag.ToString())));
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1546,16 +1546,16 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
             ch.EditingItemTemplate.wearFlags.Clear();
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingItemTemplate.wearFlags, true))
             {
-                ch.send("Valid wear flags are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<WearFlags>() select flag.ToString())));
+                ch.send("Valid wear flags are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<WearFlags>() select flag.ToString())));
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             ch.EditingItemTemplate.Area.saved = false;
         }
 
@@ -1563,7 +1563,7 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1571,10 +1571,10 @@ namespace CrimsonStainedLands
 
             if (!Utility.GetEnumValue(args.Trim(), ref ch.EditingItemTemplate.WeaponType, WeaponTypes.None))
             {
-                ch.send("Valid weapon types are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponTypes>() select flag.ToString())));
+                ch.send("Valid weapon types are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<WeaponTypes>() select flag.ToString())));
             }
             else
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1583,13 +1583,13 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
             if (!Utility.GetEnumValues(args.Trim(), ref ch.EditingItemTemplate.itemTypes, true))
             {
-                ch.send("Valid item types are {0}.\n\r", string.Join(", ", (from flag in Utility.GetEnumValues<ItemTypes>() select flag.ToString())));
+                ch.send("Valid item types are {0}.\r\n", string.Join(", ", (from flag in Utility.GetEnumValues<ItemTypes>() select flag.ToString())));
             }
 
             ch.EditingItemTemplate.Area.saved = false;
@@ -1599,7 +1599,7 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1613,7 +1613,7 @@ namespace CrimsonStainedLands
                 }
             }
 
-            ch.send("Damage message not found, valid messages are {0}.\n\r", string.Join(", ", (from message in WeaponDamageMessage.WeaponDamageMessages select message.Keyword)));
+            ch.send("Damage message not found, valid messages are {0}.\r\n", string.Join(", ", (from message in WeaponDamageMessage.WeaponDamageMessages select message.Keyword)));
 
         }
 
@@ -1629,7 +1629,7 @@ namespace CrimsonStainedLands
 
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1638,7 +1638,7 @@ namespace CrimsonStainedLands
                 !int.TryParse(damagedicecountstring, out ch.EditingItemTemplate.DamageDice.DiceCount) ||
                 !int.TryParse(damagedicebonusstring, out ch.EditingItemTemplate.DamageDice.DiceBonus))
             {
-                ch.send("Syntax: edit item [vnum] damagedice [dicesides] [dicecount] [dicebonus]\n\r");
+                ch.send("Syntax: edit item [vnum] damagedice [dicesides] [dicecount] [dicebonus]\r\n");
                 return;
             }
 
@@ -1679,7 +1679,7 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            if (!int.TryParse(args, out ch.EditingItemTemplate.MaxCharges)) ch.send("MaxCharges must be numerical.\n\r");
+            if (!int.TryParse(args, out ch.EditingItemTemplate.MaxCharges)) ch.send("MaxCharges must be numerical.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1692,7 +1692,7 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            if (!int.TryParse(args, out ch.EditingItemTemplate.MaxCharges)) ch.send("MaxDurability must be numerical.\n\r");
+            if (!int.TryParse(args, out ch.EditingItemTemplate.MaxCharges)) ch.send("MaxDurability must be numerical.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
         }
@@ -1705,10 +1705,10 @@ namespace CrimsonStainedLands
                 return;
             }
 
-            if (!int.TryParse(args, out ch.EditingItemTemplate.Nutrition)) ch.send("Nutrition must be numerical.\n\r");
+            if (!int.TryParse(args, out ch.EditingItemTemplate.Nutrition)) ch.send("Nutrition must be numerical.\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditArmorClass(Character ch, string args)
@@ -1727,10 +1727,10 @@ namespace CrimsonStainedLands
                 !int.TryParse(ac_bash, out ch.EditingItemTemplate.ArmorBash) ||
                 !int.TryParse(ac_slash, out ch.EditingItemTemplate.ArmorSlash) ||
                 !int.TryParse(ac_pierce, out ch.EditingItemTemplate.ArmorPierce) ||
-                !int.TryParse(ac_exotic, out ch.EditingItemTemplate.ArmorExotic)) ch.send("Armor class must be numerical and must supply armorclass [bash slash pierce exotic].\n\r");
+                !int.TryParse(ac_exotic, out ch.EditingItemTemplate.ArmorExotic)) ch.send("Armor class must be numerical and must supply armorclass [bash slash pierce exotic].\r\n");
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemName(Character ch, string args)
@@ -1744,49 +1744,49 @@ namespace CrimsonStainedLands
             ch.EditingItemTemplate.Name = args.Trim();
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemLongDescription(Character ch, string args)
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingItemTemplate.LongDescription = args.Trim();
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemNightLongDescription(Character ch, string args)
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingItemTemplate.NightLongDescription = args.Trim();
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemNightShortDescription(Character ch, string args)
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingItemTemplate.NightShortDescription = args.Trim();
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
 
@@ -1794,14 +1794,14 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit npc not found\n\r");
+                ch.send("Edit npc not found\r\n");
                 return;
             }
 
             ch.EditingItemTemplate.ShortDescription = args.Trim();
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemDescription(Character ch, string args)
@@ -1816,10 +1816,10 @@ namespace CrimsonStainedLands
 
             if (plusminus == "-")
             {
-                if (ch.EditingItemTemplate.Description.IndexOf("\n\r") >= 0)
+                if (ch.EditingItemTemplate.Description.IndexOf("\r\n") >= 0)
                 {
                     ch.EditingItemTemplate.Description = ch.EditingItemTemplate.Description.Substring(0, ch.EditingItemTemplate.Description.LastIndexOf('\n') - 1);
-                    if (ch.EditingItemTemplate.Description.IndexOf("\n\r") >= 0)
+                    if (ch.EditingItemTemplate.Description.IndexOf("\r\n") >= 0)
                         ch.EditingItemTemplate.Description = ch.EditingItemTemplate.Description.Substring(0, ch.EditingItemTemplate.Description.LastIndexOf('\n'));
                     else
                         ch.EditingItemTemplate.Description = "";
@@ -1837,14 +1837,14 @@ namespace CrimsonStainedLands
                 ch.EditingItemTemplate.Description = args + Environment.NewLine;
             }
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemSpells(Character ch, string args)
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
             string arg = "";
@@ -1858,7 +1858,7 @@ namespace CrimsonStainedLands
                 SkillSpell skill;
                 if (!int.TryParse(levelstring, out level) || (skill = SkillSpell.SkillLookup(arg)) == null)
                 {
-                    ch.send("Syntax: edit item [vnum] spells [spell level] [spell name] [spell level] [spell name].\n Skill/spell {0} not found.\n\r", arg);
+                    ch.send("Syntax: edit item [vnum] spells [spell level] [spell name] [spell level] [spell name].\n Skill/spell {0} not found.\r\n", arg);
                     return;
                 }
                 ch.EditingItemTemplate.spells.Add(new ItemSpellData(level, skill.name));
@@ -1866,14 +1866,14 @@ namespace CrimsonStainedLands
 
 
             ch.EditingItemTemplate.Area.saved = false;
-            ch.send("OK.\n\r");
+            ch.send("OK.\r\n");
         }
 
         private static void DoEditItemAffects(Character ch, string args)
         {
             if (ch.EditingItemTemplate == null)
             {
-                ch.send("Edit item not found\n\r");
+                ch.send("Edit item not found\r\n");
                 return;
             }
 
@@ -1889,10 +1889,10 @@ namespace CrimsonStainedLands
                 if (ch.EditingItemTemplate.affects.Count > 0)
                 {
                     ch.EditingItemTemplate.affects.RemoveAt(ch.EditingItemTemplate.affects.Count - 1);
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
                 else
-                    ch.send("No more affects on that item.\n\r");
+                    ch.send("No more affects on that item.\r\n");
                 return;
             }
             if (!applytypestring.ISEMPTY() && !applyvaluestring.ISEMPTY() && int.TryParse(applyvaluestring, out applyvalue) && Utility.GetEnumValue(applytypestring, ref apply, ApplyTypes.None))
@@ -1913,11 +1913,11 @@ namespace CrimsonStainedLands
 
                 ch.EditingItemTemplate.affects.Add(new AffectData() { where = AffectWhere.ToObject, location = apply, modifier = applyvalue, duration = -1 });
                 ch.EditingItemTemplate.Area.saved = false;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
-                ch.send("Edit item [vnum] affects [type] [value]\n\r");
+                ch.send("Edit item [vnum] affects [type] [value]\r\n");
                 ch.send("Types: {0}", string.Join(", ", Utility.GetEnumValues<ApplyTypes>()));
             }
 
@@ -1934,19 +1934,19 @@ namespace CrimsonStainedLands
 
             if (string.IsNullOrEmpty(directionArg))
             {
-                ch.send("What direction do you want to create a new room in?\n\r");
+                ch.send("What direction do you want to create a new room in?\r\n");
                 return;
             }
             Direction direction = Direction.North;
             if (!Utility.GetEnumValueStrPrefix<Direction>(directionArg, ref direction))
             {
-                ch.send("Invalid direction.\n\r");
+                ch.send("Invalid direction.\r\n");
                 return;
             }
 
             if (!ch.HasBuilderPermission(ch.Room))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
 
@@ -1965,7 +1965,7 @@ namespace CrimsonStainedLands
                     else
                         ch.Room.exits[i] = null;
                 }
-                ch.send("Exit removed on this side\n\r");
+                ch.send("Exit removed on this side\r\n");
             }
             else if ((vnumArg.ISEMPTY() || vnum == 0) && area != null)
             {
@@ -1973,7 +1973,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.send("Invalid vnum.\n\r");
+                ch.send("Invalid vnum.\r\n");
                 return;
             }
             Dictionary<Direction, Direction> reverseDirections = new Dictionary<Direction, Direction>
@@ -1983,7 +1983,7 @@ namespace CrimsonStainedLands
             RoomData room;
             if (RoomData.Rooms.TryGetValue(vnum, out room))
             {
-                //ch.send("Not yet implemented.\n\r");
+                //ch.send("Not yet implemented.\r\n");
             }
             else
             {
@@ -2002,7 +2002,7 @@ namespace CrimsonStainedLands
             }
             if (!ch.HasBuilderPermission(room))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
 
@@ -2057,7 +2057,7 @@ namespace CrimsonStainedLands
                 vnumMaxTo < vnumTo ||
                 (maxVnumFrom - minVnumFrom) > (vnumMaxTo - vnumTo))
             {
-                ch.send("Syntax: Renumber [FromVnumMin] [FromVnumMax] [VnumTo] [VnumToMax]\n\r");
+                ch.send("Syntax: Renumber [FromVnumMin] [FromVnumMax] [VnumTo] [VnumToMax]\r\n");
             }
             else
             {
@@ -2175,7 +2175,7 @@ namespace CrimsonStainedLands
         {
             var area = ch.EditingArea ?? ch.Room.Area;
 
-            ch.send("Next Vnums: Room {0}, NPC {1}, Item {2}\n\r",
+            ch.send("Next Vnums: Room {0}, NPC {1}, Item {2}\r\n",
                 area.Rooms.Count > 0 ? area.Rooms.Max(r => r.Key) + 1 : area.VNumStart,
                 area.NPCTemplates.Count > 0 ? area.NPCTemplates.Max(n => n.Key) + 1 : area.VNumStart,
                 area.ItemTemplates.Count > 0 ? area.ItemTemplates.Max(i => i.Key) + 1 : area.VNumStart);
@@ -2188,7 +2188,7 @@ namespace CrimsonStainedLands
                 foreach (var area in AreaData.Areas.OrderBy(a => a.VNumStart))
                 {
                     if (last != null)
-                        ch.send("Vnum range {0} - {1}  between {2} and {3}\n\r", last.VNumEnd + 1, area.VNumStart - 1, last.Name, area.Name);
+                        ch.send("Vnum range {0} - {1}  between {2} and {3}\r\n", last.VNumEnd + 1, area.VNumStart - 1, last.Name, area.Name);
 
                     last = area;
 
@@ -2224,16 +2224,16 @@ namespace CrimsonStainedLands
                                 newbuilders.Append((newbuilders.Length > 0 ? " " : "") + builder);
                         }
                         area.Builders = newbuilders.ToString();
-                        ch.send("OK - Builders now " + area.Builders + "\n\r");
+                        ch.send("OK - Builders now " + area.Builders + "\r\n");
                     }
                     else
-                        ch.send("+ or -\n\r");
+                        ch.send("+ or -\r\n");
                 }
                 else
-                    ch.send("Character or area not found.\n\r");
+                    ch.send("Character or area not found.\r\n");
             }
             else
-                ch.send("Builder \"area name\" [+/-] \"character name\"\n\r");
+                ch.send("Builder \"area name\" [+/-] \"character name\"\r\n");
         }
 
         public static void DoEditRoomExtraDescriptions(Character ch, string arguments)
@@ -2243,12 +2243,12 @@ namespace CrimsonStainedLands
 
             if (room == null)
             {
-                ch.send("You aren't editing a room.\n\r");
+                ch.send("You aren't editing a room.\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(room))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
             else if ("list".StringPrefix(command))
@@ -2258,24 +2258,24 @@ namespace CrimsonStainedLands
 
                 if (!strindex.ISEMPTY() && (int.TryParse(strindex, out var index) || (ed = room.ExtraDescriptions.FirstOrDefault(e => e.Keywords.IsName(strindex))) != null))
                 {
-                    ch.send("Keywords: {0}\n\rDescription: {1}\n\r", ed.Keywords, ed.Description);
+                    ch.send("Keywords: {0}\n\rDescription: {1}\r\n", ed.Keywords, ed.Description);
                 }
                 else if (!strindex.ISEMPTY())
                 {
-                    ch.send("ExtraDescription not found or index out of range.\n\r");
+                    ch.send("ExtraDescription not found or index out of range.\r\n");
                 }
                 else
                 {
                     var extradescriptions = room.ExtraDescriptions;
-                    ch.send("Extra descriptions for item {0} - {1}\n\r", room.Vnum, room.Name);
+                    ch.send("Extra descriptions for item {0} - {1}\r\n", room.Vnum, room.Name);
                     for (int i = 0; i < extradescriptions.Count; i++)
                     {
                         ed = extradescriptions[i];
 
-                        ch.send("[{0,5:D5}]    Keywords {1}\n\r",
+                        ch.send("[{0,5:D5}]    Keywords {1}\r\n",
                             i + 1, ed.Keywords);
                     }
-                    ch.send("\n\r{0} extra descriptions.\n\r", extradescriptions.Count);
+                    ch.send("\r\n{0} extra descriptions.\r\n", extradescriptions.Count);
                 }
             }
             else if ("delete".StringPrefix(command))
@@ -2286,10 +2286,10 @@ namespace CrimsonStainedLands
                 {
                     room.ExtraDescriptions.Remove(ed);
                     room.Area.saved = false;
-                    ch.send("Extra description removed.\n\r");
+                    ch.send("Extra description removed.\r\n");
                 }
                 else
-                    ch.send("You must supply a valid index or keyword.\n\r");
+                    ch.send("You must supply a valid index or keyword.\r\n");
             }
             else if ("move".StringPrefix(command))
             {
@@ -2316,10 +2316,10 @@ namespace CrimsonStainedLands
                     }
 
                     room.Area.saved = false;
-                    ch.send("Extra description moved.\n\r");
+                    ch.send("Extra description moved.\r\n");
                 }
                 else
-                    ch.send("You must supply a valid start and end index.\n\r");
+                    ch.send("You must supply a valid start and end index.\r\n");
             }
             else if ("create".StringPrefix(command) || "new".StringPrefix(command))
             {
@@ -2349,7 +2349,7 @@ namespace CrimsonStainedLands
                 }
                 else if (index >= eds.Count)
                 {
-                    ch.send("Index must be less than or equal to the count of resets in the room.\n\r");
+                    ch.send("Index must be less than or equal to the count of resets in the room.\r\n");
                     return;
                 }
                 else
@@ -2359,14 +2359,14 @@ namespace CrimsonStainedLands
 
                 if (keywords.ISEMPTY())
                 {
-                    ch.send("You must supply keywords.\n\r");
+                    ch.send("You must supply keywords.\r\n");
                     return;
                 }
 
                 var ed = new ExtraDescription(arguments, "");
 
                 room.ExtraDescriptions.Insert(index, ed);
-                ch.send("ExtraDescription added at index {0}.\n\r", index + 1);
+                ch.send("ExtraDescription added at index {0}.\r\n", index + 1);
                 room.Area.saved = false;
             }
             else if ("edit".StringPrefix(command))
@@ -2400,7 +2400,7 @@ namespace CrimsonStainedLands
                     }
                     else if (index >= eds.Count)
                     {
-                        ch.send("Index must be less than or equal to the count of resets in the room.\n\r");
+                        ch.send("Index must be less than or equal to the count of resets in the room.\r\n");
                         return;
                     }
                     else
@@ -2418,18 +2418,18 @@ namespace CrimsonStainedLands
                 {
                     if (modifier == "+")
                     {
-                        arguments = arguments.OneArgument(ref modifier).Replace("\n\r", "\n").Replace("\r\n", "\n");
+                        arguments = arguments.OneArgument(ref modifier).Replace("\r\n", "\n").Replace("\r\n", "\n");
                         ed.Description += ((ed.Description.Length > 0 && !ed.Description.EndsWith("\n")) ? "\n" : "") + arguments + "\n";
                     }
                     else if (modifier == "-")
                     {
                         var newlineindex = ed.Description.LastIndexOf("\n");
-                        arguments = arguments.OneArgument(ref modifier).Replace("\n\r", "\n").Replace("\r\n", "\n");
+                        arguments = arguments.OneArgument(ref modifier).Replace("\r\n", "\n").Replace("\r\n", "\n");
                         ed.Description = newlineindex < 1 ? "" : ed.Description.Substring(0, newlineindex);
                     }
                     else
-                        ed.Description = arguments.Replace("\n\r", "\n").Replace("\r\n", "\n") + "\n";
-                    ch.send("OK.\n\r");
+                        ed.Description = arguments.Replace("\r\n", "\n").Replace("\r\n", "\n") + "\n";
+                    ch.send("OK.\r\n");
                 }
             }
             else
@@ -2443,12 +2443,12 @@ namespace CrimsonStainedLands
 
             if (item == null)
             {
-                ch.send("You aren't editing an item.\n\r");
+                ch.send("You aren't editing an item.\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(item))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
             else if ("list".StringPrefix(command))
@@ -2458,24 +2458,24 @@ namespace CrimsonStainedLands
 
                 if (!strindex.ISEMPTY() && (int.TryParse(strindex, out var index) || (ed = item.ExtraDescriptions.FirstOrDefault(e => e.Keywords.IsName(strindex))) != null))
                 {
-                    ch.send("Keywords: {0}\n\rDescription: {1}\n\r", ed.Keywords, ed.Description);
+                    ch.send("Keywords: {0}\n\rDescription: {1}\r\n", ed.Keywords, ed.Description);
                 }
                 else if (!strindex.ISEMPTY())
                 {
-                    ch.send("ExtraDescription not found or index out of range.\n\r");
+                    ch.send("ExtraDescription not found or index out of range.\r\n");
                 }
                 else
                 {
                     var extradescriptions = item.ExtraDescriptions;
-                    ch.send("Extra descriptions for item {0} - {1}\n\r", item.Vnum, item.Name);
+                    ch.send("Extra descriptions for item {0} - {1}\r\n", item.Vnum, item.Name);
                     for (int i = 0; i < extradescriptions.Count; i++)
                     {
                         ed = extradescriptions[i];
 
-                        ch.send("[{0,5:D5}]    Keywords {1}\n\r",
+                        ch.send("[{0,5:D5}]    Keywords {1}\r\n",
                             i + 1, ed.Keywords);
                     }
-                    ch.send("\n\r{0} extra descriptions.\n\r", extradescriptions.Count);
+                    ch.send("\r\n{0} extra descriptions.\r\n", extradescriptions.Count);
                 }
             }
             else if ("delete".StringPrefix(command))
@@ -2486,10 +2486,10 @@ namespace CrimsonStainedLands
                 {
                     item.ExtraDescriptions.Remove(ed);
                     item.Area.saved = false;
-                    ch.send("Extra description removed.\n\r");
+                    ch.send("Extra description removed.\r\n");
                 }
                 else
-                    ch.send("You must supply a valid index or keyword.\n\r");
+                    ch.send("You must supply a valid index or keyword.\r\n");
             }
             else if ("move".StringPrefix(command))
             {
@@ -2516,10 +2516,10 @@ namespace CrimsonStainedLands
                     }
 
                     item.Area.saved = false;
-                    ch.send("Extra description moved.\n\r");
+                    ch.send("Extra description moved.\r\n");
                 }
                 else
-                    ch.send("You must supply a valid start and end index.\n\r");
+                    ch.send("You must supply a valid start and end index.\r\n");
             }
             else if ("create".StringPrefix(command) || "new".StringPrefix(command))
             {
@@ -2549,7 +2549,7 @@ namespace CrimsonStainedLands
                 }
                 else if (index >= eds.Count)
                 {
-                    ch.send("Index must be less than or equal to the count of resets in the room.\n\r");
+                    ch.send("Index must be less than or equal to the count of resets in the room.\r\n");
                     return;
                 }
                 else
@@ -2559,14 +2559,14 @@ namespace CrimsonStainedLands
 
                 if (keywords.ISEMPTY())
                 {
-                    ch.send("You must supply keywords.\n\r");
+                    ch.send("You must supply keywords.\r\n");
                     return;
                 }
 
                 var ed = new ExtraDescription(arguments, "");
 
                 item.ExtraDescriptions.Insert(index, ed);
-                ch.send("ExtraDescription added at index {0}.\n\r", index + 1);
+                ch.send("ExtraDescription added at index {0}.\r\n", index + 1);
                 item.Area.saved = false;
             }
             else if ("edit".StringPrefix(command))
@@ -2600,7 +2600,7 @@ namespace CrimsonStainedLands
                     }
                     else if (index >= eds.Count)
                     {
-                        ch.send("Index must be less than or equal to the count of resets in the room.\n\r");
+                        ch.send("Index must be less than or equal to the count of resets in the room.\r\n");
                         return;
                     }
                     else
@@ -2618,18 +2618,18 @@ namespace CrimsonStainedLands
                 {
                     if (modifier == "+")
                     {
-                        arguments = arguments.OneArgument(ref modifier).Replace("\n\r", "\n").Replace("\r\n", "\n");
+                        arguments = arguments.OneArgument(ref modifier).Replace("\r\n", "\n").Replace("\r\n", "\n");
                         ed.Description += ((ed.Description.Length > 0 && !ed.Description.EndsWith("\n")) ? "\n" : "") + arguments + "\n";
                     }
                     else if (modifier == "-")
                     {
                         var newlineindex = ed.Description.LastIndexOf("\n");
-                        arguments = arguments.OneArgument(ref modifier).Replace("\n\r", "\n").Replace("\r\n", "\n");
+                        arguments = arguments.OneArgument(ref modifier).Replace("\r\n", "\n").Replace("\r\n", "\n");
                         ed.Description = newlineindex < 1 ? "" : ed.Description.Substring(0, newlineindex);
                     }
                     else
-                        ed.Description = arguments.Replace("\n\r", "\n").Replace("\r\n", "\n") + "\n";
-                    ch.send("OK.\n\r");
+                        ed.Description = arguments.Replace("\r\n", "\n").Replace("\r\n", "\n") + "\n";
+                    ch.send("OK.\r\n");
                 }
             }
             else
@@ -2647,12 +2647,12 @@ namespace CrimsonStainedLands
                 args = args.OneArgument(ref vnumString);
                 if ((area = (from a in AreaData.Areas where a.VNumStart >= vnum && a.VNumEnd <= vnum select a).FirstOrDefault()) == null)
                 {
-                    ch.send("area vnum not found.\n\r");
+                    ch.send("area vnum not found.\r\n");
                     return;
                 }
                 else if (!ch.HasBuilderPermission(area))
                 {
-                    ch.send("Builder permissions not found.\n\r");
+                    ch.send("Builder permissions not found.\r\n");
                     return;
                 }
                 else
@@ -2660,19 +2660,19 @@ namespace CrimsonStainedLands
             }
             else if (!vnumString.ISEMPTY() && (area = (from a in AreaData.Areas where a.Name.IsName(vnumString) select a).FirstOrDefault()) == null)
             {
-                //ch.send("Area not found. Using current rooms area.\n\r");
+                //ch.send("Area not found. Using current rooms area.\r\n");
                 area = ch.Room.Area;
             }
             //else if (!ch.HasBuilderPermission(area))
             //{
-            //    ch.send("Builder permissions not found.\n\r");
+            //    ch.send("Builder permissions not found.\r\n");
             //    return;
             //}
             //else if (args.ISEMPTY())
             //{
             //    area = ch.Room.Area;
             //    ch.EditingArea = area;
-            //    ch.send("OK, editing area set to current room's area.\n\r");
+            //    ch.send("OK, editing area set to current room's area.\r\n");
             //    return;
             //}
             else if ("done".StringPrefix(args))
@@ -2681,14 +2681,14 @@ namespace CrimsonStainedLands
                 ch.EditingNPCTemplate = null;
                 ch.EditingItemTemplate = null;
                 ch.EditingArea = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
                 return;
             }
             if (area == null) area = ch.Room.Area;
             ch.EditingArea = area;
             if (!ch.HasBuilderPermission(area))
             {
-                ch.send("Builder permissions not set.\n\r");
+                ch.send("Builder permissions not set.\r\n");
                 return;
             }
             string commandStr = "";
@@ -2702,26 +2702,26 @@ namespace CrimsonStainedLands
                     return;
                 }
             }
-            ch.send("Invalid command.\n\r");
+            ch.send("Invalid command.\r\n");
         }
 
         public static void DoEditAreaName(Character ch, string args)
         {
             if (ch.EditingArea == null)
             {
-                ch.send("Edit area not found\n\r");
+                ch.send("Edit area not found\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(ch.EditingArea))
             {
-                ch.send("You don't have permission to edit that area.\n\r");
+                ch.send("You don't have permission to edit that area.\r\n");
             }
             else
             {
                 ch.EditingArea.Name = args;
 
                 ch.EditingArea.saved = false;
-                ch.send("Done.\n\r");
+                ch.send("Done.\r\n");
             }
         }
 
@@ -2729,19 +2729,19 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingArea == null)
             {
-                ch.send("Edit area not found\n\r");
+                ch.send("Edit area not found\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(ch.EditingArea))
             {
-                ch.send("You don't have permission to edit that area.\n\r");
+                ch.send("You don't have permission to edit that area.\r\n");
             }
             else
             {
                 ch.EditingArea.Credits = args;
 
                 ch.EditingArea.saved = false;
-                ch.send("Done.\n\r");
+                ch.send("Done.\r\n");
             }
         }
 
@@ -2749,23 +2749,23 @@ namespace CrimsonStainedLands
         {
             if (ch.EditingArea == null)
             {
-                ch.send("Edit area not found\n\r");
+                ch.send("Edit area not found\r\n");
                 return;
             }
             else if (!ch.HasBuilderPermission(ch.EditingArea))
             {
-                ch.send("You don't have permission to edit that area.\n\r");
+                ch.send("You don't have permission to edit that area.\r\n");
             }
             else if (!int.TryParse(args, out int Vnum) || !RoomData.Rooms.TryGetValue(Vnum, out var room))
             {
-                ch.send("Room with specified vnum not found.\n\r");
+                ch.send("Room with specified vnum not found.\r\n");
             }
             else
             {
                 ch.EditingArea.OverRoomVnum = Vnum;
 
                 ch.EditingArea.saved = false;
-                ch.send("Done.\n\r");
+                ch.send("Done.\r\n");
             }
         }
 
@@ -2793,7 +2793,7 @@ namespace CrimsonStainedLands
 
                 foreach(var help in helps)
                 {
-                    ch.send("{0} :: {1} - {2}\n\r", help.area.Name, help.vnum, help.keyword);
+                    ch.send("{0} :: {1} - {2}\r\n", help.area.Name, help.vnum, help.keyword);
                 }
             }
             else if ("create".StringPrefix(arg1))
@@ -2815,13 +2815,13 @@ namespace CrimsonStainedLands
                         ch.EditingHelp.area.saved = false;
                     }
                     else
-                        ch.send("Area with a vnum range containing that vnum not found.\n\r");
+                        ch.send("Area with a vnum range containing that vnum not found.\r\n");
                 }
                 else if (ch.EditingArea != null)
                 {
                     if (HelpData.Helps.Any(h => h.keyword.IsName(args)))
                     {
-                        ch.send("A help with that keyword already exists.\n\r");
+                        ch.send("A help with that keyword already exists.\r\n");
                     }
                     else
                     {
@@ -2849,7 +2849,7 @@ namespace CrimsonStainedLands
                     ch.EditingHelp.lastEditedOn = DateTime.Now;
                     ch.EditingHelp.lastEditedBy = ch.Name;
                     ch.EditingHelp.area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else if ("edit".StringPrefix(arg1))
@@ -2859,67 +2859,67 @@ namespace CrimsonStainedLands
                 {
                     ch.EditingHelp = HelpData.Helps.FirstOrDefault(h => h.vnum == vnum);
                     if (ch.EditingHelp != null)
-                        ch.send("Editing help {0} - {1}.\n\r", ch.EditingHelp.vnum, ch.EditingHelp.keyword);
+                        ch.send("Editing help {0} - {1}.\r\n", ch.EditingHelp.vnum, ch.EditingHelp.keyword);
                     else
-                        ch.send("Help {0} not found.\n\r", vnum);
+                        ch.send("Help {0} not found.\r\n", vnum);
                 }
                 else
                 {
                     ch.EditingHelp = HelpData.Helps.FirstOrDefault(h => h.keyword.IsName(args));
 
                     if (ch.EditingHelp != null)
-                        ch.send("Editing help {0} - {1}.\n\r", ch.EditingHelp.vnum, ch.EditingHelp.keyword);
+                        ch.send("Editing help {0} - {1}.\r\n", ch.EditingHelp.vnum, ch.EditingHelp.keyword);
                     else
-                        ch.send("Help {0} not found.\n\r", vnum);
+                        ch.send("Help {0} not found.\r\n", vnum);
                 }
             }
             else if ("vnum".StringPrefix(arg1))
             {
                 if (ch.EditingHelp == null)
-                    ch.send("You aren't editing a help entry.\n\r");
+                    ch.send("You aren't editing a help entry.\r\n");
                 else if (int.TryParse(args, out var vnum))
                 {
                     if (HelpData.Helps.Any(h => h.vnum == vnum && h != ch.EditingHelp))
                     {
-                        ch.send("A help with that vnum already exists.\n\r");
+                        ch.send("A help with that vnum already exists.\r\n");
                     }
                     else
                     {
                         ch.EditingHelp.vnum = vnum;
-                        ch.send("OK.\n\r");
+                        ch.send("OK.\r\n");
                     }
                 }
                 else
-                    ch.send("Enter a numeric vnum.\n\r");
+                    ch.send("Enter a numeric vnum.\r\n");
             }
             else if ("level".StringPrefix(arg1))
             {
                 if (ch.EditingHelp == null)
-                    ch.send("You aren't editing a help entry.\n\r");
+                    ch.send("You aren't editing a help entry.\r\n");
                 else if (int.TryParse(args, out var level))
                 {
                     ch.EditingHelp.level = level;
                     ch.EditingHelp.area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
                 else
-                    ch.send("Enter a numeric level.\n\r");
+                    ch.send("Enter a numeric level.\r\n");
             }
             else if ("keywords".StringPrefix(arg1))
             {
                 if (ch.EditingHelp == null)
-                    ch.send("You aren't editing a help entry.\n\r");
+                    ch.send("You aren't editing a help entry.\r\n");
                 else if (args.ISEMPTY())
-                    ch.send("Set keywords to what?\n\r");
+                    ch.send("Set keywords to what?\r\n");
                 else if (HelpData.Helps.Any(h => h.keyword.IsName(args) && h != ch.EditingHelp))
                 {
-                    ch.send("A help with that keyword already exists.\n\r");
+                    ch.send("A help with that keyword already exists.\r\n");
                 }
                 else
                 {
                     ch.EditingHelp.keyword = args;
                     ch.EditingHelp.area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
             }
             else if ("text".StringPrefix(arg1))
@@ -2927,7 +2927,7 @@ namespace CrimsonStainedLands
                 string mod = "";
                 args.OneArgument(ref mod);
                 if (ch.EditingHelp == null)
-                    ch.send("You aren't editing a help entry.\n\r");
+                    ch.send("You aren't editing a help entry.\r\n");
                 else if (mod == "-")
                 {
                     args = args.OneArgument();
@@ -2943,37 +2943,37 @@ namespace CrimsonStainedLands
                         ch.EditingHelp.text = "";
 
                     ch.EditingHelp.area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
                 else if (mod == "+")
                 {
                     args = args.OneArgument();
                     ch.EditingHelp.text += (!string.IsNullOrEmpty(ch.EditingHelp.text) && !ch.EditingHelp.text.EndsWith("\n") ? "\n" : "") + args + "\n";
                     ch.EditingHelp.area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
                 else
                 {
                     ch.EditingHelp.text = args;
                     ch.EditingHelp.area.saved = false;
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
                 }
 
             }
             else if ("done".StringPrefix(arg1))
             {
                 ch.EditingHelp = null;
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
                 if (ch.EditingHelp == null)
                 {
-                    ch.send("HEdit [create|list|edit] [vnum|keywords]\n\r");
+                    ch.send("HEdit [create|list|edit] [vnum|keywords]\r\n");
                 }
                 else
                 {
-                    ch.send("HEdit [vnum|keywords|level|text]\n\r");
+                    ch.send("HEdit [vnum|keywords|level|text]\r\n");
                 }
             }
         } // end DoEditHelp

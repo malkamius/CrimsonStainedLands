@@ -84,6 +84,7 @@ namespace CrimsonStainedLands
             Commands.Add(new Command { Name = "yell", Action = DoActCommunication.DoYell, Info = "Yell loudly in the area.", MinimumPosition = Positions.Resting, NPCCommand = false });
             Commands.Add(new Command { Name = "pray", Action = DoActCommunication.DoPray, Info = "Pray something to the gods.", MinimumPosition = Positions.Dead, NPCCommand = false });
             Commands.Add(new Command { Name = "newbie", Action = DoActCommunication.DoNewbie, Info = "Ask something on the newbie channel.", MinimumPosition = Positions.Dead, NPCCommand = false });
+            Commands.Add(new Command { Name = "ooc", Action = DoActCommunication.DoOOC, Info = "Say something on the global OOC channel.", MinimumPosition = Positions.Dead, NPCCommand = false });
 
             Commands.Add(new Command { Name = "alias", Action = DoActInfo.DoAlias, Info = "Set an alias for a command", MinimumPosition= Positions.Dead, NPCCommand = false });
 

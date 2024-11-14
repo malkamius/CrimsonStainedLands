@@ -14,21 +14,21 @@ namespace CrimsonStainedLands
         {
             if (victim == null || ((victim is Player) && ((Player)victim).connection == null))
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
                 return;
             }
             if (victim.Position == Positions.Sleeping)
             {
-                ch.send("They can't hear you right now.\n\r");
+                ch.send("They can't hear you right now.\r\n");
                 return;
             }
             // maybe move striphidden to dotell, let hidden mobs stay hidden while they tell?
             ch.StripHidden();
 
-            ch.Act("{1}$n tells you '{0}'{2}\n\r", victim, null, null, ActType.ToVictim, arguments,
+            ch.Act("{1}$n tells you '{0}'{2}\r\n", victim, null, null, ActType.ToVictim, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Tell),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-            ch.Act("{1}You tell $N '{0}'{2}\n\r", victim, null, null, ActType.ToChar, arguments,
+            ch.Act("{1}You tell $N '{0}'{2}\r\n", victim, null, null, ActType.ToChar, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Tell),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
 
@@ -54,7 +54,7 @@ namespace CrimsonStainedLands
                 // If a valid recall room is found, perform the recall action
 
                 // Display a message to the room indicating the character's prayer
-                ch.Act("$n prays for transportation and disappears.\n\r", type: ActType.ToRoom);
+                ch.Act("$n prays for transportation and disappears.\r\n", type: ActType.ToRoom);
 
                 // Remove the character from the current room
                 ch.RemoveCharacterFromRoom();
@@ -63,10 +63,10 @@ namespace CrimsonStainedLands
                 ch.AddCharacterToRoom(ch.GetRecallRoom());
 
                 // Send a message to the character indicating the successful recall
-                ch.SendToChar("You pray for transportation to your temple.\n\r");
+                ch.SendToChar("You pray for transportation to your temple.\r\n");
 
                 // Display a message to the room indicating the character's arrival
-                ch.Act("$n appears before the altar.\n\r", type: ActType.ToRoom);
+                ch.Act("$n appears before the altar.\r\n", type: ActType.ToRoom);
 
                 // Update the character's view with the newly arrived room
                 //DoLook(ch, "auto");
@@ -74,7 +74,7 @@ namespace CrimsonStainedLands
             else
             {
                 // If the recall room is not found, send an error message to the character
-                ch.SendToChar("Room not found.\n\r");
+                ch.SendToChar("Room not found.\r\n");
             }
         }
 
@@ -97,12 +97,12 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.send("Crawl West, East, South, West, Up, or Down?\n\r");
+                    ch.send("Crawl West, East, South, West, Up, or Down?\r\n");
                 }
             }
             else
             {
-                ch.send("Crawl in which direction?\n\r");
+                ch.send("Crawl in which direction?\r\n");
             }
         }
 
@@ -211,7 +211,7 @@ namespace CrimsonStainedLands
 
             if ((ch.Form == null && ch.Race != null && !ch.Race.parts.ISSET(PartFlags.Hands)) || (ch.Form != null && !ch.Form.Parts.ISSET(PartFlags.Hands)))
             {
-                ch.send("You don't have hands to open that.\n\r");
+                ch.send("You don't have hands to open that.\r\n");
                 return;
             }
 
@@ -219,10 +219,10 @@ namespace CrimsonStainedLands
             {
                 direction = exit.direction;
                 if (exit.flags.Contains(ExitFlags.Locked))
-                    ch.Act("{0} is locked.\n\r", null, null, null, ActType.ToChar, exit.display);
+                    ch.Act("{0} is locked.\r\n", null, null, null, ActType.ToChar, exit.display);
                 else if (exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("You open {0}.\n\r", exit.display);
+                    ch.send("You open {0}.\r\n", exit.display);
                     ch.Act("$n opens {0}.", null, null, null, ActType.ToRoom, exit.display);
                     exit.flags.REMOVEFLAG(ExitFlags.Closed);
                     ExitData otherSide;
@@ -234,40 +234,40 @@ namespace CrimsonStainedLands
                         otherSide.flags.Remove(ExitFlags.Closed);
                 }
                 else
-                    ch.Act("{0} isn't closed.\n\r", null, null, null, ActType.ToChar, exit.display);
+                    ch.Act("{0} isn't closed.\r\n", null, null, null, ActType.ToChar, exit.display);
             }
             //else if (ch.Form != null)
             //{
-            //    ch.send("You can't seem to manage that.\n\r");
+            //    ch.send("You can't seem to manage that.\r\n");
             //    return;
             //}
             else if ((container = ch.GetItemHere(arguments)) != null)
             {
                 if (!container.extraFlags.Contains(ExtraFlags.Closed))
                 {
-                    ch.send("{0} is already open.\n\r", container.Display(ch));
+                    ch.send("{0} is already open.\r\n", container.Display(ch));
                     return;
                 }
                 else if (container.extraFlags.Contains(ExtraFlags.Locked))
                 {
-                    ch.send("It's locked.\n\r");
+                    ch.send("It's locked.\r\n");
                     return;
                 }
                 else if (container.extraFlags.Contains(ExtraFlags.Closed))
                 {
                     container.extraFlags.Remove(ExtraFlags.Closed);
-                    ch.send("You open {0}.\n\r", container.Display(ch));
-                    ch.Act("$n opens $p.\n\r", null, container, null, ActType.ToRoom);
+                    ch.send("You open {0}.\r\n", container.Display(ch));
+                    ch.Act("$n opens $p.\r\n", null, container, null, ActType.ToRoom);
 
                     Programs.ExecutePrograms(Programs.ProgramTypes.Open, ch, container, "");
 
                     return;
                 }
                 else
-                    ch.send("You can't open that.\n\r");
+                    ch.send("You can't open that.\r\n");
             }
             else
-                ch.send("You can't open that.\n\r");
+                ch.send("You can't open that.\r\n");
         }
 
         public static void DoClose(Character ch, string arguments)
@@ -285,7 +285,7 @@ namespace CrimsonStainedLands
 
             if ((ch.Form == null && ch.Race != null && !ch.Race.parts.ISSET(PartFlags.Hands)) || (ch.Form != null && !ch.Form.Parts.ISSET(PartFlags.Hands)))
             {
-                ch.send("You don't have hands to close that.\n\r");
+                ch.send("You don't have hands to close that.\r\n");
                 return;
             }
 
@@ -293,15 +293,15 @@ namespace CrimsonStainedLands
             {
                 direction = exit.direction;
                 if (!exit.flags.Contains(ExitFlags.Door) && !exit.flags.Contains(ExitFlags.Window))
-                    ch.send("There's no door or window to the " + exit.direction.ToString().ToLower() + ".\n\r");
+                    ch.send("There's no door or window to the " + exit.direction.ToString().ToLower() + ".\r\n");
                 else if (exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("{0} is already closed.\n\r", exit.display.TOUPPERFIRST());
+                    ch.send("{0} is already closed.\r\n", exit.display.TOUPPERFIRST());
                 }
                 else if (exit.flags.Contains(ExitFlags.Door) || exit.flags.Contains(ExitFlags.Window))
                 {
-                    ch.send("You close {0}.\n\r", exit.display);
-                    ch.Act("$n closes {0}.\n\r", null, null, null, ActType.ToRoom, exit.display);
+                    ch.send("You close {0}.\r\n", exit.display);
+                    ch.Act("$n closes {0}.\r\n", null, null, null, ActType.ToRoom, exit.display);
                     exit.flags.ADDFLAG(ExitFlags.Closed);
 
                     ExitData otherSide;
@@ -318,26 +318,26 @@ namespace CrimsonStainedLands
             {
                 if (container.extraFlags.Contains(ExtraFlags.Closed))
                 {
-                    ch.send("{0} is already closed.\n\r", container.Display(ch));
+                    ch.send("{0} is already closed.\r\n", container.Display(ch));
                     return;
                 }
 
                 else if (container.extraFlags.Contains(ExtraFlags.Closable))
                 {
                     container.extraFlags.ADDFLAG(ExtraFlags.Closed);
-                    ch.send("You close {0}.\n\r", container.Display(ch));
-                    ch.Act("$n closes $p.\n\r", null, container, null, ActType.ToRoom);
+                    ch.send("You close {0}.\r\n", container.Display(ch));
+                    ch.Act("$n closes $p.\r\n", null, container, null, ActType.ToRoom);
 
                     Programs.ExecutePrograms(Programs.ProgramTypes.Close, ch, container, "");
 
                     return;
                 }
                 else
-                    ch.send("You can't close that.\n\r");
+                    ch.send("You can't close that.\r\n");
             }
 
             else
-                ch.send("You can't close that.\n\r");
+                ch.send("You can't close that.\r\n");
         }
 
         public static void DoLock(Character ch, string arguments)
@@ -355,11 +355,11 @@ namespace CrimsonStainedLands
                 direction = exit.direction;
                 if (!exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("It isn't closed.\n\r");
+                    ch.send("It isn't closed.\r\n");
                 }
                 else if (exit.flags.Contains(ExitFlags.Locked))
                 {
-                    ch.send("It's already locked.\n\r");
+                    ch.send("It's already locked.\r\n");
                 }
                 else if (exit.flags.Contains(ExitFlags.Door) || exit.flags.Contains(ExitFlags.Window))
                 {
@@ -384,18 +384,18 @@ namespace CrimsonStainedLands
                     }
                     if (exit.keys.Count == 0)
                     {
-                        ch.send("There is no key for that.\n\r");
+                        ch.send("There is no key for that.\r\n");
                         return;
                     }
                     else if (!found)
                     {
-                        ch.send("You don't have the key for that.\n\r");
+                        ch.send("You don't have the key for that.\r\n");
                         return;
                     }
                     else
                     {
-                        ch.send("You lock " + exit.display + ".\n\r");
-                        ch.Act("$n locks " + exit.display + ".\n\r", type: ActType.ToRoom);
+                        ch.send("You lock " + exit.display + ".\r\n");
+                        ch.Act("$n locks " + exit.display + ".\r\n", type: ActType.ToRoom);
                         exit.flags.ADDFLAG(ExitFlags.Locked);
                         ExitData otherSide;
                         if ((otherSide = exit.destination.exits[(int)reverseDirections[direction]]) != null && otherSide.destination == ch.Room && otherSide.flags.Contains(ExitFlags.Closed) && !otherSide.flags.Contains(ExitFlags.Locked))
@@ -408,12 +408,12 @@ namespace CrimsonStainedLands
             {
                 if (container.extraFlags.ISSET(ExtraFlags.Locked))
                 {
-                    ch.send("It's already locked.\n\r");
+                    ch.send("It's already locked.\r\n");
                     return;
                 }
                 else if (!container.extraFlags.ISSET(ExtraFlags.Closed))
                 {
-                    ch.send("It isn't closed.\n\r");
+                    ch.send("It isn't closed.\r\n");
                     return;
                 }
                 bool found = false;
@@ -438,12 +438,12 @@ namespace CrimsonStainedLands
 
                 if (container.Keys.Count == 0)
                 {
-                    ch.send("There is no key for that.\n\r");
+                    ch.send("There is no key for that.\r\n");
                     return;
                 }
                 else if (!found)
                 {
-                    ch.send("You don't have the key for that.\n\r");
+                    ch.send("You don't have the key for that.\r\n");
                     return;
                 }
                 else
@@ -455,7 +455,7 @@ namespace CrimsonStainedLands
                 }
             }
             else
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
         }
 
         public static void DoUnlock(Character ch, string arguments)
@@ -474,7 +474,7 @@ namespace CrimsonStainedLands
                 direction = exit.direction;
                 if (!exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("It isn't closed.\n\r");
+                    ch.send("It isn't closed.\r\n");
                 }
                 else if (exit.flags.Contains(ExitFlags.Locked))
                 {
@@ -499,18 +499,18 @@ namespace CrimsonStainedLands
                     }
                     if (exit.keys.Count == 0)
                     {
-                        ch.send("There is no key for that door.\n\r");
+                        ch.send("There is no key for that door.\r\n");
                         return;
                     }
                     else if (!found)
                     {
-                        ch.send("You don't have the key for that.\n\r");
+                        ch.send("You don't have the key for that.\r\n");
                         return;
                     }
                     else
                     {
-                        ch.send("You unlock " + exit.display + ".\n\r");
-                        ch.Act("$n unlocks " + exit.display + ".\n\r", type: ActType.ToRoom);
+                        ch.send("You unlock " + exit.display + ".\r\n");
+                        ch.Act("$n unlocks " + exit.display + ".\r\n", type: ActType.ToRoom);
                         exit.flags.REMOVEFLAG(ExitFlags.Locked);
                         ExitData otherSide;
                         if ((otherSide = exit.destination.exits[(int)reverseDirections[direction]]) != null && otherSide.destination == ch.Room && otherSide.flags.Contains(ExitFlags.Closed) && otherSide.flags.Contains(ExitFlags.Locked))
@@ -524,7 +524,7 @@ namespace CrimsonStainedLands
             {
                 if (!container.extraFlags.ISSET(ExtraFlags.Locked))
                 {
-                    ch.send("It's not locked.\n\r");
+                    ch.send("It's not locked.\r\n");
                     return;
                 }
                 bool found = false;
@@ -549,12 +549,12 @@ namespace CrimsonStainedLands
 
                 if (container.Keys.Count == 0)
                 {
-                    ch.send("There is no key for that.\n\r");
+                    ch.send("There is no key for that.\r\n");
                     return;
                 }
                 else if (!found)
                 {
-                    ch.send("You don't have the key for that.\n\r");
+                    ch.send("You don't have the key for that.\r\n");
                     return;
                 }
                 else
@@ -581,7 +581,7 @@ namespace CrimsonStainedLands
                 }
             }
             else
-                ch.send("You don't see that here.\n\r"); // ch.send("You can't unlock that.\n\r");
+                ch.send("You don't see that here.\r\n"); // ch.send("You can't unlock that.\r\n");
         }
 
         public static void DoSave(Character ch, string arguments)
@@ -589,7 +589,7 @@ namespace CrimsonStainedLands
             if (ch is Player)
             {
                 ((Player)ch).SaveCharacterFile();
-                ch.SendToChar("Character data saved.\n\r");
+                ch.SendToChar("Character data saved.\r\n");
             }
 
         }
@@ -611,7 +611,7 @@ namespace CrimsonStainedLands
                     {
                         connection.LastReadNote = note.Sent;
                         using (new Character.Page(ch))
-                            ch.send("To: " + note.To + "\nFrom: " + note.Sender + "\nSubject: " + note.Subject + "\n\r" + "Body: " + note.Body + "\n\r");
+                            ch.send("To: " + note.To + "\nFrom: " + note.Sender + "\nSubject: " + note.Subject + "\r\n" + "Body: " + note.Body + "\r\n");
                         found = true;
                         break;
                     }
@@ -623,7 +623,7 @@ namespace CrimsonStainedLands
                 if (lastReadDate > connection.LastReadNote)
                     connection.LastReadNote = lastReadDate;
                 if (!found)
-                    ch.send("No unread notes.\n\r");
+                    ch.send("No unread notes.\r\n");
             }
             else if ("list".StringCmp(command))
             {
@@ -638,7 +638,7 @@ namespace CrimsonStainedLands
                     {
                         //connection.LastReadNote = note.Sent;
 
-                        ch.send(note.Sender + " - " + note.Subject + "\n\r");
+                        ch.send(note.Sender + " - " + note.Subject + "\r\n");
                     }
 
 
@@ -646,33 +646,33 @@ namespace CrimsonStainedLands
             }
             else if ("show".StringCmp(command))
             {
-                ch.send("To: " + connection.UnsentNote.To + "\n\rSubject: " + connection.UnsentNote.Subject + "\n\r" + "Body: " + connection.UnsentNote.Body + "\n\r");
+                ch.send("To: " + connection.UnsentNote.To + "\r\nSubject: " + connection.UnsentNote.Subject + "\r\n" + "Body: " + connection.UnsentNote.Body + "\r\n");
             }
             else if ("to".StringCmp(command))
             {
                 connection.UnsentNote.To = arguments;
-                ch.send("Note to {0}.\n\r", arguments);
+                ch.send("Note to {0}.\r\n", arguments);
             }
             else if ("subject".StringCmp(command))
             {
                 connection.UnsentNote.Subject = arguments;
-                ch.send("Note suject {0}.\n\r", arguments);
+                ch.send("Note suject {0}.\r\n", arguments);
             }
             else if ("+".StringCmp(command))
             {
                 if (connection.UnsentNote.Body.Length + arguments.Length > 800 || (connection.UnsentNote.Body + arguments).Count(c => c == '\n') > 80)
                 {
-                    ch.send("Note too long.\n\r");
+                    ch.send("Note too long.\r\n");
                 }
                 else
                 {
-                    connection.UnsentNote.Body = connection.UnsentNote.Body + "\n\r" + arguments;
-                    ch.send("OK.\n\r");
+                    connection.UnsentNote.Body = connection.UnsentNote.Body + "\r\n" + arguments;
+                    ch.send("OK.\r\n");
                 }
             }
             else if ("-".StringCmp(command))
             {
-                connection.UnsentNote.Body = connection.UnsentNote.Body.Substring(0, connection.UnsentNote.Body.LastIndexOf("\n\r"));
+                connection.UnsentNote.Body = connection.UnsentNote.Body.Substring(0, connection.UnsentNote.Body.LastIndexOf("\r\n"));
             }
             else if ("clear".StringCmp(command))
             {
@@ -682,7 +682,7 @@ namespace CrimsonStainedLands
             {
                 if (NoteData.Notes.Count(n => n.Sender == ch.Name) > 100)
                 {
-                    ch.send("You have too many notes already.\n\r");
+                    ch.send("You have too many notes already.\r\n");
                 }
                 else if (!connection.UnsentNote.Subject.ISEMPTY() && !connection.UnsentNote.Body.ISEMPTY() && !connection.UnsentNote.To.ISEMPTY())
                 {
@@ -691,13 +691,13 @@ namespace CrimsonStainedLands
                     NoteData.Notes.Add(connection.UnsentNote);
                     NoteData.SaveNotes();
                     connection.UnsentNote = new NoteData();
-                    ch.send("Note sent.\n\r");
+                    ch.send("Note sent.\r\n");
                 }
                 else
-                    ch.send("One or more of the note fields are blank\n\r");
+                    ch.send("One or more of the note fields are blank\r\n");
             }
             else
-                ch.send("Syntax: note [list|read|to|subject|+|-|show]\n\r");
+                ch.send("Syntax: note [list|read|to|subject|+|-|show]\r\n");
         }
 
         public static void DoQuit(Character ch, string arguments)
@@ -724,7 +724,7 @@ namespace CrimsonStainedLands
                 }
                 // end remove keys
                 player.SaveCharacterFile();
-                player.SendRaw("\nGoodbye!\n\r", true);
+                player.SendRaw("\nGoodbye!\r\n", true);
                 ch.RemoveCharacterFromRoom(ExecutePrograms: false);
                 ch.Dispose();
                 Game.CloseSocket((Player)ch, true);
@@ -735,7 +735,7 @@ namespace CrimsonStainedLands
         {
             if (ch.IsAffected(AffectFlags.Blind))
             {
-                ch.send("You can't see anything!\n\r");
+                ch.send("You can't see anything!\r\n");
             }
             else if (ch.Room != null && ch.Room.Area != null)
             {
@@ -748,12 +748,12 @@ namespace CrimsonStainedLands
                         if (other.Name.IsName(arguments))
                         {
                             var display = (other.Display(ch));
-                            ch.send((other == ch ? "*   " : "    ") + display.PadRight(20) + (TimeInfo.IS_NIGHT && !other.Room.NightName.ISEMPTY() ? other.Room.NightName : other.Room.Name) + "\n\r");
+                            ch.send((other == ch ? "*   " : "    ") + display.PadRight(20) + (TimeInfo.IS_NIGHT && !other.Room.NightName.ISEMPTY() ? other.Room.NightName : other.Room.Name) + "\r\n");
                             return;
                         }
                     }
 
-                    ch.send("You don't see them.\n\r");
+                    ch.send("You don't see them.\r\n");
                     return;
                 }
                 else
@@ -763,16 +763,16 @@ namespace CrimsonStainedLands
 
                         var display = (other.Display(ch));
                         if (other.Room != null && ch.CanSee(other))
-                            others.Append((other == ch ? "*   " : "    ") + display.PadRight(20) + (TimeInfo.IS_NIGHT && !other.Room.NightName.ISEMPTY() ? other.Room.NightName : other.Room.Name) + "\n\r");
+                            others.Append((other == ch ? "*   " : "    ") + display.PadRight(20) + (TimeInfo.IS_NIGHT && !other.Room.NightName.ISEMPTY() ? other.Room.NightName : other.Room.Name) + "\r\n");
                     }
                     if (others.Length == 0)
-                        others.AppendLine("    No one nearby.\n\r");
-                    ch.SendToChar("Players nearby:\n\r" + others.ToString());
+                        others.AppendLine("    No one nearby.\r\n");
+                    ch.SendToChar("Players nearby:\r\n" + others.ToString());
                 }
 
             }
             else
-                ch.SendToChar("You aren't in an area where people can be tracked!\n\r");
+                ch.SendToChar("You aren't in an area where people can be tracked!\r\n");
         }
 
         public static void DoWho(Character ch, string arguments)
@@ -785,7 +785,7 @@ namespace CrimsonStainedLands
             {
                 if (player.state == Player.ConnectionStates.Playing && player.connection != null && (!player.Flags.ISSET(ActFlags.WizInvis) || ch.Flags.ISSET(ActFlags.HolyLight) && ch.Level >= player.Level))
                 {
-                    whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}{6}\n\r",
+                    whoList.AppendFormat("[{0} {1}] {2}{3}{4}{5}{6}\r\n",
                         player.Level.ToString().PadRight(4),
                         player.Guild.whoName,
                         player.IsAFK ? "\\r(AFK)\\x" : "     ",
@@ -796,9 +796,9 @@ namespace CrimsonStainedLands
                     playersOnline++;
                 }
             }
-            whoList.Append("Visible players: " + playersOnline + "\n\r");
-            whoList.Append("Max players online at once since last reboot: " + Game.Instance.MaxPlayersOnline + "\n\r");
-            whoList.Append("Max players online at once ever: " + Game.MaxPlayersOnlineEver + "\n\r");
+            whoList.Append("Visible players: " + playersOnline + "\r\n");
+            whoList.Append("Max players online at once since last reboot: " + Game.Instance.MaxPlayersOnline + "\r\n");
+            whoList.Append("Max players online at once ever: " + Game.MaxPlayersOnlineEver + "\r\n");
 
             using (new Character.Page(ch))
                 ch.SendToChar(whoList.ToString());
@@ -812,10 +812,10 @@ namespace CrimsonStainedLands
             {
                 if (ch.Following != null)
                 {
-                    ch.send("You stop following " + (ch.Following.Display(ch)) + ".\n\r");
+                    ch.send("You stop following " + (ch.Following.Display(ch)) + ".\r\n");
                     if (ch.Following.Group.Contains(ch))
                         ch.Following.Group.Remove(ch);
-                    ch.Following.send(ch.Display(ch.Following) + " stops following you.\n\r");
+                    ch.Following.send(ch.Display(ch.Following) + " stops following you.\r\n");
 
                     foreach (var other in Character.Characters.ToArray())
                     {
@@ -829,7 +829,7 @@ namespace CrimsonStainedLands
                     ch.Leader = null;
                 }
                 else
-                    ch.send("You aren't following anybody.\n\r");
+                    ch.send("You aren't following anybody.\r\n");
             }
             else if (follow != null)
             {
@@ -844,25 +844,25 @@ namespace CrimsonStainedLands
                         }
                     }
                     ch.Leader = null;
-                    ch.Following.send(ch.Display(ch.Following) + " stops following you.\n\r");
+                    ch.Following.send(ch.Display(ch.Following) + " stops following you.\r\n");
 
                 }
 
                 if (follow.Flags.ISSET(ActFlags.NoFollow))
                 {
-                    ch.send("They don't allow followers.\n\r");
+                    ch.send("They don't allow followers.\r\n");
                 }
                 else
                 {
                     ch.Leader = null;
                     ch.Following = follow;
-                    ch.send("You start following " + (follow.Display(ch)) + ".\n\r");
+                    ch.send("You start following " + (follow.Display(ch)) + ".\r\n");
                     ch.Act("$n begins following $N.", follow, type: ActType.ToRoomNotVictim);
-                    follow.send(ch.Display(follow) + " starts following you.\n\r");
+                    follow.send(ch.Display(follow) + " starts following you.\r\n");
                 }
             }
             else
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
 
         }
 
@@ -876,7 +876,7 @@ namespace CrimsonStainedLands
             else
             {
                 ch.Flags.REMOVEFLAG(ActFlags.NoFollow);
-                ch.send("You now allow followers.\n\r");
+                ch.send("You now allow followers.\r\n");
             }
         }
 
@@ -915,32 +915,32 @@ namespace CrimsonStainedLands
                     ch.send(members.ToString());
                 }
                 else
-                    ch.send("You aren't in a group.\n\r");
+                    ch.send("You aren't in a group.\r\n");
             }
             else if (!ch.IsAwake)
             {
-                ch.send("In your dreams, or what?\n\r");
+                ch.send("In your dreams, or what?\r\n");
                 return;
             }
             else if (arguments.equals("self") || (groupWith = ch.GetCharacterFromRoomByName(arguments, ref count)) == ch)
             {
-                ch.send("You can't group with yourself.\n\r");
+                ch.send("You can't group with yourself.\r\n");
             }
             else if (groupWith != null)
             {
                 if (ch.Following != null && ch.Following.Group.Contains(ch))
                 {
-                    ch.send("You aren't the group leader.\n\r");
+                    ch.send("You aren't the group leader.\r\n");
                 }
                 else if (groupWith.Following != ch)
-                    ch.send("They aren't following you.\n\r");
+                    ch.send("They aren't following you.\r\n");
                 else if (ch.Group.Contains(groupWith))
                 {
                     groupWith.Leader = null;
                     ch.Group.Remove(groupWith);
-                    ch.send("You remove " + groupWith.Display(ch) + " from the group.\n\r");
-                    ch.Act("$n removes $N from their group.\n\r", groupWith, type: ActType.ToRoomNotVictim);
-                    groupWith.send(ch.Display(groupWith) + " removes you from the group.\n\r");
+                    ch.send("You remove " + groupWith.Display(ch) + " from the group.\r\n");
+                    ch.Act("$n removes $N from their group.\r\n", groupWith, type: ActType.ToRoomNotVictim);
+                    groupWith.send(ch.Display(groupWith) + " removes you from the group.\r\n");
                 }
                 else
                 {
@@ -948,9 +948,9 @@ namespace CrimsonStainedLands
                         ch.Group.Add(ch);
                     ch.Group.Add(groupWith);
                     groupWith.Leader = ch;
-                    ch.send("You add " + (groupWith.Display(ch)) + " to the group.\n\r");
+                    ch.send("You add " + (groupWith.Display(ch)) + " to the group.\r\n");
                     ch.Act("$n adds $N to their group.", groupWith, type: ActType.ToRoomNotVictim);
-                    groupWith.send(ch.Display(groupWith) + " adds you to the group.\n\r");
+                    groupWith.send(ch.Display(groupWith) + " adds you to the group.\r\n");
                 }
             }
         }
@@ -959,22 +959,22 @@ namespace CrimsonStainedLands
         {
             if (ch.Position == Positions.Resting || ch.Position == Positions.Sitting)
             {
-                ch.send("You stand up.\n\r");
-                ch.Act("$n stands up.\n\r", type: ActType.ToRoom);
+                ch.send("You stand up.\r\n");
+                ch.Act("$n stands up.\r\n", type: ActType.ToRoom);
             }
             else if (ch.Position == Positions.Sleeping)
             {
                 if (ch.IsAffected(AffectFlags.Sleep) || ch.IsAffected(SkillSpell.SkillLookup("strangle")))
                 {
-                    ch.send("You try but can't wake up!\n\r");
+                    ch.send("You try but can't wake up!\r\n");
                     return;
                 }
-                ch.send("You wake and stand up.\n\r");
-                ch.Act("$n wakes and stands up.\n\r", type: ActType.ToRoom);
+                ch.send("You wake and stand up.\r\n");
+                ch.Act("$n wakes and stands up.\r\n", type: ActType.ToRoom);
             }
             else
             {
-                ch.send("You can't do that.\n\r");
+                ch.send("You can't do that.\r\n");
                 return;
             }
             ch.Position = Positions.Standing;
@@ -984,22 +984,22 @@ namespace CrimsonStainedLands
         {
             if (ch.Position == Positions.Standing || ch.Position == Positions.Sitting)
             {
-                ch.send("You start resting.\n\r");
-                ch.Act("$n starts resting.\n\r", type: ActType.ToRoom);
+                ch.send("You start resting.\r\n");
+                ch.Act("$n starts resting.\r\n", type: ActType.ToRoom);
             }
             else if (ch.Position == Positions.Sleeping)
             {
                 if (ch.IsAffected(AffectFlags.Sleep) || ch.IsAffected(SkillSpell.SkillLookup("strangle")))
                 {
-                    ch.send("You try but can't wake up!\n\r");
+                    ch.send("You try but can't wake up!\r\n");
                     return;
                 }
-                ch.send("You wake and start resting.\n\r");
-                ch.Act("$n wakes and starts resting.\n\r", type: ActType.ToRoom);
+                ch.send("You wake and start resting.\r\n");
+                ch.Act("$n wakes and starts resting.\r\n", type: ActType.ToRoom);
             }
             else
             {
-                ch.send("You can't do that.\n\r");
+                ch.send("You can't do that.\r\n");
                 return;
             }
             ch.Position = Positions.Resting;
@@ -1009,22 +1009,22 @@ namespace CrimsonStainedLands
         {
             if (ch.Position == Positions.Standing || ch.Position == Positions.Resting)
             {
-                ch.send("You sit down.\n\r");
-                ch.Act("$n sits down.\n\r", type: ActType.ToRoom);
+                ch.send("You sit down.\r\n");
+                ch.Act("$n sits down.\r\n", type: ActType.ToRoom);
             }
             else if (ch.Position == Positions.Sleeping)
             {
                 if (ch.IsAffected(AffectFlags.Sleep) || ch.IsAffected(SkillSpell.SkillLookup("strangle")))
                 {
-                    ch.send("You try but can't wake up!\n\r");
+                    ch.send("You try but can't wake up!\r\n");
                     return;
                 }
-                ch.send("You wake and sit down.\n\r");
-                ch.Act("$n wakes and sits down.\n\r", type: ActType.ToRoom);
+                ch.send("You wake and sit down.\r\n");
+                ch.Act("$n wakes and sits down.\r\n", type: ActType.ToRoom);
             }
             else
             {
-                ch.send("You can't do that.\n\r");
+                ch.send("You can't do that.\r\n");
                 return;
             }
             ch.Position = Positions.Sitting;
@@ -1034,8 +1034,8 @@ namespace CrimsonStainedLands
         {
             if (ch.Position == Positions.Standing || ch.Position == Positions.Resting || ch.Position == Positions.Sitting)
             {
-                ch.send("You lay down and go to sleep.\n\r");
-                ch.Act("$n lays down and goes to sleep.\n\r", type: ActType.ToRoom);
+                ch.send("You lay down and go to sleep.\r\n");
+                ch.Act("$n lays down and goes to sleep.\r\n", type: ActType.ToRoom);
                 ch.Position = Positions.Sleeping;
             }
             else if (ch.Position == Positions.Sleeping)
@@ -1044,7 +1044,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.send("You can't do that.\n\r");
+                ch.send("You can't do that.\r\n");
             }
 
         }
@@ -1054,28 +1054,28 @@ namespace CrimsonStainedLands
             int chance = ch.GetSkillPercentage(skill);
             if (chance <= 1)
             {
-                ch.send("You don't know how to camp.\n\r");
+                ch.send("You don't know how to camp.\r\n");
                 return;
             }
             if (ch.Fighting != null || ch.Position == Positions.Fighting)
             {
-                ch.send("You can't camp while fighting!\n\r");
+                ch.send("You can't camp while fighting!\r\n");
                 return;
             }
             if (!ch.Room.IsWilderness)
             {
-                ch.send("You can only camp in the wild.\n\r");
+                ch.send("You can only camp in the wild.\r\n");
                 return;
             }
             if (chance + 20 < Utility.NumberPercent())
             {
-                ch.send("You tried to set up camp but failed.\n\r");
+                ch.send("You tried to set up camp but failed.\r\n");
                 ch.CheckImprove(skill, false, 1);
                 return;
             }
 
-            ch.send("You prepare a camp and quickly lay down to rest.\n\r");
-            ch.Act("$n prepares a camp and quickly lays down to rest.\n\r", type: ActType.ToRoom);
+            ch.send("You prepare a camp and quickly lay down to rest.\r\n");
+            ch.Act("$n prepares a camp and quickly lays down to rest.\r\n", type: ActType.ToRoom);
 
             foreach (var groupmember in ch.Room.Characters.ToArray())
             {
@@ -1083,8 +1083,8 @@ namespace CrimsonStainedLands
                 {
                     if (ch != groupmember)
                     {
-                        groupmember.Act("$N has prepared a camp, you quickly join $M in resting.\n\r", ch);
-                        groupmember.Act("$n joins $N at $S camp and quicly lays down to rest.\n\r", type: ActType.ToRoomNotVictim);
+                        groupmember.Act("$N has prepared a camp, you quickly join $M in resting.\r\n", ch);
+                        groupmember.Act("$n joins $N at $S camp and quicly lays down to rest.\r\n", type: ActType.ToRoomNotVictim);
                         groupmember.Position = Positions.Sleeping;
                     }
                     var aff = new AffectData();
@@ -1092,7 +1092,7 @@ namespace CrimsonStainedLands
                     aff.where = AffectWhere.ToAffects;
                     aff.duration = -1;
                     aff.displayName = "camp";
-                    aff.endMessage = "You feel refreshed as you break camp.\n\r";
+                    aff.endMessage = "You feel refreshed as you break camp.\r\n";
                     groupmember.AffectToChar(aff);
                 }
             }
@@ -1108,17 +1108,17 @@ namespace CrimsonStainedLands
             {
                 if (ch.IsAffected(AffectFlags.Sleep) || ch.IsAffected(SkillSpell.SkillLookup("strangle")))
                 {
-                    ch.send("You try but can't wake up!\n\r");
+                    ch.send("You try but can't wake up!\r\n");
                     return;
                 }
                 else if (ch.Position == Positions.Sleeping)
                 {
-                    ch.send("You wake and stand up.\n\r");
-                    ch.Act("$n wakes and stands up.\n\r", type: ActType.ToRoom);
+                    ch.send("You wake and stand up.\r\n");
+                    ch.Act("$n wakes and stands up.\r\n", type: ActType.ToRoom);
                 }
                 else
                 {
-                    ch.send("You aren't sleeping!\n\r");
+                    ch.send("You aren't sleeping!\r\n");
                     return;
                 }
                 ch.Position = Positions.Standing;
@@ -1131,13 +1131,13 @@ namespace CrimsonStainedLands
                 }
                 else if (other.Position == Positions.Sleeping)
                 {
-                    other.send(ch.Display(other) + " wakes you up and you stand up.\n\r");
-                    ch.Act("$n wakes $N up.\n\r", other, type: ActType.ToRoom);
+                    other.send(ch.Display(other) + " wakes you up and you stand up.\r\n");
+                    ch.Act("$n wakes $N up.\r\n", other, type: ActType.ToRoom);
                     ch.Act("You wake $N up.", other, type: ActType.ToChar);
                     other.Position = Positions.Standing;
                 }
                 else
-                    ch.send("They aren't sleeping.\n\r");
+                    ch.send("They aren't sleeping.\r\n");
             }
         }
 
@@ -1147,11 +1147,11 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage("airform fly") <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (ch.Room == null || ch.Room.Area == null || ch.Room.Area.OverRoomVnum == 0 || !RoomData.Rooms.TryGetValue(ch.Room.Area.OverRoomVnum, out overroom))
             {
-                ch.send("You can't fly from here.\n\r");
+                ch.send("You can't fly from here.\r\n");
             }
             else
             {
@@ -1198,19 +1198,19 @@ namespace CrimsonStainedLands
                             column++;
                     }
                 }
-                ch.send(text + "\n\rYou have {0} practice sessions left.\n\r", ch.Practices);
+                ch.send(text + "\r\nYou have {0} practice sessions left.\r\n", ch.Practices);
             }
             else
             {
                 if (!ch.IsAwake)
                 {
-                    ch.SendToChar("In your dreams or what?\n\r");
+                    ch.SendToChar("In your dreams or what?\r\n");
                     return;
                 }
 
                 if (ch.Form != null)
                 {
-                    ch.send("You can't do that in form.\n\r");
+                    ch.send("You can't do that in form.\r\n");
                     return;
                 }
                 SkillSpell skill;
@@ -1238,7 +1238,7 @@ namespace CrimsonStainedLands
 
                 if (practiceMob != null && practiceMob.Guild != null && practiceMob.Guild != ch.Guild)
                 {
-                    ch.send("They won't teach you because you aren't a {0}.\n\r", practiceMob.Guild.name);
+                    ch.send("They won't teach you because you aren't a {0}.\r\n", practiceMob.Guild.name);
                     return;
                 }
                 if (skill != null)
@@ -1250,27 +1250,27 @@ namespace CrimsonStainedLands
                     {
                         ch.LearnSkill(skill, Math.Min(learned + PhysicalStats.IntelligenceApply[ch.GetCurrentStat(PhysicalStatTypes.Intelligence)].Learn, 75));
                         ch.Practices -= 1;
-                        ch.send("You practice and learn in the ability {0}.\n\r", skill.name);
+                        ch.send("You practice and learn in the ability {0}.\r\n", skill.name);
                         if (ch.Learned[skill].Percentage == 75)
                         {
-                            ch.send("\\gYou are now learned in the ability {0}.\\x\n\r", skill.name);
+                            ch.send("\\gYou are now learned in the ability {0}.\\x\r\n", skill.name);
                         }
                     }
                     else if (learned >= 75)
                     {
-                        ch.send("You are already learned at " + skill.name + ".\n\r");
+                        ch.send("You are already learned at " + skill.name + ".\r\n");
                     }
                     else if (practiceMob == null)
-                        ch.send("Find a guild master and have practices.\n\r");
+                        ch.send("Find a guild master and have practices.\r\n");
                     else if (ch.Practices == 0)
                     {
-                        ch.send("You don't have enough practice sessions.\n\r");
+                        ch.send("You don't have enough practice sessions.\r\n");
                     }
                     else
-                        ch.send("What skill is that?\n\r");
+                        ch.send("What skill is that?\r\n");
                 }
                 else
-                    ch.send("What skill is that?\n\r");
+                    ch.send("What skill is that?\r\n");
             }
         }
 
@@ -1291,23 +1291,23 @@ namespace CrimsonStainedLands
             {
                 if (ch.Form != null)
                 {
-                    ch.send("You can't do that in form.\n\r");
+                    ch.send("You can't do that in form.\r\n");
                     return;
                 }
 
                 if (arguments.ISEMPTY())
                 {
 
-                    ch.send("You can train: \n\r");
+                    ch.send("You can train: \r\n");
                     foreach (var stat in Enum.GetValues(typeof(PhysicalStatTypes)).OfType<PhysicalStatTypes>())//(var stat = PhysicalStatTypes.Strength; stat < PhysicalStatTypes.Charisma; stat++)
                     {
                         if (ch.PermanentStats[stat] < ch.PcRace.MaxStats[stat])
                         {
-                            ch.send("\t" + stat.ToString() + "\n\r");
+                            ch.send("\t" + stat.ToString() + "\r\n");
                         }
                     }
-                    ch.send("\tHitpoints\n\r\tMana\n\r");
-                    ch.send("You have " + ch.Trains + " trains.\n\r");
+                    ch.send("\tHitpoints\r\n\tMana\r\n");
+                    ch.send("You have " + ch.Trains + " trains.\r\n");
                     return;
                 }
 
@@ -1318,8 +1318,8 @@ namespace CrimsonStainedLands
                     {
                         if (stat.ToString().StringPrefix(arguments) && ch.PermanentStats[stat] < ch.PcRace.MaxStats[stat])
                         {
-                            ch.send("You train your " + stat.ToString() + ".\n\r");
-                            ch.Act("$n's " + stat.ToString() + " increases.\n\r", type: ActType.ToRoom);
+                            ch.send("You train your " + stat.ToString() + ".\r\n");
+                            ch.Act("$n's " + stat.ToString() + " increases.\r\n", type: ActType.ToRoom);
                             ch.PermanentStats[stat] = ch.PermanentStats[stat] + 1;
                             ch.Trains--;
                             return;
@@ -1328,8 +1328,8 @@ namespace CrimsonStainedLands
 
                     if ("hitpoints".StringPrefix(arguments) || arguments.StringCmp("hp"))
                     {
-                        ch.send("You train your hitpoints.\n\r");
-                        ch.Act("$n's hitpoints increase.\n\r", type: ActType.ToRoom);
+                        ch.send("You train your hitpoints.\r\n");
+                        ch.Act("$n's hitpoints increase.\r\n", type: ActType.ToRoom);
                         ch.MaxHitPoints += 10;
                         ch.Trains--;
                         return;
@@ -1337,20 +1337,20 @@ namespace CrimsonStainedLands
 
                     if ("mana".StringPrefix(arguments))
                     {
-                        ch.send("You train your mana.\n\r");
-                        ch.Act("$n's mana increases.\n\r", type: ActType.ToRoom);
+                        ch.send("You train your mana.\r\n");
+                        ch.Act("$n's mana increases.\r\n", type: ActType.ToRoom);
                         ch.MaxManaPoints += 10;
                         ch.Trains--;
                         return;
                     }
 
-                    ch.send("You can't train that.\n\r");
+                    ch.send("You can't train that.\r\n");
                 }
                 else
-                    ch.send("You have no trains.\n\r");
+                    ch.send("You have no trains.\r\n");
             }
             else
-                ch.send("There is no trainer here.\n\r");
+                ch.send("There is no trainer here.\r\n");
 
         }
 
@@ -1371,7 +1371,7 @@ namespace CrimsonStainedLands
             {
                 if (ch.Form != null)
                 {
-                    ch.send("You can't do that in form.\n\r");
+                    ch.send("You can't do that in form.\r\n");
                     return;
                 }
 
@@ -1384,7 +1384,7 @@ namespace CrimsonStainedLands
                         ch.Act("You convert 1 train into 10 practices.");
                     }
                     else
-                        ch.send("You have no trains.\n\r");
+                        ch.send("You have no trains.\r\n");
                 }
                 else if ("convert".StringPrefix(arguments))
                 {
@@ -1395,13 +1395,13 @@ namespace CrimsonStainedLands
                         ch.Act("You convert 10 practices into 1 train.");
                     }
                     else
-                        ch.send("You don't have enough practices.\n\r");
+                        ch.send("You don't have enough practices.\r\n");
                 }
                 else
                     ch.send("Gain [convert|revert]");
             }
             else
-                ch.send("There is no trainer here.\n\r");
+                ch.send("There is no trainer here.\r\n");
 
         }
 
@@ -1486,10 +1486,10 @@ namespace CrimsonStainedLands
                     var item = new ItemData(itemTemplate, ch, false);
                 }
 
-                ch.send("The gods have equipped you.\n\r");
+                ch.send("The gods have equipped you.\r\n");
             }
             else
-                ch.send("The gods found you wanting nothing.\n\r");
+                ch.send("The gods found you wanting nothing.\r\n");
         }
 
         public static void DoDelete(Character ch, string arguments)
@@ -1501,7 +1501,7 @@ namespace CrimsonStainedLands
             else if (!(from aff in ch.AffectsList where aff.name == "DeleteConfirm" select aff).Any())
             {
                 ch.AffectsList.Add(new AffectData { duration = 2, displayName = "Contemplating Deletion", name = "DeleteConfirm" });
-                ch.send("Type 'delete yes' to confirm.\n\r");
+                ch.send("Type 'delete yes' to confirm.\r\n");
             }
             else if ("yes".StringCmp(arguments))
             {
@@ -1511,7 +1511,7 @@ namespace CrimsonStainedLands
             else
             {
                 ch.AffectsList.RemoveAll(aff => aff.name == "DeleteConfirm");
-                ch.send("Delete cancelled.\n\r");
+                ch.send("Delete cancelled.\r\n");
             }
         }
 
@@ -1530,11 +1530,11 @@ namespace CrimsonStainedLands
 
             if (password.ISEMPTY() || passwordConfirm.ISEMPTY())
             {
-                ch.send("Syntax: Password {New Password} {Confirm New Password}\n\r");
+                ch.send("Syntax: Password {New Password} {Confirm New Password}\r\n");
             }
             else if (password != passwordConfirm)
             {
-                ch.send("Passwords do not match.\n\r");
+                ch.send("Passwords do not match.\r\n");
             }
             else
             {
@@ -1542,7 +1542,7 @@ namespace CrimsonStainedLands
                 
                 ((Player)ch).SaveCharacterFile();
 
-                ch.send("Password changed and character file saved.\n\r");
+                ch.send("Password changed and character file saved.\r\n");
             }
         }
 
@@ -1563,10 +1563,10 @@ namespace CrimsonStainedLands
             {
                 if (ch.IsImmortal)
                     foreach (var area in from a in AreaData.Areas orderby a.VNumStart select a)
-                        ch.send("{0,-20} - {{{{{1}-{2,-2}}} {3,-30} {4,-5} - {5,-5}\n\r", area.Name.EscapeColor().TOSTRINGTRIM(), area.MinimumLevel, area.MaximumLevel, area.Credits.EscapeColor().TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
+                        ch.send("{0,-20} - {{{{{1}-{2,-2}}} {3,-30} {4,-5} - {5,-5}\r\n", area.Name.EscapeColor().TOSTRINGTRIM(), area.MinimumLevel, area.MaximumLevel, area.Credits.EscapeColor().TOSTRINGTRIM(), area.VNumStart, area.VNumEnd);
                 else
                     foreach (var area in from a in AreaData.Areas where a.Rooms.Any() && a.MinimumLevel <= 51 orderby a.MinimumLevel select a)
-                        ch.send("{0,-20} - {{{{{1}-{2,-2}}} {3,-30}\n\r", area.Name.EscapeColor().TOSTRINGTRIM(), area.MinimumLevel, area.MaximumLevel, area.Credits.EscapeColor().TOSTRINGTRIM());
+                        ch.send("{0,-20} - {{{{{1}-{2,-2}}} {3,-30}\r\n", area.Name.EscapeColor().TOSTRINGTRIM(), area.MinimumLevel, area.MaximumLevel, area.Credits.EscapeColor().TOSTRINGTRIM());
             }
         }
 
@@ -1577,23 +1577,23 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage("hide") <= 1)
             {
-                ch.send("You don't know how to hide.\n\r");
+                ch.send("You don't know how to hide.\r\n");
                 return;
             }
 
             if (ch.IsAffected(fog) || ch.IsAffected(fire) || ch.IsAffected(AffectFlags.FaerieFire))
             {
-                ch.send("You can't hide while glowing.\n\r");
+                ch.send("You can't hide while glowing.\r\n");
                 return;
             }
 
             if (!(new SectorTypes[] { SectorTypes.City, SectorTypes.Inside, SectorTypes.Forest, SectorTypes.Cave, SectorTypes.Road }).Contains(ch.Room.sector))
             {
-                ch.send("The shadows here are too natural to blend with.\n\r");
+                ch.send("The shadows here are too natural to blend with.\r\n");
                 return;
             }
 
-            ch.send("You attempt to hide.\n\r");
+            ch.send("You attempt to hide.\r\n");
 
             if (ch.IsAffected(AffectFlags.Hide))
                 return;
@@ -1617,17 +1617,17 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage("sneak") <= 1)
             {
-                ch.send("You don't know how to sneak.\n\r");
+                ch.send("You don't know how to sneak.\r\n");
                 return;
             }
 
             if (ch.IsAffected(fog) || ch.IsAffected(fire) || ch.IsAffected(AffectFlags.FaerieFire))
             {
-                ch.send("You can't hide while glowing.\n\r");
+                ch.send("You can't hide while glowing.\r\n");
                 return;
             }
 
-            ch.send("You attempt to move silently.\n\r");
+            ch.send("You attempt to move silently.\r\n");
             if (ch.IsAffected(AffectFlags.Sneak))
                 return;
 
@@ -1645,7 +1645,7 @@ namespace CrimsonStainedLands
                 af.modifier = 0;
                 _ = af.flags.SETBIT(AffectFlags.Sneak);
                 ch.AffectToChar(af);
-                ch.send("You begin sneaking.\n\r");
+                ch.send("You begin sneaking.\r\n");
             }
             else
                 ch.CheckImprove("sneak", true, 3);
@@ -1659,15 +1659,15 @@ namespace CrimsonStainedLands
             int number = 0;
             if ((number = ch.GetSkillPercentage("detect hidden") + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (ch.IsAffected(AffectFlags.DetectHidden))
             {
-                ch.send("You are already as alert as you can be.\n\r");
+                ch.send("You are already as alert as you can be.\r\n");
             }
             else if (Utility.NumberPercent() > number)
             {
-                ch.send("You peer into the shadows but your vision stays the same.\n\r");
+                ch.send("You peer into the shadows but your vision stays the same.\r\n");
                 ch.CheckImprove("detect hidden", false, 2);
             }
             else
@@ -1681,10 +1681,10 @@ namespace CrimsonStainedLands
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.Add(AffectFlags.DetectHidden);
                 affect.duration = 6 + ch.Level / 3;
-                affect.endMessage = "You can no longer see the hidden.\n\r";
+                affect.endMessage = "You can no longer see the hidden.\r\n";
                 ch.AffectToChar(affect);
 
-                ch.send("You focus your awareness on things in the shadows.\n\r");
+                ch.send("You focus your awareness on things in the shadows.\r\n");
                 ch.CheckImprove("detect hidden", true, 2);
             }
         }
@@ -1695,17 +1695,17 @@ namespace CrimsonStainedLands
             int number = 0;
             if ((number = ch.GetSkillPercentage("heightened awareness") + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
 
             }
             else if (ch.IsAffected(AffectFlags.DetectInvis))
             {
-                ch.send("Your awareness is already heightened.\n\r");
+                ch.send("Your awareness is already heightened.\r\n");
                 return;
             }
             else if (Utility.NumberPercent() > number)
             {
-                ch.send("You fail to heighten your awareness.\n\r");
+                ch.send("You fail to heighten your awareness.\r\n");
                 ch.CheckImprove("heightened awareness", false, 2);
                 return;
             }
@@ -1720,10 +1720,10 @@ namespace CrimsonStainedLands
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.Add(AffectFlags.DetectInvis);
                 affect.duration = 6 + (ch.Level / 3);
-                affect.endMessage = "Your awareness lessens slightly.\n\r";
+                affect.endMessage = "Your awareness lessens slightly.\r\n";
                 ch.AffectToChar(affect);
 
-                ch.send("You heighten your senses to things hidden by magic.\n\r");
+                ch.send("You heighten your senses to things hidden by magic.\r\n");
                 ch.CheckImprove("heightened awareness", true, 2);
             }
         }
@@ -1765,25 +1765,25 @@ namespace CrimsonStainedLands
 
             if (banker == null)
             {
-                ch.send("You can't do that here.\n\r");
+                ch.send("You can't do that here.\r\n");
                 return;
             }
 
             if (ch.Form != null)
             {
-                ch.send("You can't speak to the banker.\n\r");
+                ch.send("You can't speak to the banker.\r\n");
                 return;
             }
 
             argument = argument.OneArgument(ref arg);
             if (arg.ISEMPTY())
             {
-                ch.send("Deposit how much of which coin type?\n\r");
+                ch.send("Deposit how much of which coin type?\r\n");
                 return;
             }
             if (!int.TryParse(arg, out amount))
             {
-                ch.send("Deposit how much of which type of coin?\n\r");
+                ch.send("Deposit how much of which type of coin?\r\n");
                 return;
             }
 
@@ -1814,8 +1814,8 @@ namespace CrimsonStainedLands
                 ch.SilverBank += amount;
                 ch.Silver -= amount;
             }
-            ch.send("You deposit {0} {1}.\n\r", amount, arg.ToLower());
-            ch.send("Your new balance is {0} silver.\n\r", ch.SilverBank);
+            ch.send("You deposit {0} {1}.\r\n", amount, arg.ToLower());
+            ch.send("Your new balance is {0} silver.\r\n", ch.SilverBank);
             return;
         }
 
@@ -1830,26 +1830,26 @@ namespace CrimsonStainedLands
 
             if (banker == null)
             {
-                ch.send("You can't do that here.\n\r");
+                ch.send("You can't do that here.\r\n");
                 return;
             }
             int charges;
             if (ch.Form != null)
             {
-                ch.send("You can't speak to the banker.\n\r");
+                ch.send("You can't speak to the banker.\r\n");
                 return;
             }
 
             argument = argument.OneArgument(ref arg);
             if (arg.ISEMPTY())
             {
-                ch.send("Withdraw how much of which coin type?\n\r");
+                ch.send("Withdraw how much of which coin type?\r\n");
                 return;
             }
 
             if (!int.TryParse(arg, out amount))
             {
-                ch.send("Withdraw how much of which type of coin?\n\r", ch);
+                ch.send("Withdraw how much of which type of coin?\r\n", ch);
                 return;
             }
 
@@ -1887,8 +1887,8 @@ namespace CrimsonStainedLands
                 ch.Silver -= charges;
             }
 
-            ch.send("You withdraw {0} {1}.\n\r", amount, arg.ToLower());
-            ch.send("You are charged a small fee of {0} {1}.\n\r", charges, arg.ToLower());
+            ch.send("You withdraw {0} {1}.\r\n", amount, arg.ToLower());
+            ch.send("You are charged a small fee of {0} {1}.\r\n", charges, arg.ToLower());
             return;
         }
 
@@ -1900,18 +1900,18 @@ namespace CrimsonStainedLands
 
             if (banker == null)
             {
-                ch.send("You can't do that here.\n\r");
+                ch.send("You can't do that here.\r\n");
                 return;
             }
             if (ch.Form != null)
             {
-                ch.send("You can't speak to the banker.\n\r");
+                ch.send("You can't speak to the banker.\r\n");
                 return;
             }
             if (ch.SilverBank == 0)
-                ch.send("You have no account here!\n\r");
+                ch.send("You have no account here!\r\n");
             else
-                ch.send("You have {0} silver in your account.\n\r", ch.SilverBank);
+                ch.send("You have {0} silver in your account.\r\n", ch.SilverBank);
             return;
         }
 
@@ -1923,21 +1923,21 @@ namespace CrimsonStainedLands
 
             if (item == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
             }
             else
             {
                 var buffer = new StringBuilder();
-                buffer.Append(new string('-', 80) + "\n\r");
-                buffer.AppendFormat("Object {0} can be referred to as '{1}'\n\rIt is of type {2} and level {3}\n\r", item.ShortDescription.TOSTRINGTRIM(), item.Name,
+                buffer.Append(new string('-', 80) + "\r\n");
+                buffer.AppendFormat("Object {0} can be referred to as '{1}'\r\nIt is of type {2} and level {3}\r\n", item.ShortDescription.TOSTRINGTRIM(), item.Name,
                     string.Join(" ", (from flag in item.ItemType.Distinct() select flag.ToString())), item.Level);
-                buffer.AppendFormat("It is worth {0} silver and weighs {1} pounds.\n\r", item.Value, item.Weight);
+                buffer.AppendFormat("It is worth {0} silver and weighs {1} pounds.\r\n", item.Value, item.Weight);
 
                 if (item.ItemType.ISSET(ItemTypes.Weapon))
                 {
                     if (item.WeaponDamageType != null)
-                        buffer.AppendFormat("Damage Type is {0}\n\r", item.WeaponDamageType.Keyword);
-                    buffer.AppendFormat("Weapon Type is {0} with damage dice of {1} (avg {2})\n\r", item.WeaponType.ToString(), item.DamageDice.ToString(), item.DamageDice.Average);
+                        buffer.AppendFormat("Damage Type is {0}\r\n", item.WeaponDamageType.Keyword);
+                    buffer.AppendFormat("Weapon Type is {0} with damage dice of {1} (avg {2})\r\n", item.WeaponType.ToString(), item.DamageDice.ToString(), item.DamageDice.Average);
 
                 }
 
@@ -1948,30 +1948,30 @@ namespace CrimsonStainedLands
 
                 if (item.ItemType.ISSET(ItemTypes.Food))
                 {
-                    buffer.AppendFormat("It is edible and provides {0} nutrition.\n\r", item.Nutrition);
+                    buffer.AppendFormat("It is edible and provides {0} nutrition.\r\n", item.Nutrition);
                 }
 
                 if (item.ItemType.ISSET(ItemTypes.DrinkContainer))
                 {
-                    buffer.AppendFormat("Nutrition {0}, Drinks left {1}, Max Capacity {2}, it is filled with '{3}'\n\r", item.Nutrition, item.Charges, item.MaxCharges, item.Liquid);
+                    buffer.AppendFormat("Nutrition {0}, Drinks left {1}, Max Capacity {2}, it is filled with '{3}'\r\n", item.Nutrition, item.Charges, item.MaxCharges, item.Liquid);
                 }
 
-                buffer.AppendFormat("It is made out of '{0}'\n\r", item.Material);
+                buffer.AppendFormat("It is made out of '{0}'\r\n", item.Material);
                 if (item.timer > 0)
-                    buffer.AppendFormat("It will decay in {0} hours.\n\r", item.timer);
+                    buffer.AppendFormat("It will decay in {0} hours.\r\n", item.timer);
 
                 if (item.ItemType.ISSET(ItemTypes.Armor) || item.ItemType.ISSET(ItemTypes.Clothing))
                 {
-                    buffer.AppendFormat("It provides armor against bash {0}, slash {1}, pierce {2}, magic {3}\n\r", item.ArmorBash, item.ArmorSlash, item.ArmorPierce, item.ArmorExotic);
+                    buffer.AppendFormat("It provides armor against bash {0}, slash {1}, pierce {2}, magic {3}\r\n", item.ArmorBash, item.ArmorSlash, item.ArmorPierce, item.ArmorExotic);
                 }
-                buffer.AppendFormat("It can be worn on {0} and has extra flags of {1}.\n\r", string.Join(", ", (from flag in item.wearFlags.Distinct() select flag.ToString())),
+                buffer.AppendFormat("It can be worn on {0} and has extra flags of {1}.\r\n", string.Join(", ", (from flag in item.wearFlags.Distinct() select flag.ToString())),
                     string.Join(", ", (from flag in item.extraFlags.Distinct() select flag.ToString())));
 
-                buffer.AppendFormat("Affects: \n   {0}\n\r", string.Join("\n   ", (from aff in item.affects where aff.@where == AffectWhere.ToObject select aff.location.ToString() + " " + aff.modifier)));
+                buffer.AppendFormat("Affects: \n   {0}\r\n", string.Join("\n   ", (from aff in item.affects where aff.@where == AffectWhere.ToObject select aff.location.ToString() + " " + aff.modifier)));
 
                 if (item.ItemType.ISSET(ItemTypes.Staff) || item.ItemType.ISSET(ItemTypes.Wand) || item.ItemType.ISSET(ItemTypes.Scroll) || item.ItemType.ISSET(ItemTypes.Potion))
                 {
-                    buffer.AppendFormat("It contains the following spells:\n\r   {0}", string.Join("\n   ", from itemspell in item.Spells select (itemspell.SpellName + " [lvl " + itemspell.Level + "]")));
+                    buffer.AppendFormat("It contains the following spells:\r\n   {0}", string.Join("\n   ", from itemspell in item.Spells select (itemspell.SpellName + " [lvl " + itemspell.Level + "]")));
                 }
 
                 if (item.ItemType.ISSET(ItemTypes.Staff) || item.ItemType.ISSET(ItemTypes.Wand))
@@ -1979,7 +1979,7 @@ namespace CrimsonStainedLands
                     buffer.AppendFormat("It has {0} of {1} charges left", item.Charges, item.MaxCharges);
                 }
 
-                buffer.Append(new string('-', 80) + "\n\r");
+                buffer.Append(new string('-', 80) + "\r\n");
                 ch.send(buffer.ToString());
             }
         }
@@ -1990,18 +1990,18 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to forage for food.\n\r");
+                ch.send("You don't know how to forage for food.\r\n");
                 return;
             }
             else if (ch.Form == null)
             {
-                ch.send("Only animals can forage.\n\r");
+                ch.send("Only animals can forage.\r\n");
                 return;
             }
             else if (!(new SectorTypes[] { SectorTypes.Swamp, SectorTypes.Field, SectorTypes.Forest, SectorTypes.Trail, SectorTypes.Hills,
              SectorTypes.Mountain}.Contains(ch.Room.sector)))
             {
-                ch.send("You aren't in the right environment.\n\r");
+                ch.send("You aren't in the right environment.\r\n");
                 return;
             }
             else if (chance < Utility.NumberPercent())
@@ -2026,18 +2026,18 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to scavenge for food.\n\r");
+                ch.send("You don't know how to scavenge for food.\r\n");
                 return;
             }
             //else if (ch.Form == null)
             //{
-            //    ch.send("Only animals can forage.\n\r");
+            //    ch.send("Only animals can forage.\r\n");
             //    return;
             //}
             //else if (!(new SectorTypes[] { SectorTypes.Swamp, SectorTypes.Field, SectorTypes.Forest, SectorTypes.Trail, SectorTypes.Hills,
             // SectorTypes.Mountain}.Contains(ch.Room.sector)))
             //{
-            //    ch.send("You aren't in the right environment.\n\r");
+            //    ch.send("You aren't in the right environment.\r\n");
             //    return;
             //}
             else if (chance < Utility.NumberPercent())
@@ -2063,17 +2063,17 @@ namespace CrimsonStainedLands
             Direction direction = Direction.North;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to sprint.\n\r");
+                ch.send("You don't know how to sprint.\r\n");
                 return;
             }
             else if (ch.Form == null)
             {
-                ch.send("Only animals can sprint.\n\r");
+                ch.send("Only animals can sprint.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() || !Utility.GetEnumValueStrPrefix(arguments, ref direction))
             {
-                ch.send("Sprint in which direction?\n\r");
+                ch.send("Sprint in which direction?\r\n");
                 return;
             }
             else
@@ -2097,23 +2097,23 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage("camouflage") + 20) <= 21)
             {
-                ch.send("You attempt to hide behind a leaf.\n\r");
+                ch.send("You attempt to hide behind a leaf.\r\n");
                 return;
             }
 
             if (ch.IsAffected(fog) || ch.IsAffected(fire) || ch.IsAffected(AffectFlags.FaerieFire))
             {
-                ch.send("You can't camouflage while glowing.\n\r");
+                ch.send("You can't camouflage while glowing.\r\n");
                 return;
             }
 
             if (!ch.Room.IsWilderness || ch.Room.IsWater)
             {
-                ch.send("There's no cover here.\n\r");
+                ch.send("There's no cover here.\r\n");
                 return;
             }
 
-            ch.send("You attempt to blend in with your surroundings.\n\r");
+            ch.send("You attempt to blend in with your surroundings.\r\n");
 
 
             if (Utility.NumberPercent() < chance)
@@ -2135,34 +2135,34 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage("burrow") + 20) <= 21)
             {
-                ch.send("You attempt to hide behind a leaf.\n\r");
+                ch.send("You attempt to hide behind a leaf.\r\n");
                 return;
             }
 
             //if (ch.IsAffected(fog) || ch.IsAffected(fire) || ch.IsAffected(AffectFlags.FaerieFire))
             //{
-            //    ch.send("You can't burrow while glowing.\n\r");
+            //    ch.send("You can't burrow while glowing.\r\n");
             //    return;
             //}
 
             if (!ch.Room.IsWilderness || ch.Room.IsWater)
             {
-                ch.send("There is no suitable soil here.\n\r");
+                ch.send("There is no suitable soil here.\r\n");
                 return;
             }
 
             if (ch.IsAffected(AffectFlags.Burrow))
             {
-                ch.send("You are already burrowed.\n\r");
+                ch.send("You are already burrowed.\r\n");
                 return;
             }
 
-            ch.send("You attempt to create a burrow.\n\r");
+            ch.send("You attempt to create a burrow.\r\n");
             if (Utility.NumberPercent() < chance)
             {
                 Combat.StopFighting(ch, true);
                 ch.AffectedBy.SETBIT(AffectFlags.Burrow);
-                ch.send("You successfully create a burrow to hide in.\n\r");
+                ch.send("You successfully create a burrow to hide in.\r\n");
             }
 
             return;
@@ -2173,22 +2173,22 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage("play dead") + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (ch.IsAffected(AffectFlags.PlayDead))
             {
-                ch.send("You are already playing dead.\n\r");
+                ch.send("You are already playing dead.\r\n");
                 return;
             }
 
-            ch.send("You attempt to play dead.\n\r");
+            ch.send("You attempt to play dead.\r\n");
             if (Utility.NumberPercent() < chance)
             {
                 Combat.StopFighting(ch, true);
                 ch.AffectedBy.SETBIT(AffectFlags.PlayDead);
-                ch.send("You successfully trick your enemy.\n\r");
+                ch.send("You successfully trick your enemy.\r\n");
             }
 
             return;
@@ -2200,20 +2200,20 @@ namespace CrimsonStainedLands
             int number = 0;
             if ((number = ch.GetSkillPercentage("acute vision")) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (ch.IsAffected(AffectFlags.AcuteVision))
             {
-                ch.send("You are already as alert as you can be.\n\r");
+                ch.send("You are already as alert as you can be.\r\n");
                 return;
             }
             else
             {
                 if (Utility.NumberPercent() > number)
                 {
-                    ch.send("You fail.\n\r");
+                    ch.send("You fail.\r\n");
                     ch.CheckImprove("acute vision", false, 2);
                     return;
                 }
@@ -2226,12 +2226,12 @@ namespace CrimsonStainedLands
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.Add(AffectFlags.AcuteVision);
                 affect.duration = 6;
-                affect.endMessage = "You can no longer see the camouflaged.\n\r";
+                affect.endMessage = "You can no longer see the camouflaged.\r\n";
                 ch.AffectToChar(affect);
 
 
 
-                ch.send("Your awareness improves.\n\r");
+                ch.send("Your awareness improves.\r\n");
                 ch.CheckImprove("acute vision", true, 2);
             }
         }
@@ -2243,13 +2243,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.Room.sector == SectorTypes.City)
             {
-                ch.send("You cannot poke through the floor to find water.\n\r");
-                ch.Act("$n pokes the floor, trying to find water, but nothing happens.\n\r", type: ActType.ToRoom);
+                ch.send("You cannot poke through the floor to find water.\r\n");
+                ch.Act("$n pokes the floor, trying to find water, but nothing happens.\r\n", type: ActType.ToRoom);
                 return;
             }
             ItemTemplateData template;
@@ -2262,15 +2262,15 @@ namespace CrimsonStainedLands
                     ch.Room.items.Insert(0, spring);
                     spring.Room = ch.Room;
                     spring.timer = 7;
-                    ch.send("You poke around and create a spring of water flowing out of the ground.\n\r");
-                    ch.Act("$n pokes around and creates a spring of water flowing out of the ground.\n\r", type: ActType.ToRoom);
+                    ch.send("You poke around and create a spring of water flowing out of the ground.\r\n");
+                    ch.Act("$n pokes around and creates a spring of water flowing out of the ground.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, true, 1);
                     return;
                 }
                 else
                 {
-                    ch.send("You poke the ground a bit, but nothing happens.\n\r");
-                    ch.Act("$n pokes the ground a bit, but nothing happens.\n\r", type: ActType.ToRoom);
+                    ch.send("You poke the ground a bit, but nothing happens.\r\n");
+                    ch.Act("$n pokes the ground a bit, but nothing happens.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, false, 1);
                     return;
                 }
@@ -2285,7 +2285,7 @@ namespace CrimsonStainedLands
 
                 if (player.WeaponSpecializations < 1)
                 {
-                    ch.send("You have no weapon specializations available.\n\r");
+                    ch.send("You have no weapon specializations available.\r\n");
                 }
                 else
                 {
@@ -2306,15 +2306,15 @@ namespace CrimsonStainedLands
                         {
                             if (prereqnotmet.Key.PrerequisitesMet(ch))
                             {
-                                ch.send("\\CYou feel a rush of insight into {0}!\\x\n\r", prereqnotmet.Key.name);
+                                ch.send("\\CYou feel a rush of insight into {0}!\\x\r\n", prereqnotmet.Key.name);
                             }
                         }
-                        ch.send("You have chosen {0}.\n\r", specializationskill.name);
+                        ch.send("You have chosen {0}.\r\n", specializationskill.name);
                         player.SaveCharacterFile();
                     }
                     else
                     {
-                        ch.send("Valid weapon specializations are {0}.\n\r",
+                        ch.send("Valid weapon specializations are {0}.\r\n",
                             string.Join(", ",
                                 from sk in SkillSpell.Skills
                                 where sk.Value.SkillTypes.ISSET(SkillSpellTypes.WarriorSpecialization) && ch.GetSkillPercentage(sk.Value, true) <= 1
@@ -2322,17 +2322,17 @@ namespace CrimsonStainedLands
                     }
                 }
                 if (SkillSpell.Skills.Any(sk => sk.Value.SkillTypes.ISSET(SkillSpellTypes.WarriorSpecialization) && ch.GetSkillPercentage(sk.Value, true) > 1))
-                    ch.send("Weapon specializations are {0}.\n\r",
+                    ch.send("Weapon specializations are {0}.\r\n",
                                 string.Join(", ",
                                     from sk in SkillSpell.Skills
                                     where sk.Value.SkillTypes.ISSET(SkillSpellTypes.WarriorSpecialization) && ch.GetSkillPercentage(sk.Value, true) > 1
                                     select sk.Value.name));
 
                 if (player.WeaponSpecializations > 0)
-                    ch.send("You have {0} weapon specializations left.\n\r", player.WeaponSpecializations);
+                    ch.send("You have {0} weapon specializations left.\r\n", player.WeaponSpecializations);
             }
             else
-                ch.send("You have no weapon specializations available.\n\r");
+                ch.send("You have no weapon specializations available.\r\n");
         }
 
 
@@ -2344,29 +2344,29 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             int count = 0;
             ItemData corpse = null;
             if ((corpse = ch.GetItemRoom(arguments, ref count)) == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
             else if (!corpse.ItemType.ISSET(ItemTypes.NPCCorpse) && !corpse.ItemType.ISSET(ItemTypes.PC_Corpse))
             {
-                ch.send("That is not a corpse.\n\r");
+                ch.send("That is not a corpse.\r\n");
                 return;
             }
             else if (corpse.ItemType.ISSET(ItemTypes.PC_Corpse) && corpse.Contains.Count > 0)
             {
-                ch.send("You cannot butcher another players corpse unless it is empty.\n\r");
+                ch.send("You cannot butcher another players corpse unless it is empty.\r\n");
                 return;
             }
             else if (corpse.Size == CharacterSize.Tiny)
             {
-                ch.send("That corpse is too tiny to butcher.\n\r");
+                ch.send("That corpse is too tiny to butcher.\r\n");
                 return;
             }
 
@@ -2399,8 +2399,8 @@ namespace CrimsonStainedLands
                     corpse.Contains.Clear();
                     corpse.Dispose();
 
-                    ch.Act("You carefully carve up $p and produce {0} steaks.\n\r", null, corpse, type: ActType.ToChar, args: steakcount);
-                    ch.Act("$n carefully carves up $p and produces {0} steaks.\n\r", null, corpse, type: ActType.ToRoom, args: steakcount);
+                    ch.Act("You carefully carve up $p and produce {0} steaks.\r\n", null, corpse, type: ActType.ToChar, args: steakcount);
+                    ch.Act("$n carefully carves up $p and produces {0} steaks.\r\n", null, corpse, type: ActType.ToRoom, args: steakcount);
                     ch.CheckImprove(skill, true, 1);
                     return;
                 }
@@ -2416,8 +2416,8 @@ namespace CrimsonStainedLands
                     corpse.Contains.Clear();
                     corpse.Dispose();
 
-                    ch.Act("You try to carve up $p but you destroy it in the process.\n\r", null, corpse, type: ActType.ToChar);
-                    ch.Act("$n tries to carve up $p but destroys it in the process.\n\r", null, corpse, type: ActType.ToRoom);
+                    ch.Act("You try to carve up $p but you destroy it in the process.\r\n", null, corpse, type: ActType.ToChar);
+                    ch.Act("$n tries to carve up $p but destroys it in the process.\r\n", null, corpse, type: ActType.ToRoom);
                     ch.CheckImprove(skill, false, 1);
                     return;
                 }
@@ -2433,13 +2433,13 @@ namespace CrimsonStainedLands
                 {
                     if (ch.AffectedBy.ISSET(AffectFlags.Camouflage))
                         ch.moveChar(direction, true, false, true);
-                    else ch.send("You must be camouflaged before attempting to creep.\n\r");
+                    else ch.send("You must be camouflaged before attempting to creep.\r\n");
                 }
                 else
-                    ch.send("Creep West, east, south, west, up or down?\n\r");
+                    ch.send("Creep West, east, south, west, up or down?\r\n");
             }
             else
-                ch.send("Creep in which direction?\n\r");
+                ch.send("Creep in which direction?\r\n");
         }
 
         public static void DoOrder(Character ch, string arguments)
@@ -2455,7 +2455,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY() || command.ISEMPTY())
             {
-                ch.send("Order who to do what?\n\r");
+                ch.send("Order who to do what?\r\n");
                 return;
             }
 
@@ -2471,16 +2471,16 @@ namespace CrimsonStainedLands
                         other.DoCommand(command + " " + commandargs);
                     }
                 }
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else if ((pet = ch.GetCharacterFromRoomByName(name)) != null && pet.IsNPC && pet.Leader == ch)
             {
                 pet.DoCommand(command + " " + commandargs + " " + arguments);
-                ch.send("OK.\n\r");
+                ch.send("OK.\r\n");
             }
             else
             {
-                ch.send("You couldn't order them to do anything.\n\r");
+                ch.send("You couldn't order them to do anything.\r\n");
                 return;
             }
 
@@ -2493,12 +2493,12 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (!(from item in ch.Inventory.Concat(ch.Equipment.Values) where item.ItemType.ISSET(ItemTypes.ThiefPick) select item).Any())
             {
-                ch.send("You don't have the necessary tool to pick a lock.\n\r");
+                ch.send("You don't have the necessary tool to pick a lock.\r\n");
                 return;
             }
 
@@ -2516,19 +2516,19 @@ namespace CrimsonStainedLands
                 direction = exit.direction;
                 if (!exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("It isn't closed.\n\r");
+                    ch.send("It isn't closed.\r\n");
                 }
                 else if (exit.flags.ISSET(ExitFlags.PickProof))
                 {
-                    ch.Act(exit.display + " cannot be picked.\n\r");
+                    ch.Act(exit.display + " cannot be picked.\r\n");
                 }
                 else if (exit.flags.Contains(ExitFlags.Locked))
                 {
 
                     if (chance > Utility.NumberPercent())
                     {
-                        ch.Act("You unlock " + exit.display + ".\n\r");
-                        ch.Act("$n unlocks " + exit.display + ".\n\r", type: ActType.ToGroupInRoom);
+                        ch.Act("You unlock " + exit.display + ".\r\n");
+                        ch.Act("$n unlocks " + exit.display + ".\r\n", type: ActType.ToGroupInRoom);
                         exit.flags.REMOVEFLAG(ExitFlags.Locked);
                         ExitData otherSide;
                         if ((otherSide = exit.destination.exits[(int)reverseDirections[direction]]) != null && otherSide.destination == ch.Room && otherSide.flags.Contains(ExitFlags.Closed) && otherSide.flags.Contains(ExitFlags.Locked))
@@ -2537,8 +2537,8 @@ namespace CrimsonStainedLands
                     }
                     else
                     {
-                        ch.send("You try to unlock " + exit.display + " but fail.\n\r");
-                        ch.Act("$n tries to unlock " + exit.display + " but fails.\n\r", type: ActType.ToGroupInRoom);
+                        ch.send("You try to unlock " + exit.display + " but fail.\r\n");
+                        ch.Act("$n tries to unlock " + exit.display + " but fails.\r\n", type: ActType.ToGroupInRoom);
                         ch.CheckImprove("pick lock", false, 1);
                         return;
                     }
@@ -2551,7 +2551,7 @@ namespace CrimsonStainedLands
             {
                 if (!container.extraFlags.ISSET(ExtraFlags.Locked))
                 {
-                    ch.send("It's not locked.\n\r");
+                    ch.send("It's not locked.\r\n");
                     return;
                 }
 
@@ -2572,7 +2572,7 @@ namespace CrimsonStainedLands
                 }
                 if (container.extraFlags.ISSET(ExtraFlags.PickProof))
                 {
-                    ch.Act("$p cannot be picked.\n\r", item: container);
+                    ch.Act("$p cannot be picked.\r\n", item: container);
                 }
                 else if (chance > Utility.NumberPercent())
                 {
@@ -2584,14 +2584,14 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.Act("You try to unlock $p but fail.\n\r", item: container);
-                    ch.Act("$n tries to unlock $p but fails.\n\r", item: container, type: ActType.ToGroupInRoom);
+                    ch.Act("You try to unlock $p but fail.\r\n", item: container);
+                    ch.Act("$n tries to unlock $p but fails.\r\n", item: container, type: ActType.ToGroupInRoom);
                     ch.CheckImprove("pick lock", false, 1);
                     return;
                 }
             }
             else
-                ch.send("You don't see that here.\n\r"); // ch.send("You can't unlock that.\n\r");
+                ch.send("You don't see that here.\r\n"); // ch.send("You can't unlock that.\r\n");
         }
         public static void DoRelock(Character ch, string arguments)
         {
@@ -2600,12 +2600,12 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (!(from item in ch.Inventory.Concat(ch.Equipment.Values) where item.ItemType.ISSET(ItemTypes.ThiefPick) select item).Any())
             {
-                ch.send("You don't have the necessary tool to do that.\n\r");
+                ch.send("You don't have the necessary tool to do that.\r\n");
                 return;
             }
 
@@ -2623,23 +2623,23 @@ namespace CrimsonStainedLands
                 direction = exit.direction;
                 if (!exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("It isn't closed.\n\r");
+                    ch.send("It isn't closed.\r\n");
                 }
                 else if (!exit.originalFlags.ISSET(ExitFlags.Locked))
                 {
-                    ch.send("It can't be locked.\n\r");
+                    ch.send("It can't be locked.\r\n");
                 }
                 else if (exit.flags.ISSET(ExitFlags.PickProof))
                 {
-                    ch.Act(exit.display + " cannot be relocked.\n\r");
+                    ch.Act(exit.display + " cannot be relocked.\r\n");
                 }
                 else if (!exit.flags.Contains(ExitFlags.Locked))
                 {
 
                     if (chance > Utility.NumberPercent())
                     {
-                        ch.Act("You relock " + exit.display + ".\n\r");
-                        ch.Act("$n relocks " + exit.display + ".\n\r", type: ActType.ToGroupInRoom);
+                        ch.Act("You relock " + exit.display + ".\r\n");
+                        ch.Act("$n relocks " + exit.display + ".\r\n", type: ActType.ToGroupInRoom);
                         exit.flags.ADDFLAG(ExitFlags.Locked);
                         ExitData otherSide;
                         if ((otherSide = exit.destination.exits[(int)reverseDirections[direction]]) != null && otherSide.destination == ch.Room && otherSide.flags.Contains(ExitFlags.Closed) && !otherSide.flags.Contains(ExitFlags.Locked))
@@ -2648,8 +2648,8 @@ namespace CrimsonStainedLands
                     }
                     else
                     {
-                        ch.send("You try to relock " + exit.display + " but fail.\n\r");
-                        ch.Act("$n tries to relock " + exit.display + " but fails.\n\r", type: ActType.ToGroupInRoom);
+                        ch.send("You try to relock " + exit.display + " but fail.\r\n");
+                        ch.Act("$n tries to relock " + exit.display + " but fails.\r\n", type: ActType.ToGroupInRoom);
                         ch.CheckImprove("relock", false, 1);
                         return;
                     }
@@ -2662,7 +2662,7 @@ namespace CrimsonStainedLands
             {
                 if (container.extraFlags.ISSET(ExtraFlags.Locked))
                 {
-                    ch.send("It's already locked.\n\r");
+                    ch.send("It's already locked.\r\n");
                     return;
                 }
                 if (!container.extraFlags.ISSET(ExtraFlags.Closed))
@@ -2693,7 +2693,7 @@ namespace CrimsonStainedLands
                 }
                 if (container.extraFlags.ISSET(ExtraFlags.PickProof))
                 {
-                    ch.Act("$p cannot be locked without a key.\n\r", item: container);
+                    ch.Act("$p cannot be locked without a key.\r\n", item: container);
                 }
                 else if (chance > Utility.NumberPercent())
                 {
@@ -2705,14 +2705,14 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.Act("You try to relock $p but fail.\n\r", item: container);
-                    ch.Act("$n tries to relock $p but fails.\n\r", item: container, type: ActType.ToGroupInRoom);
+                    ch.Act("You try to relock $p but fail.\r\n", item: container);
+                    ch.Act("$n tries to relock $p but fails.\r\n", item: container, type: ActType.ToGroupInRoom);
                     ch.CheckImprove("relock", false, 1);
                     return;
                 }
             }
             else
-                ch.send("You don't see that here.\n\r"); // ch.send("You can't unlock that.\n\r");
+                ch.send("You don't see that here.\r\n"); // ch.send("You can't unlock that.\r\n");
         }
         public static void DoInfiltrate(Character ch, string arguments)
         {
@@ -2721,7 +2721,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -2739,15 +2739,15 @@ namespace CrimsonStainedLands
                 direction = exit.direction;
                 if (!exit.flags.Contains(ExitFlags.Closed))
                 {
-                    ch.send("It isn't closed.\n\r");
+                    ch.send("It isn't closed.\r\n");
                 }
                 else if (exit.flags.Contains(ExitFlags.Locked))
                 {
 
                     if (chance > Utility.NumberPercent())
                     {
-                        ch.Act("You unlock " + exit.display + ".\n\r");
-                        ch.Act("$n unlocks " + exit.display + ".\n\r", type: ActType.ToGroupInRoom);
+                        ch.Act("You unlock " + exit.display + ".\r\n");
+                        ch.Act("$n unlocks " + exit.display + ".\r\n", type: ActType.ToGroupInRoom);
                         exit.flags.REMOVEFLAG(ExitFlags.Locked);
                         ExitData otherSide;
                         if ((otherSide = exit.destination.exits[(int)reverseDirections[direction]]) != null && otherSide.destination == ch.Room && otherSide.flags.Contains(ExitFlags.Closed) && otherSide.flags.Contains(ExitFlags.Locked))
@@ -2756,8 +2756,8 @@ namespace CrimsonStainedLands
                     }
                     else
                     {
-                        ch.send("You try to unlock " + exit.display + " but fail.\n\r");
-                        ch.Act("$n tries to unlock " + exit.display + " but fails.\n\r", type: ActType.ToGroupInRoom);
+                        ch.send("You try to unlock " + exit.display + " but fail.\r\n");
+                        ch.Act("$n tries to unlock " + exit.display + " but fails.\r\n", type: ActType.ToGroupInRoom);
                         ch.CheckImprove("infiltrate", false, 1);
                         return;
                     }
@@ -2770,7 +2770,7 @@ namespace CrimsonStainedLands
             {
                 if (!container.extraFlags.ISSET(ExtraFlags.Locked))
                 {
-                    ch.send("It's not locked.\n\r");
+                    ch.send("It's not locked.\r\n");
                     return;
                 }
 
@@ -2800,14 +2800,14 @@ namespace CrimsonStainedLands
                 }
                 else
                 {
-                    ch.Act("You try to unlock $p but fail.\n\r", item: container);
-                    ch.Act("$n tries to unlock $p but fails.\n\r", item: container, type: ActType.ToGroupInRoom);
+                    ch.Act("You try to unlock $p but fail.\r\n", item: container);
+                    ch.Act("$n tries to unlock $p but fails.\r\n", item: container, type: ActType.ToGroupInRoom);
                     ch.CheckImprove("infiltrate", false, 1);
                     return;
                 }
             }
             else
-                ch.send("You don't see that here.\n\r"); // ch.send("You can't unlock that.\n\r");
+                ch.send("You don't see that here.\r\n"); // ch.send("You can't unlock that.\r\n");
         }
         public static void DoGentleWalk(Character ch, string arguments)
         {
@@ -2816,7 +2816,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (chance > Utility.NumberPercent())
@@ -2840,7 +2840,7 @@ namespace CrimsonStainedLands
             {
                 ch.CheckImprove("gentle walk", false, 1);
             }
-            ch.Act("You attempt to walk gently.\n\r");
+            ch.Act("You attempt to walk gently.\r\n");
         }
 
         public static void DoSteal(Character ch, string arguments)
@@ -2858,20 +2858,20 @@ namespace CrimsonStainedLands
             }
             if (ch.Fighting != null && (chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.Act("You cannot steal while fighting yet.\n\r");
+                ch.Act("You cannot steal while fighting yet.\r\n");
             }
             else if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
 
             else if (arguments.ISEMPTY() || ((arguments = arguments.OneArgument(ref itemname)).ISEMPTY()) && ch.Fighting == null)
             {
-                ch.Act("Steal what from who?\n\r");
+                ch.Act("Steal what from who?\r\n");
             }
             else if (ch.Fighting == null && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.Act("You don't see them here.\n\r");
+                ch.Act("You don't see them here.\r\n");
             }
             else if (Combat.CheckIsSafe(ch, victim))
             {
@@ -2879,7 +2879,7 @@ namespace CrimsonStainedLands
             }
             else if (!(new string[] { "gold", "silver", "coins" }.Any(str => str.StringCmp(itemname))) && (item = victim.GetItemInventory(itemname)) == null)
             {
-                ch.Act("They aren't carrying that.\n\r");
+                ch.Act("They aren't carrying that.\r\n");
             }
             else if (chance > Utility.NumberPercent() || !victim.IsAwake)
             {
@@ -2889,19 +2889,19 @@ namespace CrimsonStainedLands
                     var silver = Math.Min(victim.Silver, victim.Silver * Utility.Random(1, ch.Level) / 60);
                     if (gold <= 0 && silver <= 0)
                     {
-                        ch.Act("You couldn't get any coins.\n\r");
+                        ch.Act("You couldn't get any coins.\r\n");
                     }
                     else if (gold > 0 && silver > 0)
                     {
-                        ch.Act("Bingo!  You got {0} silver and {1} gold coins.\n\r", null, null, null, ActType.ToChar, silver, gold);
+                        ch.Act("Bingo!  You got {0} silver and {1} gold coins.\r\n", null, null, null, ActType.ToChar, silver, gold);
                     }
                     else if (gold > 0)
                     {
-                        ch.Act("Bingo!  You got {0} gold coins.\n\r", null, null, null, ActType.ToChar, gold);
+                        ch.Act("Bingo!  You got {0} gold coins.\r\n", null, null, null, ActType.ToChar, gold);
                     }
                     else
                     {
-                        ch.Act("Bingo!  You got {0} silver coins.\n\r", null, null, null, ActType.ToChar, silver);
+                        ch.Act("Bingo!  You got {0} silver coins.\r\n", null, null, null, ActType.ToChar, silver);
                     }
                     victim.Gold -= gold;
                     victim.Silver -= silver;
@@ -2915,7 +2915,7 @@ namespace CrimsonStainedLands
                     ch.Inventory.Insert(0, item);
                     item.CarriedBy = ch;
                     ch.CheckImprove(skill, true, 1);
-                    ch.Act("You successfully steal $p from $N.\n\r", victim, item);
+                    ch.Act("You successfully steal $p from $N.\r\n", victim, item);
                 }
             }
             else
@@ -2923,9 +2923,9 @@ namespace CrimsonStainedLands
                 ch.CheckImprove(skill, false, 1);
                 if (item != null)
                 {
-                    ch.Act("You fail to steal $p from $N.\n\r", victim, item);
+                    ch.Act("You fail to steal $p from $N.\r\n", victim, item);
                 }
-                else ch.Act("You fail to steal from $N.\n\r", victim);
+                else ch.Act("You fail to steal from $N.\r\n", victim);
                 DoActCommunication.DoYell(victim, "Keep your hands out there!");
                 Combat.SetFighting(victim, ch);
             }
@@ -2939,15 +2939,15 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.Act("You don't know how to do that.\n\r");
+                ch.Act("You don't know how to do that.\r\n");
             }
             else if ((arguments.ISEMPTY()) || (item = ch.GetItemInventoryOrEquipment(arguments, false)) == null)
             {
-                ch.Act("Which item did you want to grease?\n\r");
+                ch.Act("Which item did you want to grease?\r\n");
             }
             else if (item.IsAffected(skill))
             {
-                ch.Act("$p is already greased.\n\r", item: item);
+                ch.Act("$p is already greased.\r\n", item: item);
             }
             else if (chance < Utility.NumberPercent())
             {
@@ -2969,7 +2969,7 @@ namespace CrimsonStainedLands
                 affect.skillSpell = skill;
                 bool v = affect.flags.SETBIT(AffectFlags.Greased);
                 item.affects.Add(affect);
-                affect.endMessage = "The grease on $p wears off.\n\r";
+                affect.endMessage = "The grease on $p wears off.\r\n";
                 ch.CheckImprove(skill, true, 1);
             }
 
@@ -2988,20 +2988,20 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (!victimname.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(victimname)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
             else if (dirArg.ISEMPTY() || !Utility.GetEnumValueStrPrefix(dirArg, ref direction))
             {
-                ch.Act("Which direction did you want to drag $N in?\n\r", victim);
+                ch.Act("Which direction did you want to drag $N in?\r\n", victim);
             }
             else if (!victim.IsAffected(AffectFlags.BindHands) ||
                 !victim.IsAffected(AffectFlags.BindLegs) || (!victim.IsAffected(AffectFlags.Sleep)))
             {
-                ch.Act("You cannot drag them if they're awake or their hands and legs are unbound.\n\r");
+                ch.Act("You cannot drag them if they're awake or their hands and legs are unbound.\r\n");
             }
             else if ((exit = ch.Room.GetExit(direction)) == null || exit.destination == null
                 || exit.flags.ISSET(ExitFlags.Closed) || exit.flags.ISSET(ExitFlags.Window) ||
@@ -3043,17 +3043,17 @@ namespace CrimsonStainedLands
 
             if ((number = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
 
             else if (ch.IsAffected(AffectFlags.ArcaneVision))
             {
-                ch.send("You can already see magical items.\n\r");
+                ch.send("You can already see magical items.\r\n");
 
             }
             else if (Utility.NumberPercent() > number)
             {
-                ch.send("You fail to heighten your awareness.\n\r");
+                ch.send("You fail to heighten your awareness.\r\n");
                 ch.CheckImprove(skill, false, 1);
                 return;
             }
@@ -3068,10 +3068,10 @@ namespace CrimsonStainedLands
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.Add(AffectFlags.ArcaneVision);
                 affect.duration = 12;
-                affect.endMessage = "Your awareness of magical items falls.\n\r";
+                affect.endMessage = "Your awareness of magical items falls.\r\n";
                 ch.AffectToChar(affect);
 
-                ch.send("Your awareness of magical items improves.\n\r");
+                ch.send("Your awareness of magical items improves.\r\n");
                 ch.CheckImprove(skill, true, 1);
             }
         }
@@ -3084,7 +3084,7 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage(skill) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
             }
             else if (argument.ISEMPTY() && (victim = ch) == null)
             {
@@ -3092,16 +3092,16 @@ namespace CrimsonStainedLands
             }
             else if (!argument.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(argument)) == null)
             {
-                ch.Act("You don't see them here.\n\r");
+                ch.Act("You don't see them here.\r\n");
             }
             else if (ch.IsAffected(AffectFlags.ApplyingFirstAid))
             {
-                ch.send("You are already delivering first aid.\n\r");
+                ch.send("You are already delivering first aid.\r\n");
             }
             else if (victim.IsAffected(AffectFlags.FirstAidBeingApplied))
             {
                 if (victim == ch)
-                    ch.Act("You are receiving first aid already.\n\r");
+                    ch.Act("You are receiving first aid already.\r\n");
                 else
                     ch.Act("$N is already receiving first aid.", victim);
 
@@ -3109,9 +3109,9 @@ namespace CrimsonStainedLands
             else if (victim.IsAffected(skill))
             {
                 if (victim == ch)
-                    ch.Act("You are still benefiting from first aid.\n\r");
+                    ch.Act("You are still benefiting from first aid.\r\n");
                 else
-                    ch.Act("$N is still benefiting from first aid.\n\r", victim);
+                    ch.Act("$N is still benefiting from first aid.\r\n", victim);
             }
 
             else if (Utility.NumberPercent() > ch.GetSkillPercentage(skill))
@@ -3210,7 +3210,7 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("GlobalEcho what?\n\r");
+                ch.send("GlobalEcho what?\r\n");
             }
             else
             {
@@ -3220,10 +3220,10 @@ namespace CrimsonStainedLands
                     {
                         if (ch != null && player.Level >= ch.Level)
                         {
-                            player.send("({0}) {1}\n\r", ch.Display(player), arguments);
+                            player.send("({0}) {1}\r\n", ch.Display(player), arguments);
                         }
                         else
-                            player.send("{0}\n\r", arguments);
+                            player.send("{0}\r\n", arguments);
                     }
                 }
             }
@@ -3233,7 +3233,7 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("AreaEcho what?\n\r");
+                ch.send("AreaEcho what?\r\n");
             }
             else
             {
@@ -3244,10 +3244,10 @@ namespace CrimsonStainedLands
                     {
                         if (ch != null && player.Level >= ch.Level)
                         {
-                            player.send("({0}) {1}\n\r", ch.Display(player), arguments);
+                            player.send("({0}) {1}\r\n", ch.Display(player), arguments);
                         }
                         else
-                            player.send("{0}\n\r", arguments);
+                            player.send("{0}\r\n", arguments);
                     }
                 }
             }
@@ -3257,7 +3257,7 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("Echo what?\n\r");
+                ch.send("Echo what?\r\n");
             }
             else
             {
@@ -3268,10 +3268,10 @@ namespace CrimsonStainedLands
                     {
                         if (ch != null && player.Level >= ch.Level)
                         {
-                            player.send("({0}) {1}\n\r", ch.Display(player), arguments);
+                            player.send("({0}) {1}\r\n", ch.Display(player), arguments);
                         }
                         else
-                            player.send("{0}\n\r", arguments);
+                            player.send("{0}\r\n", arguments);
                     }
                 }
             }

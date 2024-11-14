@@ -39,7 +39,7 @@ namespace CrimsonStainedLands
             if (ch.Room != null)
                 DisplayMap(ch, ch.Room);
             else
-                ch.send("You aren't in a room.\n\r");
+                ch.send("You aren't in a room.\r\n");
         }
 
         private class MapRoom
@@ -86,7 +86,7 @@ namespace CrimsonStainedLands
             StringBuilder buffer = new StringBuilder();
             if(ch.MapLastDisplayed != default(DateTime) && DateTime.Now - ch.MapLastDisplayed < TimeSpan.FromSeconds(5))
             {
-                ch.send("Please wait a few seconds before displaying the map again.\n\r");
+                ch.send("Please wait a few seconds before displaying the map again.\r\n");
                 return;
             }    
             ch.MapLastDisplayed = DateTime.Now;

@@ -48,16 +48,16 @@ namespace CrimsonStainedLands
             {
                 if (MethodUsed == CastType.Cast)
 
-                    ch.send("Cast which what where?\n\r");
+                    ch.send("Cast which what where?\r\n");
                 else if (MethodUsed == CastType.Commune)
-                    ch.send("Pray which prayer of supplication?\n\r");
+                    ch.send("Pray which prayer of supplication?\r\n");
                 else if (MethodUsed == CastType.Sing)
-                    ch.send("Sing what?\n\r");
+                    ch.send("Sing what?\r\n");
                 return;
             }
             if (ch.IsAffected(AffectFlags.Silenced))
             {
-                ch.Act("You cannot do that while silenced!\n\r");
+                ch.Act("You cannot do that while silenced!\r\n");
                 return;
             }
             if ((spell = SkillSpell.FindSpell(ch, arg1)) == null ||
@@ -66,17 +66,17 @@ namespace CrimsonStainedLands
                 ch.GetSkillPercentage(spell) <= 1)
             {
                 if (MethodUsed == CastType.Cast)
-                    ch.send("You don't know any spells of that name.\n\r");
+                    ch.send("You don't know any spells of that name.\r\n");
                 else if (MethodUsed == CastType.Commune)
-                    ch.send("You don't know any supplications of that name.\n\r");
+                    ch.send("You don't know any supplications of that name.\r\n");
                 else if (MethodUsed == CastType.Sing)
-                    ch.send("You don't know any songs of that name.\n\r");
+                    ch.send("You don't know any songs of that name.\r\n");
                 return;
             }
 
             if (ch.IsAffected(AffectFlags.Deafen))
             {
-                ch.send("You can't concentrate with the ringing in your ears.\n\r");
+                ch.send("You can't concentrate with the ringing in your ears.\r\n");
                 return;
             }
 
@@ -84,41 +84,41 @@ namespace CrimsonStainedLands
             {
                 if (ch.Guild.CastType == CastType.Commune && MethodUsed != CastType.Commune)
                 {
-                    ch.send("You must commune with the gods for your blessings.\n\r");
+                    ch.send("You must commune with the gods for your blessings.\r\n");
                     return;
                 }
                 else if (ch.Guild.CastType == CastType.Cast && MethodUsed != CastType.Cast)
                 {
-                    ch.send("You should try casting that as a spell.\n\r");
+                    ch.send("You should try casting that as a spell.\r\n");
                     return;
                 }
                 else if (ch.Guild.CastType == CastType.Sing && MethodUsed != CastType.Sing)
                 {
-                    ch.send("You should try singing that song.\n\r");
+                    ch.send("You should try singing that song.\r\n");
                     return;
                 }
 
 
                 if (MethodUsed == CastType.Cast && !spell.SkillTypes.Contains(SkillSpellTypes.Spell))
                 {
-                    ch.send("You can't cast that.\n\r");
+                    ch.send("You can't cast that.\r\n");
                     return;
                 }
 
                 if (MethodUsed == CastType.Commune && !spell.SkillTypes.Contains(SkillSpellTypes.Commune))
                 {
-                    ch.send("You can't pray to the gods about that.\n\r");
+                    ch.send("You can't pray to the gods about that.\r\n");
                     return;
                 }
 
                 if (MethodUsed == CastType.Sing && !spell.SkillTypes.Contains(SkillSpellTypes.Song))
                 {
-                    ch.send("You can't sing that.\n\r");
+                    ch.send("You can't sing that.\r\n");
                     return;
                 }
                 if (ch.Position < spell.minimumPosition)
                 {
-                    ch.send("You can't concentrate enough.\n\r");
+                    ch.send("You can't concentrate enough.\r\n");
                     return;
                 }
             }
@@ -136,13 +136,13 @@ namespace CrimsonStainedLands
                         victim = ch.Fighting;
                     else if ((victim = ch.GetCharacterFromRoomByName(targetName, ref count)) == null)
                     {
-                        ch.send("They aren't here.\n\r");
+                        ch.send("They aren't here.\r\n");
                         return;
                     }
 
                     if (victim == null)
                     {
-                        ch.send("They are not here.\n\r");
+                        ch.send("They are not here.\r\n");
                         return;
                     }
                     
@@ -155,7 +155,7 @@ namespace CrimsonStainedLands
                         victim = ch;
                     else if ((victim = ch.GetCharacterFromRoomByName(targetName, ref count)) == null)
                     {
-                        ch.send("They aren't here.\n\r");
+                        ch.send("They aren't here.\r\n");
                         return;
                     }
                     target = TargetIsType.targetChar;
@@ -164,7 +164,7 @@ namespace CrimsonStainedLands
                 case TargetTypes.targetCharSelf:
                     if (!string.IsNullOrEmpty(arg2) && !targetName.IsName(ch.Name))
                     {
-                        ch.send("You cannot cast this spell on another.\n\r");
+                        ch.send("You cannot cast this spell on another.\r\n");
                         return;
                     }
 
@@ -174,13 +174,13 @@ namespace CrimsonStainedLands
                 case TargetTypes.targetItemInventory:
                     if (arg2.ISEMPTY())
                     {
-                        ch.send("What should the spell be cast upon?\n\r");
+                        ch.send("What should the spell be cast upon?\r\n");
                         return;
                     }
 
                     if ((item = ch.GetItemInventory(targetName, ref count)) == null)
                     {
-                        ch.send("You are not carrying that.\n\r");
+                        ch.send("You are not carrying that.\r\n");
                         return;
                     }
 
@@ -192,7 +192,7 @@ namespace CrimsonStainedLands
                     {
                         if ((victim = ch.Fighting) == null)
                         {
-                            ch.send("Cast the spell on whom or what?\n\r");
+                            ch.send("Cast the spell on whom or what?\r\n");
                             return;
                         }
 
@@ -216,13 +216,13 @@ namespace CrimsonStainedLands
                         /*
                         if(is_safe_spell(ch,victim,FALSE) && victim != ch)
                         {
-                        send_to_char("Not on that target.\n\r",ch);
+                        send_to_char("Not on that target.\r\n",ch);
                         return;
                         }
                         */
                         //if (IS_AFFECTED(ch, AFF_CHARM) && ch->master == victim)
                         //{
-                        //    send_to_char("You can't do that on your own follower.\n\r",
+                        //    send_to_char("You can't do that on your own follower.\r\n",
                         //        ch);
                         //    return;
                         //}
@@ -235,7 +235,7 @@ namespace CrimsonStainedLands
 
                     else
                     {
-                        ch.send("You don't see that here.\n\r");
+                        ch.send("You don't see that here.\r\n");
                         return;
                     }
                     break;
@@ -263,18 +263,18 @@ namespace CrimsonStainedLands
                     }
                     else
                     {
-                        ch.send("You don't see that here.\n\r");
+                        ch.send("You don't see that here.\r\n");
                         return;
                     }
                     break;
                 default:
-                    ch.send("You can't cast this type of spell yet.\n\r");
+                    ch.send("You can't cast this type of spell yet.\r\n");
                     return;
             }
 
             if (ch.ManaPoints < mana)
             {
-                ch.send("You don't have enough mana.\n\r");
+                ch.send("You don't have enough mana.\r\n");
                 return;
             }
 
@@ -298,8 +298,8 @@ namespace CrimsonStainedLands
             }
             else if (MethodUsed == CastType.Sing)
             {
-                ch.Act("\\M$n sings \n\r\n\r{0}\\x\n\r\n\r", type: ActType.ToRoom, args: spell.Lyrics);//.Replace("\r", "").Replace("\n", "\n\t"));
-                ch.Act("\\MYou sing \n\r\n\r{0}\\x\n\r\n\r", args: spell.Lyrics);//.Replace("\r", "").Replace("\n", "\n\t"));
+                ch.Act("\\M$n sings \r\n\r\n{0}\\x\r\n\r\n", type: ActType.ToRoom, args: spell.Lyrics);//.Replace("\r", "").Replace("\n", "\n\t"));
+                ch.Act("\\MYou sing \r\n\r\n{0}\\x\r\n\r\n", args: spell.Lyrics);//.Replace("\r", "").Replace("\n", "\n\t"));
             }
             else if (MethodUsed == CastType.Commune)
             {
@@ -327,10 +327,10 @@ namespace CrimsonStainedLands
             if (!ch.IsImmortal && Utility.NumberPercent() > chance)
             {
                 if (MethodUsed == CastType.Cast)
-                    ch.send("You lost your concentration.\n\r");
+                    ch.send("You lost your concentration.\r\n");
                 else if (MethodUsed == CastType.Sing)
                 {
-                    ch.send("Your song falls on deaf ears.\n\r");
+                    ch.send("Your song falls on deaf ears.\r\n");
                     ch.CheckImprove("sing", false, 1);
                     if (held == null || !held.ItemType.ISSET(ItemTypes.Instrument))
                     {
@@ -339,7 +339,7 @@ namespace CrimsonStainedLands
                 }
                 else if (MethodUsed == CastType.Commune)
                 {
-                    ch.send("{0}: The gods don't seem to hear you.\n\r", spell.name);
+                    ch.send("{0}: The gods don't seem to hear you.\r\n", spell.name);
                 }
                 //checkimprove(ch, spell);
                 ch.CheckImprove(spell, false, 1);
@@ -407,7 +407,7 @@ namespace CrimsonStainedLands
             if (ch.Room.flags.ISSET(RoomFlags.NoMagic))
             {
                 ch.Act("$n's spell fizzles.", type: ActType.ToRoom);
-                ch.send("Your spell fizzles and dies.\n\r");
+                ch.send("Your spell fizzles and dies.\r\n");
                 return;
             }
 
@@ -427,12 +427,12 @@ namespace CrimsonStainedLands
                         victim = ch.Fighting;
                     if (victim == null)
                     {
-                        ch.send("You can't do that.\n\r");
+                        ch.send("You can't do that.\r\n");
                         return;
                     }
                     if (Combat.CheckIsSafe(ch, victim) && ch != victim)
                     {
-                        //ch.send("Something isn't right...\n\r");
+                        //ch.send("Something isn't right...\r\n");
                         return;
                     }
                     vo = victim;
@@ -450,7 +450,7 @@ namespace CrimsonStainedLands
                 case TargetTypes.targetItemInventory:
                     if (item == null)
                     {
-                        ch.send("You can't do that.\n\r");
+                        ch.send("You can't do that.\r\n");
                         return;
                     }
                     vItem = item;
@@ -464,7 +464,7 @@ namespace CrimsonStainedLands
                             victim = ch.Fighting;
                         else
                         {
-                            ch.send("You can't do that.\n\r");
+                            ch.send("You can't do that.\r\n");
                             return;
                         }
                     }
@@ -473,7 +473,7 @@ namespace CrimsonStainedLands
                     {
                         if (IsSafeSpell(ch, victim, false) && ch != victim)
                         {
-                            //ch.send("Something isn't right...\n\r");
+                            //ch.send("Something isn't right...\r\n");
                             return;
                         }
 
@@ -607,9 +607,9 @@ namespace CrimsonStainedLands
                 if (other != ch)
                 {
                     if (other.Guild == ch.Guild)
-                        ch.Act("$n utters the words '" + spell.name + "'.\n\r", other, null, null, ActType.ToVictim);
+                        ch.Act("$n utters the words '" + spell.name + "'.\r\n", other, null, null, ActType.ToVictim);
                     else
-                        ch.Act("$n utters the words '" + buf.ToString() + "'.\n\r", other, null, null, ActType.ToVictim);
+                        ch.Act("$n utters the words '" + buf.ToString() + "'.\r\n", other, null, null, ActType.ToVictim);
                 }
             }
         }
@@ -621,7 +621,7 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(AffectFlags.Calm))
             {
-                ch.send("You feel to calm to fight.\n\r");
+                ch.send("You feel to calm to fight.\r\n");
                 Combat.StopFighting(ch);
 
                 return true;
@@ -726,9 +726,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (victim == ch)
-                    ch.send("You already have armor.\n\r");
+                    ch.send("You already have armor.\r\n");
                 else
-                    ch.send("They already have armor.\n\r");
+                    ch.send("They already have armor.\r\n");
                 return;
             }
             else
@@ -743,12 +743,12 @@ namespace CrimsonStainedLands
                 affect.duration = 10 + (ch.Level / 4);
                 affect.modifier = amt;
                 affect.displayName = "armor";
-                affect.endMessage = "The armor surrounding you fades.\n\r";
-                affect.endMessageToRoom = "The armor surrounding $n fades.\n\r";
+                affect.endMessage = "The armor surrounding you fades.\r\n";
+                affect.endMessageToRoom = "The armor surrounding $n fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("You are surrounded by armor.\n\r");
-                victim.Act("$n is surrounded by armor.\n\r", type: ActType.ToRoom);
+                victim.send("You are surrounded by armor.\r\n");
+                victim.Act("$n is surrounded by armor.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellCureLight(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -761,8 +761,8 @@ namespace CrimsonStainedLands
             victim.HitPoints = Math.Min(victim.HitPoints + heal, victim.MaxHitPoints);
             if (victim.Position <= Positions.Stunned)
                 Combat.UpdatePosition(victim);
-            victim.send("Your wounds are slightly healed.\n\r");
-            victim.Act("$n's wounds are slightly healed.\n\r", type: ActType.ToRoom);
+            victim.send("Your wounds are slightly healed.\r\n");
+            victim.Act("$n's wounds are slightly healed.\r\n", type: ActType.ToRoom);
         }
         public static void SpellMendWounds(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -773,8 +773,8 @@ namespace CrimsonStainedLands
             victim.HitPoints = Math.Min(victim.HitPoints + heal, victim.MaxHitPoints);
             if (victim.Position <= Positions.Stunned)
                 Combat.UpdatePosition(victim);
-            victim.Act("Your wounds are healed.\n\r", victim);
-            victim.Act("$n's wounds are healed.\n\r", type: ActType.ToRoom);
+            victim.Act("Your wounds are healed.\r\n", victim);
+            victim.Act("$n's wounds are healed.\r\n", type: ActType.ToRoom);
         }
         public static void SpellCureSerious(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -785,8 +785,8 @@ namespace CrimsonStainedLands
             victim.HitPoints = Math.Min(victim.HitPoints + heal, victim.MaxHitPoints);
             if (victim.Position <= Positions.Stunned)
                 Combat.UpdatePosition(victim);
-            victim.send("Your wounds are greatly healed.\n\r");
-            victim.Act("$n's wounds are greatly healed.\n\r", type: ActType.ToRoom);
+            victim.send("Your wounds are greatly healed.\r\n");
+            victim.Act("$n's wounds are greatly healed.\r\n", type: ActType.ToRoom);
         }
 
         public static void SpellCureCritical(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -798,8 +798,8 @@ namespace CrimsonStainedLands
             victim.HitPoints = Math.Min(victim.HitPoints + heal, victim.MaxHitPoints);
             if (victim.Position <= Positions.Stunned)
                 Combat.UpdatePosition(victim);
-            victim.send("Your wounds are immensely healed.\n\r");
-            victim.Act("$n's wounds are immensely healed.\n\r", type: ActType.ToRoom);
+            victim.send("Your wounds are immensely healed.\r\n");
+            victim.Act("$n's wounds are immensely healed.\r\n", type: ActType.ToRoom);
         }
         public static void SpellHeal(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -810,8 +810,8 @@ namespace CrimsonStainedLands
             victim.HitPoints = Math.Min(victim.HitPoints + heal, victim.MaxHitPoints);
             if (victim.Position <= Positions.Stunned)
                 Combat.UpdatePosition(victim);
-            victim.send("Your wounds are healed.\n\r");
-            victim.Act("$n's wounds are healed.\n\r", type: ActType.ToRoom);
+            victim.send("Your wounds are healed.\r\n");
+            victim.Act("$n's wounds are healed.\r\n", type: ActType.ToRoom);
         }
         public static void SpellRejuvenate(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -822,8 +822,8 @@ namespace CrimsonStainedLands
             victim.HitPoints = Math.Min(victim.HitPoints + heal, victim.MaxHitPoints);
             if (victim.Position <= Positions.Stunned)
                 Combat.UpdatePosition(victim);
-            victim.send("Your wounds are healed.\n\r");
-            victim.Act("$n's wounds are healed.\n\r", type: ActType.ToRoom);
+            victim.send("Your wounds are healed.\r\n");
+            victim.Act("$n's wounds are healed.\r\n", type: ActType.ToRoom);
         }
         public static void SpellBless(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -833,7 +833,7 @@ namespace CrimsonStainedLands
 
             if ((affect = victim.FindAffect(spell)) != null)
             {
-                ch.send("They are already blessed.\n\r");
+                ch.send("They are already blessed.\r\n");
                 return;
             }
             else
@@ -870,11 +870,11 @@ namespace CrimsonStainedLands
                 affect.modifier = -(Math.Max(5, level / 3));
                 affect.displayName = "blessed";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
-                affect.endMessage = "The blessing surrounding you fades.\n\r";
-                affect.endMessageToRoom = "The blessing surrounding $n fades.\n\r";
+                affect.endMessage = "The blessing surrounding you fades.\r\n";
+                affect.endMessageToRoom = "The blessing surrounding $n fades.\r\n";
                 victim.AffectToChar(affect);
 
-                victim.send("You are surrounded by a blessing.\n\r");
+                victim.send("You are surrounded by a blessing.\r\n");
                 victim.Act("$n is surrounded by a blessing.", type: ActType.ToRoom);
             }
         }
@@ -921,10 +921,10 @@ namespace CrimsonStainedLands
                     affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                     GroupMember.AffectToChar(affect);
 
-                    affect.endMessage = "The blessing surrounding you fades.\n\r";
-                    affect.endMessageToRoom = "The blessing surrounding $n fades.\n\r";
+                    affect.endMessage = "The blessing surrounding you fades.\r\n";
+                    affect.endMessageToRoom = "The blessing surrounding $n fades.\r\n";
 
-                    GroupMember.send("You are surrounded by a blessing.\n\r");
+                    GroupMember.send("You are surrounded by a blessing.\r\n");
                     GroupMember.Act("$n is surrounded by a blessing.", type: ActType.ToRoom);
                 }
             }
@@ -936,10 +936,10 @@ namespace CrimsonStainedLands
             if (victim == null)
                 victim = ch.Fighting;
             if (victim == null)
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
             else if ((affect = victim.FindAffect(spell)) != null)
             {
-                ch.send("They are already blind.\n\r");
+                ch.send("They are already blind.\r\n");
                 return;
             }
             else if ((victim.ImmuneFlags.ISSET(WeaponDamageTypes.Blind) || (victim.Form != null && victim.Form.ImmuneFlags.ISSET(WeaponDamageTypes.Blind))) && !victim.IsAffected(AffectFlags.Deafen))
@@ -955,12 +955,12 @@ namespace CrimsonStainedLands
                 affect.duration = Math.Max(3, ch_level / 3);
                 affect.modifier = ch_level / 2;
                 affect.displayName = "Blinded";
-                affect.endMessage = "You can see again.\n\r";
-                affect.endMessageToRoom = "$n can see again.\n\r";
+                affect.endMessage = "You can see again.\r\n";
+                affect.endMessageToRoom = "$n can see again.\r\n";
                 affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("You are blinded.\n\r");
-                victim.Act("$n is blinded.\n\r", null, null, null, ActType.ToRoom);
+                victim.send("You are blinded.\r\n");
+                victim.Act("$n is blinded.\r\n", null, null, null, ActType.ToRoom);
             }
         }
 
@@ -972,8 +972,8 @@ namespace CrimsonStainedLands
                 var bread = new ItemData(template);
                 ch.Room.items.Insert(0, bread);
                 bread.Room = ch.Room;
-                ch.send("You create a loaf of bread out of thin air.\n\r");
-                ch.Act("$n creates a loaf of bread out of thin air.\n\r", type: ActType.ToRoom);
+                ch.send("You create a loaf of bread out of thin air.\r\n");
+                ch.Act("$n creates a loaf of bread out of thin air.\r\n", type: ActType.ToRoom);
             }
         }
 
@@ -986,9 +986,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They can already see the invisible.\n\r");
+                    ch.send("They can already see the invisible.\r\n");
                 else
-                    ch.send("You can already see the invisible.\n\r");
+                    ch.send("You can already see the invisible.\r\n");
                 return;
             }
             else
@@ -1002,15 +1002,15 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.DetectInvis);
                 affect.duration = 10 + level / 4;
                 affect.displayName = "detect invisibility";
-                affect.endMessage = "You can no longer see the invisible.\n\r";
+                affect.endMessage = "You can no longer see the invisible.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
 
 
-                victim.send("Your eyes tingle.\n\r");
+                victim.send("Your eyes tingle.\r\n");
                 if (ch != victim)
-                    ch.send("Ok.\n\r");
+                    ch.send("Ok.\r\n");
             }
         }
         public static void SpellInfravision(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -1022,9 +1022,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They can already see through the darkness.\n\r");
+                    ch.send("They can already see through the darkness.\r\n");
                 else
-                    ch.send("You can already see through the darkness.\n\r");
+                    ch.send("You can already see through the darkness.\r\n");
                 return;
             }
             else
@@ -1037,14 +1037,14 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Infrared);
                 affect.duration = 10 + level / 4;
                 affect.displayName = "Infravision";
-                affect.endMessage = "You can no longer see through the darkness.\n\r";
+                affect.endMessage = "You can no longer see through the darkness.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
 
-                victim.send("Your eyes briefly glow red.\n\r");
+                victim.send("Your eyes briefly glow red.\r\n");
                 if (ch != victim)
-                    ch.send("Ok.\n\r");
+                    ch.send("Ok.\r\n");
             }
         }
 
@@ -1060,23 +1060,23 @@ namespace CrimsonStainedLands
             if (victim.IsAffected(fog) || victim.IsAffected(fire) || victim.IsAffected(AffectFlags.FaerieFire))
             {
                 if (victim != ch)
-                    ch.send("They can't become invisible while glowing.\n\r");
+                    ch.send("They can't become invisible while glowing.\r\n");
                 else
-                    ch.send("You cannot become invisible while glowing.\n\r");
+                    ch.send("You cannot become invisible while glowing.\r\n");
                 return;
             }
 
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (victim != ch)
-                    ch.send("They are already invisible.\n\r");
+                    ch.send("They are already invisible.\r\n");
                 else
                     ch.send("You are already invisible.");
                 return;
             }
             else
             {
-                victim.send("You fade out of existence.\n\r");
+                victim.send("You fade out of existence.\r\n");
                 victim.Act("$n fades out of existence.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -1086,8 +1086,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Invisible);
                 affect.duration = 10 + level / 4;
                 affect.displayName = "invisibility";
-                affect.endMessage = "You fade into existence.\n\r";
-                affect.endMessageToRoom = "$n fades back into existence.\n\r";
+                affect.endMessage = "You fade into existence.\r\n";
+                affect.endMessageToRoom = "$n fades back into existence.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
@@ -1117,7 +1117,7 @@ namespace CrimsonStainedLands
 
             if ((affect = victim.FindAffect(spell)) != null)
             {
-                ch.send("They are already poisoned.\n\r");
+                ch.send("They are already poisoned.\r\n");
                 return;
             }
             else
@@ -1125,7 +1125,7 @@ namespace CrimsonStainedLands
                 if (SavesSpell(ch_level, victim, WeaponDamageTypes.Poison))
                 {
                     victim.Act("$n turns slightly green, but it passes.", type: ActType.ToRoom);
-                    victim.send("You feel momentarily ill, but it passes.\n\r");
+                    victim.send("You feel momentarily ill, but it passes.\r\n");
                     return;
                 }
 
@@ -1139,12 +1139,12 @@ namespace CrimsonStainedLands
                 affect.duration = 3;
                 affect.modifier = -3;
                 affect.displayName = "Poisoned";
-                affect.endMessage = "You feel less sick.\n\r";
-                affect.endMessageToRoom = "$n starts looking less sick.\n\r";
+                affect.endMessage = "You feel less sick.\r\n";
+                affect.endMessageToRoom = "$n starts looking less sick.\r\n";
                 affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
-                victim.send("You feel very sick.\n\r");
+                victim.send("You feel very sick.\r\n");
                 victim.Act("$n looks very ill.", null, null, null, ActType.ToRoom);
             }
         }
@@ -1155,10 +1155,10 @@ namespace CrimsonStainedLands
             RoomData recallroom;
             if ((recallroom = victim.GetRecallRoom()) == null) //!RoomData.rooms.TryGetValue(3001, out recallroom))
             {
-                ch.send("You can't seem to find home.\n\r");
+                ch.send("You can't seem to find home.\r\n");
                 return;
             }
-            victim.send("Your vision swirls a moment as you are transported to another place.\n\r");
+            victim.send("Your vision swirls a moment as you are transported to another place.\r\n");
             victim.Act("$n's disappears.", null, null, null, ActType.ToRoom);
 
             if (victim.Fighting != null)
@@ -1207,7 +1207,7 @@ namespace CrimsonStainedLands
 
                         if (item == null)
                         {
-                            ch.send("You can't find it.\n\r");
+                            ch.send("You can't find it.\r\n");
                             return;
                         }
 
@@ -1248,8 +1248,8 @@ namespace CrimsonStainedLands
             if (victim.Alignment != Alignment.Evil)
             {
                 ch.Act("$N is unaffected by $n's heavenly wrath.", victim, null, null, ActType.ToRoomNotVictim);
-                ch.Act("You are unaffected by $n's heavenly wrath.\n\r", victim, null, null, ActType.ToRoom);
-                ch.send("The Gods do not enhance your wrath and frown on your actions.\n\r");
+                ch.Act("You are unaffected by $n's heavenly wrath.\r\n", victim, null, null, ActType.ToRoom);
+                ch.send("The Gods do not enhance your wrath and frown on your actions.\r\n");
                 return;
             }
             var level = ch_level;
@@ -1309,7 +1309,7 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Sanctuary))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by a white aura.\n\r");
+                    ch.send("They are already protected by a white aura.\r\n");
                 else
                     ch.send("You are already protected by a white aura.");
                 return;
@@ -1317,7 +1317,7 @@ namespace CrimsonStainedLands
             else
             {
                 if (victim.IsAffected(AffectFlags.Haven)) victim.AffectFromChar(victim.FindAffect(AffectFlags.Haven), AffectRemoveReason.WoreOff);
-                victim.send("A white aura surrounds you.\n\r");
+                victim.send("A white aura surrounds you.\r\n");
                 victim.Act("A white aura surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -1327,8 +1327,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Sanctuary);
                 affect.duration = 10 + level / 4;
                 affect.displayName = "sanctuary";
-                affect.endMessage = "Your white aura fades.\n\r";
-                affect.endMessageToRoom = "$n's white aura fades.\n\r";
+                affect.endMessage = "Your white aura fades.\r\n";
+                affect.endMessageToRoom = "$n's white aura fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
 
@@ -1342,20 +1342,20 @@ namespace CrimsonStainedLands
 
             if ((affect = victim.FindAffect(spell)) != null)
             {
-                ch.send("You aren't ready to cast a shield again.\n\r");
+                ch.send("You aren't ready to cast a shield again.\r\n");
                 return;
             }
             else if(victim.IsAffected(AffectFlags.Shield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by a shield.\n\r");
+                    ch.send("They are already protected by a shield.\r\n");
                 else
                     ch.send("You are already protected by a shield.");
                 return;
             }
             else
             {
-                victim.send("A magical shield surrounds you.\n\r");
+                victim.send("A magical shield surrounds you.\r\n");
                 victim.Act("A magical shield surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -1371,8 +1371,8 @@ namespace CrimsonStainedLands
                 affect.duration = 12 + level / 6;
                 affect.location = ApplyTypes.AC;
                 affect.modifier = -30 - level / 5;
-                affect.endMessage = "Your magical shield fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield fades.\n\r";
+                affect.endMessage = "Your magical shield fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
             }
@@ -1387,14 +1387,14 @@ namespace CrimsonStainedLands
         //    if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.ProtectionGood))
         //    {
         //        if (victim != ch)
-        //            ch.send("They are already protected from good.\n\r");
+        //            ch.send("They are already protected from good.\r\n");
         //        else
         //            ch.send("You are already protected from good.");
         //        return;
         //    }
         //    else
         //    {
-        //        victim.send("You are protected from good.\n\r");
+        //        victim.send("You are protected from good.\r\n");
         //        victim.Act("$n is protected from good.", type: ActType.ToRoom);
         //        affect = new AffectData();
         //        affect.skillSpell = spell;
@@ -1404,8 +1404,8 @@ namespace CrimsonStainedLands
         //        affect.flags.Add(AffectFlags.ProtectionGood);
         //        affect.duration = 10 + level / 4;
         //        affect.displayName = "protection good";
-        //        affect.endMessage = "You feel less protected.\n\r";
-        //        affect.endMessageToRoom = "$n's protection wanes.\n\r";
+        //        affect.endMessage = "You feel less protected.\r\n";
+        //        affect.endMessageToRoom = "$n's protection wanes.\r\n";
         //        affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
         //        victim.AffectToChar(affect);
@@ -1422,14 +1422,14 @@ namespace CrimsonStainedLands
         //    if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.ProtectionEvil))
         //    {
         //        if (victim != ch)
-        //            ch.send("They are already protected from evil.\n\r");
+        //            ch.send("They are already protected from evil.\r\n");
         //        else
         //            ch.send("You are already protected from evil.");
         //        return;
         //    }
         //    else
         //    {
-        //        victim.send("You feel more protected from evil.\n\r");
+        //        victim.send("You feel more protected from evil.\r\n");
         //        victim.Act("$n is protected from evil.", type: ActType.ToRoom);
         //        affect = new AffectData();
         //        affect.skillSpell = spell;
@@ -1439,8 +1439,8 @@ namespace CrimsonStainedLands
         //        affect.flags.Add(AffectFlags.ProtectionEvil);
         //        affect.duration = 10 + level / 4;
         //        affect.displayName = "protection evil";
-        //        affect.endMessage = "Your feel less protected.\n\r";
-        //        affect.endMessageToRoom = "$n's protection wanes.\n\r";
+        //        affect.endMessage = "Your feel less protected.\r\n";
+        //        affect.endMessageToRoom = "$n's protection wanes.\r\n";
         //        affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
         //        victim.AffectToChar(affect);
@@ -1455,22 +1455,22 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Watershield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by your water shield.\n\r");
+                    ch.send("They are already protected by your water shield.\r\n");
                 else
                     ch.send("You are already protected by water shield.");
                 return;
             }
             else
             {
-                victim.send("A magical water shield surrounds you.\n\r");
+                victim.send("A magical water shield surrounds you.\r\n");
                 victim.Act("A magical water shield surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.displayName = "water shield";
                 affect.duration = 24;
-                affect.endMessage = "Your magical shield of water fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield of water fades.\n\r";
+                affect.endMessage = "Your magical shield of water fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield of water fades.\r\n";
                 affect.endMessage = "You feel ready to cast water shield again.";
                 affect.DamageTypes.Add(WeaponDamageTypes.Drowning);
                 affect.where = AffectWhere.ToImmune;
@@ -1486,22 +1486,22 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Earthshield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by your earth shield.\n\r");
+                    ch.send("They are already protected by your earth shield.\r\n");
                 else
                     ch.send("You are already protected by earth shield.");
                 return;
             }
             else
             {
-                victim.send("A magical shield of surrounds you.\n\r");
+                victim.send("A magical shield of surrounds you.\r\n");
                 victim.Act("A magical shield of earth surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.displayName = "earth shield";
                 affect.duration = 24;
-                affect.endMessage = "Your magical shield of earth fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield of earth fades.\n\r";
+                affect.endMessage = "Your magical shield of earth fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield of earth fades.\r\n";
                 affect.endMessage = "You feel ready to cast earth shield again.";
                 affect.DamageTypes.Add(WeaponDamageTypes.Bash);
                 affect.where = AffectWhere.ToImmune;
@@ -1517,22 +1517,22 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Airshield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by your air shield.\n\r");
+                    ch.send("They are already protected by your air shield.\r\n");
                 else
                     ch.send("You are already protected by air shield.");
                 return;
             }
             else
             {
-                victim.send("A magical shield of air surrounds you.\n\r");
+                victim.send("A magical shield of air surrounds you.\r\n");
                 victim.Act("A magical shield of air surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.displayName = "air shield";
                 affect.duration = 24;
-                affect.endMessage = "Your magical shield of air fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield of air fades.\n\r";
+                affect.endMessage = "Your magical shield of air fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield of air fades.\r\n";
                 affect.endMessage = "You feel ready to cast air shield again.";
                 affect.DamageTypes.Add(WeaponDamageTypes.Air);
                 affect.where = AffectWhere.ToImmune;
@@ -1548,22 +1548,22 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Fireshield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by your fire shield.\n\r");
+                    ch.send("They are already protected by your fire shield.\r\n");
                 else
                     ch.send("You are already protected by fire shield.");
                 return;
             }
             else
             {
-                victim.send("A magical shield of fire surrounds you.\n\r");
+                victim.send("A magical shield of fire surrounds you.\r\n");
                 victim.Act("A magical shield of fire surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.displayName = "fire shield";
                 affect.duration = 24;
-                affect.endMessage = "Your magical shield of fire fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield of fire fades.\n\r";
+                affect.endMessage = "Your magical shield of fire fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield of fire fades.\r\n";
                 affect.endMessage = "You feel ready to cast fire shield again.";
                 affect.DamageTypes.Add(WeaponDamageTypes.Fire);
                 affect.where = AffectWhere.ToImmune;
@@ -1579,22 +1579,22 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Lightningshield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by your lightning shield.\n\r");
+                    ch.send("They are already protected by your lightning shield.\r\n");
                 else
                     ch.send("You are already protected by lightning shield.");
                 return;
             }
             else
             {
-                victim.send("A magical shield of lightning crackles around you.\n\r");
+                victim.send("A magical shield of lightning crackles around you.\r\n");
                 victim.Act("A magical shield of lightning crackles around $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.displayName = "lightning shield";
                 affect.duration = 24;
-                affect.endMessage = "Your magical shield of lightning fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield of lightning fades.\n\r";
+                affect.endMessage = "Your magical shield of lightning fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield of lightning fades.\r\n";
                 affect.endMessage = "You feel ready to cast lightning shield again.";
                 affect.DamageTypes.Add(WeaponDamageTypes.Lightning);
                 affect.where = AffectWhere.ToImmune;
@@ -1610,22 +1610,22 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Frostshield))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by your frost shield.\n\r");
+                    ch.send("They are already protected by your frost shield.\r\n");
                 else
                     ch.send("You are already protected by frost shield.");
                 return;
             }
             else
             {
-                victim.send("You sence tingling and numbing in your skin.\n\r");
+                victim.send("You sence tingling and numbing in your skin.\r\n");
                 victim.Act("A magical shield of frost surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
                 affect.level = level;
                 affect.displayName = "frost shield";
                 affect.duration = 24;
-                affect.endMessage = "Your magical shield of frost fades.\n\r";
-                affect.endMessageToRoom = "$n's magical shield of frost fades.\n\r";
+                affect.endMessage = "Your magical shield of frost fades.\r\n";
+                affect.endMessageToRoom = "$n's magical shield of frost fades.\r\n";
                 affect.endMessage = "You feel ready to cast frost shield again.";
                 affect.DamageTypes.Add(WeaponDamageTypes.Cold);
                 affect.where = AffectWhere.ToImmune;
@@ -1649,7 +1649,7 @@ namespace CrimsonStainedLands
                     ch.Act("$n places their hand over your eyes for a moment.", victim, null, null, ActType.ToVictim);
                 }
                 else
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
             }
             else
                 ch.Act("$N isn't blinded in a way you can cure.", victim, type: ActType.ToChar);
@@ -1664,14 +1664,14 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.PassDoor))
             {
                 if (victim != ch)
-                    ch.send("They are already out of phase.\n\r");
+                    ch.send("They are already out of phase.\r\n");
                 else
-                    ch.send("You are already out of phase.\n\r");
+                    ch.send("You are already out of phase.\r\n");
                 return;
             }
             else
             {
-                victim.send("You phase in and out of existence.\n\r");
+                victim.send("You phase in and out of existence.\r\n");
                 victim.Act("$n phases in and out of existence.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -1681,8 +1681,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.PassDoor);
                 affect.duration = 5 + level / 3;
                 affect.displayName = "pass door";
-                affect.endMessage = "Your feel less translucent.\n\r";
-                affect.endMessageToRoom = "$n appears less translucent.\n\r";
+                affect.endMessage = "Your feel less translucent.\r\n";
+                affect.endMessageToRoom = "$n appears less translucent.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
@@ -1846,7 +1846,7 @@ namespace CrimsonStainedLands
                 //|| (!victim.IsNPC && !can_pk(ch, victim) && ISSET(victim->act, PLR_NOSUMMON))
                 || (SavesSpell(level, victim, WeaponDamageTypes.Other)))
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
                 return;
             }
 
@@ -1866,7 +1866,7 @@ namespace CrimsonStainedLands
                 || (!ch.IsNPC && ch.Fighting != null)
                 )
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
                 return;
             }
 
@@ -1876,7 +1876,7 @@ namespace CrimsonStainedLands
 
             if (room == null || !(ch.IsImmortal || ch.IsNPC))
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
                 return;
             }
 
@@ -2037,9 +2037,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They can already sense magic.\n\r");
+                    ch.send("They can already sense magic.\r\n");
                 else
-                    ch.send("You can already sense magic.\n\r");
+                    ch.send("You can already sense magic.\r\n");
                 return;
             }
             else
@@ -2053,14 +2053,14 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.DetectMagic);
                 affect.duration = 10;
                 affect.displayName = "detect magic";
-                affect.endMessage = "You can no longer sense magic.\n\r";
+                affect.endMessage = "You can no longer sense magic.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
 
 
-                victim.send("Your eyes feel different.\n\r");
+                victim.send("Your eyes feel different.\r\n");
                 if (ch != victim)
-                    ch.send("Ok.\n\r");
+                    ch.send("Ok.\r\n");
             }
         }
 
@@ -2094,9 +2094,9 @@ namespace CrimsonStainedLands
                 }
             }
             if (stripped)
-                ch.send("Ok.\n\r");
+                ch.send("Ok.\r\n");
             else
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
         }
 
         public static void SpellCureDisease(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -2129,13 +2129,13 @@ namespace CrimsonStainedLands
                         }
                     }
                     else
-                        ch.send("You fail to remove {0}.\n\r", aff.displayName);
+                        ch.send("You fail to remove {0}.\r\n", aff.displayName);
                 }
             }
             if (stripped)
-                ch.send("Ok.\n\r");
+                ch.send("Ok.\r\n");
             else
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
         }
 
         public static void SpellCurePoison(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -2168,13 +2168,13 @@ namespace CrimsonStainedLands
                         }
                     }
                     else
-                        ch.send("You fail to remove {0}.\n\r", aff.displayName);
+                        ch.send("You fail to remove {0}.\r\n", aff.displayName);
                 }
             }
             if (stripped)
-                ch.send("Ok.\n\r");
+                ch.send("Ok.\r\n");
             else
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
         }
 
         public static void SpellStoneskin(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -2186,9 +2186,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They already have stoneskin.\n\r");
+                    ch.send("They already have stoneskin.\r\n");
                 else
-                    ch.send("You already have stoneskin.\n\r");
+                    ch.send("You already have stoneskin.\r\n");
                 return;
             }
             else
@@ -2201,12 +2201,12 @@ namespace CrimsonStainedLands
                 affect.duration = 10 + level / 4;
                 affect.modifier = -30 - ((level / 2) - 10);
                 affect.displayName = "stoneskin";
-                affect.endMessage = "Your stoneskin fades..\n\r";
-                affect.endMessageToRoom = "$n's stoneskin fades.\n\r";
+                affect.endMessage = "Your stoneskin fades..\r\n";
+                affect.endMessageToRoom = "$n's stoneskin fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("Your skin turns to stone.\n\r");
-                victim.Act("$n's skin turns to stone.\n\r", type: ActType.ToRoom);
+                victim.send("Your skin turns to stone.\r\n");
+                victim.Act("$n's skin turns to stone.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellSheenOfStone(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -2218,9 +2218,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They're skin already glistens with a sheen of stone.\n\r");
+                    ch.send("They're skin already glistens with a sheen of stone.\r\n");
                 else
-                    ch.send("Your skin already glistens with a sheen of stone.\n\r");
+                    ch.send("Your skin already glistens with a sheen of stone.\r\n");
                 return;
             }
             else
@@ -2232,12 +2232,12 @@ namespace CrimsonStainedLands
                 affect.duration = 10 + level / 4;
                 affect.modifier = -60 - ((level / 2) - 20);
                 affect.displayName = "Sheen of Stone";
-                affect.endMessage = "Your sheen of stone fades..\n\r";
-                affect.endMessageToRoom = "$n's sheen of stone fades.\n\r";
+                affect.endMessage = "Your sheen of stone fades..\r\n";
+                affect.endMessageToRoom = "$n's sheen of stone fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("Your skin glistens with a sheen of stone.\n\r");
-                victim.Act("$n's skin glistnes with a sheen of stone.\n\r", type: ActType.ToRoom);
+                victim.send("Your skin glistens with a sheen of stone.\r\n");
+                victim.Act("$n's skin glistnes with a sheen of stone.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellFly(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -2249,9 +2249,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Flying))
             {
                 if (ch != victim)
-                    ch.send("They are already flying.\n\r");
+                    ch.send("They are already flying.\r\n");
                 else
-                    ch.send("You are already flying.\n\r");
+                    ch.send("You are already flying.\r\n");
                 return;
             }
             else
@@ -2265,12 +2265,12 @@ namespace CrimsonStainedLands
                 affect.modifier = 0;
                 affect.flags.SETBIT(AffectFlags.Flying);
                 affect.displayName = "fly";
-                affect.endMessage = "You fall back to the ground.\n\r";
-                affect.endMessageToRoom = "$n falls back to the ground.\n\r";
+                affect.endMessage = "You fall back to the ground.\r\n";
+                affect.endMessageToRoom = "$n falls back to the ground.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("Your feet lift off the ground as you begin to fly.\n\r");
-                victim.Act("$n's feet lift off the ground as they begin to fly.\n\r", type: ActType.ToRoom);
+                victim.send("Your feet lift off the ground as you begin to fly.\r\n");
+                victim.Act("$n's feet lift off the ground as they begin to fly.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellWaterBreathing(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -2282,9 +2282,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.WaterBreathing))
             {
                 if (ch != victim)
-                    ch.send("They already have gills.\n\r");
+                    ch.send("They already have gills.\r\n");
                 else
-                    ch.send("Your gills already give you water breathing..\n\r");
+                    ch.send("Your gills already give you water breathing..\r\n");
                 return;
             }
             else
@@ -2298,12 +2298,12 @@ namespace CrimsonStainedLands
                 affect.modifier = 0;
                 affect.flags.SETBIT(AffectFlags.WaterBreathing);
                 affect.displayName = "water breathing";
-                affect.endMessage = "Your gills disappear, preventing you from breath underwater anymore.\n\r";
-                affect.endMessageToRoom = "$n's gills disappear.\n\r";
+                affect.endMessage = "Your gills disappear, preventing you from breath underwater anymore.\r\n";
+                affect.endMessageToRoom = "$n's gills disappear.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("Miniature gills apear on the side of your face.\n\r");
-                victim.Act("Miniature gills appear on the side of $n's face.\n\r", type: ActType.ToRoom);
+                victim.send("Miniature gills apear on the side of your face.\r\n");
+                victim.Act("Miniature gills appear on the side of $n's face.\r\n", type: ActType.ToRoom);
             }
         }
 
@@ -2316,9 +2316,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("Their strength is already increased.\n\r");
+                    ch.send("Their strength is already increased.\r\n");
                 else
-                    ch.send("You already have the strength of giants.\n\r");
+                    ch.send("You already have the strength of giants.\r\n");
                 return;
             }
             else
@@ -2331,11 +2331,11 @@ namespace CrimsonStainedLands
                 affect.duration = level / 2;
                 affect.modifier = 3 + (level / 7);
                 affect.displayName = "giant strength";
-                affect.endMessage = "Your giant strength fades..\n\r";
+                affect.endMessage = "Your giant strength fades..\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("You feel the strength of giants enter you.\n\r");
-                victim.Act("$n appears to be stronger.\n\r", type: ActType.ToRoom);
+                victim.send("You feel the strength of giants enter you.\r\n");
+                victim.Act("$n appears to be stronger.\r\n", type: ActType.ToRoom);
             }
         }
 
@@ -2347,7 +2347,7 @@ namespace CrimsonStainedLands
 
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Plague))
             {
-                ch.send("They are already afflicted with the plague.\n\r");
+                ch.send("They are already afflicted with the plague.\r\n");
                 return;
             }
             else
@@ -2355,7 +2355,7 @@ namespace CrimsonStainedLands
                 if (SavesSpell(ch_level, victim, WeaponDamageTypes.Poison))
                 {
                     victim.Act("$n starts to break out with sores, but recovers.", type: ActType.ToRoom);
-                    victim.send("You start to break out with sores, but recover.\n\r");
+                    victim.send("You start to break out with sores, but recover.\r\n");
                     return;
                 }
 
@@ -2369,12 +2369,12 @@ namespace CrimsonStainedLands
                 affect.duration = Math.Max(3, ch_level / 4);
                 affect.modifier = -5;
                 affect.displayName = "plague";
-                affect.endMessage = "Your sores disappear.\n\r";
-                affect.endMessageToRoom = "$n's sores disappear.\n\r";
+                affect.endMessage = "Your sores disappear.\r\n";
+                affect.endMessageToRoom = "$n's sores disappear.\r\n";
                 affect.affectType = AffectTypes.Malady; // castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
-                victim.send("You break out in sores.\n\r");
+                victim.send("You break out in sores.\r\n");
                 victim.Act("$n breaks out in sores.", null, null, null, ActType.ToRoom);
             }
         }
@@ -2399,16 +2399,16 @@ namespace CrimsonStainedLands
         public static void SpellIdentify(CastType castType, SkillSpell spell, int ch_level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
             var buffer = new StringBuilder();
-            buffer.Append(new string('-', 80) + "\n\r");
-            buffer.AppendFormat("Object {0} can be referred to as '{1}'\n\rIt is of type {2} and level {3}\n\r", item.ShortDescription.TOSTRINGTRIM(), item.Name,
+            buffer.Append(new string('-', 80) + "\r\n");
+            buffer.AppendFormat("Object {0} can be referred to as '{1}'\r\nIt is of type {2} and level {3}\r\n", item.ShortDescription.TOSTRINGTRIM(), item.Name,
                 string.Join(" ", (from flag in item.ItemType.Distinct() select flag.ToString())), item.Level);
-            buffer.AppendFormat("It is worth {0} silver and weighs {1} pounds.\n\r", item.Value, item.Weight);
+            buffer.AppendFormat("It is worth {0} silver and weighs {1} pounds.\r\n", item.Value, item.Weight);
 
             if (item.ItemType.ISSET(ItemTypes.Weapon))
             {
                 if (item.WeaponDamageType != null)
-                    buffer.AppendFormat("Damage Type is {0}\n\r", item.WeaponDamageType.Keyword);
-                buffer.AppendFormat("Weapon Type is {0} with damage dice of {1} (avg {2})\n\r", item.WeaponType.ToString(), item.DamageDice.ToString(), item.DamageDice.Average);
+                    buffer.AppendFormat("Damage Type is {0}\r\n", item.WeaponDamageType.Keyword);
+                buffer.AppendFormat("Weapon Type is {0} with damage dice of {1} (avg {2})\r\n", item.WeaponType.ToString(), item.DamageDice.ToString(), item.DamageDice.Average);
 
             }
 
@@ -2419,38 +2419,38 @@ namespace CrimsonStainedLands
 
             if (item.ItemType.ISSET(ItemTypes.Food))
             {
-                buffer.AppendFormat("It is edible and provides {0} nutrition.\n\r", item.Nutrition);
+                buffer.AppendFormat("It is edible and provides {0} nutrition.\r\n", item.Nutrition);
             }
 
             if (item.ItemType.ISSET(ItemTypes.DrinkContainer))
             {
-                buffer.AppendFormat("Nutrition {0}, Drinks left {1}, Max Capacity {2}, it is filled with '{3}'\n\r", item.Nutrition, item.Charges, item.MaxCharges, item.Liquid);
+                buffer.AppendFormat("Nutrition {0}, Drinks left {1}, Max Capacity {2}, it is filled with '{3}'\r\n", item.Nutrition, item.Charges, item.MaxCharges, item.Liquid);
             }
 
-            buffer.AppendFormat("It is made out of '{0}'\n\r", item.Material);
+            buffer.AppendFormat("It is made out of '{0}'\r\n", item.Material);
             if (item.timer > 0)
-                buffer.AppendFormat("It will decay in {0} hours.\n\r", item.timer);
+                buffer.AppendFormat("It will decay in {0} hours.\r\n", item.timer);
 
             if (item.ItemType.ISSET(ItemTypes.Armor) || item.ItemType.ISSET(ItemTypes.Clothing))
             {
-                buffer.AppendFormat("It provides armor against bash {0}, slash {1}, pierce {2}, magic {3}\n\r", item.ArmorBash, item.ArmorSlash, item.ArmorPierce, item.ArmorExotic);
+                buffer.AppendFormat("It provides armor against bash {0}, slash {1}, pierce {2}, magic {3}\r\n", item.ArmorBash, item.ArmorSlash, item.ArmorPierce, item.ArmorExotic);
             }
-            buffer.AppendFormat("It can be worn on {0} and has extra flags of {1}.\n\r", string.Join(", ", (from flag in item.wearFlags.Distinct() select flag.ToString())),
+            buffer.AppendFormat("It can be worn on {0} and has extra flags of {1}.\r\n", string.Join(", ", (from flag in item.wearFlags.Distinct() select flag.ToString())),
                 string.Join(", ", (from flag in item.extraFlags.Distinct() select flag.ToString())));
 
-            buffer.AppendFormat("Affects: \n   {0}\n\r", string.Join("\n   ", (from aff in item.affects where aff.@where == AffectWhere.ToObject select aff.location.ToString() + " " + aff.modifier)));
+            buffer.AppendFormat("Affects: \n   {0}\r\n", string.Join("\n   ", (from aff in item.affects where aff.@where == AffectWhere.ToObject select aff.location.ToString() + " " + aff.modifier)));
 
             if (item.ItemType.ISSET(ItemTypes.Staff) || item.ItemType.ISSET(ItemTypes.Wand) || item.ItemType.ISSET(ItemTypes.Scroll) || item.ItemType.ISSET(ItemTypes.Potion))
             {
-                buffer.AppendFormat("It contains the following spells:\n\r   {0}", string.Join("\n   ", from itemspell in item.Spells select (itemspell.SpellName + " [lvl " + itemspell.Level + "]")) + "\n\r");
+                buffer.AppendFormat("It contains the following spells:\r\n   {0}", string.Join("\n   ", from itemspell in item.Spells select (itemspell.SpellName + " [lvl " + itemspell.Level + "]")) + "\r\n");
             }
 
             if (item.ItemType.ISSET(ItemTypes.Staff) || item.ItemType.ISSET(ItemTypes.Wand))
             {
-                buffer.AppendFormat("It has {0} of {1} charges left\n\r", item.Charges, item.MaxCharges);
+                buffer.AppendFormat("It has {0} of {1} charges left\r\n", item.Charges, item.MaxCharges);
             }
 
-            buffer.Append(new string('-', 80) + "\n\r");
+            buffer.Append(new string('-', 80) + "\r\n");
             ch.send(buffer.ToString());
 
         } // end SpellIdentify
@@ -2465,7 +2465,7 @@ namespace CrimsonStainedLands
                     {
                         try
                         {
-                            ch.send(locate.Display(ch) + " {0} {1}\n\r",
+                            ch.send(locate.Display(ch) + " {0} {1}\r\n",
                                 (locate.CarriedBy != null ? "held by" : (locate.Room != null ? "on the ground in" : (locate.Container != null ? "contained in" : ""))),
                                 (locate.CarriedBy != null ? locate.CarriedBy.Display(ch) : (locate.Room != null ? (TimeInfo.IS_NIGHT && !locate.Room.NightName.ISEMPTY() ? locate.Room.NightName : locate.Room.Name) : (locate.Container != null ? locate.Container.Display(ch) : ""))));
                         }
@@ -2483,12 +2483,12 @@ namespace CrimsonStainedLands
         {
             if (item == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
             else if (!item.ItemType.ISSET(ItemTypes.Armor) && !item.ItemType.ISSET(ItemTypes.Clothing))
             {
-                ch.send("That isn't armor.\n\r");
+                ch.send("That isn't armor.\r\n");
                 return;
             }
             else
@@ -2498,8 +2498,8 @@ namespace CrimsonStainedLands
 
                 if (aff != null && aff.modifier <= -50)
                 {
-                    ch.Act("$p flares blindingly and then fades completely.\n\r", null, item);
-                    ch.Act("$p flares blindingly and then fades completely.\n\r", null, item, null, ActType.ToRoom);
+                    ch.Act("$p flares blindingly and then fades completely.\r\n", null, item);
+                    ch.Act("$p flares blindingly and then fades completely.\r\n", null, item, null, ActType.ToRoom);
 
                     if (ch.GetEquipmentWearSlot(item) != null)
                     {
@@ -2521,8 +2521,8 @@ namespace CrimsonStainedLands
                     {
                         ch.AffectApply(aff);
                     }
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item);
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item, null, ActType.ToRoom);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item, null, ActType.ToRoom);
 
                 }
                 else
@@ -2541,8 +2541,8 @@ namespace CrimsonStainedLands
                     {
                         ch.AffectApply(aff);
                     }
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item);
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item, null, ActType.ToRoom);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item, null, ActType.ToRoom);
 
                 }
             }
@@ -2552,12 +2552,12 @@ namespace CrimsonStainedLands
         {
             if (item == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
             else if (!item.ItemType.ISSET(ItemTypes.Weapon))
             {
-                ch.send("That isn't a weapon.\n\r");
+                ch.send("That isn't a weapon.\r\n");
                 return;
             }
             else
@@ -2568,8 +2568,8 @@ namespace CrimsonStainedLands
                 var worn = ch.GetEquipmentWearSlot(item) != null;
                 if (aff != null && aff.modifier >= 6)
                 {
-                    ch.Act("$p flares blindingly and then fades completely.\n\r", null, item);
-                    ch.Act("$p flares blindingly and then fades completely.\n\r", null, item, null, ActType.ToRoom);
+                    ch.Act("$p flares blindingly and then fades completely.\r\n", null, item);
+                    ch.Act("$p flares blindingly and then fades completely.\r\n", null, item, null, ActType.ToRoom);
 
                     if (worn)
                     {
@@ -2597,8 +2597,8 @@ namespace CrimsonStainedLands
                         ch.AffectApply(aff2);
                     }
 
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item);
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item, null, ActType.ToRoom);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item, null, ActType.ToRoom);
 
                 }
                 else
@@ -2629,8 +2629,8 @@ namespace CrimsonStainedLands
                         ch.AffectApply(aff);
                         ch.AffectApply(aff2);
                     }
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item);
-                    ch.Act("$p glows blue briefly before fading slightly.\n\r", null, item, null, ActType.ToRoom);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item);
+                    ch.Act("$p glows blue briefly before fading slightly.\r\n", null, item, null, ActType.ToRoom);
 
                 }
             }
@@ -2644,7 +2644,7 @@ namespace CrimsonStainedLands
 
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Curse))
             {
-                ch.send("They are already cursed.\n\r");
+                ch.send("They are already cursed.\r\n");
                 return;
             }
             else
@@ -2652,7 +2652,7 @@ namespace CrimsonStainedLands
                 if (SavesSpell(ch_level, victim, WeaponDamageTypes.Negative))
                 {
                     victim.Act("$n turns to look uncfomfortable but recovers.", type: ActType.ToRoom);
-                    victim.send("You feel momentarily uncomfortable but recover.\n\r");
+                    victim.send("You feel momentarily uncomfortable but recover.\r\n");
                     return;
                 }
 
@@ -2667,8 +2667,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Curse);
                 affect.duration = ch_level / 4;
                 affect.displayName = "Cursed";
-                affect.endMessage = "You feel less unclean.\n\r";
-                affect.endMessageToRoom = "$n looks less uncomfortable.\n\r";
+                affect.endMessage = "You feel less unclean.\r\n";
+                affect.endMessageToRoom = "$n looks less uncomfortable.\r\n";
                 affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
@@ -2677,7 +2677,7 @@ namespace CrimsonStainedLands
                 affect.modifier = -ch_level / 2;
                 victim.AffectToChar(affect);
 
-                victim.send("You feel unclean.\n\r");
+                victim.send("You feel unclean.\r\n");
                 victim.Act("$n looks very uncomfortable.", null, null, null, ActType.ToRoom);
             }
         } // end curse
@@ -2690,7 +2690,7 @@ namespace CrimsonStainedLands
 
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Weaken))
             {
-                ch.send("They are already weakened.\n\r");
+                ch.send("They are already weakened.\r\n");
                 return;
             }
             else
@@ -2698,7 +2698,7 @@ namespace CrimsonStainedLands
                 if (SavesSpell(ch_level, victim, WeaponDamageTypes.Negative))
                 {
                     victim.Act("$n looks weaker for a moment but recovers.", type: ActType.ToRoom);
-                    victim.send("You feel weaker for a moment but recover.\n\r");
+                    victim.send("You feel weaker for a moment but recover.\r\n");
                     return;
                 }
 
@@ -2712,12 +2712,12 @@ namespace CrimsonStainedLands
                 affect.duration = ch_level / 4;
                 affect.modifier = -5;
                 affect.displayName = "Weakened";
-                affect.endMessage = "You feel stronger.\n\r";
-                affect.endMessageToRoom = "$n looks like a weight has been lifted off of $m.\n\r";
+                affect.endMessage = "You feel stronger.\r\n";
+                affect.endMessageToRoom = "$n looks like a weight has been lifted off of $m.\r\n";
                 affect.affectType = AffectTypes.Malady;  //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
-                victim.send("You feel weaker.\n\r");
+                victim.send("You feel weaker.\r\n");
                 victim.Act("$n looks weaker.", null, null, null, ActType.ToRoom);
             }
         } // end weaken
@@ -2730,8 +2730,8 @@ namespace CrimsonStainedLands
                 var bread = new ItemData(template);
                 ch.Room.items.Insert(0, bread);
                 bread.Room = ch.Room;
-                ch.send("You create a loaf of bread out of thin air.\n\r");
-                ch.Act("$n creates a loaf of bread out of thin air.\n\r", type: ActType.ToRoom);
+                ch.send("You create a loaf of bread out of thin air.\r\n");
+                ch.Act("$n creates a loaf of bread out of thin air.\r\n", type: ActType.ToRoom);
             }
         }
 
@@ -2744,8 +2744,8 @@ namespace CrimsonStainedLands
                 ch.Room.items.Insert(0, spring);
                 spring.Room = ch.Room;
                 spring.timer = 7;
-                ch.send("You create a spring of water flowing out of the ground.\n\r");
-                ch.Act("$n creates a spring of water flowing out of the ground.\n\r", type: ActType.ToRoom);
+                ch.send("You create a spring of water flowing out of the ground.\r\n");
+                ch.Act("$n creates a spring of water flowing out of the ground.\r\n", type: ActType.ToRoom);
             }
         }
 
@@ -2753,7 +2753,7 @@ namespace CrimsonStainedLands
         {
             if (item != null && !item.ItemType.ISSET(ItemTypes.DrinkContainer))
             {
-                ch.send("That can't hold water.\n\r");
+                ch.send("That can't hold water.\r\n");
             }
 
             if (item == null)
@@ -2762,7 +2762,7 @@ namespace CrimsonStainedLands
             }
             else if (item.Charges != 0 && item.Liquid != "water")
             {
-                ch.send("It still has something other than water in it.\n\r");
+                ch.send("It still has something other than water in it.\r\n");
             }
             else
             {
@@ -2770,8 +2770,8 @@ namespace CrimsonStainedLands
                 item.Charges = Math.Max(16, item.MaxCharges);
                 item.Nutrition = Liquid.Liquids["water"].thirst;
 
-                ch.Act("Water flows out of your finger into $p.\n\r", null, item, type: ActType.ToChar);
-                ch.Act("Water flows out of $n's finger into $p.\n\r", null, item, type: ActType.ToRoom);
+                ch.Act("Water flows out of your finger into $p.\r\n", null, item, type: ActType.ToChar);
+                ch.Act("Water flows out of $n's finger into $p.\r\n", null, item, type: ActType.ToRoom);
             }
         } // end create water
 
@@ -2797,8 +2797,8 @@ namespace CrimsonStainedLands
                     affect.duration = ch_level / 5;
                     affect.modifier = 0;
                     affect.displayName = "Faerie Fogged";
-                    affect.endMessage = "You stop glowing purple.\n\r";
-                    affect.endMessageToRoom = "$n stops glowing purple.\n\r";
+                    affect.endMessage = "You stop glowing purple.\r\n";
+                    affect.endMessageToRoom = "$n stops glowing purple.\r\n";
                     affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                     vict.AffectToChar(affect);
                     vict.StripHidden();
@@ -2813,7 +2813,7 @@ namespace CrimsonStainedLands
         {
             if (victim.FindAffect(spell) != null)
             {
-                ch.send("They are already glowing.\n\r");
+                ch.send("They are already glowing.\r\n");
                 return;
             }
 
@@ -2834,8 +2834,8 @@ namespace CrimsonStainedLands
             affect.location = ApplyTypes.AC;
             affect.modifier = +200 + ch.Level * 4;
             affect.displayName = "Faerie Fire";
-            affect.endMessage = "You stop glowing purple.\n\r";
-            affect.endMessageToRoom = "$n stops glowing purple.\n\r";
+            affect.endMessage = "You stop glowing purple.\r\n";
+            affect.endMessageToRoom = "$n stops glowing purple.\r\n";
             affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
             victim.AffectToChar(affect);
             victim.StripHidden();
@@ -2972,12 +2972,12 @@ namespace CrimsonStainedLands
                 affect.duration = 6;
                 affect.modifier = -1;
                 affect.displayName = "Chill Touch";
-                affect.endMessage = "You feel less chilled.\n\r";
-                affect.endMessageToRoom = "$n looks less chilled.\n\r";
+                affect.endMessage = "You feel less chilled.\r\n";
+                affect.endMessageToRoom = "$n looks less chilled.\r\n";
                 affect.affectType = AffectTypes.Malady; //castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectApply(affect);
-                victim.Act("$n turns blue and shivers.\n\r", null, null, null, ActType.ToRoom);
-                victim.Act("You turn blue and shiver.\n\r", null, null, null, ActType.ToChar);
+                victim.Act("$n turns blue and shivers.\r\n", null, null, null, ActType.ToRoom);
+                victim.Act("You turn blue and shiver.\r\n", null, null, null, ActType.ToChar);
             }
 
             Combat.Damage(ch, victim, dam, spell, WeaponDamageTypes.Cold);
@@ -2993,14 +2993,14 @@ namespace CrimsonStainedLands
         //    if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.DetectEvil))
         //    {
         //        if (victim != ch)
-        //            ch.send("They can already sense evil.\n\r");
+        //            ch.send("They can already sense evil.\r\n");
         //        else
         //            ch.send("You can already sense evil when it is present.");
         //        return;
         //    }
         //    else
         //    {
-        //        victim.send("You feel able to sense evil.\n\r");
+        //        victim.send("You feel able to sense evil.\r\n");
         //        //victim.Act("$n is protected from evil.", type: ActType.ToRoom);
         //        affect = new AffectData();
         //        affect.skillSpell = spell;
@@ -3010,8 +3010,8 @@ namespace CrimsonStainedLands
         //        affect.flags.Add(AffectFlags.DetectEvil);
         //        affect.duration = 10 + level / 4;
         //        affect.displayName = "detect evil";
-        //        affect.endMessage = "Your feel less aware of evil.\n\r";
-        //        //affect.endMessageToRoom = "$n's protection wanes.\n\r";
+        //        affect.endMessage = "Your feel less aware of evil.\r\n";
+        //        //affect.endMessageToRoom = "$n's protection wanes.\r\n";
         //        affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
         //        victim.AffectToChar(affect);
@@ -3028,14 +3028,14 @@ namespace CrimsonStainedLands
         //    if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.DetectGood))
         //    {
         //        if (victim != ch)
-        //            ch.send("They can already sense good.\n\r");
+        //            ch.send("They can already sense good.\r\n");
         //        else
-        //            ch.send("You can already sense good when it is present.\n\r");
+        //            ch.send("You can already sense good when it is present.\r\n");
         //        return;
         //    }
         //    else
         //    {
-        //        victim.send("You feel able to sense good.\n\r");
+        //        victim.send("You feel able to sense good.\r\n");
         //        //victim.Act("$n is protected from evil.", type: ActType.ToRoom);
         //        affect = new AffectData();
         //        affect.skillSpell = spell;
@@ -3045,8 +3045,8 @@ namespace CrimsonStainedLands
         //        affect.flags.Add(AffectFlags.DetectGood);
         //        affect.duration = 10 + level / 4;
         //        affect.displayName = "detect good";
-        //        affect.endMessage = "Your feel less aware of good.\n\r";
-        //        //affect.endMessageToRoom = "$n's protection wanes.\n\r";
+        //        affect.endMessage = "Your feel less aware of good.\r\n";
+        //        //affect.endMessageToRoom = "$n's protection wanes.\r\n";
         //        affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
         //        victim.AffectToChar(affect);
@@ -3060,14 +3060,14 @@ namespace CrimsonStainedLands
             if (victim.MovementPoints == victim.MaxMovementPoints)
             {
                 if (victim != ch)
-                    ch.send("Their feet are already fully rested.\n\r");
+                    ch.send("Their feet are already fully rested.\r\n");
                 else
                     ch.send("Your feet are already fully rested.");
                 return;
             }
             else
             {
-                victim.send("You feel able to walk further.\n\r");
+                victim.send("You feel able to walk further.\r\n");
                 victim.Act("$n looks refreshed.", type: ActType.ToRoom);
 
                 victim.MovementPoints += level; // over refresh :D
@@ -3079,19 +3079,19 @@ namespace CrimsonStainedLands
             AffectData affect;
             if (victim == null)
             {
-                ch.send("You can't find them.\n\r");
+                ch.send("You can't find them.\r\n");
                 return;
             }
 
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Sleep))
             {
-                ch.send("They are already forced asleep.\n\r");
+                ch.send("They are already forced asleep.\r\n");
                 return;
             }
             else
             {
                 // Saves ??
-                victim.send("You feel very sleepy ..... zzzzzz.\n\r");
+                victim.send("You feel very sleepy ..... zzzzzz.\r\n");
                 victim.Act("$n goes to sleep.", type: ActType.ToRoom);
 
                 Combat.StopFighting(victim, true);
@@ -3105,8 +3105,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Sleep);
                 affect.duration = Math.Max(5, level / 4);
                 affect.displayName = "sleep";
-                affect.endMessage = "Your feel less tired.\n\r";
-                affect.endMessageToRoom = "$n looks less tired.\n\r";
+                affect.endMessage = "Your feel less tired.\r\n";
+                affect.endMessageToRoom = "$n looks less tired.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                 victim.AffectToChar(affect);
@@ -3142,9 +3142,9 @@ namespace CrimsonStainedLands
                 }
             }
             if (stripped)
-                ch.send("Ok.\n\r");
+                ch.send("Ok.\r\n");
             else
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
         }
         public static void SpellCauseLight(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -3173,9 +3173,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(AffectFlags.Slow)) != null)
             {
                 if (ch != victim)
-                    ch.send("They are already moving more slowly.\n\r");
+                    ch.send("They are already moving more slowly.\r\n");
                 else
-                    ch.send("Your movements are already slowed.\n\r");
+                    ch.send("Your movements are already slowed.\r\n");
                 return;
             }
             else if ((affect = victim.FindAffect(AffectFlags.Haste)) != null)
@@ -3193,12 +3193,12 @@ namespace CrimsonStainedLands
                 affect.modifier = -4;
                 affect.displayName = "slow";
                 affect.flags.SETBIT(AffectFlags.Slow);
-                affect.endMessage = "Your movement quickens.\n\r";
-                affect.endMessageToRoom = "$n is moving more quickly.\n\r";
+                affect.endMessage = "Your movement quickens.\r\n";
+                affect.endMessageToRoom = "$n is moving more quickly.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("You begin to move more slowly.\n\r");
-                victim.Act("$n begins to move more slowly.\n\r", type: ActType.ToRoom);
+                victim.send("You begin to move more slowly.\r\n");
+                victim.Act("$n begins to move more slowly.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellHaste(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -3210,9 +3210,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(AffectFlags.Haste)) != null)
             {
                 if (ch != victim)
-                    ch.send("They are already moving more quickly.\n\r");
+                    ch.send("They are already moving more quickly.\r\n");
                 else
-                    ch.send("Your movements is already quickened.\n\r");
+                    ch.send("Your movements is already quickened.\r\n");
                 return;
             }
             else if ((affect = victim.FindAffect(AffectFlags.Slow)) != null)
@@ -3230,12 +3230,12 @@ namespace CrimsonStainedLands
                 affect.displayName = "haste";
                 affect.where = AffectWhere.ToAffects;
                 affect.flags.SETBIT(AffectFlags.Haste);
-                affect.endMessage = "Your movement slows down.\n\r";
-                affect.endMessageToRoom = "$n is moving more slowly.\n\r";
+                affect.endMessage = "Your movement slows down.\r\n";
+                affect.endMessageToRoom = "$n is moving more slowly.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("You begin to move more quickly.\n\r");
-                victim.Act("$n begins to move more quickly.\n\r", type: ActType.ToRoom);
+                victim.send("You begin to move more quickly.\r\n");
+                victim.Act("$n begins to move more quickly.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellProtectiveShield(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -3247,9 +3247,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They are already surrounded by a protective shield.\n\r");
+                    ch.send("They are already surrounded by a protective shield.\r\n");
                 else
-                    ch.send("You are already surrounded by a protective shield.\n\r");
+                    ch.send("You are already surrounded by a protective shield.\r\n");
                 return;
             }
             else
@@ -3262,12 +3262,12 @@ namespace CrimsonStainedLands
                 affect.duration = 10 + level / 4;
                 affect.modifier = 0;
                 affect.displayName = "protective shield";
-                affect.endMessage = "Your protective shield fades.\n\r";
-                affect.endMessageToRoom = "$n's protective shield fades.\n\r";
+                affect.endMessage = "Your protective shield fades.\r\n";
+                affect.endMessageToRoom = "$n's protective shield fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
-                victim.send("You are surrounded by a protective shield.\n\r");
-                victim.Act("$n is surrounded by a protective shield.\n\r", type: ActType.ToRoom);
+                victim.send("You are surrounded by a protective shield.\r\n");
+                victim.Act("$n is surrounded by a protective shield.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellFrenzy(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -3279,9 +3279,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(AffectFlags.Berserk)) != null)
             {
                 if (ch != victim)
-                    ch.send("They are already in a frenzied state.\n\r");
+                    ch.send("They are already in a frenzied state.\r\n");
                 else
-                    ch.send("You are already in a frenzied state.\n\r");
+                    ch.send("You are already in a frenzied state.\r\n");
                 return;
             }
             else
@@ -3295,8 +3295,8 @@ namespace CrimsonStainedLands
                 affect.modifier = level / 4;
                 affect.flags.Add(AffectFlags.Berserk);
                 affect.displayName = "frenzy";
-                affect.endMessage = "Your frenzy fades.\n\r";
-                affect.endMessageToRoom = "$n's frenzied look fades.\n\r";
+                affect.endMessage = "Your frenzy fades.\r\n";
+                affect.endMessageToRoom = "$n's frenzied look fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
 
@@ -3312,8 +3312,8 @@ namespace CrimsonStainedLands
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
 
-                victim.send("You enter a frenzied state.\n\r");
-                victim.Act("$n enters a frenzied state.\n\r", type: ActType.ToRoom);
+                victim.send("You enter a frenzied state.\r\n");
+                victim.Act("$n enters a frenzied state.\r\n", type: ActType.ToRoom);
             }
         }
         public static void SpellChangeSex(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -3325,9 +3325,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They've already been changed.\n\r");
+                    ch.send("They've already been changed.\r\n");
                 else
-                    ch.send("You've already been changed.\n\r");
+                    ch.send("You've already been changed.\r\n");
                 return;
             }
             else
@@ -3356,7 +3356,7 @@ namespace CrimsonStainedLands
             int type;
             if (victim == ch)
             {
-                ch.send("You can't drain your own life force.\n\r", ch);
+                ch.send("You can't drain your own life force.\r\n", ch);
                 return;
             }
             switch (Utility.Random(0, 3))
@@ -3371,7 +3371,7 @@ namespace CrimsonStainedLands
                     type = 3; amount = Utility.dice(level, 2); break;
             }
             var amounthp = Utility.dice(level, 2);
-            victim.send("You feel an icy hand brush against your soul.\n\r");
+            victim.send("You feel an icy hand brush against your soul.\r\n");
 
             if (SavesSpell(level, victim, WeaponDamageTypes.Negative))
             {
@@ -3396,7 +3396,7 @@ namespace CrimsonStainedLands
                 default:
                 case (1):
                     ch.Act("You drain $N's vitality with vampiric magic.", victim, type: ActType.ToChar);
-                    victim.send("You feel your body being mercilessly drained.\n\r");
+                    victim.send("You feel your body being mercilessly drained.\r\n");
                     ch.HitPoints = Utility.URANGE(0, ch.HitPoints + amount / 3, ch.MaxHitPoints);
 
                     if (!victim.IsAffected(spell))
@@ -3410,10 +3410,10 @@ namespace CrimsonStainedLands
                     }
                     break;
                 case (2):
-                    ch.send("Your energy draining invigorates you!\n\r");
+                    ch.send("Your energy draining invigorates you!\r\n");
                     victim.MovementPoints = Utility.URANGE(0, victim.MovementPoints - amount, victim.MaxMovementPoints);
                     ch.MovementPoints = Utility.URANGE(0, ch.MovementPoints + amount / 2, ch.MaxMovementPoints);
-                    victim.send("You feel tired and weakened.\n\r", victim);
+                    victim.send("You feel tired and weakened.\r\n", victim);
                     if (!victim.IsAffected(spell))
                     {
                         affect.endMessage = "Your agility returns.";
@@ -3433,10 +3433,10 @@ namespace CrimsonStainedLands
                     break;
                 case (3):
                     victim.ManaPoints = Utility.URANGE(0, victim.ManaPoints - amount, victim.MaxManaPoints);
-                    ch.send("Your draining sends warm energy through you!\n\r");
+                    ch.send("Your draining sends warm energy through you!\r\n");
 
                     ch.ManaPoints = Utility.URANGE(0, ch.ManaPoints + amount / 3, ch.MaxManaPoints);
-                    victim.send("You feel part of your mind being savagely drained.\n\r");
+                    victim.send("You feel part of your mind being savagely drained.\r\n");
                     if (!victim.IsAffected(spell))
                     {
                         affect.endMessage = "Your mental focus returns.";
@@ -3602,9 +3602,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They can already sense poison.\n\r");
+                    ch.send("They can already sense poison.\r\n");
                 else
-                    ch.send("You can already sense poison.\n\r");
+                    ch.send("You can already sense poison.\r\n");
                 return;
             }
             else
@@ -3616,14 +3616,14 @@ namespace CrimsonStainedLands
                 affect.where = AffectWhere.ToAffects;
                 affect.duration = 10;
                 affect.displayName = "detect poison";
-                affect.endMessage = "You can no longer sense poison.\n\r";
+                affect.endMessage = "You can no longer sense poison.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
 
 
-                victim.send("Your eyes feel different.\n\r");
+                victim.send("Your eyes feel different.\r\n");
                 if (ch != victim)
-                    ch.send("Ok.\n\r");
+                    ch.send("Ok.\r\n");
             }
         }
         public static void SpellSpiderhands(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -3635,9 +3635,9 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null)
             {
                 if (ch != victim)
-                    ch.send("They already have a spiderlike grip.\n\r");
+                    ch.send("They already have a spiderlike grip.\r\n");
                 else
-                    ch.send("You already have a spiderlike grip.\n\r");
+                    ch.send("You already have a spiderlike grip.\r\n");
                 return;
             }
             else
@@ -3649,14 +3649,14 @@ namespace CrimsonStainedLands
                 affect.where = AffectWhere.ToAffects;
                 affect.duration = level / 3;
                 affect.displayName = "spiderhands";
-                affect.endMessage = "You lose your spiderlike grip.\n\r";
+                affect.endMessage = "You lose your spiderlike grip.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
 
 
-                victim.send("Your grip tightens like a spider on its prey.\n\r");
+                victim.send("Your grip tightens like a spider on its prey.\r\n");
                 if (ch != victim)
-                    ch.send("Ok.\n\r");
+                    ch.send("Ok.\r\n");
             }
         }
         public static void SpellSealOfRighteousness(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -3675,13 +3675,13 @@ namespace CrimsonStainedLands
             affect.duration = 10 + (level / 4);
             affect.modifier = level / 4;
             affect.displayName = "seal of righteousness";
-            affect.endMessage = "Your seal of righteousness breaks.\n\r";
-            affect.endMessageToRoom = "$n's seal of righteousness breaks.\n\r";
+            affect.endMessage = "Your seal of righteousness breaks.\r\n";
+            affect.endMessageToRoom = "$n's seal of righteousness breaks.\r\n";
             affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
             victim.AffectToChar(affect);
 
-            victim.send("You gain the effect of a seal of righteousness.\n\r");
-            victim.Act("$n gains the effect of a seal of righteousness.\n\r", type: ActType.ToRoom);
+            victim.send("You gain the effect of a seal of righteousness.\r\n");
+            victim.Act("$n gains the effect of a seal of righteousness.\r\n", type: ActType.ToRoom);
 
         }
         public static void StripSeals(Character ch)
@@ -3708,13 +3708,13 @@ namespace CrimsonStainedLands
             affect.duration = 10 + (level / 4);
             affect.modifier = -(level / 4);
             affect.displayName = "seal of light";
-            affect.endMessage = "Your seal of light breaks.\n\r";
-            affect.endMessageToRoom = "$n's seal of light breaks.\n\r";
+            affect.endMessage = "Your seal of light breaks.\r\n";
+            affect.endMessageToRoom = "$n's seal of light breaks.\r\n";
             affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
             victim.AffectToChar(affect);
 
-            victim.send("You gain the effect of a seal of light.\n\r");
-            victim.Act("$n gains the effect of a seal of light.\n\r", type: ActType.ToRoom);
+            victim.send("You gain the effect of a seal of light.\r\n");
+            victim.Act("$n gains the effect of a seal of light.\r\n", type: ActType.ToRoom);
         }
         public static void SpellSealOfWisdom(CastType castType, SkillSpell spell, int level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
         {
@@ -3732,13 +3732,13 @@ namespace CrimsonStainedLands
             affect.duration = 10 + (level / 4);
             affect.modifier = level / 3;
             affect.displayName = "seal of wisdom";
-            affect.endMessage = "Your seal of wisdom breaks.\n\r";
-            affect.endMessageToRoom = "$n's seal of wisdom breaks.\n\r";
+            affect.endMessage = "Your seal of wisdom breaks.\r\n";
+            affect.endMessageToRoom = "$n's seal of wisdom breaks.\r\n";
             affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
             victim.AffectToChar(affect);
 
-            victim.send("You gain the effect of a seal of wisdom.\n\r");
-            victim.Act("$n gains the effect of a seal of wisdom.\n\r", type: ActType.ToRoom);
+            victim.send("You gain the effect of a seal of wisdom.\r\n");
+            victim.Act("$n gains the effect of a seal of wisdom.\r\n", type: ActType.ToRoom);
         }
         public static void DoHeal(Character ch, string arguments)
         {
@@ -3755,25 +3755,25 @@ namespace CrimsonStainedLands
             }
             if (healer == null)
             {
-                ch.send("There are no healers here.\n\r");
+                ch.send("There are no healers here.\r\n");
                 return;
             }
             if (arguments.ISEMPTY())
             {
                 ch.Act("\\Y$N says 'I offer the following spells:'\\x", healer);
-                ch.send("  Light       :  Cure light wounds      100 silver\n\r");
-                ch.send("  Serious     :  Cure serious wounds    150 silver\n\r");
-                ch.send("  Critic      :  Cure critical wounds   250 silver\n\r");
-                ch.send("  Heal        :  Healing spell          400 silver\n\r");
-                ch.send("  Blind       :  Cure blindness         150 silver\n\r");
-                ch.send("  Disease     :  Cure disease           250 silver\n\r");
-                ch.send("  Poison      :  Cure poison            250 silver\n\r");
-                ch.send("  Cleanse     :  Cleanse                500 silver\n\r");
-                ch.send("  Uncurse     :  Remove curse           100 silver\n\r");
-                ch.send("  Restoration :  Restoration            150 silver\n\r");
-                ch.send("  Refresh     :  Restore movement       150 silver\n\r");
-                ch.send("  Mana        :  Restore mana           100 silver\n\r");
-                ch.send(" Type heal <type> to be healed.\n\r");
+                ch.send("  Light       :  Cure light wounds      100 silver\r\n");
+                ch.send("  Serious     :  Cure serious wounds    150 silver\r\n");
+                ch.send("  Critic      :  Cure critical wounds   250 silver\r\n");
+                ch.send("  Heal        :  Healing spell          400 silver\r\n");
+                ch.send("  Blind       :  Cure blindness         150 silver\r\n");
+                ch.send("  Disease     :  Cure disease           250 silver\r\n");
+                ch.send("  Poison      :  Cure poison            250 silver\r\n");
+                ch.send("  Cleanse     :  Cleanse                500 silver\r\n");
+                ch.send("  Uncurse     :  Remove curse           100 silver\r\n");
+                ch.send("  Restoration :  Restoration            150 silver\r\n");
+                ch.send("  Refresh     :  Restore movement       150 silver\r\n");
+                ch.send("  Mana        :  Restore mana           100 silver\r\n");
+                ch.send(" Type heal <type> to be healed.\r\n");
                 return;
             }
             int cost;
@@ -3876,22 +3876,22 @@ namespace CrimsonStainedLands
         {
             if (item == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
             else if (ch.ManaPoints < ch.MaxManaPoints / 2)
             {
-                ch.send("You do not have enough mana to cast this spell.\n\r");
+                ch.send("You do not have enough mana to cast this spell.\r\n");
                 return;
             }
             else if (!item.ItemType.ISSET(ItemTypes.Weapon))
             {
-                ch.send("That isn't a weapon.\n\r");
+                ch.send("That isn't a weapon.\r\n");
                 return;
             }
             else if (ch.GetEquipmentWearSlot(item) != null)
             {
-                ch.send("You cannot imbue a weapon you are wielding or holding.\n\r");
+                ch.send("You cannot imbue a weapon you are wielding or holding.\r\n");
                 return;
             }
             else
@@ -3901,12 +3901,12 @@ namespace CrimsonStainedLands
                 else if (item.Vnum == 2969) vnum = 2970;
                 else
                 {
-                    ch.send("You do not have an appropriate weapon to imbue.\n\r");
+                    ch.send("You do not have an appropriate weapon to imbue.\r\n");
                     return;
                 }
                 if (!ItemTemplateData.Templates.TryGetValue(vnum, out var ItemTemplate))
                 {
-                    ch.send("You failed.\n\r");
+                    ch.send("You failed.\r\n");
                     return;
                 }
                 ch.WaitState(spell.waitTime * 2);
@@ -3947,12 +3947,12 @@ namespace CrimsonStainedLands
         {
             if (item == null)
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
                 return;
             }
             else if (!item.ItemType.ISSET(ItemTypes.Weapon))
             {
-                ch.send("That isn't a weapon.\n\r");
+                ch.send("That isn't a weapon.\r\n");
                 return;
             }
             else
@@ -3962,7 +3962,7 @@ namespace CrimsonStainedLands
                 var worn = ch.GetEquipmentWearSlot(item) != null;
                 if (worn)
                 {
-                    ch.Act("You cannot bless a weapon you are wielding.\n\r");
+                    ch.Act("You cannot bless a weapon you are wielding.\r\n");
                     return;
                 }
 
@@ -4000,8 +4000,8 @@ namespace CrimsonStainedLands
                     ch.AffectApply(aff);
                     ch.AffectApply(aff2);
                 }
-                ch.Act("$p glows a deep violet before fading slightly.\n\r", null, item);
-                ch.Act("$p glows a deep violet before fading slightly.\n\r", null, item, null, ActType.ToRoom);
+                ch.Act("$p glows a deep violet before fading slightly.\r\n", null, item);
+                ch.Act("$p glows a deep violet before fading slightly.\r\n", null, item, null, ActType.ToRoom);
             }
         }
         public static void SpellRemoveTaint(CastType castType, SkillSpell spell, int ch_level, Character ch, Character victim, ItemData item, string arguments, TargetIsType target)
@@ -4039,7 +4039,7 @@ namespace CrimsonStainedLands
 
                         if (item == null)
                         {
-                            ch.send("You can't find it.\n\r");
+                            ch.send("You can't find it.\r\n");
                             return;
                         }
 
@@ -4121,15 +4121,15 @@ namespace CrimsonStainedLands
 
             if (((arguments.ISEMPTY()) && (weapon = ch.GetEquipment(WearSlotIDs.Wield)) == null) || (!arguments.ISEMPTY() && (weapon = ch.GetItemInventoryOrEquipment(arguments, false)) == null))
             {
-                ch.Act("Which weapon did you want to charge?\n\r");
+                ch.Act("Which weapon did you want to charge?\r\n");
             }
             else if (!weapon.ItemType.ISSET(ItemTypes.Weapon))
             {
-                ch.Act("You can only charge a weapon.\n\r");
+                ch.Act("You can only charge a weapon.\r\n");
             }
             //else if (weapon.IsAffected(spell ))
             //{
-            //    ch.Act("$p is already charged.\n\r", item: weapon);
+            //    ch.Act("$p is already charged.\r\n", item: weapon);
             //}
             else
             {
@@ -4146,7 +4146,7 @@ namespace CrimsonStainedLands
                     affect.skillSpell = spell;
                     affect.flags.SETBIT(AffectFlags.Lightning);
                     weapon.affects.Add(affect);
-                    affect.endMessage = "Charge on $p wears off.\n\r";
+                    affect.endMessage = "Charge on $p wears off.\r\n";
                 }
                 else affect.duration = 10;
             }
@@ -4161,9 +4161,9 @@ namespace CrimsonStainedLands
                 var dam = ch.GetDamage(weaponaffect.level, .5f, 1); //dam = Utility.Random(dam_each[level] / 2, dam_each[level]);
                 if (SavesSpell(weaponaffect.level, victim, WeaponDamageTypes.Lightning))
                     dam /= 2;
-                ch.Act("As $p strikes $N, its stored charge is unleashed!\n\r", victim, weapon, type: ActType.ToChar);
-                ch.Act("As $n strikes $N with $p, its stored charge is unleashed!\n\r", victim, weapon, type: ActType.ToRoomNotVictim);
-                ch.Act("As $p strikes you, its stored charge is unleashed!\n\r", victim, weapon, type: ActType.ToVictim);
+                ch.Act("As $p strikes $N, its stored charge is unleashed!\r\n", victim, weapon, type: ActType.ToChar);
+                ch.Act("As $n strikes $N with $p, its stored charge is unleashed!\r\n", victim, weapon, type: ActType.ToRoomNotVictim);
+                ch.Act("As $p strikes you, its stored charge is unleashed!\r\n", victim, weapon, type: ActType.ToVictim);
 
                 Combat.Damage(ch, victim, dam, weaponaffect.skillSpell, WeaponDamageTypes.Lightning);
                 return;
@@ -4193,7 +4193,7 @@ namespace CrimsonStainedLands
             var dam = ch.GetDamage(level, 1, 2); //dam = Utility.Random(dam_each[level] / 2, dam_each[level]);
             //if(victim == ch)
             //{
-            //    ch.send("You can't target yourself with that.\n\r");
+            //    ch.send("You can't target yourself with that.\r\n");
             //    return;
             //}
             if (spellcraft)
@@ -4218,13 +4218,13 @@ namespace CrimsonStainedLands
                 affect.modifier = -3;
                 if (!victim.IsAffected(spell))
                 {
-                    victim.Act("$n is pierced by ice needles.\n\r", null, null, null, ActType.ToRoom);
-                    victim.Act("You are pierced by ice needles.\n\r", null, null, null, ActType.ToChar);
+                    victim.Act("$n is pierced by ice needles.\r\n", null, null, null, ActType.ToRoom);
+                    victim.Act("You are pierced by ice needles.\r\n", null, null, null, ActType.ToChar);
                 }
                 else
                 {
-                    victim.Act("The ice needle wounds of $n deepen.\n\r", null, null, null, ActType.ToRoom);
-                    victim.Act("Your ice needle wounds deepen.\n\r", null, null, null, ActType.ToChar);
+                    victim.Act("The ice needle wounds of $n deepen.\r\n", null, null, null, ActType.ToRoom);
+                    victim.Act("Your ice needle wounds deepen.\r\n", null, null, null, ActType.ToChar);
                 }
                 victim.AffectToChar(affect);
 
@@ -4266,8 +4266,8 @@ namespace CrimsonStainedLands
             if (SavesSpell(level, victim, WeaponDamageTypes.Fire))
                 dam /= 2;
 
-            ch.Act("You conjure a precise wall of fire, then throw it at $N.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a precise wall of fire, then throws it at $N.\n\r", victim, type: ActType.ToRoomNotVictim);
+            ch.Act("You conjure a precise wall of fire, then throw it at $N.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a precise wall of fire, then throws it at $N.\r\n", victim, type: ActType.ToRoomNotVictim);
 
             Combat.Damage(ch, victim, dam, spell, WeaponDamageTypes.Fire);
         } // end wall of fire
@@ -4282,8 +4282,8 @@ namespace CrimsonStainedLands
             var dam = ch.GetDamage(level, .5f, 1); //dam = Utility.Random(dam_each[level], dam_each[level] * 2);
 
             ch.Act(checkSector ? "Because of the available water nearby, you conjure a greater bolt of ice to throw at $N." :
-                "You conjure a magical bolt of ice, then throw it at $N.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a magical bolt of ice, then throws it at $N.\n\r", victim, type: ActType.ToRoomNotVictim);
+                "You conjure a magical bolt of ice, then throw it at $N.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a magical bolt of ice, then throws it at $N.\r\n", victim, type: ActType.ToRoomNotVictim);
 
             if (spellcraft)
                 dam += level;
@@ -4306,8 +4306,8 @@ namespace CrimsonStainedLands
             var dam = ch.GetDamage(level, 1, 2);
 
             ch.Act(checkSector ? "Because of the available water nearby, your engulfing of $N is twice as powerful." :
-                "You completely engulf $N in water, drowning them without mercy.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n completely engulfs $N in water, drowning them without mercy.\n\r", victim, type: ActType.ToRoomNotVictim);
+                "You completely engulf $N in water, drowning them without mercy.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n completely engulfs $N in water, drowning them without mercy.\r\n", victim, type: ActType.ToRoomNotVictim);
 
             if (spellcraft)
                 dam += level;
@@ -4329,8 +4329,8 @@ namespace CrimsonStainedLands
             var dam = ch.GetDamage(level, .5f, 1); //dam = Utility.Random(dam_each[level], dam_each[level] * 2);
 
             ch.Act(checkSector ? "Because of the available water nearby, you conjure a greater ball of water to drown $N in." :
-                "You conjure a magical ball of water to drown $N in.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a magical ball of water to drown $N in.\n\r", victim, type: ActType.ToRoomNotVictim);
+                "You conjure a magical ball of water to drown $N in.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a magical ball of water to drown $N in.\r\n", victim, type: ActType.ToRoomNotVictim);
 
             if (spellcraft)
                 dam += level;
@@ -4352,8 +4352,8 @@ namespace CrimsonStainedLands
             var dam = ch.GetDamage(level, 1.5f, 2.5f);
 
             ch.Act(checkSector ? "Because of the available water nearby, you conjure a greater geyser to drown $N in." :
-                "You conjure a geyser of water to drown $N in.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a geyser of water to drown $N in.\n\r", victim, type: ActType.ToRoomNotVictim);
+                "You conjure a geyser of water to drown $N in.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a geyser of water to drown $N in.\r\n", victim, type: ActType.ToRoomNotVictim);
 
             if (spellcraft)
                 dam += level;
@@ -4390,8 +4390,8 @@ namespace CrimsonStainedLands
                     Victim.AffectToChar(Affect);
 
                     ch.Act("$N starts burning from your immolation.", Victim, type: ActType.ToChar);
-                    ch.Act("You start burning from $n's immolation.\n\r\n\r", Victim, type: ActType.ToVictim);
-                    ch.Act("$N starts burning from $n's immolation.\n\r\n\r", Victim, type: ActType.ToRoomNotVictim);
+                    ch.Act("You start burning from $n's immolation.\r\n\r\n", Victim, type: ActType.ToVictim);
+                    ch.Act("$N starts burning from $n's immolation.\r\n\r\n", Victim, type: ActType.ToRoomNotVictim);
 
                     if (Victim.Fighting == null)
                     {
@@ -4430,9 +4430,9 @@ namespace CrimsonStainedLands
                         (sector == SectorTypes.River) || (sector == SectorTypes.Underwater);
             var spellcraft = (CheckSpellcraft(ch, spell));
 
-            ch.Act(checkSector ? "Because of the available water nearby, You conjure a massive ball of water, then throw a mammoth tsunami!\n\r" :
-                "You conjure a magical ball of water then throw a tsunami!\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a magical ball of water then throws a tsunami!\n\r", victim, type: ActType.ToRoomNotVictim);
+            ch.Act(checkSector ? "Because of the available water nearby, You conjure a massive ball of water, then throw a mammoth tsunami!\r\n" :
+                "You conjure a magical ball of water then throw a tsunami!\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a magical ball of water then throws a tsunami!\r\n", victim, type: ActType.ToRoomNotVictim);
 
             foreach (var vict in ch.Room.Characters.ToArray())
             {
@@ -4463,9 +4463,9 @@ namespace CrimsonStainedLands
             int chance = 0, numhits = 0, i = 0, dam = 0;
             int learned = 0;
 
-            ch.Act(checkSector ? "Because you are not outside, You conjure a week barrage of lighting bolts.\n\r" :
-                "You conjure a barrage of lightning bolts!\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a barrage of lightning bolts!\n\r", victim, type: ActType.ToRoomNotVictim);
+            ch.Act(checkSector ? "Because you are not outside, You conjure a week barrage of lighting bolts.\r\n" :
+                "You conjure a barrage of lightning bolts!\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a barrage of lightning bolts!\r\n", victim, type: ActType.ToRoomNotVictim);
 
             learned = ch.GetSkillPercentage(spell) + 20;
 
@@ -4517,8 +4517,8 @@ namespace CrimsonStainedLands
             int learned = 0;
             var spellcraft = (CheckSpellcraft(ch, spell));
 
-            ch.Act("You conjure a magical bolt of ice, then throw it at $N.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures a magical bolt of ice, then throws it at $N.\n\r", victim, type: ActType.ToRoomNotVictim);
+            ch.Act("You conjure a magical bolt of ice, then throw it at $N.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures a magical bolt of ice, then throws it at $N.\r\n", victim, type: ActType.ToRoomNotVictim);
 
             learned = ch.GetSkillPercentage(spell) + 20;
             chance = Utility.NumberPercent();
@@ -4583,9 +4583,9 @@ namespace CrimsonStainedLands
             var checkSector = ((sector == SectorTypes.Mountain) || (sector == SectorTypes.Cave) || (sector == SectorTypes.Underground));
             var chance = ch.GetSkillPercentage(spell) + 20;
 
-            ch.Act("You toss a small pebble at $N. In mid-air the pebble transforms into a huge boulder!\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n tosses a small pebble at $N. In mid-air the pebble transforms into a huge boulder!\n\r", victim, type: ActType.ToRoomNotVictim);
-            ch.Act("$n tosses a small pebble at you. In mid-air the pebble tranforms into a huge boulder!\n\r", victim, type: ActType.ToVictim);
+            ch.Act("You toss a small pebble at $N. In mid-air the pebble transforms into a huge boulder!\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n tosses a small pebble at $N. In mid-air the pebble transforms into a huge boulder!\r\n", victim, type: ActType.ToRoomNotVictim);
+            ch.Act("$n tosses a small pebble at you. In mid-air the pebble tranforms into a huge boulder!\r\n", victim, type: ActType.ToVictim);
 
             if (chance > Utility.NumberPercent())
             {
@@ -4619,9 +4619,9 @@ namespace CrimsonStainedLands
             if (SavesSpell(level, victim, WeaponDamageTypes.Bash))
                 dam /= 2;
 
-            ch.Act("You conjure stones from thin air, then throw them at $N.\n\r", victim, type: ActType.ToChar);
-            ch.Act("$n conjures stones from thin air, then throws them at $N.\n\r", victim, type: ActType.ToRoomNotVictim);
-            ch.Act("$n conjures stones from thin air, then throws them you.\n\r", victim, type: ActType.ToVictim);
+            ch.Act("You conjure stones from thin air, then throw them at $N.\r\n", victim, type: ActType.ToChar);
+            ch.Act("$n conjures stones from thin air, then throws them at $N.\r\n", victim, type: ActType.ToRoomNotVictim);
+            ch.Act("$n conjures stones from thin air, then throws them you.\r\n", victim, type: ActType.ToVictim);
 
             Combat.Damage(ch, victim, dam, spell, WeaponDamageTypes.Bash);
         } // end pebble to boulder
@@ -4640,7 +4640,7 @@ namespace CrimsonStainedLands
 
             if (dirArg.ISEMPTY() || !Utility.GetEnumValueStrPrefix(dirArg, ref direction))
             {
-                ch.Act("Which direction did you want to force $N in?\n\r", victim);
+                ch.Act("Which direction did you want to force $N in?\r\n", victim);
             }
             else if ((exit = ch.Room.GetExit(direction)) == null || exit.destination == null
                 || exit.flags.ISSET(ExitFlags.Closed) || exit.flags.ISSET(ExitFlags.Window) ||
@@ -4659,16 +4659,16 @@ namespace CrimsonStainedLands
                 if (checkSector)
                     dam *= 2;
 
-                ch.Act(checkSector ? "Because of the earth near you, you invoke massive elemental earth beneath $N, and drive them {0}.\n\r" :
-                    "You invoke elemental earth beneath $N, and drive them {0}.\n\r", victim, type: ActType.ToChar, args: direction.ToString().ToLower());
-                ch.Act("$n invokes elemental earth beneath $N and drives them {0}.\n\r", victim, type: ActType.ToRoomNotVictim, args: direction.ToString().ToLower());
-                ch.Act("$n invokes elemental earth beneath you and drives you {0}.\n\r", victim, type: ActType.ToVictim, args: direction.ToString().ToLower());
+                ch.Act(checkSector ? "Because of the earth near you, you invoke massive elemental earth beneath $N, and drive them {0}.\r\n" :
+                    "You invoke elemental earth beneath $N, and drive them {0}.\r\n", victim, type: ActType.ToChar, args: direction.ToString().ToLower());
+                ch.Act("$n invokes elemental earth beneath $N and drives them {0}.\r\n", victim, type: ActType.ToRoomNotVictim, args: direction.ToString().ToLower());
+                ch.Act("$n invokes elemental earth beneath you and drives you {0}.\r\n", victim, type: ActType.ToVictim, args: direction.ToString().ToLower());
 
                 Combat.Damage(ch, victim, dam, spell, WeaponDamageTypes.Bash);
 
                 victim.RemoveCharacterFromRoom();
                 victim.AddCharacterToRoom(exit.destination);
-                victim.Act("$n arrives on a wave of elemental earth.\n\r", type: ActType.ToRoom);
+                victim.Act("$n arrives on a wave of elemental earth.\r\n", type: ActType.ToRoom);
                 //Character.DoLook(victim, "auto");
 
                 ch.Act("$n hurls $N {0} with $s earth ripple.", victim, type: ActType.ToRoomNotVictim, args: direction.ToString().ToLower());
@@ -4832,14 +4832,14 @@ namespace CrimsonStainedLands
             if (victim.Hunger > 40)
             {
                 if (victim != ch)
-                    ch.send("They aready feel full and satisfied.\n\r");
+                    ch.send("They aready feel full and satisfied.\r\n");
                 else
                     ch.send("You already feel full and satisfied.");
                 return;
             }
             else
             {
-                victim.send("Your hunger is temporarily sated and you feel fully satisfied.\n\r");
+                victim.send("Your hunger is temporarily sated and you feel fully satisfied.\r\n");
                 victim.Act("$n looks fully satisfied instead of starving.", type: ActType.ToRoom);
 
                 var affect = new AffectData();
@@ -4860,14 +4860,14 @@ namespace CrimsonStainedLands
             if (victim.Thirst > 40)
             {
                 if (victim != ch)
-                    ch.send("They are not dehydrated.\n\r");
+                    ch.send("They are not dehydrated.\r\n");
                 else
                     ch.send("You are not dehydrated.");
                 return;
             }
             else
             {
-                victim.send("Your dehydration is temporarily relieved and you feel fully quenched.\n\r");
+                victim.send("Your dehydration is temporarily relieved and you feel fully quenched.\r\n");
                 victim.Act("$n looks fully quenched instead of dehydrated.", type: ActType.ToRoom);
 
                 var affect = new AffectData();
@@ -4897,7 +4897,7 @@ namespace CrimsonStainedLands
                     ch.Act("$n places their hand over your ears for a moment.", victim, null, null, ActType.ToVictim);
                 }
                 else
-                    ch.send("OK.\n\r");
+                    ch.send("OK.\r\n");
             }
             else
                 ch.Act("$N isn't deaf in a way you can cure.", victim, type: ActType.ToChar);
@@ -4915,7 +4915,7 @@ namespace CrimsonStainedLands
 
             else if ((victim = ch.GetCharacterFromRoomByName(targetname, ref count)) == null)
             {
-                ch.Act("They aren't here.\n\r");
+                ch.Act("They aren't here.\r\n");
             }
             else if (aegistype.ISEMPTY())
             {
@@ -4945,8 +4945,8 @@ namespace CrimsonStainedLands
                     affect.DamageTypes.SETBIT(damageTypes);
                     affect.duration = 10 + level / 4;
                     affect.displayName = spell.name + " " + aegistype;
-                    affect.endMessage = "Your aegis protection wears off.\n\r";
-                    affect.endMessageToRoom = "$n's aegis protection wanes.\n\r";
+                    affect.endMessage = "Your aegis protection wears off.\r\n";
+                    affect.endMessageToRoom = "$n's aegis protection wanes.\r\n";
                     affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
 
                     victim.AffectToChar(affect);
@@ -4960,7 +4960,7 @@ namespace CrimsonStainedLands
 
             if ((other = ch.GetCharacterFromListByName(Character.Characters, arguments, ref count)) != null && other.Room != null && (ch.IsImmortal || ch.IsNPC || (ch.Level <= other.Room.MaxLevel && ch.Level >= other.Room.MinLevel)))
             {
-                ch.Act("$n creates a gate, then steps in, then $n and the gate disappears.\n\r", type: ActType.ToRoom);
+                ch.Act("$n creates a gate, then steps in, then $n and the gate disappears.\r\n", type: ActType.ToRoom);
                 ch.RemoveCharacterFromRoom();
                 ch.Act("You gate to $N.", other);
                 ch.AddCharacterToRoom(other.Room);
@@ -4982,20 +4982,20 @@ namespace CrimsonStainedLands
             if (victim.IsAffected(AffectFlags.Sanctuary))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by a white aura.\n\r");
+                    ch.send("They are already protected by a white aura.\r\n");
                 else
                     ch.send("You are already protected by a white aura.");
             }
             else if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Haven))
             {
                 if (victim != ch)
-                    ch.send("They are already protected by a haven aura.\n\r");
+                    ch.send("They are already protected by a haven aura.\r\n");
                 else
                     ch.send("You are already protected by a haven aura.");
             }
             else
             {
-                victim.send("A haven aura surrounds you.\n\r");
+                victim.send("A haven aura surrounds you.\r\n");
                 victim.Act("A haven aura surrounds $n.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -5005,8 +5005,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Haven);
                 affect.duration = 10 + level / 4;
                 affect.displayName = "haven";
-                affect.endMessage = "Your haven aura fades.\n\r";
-                affect.endMessageToRoom = "$n's haven aura fades.\n\r";
+                affect.endMessage = "Your haven aura fades.\r\n";
+                affect.endMessageToRoom = "$n's haven aura fades.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
             }
@@ -5061,7 +5061,7 @@ namespace CrimsonStainedLands
                 || victim.IsNPC
                 )
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
                 return;
             }
 
@@ -5112,7 +5112,7 @@ namespace CrimsonStainedLands
             AffectData affect;
             if (victim == null)
             {
-                ch.Act("You can't find them.\n\r");
+                ch.Act("You can't find them.\r\n");
             }
             else if (victim.Fighting != null || victim.Position == Positions.Fighting)
             {
@@ -5126,7 +5126,7 @@ namespace CrimsonStainedLands
             {
                 Combat.StopFighting(victim, true);
                 victim.Position = Positions.Sleeping;
-                victim.send("You fall into a very deep...  deep......... zzzzzz.\n\r");
+                victim.send("You fall into a very deep...  deep......... zzzzzz.\r\n");
                 victim.Act("$n falls into a deep deep sleep.", type: ActType.ToRoom);
 
                 affect = new AffectData();
@@ -5167,7 +5167,7 @@ namespace CrimsonStainedLands
             
             if (ch.Room == null || (!ch.IsNPC && ch.Room.flags.ISSET(RoomFlags.NoRecall)) || (!ch.IsNPC && ch.Fighting != null))
             {
-                ch.Act("You failed.\n\r");
+                ch.Act("You failed.\r\n");
                 return;
             }
 
@@ -5176,7 +5176,7 @@ namespace CrimsonStainedLands
 
             if (newroom == null)
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
             }
             foreach (var GroupMember in ch.GetGroupMembersInRoom())
             {
@@ -5223,7 +5223,7 @@ namespace CrimsonStainedLands
         {
             if (victim == null)
             {
-                ch.Act("You can't find them.\n\r");
+                ch.Act("You can't find them.\r\n");
             }
             else if (victim.Fighting != null || victim.Position == Positions.Fighting)
             {
@@ -5250,14 +5250,14 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.KnowAlignment))
             {
                 if (victim != ch)
-                    ch.send("They can already sense the alignment of others.\n\r");
+                    ch.send("They can already sense the alignment of others.\r\n");
                 else
-                    ch.send("You can already sense the alignment of others.\n\r");
+                    ch.send("You can already sense the alignment of others.\r\n");
                 return;
             }
             else
             {
-                victim.send("You feel able to sense the alignment of others.\n\r");
+                victim.send("You feel able to sense the alignment of others.\r\n");
 
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -5267,7 +5267,7 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.KnowAlignment);
                 affect.duration = 10 + level / 3;
                 affect.displayName = "know alignment";
-                affect.endMessage = "Your feel less aware of others alignment.\n\r";
+                affect.endMessage = "Your feel less aware of others alignment.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
             }
@@ -5281,14 +5281,14 @@ namespace CrimsonStainedLands
             if ((affect = victim.FindAffect(spell)) != null || victim.IsAffected(AffectFlags.Protection))
             {
                 if (victim != ch)
-                    ch.send("They already have protection.\n\r");
+                    ch.send("They already have protection.\r\n");
                 else
                     ch.send("You already have protection.");
                 return;
             }
             else
             {
-                victim.send("You gain protection.\n\r");
+                victim.send("You gain protection.\r\n");
                 victim.Act("$n gains protection.", type: ActType.ToRoom);
                 affect = new AffectData();
                 affect.skillSpell = spell;
@@ -5298,8 +5298,8 @@ namespace CrimsonStainedLands
                 affect.flags.Add(AffectFlags.Protection);
                 affect.duration = 10 + level / 4;
                 affect.displayName = "protection";
-                affect.endMessage = "You feel less protected.\n\r";
-                affect.endMessageToRoom = "$n's protection wanes.\n\r";
+                affect.endMessage = "You feel less protected.\r\n";
+                affect.endMessageToRoom = "$n's protection wanes.\r\n";
                 affect.affectType = castType == CastType.Cast ? AffectTypes.Spell : AffectTypes.Commune;
                 victim.AffectToChar(affect);
             }

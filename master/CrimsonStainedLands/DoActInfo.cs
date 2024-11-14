@@ -46,7 +46,7 @@ namespace CrimsonStainedLands
             }
             if (affects.Length == 0)
                 affects.AppendLine("Nothing.");
-            ch.send("You are currently affected by:\n\r" + affects.ToString());
+            ch.send("You are currently affected by:\r\n" + affects.ToString());
 
             ItemData wield = ch.GetEquipment(WearSlotIDs.Wield);
             ItemData offhand = ch.GetEquipment(WearSlotIDs.DualWield);
@@ -68,10 +68,10 @@ namespace CrimsonStainedLands
 
         public static void DoScore(Character ch, string arguments)
         {
-            ch.send("You are {0} the {1} {2}, a {3} at level {4}.\n\r", ch.Name, ch.Sex != Sexes.None ? ch.Sex.ToString() : "sexless", ch.Race.name.ToLower(), ch.Guild.name, ch.Level);
-            ch.send("Alignment: {0}, Ethos: {1}.\n\r", ch.Alignment.ToString().ToLower(), ch.Ethos.ToString().ToLower());
+            ch.send("You are {0} the {1} {2}, a {3} at level {4}.\r\n", ch.Name, ch.Sex != Sexes.None ? ch.Sex.ToString() : "sexless", ch.Race.name.ToLower(), ch.Guild.name, ch.Level);
+            ch.send("Alignment: {0}, Ethos: {1}.\r\n", ch.Alignment.ToString().ToLower(), ch.Ethos.ToString().ToLower());
             if (ch.PermanentStats != null)
-                ch.send("Strength: {0}(+{1}), Wisdom: {2}(+{3}), Intelligence: {4}(+{5}), Dexterity: {6}(+{7}), Constitution: {8}(+{9}), Charisma: {10}(+{11})\n\r",
+                ch.send("Strength: {0}(+{1}), Wisdom: {2}(+{3}), Intelligence: {4}(+{5}), Dexterity: {6}(+{7}), Constitution: {8}(+{9}), Charisma: {10}(+{11})\r\n",
                     ch.GetCurrentStat(PhysicalStatTypes.Strength), (ch.GetModifiedStatUncapped(PhysicalStatTypes.Strength) >= ch.GetCurrentStat(PhysicalStatTypes.Strength) ? ch.GetModifiedStatUncapped(PhysicalStatTypes.Strength) - ch.GetCurrentStat(PhysicalStatTypes.Strength) : 0),
                     ch.GetCurrentStat(PhysicalStatTypes.Wisdom), (ch.GetModifiedStatUncapped(PhysicalStatTypes.Wisdom) > ch.GetCurrentStat(PhysicalStatTypes.Wisdom) ? ch.GetModifiedStatUncapped(PhysicalStatTypes.Wisdom) - ch.GetCurrentStat(PhysicalStatTypes.Wisdom) : 0),
                     ch.GetCurrentStat(PhysicalStatTypes.Intelligence), (ch.GetModifiedStatUncapped(PhysicalStatTypes.Intelligence) >= ch.GetCurrentStat(PhysicalStatTypes.Intelligence) ? ch.GetModifiedStatUncapped(PhysicalStatTypes.Intelligence) - ch.GetCurrentStat(PhysicalStatTypes.Intelligence) : 0),
@@ -79,12 +79,12 @@ namespace CrimsonStainedLands
                     ch.GetCurrentStat(PhysicalStatTypes.Constitution), (ch.GetModifiedStatUncapped(PhysicalStatTypes.Constitution) >= ch.GetCurrentStat(PhysicalStatTypes.Constitution) ? ch.GetModifiedStatUncapped(PhysicalStatTypes.Constitution) - ch.GetCurrentStat(PhysicalStatTypes.Constitution) : 0),
                     ch.GetCurrentStat(PhysicalStatTypes.Charisma), (ch.GetModifiedStatUncapped(PhysicalStatTypes.Charisma) >= ch.GetCurrentStat(PhysicalStatTypes.Charisma) ? ch.GetModifiedStatUncapped(PhysicalStatTypes.Charisma) - ch.GetCurrentStat(PhysicalStatTypes.Charisma) : 0));
             var ac = ch.GetArmorClass();
-            ch.send("AC Bash {0}, Slash {1}, Pierce {2}, Exotic {3}\n\r", ac.acBash, ac.acSlash, ac.acPierce, ac.acExotic);
-            ch.send("Carry #: {0}/{1}, Weight {2}/{3}\n\r", ch.Carry, ch.MaxCarry, ch.TotalWeight, ch.MaxWeight);
+            ch.send("AC Bash {0}, Slash {1}, Pierce {2}, Exotic {3}\r\n", ac.acBash, ac.acSlash, ac.acPierce, ac.acExotic);
+            ch.send("Carry #: {0}/{1}, Weight {2}/{3}\r\n", ch.Carry, ch.MaxCarry, ch.TotalWeight, ch.MaxWeight);
 
-            ch.send("Practices: {0}, Trains {1}\n\r", ch.Practices, ch.Trains);
-            ch.send("Hitpoints: {0}/{1} Mana: {2}/{3} Movement: {4}/{5}.\n\r", ch.HitPoints, ch.MaxHitPoints, ch.ManaPoints, ch.MaxManaPoints, ch.MovementPoints, ch.MaxMovementPoints);
-            ch.send("Damage Roll: {0}, Hit Roll: {1}\n\r", ch.GetDamageRoll, ch.GetHitRoll);
+            ch.send("Practices: {0}, Trains {1}\r\n", ch.Practices, ch.Trains);
+            ch.send("Hitpoints: {0}/{1} Mana: {2}/{3} Movement: {4}/{5}.\r\n", ch.HitPoints, ch.MaxHitPoints, ch.ManaPoints, ch.MaxManaPoints, ch.MovementPoints, ch.MaxMovementPoints);
+            ch.send("Damage Roll: {0}, Hit Roll: {1}\r\n", ch.GetDamageRoll, ch.GetHitRoll);
 
             DoWorth(ch, arguments);
             DoAffects(ch, arguments);
@@ -94,11 +94,11 @@ namespace CrimsonStainedLands
         {
             if (ch.Form != null)
             {
-                ch.send(string.Format("You need {0} xp to level({1} of {2})\n\r",
+                ch.send(string.Format("You need {0} xp to level({1} of {2})\r\n",
                 (ch.XpToLevel * (ch.Level)) - ch.Xp, ch.XpTotal, ch.XpToLevel * (ch.Level)));
             }
             else
-                ch.send(string.Format("You have {0} silver, and {1} gold. You need {2} xp to level({3} of {4})\n\r",
+                ch.send(string.Format("You have {0} silver, and {1} gold. You need {2} xp to level({3} of {4})\r\n",
                     ch.Silver.ToString(), ch.Gold.ToString(), (ch.XpToLevel * (ch.Level)) - ch.Xp, ch.XpTotal, ch.XpToLevel * (ch.Level)));
 
         }
@@ -107,32 +107,32 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("Consider killing whom?\n\r");
+                ch.send("Consider killing whom?\r\n");
                 return;
             }
             int count = 0;
             var victim = ch.GetCharacterFromRoomByName(arguments, ref count);
             if (victim == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             var diff = victim.Level - ch.Level;
             string message;
             if (diff <= -10)
-                message = "You could kill $N with your little finger.\n\r";
+                message = "You could kill $N with your little finger.\r\n";
             else if (diff <= -5)
-                message = "$N doesn't have a fighting chance.\n\r";
+                message = "$N doesn't have a fighting chance.\r\n";
             else if (diff <= -2)
-                message = "$N looks like an easy kill.\n\r";
+                message = "$N looks like an easy kill.\r\n";
             else if (diff <= 1)
-                message = "The perfect match!\n\r";
+                message = "The perfect match!\r\n";
             else if (diff <= 4)
-                message = "A few lucky blows would kill $M.\n\r";
+                message = "A few lucky blows would kill $M.\r\n";
             else if (diff <= 9)
-                message = "$N shows you $S razor-sharp teeth.\n\r";
+                message = "$N shows you $S razor-sharp teeth.\r\n";
             else
-                message = "An ominous, hooded figure waits patiently nearby.\n\r";
+                message = "An ominous, hooded figure waits patiently nearby.\r\n";
 
             ch.Act(message, victim, null, null, ActType.ToChar);
 
@@ -150,17 +150,17 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.Color)))
             {
                 ch.Flags.ADDFLAG(ActFlags.Color);
-                ch.send("\\GColor\\x is \\gON\\x.\n\r");
+                ch.send("\\GColor\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.Color)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.Color);
-                ch.send("Color is OFF.\n\r");
+                ch.send("Color is OFF.\r\n");
             }
             else if("reset".StringPrefix(arguments))
             {
                 ch.ColorConfigurations.Clear();
-                ch.send("Color reset.\n\r");
+                ch.send("Color reset.\r\n");
             }
             else
             {
@@ -175,12 +175,12 @@ namespace CrimsonStainedLands
                     if (arguments.ISEMPTY() || arguments.StringCmp("default"))
                     {
                         ch.ColorConfigurations.Remove(configkey);
-                        ch.send($"Color reset to default {config.ColorValue}{XTermColor.EscapeColor(config.ColorValue)}\\x.\n\r");
+                        ch.send($"Color reset to default {config.ColorValue}{XTermColor.EscapeColor(config.ColorValue)}\\x.\r\n");
                     }
                     else
                     {
                         ch.ColorConfigurations[configkey] = arguments;
-                        ch.send($"Color configured to {arguments}{XTermColor.EscapeColor(arguments)}\\x.\n\r");
+                        ch.send($"Color configured to {arguments}{XTermColor.EscapeColor(arguments)}\\x.\r\n");
                     }
                     
                 }
@@ -188,9 +188,9 @@ namespace CrimsonStainedLands
                 {
                     foreach(var kvp in configs)
                     {
-                        ch.send($"Syntax: color {kvp.Key} {ch.GetColor(kvp.Value)}{XTermColor.EscapeColor(ch.GetColor(kvp.Value))}\\x\n\r");
+                        ch.send($"Syntax: color {kvp.Key} {ch.GetColor(kvp.Value)}{XTermColor.EscapeColor(ch.GetColor(kvp.Value))}\\x\r\n");
                     }
-                    ch.send("Syntax: color [on|off]\n\r");
+                    ch.send("Syntax: color [on|off]\r\n");
                 }
 
             }
@@ -201,15 +201,15 @@ namespace CrimsonStainedLands
             if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AFK)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AFK);
-                ch.send("AFK \\rOFF\\x.\n\r");
+                ch.send("AFK \\rOFF\\x.\r\n");
             }
             else if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AFK)))
             {
                 ch.Flags.SETBIT(ActFlags.AFK);
-                ch.send("AFK \\gON\\x.\n\r");
+                ch.send("AFK \\gON\\x.\r\n");
             }
             else
-                ch.send("Syntax: AFK [on|off]\n\r");
+                ch.send("Syntax: AFK [on|off]\r\n");
         }
 
         public static void DoDamage(Character ch, string arguments)
@@ -217,15 +217,15 @@ namespace CrimsonStainedLands
             if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.DamageOnType)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.DamageOnType);
-                ch.send("Damage message based on type now \\rOFF\\x.\n\r");
+                ch.send("Damage message based on type now \\rOFF\\x.\r\n");
             }
             else if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.DamageOnType)))
             {
                 ch.Flags.SETBIT(ActFlags.DamageOnType);
-                ch.send("Damage message based on type now \\gON\\x.\n\r");
+                ch.send("Damage message based on type now \\gON\\x.\r\n");
             }
             else
-                ch.send("Syntax: AFK [on|off]\n\r");
+                ch.send("Syntax: AFK [on|off]\r\n");
         }
 
 
@@ -234,15 +234,15 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AutoSac)))
             {
                 ch.Flags.ADDFLAG(ActFlags.AutoSac);
-                ch.send("\\GAutosac\\x is \\gON\\x.\n\r");
+                ch.send("\\GAutosac\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoSac)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoSac);
-                ch.send("\\GAutosac\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GAutosac\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: Autosac [on|off]\n\r");
+                ch.send("Syntax: Autosac [on|off]\r\n");
         }
 
 
@@ -252,15 +252,15 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AutoLoot)))
             {
                 ch.Flags.ADDFLAG(ActFlags.AutoLoot);
-                ch.send("\\GAutoLoot\\x is \\gON\\x.\n\r");
+                ch.send("\\GAutoLoot\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoLoot)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoLoot);
-                ch.send("\\GAutoLoot\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GAutoLoot\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: AutoLoot [on|off]\n\r");
+                ch.send("Syntax: AutoLoot [on|off]\r\n");
         }
 
         public static void DoAutogold(Character ch, string arguments)
@@ -268,15 +268,15 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AutoGold)))
             {
                 ch.Flags.ADDFLAG(ActFlags.AutoGold);
-                ch.send("\\GAutoGold\\x is \\gON\\x.\n\r");
+                ch.send("\\GAutoGold\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoGold)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoGold);
-                ch.send("\\GAutoGold\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GAutoGold\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: AutoGold [on|off]\n\r");
+                ch.send("Syntax: AutoGold [on|off]\r\n");
         }
 
         public static void DoAutosplit(Character ch, string arguments)
@@ -284,15 +284,15 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AutoSplit)))
             {
                 ch.Flags.ADDFLAG(ActFlags.AutoSplit);
-                ch.send("\\GAutoSplit\\x is \\gON\\x.\n\r");
+                ch.send("\\GAutoSplit\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoSplit)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoSplit);
-                ch.send("\\GAutoSplit\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GAutoSplit\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: AutoSplit [on|off]\n\r");
+                ch.send("Syntax: AutoSplit [on|off]\r\n");
         }
 
         public static void DoBrief(Character ch, string arguments)
@@ -300,30 +300,30 @@ namespace CrimsonStainedLands
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.Brief)))
             {
                 ch.Flags.ADDFLAG(ActFlags.Brief);
-                ch.send("\\GBrief\\x is \\gON\\x.\n\r");
+                ch.send("\\GBrief\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.Brief)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.Brief);
-                ch.send("Brief is \\rOFF\\x.\n\r");
+                ch.send("Brief is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: Brief [on|off]\n\r");
+                ch.send("Syntax: Brief [on|off]\r\n");
         }
         public static void DoAutoassist(Character ch, string arguments)
         {
             if ("on".StringPrefix(arguments) || (arguments.ISEMPTY() && !ch.Flags.ISSET(ActFlags.AutoAssist)))
             {
                 ch.Flags.ADDFLAG(ActFlags.AutoAssist);
-                ch.send("\\GAutoAssist\\x is \\gON\\x.\n\r");
+                ch.send("\\GAutoAssist\\x is \\gON\\x.\r\n");
             }
             else if ("off".StringPrefix(arguments) || (arguments.ISEMPTY() && ch.Flags.ISSET(ActFlags.AutoAssist)))
             {
                 ch.Flags.REMOVEFLAG(ActFlags.AutoAssist);
-                ch.send("\\GAutoAssist\\x is \\rOFF\\x.\n\r");
+                ch.send("\\GAutoAssist\\x is \\rOFF\\x.\r\n");
             }
             else
-                ch.send("Syntax: AutoGold [on|off]\n\r");
+                ch.send("Syntax: AutoGold [on|off]\r\n");
         }
 
         public static void ReadHelp(Character ch, string arguments, bool plain = false)
@@ -374,7 +374,7 @@ namespace CrimsonStainedLands
                         if (!plain)
                         {
                             output.AppendLine("Keywords: " + help.keyword + " :: Help Entry " + help.vnum);
-                            output.Append("\n\r" + new string('-', 80) + "\n\r");
+                            output.Append("\r\n" + new string('-', 80) + "\r\n");
                         }
 
                         if (help.text.StartsWith("."))
@@ -384,8 +384,8 @@ namespace CrimsonStainedLands
 
                         if (!plain)
                         {
-                            output.Append("\n\r" + new string('-', 80) + "\n\r");
-                            output.Append(string.Format("Last edited on {0} by {1}.\n\r", help.lastEditedOn, help.lastEditedBy));
+                            output.Append("\r\n" + new string('-', 80) + "\r\n");
+                            output.Append(string.Format("Last edited on {0} by {1}.\r\n", help.lastEditedOn, help.lastEditedBy));
                             output.AppendLine();
                         }
                     }
@@ -401,7 +401,7 @@ namespace CrimsonStainedLands
 
             }
             if (output.Length == 0)
-                ch.send("No help on that word.\n\r");
+                ch.send("No help on that word.\r\n");
             else
             {
                 using (var page = new Character.Page(ch))
@@ -409,7 +409,7 @@ namespace CrimsonStainedLands
                     var outputstring = output.ToString();
                     ch.send(outputstring);
                     if (!outputstring.EndsWith("\n") && !outputstring.EndsWith("\r"))
-                        ch.send("\n\r");
+                        ch.send("\r\n");
                 }
 
             }
@@ -429,8 +429,8 @@ namespace CrimsonStainedLands
 
             if (string.IsNullOrEmpty(command))
             {
-                ch.send("Your description is:\n\r");
-                ch.send(ch.Description + "\n\r");
+                ch.send("Your description is:\r\n");
+                ch.send(ch.Description + "\r\n");
             }
             else if (command == "-" && !string.IsNullOrEmpty(ch.Description))
             {
@@ -441,16 +441,16 @@ namespace CrimsonStainedLands
                 }
                 else
                     ch.Description = "";
-                ch.send("Line removed.\n\r");
+                ch.send("Line removed.\r\n");
 
             }
             else if (command == "+")
             {
-                if ((!ch.Description.EndsWith("\n") || !ch.Description.EndsWith("\n\r")) && ch.Description.Length != 0)
-                    ch.Description = ch.Description + "\n\r" + arguments;
+                if ((!ch.Description.EndsWith("\n") || !ch.Description.EndsWith("\r\n")) && ch.Description.Length != 0)
+                    ch.Description = ch.Description + "\r\n" + arguments;
                 else
                     ch.Description = arguments;
-                ch.send("Line added.\n\r");
+                ch.send("Line added.\r\n");
             }
             else
             {
@@ -469,25 +469,25 @@ namespace CrimsonStainedLands
 
             if (ch.Room == null)
             {
-                ch.send("You are not in a room.\n\r");
+                ch.send("You are not in a room.\r\n");
                 return;
             }
 
             if (ch.IsAffected(AffectFlags.Blind))
             {
-                ch.send("You can't see anything!\n\r");
+                ch.send("You can't see anything!\r\n");
                 return;
             }
 
             if (ch.Position < Positions.Sleeping)
             {
-                ch.send("You can't see anything but stars!\n\r");
+                ch.send("You can't see anything but stars!\r\n");
                 return;
             }
 
             if (ch.Position == Positions.Sleeping)
             {
-                ch.send("You can't see anything, you're sleeping!\n\r");
+                ch.send("You can't see anything, you're sleeping!\r\n");
                 return;
             }
 
@@ -495,7 +495,7 @@ namespace CrimsonStainedLands
 
             if (!ch.IsAffected(AffectFlags.Infrared) && !ch.IsAffected(AffectFlags.DarkVision) && !ch.IsAffected(AffectFlags.NightVision) && IsDark)
             {
-                ch.send("It is pitch black ... \n\r");
+                ch.send("It is pitch black ... \r\n");
                 return;
             }
 
@@ -505,18 +505,18 @@ namespace CrimsonStainedLands
                 {
                     if (!ch.IsAffected(AffectFlags.DarkVision) && !ch.IsAffected(AffectFlags.Infrared) && !ch.IsAffected(AffectFlags.NightVision) && IsDark)
                     {
-                        ch.send("It is pitch black ... \n\r");
+                        ch.send("It is pitch black ... \r\n");
                     }
                     else
                     {
                         var desc = (TimeInfo.IS_NIGHT && !ch.Room.NightDescription.ISEMPTY() ? ch.Room.NightDescription : ch.Room.Description);
                         desc = desc.WrapText(firstlinelength: 75);
 
-                        ch.send(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Name) + (TimeInfo.IS_NIGHT && !ch.Room.NightName.ISEMPTY() ? ch.Room.NightName : ch.Room.Name) + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset) + (ch.Flags.ISSET(ActFlags.HolyLight) ? ColorConfiguration.ColorString(ColorConfiguration.Keys.Holylight_VNum) + " [" + ch.Room.Vnum + "]\\x" : "") + "\n\r");
+                        ch.send(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Name) + (TimeInfo.IS_NIGHT && !ch.Room.NightName.ISEMPTY() ? ch.Room.NightName : ch.Room.Name) + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset) + (ch.Flags.ISSET(ActFlags.HolyLight) ? ColorConfiguration.ColorString(ColorConfiguration.Keys.Holylight_VNum) + " [" + ch.Room.Vnum + "]\\x" : "") + "\r\n");
                         if (!ch.Flags.ISSET(ActFlags.Brief) || arguments.ISEMPTY())
-                            ch.send("    " + ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Description) + desc + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset) + "\n\r\n\r");
+                            ch.send("    " + ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Description) + desc + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset) + "\r\n\r\n");
                         else
-                            ch.send("\n\r");
+                            ch.send("\r\n");
                         DoExits(ch, "");
                         var tempItemList = new Dictionary<string, int>();
                         foreach (var item in ch.Room.items.Where(i => ch.CanSee(i)))
@@ -553,7 +553,7 @@ namespace CrimsonStainedLands
 
 
                                 ch.send(person.DisplayFlags(ch)); // send separate so act capitalizes first character
-                                ch.Act(person.GetLongDescription(ch).Trim() + "\n\r");
+                                ch.Act(person.GetLongDescription(ch).Trim() + "\r\n");
                             }
                         }
                     }
@@ -563,54 +563,54 @@ namespace CrimsonStainedLands
             {
                 foreach (var alldirection in Enum.GetValues(typeof(Direction)).OfType<Direction>())
                 {
-                    ch.send("You look " + alldirection.ToString().ToLower() + ".\n\r");
-                    ch.Act("$n looks " + alldirection.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
+                    ch.send("You look " + alldirection.ToString().ToLower() + ".\r\n");
+                    ch.Act("$n looks " + alldirection.ToString().ToLower() + ".\r\n", type: ActType.ToRoom);
                     ExitData exit;
                     if ((exit = ch.Room.exits[(int)alldirection]) != null && !string.IsNullOrEmpty(exit.description))
                     {
                         //if(exit.destination != null)
-                        //    ch.send(exit.destination.name + " lies in this direction.\n\r");
-                        ch.send(exit.description + "\n\r");
+                        //    ch.send(exit.destination.name + " lies in this direction.\r\n");
+                        ch.send(exit.description + "\r\n");
                     }
                     else if (exit != null && exit.destination != null)
-                        ch.send(((TimeInfo.IS_NIGHT && !exit.destination.NightName.ISEMPTY() ? exit.destination.NightName : exit.destination.Name)) + " lies" + (alldirection == Direction.Up? " above" : (alldirection == Direction.Down? " below" : (" to the " + alldirection.ToString().ToLower()))) + ".\n\r");
+                        ch.send(((TimeInfo.IS_NIGHT && !exit.destination.NightName.ISEMPTY() ? exit.destination.NightName : exit.destination.Name)) + " lies" + (alldirection == Direction.Up? " above" : (alldirection == Direction.Down? " below" : (" to the " + alldirection.ToString().ToLower()))) + ".\r\n");
                     else
-                        ch.send("You don't see anything special that way.\n\r");
+                        ch.send("You don't see anything special that way.\r\n");
                 }
             }
             else if (ch.Room != null && ch.Room.GetExit(arguments, out var exit, ref count)) //  Utility.GetEnumValueStrPrefix<Direction>(arguments, ref direction))
             {
-                ch.send("You look " + exit.direction.ToString().ToLower() + ".\n\r");
-                ch.Act("$n looks " + exit.direction.ToString().ToLower() + ".\n\r", type: ActType.ToRoom);
+                ch.send("You look " + exit.direction.ToString().ToLower() + ".\r\n");
+                ch.Act("$n looks " + exit.direction.ToString().ToLower() + ".\r\n", type: ActType.ToRoom);
                 //ExitData iexit;
                 if (!string.IsNullOrEmpty(exit.description))
                 {
                     //if(exit.destination != null)
-                    //    ch.send(exit.destination.name + " lies in this direction.\n\r");
-                    ch.send(exit.description + "\n\r");
+                    //    ch.send(exit.destination.name + " lies in this direction.\r\n");
+                    ch.send(exit.description + "\r\n");
                 }
                 else if (exit != null && exit.destination != null)
-                    ch.send(((TimeInfo.IS_NIGHT && !exit.destination.NightName.ISEMPTY() ? exit.destination.NightName : exit.destination.Name)) + " lies" + (exit.direction == Direction.Up ? " above" : (exit.direction == Direction.Down ? " below" : (" to the " + exit.direction.ToString().ToLower()))) + ".\n\r");
+                    ch.send(((TimeInfo.IS_NIGHT && !exit.destination.NightName.ISEMPTY() ? exit.destination.NightName : exit.destination.Name)) + " lies" + (exit.direction == Direction.Up ? " above" : (exit.direction == Direction.Down ? " below" : (" to the " + exit.direction.ToString().ToLower()))) + ".\r\n");
                 else
-                    ch.send("You don't see anything special that way.\n\r");
+                    ch.send("You don't see anything special that way.\r\n");
             }
 
             else if (arguments.StringCmp("self") || ((other = ch.GetCharacterFromRoomByName(arguments, ref count)) != null && ch.CanSee(other)))
             {
                 if (arguments.StringCmp("self"))
                     other = ch;
-                ch.send("You look at " + other.Display(ch) + ".\n\r");
+                ch.send("You look at " + other.Display(ch) + ".\r\n");
 
                 if (other.Form != null && !other.Form.Description.ISEMPTY())
                 {
                     var regex = new Regex("(?m)^\\s+");
-                    ch.send(regex.Replace(other.Form.Description.Trim(), "").WrapText() + "\n\r");
+                    ch.send(regex.Replace(other.Form.Description.Trim(), "").WrapText() + "\r\n");
                 }
                 else if (other.Form == null && !other.Description.ISEMPTY())
-                    ch.send(other.Description.WrapText() + "\n\r");
+                    ch.send(other.Description.WrapText() + "\r\n");
                 else
-                    ch.send("You see nothing special about them.\n\r");
-                ch.send("\n\r");
+                    ch.send("You see nothing special about them.\r\n");
+                ch.send("\r\n");
                 string health = "";
                 var hp = (float)other.HitPoints / (float)other.MaxHitPoints;
                 if (hp == 1)
@@ -630,7 +630,7 @@ namespace CrimsonStainedLands
                 else
                     health = "is dead.";
                 ch.Act("$N {0}", other, null, null, ActType.ToChar, health);
-                //ch.send(other.Display(ch) + " " + health + "\n\r");
+                //ch.send(other.Display(ch) + " " + health + "\r\n");
 
                 ch.Act("{0}", other, null, null, ActType.ToChar, other.GetEquipmentString(ch));
                 Character.CheckPeek(ch, other);
@@ -639,32 +639,32 @@ namespace CrimsonStainedLands
             {
                 if (!lookitem.ItemType.Contains(ItemTypes.Container))
                 {
-                    ch.send("{0} isn't a container.\n\r", lookitem.Display(ch));
+                    ch.send("{0} isn't a container.\r\n", lookitem.Display(ch));
                     return;
                 }
 
                 if (lookitem.extraFlags.Contains(ExtraFlags.Closed))
                 {
-                    ch.send("{0} is closed.\n\r", lookitem.Display(ch));
+                    ch.send("{0} is closed.\r\n", lookitem.Display(ch));
                     return;
                 }
                 Character.SendItemList(ch, lookitem);
             }
             else if ((extraDescription = ch.GetExtraDescriptionByKeyword(arguments, ref count)) != null)
             {
-                ch.send(extraDescription.Description.WrapText() + "\n\r");
+                ch.send(extraDescription.Description.WrapText() + "\r\n");
             }
             else if ((lookitem = ch.GetItemHere(arguments, ref count)) != null)
             {
-                ch.send((!lookitem.Description.ISEMPTY() ? lookitem.Description : lookitem.LongDescription).WrapText() + "\n\r");
+                ch.send((!lookitem.Description.ISEMPTY() ? lookitem.Description : lookitem.LongDescription).WrapText() + "\r\n");
 
                 if (lookitem.extraFlags.Contains(ExtraFlags.Closed))
                 {
-                    ch.send("{0} is closed.\n\r", lookitem.Display(ch));
+                    ch.send("{0} is closed.\r\n", lookitem.Display(ch));
                 }
                 else if (lookitem.extraFlags.Contains(ExtraFlags.Closable))
                 {
-                    ch.send("{0} is open.\n\r", lookitem.Display(ch));
+                    ch.send("{0} is open.\r\n", lookitem.Display(ch));
                 }
 
                 if (lookitem.CarriedBy == ch)
@@ -677,7 +677,7 @@ namespace CrimsonStainedLands
                             wearloc = slot.wearString;
                             break;
                         }
-                    ch.Act("$p is {0} worn {1}, made of {2}, and weighs {3} pounds.\n\r", null, lookitem, null, ActType.ToChar, itemtype.ToLower(), wearloc, lookitem.Material, lookitem.totalweight);
+                    ch.Act("$p is {0} worn {1}, made of {2}, and weighs {3} pounds.\r\n", null, lookitem, null, ActType.ToChar, itemtype.ToLower(), wearloc, lookitem.Material, lookitem.totalweight);
                 }
 
                 if (lookitem.ItemType.ISSET(ItemTypes.Container) && !lookitem.extraFlags.Contains(ExtraFlags.Closed))
@@ -686,12 +686,12 @@ namespace CrimsonStainedLands
 
             //else if ((exit = ch.Room.GetExit(arguments, ref count)) != null)
             //{
-            //    ch.send("You look " + exit.direction + ".\n\r");
-            //    ch.send(exit.description.Trim() + "\n\r");
+            //    ch.send("You look " + exit.direction + ".\r\n");
+            //    ch.send(exit.description.Trim() + "\r\n");
             //}
             else
             {
-                ch.send("You don't see that here.\n\r");
+                ch.send("You don't see that here.\r\n");
             }
         }
 
@@ -723,7 +723,7 @@ namespace CrimsonStainedLands
             }
 
             if (exits.Count == 0) exits.Add("none");
-            ch.send(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Exits) + "[Exits " + String.Join(" ", exits) + "]" + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset)  + "\n\r");
+            ch.send(ColorConfiguration.ColorString(ColorConfiguration.Keys.Room_Exits) + "[Exits " + String.Join(" ", exits) + "]" + ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset)  + "\r\n");
         }
 
         public static void DoScan(Character ch, string arguments)
@@ -741,7 +741,7 @@ namespace CrimsonStainedLands
                 }
             }
             else
-                ch.send("You can't scan that.\n\r");
+                ch.send("You can't scan that.\r\n");
         }
 
 
@@ -751,7 +751,7 @@ namespace CrimsonStainedLands
             int count = 0;
             using (new Character.Page(ch))
             {
-                ch.send("Current commands:\n\r");
+                ch.send("Current commands:\r\n");
                 foreach (var command in Command.Commands)
                 {
                     if (ch.Trust < command.MinimumLevel)
@@ -759,12 +759,12 @@ namespace CrimsonStainedLands
                     if (command.Skill != null && ch.GetSkillPercentage(command.Skill) == 0)
                         continue;
                     count++;
-                    ch.send("{0,15} ", command.Name); // - " + command.info + "\n\r");
+                    ch.send("{0,15} ", command.Name); // - " + command.info + "\r\n");
                     if (count > 1 && count % 4 == 0)
-                        ch.send("\n\r");
+                        ch.send("\r\n");
 
                 }
-                ch.send("\n\r");
+                ch.send("\r\n");
             }
         }
 
@@ -773,15 +773,15 @@ namespace CrimsonStainedLands
             int i = 1;
             using (new Character.Page(ch))
             {
-                ch.send("Current socials:\n\r");
+                ch.send("Current socials:\r\n");
                 foreach (var social in Social.Socials)
                 {
                     ch.send("{0, -15}", social.Name);
                     if (i > 1 && i % 4 == 0)
-                        ch.send("\n\r");
+                        ch.send("\r\n");
                     i++;
                 }
-                ch.send("\n\r");
+                ch.send("\r\n");
             }
         }
         public static void DoSkills(Character ch, string arguments)
@@ -1007,7 +1007,7 @@ namespace CrimsonStainedLands
                                 return;
                             }
 
-                            ch.send(skill.name + " " + percent + "%\n\r");
+                            ch.send(skill.name + " " + percent + "%\r\n");
                         }
                         return;
                     }
@@ -1047,7 +1047,7 @@ namespace CrimsonStainedLands
                             column++;
                     }
                 }
-                ch.send(text + "\n\r");
+                ch.send(text + "\r\n");
 
             } // using new page(ch)
         }
@@ -1059,7 +1059,7 @@ namespace CrimsonStainedLands
 
             if (ch.Form != null || (ch.Guild != null && ch.Guild.CastType != Magic.CastType.Cast))
             {
-                ch.send("You don't know any spells.\n\r");
+                ch.send("You don't know any spells.\r\n");
                 return;
             }
             Character.ShowSpells(ch, arguments);
@@ -1070,7 +1070,7 @@ namespace CrimsonStainedLands
 
             if (ch.Form != null || (ch.Guild != null && ch.Guild.CastType != Magic.CastType.Commune))
             {
-                ch.send("You don't know any supplications.\n\r");
+                ch.send("You don't know any supplications.\r\n");
                 return;
             }
             Character.ShowSpells(ch, arguments);
@@ -1081,7 +1081,7 @@ namespace CrimsonStainedLands
 
             if (ch.Form != null || (ch.Guild != null && ch.Guild.CastType != Magic.CastType.Sing))
             {
-                ch.send("You don't know any songs.\n\r");
+                ch.send("You don't know any songs.\r\n");
                 return;
             }
             Character.ShowSpells(ch, arguments);
@@ -1097,13 +1097,13 @@ namespace CrimsonStainedLands
                 if ((skill = ch.GetSkillPercentage(form.FormSkill)) > 1)
                 {
 
-                    ch.send("You are {0} with the {1} form.\n\r", skill == 100 ? "confident" : skill > 85 ? "competent" : "unfamiliar", form.Name);
+                    ch.send("You are {0} with the {1} form.\r\n", skill == 100 ? "confident" : skill > 85 ? "competent" : "unfamiliar", form.Name);
                     any = true;
                 }
             }
 
             if (!any)
-                ch.send("You know no forms.\n\r");
+                ch.send("You know no forms.\r\n");
 
         }
 
@@ -1113,7 +1113,7 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY())
             {
-                ch.send("Emote what?\n\r");
+                ch.send("Emote what?\r\n");
             }
             else
             {
@@ -1135,7 +1135,7 @@ namespace CrimsonStainedLands
             else if (day % 10 == 3) suf = "rd";
             else suf = "th";
 
-            ch.send("It is {0} o'clock {1}, Day of {2}, {3}{4} of the Month of {5}.\n\r",
+            ch.send("It is {0} o'clock {1}, Day of {2}, {3}{4} of the Month of {5}.\r\n",
                 (TimeInfo.Hour % 12 == 0) ? 12 : TimeInfo.Hour % 12,
                 TimeInfo.Hour >= 12 ? "pm" : "am",
                 TimeInfo.DayName,
@@ -1144,13 +1144,13 @@ namespace CrimsonStainedLands
 
             var runningtime = DateTime.Now - Game.Instance.GameStarted;
 
-            ch.send("Server started at {0}.\n\rThe system time is {1}.\n\rGame has been running for {2} days, {3} hours and {4} minutes.\n\r",
+            ch.send("Server started at {0}.\n\rThe system time is {1}.\n\rGame has been running for {2} days, {3} hours and {4} minutes.\r\n",
                 Game.Instance.GameStarted, DateTime.Now, runningtime.Days, runningtime.Hours, runningtime.Minutes);
 
             if (ch is Player)
             {
                 var player = ch as Player;
-                ch.send("Total Time played: {0}\n\r", (player.TotalPlayTime + (DateTime.Now - player.LastSaveTime)));
+                ch.send("Total Time played: {0}\r\n", (player.TotalPlayTime + (DateTime.Now - player.LastSaveTime)));
             }
             return;
         }
@@ -1171,11 +1171,11 @@ namespace CrimsonStainedLands
 
             if (!ch.IS_OUTSIDE)
             {
-                ch.send("You can't see the weather indoors.\n\r");
+                ch.send("You can't see the weather indoors.\r\n");
                 return;
             }
 
-            buf = string.Format("The sky is {0} and {1}.\n\r",
+            buf = string.Format("The sky is {0} and {1}.\r\n",
                 sky_look[(int)WeatherData.Sky],
                 WeatherData.change >= 0 ? "a warm southerly breeze blows" : "a cold northern gust blows");
             ch.send(buf);
@@ -1187,7 +1187,7 @@ namespace CrimsonStainedLands
         {
             if (!(ch is Player player)) return;
 
-            ch.send("The default prompt is: <%1%%h %2%%m %3%%mv %W> \n\r");
+            ch.send("The default prompt is: <%1%%h %2%%m %3%%mv %W> \r\n");
 
             if (!argument.ISEMPTY() && (argument.StringCmp("all") || argument.StringCmp("default")))
             {
@@ -1202,14 +1202,14 @@ namespace CrimsonStainedLands
                 player.Prompt = argument + (!argument.EndsWith(" ") ? " " : "");
             }
 
-            ch.send("Your prompt is: " + Extensions.XTermColor.EscapeColor(player.Prompt) + "\n\r");
+            ch.send("Your prompt is: " + Extensions.XTermColor.EscapeColor(player.Prompt) + "\r\n");
         }
 
         public static void DoQuests(Character ch, string argument)
         {
             using (new Character.Page(ch))
             {
-                ch.send("Current Quests:\n\r");
+                ch.send("Current Quests:\r\n");
                 if (ch is Player)
                 {
                     var player = (Player)ch;
@@ -1218,25 +1218,25 @@ namespace CrimsonStainedLands
                     {
                         if (quest.Status == Quest.QuestStatus.InProgress && quest.Quest != null && quest.Quest.ShowInQuests)
                         {
-                            ch.send("lvl {0,3}-{1,-3} {2} :: {3}\n\r", quest.Quest.StartLevel, quest.Quest.EndLevel, quest.Quest.Display, quest.Quest.Description.WrapText());
+                            ch.send("lvl {0,3}-{1,-3} {2} :: {3}\r\n", quest.Quest.StartLevel, quest.Quest.EndLevel, quest.Quest.Display, quest.Quest.Description.WrapText());
                         }
                     }
 
-                    ch.send("Failed Quests:\n\r");
+                    ch.send("Failed Quests:\r\n");
                     foreach (var quest in player.Quests)
                     {
                         if (quest.Status == Quest.QuestStatus.Failed && quest.Quest != null && quest.Quest.ShowInQuests)
                         {
-                            ch.send("lvl {0,3}-{1,-3} {2} :: {3}\n\r", quest.Quest.StartLevel, quest.Quest.EndLevel, quest.Quest.Display, quest.Quest.Description.WrapText());
+                            ch.send("lvl {0,3}-{1,-3} {2} :: {3}\r\n", quest.Quest.StartLevel, quest.Quest.EndLevel, quest.Quest.Display, quest.Quest.Description.WrapText());
                         }
                     }
 
-                    ch.send("Completed Quests:\n\r");
+                    ch.send("Completed Quests:\r\n");
                     foreach (var quest in player.Quests)
                     {
                         if (quest.Status == Quest.QuestStatus.Complete && quest.Quest != null && quest.Quest.ShowInQuests)
                         {
-                            ch.send("lvl {0,3}-{1,-3} {2} :: {3}\n\r", quest.Quest.StartLevel, quest.Quest.EndLevel, quest.Quest.Display, quest.Quest.Description.WrapText());
+                            ch.send("lvl {0,3}-{1,-3} {2} :: {3}\r\n", quest.Quest.StartLevel, quest.Quest.EndLevel, quest.Quest.Display, quest.Quest.Description.WrapText());
                         }
                     }
                 }
@@ -1251,21 +1251,21 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Your wimpy is set to {0} hitpoints.\n\r", player.Wimpy);
+                ch.send("Your wimpy is set to {0} hitpoints.\r\n", player.Wimpy);
             }
             else if (int.TryParse(arguments, out player.Wimpy))
             {
                 if (player.Wimpy < 0 || player.Wimpy > ch.MaxHitPoints / 2)
-                    ch.send("Wimpy must be between 0 and {0}.\n\r", ch.MaxHitPoints / 2);
+                    ch.send("Wimpy must be between 0 and {0}.\r\n", ch.MaxHitPoints / 2);
                 else
                 {
                     player.Wimpy = Math.Min(Math.Max(0, player.Wimpy), ch.MaxHitPoints / 2);
 
-                    ch.send("Wimpy set to {0} hitpoints.\n\r", player.Wimpy);
+                    ch.send("Wimpy set to {0} hitpoints.\r\n", player.Wimpy);
                 }
             }
             else
-                ch.send("Wimpy must be a number between 0 and {0}.\n\r", ch.MaxHitPoints / 2);
+                ch.send("Wimpy must be a number between 0 and {0}.\r\n", ch.MaxHitPoints / 2);
         }
 
         public static void DoToggle(Character ch, string arguments)
@@ -1284,6 +1284,7 @@ namespace CrimsonStainedLands
                 new {Flag = ActFlags.NoSummon, Name = "NoSummon", Description = "Do not allow players to summon you" },
                 new {Flag = ActFlags.NoFollow, Name = "NoFollow", Description = "Do not allow followers" },
                 new {Flag = ActFlags.NewbieChannel, Name = "Newbie", Description = "Receive newbie channel messages" },
+                new {Flag = ActFlags.OOCChannel, Name = "OOC", Description = "Receive OOC channel messages" },
                 new {Flag = ActFlags.WizInvis, Name = "WizInvis", Description = "Invisible to lower level players" },
                 new {Flag = ActFlags.HolyLight, Name = "HolyLight", Description = "Immortal vision" }
             };
@@ -1292,7 +1293,7 @@ namespace CrimsonStainedLands
                 foreach (var flag in flags)
                 {
                     if ((flag.Flag == ActFlags.HolyLight || flag.Flag == ActFlags.WizInvis) && !ch.IsImmortal) continue;
-                    ch.send("{0,-15}: {1,-10} {2,-20}\\x\n\r", flag.Name, ch.Flags.ISSET(flag.Flag) ? "\\gON\\x" : "\\rOFF\\x", flag.Description);
+                    ch.send("{0,-15}: {1,-10} {2,-20}\\x\r\n", flag.Name, ch.Flags.ISSET(flag.Flag) ? "\\gON\\x" : "\\rOFF\\x", flag.Description);
                 }
             }
             else
@@ -1310,11 +1311,11 @@ namespace CrimsonStainedLands
                         else
                             ch.Flags.SETBIT(flag.Flag);
 
-                        ch.send("{0,-15}: {1,-10} {2,-20}\\x\n\r", flag.Name, ch.Flags.ISSET(flag.Flag) ? "\\gON\\x" : "\\rOFF\\x", flag.Description);
+                        ch.send("{0,-15}: {1,-10} {2,-20}\\x\r\n", flag.Name, ch.Flags.ISSET(flag.Flag) ? "\\gON\\x" : "\\rOFF\\x", flag.Description);
                         return;
                     }
                 }
-                ch.send("Flag not found.\n\r");
+                ch.send("Flag not found.\r\n");
             }
         } // end DoToggle
 

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Mysqlx.Notice.Warning.Types;
+using System.Xml.Linq;
 
 namespace CrimsonStainedLands
 {
@@ -18,13 +20,13 @@ namespace CrimsonStainedLands
         {
             if (ch.Room == null)
             {
-                ch.send("You are not in a room.\n\r");
+                ch.send("You are not in a room.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Yell what?\n\r");
+                ch.send("Yell what?\r\n");
                 return;
             }
 
@@ -35,16 +37,16 @@ namespace CrimsonStainedLands
             }
             ch.StripHidden();
 
-            //ch.Act("\\y$n ye '{0}'\\x\n\r", null, null, null, ActType.ToRoom, arguments);
+            //ch.Act("\\y$n ye '{0}'\\x\r\n", null, null, null, ActType.ToRoom, arguments);
             foreach (var other in ch.Room.Area.People)
             {
                 if (other != ch)
-                    ch.Act("{1}$n yells '{0}'{2}\n\r", other, null, null, ActType.ToVictim, arguments,
+                    ch.Act("{1}$n yells '{0}'{2}\r\n", other, null, null, ActType.ToVictim, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Yell),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
 
-            ch.Act("{1}You yell '{0}'{2}\n\r", null, null, null, ActType.ToChar, arguments,
+            ch.Act("{1}You yell '{0}'{2}\r\n", null, null, null, ActType.ToChar, arguments,
                 ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Yell),
                 ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
         }
@@ -53,29 +55,29 @@ namespace CrimsonStainedLands
         {
             if (ch.Room == null)
             {
-                ch.send("You are not in a room.\n\r");
+                ch.send("You are not in a room.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Say what?\n\r");
+                ch.send("Say what?\r\n");
                 return;
             }
 
             if (ch.Form != null)
             {
-                ch.send("You can't speak.\n\r");
+                ch.send("You can't speak.\r\n");
                 return;
             }
 
             ch.StripHidden();
             using (new Character.CaptureCommunications())
             {
-                ch.Act("{1}$n says '{0}'{2}\n\r", null, null, null, ActType.ToRoom, arguments,
+                ch.Act("{1}$n says '{0}'{2}\r\n", null, null, null, ActType.ToRoom, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-                ch.SendToChar("{1}You say '{0}'{2}\n\r", arguments,
+                ch.SendToChar("{1}You say '{0}'{2}\r\n", arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
@@ -91,13 +93,13 @@ namespace CrimsonStainedLands
             Character victim = null;
             if (ch.Room == null)
             {
-                ch.send("You are not in a room.\n\r");
+                ch.send("You are not in a room.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Say what to whom?\n\r");
+                ch.send("Say what to whom?\r\n");
                 return;
             }
 
@@ -105,17 +107,17 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Say what to whom?\n\r");
+                ch.send("Say what to whom?\r\n");
                 return;
             }
             else if ((victim = ch.GetCharacterFromRoomByName(target)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
                 return;
             }
             else if (victim == ch)
             {
-                ch.send("You can't say something to yourself.\n\r");
+                ch.send("You can't say something to yourself.\r\n");
                 return;
             }
 
@@ -124,13 +126,13 @@ namespace CrimsonStainedLands
             using (new Character.CaptureCommunications())
             {
                 if (victim.Position != Positions.Sleeping)
-                    ch.Act("{1}$n says to you '{0}'{2}\n\r", victim, null, null, ActType.ToVictim, arguments,
+                    ch.Act("{1}$n says to you '{0}'{2}\r\n", victim, null, null, ActType.ToVictim, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-                ch.Act("{1}$n says to $N '{0}'{2}\n\r", victim, null, null, ActType.ToRoomNotVictim, arguments,
+                ch.Act("{1}$n says to $N '{0}'{2}\r\n", victim, null, null, ActType.ToRoomNotVictim, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-                ch.Act("{1}You says to $N '{0}'{2}\n\r", victim, null, null, ActType.ToChar, arguments,
+                ch.Act("{1}You says to $N '{0}'{2}\r\n", victim, null, null, ActType.ToChar, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Say),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
@@ -141,21 +143,21 @@ namespace CrimsonStainedLands
         {
             if (ch.Room == null)
             {
-                ch.send("You are not in a room.\n\r");
+                ch.send("You are not in a room.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Whiser what?\n\r");
+                ch.send("Whiser what?\r\n");
                 return;
             }
             using (new Character.CaptureCommunications())
             {
-                ch.Act("{1}$n whisper '{0}'{2}\n\r", null, null, null, ActType.ToRoom, arguments,
+                ch.Act("{1}$n whisper '{0}'{2}\r\n", null, null, null, ActType.ToRoom, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-                ch.Act("{1}You whisper '{0}'{2}\n\r", null, null, null, ActType.ToChar, arguments,
+                ch.Act("{1}You whisper '{0}'{2}\r\n", null, null, null, ActType.ToChar, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
@@ -168,13 +170,13 @@ namespace CrimsonStainedLands
             Character victim = null;
             if (ch.Room == null)
             {
-                ch.send("You are not in a room.\n\r");
+                ch.send("You are not in a room.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Whisper what to whom?\n\r");
+                ch.send("Whisper what to whom?\r\n");
                 return;
             }
 
@@ -182,29 +184,29 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Whisper what to whom?\n\r");
+                ch.send("Whisper what to whom?\r\n");
                 return;
             }
             else if ((victim = ch.GetCharacterFromRoomByName(target)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
                 return;
             }
             else if (victim == ch)
             {
-                ch.send("You can't whisper to yourself.\n\r");
+                ch.send("You can't whisper to yourself.\r\n");
                 return;
             }
             using (new Character.CaptureCommunications())
             {
                 if (victim.Position != Positions.Sleeping)
-                    ch.Act("{1}$n whisper to you '{0}'{2}\n\r", victim, null, null, ActType.ToVictim, arguments,
+                    ch.Act("{1}$n whisper to you '{0}'{2}\r\n", victim, null, null, ActType.ToVictim, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-                ch.Act("{1}$n whisper to $N '{0}'{2}\n\r", victim, null, null, ActType.ToRoomNotVictim, arguments,
+                ch.Act("{1}$n whisper to $N '{0}'{2}\r\n", victim, null, null, ActType.ToRoomNotVictim, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
-                ch.Act("{1}You whisper to $N '{0}'{2}\n\r", victim, null, null, ActType.ToChar, arguments,
+                ch.Act("{1}You whisper to $N '{0}'{2}\r\n", victim, null, null, ActType.ToChar, arguments,
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Communication_Whisper),
                         ColorConfiguration.ColorString(ColorConfiguration.Keys.Reset));
             }
@@ -217,7 +219,7 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Tell what to whom?\n\r");
+                ch.send("Tell what to whom?\r\n");
                 return;
             }
 
@@ -225,12 +227,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Tell what to whom?\n\r");
+                ch.send("Tell what to whom?\r\n");
                 return;
             }
             else if ((victim = Character.GetCharacterWorld(ch, target)) == null)
             {
-                ch.send("You don't see them.\n\r");
+                ch.send("You don't see them.\r\n");
                 return;
             }
             using (new Character.CaptureCommunications())
@@ -245,27 +247,27 @@ namespace CrimsonStainedLands
             {
                 if (ch.ReplyTo.Position == Positions.Sleeping)
                 {
-                    ch.send("They can't hear you right now.\n\r");
+                    ch.send("They can't hear you right now.\r\n");
                     return;
                 }
                 var victim = ch.ReplyTo;
                 ch.StripHidden();
                 using (new Character.CaptureCommunications())
                 {
-                    ch.Act("\\r$n tells you '{0}'\\x\n\r", victim, null, null, ActType.ToVictim, arguments);
-                    ch.Act("\\rYou tell $N '" + arguments + "'\\x\n\r", victim);
+                    ch.Act("\\r$n tells you '{0}'\\x\r\n", victim, null, null, ActType.ToVictim, arguments);
+                    ch.Act("\\rYou tell $N '" + arguments + "'\\x\r\n", victim);
                 }
                 victim.ReplyTo = ch;
             }
             else
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
         }
 
         public static void DoGTell(Character ch, string arguments)
         {
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Tell what to the group?\n\r");
+                ch.send("Tell what to the group?\r\n");
                 return;
             }
 
@@ -276,9 +278,9 @@ namespace CrimsonStainedLands
                 foreach (var other in Character.Characters)
                 {
                     if (other != ch && other.IsSameGroup(ch))
-                        ch.Act("\\M$n tells the group '{0}'\\x\n\r", other, null, null, ActType.ToVictim, arguments);
+                        ch.Act("\\M$n tells the group '{0}'\\x\r\n", other, null, null, ActType.ToVictim, arguments);
                 }
-                ch.Act("\\MYou tell the group '{0}'\\x\n\r", null, null, null, ActType.ToChar, arguments);
+                ch.Act("\\MYou tell the group '{0}'\\x\r\n", null, null, null, ActType.ToChar, arguments);
             }
         }
 
@@ -286,7 +288,7 @@ namespace CrimsonStainedLands
         {
             if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
             {
-                ch.send("Pray what to the gods?\n\r");
+                ch.send("Pray what to the gods?\r\n");
                 return;
             }
             using (new Character.CaptureCommunications())
@@ -294,11 +296,11 @@ namespace CrimsonStainedLands
                 foreach (var other in Character.Characters)
                 {
                     if (other != ch && other.IsImmortal)
-                        ch.Act("\\r$n prays '{0}'\\x\n\r", other, null, null, ActType.ToVictim, arguments);
+                        ch.Act("\\r$n prays '{0}'\\x\r\n", other, null, null, ActType.ToVictim, arguments);
                 }
             }
             Game.log("{0} prays '{1}'", ch.Name, arguments);
-            ch.Act("\\rYou pray to the gods for help!\\x\n\r", null, null, null, ActType.ToChar, arguments);
+            ch.Act("\\rYou pray to the gods for help!\\x\r\n", null, null, null, ActType.ToChar, arguments);
         }
 
         public static void DoNewbie(Character ch, string arguments)
@@ -312,7 +314,7 @@ namespace CrimsonStainedLands
                 else
                     ch.Flags.SETBIT(ActFlags.NewbieChannel);
 
-                ch.send("Newbie channel is \\g{0}\\x.\n\r", ch.Flags.ISSET(ActFlags.NewbieChannel) ? "ON" : "OFF");
+                ch.send("Newbie channel is \\g{0}\\x.\r\n", ch.Flags.ISSET(ActFlags.NewbieChannel) ? "ON" : "OFF");
 
             }
             else
@@ -320,24 +322,59 @@ namespace CrimsonStainedLands
                 if (!ch.Flags.ISSET(ActFlags.NewbieChannel))
                 {
                     ch.Flags.SETBIT(ActFlags.NewbieChannel);
-                    ch.send("Newbie channel is \\gON\\x.\n\r");
+                    ch.send("Newbie channel is \\gON\\x.\r\n");
                 }
                 using (new Character.CaptureCommunications())
                 {
                     foreach (var other in Character.Characters)
                     {
                         if (other != ch && other.Flags.ISSET(ActFlags.NewbieChannel))
-                            ch.Act("\\cNEWBIE ($n): {0}\\x\n\r", other, null, null, ActType.ToVictim, arguments);
+                            ch.Act("\\cNEWBIE ($n): {0}\\x\r\n", other, null, null, ActType.ToVictim, arguments);
                     }
                     Game.log("{0} newbies '{1}'", ch.Name, arguments);
-                    ch.send("\\cNEWBIE (You): {0}\\x\n\r", arguments);
+                    ch.send("\\cNEWBIE (You): {0}\\x\r\n", arguments);
+                    Task.Run(() => Discord.Instance.SendMessage(Settings.NewbieChannelWebhook, "Crimson Stained Lands", string.Format("NEWBIE ({0}) {1}", ch.Name, arguments)));
                 }
             }
         }
 
+        public static void DoOOC(Character ch, string arguments)
+        {
+            if (arguments.ISEMPTY() || arguments.Trim().ISEMPTY())
+            {
+                if (ch.Flags.ISSET(ActFlags.OOCChannel))
+                {
+                    ch.Flags.REMOVEFLAG(ActFlags.OOCChannel);
+                }
+                else
+                    ch.Flags.SETBIT(ActFlags.OOCChannel);
+
+                ch.send("OOC channel is \\g{0}\\x.\r\n", ch.Flags.ISSET(ActFlags.OOCChannel) ? "ON" : "OFF");
+
+            }
+            else
+            {
+                if (!ch.Flags.ISSET(ActFlags.OOCChannel))
+                {
+                    ch.Flags.SETBIT(ActFlags.OOCChannel);
+                    ch.send("OOC channel is \\gON\\x.\r\n");
+                }
+                using (new Character.CaptureCommunications())
+                {
+                    foreach (var other in Character.Characters)
+                    {
+                        if (other != ch && other.Flags.ISSET(ActFlags.OOCChannel))
+                            ch.Act("\\OOC ($n): {0}\\x\r\n", other, null, null, ActType.ToVictim, arguments);
+                    }
+                    Game.log("{0} OOCs '{1}'", ch.Name, arguments);
+                    ch.send("\\cOOC (You): {0}\\x\r\n", arguments);
+                    Task.Run(() => Discord.Instance.SendMessage(Settings.OOCChannelWebhook, "Crimson Stained Lands", string.Format("OOC ({0}): {1}", ch.Name, arguments)));
+                }
+            }
+        }
         public static void DoReplay(Character ch, string arguments)
         {
-            ch.send("Last {0} communications:\n\r", ch.Communications.Count);
+            ch.send("Last {0} communications:\r\n", ch.Communications.Count);
 
             foreach(var communication in ch.Communications)
             {

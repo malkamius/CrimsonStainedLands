@@ -264,7 +264,7 @@ namespace CrimsonStainedLands
             // }
         }
 
-        private void LoadData()
+        public void LoadData()
         {
             using (new LoadTimer("LoadLiquids loaded {0} liquids", () => Liquid.Liquids.Count))
                 Liquid.loadLiquids();
@@ -344,7 +344,7 @@ namespace CrimsonStainedLands
                 }
 
                 Game.Instance.Info.MainLoopTask = Task.Run(() => mainLoop(state));
-                connectionManagerTask.Wait();
+                //connectionManagerTask.Wait();
             }
             catch (Exception ex)
             {
@@ -369,7 +369,10 @@ namespace CrimsonStainedLands
         private void mainLoop(GameInfo state)
         {
             var read = Task.Run(ConsoleHandler);
+            
+            Discord.Instance.OnMessageReceived += DiscordMessageReceived;
 
+            Task.Run(() => Discord.Instance.StartAsync(Settings.BotToken));
             try
             {
                 //AcceptNewSockets();
@@ -412,6 +415,32 @@ namespace CrimsonStainedLands
             catch (Exception gameEx)
             {
                 Info.LogLine(gameEx.ToString());
+            }
+        }
+
+        private void DiscordMessageReceived(string username, string channel, string content)
+        {
+            if(channel == "ooc-channel")
+            {
+                using (new Character.CaptureCommunications())
+                {
+                    foreach (var ch in Character.Characters)
+                    {
+                        if (ch.Flags.ISSET(ActFlags.NewbieChannel))
+                            ch.send("\\cDISCORD OOC ({0}): {1}\\x\r\n", username, content);
+                    }
+                }
+            }
+            else if (channel == "newbie-channel")
+            {
+                using (new Character.CaptureCommunications())
+                {
+                    foreach (var ch in Character.Characters)
+                    {
+                        if (ch.Flags.ISSET(ActFlags.NewbieChannel))
+                            ch.send("\\cDISCORD NEWBIE ({0}): {1}\\x\r\n", username, content);
+                    }
+                }
             }
         }
 
@@ -460,7 +489,7 @@ namespace CrimsonStainedLands
                 {
                     WizardNet.Wiznet(WizardNet.Flags.Connections, "New Banned Connection - {0}", null, null, player.Address);
 
-                    player.SendRaw("You are banned.\n\r");
+                    player.SendRaw("You are banned.\r\n");
                     Game.CloseSocket(player, true, true);
                 }
                 catch
@@ -613,7 +642,7 @@ namespace CrimsonStainedLands
                 if (connection.LastSaveTime != DateTime.MinValue && (DateTime.Now - connection.LastSaveTime).Minutes >= 5)
                 {
                     connection.SaveCharacterFile();
-                    connection.send("\n\rAuto-saved.\n\r");
+                    connection.send("\r\nAuto-saved.\r\n");
                 }
 
                 if (!DecrementDazeAndWait(connection))
@@ -696,7 +725,7 @@ namespace CrimsonStainedLands
                     try
                     {
                         connection.SaveCharacterFile();
-                        connection.SendRaw("Shutting down NOW!\n\r");
+                        connection.SendRaw("Shutting down NOW!\r\n");
                         if (connection.connection != null)
                             try { connection.connection.Cleanup(); } catch { }
 
@@ -740,7 +769,7 @@ namespace CrimsonStainedLands
                 try
                 {
                     connection.SaveCharacterFile();
-                    connection.SendRaw("Rebooting NOW!\n\r");
+                    connection.SendRaw("Rebooting NOW!\r\n");
                     if (connection.connection != null)
                         try { connection.connection.Cleanup(); } catch { }
 
@@ -1175,9 +1204,9 @@ namespace CrimsonStainedLands
                         {
                             var counter = ch.Starving;
                             if (counter <= 4)
-                                ch.send("You are no longer famished.\n\r");
+                                ch.send("You are no longer famished.\r\n");
                             else
-                                ch.send("You are no longer starving.\n\r");
+                                ch.send("You are no longer starving.\r\n");
                             ch.Starving = 0;
                             //ch.hunger = 2;
                         }
@@ -1187,9 +1216,9 @@ namespace CrimsonStainedLands
                         {
                             var counter = ch.Dehydrated;
                             if (counter <= 5)
-                                ch.send("You are no longer dehydrated.\n\r");
+                                ch.send("You are no longer dehydrated.\r\n");
                             else
-                                ch.send("You are no longer dying of thirst.\n\r");
+                                ch.send("You are no longer dying of thirst.\r\n");
                             ch.Dehydrated = 0;
                             //ch.thirst = 2;
                         }
@@ -1198,26 +1227,26 @@ namespace CrimsonStainedLands
                         if (ch.Hunger < 4 && !ch.IsAffected(AffectFlags.Sated) && !ch.IsAffected(AffectFlags.Ghost))
                         {
                             if (ch.Starving < 2)
-                                ch.send("You are hungry.\n\r");
+                                ch.send("You are hungry.\r\n");
 
 
                         }
                         if (ch.Thirst < 4 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
                         {
                             if (ch.Dehydrated < 2)
-                                ch.send("You are thirsty.\n\r");
+                                ch.send("You are thirsty.\r\n");
                         }
 
                         if (ch.Starving > 1 && !ch.IsAffected(AffectFlags.Sated) && !ch.IsAffected(AffectFlags.Ghost))
                         {
                             var counter = ch.Starving;
                             if (counter <= 5)
-                                ch.send("You are famished!\n\r");
+                                ch.send("You are famished!\r\n");
                             else if (counter <= 8)
-                                ch.send("You are beginning to starve!\n\r");
+                                ch.send("You are beginning to starve!\r\n");
                             else
                             {
-                                ch.send("You are starving!\n\r");
+                                ch.send("You are starving!\r\n");
                                 if (ch.Level > 10 && !ch.IsAffected(AffectFlags.Sated) && !ch.IsAffected(AffectFlags.Ghost))
                                     Combat.Damage(ch, ch, Utility.Random(counter - 3, 2 * (counter - 3)), SkillSpell.SkillLookup("starvation"));
                             }
@@ -1228,12 +1257,12 @@ namespace CrimsonStainedLands
                         {
                             int counter = ch.Dehydrated;
                             if (counter <= 2)
-                                ch.send("Your mouth is parched!\n\r");
+                                ch.send("Your mouth is parched!\r\n");
                             else if (counter <= 5)
-                                ch.send("You are beginning to dehydrate!\n\r");
+                                ch.send("You are beginning to dehydrate!\r\n");
                             else
                             {
-                                ch.send("You are dying of thirst!\n\r");
+                                ch.send("You are dying of thirst!\r\n");
                                 if (ch.Level > 10 && !ch.IsAffected(AffectFlags.Quenched) && !ch.IsAffected(AffectFlags.Ghost))
                                     Combat.Damage(ch, ch, Utility.Random(counter, 2 * counter), SkillSpell.SkillLookup("dehydration"));
                             }
@@ -1251,7 +1280,7 @@ namespace CrimsonStainedLands
                     ch.Drunk = Math.Max(Math.Min(ch.Drunk - 3, ch.Drunk / 2), 0);
                     if (ch.Drunk == 0)
                     {
-                        ch.send("You are sober.\n\r");
+                        ch.send("You are sober.\r\n");
                     }
                 }
 
@@ -1266,7 +1295,7 @@ namespace CrimsonStainedLands
 
                         if (affect.flags.ISSET(AffectFlags.Ghost) && affect.duration < 5)
                         {
-                            ch.send("You feel your body start to transition back to a physical form.\n\r");
+                            ch.send("You feel your body start to transition back to a physical form.\r\n");
                         }
 
                         if (!affect.tickProgram.ISEMPTY())
@@ -1584,19 +1613,19 @@ namespace CrimsonStainedLands
                 switch (TimeInfo.Hour)
                 {
                     case 5:
-                        buf.Append("The day has begun.\n\r");
+                        buf.Append("The day has begun.\r\n");
                         break;
 
                     case 6:
-                        buf.Append("The sun rises in the east.\n\r");
+                        buf.Append("The sun rises in the east.\r\n");
                         break;
 
                     case 19:
-                        buf.Append("The sun slowly disappears in the west.\n\r");
+                        buf.Append("The sun slowly disappears in the west.\r\n");
                         break;
 
                     case 20:
-                        buf.Append("The night has begun.\n\r");
+                        buf.Append("The night has begun.\r\n");
                         break;
                 }
 
@@ -1629,7 +1658,7 @@ namespace CrimsonStainedLands
                     if (WeatherData.mmhg < 990
                         || (WeatherData.mmhg < 1010 && Utility.Random(0, 2) == 0))
                     {
-                        buf.Append("The sky is getting cloudy.\n\r");
+                        buf.Append("The sky is getting cloudy.\r\n");
                         WeatherData.Sky = SkyStates.Cloudy;
                     }
                     break;
@@ -1638,13 +1667,13 @@ namespace CrimsonStainedLands
                     if (WeatherData.mmhg < 970
                         || (WeatherData.mmhg < 990 && Utility.Random(0, 2) == 0))
                     {
-                        buf.Append("It starts to rain.\n\r");
+                        buf.Append("It starts to rain.\r\n");
                         WeatherData.Sky = SkyStates.Raining;
                     }
 
                     if (WeatherData.mmhg > 1030 && Utility.Random(0, 2) == 0)
                     {
-                        buf.Append("The clouds disappear.\n\r");
+                        buf.Append("The clouds disappear.\r\n");
                         WeatherData.Sky = SkyStates.Cloudlesss;
                     }
                     break;
@@ -1652,14 +1681,14 @@ namespace CrimsonStainedLands
                 case SkyStates.Raining:
                     if (WeatherData.mmhg < 970 && Utility.Random(0, 2) == 0)
                     {
-                        buf.Append("Lightning flashes in the sky.\n\r");
+                        buf.Append("Lightning flashes in the sky.\r\n");
                         WeatherData.Sky = SkyStates.Lightning;
                     }
 
                     if (WeatherData.mmhg > 1030
                         || (WeatherData.mmhg > 1010 && Utility.Random(0, 2) == 0))
                     {
-                        buf.Append("The rain stopped.\n\r");
+                        buf.Append("The rain stopped.\r\n");
                         WeatherData.Sky = SkyStates.Cloudy;
                     }
                     break;
@@ -1668,7 +1697,7 @@ namespace CrimsonStainedLands
                     if (WeatherData.mmhg > 1010
                         || (WeatherData.mmhg > 990 && Utility.Random(0, 2) == 0))
                     {
-                        buf.Append("The lightning has stopped.\n\r");
+                        buf.Append("The lightning has stopped.\r\n");
                         WeatherData.Sky = SkyStates.Raining;
                         break;
                     }
@@ -1901,26 +1930,26 @@ namespace CrimsonStainedLands
         {
             System.IO.File.AppendAllText("bugs.txt", string.Format("Player {0} reported the following bug on {1}: {2}{3}", ch.Name, DateTime.Now.ToString(), arguments, Environment.NewLine));
             log(string.Format("Player {0} reported the following bug on {1}: {2}", ch.Name, DateTime.Now.ToString(), arguments));
-            ch.send("Your bug report has been logged.\n\r");
+            ch.send("Your bug report has been logged.\r\n");
         }
 
         public static void DoConnections(Character ch, string arguments)
         {
 
-            ch.send("Current players:\n\r");
+            ch.send("Current players:\r\n");
             if (!Character.Characters.Any(c => c is Player))
             {
-                ch.send("None.\n\r");
+                ch.send("None.\r\n");
             }
             else
             {
-                ch.send("{0,-20}({1,-20}) {2,20} {3, 10}\n\r", "Name", "Type", "Address", "State");
+                ch.send("{0,-20}({1,-20}) {2,20} {3, 10}\r\n", "Name", "Type", "Address", "State");
                 foreach (var player in Character.Characters.OfType<Player>())
                 {
-                    ch.send("{0,-20}({1,-20}) {2,20} {3,10}\n\r", player.Name, player.connection != null? player.connection.GetType().Name : "(null)", player.connection != null? player.Address : "disconnected", player.state.ToString());
+                    ch.send("{0,-20}({1,-20}) {2,20} {3,10}\r\n", player.Name, player.connection != null? player.connection.GetType().Name : "(null)", player.connection != null? player.Address : "disconnected", player.state.ToString());
                 }
 
-                ch.send(Character.Characters.OfType<Player>().Count() + " players online.\n\r");
+                ch.send(Character.Characters.OfType<Player>().Count() + " players online.\r\n");
             }
 
 
@@ -1936,7 +1965,7 @@ namespace CrimsonStainedLands
 
             if (name.ISEMPTY())
             {
-                ch.send("Syntax: BanByName $playername\n\r");
+                ch.send("Syntax: BanByName $playername\r\n");
                 return;
             }
             if (duration.ISEMPTY())
@@ -1955,12 +1984,12 @@ namespace CrimsonStainedLands
             Character bancharacter;
             if ((bancharacter = Character.GetCharacterWorld(ch, name, true, false)) != null && bancharacter is Player)
             {
-                ((Player)bancharacter).SendRaw("You have been banned.\n\r");
+                ((Player)bancharacter).SendRaw("You have been banned.\r\n");
                 Game.CloseSocket(((Player)bancharacter), true);
-                ch.send("Character banned.\n\r");
+                ch.send("Character banned.\r\n");
             }
 
-            ch.send($"Ban entry added. In effect for {duration}.\n\r");
+            ch.send($"Ban entry added. In effect for {duration}.\r\n");
         }
 
         public static void DoBanByAddress(Character ch, string arguments)
@@ -1975,7 +2004,7 @@ namespace CrimsonStainedLands
 
             if (nameOrAddress.ISEMPTY())
             {
-                ch.send("Syntax: BanByAddress [$playername|$address]\n\r");
+                ch.send("Syntax: BanByAddress [$playername|$address]\r\n");
                 return;
             }
 
@@ -1987,13 +2016,13 @@ namespace CrimsonStainedLands
             else if ((bancharacter = Character.GetCharacterWorld(ch, nameOrAddress, true, false)) != null && bancharacter is Player)
             {
                 address = ((Player)bancharacter).Address;
-                ((Player)bancharacter).SendRaw("You have been banned.\n\r");
+                ((Player)bancharacter).SendRaw("You have been banned.\r\n");
                 Game.CloseSocket(((Player)bancharacter), true);
-                ch.send("Character banned.\n\r");
+                ch.send("Character banned.\r\n");
             }
             else
             {
-                ch.send("Player not found or ip address not in proper format.\n\r");
+                ch.send("Player not found or ip address not in proper format.\r\n");
                 return;
             }
 
@@ -2003,7 +2032,7 @@ namespace CrimsonStainedLands
                 {
                     if (player.Address.StartsWith(address))
                     {
-                        player.SendRaw("You have been banned.\n\r");
+                        player.SendRaw("You have been banned.\r\n");
                         CloseSocket(player);
                     }
                 }
@@ -2025,7 +2054,7 @@ namespace CrimsonStainedLands
             bans.Save(banspath);
 
 
-            ch.send($"Ban entry added. In effect for {duration}.\n\r");
+            ch.send($"Ban entry added. In effect for {duration}.\r\n");
         }
 
         public static void CloseSocket(Player player, bool remove = false, bool settonull = true)
@@ -2034,6 +2063,12 @@ namespace CrimsonStainedLands
 
             if (player.connection != null)
             {
+                try
+                {
+                    player.ProcessOutput();
+                }
+                catch { }
+
                 try { player.connection.Cleanup(); } catch { }
                 
             }

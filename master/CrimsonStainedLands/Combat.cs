@@ -74,7 +74,7 @@ namespace CrimsonStainedLands
             // If the attacker is affected by the Calm flag, they cannot engage in combat
             if (ch.IsAffected(AffectFlags.Calm))
             {
-                ch.send("You feel too calm to fight.\n\r");
+                ch.send("You feel too calm to fight.\r\n");
                 StopFighting(ch);
                 return true;
             }
@@ -439,17 +439,17 @@ namespace CrimsonStainedLands
             {
                 case Positions.Mortal:
                     victim.Act("$n is mortally wounded and will die soon, if not aided.", type: ActType.ToRoom);
-                    victim.send("You are mortally wounded and will die soon, if not aided.\n\r");
+                    victim.send("You are mortally wounded and will die soon, if not aided.\r\n");
                     break;
 
                 case Positions.Incapacitated:
                     victim.Act("$n is incapacitated and will slowly die, if not aided.", type: ActType.ToRoom);
-                    victim.send("You are incapacitated and will slowly die, if not aided.\n\r");
+                    victim.send("You are incapacitated and will slowly die, if not aided.\r\n");
                     break;
 
                 case Positions.Stunned:
                     victim.Act("$n is stunned, but will probably recover.", type: ActType.ToRoom);
-                    victim.send("You are stunned, but will probably recover.\n\r");
+                    victim.send("You are stunned, but will probably recover.\r\n");
                     break;
 
                 case Positions.Dead:
@@ -482,14 +482,14 @@ namespace CrimsonStainedLands
                     }
 
                     victim.Act("$n is DEAD!!", null, null, null, ActType.ToRoom);
-                    victim.send("You have been KILLED!!\n\r\n\r");
+                    victim.send("You have been KILLED!!\r\n\r\n");
                     break;
 
                 default:
                     if (damage > victim.MaxHitPoints / 4)
-                        victim.send("That really did HURT!\n\r");
+                        victim.send("That really did HURT!\r\n");
                     if (victim.HitPoints < victim.MaxHitPoints / 4)
-                        victim.send("You sure are BLEEDING!\n\r");
+                        victim.send("You sure are BLEEDING!\r\n");
                     break;
             }
 
@@ -698,7 +698,7 @@ namespace CrimsonStainedLands
                     // Handle death-related actions for player characters
                     if (victim.GetRecallRoom() != null)
                         victim.AddCharacterToRoom(victim.GetRecallRoom());
-                    victim.Act("$n appears in the room.\n\r", type: ActType.ToRoom);
+                    victim.Act("$n appears in the room.\r\n", type: ActType.ToRoom);
                     victim.HitPoints = victim.MaxHitPoints / 2;
                     victim.ManaPoints = victim.MaxManaPoints / 2;
                     victim.MovementPoints = victim.MaxMovementPoints / 2;
@@ -732,7 +732,7 @@ namespace CrimsonStainedLands
                     };
                     ghostAffect.flags.SETBIT(AffectFlags.Ghost);
                     victim.AffectToChar(ghostAffect);
-                    victim.send("\\RYou become a ghost for a short while.\\x\n\r");
+                    victim.send("\\RYou become a ghost for a short while.\\x\r\n");
                 }
                 else
                 {
@@ -844,7 +844,7 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You fall flat on your face.\n\r");
+                ch.send("You fall flat on your face.\r\n");
                 ch.WaitState(Game.PULSE_VIOLENCE * 1);
                 return;
             }
@@ -852,25 +852,25 @@ namespace CrimsonStainedLands
             if (ch.Equipment.TryGetValue(WearSlotIDs.Shield, out shield))
                 if (shield != null)
                 {
-                    ch.send("You must shield bash someone while holding a shield.\n\r");
+                    ch.send("You must shield bash someone while holding a shield.\r\n");
                     return;
                 }
             if ((victim = (ch.GetCharacterFromRoomByName(arguments, ref count)) ?? ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             if (CheckIsSafe(ch, victim)) return;
 
             if (victim == ch)
-                ch.send("You can't bash yourself!.\n\r");
+                ch.send("You can't bash yourself!.\r\n");
             else if (CheckAcrobatics(ch, victim)) return;
             else if (victim.FindAffect(SkillSpell.SkillLookup("protective shield")) != null)
             {
                 ch.WaitState(Game.PULSE_VIOLENCE);
-                ch.Act("You try to bash $N but fall straight through $M.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n tries to bash $N but falls straight through $M.\n\r", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("You try to bash $N but fall straight through $M.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n tries to bash $N but falls straight through $M.\r\n", victim, type: ActType.ToRoomNotVictim);
             }
             else if (skillPercent > Utility.NumberPercent())
             {
@@ -878,9 +878,9 @@ namespace CrimsonStainedLands
 
                 ch.Position = Positions.Fighting;
                 ch.Fighting = victim;
-                ch.Act("You bash $N and they fall to the ground.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n bashes $N to the ground.\n\r", victim, type: ActType.ToRoomNotVictim);
-                victim.send("{0} bashes you to the ground.\n\r", ch.Display(victim));
+                ch.Act("You bash $N and they fall to the ground.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n bashes $N to the ground.\r\n", victim, type: ActType.ToRoomNotVictim);
+                victim.send("{0} bashes you to the ground.\r\n", ch.Display(victim));
 
                 Combat.Damage(ch, victim, dam, skill);
                 ch.WaitState(Game.PULSE_VIOLENCE * 2);
@@ -892,7 +892,7 @@ namespace CrimsonStainedLands
             else
             {
                 ch.WaitState(Game.PULSE_VIOLENCE * 1);
-                ch.send("You fall flat on your face.\n\r");
+                ch.send("You fall flat on your face.\r\n");
                 ch.Position = Positions.Sitting;
                 ch.CheckImprove(skill, false, 1);
             }
@@ -913,16 +913,16 @@ namespace CrimsonStainedLands
             //if (!ch.Learned.TryGetValue(skill, out lvl) || lvl <= 1)
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You stumble and your feet get crossed.\n\r");
+                ch.send("You stumble and your feet get crossed.\r\n");
             }
 
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.Act("You aren't fighting anyone.\n\r");
+                ch.Act("You aren't fighting anyone.\r\n");
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments, ref count)) == null)
             {
-                ch.Act("They aren't here!\n\r");
+                ch.Act("They aren't here!\r\n");
             }
             else if (CheckIsSafe(ch, victim))
             {
@@ -930,14 +930,14 @@ namespace CrimsonStainedLands
             }
             else if (victim == ch)
             {
-                ch.send("You can't trip yourself!.\n\r");
+                ch.send("You can't trip yourself!.\r\n");
             }
 
             else if (CheckAcrobatics(ch, victim)) return;
 
             else if (victim.IsAffected(AffectFlags.Flying))
             {
-                ch.send("Their feet aren't on the ground.\n\r");
+                ch.send("Their feet aren't on the ground.\r\n");
             }
             else if (skillPercent > Utility.NumberPercent())
             {
@@ -947,9 +947,9 @@ namespace CrimsonStainedLands
 
                 ch.Position = Positions.Fighting;
                 ch.Fighting = victim;
-                ch.Act("You trip $N and $E falls to the ground.\n\r", victim);
-                ch.Act("$n trips $N and $E falls to the ground.\n\r", victim, type: ActType.ToRoomNotVictim);
-                victim.Act("$N trips you to the ground.\n\r", ch);
+                ch.Act("You trip $N and $E falls to the ground.\r\n", victim);
+                ch.Act("$n trips $N and $E falls to the ground.\r\n", victim, type: ActType.ToRoomNotVictim);
+                victim.Act("$N trips you to the ground.\r\n", ch);
 
                 Combat.Damage(ch, victim, dam, skill);
                 ch.WaitState(skill.waitTime);
@@ -961,7 +961,7 @@ namespace CrimsonStainedLands
             else
             {
                 ch.WaitState(skill.waitTime);
-                ch.Act("You fail to trip them.\n\r");
+                ch.Act("You fail to trip them.\r\n");
                 Combat.Damage(ch, victim, 0, skill);
                 ch.CheckImprove(skill, false, 1);
             }
@@ -979,19 +979,19 @@ namespace CrimsonStainedLands
             //if (!ch.Learned.TryGetValue(sn, out lvl) || lvl <= 1)
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((affect = ch.FindAffect(skill)) != null)
             {
-                ch.send("You are already enraged!\n\r");
+                ch.send("You are already enraged!\r\n");
                 return;
             }
 
             else if (ch.ManaPoints < 20)
             {
-                ch.send("You don't have enough mana to enrage.\n\r");
+                ch.send("You don't have enough mana to enrage.\r\n");
                 return;
             }
 
@@ -1017,8 +1017,8 @@ namespace CrimsonStainedLands
                     affect.duration = 2;
                     affect.modifier = +5;
                     affect.displayName = "berserk";
-                    affect.endMessage = "Your rage subsides.\n\r";
-                    affect.endMessageToRoom = "$n's rage subsides.\n\r";
+                    affect.endMessage = "Your rage subsides.\r\n";
+                    affect.endMessageToRoom = "$n's rage subsides.\r\n";
                     affect.affectType = AffectTypes.Skill;
                     ch.AffectToChar(affect);
 
@@ -1027,14 +1027,14 @@ namespace CrimsonStainedLands
                     ch.ManaPoints -= 20;
 
 
-                    ch.send("You are filled with rage.\n\r");
-                    ch.Act("$n becomes filled with rage.\n\r", type: ActType.ToRoom);
+                    ch.send("You are filled with rage.\r\n");
+                    ch.Act("$n becomes filled with rage.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, true, 1);
                 }
                 else
                 {
-                    ch.send("You only manage to turn your face red.\n\r");
-                    ch.Act("$n manages to turn their face red.\n\r", type: ActType.ToRoom);
+                    ch.send("You only manage to turn your face red.\r\n");
+                    ch.Act("$n manages to turn their face red.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, false, 1);
                 }
             }
@@ -1793,7 +1793,7 @@ namespace CrimsonStainedLands
                 if (Magic.SavesSpell(ch.Level, victim, WeaponDamageTypes.Poison))
                 {
                     victim.Act("$n turns slightly green, but it passes.", type: ActType.ToRoom);
-                    victim.send("You feel momentarily ill, but it passes.\n\r");
+                    victim.send("You feel momentarily ill, but it passes.\r\n");
                     return;
                 }
 
@@ -1807,12 +1807,12 @@ namespace CrimsonStainedLands
                 affect.duration = Utility.Random(5, 10);
                 affect.modifier = -3;
                 affect.displayName = "Poisoned";
-                affect.endMessage = "You feel less sick.\n\r";
-                affect.endMessageToRoom = "$n is looking less sick.\n\r";
+                affect.endMessage = "You feel less sick.\r\n";
+                affect.endMessageToRoom = "$n is looking less sick.\r\n";
                 affect.affectType = AffectTypes.Skill;
 
                 ch.AffectToChar(affect);
-                ch.Act("You feel poisoned from $N's mucous defense.\n\r", victim);
+                ch.Act("You feel poisoned from $N's mucous defense.\r\n", victim);
                 ch.Act("$n gets poisoned from $N's mucous defense.", victim, null, null, ActType.ToRoom);
             }
 
@@ -1901,7 +1901,7 @@ namespace CrimsonStainedLands
             Character victim;
             int count = 0;
 
-            if (ch.IsAffected(AffectFlags.Calm)) { ch.send("You feel too calm to attack.\n\r"); return; }
+            if (ch.IsAffected(AffectFlags.Calm)) { ch.send("You feel too calm to attack.\r\n"); return; }
 
             if ((victim = ch.GetCharacterFromRoomByName(arguments, ref count)) != null && victim != ch)
             {
@@ -1909,15 +1909,15 @@ namespace CrimsonStainedLands
                 
             }
             else if (victim == ch)
-                ch.send("Suicide is a mortal sin.\n\r");
+                ch.send("Suicide is a mortal sin.\r\n");
             else
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
         }
 
         public static void DoFlee(Character ch, string arguments)
         {
             if (ch.Fighting == null)
-                ch.send("You aren't fighting anyone!\n\r");
+                ch.send("You aren't fighting anyone!\r\n");
             else
             {
                 var exits = new List<ExitData>(from exit 
@@ -1948,7 +1948,7 @@ namespace CrimsonStainedLands
 
                     if (ch.IsAffected(SkillSpell.SkillLookup("secreted filament")) && Utility.Random(0, 1) == 0)
                     {
-                        ch.Act("The secreted filament covering you prevents you from fleeing.\n\r");
+                        ch.Act("The secreted filament covering you prevents you from fleeing.\r\n");
                         ch.Act("$n tries to flee, but the filament covering $m prevents $m from doing so.", type: ActType.ToRoom);
 
                         return;
@@ -1981,7 +1981,7 @@ namespace CrimsonStainedLands
                     int chance = 0;
                     if ((chance = ch.GetSkillPercentage("rogues awareness") + 20) > 21 && chance > Utility.NumberPercent())
                     {
-                        ch.send("You flee " + exit.direction.ToString().ToLower() + ".\n\r");
+                        ch.send("You flee " + exit.direction.ToString().ToLower() + ".\r\n");
                         ch.CheckImprove("rogues awareness", true, 1);
                     }
                     else
@@ -1990,9 +1990,9 @@ namespace CrimsonStainedLands
                         {
                             ch.CheckImprove("rogues awareness", false, 1);
                         }
-                        ch.send("You flee from combat.\n\r");
+                        ch.send("You flee from combat.\r\n");
                     }
-                    ch.Act("$n flees {0}.\n\r", null, null, null, ActType.ToRoom, exit.direction.ToString().ToLower());
+                    ch.Act("$n flees {0}.\r\n", null, null, null, ActType.ToRoom, exit.direction.ToString().ToLower());
                     ch.moveChar(exit.direction, false, false, false);
 
                     if (ch.Room == wasInRoom)
@@ -2027,7 +2027,7 @@ namespace CrimsonStainedLands
 
                 }
                 else
-                    ch.send("You don't see anywhere to flee to!\n\r");
+                    ch.send("You don't see anywhere to flee to!\r\n");
             }
         }
 
@@ -2041,13 +2041,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You better leave the martial arts to fighters.\n\r");
+                ch.send("You better leave the martial arts to fighters.\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -2086,19 +2086,19 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You get your feet dirty.\n\r");
+                ch.send("You get your feet dirty.\r\n");
                 return;
             }
             int count = 0;
             if ((victim = ch.Fighting) == null && (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments, ref count)) == null) || victim == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             AffectData aff;
             if ((aff = victim.FindAffect(AffectFlags.Blind)) != null)
             {
-                ch.send("They are already blinded.\n\r");
+                ch.send("They are already blinded.\r\n");
                 return;
             }
             if (CheckIsSafe(ch, victim)) return;
@@ -2143,7 +2143,7 @@ namespace CrimsonStainedLands
 
             if (chance == 0)
             {
-                ch.send("There isn't any dirt to kick.\n\r");
+                ch.send("There isn't any dirt to kick.\r\n");
                 return;
             }
 
@@ -2165,8 +2165,8 @@ namespace CrimsonStainedLands
                     newAffect.modifier = -4;
                     newAffect.location = ApplyTypes.Hitroll;
                     newAffect.skillSpell = skill;
-                    newAffect.endMessage = "You wipe the dirt from your eyes.\n\r";
-                    newAffect.endMessageToRoom = "$n wipes the dirt from their eyes.\n\r";
+                    newAffect.endMessage = "You wipe the dirt from your eyes.\r\n";
+                    newAffect.endMessageToRoom = "$n wipes the dirt from their eyes.\r\n";
                     newAffect.affectType = AffectTypes.Skill;
                     victim.AffectToChar(newAffect);
                 }
@@ -2480,8 +2480,8 @@ namespace CrimsonStainedLands
             if (victim.FindAffect(SkillSpell.SkillLookup("protective shield")) != null)
             {
                 ch.WaitState(Game.PULSE_VIOLENCE);
-                ch.Act("You try to shield jab $N but miss $M.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n tries to shield jab $N but miss $M.\n\r", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("You try to shield jab $N but miss $M.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n tries to shield jab $N but miss $M.\r\n", victim, type: ActType.ToRoomNotVictim);
             }
             //else if (Utility.Random(0, 1) == 0) return; //50% chance for shield jab attempt
             else if (skillPercent > Utility.NumberPercent())
@@ -2493,9 +2493,9 @@ namespace CrimsonStainedLands
                     ch.Position = Positions.Fighting;
                     ch.Fighting = victim;
                 }
-                ch.Act("You take advantage of your block and jab $N with your shield.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n takes advantage of $s block and jabs $N with $s shield.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n jabs you with $s shield after blocking your attack..\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You take advantage of your block and jab $N with your shield.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n takes advantage of $s block and jabs $N with $s shield.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n jabs you with $s shield after blocking your attack..\r\n", victim, type: ActType.ToVictim);
 
                 Combat.Damage(ch, victim, dam, skill);
 
@@ -2530,9 +2530,9 @@ namespace CrimsonStainedLands
                     ch.Position = Positions.Fighting;
                     ch.Fighting = victim;
                 }
-                ch.Act("You \\Cdodge\\x $N's {0} and close in for a concealed attack.\n\r", victim, type: ActType.ToChar, args: dodgeDamageNoun);
-                ch.Act("$n \\Cdodges\\x $N's {0} and closes in for a concealed attack.\n\r", victim, type: ActType.ToRoomNotVictim, args: dodgeDamageNoun);
-                ch.Act("$n \\Cdodges\\x your {0} and closes in for a concealed attack.\n\r", victim, type: ActType.ToVictim, args: dodgeDamageNoun);
+                ch.Act("You \\Cdodge\\x $N's {0} and close in for a concealed attack.\r\n", victim, type: ActType.ToChar, args: dodgeDamageNoun);
+                ch.Act("$n \\Cdodges\\x $N's {0} and closes in for a concealed attack.\r\n", victim, type: ActType.ToRoomNotVictim, args: dodgeDamageNoun);
+                ch.Act("$n \\Cdodges\\x your {0} and closes in for a concealed attack.\r\n", victim, type: ActType.ToVictim, args: dodgeDamageNoun);
 
                 Combat.oneHit(ch, victim, wield, offhand);
                 //Combat.Damage(ch, victim, dam, skill);
@@ -2570,9 +2570,9 @@ namespace CrimsonStainedLands
                     ch.Position = Positions.Fighting;
                     ch.Fighting = victim;
                 }
-                ch.Act("You \\Ccuts off\\x $N's escape with $p.\n\r", victim, wield, type: ActType.ToChar);
-                ch.Act("$n \\Ccuts off\\x $N's escape with $p.\n\r", victim, wield, type: ActType.ToRoomNotVictim);
-                ch.Act("$n \\Ccuts off\\x your escape with $p.\n\r", victim, wield, type: ActType.ToVictim);
+                ch.Act("You \\Ccuts off\\x $N's escape with $p.\r\n", victim, wield, type: ActType.ToChar);
+                ch.Act("$n \\Ccuts off\\x $N's escape with $p.\r\n", victim, wield, type: ActType.ToRoomNotVictim);
+                ch.Act("$n \\Ccuts off\\x your escape with $p.\r\n", victim, wield, type: ActType.ToVictim);
 
                 ch.CheckImprove(skill, true, 1);
                 return true;
@@ -2604,9 +2604,9 @@ namespace CrimsonStainedLands
                     ch.Position = Positions.Fighting;
                     ch.Fighting = victim;
                 }
-                ch.Act("You get a parting blow as $N attempts to escape.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n gets a parting blow as $N attempts to escape.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n gets a parting blow as you attempt to escape.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You get a parting blow as $N attempts to escape.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n gets a parting blow as $N attempts to escape.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n gets a parting blow as you attempt to escape.\r\n", victim, type: ActType.ToVictim);
 
                 wield = ch.GetEquipment(WearSlotIDs.Wield);
                 // only hit with main hand
@@ -2949,12 +2949,12 @@ namespace CrimsonStainedLands
 
             //if (is_affected(victim, gsn_trip_wire))
             //{
-            //    send_to_char("You lost your trip wire in the frey.\n\r", victim);
+            //    send_to_char("You lost your trip wire in the frey.\r\n", victim);
             //    affect_strip(victim, gsn_trip_wire);
             //}
             //if (is_affected(ch, gsn_trip_wire))
             //{
-            //    send_to_char("You lost your trip wire in the frey.\n\r", ch);
+            //    send_to_char("You lost your trip wire in the frey.\r\n", ch);
             //    affect_strip(ch, gsn_trip_wire);
             //}
 
@@ -2999,13 +2999,13 @@ namespace CrimsonStainedLands
 
             if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null)
             {
-                ch.send("They don't seem to be wielding a weapon.\n\r");
+                ch.send("They don't seem to be wielding a weapon.\r\n");
                 return;
             }
             if (ch.IsAffected(AffectFlags.Blind))
 
             {
-                ch.send("You can't see the person to disarm them!\n\r");
+                ch.send("You can't see the person to disarm them!\r\n");
                 return;
             }
             if (obj.extraFlags.ISSET(ExtraFlags.NoRemove) || obj.extraFlags.ISSET(ExtraFlags.NoDisarm) || victim.IsAffected(SkillSpell.SkillLookup("spiderhands")))
@@ -3057,14 +3057,14 @@ namespace CrimsonStainedLands
 
             if (skill == null || (chance = ch.GetSkillPercentage("disarm")) <= 1)
             {
-                ch.send("You don't know how to disarm opponents.\n\r");
+                ch.send("You don't know how to disarm opponents.\r\n");
                 return;
             }
 
             if (((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null
                 && ((hth = ch.GetSkillPercentage("hand to hand")) == 0)) || ch.IsNPC)
             {
-                ch.send("You must wield a weapon to disarm.\n\r");
+                ch.send("You must wield a weapon to disarm.\r\n");
                 return;
             }
 
@@ -3076,13 +3076,13 @@ namespace CrimsonStainedLands
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null)
             {
-                ch.send("Your opponent is not wielding a weapon.\n\r");
+                ch.send("Your opponent is not wielding a weapon.\r\n");
                 return;
             }
 
@@ -3147,25 +3147,25 @@ namespace CrimsonStainedLands
             SkillSpell skill = SkillSpell.SkillLookup("stab");
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
 
             else if (argument.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("But you aren't fighting anyone.\n\r");
+                ch.send("But you aren't fighting anyone.\r\n");
             }
             else if (!argument.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(argument)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
             }
             else if (victim == ch)
             {
-                ch.send("You don't want to stab yourself.\n\r");
+                ch.send("You don't want to stab yourself.\r\n");
             }
             else if (((obj = ch.GetEquipment(WearSlotIDs.Wield)) == null || obj.WeaponType != WeaponTypes.Dagger)
                 && ((obj = ch.GetEquipment(WearSlotIDs.DualWield)) == null || obj.WeaponType != WeaponTypes.Dagger))
             {
-                ch.send("You must wield a dagger to stab someone.\n\r");
+                ch.send("You must wield a dagger to stab someone.\r\n");
                 return;
             }
             else if (chance > Utility.NumberPercent())
@@ -3218,30 +3218,30 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to knife.\n\r");
+                ch.send("You don't know how to knife.\r\n");
             }
             else if (argument.ISEMPTY())
             {
-                ch.send("Knife whom?\n\r");
+                ch.send("Knife whom?\r\n");
             }
             else if (ch.Fighting != null)
             {
-                ch.send("No way! You're still fighting!\n\r");
+                ch.send("No way! You're still fighting!\r\n");
             }
 
             else if ((victim = ch.GetCharacterFromRoomByName(argument)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
             }
 
             else if (victim == ch)
             {
-                ch.send("Bah, you can't knife yourself.\n\r");
+                ch.send("Bah, you can't knife yourself.\r\n");
             }
             else if (((obj = ch.GetEquipment(WearSlotIDs.Wield)) == null || obj.WeaponType != WeaponTypes.Dagger)
                             && ((obj = ch.GetEquipment(WearSlotIDs.DualWield)) == null || obj.WeaponType != WeaponTypes.Dagger))
             {
-                ch.send("You must wield a dagger to knife someone.\n\r");
+                ch.send("You must wield a dagger to knife someone.\r\n");
             }
             else if (chance > Utility.NumberPercent())
             {
@@ -3255,17 +3255,17 @@ namespace CrimsonStainedLands
 
                 dam = Utility.Random(dam_each[level] + roll, dam_each[level] * 3 / 2 + roll);
 
-                ch.Act("You step forward quickly and deliver a powerful knife attack at $N.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n step forward quickly and delivers a powerful knife attack at $N..\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n step forward quickly and delivers a powerful knife attack at you .\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You step forward quickly and deliver a powerful knife attack at $N.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n step forward quickly and delivers a powerful knife attack at $N..\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n step forward quickly and delivers a powerful knife attack at you .\r\n", victim, type: ActType.ToVictim);
                 ch.CheckImprove(skill, true, 1);
                 Combat.Damage(ch, victim, dam, skill, obj.WeaponDamageType.Type);
             }
             else
             {
-                ch.Act("You step forward quickly but fail to deliver a powerful knife attack at $N.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n steps forward quickly but fails to deliver a powerful knife attack at $N.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n steps forward quickly but fails to deliver a powerful knife attack at you.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You step forward quickly but fail to deliver a powerful knife attack at $N.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n steps forward quickly but fails to deliver a powerful knife attack at $N.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n steps forward quickly but fails to deliver a powerful knife attack at you.\r\n", victim, type: ActType.ToVictim);
 
                 ch.CheckImprove(skill, false, 1);
                 Combat.Damage(ch, victim, 0, skill, obj.WeaponDamageType.Type);
@@ -3298,32 +3298,32 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to backstab.\n\r");
+                ch.send("You don't know how to backstab.\r\n");
             }
 
             else if (arg.ISEMPTY())
             {
-                ch.send("Backstab whom?\n\r");
+                ch.send("Backstab whom?\r\n");
             }
 
             else if (ch.Fighting != null)
             {
-                ch.send("You're facing the wrong end.\n\r");
+                ch.send("You're facing the wrong end.\r\n");
             }
 
             else if ((victim = ch.GetCharacterFromRoomByName(arg)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
             }
             else if (victim == ch)
             {
-                ch.send("How can you sneak up on yourself?\n\r");
+                ch.send("How can you sneak up on yourself?\r\n");
             }
 
             else if (((obj = ch.GetEquipment(WearSlotIDs.Wield)) == null || obj.WeaponType != WeaponTypes.Dagger)
                  && ((obj = ch.GetEquipment(WearSlotIDs.DualWield)) == null || obj.WeaponType != WeaponTypes.Dagger))
             {
-                ch.send("You must wield a dagger to backstab someone.\n\r");
+                ch.send("You must wield a dagger to backstab someone.\r\n");
             }
 
             else if (CheckIsSafe(ch, victim))
@@ -3332,7 +3332,7 @@ namespace CrimsonStainedLands
             }
             else if (victim.Fighting != null)
             {
-                ch.send("That person is moving around too much to backstab.\n\r");
+                ch.send("That person is moving around too much to backstab.\r\n");
             }
             else if (victim.HitPoints < victim.MaxHitPoints * 5 / 10)
             {
@@ -3357,9 +3357,9 @@ namespace CrimsonStainedLands
 
                 dam = Utility.Random(dam_each[level] + roll, dam_each[level] * 2 + roll);
 
-                ch.Act("You backstab $N with your dagger.\n\r", victim);
-                ch.Act("$n backstabs $N with $s dagger.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n backstabs you with $s dagger.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You backstab $N with your dagger.\r\n", victim);
+                ch.Act("$n backstabs $N with $s dagger.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n backstabs you with $s dagger.\r\n", victim, type: ActType.ToVictim);
 
                 Damage(ch, victim, dam, skill.NounDamage, obj.WeaponDamageType.Type);
                 ch.CheckImprove(skill, true, 1);
@@ -3367,9 +3367,9 @@ namespace CrimsonStainedLands
             else
             {
                 ch.WaitState(skill.waitTime);
-                ch.Act("You try backstab $N with your dagger but fail.\n\r", victim);
-                ch.Act("$n tries to backstab $N with $s dagger but fails.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n tries to backstab you with $s dagger but fails.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You try backstab $N with your dagger but fail.\r\n", victim);
+                ch.Act("$n tries to backstab $N with $s dagger but fails.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n tries to backstab you with $s dagger but fails.\r\n", victim, type: ActType.ToVictim);
                 ch.CheckImprove(skill, false, 1);
                 Damage(ch, victim, 0, skill, WeaponDamageTypes.None);
             }
@@ -3400,19 +3400,19 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to backstab.\n\r");
+                ch.send("You don't know how to backstab.\r\n");
             }
             else if (argument.ISEMPTY())
             {
-                ch.send("Backstab whom?\n\r");
+                ch.send("Backstab whom?\r\n");
             }
             else if (ch.Fighting != null)
             {
-                ch.send("You're facing the wrong end.\n\r");
+                ch.send("You're facing the wrong end.\r\n");
             }
             else if ((victim = ch.GetCharacterFromRoomByName(argument)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
             }
             else if (victim.CanSee(ch) && victim.IsAwake)
             {
@@ -3420,11 +3420,11 @@ namespace CrimsonStainedLands
             }
             else if (victim == ch)
             {
-                ch.send("How can you backstab yourself?\n\r");
+                ch.send("How can you backstab yourself?\r\n");
             }
             else if (weapon == null || weapon.WeaponType != WeaponTypes.Dagger || offhand == null || offhand.WeaponType != WeaponTypes.Dagger)
             {
-                ch.send("You must be dual wielding daggers to dual backstab someone.\n\r");
+                ch.send("You must be dual wielding daggers to dual backstab someone.\r\n");
             }
             else if (CheckIsSafe(ch, victim))
             {
@@ -3432,7 +3432,7 @@ namespace CrimsonStainedLands
             }
             else if (victim.Fighting != null)
             {
-                ch.send("That person is moving around too much to dual backstab.\n\r");
+                ch.send("That person is moving around too much to dual backstab.\r\n");
             }
             else if (victim.HitPoints < victim.MaxHitPoints * 5 / 10)
             {
@@ -3443,9 +3443,9 @@ namespace CrimsonStainedLands
             else if (Utility.NumberPercent() < chance || !victim.IsAwake)
             {
                 ch.WaitState(skill.waitTime);
-                ch.Act("You backstab $N with your daggers.\n\r", victim);
-                ch.Act("$n backstabs $N with $s daggers.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n backstabs you with $s daggers.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You backstab $N with your daggers.\r\n", victim);
+                ch.Act("$n backstabs $N with $s daggers.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n backstabs you with $s daggers.\r\n", victim, type: ActType.ToVictim);
 
                 if (ch.IsNPC)
                     level = Math.Min(level, 51);
@@ -3464,9 +3464,9 @@ namespace CrimsonStainedLands
             else
             {
                 ch.WaitState(skill.waitTime);
-                ch.Act("You try double backstab $N with your daggers but fail.\n\r", victim);
-                ch.Act("$n tries to double backstab $N with $s daggers but fails.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n tries to double backstab you with $s daggers but fails.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You try double backstab $N with your daggers but fail.\r\n", victim);
+                ch.Act("$n tries to double backstab $N with $s daggers but fails.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n tries to double backstab you with $s daggers but fails.\r\n", victim, type: ActType.ToVictim);
                 ch.CheckImprove(skill, false, 1);
                 Damage(ch, victim, 0, skill, WeaponDamageTypes.None);
             }
@@ -3527,7 +3527,7 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.send("You were unable to get a cheap shot in.\n\r");
+                ch.send("You were unable to get a cheap shot in.\r\n");
                 ch.CheckImprove(skill, false, 1);
                 return;
             }
@@ -3540,24 +3540,24 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage(skill) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You can't apply more aid yet.\n\r");
+                ch.send("You can't apply more aid yet.\r\n");
                 return;
             }
             if (ch.ManaPoints < 15)
             {
-                ch.send("You don't have the mana.\n\r");
+                ch.send("You don't have the mana.\r\n");
                 return;
             }
 
             if (Utility.NumberPercent() > ch.GetSkillPercentage(skill))
             {
-                ch.send("You fail to focus on your injuries.\n\r");
+                ch.send("You fail to focus on your injuries.\r\n");
                 ch.Act("$n fails to focus on $s injuries and bind $s wounds.", type: ActType.ToRoom);
                 ch.ManaPoints -= 12;
                 ch.CheckImprove(skill, false, 3);
@@ -3567,8 +3567,8 @@ namespace CrimsonStainedLands
             ch.ManaPoints -= 25;
 
             ch.Act("$n focuses on $s injuries and binds $s wounds.", type: ActType.ToRoom);
-            ch.send("You focus on your injuries and bind your wounds.\n\r");
-            ch.send("You feel better.\n\r");
+            ch.send("You focus on your injuries and bind your wounds.\r\n");
+            ch.send("You feel better.\r\n");
 
             ch.HitPoints += (int)(ch.MaxHitPoints * 0.2);
             ch.HitPoints = Math.Min(ch.HitPoints, ch.MaxHitPoints);
@@ -3576,20 +3576,20 @@ namespace CrimsonStainedLands
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 4) && ch.IsAffected(AffectFlags.Plague))
             {
                 ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("plague")), AffectRemoveReason.Cleansed);
-                ch.Act("The sores on $n's body vanish.\n\r", type: ActType.ToRoom);
-                ch.send("The sores on your body vanish.\n\r");
+                ch.Act("The sores on $n's body vanish.\r\n", type: ActType.ToRoom);
+                ch.send("The sores on your body vanish.\r\n");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(AffectFlags.Blind))
             {
                 ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
-                ch.send("Your vision returns!\n\r");
+                ch.send("Your vision returns!\r\n");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && ch.IsAffected(AffectFlags.Poison))
             {
                 ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("poison")), AffectRemoveReason.Cleansed);
-                ch.send("A warm feeling goes through your body.\n\r");
+                ch.send("A warm feeling goes through your body.\r\n");
                 ch.Act("$n looks better.", type: ActType.ToRoom);
             }
             ch.CheckImprove(skill, true, 3);
@@ -3624,7 +3624,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Circling? What's that?\n\r");
+                ch.send("Circling? What's that?\r\n");
                 return;
             }
             if (arg.ISEMPTY())
@@ -3632,31 +3632,31 @@ namespace CrimsonStainedLands
                 victim = ch.Fighting;
                 if (victim == null)
                 {
-                    ch.send("But you aren't fighting anyone.\n\r");
+                    ch.send("But you aren't fighting anyone.\r\n");
                     return;
                 }
             }
             else if ((victim = ch.GetCharacterFromRoomByName(arg)) == null)
             {
-                ch.send("They aren't here.\n\r");
+                ch.send("They aren't here.\r\n");
                 return;
             }
             if (ch.Fighting == null)
             {
-                ch.send("You can't circle someone like that.\n\r");
+                ch.send("You can't circle someone like that.\r\n");
                 return;
             }
             foreach (var other in ch.Room.Characters)
             {
                 if (other.Fighting == ch)
                 {
-                    ch.send("Not while you're defending yourself!\n\r");
+                    ch.send("Not while you're defending yourself!\r\n");
                     return;
                 }
             }
             if (victim == ch)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
             obj = ch.GetEquipment(WearSlotIDs.Wield);
@@ -3666,7 +3666,7 @@ namespace CrimsonStainedLands
             }
             if (obj == null || obj.WeaponType != WeaponTypes.Dagger)
             {
-                ch.send("You must wield a dagger to circle stab someone.\n\r");
+                ch.send("You must wield a dagger to circle stab someone.\r\n");
                 return;
             }
 
@@ -3704,7 +3704,7 @@ namespace CrimsonStainedLands
                     {
                         case 1:
                             dam *= 3 / 2;
-                            ch.Act("You strike with precision and do extra damage!\n\r");
+                            ch.Act("You strike with precision and do extra damage!\r\n");
                             break;
                         case 2:
                             var affect = new AffectData();
@@ -3713,9 +3713,9 @@ namespace CrimsonStainedLands
                             affect.frequency = Frequency.Violence;
                             affect.flags.SETBIT(AffectFlags.Distracted);
                             victim.AffectToChar(affect);
-                            ch.Act("$N is distracted by your precise circle stab\n\r", victim);
-                            ch.Act("You are distracted by $n's precise circle stab\n\r", victim, type: ActType.ToVictim);
-                            ch.Act("$N is distracteb by $n's precise circle stab\n\r", victim, type: ActType.ToRoomNotVictim);
+                            ch.Act("$N is distracted by your precise circle stab\r\n", victim);
+                            ch.Act("You are distracted by $n's precise circle stab\r\n", victim, type: ActType.ToVictim);
+                            ch.Act("$N is distracteb by $n's precise circle stab\r\n", victim, type: ActType.ToRoomNotVictim);
                             break;
                         case 3:
                             var bleeding = SkillSpell.SkillLookup("bleeding");
@@ -3733,9 +3733,9 @@ namespace CrimsonStainedLands
                                 aff.displayName = "bleeding";
                                 aff.where = AffectWhere.ToAffects;
                                 victim.AffectToChar(aff);
-                                ch.Act("$N receives a deep wound from your precise circle stab\n\r", victim);
-                                ch.Act("You are deeply wounded by $n's precise circle stab\n\r", victim, type: ActType.ToVictim);
-                                ch.Act("$N is deeply wounded by $n's precise circle stab\n\r", victim, type: ActType.ToRoomNotVictim);
+                                ch.Act("$N receives a deep wound from your precise circle stab\r\n", victim);
+                                ch.Act("You are deeply wounded by $n's precise circle stab\r\n", victim, type: ActType.ToVictim);
+                                ch.Act("$N is deeply wounded by $n's precise circle stab\r\n", victim, type: ActType.ToRoomNotVictim);
                             }
 
                             break;
@@ -3756,9 +3756,9 @@ namespace CrimsonStainedLands
                                 aff.location = ApplyTypes.Strength;
                                 aff.where = AffectWhere.ToAffects;
                                 victim.AffectToChar(aff);
-                                ch.Act("$N is weakened by your precise circle stab\n\r", victim);
-                                ch.Act("You are weakened by $n's precise circle stab\n\r", victim, type: ActType.ToVictim);
-                                ch.Act("$N is weakened by $n's precise circle stab\n\r", victim, type: ActType.ToRoomNotVictim);
+                                ch.Act("$N is weakened by your precise circle stab\r\n", victim);
+                                ch.Act("You are weakened by $n's precise circle stab\r\n", victim, type: ActType.ToVictim);
+                                ch.Act("$N is weakened by $n's precise circle stab\r\n", victim, type: ActType.ToRoomNotVictim);
                             }
                             break;
 
@@ -3793,33 +3793,33 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage(skill) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             weapon = ch.GetEquipment(WearSlotIDs.Wield);
             if (weapon == null)
             {
-                ch.send("You first need to find a weapon to flurry with.\n\r");
+                ch.send("You first need to find a weapon to flurry with.\r\n");
                 return;
             }
 
             weapon2 = ch.GetEquipment(WearSlotIDs.DualWield);
             if (weapon2 == null)
             {
-                ch.send("You need to find another weapon to flurry with.\n\r");
+                ch.send("You need to find another weapon to flurry with.\r\n");
                 return;
             }
 
             if ((weapon.WeaponType != WeaponTypes.Sword) || (weapon2.WeaponType != WeaponTypes.Sword))
             {
-                ch.send("You must be wielding two swords to flurry.\n\r");
+                ch.send("You must be wielding two swords to flurry.\r\n");
                 return;
             }
 
@@ -3934,33 +3934,33 @@ namespace CrimsonStainedLands
 
             if (learned <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             weapon = ch.GetEquipment(WearSlotIDs.Wield);
             if (weapon == null)
             {
-                ch.send("You first need to find a weapon to drum with.\n\r");
+                ch.send("You first need to find a weapon to drum with.\r\n");
                 return;
             }
 
             weapon2 = ch.GetEquipment(WearSlotIDs.DualWield);
             if (weapon2 == null)
             {
-                ch.send("You need to find another weapon to drum with.\n\r");
+                ch.send("You need to find another weapon to drum with.\r\n");
                 return;
             }
 
             if ((weapon.WeaponType != WeaponTypes.Mace) || (weapon2.WeaponType != WeaponTypes.Mace))
             {
-                ch.send("You must be wielding two maces to drum.\n\r");
+                ch.send("You must be wielding two maces to drum.\r\n");
                 return;
             }
 
@@ -4028,20 +4028,20 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to mislead your foes.\n\r");
+                ch.send("You don't know how to mislead your foes.\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             AffectData aff;
             if ((aff = victim.FindAffect(skill)) != null)
             {
-                ch.send("They are already being misled.\n\r");
+                ch.send("They are already being misled.\r\n");
                 return;
             }
 
@@ -4119,23 +4119,23 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (!ch.Equipment.TryGetValue(WearSlotIDs.Wield, out weapon) || weapon == null || !weapon.extraFlags.ISSET(ExtraFlags.TwoHands))
             {
-                ch.send("You must be wielding a two-handed weapon to crusader strike someone.\n\r");
+                ch.send("You must be wielding a two-handed weapon to crusader strike someone.\r\n");
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
             else if (victim == ch)
             {
-                ch.send("You can't crusaders strike yourself.\n\r");
+                ch.send("You can't crusaders strike yourself.\r\n");
             }
 
             else if (chance > Utility.NumberPercent())
@@ -4178,24 +4178,24 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can bite someone.\n\r");
+                ch.send("Only animals can bite someone.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -4242,24 +4242,24 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can peck someone.\n\r");
+                ch.send("Only animals can peck someone.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -4306,20 +4306,20 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (ch.Form == null)
             {
-                ch.send("Only animals can sting someone.\n\r");
+                ch.send("Only animals can sting someone.\r\n");
             }
 
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
 
             var level = 3 - (int)ch.Form.Tier;
@@ -4363,13 +4363,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can claw someone.\n\r");
+                ch.send("Only animals can claw someone.\r\n");
                 return;
             }
             int dam;
@@ -4378,12 +4378,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             chance += (level * 2);
@@ -4426,13 +4426,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can ferociously attack someone.\n\r");
+                ch.send("Only animals can ferociously attack someone.\r\n");
                 return;
             }
 
@@ -4442,12 +4442,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -4498,13 +4498,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can trample someone.\n\r");
+                ch.send("Only animals can trample someone.\r\n");
                 return;
             }
 
@@ -4514,12 +4514,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -4567,22 +4567,22 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             if (victim == ch)
             {
-                ch.send("You can't berserkers strike yourself.\n\r");
+                ch.send("You can't berserkers strike yourself.\r\n");
                 return;
             }
             chance += level / 10;
@@ -4623,13 +4623,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You better leave the martial arts to fighters.\n\r");
+                ch.send("You better leave the martial arts to fighters.\r\n");
                 return;
             }
 
             if (ch.Fighting == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -4686,23 +4686,23 @@ namespace CrimsonStainedLands
 
             if (ch.Form == null)
             {
-                ch.send("You don't know how to hoof strike.\n\r");
+                ch.send("You don't know how to hoof strike.\r\n");
                 return;
             }
             var skill = SkillSpell.SkillLookup("hoof strike");
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to hoof strike.\n\r");
+                ch.send("You don't know how to hoof strike.\r\n");
                 return;
             }
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -4735,17 +4735,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to strike your enemy.\n\r");
+                ch.send("You don't know how to strike your enemy.\r\n");
                 return;
             }
             else if (ch.Form == null)
             {
-                ch.send("Only animals can strike their enemies.\n\r");
+                ch.send("Only animals can strike their enemies.\r\n");
                 return;
             }
             else if ((arguments.ISEMPTY() && (victim = ch.Fighting) == null) || (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null))
             {
-                ch.send("Strike who?\n\r");
+                ch.send("Strike who?\r\n");
                 return;
             }
             else if (chance < Utility.NumberPercent())
@@ -4775,17 +4775,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to pinch your enemy.\n\r");
+                ch.send("You don't know how to pinch your enemy.\r\n");
                 return;
             }
             else if (ch.Form == null)
             {
-                ch.send("Only animals can pinch their enemies.\n\r");
+                ch.send("Only animals can pinch their enemies.\r\n");
                 return;
             }
             else if ((arguments.ISEMPTY() && (victim = ch.Fighting) == null) || (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null))
             {
-                ch.send("Pinch who?\n\r");
+                ch.send("Pinch who?\r\n");
                 return;
             }
             else if (chance < Utility.NumberPercent())
@@ -4823,17 +4823,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to jump.\n\r");
+                ch.send("You don't know how to jump.\r\n");
                 return;
             }
             else if (ch.Form == null)
             {
-                ch.send("Only animals can jump.\n\r");
+                ch.send("Only animals can jump.\r\n");
                 return;
             }
             else if ((arguments.ISEMPTY() && (victim = ch.Fighting) == null) || (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null))
             {
-                ch.send("Jump on who?\n\r");
+                ch.send("Jump on who?\r\n");
                 return;
             }
             else if (chance < Utility.NumberPercent())
@@ -4883,13 +4883,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Fighting == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -4927,13 +4927,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Fighting == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -4977,13 +4977,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can swipe someone.\n\r");
+                ch.send("Only animals can swipe someone.\r\n");
                 return;
             }
             int dam;
@@ -4992,12 +4992,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5047,13 +5047,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can rip someone with their claws.\n\r");
+                ch.send("Only animals can rip someone with their claws.\r\n");
                 return;
             }
             int dam;
@@ -5062,12 +5062,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5143,13 +5143,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can devour someone.\n\r");
+                ch.send("Only animals can devour someone.\r\n");
                 return;
             }
             int dam;
@@ -5158,12 +5158,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5210,12 +5210,12 @@ namespace CrimsonStainedLands
 
             if (chance <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if ((torescue = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             foreach (var other in ch.Room.Characters)
@@ -5229,7 +5229,7 @@ namespace CrimsonStainedLands
 
             if (victim == null)
             {
-                ch.send("No one is fighting them.\n\r");
+                ch.send("No one is fighting them.\r\n");
                 return;
             }
 
@@ -5259,27 +5259,27 @@ namespace CrimsonStainedLands
             var chance = ch.GetSkillPercentage(skill);
             if (chance <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (tointercept = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anything.\n\r");
+                ch.send("You aren't fighting anything.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (tointercept = ch.GetCharacterFromRoomByName(arguments)) == null) || tointercept == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (tointercept.Fighting == ch)
             {
-                ch.send("They are already targeting you.\n\r");
+                ch.send("They are already targeting you.\r\n");
                 return;
             }
             else if (tointercept.Fighting == null)
             {
-                ch.send("They aren't fighting anyone.\n\r");
+                ch.send("They aren't fighting anyone.\r\n");
                 return;
             }
             else if (chance >= Utility.NumberPercent())
@@ -5325,7 +5325,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -5334,24 +5334,24 @@ namespace CrimsonStainedLands
                 dam_each = new int[]
                 {36, 63, 78, 95};
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Spear)
             {
-                ch.send("You must be wearing a spear to impale your enemy.\n\r");
+                ch.send("You must be wearing a spear to impale your enemy.\r\n");
                 return;
             }
             Character victim = null;
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5428,7 +5428,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -5437,24 +5437,24 @@ namespace CrimsonStainedLands
                 dam_each = new int[]
                 {36, 63, 78, 95};
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             //else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Spear)
             //{
-            //    ch.send("You must be wearing a spear to impale your enemy.\n\r");
+            //    ch.send("You must be wearing a spear to impale your enemy.\r\n");
             //    return;
             //}
             Character victim = null;
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5462,7 +5462,7 @@ namespace CrimsonStainedLands
             {
                 if (other.Fighting == ch)
                 {
-                    ch.send("You are too busy defending yourself.\n\r;");
+                    ch.send("You are too busy defending yourself.\r\n;");
                     return;
                 }
             }
@@ -5519,7 +5519,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -5529,7 +5529,7 @@ namespace CrimsonStainedLands
                 dam_each = new int[]
                 {36, 63, 78, 95};
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
 
@@ -5537,25 +5537,25 @@ namespace CrimsonStainedLands
 
             if (ch.Position == Positions.Fighting)
             {
-                ch.send("You're too busy fighting already!\n\r");
+                ch.send("You're too busy fighting already!\r\n");
                 return;
             }
 
             if (!ch.IsAffected(AffectFlags.Camouflage))
             {
-                ch.send("You aren't using any cover to set up for an ambush.\n\r");
+                ch.send("You aren't using any cover to set up for an ambush.\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
             if (victim == ch)
             {
-                ch.send("You can't ambush yourself.\n\r");
+                ch.send("You can't ambush yourself.\r\n");
                 return;
             }
             //chance += (level * 2);
@@ -5656,7 +5656,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -5665,26 +5665,26 @@ namespace CrimsonStainedLands
                 dam_each = new int[]
                 {36, 63, 78, 95};
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || (wield.WeaponType != WeaponTypes.Spear && wield.WeaponType != WeaponTypes.Polearm))
             {
-                ch.send("You must be wearing a spear or polearm to charge your enemy.\n\r");
+                ch.send("You must be wearing a spear or polearm to charge your enemy.\r\n");
                 return;
             }
             Character victim = null;
 
             if (ch.Position == Positions.Fighting)
             {
-                ch.send("You're too busy fighting already!\n\r");
+                ch.send("You're too busy fighting already!\r\n");
                 return;
             }
 
 
             if (arguments.ISEMPTY() || (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5744,7 +5744,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -5758,24 +5758,24 @@ namespace CrimsonStainedLands
                     60
                 };
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             //else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Spear)
             //{
-            //    ch.send("You must be wearing a spear to impale your enemy.\n\r");
+            //    ch.send("You must be wearing a spear to impale your enemy.\r\n");
             //    return;
             //}
             Character victim = null;
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -5820,28 +5820,28 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage(skill) + 20 <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You can't benefit from licking your wounds more yet.\n\r");
+                ch.send("You can't benefit from licking your wounds more yet.\r\n");
                 return;
             }
 
 
             if (Utility.NumberPercent() > ch.GetSkillPercentage(skill))
             {
-                ch.send("You lick your wounds but it has no effect.\n\r");
+                ch.send("You lick your wounds but it has no effect.\r\n");
                 ch.Act("$n licks $s wounds but doesn't seem to find any relief.", type: ActType.ToRoom);
                 ch.CheckImprove(skill, false, 3);
                 return;
             }
 
             ch.Act("$n spews healing saliva and antimicrobial substances to heal itself.", type: ActType.ToRoom);
-            ch.send("You spew healing saliva and antimicrobial substances to heal yourself.\n\r");
-            ch.send("You feel better.\n\r");
+            ch.send("You spew healing saliva and antimicrobial substances to heal yourself.\r\n");
+            ch.send("You feel better.\r\n");
 
             ch.HitPoints += (int)(ch.MaxHitPoints * 0.2);
             ch.HitPoints = Math.Min(ch.HitPoints, ch.MaxHitPoints);
@@ -5849,20 +5849,20 @@ namespace CrimsonStainedLands
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 4) && ch.IsAffected(AffectFlags.Plague))
             {
                 ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("plague")), AffectRemoveReason.Cleansed);
-                ch.Act("The sores on $n's body vanish.\n\r", type: ActType.ToRoom);
-                ch.send("The sores on your body vanish.\n\r");
+                ch.Act("The sores on $n's body vanish.\r\n", type: ActType.ToRoom);
+                ch.send("The sores on your body vanish.\r\n");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(AffectFlags.Blind))
             {
                 ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
-                ch.send("Your vision returns!\n\r");
+                ch.send("Your vision returns!\r\n");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && ch.IsAffected(AffectFlags.Poison))
             {
                 ch.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("poison")), AffectRemoveReason.Cleansed);
-                ch.send("A warm feeling goes through your body.\n\r");
+                ch.send("A warm feeling goes through your body.\r\n");
                 ch.Act("$n looks better.", type: ActType.ToRoom);
             }
             ch.CheckImprove(skill, true, 3);
@@ -5888,7 +5888,7 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage(skill) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
@@ -5932,7 +5932,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -5942,18 +5942,18 @@ namespace CrimsonStainedLands
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can tusk jab someone.\n\r");
+                ch.send("Only animals can tusk jab someone.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             var level = 3 - (int)ch.Form.Tier;
@@ -5997,7 +5997,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6007,18 +6007,18 @@ namespace CrimsonStainedLands
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can hoof stomp someone.\n\r");
+                ch.send("Only animals can hoof stomp someone.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             var level = 3 - (int)ch.Form.Tier;
@@ -6075,7 +6075,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6089,31 +6089,31 @@ namespace CrimsonStainedLands
                     130
                 };
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             //else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Spear)
             //{
-            //    ch.send("You must be wearing a spear to impale your enemy.\n\r");
+            //    ch.send("You must be wearing a spear to impale your enemy.\r\n");
             //    return;
             //}
             Character victim = null;
 
             if (ch.Position == Positions.Fighting)
             {
-                ch.send("You're too busy fighting already!\n\r");
+                ch.send("You're too busy fighting already!\r\n");
                 return;
             }
 
             if (ch.Room.sector != SectorTypes.Cave || ch.Room.sector != SectorTypes.Forest)
             {
-                ch.send("You don't see any ledges or trees suitable for diving from.\n\r");
+                ch.send("You don't see any ledges or trees suitable for diving from.\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -6170,7 +6170,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6184,31 +6184,31 @@ namespace CrimsonStainedLands
                     130
                 };
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             //else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Spear)
             //{
-            //    ch.send("You must be wearing a spear to impale your enemy.\n\r");
+            //    ch.send("You must be wearing a spear to impale your enemy.\r\n");
             //    return;
             //}
             Character victim = null;
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You haven't recovered from your last pounce attack yet!\n\r");
+                ch.send("You haven't recovered from your last pounce attack yet!\r\n");
                 return;
             }
 
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -6270,7 +6270,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6289,18 +6289,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to howl yet!\n\r");
+                ch.send("You aren't ready to howl yet!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -6372,7 +6372,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6386,19 +6386,19 @@ namespace CrimsonStainedLands
                     60
                 };
                 level = 3 - (int)ch.Form.Tier;
-                //ch.send("Only animals can impale someone.\n\r");
+                //ch.send("Only animals can impale someone.\r\n");
                 //return;
             }
             //else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Spear)
             //{
-            //    ch.send("You must be wearing a spear to impale your enemy.\n\r");
+            //    ch.send("You must be wearing a spear to impale your enemy.\r\n");
             //    return;
             //}
             //Character victim = null;
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to spray quills yet!\n\r");
+                ch.send("You aren't ready to spray quills yet!\r\n");
                 return;
             }
 
@@ -6446,13 +6446,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((affect = ch.FindAffect(skill)) != null)
             {
-                ch.send("You are already enraged!\n\r");
+                ch.send("You are already enraged!\r\n");
                 return;
             }
             else
@@ -6475,8 +6475,8 @@ namespace CrimsonStainedLands
                 affect.duration = 2;
                 affect.modifier = +5;
                 affect.displayName = "chest pound";
-                affect.endMessage = "Your rage subsides.\n\r";
-                affect.endMessageToRoom = "$n's rage subsides.\n\r";
+                affect.endMessage = "Your rage subsides.\r\n";
+                affect.endMessageToRoom = "$n's rage subsides.\r\n";
                 affect.affectType = AffectTypes.Skill;
                 ch.AffectToChar(affect);
 
@@ -6484,8 +6484,8 @@ namespace CrimsonStainedLands
                 ch.HitPoints = Math.Min(ch.HitPoints + heal, ch.MaxHitPoints);
 
 
-                ch.send("You pound your chest, becoming enraged.\n\r");
-                ch.Act("$n pounds $s chest, becoming enraged.\n\r", type: ActType.ToRoom);
+                ch.send("You pound your chest, becoming enraged.\r\n");
+                ch.Act("$n pounds $s chest, becoming enraged.\r\n", type: ActType.ToRoom);
                 ch.CheckImprove(skill, true, 1);
             }
         }
@@ -6504,7 +6504,7 @@ namespace CrimsonStainedLands
 
             if ((affect = ch.FindAffect(skill)) != null)
             {
-                ch.send("You are already empowered!\n\r");
+                ch.send("You are already empowered!\r\n");
                 return;
             }
             else
@@ -6540,8 +6540,8 @@ namespace CrimsonStainedLands
                 affect.duration = 2;
                 affect.modifier = Math.Max(3, ch.Level / 3);
                 affect.displayName = "laugh";
-                affect.endMessage = "Your empowering laugh subsides.\n\r";
-                affect.endMessageToRoom = "$n's empowering laugh subsides.\n\r";
+                affect.endMessage = "Your empowering laugh subsides.\r\n";
+                affect.endMessageToRoom = "$n's empowering laugh subsides.\r\n";
                 affect.affectType = AffectTypes.Skill;
                 ch.AffectToChar(affect);
 
@@ -6549,8 +6549,8 @@ namespace CrimsonStainedLands
                 ch.HitPoints = Math.Min(ch.HitPoints + heal, ch.MaxHitPoints);
 
 
-                ch.send("You let lose a laugh-like vocalization, invigorating yourself.\n\r");
-                ch.Act("$n lets lose a laugh-like vocalization, invigorating $mself.\n\r", type: ActType.ToRoom);
+                ch.send("You let lose a laugh-like vocalization, invigorating yourself.\r\n");
+                ch.Act("$n lets lose a laugh-like vocalization, invigorating $mself.\r\n", type: ActType.ToRoom);
                 ch.CheckImprove(skill, true, 1);
             }
         }
@@ -6577,7 +6577,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6597,18 +6597,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to release a noxious spray yet!\n\r");
+                ch.send("You aren't ready to release a noxious spray yet!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -6646,12 +6646,12 @@ namespace CrimsonStainedLands
                         affect.duration = 2 + level / 8;
                         affect.modifier = -5;
                         affect.displayName = "Noxious Spray";
-                        affect.endMessage = "You feel less sick.\n\r";
-                        affect.endMessageToRoom = "$n looks less sick.\n\r";
+                        affect.endMessage = "You feel less sick.\r\n";
+                        affect.endMessageToRoom = "$n looks less sick.\r\n";
                         affect.affectType = AffectTypes.Skill;
 
                         other.AffectToChar(affect);
-                        other.send("You feel very sick.\n\r");
+                        other.send("You feel very sick.\r\n");
                         other.Act("$n looks very ill.", null, null, null, ActType.ToRoom);
                     }
                 }
@@ -6693,7 +6693,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6713,18 +6713,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to spit venom again yet!\n\r");
+                ch.send("You aren't ready to spit venom again yet!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -6751,14 +6751,14 @@ namespace CrimsonStainedLands
                     blindaffect.duration = 3;
                     blindaffect.modifier = -4;
                     blindaffect.displayName = "Blinded";
-                    blindaffect.endMessage = "You can see again.\n\r";
-                    blindaffect.endMessageToRoom = "$n recovers their sight.\n\r";
+                    blindaffect.endMessage = "You can see again.\r\n";
+                    blindaffect.endMessageToRoom = "$n recovers their sight.\r\n";
                     blindaffect.affectType = AffectTypes.Skill;
 
                     victim.AffectToChar(blindaffect);
                     ch.Act("$n spits venom at $N, getting some in $S eyes.", victim, type: ActType.ToRoomNotVictim);
                     ch.Act("You spit venom at $N, getting some in $S eyes.", victim, type: ActType.ToChar);
-                    victim.Act("You are blinded by $N's venom!\n\r", ch);
+                    victim.Act("You are blinded by $N's venom!\r\n", ch);
                     victim.Act("$n appears to be blinded by $N's venom!", ch, null, null, ActType.ToRoomNotVictim);
                 }
             }
@@ -6783,12 +6783,12 @@ namespace CrimsonStainedLands
                 affect.duration = 6;
                 affect.modifier = -5;
                 affect.displayName = "Venom Poison";
-                affect.endMessage = "You feel less sick.\n\r";
-                affect.endMessageToRoom = "$n is looking less sick.\n\r";
+                affect.endMessage = "You feel less sick.\r\n";
+                affect.endMessageToRoom = "$n is looking less sick.\r\n";
                 affect.affectType = AffectTypes.Skill;
 
                 victim.AffectToChar(affect);
-                victim.send("You feel very sick.\n\r");
+                victim.send("You feel very sick.\r\n");
                 victim.Act("$n looks very ill.", null, null, null, ActType.ToRoom);
             }
 
@@ -6821,7 +6821,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -6841,18 +6841,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to shoot blood again!\n\r");
+                ch.send("You aren't ready to shoot blood again!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -6881,12 +6881,12 @@ namespace CrimsonStainedLands
                     blindaffect.duration = 3;
                     blindaffect.modifier = -4;
                     blindaffect.displayName = "Blinded";
-                    blindaffect.endMessage = "You can see again.\n\r";
-                    blindaffect.endMessageToRoom = "$n recovers their sight.\n\r";
+                    blindaffect.endMessage = "You can see again.\r\n";
+                    blindaffect.endMessageToRoom = "$n recovers their sight.\r\n";
                     blindaffect.affectType = AffectTypes.Skill;
 
                     victim.AffectToChar(blindaffect);
-                    victim.send("You are blinded!\n\r");
+                    victim.send("You are blinded!\r\n");
                     victim.Act("$n appears to be blinded!", null, null, null, ActType.ToRoom);
                 }
             }
@@ -6919,20 +6919,20 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to mislead your foes.\n\r");
+                ch.send("You don't know how to mislead your foes.\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             AffectData aff;
             if ((aff = victim.FindAffect(skill)) != null)
             {
-                ch.send("They are already being misled.\n\r");
+                ch.send("They are already being misled.\r\n");
                 return;
             }
 
@@ -7013,14 +7013,14 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to fly.\n\r");
+                ch.send("You don't know how to fly.\r\n");
                 return;
             }
 
             AffectData aff;
             if (ch.IsAffected(AffectFlags.Flying) || (aff = ch.FindAffect(skill)) != null)
             {
-                ch.send("You are already flying.\n\r");
+                ch.send("You are already flying.\r\n");
                 return;
             }
 
@@ -7070,7 +7070,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -7090,18 +7090,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to spray from your glands again!\n\r");
+                ch.send("You aren't ready to spray from your glands again!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -7131,12 +7131,12 @@ namespace CrimsonStainedLands
                     blindaffect.duration = 2;
                     blindaffect.modifier = -4;
                     blindaffect.displayName = "Blinded";
-                    blindaffect.endMessage = "You can see again.\n\r";
-                    blindaffect.endMessageToRoom = "$n recovers their sight.\n\r";
+                    blindaffect.endMessage = "You can see again.\r\n";
+                    blindaffect.endMessageToRoom = "$n recovers their sight.\r\n";
                     blindaffect.affectType = AffectTypes.Skill;
 
                     victim.AffectToChar(blindaffect);
-                    victim.send("You are blinded!\n\r");
+                    victim.send("You are blinded!\r\n");
                     victim.Act("$n appears to be blinded!", null, null, null, ActType.ToRoom);
                 }
             }
@@ -7162,8 +7162,8 @@ namespace CrimsonStainedLands
             affect.duration = 6;
             affect.modifier = 20;
             affect.displayName = "sprayed";
-            affect.endMessage = "Your stench wanes.\n\r";
-            affect.endMessageToRoom = "$n's stench wanes.\n\r";
+            affect.endMessage = "Your stench wanes.\r\n";
+            affect.endMessageToRoom = "$n's stench wanes.\r\n";
             affect.affectType = AffectTypes.Skill;
 
             victim.AffectToChar(affect);
@@ -7200,7 +7200,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -7220,18 +7220,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to venom strike again!\n\r");
+                ch.send("You aren't ready to venom strike again!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -7264,8 +7264,8 @@ namespace CrimsonStainedLands
                 affect.duration = 6;
                 affect.modifier = -10;
                 affect.displayName = "venom strike";
-                affect.endMessage = "You feel less sick.\n\r";
-                affect.endMessageToRoom = "$n appears less sick.\n\r";
+                affect.endMessage = "You feel less sick.\r\n";
+                affect.endMessageToRoom = "$n appears less sick.\r\n";
                 affect.affectType = AffectTypes.Skill;
 
                 victim.AffectToChar(affect);
@@ -7302,7 +7302,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -7322,12 +7322,12 @@ namespace CrimsonStainedLands
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -7358,8 +7358,8 @@ namespace CrimsonStainedLands
                 affect.duration = 6;
                 affect.modifier = -10;
                 affect.displayName = "venomous sting";
-                affect.endMessage = "You feel less sick.\n\r";
-                affect.endMessageToRoom = "$n appears less sick.\n\r";
+                affect.endMessage = "You feel less sick.\r\n";
+                affect.endMessageToRoom = "$n appears less sick.\r\n";
                 affect.affectType = AffectTypes.Skill;
 
                 victim.AffectToChar(affect);
@@ -7397,7 +7397,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -7417,18 +7417,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to secrete filament again!\n\r");
+                ch.send("You aren't ready to secrete filament again!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -7461,8 +7461,8 @@ namespace CrimsonStainedLands
                 affect.duration = 6;
                 affect.modifier = -5;
                 affect.displayName = "secreted filament";
-                affect.endMessage = "You escape the secreted filament.\n\r";
-                affect.endMessageToRoom = "$n escapes the secreted filament.\n\r";
+                affect.endMessage = "You escape the secreted filament.\r\n";
+                affect.endMessageToRoom = "$n escapes the secreted filament.\r\n";
                 affect.affectType = AffectTypes.Skill;
 
                 victim.AffectToChar(affect);
@@ -7514,7 +7514,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -7534,18 +7534,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to excete acid again!\n\r");
+                ch.send("You aren't ready to excete acid again!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -7593,8 +7593,8 @@ namespace CrimsonStainedLands
                 affect.duration = 6;
                 affect.modifier = -2;
                 affect.displayName = "excreted acid";
-                affect.endMessage = "The burning lessens.\n\r";
-                affect.endMessageToRoom = "$n looks relieved from the excreted acid.\n\r";
+                affect.endMessage = "The burning lessens.\r\n";
+                affect.endMessageToRoom = "$n looks relieved from the excreted acid.\r\n";
                 affect.affectType = AffectTypes.Skill;
 
                 victim.AffectToChar(affect);
@@ -7661,7 +7661,7 @@ namespace CrimsonStainedLands
 
                     if (!victim.IsAffected(skill))
                     {
-                        ch.send("You aren't ready to excete acid again!\n\r");
+                        ch.send("You aren't ready to excete acid again!\r\n");
                         return;
                     }
 
@@ -7706,19 +7706,19 @@ namespace CrimsonStainedLands
 
             if (ch.GetSkillPercentage(skill) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You can't search for more herbs yet.\n\r");
+                ch.send("You can't search for more herbs yet.\r\n");
                 return;
             }
 
             if (ch.Room == null || !ch.Room.IsWilderness)
             {
-                ch.send("You must be in the wilderness to find herbs.\n\r");
+                ch.send("You must be in the wilderness to find herbs.\r\n");
                 return;
             }
 
@@ -7728,13 +7728,13 @@ namespace CrimsonStainedLands
                 victim = ch;
             else if ((victim = ch.GetCharacterFromRoomByName(argument)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
             if (Utility.NumberPercent() > ch.GetSkillPercentage(skill))
             {
-                ch.send("You fail to find any herbs here.\n\r");
+                ch.send("You fail to find any herbs here.\r\n");
                 ch.Act("$n fails to find any herbs.", type: ActType.ToRoom);
                 ch.CheckImprove(skill, false, 3);
                 return;
@@ -7743,15 +7743,15 @@ namespace CrimsonStainedLands
             if (victim == ch)
             {
                 ch.Act("$n searches for and finds healing herbs.", type: ActType.ToRoom);
-                ch.send("You search for and find healing herbs.\n\r");
-                ch.send("You feel better.\n\r");
+                ch.send("You search for and find healing herbs.\r\n");
+                ch.send("You feel better.\r\n");
             }
             else
             {
                 ch.Act("$n searches for and finds healing herbs and applies them to $N.", victim, type: ActType.ToRoomNotVictim);
                 ch.Act("$n searches for and finds healing herbs and applies them to you.", victim, type: ActType.ToVictim);
-                ch.Act("You search for and find healing herbs and apply them to $N.\n\r", victim);
-                victim.send("You feel better.\n\r");
+                ch.Act("You search for and find healing herbs and apply them to $N.\r\n", victim);
+                victim.send("You feel better.\r\n");
             }
             victim.HitPoints += victim.MaxHitPoints / 4;
             victim.HitPoints = Math.Min(victim.HitPoints, victim.MaxHitPoints);
@@ -7759,20 +7759,20 @@ namespace CrimsonStainedLands
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 4) && victim.IsAffected(AffectFlags.Plague))
             {
                 victim.AffectFromChar(victim.FindAffect(SkillSpell.SkillLookup("plague")), AffectRemoveReason.Cleansed);
-                victim.Act("The sores on $n's body vanish.\n\r", type: ActType.ToRoom);
-                victim.send("The sores on your body vanish.\n\r");
+                victim.Act("The sores on $n's body vanish.\r\n", type: ActType.ToRoom);
+                victim.send("The sores on your body vanish.\r\n");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, (ch.Level)) && ch.IsAffected(AffectFlags.Blind))
             {
                 victim.AffectFromChar(ch.FindAffect(SkillSpell.SkillLookup("blindness")), AffectRemoveReason.Cleansed);
-                victim.send("Your vision returns!\n\r");
+                victim.send("Your vision returns!\r\n");
             }
 
             if (Utility.NumberPercent() < Math.Max(1, ch.Level / 2) && victim.IsAffected(AffectFlags.Poison))
             {
                 victim.AffectFromChar(victim.FindAffect(SkillSpell.SkillLookup("poison")), AffectRemoveReason.Cleansed);
-                victim.send("A warm feeling goes through your body.\n\r");
+                victim.send("A warm feeling goes through your body.\r\n");
                 victim.Act("$n looks better.", type: ActType.ToRoom);
             }
             ch.CheckImprove(skill, true, 3);
@@ -7814,7 +7814,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -7822,12 +7822,12 @@ namespace CrimsonStainedLands
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -7872,13 +7872,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -7911,13 +7911,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -7951,13 +7951,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -7990,13 +7990,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -8031,7 +8031,7 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
@@ -8046,7 +8046,7 @@ namespace CrimsonStainedLands
 
             if (victim == null)
             {
-                ch.send("There is no one fighting you from behind or the side.\n\r");
+                ch.send("There is no one fighting you from behind or the side.\r\n");
                 return;
             }
 
@@ -8079,13 +8079,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -8119,13 +8119,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -8176,13 +8176,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -8216,13 +8216,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -8264,13 +8264,13 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (ch.Room.Characters.Count <= 1)
             {
-                ch.send("There is no one here to fight.\n\r");
+                ch.send("There is no one here to fight.\r\n");
                 return;
             }
 
@@ -8310,24 +8310,24 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             if (victim == null)
             {
-                ch.send("You have no victim.\n\r");
+                ch.send("You have no victim.\r\n");
                 return;
             }
 
@@ -8372,7 +8372,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -8386,12 +8386,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -8446,7 +8446,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -8460,12 +8460,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -8520,7 +8520,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -8534,12 +8534,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -8594,35 +8594,35 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (arguments.ISEMPTY())
             {
-                ch.send("Strangle who?\n\r");
+                ch.send("Strangle who?\r\n");
                 return;
             }
             else if (ch.Fighting != null)
             {
-                ch.send("You're too busy fighting.\n\r");
+                ch.send("You're too busy fighting.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (ch == victim)
             {
-                ch.send("You can't strangle yourself.\n\r");
+                ch.send("You can't strangle yourself.\r\n");
             }
             else if (victim is NPCData && ((NPCData)victim).Protects.Any())
             {
-                ch.send("You can't sneak up on them.\n\r");
+                ch.send("You can't sneak up on them.\r\n");
             }
             else if (victim.IsAffected(AffectFlags.Sleep))
             {
-                ch.send("They are already asleep.\n\r");
+                ch.send("They are already asleep.\r\n");
                 return;
             }
             else
@@ -8678,7 +8678,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 10 <= 11)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -8741,7 +8741,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 10 <= 11)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -8801,13 +8801,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (!ItemTemplateData.Templates.TryGetValue(2966, out var ItemTemplate))
             {
-                ch.send("You fail.\n\r");
+                ch.send("You fail.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -8840,12 +8840,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (CheckAcrobatics(ch, victim)) return;
@@ -8871,7 +8871,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return false;
             }
 
@@ -8986,12 +8986,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             var skill = SkillSpell.SkillLookup("kotegaeshi");
@@ -9014,7 +9014,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return false;
             }
 
@@ -9072,12 +9072,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -9101,7 +9101,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return false;
             }
 
@@ -9164,7 +9164,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -9219,7 +9219,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 10) <= 11)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -9229,12 +9229,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -9243,7 +9243,7 @@ namespace CrimsonStainedLands
 
             if (wield == null || wield.WeaponType != WeaponTypes.Staff)
             {
-                ch.send("You must use a staff to pugil someone.\n\r");
+                ch.send("You must use a staff to pugil someone.\r\n");
                 return;
             }
 
@@ -9291,7 +9291,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 10) <= 11)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -9301,12 +9301,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -9350,19 +9350,19 @@ namespace CrimsonStainedLands
             //if (!ch.Learned.TryGetValue(sn, out lvl) || lvl <= 1)
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((affect = ch.FindAffect(skill)) != null)
             {
-                ch.send("You are already enduring!\n\r");
+                ch.send("You are already enduring!\r\n");
                 return;
             }
 
             else if (ch.ManaPoints < 20)
             {
-                ch.send("You don't have enough mana to endure.\n\r");
+                ch.send("You don't have enough mana to endure.\r\n");
                 return;
             }
 
@@ -9389,8 +9389,8 @@ namespace CrimsonStainedLands
                     affect.duration = 8 + (ch.Level / 4);
                     affect.modifier = amt;
                     affect.displayName = skill.name;
-                    affect.endMessage = "You are no longer enduring.\n\r";
-                    //affect.endMessageToRoom = "$n's rage subsides.\n\r";
+                    affect.endMessage = "You are no longer enduring.\r\n";
+                    //affect.endMessageToRoom = "$n's rage subsides.\r\n";
                     affect.affectType = AffectTypes.Skill;
                     ch.AffectToChar(affect);
 
@@ -9399,14 +9399,14 @@ namespace CrimsonStainedLands
                     ch.ManaPoints -= 20;
 
 
-                    ch.send("You feel able to persevere better.\n\r");
-                    //ch.Act("$n becomes filled with rage.\n\r", type: ActType.ToRoom);
+                    ch.send("You feel able to persevere better.\r\n");
+                    //ch.Act("$n becomes filled with rage.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, true, 1);
                 }
                 else
                 {
-                    ch.send("You try to endure but fail.\n\r");
-                    //ch.Act("$n manages to turn their face red.\n\r", type: ActType.ToRoom);
+                    ch.send("You try to endure but fail.\r\n");
+                    //ch.Act("$n manages to turn their face red.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, false, 1);
                 }
             }
@@ -9417,13 +9417,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Fighting == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             if (ch.IsAffected(skill))
@@ -9457,13 +9457,13 @@ namespace CrimsonStainedLands
                 affect.affectType = AffectTypes.Skill;
                 ch.AffectToChar(affect);
 
-                ch.send("You have successfully prepared an owaza attack.\n\r");
+                ch.send("You have successfully prepared an owaza attack.\r\n");
                 ch.CheckImprove(skill, true, 1);
             }
             else
             {
-                ch.send("You try to owaza but fail.\n\r");
-                ch.Act("$n tries to do somee fancy moves but fails.\n\r", type: ActType.ToRoom);
+                ch.send("You try to owaza but fail.\r\n");
+                ch.Act("$n tries to do somee fancy moves but fails.\r\n", type: ActType.ToRoom);
                 ch.CheckImprove(skill, false, 1);
             }
         }
@@ -9497,7 +9497,7 @@ namespace CrimsonStainedLands
             if (ch.Form == null)
             {
                 if (!ch.CheckSocials("spit", arguments))
-                    ch.send("You must be in camel form to spit!\n\r");
+                    ch.send("You must be in camel form to spit!\r\n");
                 return;
             }
 
@@ -9508,7 +9508,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -9516,18 +9516,18 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to spit again yet!\n\r");
+                ch.send("You aren't ready to spit again yet!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
 
@@ -9559,12 +9559,12 @@ namespace CrimsonStainedLands
                         blindaffect.duration = 1;
                         blindaffect.modifier = -4;
                         blindaffect.displayName = "Blinded";
-                        blindaffect.endMessage = "You can see again.\n\r";
-                        blindaffect.endMessageToRoom = "$n recovers their sight.\n\r";
+                        blindaffect.endMessage = "You can see again.\r\n";
+                        blindaffect.endMessageToRoom = "$n recovers their sight.\r\n";
                         blindaffect.affectType = AffectTypes.Skill;
 
                         victim.AffectToChar(blindaffect);
-                        victim.Act("You are blinded by $N's spit of saliva and partially digested food!\n\r", ch);
+                        victim.Act("You are blinded by $N's spit of saliva and partially digested food!\r\n", ch);
                         victim.Act("$n appears to be blinded by $N's saliva and partially digested food!", ch, null, null, ActType.ToRoomNotVictim);
                         victim.Act("$n appears to be blinded by your spit of saliva and partially digested food!", ch, null, null, ActType.ToVictim);
                     }
@@ -9608,7 +9608,7 @@ namespace CrimsonStainedLands
             if (ch.Form == null)
             {
                 if (!ch.CheckSocials("snarl", arguments))
-                    ch.send("You must be in form to growl!\n\r");
+                    ch.send("You must be in form to growl!\r\n");
                 return;
             }
 
@@ -9619,18 +9619,18 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             Character victim = null;
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to snarl again yet!\n\r");
+                ch.send("You aren't ready to snarl again yet!\r\n");
                 return;
             }
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -9662,7 +9662,7 @@ namespace CrimsonStainedLands
                 aff.endMessage = "You feel ready to snarl again.";
                 ch.AffectToChar(aff);
 
-                victim.Act("Your aim is hindered by $N's snarl!\n\r", ch);
+                victim.Act("Your aim is hindered by $N's snarl!\r\n", ch);
                 victim.Act("$n's aim appears to hindered by $N's snarl!", ch, null, null, ActType.ToRoomNotVictim);
                 victim.Act("$n's aim appears to be hindered by your snarl!", ch, null, null, ActType.ToVictim);
 
@@ -9684,12 +9684,12 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.IsAffected(skill))
             {
-                ch.send("Your tail has not fully grown back yet.\n\r");
+                ch.send("Your tail has not fully grown back yet.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -9715,7 +9715,7 @@ namespace CrimsonStainedLands
                 tailaffect.hidden = true;
                 tailaffect.flags.Add(AffectFlags.SuddenDeath);
                 tailaffect.duration = 4;
-                tailaffect.endMessageToRoom = "$n finally subsides and dies.\n\r";
+                tailaffect.endMessageToRoom = "$n finally subsides and dies.\r\n";
                 Tail.AffectToChar(tailaffect);
 
                 foreach (var attacker in ch.Room.Characters.ToArray())
@@ -9736,13 +9736,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if ((affect = victim.FindAffect(skill)) != null)
             {
-                ch.send("You are already protected by barkskin.\n\r");
+                ch.send("You are already protected by barkskin.\r\n");
                 return;
             }
             else
@@ -9759,8 +9759,8 @@ namespace CrimsonStainedLands
                 affect.duration = 7;
                 affect.modifier = -40;
                 affect.displayName = "barkskin";
-                affect.endMessage = "The toughness of your barkskin fades.\n\r";
-                affect.endMessageToRoom = "The toughness of $n's barkskin fades.\n\r";
+                affect.endMessage = "The toughness of your barkskin fades.\r\n";
+                affect.endMessageToRoom = "The toughness of $n's barkskin fades.\r\n";
                 victim.AffectToChar(affect);
                 ch.CheckImprove(skill, true, 1);
             }
@@ -9780,7 +9780,7 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -9789,12 +9789,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -9803,7 +9803,7 @@ namespace CrimsonStainedLands
 
             if (wield == null || (wield.WeaponType != WeaponTypes.Whip && wield.WeaponType != WeaponTypes.Flail))
             {
-                ch.send("You must use a whip or flail to lash someone.\n\r");
+                ch.send("You must use a whip or flail to lash someone.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -9842,17 +9842,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.Room.sector == SectorTypes.City || ch.Room.sector == SectorTypes.Inside)
             {
-                ch.send("You cannot find a suitable tree branch from which to fashion your staff.\n\r");
+                ch.send("You cannot find a suitable tree branch from which to fashion your staff.\r\n");
                 return;
             }
             if (!ItemTemplateData.Templates.TryGetValue(2967, out var ItemTemplate))
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -9896,17 +9896,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.Room.sector == SectorTypes.City || ch.Room.sector == SectorTypes.Inside)
             {
-                ch.send("You cannot find a suitable tree branch from which to fashion your spear.\n\r");
+                ch.send("You cannot find a suitable tree branch from which to fashion your spear.\r\n");
                 return;
             }
             if (!ItemTemplateData.Templates.TryGetValue(2969, out var ItemTemplate))
             {
-                ch.send("You failed.\n\r");
+                ch.send("You failed.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -9951,17 +9951,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.IsAffected(skill))
             {
-                ch.send("You cannot commune with the owls yet.\n\r");
+                ch.send("You cannot commune with the owls yet.\r\n");
                 return;
             }
             if (ch.Pet != null)
             {
-                ch.send("You cannot have more than one wild creature assisting you.\n\r");
+                ch.send("You cannot have more than one wild creature assisting you.\r\n");
                 return;
             }
 
@@ -10020,17 +10020,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.IsAffected(skill))
             {
-                ch.send("You cannot commune with the wolves yet.\n\r");
+                ch.send("You cannot commune with the wolves yet.\r\n");
                 return;
             }
             if (ch.Pet != null)
             {
-                ch.send("You cannot have more than one wild creature assisting you.\n\r");
+                ch.send("You cannot have more than one wild creature assisting you.\r\n");
                 return;
             }
 
@@ -10090,17 +10090,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.IsAffected(skill))
             {
-                ch.send("You cannot commune with the serpents yet.\n\r");
+                ch.send("You cannot commune with the serpents yet.\r\n");
                 return;
             }
             if (ch.Pet != null)
             {
-                ch.send("You cannot have more than one wild creature assisting you.\n\r");
+                ch.send("You cannot have more than one wild creature assisting you.\r\n");
                 return;
             }
 
@@ -10160,17 +10160,17 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.IsAffected(skill))
             {
-                ch.send("You cannot commune with the bears yet.\n\r");
+                ch.send("You cannot commune with the bears yet.\r\n");
                 return;
             }
             if (ch.Pet != null)
             {
-                ch.send("You cannot have more than one wild creature assisting you.\n\r");
+                ch.send("You cannot have more than one wild creature assisting you.\r\n");
                 return;
             }
 
@@ -10234,23 +10234,23 @@ namespace CrimsonStainedLands
             //if (!ch.Learned.TryGetValue(sn, out lvl) || lvl <= 1)
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("Huh?\n\r");
+                ch.send("Huh?\r\n");
                 return;
             }
 
             if ((affect = ch.FindAffect(skill)) != null)
             {
-                ch.send("You are already inspired!\n\r");
+                ch.send("You are already inspired!\r\n");
                 return;
             }
             else if (ch.Position == Positions.Standing && ch.Fighting == null)
             {
-                ch.send("You must be fighting to warcry!\n\r");
+                ch.send("You must be fighting to warcry!\r\n");
                 return;
             }
             else if (ch.ManaPoints < 20)
             {
-                ch.send("You don't have enough mana to warcry.\n\r");
+                ch.send("You don't have enough mana to warcry.\r\n");
                 return;
             }
 
@@ -10276,21 +10276,21 @@ namespace CrimsonStainedLands
                     affect.duration = 10;
                     affect.modifier = +8;
                     affect.displayName = "warcry";
-                    affect.endMessage = "Your warcry subsides.\n\r";
-                    affect.endMessageToRoom = "$n's warcry subsides.\n\r";
+                    affect.endMessage = "Your warcry subsides.\r\n";
+                    affect.endMessageToRoom = "$n's warcry subsides.\r\n";
                     affect.affectType = AffectTypes.Skill;
                     ch.AffectToChar(affect);
 
                     ch.ManaPoints -= 20;
 
-                    ch.send("You are inspired by your warcry.\n\r");
-                    ch.Act("$n becomes inspired by $s warcry.\n\r", type: ActType.ToRoom);
+                    ch.send("You are inspired by your warcry.\r\n");
+                    ch.Act("$n becomes inspired by $s warcry.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, true, 1);
                 }
                 else
                 {
-                    ch.send("You choke up and fail to yell your warcry.\n\r");
-                    ch.Act("$n chokes up and fails to yell their warcry.\n\r", type: ActType.ToRoom);
+                    ch.send("You choke up and fail to yell your warcry.\r\n");
+                    ch.Act("$n chokes up and fails to yell their warcry.\r\n", type: ActType.ToRoom);
                     ch.CheckImprove(skill, false, 1);
                 }
             }
@@ -10308,34 +10308,34 @@ namespace CrimsonStainedLands
 
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 ch.WaitState(Game.PULSE_VIOLENCE * 1);
                 return;
             }
             ItemData shield;
             if (!ch.Equipment.TryGetValue(WearSlotIDs.Shield, out shield) || shield == null)
             {
-                ch.send("You must be holding a shield to shield bash someone.\n\r");
+                ch.send("You must be holding a shield to shield bash someone.\r\n");
                 return;
             }
             if ((victim = (ch.GetCharacterFromRoomByName(arguments, ref count)) ?? ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
             if (CheckIsSafe(ch, victim)) return;
 
             if (victim == ch)
-                ch.send("You can't shield bash yourself!.\n\r");
+                ch.send("You can't shield bash yourself!.\r\n");
 
             else if (CheckAcrobatics(ch, victim)) return;
 
             else if (victim.FindAffect(SkillSpell.SkillLookup("protective shield")) != null)
             {
                 ch.WaitState(Game.PULSE_VIOLENCE);
-                ch.Act("You try to shield bash $N but miss $M.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n tries to shield bash $N but miss $M.\n\r", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("You try to shield bash $N but miss $M.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n tries to shield bash $N but miss $M.\r\n", victim, type: ActType.ToRoomNotVictim);
             }
             else if (skillPercent > Utility.NumberPercent())
             {
@@ -10343,9 +10343,9 @@ namespace CrimsonStainedLands
 
                 ch.Position = Positions.Fighting;
                 ch.Fighting = victim;
-                ch.Act("You shield bash $N and they fall to the ground.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n shield bashes $N to the ground.\n\r", victim, type: ActType.ToRoomNotVictim);
-                victim.send("{0} shield bashes you to the ground.\n\r", ch.Display(victim));
+                ch.Act("You shield bash $N and they fall to the ground.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n shield bashes $N to the ground.\r\n", victim, type: ActType.ToRoomNotVictim);
+                victim.send("{0} shield bashes you to the ground.\r\n", ch.Display(victim));
 
                 Combat.Damage(ch, victim, dam, skill);
                 ch.WaitState(Game.PULSE_VIOLENCE * 2);
@@ -10357,7 +10357,7 @@ namespace CrimsonStainedLands
             else
             {
                 ch.WaitState(Game.PULSE_VIOLENCE * 1);
-                ch.send("You failed to shield bash.\n\r");
+                ch.send("You failed to shield bash.\r\n");
                 ch.CheckImprove(skill, false, 1);
             }
         }
@@ -10382,19 +10382,19 @@ namespace CrimsonStainedLands
             };
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (!ch.Equipment.TryGetValue(WearSlotIDs.Shield, out shield) || shield == null)
             {
-                ch.send("You must be holding a shield to perform this maneuver.\n\r");
+                ch.send("You must be holding a shield to perform this maneuver.\r\n");
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
             else if (chance > Utility.NumberPercent())
             {
@@ -10407,9 +10407,9 @@ namespace CrimsonStainedLands
 
                 dam = Utility.Random(dam_each[level], dam_each[level] * 2);
 
-                ch.Act("You swing your shield outward and upward, then make a quick, powerful attack to $N.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n swings $s shield outward and upward, then makes a quick, powerful attack to $N.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n swings $s shield outward and upward, then strikes you with a quick, powerful attack.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You swing your shield outward and upward, then make a quick, powerful attack to $N.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n swings $s shield outward and upward, then makes a quick, powerful attack to $N.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n swings $s shield outward and upward, then strikes you with a quick, powerful attack.\r\n", victim, type: ActType.ToVictim);
                 ch.CheckImprove(skill, true, 1);
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
             }
@@ -10417,9 +10417,9 @@ namespace CrimsonStainedLands
             {
                 ch.WaitState(skill.waitTime);
 
-                ch.Act("You swing your shield outward and upward, but fail to make a quick, powerful attack to $N.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n swings $s shield outward and upward, but fails to make a quick, powerful attack to $N.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n swings $s shield outward and upward, but fails to strike you .\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You swing your shield outward and upward, but fail to make a quick, powerful attack to $N.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n swings $s shield outward and upward, but fails to make a quick, powerful attack to $N.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n swings $s shield outward and upward, but fails to strike you .\r\n", victim, type: ActType.ToVictim);
 
                 ch.CheckImprove(skill, false, 1);
                 Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Bash);
@@ -10443,13 +10443,13 @@ namespace CrimsonStainedLands
             int chance;
             if ((chance = ch.GetSkillPercentage(skill) + 10) <= 11)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             ItemData weapon;
             if (ch.Equipment.TryGetValue(WearSlotIDs.Wield, out weapon) && weapon != null)
             {
-                ch.send("You must be bare-handed to perform this maneuver.\n\r");
+                ch.send("You must be bare-handed to perform this maneuver.\r\n");
                 return;
             }
             int dam;
@@ -10458,12 +10458,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && ch.Fighting == null)
             {
-                ch.send("Who did you want to palm smash?\n\r");
+                ch.send("Who did you want to palm smash?\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("There is no one here to palm smash.\n\r");
+                ch.send("There is no one here to palm smash.\r\n");
                 return;
             }
 
@@ -10479,9 +10479,9 @@ namespace CrimsonStainedLands
 
                 dam = Utility.Random(dam_each[level] * 2, dam_each[level] * 3);
 
-                ch.Act("You smash the palm of your hand forward, making a quick, powerful attack to $N.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n smashes $s palm forward, quickly stricking $N.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n smashes $s palm forward, quickly stricking you with a powerful attack.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You smash the palm of your hand forward, making a quick, powerful attack to $N.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n smashes $s palm forward, quickly stricking $N.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n smashes $s palm forward, quickly stricking you with a powerful attack.\r\n", victim, type: ActType.ToVictim);
 
                 Combat.Damage(ch, victim, dam, skill, WeaponDamageTypes.Bash);
                 victim.WaitState(Game.PULSE_VIOLENCE * 1);
@@ -10490,9 +10490,9 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.Act("You try to smash $N with the palm of your hand but miss.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n tries to smash $N with $s palm but misses.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n tries to smash you with $s palm, but misses.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You try to smash $N with the palm of your hand but miss.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n tries to smash $N with $s palm but misses.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n tries to smash you with $s palm, but misses.\r\n", victim, type: ActType.ToVictim);
                 ch.CheckImprove(skill, false, 1);
                 Combat.Damage(ch, victim, 0, skill, WeaponDamageTypes.Bash);
             }
@@ -10519,7 +10519,7 @@ namespace CrimsonStainedLands
 
             if ((learned = ch.GetSkillPercentage(skill) + 20) <= 11)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             ItemData weapon;
@@ -10528,13 +10528,13 @@ namespace CrimsonStainedLands
                 (ch.Equipment.TryGetValue(WearSlotIDs.Held, out weapon) && weapon != null) ||
                 (ch.Equipment.TryGetValue(WearSlotIDs.DualWield, out weapon) && weapon != null))
             {
-                ch.send("You must be bare-handed to perform this maneuver.\n\r");
+                ch.send("You must be bare-handed to perform this maneuver.\r\n");
                 return;
             }
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -10618,7 +10618,7 @@ namespace CrimsonStainedLands
 
             if ((learned = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || (wield.WeaponType != WeaponTypes.Mace))
@@ -10629,7 +10629,7 @@ namespace CrimsonStainedLands
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
 
@@ -10707,26 +10707,26 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             else if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || (wield.WeaponType != WeaponTypes.Spear && wield.WeaponType != WeaponTypes.Polearm))
             {
-                ch.send("You must be wielding a spear or polearm to lance charge your enemy.\n\r");
+                ch.send("You must be wielding a spear or polearm to lance charge your enemy.\r\n");
                 return;
             }
             Character victim = null;
 
             if (ch.Position == Positions.Fighting)
             {
-                ch.send("You're too busy fighting already!\n\r");
+                ch.send("You're too busy fighting already!\r\n");
                 return;
             }
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -10783,19 +10783,19 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             Character victim = null;
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Sword)
             {
-                ch.send("You must be wielding a sword to sabre charge your enemy.\n\r");
+                ch.send("You must be wielding a sword to sabre charge your enemy.\r\n");
                 return;
             }
 
@@ -10853,19 +10853,19 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             Character victim = null;
 
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             if ((wield = ch.GetEquipment(WearSlotIDs.Wield)) == null || wield.WeaponType != WeaponTypes.Mace)
             {
-                ch.send("You must be wielding a mace to crush charge your enemy.\n\r");
+                ch.send("You must be wielding a mace to crush charge your enemy.\r\n");
                 return;
             }
 
@@ -10909,7 +10909,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
@@ -10923,12 +10923,12 @@ namespace CrimsonStainedLands
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
 
@@ -10992,16 +10992,16 @@ namespace CrimsonStainedLands
             //if (!ch.Learned.TryGetValue(skill, out lvl) || lvl <= 1)
             if ((skillPercent = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.Act("You don't know how to do that.\n\r");
+                ch.Act("You don't know how to do that.\r\n");
             }
 
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.Act("You aren't fighting anyone.\n\r");
+                ch.Act("You aren't fighting anyone.\r\n");
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments, ref count)) == null)
             {
-                ch.Act("They aren't here!\n\r");
+                ch.Act("They aren't here!\r\n");
             }
 
             else if (CheckIsSafe(ch, victim))
@@ -11010,12 +11010,12 @@ namespace CrimsonStainedLands
             }
             else if (victim == ch)
             {
-                ch.Act("You can't weapon trip yourself!.\n\r");
+                ch.Act("You can't weapon trip yourself!.\r\n");
             }
             else if ((weapon = ch.GetEquipment(WearSlotIDs.Wield)) == null ||
                 !(new WeaponTypes[] { WeaponTypes.Mace, WeaponTypes.Sword, WeaponTypes.Spear }).Contains(weapon.WeaponType))
             {
-                ch.Act("You must be wielding a mace, sword, or spear in your main hand to do that.\n\r");
+                ch.Act("You must be wielding a mace, sword, or spear in your main hand to do that.\r\n");
             }
 
             else if (skillPercent > Utility.NumberPercent())
@@ -11024,9 +11024,9 @@ namespace CrimsonStainedLands
 
                 ch.Position = Positions.Fighting;
                 ch.Fighting = victim;
-                ch.Act("You weapon trip $N and $E falls to the ground.\n\r", victim);
-                ch.Act("$n weapon trips $N to the ground.\n\r", victim, type: ActType.ToRoomNotVictim);
-                victim.Act("$N weapon trips you to the ground.\n\r", ch);
+                ch.Act("You weapon trip $N and $E falls to the ground.\r\n", victim);
+                ch.Act("$n weapon trips $N to the ground.\r\n", victim, type: ActType.ToRoomNotVictim);
+                victim.Act("$N weapon trips you to the ground.\r\n", ch);
 
                 Combat.Damage(ch, victim, dam, skill);
                 ch.WaitState(skill.waitTime);
@@ -11041,9 +11041,9 @@ namespace CrimsonStainedLands
             }
             else
             {
-                ch.Act("You fail to weapon trip $N to the ground.\n\r", victim);
-                ch.Act("$n fails to weapon trip $N to the ground.\n\r", victim, type: ActType.ToRoomNotVictim);
-                victim.Act("$N fails to weapon trip you to the ground.\n\r", ch);
+                ch.Act("You fail to weapon trip $N to the ground.\r\n", victim);
+                ch.Act("$n fails to weapon trip $N to the ground.\r\n", victim, type: ActType.ToRoomNotVictim);
+                victim.Act("$N fails to weapon trip you to the ground.\r\n", ch);
                 ch.WaitState(skill.waitTime);
                 Combat.Damage(ch, victim, 0, skill);
                 ch.CheckImprove(skill, false, 1);
@@ -11059,13 +11059,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY())
             {
-                ch.send("Sap who?\n\r");
+                ch.send("Sap who?\r\n");
                 return;
             }
             else if (victim == ch)
@@ -11074,28 +11074,28 @@ namespace CrimsonStainedLands
             }
             else if (ch.Fighting != null)
             {
-                ch.send("You're too busy fighting.\n\r");
+                ch.send("You're too busy fighting.\r\n");
                 return;
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (victim is NPCData && ((NPCData)victim).Protects.Any())
             {
-                ch.send("You can't sneak up on them.\n\r");
+                ch.send("You can't sneak up on them.\r\n");
             }
             else if (ch == victim)
-                ch.send("You can't sap yourself.\n\r");
+                ch.send("You can't sap yourself.\r\n");
             else if (victim.IsAffected(AffectFlags.Sleep))
             {
-                ch.send("They are already asleep.\n\r");
+                ch.send("They are already asleep.\r\n");
                 return;
             }
             else if ((weapon = ch.GetEquipment(WearSlotIDs.Wield)) == null || ch.GetSkillPercentage(weapon.WeaponType.ToString().ToLower()) <= 1)
             {
-                ch.send("You must be wielding a weapon you are familiar with to sap someone.\n\r");
+                ch.send("You must be wielding a weapon you are familiar with to sap someone.\r\n");
                 return;
             }
             else if (Combat.CheckIsSafe(ch, victim))
@@ -11145,7 +11145,7 @@ namespace CrimsonStainedLands
 
             if ((victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone!\n\r");
+                ch.send("You aren't fighting anyone!\r\n");
             }
             else if ((skillPercent = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
@@ -11167,7 +11167,7 @@ namespace CrimsonStainedLands
                 if (ch.IsAffected(SkillSpell.SkillLookup("secreted filament")) && Utility.Random(0, 1) == 0)
                 {
                     ch.Act("$n tries to disengage, but the filament covering $m prevents $m from doing so.", ch, type: ActType.ToVictim);
-                    ch.Act("The secreted filament covering you prevents you from disengaging.\n\r", ch, type: ActType.ToChar);
+                    ch.Act("The secreted filament covering you prevents you from disengaging.\r\n", ch, type: ActType.ToChar);
                     ch.Act("$n tries to disengage, but the filament covering $m prevents $m from doing so.", ch, type: ActType.ToRoomNotVictim);
                     return;
                 }
@@ -11190,7 +11190,7 @@ namespace CrimsonStainedLands
                 else
                 {
                     ch.WaitState(skill.waitTime);
-                    ch.Act("You fail to disengage!\n\r", victim, type: ActType.ToChar);
+                    ch.Act("You fail to disengage!\r\n", victim, type: ActType.ToChar);
                     ch.CheckImprove("disengage", false, 1);
                 }
             }
@@ -11215,7 +11215,7 @@ namespace CrimsonStainedLands
             }
             else if (victim.IsAffected(skill))
             {
-                ch.Act("$E is still bleeding from your previous kidney shot.\n\r", victim);
+                ch.Act("$E is still bleeding from your previous kidney shot.\r\n", victim);
             }
             else if (((weapon = ch.GetEquipment(WearSlotIDs.Wield)) == null || weapon.WeaponType != WeaponTypes.Dagger) &&
                ((weapon = ch.GetEquipment(WearSlotIDs.DualWield)) == null || weapon.WeaponType != WeaponTypes.Dagger))
@@ -11278,13 +11278,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if ((victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here\n\r");
+                ch.send("You don't see them here\r\n");
                 return;
             }
             if (!victim.IsAffected(AffectFlags.Sleep))
@@ -11294,7 +11294,7 @@ namespace CrimsonStainedLands
             }
             if (ch.Fighting != null)
             {
-                ch.send("You cannot blindfold someone while fighting.\n\r");
+                ch.send("You cannot blindfold someone while fighting.\r\n");
                 return;
             }
             if (CheckIsSafe(ch, victim))
@@ -11344,19 +11344,19 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.Act("You don't know how to do that.\n\r");
+                ch.Act("You don't know how to do that.\r\n");
             }
             else if (((arguments.ISEMPTY()) && (weapon = ch.GetEquipment(WearSlotIDs.Wield)) == null) || (!arguments.ISEMPTY() && (weapon = ch.GetItemInventoryOrEquipment(arguments, false)) == null))
             {
-                ch.Act("Which weapon did you want to envenom?\n\r");
+                ch.Act("Which weapon did you want to envenom?\r\n");
             }
             else if (!weapon.ItemType.ISSET(ItemTypes.Weapon))
             {
-                ch.Act("You can only envenom a weapon.\n\r");
+                ch.Act("You can only envenom a weapon.\r\n");
             }
             else if (weapon.IsAffected(skill))
             {
-                ch.Act("$p is already envenomed.\n\r", item: weapon);
+                ch.Act("$p is already envenomed.\r\n", item: weapon);
             }
             else if (chance < Utility.NumberPercent())
             {
@@ -11378,7 +11378,7 @@ namespace CrimsonStainedLands
                 affect.skillSpell = skill;
                 affect.flags.SETBIT(AffectFlags.Poison);
                 weapon.affects.Add(affect);
-                affect.endMessage = "Envenom on $p wears off.\n\r";
+                affect.endMessage = "Envenom on $p wears off.\r\n";
                 ch.CheckImprove(skill, true, 1);
             }
 
@@ -11391,13 +11391,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if ((victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here\n\r");
+                ch.send("You don't see them here\r\n");
                 return;
             }
             if (!victim.IsAffected(AffectFlags.Sleep))
@@ -11407,7 +11407,7 @@ namespace CrimsonStainedLands
             }
             if (ch.Fighting != null)
             {
-                ch.send("You cannot gag someone while fighting.\n\r");
+                ch.send("You cannot gag someone while fighting.\r\n");
                 return;
             }
             if (CheckIsSafe(ch, victim))
@@ -11456,13 +11456,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if ((victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here\n\r");
+                ch.send("You don't see them here\r\n");
                 return;
             }
             if (!victim.IsAffected(AffectFlags.Sleep))
@@ -11472,7 +11472,7 @@ namespace CrimsonStainedLands
             }
             if (ch.Fighting != null)
             {
-                ch.send("You cannot bind someones hands while fighting.\n\r");
+                ch.send("You cannot bind someones hands while fighting.\r\n");
                 return;
             }
             if (CheckIsSafe(ch, victim))
@@ -11528,13 +11528,13 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if ((victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here\n\r");
+                ch.send("You don't see them here\r\n");
                 return;
             }
             if (!victim.IsAffected(AffectFlags.Sleep))
@@ -11544,7 +11544,7 @@ namespace CrimsonStainedLands
             }
             if (ch.Fighting != null)
             {
-                ch.send("You cannot bind someones legs while fighting.\n\r");
+                ch.send("You cannot bind someones legs while fighting.\r\n");
                 return;
             }
             if (CheckIsSafe(ch, victim))
@@ -11594,12 +11594,12 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
 
             else if ((victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here\n\r");
+                ch.send("You don't see them here\r\n");
             }
             else if (victim.IsAwake)
             {
@@ -11607,7 +11607,7 @@ namespace CrimsonStainedLands
             }
             else if (ch.Fighting != null)
             {
-                ch.send("You cannot sleeping disarm someone while fighting.\n\r");
+                ch.send("You cannot sleeping disarm someone while fighting.\r\n");
             }
             else if (CheckIsSafe(ch, victim))
             {
@@ -11615,7 +11615,7 @@ namespace CrimsonStainedLands
             }
             else if ((obj = victim.GetEquipment(WearSlotIDs.Wield)) == null && (obj = victim.GetEquipment(WearSlotIDs.DualWield)) == null)
             {
-                ch.send("Your opponent is not wielding a weapon.\n\r");
+                ch.send("Your opponent is not wielding a weapon.\r\n");
             }
             else if (chance < Utility.NumberPercent())
             {
@@ -11665,7 +11665,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (chance <= Utility.NumberPercent())
@@ -11749,7 +11749,7 @@ namespace CrimsonStainedLands
             };
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (chance <= Utility.NumberPercent())
@@ -11845,9 +11845,9 @@ namespace CrimsonStainedLands
                     ch.Position = Positions.Fighting;
                     ch.Fighting = victim;
                 }
-                ch.Act("You take advantage of $N's hesitation and sucker hits them.\n\r", victim, type: ActType.ToChar);
-                ch.Act("$n takes advantage of $s hesitation and sucker hits $N.\n\r", victim, type: ActType.ToRoomNotVictim);
-                ch.Act("$n takes advantage of your hesitation and sucker hits you.\n\r", victim, type: ActType.ToVictim);
+                ch.Act("You take advantage of $N's hesitation and sucker hits them.\r\n", victim, type: ActType.ToChar);
+                ch.Act("$n takes advantage of $s hesitation and sucker hits $N.\r\n", victim, type: ActType.ToRoomNotVictim);
+                ch.Act("$n takes advantage of your hesitation and sucker hits you.\r\n", victim, type: ActType.ToVictim);
 
                 Combat.Damage(ch, victim, dam, skill);
 
@@ -11877,19 +11877,19 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
             }
             else if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.Act("You aren't fighting anybody.\n\r");
+                ch.Act("You aren't fighting anybody.\r\n");
             }
             else if (victim.IsAffected(skill))
             {
-                ch.Act("$N is already affected by your earl clap!\n\r", victim);
+                ch.Act("$N is already affected by your earl clap!\r\n", victim);
             }
             else if (chance > Utility.NumberPercent())
             {
@@ -11985,7 +11985,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) + 20 <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (chance <= Utility.NumberPercent())
@@ -12139,7 +12139,7 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill) + 20) <= 21)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
             if (ch.Form != null)
@@ -12158,17 +12158,17 @@ namespace CrimsonStainedLands
 
             if (ch.IsAffected(skill))
             {
-                ch.send("You aren't ready to spit venom again yet!\n\r");
+                ch.send("You aren't ready to spit venom again yet!\r\n");
                 return;
             }
             if (!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null)
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             else if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anybody.\n\r");
+                ch.send("You aren't fighting anybody.\r\n");
                 return;
             }
             ch.WaitState(skill.waitTime);
@@ -12236,24 +12236,24 @@ namespace CrimsonStainedLands
 
             if ((chance = ch.GetSkillPercentage(skill)) <= 1)
             {
-                ch.send("You don't know how to do that.\n\r");
+                ch.send("You don't know how to do that.\r\n");
                 return;
             }
 
             if (ch.Form == null)
             {
-                ch.send("Only animals can puncture bite someone.\n\r");
+                ch.send("Only animals can puncture bite someone.\r\n");
                 return;
             }
 
             if (arguments.ISEMPTY() && (victim = ch.Fighting) == null)
             {
-                ch.send("You aren't fighting anyone.\n\r");
+                ch.send("You aren't fighting anyone.\r\n");
                 return;
             }
             else if ((!arguments.ISEMPTY() && (victim = ch.GetCharacterFromRoomByName(arguments)) == null) || (arguments.ISEMPTY() && (victim = ch.Fighting) == null))
             {
-                ch.send("You don't see them here.\n\r");
+                ch.send("You don't see them here.\r\n");
                 return;
             }
             var level = 3 - (int)ch.Form.Tier;
