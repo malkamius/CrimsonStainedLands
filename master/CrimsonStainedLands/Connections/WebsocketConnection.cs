@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Http;
 using System.Collections.Concurrent;
+using System.Net;
+using System.Net.Sockets;
 using System.Net.WebSockets;
 using System.Text;
 
@@ -16,9 +19,12 @@ namespace CrimsonStainedLands.Connections
 
         private CancellationTokenSource cancellationTokenSource;
 
-        public WebsocketConnection(ConnectionManager manager, WebServer server, WebSocket webSocket, CancellationTokenSource cancelTokenSource)
+        public WebsocketConnection(ConnectionManager manager, WebServer server, WebSocket webSocket, CancellationTokenSource cancelTokenSource, HttpContext context)
             : base(null) // Socket is not used in WebSocket implementation
         {
+            //this.Socket = context.Connection.Id != null ?
+            //    new Socket(context.Connection.RemoteIpAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp) : null;
+            this.RemoteEndPoint = new IPEndPoint(context.Connection.RemoteIpAddress, context.Connection.RemotePort) ;
             this.manager = manager;
             this.server = server;
             this.webSocket = webSocket;

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Server.Kestrel.Https;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using System.Net.Http;
@@ -25,6 +26,7 @@ namespace CrimsonStainedLands.Connections
             this.cancellationTokenSource = cancellationTokenSource;
 
             var builder = WebApplication.CreateBuilder();
+            builder.Services.AddCors();
             builder.WebHost.ConfigureKestrel(options =>
             {
                 options.ListenAnyIP(port, listenOptions =>
@@ -43,6 +45,16 @@ namespace CrimsonStainedLands.Connections
 
         private void ConfigureApp()
         {
+            app.UseCors(builder =>
+            {
+                builder
+                    .WithOrigins(
+                        "https://crimsonstainedlands.net",
+                        "https://www.crimsonstainedlands.net"
+                    )
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
             app.UseWebSockets();
             app.UseStaticFiles(new StaticFileOptions
             {
@@ -55,7 +67,7 @@ namespace CrimsonStainedLands.Connections
                 try
                 {
                     var result = new WhoListController().GetContent();
-                    await context.Response.WriteAsJsonAsync(result);
+                    await context.Response.WriteAsync(result);
                 }
                 catch (Exception ex)
                 {
@@ -69,7 +81,7 @@ namespace CrimsonStainedLands.Connections
                 if (context.WebSockets.IsWebSocketRequest)
                 {
                     using var webSocket = await context.WebSockets.AcceptWebSocketAsync();
-                    var connection = new WebsocketConnection(manager, this, webSocket, cancellationTokenSource);
+                    var connection = new WebsocketConnection(manager, this, webSocket, cancellationTokenSource, context);
                     connections.Add(connection);
                     connectionConnectedCallback(connection, null, null);
                     await connection.HandleWebSocketConnection();
