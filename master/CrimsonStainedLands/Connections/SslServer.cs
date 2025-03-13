@@ -53,10 +53,17 @@ namespace CrimsonStainedLands.Connections
             Game.log($"Accepting SSL Connections at {this.Address.ToString()}:{this.Port}");
             while(!cancellationTokenSource.IsCancellationRequested)
             {
-                var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
+                try
+                {
+                    var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
-                var connection = new SslConnection(this.Manager, this, newClientSocket, certificate);
-                
+                    var connection = new SslConnection(this.Manager, this, newClientSocket, certificate);
+                    System.Threading.Thread.Sleep(1);
+                }
+                catch (Exception ex)
+                {
+                    Game.bug(ex.Message);
+                }
             }
 
             

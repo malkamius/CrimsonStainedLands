@@ -30,6 +30,19 @@ namespace CrimsonStainedLands
             }
         }
 
+        public void AddRange(IEnumerable<T> items)
+        {
+            _lock.EnterWriteLock();
+            try
+            {
+                _list.AddRange(items);
+            }
+            finally
+            {
+                _lock.ExitWriteLock();
+            }
+        }
+
         public void Insert(int index, T item)
         {
             _lock.EnterWriteLock();
@@ -112,6 +125,7 @@ namespace CrimsonStainedLands
                 }
             }
         }
+        
 
         public IEnumerator<T> GetEnumerator()
         {

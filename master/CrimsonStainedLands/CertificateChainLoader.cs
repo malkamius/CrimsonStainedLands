@@ -47,15 +47,20 @@ namespace CrimsonStainedLands
             }
 
             // Load the private key
-            AsymmetricKeyParameter privateKey;
+            AsymmetricKeyParameter privateKey = null;
+            RsaPrivateCrtKeyParameters privkeyparams;
             using (var reader = new StreamReader(privateKeyPath))
             {
                 var pemReader = new PemReader(reader, new PasswordFinder(password));
-                var keyPair = pemReader.ReadObject() as AsymmetricCipherKeyPair;
-                privateKey = keyPair?.Private;
+                var obj = pemReader.ReadObject();
+                var keyPair = obj as AsymmetricCipherKeyPair;
+                privkeyparams = obj as RsaPrivateCrtKeyParameters;
+                
+                if(obj != null)
+                    privateKey = keyPair?.Private;
             }
-
-            if (privateKey == null)
+            
+            if (privateKey == null && privkeyparams == null)
             {
                 throw new Exception("Failed to load private key.");
             }
@@ -63,15 +68,15 @@ namespace CrimsonStainedLands
             // Combine the first certificate (server cert) with the private key
             var serverCert = certificateChain[0];
             //var rsaPrivateKey = DotNetUtilities.ToRSA(privateKey as RsaPrivateCrtKeyParameters);
-            var rsaParams = DotNetUtilities.ToRSAParameters(privateKey as RsaPrivateCrtKeyParameters);
+            var rsaParams = privkeyparams != null? DotNetUtilities.ToRSAParameters(privkeyparams) : DotNetUtilities.ToRSAParameters(privateKey as RsaPrivateCrtKeyParameters);
 
             // Create RSA instance
             using (var rsaPrivateKey = RSA.Create())
             {
                 rsaPrivateKey.ImportParameters(rsaParams);
                 var certWithKey = serverCert.CopyWithPrivateKey(rsaPrivateKey);
-
-                var newcert = new X509Certificate2(certWithKey.Export(X509ContentType.Pfx));
+                var newcert = privkeyparams == null? certWithKey : new X509Certificate2(certWithKey.Export(X509ContentType.Pfx));
+                
                 // Create a collection with the full chain
                 var collection = new X509Certificate2Collection(newcert);
                 for (int i = 1; i < certificateChain.Count; i++)

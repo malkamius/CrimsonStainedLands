@@ -128,7 +128,7 @@ namespace CrimsonStainedLands
             bool show = true, bool allowflee = true)
         {
             // Check if the victim is null, return false if true
-            if (victim == null)
+            if (victim == null || victim.Position == Positions.Dead)
                 return false;
 
             // Check if the damage exceeds 500, log a message if true
@@ -1144,7 +1144,7 @@ namespace CrimsonStainedLands
             // Loop through the attack skills and perform the hits
             for (int i = 0; i < attackskills.Length; i++)
             {
-                if (ch.Fighting == victim)
+                if (ch.Fighting == victim && ch.Fighting.Room == victim.Room)
                 {
                     // Check if the attacker has the skill or the random chance is successful
                     if (attackskills[i].ISEMPTY() || (((skill = ch.GetSkillPercentage(SkillSpell.SkillLookup(attackskills[i]))) > 1 &&
@@ -1183,7 +1183,7 @@ namespace CrimsonStainedLands
                         }
 
                         // Check if the attacker is still fighting the victim and has the dual wield skill
-                        if (ch.Fighting == victim && ch.Room != null && (weapon == null || !weapon.extraFlags.ISSET(ExtraFlags.TwoHands)) &&
+                        if (ch.Fighting == victim && ch.Fighting.Room == victim.Room && ch.Room != null && (weapon == null || !weapon.extraFlags.ISSET(ExtraFlags.TwoHands)) &&
                             (skill = ch.GetSkillPercentage(SkillSpell.SkillLookup("dual wield"))) > 1 &&
                             (skill + (haste ? 10 : slow ? -20 : 0)) > Utility.NumberPercent() &&
                             ((!ch.Equipment.TryGetValue(WearSlotIDs.Held, out tempitem) && !ch.Equipment.TryGetValue(WearSlotIDs.Shield, out tempitem)) || ch.Form != null))
@@ -1203,6 +1203,8 @@ namespace CrimsonStainedLands
                         break;
                     }
                 }
+                else
+                    break;
             }
         }
 

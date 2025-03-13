@@ -112,7 +112,7 @@ namespace CrimsonStainedLands
                 args = args.OneArgument(ref vnumEndString);
 
                 area.Name = nameString;
-                area.FileName = Settings.AreasPath + "\\" + nameString + ".xml";
+                area.FileName = Path.Join(Settings.AreasPath, nameString + ".xml");
                 if (!int.TryParse(vnumStartString, out var VNumStart) || !int.TryParse(vnumEndString, out var VNumEnd))
                 {
                     ch.send("Create Area \"name\" vnumstart vnumend");

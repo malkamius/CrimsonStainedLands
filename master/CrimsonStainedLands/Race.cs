@@ -65,7 +65,7 @@ namespace CrimsonStainedLands
                 raceElement.Add(new XAttribute("HasCoins", race.HasCoins));
                 if (!Directory.Exists(Settings.RacesPath))
                     Directory.CreateDirectory(Settings.RacesPath);
-                raceElement.Save(Settings.RacesPath + "\\" + race.name + ".xml");
+                raceElement.Save(Path.Join(Settings.RacesPath, race.name + ".xml"));
             }
         }
 

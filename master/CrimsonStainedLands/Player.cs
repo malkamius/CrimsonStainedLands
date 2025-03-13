@@ -163,7 +163,7 @@ namespace CrimsonStainedLands
             //}catch (Exception e)
             //{
             //    game.bug(e.ToString());
-            Game.log("New connection from " + (connection.Socket != null? connection.RemoteEndPoint.ToString() : connection.GetType().Name));
+            Game.log("New connection from " + (connection.RemoteEndPoint != null? connection.RemoteEndPoint.ToString() : connection.GetType().Name));
             //}
             TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
 

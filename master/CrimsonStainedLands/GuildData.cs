@@ -59,9 +59,9 @@ namespace CrimsonStainedLands
                         if ((race = PcRace.GetRace(raceName)) != null)
                             guild.races.Add(race);
 
-                    if (System.IO.File.Exists(Settings.GuildsPath + "\\" + guild.name + "-titles.xml"))
+                    if (System.IO.File.Exists(System.IO.Path.Join(Settings.GuildsPath, guild.name + "-titles.xml")))
                     {
-                        var titleselement = XElement.Load(Settings.GuildsPath + "\\" + guild.name + "-titles.xml");
+                        var titleselement = XElement.Load(System.IO.Path.Join(Settings.GuildsPath, guild.name + "-titles.xml"));
 
                         foreach(var title in titleselement.Elements("Title"))
                         {

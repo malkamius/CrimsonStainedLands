@@ -364,7 +364,7 @@ namespace CrimsonStainedLands
                     foreach (var other in Character.Characters)
                     {
                         if (other != ch && other.Flags.ISSET(ActFlags.OOCChannel))
-                            ch.Act("\\OOC ($n): {0}\\x\r\n", other, null, null, ActType.ToVictim, arguments);
+                            ch.Act("\\cOOC ($n): {0}\\x\r\n", other, null, null, ActType.ToVictim, arguments);
                     }
                     Game.log("{0} OOCs '{1}'", ch.Name, arguments);
                     ch.send("\\cOOC (You): {0}\\x\r\n", arguments);

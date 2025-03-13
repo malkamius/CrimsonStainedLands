@@ -716,13 +716,17 @@ namespace CrimsonStainedLands
 
         public void AdvanceLevel(bool show = true)
         {
+
+            Level += 1;
+
+
             if (show)
             {
                 send("\\gYou raise a level!!  \\x\r\n");
                 WizardNet.Wiznet(WizardNet.Flags.Levels, "{0} gained level {1}", null, null, Name, Level);
                 Task.Run(() => Discord.Instance.SendMessage(Settings.CharacterGainWebhook, "Crimson Stained Lands", string.Format("{0} gained level {1}", Name, Level)));
             }
-            Level += 1;
+            
             //game.log("{0} gained level {1}", Name, Level);
             //sprintf(buf, "$N has attained level %d!", ch->level);
             //wiznet(buf, ch, NULL, WIZ_LEVELS, 0, 0);

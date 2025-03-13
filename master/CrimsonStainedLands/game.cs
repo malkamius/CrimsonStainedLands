@@ -402,6 +402,7 @@ namespace CrimsonStainedLands
                         /// Had issues with listening socket poll on windows, using Sleep instead
                         // wait until next pulse or connection attempt
                         //var poll = listeningSocket.Poll(timeToSleep, SelectMode.SelectRead);
+
                         System.Threading.Thread.Sleep(timeToSleep);
                     }
                     catch (Exception ex)
@@ -860,12 +861,12 @@ namespace CrimsonStainedLands
 
         private void UpdateObjects()
         {
-            foreach (var item in ItemData.Items.ToArray())
+            foreach (var item in ItemData.Items)
             {
                 try
                 {
 
-                    foreach (var affect in item.affects.ToArray())
+                    foreach (var affect in item.affects)
                     {
                         // resist flags can expire and such?
                         //if (affect.where == AffectWhere.ToObject || affect.where == AffectWhere.ToAffects)
@@ -949,7 +950,7 @@ namespace CrimsonStainedLands
                         {
                             if (item.CarriedBy != null)
                             {
-                                foreach (var contained in item.Contains.ToArray())
+                                foreach (var contained in item.Contains)
                                 {
                                     item.Contains.Remove(contained);
                                     item.CarriedBy.AddInventoryItem(contained);
@@ -964,7 +965,7 @@ namespace CrimsonStainedLands
                                     if (owner != null && owner.state == Player.ConnectionStates.Playing)
                                     {
 
-                                        foreach (var contained in item.Contains.ToArray())
+                                        foreach (var contained in item.Contains)
                                         {
                                             item.Contains.Remove(contained);
                                             owner.Act("$p appears in your hands.", null, contained, null, ActType.ToChar);
@@ -998,7 +999,7 @@ namespace CrimsonStainedLands
 
                                             if (pit != null)
                                             {
-                                                foreach (var contained in item.Contains.ToArray())
+                                                foreach (var contained in item.Contains)
                                                 {
                                                     item.Contains.Remove(contained);
                                                     pit.Contains.Add(contained);
@@ -1020,7 +1021,7 @@ namespace CrimsonStainedLands
                             }
                             else if (item.Container != null)
                             {
-                                foreach (var contained in item.Contains.ToArray())
+                                foreach (var contained in item.Contains)
                                 {
                                     item.Contains.Remove(contained);
                                     item.Container.Contains.Add(contained);
@@ -1042,7 +1043,7 @@ namespace CrimsonStainedLands
 
         public void DumpItems(ItemData item)
         {
-            foreach (var contained in item.Contains.ToArray())
+            foreach (var contained in item.Contains)
             {
                 item.Contains.Remove(contained);
                 item.Room.items.Add(contained);
@@ -1497,7 +1498,7 @@ namespace CrimsonStainedLands
 
         private void UpdateAggro()
         {
-            foreach (var aggressor in Character.Characters.ToArray())
+            foreach (var aggressor in Character.Characters)
             {
                 Programs.ExecutePrograms(Programs.ProgramTypes.Pulse, aggressor, null, null, aggressor.Room, string.Empty);
 

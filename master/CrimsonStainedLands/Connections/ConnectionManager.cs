@@ -17,6 +17,8 @@ public class ConnectionManager
         public string CertificatePath { get; set; } = @"I:\certs";
         public string DomainName { get; set; } = "kbs-cloud.com";
 
+        public bool LetsEncrypt { get; set; } = false;
+
         public string CertChainName { get; set; } = "-chain.pem";
         public string CertKeyName { get; set; } = "-key.pem";
 
@@ -62,9 +64,9 @@ public class ConnectionManager
                 File.WriteAllText(settings_path, json);
             }
 
-            string chainpath = Path.Join(settings.CertificatePath, settings.DomainName + settings.CertChainName);
+            string chainpath = Path.Join(settings.CertificatePath, settings.LetsEncrypt ? "fullchain.pem" : (settings.DomainName + settings.CertChainName));
 
-            string keypath = Path.Join(settings.CertificatePath, settings.DomainName + settings.CertKeyName);
+            string keypath = Path.Join(settings.CertificatePath, settings.LetsEncrypt? "privkey.pem" : (settings.DomainName + settings.CertKeyName));
             string password = settings.PrivateKeyPassword;
 
             try
@@ -76,12 +78,14 @@ public class ConnectionManager
             catch(Exception ex)
             {
                 Game.log(ex.Message);
+                System.Environment.Exit(1);
             }
             if (certificate != null)
             {
                 Console.WriteLine($"Certificate subject: {certificate.Subject}");
                 Console.WriteLine($"Has private key: {certificate.HasPrivateKey}");
             }
+            
         }
         catch (Exception ex)
         {
@@ -92,19 +96,35 @@ public class ConnectionManager
 
     public async Task RunAsync()
     {
-        var cert = LoadCertificate();
-        var tcpServer = new TCPServer(this, "0.0.0.0", Settings.Port, cancellationTokenSource);
-        var sslServer = new SslServer(this, "0.0.0.0", Settings.SSLPort, cert, cancellationTokenSource);
-        var webServer = new WebServer(this, "0.0.0.0", Settings.SSLPort + 2, cert, cancellationTokenSource);
-        var sshServer = new SSHServer(this, "0.0.0.0", Settings.SSLPort + 1, cancellationTokenSource);
+        Game.log("Run Async");
+        var services = new List<Task>();
+        try
+        {
+            Game.log("Load cert");
+            var cert = LoadCertificate();
+            Game.log("Load cert done");
 
-        var services = new List<Task>() {
-            tcpServer.Start(OnConnectionConnected),
-            sslServer.Start(OnConnectionConnected),
-            webServer.Start(OnConnectionConnected),
-            sshServer.Start(OnConnectionConnected),
-        };
-
+            
+            var tcpServer = new TCPServer(this, "0.0.0.0", Settings.Port, cancellationTokenSource);
+            Game.log("SSL server");
+            var sslServer = new SslServer(this, "0.0.0.0", Settings.SSLPort, cert, cancellationTokenSource);
+            Game.log("Web server");
+            var webServer = new WebServer(this, "0.0.0.0", Settings.SSLPort + 2, cert, cancellationTokenSource);
+            Game.log("SSH server");
+            var sshServer = new SSHServer(this, "0.0.0.0", Settings.SSLPort + 1, cancellationTokenSource);
+            Game.log("Calling start on services . . .");
+            
+            services.Add(tcpServer.Start(OnConnectionConnected));
+            services.Add(sslServer.Start(OnConnectionConnected));
+            services.Add(webServer.Start(OnConnectionConnected));
+            services.Add(sshServer.Start(OnConnectionConnected));
+           
+            Game.log("Called start on services . . .");
+        }
+        catch (Exception ex)
+        {
+            Game.bug(ex.Message);
+        }
         try
         {
             await Task.WhenAll(services);

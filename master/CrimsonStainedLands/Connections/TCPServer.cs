@@ -8,14 +8,14 @@ namespace CrimsonStainedLands.Connections
     public class TCPServer
     {
         public ConnectionManager Manager { get; }
-        public IPAddress Address {get;}
-        public int Port {get;}
+        public IPAddress Address { get; }
+        public int Port { get; }
 
-        public Socket ListeningSocket {get;private set;}
-        
+        public Socket ListeningSocket { get; private set; }
+
         private CancellationTokenSource cancellationTokenSource;
 
-        ConnectionManager.ConnectionConnected ConnectionConnectedCallback {get;set;}
+        ConnectionManager.ConnectionConnected ConnectionConnectedCallback { get; set; }
 
         public TCPServer(ConnectionManager manager, string address, int port, CancellationTokenSource cancellationTokenSource)
         {
@@ -27,18 +27,26 @@ namespace CrimsonStainedLands.Connections
 
         public async Task Start(ConnectionManager.ConnectionConnected connectionConnected)
         {
+            Game.log("START TCP SERVER");
             ConnectionConnectedCallback = connectionConnected;
 
-            ListeningSocket = new Socket( SocketType.Stream, ProtocolType.Tcp );
-            ListeningSocket.Bind(new IPEndPoint(this.Address, this.Port));
-            ListeningSocket.Listen(10);
-            Game.log($"Accepting Telnet Connections at {this.Address.ToString()}:{this.Port}");
-            while(!cancellationTokenSource.IsCancellationRequested)
+            try
             {
-                var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
+                ListeningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
+                ListeningSocket.Bind(new IPEndPoint(this.Address, this.Port));
+                ListeningSocket.Listen(10);
+                Game.log($"Accepting Telnet Connections at {this.Address.ToString()}:{this.Port}");
+                while (!cancellationTokenSource.IsCancellationRequested)
+                {
+                    var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
-                var connection = new TCPConnection(this.Manager, newClientSocket);
-                ConnectionConnectedCallback(connection, null, null);
+                    var connection = new TCPConnection(this.Manager, newClientSocket);
+                    ConnectionConnectedCallback(connection, null, null);
+                }
+            }
+            catch (Exception ex)
+            {
+                Game.bug(ex.Message);
             }
         }
     }
