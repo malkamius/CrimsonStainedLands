@@ -45,28 +45,36 @@ namespace CrimsonStainedLands.Connections
             {
                 return;
             }
-            ConnectionConnectedCallback = connectionConnected;
-
-            ListeningSocket = new Socket( SocketType.Stream, ProtocolType.Tcp );
-            ListeningSocket.Bind(new IPEndPoint(this.Address, this.Port));
-            ListeningSocket.Listen(10);
-            Game.log($"Accepting SSL Connections at {this.Address.ToString()}:{this.Port}");
-            while(!cancellationTokenSource.IsCancellationRequested)
+            try
             {
-                try
+                Game.log("START SSL SERVER");
+                ConnectionConnectedCallback = connectionConnected;
+                var endpoint = new IPEndPoint(this.Address, this.Port);
+                ListeningSocket = new Socket(endpoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                ListeningSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ExclusiveAddressUse, true);
+                ListeningSocket.Bind(endpoint);
+                ListeningSocket.Listen(10);
+                Game.log($"Accepting SSL Connections at {this.Address.ToString()}:{this.Port}");
+                while (!cancellationTokenSource.IsCancellationRequested)
                 {
-                    var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
+                    try
+                    {
+                        var newClientSocket = await ListeningSocket.AcceptAsync(cancellationTokenSource.Token);
 
-                    var connection = new SslConnection(this.Manager, this, newClientSocket, certificate);
-                    System.Threading.Thread.Sleep(1);
-                }
-                catch (Exception ex)
-                {
-                    Game.bug(ex.Message);
+                        var connection = new SslConnection(this.Manager, this, newClientSocket, certificate);
+                        System.Threading.Thread.Sleep(1);
+                    }
+                    catch (Exception ex)
+                    {
+                        Game.bug(ex.Message);
+                    }
                 }
             }
-
-            
+            catch (Exception ex)
+            {
+                Game.bug(ex.Message);
+                System.Environment.Exit(1);
+            }
         }
     }
 }

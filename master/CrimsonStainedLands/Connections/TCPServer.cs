@@ -32,8 +32,10 @@ namespace CrimsonStainedLands.Connections
 
             try
             {
-                ListeningSocket = new Socket(SocketType.Stream, ProtocolType.Tcp);
-                ListeningSocket.Bind(new IPEndPoint(this.Address, this.Port));
+                var endpoint = new IPEndPoint(this.Address, this.Port);
+                ListeningSocket = new Socket(endpoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                ListeningSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ExclusiveAddressUse, true);
+                ListeningSocket.Bind(endpoint);
                 ListeningSocket.Listen(10);
                 Game.log($"Accepting Telnet Connections at {this.Address.ToString()}:{this.Port}");
                 while (!cancellationTokenSource.IsCancellationRequested)
@@ -47,6 +49,7 @@ namespace CrimsonStainedLands.Connections
             catch (Exception ex)
             {
                 Game.bug(ex.Message);
+                System.Environment.Exit(1);
             }
         }
     }

@@ -33,13 +33,20 @@ namespace CrimsonStainedLands.Connections
             this.hostKeyFile = hostKeyFile;
 
             var startingInfo = new StartingInfo(this.Address, this.Port, "SSH-2.0-CrimsonStainedLands");
-            server = new FxSsh.SshServer(startingInfo);
+            try
+            {
+                server = new FxSsh.SshServer(startingInfo);
 
-            var hostKey = LoadOrGenerateHostKey();
-            server.AddHostKey("ssh-rsa", hostKey);
+                var hostKey = LoadOrGenerateHostKey();
+                server.AddHostKey("ssh-rsa", hostKey);
 
-            server.ConnectionAccepted += Server_ConnectionAccepted;
-            server.ExceptionRaised += Server_ExceptionRaised;
+                server.ConnectionAccepted += Server_ConnectionAccepted;
+                server.ExceptionRaised += Server_ExceptionRaised;
+            }
+            catch (Exception ex)
+            {
+                Game.bug(ex.Message);
+            }
         }
 
         private void Server_ConnectionAccepted(object sender, Session session)
