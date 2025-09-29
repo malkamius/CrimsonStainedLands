@@ -1,5 +1,6 @@
 using System.Reflection;
 using System.Xml.Linq;
+using Mysqlx.Expr;
 
 namespace CrimsonStainedLands
 {
@@ -24,8 +25,34 @@ namespace CrimsonStainedLands
         //     // Base implementation does nothing
         // }
 
-        public static event Action OnPulse;
-        public static event Action OnCombat;
+        public static event Action PulseBeforeEvent;
+        public static event Action PulseAfterEvent;
+        public static event Func<Character, Character, bool> IsSafeCheckEvent;
+
+        public static void PulseBefore()
+        {
+            PulseBeforeEvent?.Invoke();
+        }
+
+        public static void PulseAfter()
+        {
+            PulseAfterEvent?.Invoke();
+        }
+
+        public static bool IsSafe(Character attacker, Character defender)
+        {
+            if (IsSafeCheckEvent != null)
+            {
+                foreach (Func<Character, Character, bool> handler in IsSafeCheckEvent.GetInvocationList())
+                {
+                    if (!handler(attacker, defender))
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
 
         public static void LoadModules()
         {

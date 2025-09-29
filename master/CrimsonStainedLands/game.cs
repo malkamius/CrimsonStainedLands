@@ -844,6 +844,9 @@ namespace CrimsonStainedLands
 
             //if (pulseCount % (60 * 4) == 0 || pulseCount == 1)
             //    program.Log("TICK :: " + pulseCount / (60 * 4));
+
+            Module.PulseBefore();
+
             if (DateTime.Now > PulseTick.AddMilliseconds(PULSE_TICK * MILLISECONDS_PER_PULSE))
             {
                 PerformTick();
@@ -857,6 +860,8 @@ namespace CrimsonStainedLands
             //AreaData.resetAreas();
 
             UpdateAggro();
+
+            Module.PulseAfter();
         }
 
         private void UpdateObjects()
