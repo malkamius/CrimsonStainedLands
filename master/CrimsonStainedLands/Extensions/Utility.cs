@@ -50,7 +50,7 @@ namespace CrimsonStainedLands.Extensions
             string temp_name = "";
             while (!string.IsNullOrEmpty(nameList))
             {
-                nameList = OneArgument(nameList, ref temp_name, " ");
+                nameList = OneArgument(nameList, ref temp_name, ' ');
                 if (StringPrefix(temp_name, name))
                 {
                     return true;
@@ -225,7 +225,7 @@ namespace CrimsonStainedLands.Extensions
         /// <param name="SingleArgument">Reference to a string to receive the first argument</param>
         /// <param name="Delimiter">Optionally specify a different delimiter</param>
         /// <returns>The remaining string after an argument is removed</returns>
-        public static string OneArgumentOut(this string ListOfArguments, out string SingleArgument, string Delimiter = " ")
+        public static string OneArgumentOut(this string ListOfArguments, out string SingleArgument, char Delimiter = ' ')
         {
             string oneargument = "";
             var returnvalue = OneArgument(ListOfArguments, ref oneargument, Delimiter);
@@ -247,9 +247,9 @@ namespace CrimsonStainedLands.Extensions
         /// <param name="SingleArgument">Reference to a string to receive the first argument</param>
         /// <param name="Delimiter">Optionally specify a different delimiter</param>
         /// <returns>The remaining string after an argument is removed</returns>
-        public static string OneArgument(this string ListOfArguments, ref string SingleArgument, string Delimiter = " ")
+        public static string OneArgument(this string ListOfArguments, ref string SingleArgument, char Delimiter = ' ')
         {
-            if (string.IsNullOrEmpty(ListOfArguments))
+            if (string.IsNullOrWhiteSpace(ListOfArguments))
             {
                 SingleArgument = "";
                 return "";
@@ -257,18 +257,17 @@ namespace CrimsonStainedLands.Extensions
             ListOfArguments = ListOfArguments.TrimStart('\0', ' ', '\n', '\r', '\t');
             if (ListOfArguments.Length > 0)
             {
+                var startIndex = 0;
                 if (ListOfArguments[0] == '\'' || ListOfArguments[0] == '"')
                 {
-                    //if (args.IndexOf(args[0], 1) >= 0)
-                    //{
-                    Delimiter = ListOfArguments[0].ToString();
-                    //}
-                    ListOfArguments = ListOfArguments.Substring(1);
+                    Delimiter = ListOfArguments[0];
+                    startIndex = 1;
                 }
-                int delimiterIndex = ListOfArguments.IndexOf(Delimiter);
+                int delimiterIndex = ListOfArguments.IndexOf(Delimiter, startIndex);
+
                 if (delimiterIndex >= 0)
                 {
-                    SingleArgument = ListOfArguments.Substring(0, delimiterIndex);
+                    SingleArgument = ListOfArguments.Substring(startIndex, delimiterIndex - startIndex);
                     if (delimiterIndex < ListOfArguments.Length)
                     {
                         ListOfArguments = ListOfArguments.Substring(delimiterIndex + 1);
