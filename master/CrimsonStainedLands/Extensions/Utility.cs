@@ -567,8 +567,18 @@ namespace CrimsonStainedLands.Extensions
         private static string[] EnumGetNames<T>() 
         {
             var type = typeof(T);
+
             if (!EnumNames.TryGetValue(type, out var names))
-                names = EnumNames[type] = Enum.GetNames(typeof(T));
+            {
+                if (type.IsEnum)
+                {
+                    names = EnumNames[type] = Enum.GetNames(typeof(T));
+                }
+                else if(typeof(T).IsSubclassOf(typeof(NamedFlag)))
+                {
+                    names = EnumNames[type] = ((IEnumerable<string>)type.GetMethod("GetNames", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public).Invoke(null, null)).ToArray();
+                }
+            }
             return names;
         }
 
@@ -576,7 +586,16 @@ namespace CrimsonStainedLands.Extensions
         {
             var type = typeof(T);
             if (!EnumValues.TryGetValue(type, out var values))
-                values = EnumValues[type] = Enum.GetValues(typeof(T));
+            {
+                if (type.IsEnum)
+                {
+                    values = EnumValues[type] = Enum.GetValues(typeof(T));
+                }
+                else
+                {
+                    values = EnumValues[type] = ((IEnumerable<NamedFlag>)type.GetMethod("GetValues", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public).Invoke(null, null)).ToArray();
+                }
+            }
             return values;
         }
 

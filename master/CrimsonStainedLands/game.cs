@@ -317,7 +317,7 @@ namespace CrimsonStainedLands
             try
             {
                 var connectionManagerTask = SetupListeningSocket(state);
-
+                Module.LoadModules();
                 using (new LoadTimer("Game loaded"))
                 {
 

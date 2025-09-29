@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrimsonStainedLands", "Crim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FxSsh", "FxSsh\FxSsh.csproj", "{EE30EA11-1A8F-45A1-A073-F620C8421E1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleModule", "SampleModule\SampleModule.csproj", "{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,19 @@ Global
 		{EE30EA11-1A8F-45A1-A073-F620C8421E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE30EA11-1A8F-45A1-A073-F620C8421E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE30EA11-1A8F-45A1-A073-F620C8421E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F} = {ADB35B65-5E28-4ACB-8883-D8029D54322A}
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+        {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C} = {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C}
+        {7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F} = {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C}
+    EndGlobalSection
 EndGlobal
