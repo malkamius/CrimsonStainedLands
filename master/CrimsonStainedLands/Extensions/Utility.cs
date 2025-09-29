@@ -276,7 +276,7 @@ namespace CrimsonStainedLands.Extensions
                     ListOfArguments = "";
                     return ListOfArguments;
                 }
-                SingleArgument = ListOfArguments;
+                SingleArgument = startIndex > 0 ? ListOfArguments.Substring(startIndex) : ListOfArguments;
                 ListOfArguments = "";
                 return ListOfArguments;
             }
