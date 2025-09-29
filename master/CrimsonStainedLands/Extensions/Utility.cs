@@ -249,9 +249,8 @@ namespace CrimsonStainedLands.Extensions
         /// <returns>The remaining string after an argument is removed</returns>
         public static string OneArgument(this string ListOfArguments, ref string SingleArgument, string Delimiter = " ")
         {
-            if (ListOfArguments.ISEMPTY())
+            if (string.IsNullOrEmpty(ListOfArguments))
             {
-                ListOfArguments = "";
                 SingleArgument = "";
                 return "";
             }
@@ -267,7 +266,7 @@ namespace CrimsonStainedLands.Extensions
                     ListOfArguments = ListOfArguments.Substring(1);
                 }
                 int delimiterIndex = ListOfArguments.IndexOf(Delimiter);
-                if (delimiterIndex >= 1)
+                if (delimiterIndex >= 0)
                 {
                     SingleArgument = ListOfArguments.Substring(0, delimiterIndex);
                     if (delimiterIndex < ListOfArguments.Length)
