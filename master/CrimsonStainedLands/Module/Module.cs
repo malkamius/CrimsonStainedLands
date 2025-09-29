@@ -46,9 +46,10 @@ namespace CrimsonStainedLands
                             if (ctor != null)
                             {
                                 var moduleInstance = ctor.Invoke(new object[] { path, assembly }) as Module;
-                                if(moduleInstance != null)
+                                if (moduleInstance != null)
                                 {
                                     Modules.Add(moduleInstance);
+                                    Game.log($"Loaded module: {moduleInstance.Name} from {path}");
                                 }
                             }
                         }
