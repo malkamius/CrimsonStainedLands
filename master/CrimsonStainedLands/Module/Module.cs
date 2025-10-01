@@ -24,11 +24,11 @@ namespace CrimsonStainedLands
         // {
         //     // Base implementation does nothing
         // }
+                
 
         public static event Action PulseBeforeEvent;
         public static event Action PulseAfterEvent;
-        public static event Func<Character, Character, bool> IsSafeCheckEvent;
-
+        
         public static void PulseBefore()
         {
             PulseBeforeEvent?.Invoke();
@@ -39,20 +39,48 @@ namespace CrimsonStainedLands
             PulseAfterEvent?.Invoke();
         }
 
-        public static bool IsSafe(Character attacker, Character defender)
+        public static class Combat
         {
-            if (IsSafeCheckEvent != null)
+            public static event Func<CrimsonStainedLands.Character, CrimsonStainedLands.Character, bool?> IsSafeCheckEvent;
+
+            /// <summary>
+            /// Return null if typical isSafe rules should apply. Return true if the defender is safe from the attacker. Return false if the defender is not safe from the attacker.
+            /// </summary>
+            /// <param name="attacker"></param>
+            /// <param name="defender"></param>
+            /// <returns></returns>
+            public static bool? IsSafe(CrimsonStainedLands.Character attacker, CrimsonStainedLands.Character defender)
             {
-                foreach (Func<Character, Character, bool> handler in IsSafeCheckEvent.GetInvocationList())
+                if (IsSafeCheckEvent != null)
                 {
-                    if (!handler(attacker, defender))
+                    foreach (Func<CrimsonStainedLands.Character, CrimsonStainedLands.Character, bool?> handler in IsSafeCheckEvent.GetInvocationList())
                     {
-                        return false;
+                        var result = handler(attacker, defender);
+                        if (result.HasValue)
+                        {
+                            return result.Value;
+                        }
                     }
                 }
+                return null;
             }
-            return true;
         }
+
+        public static class Character
+        {
+            public static event Action<CrimsonStainedLands.Character, XElement> LoadingEvent;
+            public static event Action<CrimsonStainedLands.Character, XElement> SerializingEvent;
+
+            public static void OnLoading(CrimsonStainedLands.Character character, XElement rootElement)
+            {
+                LoadingEvent?.Invoke(character, rootElement);
+            }
+
+            public static void OnSerializing(CrimsonStainedLands.Character character, XElement rootElement)
+            {
+                SerializingEvent?.Invoke(character, rootElement);
+            }
+        }        
 
         public static void LoadModules()
         {

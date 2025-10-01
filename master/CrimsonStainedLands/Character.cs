@@ -159,6 +159,17 @@ namespace CrimsonStainedLands
 
         public int Trust { get; set; }
 
+        /// <summary>
+        /// These variables are not automatically saved. Hook save events to save them if needed.
+        /// </summary>
+        public Dictionary<string, object> Variables { get; } = new Dictionary<string, object>();
+
+        public T GetVariable<T>(string name)
+        {
+            if (Variables.ContainsKey(name) && Variables[name] is T)
+                return (T)Variables[name];
+            return default(T);
+        }
 
         public Positions Position
         {
@@ -3191,7 +3202,7 @@ namespace CrimsonStainedLands
                         ((Pet != null && Pet.Room == Room && Pet is NPCData) ? new XElement("Pet", ((NPCData)Pet).Element) : null)
 
                     );
-
+                Module.Character.OnSerializing(this, element);
                 return element;
             }
         }
