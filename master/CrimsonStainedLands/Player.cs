@@ -1431,7 +1431,7 @@ namespace CrimsonStainedLands
                         }
                     }
 
-
+                    Module.Character.OnLoading(this, element);
                     return true;
                 }
             }

@@ -32,11 +32,14 @@ namespace CrimsonStainedLands.Connections
             {
                 options.ListenAnyIP(port, listenOptions =>
                 {
-                    listenOptions.UseHttps(new HttpsConnectionAdapterOptions
+                    if(certificate != null)
                     {
-                        ServerCertificate = certificate,
-                        SslProtocols = System.Security.Authentication.SslProtocols.Tls12 | System.Security.Authentication.SslProtocols.Tls13
-                    });
+                        listenOptions.UseHttps(new HttpsConnectionAdapterOptions
+                        {
+                            ServerCertificate = certificate,
+                            SslProtocols = System.Security.Authentication.SslProtocols.Tls12 | System.Security.Authentication.SslProtocols.Tls13
+                        });
+                    }
                 });
             });
 
