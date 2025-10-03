@@ -20,11 +20,7 @@ namespace CrimsonStainedLands
 
         public static List<Module> Modules { get; } = new List<Module>();
 
-        // public virtual void Initialize()
-        // {
-        //     // Base implementation does nothing
-        // }
-                
+        public static event Action OnDataLoadedEvent;
 
         public static event Action PulseBeforeEvent;
         public static event Action PulseAfterEvent;
@@ -37,6 +33,11 @@ namespace CrimsonStainedLands
         public static void PulseAfter()
         {
             PulseAfterEvent?.Invoke();
+        }
+
+        public static void DataLoaded()
+        {
+            OnDataLoadedEvent?.Invoke();
         }
 
         public static class Combat
@@ -68,9 +69,15 @@ namespace CrimsonStainedLands
 
         public static class Character
         {
+            public delegate void EnterRoomHandler(CrimsonStainedLands.Character character, CrimsonStainedLands.World.RoomData oldRoom, CrimsonStainedLands.World.RoomData newRoom);
+
+            /// <summary>
+            /// Important to note that this is not called on new characters right now...
+            /// </summary>
             public static event Action<CrimsonStainedLands.Character, XElement> LoadingEvent;
             public static event Action<CrimsonStainedLands.Character, XElement> SerializingEvent;
-
+            public static event EnterRoomHandler OnEnterRoomEvent;
+            
             public static void OnLoading(CrimsonStainedLands.Character character, XElement rootElement)
             {
                 LoadingEvent?.Invoke(character, rootElement);
@@ -80,7 +87,12 @@ namespace CrimsonStainedLands
             {
                 SerializingEvent?.Invoke(character, rootElement);
             }
-        }        
+
+            public static void OnEnterRoom(CrimsonStainedLands.Character character, CrimsonStainedLands.World.RoomData oldRoom, CrimsonStainedLands.World.RoomData newRoom)
+            {
+                OnEnterRoomEvent?.Invoke(character, oldRoom, newRoom);
+            }
+        }
 
         public static void LoadModules()
         {

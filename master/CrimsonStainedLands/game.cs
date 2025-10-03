@@ -340,6 +340,9 @@ namespace CrimsonStainedLands
                     GuildData.WriteGuildSkillsHtml();
 
                     AreaData.SaveAreaListJson();
+
+                    Module.DataLoaded();
+                    
                     Game.log("Accepting connections... Standard port {0}, SSL Port {1}", Settings.Port, Settings.SSLPort);
                 }
 

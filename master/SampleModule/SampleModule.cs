@@ -1,6 +1,6 @@
-﻿namespace SampleModule;
+﻿namespace CrimsonStainedLands;
 using System.Runtime.CompilerServices;
-public class Module : CrimsonStainedLands.Module
+public class SampleModule : CrimsonStainedLands.Module
 {
     public static void DoColorTest(CrimsonStainedLands.Character character, string arguments)
     {
@@ -10,7 +10,7 @@ public class Module : CrimsonStainedLands.Module
         character.send("{BBlue text{x\r\n");
     }
 
-    public Module(string dllPath, System.Reflection.Assembly assembly) : base(dllPath, assembly)
+    public SampleModule(string dllPath, System.Reflection.Assembly assembly) : base(dllPath, assembly)
     {
         this.Name = "ColorTest : SampleModule";
         this.Description = "A sample module for testing color features.";
