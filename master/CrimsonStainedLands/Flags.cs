@@ -108,7 +108,7 @@ namespace CrimsonStainedLands
         public static readonly ActFlags OOCChannel = new();
 
         // Use a dictionary for cached lookup by name
-        private static readonly Dictionary<string, ActFlags> _flagsByName = new()
+        public static readonly Dictionary<string, ActFlags> FlagsByName = new()
         {
         };
 
@@ -124,23 +124,23 @@ namespace CrimsonStainedLands
                     {
                         flag.Name = field.Name;
                     }
-                    _flagsByName[field.Name] = (ActFlags)flag;
+                    FlagsByName[field.Name] = (ActFlags)flag;
                 });
         }
 
         public static ActFlags GetFlag(string name)
         {
-            return _flagsByName.TryGetValue(name, out var flag) ? flag : null;
+            return FlagsByName.TryGetValue(name, out var flag) ? flag : null;
         }
 
         public new static IEnumerable<string> GetNames()
         {
-            return _flagsByName.Keys.ToArray();
+            return FlagsByName.Keys.ToArray();
         }
 
         public new static IEnumerable<NamedFlag> GetValues()
         {
-            return _flagsByName.Values.ToArray();
+            return FlagsByName.Values.ToArray();
         }
     }
 }
