@@ -12,8 +12,8 @@
 
   <Target Name="CopyFilesToCrimson" AfterTargets="Build">
     <PropertyGroup>
-      <CrimsonOutputDirectory Condition="'$(Configuration)' == 'Debug'">$(SolutionDir)\master\CrimsonStainedLands\bin\Debug\net8.0\</CrimsonOutputDirectory>
-      <CrimsonOutputDirectory Condition="'$(Configuration)' == 'Release'">$(SolutionDir)\master\CrimsonStainedLands\bin\Release\net8.0\</CrimsonOutputDirectory>
+      <CrimsonOutputDirectory Condition="'$(Configuration)' == 'Debug'">$(ProjectDir)..\..\master\CrimsonStainedLands\bin\Debug\net8.0\</CrimsonOutputDirectory>
+      <CrimsonOutputDirectory Condition="'$(Configuration)' == 'Release'">$(ProjectDir)..\..\master\CrimsonStainedLands\bin\Release\net8.0\</CrimsonOutputDirectory>
     </PropertyGroup>
 
     <ItemGroup>
