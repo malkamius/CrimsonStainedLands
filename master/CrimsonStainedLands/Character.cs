@@ -159,6 +159,17 @@ namespace CrimsonStainedLands
 
         public int Trust { get; set; }
 
+        /// <summary>
+        /// These variables are not automatically saved. Hook save events to save them if needed.
+        /// </summary>
+        public Dictionary<string, object> Variables { get; } = new Dictionary<string, object>();
+
+        public T GetVariable<T>(string name)
+        {
+            if (Variables.ContainsKey(name) && Variables[name] is T)
+                return (T)Variables[name];
+            return default(T);
+        }
 
         public Positions Position
         {
@@ -1109,6 +1120,7 @@ namespace CrimsonStainedLands
 
         public void AddCharacterToRoom(RoomData room, bool executeRoomAndNPCProgs = true)
         {
+            var oldRoom = Room;
             if (Room != null)
                 RemoveCharacterFromRoom();
             Room = room;
@@ -1127,7 +1139,10 @@ namespace CrimsonStainedLands
                 Programs.ExecutePrograms(Programs.ProgramTypes.EnterRoom, this, null, Room, "");
             }
 
-
+            if (room != null)
+            {
+                Module.Character.OnEnterRoom(this, oldRoom, Room);
+            }
         }
 
         public WearSlot GetEquipmentWearSlot(ItemData item)
@@ -3191,7 +3206,7 @@ namespace CrimsonStainedLands
                         ((Pet != null && Pet.Room == Room && Pet is NPCData) ? new XElement("Pet", ((NPCData)Pet).Element) : null)
 
                     );
-
+                Module.Character.OnSerializing(this, element);
                 return element;
             }
         }
@@ -3963,41 +3978,131 @@ namespace CrimsonStainedLands
 
         public bool IsAFK { get { return this.Flags.ISSET(ActFlags.AFK) || IsInactive; } }
 
+        public delegate string DisplayFlagsFunc(Character target, Character viewer);
+
+        public static string DisplayFlagIsAFK(Character target, Character viewer)
+        {
+            if (target is Player && ((Player)target).IsAFK)
+                return "\\r(AFK)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagInanimate(Character target, Character viewer)
+        {
+            if (target is Player player && player.inanimate != null)
+                return "(inanimate)";
+            return "";
+        }
+
+        public static string DisplayFlagWizInvis(Character target, Character viewer)
+        {
+            if (target.Flags.ISSET(ActFlags.WizInvis))
+                return "\\w(WizInvis)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagGhost(Character target, Character viewer)
+        {
+            if (target.AffectedBy.ISSET(AffectFlags.Ghost))
+                return "\\W(Ghost)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagBurrowed(Character target, Character viewer)
+        {
+            if (target.IsAffected(AffectFlags.Burrow))
+                return "(Burrowed)";
+            return "";
+        }
+
+        public static string DisplayFlagCamouflaged(Character target, Character viewer)
+        {
+            if (target.IsAffected(AffectFlags.Camouflage))
+                return "\\G(Camouflaged)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagHidden(Character target, Character viewer)
+        {
+            if (target.AffectedBy.ISSET(AffectFlags.Hide))
+                return "\\R(Hidden)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagInvisible(Character target, Character viewer)
+        {
+            if (target.AffectedBy.ISSET(AffectFlags.Invisible))
+                return "(Invis)";
+            return "";
+        }
+
+        public static string DisplayFlagSanctuary(Character target, Character viewer)
+        {
+            if (target.AffectedBy.ISSET(AffectFlags.Sanctuary))
+                return "\\W(White Aura)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagHaven(Character target, Character viewer)
+        {
+            if (target.AffectedBy.ISSET(AffectFlags.Haven))
+                return "(Haven)";
+            return "";
+        }
+
+        public static string DisplayFlagRedAura(Character target, Character viewer)
+        {
+            if (viewer != null && viewer.AffectedBy.ISSET(AffectFlags.KnowAlignment) && target.Alignment == Alignment.Evil)
+                return "\\r(Red Aura)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagGoldenAura(Character target, Character viewer)
+        {
+            if (viewer != null && viewer.AffectedBy.ISSET(AffectFlags.KnowAlignment) && target.Alignment == Alignment.Good)
+                return "\\y(Golden Aura)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagPurple(Character target, Character viewer)
+        {
+            if (target.IsAffected(AffectFlags.FaerieFire) || target.IsAffected(SkillSpell.SkillLookup("faerie fog")))
+                return "\\m(Purple)\\x";
+            return "";
+        }
+
+        public static string DisplayFlagSmelly(Character target, Character viewer)
+        {
+            if (target.IsAffected(AffectFlags.Smelly))
+                return "(Smelly)";
+            return "";
+        }
+
+        public static List<DisplayFlagsFunc> DisplayFlagsStack { get; } = new List<DisplayFlagsFunc>()
+        {
+            DisplayFlagIsAFK,
+            DisplayFlagInanimate,
+            DisplayFlagWizInvis,
+            DisplayFlagGhost,
+            DisplayFlagBurrowed,
+            DisplayFlagCamouflaged,
+            DisplayFlagHidden,
+            DisplayFlagInvisible,
+            DisplayFlagSanctuary,
+            DisplayFlagHaven,
+            DisplayFlagRedAura,
+            DisplayFlagGoldenAura,
+            DisplayFlagPurple,
+            DisplayFlagSmelly
+        };
 
         public string DisplayFlags(Character viewer)
         {
             var flags = "";
-            Player player = null;
-
-            if (this is Player && (player = (Player)this).IsAFK)
-                flags += "\\r(AFK)\\x";
-            if (player != null && player.inanimate != null)
-                flags += "(inanimate)";
-            if (this.Flags.ISSET(ActFlags.WizInvis))
-                flags += "\\w(WizInvis)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Ghost))
-                flags += "\\W(Ghost)\\x";
-            if (this.IsAffected(AffectFlags.Burrow))
-                flags += "(Burrowed)";
-            if (this.IsAffected(AffectFlags.Camouflage))
-                flags += "\\G(Camouflaged)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Hide))
-                flags = "\\R(Hidden)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Invisible))
-                flags += "(Invis)";
-            if (this.AffectedBy.ISSET(AffectFlags.Sanctuary))
-                flags += "\\W(White Aura)\\x";
-            if (this.AffectedBy.ISSET(AffectFlags.Haven))
-                flags += "(Haven)";
-            if (viewer.AffectedBy.ISSET(AffectFlags.KnowAlignment) && this.Alignment == Alignment.Evil)
-                flags += "\\r(Red Aura)\\x";
-            if (viewer.AffectedBy.ISSET(AffectFlags.KnowAlignment) && this.Alignment == Alignment.Good)
-                flags += "\\y(Golden Aura)\\x";
-            if (this.IsAffected(AffectFlags.FaerieFire) || this.IsAffected(SkillSpell.SkillLookup("faerie fog")))
-                flags += "\\m(Purple)\\x";
-            if (this.IsAffected(AffectFlags.Smelly))
-                flags += "(Smelly)";
-
+            foreach (var displayFlag in DisplayFlagsStack)
+            {
+                flags += displayFlag(this, viewer);
+            }
             if (flags.Length > 0) flags += " ";
             return flags;
         }

@@ -18,7 +18,7 @@ namespace CrimsonStainedLands
 
         public string name;
         public bool isPCRace;
-        public List<ActFlags> act = new List<ActFlags>();
+        public List<NamedFlag> act = new List<NamedFlag>();
         public List<PartFlags> parts = new List<PartFlags>();
         public List<FormFlags> form = new List<FormFlags>();
         //public List<ActFlags> offense = new List<ActFlags>();

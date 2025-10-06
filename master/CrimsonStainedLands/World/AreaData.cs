@@ -44,6 +44,18 @@ namespace CrimsonStainedLands.World
 
         public Dictionary<int, Quest> Quests { get; set; } = new Dictionary<int, Quest>();
 
+        /// <summary>
+        /// /// These variables are not automatically saved. Hook save events to save them if needed.
+        /// </summary>
+        public Dictionary<string, object> Variables { get; } = new Dictionary<string, object>();
+
+        public T GetVariable<T>(string name)
+        {
+            if (Variables.ContainsKey(name) && Variables[name] is T)
+                return (T)Variables[name];
+            return default(T);
+        }
+        
         public static void LoadAreas(bool headersOnly = false)
         {
             DateTime loadstart = DateTime.Now;

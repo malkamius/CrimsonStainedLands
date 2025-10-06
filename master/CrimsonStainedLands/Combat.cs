@@ -60,6 +60,10 @@ namespace CrimsonStainedLands
         /// <returns>True if it is safe, false otherwise.</returns>
         public static bool CheckIsSafe(Character ch, Character victim)
         {
+            bool? moduleIsSafe = Module.Combat.IsSafe(ch, victim);
+            if (moduleIsSafe.HasValue)
+                return moduleIsSafe.Value;
+            
             if ((ch.FindAffect(AffectFlags.DuelInProgress, out var chduel) || ch.Master != null && ch.Master.FindAffect(AffectFlags.DuelInProgress, out chduel)) && chduel.ownerName == victim.Name)
                 return false;
 
