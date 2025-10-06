@@ -28,11 +28,11 @@ public abstract class BaseConnection
     }
 
     public TelnetNegotiator Negotiator {get; private set;}
-    
-    public Socket Socket {get; set;}
+
+    public Socket Socket { get; set; } = null;
     public Player Player {get; set;}
 
-    public EndPoint RemoteEndPoint { get; set; }
+    public EndPoint RemoteEndPoint { get; set; } = null;
 
     abstract public byte[] Read();
     abstract public int Write(byte[] data);

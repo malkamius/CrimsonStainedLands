@@ -21,6 +21,7 @@
     <Content Include="reaper.ico" />
   </ItemGroup>
     <ItemGroup>
+	    <PackageReference Include="FxSsh" Version="1.3.0" />
 	    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
     </ItemGroup>
   <ItemGroup>
@@ -36,9 +37,6 @@
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
     <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FxSsh\FxSsh.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="web\client.html">

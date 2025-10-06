@@ -41,7 +41,7 @@ namespace CrimsonStainedLands.Connections
                 server.AddHostKey("ssh-rsa", hostKey);
 
                 server.ConnectionAccepted += Server_ConnectionAccepted;
-                server.ExceptionRaised += Server_ExceptionRaised;
+                server.ExceptionRasied += Server_ExceptionRaised;
             }
             catch (Exception ex)
             {
@@ -102,7 +102,7 @@ namespace CrimsonStainedLands.Connections
                         if (args.ShellType == "shell")
                         {
                             connection.Channel = args.Channel;
-                            args.Channel.DataReceived += (sender, data) => connection.HandleReceivedDataAsync(data).Wait();
+                            args.Channel.DataReceived += (sender, data) => connection.HandleReceivedDataAsync(data);
                             connection.Status = BaseConnection.ConnectionStatus.Connected;
                             connectionConnectedCallback?.Invoke(connection, connection.Username, connection.Password);
                         }

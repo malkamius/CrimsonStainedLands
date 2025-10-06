@@ -46,9 +46,8 @@ namespace CrimsonStainedLands.Connections
         {
             Manager = manager ?? throw new ArgumentNullException(nameof(manager));
             this.session = session ?? throw new ArgumentNullException(nameof(session));
-            this.Socket = session?.Socket;
-            this.RemoteEndPoint = this.Socket.RemoteEndPoint;
-
+            //this.Socket = session?.Socket;
+            //this.RemoteEndPoint = this.Socket.RemoteEndPoint;
             inputBuffer = new BufferBlock<string>(new DataflowBlockOptions
             {
                 BoundedCapacity = 1000,
@@ -96,12 +95,13 @@ namespace CrimsonStainedLands.Connections
             try
             {
                 var channel = Channel;
+                
                 if (channel != null)
                 {
                     channelLock.Wait();
                     try
                     {
-                        channel.SendDataAsync(data).Wait();
+                        channel.SendData(data);
                         return data.Length;
                     }
                     finally
@@ -119,10 +119,10 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        public async Task HandleReceivedDataAsync(byte[] data)
+        public void HandleReceivedDataAsync(byte[] data)
         {
             if (data == null)
-                return;
+                
 
             try
             {
@@ -187,7 +187,7 @@ namespace CrimsonStainedLands.Connections
                             currentChannel = null;
                         }
                         else
-                            session.DisconnectAsync().Wait();
+                            session.Disconnect();
                     }
                     finally
                     {
