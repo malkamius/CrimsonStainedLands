@@ -41,16 +41,16 @@
     <ProjectReference Include="..\FxSsh\FxSsh.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Web\client.html">
+    <None Update="web\client.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Web\css\**\*.*">
+    <None Update="web\css\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Web\js\**\*.*">
+    <None Update="web\js\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Web\node_modules\@xterm\**\*.*">
+    <None Update="web\node_modules\@xterm\**\*.*">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
