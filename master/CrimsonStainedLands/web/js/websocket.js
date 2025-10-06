@@ -4,7 +4,8 @@ var i=class{constructor(){this.NewInput=new Uint8Array;this.Response=new Uint8Ar
 Connection died
 `;this.outputHandler(o)},this.socket.onerror=r=>{this.outputHandler(`
 Error: ${r.message}
-`)}}sendMessage(e){if(this.socket&&this.socket.readyState===WebSocket.OPEN){let t=new TextEncoder().encode(e+`
-`);this.socket.send(t),this.inputHandler(e)}else this.outputHandler(`Not connected. Type /connect to connect to the MUD server.
+`)}}sendMessage(e){if(this.socket&&this.socket.readyState===WebSocket.OPEN){let t=e.endsWith(`
+`)?e:e+`
+`,n=new TextEncoder().encode(t);this.socket.send(n),this.inputHandler(e)}else this.outputHandler(`Not connected. Type /connect to connect to the MUD server.
 `)}isConnected(){return this.socket!==null&&this.socket.readyState===WebSocket.OPEN}};export{l as WebSocketManager};
 //# sourceMappingURL=websocket.js.map

@@ -100,13 +100,14 @@
     left: 0;
     top: 0;
     bottom: 0;
-    margin: 15px;
+    margin: 0;
 }
 
 .xterm .xterm-screen {
     position: relative;
 	text-align: left;
 	width: 100% !important;
+    height: 100% !important;
 	color: #0f0;
 }
 
@@ -118,6 +119,10 @@
 
 .xterm .xterm-scroll-area {
     visibility: hidden;
+}
+
+.xterm-rows {
+    height: 100% !important;
 }
 
 .xterm-char-measure-element {
