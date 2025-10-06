@@ -11,7 +11,7 @@
     <Security>0</Security>
     <Credits>Copper  Chapel Catacombs</Credits>
     <Continent>Mainland</Continent>
-    <OverRoomVnum>0</OverRoomVnum>
+    <OverRoomVnum>1</OverRoomVnum>
   </AreaData>
   <Rooms>
     <Room>
@@ -4316,7 +4316,7 @@ it is obviously a great find!</Description>
       <!--Spawn the spirit of King Crotus to The Tomb of Crotus-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3416">
-      <!--Spawn a heavy iron key to a trout-->
+      <!--Spawn a heavy iron key to the spirit of King Crotus-->
     </Reset>
     <Reset Type="Item" Destination="3424" Count="0" Max="1" Vnum="3415">
       <!--Spawn a stone sarcophagus to The Tomb of Crotus-->
@@ -4346,16 +4346,16 @@ it is obviously a great find!</Description>
       <!--Spawn the rock slug to The Grand Hall of Kings-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3422">
-      <!--Spawn a piece of slime to a bass-->
+      <!--Spawn a piece of slime to the rock slug-->
     </Reset>
     <Reset Type="NPC" Destination="3434" Count="1" Max="1" Vnum="3411">
       <!--Spawn The X-ist flesh eater to The Tomb of Frath-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3414">
-      <!--Spawn a whisper thin rapier to a carp-->
+      <!--Spawn a whisper thin rapier to The X-ist flesh eater-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3412">
-      <!--Spawn the mummified head of Jubal the Benevolent to a carp-->
+      <!--Spawn the mummified head of Jubal the Benevolent to The X-ist flesh eater-->
     </Reset>
     <Reset Type="Put" Destination="0" Count="0" Max="0" Vnum="3413">
       <!--Spawn a black marble ring to previous item-->
@@ -4406,13 +4406,13 @@ it is obviously a great find!</Description>
       <!--Spawn a worn and dented breast plate to Snapper Joe-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3411">
-      <!--Spawn a large black dirty key to a carp-->
+      <!--Spawn a large black dirty key to Snapper Joe-->
     </Reset>
     <Reset Type="NPC" Destination="3450" Count="1" Max="5" Vnum="3413">
       <!--Spawn the rock slug to Entrance to the Forbidden Catacombs-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3422">
-      <!--Spawn a piece of slime to an eel-->
+      <!--Spawn a piece of slime to the rock slug-->
     </Reset>
     <Reset Type="NPC" Destination="3452" Count="1" Max="5" Vnum="3407">
       <!--Spawn The nightgaunt to The Catacombs-->
@@ -4424,7 +4424,7 @@ it is obviously a great find!</Description>
       <!--Spawn The nightgaunt to The Catacombs-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3402">
-      <!--Spawn a nightgaunt's tickler to a blue-gill-->
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
     </Reset>
     <Reset Type="NPC" Destination="3454" Count="2" Max="10" Vnum="3402">
       <!--Spawn The ghoul to The Catacombs-->
@@ -4433,7 +4433,7 @@ it is obviously a great find!</Description>
       <!--Spawn the Mi-Go to The Catacombs-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3403">
-      <!--Spawn disgusting pinkish plasma webbing to a tadpole-->
+      <!--Spawn disgusting pinkish plasma webbing to the Mi-Go-->
     </Reset>
     <Reset Type="NPC" Destination="3457" Count="1" Max="5" Vnum="3407">
       <!--Spawn The nightgaunt to The Catacombs-->
@@ -4448,13 +4448,13 @@ it is obviously a great find!</Description>
       <!--Spawn the pitch-black flaming longsword to The guardian vampire-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3427">
-      <!--Spawn a dark black cape to a tadpole-->
+      <!--Spawn a dark black cape to The guardian vampire-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3419">
-      <!--Spawn key to the coffin to a tadpole-->
+      <!--Spawn key to the coffin to The guardian vampire-->
     </Reset>
     <Reset Type="Give" Destination="0" Count="0" Max="0" Vnum="3424">
-      <!--Spawn a tightly rolled scroll to a blue-gill-->
+      <!--Spawn a tightly rolled scroll to The guardian vampire-->
     </Reset>
     <Reset Type="NPC" Destination="3462" Count="2" Max="10" Vnum="3402">
       <!--Spawn The ghoul to The Catacombs-->
@@ -4469,13 +4469,13 @@ it is obviously a great find!</Description>
       <!--Spawn The nightgaunt to The Gilded Hallway-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3402">
-      <!--Spawn a nightgaunt's tickler to a blue-gill-->
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
     </Reset>
     <Reset Type="NPC" Destination="3465" Count="1" Max="5" Vnum="3407">
       <!--Spawn The nightgaunt to The Gilded Hallway-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3402">
-      <!--Spawn a nightgaunt's tickler to an eel-->
+      <!--Spawn a nightgaunt's tickler to The nightgaunt-->
     </Reset>
     <Reset Type="NPC" Destination="3466" Count="1" Max="3" Vnum="3406">
       <!--Spawn the Mi-Go to The Gilded Hallway-->
@@ -4487,7 +4487,7 @@ it is obviously a great find!</Description>
       <!--Spawn The mad etcher to The Gilded Hallway-->
     </Reset>
     <Reset Type="Equip" Destination="0" Count="0" Max="0" Vnum="3423">
-      <!--Spawn an artist's smock to an eel-->
+      <!--Spawn an artist's smock to The mad etcher-->
     </Reset>
     <Reset Type="NPC" Destination="3468" Count="1" Max="1" Vnum="3415">
       <!--Spawn The spectral etcher's wife to The Gilded Hallway-->
