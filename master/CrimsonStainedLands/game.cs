@@ -160,6 +160,8 @@ namespace CrimsonStainedLands
             //public MainForm MainForm;
             public Action<GameInfo> LaunchMethod;
 
+            public bool LoadingData = true;
+
             public Task MainLoopTask { get; internal set; }
 
             public void LogLine(string text)
@@ -342,7 +344,8 @@ namespace CrimsonStainedLands
                     AreaData.SaveAreaListJson();
 
                     Module.DataLoaded();
-                    
+
+                    Info.LoadingData = false;
                     Game.log("Accepting connections... Standard port {0}, SSL Port {1}", Settings.Port, Settings.SSLPort);
                 }
 
@@ -376,11 +379,34 @@ namespace CrimsonStainedLands
             Discord.Instance.OnMessageReceived += DiscordMessageReceived;
 
             Task.Run(() => Discord.Instance.StartAsync(Settings.BotToken));
+
             try
             {
                 //AcceptNewSockets();
                 while (!state.Exiting)
                 {
+                    try
+                    {
+                        foreach (var connection in Info.Connections)
+                        {
+                            if (connection.state == Player.ConnectionStates.WaitingForIntro)
+                            {
+                                try
+                                {
+                                    connection.SendIntro();
+                                }
+                                catch (Exception ex)
+                                {
+                                    Game.bug("Error sending intro: {0}", ex);
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Game.bug("Error sending intro: {0}", ex);
+                    }
+                    
                     try
                     {
                         var time = DateTime.Now;
