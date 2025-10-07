@@ -37,9 +37,12 @@ namespace CrimsonStainedLands.Connections
             {
                 server = new FxSsh.SshServer(startingInfo);
 
-                var hostKey = LoadOrGenerateHostKey();
-                server.AddHostKey("ssh-rsa", hostKey);
-
+                var hostKeys = LoadOrGenerateHostKeys();
+                foreach (var kvp in hostKeys)
+                {
+                    server.AddHostKey(kvp.Key, kvp.Value);
+                }
+                
                 server.ConnectionAccepted += Server_ConnectionAccepted;
                 server.ExceptionRasied += Server_ExceptionRaised;
             }
@@ -56,8 +59,6 @@ namespace CrimsonStainedLands.Connections
             
             session.ServiceRegistered += Session_ServiceRegistered;
             session.Disconnected += Session_Disconnected;
-
-            
         }
 
         private void Session_Disconnected(object sender, EventArgs e)
@@ -84,15 +85,8 @@ namespace CrimsonStainedLands.Connections
                             
                         }
 
-                        // For development, accept all connections
                         args.Result = true;
                         return;
-
-                        // TODO: Implement proper authentication
-                        //if (args.AuthenticationType == "publickey")
-                        //{
-                        //    args.Result = VerifyPublicKey(args.Username, args.PublicKey);
-                        //}
                     };
                 }
                 else if (service is ConnectionService connService)
@@ -137,28 +131,67 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        private string LoadOrGenerateHostKey()
+        private Dictionary<string, string> LoadOrGenerateHostKeys()
         {
+            var keys = new Dictionary<string, string>();
             try
             {
-                byte[] keyBytes;
-                if (File.Exists(hostKeyFile))
+                // RSA key (PEM)
+                string rsaKeyFile = Path.ChangeExtension(hostKeyFile, ".rsa.pem");
+                string rsaPem;
+                if (File.Exists(rsaKeyFile))
                 {
-                    keyBytes = File.ReadAllBytes(hostKeyFile);
+                    rsaPem = File.ReadAllText(rsaKeyFile);
                 }
                 else
                 {
-                    using var rsa = new RSACryptoServiceProvider(2048);
-                    keyBytes = rsa.ExportCspBlob(true);
-                    File.WriteAllBytes(hostKeyFile, keyBytes);
-                    File.SetAttributes(hostKeyFile, FileAttributes.ReadOnly);
+                    using var rsa = System.Security.Cryptography.RSA.Create(2048);
+                    var rsaBytes = rsa.ExportPkcs8PrivateKey();
+                    rsaPem = PemEncode("PRIVATE KEY", rsaBytes);
+                    File.WriteAllText(rsaKeyFile, rsaPem);
+                    File.SetAttributes(rsaKeyFile, FileAttributes.ReadOnly);
                 }
-                return Convert.ToBase64String(keyBytes);
+                keys["ssh-rsa"] = rsaPem;
+
+                // ECDSA key (nistp256, PEM)
+                string ecdsaKeyFile = Path.ChangeExtension(hostKeyFile, ".ecdsa.pem");
+                string ecdsaPem;
+                if (File.Exists(ecdsaKeyFile))
+                {
+                    ecdsaPem = File.ReadAllText(ecdsaKeyFile);
+                }
+                else
+                {
+                    using var ecdsa = System.Security.Cryptography.ECDsa.Create(System.Security.Cryptography.ECCurve.NamedCurves.nistP256);
+                    var ecdsaBytes = ecdsa.ExportPkcs8PrivateKey();
+                    ecdsaPem = PemEncode("PRIVATE KEY", ecdsaBytes);
+                    File.WriteAllText(ecdsaKeyFile, ecdsaPem);
+                    File.SetAttributes(ecdsaKeyFile, FileAttributes.ReadOnly);
+                }
+                keys["ecdsa-sha2-nistp256"] = ecdsaPem;
+
+                // Ed25519 support is not included here due to .NET/FxSsh limitations
+
+                return keys;
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException("Failed to load or generate host key", ex);
+                throw new InvalidOperationException("Failed to load or generate host keys", ex);
             }
+        }
+
+        // Helper to encode PEM
+        private static string PemEncode(string label, byte[] data)
+        {
+            var builder = new StringBuilder();
+            builder.AppendLine($"-----BEGIN {label}-----");
+            string base64 = Convert.ToBase64String(data);
+            for (int i = 0; i < base64.Length; i += 64)
+            {
+                builder.AppendLine(base64.Substring(i, Math.Min(64, base64.Length - i)));
+            }
+            builder.AppendLine($"-----END {label}-----");
+            return builder.ToString();
         }
     }
 }

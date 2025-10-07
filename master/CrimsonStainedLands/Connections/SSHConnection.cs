@@ -46,8 +46,32 @@ namespace CrimsonStainedLands.Connections
         {
             Manager = manager ?? throw new ArgumentNullException(nameof(manager));
             this.session = session ?? throw new ArgumentNullException(nameof(session));
-            //this.Socket = session?.Socket;
-            //this.RemoteEndPoint = this.Socket.RemoteEndPoint;
+
+            if (session != null)
+            {
+                // Socket was removed and only a private _socket variable remains
+                //this.Socket = session?.Socket;
+                //this.RemoteEndPoint = this.Socket.RemoteEndPoint;
+                var socketField = typeof(Session).GetField("_socket", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                if (socketField != null)
+                {
+                    var socket = socketField.GetValue(session) as Socket;
+                    if (socket != null)
+                    {
+                        this.Socket = socket;
+                        this.RemoteEndPoint = socket.RemoteEndPoint;
+                        socket.ReceiveTimeout = 0;
+                    }
+                }
+
+                // Set receive timeout to maximum value for sockets/other stuff in fxssh
+                var timeoutField = typeof(Session).GetField("_timeout", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                if (timeoutField != null)
+                {
+                    timeoutField.SetValue(session, new TimeSpan(0, 0, 0, 0, int.MaxValue));
+                }
+            }
+
             inputBuffer = new BufferBlock<string>(new DataflowBlockOptions
             {
                 BoundedCapacity = 1000,
@@ -95,7 +119,7 @@ namespace CrimsonStainedLands.Connections
             try
             {
                 var channel = Channel;
-                
+
                 if (channel != null)
                 {
                     channelLock.Wait();
@@ -122,7 +146,7 @@ namespace CrimsonStainedLands.Connections
         public void HandleReceivedDataAsync(byte[] data)
         {
             if (data == null)
-                
+                return;
 
             try
             {
@@ -142,13 +166,13 @@ namespace CrimsonStainedLands.Connections
                         {
                             //if (currentLineBuffer.Length > 0)
                             //{
-                                // Post the current line to the input buffer
-                                var line = currentLineBuffer.ToString();
-                                //using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
-                                inputBuffer.Post(line + "\n");
-                                currentLineBuffer.Clear();
+                            // Post the current line to the input buffer
+                            var line = currentLineBuffer.ToString();
+                            //using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+                            inputBuffer.Post(line + "\n");
+                            currentLineBuffer.Clear();
                             //}
-                            
+
                             Write(new byte[] { 13, 10 }); // Send CRLF for proper line ending
                         }
                         else
@@ -158,6 +182,7 @@ namespace CrimsonStainedLands.Connections
                         }
                     }
                 }
+
             }
             catch (OperationCanceledException)
             {
@@ -188,6 +213,10 @@ namespace CrimsonStainedLands.Connections
                         }
                         else
                             session.Disconnect();
+                    }
+                    catch (Exception ex)
+                    {
+                        Game.log($"SSH connection cleanup error: {ex.Message}");
                     }
                     finally
                     {

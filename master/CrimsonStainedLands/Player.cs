@@ -172,11 +172,13 @@ namespace CrimsonStainedLands
             TelnetOptions.SETBIT(TelnetOptionFlags.SuppressGoAhead);
 
             Game.Instance.SocketAccepted(this);
+
+            initialUsername = username;
+            initialPassword = password;
+            
             if (Game.Instance.Info.LoadingData)
             {
                 state = ConnectionStates.WaitingForIntro;
-                initialUsername = username;
-                initialPassword = password;
             }
             else
             {
