@@ -233,7 +233,7 @@ namespace FxSsh
             var pos = 0;
             var buffer = new byte[length];
 
-            var msSinceLastData = 0;
+            //var msSinceLastData = 0;
 
             while (pos < length)
             {
@@ -260,7 +260,7 @@ namespace FxSsh
                     }
                     else
                     {
-                        msSinceLastData = 0;
+                        //msSinceLastData = 0;
                     }
 
                     pos += len;
