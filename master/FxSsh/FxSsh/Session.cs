@@ -51,6 +51,9 @@ namespace FxSsh
         public string ServerVersion { get; private set; }
         public string ClientVersion { get; private set; }
         public byte[] SessionId { get; private set; }
+
+        private bool _socketDisposed = false;
+
         public T GetService<T>() where T : SshService
         {
             return (T)_services.FirstOrDefault(x => x is T);
@@ -153,16 +156,23 @@ namespace FxSsh
                 var message = new DisconnectMessage(reason, description);
                 TrySendMessage(message);
             }
-
+            bool raiseMessage = !_socketDisposed;
             try
             {
-                _socket.Shutdown(SocketShutdown.Both);
-                _socket.Close();
-                _socket.Dispose();
+                if (!_socketDisposed)
+                {
+                    _socket.Shutdown(SocketShutdown.Both);
+                    _socket.Close();
+                    _socket.Dispose();
+                    _socketDisposed = true;
+                }
             }
             catch { }
 
-            Disconnected?.Invoke(this, EventArgs.Empty);
+            if (raiseMessage)
+            {
+                Disconnected?.Invoke(this, EventArgs.Empty);
+            }
         }
 
         #region Socket operations
@@ -229,6 +239,7 @@ namespace FxSsh
             {
                 try
                 {
+                    if (_socketDisposed) break;
                     var ar = _socket.BeginReceive(buffer, pos, length - pos, SocketFlags.None, null, null);
                     WaitHandle(ar);
                     var len = _socket.EndReceive(ar);
@@ -239,13 +250,13 @@ namespace FxSsh
 
                     if (len == 0 && _socket.Available == 0)
                     {
-                        if (msSinceLastData >= _timeout.TotalMilliseconds)
-                        {
+                        //if (msSinceLastData >= _timeout.TotalMilliseconds)
+                        //{
                             throw new SshConnectionException("Connection lost", DisconnectReason.ConnectionLost);
-                        }
+                        //}
 
-                        msSinceLastData += 50;
-                        Thread.Sleep(50);
+                        //msSinceLastData += 50;
+                        //Thread.Sleep(50);
                     }
                     else
                     {
@@ -279,6 +290,7 @@ namespace FxSsh
             {
                 try
                 {
+                    if (_socketDisposed) break;
                     var ar = _socket.BeginSend(data, pos, length - pos, SocketFlags.None, null, null);
                     WaitHandle(ar);
                     pos += _socket.EndSend(ar);

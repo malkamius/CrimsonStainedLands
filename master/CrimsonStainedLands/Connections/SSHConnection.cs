@@ -7,6 +7,7 @@ using System.Threading.Tasks.Dataflow;
 using System.Linq;
 using System.Text;
 using System.Collections.Concurrent;
+using Org.BouncyCastle.Bcpg;
 
 namespace CrimsonStainedLands.Connections
 {
@@ -120,7 +121,7 @@ namespace CrimsonStainedLands.Connections
             {
                 var channel = Channel;
 
-                if (channel != null)
+                if (channel != null && channelLock != null)
                 {
                     channelLock.Wait();
                     try
@@ -130,7 +131,8 @@ namespace CrimsonStainedLands.Connections
                     }
                     finally
                     {
-                        channelLock.Release();
+                        if(channelLock != null)
+                            channelLock.Release();
                     }
                 }
                 return 0;
@@ -154,12 +156,16 @@ namespace CrimsonStainedLands.Connections
                 {
                     foreach (byte b in data)
                     {
-                        if (b == 8) // Backspace
+                        if (b == 27)
+                        {
+                            break;
+                        }
+                        else if (b == 8 || b == 127) // Backspace or Delete
                         {
                             if (currentLineBuffer.Length > 0)
                             {
                                 currentLineBuffer.Length--;
-                                Write(new byte[] { 8, 32, 8 }); // Backspace, space, backspace to clear character
+                                Write(new byte[] { b, 32, b }); // Backspace, space, backspace to clear character
                             }
                         }
                         else if (b == 13 || b == 10) // CR or LF
@@ -206,12 +212,12 @@ namespace CrimsonStainedLands.Connections
                     try
                     {
                         var channel = currentChannel;
-                        if (channel != null)
+                        if (channel != null && !channel.ServerClosed && !channel.ClientClosed)
                         {
                             channel.SendClose();
                             currentChannel = null;
                         }
-                        else
+                        else if (session != null)
                             session.Disconnect();
                     }
                     catch (Exception ex)
@@ -220,7 +226,8 @@ namespace CrimsonStainedLands.Connections
                     }
                     finally
                     {
-                        channelLock.Release();
+                        if (channelLock != null)
+                            channelLock.Release();
                     }
 
                     inputBuffer.Complete();

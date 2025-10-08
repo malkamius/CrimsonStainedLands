@@ -77,12 +77,12 @@ namespace CrimsonStainedLands.Connections
                 {
                     userAuth.UserAuth += (s, args) =>
                     {
-                        if(connections.TryGetValue(session, out var connection))
+                        if (connections.TryGetValue(session, out var connection))
                         {
-                            
+
                             connection.Username = args.Username;
                             connection.Password = args.Password;
-                            
+
                         }
 
                         args.Result = true;
@@ -101,6 +101,25 @@ namespace CrimsonStainedLands.Connections
                             args.Channel.DataReceived += (sender, data) => connection.HandleReceivedDataAsync(data);
                             connection.Status = BaseConnection.ConnectionStatus.Connected;
                             connectionConnectedCallback?.Invoke(connection, connection.Username, connection.Password);
+                        }
+                        else if (args.ShellType == "exec")
+                        {
+                            // Simulate empty ls output if command contains 'ls'
+                            if (!string.IsNullOrEmpty(args.CommandText) && args.CommandText.Contains("ls"))
+                            {
+                                args.Agreed = true;
+                                // Send empty output (newline) and close the channel
+                                args.Channel.SendData(System.Text.Encoding.UTF8.GetBytes("\n"));
+                                args.Channel.SendEof();
+                                args.Channel.SendClose();
+                            }
+                            else
+                            {
+                                args.Channel.SendData(System.Text.Encoding.UTF8.GetBytes("\n"));
+                                args.Channel.SendEof();
+                                args.Channel.SendClose();
+                                args.Agreed = false;
+                            }
                         }
                     };
                 }

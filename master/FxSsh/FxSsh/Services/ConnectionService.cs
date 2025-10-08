@@ -63,7 +63,7 @@ namespace FxSsh.Services
         {
             try
             {
-                while (true)
+                while (!_messageCts.IsCancellationRequested)
                 {
                     var message = _messageQueue.Take(_messageCts.Token);
                     try
