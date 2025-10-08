@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrimsonStainedLands", "Crim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleModule", "SampleModule\SampleModule.csproj", "{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FxSsh", "FxSsh", "{BC9DA964-A796-440D-BE73-82DD93E10D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FxSsh", "FxSsh\FxSsh\FxSsh.csproj", "{26071884-5012-4B36-8617-22FC95F5CCE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +25,19 @@ Global
 		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26071884-5012-4B36-8617-22FC95F5CCE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26071884-5012-4B36-8617-22FC95F5CCE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26071884-5012-4B36-8617-22FC95F5CCE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26071884-5012-4B36-8617-22FC95F5CCE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectDependencies) = postSolution
-        {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C} = {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C}
-        {7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F} = {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C}
-    EndGlobalSection
+		{2FDA0F93-1151-46E1-A6EA-932B66B1DF2C} = {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C}
+		{7307B2C1-BAF6-4CCF-BC3B-F408C9C1119F} = {2FDA0F93-1151-46E1-A6EA-932B66B1DF2C}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26071884-5012-4B36-8617-22FC95F5CCE6} = {BC9DA964-A796-440D-BE73-82DD93E10D40}
+	EndGlobalSection
 EndGlobal

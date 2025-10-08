@@ -42,9 +42,9 @@ namespace CrimsonStainedLands.Connections
                 {
                     server.AddHostKey(kvp.Key, kvp.Value);
                 }
-                
+
                 server.ConnectionAccepted += Server_ConnectionAccepted;
-                server.ExceptionRasied += Server_ExceptionRaised;
+                server.ExceptionRaised += Server_ExceptionRaised;
             }
             catch (Exception ex)
             {
@@ -73,9 +73,9 @@ namespace CrimsonStainedLands.Connections
         {
             if (sender is Session session && connections.TryGetValue(session, out var connection))
             {
-                if (service is UserauthService userAuth)
+                if (service is UserAuthService userAuth)
                 {
-                    userAuth.Userauth += (s, args) =>
+                    userAuth.UserAuth += (s, args) =>
                     {
                         if(connections.TryGetValue(session, out var connection))
                         {
@@ -95,6 +95,8 @@ namespace CrimsonStainedLands.Connections
                     {
                         if (args.ShellType == "shell")
                         {
+                            args.Agreed = true;
+
                             connection.Channel = args.Channel;
                             args.Channel.DataReceived += (sender, data) => connection.HandleReceivedDataAsync(data);
                             connection.Status = BaseConnection.ConnectionStatus.Connected;
@@ -107,6 +109,13 @@ namespace CrimsonStainedLands.Connections
 
         private void Server_ExceptionRaised(object sender, Exception e)
         {
+            // Ignore SshConnectionException for unknown x11-req requests, log others
+            if (e is FxSsh.SshConnectionException && e.Message.Contains("Unknown request type: x11-req."))
+            {
+                // Optionally, log as info or ignore completely
+                Game.log("SSH Server: Ignored unknown x11-req request from client.");
+                return;
+            }
             Game.log($"SSH Server error: {e.Message}");
         }
 
