@@ -74,7 +74,21 @@ namespace CrimsonStainedLands
         public PcRace PcRace;
         private Sexes _Sex;
 
-        public RoomData Room;
+        public RoomData WasInRoom { get; set; }
+        private RoomData _room;
+        public RoomData Room
+        {
+            get
+            {
+                return _room;
+            }
+            set
+            {
+                if(_room != null)
+                    WasInRoom = _room;
+                _room = value;
+            }
+        }
 
         public CharacterSize Size = CharacterSize.Medium;
         public string Material;
@@ -1123,6 +1137,8 @@ namespace CrimsonStainedLands
             var oldRoom = Room;
             if (Room != null)
                 RemoveCharacterFromRoom();
+            else
+                oldRoom = WasInRoom;
             Room = room;
             room.Characters.Insert(0, this);
 
