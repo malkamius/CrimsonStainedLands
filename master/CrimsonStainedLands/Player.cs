@@ -96,7 +96,8 @@ namespace CrimsonStainedLands
             GetDefaultWeapon,
             Deleting,
             NegotiateSSH,
-            Disconnected
+            Disconnected,
+            WaitingForIntro
         }
 
         public ConnectionStates state;
@@ -119,6 +120,9 @@ namespace CrimsonStainedLands
         public DateTime LastActivity { get; set; } = DateTime.Now;
         public DateTime LoginTime { get; private set; }
         public Dictionary<string, string> Aliases { get; private set; } = new Dictionary<string, string>();
+
+        private string initialUsername;
+        private string initialPassword;
 
         static Player()
         {
@@ -169,23 +173,36 @@ namespace CrimsonStainedLands
 
             Game.Instance.SocketAccepted(this);
 
+            initialUsername = username;
+            initialPassword = password;
+            
+            if (Game.Instance.Info.LoadingData)
+            {
+                state = ConnectionStates.WaitingForIntro;
+            }
+            else
+            {
+                SendIntro();
+            }
+        }
+
+        internal void SendIntro()
+        {
             DoActInfo.ReadHelp(this, "DIKU", true);
             state = ConnectionStates.GetName;
             send("\r\nEnter your name: ");
 
-            if (!string.IsNullOrEmpty(username))
+            if (!string.IsNullOrEmpty(initialUsername))
             {
-                this.NewCharacterInputHandler(username);
+                this.NewCharacterInputHandler(initialUsername);
 
-                if (!string.IsNullOrEmpty(password) && (this.state == ConnectionStates.GetPassword || this.state == ConnectionStates.GetNewPassword))
+                if (!string.IsNullOrEmpty(initialPassword) && (this.state == ConnectionStates.GetPassword || this.state == ConnectionStates.GetNewPassword))
                 {
-                    this.NewCharacterInputHandler(password);
+                    this.NewCharacterInputHandler(initialPassword);
                 }
             }
-
-            
-            
-            
+            initialUsername = null;
+            initialPassword = null;
         }
 
         public List<string> ClientTypes = new List<string>();

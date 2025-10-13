@@ -7,6 +7,7 @@ using System.Threading.Tasks.Dataflow;
 using System.Linq;
 using System.Text;
 using System.Collections.Concurrent;
+using Org.BouncyCastle.Bcpg;
 
 namespace CrimsonStainedLands.Connections
 {
@@ -46,8 +47,31 @@ namespace CrimsonStainedLands.Connections
         {
             Manager = manager ?? throw new ArgumentNullException(nameof(manager));
             this.session = session ?? throw new ArgumentNullException(nameof(session));
-            this.Socket = session?.Socket;
-            this.RemoteEndPoint = this.Socket.RemoteEndPoint;
+
+            if (session != null)
+            {
+                // Socket was removed and only a private _socket variable remains
+                //this.Socket = session?.Socket;
+                //this.RemoteEndPoint = this.Socket.RemoteEndPoint;
+                var socketField = typeof(Session).GetField("_socket", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                if (socketField != null)
+                {
+                    var socket = socketField.GetValue(session) as Socket;
+                    if (socket != null)
+                    {
+                        this.Socket = socket;
+                        this.RemoteEndPoint = socket.RemoteEndPoint;
+                        socket.ReceiveTimeout = 0;
+                    }
+                }
+
+                // Set receive timeout to maximum value for sockets/other stuff in fxssh
+                var timeoutField = typeof(Session).GetField("_timeout", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                if (timeoutField != null)
+                {
+                    timeoutField.SetValue(session, new TimeSpan(0, 0, 0, 0, int.MaxValue));
+                }
+            }
 
             inputBuffer = new BufferBlock<string>(new DataflowBlockOptions
             {
@@ -96,17 +120,19 @@ namespace CrimsonStainedLands.Connections
             try
             {
                 var channel = Channel;
-                if (channel != null)
+
+                if (channel != null && channelLock != null)
                 {
                     channelLock.Wait();
                     try
                     {
-                        channel.SendDataAsync(data).Wait();
+                        channel.SendData(data);
                         return data.Length;
                     }
                     finally
                     {
-                        channelLock.Release();
+                        if(channelLock != null)
+                            channelLock.Release();
                     }
                 }
                 return 0;
@@ -119,7 +145,7 @@ namespace CrimsonStainedLands.Connections
             }
         }
 
-        public async Task HandleReceivedDataAsync(byte[] data)
+        public void HandleReceivedDataAsync(byte[] data)
         {
             if (data == null)
                 return;
@@ -130,25 +156,29 @@ namespace CrimsonStainedLands.Connections
                 {
                     foreach (byte b in data)
                     {
-                        if (b == 8) // Backspace
+                        if (b == 27)
+                        {
+                            break;
+                        }
+                        else if (b == 8 || b == 127) // Backspace or Delete
                         {
                             if (currentLineBuffer.Length > 0)
                             {
                                 currentLineBuffer.Length--;
-                                Write(new byte[] { 8, 32, 8 }); // Backspace, space, backspace to clear character
+                                Write(new byte[] { b, 32, b }); // Backspace, space, backspace to clear character
                             }
                         }
                         else if (b == 13 || b == 10) // CR or LF
                         {
                             //if (currentLineBuffer.Length > 0)
                             //{
-                                // Post the current line to the input buffer
-                                var line = currentLineBuffer.ToString();
-                                //using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
-                                inputBuffer.Post(line + "\n");
-                                currentLineBuffer.Clear();
+                            // Post the current line to the input buffer
+                            var line = currentLineBuffer.ToString();
+                            //using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+                            inputBuffer.Post(line + "\n");
+                            currentLineBuffer.Clear();
                             //}
-                            
+
                             Write(new byte[] { 13, 10 }); // Send CRLF for proper line ending
                         }
                         else
@@ -158,6 +188,7 @@ namespace CrimsonStainedLands.Connections
                         }
                     }
                 }
+
             }
             catch (OperationCanceledException)
             {
@@ -181,17 +212,22 @@ namespace CrimsonStainedLands.Connections
                     try
                     {
                         var channel = currentChannel;
-                        if (channel != null)
+                        if (channel != null && !channel.ServerClosed && !channel.ClientClosed)
                         {
                             channel.SendClose();
                             currentChannel = null;
                         }
-                        else
-                            session.DisconnectAsync().Wait();
+                        else if (session != null)
+                            session.Disconnect();
+                    }
+                    catch (Exception ex)
+                    {
+                        Game.log($"SSH connection cleanup error: {ex.Message}");
                     }
                     finally
                     {
-                        channelLock.Release();
+                        if (channelLock != null)
+                            channelLock.Release();
                     }
 
                     inputBuffer.Complete();

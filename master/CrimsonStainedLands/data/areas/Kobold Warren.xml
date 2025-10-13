@@ -1,0 +1,2316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Area>
+  <AreaData>
+    <Name>Kobold Warren</Name>
+    <Info></Info>
+    <VnumStart>50200</VnumStart>
+    <VnumEnd>50399</VnumEnd>
+    <MinimumLevel>0</MinimumLevel>
+    <MaximumLevel>1</MaximumLevel>
+    <Builders></Builders>
+    <Security>0</Security>
+    <Credits></Credits>
+    <Continent>Mainland</Continent>
+    <OverRoomVnum>0</OverRoomVnum>
+  </AreaData>
+  <Rooms>
+    <Room>
+      <VNum>50200</VNum>
+      <Name>The entrance to the kobold warren</Name>
+      <Description>The entrance to the kobold warren is a small, dimly-lit chamber with rough
+stone walls and a low ceiling. A narrow tunnel leads down from the room,
+lined with jagged rocks and damp moss. The air is thick with the scent of
+earth and sulfur, and there is a sense of excitement mingled with danger in
+the atmosphere. This is the starting point for those brave enough to
+venture into the depths of the kobold warren.</Description>
+      <Sector>Forest</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>51560</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Down</Direction>
+          <Destination>50201</Destination>
+          <Display>the door down</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50201</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is dank and musty, with a faint scent of
+rotting vegetation. The rocky walls and uneven floor are illuminated by
+flickering torchlight, casting deep shadows that seem to shift and writhe
+in the dim light. The narrow cave continues northward, twisting and turning
+through the earth, while the entrance to the warren is far above, a distant
+memory of sunlight and fresh air. The passage ahead promises danger and
+adventure for those brave enough to explore it.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50202</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>Up</Direction>
+          <Destination>50200</Destination>
+          <Display>the door up</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50202</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the rocky walls and uneven floor are illuminated by flickering
+torchlight. The narrow passage ahead splits, with one path leading north
+and the other leading south, both promising danger and adventure for those
+who dare to explore. The kobold warren is a treacherous place, filled with
+cunning traps and hidden dangers, and only the most skilled adventurers are
+able to navigate its twisting tunnels and emerge victorious.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50203</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50201</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50203</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the rocky walls and uneven floor are illuminated by flickering
+torchlight. The narrow passage ahead splits, with one path leading north
+and the other leading south, both promising danger and adventure for those
+who dare to explore. The kobold warren is a treacherous place, filled with
+cunning traps and hidden dangers, and only the most skilled adventurers are
+able to navigate its twisting tunnels and emerge victorious.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50204</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50202</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50204</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the rocky walls and uneven floor are illuminated by flickering
+torchlight. The narrow passage ahead splits, with one path leading north
+and the other leading south, both promising danger and adventure for those
+who dare to explore. The kobold warren is a treacherous place, filled with
+cunning traps and hidden dangers, and only the most skilled adventurers are
+able to navigate its twisting tunnels and emerge victorious.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50205</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50203</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50205</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both north and south, while a branch to the east opens up to even more
+dark, twisting cave.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50206</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50216</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50204</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50206</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both north and south, while a branch to the west opens up to even more
+dark, twisting cave.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50207</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50205</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50230</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50207</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the rocky walls and uneven floor are illuminated by flickering
+torchlight. The narrow passage ahead splits, with one path leading north
+and the other leading south, both promising danger and adventure for those
+who dare to explore.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50208</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50206</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50208</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both north and south, while a branch to the east opens up to even more
+dark, twisting cave.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50209</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50243</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50207</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50209</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both north and south, while a branch to the west opens up to even more
+dark, twisting cave.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50210</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50208</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50248</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50210</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the rocky walls and uneven floor are illuminated by flickering
+torchlight. The narrow passage ahead splits, with one path leading north
+and the other leading south, both promising danger and adventure for those
+who dare to explore.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50211</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50209</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50211</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and south.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50212</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50210</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50212</VNum>
+      <Name>Within the royal caves of the kobold warren</Name>
+      <Description>The air is thick with the scent of exotic spices and perfumes, and the
+flickering torchlight casts a warm glow across the ornately decorated walls
+and floors. The cavernous room is filled with glittering gems and precious
+metals, and the throne of the kobold queen rests at the far end of the
+chamber, surrounded by her loyal subjects. To the west lies the exit,
+leading out into the treacherous tunnels of the kobold warren, while to the
+east, the royal cave continues, promising even more luxury and opulence.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50213</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50211</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50213</VNum>
+      <Name>Within the royal caves of the kobold warren</Name>
+      <Description>The air is thick with the scent of exotic spices and perfumes, and the
+flickering torchlight casts a warm glow across the ornately decorated walls
+and floors. The cavernous room is filled with glittering gems and precious
+metals, and the throne of the kobold queen rests at the far end of the
+chamber, surrounded by her loyal subjects. To the west lies the exit,
+leading out into the treacherous tunnels of the kobold warren, while to the
+north is the royal bedroom, promising even more luxury and opulence.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50214</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50212</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50214</VNum>
+      <Name>Within the royal bedroom of the kobold warren</Name>
+      <Description>As you step into the royal bedroom of the kobold warren, the air is thick
+with the scent of perfumes and oils, and the flickering torchlight casts a
+warm glow across the ornate walls and ceiling. The room is dominated by a
+grand four-poster bed, draped in luxurious furs and silken sheets, while a
+variety of fine furnishings and trinkets are scattered throughout the
+chamber. To the south lies the entrance to the royal caves, where the
+kobold queen holds court and rules over her loyal subjects.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50213</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50215</VNum>
+      <Name></Name>
+      <Description></Description>
+      <Sector>Inside</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50214</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50216</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50217</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50205</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50217</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50218</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50216</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50218</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both east and south into the depths of the cave, while a branch to the
+west offers a way out.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50219</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50225</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50217</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50219</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50220</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50218</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50220</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and south.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50221</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50219</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50221</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50222</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50220</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50222</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50223</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50221</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50223</VNum>
+      <Name>Within the royal cave of the kobold princess</Name>
+      <Description>Within the royal cave of the kobold princess, the air is thick with the
+scent of incense and exotic spices, and the flickering torchlight casts a
+warm glow across the cavernous room. The walls are adorned with glittering
+gems and precious metals, and the floor is covered in soft furs and woven
+rugs. To the east lies the bed chambers, where the kobold princess rests
+and dreams, while to the south the entrance to the treacherous kobold
+warren awaits.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50224</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50222</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50224</VNum>
+      <Name>Within the royal bedchambers of the kobold princess</Name>
+      <Description>Within the royal bedchambers of the kobold princess, the air is heavy with
+the scent of perfumes and oils, and the flickering torchlight casts a warm,
+inviting glow across the luxurious room. The walls are adorned with
+glittering jewels and fine tapestries, and the bed itself is covered in
+soft furs and silken sheets. To the west lies the royal cavern, a grand and
+majestic chamber befitting the kobold princess's status as ruler of her
+people.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50223</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50225</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>As you make your way deeper into the kobold warren, the air grows thick
+with the scent of damp earth and sulfur, and the flickering torches cast
+eerie shadows across the rough, uneven walls and floor. The passage ahead
+splits in two directions, leading both north and south, each promising
+danger and adventure for those brave enough to explore. The narrow tunnels
+wind their way deep into the earth, twisting and turning with no
+discernible pattern, and the sound of scampering footsteps and chattering
+voices echoes through the darkness.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50218</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50226</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50226</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>As you make your way deeper into the kobold warren, the air grows thick
+with the scent of sulfur and damp earth, and the flickering torches cast an
+eerie glow across the rough, jagged walls and uneven floor. The passage
+ahead splits in two directions, leading both north and east, each promising
+danger and adventure for those brave enough to explore. The narrow tunnels
+wind their way deeper into the earth, with no discernible pattern to their
+twists and turns, and the sound of scampering footsteps and distant chatter
+echoes through the darkness.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50225</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50227</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50227</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>As you step deeper into the kobold warren, the air grows thick with the
+scent of damp earth and sulfur, and the flickering torches cast dancing
+shadows across the rough stone walls and uneven floor. The passage ahead
+splits in two directions, leading both east and west, each promising danger
+and adventure for those brave enough to explore. The narrow tunnels wind
+their way deep into the earth, twisting and turning with no discernible
+pattern, and the sound of scampering footsteps echoes through the
+darkness.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50228</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50226</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50228</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the musty scent of damp
+earth and the flickering torchlight casts eerie shadows across the
+rough-hewn walls and uneven floor. The passage ahead splits in two
+directions, leading northward into the deep, treacherous heart of the cave,
+while to the west lies the way out and the promise of fresh air and
+daylight.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50229</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50227</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50229</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage to the south leads out of here.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50228</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50230</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50206</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50231</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50231</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50230</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50232</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50232</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both north and south into the depths of the cave, while a branch to the
+east offers a way out.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50233</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50231</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50239</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50233</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both south and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50232</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50234</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50234</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50233</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50235</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50235</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and east.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50236</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50234</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50236</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and south.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50237</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50235</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50237</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both west and south.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50236</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50238</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50238</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The only way from here seems to be east.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50237</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50239</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50232</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50240</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50240</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50239</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50241</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50241</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both east and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50240</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50242</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50242</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The only way from here seems to be east.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50241</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50243</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both west and east.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50244</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50208</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50244</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage ahead splits in two directions, leading
+both east and west, while a branch to the south opens up to a dark alcove.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50245</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50247</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50243</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50245</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and west.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50246</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50244</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50246</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>The alcove within the kobold warren is a small, cramped space, barely large
+enough to accommodate a single person. The walls are rough and jagged, and
+the air is thick with the scent of damp earth and sulfur. The flickering
+torchlight casts eerie shadows across the rough stone surfaces, making it
+difficult to see what lies beyond. The only exit from the alcove is to the
+south, leading deeper into the twisting, treacherous tunnels of the kobold
+warren. As you step towards the exit, the sound of scampering feet and
+distant chatter grows louder, and you can feel a sense of danger and
+adventure stirring within you.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50245</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50247</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The only way from here seems to be north.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50244</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50248</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both west and east.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50209</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>West</Direction>
+          <Destination>50249</Destination>
+          <Display>the door west</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50249</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The passage continues in two directions, leading
+both north and east.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>North</Direction>
+          <Destination>50250</Destination>
+          <Display>the door north</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+        <Exit>
+          <Direction>East</Direction>
+          <Destination>50248</Destination>
+          <Display>the door east</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+    <Room>
+      <VNum>50250</VNum>
+      <Name>Within the kobold warren</Name>
+      <Description>Within the kobold warren, the air is thick with the scent of damp earth and
+sulfur, and the flickering torchlight casts eerie shadows across the rocky
+walls and uneven floor. The only way from here seems to be south.</Description>
+      <Sector>Cave</Sector>
+      <Flags></Flags>
+      <Exits>
+        <Exit>
+          <Direction>South</Direction>
+          <Destination>50249</Destination>
+          <Display>the door south</Display>
+          <Keywords></Keywords>
+          <Description></Description>
+          <Flags></Flags>
+          <Keys></Keys>
+          <ExitSize>Giant</ExitSize>
+        </Exit>
+      </Exits>
+      <ExtraDescriptions />
+    </Room>
+  </Rooms>
+  <NPCs>
+    <NPC>
+      <Vnum>50200</Vnum>
+      <name>fat kobold</name>
+      <description>This kobold is fatter than the others. He might be older too. It's hard
+to discern their ages.
+The fat kobold waddles along the uneven tunnel floor, his bulbous belly
+jiggling with every step. He is short and squat, with stubby arms and legs,
+and a round, chubby face with beady little eyes. His skin is a sickly
+yellow-green hue, and he wears a tattered, ill-fitting tunic that barely
+covers his ample girth. Despite his rotund appearance, however, there is a
+certain cunning and shrewdness in the fat kobold's eyes, and you get the
+sense that he is more dangerous than he appears. He may not be the fastest
+or strongest foe you'll face in the kobold warren, but he is certainly not
+to be underestimated.</description>
+      <longDescription>A fat kobold stands here.</longDescription>
+      <shortDescription>a fat kobold</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>40</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>10</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50201</Vnum>
+      <name>small kobold</name>
+      <description>This kobold is smaller than the others. Still just a child,
+playing with sticks and stones brought in from the forest
+outside.
+The small kobold scurries along the tunnel floor on all fours, moving with
+a quick, agile grace. He is wiry and thin, with sharp features and a pointy
+nose, and his skin is a mottled brown and green. His eyes are large and
+beady, darting back and forth as he takes in his surroundings, and he wears
+a ragged loincloth that barely covers his slender frame. Though he is small
+in stature, there is a fierce intelligence and cunning in the small
+kobold's gaze, and you get the sense that he is not to be underestimated.
+He may lack the physical strength of larger foes, but his speed and agility
+make him a formidable opponent in the twisting, treacherous tunnels of the
+kobold warren.</description>
+      <longDescription>A small kobold plays here.</longDescription>
+      <shortDescription>a small kobold</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>30</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>10</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50202</Vnum>
+      <name>kobold mate</name>
+      <description>The kobold mate scurries along the tunnel floor, her lithe form moving with
+a quick, graceful ease. She is smaller than her male counterparts, with a
+sleek, feminine figure and delicate features. Her skin is a muted shade of
+brown, and her hair is a wild tangle of dirty, matted fur. Despite her
+rough appearance, however, there is a certain elegance and beauty to the
+kobold mate, with a sharp intelligence and cunning in her eyes. She wears a
+simple loincloth and carries a small pouch of trinkets and herbs, perhaps
+used for her role as a healer or shaman among her kind. Though she may lack
+the physical prowess of her male counterparts, the kobold mate is just as
+formidable in her own way, with a keen wit and resourcefulness that make
+her a valuable ally or a dangerous foe.</description>
+      <longDescription>The kobold chief's mate waits here.</longDescription>
+      <shortDescription>the kobold chief's mate</shortDescription>
+      <Sex>Female</Sex>
+      <level>10</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>40</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>10</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50203</Vnum>
+      <name>kobold chief</name>
+      <description>The kobold chief towers over his subjects, his muscular frame and imposing
+presence commanding respect and fear in equal measure. His skin is a deep,
+earthy brown, and his piercing eyes glow with an intense, almost
+supernatural power. He wears a suit of rugged armor fashioned from leather
+and bone, and his hands grip a wickedly sharp spear with practiced ease.
+The kobold chief is a fierce warrior and a cunning strategist, feared and
+respected by his kin for his strength and wisdom. Despite his fearsome
+appearance, however, there is a certain nobility and honor to the kobold
+chief, with a deep sense of loyalty and duty to his people. He is a force
+to be reckoned with in the twisting, treacherous tunnels of the kobold
+warren, and only the bravest and most skilled adventurers would dare to
+cross his path.</description>
+      <longDescription>The kobold chief sits here on some comfortable pillows.</longDescription>
+      <shortDescription>the kobold chief</shortDescription>
+      <Sex>None</Sex>
+      <level>10</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>70</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>10</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>3</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50204</Vnum>
+      <name>kobold chief's son</name>
+      <description>The kobold chief's son is a young and impetuous creature, with a lean, wiry
+build and a restless energy that seems to course through his veins. His
+skin is a muted shade of green, and his eyes are bright and eager,
+constantly scanning his surroundings for any sign of adventure or danger.
+He wears a simple loincloth and carries a sharp, jagged dagger at his side,
+which he wields with a reckless abandon that belies his youth. Though he
+lacks the strength and experience of his father, the kobold chief's son
+makes up for it with a fierce determination and a cunning wit that is
+unusual for one so young. He is eager to prove himself to his people and to
+make his mark on the world, and his thirst for adventure and excitement is
+matched only by his hunger for power and glory. Those who underestimate the
+kobold chief's son do so at their peril, for he is a dangerous and
+unpredictable foe, with the potential to become a great leader in his own
+right.</description>
+      <longDescription>The kobold chief's son stands here trying to look important.</longDescription>
+      <shortDescription>the kobold chief's son</shortDescription>
+      <Sex>None</Sex>
+      <level>1</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>50</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>1</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>1</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50205</Vnum>
+      <name>wizened kobold</name>
+      <description>The wizened kobold shuffles along the uneven tunnel floor, his stooped
+figure and wrinkled face belying a lifetime of experience and wisdom. He is
+small and frail, with a thin, wispy beard and milky white eyes that seem to
+gaze off into the distance. His skin is a sickly shade of gray, and his
+tattered robes seem to hang off his bony frame like a shroud. Though he may
+seem feeble and insignificant, there is a certain power and authority to
+the wizened kobold's demeanor, with a keen intellect and a deep
+understanding of the ways of magic and the arcane. He carries a small pouch
+of powders and trinkets, perhaps used for divination or spellcasting, and
+his gnarled hands bear the scars of countless years of practice and study.
+Though he may not be a physical threat to his foes, the wizened kobold's
+mastery of the arcane arts make him a dangerous and formidable opponent in
+the twisting, treacherous tunnels of the kobold warren.</description>
+      <longDescription>A wizened old kobold sits here.</longDescription>
+      <shortDescription>the wizened kobold</shortDescription>
+      <Sex>None</Sex>
+      <level>12</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>70</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>12</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50206</Vnum>
+      <name>kobold chief's daughter princess</name>
+      <description>The kobold chief's daughter is a regal and commanding figure, with a lithe,
+athletic build and piercing blue eyes that seem to stare straight into your
+soul. Her skin is a deep, rich brown, and her hair falls in lustrous waves
+around her shoulders, tied back with a simple leather cord. She wears a
+suit of armor fashioned from the finest steel, and her hands grip a
+wickedly curved sword with the ease and confidence of a seasoned warrior.
+Though she is the kobold chief's daughter, there is no mistaking the fierce
+independence and strength of will that radiates from her every movement.
+She is a fierce and honorable fighter, with a deep sense of loyalty and
+duty to her people and a keen understanding of the value of strategy and
+tactics in battle. Those who face the kobold chief's daughter in combat do
+so at their peril, for she is a skilled and formidable opponent, with the
+potential to become a great leader in her own right.</description>
+      <longDescription>The princess of the kobolds waits here.</longDescription>
+      <shortDescription>the kobold chief's daughter</shortDescription>
+      <Sex>Female</Sex>
+      <level>10</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>50</HitPointDiceBonus>
+      <ManaPointDiceSides>0</ManaPointDiceSides>
+      <ManaPointDiceCount>0</ManaPointDiceCount>
+      <ManaPointDiceBonus>0</ManaPointDiceBonus>
+      <trust>10</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>kobold</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>3</hitroll>
+      <damRoll>1</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy>DetectIllusion Infrared</affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>2</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+    <NPC>
+      <Vnum>50207</Vnum>
+      <name>tough kobold</name>
+      <description>The tough kobold moves with a confidence and swagger that betrays a
+lifetime of hard-won experience and grit. He is shorter and more muscular
+than his kin, with a weathered, scarred face and a fierce scowl that seems
+to dare his enemies to challenge him. His skin is a deep, earthy brown, and
+his eyes are a piercing, intense shade of green. He wears a suit of rugged
+leather armor, adorned with spikes and studs that serve to intimidate and
+cow his foes. In his hand, he carries a heavy mace, which he wields with
+brutal efficiency, striking fear into the hearts of those who stand against
+him. The tough kobold is a fierce and dangerous foe, with a reputation for
+tenacity and ferocity that is well-earned. Those who face him in combat do
+so at their peril, for he is a skilled and ruthless opponent, with the
+potential to emerge victorious against even the most seasoned adventurers.</description>
+      <longDescription>A tough kobold stands here looking fierce.</longDescription>
+      <shortDescription>a tough kobold</shortDescription>
+      <Sex>None</Sex>
+      <level>12</level>
+      <HitPointDiceSides>15</HitPointDiceSides>
+      <HitPointDiceCount>2</HitPointDiceCount>
+      <HitPointDiceBonus>70</HitPointDiceBonus>
+      <ManaPointDiceSides>5</ManaPointDiceSides>
+      <ManaPointDiceCount>5</ManaPointDiceCount>
+      <ManaPointDiceBonus>150</ManaPointDiceBonus>
+      <trust>12</trust>
+      <hitpoints>20</hitpoints>
+      <maxhitpoints>20</maxhitpoints>
+      <manapoints>0</manapoints>
+      <maxmanapoints>0</maxmanapoints>
+      <movementpoints>0</movementpoints>
+      <maxmovementpoints>0</maxmovementpoints>
+      <ArmorBash>0</ArmorBash>
+      <ArmorSlash>0</ArmorSlash>
+      <ArmorPierce>0</ArmorPierce>
+      <ArmorExotic>0</ArmorExotic>
+      <size>Medium</size>
+      <race>human</race>
+      <alignment>Neutral</alignment>
+      <ethos>0</ethos>
+      <hitroll>10</hitroll>
+      <damRoll>10</damRoll>
+      <armorclass>0</armorclass>
+      <silver>0</silver>
+      <gold>0</gold>
+      <SavingThrow>0</SavingThrow>
+      <Guild></Guild>
+      <flags>NoWander</flags>
+      <immune></immune>
+      <resist></resist>
+      <vulnerable></vulnerable>
+      <affectedBy></affectedBy>
+      <WiznetFlags></WiznetFlags>
+      <WeaponDamageMessage>punch</WeaponDamageMessage>
+      <DamageDiceSides>1</DamageDiceSides>
+      <DamageDiceCount>6</DamageDiceCount>
+      <DamageDiceBonus>0</DamageDiceBonus>
+      <PermanentStats>
+        <Strength>16</Strength>
+        <Wisdom>16</Wisdom>
+        <Intelligence>16</Intelligence>
+        <Dexterity>16</Dexterity>
+        <Constitution>16</Constitution>
+        <Charisma>16</Charisma>
+      </PermanentStats>
+    </NPC>
+  </NPCs>
+  <Items />
+  <Resets>
+    <Reset Type="NPC" Destination="50246" Count="1" Max="1" Vnum="50200">
+      <!--Spawn a fat kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50244" Count="1" Max="1" Vnum="50201">
+      <!--Spawn a small kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50214" Count="1" Max="1" Vnum="50202">
+      <!--Spawn the kobold chief's mate to Within the royal bedroom of the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50213" Count="1" Max="1" Vnum="50203">
+      <!--Spawn the kobold chief to Within the royal caves of the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50212" Count="1" Max="1" Vnum="50204">
+      <!--Spawn the kobold chief's son to Within the royal caves of the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50204" Count="1" Max="1" Vnum="50205">
+      <!--Spawn the wizened kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50224" Count="1" Max="1" Vnum="50206">
+      <!--Spawn the kobold chief's daughter to Within the royal bedchambers of the kobold princess-->
+    </Reset>
+    <Reset Type="NPC" Destination="50200" Count="1" Max="1" Vnum="50207">
+      <!--Spawn a tough kobold to The entrance to the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50202" Count="1" Max="1" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50204" Count="1" Max="1" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50232" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50232" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50238" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50238" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50235" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50242" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+    <Reset Type="NPC" Destination="50242" Count="2" Max="2" Vnum="50207">
+      <!--Spawn a tough kobold to Within the kobold warren-->
+    </Reset>
+  </Resets>
+</Area>

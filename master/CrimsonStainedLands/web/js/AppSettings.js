@@ -1,0 +1,2 @@
+var a=class{constructor(){this.fontSize=14;this.backgroundColor="#000000";this.foregroundColor="#FFFFFF";this.Aliases=[{alias:"'",command:"say"},{alias:".",command:"yell"}];this.Keybindings=[{key:"Numpad8",commands:"north"},{key:"Numpad6",commands:"east"},{key:"Numpad2",commands:"south"},{key:"Numpad4",commands:"west"},{key:"Numpad9",commands:"up"},{key:"Numpad3",commands:"down"},{key:"Numpad5",commands:"look"},{key:"Escape",commands:"/selectinput"}];this.Variables=[];this.Triggers=[]}};export{a as AppSettings};
+//# sourceMappingURL=AppSettings.js.map

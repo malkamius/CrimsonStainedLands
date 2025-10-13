@@ -1,0 +1,686 @@
+body, html {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+/* Apply dark theme to UI elements but exclude terminal */
+.client-menu-bar,
+.client-menu-item,
+input[type="text"],
+.client-button,
+.modal-sidebar,
+.modal-content,
+.modal-header,
+.modal-footer {
+    background-color: black;
+    color: white;
+}
+
+.client-button:hover {
+    font-size: 101%;
+    transition: 0.3s;
+}
+
+.client-menu-option
+{
+    display: inline;
+}
+.client-button
+{
+    background-color: #8c1f08;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    border: 0;    
+    box-shadow: none;
+}
+
+/* Style sidebar items */
+.sidebar-item {
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background-color: #222;
+}
+
+.sidebar-item.active {
+    background-color: #333;
+    font-weight: bold;
+}
+
+/* Style labels in the settings */
+label {
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: inline-block;
+    min-width: 120px;
+}
+
+/* Make sure form elements are readable */
+input, select {
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 5px;
+}
+
+input[type="color"] {
+    background-color: transparent;
+    height: 30px;
+}
+
+
+/* Fix modal-specific styling */
+.modal-container {
+    background-color: #222;
+    color: white;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.pageheader {
+	color: #8c1f08;
+}
+
+a
+{
+    color:#8c1f08;
+}
+
+.glow 
+{
+    animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing 
+{
+    0% { box-shadow: 0 0 5px #ff0000; }
+    50% { box-shadow: 0 0 20px #ff0000; }
+    100% { box-shadow: 0 0 5px #ff0000; }
+}
+
+.img_avatar
+{
+    display: block;
+    max-width: 96px;
+    max-height: 96px;
+    width: auto;
+    height: auto;
+
+}
+
+input
+{
+    background-color: white;
+    color: black;
+}
+
+
+.line_seperator {
+    width:100%;
+    height:20px;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+  }
+
+.middle_div
+{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+table
+{
+    border-spacing: 1px;
+}
+
+td
+{
+    border-color: #646464;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    padding: 10px;            
+}
+
+.td_button
+{
+    border: none;
+    padding: 4px;
+}
+
+thead
+{
+    text-align: left;    
+}
+ul.navigation
+{
+    padding-left: 0;
+    list-style-type: none;
+}
+li.navigation
+{
+    display: inline;    
+}
+ul 
+{
+    padding-left: 0;
+	list-style-type: none;
+	/*text-align: center;*/
+}
+
+li
+{
+	text-align: center;
+}
+
+.header_nav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+    padding: 1em;
+}
+
+h1
+{    
+    font-family: 'almendra';    
+    font-size: 50px;        
+    padding: 6px;    
+    text-align:center;    
+    text-shadow: 0 0 30px #000000, 0 0 10px #afafaf       
+}
+
+h2
+{
+    font-family: 'almendra';
+    font-size: 36px;     
+    padding: 4px;
+    text-shadow: 0 0 30px #000000, 0 0 10px #AFAFAF       
+}
+
+warning
+{
+    color: #ff0000;
+}
+
+.pageNav { cursor: pointer; padding: 5px 10px; border: 1px solid #ddd; margin: 0 2px; }
+.pageNav.current { background-color: #797979; color: white; }
+.ellipsis { cursor: pointer; color: blue; }
+.full-text { display: none; }
+.alphabet-links { margin-top: 20px; }
+.alphabet-links a { margin: 0 5px; text-decoration: none; color: #007bff; }
+
+.container {
+    text-align: center;
+}
+
+.main-content {
+    text-align: center;
+	width: 80vw;
+}
+
+
+.console 
+{
+	font-family: 'Courier New', Courier, monospace;
+	display: flex;
+	flex-direction: column;
+	/*height: 70vh;*/
+	margin: 0;
+	padding: 20px;
+    height: 100%;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+#output 
+{
+	text-align: left;
+	flex-grow: 1;
+	overflow-y: auto;
+	background-color: #000;
+	color: #0f0;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-family: monospace;
+	width: 100%;
+}
+#input {
+    margin: 15px;
+	padding: 5px;
+}
+
+#who_list {
+    margin:25px;
+}
+
+.terminal {
+    margin: 0px !important;
+    height: 100%;
+    min-height: 100px;
+    padding: 15px;
+}
+.main-content {
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+}
+#input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.menu-item:hover {
+    background-color: #444;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-container {
+    display: flex;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 5px;
+    width: 80vw;
+    height: 80vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-close {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+
+/* Dark theme styles for the key bindings tab */
+.modal-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.modal-content table th,
+.modal-content table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+}
+
+.modal-content table th {
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+}
+
+.modal-content table tr:nth-child(even) {
+    background-color: #222;
+}
+
+.modal-content table tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+.modal-content table tr:hover {
+    background-color: #333;
+}
+
+.modal-content button {
+    background-color: #8c1f08;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #a32309;
+    font-size: 101%;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #ff0000;
+}
+
+/* Input form styling */
+.modal-content input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+.modal-content label {
+    margin-right: 5px;
+    color: white;
+}
+
+/* Styling for edit forms */
+#keys-list div {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#keys-tab {
+    color: white;
+}
+
+#keys-tab h3 {
+    font-family: 'almendra', serif;
+    color: white;
+    text-shadow: 0 0 30px #000000, 0 0 10px #AFAFAF;
+}
+
+/* Scrollable key bindings table */
+.table-container {
+    max-height: 300px;
+    min-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+}
+
+/* Ensure the table header stays fixed at the top */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table-container th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+}
+
+.edit-form-container {
+    background-color: #222;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    display: none; /* Hidden by default */
+}
+
+.edit-form-container.active {
+    box-shadow: 0 0 8px rgba(140, 31, 8, 0.5);
+    display: block;
+}
+
+.edit-form-container label {
+    display: inline-block;
+    min-width: 80px;
+    margin-right: 10px;
+    }
+
+.edit-form-container input[type="text"],
+.edit-form-container select,
+.edit-form-container textarea {
+    width: calc(100% - 110px);
+    max-width: 400px;
+    margin-right: 15px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.add-btn {
+    background-color: #8c1f08;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.add-btn:hover {
+    animation: glowing 1.5s infinite;
+}
+
+/* Key capture button styling */
+.capture-key-btn {
+    margin-left: 10px;
+    background-color: #2c639e;
+}
+
+.capture-key-btn:hover {
+    background-color: #3a7bc0;
+    box-shadow: 0 0 5px #3a7bc0;
+}
+
+/* Key capture dialog styling */
+.key-capture-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key-capture-dialog {
+    background-color: #222;
+    border-radius: 6px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(140, 31, 8, 0.7);
+    border: 1px solid #444;
+}
+
+.key-capture-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.key-capture-content h3 {
+    color: #fff;
+    margin-top: 0;
+    font-family: 'almendra', serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.key-capture-content p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.key-display {
+    background-color: #111;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: monospace;
+    color: #8c1f08;
+    margin: 20px 0;
+    min-height: 20px;
+    text-shadow: 0 0 5px rgba(140, 31, 8, 0.5);
+}
+
+/* Animation for waiting */
+@keyframes pulsate {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.key-capture-dialog h3 {
+    animation: pulsate 1.5s infinite ease-in-out;
+}
+
+
+/* Trigger pattern testing styles */
+.pattern-test-container {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.pattern-test-container h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.pattern-test-result {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.pattern-test-result.success {
+    background-color: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+}
+
+.pattern-test-result.failure {
+    background-color: rgba(220, 53, 69, 0.2);
+    border: 1px solid #dc3545;
+}
+
+
+.profile-dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+    display: inline;
+}
+
+.profile-dropdown {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-size: 14px;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+.profile-dropdown:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+.profile-dropdown:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(140, 31, 8, 0.5);
+}
+
+/* Profile label for better UX */
+.profile-dropdown-container::before {
+    content: "Profile:";
+    color: #ccc;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.button-row {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
