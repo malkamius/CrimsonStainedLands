@@ -56,7 +56,7 @@ namespace ClanSystemMod
         }
 
 
-        public static Clan GetClan(string clanName, out string errMsg)
+        public static Clan? GetClan(string clanName, out string errMsg)
         {
             errMsg = "";
             var clan = _clans.FirstOrDefault(c => c.Name.Equals(clanName, StringComparison.CurrentCultureIgnoreCase));
@@ -66,7 +66,7 @@ namespace ClanSystemMod
         }
 
 
-        public static Clan GetClanByPlayerName(string playerName, out string errMsg)
+        public static Clan? GetClanByPlayerName(string playerName, out string errMsg)
         {
             errMsg = "";
             var clan = _clans.FirstOrDefault(c => c.Members.Any(m => m.playerName.Equals(playerName, StringComparison.CurrentCultureIgnoreCase)));
@@ -151,16 +151,19 @@ namespace ClanSystemMod
             try
             {
                 var serializer = new XmlSerializer(typeof(List<Clan>));
-                List<Clan> readList = new List<Clan>();
+                List<Clan>? readList = new List<Clan>();
                 using (var reader = new StreamReader(Path.Combine(GameSettings.ClanSystemDataFolder, GameSettings.ClanSystemDataFile)))
                 {
-                    readList = (List<Clan>)serializer.Deserialize(reader);
+                    readList = (List<Clan>?)serializer.Deserialize(reader);
                 }
 
                 _clans.Clear();
-                foreach (Clan clan in readList)
+                if (readList != null)
                 {
-                    addClan(clan, out string errMsgAddClan);
+                    foreach (Clan clan in readList)
+                    {
+                        addClan(clan, out string errMsgAddClan);
+                    }
                 }
                 return true;
             }
@@ -268,16 +271,19 @@ namespace ClanSystemMod
             try
             {
                 var serializer = new XmlSerializer(typeof(List<ClanRoom>));
-                List<ClanRoom> readList = new List<ClanRoom>();
+                List<ClanRoom>? readList = new List<ClanRoom>();
                 using (var reader = new StreamReader(Path.Combine(GameSettings.ClanSystemDataFolder, GameSettings.ClanRoomsFile)))
                 {
-                    readList = (List<ClanRoom>)serializer.Deserialize(reader);
+                    readList = (List<ClanRoom>?)serializer.Deserialize(reader);
                 }
 
                 _clanCreationRequets.Clear();
-                foreach (ClanRoom room in readList)
+                if (readList != null)
                 {
-                    addClanRoom(room);
+                    foreach (ClanRoom room in readList)
+                    {
+                        addClanRoom(room);
+                    }
                 }
                 return true;
             }
@@ -387,16 +393,19 @@ namespace ClanSystemMod
             try
             {
                 var serializer = new XmlSerializer(typeof(List<ClanCreationRequest>));
-                List<ClanCreationRequest> readList = new List<ClanCreationRequest>();
+                List<ClanCreationRequest>? readList = new List<ClanCreationRequest>();
                 using (var reader = new StreamReader(Path.Combine(GameSettings.ClanSystemDataFolder, GameSettings.ClanCreationRequestFile)))
                 {
-                    readList = (List<ClanCreationRequest>)serializer.Deserialize(reader);
+                    readList = (List<ClanCreationRequest>?)serializer.Deserialize(reader);
                 }
 
                 _clanCreationRequets.Clear();
-                foreach (ClanCreationRequest request in readList)
+                if (readList != null)
                 {
-                    addClanRequest(request);
+                    foreach (ClanCreationRequest request in readList)
+                    {
+                        addClanRequest(request);
+                    }
                 }
                 return true;
             }

@@ -21,16 +21,15 @@
       <MyDllFiles Include="$(TargetDir)$(TargetName).pdb" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="modules.xml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
     <Copy SourceFiles="@(MyDllFiles)"
           DestinationFolder="$(CrimsonOutputDirectory)"
           SkipUnchangedFiles="true"
           OverwriteReadOnlyFiles="true" />
-
-    <!--
-    <Copy SourceFiles="$(ProjectDir)modules.xml"
-          DestinationFolder="$(CrimsonOutputDirectory)"
-          SkipUnchangedFiles="true"
-          OverwriteReadOnlyFiles="true" />
-    -->
+    
   </Target>
 </Project>

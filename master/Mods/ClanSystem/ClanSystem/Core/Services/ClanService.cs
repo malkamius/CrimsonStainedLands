@@ -12,7 +12,7 @@ namespace ClanSystemMod
         {
             if (ch.Level < GameSettings.MinLevelRequiredForClanCreation)
             {
-                ch.send("You cannot create|delete a clan.");
+                ch.send("You cannot create|delete a clan.\r\n");
                 return;
             }
 
@@ -36,7 +36,7 @@ namespace ClanSystemMod
             }
             else
             {
-                ch.send("No clan name was given. Type 'clan help'.");
+                ch.send("No clan name was given. Type 'clan help'.\r\n");
             }
         }
 
@@ -44,31 +44,31 @@ namespace ClanSystemMod
         {
             if (clanName.Length > GameSettings.MaxLengthOfClanName)
             {
-                ch.send($"The clan name cannot be more than {GameSettings.MaxLengthOfClanName} characters long.");
+                ch.send($"The clan name cannot be more than {GameSettings.MaxLengthOfClanName} characters long.\r\n");
                 return;
             }
 
             if (clanTag.Length > GameSettings.MaxLengthOfClanTag)
             {
-                ch.send($"The clan tag cannot be more than {GameSettings.MaxLengthOfClanTag} characters long.");
+                ch.send($"The clan tag cannot be more than {GameSettings.MaxLengthOfClanTag} characters long.\r\n");
                 return;
             }
 
             if (ClanDBService.GetNumberOfClans() >= GameSettings.MaxClansAllowed)
             {
-                ch.send("The maximum ammount of clans have been reached. You cannot create more.");
+                ch.send("The maximum ammount of clans have been reached. You cannot create more.\r\n");
                 return;
             }
 
             if (IsPlayerInAnyClan(leaderName, out string outClanName))
             {
-                ch.send("This player is part of a clan already.");
+                ch.send("This player is part of a clan already.\r\n");
                 return;
             }
 
             if (ClanDBService.ClanExists(clanName))
             {
-                ch.send("This clan already exists.");
+                ch.send("This clan already exists.\r\n");
                 return;
             }
 
@@ -99,13 +99,13 @@ namespace ClanSystemMod
 
                 if (ClanDBService.addClan(newClan, out string errMsgAddClan))
                 {
-                    ch.send("Clan created.");
+                    ch.send("Clan created.\r\n");
                     ClanDBService.WriteToFileClans(out string errMsgWriteToClans);
                 }
             }
             else
             {
-                ch.send("The player name was not found. Active or Inactive.");
+                ch.send("The player name was not found. Active or Inactive.\r\n");
             }
         }
 
@@ -115,19 +115,19 @@ namespace ClanSystemMod
 
             if (clanName.Length > GameSettings.MaxLengthOfClanName)
             {
-                ch.send($"The clan name cannot be more than {GameSettings.MaxLengthOfClanName} characters long.");
+                ch.send($"The clan name cannot be more than {GameSettings.MaxLengthOfClanName} characters long.\r\n");
                 return;
             }
 
             if (ClanDBService.GetNumberOfClans() >= GameSettings.MaxClansAllowed)
             {
-                ch.send("The maximum ammount of clans have been reached. You cannot create more.");
+                ch.send("The maximum ammount of clans have been reached. You cannot create more.\r\n");
                 return;
             }
 
             if (ClanDBService.ClanExists(clanName))
             {
-                ch.send("This clan already exists.");
+                ch.send("This clan already exists.\r\n");
                 return;
             }
 
@@ -140,7 +140,7 @@ namespace ClanSystemMod
 
             if (ClanDBService.addClan(newClan, out string errMsgAddClan))
             {
-                ch.send("Clan created");
+                ch.send("Clan created\r\n");
                 ClanDBService.WriteToFileClans(out string errMsgWriteToClans);
             }
         }
@@ -154,17 +154,17 @@ namespace ClanSystemMod
                 {
                     if (ClanDBService.removeClan(clanName, out string errMsgRemoveClan))
                     {
-                        ch.send("Clan removed.");
+                        ch.send("Clan removed.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No clan name was specified. Type 'clan help'.");
+                    ch.send("No clan name was specified. Type 'clan help'.\r\n");
                 }
             }
             else
             {
-                ch.send("You cannot remove a clan.");
+                ch.send("You cannot remove a clan.\r\n");
             }
         }
 
@@ -181,17 +181,17 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No clan tag was specified. Type 'clan help'.");
+                        ch.send("No clan tag was specified. Type 'clan help'.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No clan name was specified. Type 'clan help'.");
+                    ch.send("No clan name was specified. Type 'clan help'.\r\n");
                 }
             }
             else
             {
-                ch.send("You cannot change the clan tag.");
+                ch.send("You cannot change the clan tag.\r\n");
             }
         }
 
@@ -200,18 +200,18 @@ namespace ClanSystemMod
 
             if (clanTag.Length > GameSettings.MaxLengthOfClanTag)
             {
-                ch.send($"The clan tag cannot be more than {GameSettings.MaxLengthOfClanTag} characters long.");
+                ch.send($"The clan tag cannot be more than {GameSettings.MaxLengthOfClanTag} characters long.\r\n");
                 return;
             }
 
-            Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+            Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
 
             if (clan != null)
             {
                 clan.Tag = clanTag;
                 if (ClanDBService.UpdateClanRecord(clan, out string errMsgUpdateClanRecords))
                 {
-                    ch.send("Clan tag has been added|updated.");
+                    ch.send("Clan tag has been added|updated.\r\n");
                     ClanDBService.WriteToFileClans(out string errMsgWriteToClans);
                     return;
                 }
@@ -229,12 +229,12 @@ namespace ClanSystemMod
                 }
                 else
                 {
-                    ch.send("No new clan name was given. Type 'clan help'.");
+                    ch.send("No new clan name was given. Type 'clan help'.\r\n");
                 }
             }
             else
             {
-                ch.send("No clan name was given. Type 'clan help'.");
+                ch.send("No clan name was given. Type 'clan help'.\r\n");
             }
         }
 
@@ -244,36 +244,36 @@ namespace ClanSystemMod
             {
                 if (clanName.Length > GameSettings.MaxLengthOfClanName)
                 {
-                    ch.send($"The clan name cannot be more than {GameSettings.MaxLengthOfClanName} characters long.");
+                    ch.send($"The clan name cannot be more than {GameSettings.MaxLengthOfClanName} characters long.\r\n");
                     return;
                 }
 
-                Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+                Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
                 if (clan != null)
                 {
                     if (isClanNameUsed(clanName))
                     {
-                        ch.send("This clan name is already in use.");
+                        ch.send("This clan name is already in use.\r\n");
                         return;
                     }
                     clan.Name = newClanName;
                     if (ClanDBService.UpdateClanRecord(clan, out string errMsgUpdateClanRecords))
                     {
                         ClanDBService.WriteToFileClans(out string errMsgWriteToClans);
-                        ch.send("Clan name has been updated.");
+                        ch.send("Clan name has been updated.\r\n");
                     }
                 }
             }
             else
             {
-                ch.send("You cannot update a clan name");
+                ch.send("You cannot update a clan name\r\n");
             }
         }
 
 
         public static void CommandAddMember(Character ch, string arguments)
         {
-            ClanMember clanMember = ch.GetVariable<ClanMember>("clanMember");
+            ClanMember clanMember = ch.GetVariable<ClanMember>("ClanMember");
 
             //--- Make sure this character does have a clan member object
             if (clanMember == null)
@@ -291,12 +291,12 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No clan name was specfied. Type 'clan help'.");
+                    ch.send("No clan name was specfied. Type 'clan help'.\r\n");
                 }
             }
             else
@@ -311,7 +311,7 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
             }
@@ -321,29 +321,19 @@ namespace ClanSystemMod
         {
             if (IsPlayerInAnyClan(playerName, out string outClanName))
             {
-                ch.send($"This player is part of a clan already. Clan member of : {outClanName}");
+                ch.send($"This player is part of a clan already. Clan member of : {outClanName}\r\n");
                 return;
             }
 
+            Player? player = getConnectedPlayer(playerName);
 
-            List<string> mudPlayers = getAllExistingPlayerNames();
-            bool mudPlayerFound = false;
-            foreach (string mudPlayer in mudPlayers)
+            if (player == null)
             {
-                if (playerName.Equals(mudPlayer, StringComparison.CurrentCultureIgnoreCase))
-                {
-                    mudPlayerFound = true;
-                    break;
-                }
-            }
-
-            if (!mudPlayerFound)
-            {
-                ch.send("The player was not found. Active or inactive.");
+                ch.send("The player was not found. Active or inactive.\r\n");
                 return;
             }
 
-            Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+            Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
             if (clan != null)
             {
                 ClanMember tmpMember = new ClanMember();
@@ -353,11 +343,11 @@ namespace ClanSystemMod
 
                 clan.Members.Add(tmpMember);
 
-                findAndAttachClanMemberObject(ch, tmpMember);
+                findAndAttachClanMemberObject(player, clan, tmpMember);
 
                 if (ClanDBService.UpdateClanRecord(clan, out string errMsgUpdateClanRecords))
                 {
-                    ch.send("Clan member added.");
+                    ch.send("Clan member added.\r\n");
                     ClanDBService.WriteToFileClans(out string errMsgWriteToClans);
                 }
             }
@@ -376,12 +366,12 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No clan name was specfied. Type 'clan help'.");
+                    ch.send("No clan name was specfied. Type 'clan help'.\r\n");
                 }
             }
             else
@@ -396,7 +386,7 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
             }
@@ -407,32 +397,35 @@ namespace ClanSystemMod
         {
             if (IsPlayerInClan(clanName, playerName))
             {
-                Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+                Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
                 if (clan != null)
                 {
                     clan.Members.RemoveAll(member => member.playerName.Equals(playerName, StringComparison.CurrentCultureIgnoreCase));
 
-                    ClanMember tmpMember = new ClanMember();
-                    tmpMember.playerName = playerName;
-                    tmpMember.Rank = ClanRank.None;
-                    tmpMember.ClanName = "";
+                    Player? player = getConnectedPlayer(playerName);
+                    if (player != null)
+                    {
+                        ClanMember tmpMember = new ClanMember();
+                        tmpMember.playerName = playerName;
+                        tmpMember.Rank = ClanRank.None;
+                        tmpMember.ClanName = "";
+                        findAndAttachClanMemberObject(player, clan, tmpMember);
+                    }
 
-                    findAndAttachClanMemberObject(ch, tmpMember);
-                    
                     if (IsAClanLeader(playerName))
                     {
                         clan.LeaderPlayerName = "";
                     }
                     if (ClanDBService.UpdateClanRecord(clan, out string errMsgUpdateClanRecords))
                     {
-                        ch.send("Member has been removed.");
+                        ch.send("Member has been removed.\r\n");
                         ClanDBService.WriteToFileClans(out string errMsgWriteToClans);
                     }
                 }
             }
             else
             {
-                ch.send("This player is not part of this clan.");
+                ch.send("This player is not part of this clan.\r\n");
             }
         }
 
@@ -449,12 +442,12 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No clan name was specfied. Type 'clan help'.");
+                    ch.send("No clan name was specfied. Type 'clan help'.\r\n");
                 }
             }
             else
@@ -469,7 +462,7 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
             }
@@ -480,7 +473,7 @@ namespace ClanSystemMod
         {
             if (IsPlayerInClan(clanName, playerName))
             {
-                Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+                Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
                 if (clan != null)
                 {
                     foreach (ClanMember member in clan.Members)
@@ -518,13 +511,16 @@ namespace ClanSystemMod
                             }
 
                             member.Rank += 1;
+                            Character? target = getConnectedPlayer(playerName);
+                            if (target != null)
+                            {
+                                ClanMember tmpMember = new ClanMember();
+                                tmpMember.playerName = playerName;
+                                tmpMember.Rank = member.Rank;
+                                tmpMember.ClanName = clanName;
 
-                            ClanMember tmpMember = new ClanMember();
-                            tmpMember.playerName = playerName;
-                            tmpMember.Rank = member.Rank;
-                            tmpMember.ClanName = clanName;
-
-                            findAndAttachClanMemberObject(ch, tmpMember);
+                                findAndAttachClanMemberObject(ch, clan, tmpMember);
+                            }
 
                             if (ClanDBService.UpdateClanRecord(clan, out string errMsgUpdateClanRecords))
                             {
@@ -538,7 +534,7 @@ namespace ClanSystemMod
             }
             else
             {
-                ch.send("Player is not part of this clan.");
+                ch.send("Player is not part of this clan.\r\n");
             }
         }
 
@@ -555,12 +551,12 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No clan name was specfied. Type 'clan help'.");
+                    ch.send("No clan name was specfied. Type 'clan help'.\r\n");
                 }
             }
             else
@@ -575,7 +571,7 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send("No player name was specfied. Type 'clan help'.");
+                        ch.send("No player name was specfied. Type 'clan help'.\r\n");
                     }
                 }
             }
@@ -585,7 +581,7 @@ namespace ClanSystemMod
         {
             if (IsPlayerInClan(clanName, playerName))
             {
-                Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+                Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
                 if (clan != null)
                 {
                     foreach (ClanMember member in clan.Members)
@@ -613,12 +609,16 @@ namespace ClanSystemMod
 
                             member.Rank -= 1;
 
-                            ClanMember tmpMember = new ClanMember();
-                            tmpMember.playerName = playerName;
-                            tmpMember.Rank = member.Rank;
-                            tmpMember.ClanName = clanName;
+                            Player? player = getConnectedPlayer(playerName);
+                            if (player != null)
+                            {
+                                ClanMember tmpMember = new ClanMember();
+                                tmpMember.playerName = playerName;
+                                tmpMember.Rank = member.Rank;
+                                tmpMember.ClanName = clanName;
+                                findAndAttachClanMemberObject(player, clan, tmpMember);
+                            }
 
-                            findAndAttachClanMemberObject(ch, tmpMember);
 
                             if (ClanDBService.UpdateClanRecord(clan, out string errMsgUpdateClanRecords))
                             {
@@ -632,7 +632,7 @@ namespace ClanSystemMod
             }
             else
             {
-                ch.send("Player is not part of this clan.");
+                ch.send("Player is not part of this clan.\r\n");
             }
         }
 
@@ -646,7 +646,7 @@ namespace ClanSystemMod
             {
                 if (clans.Count == 0)
                 {
-                    ch.send("There are no clans as yet.");
+                    ch.send("There are no clans as yet.\r\n");
                     return;
                 }
 
@@ -655,7 +655,7 @@ namespace ClanSystemMod
                 {
                     list += $"{clan.Name,-30}|{clan.Tag,-30}|{clan.LeaderPlayerName}\n";
                 }
-                ch.send(list);
+                ch.send(list + "\r\n");
             }
         }
 
@@ -667,16 +667,16 @@ namespace ClanSystemMod
                 if (IsPlayerInAnyClan(playerName, out string clanName))
                 {
                     string rank = ClanService.GetPlayerRankAsString(playerName);
-                    ch.send($"{playerName} has rank {rank} within clan {clanName}");
+                    ch.send($"{playerName} has rank {rank} within clan {clanName}\r\n");
                 }
                 else
                 {
-                    ch.send("Player is not a member of any clan.");
+                    ch.send("Player is not a member of any clan.\r\n");
                 }
             }
             else
             {
-                ch.send("No player name was given. Type \\rclan help\\x.");
+                ch.send("No player name was given. Type \\rclan help\\x.\r\n");
             }
         }
 
@@ -725,7 +725,7 @@ namespace ClanSystemMod
 
         public static bool IsPlayerInClan(string clanName, string playerName)
         {
-            Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+            Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
             if (clan != null)
             {
                 foreach (ClanMember member in clan.Members)
@@ -791,7 +791,7 @@ namespace ClanSystemMod
         {
             if (Helper.getNextArg(arguments, out string clanName, out string remainingArgs))
             {
-                Clan clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
+                Clan? clan = ClanDBService.GetClan(clanName, out string errMsgGetClan);
                 if (clan != null)
                 {
                     string returnInfo = $"\\rClan\\x : {clan.Name} [{clan.Tag}]\n";
@@ -821,16 +821,16 @@ namespace ClanSystemMod
                     }
 
                     returnInfo += leaderInfo + captainInfo + lieutenantInfo + memberInfo + greenHornInfo;
-                    ch.send(returnInfo);
+                    ch.send(returnInfo + "\r\n");
                 }
                 else
                 {
-                    ch.send("No Clan by that name not found.");
+                    ch.send("No Clan by that name not found.\r\n");
                 }
             }
             else
             {
-                ch.send("No clan name was given. Type 'clan help'.");
+                ch.send("No clan name was given. Type 'clan help'.\r\n");
             }
         }
 
@@ -960,7 +960,7 @@ namespace ClanSystemMod
             ClanDBService.addClanRequest(request);
             ClanDBService.WriteToFileClanCreationRequests(out string errMsgWriteToClanCreationRequests);
 
-            ch.send("Your request has been send.");
+            ch.send("Your request has been send.\r\n");
         }
 
 
@@ -970,7 +970,7 @@ namespace ClanSystemMod
 
             if (requests.Count == 0)
             {
-                ch.send("No \\rrequests\\x were found.");
+                ch.send("No \\rrequests\\x were found.\r\n");
                 return;
             }
 
@@ -979,7 +979,7 @@ namespace ClanSystemMod
             {
                 ret += $"{request.playerName,-20}|{request.clanName,-30}|{request.clanTag,-30}\n";
             }
-            ch.send(ret);
+            ch.send(ret + "\r\n");
         }
 
 
@@ -1008,12 +1008,12 @@ namespace ClanSystemMod
                     }
                     else
                     {
-                        ch.send($"No clan request for \\r{playerName}\\x was found.");
+                        ch.send($"No clan request for \\r{playerName}\\x was found.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No player name was given. Type \\rclan help\\x");
+                    ch.send("No player name was given. Type \\rclan help\\x\r\n");
                 }
             }
             else
@@ -1024,7 +1024,7 @@ namespace ClanSystemMod
                 }
                 else
                 {
-                    ch.send("You do not have any \\rclan creation\\x requests.");
+                    ch.send("You do not have any \\rclan creation\\x requests.\r\n");
                 }
             }
 
@@ -1044,7 +1044,7 @@ namespace ClanSystemMod
                     return;
                 }
             }
-            ch.send("No request found.");
+            ch.send("No request found.\r\n");
         }
 
 
@@ -1052,18 +1052,24 @@ namespace ClanSystemMod
         {
             if (!(ch.Level >= GameSettings.MinLevelRequiredForClanCreation))
             {
-                ch.send("You cannot assign clan rooms.");
+                ch.send("You cannot assign clan rooms.\r\n");
             }
 
 
             if (Helper.getNextArg(arguments, out string clanName, out string remainingArgs))
             {
-                if (Helper.getNextArg(remainingArgs, out string vNum, out string remainingArgs_1))
+                var clan = ClanDBService.GetClan(clanName, out string errorMessage);
+                if(clan == null)
+                {
+                    ch.send($"Error retrieving clan: {errorMessage}\r\n");
+                    return;
+                }
+                else if (Helper.getNextArg(remainingArgs, out string vNum, out string remainingArgs_1))
                 {
                     bool success = int.TryParse(vNum, out int vNumber);
                     if (!success)
                     {
-                        ch.send("That is not a number. Type 'clan help'.");
+                        ch.send("That is not a number. Type 'clan help'.\r\n");
                         return;
                     }
 
@@ -1076,20 +1082,25 @@ namespace ClanSystemMod
 
                         ClanDBService.addClanRoom(room);
                         ClanDBService.WriteToFileClanRooms(out string errMsgWriteToClanRooms);
-                        ch.send("Clan room has been added.");
+                        ch.send("Clan room has been added.\r\n");
+                        if(RoomData.Rooms.TryGetValue(vNumber, out RoomData? cslRoom) && cslRoom != null)
+                        {
+                            cslRoom.Variables["ClanRoom"] = room;
+                            cslRoom.Variables["Clan"] = clan;
+                        }
                     }
                     else
                     {
-                        ch.send("Clan room already exists.");
+                        ch.send("Clan room already exists.\r\n");
                     }
                 }
                 else
                 {
-                    ch.send("No room vnum was given. Type 'clan help'.");
+                    ch.send("No room vnum was given. Type 'clan help'.\r\n");
                 }
             }
             {
-                ch.send("No arguments where given. Type 'clan help'.");
+                ch.send("No arguments where given. Type 'clan help'.\r\n");
             }
         }
 
@@ -1111,7 +1122,7 @@ namespace ClanSystemMod
         {
             if (!(ch.Level >= GameSettings.MinLevelRequiredForClanCreation))
             {
-                ch.send("You cannot remove clan rooms.");
+                ch.send("You cannot remove clan rooms.\r\n");
             }
 
             if (Helper.getNextArg(arguments, out string vNum, out string remainingArgs))
@@ -1119,7 +1130,7 @@ namespace ClanSystemMod
                 bool success = int.TryParse(vNum, out int vNumber);
                 if (!success)
                 {
-                    ch.send("That is not a number. Type 'clan help'.");
+                    ch.send("That is not a number. Type 'clan help'.\r\n");
                     return;
                 }
 
@@ -1131,6 +1142,11 @@ namespace ClanSystemMod
                     {
                         if (room.RoomVnum == vNumber)
                         {
+                            if(RoomData.Rooms.TryGetValue(vNumber, out RoomData? cslRoom) && cslRoom != null)
+                            {
+                                cslRoom.Variables.Remove("ClanRoom");
+                                cslRoom.Variables.Remove("Clan");
+                            }
                             ClanDBService.removeClanRoom(room);
                             ClanDBService.WriteToFileClanRooms(out string errMsgWriteToClanRooms);
                             ch.send("Clan room has been removed.");
@@ -1140,12 +1156,12 @@ namespace ClanSystemMod
                 }
                 else
                 {
-                    ch.send("This clan room is not part of the clan room list.");
+                    ch.send("This clan room is not part of the clan room list.\r\n");
                 }
             }
             else
             {
-                ch.send("No vnum was given. Type 'clan help'.");
+                ch.send("No vnum was given. Type 'clan help'.\r\n");
             }
         }
 
@@ -1154,7 +1170,7 @@ namespace ClanSystemMod
         {
             if (!(ch.Level >= GameSettings.MinLevelRequiredForClanCreation))
             {
-                ch.send("You cannot list clan rooms.");
+                ch.send("You cannot list clan rooms.\r\n");
             }
 
             if (Helper.getNextArg(arguments, out string clanName, out string remainingArgs))
@@ -1180,11 +1196,11 @@ namespace ClanSystemMod
                         ret += $"{room.RoomVnum,10}|{room.ClanName,30}\n";
                     }
                 }
-                ch.send(ret);
+                ch.send(ret + "\r\n");
             }
             else
             {
-                ch.send("No clan rooms were found.");
+                ch.send("No clan rooms were found.\r\n");
             }
         }
 
@@ -1196,23 +1212,29 @@ namespace ClanSystemMod
             {
                 ret += $"{room.RoomVnum,10}|{room.ClanName,30}\n";
             }
-            ch.send(ret);
+            ch.send(ret + "\r\n");
         }
 
         public static void CommandStartVote(Character ch, string arguments)
         {
             if (!IsAClanLeader(ch.Name))
             {
-                ch.send("Only the clan leader can start a vote for a new leader.");
+                ch.send("Only the clan leader can start a vote for a new leader.\r\n");
                 return;
             }
 
             string clanName = GetClanName(ch.Name);
-            Clan clan = ClanDBService.GetClan(clanName, out _);
+            Clan? clan = ClanDBService.GetClan(clanName, out _);
 
+            if (clan == null)
+            {
+                ch.send("Clan not found.\r\n");
+                return;
+            }
+            
             if (clan.IsVotingActive)
             {
-                ch.send($"A vote is already in progress. It will end on {clan.VotingEnds.Value:g}.");
+                ch.send($"A vote is already in progress. It will end on {(clan.VotingEnds == null ? "an unknown date" : clan.VotingEnds.Value.ToString("g"))}.\r\n");
                 return;
             }
 
@@ -1220,7 +1242,7 @@ namespace ClanSystemMod
             clan.Votes.Clear();
             ClanDBService.WriteToFileClans(out _);
 
-            ch.send($"You have started a vote for a new clan leader. Captains have 2 days to cast their vote with 'clan vote <player>'.");
+            ch.send($"You have started a vote for a new clan leader. Captains have 2 days to cast their vote with 'clan vote <player>'.\r\n");
             
             // Announce to online clan members
             var onlinePlayers = Game.Instance.Info.Connections.Where(p => p.state == Player.ConnectionStates.Playing);
@@ -1228,7 +1250,7 @@ namespace ClanSystemMod
             {
                 if (IsPlayerInClan(clanName, player.Name) && player != ch)
                 {
-                    player.send($"\\y{ch.Name} has initiated a vote for a new clan leader! Voting is open for 2 days.\\x");
+                    player.send($"\\y{ch.Name} has initiated a vote for a new clan leader! Voting is open for 2 days.\\x\r\n");
                 }
             }
         }
@@ -1238,46 +1260,51 @@ namespace ClanSystemMod
             string clanName = GetClanName(ch.Name);
             if (string.IsNullOrEmpty(clanName))
             {
-                ch.send("You are not in a clan.");
+                ch.send("You are not in a clan.\r\n");
                 return;
             }
 
-            Clan clan = ClanDBService.GetClan(clanName, out _);
+            Clan? clan = ClanDBService.GetClan(clanName, out _);
 
-            if (!clan.IsVotingActive)
+            if (clan == null)
             {
-                ch.send("There is no active vote for a new leader at this time.");
+                ch.send("Clan not found.\r\n");
+                return;
+            }
+            else if (!clan.IsVotingActive)
+            {
+                ch.send("There is no active vote for a new leader at this time.\r\n");
                 return;
             }
 
             if (GetPlayerRank(ch.Name) != ClanRank.Captain)
             {
-                ch.send("Only captains can vote for a new leader.");
+                ch.send("Only captains can vote for a new leader.\r\n");
                 return;
             }
 
             if (!Helper.getNextArg(arguments, out string candidateName, out _))
             {
-                ch.send("Who do you want to vote for? Usage: clan vote <player>");
+                ch.send("Who do you want to vote for? Usage: clan vote <player>\r\n");
                 return;
             }
 
             if (!IsPlayerInClan(clanName, candidateName))
             {
-                ch.send($"'{candidateName}' is not a member of your clan.");
+                ch.send($"'{candidateName}' is not a member of your clan.\r\n");
                 return;
             }
-
+            
             var existingVote = clan.Votes.FirstOrDefault(v => v.VoterName.Equals(ch.Name, StringComparison.OrdinalIgnoreCase));
             if (existingVote != null)
             {
                 existingVote.CandidateName = candidateName;
-                ch.send($"You have changed your vote to {candidateName}.");
+                ch.send($"You have changed your vote to {candidateName}.\r\n");
             }
             else
             {
                 clan.Votes.Add(new ClanVote { VoterName = ch.Name, CandidateName = candidateName });
-                ch.send($"You have voted for {candidateName} to be the new leader.");
+                ch.send($"You have voted for {candidateName} to be the new leader.\r\n");
             }
 
             ClanDBService.WriteToFileClans(out _);
@@ -1291,24 +1318,24 @@ namespace ClanSystemMod
             string clanName = GetClanName(ch.Name);
             if (string.IsNullOrEmpty(clanName))
             {
-                ch.send("You are not in a clan.");
+                ch.send("You are not in a clan.\r\n");
                 return;
             }
 
-            Clan clan = ClanDBService.GetClan(clanName, out _);
+            Clan? clan = ClanDBService.GetClan(clanName, out _);
             if (clan == null)
             {
-                ch.send("Could not find your clan data.");
+                ch.send("Could not find your clan data.\r\n");
                 return;
             }
 
             // If voting is currently active, show the tally.
             if (clan.IsVotingActive)
             {
-                ch.send($"A vote for a new leader is in progress. It ends on {clan.VotingEnds.Value:g}.");
+                ch.send($"A vote for a new leader is in progress. It ends on {(clan.VotingEnds == null ? "an unknown date" : clan.VotingEnds.Value.ToString("g"))}.\r\n");
                 if (clan.Votes.Count == 0)
                 {
-                    ch.send("No votes have been cast yet.");
+                    ch.send("No votes have been cast yet.\r\n");
                     return;
                 }
 
@@ -1322,7 +1349,7 @@ namespace ClanSystemMod
                 {
                     result += $"{entry.Candidate}: {entry.Count} vote(s)\n";
                 }
-                ch.send(result);
+                ch.send(result + "\r\n");
             }
             // If voting is not active, but was (VotingEnds is in the past), process the results.
             else if (clan.VotingEnds.HasValue)
@@ -1332,15 +1359,21 @@ namespace ClanSystemMod
             // Otherwise, no vote is happening.
             else
             {
-                ch.send("There is no active vote for a new leader at this time.");
+                ch.send("There is no active vote for a new leader at this time.\r\n");
             }
         }
 
-        private static void ProcessVoteResults(Character ch, Clan clan)
+        private static void ProcessVoteResults(Character ch, Clan? clan)
         {
+            if(clan == null)
+            {
+                ch.send("Clan data is not available.\r\n");
+                return;
+            }
+
             if (clan.Votes.Count == 0)
             {
-                ch.send("Voting has ended. No votes were cast.");
+                ch.send("Voting has ended. No votes were cast.\r\n");
                 clan.VotingEnds = null;
                 ClanDBService.WriteToFileClans(out _);
                 return;
@@ -1355,19 +1388,23 @@ namespace ClanSystemMod
             var winner = tally.FirstOrDefault();
             var isTie = tally.Count > 1 && tally[0].Count == tally[1].Count;
 
-            if (isTie)
+            if (winner == null)
             {
-                ch.send("Voting has ended in a tie! No new leader has been chosen.");
+                ch.send("An error occurred: No winning candidate found.\r\n");
+            }
+            else if (isTie)
+            {
+                ch.send("Voting has ended in a tie! No new leader has been chosen.\r\n");
             }
             else
             {
                 string oldLeaderName = clan.LeaderPlayerName;
-                ClanMember oldLeaderMember = clan.Members.FirstOrDefault(m => m.playerName.Equals(oldLeaderName, StringComparison.OrdinalIgnoreCase));
-                ClanMember newLeaderMember = clan.Members.FirstOrDefault(m => m.playerName.Equals(winner.Candidate, StringComparison.OrdinalIgnoreCase));
+                ClanMember? oldLeaderMember = clan.Members.FirstOrDefault(m => m.playerName.Equals(oldLeaderName, StringComparison.OrdinalIgnoreCase));
+                ClanMember? newLeaderMember = clan.Members.FirstOrDefault(m => m.playerName.Equals(winner.Candidate, StringComparison.OrdinalIgnoreCase));
 
                 if (newLeaderMember == null)
                 {
-                    ch.send("An error occurred: The winning candidate is no longer in the clan.");
+                    ch.send("An error occurred: The winning candidate is no longer in the clan.\r\n");
                 }
                 else
                 {
@@ -1381,7 +1418,7 @@ namespace ClanSystemMod
                     newLeaderMember.Rank = ClanRank.Leader;
                     clan.LeaderPlayerName = newLeaderMember.playerName;
 
-                    string announcement = $"\\yThe vote for a new leader has concluded! {newLeaderMember.playerName} is the new leader of {clan.Name}!\\x";
+                    string announcement = $"\\yThe vote for a new leader has concluded! {newLeaderMember.playerName} is the new leader of {clan.Name}!\\x\r\n";
                     ch.send(announcement);
                     // Announce to online clan members
                     var onlinePlayers = Game.Instance.Info.Connections.Where(p => p.state == Player.ConnectionStates.Playing);
@@ -1457,7 +1494,7 @@ namespace ClanSystemMod
                                         $"\\g{"rem-room",-30}\\x| {"Remove|Unassign a clan room from any clan.",-100}\n" +
                                         $"{"",-30}| {"\\rUsage :\\x clan rem-room 'room vNumber'",-100}\n";
 
-                ch.send(clanHelpAdminPlayer);
+                ch.send(clanHelpAdminPlayer + "\r\n");
             }
             // Only send this help list to 'clan leader' ranked players
             else if (ClanService.GetPlayerRank(ch.Name) == ClanRank.Leader)
@@ -1568,8 +1605,8 @@ namespace ClanSystemMod
                 if (!clanRoom.ClanName.Equals(clanMember.ClanName, StringComparison.CurrentCultureIgnoreCase))
                 {
                     notAllowed = true;
-                }
-
+                } 
+                
                 if (notAllowed)
                 {
                     character.Act($"A \\cmagical\\x force surrounds {character.Name} teleporting him away!", type: ActType.ToRoom);
@@ -1588,10 +1625,12 @@ namespace ClanSystemMod
             ClanMember member = new ClanMember();
             if (ClanService.IsPlayerInAnyClan(character.Name, out string clanName))
             {
+                var clan = ClanDBService.GetClan(clanName, out string errMsg);
                 member.playerName = character.Name;
                 member.ClanName = clanName;
                 member.Rank = ClanService.GetPlayerRank(character.Name);
                 character.Variables["ClanMember"] = member;
+                character.Variables["Clan"] = clan;
             }
             else
             {
@@ -1642,22 +1681,13 @@ namespace ClanSystemMod
             {
                 if (GameSettings.ClanSystemEnabled)
                 {
-                    foreach (RoomData room in RoomData.Rooms.Values)
+                    foreach (ClanRoom clanRoom in ClanDBService.getAllClanRooms())
                     {
-                        bool foundClanRoom = false;
-                        foreach (ClanRoom clanRoom in ClanDBService.getAllClanRooms())
+                        // don't override clanroom if it already exists
+                        if (RoomData.Rooms.TryGetValue(clanRoom.RoomVnum, out RoomData? room) && !room.Variables.ContainsKey("ClanRoom"))
                         {
-                            if (clanRoom.RoomVnum == room.Vnum)
-                            {
-                                room.Variables["ClanRoom"] = clanRoom;
-                                foundClanRoom = true;
-                                break;
-                            }
-                        }
-
-                        if (!foundClanRoom)
-                        {
-                            ClanRoom? nullRoom = addClanRoomObject(room);
+                            room.Variables["ClanRoom"] = clanRoom;
+                            room.Variables["Clan"] = ClanDBService.GetClan(clanRoom.ClanName, out string errMsg);
                         }
                     }
                 }
@@ -1671,6 +1701,7 @@ namespace ClanSystemMod
             clanRoom.RoomVnum = -1;
             clanRoom.ClanName = "";
             room.Variables["ClanRoom"] = clanRoom;
+            room.Variables["Clan"] = null;
             return clanRoom;
         }
 
@@ -1686,23 +1717,37 @@ namespace ClanSystemMod
         }
 
 
-        public static void findAndAttachClanMemberObject(CrimsonStainedLands.Character character, ClanMember clanMemberObject)
+        public static void findAndAttachClanMemberObject(CrimsonStainedLands.Character character, Clan? clan, ClanMember clanMemberObject)
         {
-            var onlinePlayers = Game.Instance.Info.Connections.Where(p => p.state == Player.ConnectionStates.Playing);
+            var onlinePlayers = Game.Instance.Info.Connections.Where(p => p.state > Player.ConnectionStates.GetName);
 
             // Iterate through the list of online players.
             foreach (var player in onlinePlayers)
             {
                 if (character.Name == player.Name)
                 {
-                    if(!character.Variables.ContainsKey("ClanMember"))
+                    if (!character.Variables.ContainsKey("ClanMember"))
                     {
                         addClanMemberObject(character);
-                    } 
+                    }
                     character.Variables["ClanMember"] = clanMemberObject;
+                    character.Variables["Clan"] = clan;
                     break;
                 }
             }
+        }
+
+        private static Player? getConnectedPlayer(string playerName)
+        {
+            var onlinePlayers = Game.Instance.Info.Connections.Where(p => p.state == Player.ConnectionStates.Playing);
+            foreach (var player in onlinePlayers)
+            {
+                if (player.Name.Equals(playerName, StringComparison.CurrentCultureIgnoreCase))
+                {
+                    return player;
+                }
+            }
+            return null;
         }
     }
 }
