@@ -1,4 +1,4 @@
-﻿/***************************************************************************
+/***************************************************************************
 *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,        *
 *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.   *
 *                                                                         *
@@ -347,6 +347,7 @@ namespace CrimsonStainedLands
 
                     Info.LoadingData = false;
                     Game.log("Accepting connections... Standard port {0}, SSL Port {1}", Settings.Port, Settings.SSLPort);
+                    SetupCertWatcher();
                 }
 
                 Game.Instance.Info.MainLoopTask = Task.Run(() => mainLoop(state));
@@ -363,11 +364,50 @@ namespace CrimsonStainedLands
             while (!Game.Instance.Info.Exiting)
             {
                 var command = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(command))
+                    continue;
 
-                if(command.StringCmp("shutdown") || command.StringCmp("exit") || command.StringCmp("quit"))
+                var parts = command.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var cmd = parts[0];
+                var arg = parts.Length > 1 ? parts[1] : "";
+
+                if (cmd.StringCmp("shutdown") || cmd.StringCmp("exit") || cmd.StringCmp("quit"))
                 {
-                    Game.log("Shutting down ...");
-                    Game.shutdown();
+                    if (arg.StringCmp("cancel") || arg.StringCmp("stop"))
+                    {
+                        Game.cancel_scheduled_action();
+                    }
+                    else if (arg.StringCmp("now") || arg == "0" || string.IsNullOrEmpty(arg))
+                    {
+                        Game.shutdown_server(0, null, "Console command");
+                    }
+                    else if (int.TryParse(arg, out int minutes) && minutes > 0)
+                    {
+                        Game.shutdown_server(minutes, null, "Console command");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Syntax: shutdown [now | 0 | <minutes> | cancel]");
+                    }
+                }
+                else if (cmd.StringCmp("reboot") || cmd.StringCmp("restart"))
+                {
+                    if (arg.StringCmp("cancel") || arg.StringCmp("stop"))
+                    {
+                        Game.cancel_scheduled_action();
+                    }
+                    else if (arg.StringCmp("now") || arg == "0" || string.IsNullOrEmpty(arg))
+                    {
+                        Game.reboot_server(0, null, "Console command");
+                    }
+                    else if (int.TryParse(arg, out int minutes) && minutes > 0)
+                    {
+                        Game.reboot_server(minutes, null, "Console command");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Syntax: reboot [now | 0 | <minutes> | cancel]");
+                    }
                 }
             }
         }
@@ -744,6 +784,202 @@ namespace CrimsonStainedLands
             }
         }
 
+        public enum ScheduledServerAction
+        {
+            None,
+            Reboot,
+            Shutdown
+        }
+
+        public static ScheduledServerAction PendingAction = ScheduledServerAction.None;
+        public static DateTime? PendingActionTargetTime = null;
+        public static int PendingActionTotalMinutes = 0;
+        public static HashSet<int> BroadcastedMilestones = new HashSet<int>();
+        public static string PendingActionReason = string.Empty;
+        private static FileSystemWatcher certWatcher = null;
+        private static DateTime lastCertChangeTime = DateTime.MinValue;
+        private static object certLock = new object();
+
+        public static void BroadcastServerMessage(string message)
+        {
+            log(message);
+            WizardNet.Wiznet(WizardNet.Flags.On, message, null, null);
+            if (Game.Instance != null && Game.Instance.Info != null)
+            {
+                foreach (var connection in Game.Instance.Info.Connections)
+                {
+                    try
+                    {
+                        if (connection.state == Player.ConnectionStates.Playing)
+                        {
+                            connection.send("\r\n\\R*** " + message + " ***\\x\r\n\r\n");
+                        }
+                    }
+                    catch { }
+                }
+            }
+        }
+
+        public static void reboot_server(int minutes = 0, Character initiator = null, string reason = "")
+        {
+            if (minutes <= 0)
+            {
+                PendingAction = ScheduledServerAction.None;
+                PendingActionTargetTime = null;
+                var reasonText = !string.IsNullOrEmpty(reason) ? $" ({reason})" : "";
+                BroadcastServerMessage($"Rebooting NOW{reasonText}!");
+                reboot();
+                return;
+            }
+
+            PendingAction = ScheduledServerAction.Reboot;
+            PendingActionTargetTime = DateTime.Now.AddMinutes(minutes);
+            PendingActionTotalMinutes = minutes;
+            PendingActionReason = reason;
+            BroadcastedMilestones.Clear();
+            BroadcastedMilestones.Add(100);
+
+            var initBy = initiator != null ? $" by {initiator.Name}" : "";
+            var reasonTextScheduled = !string.IsNullOrEmpty(reason) ? $" [{reason}]" : "";
+            BroadcastServerMessage($"SERVER REBOOT scheduled in {minutes} minute(s){initBy}{reasonTextScheduled}.");
+        }
+
+        public static void shutdown_server(int minutes = 0, Character initiator = null, string reason = "")
+        {
+            if (minutes <= 0)
+            {
+                PendingAction = ScheduledServerAction.None;
+                PendingActionTargetTime = null;
+                var reasonText = !string.IsNullOrEmpty(reason) ? $" ({reason})" : "";
+                BroadcastServerMessage($"Shutting down NOW{reasonText}!");
+                shutdown();
+                return;
+            }
+
+            PendingAction = ScheduledServerAction.Shutdown;
+            PendingActionTargetTime = DateTime.Now.AddMinutes(minutes);
+            PendingActionTotalMinutes = minutes;
+            PendingActionReason = reason;
+            BroadcastedMilestones.Clear();
+            BroadcastedMilestones.Add(100);
+
+            var initBy = initiator != null ? $" by {initiator.Name}" : "";
+            var reasonTextScheduled = !string.IsNullOrEmpty(reason) ? $" [{reason}]" : "";
+            BroadcastServerMessage($"SERVER SHUTDOWN scheduled in {minutes} minute(s){initBy}{reasonTextScheduled}.");
+        }
+
+        public static void cancel_scheduled_action(Character initiator = null)
+        {
+            if (PendingAction == ScheduledServerAction.None)
+            {
+                if (initiator != null)
+                    initiator.send("There is no scheduled reboot or shutdown to cancel.\r\n");
+                return;
+            }
+
+            var actionName = PendingAction.ToString().ToUpper();
+            PendingAction = ScheduledServerAction.None;
+            PendingActionTargetTime = null;
+            PendingActionTotalMinutes = 0;
+            PendingActionReason = string.Empty;
+            BroadcastedMilestones.Clear();
+
+            var initBy = initiator != null ? $" by {initiator.Name}" : "";
+            BroadcastServerMessage($"SERVER {actionName} has been CANCELLED{initBy}.");
+        }
+
+        public static void SetupCertWatcher()
+        {
+            try
+            {
+                string certDir = @"I:\certs";
+                if (System.IO.File.Exists(Settings.CertificateSettingsJsonPath))
+                {
+                    var fullJsonPath = System.IO.Path.GetFullPath(Settings.CertificateSettingsJsonPath);
+                    var dir = System.IO.Path.GetDirectoryName(fullJsonPath);
+                    if (!string.IsNullOrEmpty(dir) && System.IO.Directory.Exists(dir))
+                        certDir = dir;
+                }
+
+                if (System.IO.Directory.Exists(certDir))
+                {
+                    certWatcher = new FileSystemWatcher(certDir, "*.pem");
+                    certWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.Size;
+                    certWatcher.Changed += OnCertFileChanged;
+                    certWatcher.Created += OnCertFileChanged;
+                    certWatcher.Renamed += (s, e) => OnCertFileChanged(s, new FileSystemEventArgs(WatcherChangeTypes.Changed, certDir, e.Name));
+                    certWatcher.EnableRaisingEvents = true;
+                    log($"Certificate watcher started on {certDir}");
+                }
+            }
+            catch (Exception ex)
+            {
+                bug($"Error initializing certificate watcher: {ex.Message}");
+            }
+        }
+
+        private static void OnCertFileChanged(object sender, FileSystemEventArgs e)
+        {
+            lock (certLock)
+            {
+                if ((DateTime.Now - lastCertChangeTime).TotalSeconds < 30)
+                    return;
+
+                lastCertChangeTime = DateTime.Now;
+                log($"Certificate file change detected: {e.FullPath}. Scheduling automatic reboot in 5 minutes...");
+                reboot_server(5, null, "SSL Certificate Updated");
+            }
+        }
+
+        private void UpdateServerScheduledActions()
+        {
+            if (PendingAction == ScheduledServerAction.None || !PendingActionTargetTime.HasValue)
+                return;
+
+            var remaining = PendingActionTargetTime.Value - DateTime.Now;
+            var actionName = PendingAction == ScheduledServerAction.Reboot ? "REBOOT" : "SHUTDOWN";
+
+            if (remaining.TotalSeconds <= 0)
+            {
+                var action = PendingAction;
+                PendingAction = ScheduledServerAction.None;
+                PendingActionTargetTime = null;
+                if (action == ScheduledServerAction.Reboot)
+                {
+                    reboot();
+                }
+                else
+                {
+                    shutdown();
+                }
+                return;
+            }
+
+            double percentRemaining = (remaining.TotalMinutes / (double)PendingActionTotalMinutes) * 100.0;
+            int remainingMinutesRounded = (int)Math.Ceiling(remaining.TotalMinutes);
+
+            if (percentRemaining <= 75.0 && !BroadcastedMilestones.Contains(75))
+            {
+                BroadcastedMilestones.Add(75);
+                BroadcastServerMessage($"SERVER {actionName} in {remainingMinutesRounded} minute(s) (75% time remaining).");
+            }
+            else if (percentRemaining <= 50.0 && !BroadcastedMilestones.Contains(50))
+            {
+                BroadcastedMilestones.Add(50);
+                BroadcastServerMessage($"SERVER {actionName} in {remainingMinutesRounded} minute(s) (50% time remaining).");
+            }
+            else if (percentRemaining <= 25.0 && !BroadcastedMilestones.Contains(25))
+            {
+                BroadcastedMilestones.Add(25);
+                BroadcastServerMessage($"SERVER {actionName} in {remainingMinutesRounded} minute(s) (25% time remaining).");
+            }
+            else if (remaining.TotalSeconds <= 60.0 && !BroadcastedMilestones.Contains(1))
+            {
+                BroadcastedMilestones.Add(1);
+                BroadcastServerMessage($"SERVER {actionName} in 1 minute!");
+            }
+        }
+
         private static bool shutdowncomplete = false;
         public static void shutdown()
         {
@@ -873,6 +1109,8 @@ namespace CrimsonStainedLands
 
             //if (pulseCount % (60 * 4) == 0 || pulseCount == 1)
             //    program.Log("TICK :: " + pulseCount / (60 * 4));
+
+            UpdateServerScheduledActions();
 
             Module.PulseBefore();
 

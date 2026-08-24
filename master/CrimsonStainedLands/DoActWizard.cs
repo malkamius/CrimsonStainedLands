@@ -1,4 +1,4 @@
-﻿using CrimsonStainedLands.Extensions;
+using CrimsonStainedLands.Extensions;
 using CrimsonStainedLands.World;
 using System;
 using System.Collections.Generic;
@@ -451,7 +451,23 @@ namespace CrimsonStainedLands
 
         public static void DoShutdown(Character ch, string arguments)
         {
-            Game.shutdown();
+            arguments = (arguments ?? "").Trim();
+            if (arguments.ISEMPTY() || arguments.StringCmp("now") || arguments == "0")
+            {
+                Game.shutdown_server(0, ch);
+            }
+            else if (arguments.StringCmp("cancel") || arguments.StringCmp("stop"))
+            {
+                Game.cancel_scheduled_action(ch);
+            }
+            else if (int.TryParse(arguments, out int minutes) && minutes > 0)
+            {
+                Game.shutdown_server(minutes, ch);
+            }
+            else
+            {
+                ch.send("Syntax: shutdown [now | 0 | <minutes> | cancel]\r\n");
+            }
         }
 
         public static void DoStat(Character ch, string arguments)
@@ -1297,7 +1313,23 @@ namespace CrimsonStainedLands
 
         public static void DoReboot(Character ch, string arguments)
         {
-            Game.reboot();
+            arguments = (arguments ?? "").Trim();
+            if (arguments.ISEMPTY() || arguments.StringCmp("now") || arguments == "0")
+            {
+                Game.reboot_server(0, ch);
+            }
+            else if (arguments.StringCmp("cancel") || arguments.StringCmp("stop"))
+            {
+                Game.cancel_scheduled_action(ch);
+            }
+            else if (int.TryParse(arguments, out int minutes) && minutes > 0)
+            {
+                Game.reboot_server(minutes, ch);
+            }
+            else
+            {
+                ch.send("Syntax: reboot [now | 0 | <minutes> | cancel]\r\n");
+            }
         }
 
         public static void DoImmortal(Character ch, string arguments)

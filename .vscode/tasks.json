@@ -2,17 +2,75 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "dotnet",
-			"task": "build",
-			"group": {
-                "kind": "build",
-                "isDefault": true
-            },
-			"label": "build",
-            "presentation": {
-                "reveal": "always"
-            },
+			"label": "build: core",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"${workspaceFolder}/master/CrimsonStainedLands/CrimsonStainedLands.csproj",
+				"-c",
+				"Release"
+			],
+			"presentation": {
+				"reveal": "always"
+			},
 			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "build: sample",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"${workspaceFolder}/master/SampleModule/SampleModule.csproj",
+				"-c",
+				"Release"
+			],
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "build",
+			"dependsOn": ["build: core", "build: sample"],
+			"dependsOrder": "sequence",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
+		}
+		,
+		{
+			"label": "publish",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"publish",
+				"${workspaceFolder}/master/CrimsonStainedLands/CrimsonStainedLands.csproj",
+				"-c",
+				"Release",
+				"-o",
+				"${workspaceFolder}/bin/CrimsonStainedLands"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "build and publish",
+			"dependsOn": ["build", "publish"],
+			"dependsOrder": "sequence",
+			"presentation": {
+				"reveal": "always",
+				"panel": "shared"
+			}
 		}
 	]
 }

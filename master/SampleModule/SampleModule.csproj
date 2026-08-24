@@ -11,23 +11,62 @@
   </ItemGroup>
 
   <Target Name="CopyFilesToCrimson" AfterTargets="Build">
+    <!-- Define both Debug and Release target output directories for the Crimson project -->
     <PropertyGroup>
-      <CrimsonOutputDirectory Condition="'$(Configuration)' == 'Debug'">$(ProjectDir)..\..\master\CrimsonStainedLands\bin\Debug\net8.0\</CrimsonOutputDirectory>
-      <CrimsonOutputDirectory Condition="'$(Configuration)' == 'Release'">$(ProjectDir)..\..\master\CrimsonStainedLands\bin\Release\net8.0\</CrimsonOutputDirectory>
+      <CrimsonDebugOutput>$(ProjectDir)..\..\master\CrimsonStainedLands\bin\Debug\net8.0\</CrimsonDebugOutput>
+      <CrimsonReleaseOutput>$(ProjectDir)..\..\master\CrimsonStainedLands\bin\Release\net8.0\</CrimsonReleaseOutput>
+      <!-- Also copy into the workspace root bin folders so runtime data isn't overwritten by publish -->
+      <RootDebugOutput>$(ProjectDir)..\..\bin\</RootDebugOutput>
+      <RootReleaseOutput>$(ProjectDir)..\..\bin\</RootReleaseOutput>
     </PropertyGroup>
 
     <ItemGroup>
       <MyDllFiles Include="$(TargetDir)$(TargetName).dll" />
       <MyDllFiles Include="$(TargetDir)$(TargetName).pdb" />
+      <MyOtherFiles Include="$(ProjectDir)modules.xml" />
     </ItemGroup>
 
+    <!-- Ensure destination folders exist -->
+    <MakeDir Directories="$(CrimsonDebugOutput)" Condition="'$(CrimsonDebugOutput)' != ''" />
+    <MakeDir Directories="$(CrimsonReleaseOutput)" Condition="'$(CrimsonReleaseOutput)' != ''" />
+    <MakeDir Directories="$(RootDebugOutput)" Condition="'$(RootDebugOutput)' != ''" />
+    <MakeDir Directories="$(RootReleaseOutput)" Condition="'$(RootReleaseOutput)' != ''" />
+
+    <!-- Copy to Debug output -->
     <Copy SourceFiles="@(MyDllFiles)"
-          DestinationFolder="$(CrimsonOutputDirectory)"
+          DestinationFolder="$(CrimsonDebugOutput)"
           SkipUnchangedFiles="true"
           OverwriteReadOnlyFiles="true" />
-    
-    <Copy SourceFiles="$(ProjectDir)modules.xml"
-          DestinationFolder="$(CrimsonOutputDirectory)"
+    <Copy SourceFiles="@(MyOtherFiles)"
+          DestinationFolder="$(CrimsonDebugOutput)"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true" />
+
+        <!-- Copy to Release output -->
+        <Copy SourceFiles="@(MyDllFiles)"
+          DestinationFolder="$(CrimsonReleaseOutput)"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true" />
+        <Copy SourceFiles="@(MyOtherFiles)"
+          DestinationFolder="$(CrimsonReleaseOutput)"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true" />
+
+        <!-- Also copy to the workspace root bin folders (only newer files will be copied) -->
+        <Copy SourceFiles="@(MyDllFiles)"
+          DestinationFolder="$(RootDebugOutput)"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true" />
+        <Copy SourceFiles="@(MyOtherFiles)"
+          DestinationFolder="$(RootDebugOutput)"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true" />
+        <Copy SourceFiles="@(MyDllFiles)"
+          DestinationFolder="$(RootReleaseOutput)"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true" />
+        <Copy SourceFiles="@(MyOtherFiles)"
+          DestinationFolder="$(RootReleaseOutput)"
           SkipUnchangedFiles="true"
           OverwriteReadOnlyFiles="true" />
   </Target>

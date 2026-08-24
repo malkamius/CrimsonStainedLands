@@ -75,9 +75,16 @@ namespace CrimsonStainedLands
             {
                 rsaPrivateKey.ImportParameters(rsaParams);
                 var certWithKey = serverCert.CopyWithPrivateKey(rsaPrivateKey);
-                var newcert = privkeyparams == null? certWithKey : new X509Certificate2(certWithKey.Export(X509ContentType.Pfx));
-                
-                // Create a collection with the full chain
+
+                // Export to PFX and re-import with key storage flags so Windows' security
+                // package can access the private key when authenticating (avoids
+                // "No credentials are available in the security package").
+                var pfxBytes = certWithKey.Export(X509ContentType.Pfx);
+                var flags = X509KeyStorageFlags.MachineKeySet | X509KeyStorageFlags.PersistKeySet | X509KeyStorageFlags.Exportable;
+                var newcert = new X509Certificate2(pfxBytes, (string?)null, flags);
+
+                // Create a collection with the full chain (not currently returned,
+                // but kept here for future use if needed)
                 var collection = new X509Certificate2Collection(newcert);
                 for (int i = 1; i < certificateChain.Count; i++)
                 {
